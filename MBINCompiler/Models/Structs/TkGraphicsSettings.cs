@@ -1,4 +1,6 @@
-﻿namespace MBINCompiler.Models.Structs
+﻿using System.Collections.Generic;
+
+namespace MBINCompiler.Models.Structs
 {
     public class TkGraphicsSettings : NMSTemplate
     {

@@ -164,8 +164,8 @@ namespace MBINCompiler.Models
 
             NMSTemplate obj = TemplateFromName(templateName);
 
-             Console.WriteLine("Gk Hack: " + "Deserializing Template: " + templateName);
-
+            Console.WriteLine("Gk Hack: " + "Deserializing Template: " + templateName);
+            
             if (obj == null)
                 return null;
 
@@ -189,8 +189,10 @@ namespace MBINCompiler.Models
             {
                 NMSAttribute settings = field.GetCustomAttribute<NMSAttribute>();
                 field.SetValue(obj, DeserializeValue(reader, field.FieldType, settings, templatePosition, field, obj));
+                Console.WriteLine("Gk Hack: " + templateName + " Deserialized Value: " + field.Name + " value: " + field.GetValue(obj));
             }
 
+            
             obj.FinishDeserialize();
 
             if (PrintToDebug) Debug.WriteLine($"{templateName} end position: 0x{reader.BaseStream.Position:X}");
@@ -914,7 +916,15 @@ namespace MBINCompiler.Models
                     continue;
 
                 string[] values = (string[])valuesMethod.Invoke(this, null);
-                string valueStr = values[(int)value];
+                try
+                {
+                    string valueStr = values[(int)value];
+                }
+                catch (IndexOutOfRangeException e){
+                    Console.WriteLine("Values index out of Range. Struct: " + GetType() + " field: " + field.Name);
+                    throw new Exception("Error");
+                }
+                
             }
 #endif
         }

@@ -52,9 +52,19 @@
     <Compile Include="Models\EXmlData.cs" />
     <Compile Include="Models\EXmlProperty.cs" />
     <Compile Include="Models\Structs\GcAtlasDownloadType.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingEntry.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingGroup.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingObjectDecorationTypes.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingObjectTypes.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingPalette.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingProperties.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingTable.cs" />
     <Compile Include="Models\Structs\GcBuildingCostPartCount.cs" />
     <Compile Include="Models\Structs\GcCostNPCHabitation.cs" />
     <Compile Include="Models\Structs\GcCostInstalledTech.cs" />
+    <Compile Include="Models\Structs\GcGenericMissionSequence.cs" />
+    <Compile Include="Models\Structs\GcInteractionBaseBuildingState.cs" />
+    <Compile Include="Models\Structs\GcMissionTable.cs" />
     <Compile Include="Models\Structs\GcModelViewCollection.cs" />
     <Compile Include="Models\Structs\GcCameraShakeData.cs" />
     <Compile Include="Models\Structs\GcCameraShakeCaptureData.cs" />
@@ -66,6 +76,7 @@
     <Compile Include="Models\Structs\GcDroneData.cs" />
     <Compile Include="Models\Structs\GcGalacticAddressData.cs" />
     <Compile Include="Models\Structs\GcLightProperties.cs" />
+    <Compile Include="Models\Structs\GcNPCHabitationComponentData.cs" />
     <Compile Include="Models\Structs\GcNPCHabitationType.cs" />
     <Compile Include="Models\Structs\GcPlanetInfo.cs" />
     <Compile Include="Models\Structs\GcPlayerMissionProgress.cs" />
@@ -442,6 +453,7 @@
     <Compile Include="Models\Structs\TkModelDescriptorList.cs" />
     <Compile Include="Models\Structs\TkModelRendererCameraData.cs" />
     <Compile Include="Models\Structs\TkModelRendererData.cs" />
+    <Compile Include="Models\Structs\TkMonitorName.cs" />
     <Compile Include="Models\Structs\TkNGuiEditorLayout.cs" />
     <Compile Include="Models\Structs\TkNGuiEditorStyleData.cs" />
     <Compile Include="Models\Structs\TkNGuiLayoutList.cs" />

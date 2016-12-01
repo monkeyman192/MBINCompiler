@@ -3,12 +3,26 @@
     public class GcResourceElement : NMSTemplate // size = 0x2A8
     {
         [NMS(Size = 0x80)]
-        public string Filename;
-        [NMS(Ignore = true)]
-        public long EmptyNode1;
-        public GcSeed GenerationSeed;
+        /* 0x00 */ public string Filename;
+
+        /* 0x80 */
+        [NMS(Size = 8, Ignore = true)]
+        public byte[] PreSeedPad80;
+
+        // Exploding GcSeed Struct
+        /* 0x88 */
+        public long Seed;
+        /* 0x90 */
+        public bool UseSeedValue;
+
+        /* 0x91 */
+        [NMS(Size = 7, Ignore = true)]
+        public byte[] PreSeedPad91;
         [NMS(Size = 0x200)]
         public string AltId;
-        public TkProceduralTextureChosenOptionList Texture;
+
+        [NMS(Size = 0x10, Ignore = true)]
+        public byte[] skip;
+        //public TkProceduralTextureChosenOptionList Texture;
     }
 }

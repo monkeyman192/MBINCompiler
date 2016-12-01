@@ -10,6 +10,11 @@ namespace MBINCompiler.Models.Structs
         /* 0x18C */ public TkModelResource SnapPointInvalid;
         /* 0x210 */ public TkModelResource SnapPointFar;
 
+        //Greg padding
+        //[NMS(Size = 8, Ignore = true)]
+        //public byte[] Padding90;
+        
+
         /* 0x298 */ public List<GcBaseBuildingEntry> Objects;
         /* 0x2A8 */ public List<GcBaseBuildingGroup> Groups;
         /* 0x2C0 */ public List<GcBaseBuildingPalette> Palettes;

@@ -9,9 +9,9 @@ namespace MBINCompiler.Models.Structs
         /* 0x010 */ public GcResourceElement Model;
         /* 0x2B8 */ public GcAudioWwiseEvents AkEvent;
         /* 0x2BC */ public float Scale;
-		/* 0x2C0 */ public bool IsAutonomous;
-		[NMS(Size = 3, Ignore = true)]
-        /* 0x2C1 */ public byte[] Padding2C1;
+        //Updated Insert
+        //Offsets should be fix
+        /* 0x2C4 */ public bool isAutonomous;
         /* 0x2C4 */ public float Radius;
         /* 0x2C8 */ public float Speed;
         /* 0x2CC */ public float Gravity;
@@ -22,28 +22,36 @@ namespace MBINCompiler.Models.Structs
         /* 0x2E0 */ public int MiningDamage;
         /* 0x2E4 */ public int Bounces;
         /* 0x2E8 */ public bool HitOnBounce;
-		[NMS(Size = 7, Ignore = true)]
-		/* 0x2E9 */ public byte[] Padding2E9;
+        [NMS(Size = 7, Ignore = true)]
+        /* 0x2E9 */ public byte[] Padding2E9;
+
         [NMS(Size = 0x10)]
         /* 0x2F0 */ public string PlayerDamage;
         /* 0x300 */ public Colour Colour;
-		
-		/* Not sure about from here to line 36*/ 
-		/* 0x310 */ public int BehaviourFlags;
-		public string[] BehaviourFlagsValues()
-		{
-			return new[] { "DestroyTerrain", "DestroyAsteroids", "GatherResources", "Homing", "HomingLaser", "ScareCreatures" };
-		}
 
-        /* 0x314 */ public int Class;
+        /* 0x314 */ //THIS SHOULD GO AFTER THE CLASS, BUT THE VALUES ARE WEIRD
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding314;
+
+        /* 0x304 */
+        public int Class;
+
+        
         public string[] ClassValues()
         {
-            return new[] { "Player", "PlayerShip", "Ship", "Robot" };
+            return new[] { "Player", "PlayerShip", "Ship", "Robot"};
         }
+
+        
 
         [NMS(Size = 0x10)]
         /* 0x318 */ public string DefaultImpact;
         /* 0x328 */ public List<GcProjectileImpactData> Impacts;
+        [NMS(Size = 8, Ignore = true)]
+        /* 0x338 */ public byte[] Padding338;
 
+        //[NMS(Size = 4, Ignore = true)]
+        ///* 0x310 */
+        //public byte[] Padding310;
     }
 }
