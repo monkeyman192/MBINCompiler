@@ -17,10 +17,17 @@ namespace MBINCompiler.Models.Structs
 
         /* 0x298 */ public List<GcBaseBuildingEntry> Objects;
         /* 0x2A8 */ public List<GcBaseBuildingGroup> Groups;
+<<<<<<< HEAD
+        
+        [NMS(Size = 16)]
+        public GcBaseBuildingPalette[] Palettes;
+
+=======
         //Commenting Palettes and PRoperties. PRobably exist in the functions
         //THey are definitely missing from the basebuildingtable.mbin
         [NMS(Size = 16)]
         /* 0x2C0 */ public GcBaseBuildingPalette[] Palettes;
+>>>>>>> master
         /* 0x4C0 */ public GcBaseBuildingProperties Properties;
     }
 }
