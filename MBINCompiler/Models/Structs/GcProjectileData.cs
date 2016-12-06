@@ -7,11 +7,11 @@ namespace MBINCompiler.Models.Structs
         [NMS(Size = 0x10)]
         /* 0x000 */ public string Id;
         /* 0x010 */ public GcResourceElement Model;
-        /* 0x2B8 */ public GcAudioWwiseEvents AkEvent;
+        /* 0x2B8 */ public GcAudioWwiseEvents FireAudioEvent;
         /* 0x2BC */ public float Scale;
         //Updated Insert
         //Offsets should be fix
-        /* 0x2C4 */ public bool isAutonomous;
+        /* 0x2C0 */ public bool isAutonomous;
         /* 0x2C4 */ public float Radius;
         /* 0x2C8 */ public float Speed;
         /* 0x2CC */ public float Gravity;
@@ -29,11 +29,15 @@ namespace MBINCompiler.Models.Structs
         /* 0x2F0 */ public string PlayerDamage;
         /* 0x300 */ public Colour Colour;
 
-        /* 0x314 */ //THIS SHOULD GO AFTER THE CLASS, BUT THE VALUES ARE WEIRD
-        [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding314;
+        /* 0x310 */ //THIS SHOULD GO AFTER THE CLASS, BUT THE VALUES ARE WEIRD
+        public int BehaviourFlags;
+        public string[] BehaviourFlagsValues()
+        {
+            return new[] { "DestroyTerrain", "DestroyAsteroids", "GatherResources", "Homing", "HomingLaser", "ScareCreatures", "ExplosionForce" };
+        }
+        
 
-        /* 0x304 */
+        /* 0x308 */
         public int Class;
 
         
