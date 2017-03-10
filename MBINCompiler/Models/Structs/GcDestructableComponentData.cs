@@ -28,8 +28,15 @@ namespace MBINCompiler.Models.Structs
 		/* 0x068 */ public float HardModeSubstanceMultiplier;
 
         /* 0x06C */ public bool RemoveModel;
-        /* 0x070 */ public TkModelResource DestroyedModel;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x06D */ public byte[] Padding6D;
+        [NMS(Size = 0x80)]
+        /* 0x070 */ public string DestroyedModel;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0F0 */ public byte[] PaddingF0;
         /* 0x0F4 */ public bool DestroyedModelUsesScale;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x0F5 */public byte[] PaddingF5;
         /* 0x0F8 */ public float DestroyForce;
         /* 0x0FC */ public float DestroyForceRadius;
         [NMS(Size = 0x10)]
@@ -39,6 +46,8 @@ namespace MBINCompiler.Models.Structs
         /* 0x120 */ public float DestroyEffectTime;
 
         /* 0x124 */ public bool ShowInteract;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x125 */ public byte[] Padding125;
         /* 0x128 */ public float ShowInteractRange;
         /* 0x12C */ public bool GrenadeSingleHit;
 

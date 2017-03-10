@@ -2,6 +2,6 @@
 {
     public class GcRewardWorker : NMSTemplate
     {
-        public bool Dummy; // unused?
+        public GcNPCHabitationType NPCHabitationType;
     }
 }

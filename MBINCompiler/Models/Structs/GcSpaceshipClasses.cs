@@ -5,7 +5,7 @@
         public int ShipClass;
         public string[] ShipClassValues()
         {
-            return new[] { "Freighter", "Dropship", "Fighter", "Scientific", "Shuttle" };
+            return new[] { "Freighter", "Dropship", "Fighter", "Scientific", "Shuttle", "PlayerFreighter" };
         }
     }
 }

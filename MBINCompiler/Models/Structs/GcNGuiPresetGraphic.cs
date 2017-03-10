@@ -5,7 +5,7 @@
         [NMS(Size = 0x10)]
         public string PresetID;
         public GcNGuiLayoutData Layout;
-        [NMS(Size = 0x4)]
+        [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding3C;
 
         public TkNGuiGraphicStyle Style;

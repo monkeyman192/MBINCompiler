@@ -12,7 +12,7 @@ namespace MBINCompiler.Models.Structs
         /* 0x090 */ public string Creature;
 
         /* 0x0A0 */ public GcCreatureTypes CreatureType;
-        /* 0x0A4 */ public GcAISpaceshipTypes ShipType;
+        /* 0x0A4 */ public GcAISpaceshipTypes ShipAIOverride;
         /* 0x0A8 */ public GcSeed Seed;
         /* 0x0B8 */ public int FunctionKey;
         /* 0x0BC */ public float TriggerDistance;

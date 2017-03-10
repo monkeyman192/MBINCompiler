@@ -2,8 +2,8 @@
 {
     public class GcAudioAreaTriggerComponentData : NMSTemplate
     {
-        public GcAudioWwiseEvents AkEvent1; // EnterAreaEvent perhaps?
-        public GcAudioWwiseEvents AkEvent2; // ExitAreaEvent ?
+        public GcAudioWwiseEvents EventEnter;
+        public GcAudioWwiseEvents EventExit;
         public float EnterDistance;
         public float ExitDistance;
     }

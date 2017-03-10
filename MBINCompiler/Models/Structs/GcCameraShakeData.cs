@@ -10,7 +10,7 @@
         public float DecayRate;
         public float StrengthSale;
 
-        public GcCameraShakeCaptureData CapturedData; // 0x20
+        public GcCameraShakeCapturedData CapturedData; // 0x20
 
         [NMS(Size = 0xC, Ignore = true)]
         public byte[] Padding34; // offsetMechanicalData - (offsetCapturedData + szCapturedData)

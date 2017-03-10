@@ -1,6 +1,6 @@
 ﻿namespace MBINCompiler.Models.Structs
 {
-    public class GcPlayerSpaceshipControlData : NMSTemplate
+    public class GcPlayerSpaceshipControlData : NMSTemplate     // size = 0xF4
     {
         public GcPlayerSpaceshipEngineData SpaceEngine;
         public GcPlayerSpaceshipEngineData PlanetEngine;
@@ -11,6 +11,7 @@
         public float ExitHeightFactorPlungeMax;
         public float ExitAngleMin;
         public float ExitAngleMax;
+        public float ExitLeaveAngle;
 
         public TkCurveType ExitCurve;
         public TkCurveType ExitDownCurve;

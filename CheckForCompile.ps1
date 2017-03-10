@@ -9,7 +9,12 @@ param([bool]$mbin=$false, [bool]$verbose=$true, [bool]$excludeModels=$true)
 $MBINCompilerLocation = 'S:\Game Mods\No Mans Sky\Tools\_Toolbox\MBINCompiler.exe.lnk'
 
 
-If (test-path("output.txt")){Clear-Content output.txt}
+If (test-path("output.txt")){
+	If (test-path("output_old.txt")){
+		remove-item output_old.txt
+	}
+	Rename-Item output.txt output_old.txt
+}
 
 Write "Checking Files..."
 
@@ -17,8 +22,7 @@ write-host -NoNewline "Run files through MBINCompiler? " $mbin `n
 write-host -NoNewline "Verbose Output? " $verbose `n
 write-host -NoNewline "Skip MODELS Directory? " $excludeModels `n
 pause
-If ($excludeModels -eq $true){
-	add-content output.txt "##The MODELS directory is excluded in this listing"
+
 Get-ChildItem $PSScriptRoot -recurse -Filter *.mbin |
 
 Foreach-Object {

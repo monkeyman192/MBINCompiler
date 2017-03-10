@@ -7,6 +7,6 @@
         public float Alpha1;
         public float Alpha2;
         public TkPaletteTexture Colour1;
-        public TkPaletteTexture Colout2;
+        public TkPaletteTexture Colour2;
     }
 }

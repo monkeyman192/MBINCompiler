@@ -5,7 +5,7 @@
         public int GunType;
         public string[] GunTypeValues()
         {
-            return new[] { "Laser", "Projectile" };
+            return new[] { "Laser", "Projectile", "Missile" };
         }
     }
 }

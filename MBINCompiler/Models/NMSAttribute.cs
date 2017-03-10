@@ -9,5 +9,6 @@ namespace MBINCompiler.Models
         public bool Ignore { get; set; }
         public object DefaultValue { get; set; }
         public string[] EnumValue { get; set; }
+        public int Padding { get; set; }
     }
 }

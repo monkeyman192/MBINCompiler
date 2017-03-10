@@ -2,7 +2,7 @@
 {
     public class GcPlanetColourData : NMSTemplate
     {
-        [NMS(Size = 0x26)]
+        [NMS(Size = 0x29)]
         public GcColourPaletteData[] Palettes;
     }
 }

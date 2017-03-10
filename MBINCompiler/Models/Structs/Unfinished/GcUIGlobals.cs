@@ -16,22 +16,18 @@ namespace MBINCompiler.Models.Structs
         // line:   signed __int64 v3; // rcx@1
         public int Unknown0;     // offset: 0, sz: 4, origin: 2, parsed: 2        // line:   *(_DWORD *)a1 = 2;
         public float Unknown4;     // offset: 4, sz: 4, origin: 1116209152, parsed: 68        // line:   *(_DWORD *)(a1 + 4) = 1116209152;
-
-        // missing 8 bytes at offset 4
-        // could be padding, a undefined subroutine or a pointer accessing larger memory
-        [NMS(Size = 0x8, Ignore = true)]
-        public byte[] Padding8;        // offset: 8, sz: 8, comment: auto padding 
-
+        public float Unknown8;
+        public float UnknownC;
         public float Unknown10;     // offset: 16, sz: 4, origin: 1065353216, parsed: 1        // line:   *(_DWORD *)(a1 + 16) = 1065353216;
         public float Unknown14;     // offset: 20, sz: 4, origin: 1039516303, parsed: 0.12        // line:   *(_DWORD *)(a1 + 20) = 1039516303;
         public float Unknown18;     // offset: 24, sz: 4, origin: 1039516303, parsed: 0.12        // line:   *(_DWORD *)(a1 + 24) = 1039516303;
         public float Unknown1C;     // offset: 28, sz: 4, origin: 1065353216, parsed: 1        // line:   *(_DWORD *)(a1 + 28) = 1065353216;
         public float Unknown20;     // offset: 32, sz: 4, origin: 1053609165, parsed: 0.4        // line:   *(_DWORD *)(a1 + 32) = 1053609165;
         public float Unknown24;     // offset: 36, sz: 4, origin: 1039516303, parsed: 0.12        // line:   *(_DWORD *)(a1 + 36) = 1039516303;
-        public float Unknown28;     // offset: 40, sz: 4, origin: 1039516303, parsed: 0.12        // line:   *(_DWORD *)(a1 + 40) = 1039516303;
+        public int Unknown28;     // offset: 40, sz: 4, origin: 1039516303, parsed: 0.12        // line:   *(_DWORD *)(a1 + 40) = 1039516303;
         public float Unknown2C;     // offset: 44, sz: 4, origin: 1060320051, parsed: 0.7        // line:   *(_DWORD *)(a1 + 44) = 1060320051;
         public float Unknown30;     // offset: 48, sz: 4, origin: 1077936128, parsed: 3        // line:   *(_DWORD *)(a1 + 48) = 1077936128;
-        public int Unknown34;     // offset: 52, sz: 4, origin: 5, parsed: 5        // line:   *(_DWORD *)(a1 + 52) = 5;
+        public float Unknown34;     // offset: 52, sz: 4, origin: 5, parsed: 5        // line:   *(_DWORD *)(a1 + 52) = 5;
         public float Unknown38;     // offset: 56, sz: 4, origin: 1107820544, parsed: 34        // line:   *(_DWORD *)(a1 + 56) = 1107820544;
         public float Unknown3C;     // offset: 60, sz: 4, origin: 1117782016, parsed: 80        // line:   *(_DWORD *)(a1 + 60) = 1117782016;
         public float Unknown40;     // offset: 64, sz: 4, origin: 1111490560, parsed: 48        // line:   *(_DWORD *)(a1 + 64) = 1111490560;
@@ -42,7 +38,7 @@ namespace MBINCompiler.Models.Structs
         public float Unknown54;     // offset: 84, sz: 4, origin: 1107296256, parsed: 32        // line:   *(_DWORD *)(a1 + 84) = 1107296256;
         public float Unknown58;     // offset: 88, sz: 4, origin: 1045220557, parsed: 0.2        // line:   *(_DWORD *)(a1 + 88) = 1045220557;
         public float Unknown5C;     // offset: 92, sz: 4, origin: 1084227584, parsed: 5        // line:   *(_DWORD *)(a1 + 92) = 1084227584;
-        public float Unknown60;     // offset: 96, sz: 4, origin: 1045220557, parsed: 0.2        // line:   *(_DWORD *)(a1 + 96) = 1045220557;
+        public int Unknown60;     // offset: 96, sz: 4, origin: 1045220557, parsed: 0.2        // line:   *(_DWORD *)(a1 + 96) = 1045220557;
         public float Unknown64;     // offset: 100, sz: 4, origin: 1082130432, parsed: 4        // line:   *(_DWORD *)(a1 + 100) = 1082130432;
         public float Unknown68;     // offset: 104, sz: 4, origin: 1058642330, parsed: 0.6        // line:   *(_DWORD *)(a1 + 104) = 1058642330;
         public float Unknown6C;     // offset: 108, sz: 4, origin: 1116733440, parsed: 72        // line:   *(_DWORD *)(a1 + 108) = 1116733440;
@@ -51,7 +47,7 @@ namespace MBINCompiler.Models.Structs
         public float Unknown78;     // offset: 120, sz: 4, origin: 1053609165, parsed: 0.4        // line:   *(_DWORD *)(a1 + 120) = 1053609165;
         public float Unknown7C;     // offset: 124, sz: 4, origin: 1137180672, parsed: 400        // line:   *(_DWORD *)(a1 + 124) = 1137180672;
         public float Unknown80;     // offset: 128, sz: 4, origin: 1120403456, parsed: 100        // line:   *(_DWORD *)(a1 + 128) = 1120403456;
-        public float Unknown84;     // offset: 132, sz: 4, origin: 1036831949, parsed: 0.1        // line:   *(_DWORD *)(a1 + 132) = 1036831949;
+        public int Unknown84;     // offset: 132, sz: 4, origin: 1036831949, parsed: 0.1        // line:   *(_DWORD *)(a1 + 132) = 1036831949;
         public float Unknown88;     // offset: 136, sz: 4, origin: 1069547520i64, parsed: 1.5, comment: unaligned to 8 bytes! two packed floats in a QWORD?(1)
         public float Unknown8C;     // offset: 140, sz: 4, origin: 1069547520i64, parsed: 0, comment: unaligned to 8 bytes! two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(a1 + 136) = 1069547520i64;
         public float Unknown90;     // offset: 144, sz: 4, origin: -1021968384, parsed: -150        // line:   *(_DWORD *)(a1 + 144) = -1021968384;
@@ -59,9 +55,8 @@ namespace MBINCompiler.Models.Structs
         public float Unknown98;     // offset: 152, sz: 4, origin: 1060320051, parsed: 0.7        // line:   *(_DWORD *)(a1 + 152) = 1060320051;
         public float Unknown9C;     // offset: 156, sz: 4, origin: 1092616192, parsed: 10        // line:   *(_DWORD *)(a1 + 156) = 1092616192;
         public float UnknownA0;     // offset: 160, sz: 4, origin: 1085276160, parsed: 5.5        // line:   *(_DWORD *)(a1 + 160) = 1085276160;
-        public float UnknownA4;     // offset: 164, sz: 4, origin: 1053609165i64, parsed: 0.4, comment: unaligned to 8 bytes! two packed floats in a QWORD?(1)
-        public float UnknownA8;     // offset: 168, sz: 4, origin: 1053609165i64, parsed: 0, comment: unaligned to 8 bytes! two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(a1 + 164) = 1053609165i64;
-        public float UnknownAC;     // offset: 172, sz: 4, origin: 1086324736, parsed: 6        // line:   *(_DWORD *)(a1 + 172) = 1086324736;
+        [NMS(Size = 0xC, Ignore = true)]
+        public byte[] PaddingA4;        // offset: 212, sz: 12, comment: auto padding 
         public float UnknownB0;     // offset: 176, sz: 4, origin: 1109393408, parsed: 40        // line:   *(_DWORD *)(a1 + 176) = 1109393408;
         public float UnknownB4;     // offset: 180, sz: 4, origin: 1067030938i64, parsed: 1.2, comment: unaligned to 8 bytes! two packed floats in a QWORD?(1)
         public float UnknownB8;     // offset: 184, sz: 4, origin: 1067030938i64, parsed: 0, comment: unaligned to 8 bytes! two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(a1 + 180) = 1067030938i64;
@@ -75,12 +70,11 @@ namespace MBINCompiler.Models.Structs
 
         // missing 12 bytes at offset 208
         // could be padding, a undefined subroutine or a pointer accessing larger memory
-        [NMS(Size = 0xC, Ignore = true)]
-        public byte[] PaddingD4;        // offset: 212, sz: 12, comment: auto padding 
+
 
         public float UnknownE0;     // offset: 224, sz: 4, origin: 1065353216i64, parsed: 1, comment: unaligned to 8 bytes! two packed floats in a QWORD?(1)
         public float UnknownE4;     // offset: 228, sz: 4, origin: 1065353216i64, parsed: 0, comment: unaligned to 8 bytes! two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(a1 + 224) = 1065353216i64;
-        public float UnknownE8;     // offset: 232, sz: 4, origin: 1025758986, parsed: 0.04        // line:   *(_DWORD *)(a1 + 232) = 1025758986;
+        public int UnknownE8;     // offset: 232, sz: 4, origin: 1025758986, parsed: 0.04        // line:   *(_DWORD *)(a1 + 232) = 1025758986;
         public float UnknownEC;     // offset: 236, sz: 4, origin: 1056964608, parsed: 0.5        // line:   *(_DWORD *)(a1 + 236) = 1056964608;
         public float UnknownF0;     // offset: 240, sz: 4, origin: 1063876821, parsed: 0.912        // line:   *(_DWORD *)(a1 + 240) = 1063876821;
         public float UnknownF4;     // offset: 244, sz: 4, origin: 1065353216, parsed: 1        // line:   *(_DWORD *)(a1 + 244) = 1065353216;

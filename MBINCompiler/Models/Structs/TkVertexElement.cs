@@ -4,7 +4,7 @@ namespace MBINCompiler.Models.Structs
     {
         public int SemanticID;
         public int Size;
-        public int Type; // 0x140b(Vec4) or 0x1401(Vec2)
+        public int Type;
         public int Offset;
         public int Normalise;
 
@@ -13,7 +13,7 @@ namespace MBINCompiler.Models.Structs
         {
             return new[] { "PerVertex", "PerModel" };
         }
-
+        
         [NMS(Size = 8)]
         public string PlatformData;
     }

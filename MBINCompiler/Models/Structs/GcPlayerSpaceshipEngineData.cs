@@ -1,6 +1,6 @@
 ﻿namespace MBINCompiler.Models.Structs
 {
-    public class GcPlayerSpaceshipEngineData : NMSTemplate
+    public class GcPlayerSpaceshipEngineData : NMSTemplate  //size = 0x54
     {
         public float ThrustForce;
         public float MaxSpeed;

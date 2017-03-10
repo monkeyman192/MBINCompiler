@@ -8,7 +8,7 @@
         public Colour OutlineColour;
         public float OutlineWidth;
 
-        public float EdgeCount; // template does some weird stuff with this, might be positive values only?
+        public int EdgeCount;
 
         public float RotationBase;
 

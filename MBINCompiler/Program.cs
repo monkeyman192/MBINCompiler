@@ -18,7 +18,7 @@ namespace MBINCompiler
                 ScanMBINs(folder, ref types);
         }
 
-        static void DecompileFile(string input, string output)
+        static void DecompileFile(string input, string output, bool getVersion = false)
         {
             if (String.IsNullOrEmpty(output))
                 output = input;
@@ -30,24 +30,26 @@ namespace MBINCompiler
 
             // no error checking ^^ (todo: error checking)
             var file = new MBINFile(input);
-            file.Load();
+            file.Load(getVersion);
 
-            var data = file.GetData();
-            if (data == null)
+            if (!getVersion)
             {
-                Console.WriteLine($"Failed to deserialize template \"{file.Header.GetXMLTemplateName()}\", has the structure been mapped yet?");
-                return;
-            }
+                var data = file.GetData();
+                if (data == null)
+                {
+                    Console.WriteLine($"Failed to deserialize template \"{file.Header.GetXMLTemplateName()}\", has the structure been mapped yet?");
+                    return;
+                }
 
-            var xmlString = EXmlFile.WriteTemplate(data);
-            if (string.IsNullOrEmpty(xmlString))
-            {
-                Console.WriteLine($"Error serializing template \"{file.Header.GetXMLTemplateName()}\" to XML!");
-                return;
+                var xmlString = EXmlFile.WriteTemplate(data);
+                if (string.IsNullOrEmpty(xmlString))
+                {
+                    Console.WriteLine($"Error serializing template \"{file.Header.GetXMLTemplateName()}\" to XML!");
+                    return;
+                }
+                File.WriteAllText(output, xmlString);
+                Console.WriteLine($"XML data written to \"{output}\" successfully?");
             }
-
-            File.WriteAllText(output, xmlString);
-            Console.WriteLine($"XML data written to \"{output}\" successfully?");
         }
 
         static void CompileFile(string input, string output)
@@ -163,11 +165,27 @@ namespace MBINCompiler
         static void Main(string[] args)
         {
             string input, output;
+            bool getVer = false;
 
             if (args.Length < 1 || args[0] == "/?" || args[0] == "/help" || args[0] == "--help" || args[0] == "-h")
             {
                 PrintHelp();
                 return;
+            }
+
+            foreach (string arg in args)
+            {
+                if (arg == "-version" || arg == "-v")
+                {
+                    if (args[0] == "-version" || args[0] == "-v")
+                    {
+                        string ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                        Console.WriteLine(ver.Substring(0, ver.Length - 2));
+                        return;
+                    }
+                    if (args[1] == "-version" || args[1] == "-v")
+                        getVer = true;
+                }
             }
 
             try
@@ -183,7 +201,7 @@ namespace MBINCompiler
 
             string inputExtension = Path.GetExtension(input) ?? String.Empty;
             if (inputExtension.Equals(".mbin", StringComparison.OrdinalIgnoreCase) || input.EndsWith(".mbin.pc", StringComparison.OrdinalIgnoreCase))
-                DecompileFile(input, output);
+                DecompileFile(input, output, getVer);
             else if (inputExtension.Equals(".exml", StringComparison.OrdinalIgnoreCase)) 
                 CompileFile(input, output);
             else if (String.IsNullOrEmpty(inputExtension) && Directory.Exists(input))
@@ -206,7 +224,7 @@ namespace MBINCompiler
                 }
 
                 if (isMBin)
-                    DecompileFile(input, output);
+                    DecompileFile(input, output, getVer);
                 else
                     Console.WriteLine($"Unsupported file extension {inputExtension}!");
             }

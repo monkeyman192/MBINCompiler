@@ -1,6 +1,6 @@
 ﻿namespace MBINCompiler.Models.Structs
 {
-    public class GcSeed : NMSTemplate
+    public class GcSeed : NMSTemplate   // size = 0x10
     {
         /* 0x00 */ public long Seed;
         /* 0x08 */ public bool UseSeedValue;

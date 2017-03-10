@@ -2,8 +2,8 @@
 
 namespace MBINCompiler.Models.Structs
 {
-    public class MissionTable : NMSTemplate
+    public class GcMissionTable : NMSTemplate
     {
-        public List<string> Missions;
+        public List<GcGenericMissionSequence> Missions;
     }
 }

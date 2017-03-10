@@ -1,4 +1,6 @@
-﻿namespace MBINCompiler.Models.Structs
+﻿using System.Collections.Generic;
+
+namespace MBINCompiler.Models.Structs
 {
     public class TkGraphicsSettings : NMSTemplate
     {
@@ -6,14 +8,16 @@
 		/* 0x04 */ public bool FullScreen;
         /* 0x05 */ public bool Borderless;
         /* 0x08 */ public int Monitor;
-        /* 0x10  public TkMonitorNames; */
+        [NMS(Size = 0x10, Ignore = true)]
+        /* 0x10 */ public byte[] Padding10;
+        /* 0x10  public TkMonitorNames; */      // unknown type... whatever it is, it is a list...
 		/* 0x20 */ public bool UseScreenResolution;
         /* 0x24 */ public int ResolutionWidth;
         /* 0x28 */ public int ResolutionHeight;
-        /* 0x2C */ public int[] VSync;
+        /* 0x2C */ public int VSyncEx;
 		public string[] VsyncValues()
 		{
-			return new string[] { "On", "Off", "Adaptive" };
+			return new string[] { "Off", "On", "Adaptive" };
 		}
         /* 0x30 */ public bool GSync;
         /* 0x34 */ public int ShadowDetail;
@@ -64,7 +68,7 @@
 		/* 0x78 */ public bool ShowRequirementsWarnings;
 		/* 0x79 */ public bool RemoveBaseBuildingRestrictions;
 		[NMS(Size = 3, Ignore = true)]
-		/* 0x80 */ public byte[] Padding80;
+		/* 0x7A */ public byte[] Padding80;
 		/* 0x7C */ public int BaseBuildingLimit;
     }
 }

@@ -20,9 +20,8 @@ namespace MBINCompiler.Models.Structs
         /* 0x0AC */ public int PlanetLimit;
         /* 0x0B0 */ public int RegionLimit;
 
-        [NMS(Size = 8, Ignore = true)]
-        /* 0x0B4 */ public byte[] PaddingB4;
-        /* 0x0B4 */ //public PerBaseLimits;   // don't know what this is? something 8 bytes
+        [NMS(Size = 2, Ignore = false)]
+        /* 0x0B4 */ public int[] PerBaseLimits;
         /* 0x0BC */ public float CollisionRadiusFactor;
         /* 0x0C0 */ public bool CheckCollision;
         /* 0x0C1 */ public bool CollidesWithPlayer;
@@ -32,8 +31,10 @@ namespace MBINCompiler.Models.Structs
 
         [NMS(Size = 0x10)]
         /* 0x0C8 */ public string Group;
-        /* 0x0D8 */ public bool DontStore;
-        [NMS(Size = 7, Ignore = true)]
+
+        /* 0x0D8 */
+        public bool DontStore;
+        [NMS(Size = 3, Ignore = true)]
         /* 0x0D9 */ public byte[] PaddingD9;
         /* 0x0DC */ public float CameraRotDeg;
         /* 0x0E0 */ public int ComplexityCost;
@@ -43,6 +44,7 @@ namespace MBINCompiler.Models.Structs
         [NMS(Size = 0x20)]
         /* 0x0F0 */ public string Hint;
         /* 0x110 */ public bool RemoveGrass;
-        // add 3 more bytes as padding?
+        [NMS(Size = 7, Ignore = true)]
+        /* 0x114 */ public byte[] Padding114;
     }
 }

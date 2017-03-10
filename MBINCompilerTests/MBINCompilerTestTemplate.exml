@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="MBINCompilerTestTemplate">
+  <Property name="TestBoolTrue" value="True" />
+  <Property name="TestBoolFalse" value="False" />
+  <Property name="TestBool3" value="True" />
+  <Property name="TestInt16" value="1337" />
+  <Property name="TestInt32" value="2448" />
+  <Property name="TestInt64" value="3559" />
+  <Property name="TestFloat" value="1337" />
+  <Property name="TestEnumYes" value="1" />
+  <Property name="TestEnumNo" value="0" />
+  <Property name="TestString" value="SixteenByteStrng" />
+  <Property name="TestDynamicString" value="VariableSizeString.xml">
+    <Property name="Value" value="NoWayToControlItIt'sTotallyDynamicWheneverYou'reAround" />
+  </Property>
+  <Property name="Test0x80ByteStringList">
+    <Property value="NMSString0x80.xml">
+      <Property name="Value" value="FirstEntry" />
+    </Property>
+    <Property value="NMSString0x80.xml">
+      <Property name="Value" value="SecondEntry" />
+    </Property>
+    <Property value="NMSString0x80.xml">
+      <Property name="Value" value="ThirdEntry" />
+    </Property>
+  </Property>
+  <Property name="TestListInt">
+    <Property value="14099" />
+    <Property value="14355" />
+    <Property value="1999844113" />
+    <Property value="14611" />
+    <Property value="-2008792030" />
+  </Property>
+</Data>

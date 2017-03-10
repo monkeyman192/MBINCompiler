@@ -9,6 +9,7 @@
         [NMS(Size = 7, EnumValue = new[] { "River", "Crater", "Arches", "ArchesSmall", "Blobs", "BlobsSmall", "Substance" })]
         public float[] Features;
 
+        // Caves should be an Enum like the ones above but just with one value...
         public float UndergroundCaves;
         public float WaterActiveFrequency;
         public float HighWaterActiveFrequency;

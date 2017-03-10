@@ -126,8 +126,9 @@ namespace MBINCompiler.Models.Structs
         public GcCameraShakeData Unknown11E0;
         public GcCameraShakeData Unknown12A0;
         public GcCameraShakeData Unknown1360;
+        public GcCameraShakeData Unknown1420;
 
-        public float Unknown1420;     // offset: 0x1420, sz: 4, origin: 0x3D75C28F, parsed: 0.06        // line:   *(_DWORD *)(v1 + 0x1420) = 0x3D75C28F;
+        public float Unknown1420a;     // offset: 0x1420, sz: 4, origin: 0x3D75C28F, parsed: 0.06        // line:   *(_DWORD *)(v1 + 0x1420) = 0x3D75C28F;
         public float Unknown1424;     // offset: 0x1424, sz: 4, origin: 0x3E428F5C, parsed: 0.19        // line:   *(_DWORD *)(v1 + 0x1424) = 0x3E428F5C;
         public float Unknown1428;     // offset: 0x1428, sz: 4, origin: 0x43FA0000, parsed: 500        // line:   *(_DWORD *)(v1 + 0x1428) = 0x43FA0000;
         public float Unknown142C;     // offset: 0x142C, sz: 4, origin: 0x3E19999A, parsed: 0.15        // line:   *(_DWORD *)(v1 + 0x142C) = 0x3E19999A;

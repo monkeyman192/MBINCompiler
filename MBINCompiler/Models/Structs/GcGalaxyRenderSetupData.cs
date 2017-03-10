@@ -40,9 +40,9 @@ namespace MBINCompiler.Models.Structs
         public float VignetteBase;
         public Vector2f LensFlareExpandTowards;
 
-        [NMS(Size = 10, Ignore = true)]
+        [NMS(Size = 0xA)]
         public Colour[] MapLargeAreaPrimaryColours;
-        [NMS(Size = 10, Ignore = true)]
+        [NMS(Size = 0xA)]
         public Colour[] MapLargeAreaSecondaryColours;
     }
 }

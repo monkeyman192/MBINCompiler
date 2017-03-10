@@ -4,7 +4,7 @@
 
 namespace MBINCompiler.Models.Structs
 {
-    public class GcSpaceshipGlobals : NMSTemplate
+    public class GcSpaceshipGlobals_old : NMSTemplate
     {
         // generated with MBINRawTemplateParser
 

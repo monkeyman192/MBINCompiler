@@ -4,7 +4,7 @@
     {
         [NMS(Size = 0x20)]
         public string Locator;
-        [NMS(Size = 6)]
+        [NMS(Size = 7)]
         public NMSString0x80[] LSystems;
     }
 }

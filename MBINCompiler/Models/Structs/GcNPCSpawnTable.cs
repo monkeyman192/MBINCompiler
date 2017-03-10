@@ -4,9 +4,12 @@ namespace MBINCompiler.Models.Structs
 {
     public class GcNPCSpawnTable : NMSTemplate
     {
-        public List<NMSString0x80> NPCModelNames;
-        //public NPCRaceScale;
-        //public List UniqueNPCs;
-        //public List PlacementInfos;
+        [NMS(Size=7,Ignore =false)]
+        /* 0x000 */ public NMSString0x80[] NPCModelNames;
+        [NMS(Size = 7, Ignore = false)]
+        /* 0x380 */ public float[] NPCRaceScale;
+
+        public List<GcUniqueNPCSpawnData> UniqueNPCs;
+        public List<GcNPCPlacementInfo> PlacementInfos;
     }
 }

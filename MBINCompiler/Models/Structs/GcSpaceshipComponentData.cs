@@ -10,5 +10,7 @@
         public float MaxHeadPitchDown;
         public int BaseHealth;
         public float FoVFixedDistance;
+        [NMS(Size = 0x80)]
+        public string WheelModel;
     }
 }

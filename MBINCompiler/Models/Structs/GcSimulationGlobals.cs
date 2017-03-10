@@ -37,7 +37,7 @@
         public string PlanetMaterial;
         [NMS(Size = 0x80)]
         public string PlanetWaterMaterial;
-        [NMS(Size = 4)]
+        [NMS(Size = 6)]
         public NMSString0x80[] TerrainLODMaterials;
         [NMS(Size = 0x10)]
         public NMSString0x80[] BiomeTilemapTextures;
@@ -45,5 +45,7 @@
         public string WarpTunnelScene;
         [NMS(Size = 0x80)]
         public string WarpTunnelBlackHoleScene;
+        [NMS(Size = 0x80)]
+        public string WarpPortalScene;
     }
 }

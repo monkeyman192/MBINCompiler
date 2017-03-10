@@ -2,7 +2,7 @@
 {
     public class GcHeavyAirColourData : NMSTemplate
     {
-        public Colour Colour1;
-        public Colour Colour2;
+        /* 0x000 */ public Colour Colour1;
+        /* 0x010 */ public Colour Colour2;
     }
 }

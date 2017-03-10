@@ -9,10 +9,7 @@
         public Colour SunColour;
         public Colour FogColour;
         public Colour HeightFogColour;
-
-        [NMS(Size = 0x10)]
-        public byte[] SkyGradientSpeed; // not sure what type this is?
-
+        public Vector4f SkyGradientSpeed;
         public Colour LightColour;
         public Colour CloudColour1;
         public Colour CloudColour2;

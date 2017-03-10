@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,8 +52,93 @@
     <Compile Include="Models\EXmlBase.cs" />
     <Compile Include="Models\EXmlData.cs" />
     <Compile Include="Models\EXmlProperty.cs" />
+    <Compile Include="Models\Structs\GcAtlasDiscoveryMetadata.cs" />
+    <Compile Include="Models\Structs\GcAtlasDiscoveryData.cs" />
+    <Compile Include="Models\Structs\GcAtlasRecvVoxel.cs" />
+    <Compile Include="Models\Structs\GcAtmosphereList.cs" />
+    <Compile Include="Models\Structs\GcAudioWwiseRTPCs.cs" />
+    <Compile Include="Models\Structs\GcGalaxyAudioSetupData.cs" />
+    <Compile Include="Models\Structs\GcCreatureLegIKComponentData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyRenderAnostreakData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyStarColours.cs" />
+    <Compile Include="Models\Structs\GcGalaxyStarAttributesData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyCameraData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyWaypointTypes.cs" />
+    <Compile Include="Models\Structs\GcInteractionBufferType.cs" />
+    <Compile Include="Models\Structs\GcPlayerComponentData.cs" />
+    <Compile Include="Models\Structs\GcFoliageComponentData.cs" />
+    <Compile Include="Models\Structs\GcMessageCrime.cs" />
+    <Compile Include="Models\Structs\GcAtlasMessage.cs" />
+    <Compile Include="Models\Structs\GcCreatureGroups.cs" />
+    <Compile Include="Models\Structs\GcMiningComponentData.cs" />
+    <Compile Include="Models\Structs\GcRobotLaserData.cs" />
+    <Compile Include="Models\Structs\GcNPCWorkerData.cs" />
+    <Compile Include="Models\Structs\GcPersistentBase.cs" />
+    <Compile Include="Models\Structs\GcPersistentBBObjectData.cs" />
+    <Compile Include="Models\Structs\GcPersistentBaseEntry.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingTriggerAction.cs" />
+    <Compile Include="Models\Structs\GcSolarSystemEventWarpPlayer.cs" />
+    <Compile Include="Models\Structs\GcSolarSystemEventWarpOut.cs" />
+    <Compile Include="Models\Structs\GcSolarSystemEventWarpIn.cs" />
+    <Compile Include="Models\Structs\GcSpaceshipGlobals.cs" />
+    <Compile Include="Models\Structs\GcTeleportEndpoint.cs" />
+    <Compile Include="Models\Structs\GcBuildingDistribution.cs" />
+    <Compile Include="Models\Structs\GcGameMode.cs" />
+    <Compile Include="Models\Structs\GcMissionConditionBasePartNear.cs" />
+    <Compile Include="Models\Structs\GcMissionConditionCriticalMissionsDone.cs" />
+    <Compile Include="Models\Structs\GcMissionConditionGameMode.cs" />
+    <Compile Include="Models\Structs\GcMissionConsequenceRemoveScanEvent.cs" />
+    <Compile Include="Models\Structs\GcMissionConditionBaseClaimed.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceStartScanEvent.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWait.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWaitForBuild.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWaitForMessage.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWaitForRefuel.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWaitForRepair.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceWaitForScanEvent.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceMarker.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceProductAmountNeeded.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGroup.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGetInShip.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGetToScanEvent.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGetUnits.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGetUnitsToBuyItem.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGatherForRepair.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGatherForRefuel.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceGatherForBuild.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceBuild.cs" />
+    <Compile Include="Models\Structs\GcMissionSequenceShowMessage.cs" />
+    <Compile Include="Models\Structs\GcMetaBallComponentData.cs" />
     <Compile Include="Models\Structs\GcAtlasDownloadType.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingComponentData.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingEntry.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingGroup.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingObjectDecorationTypes.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingObjectTypes.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingPalette.cs" />
+    <Compile Include="Models\Structs\GcColouriseComponentData.cs" />
+    <Compile Include="Models\Structs\GcDecorationComponentData.cs" />
+    <Compile Include="Models\Structs\GcNPCPlacementComponentData.cs" />
+    <Compile Include="Models\Structs\GcPlanetSize.cs" />
+    <Compile Include="Models\Structs\TkInstanceWindComponentData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyVoxelAttributesData.cs" />
+    <Compile Include="Models\Structs\TkListedPaletteTexture.cs" />
+    <Compile Include="Models\Structs\TkProceduralModelList.cs" />
+    <Compile Include="Models\Structs\TkRandomComponentData.cs" />
+    <Compile Include="Models\Structs\TkVolumeTriggerType.cs" />
+    <Compile Include="Models\Structs\GcSpaceSkyColours.cs" />
+    <Compile Include="Models\Structs\GcZoomData.cs" />
+    <Compile Include="Models\Structs\TkMaterialMetaData.cs" />
+    <Compile Include="Models\Structs\GcUniqueNPCSpawnData.cs" />
+    <Compile Include="Models\Structs\GcNPCSpawnTable.cs" />
+    <Compile Include="Models\Structs\GcPersistentBaseTypes.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingProperties.cs" />
+    <Compile Include="Models\Structs\GcMissionTable.cs" />
+    <Compile Include="Models\Structs\GcGenericMissionSequence.cs" />
     <Compile Include="Models\Structs\GcBuildingCostPartCount.cs" />
+    <Compile Include="Models\Structs\GcBaseBuildingTable.cs" />
+    <Compile Include="Models\Structs\GcInteractionBaseBuildingState.cs" />
+    <Compile Include="Models\Structs\GcNPCHabitationComponentData.cs" />
     <Compile Include="Models\Structs\GcCostNPCHabitation.cs" />
     <Compile Include="Models\Structs\GcCostInstalledTech.cs" />
     <Compile Include="Models\Structs\GcModelViewCollection.cs" />
@@ -67,6 +153,7 @@
     <Compile Include="Models\Structs\GcGalacticAddressData.cs" />
     <Compile Include="Models\Structs\GcLightProperties.cs" />
     <Compile Include="Models\Structs\GcNPCHabitationType.cs" />
+    <Compile Include="Models\Structs\GcNPCPlacementInfo.cs" />
     <Compile Include="Models\Structs\GcPlanetInfo.cs" />
     <Compile Include="Models\Structs\GcPlayerMissionProgress.cs" />
     <Compile Include="Models\Structs\GcPlayerSpaceshipControlData.cs" />
@@ -89,6 +176,7 @@
     <Compile Include="Models\Structs\GcShipAIAttackData.cs" />
     <Compile Include="Models\Structs\GcShipAIPlanetPatrolData.cs" />
     <Compile Include="Models\Structs\GcTestMetadata.cs" />
+    <Compile Include="Models\Structs\TkUserServiceAuthProvider.cs" />
     <Compile Include="Models\Structs\GcWordKnowledge.cs" />
     <Compile Include="Models\MBINHeader.cs" />
     <Compile Include="Models\NMSAttribute.cs" />
@@ -183,7 +271,7 @@
     <Compile Include="Models\Structs\GcPlanetHeavyAirData.cs" />
     <Compile Include="Models\Structs\GcPlanetLife.cs" />
     <Compile Include="Models\Structs\GcPlanetSentinelData.cs" />
-    <Compile Include="Models\Structs\GcPlanetSize.cs" />
+    <Compile Include="Models\Structs\GcGalaxyMarkerTypes.cs" />
     <Compile Include="Models\Structs\GcPlanetWaterData.cs" />
     <Compile Include="Models\Structs\GcPlanetWeatherData.cs" />
     <Compile Include="Models\Structs\GcPlayerStat.cs" />
@@ -261,6 +349,7 @@
     <Compile Include="Models\Structs\GcBiomeData.cs" />
     <Compile Include="Models\Structs\GcLeveledStatData.cs" />
     <Compile Include="Models\Structs\GcLeveledStatTable.cs" />
+    <Compile Include="Models\Structs\GcMissileComponentData.cs" />
     <Compile Include="Models\Structs\GcNGuiFileBrowserRecents.cs" />
     <Compile Include="Models\Structs\GcNGuiPreset.cs" />
     <Compile Include="Models\Structs\GcNGuiPresetGraphic.cs" />
@@ -406,6 +495,7 @@
     <Compile Include="Models\Structs\TkControllerButtonLookup.cs" />
     <Compile Include="Models\Structs\TkControllerList.cs" />
     <Compile Include="Models\Structs\TkControllerSpecification.cs" />
+    <Compile Include="Models\Structs\GcChainComponentData.cs" />
     <Compile Include="Models\Structs\TkDynamicChainComponentData.cs" />
     <Compile Include="Models\Structs\TkEngineSettings.cs" />
     <Compile Include="Models\Structs\TkEngineSettingsMapping.cs" />
@@ -442,6 +532,7 @@
     <Compile Include="Models\Structs\TkModelDescriptorList.cs" />
     <Compile Include="Models\Structs\TkModelRendererCameraData.cs" />
     <Compile Include="Models\Structs\TkModelRendererData.cs" />
+    <Compile Include="Models\Structs\TkMonitorName.cs" />
     <Compile Include="Models\Structs\TkNGuiEditorLayout.cs" />
     <Compile Include="Models\Structs\TkNGuiEditorStyleData.cs" />
     <Compile Include="Models\Structs\TkNGuiLayoutList.cs" />
@@ -557,7 +648,9 @@
     <Compile Include="Models\Structs\TkVoxelGeneratorSettingsElement.cs" />
     <Compile Include="Models\Structs\Unfinished\GcAISpaceshipGlobals.cs" />
     <Compile Include="Models\Structs\Unfinished\GcCameraGlobals.cs" />
+    <Compile Include="Models\Structs\Unfinished\GcGalaxyGlobals_old.cs" />
     <Compile Include="Models\Structs\Unfinished\GcPlayerGlobals.cs" />
+    <Compile Include="Models\Structs\Unfinished\GcPlayerGlobals_old.cs" />
     <Compile Include="Models\Structs\Unfinished\GcUIGlobals.cs" />
     <Compile Include="Models\Structs\Unfinished\GcCreatureGlobals.cs" />
     <Compile Include="Models\Structs\Unfinished\GcAudioGlobals.cs" />
@@ -578,8 +671,18 @@
     <Compile Include="Models\Structs\Unfinished\GcSkyGlobals.cs" />
     <Compile Include="Models\Structs\Unfinished\GcSmokeTestOptions.cs" />
     <Compile Include="Models\Structs\Unfinished\GcSolarGenerationGlobals.cs" />
-    <Compile Include="Models\Structs\Unfinished\GcSpaceshipGlobals.cs" />
+    <Compile Include="Models\Structs\Unfinished\GcSpaceshipGlobals-old.cs" />
     <Compile Include="Models\Structs\Unfinished\GcTerrainGlobals.cs" />
+    <Compile Include="Models\Structs\GcFlyingSnakeData.cs" />
+    <Compile Include="Models\Structs\GcGalaxyStarAnomaly.cs" />
+    <Compile Include="Models\Structs\GcCameraAerialViewData.cs" />
+    <Compile Include="Models\Structs\Unused\GcCameraSpawnSetupData.cs" />
+    <Compile Include="Models\Structs\Unused\GcPlayerSpaceshipAim.cs" />
+    <Compile Include="Models\Structs\GcPlayerSpaceshipWarpData.cs" />
+    <Compile Include="Models\Structs\Unused\GcPlayerStickData.cs" />
+    <Compile Include="Models\Structs\Unused\GcResourceCollectEffect.cs" />
+    <Compile Include="Models\Structs\Unused\GcSpaceshipTravelData.cs" />
+    <Compile Include="Models\Structs\Unused\GcTerrainOverlyColours.cs" />
     <Compile Include="Models\Structs\VariableSizeString.cs" />
     <Compile Include="Models\Structs\Vector2f.cs" />
     <Compile Include="Models\Structs\Vector3i.cs" />
@@ -591,6 +694,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

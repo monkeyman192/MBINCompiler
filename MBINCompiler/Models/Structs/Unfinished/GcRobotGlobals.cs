@@ -42,49 +42,8 @@
         [NMS(Size = 8, Ignore = true)]
         public byte[] PaddingF8;
 
-        [NMS(Size = 0x10)]
-        public string Unknown100;
-
-        public float Unknown110;
-        public float Unknown114;
-        public int Unknown118;
-        public float Unknown11C;
-
-        public float Unknown120;
-        public float Unknown124;
-        public float Unknown128;
-        [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding12C;
-
-        public float Unknown130; // maybe int?
-        public float Unknown134; // maybe int?
-        public float Unknown138;
-        [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding13C;
-
-        public Vector4f Unknown140;
-
-        [NMS(Size = 0x10)]
-        public string Unknown150;
-
-        public float Unknown160;
-        public float Unknown164;
-        public float Unknown168;
-        public float Unknown16C;
-
-        public float Unknown170;
-        public float Unknown174;
-        public float Unknown178;
-        [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding17C;
-
-        public float Unknown180; // maybe int?
-        public float Unknown184; // maybe int?
-        public float Unknown188;
-        [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding18C;
-
-        public Vector4f Unknown190;
-        public GcDroneData Unknown1A0;
+        /* 0x100 */ public GcRobotLaserBeamData WalkerLaserData;
+        /* 0x150 */ public GcRobotLaserBeamData QuadLaserData;
+        /* 0x1A0 */ public GcDroneData DroneData;
     }
 }

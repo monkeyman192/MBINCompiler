@@ -20,5 +20,8 @@
         {
             return new[] { "Primary", "Alternative1", "Alternative2", "Alternative3", "Alternative4", "Unique", "MatchGround", "None" };
         }
+
+        //[NMS(Size = 0x4, Ignore = true)]
+        //public byte[] padding0x8;     // this is needed when it is in a list... but not when it isn't...
     }
 }

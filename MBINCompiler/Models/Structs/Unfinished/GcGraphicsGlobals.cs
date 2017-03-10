@@ -51,7 +51,7 @@
         public float Unknown218;
         public float Unknown21C;
 
-        public float EngineRenderDistance;
+        public float Unknown220;
         public float Unknown224;
         public float Unknown228;
         public float Unknown22C;
@@ -81,7 +81,7 @@
         public float Unknown278;
         public float Unknown27C;
 
-        public float Unknown280;
+        public float EngineRenderDistance;
         public float Unknown284;
         public float Unknown288;
         public float Unknown28C;

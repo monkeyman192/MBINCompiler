@@ -14,7 +14,8 @@ namespace MBINCompiler.Models.Structs
         public List<GcAIShipSpawnData> TraderSpawns;
         public List<GcAIShipSpawnData> AmbientSpawns;
         public List<GcAIShipSpawnData> BattleSpawns;
-        public List<GcAIShipSpawnData> InitialBattlePirateSpawns;
-        public List<GcAIShipSpawnData> InitialBattleStandardSpawns;
+        public List<GcAIShipSpawnData> BattleInitialStandardSpawns;
+        public List<GcAIShipSpawnData> BattleInitialPirateSpawns;
+        public List<GcAIShipSpawnData> BattleSecondaryPirateSpawns;
     }
 }

@@ -10,7 +10,7 @@ namespace MBINCompiler.Models.Structs
         [NMS(Size = 0x8, Ignore = true)]
         public byte[] Padding18;
 
-        public Vector4f SpiralPull; // vector3f
+        public Vector4f SpiralPull;
         public Vector2f SpiralSizeScale;
 
         public float RareSunChance;

@@ -29,7 +29,8 @@
         public float Unknown290; // -11188.0
         public float Unknown294; // 3950.0
         public float Unknown298; // 9578.0
-        public float Unknown29C; // 0.0
+        [NMS(Size = 0x4, Ignore = true)]
+        public byte[] Padding29C;       // was a float, but this doesn't appear in the exe...
         public float Unknown2A0; // 10.0
 
         [NMS(Size = 0xC, Ignore = true)]

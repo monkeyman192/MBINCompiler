@@ -17,13 +17,13 @@ namespace MBINCompiler.Models.Structs
         [NMS(Size = 8)]
         /* 0x0120 */ public GcPlanetGenerationInputData[] PlanetGenerationInputs;
         [NMS(Size = 8)]
-        /* 0x0320 */ public int[] PlanetOrbits; // maybe float[]?
+        /* 0x0320 */ public int[] PlanetOrbits;
         /* 0x0340 */ public Vector4f SunPosition;
         [NMS(Size = 0x10)]
         /* 0x0350 */ public string AsteroidSubstanceID;
-        /* 0x0360 */ public int NumTradeRoutes; // maybe float?
-        /* 0x0364 */ public int NumVisibleTradeRoutes; // maybe float?
-        /* 0x0368 */ public int MaxNumFreighters; // maybe float?
+        /* 0x0360 */ public int NumTradeRoutes;
+        /* 0x0364 */ public int NumVisibleTradeRoutes;
+        /* 0x0368 */ public int MaxNumFreighters;
         /* 0x036C */ public bool StartWithFreighters;
         [NMS(Size = 3, Ignore = true)]
         /* 0x036D */ public byte[] Padding36D;
@@ -47,23 +47,16 @@ namespace MBINCompiler.Models.Structs
         [NMS(Size = 4, Ignore = true)]
         /* 0x051C */ public byte[] Padding51C;
         /* 0x0520 */ public GcPlanetColourData Colours;
-        /* 0x1100 */ public GcLightProperties Light;
-        /* 0x1130 */ public int SkyType;
-        public string[] SkyTypeValues()
-        {
-            return new[] { "Default", "Multicolour", "Dark", "Anomaly" };
-        }
-
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x1134 */ public byte[] Padding1134;
-        /* 0x1140 */ public GcSpaceSkyProperties Sky;
+        /* 0x11F0 */ public GcLightProperties Light;
+        /* 0x1220 */ public GcSpaceSkyProperties Sky;
+        /* 0x12B0 */ public GcSpaceSkyColours SkyColours;
         [NMS(Size = 0x80)]
-        /* 0x1270 */ public string HeavyAir;
+        /* 0x1360 */ public string HeavyAir;
         [NMS(Size = 6)]
-        /* 0x12F0 */ public GcAISpaceshipPreloadCacheDataTable[] FactionShips;
-        /* 0x1350 */ public GcAlienRace InhabitingRace;
+        /* 0x13E0 */ public GcAISpaceshipPreloadCacheDataTable[] FactionShips;
+        /* 0x1440 */ public GcAlienRace InhabitingRace;
 
         [NMS(Size = 0xC, Ignore = true)]
-        /* 0x1354 */ public byte[] Padding1354;
+        /* 0x1444 */ public byte[] Padding1444;
     }
 }

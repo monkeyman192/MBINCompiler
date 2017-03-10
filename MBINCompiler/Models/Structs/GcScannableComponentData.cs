@@ -10,5 +10,8 @@
         public GcScannerIconTypes IconType;
         public bool PermanentIcon;
         public float PermanentIconRadius;
+
+        [NMS(Size = 0x4, Ignore = true)]
+        public byte[] Padding;
     }
 }

@@ -5,16 +5,16 @@ namespace MBINCompiler.Models.Structs
     public class GcInteractionActivationCost : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string SubstanceId;
-        public List<NMSString0x10> AltIds;
+        /* 0x00 */ public string SubstanceId;
+        /* 0x10 */ public List<NMSString0x10> AltIds;
 
-        public int Cost; // might be float
-        public bool Repeat;
+        /* 0x20 */ public int Cost;
+        /* 0x24 */ public bool Repeat;
 
         [NMS(Size = 3, Ignore = true)]
-        public byte[] Padding25;
+        /* 0x25 */ public byte[] Padding25;
 		
 		[NMS(Size = 0x10)]
-		public string RequiredTech;
+		/* 0x28 */ public string RequiredTech;
     }
 }

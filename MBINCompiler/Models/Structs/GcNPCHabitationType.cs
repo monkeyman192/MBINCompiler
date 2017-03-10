@@ -5,7 +5,7 @@
         public int NPCHabitationType;
         public string[] NPCHabitationTypeValues()
         {
-            return new[] { "None", "WeaponsExpert", "Farmer", "Builder", "Vehicles", "Scientist" };
+            return new[] {"WeaponsExpert", "Farmer", "Builder", "Vehicles", "Scientist" };
         }
     }
 }
