@@ -68,5 +68,8 @@ namespace libMBIN.Models.Structs
         /* 0x1D88 */ public GcAlienRace InhabitingRace;
         /* 0x1D8C */ public GcPlanetTradingData TradingData;
         /* 0x1D94 */ public GcPlayerConflictData ConflictData;
+        
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x1D98 */ public byte[] EndPadding;
     }
 }
