@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x1DA0)] // changed size
+    [NMS(Size = 0x1DA0)]
     public class GcSolarSystemData : NMSTemplate
     {
         /* 0x0000 */ public GcSeed Seed;
@@ -32,12 +32,13 @@ namespace libMBIN.Models.Structs
         /* 0x03B0 */ public Vector2f FreighterTimer;
         /* 0x03B8 */ public Vector2f PirateTimer;
         /* 0x03C0 */  public Vector2f FlybyTimer;
-        [NMS(Size = 8, Ignore = true)]
-        /* 0x03D0 */ public byte[] Padding3C8;
-        /* 0x0468 */ public GcSpaceStationSpawnData SpaceStationSpawn;
+
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x03C8 */ public byte[] Padding3C8;
+        /* 0x03F0 */ public GcSpaceStationSpawnData SpaceStationSpawn;
         /* 0x0510 */ public GcSolarSystemTraderSpawnData TraderSpawnOnOutposts;
         /* 0x0524 */ public GcSolarSystemTraderSpawnData TraderSpawnInStations;
-        /* 0x0538 */ public List<GcSolarSystemLocator> Locator;
+        /* 0x0538 */ public List<GcSolarSystemLocator> Locators;
         /* 0x0548 */ public List<NMSTemplate> AsteroidGenerators;
         /* 0x0558 */ public int AsteroidLevel;
 
@@ -52,10 +53,10 @@ namespace libMBIN.Models.Structs
 
         /* 0x0560 */ public GcPlanetColourData PlanetColours;
         
-        /* 0x1750 */ public GcLightProperties Light;
-        /* 0x1780 */ public GcSpaceSkyProperties Sky;
+        /* 0x1C20 */ public GcLightProperties Light;
+        /* 0x1C50 */ public GcSpaceSkyProperties Sky;
         
-        /* 0x1CF0 */ public int ScreenFilter;
+        /* 0x1CF0 */ public GcScreenFilters ScreenFilter;
         
         [NMS(Size = 0x80)] 
         /* 0x1CF4 */ public string HeavyAir;
@@ -70,6 +71,8 @@ namespace libMBIN.Models.Structs
         /* 0x1D94 */ public GcPlayerConflictData ConflictData;
         
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1D98 */ public byte[] EndPadding;
+        /* 0x1D98 */ public byte[] Padding1DA0;
+
+        
     }
 }
