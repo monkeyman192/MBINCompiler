@@ -6,7 +6,7 @@ namespace libMBIN.Models.Structs
     public class GcSolarSystemData : NMSTemplate
     {
         /* 0x0000 */ public GcSeed Seed;
-        [NMS(Size = 0x80)] 
+        [NMS(Size = 0x80)]
         /* 0x0010 */ public string Name;
         /* 0x0090 */ public GcSolarSystemClass Class;
         /* 0x0094 */ public GcGalaxyStarTypes StarType;
