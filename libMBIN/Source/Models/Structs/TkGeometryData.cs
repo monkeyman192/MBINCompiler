@@ -37,10 +37,8 @@ namespace libMBIN.Models.Structs
 
         /* 0x120 */ public List<int> IndexBuffer;
         /* 0x130 */ public List<TkMeshMetaData> StreamMetaDataArray;
-        /* 0x130 */
-        public List<float> VertexStream;
-        /* 0x140 */
-        public List<float> SmallVertexStream;
+        ///* 0x130 */ public List<float> VertexStream;        // this is just here so that the code compiles
+        ///* 0x140 */ public List<float> SmallVertexStream;   // this is just here so that the code compiles
 
 
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
@@ -92,6 +90,7 @@ namespace libMBIN.Models.Structs
 
                     return true;
 
+                /*
                 case nameof(VertexStream):
                 case nameof(SmallVertexStream):
                     writer.Align(8, 0);
@@ -165,7 +164,7 @@ namespace libMBIN.Models.Structs
                         streamData = ms.ToArray();
 
                     }
-                        /*
+                        
                         using (var ms = new MemoryStream())
                         using (var writer2 = new BinaryWriter(ms))
                         {
@@ -177,13 +176,13 @@ namespace libMBIN.Models.Structs
                                     writer2.Write(halfVertex.value);
                                 }
                             streamData = ms.ToArray();
-                        }*/
+                        }
 
                     var listBytes = new List<byte>(streamData);
                     additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos2, listBytes));
                     addtDataIndex++;
 
-                    return true;
+                    return true*/
             }
 
             return false;
@@ -228,7 +227,7 @@ namespace libMBIN.Models.Structs
                     reader.Align(0x8, 0);
 
                     return indices;
-
+                /*
                 case nameof(VertexStream):
                 case nameof(SmallVertexStream):
 
@@ -289,17 +288,17 @@ namespace libMBIN.Models.Structs
                     {
                         ushort vertex = reader.ReadUInt16();
                         vertices.Add((float)Half.ToHalf(vertex));
-                    }*/
+                    }
 
                     reader.BaseStream.Position = listEndPosition;
                     reader.Align(0x8, 0);
 
-                    return vertices;
+                    return vertices;*/
             }
 
             return null;
         }
-
+        /*
         private List<int> GetTypeLayouts(string fieldName, BinaryReader reader)
         {
             List<int> LayoutTypes = new List<int>();
@@ -336,6 +335,6 @@ namespace libMBIN.Models.Structs
             reader.BaseStream.Position = StartPosition;
             // pretend we did nothing...
             return LayoutTypes;
-        }
+        }*/
     }
 }

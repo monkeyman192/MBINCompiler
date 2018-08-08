@@ -10,6 +10,6 @@ namespace libMBIN.Models.Structs
         /* 0x80 */ public ulong Hash;
         /* 0x88 */ public int VertexDataSize;
         /* 0x8C */ public int IndexDataSize;
-        /* 0x90 */ public List<float> MeshDataStream;   // not really but yeah
+        ///* 0x90 */ public List<float> MeshDataStream;   // not really but yeah
     }
 }

@@ -65,7 +65,7 @@ namespace libMBIN.Models.Structs
         /* 0x1D74 */ public byte[] Padding1D74;
         
         
-        /* 0x1D78 */ public List<GcAISpaceshipPreloadCacheDataTable> SystemShips;
+        /* 0x1D78 */ public GcAISpaceshipPreloadCacheDataTable SystemShips;
         /* 0x1D88 */ public GcAlienRace InhabitingRace;
         /* 0x1D8C */ public GcPlanetTradingData TradingData;
         /* 0x1D94 */ public GcPlayerConflictData ConflictData;

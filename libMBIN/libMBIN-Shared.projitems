@@ -39,6 +39,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCharacterCustomisationData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCharacterCustomisationSaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCharacterCustomisationBoneScaleData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcMissionConditionHasLegacyBasePending.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcRepairTechData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcFleetExpeditionSaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcFleetFrigateSaveData.cs" />
