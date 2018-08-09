@@ -30,7 +30,7 @@
         /* 0x0820 */ public GcCameraFollowSettings CharacterUnderwaterCam;
         /* 0x0900 */ public float ThirdPersonCameraChangeBlendTime;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x0904 */ public byte[] Padding900;
+        /* 0x0904 */ public byte[] Padding904;
         /* 0x0908 */ public GcCameraFollowSettings BuggyFollowCam;
         /* 0x09E8 */ public GcCameraFollowSettings BikeFollowCam;
         /* 0x0AC8 */ public GcCameraFollowSettings TruckFollowCam;
@@ -148,7 +148,7 @@
         /* 0x1294 */ public float FirstPersonSlerpAway;
         /* 0x1298 */ public float FirstPersonSlerpTowards;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x129C */ public byte[] Padding10DC;
+        /* 0x129C */ public byte[] Padding129C;
         [NMS(Size = 0x1E)]
         /* 0x12A0 */ public GcCameraShakeData[] CameraShakeTable;
         /* 0x2920 */ public float BobAmount;
@@ -170,7 +170,7 @@
         /* 0x2960 */ public float DebugCameraSpaceFastFactor;
         /* 0x2964 */ public float OffsetCamFOV;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x2968 */ public byte[] Padding27A8;
+        /* 0x2968 */ public byte[] Padding2968;
         /* 0x2970 */ public Vector4f OffsetCamOffset;
         /* 0x2980 */ public Vector4f OffsetCamRotation;
         /* 0x2990 */ public float ObjectFocusTime;
@@ -205,8 +205,8 @@
         /* 0x2A04 */ public float FoVAdjust;
         /* 0x2A08 */ public bool FollowDrawCamProbes;
         [NMS(Size = 0x3, Ignore = true)]
-        /* 0x2A09 */ public byte[] Padding2845;
-        /* 0x2A0C */ public GcCameraAnimationData AmbientCameraAnimations;
+        /* 0x2A09 */ public byte[] Padding2A09;
+        /* 0x2A0C */ public GcCameraAnimationData CameraAnimations;
         /* 0x2A90 */ public GcCameraAnimationData AmbientDroneAnimations;
         [NMS(Size = 0x80)]
         /* 0x2B14 */ public string CameraAmbientAnimationsData;
