@@ -5,6 +5,10 @@
     {
         public bool RootMotionEnabled;
         public bool BlockPlayerMovement;
-        public int BlockPlayerWeapon;       // dummy for now...
+        public int BlockPlayerWeapon;
+        public string[] BlockPlayerWeaponValues()
+        {
+            return new[] { "Unblocked", "Sheathed", "OutButCannotFire" };
+        }
     }
 }
