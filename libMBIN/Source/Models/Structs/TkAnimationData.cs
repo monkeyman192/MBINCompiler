@@ -2,7 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x130)]
+    [NMS(Size = 0x138)]
     public class TkAnimationData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -49,7 +49,7 @@ namespace libMBIN.Models.Structs
         /* 0x128 */ public float AdditiveBaseFrame;
         /* 0x12C */ public TkAnimationGameData GameData;
 
-        [NMS(Size = 1, Ignore = true)]
-        /* 0x12F */ public byte[] EndPadding;
+        [NMS(Size = 4, Ignore = true)]
+        /* 0x134 */ public byte[] EndPadding;
     }
 }
