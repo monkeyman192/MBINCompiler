@@ -9,6 +9,7 @@ namespace MBINCompilerTests.Database.Tables.TemplateSize {
 
         public override string Name => NAME;
         public override string[] ColumnHeadings => COLUMN_HEADINGS;
+        public override int KeyColumn => 1;
 
     }
 
