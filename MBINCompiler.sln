@@ -11,6 +11,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "libMBIN-Shared", "libMBIN\l
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libMBIN-DLL", "libMBIN-DLL\libMBIN-DLL.csproj", "{F2D295A6-D082-4EB4-8FC9-F4687F674939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libMBIN-DLL_portable", "libMBIN-DLL_portable\libMBIN-DLL_portable.csproj", "{AEFFF580-0D0E-4D76-84DE-DAE2CBFE5D28}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		libMBIN\libMBIN-Shared.projitems*{b6850f17-d8fd-48de-9cf2-240f1ba87236}*SharedItemsImports = 13
@@ -34,6 +36,10 @@ Global
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEFFF580-0D0E-4D76-84DE-DAE2CBFE5D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEFFF580-0D0E-4D76-84DE-DAE2CBFE5D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEFFF580-0D0E-4D76-84DE-DAE2CBFE5D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEFFF580-0D0E-4D76-84DE-DAE2CBFE5D28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
