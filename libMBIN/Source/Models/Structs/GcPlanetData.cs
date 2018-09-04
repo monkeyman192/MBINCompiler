@@ -6,7 +6,7 @@ namespace libMBIN.Models.Structs
 	public class GcPlanetData : NMSTemplate
 	{
         [NMS(Size = 0x80)]
-		/* 0x0000 */ public string name;
+		/* 0x0000 */ public string Name;
 		/* 0x0080 */ public GcPlanetLife Life;
 		/* 0x0084 */ public GcPlanetLife CreatureLife;
 		/* 0x0088 */ public GcPlanetHazardData Hazard;
