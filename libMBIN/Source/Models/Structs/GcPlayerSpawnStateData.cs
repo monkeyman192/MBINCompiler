@@ -10,7 +10,7 @@
         /* 0x040 */ public int LastKnownPlayerState;
         public string[] LastKnownPlayerStateValues()
         {
-            return new[] { "OnFoot", "InShip", "InStation" };
+            return new[] { "OnFoot", "InShip", "InStation", "AboardFleet" };
         }
 		[NMS(Size = 0xC, Ignore = true)]
         /* 0x044 */ public byte[] Padding54; 

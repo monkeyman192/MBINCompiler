@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace libMBIN.Models.Structs       // size: 0x4E0
+namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x4E0)]
     public class GcSceneSettings : NMSTemplate
     {
         [NMS(Size = 0x80)]
@@ -15,20 +16,8 @@ namespace libMBIN.Models.Structs       // size: 0x4E0
         [NMS(Size = 0x80)]
         /* 0x110 */ public string SolarSystemFile;
 
-        [NMS(Size = 0x80)]
-        /* 0x190 */ public string PlanetFiles1;
-
-        [NMS(Size = 0x80)]
-        /* 0x210 */ public string PlanetFiles2;
-
-        [NMS(Size = 0x80)]
-        /* 0x290 */ public string PlanetFiles3;
-
-        [NMS(Size = 0x80)]
-        /* 0x310 */ public string PlanetFiles4;
-
-        [NMS(Size = 0x80)]
-        /* 0x390 */ public string PlanetFiles5;
+        [NMS(Size = 0x5)]
+        /* 0x190 */ public NMSString0x80[] PlanetFiles;
 
         /* 0x410 */ public List<NMSString0x80> ShipPreloadFiles;
         /* 0x420 */ public bool SpawnShip;

@@ -2,6 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x18)]
     public class GcRewardUpgradeBase : NMSTemplate
     {
         public int UpgradeBaseType;
@@ -11,7 +12,6 @@ namespace libMBIN.Models.Structs
         }
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        public TkResourceFilterList MatchingBaseTypes;
+        public List<GcPersistentBaseTypes> MatchingBaseTypes;
     }
 }

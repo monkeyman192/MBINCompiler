@@ -3,8 +3,8 @@
 namespace libMBIN.Models.Structs
 {
     [NMS(Size = 0x10)]
-    public class GcInteractionBuffer : NMSTemplate
+    public class GcCustomisationPresets : NMSTemplate
     {
-        public List<GcInteractionData> Interactions;
+        public List<GcCustomisationPreset> Presets;
     }
 }

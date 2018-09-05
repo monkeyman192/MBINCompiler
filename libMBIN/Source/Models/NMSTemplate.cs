@@ -377,7 +377,7 @@ namespace libMBIN.Models
                         writer.Write(listEnding);
 
                         var data = new Tuple<long, object>( listPos, (IList) fieldData );
-                        if (additionalData.Count == additionalData.Capacity) {
+                        if (addtDataIndex >= additionalData.Count) {
                             additionalData.Add( data );
                         } else {
                             additionalData.Insert( addtDataIndex, data );

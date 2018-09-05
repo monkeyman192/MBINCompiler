@@ -1,20 +1,17 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
-    public class GcTerrainEditsBuffer : NMSTemplate      // size: 0xACC0
+    [NMS(Size = 0xAAC0)]
+    public class GcTerrainEditsBuffer : NMSTemplate
     {
         [NMS(Size = 0x80)]
-        /* 0x0000 */ public ulong[] GalacticAddresses;       // maybe?
+        /* 0x0000 */ public ulong[] GalacticAddresses;
         [NMS(Size = 0x80)]
-        /* 0x0400 */ public int[] BufferOffsets;
+        /* 0x0400 */ public int[] BufferSizes;
         [NMS(Size = 0x80)]
-        /* 0x0600 */ public int[] BufferSizes;
+        /* 0x0600 */ public byte[] BufferAges;
         [NMS(Size = 0x80)]
-        /* 0x0800 */ public byte[] BufferAges;
-        [NMS(Size = 0x80)]
-        /* 0x0880 */ public Vector4f[] BufferAnchors;
+        /* 0x0680 */ public Vector4f[] BufferAnchors;
         [NMS(Size = 0x1388)]
-        /* 0x1080 */ public GcTerrainEdit[] Edits;
+        /* 0x0E80 */ public GcTerrainEdit[] Edits;
     }
 }

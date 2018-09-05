@@ -7,7 +7,7 @@
         /* 0x080 */ public int KillTarget;
         public string[] KillTargetValues()
         {
-            return new[] { "Robots", "Drones", "Quads", "Walkers", "Predators", "Creatures", "Pirates", "Traders"};
+            return new[] { "Robots", "Drones", "Quads", "Walkers", "Predators", "Creatures", "Pirates", "Traders", "Fiends", "FeedCreatures"};
         }
         /* 0x084 */ public int AmountMin;
         /* 0x088 */ public int AmountMax;

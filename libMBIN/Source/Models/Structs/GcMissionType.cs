@@ -5,7 +5,7 @@
         public int MissionType;
         public string[] MissionTypeValues()
         {
-            return new[] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy" };
+            return new[] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy", "Photo", "Feeding" };
         }
     }
 }
