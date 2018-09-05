@@ -2,18 +2,19 @@
 
 namespace libMBIN.Models.Structs
 {
-    public class TkAnimPoseComponentData : NMSTemplate      // size: 0xC8
+    [NMS(Size = 0xC8)]
+    public class TkAnimPoseComponentData : NMSTemplate
     {
-        public List<TkAnimPoseData> PoseAnims;
+        /* 0x00 */ public List<TkAnimPoseData> PoseAnims;
 
         [NMS(Size = 0x80)]
-        public string Filename;
+        /* 0x10 */ public string Filename;
 
-        public List<TkAnimPoseCorrelationData> Correlations;
-        public List<TkAnimPoseExampleData> Examples;
-        public List<float> CorrelationMat;
+        /* 0x90 */ public List<TkAnimPoseCorrelationData> Correlations;
+        /* 0xA0 */ public List<TkAnimPoseExampleData> Examples;
+        /* 0xB0 */ public List<float> CorrelationMat;
 
-        public float AdultCorrelationValue;
+        /* 0xC0 */ public float AdultCorrelationValue;
 
         [NMS(Size = 4, Ignore = true)]
         public byte[] PaddingC4;

@@ -12,51 +12,53 @@ namespace libMBIN.Models.Structs
         /* 0x040 */ public GcInteractionType ForceInteractionType;
         /* 0x044 */ public bool ForceBroken;
         /* 0x045 */ public bool ForceFixed;
-        /* 0x046 */ public bool AlwaysShow;
+        /* 0x046 */ public bool ForceOverridesAll;
+        /* 0x047 */ public bool AlwaysShow;
+        /* 0x048 */ public bool IsCommunityPortalOverride;
 
-        /* 0x048 */ public int EventStartType;
+        /* 0x04C */ public int EventStartType;
         public string[] EventStartTypeValues()
         {
             return new[] { "None", "Special", "Discovered", "Timer", "ObjectScan", "LeaveBuilding" };
         }
-        /* 0x04C */ public int EventEndType;
+        /* 0x050 */ public int EventEndType;
         public string[] EventEndTypeValues()
         {
             return new[] { "None", "Proximity", "Interact", "EnterBuilding", "TimedInteract" };
         }
-        /* 0x050 */ public int EventPriority;
+        /* 0x054 */ public int EventPriority;
         public string[] EventPriorityValues()
         {
             return new[] { "Regular", "High" };
         }
 
-        /* 0x54 */ public bool CanEndFromOutsideMission;
+        /* 0x058 */ public bool CanEndFromOutsideMission;
 
-        /* 0x058 */ public int BuildingLocation;
+        /* 0x05C */ public int BuildingLocation;
         public string[] BuildingLocationValues()
         {
             return new[] { "Nearest", "AllNearest", "Random", "RandomOnNearPlanet", "RandomOnFarPlanet" };
         }
-        /* 0x05C */ public int BuildingType;
+        /* 0x060 */ public int BuildingType;
         public string[] BuildingTypeValues()
         {
             return new[] { "Any", "AnyShelter", "AnyNPC", "BuildingClass", "SpaceStation", "SpaceAnomaly",
                            "Atlas", "Freighter", "FreighterBase", "ExternalPlanetBase", "PlanetBaseTerminal",
                            "Expedition", "TutorialShelter", "MPMissionFreighter"};
         }
-        /* 0x060 */ public GcBuildingClassification BuildingClass;
-        /* 0x064 */ public bool AllowFriendBases;
+        /* 0x064 */ public GcBuildingClassification BuildingClass;
+        /* 0x068 */ public bool AllowFriendBases;
 
-        /* 0x068 */ public int SolarSystemLocation;
+        /* 0x06C */ public int SolarSystemLocation;
         public string[] SolarSystemLocationValues()
         {
             return new[] { "Local", "Near", "LocalOrNear", "NearWithNoExpeditions", "FromList"};
         }
 
-        /* 0x06C */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
-        /* 0x088 */ public bool ForceRestartInteraction;
-        [NMS(Size = 7, Ignore = true)]
-        /* 0x081 */ public byte[] Padding89;
+        /* 0x070 */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
+        /* 0x08C */ public bool ForceRestartInteraction;
+        [NMS(Size = 3, Ignore = true)]
+        /* 0x08D */ public byte[] Padding8D;
         [NMS(Size = 0x10)]
         /* 0x090 */ public string HasReward;
         [NMS(Size = 0x20)]

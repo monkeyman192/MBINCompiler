@@ -1,6 +1,7 @@
 namespace libMBIN.Models.Structs
 {
-    public class GcScannerIcons : NMSTemplate       // size: 0x5BF0
+    [NMS(Size = 0x5BF0)]
+    public class GcScannerIcons : NMSTemplate
     {
         /* 0x0000 */ public TkTextureResource TaggedBuilding;
         /* 0x0084 */ public TkTextureResource Ship;

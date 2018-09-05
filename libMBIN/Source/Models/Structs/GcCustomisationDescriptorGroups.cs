@@ -5,6 +5,6 @@ namespace libMBIN.Models.Structs
     [NMS(Size = 0x10)]
     public class GcCustomisationDescriptorGroups : NMSTemplate
     {
-        public List<GcCustomisationDescriptorGroup> DescriptorGroups;
+        public List<GcCustomisationDescriptorGroupOptions> DescriptorGroups;
     }
 }

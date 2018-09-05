@@ -24,11 +24,23 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\NMSAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\NMSTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Colour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcAtlasRecvMonumentList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcStatIconTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationBoneScales.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationUIData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationGroups.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationRace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationCameraData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcDoShipReceiveMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcDoShipReceiveHail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcLegacyItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcLegacyItemTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcMissionConditionStatChange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkMetadataReadMask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcPlayerEmote.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcPlayerEmoteList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationUI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkAnimVectorBlendNodeData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkAnimVectorBlendNode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkAnim2dBlendNode.cs" />
@@ -1138,6 +1150,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Vector2f.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Vector3f.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Vector3i.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Quaternion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Vector4f.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Version.cs" />
   </ItemGroup>

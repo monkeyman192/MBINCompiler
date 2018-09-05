@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x110)]
+    [NMS(Size = 0x190)]
     public class GcAtlasMonument : NMSTemplate
     {
         /* 0x000 */ public GcUniverseAddressData UniverseAddress;
