@@ -7,5 +7,11 @@
         {
             return new[] { "Checkpoint", "Start", "Finish"};
         }
+        public int RaceType;
+        public string[] RaceTypeValues()
+        {
+            return new[] { "Vehicle", "Spaceship" };
+        }
+        public float Radius;
     }
 }

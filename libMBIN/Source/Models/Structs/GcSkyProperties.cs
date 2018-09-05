@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcSkyProperties : NMSTemplate      // size: 0x30            probably used in a global...
+    [NMS(Size = 0x30)]
+    public class GcSkyProperties : NMSTemplate
     {
         /* 0x000 */ public float AtmosphereThickness;
         /* 0x004 */ public float HorizonMultiplier;

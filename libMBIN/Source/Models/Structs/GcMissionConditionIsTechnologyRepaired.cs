@@ -2,6 +2,7 @@
 {
     public class GcMissionConditionIsTechnologyRepaired : NMSTemplate
     {
-        public GcTechnologyTableEnum Technology;
+        public GcTechnologyTableEnum Technology;        // I bet this has got bigger...
+        public int RepairedComponents;
     }
 }

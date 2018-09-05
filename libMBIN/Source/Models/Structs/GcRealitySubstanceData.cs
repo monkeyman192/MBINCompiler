@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcRealitySubstanceData : NMSTemplate       // size: 0x200
+    [NMS(Size = 0x240)]
+    public class GcRealitySubstanceData : NMSTemplate
     {
         [NMS(Size = 0x20)]
         /* 0x000 */ public string Name;
@@ -23,13 +24,16 @@
         /* 0x1C8 */ public GcRarity Rarity;
         /* 0x1CC */ public GcLegality Legality;
         /* 0x1D0 */ public int ChargeValue;
-        /* 0x1D4 */ public GcItemPriceModifiers Cost;
-        /* 0x1E8 */ public float NormalisedValueOnWorld;
-        /* 0x1EC */ public float NormalisedValueOffWorld;
-        /* 0x1F0 */ public GcTradeCategory tradeCategory;
-        /* 0x1F4 */ public bool WikiEnabled;
-        /* 0x1F8 */ public float EconomyInfluenceMultiplier;
-        [NMS(Size = 0x4, Ignore = true)]
-        public byte[] EndPadding;
+        /* 0x1D4 */ public int StackMultiplier;
+        /* 0x1D8 */ public GcItemPriceModifiers Cost;
+        /* 0x1EC */ public float NormalisedValueOnWorld;
+        /* 0x1F0 */ public float NormalisedValueOffWorld;
+        /* 0x1F4 */ public GcTradeCategory tradeCategory;
+        /* 0x1F8 */ public bool WikiEnabled;
+        /* 0x1FC */ public float EconomyInfluenceMultiplier;
+        [NMS(Size = 0x20)]
+        /* 0x200 */ public string PinObjective;
+        [NMS(Size = 0x20)]
+        /* 0x220 */ public string PinObjectiveTip;
     }
 }

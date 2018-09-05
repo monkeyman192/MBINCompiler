@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class TkNoiseGridData : NMSTemplate // 0x184 bytes       // possibly in a global??
+    [NMS(Size = 0x1A8)]
+    public class TkNoiseGridData : NMSTemplate
     {
         /* 0x000 */ public bool Active;
         /* 0x004 */ public int MaximumLOD;
@@ -35,17 +36,18 @@
         /* 0x0B4 */ public float RegionRatio;
         /* 0x0B8 */ public float RegionScale;
         /* 0x0BC */ public TkNoiseUberLayerData TurbulenceNoiseLayer;
-        /* 0x124 */ public float Yaw;
-        /* 0x128 */ public float Pitch;
-        /* 0x12C */ public float Roll;
-        /* 0x130 */ public float VaryYaw;
-        /* 0x134 */ public float VaryPitch;
-        /* 0x138 */ public float VaryRoll;
-        /* 0x13C */ public float SmoothRadius;
-        /* 0x140 */ public int SeedOffset;
-        /* 0x144 */ public float RandomPrimitive;
-        /* 0x148 */ public TkNoiseSuperFormulaData SuperFormula1;
-        /* 0x158 */ public TkNoiseSuperFormulaData SuperFormula2;
-        /* 0x168 */ public TkNoiseSuperPrimitiveData SuperPrimitive;
+        /* 0x144 */ public float Yaw;
+        /* 0x148 */ public float Pitch;
+        /* 0x14C */ public float Roll;
+        /* 0x150 */ public float VaryYaw;
+        /* 0x154 */ public float VaryPitch;
+        /* 0x158 */ public float VaryRoll;
+        /* 0x15C */ public float SmoothRadius;
+        /* 0x160 */ public int SeedOffset;
+        /* 0x164 */ public float RandomPrimitive;
+        /* 0x168 */ public TkNoiseSuperFormulaData SuperFormula1;
+        /* 0x178 */ public TkNoiseSuperFormulaData SuperFormula2;
+        /* 0x188 */ public TkNoiseSuperPrimitiveData SuperPrimitive;
+        /* 0x1A4 */ public float TileBlendMeters;
     }
 }

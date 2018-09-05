@@ -1,6 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x1B0, Alignment = 0x8)]
+    [NMS(Size = 0x1D8, Alignment = 0x8)]
     public class GcMissionSequenceCommunicator : NMSTemplate
     {
         [NMS(Size = 0x80)]

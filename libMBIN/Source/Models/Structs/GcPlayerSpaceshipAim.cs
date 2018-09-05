@@ -1,5 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x18)]
     public class GcPlayerSpaceshipAim : NMSTemplate
     {
         /* 0x000 */ public float AimAngleMin;

@@ -1,21 +1,18 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    // doesn't seem like the game uses any of the values here?
     public class GcPlacementGlobals : NMSTemplate
     {
-        public float Unknown0;
-        public float Unknown4;
-        public float Unknown8;
-        public int UnknownIntC;
-
-        public float Unknown10;
-        public float Unknown14;
-        public float Unknown18;
-        public int UnknownInt1C;
-
-        public float Unknown20;
-        public float Unknown24;
-        public float Unknown28;
-        public float Unknown2C;
+        /* 0x0 */ public float MinFrequency;
+        /* 0x4 */ public float MinDensity;
+        /* 0x8 */ public float MinPatchSize;
+        /* 0xC */ public int MinPatchVariance;
+        /* 0x10 */ public float MaxFrequency;
+        /* 0x14 */ public float MaxDensity;
+        /* 0x18 */ public float MaxPatchSize;
+        /* 0x1C */ public int MaxPatchVariance;
+        /* 0x20 */ public float InterpValueVariance;
+        /* 0x24 */ public float HighInterpValue;
+        /* 0x28 */ public float MidInterpValue;
+        /* 0x2C */ public float LowInterpValue;
     }
 }

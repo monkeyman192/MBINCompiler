@@ -2,6 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x90)]
     public class GcTeleportEndpoint : NMSTemplate
     {
         /* 0x00 */ public GcUniverseAddressData UniverseAddress;
@@ -10,7 +11,11 @@ namespace libMBIN.Models.Structs
         public int TeleporterType;
         /* 0x40 */ public string[] TeleporterTypeValues()
         {
-            return new[] { "Base", "SpaceStation" };
+            return new[] { "Base", "SpaceStation", "Atlas", "PlanetAwayFromShip", "ExternalBase" };
         }
+        [NMS(Size = 0x40)]
+        /* 0x44 */ public string Name;
+        [NMS(Size = 0xC)]
+        /* 0x84 */ public byte[] EndPadding;
     }
 }

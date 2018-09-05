@@ -7,7 +7,7 @@ namespace libMBIN.Models.Structs
         public int BaseBuildingDecorationType;
         public string[] BaseBuildingDecorationTypeValues()
         {
-            return new[] { "Normal", "SurfaceNormal", "Ceiling", "Terrain", "Substance", "Interior", "Exterior", "Plant"};
+            return new[] { "Normal", "SurfaceNormal", "Ceiling", "Terrain", "Substance", "Plant", "BuildingSurfaceNormal"};
         }
     }
 }

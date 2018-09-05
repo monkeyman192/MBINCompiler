@@ -1,9 +1,10 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcBuildingDensity : NMSTemplate // 0x14 bytes
+    [NMS(Size = 0x10)]
+    public class GcBuildingDensity : NMSTemplate
     {
         public float BuildingSpacing;
-        [NMS(Size = 0x4, EnumValue = new[] { "Cluster", "Large", "Small", "None" })]
+        [NMS(Size = 0x3, EnumValue = new[] { "Cluster", "Large", "Small"})]     // need to check
         public float[] BuildingClusterChance;
     }
 }

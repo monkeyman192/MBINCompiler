@@ -7,7 +7,7 @@ namespace libMBIN.Models.Structs
         public int MissionPageHint;
         public string[] MissionPageHintValues()
         {
-            return new[] { "None", "Suit", "Ship", "Vehicle", "Freighter", "Wiki", "MissionLog", "Discovery", "Journey" };
+            return new[] { "None", "Suit", "Ship", "Weapon", "Vehicle", "Freighter", "Wiki", "MissionLog", "Discovery", "Journey" };
         }
     }
 }

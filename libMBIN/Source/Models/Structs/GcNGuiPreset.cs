@@ -1,5 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x5330)]
     public class GcNGuiPreset : NMSTemplate
     {
         [NMS(Size = 0x80)]
@@ -17,6 +18,6 @@
         public GcNGuiLayoutData SpacingLayout;
 
         [NMS(Size = 4, Ignore = true)]
-        public byte[] Padding514C;
+        public byte[] Padding5300;
     }
 }

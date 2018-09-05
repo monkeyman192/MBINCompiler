@@ -1,19 +1,16 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcBuildingDefinitionTable : NMSTemplate        // size: 0x183B0
+    [NMS(Size = 0x335F8)]
+    public class GcBuildingDefinitionTable : NMSTemplate
     {
-        [NMS(Size = 5)]
-        /* 0x00000 */ public GcBuildingDensity[] BuildingProbabilities;
         [NMS(Size = 7, EnumValue = new string[0x7]{ "Traders", "Warriors", "Explorers", "Robots", "Atlas", "Diplomats", "None" })]
-        /* 0x00064 */ public GcBuildingFilenameList[] BuildingFiles;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x17A64 */ public byte[] Padding17A64;
-        [NMS(Size = 0x1B, EnumValue = new string[0x1B] {
+        /* 0x00000 */ public GcBuildingFilenameList[] BuildingFiles;
+        [NMS(Size = 0x1D, EnumValue = new string[0x1D] {
                 "None", "TerrainResource", "Shelter", "Abandoned", "Terminal", "Shop", "Outpost", "Waypoint",
                 "Beacon", "RadioTower", "Observatory", "Depot", "Factory", "Harvester", "Plaque", "Monolith",
                 "Portal", "Ruin", "Debris", "DamagedMachine", "DistressSignal", "LandingPad", "Base", "MissionTower",
-                "CrashedFreighter", "GraveInCave", "StoryGlitch"
+                "CrashedFreighter", "GraveInCave", "StoryGlitch", "TreasureRuins", "GameStartSpawn"
             })]
-        /* 0x17A68 */ public GcBuildingDefinitionData[] BuildingPlacement;
+        /* 0x32C00 */ public GcBuildingDefinitionData[] BuildingPlacement;
     }
 }

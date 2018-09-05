@@ -2,17 +2,15 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x118)]
+    [NMS(Size = 0x130)]
     public class GcSimpleInteractionComponentData : NMSTemplate
     {
-        // the custom interactions have been added to allow for exactly that. They are not handled differently by the game files and using them might cause interactions to be a bit... weird...
         public int SimpleInteractionType;
         /* 0x00 */ public string[] SimpleInteractionTypeValues()
         {
             return new[] { "Interact", "Treasure", "Beacon", "Scan", "Save", "CallShip", "CallVehicle", "Word", "Tech", "GenericReward", "Feed",
-                "Teleport", "ClaimBase", "TeleportStartPoint", "TeleportEndPoint", "Portal", "Chest", "ResourceHarvester",
-                "BaseCapsule", "Hologram", "NPCTerminalMessage", "VehicleBoot", "BiomeHarvester", "FreighterGalacticMap",
-                "CUSTOMINTERACTION0", "CUSTOMINTERACTION1", "CUSTOMINTERACTION2", "CUSTOMINTERACTION3", "CUSTOMINTERACTION4"};
+                "Ladder", "ClaimBase", "TeleportStartPoint", "TeleportEndPoint", "Portal", "Chest", "ResourceHarvester",
+                "BaseCapsule", "Hologram", "NPCTerminalMessage", "VehicleBoot", "BiomeHarvester", "FreighterGalacticMap"};
         }
 
         /* 0x04 */ public float InteractDistance;
@@ -25,14 +23,15 @@ namespace libMBIN.Models.Structs
         /* 0x20 */ public string TriggerAction;
         /* 0x30 */ public bool BroadcastTriggerAction;
         /* 0x34 */ public float Delay;
-
-        /* 0x38 */ public bool InteractIsCrime;
+        /* 0x38 */ public bool HideContents;
+        /* 0x39 */ public bool InteractIsCrime;
         /* 0x3C */ public int InteractCrimeLevel;
         /* 0x40 */ public GcInteractionActivationCost ActivationCost;
 
-        /* 0x78 */ public GcStatsEnum StatToTrack;        // 8 bytes. Not sure if this is right??
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x7C */ public byte[] Padding7C;
+        /* 0x78 */ public GcStatsEnum StatToTrack;
+        /* 0x7C */ public bool StartsBuried;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x7D */ public byte[] Padding7D;
 
         [NMS(Size = 0x20)]
         /* 0x80 */ public string Name;
@@ -46,5 +45,9 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x104 */ public byte[] Padding104;
         /* 0x108 */ public List<GcBaseBuildingTriggerAction> BaseBuildingTriggerActions;
+        /* 0x118 */ public List<int> RewardOverrideTable;       // I don't know...
+        /* 0x128 */ public bool UsePersonalPersistentBuffer;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x129 */ public byte[] EndPadding;
     }
 }

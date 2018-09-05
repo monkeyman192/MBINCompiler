@@ -5,7 +5,7 @@
         public int Weather;
         public string[] WeatherValues()
         {
-            return new[] { "Clear", "Dust", "Humid", "Snow", "Toxic", "Scorched", "Radioactive" };
+            return new[] { "Clear", "Dust", "Humid", "Snow", "Toxic", "Scorched", "Radioactive", "RedWeather", "GreenWeather", "BlueWeather" };
         }
     }
 }

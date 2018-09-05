@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcBuildingFilename : NMSTemplate // 0x200 bytes
+    [NMS(Size = 0x400)]
+    public class GcBuildingFilename : NMSTemplate
     {
         [NMS(Size = 0x80)]
         public string LSystem;
@@ -10,5 +11,13 @@
         public string UnderwaterLSystem;
         [NMS(Size = 0x80)]
         public string UnderwaterScene;
+        [NMS(Size = 0x80)]
+        public string AbandonedLSystem;
+        [NMS(Size = 0x80)]
+        public string AbandonedScene;
+        [NMS(Size = 0x80)]
+        public string AbandonedUnderwaterLSystem;
+        [NMS(Size = 0x80)]
+        public string AbandonedUnderwaterScene;
     }
 }

@@ -57,14 +57,27 @@
   </Choose>
   <ItemGroup>
     <Compile Include="IntRevTest.cs" />
-    <Compile Include="SharedTest.cs" />
-    <Compile Include="SerializationTests.cs" />
+    <Compile Include="Source\Database\AbstractRecord.cs" />
+    <Compile Include="Source\Database\Tables\GameDataMBIN.cs" />
+    <Compile Include="Source\Database\Utils.cs" />
+    <Compile Include="Source\Database\AbstractTable.cs" />
+    <Compile Include="Source\Database\Tables\GameDataFile.cs" />
+    <Compile Include="Source\Database\Tables\TemplateSize.cs" />
+    <Compile Include="Source\Tests\GameDataMBINAnalysis.cs" />
+    <Compile Include="Source\Tests\GameDataFileAnalysis.cs" />
+    <Compile Include="Source\Tests\TemplateSizeAnalysis.cs" />
+    <Compile Include="Source\Utils.cs" />
+    <Compile Include="Source\Logger.cs" />
+    <Compile Include="Source\RunSettings.cs" />
+    <Compile Include="Source\Tests\MBINCompilerTemplateTests.cs" />
+    <Compile Include="Source\Tests\WriteStringTests.cs" />
+    <Compile Include="Source\Tests\SerializationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemplateSizeTest.cs" />
+    <Compile Include="Source\Tests\TemplateSizeTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Config\default.runsettings" />
     <None Include="Config\user.runsettings" />
-    <None Include="Config\example.runsettings" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libMBIN-DLL\libMBIN-DLL.csproj">

@@ -7,15 +7,16 @@ using System.Reflection;
 
 namespace libMBIN.Models.Structs
 {
-    public class TkAnimNodeData : NMSTemplate       // size: 0x20
+    [NMS(Size = 0x50)]
+    public class TkAnimNodeData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string Node;
+        [NMS(Size = 0x40)]
+        /* 0x00 */ public string Node;
 
-        public bool CanCompress; // set to 0xFE, with following 3 padding bytes also set to 0xFE, might be padding indicating that this is 0? currently treated as 1...
-        public int RotIndex;
-        public int TransIndex;
-        public int ScaleIndex;
+        /* 0x40 */ public bool CanCompress; // set to 0xFE, with following 3 padding bytes also set to 0xFE, might be padding indicating that this is 0? currently treated as 1...
+        /* 0x44 */ public int RotIndex;
+        /* 0x48 */ public int TransIndex;
+        /* 0x4C */ public int ScaleIndex;
 
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {

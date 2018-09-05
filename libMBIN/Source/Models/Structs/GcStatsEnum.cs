@@ -7,7 +7,7 @@
         {
             return new[]
             {
-                "None", "INACTIVE", "BINOC_INTERACTABLE", "PLANTS_PLANTED", "SALVAGE_LOOTED"        // pretty sure this is totally wrong...
+                "None", "DEPOTS_BROKEN", "FPODS_BROKEN", "PLANTS_PLANTED", "SALVAGE_LOOTED", "TREASURE_FOUND", "QUADS_KILLED", "WALKERS_KILLED"
             };
         }
     }

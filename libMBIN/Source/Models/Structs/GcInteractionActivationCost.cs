@@ -7,7 +7,7 @@ namespace libMBIN.Models.Structs
     {
         [NMS(Size = 0x10)]
         /* 0x00 */ public string SubstanceId;
-        /* 0x10 */ public List<NMSString0x10> AltIds;           // are these meant to be 0x80's??
+        /* 0x10 */ public List<NMSString0x10> AltIds;
 
         /* 0x20 */ public int Cost;
         /* 0x24 */ public bool Repeat;

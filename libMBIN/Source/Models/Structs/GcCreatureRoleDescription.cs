@@ -1,5 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x40)]
     public class GcCreatureRoleDescription : NMSTemplate
     {
         public GcCreatureRoles CreatureRole;

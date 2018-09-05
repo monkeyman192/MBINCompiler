@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DO NOT MODIFY THIS EXAMPLE FILE.
+  
+  Copy this file to customize for your machine.
+  
+  Customized *.runsettings files should not be committed to the git repository.
+  They are unique to each development environment. Specifically, it's neither
+  practical nor legal to redistribute NMS game assets.
+  
+  Each developer must configure the path to the directory containing the unpacked
+  vanilla MBIN assets needed for unit testing.
+  
+  To use a .runsettings file, choose 'Select Test Settings File' from the 'Test->Test Settings' menu in Visual Studio
+  and select it from the file browser dialog.
+-->
+
+<RunSettings>  
+  
+  <TestRunParameters>
+    <!-- Valid Options: None, Error, Info -->
+    <Parameter name="LogLevel" value="Info" />
+
+    <!--If it's a relative path, the test project dir will be prepended.-->
+    <Parameter name="RootDatabaseDir" value="Database" />
+
+    <!--IMPORTANT:
+        You must specify the correct NMS version for the corresponding GameDataDir.-->
+    <Parameter name="GameDataVersion" value="1.37" />
+    <!--Required for some things like analysis reports and recompilation tests.-->
+    <Parameter name="GameDataDir" value="Path\To\Unpacked\GAMEDATA\Directory" />
+
+    <!--Used by SerializationTests.TestRecompileVanillaGameData.
+        Each thread can process a file simultaneously.
+        Each cpu core can process one thread at a time, so this should be
+        configured to match the development/test machine.-->
+    <Parameter name="MaxConcurrentThreads" value="4" />
+
+  </TestRunParameters>  
+ 
+</RunSettings>  

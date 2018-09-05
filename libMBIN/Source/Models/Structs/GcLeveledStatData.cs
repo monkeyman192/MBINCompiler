@@ -1,6 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x3C0)]
+    [NMS(Size = 0x528)]
     public class GcLeveledStatData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -26,5 +26,8 @@
         /* 0x07C */ public TkTextureResource Icon;
         [NMS(Size = 0xB)]
         /* 0x100 */ public GcStatLevelData[] StatLevels;
+        /* 0x520 */ public bool UseRankNotStats;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x521 */ public byte[] EndPadding;
     }
 }

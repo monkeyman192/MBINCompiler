@@ -1,67 +1,63 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
-    public class GcBaseBuildingEntry : NMSTemplate      // size: 0x130
+    [NMS(Size = 0x220)]
+    public class GcBaseBuildingEntry : NMSTemplate
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string ID;
-        /* 0x010 */ public TkModelResource Model;
-        /* 0x094 */ public GcBaseBuildingObjectTypes Type;
-        /* 0x098 */ public GcBaseBuildingObjectDecorationTypes DecorationType;
-        /* 0x09C */ public GcBiomeType Biome;
+        /* 0x010 */ public bool HasProduct;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x011 */ public byte[] Padding11;
+        /* 0x014 */ public TkModelResource SnapPoints;
+        /* 0x098 */ public TkModelResource Model;
+        /* 0x11C */ public TkModelResource InactiveModel;
+        /* 0x1A0 */ public GcBaseBuildingObjectTypes Type;
+        /* 0x1A4 */ public GcBaseBuildingObjectDecorationTypes DecorationType;
+        /* 0x1A8 */ public GcBiomeType Biome;
+        /* 0x1AC */ public int RegionSpawnLOD;
 
-        /* 0x0A0 */ public bool BuildableOnBase;
-        /* 0x0A1 */ public bool BuildableOnFreighter;
-        /* 0x0A2 */ public bool BuildableOnPlanet;
-        // 1 byte padding?
-        /* 0x0A4 */ public int GlobalLimit;
-        /* 0x0A8 */ public int SystemLimit;
-        /* 0x0AC */ public int PlanetLimit;
-        /* 0x0B0 */ public int RegionLimit;
+        /* 0x1B0 */ public bool BuildableOnBase;
+        /* 0x1B1 */ public bool BuildableOnFreighter;
+        /* 0x1B2 */ public bool BuildableOnPlanet;
+        /* 0x1B2 */ public bool BuildableUnderwater;
 
-        [NMS(Size = 3, Ignore = false)]
-        /* 0x0B4 */ public int[] PerBaseLimits;
-        /* 0x0C0 */ public float CollisionRadiusFactor;
-        /* 0x0C4 */ public bool CheckCollision;
-        /* 0x0C5 */ public bool CollidesWithPlayer;
-        /* 0x0C6 */ public bool CanPlaceOnItself;
-        [NMS(Size = 1, Ignore = true)]
-        /* 0x0C7 */ public byte[] PaddingC3;
+        /* 0x1B4 */ public int GlobalLimit;
+        /* 0x1B8 */ public int SystemLimit;
+        /* 0x1BC */ public int PlanetLimit;
+        /* 0x1C0 */ public int RegionLimit;
+        /* 0x1C4 */ public int PlanetBaseLimit;
+        /* 0x1C8 */ public int FreighterBaseLimit;
+        /* 0x1CC */ public float BaseLayoutRadius;
+        /* 0x1D0 */ public bool CheckCollision;
+        /* 0x1D4 */ public float CollisionScale;
+        /* 0x1D8 */ public bool CollidesWithPlayer;
+        /* 0x1D9 */ public bool CanPlaceOnItself;
+        [NMS(Size = 6, Ignore = true)]
+        /* 0x1DA */ public byte[] Padding1DA;
 
         [NMS(Size = 0x10)]
-        /* 0x0C8 */ public string Group;
+        /* 0x1E0 */ public string Group;
 
-        /* 0x0D8 */
-        public bool DontStore;
-        [NMS(Size = 3, Ignore = true)]
-        /* 0x0D9 */ public byte[] PaddingD9;
-        /* 0x0DC */ public float CameraRotDeg;
-        /* 0x0E0 */ public int ComplexityCost;
-        /* 0x0E4 */ public int ForceExtraIdx;
-        /* 0x0E8 */ public int SnappingLimit;
-        /* 0x0EC */ public int GroupSnappingLimit;
-        [NMS(Size = 0x20)]
-        /* 0x0F0 */ public string Hint;
-        /* 0x110 */ public bool RemoveGrass;
-        /* 0x111 */ public bool RemoveIfNoNeighbours;
-        /* 0x112 */ public bool ForceCheckPlayerInside;
+        /* 0x1F0 */ public bool DontStore;
+        /* 0x1F4 */ public int ComplexityCost;
+        /* 0x1F8 */ public int InactiveComplexityCost;
+        /* 0x1FC */ public int ForceExtraIdx;
+        /* 0x200 */ public int GroupSnappingLimit;
+        /* 0x204 */ public bool CanChangeColour;
+        /* 0x205 */ public bool CanChangeMaterial;
+        /* 0x206 */ public bool CanPickUp;
+        /* 0x208 */ public float ScanRadius;
+        /* 0x20C */ public bool RemovesAttachedDecoration;
+        /* 0x20D */ public bool EditsTerrain;
 
-        /* 0x114 */ public float PlayerInsideRadiusFactor;
-        /* 0x118 */ public bool CanChangeColour;
-        /* 0x119 */ public bool CanChangeMaterial;
-        /* 0x11A */ public bool EditsTerrain;
-
-        /* 0x11C */ public int BaseTerrainEditShape;
+        /* 0x210 */ public int BaseTerrainEditShape;
         public string[] BaseTerrainEditShapeValues()
         {
             return new[] { "Cube", "Cylinder"};
         }
 
-        /* 0x120 */ public float TerrainEditBaseYOffset;
-        /* 0x124 */ public float TerrainEditTopYOffset;
-        /* 0x128 */ public float TerrainEditBoundsScalar;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x12C */ public byte[] EndPadding;
+        /* 0x214 */ public float TerrainEditBaseYOffset;
+        /* 0x218 */ public float TerrainEditTopYOffset;
+        /* 0x21C */ public float TerrainEditBoundsScalar;
     }
 }

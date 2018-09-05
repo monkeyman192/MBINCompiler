@@ -12,12 +12,6 @@
         public float[] Radiation;
 
         [NMS(Size = 5)]
-        public float[] OutputTemperature;
-
-        [NMS(Size = 5)]
-        public float[] OutputToxicity;
-
-        [NMS(Size = 5)]
-        public float[] OutputRadiation;
+        public float[] LifeSupportDrain;
     }
 }

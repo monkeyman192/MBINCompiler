@@ -6,5 +6,6 @@
         public string File;
         public GcSpaceshipClasses Class;
         public GcAISpaceshipRoles AIRole;
+        public GcFrigateClass FrigateClass;
     }
 }

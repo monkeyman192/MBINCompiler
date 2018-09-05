@@ -1,23 +1,24 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x510)]
     public class GcCreatureRoleData : NMSTemplate
     {
-        public GcSeed Seed;
-        public GcCreatureTypes CreatureType;
+        /* 0x000 */ public GcSeed Seed;
+        /* 0x010 */ public GcCreatureTypes CreatureType;
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding14;
 
         [NMS(Size = 0x10)]
-        public string CreatureId;
-        public GcCreatureRoleDescription Description;
-        public GcCreatureInfo Info;
-        public GcTerrainTileType TileType;
-        public int Diet;
+        /* 0x018 */ public string CreatureId;
+        /* 0x028 */ public GcCreatureRoleDescription Description;
+        /* 0x068 */ public GcCreatureInfo Info;
+        /* 0x500 */ public GcTerrainTileType TileType;
+        /* 0x504 */ public int Diet;
         public string[] DietValues()
         {
             return new[] { "Carnivore", "Omnivore", "Herbivore" };
         }
-        public float BaseScale;
+        /* 0x508 */ public float BaseScale;
 
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding48C;

@@ -2,7 +2,7 @@
 {
     public class GcEntitlementRewardData : NMSTemplate
     {
-        [NMS(Size = 0x20)]
+        [NMS(Size = 0x10)]
         public string EntitlementId;
 
         [NMS(Size = 0x10)]

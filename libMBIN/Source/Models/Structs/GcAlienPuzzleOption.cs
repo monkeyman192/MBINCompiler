@@ -2,7 +2,8 @@
 
 namespace libMBIN.Models.Structs
 {
-    public class GcAlienPuzzleOption : NMSTemplate      // size: 0x2A8
+    [NMS(Size = 0x2A8)]
+    public class GcAlienPuzzleOption : NMSTemplate
     {
         [NMS(Size = 0x20)]
         /* 0x000 */ public string Name;
@@ -33,7 +34,7 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x20)]
         /* 0x250 */ public string NextInteraction;
         /* 0x270 */ public GcAudioWwiseEvents AudioEvent;
-        /* 0x274 */ public GcMissionConditionTest EnablingConditionTest;     // GcMissionConditionTest?
+        /* 0x274 */ public GcMissionConditionTest EnablingConditionTest;
         /* 0x278 */ public List<NMSTemplate> EnablingConditions;
         [NMS(Size = 0x20)]
         /* 0x288 */ public string EnablingConditionId;

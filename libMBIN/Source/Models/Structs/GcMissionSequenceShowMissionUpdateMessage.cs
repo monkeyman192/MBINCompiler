@@ -1,6 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x88)]
+    [NMS(Size = 0x8C)]
     public class GcMissionSequenceShowMissionUpdateMessage : NMSTemplate
     {
         /* 0x0 */ public int MissionUpdateMessage;
@@ -9,9 +9,14 @@
             return new[] { "Start", "End" };
         }
         /* 0x4 */ public bool SetMissionSelected;
+        /* 0x5 */ public bool WaitForMessageOver;
+        /* 0x6 */ public bool ShowChangeMissionNotify;
+        /* 0x8 */ public int PlayMusicSting;
+        public string[] PlayMusicStingValues()
+        {
+            return new[] {"None", "Start", "End" };
+        }
         [NMS(Size = 0x80)]
-        /* 0x5 */ public string DebugText;
-        [NMS(Size = 0x3, Ignore = true)]
-        public byte[] EndPadding;
+        /* 0xC */ public string DebugText;
     }
 }

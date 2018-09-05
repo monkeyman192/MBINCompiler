@@ -1,19 +1,21 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcNodeActivationAction : NMSTemplate   // size: 0x88 
+    [NMS(Size = 0x108)]
+    public class GcNodeActivationAction : NMSTemplate
     {
         public int NodeActiveState;
-        /*0x00 */ public string[] NodeActiveStateValues()
+        /* 0x000 */ public string[] NodeActiveStateValues()
         {
-            return new[] { "Activate", "Deactivate", "Toggle" };
+            return new[] { "Activate", "Deactivate", "Toggle", "Add", "Remove", "RemoveChildren" };
         }
 
         [NMS(Size = 0x80)]
-        /* 0x04 */ public string Name;
-        /* 0x84 */ public bool IncludePhysics;
-        /* 0x85 */ public bool NotifyNPC;
-        /* 0x86 */ public bool UseMasterModel;
-        [NMS(Size = 1, Ignore = true)]
-        /* 0x87 */ public byte[] EndPadding;
+        /* 0x004 */ public string Name;
+        [NMS(Size = 0x80)]
+        /* 0x084 */ public string SceneToAdd;
+        /* 0x104 */ public bool IncludePhysics;
+        /* 0x105 */ public bool NotifyNPC;
+        /* 0x106 */ public bool UseMasterModel;
+        /* 0x107 */ public bool RestartEmitters;
     }
 }

@@ -12,6 +12,8 @@ namespace MBINCompiler {
     // TODO: (GH) needs more refactoring
     class Program {
 
+        static System.Version MBINCompilerVersion => System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+
         // TODO: (GH) not used
         static void ScanMBINs( string path, ref List<string> types ) {
             foreach (var file in Directory.GetFiles( path, "*.mbin*" )) {
@@ -167,10 +169,6 @@ namespace MBINCompiler {
             return false;
         }
 
-        static string GetVersionString() {
-            return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        }
-
         static void WaitForKeypress() {
             Console.WriteLine("Press any key");
             Console.ReadKey();
@@ -191,12 +189,12 @@ namespace MBINCompiler {
         }
 
         static void ShowVersionStringVerbose() {
-            Console.WriteLine( $"MBINCompiler v{GetVersionString()}" );
-            Console.WriteLine( $"libMBIN v{libMBIN.Version.GetVersionString()}" );
+            Console.WriteLine( $"MBINCompiler v{MBINCompilerVersion}" );
+            Console.WriteLine( $"libMBIN v{libMBIN.Version.AssemblyVersion}" );
         }
 
         static void ShowVersionStringCompact() {
-            Console.WriteLine( libMBIN.Version.GetVersionString() );
+            Console.WriteLine( libMBIN.Version.AssemblyVersion );
         }
 
         /// <summary>

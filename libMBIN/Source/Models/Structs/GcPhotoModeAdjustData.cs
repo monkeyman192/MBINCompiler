@@ -2,7 +2,8 @@
 
 namespace libMBIN.Models.Structs
 {
-    public class GcPhotoModeAdjustData : NMSTemplate        // size: 0x18
+    [NMS(Size = 0x18)]
+    public class GcPhotoModeAdjustData : NMSTemplate
     {
         /* 0x00 */ public float AdjustMin;
         /* 0x04 */ public TkCurveType AdjustMinCurve;

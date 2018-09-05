@@ -1,8 +1,10 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcMissionSequencePirates : NMSTemplate      // size: 0x80
+    [NMS(Size = 0x81)]
+    public class GcMissionSequencePirates : NMSTemplate
     {
+        public bool ScanCargo;
         [NMS(Size = 0x80)]
-        /* 0x000 */ public string DebugText;
+        public string DebugText;
     }
 }

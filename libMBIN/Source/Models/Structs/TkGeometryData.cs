@@ -5,8 +5,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
-namespace libMBIN.Models.Structs       // size: 0x150
+namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x140)]
     public class TkGeometryData : NMSTemplate
     {
         /* 0x000 */ public int VertexCount;
@@ -35,8 +36,12 @@ namespace libMBIN.Models.Structs       // size: 0x150
         /* 0x100 */ public TkVertexLayout SmallVertexLayout;
 
         /* 0x120 */ public List<int> IndexBuffer;
-        /* 0x130 */ public List<float> VertexStream;
-        /* 0x140 */ public List<float> SmallVertexStream;
+        /* 0x130 */ public List<TkMeshMetaData> StreamMetaDataArray;
+        /* 0x130 */
+        public List<float> VertexStream;
+        /* 0x140 */
+        public List<float> SmallVertexStream;
+
 
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {

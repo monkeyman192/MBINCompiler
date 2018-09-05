@@ -5,7 +5,8 @@
         public int PageToOpen;
         public string[] PageToOpenValues()
         {
-            return new[] { "FreighterShipTransfer", "DisplayPortalUa"};
+            return new[] { "FreighterShipTransfer", "DisplayPortalUa", "ExpeditionSelect", "TraderInventory", "ExpeditionDetails",
+                           "ExpeditionDebrief", "FreeFreighterReward", "BuildingPartsShop"};
         }
     }
 }

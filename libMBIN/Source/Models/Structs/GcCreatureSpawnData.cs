@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcCreatureSpawnData : NMSTemplate // 0x598 bytes
+    [NMS(Size = 0x598)]
+    public class GcCreatureSpawnData : NMSTemplate
     {
         /* 0x000 */ public GcResourceElement Resource;
         /* 0x2A8 */ public GcResourceElement FemaleResource;

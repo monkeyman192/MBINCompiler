@@ -2,7 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x3C8)]
+    [NMS(Size = 0x3D0)]
     public class GcPlanetGenerationIntermediateData : NMSTemplate
     {
         /* 0x000 */ public GcSeed Seed;
@@ -12,22 +12,24 @@ namespace libMBIN.Models.Structs
         /* 0x01C */ public GcPlanetSize PlanetSize;
         /* 0x020 */ public GcCreatureRoleDataTable CreatureRoleData;
         /* 0x030 */ public GcTerrainControls Terrain;
-        /* 0x0A0 */ public GcBiomeType Biome;
-        /* 0x0A4 */ public int BiomeFileIndex;
+        /* 0x0A4 */ public GcBiomeType Biome;
+        /* 0x0A8 */ public int BiomeFileIndex;
 
         [NMS(Size = 0x80)]
-        /* 0x0A8 */ public string TerrainFile;
+        /* 0x0AC */ public string TerrainFile;
         [NMS(Size = 0x80)]
-        /* 0x128 */ public string CreatureLandFile;
+        /* 0x12C */ public string CreatureLandFile;
         [NMS(Size = 0x80)]
-        /* 0x1A8 */ public string CreatureCaveFile;
+        /* 0x1AC */ public string CreatureCaveFile;
         [NMS(Size = 0x80)]
-        /* 0x228 */ public string CreatureWaterFile;
+        /* 0x22C */ public string CreatureWaterFile;
         [NMS(Size = 0x80)]
-        /* 0x2A8 */ public string CreatureAirFile;
+        /* 0x2AC */ public string CreatureAirFile;
         [NMS(Size = 0x80)]
-        /* 0x328 */ public string CreatureRobotFile;
-        /* 0x3A8 */ public List<GcExternalObjectListOptions> ExternalObjectLists;
-        /* 0x3B8 */ public List<int> ExternalObjectListIndices;
+        /* 0x32C */ public string CreatureRobotFile;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x3AC */ public byte[] Padding3AC;
+        /* 0x3B0 */ public List<GcExternalObjectListOptions> ExternalObjectLists;
+        /* 0x3C0 */ public List<int> ExternalObjectListIndices;
     }
 }

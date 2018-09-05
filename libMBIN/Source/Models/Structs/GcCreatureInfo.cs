@@ -1,5 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x498)]
     public class GcCreatureInfo : NMSTemplate
     {
         public int Age;
@@ -29,6 +30,9 @@
         public float Height1Float;
         public float Weight2Float;
         public float Height2Float;
+
+        [NMS(Size = 0x80)]
+        public string Notes;
 
         public GcRarity Rarity;
     }

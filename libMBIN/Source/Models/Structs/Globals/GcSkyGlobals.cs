@@ -2,130 +2,131 @@
 {
     public class GcSkyGlobals : NMSTemplate
     {
-        /* 0X0 */ public float Unknown;
-        /* 0X4 */ public GcPhotoModeAdjustData Unknown4;
-        /* 0X1C */ public GcPhotoModeAdjustData Unknown1C;
-        /* 0X34 */ public GcPhotoModeAdjustData Unknown34;
-        /* 0X4C */ public float Unknown4C;
-        /* 0X50 */ public float DayLength;
-        /* 0X54 */ public bool AllowPassageOfTime;      // if False then the time of day will not change
-        [NMS(Size = 11, Ignore = true)]
-        /* 0X55 */ public byte[] Padding55;
-        /* 0X60 */ public float Unknown60;              // this and next 2 values are the components of a vector
-        /* 0X64 */ public float Unknown64;
-        /* 0X68 */ public float Unknown68;
-        /* 0X6C */ public float Unknown6C;              // not used??
-
-        /* 0X70 */ public float MaximumShadowAngle;     // this is the maximum angle the shadows will go to (relative to the 
-        /* 0X74 */ public bool Unknown74;               // force storm?
-        /* 0X78 */ public float Unknown78;              // force storm strength??
-        // option 1's are the default ones
-        /* 0X7C */ public float Unknown7C;              // option 1a-min
-        /* 0X80 */ public float Unknown80;              // option 1a-max
-        /* 0X84 */ public float Unknown84;              // option 2a-min
-        /* 0X88 */ public float Unknown88;              // option 2a-max
-        /* 0X8C */ public float Unknown8C;              // option 1b-min
-        /* 0X90 */ public float Unknown90;              // option 1b-max
-        /* 0X94 */ public float Unknown94;              // option 2b-min
-        /* 0X98 */ public float Unknown98;              // option 2b-max
-        /* 0X9C */ public float Unknown9C;              // something to do with the weather warning maybe?
-        /* 0XA0 */ public bool UnknownA0;
-        /* 0XA4 */ public float UnknownA4;
-        /* 0XA8 */ public float UnknownA8;
-        /* 0XAC */ public float UnknownAC;
-        /* 0XB0 */ public float UnknownB0;
-        /* 0XB4 */ public float UnknownB4;
-        /* 0XB8 */ public float UnknownB8;
-        /* 0XBC */ public float UnknownBC;
-        /* 0XC0 */ public float UnknownC0;
-        /* 0XC4 */ public bool UnknownC4;
-        /* 0XC8 */ public float UnknownC8;
-        /* 0XCC */ public float UnknownCC;
-        /* 0XD0 */ public Vector4f UnknownD0;
-        /* 0XE0 */ public Vector4f UnknownE0;
-        /* 0XF0 */ public Colour UnknownF0;
-        /* 0X100 */ public Colour Unknown100;
-        /* 0X110 */ public Colour Unknown110;
-        /* 0X120 */ public Colour Unknown120;
-        /* 0X130 */ public Colour Unknown130;
-        /* 0X140 */ public Colour Unknown140;
-        /* 0X150 */ public float Unknown150;
-        /* 0X154 */ public float Unknown154;
-        /* 0X158 */ public float Unknown158;
-        /* 0X15C */ public float Unknown15C;
-        /* 0X160 */ public float Unknown160;        // min
-        /* 0X164 */ public float Unknown164;        // max
-        /* 0X168 */ public float Unknown168;        // min
-        /* 0X16C */ public float Unknown16C;        // max
-        /* 0X170 */ public float Unknown170;        // min
-        /* 0X174 */ public float Unknown174;        // max
-        /* 0X178 */ public float Unknown178;
-        /* 0X17C */ public float Unknown17C;
-        /* 0X180 */ public float Unknown180;
-        /* 0X184 */ public float Unknown184;
-        /* 0X188 */ public float Unknown188;
-        /* 0X18C */ public float Unknown18C;
-        /* 0X190 */ public float Unknown190;
-        /* 0X194 */ public float Unknown194;
-        /* 0X198 */ public float Unknown198;
-        /* 0X19C */ public float Unknown19C;
-        /* 0X1A0 */ public float Unknown1A0;
-        /* 0X1A4 */ public float Unknown1A4;
-        /* 0X1A8 */ public float Unknown1A8;
-        /* 0X1AC */ public float Unknown1AC;
-        /* 0X1B0 */ public float Unknown1B0;
-        /* 0X1B4 */ public float Unknown1B4;
-        /* 0X1B8 */ public float Unknown1B8;
-        /* 0X1BC */ public float Unknown1BC;
-        /* 0X1C0 */ public float Unknown1C0;
-        /* 0X1C4 */ public float Unknown1C4;
-        /* 0X1C8 */ public float Unknown1C8;
-        /* 0X1CC */ public float Unknown1CC;
-        /* 0X1D0 */ public float Unknown1D0;
-        /* 0X1D4 */ public float Unknown1D4;
-        /* 0X1D8 */ public float Unknown1D8;
-        /* 0X1DC */ public float Unknown1DC;
-        /* 0X1E0 */ public float Unknown1E0;
-        /* 0X1E4 */ public float Unknown1E4;
-        /* 0X1E8 */ public float Unknown1E8;
-        /* 0X1EC */ public float Unknown1EC;
-        /* 0X1F0 */ public float Unknown1F0;
-        /* 0X1F4 */ public float Unknown1F4;
-        /* 0X1F8 */ public float DefaultUnderwaterHeavyAirTransparency;           // value will be between 0 and 1. If it is set to a negative number then the value in the palette file is used.
-        /* 0X1FC */ public float Unknown1FC;
-        /* 0X200 */ public float Unknown200;
-        /* 0X204 */ public float Unknown204;
-        /* 0X208 */ public float Unknown208;
-        /* 0X20C */ public float Unknown20C;
-        /* 0X210 */ public float Unknown210;
-        /* 0X214 */ public float Unknown214;
-        /* 0X218 */ public float Unknown218;
-        /* 0X21C */ public float Unknown21C;
-        /* 0X220 */ public float Unknown220;
-        /* 0X224 */ public float Unknown224;
-        /* 0X228 */ public float Unknown228;
-        /* 0x22C */ public float Unknown22C;
-        /* 0X22C */ public GcSkyProperties Unknown230;
-
-        [NMS(Size = 0x4, EnumValue = new[] {"ClearFog", "StormFog", "ExtremeWeatherFog", "InFlightFog" })]
-        /* 0x260 */ public GcFogProperties[] PlanetFogProperties;
-
-        /* 0X5D0 */ public GcSpaceSkyProperties Unknown5D0;
-        /* 0X670 */ public GcSpaceSkyProperties Unknown670;
-        /* 0X710 */ public GcSpaceSkyColours Unknown710;
-        /* 0X7F0 */ public GcSpaceSkyColours Unknown7F0;
-        /* 0X8D0 */ public GcSpaceSkyColours Unknown8D0;
-        /* 0X9B0 */ public GcSpaceSkyColours Unknown9B0;
-        /* 0XA90 */ public GcPlanetWeatherColourData NightTimeColour;
-        /* 0XB40 */ public float UnknownB40;
-        /* 0XB44 */ public float UnknownB44;
-        /* 0XB48 */ public long UnknownB48;
-        ///* 0XB4C */ public float UnknownB4C;
-        /* 0XB50 */ public Colour UnknownB50;
-        /* 0XB60 */ public Colour UnknownB60;
-        /* 0XB70 */ public Colour UnknownB70;
-        /* 0XB80 */ public Colour UnknownB80;
-        /* 0XB90 */ public Colour UnknownB90;
-        /* 0XBA0 */ public Colour UnknownBA0;
+        /* 0x0 */ public float NightThreshold;
+        /* 0x4 */ public GcPhotoModeAdjustData FogAdjust;
+        /* 0x1C */ public GcPhotoModeAdjustData CloudAdjust;
+        /* 0x34 */ public GcPhotoModeAdjustData VignetteAdjust;
+        /* 0x4C */ public float DoFAdjustMagnitudeMaxCurve;
+        /* 0x50 */ public int DayLength;
+        /* 0x54 */ public bool EnableDayNightCycle;
+        [NMS(Size = 0xB, Ignore = true)]
+        /* 0x55 */ public byte[] Padding55;
+        /* 0x60 */ public Vector4f SunRotationAxis;
+        /* 0x70 */ public float SafeSkyMinIndex;
+        /* 0x74 */ public float SafeSkyMaxIndex;
+        /* 0x78 */ public int FrozenSkyMinIndex;
+        /* 0x7C */ public int FrozenSkyMaxIndex;
+        /* 0x80 */ public float SunClampAngle;
+        /* 0x84 */ public float PhotoModeSunSpeed;
+        /* 0x88 */ public float FreshStartTimeOfDay;
+        /* 0x8C */ public bool ForceStormSetting;
+        /* 0x90 */ public float ForceStormStrength;
+        /* 0x94 */ public float StormScreenFilterFadeTime;
+        /* 0x98 */ public float StormScreenFilterDistance;
+        /* 0x9C */ public float MinTimeBetweenStormsLow;
+        /* 0xA0 */ public float MaxTimeBetweenStormsLow;
+        /* 0xA4 */ public float MinTimeBetweenStormsHigh;
+        /* 0xA8 */ public float MaxTimeBetweenStormsHigh;
+        /* 0xAC */ public float MinStormLengthLow;
+        /* 0xB0 */ public float MaxStormLengthLow;
+        /* 0xB4 */ public float MinStormLengthHigh;
+        /* 0xB8 */ public float MaxStormLengthHigh;
+        /* 0xBC */ public float StormWarningTime;
+        /* 0xC0 */ public float StormTransitionTime;
+        /* 0xC4 */ public bool ForceFlightSetting;
+        /* 0xC8 */ public float ForceFlightStrength;
+        /* 0xCC */ public float ToFootFadeTime;
+        /* 0xD0 */ public float ToFlightFadeTime;
+        /* 0xD4 */ public float InFlightStormStrength;
+        /* 0xD8 */ public float CreatureStormThreshold;
+        /* 0xDC */ public float TakeoffStormThreshold;
+        /* 0xE0 */ public float ExtremeAudioLevel;
+        /* 0xE4 */ public float StormAudioLevel;
+        /* 0xE8 */ public bool SleepSunFromSettings;
+        /* 0xF0 */ public Vector4f SleepSunFromSettingsPos;
+        /* 0x100 */ public Vector4f SunPosition;
+        /* 0x110 */ public Colour AsteroidColour;
+        /* 0x120 */ public Colour DayLightColour;
+        /* 0x130 */ public Colour NightLightColour;
+        /* 0x140 */ public Colour DuskLightColour;
+        /* 0x150 */ public Colour NightHeavyAirColour;
+        /* 0x160 */ public Colour SpaceLightColour;
+        /* 0x170 */ public float HeavyAirScale;
+        /* 0x174 */ public float AmbientFactor;
+        /* 0x178 */ public float MinSunsetFade;
+        /* 0x17C */ public float MaxSunsetFade;
+        /* 0x180 */ public float MinSunsetHorizonFade;
+        /* 0x184 */ public float MaxSunsetHorizonFade;
+        /* 0x188 */ public float MinNightFade;
+        /* 0x18C */ public float MaxNightFade;
+        /* 0x190 */ public float MinSunsetPosFade;
+        /* 0x194 */ public float MaxSunsetPosFade;
+        /* 0x198 */ public float MinSunsetFogFade;
+        /* 0x19C */ public float MaxSunsetFogFade;
+        /* 0x1A0 */ public float MinSunsetAtmosphereFade;
+        /* 0x1A4 */ public float MaxSunsetAtmosphereFade;
+        /* 0x1A8 */ public float MinSunsetColourFade;
+        /* 0x1AC */ public float MaxSunsetColourFade;
+        /* 0x1B0 */ public float MinSaturation;
+        /* 0x1B4 */ public float MaxSaturation;
+        /* 0x1B8 */ public float MinValue;
+        /* 0x1BC */ public float MaxValue;
+        /* 0x1C0 */ public float MinFogSaturation;
+        /* 0x1C4 */ public float MaxFogSaturation;
+        /* 0x1C8 */ public float MinFogValue;
+        /* 0x1CC */ public float MaxFogValue;
+        /* 0x1D0 */ public float MinColourS;
+        /* 0x1D4 */ public float MaxColourS;
+        /* 0x1D8 */ public float MinColourV;
+        /* 0x1DC */ public float MaxColourV;
+        /* 0x1E0 */ public float MulticolourH;
+        /* 0x1E4 */ public float NebulaColourH;
+        /* 0x1E8 */ public float NebulaColour1S;
+        /* 0x1EC */ public float NebulaColour1V;
+        /* 0x1F0 */ public float NebulaColour2S;
+        /* 0x1F4 */ public float NebulaColour2V;
+        /* 0x1F8 */ public float MidColourH;
+        /* 0x1FC */ public float MidColourS;
+        /* 0x200 */ public float MidColourV;
+        /* 0x204 */ public float CloudColourH;
+        /* 0x208 */ public float CloudColourS;
+        /* 0x20C */ public float CloudColourV;
+        /* 0x210 */ public float NebulaShadow;
+        /* 0x214 */ public float SpaceAtmosphereThickness;
+        /* 0x218 */ public float WaterHeavyAirAlpha;
+        /* 0x21C */ public float NightHorizonBlendMin;
+        /* 0x220 */ public float NightHorizonBlendMax;
+        /* 0x224 */ public float NightSkyBlendMin;
+        /* 0x228 */ public float NightSkyBlendMax;
+        /* 0x22C */ public float NightLightBlendMin;
+        /* 0x230 */ public float NightLightBlendMax;
+        /* 0x234 */ public bool ForceNightBlend;
+        /* 0x238 */ public float ForceNightBlendValue;
+        /* 0x23C */ public float NoAtmosphereFogStrength;
+        /* 0x240 */ public float NoAtmosphereFogMax;
+        /* 0x244 */ public float NoAtmosphereColourStrength;
+        /* 0x248 */ public float NoAtmosphereColourMax;
+        /* 0x24C */ public float LowFlightFogThreshold;
+        /* 0x250 */ public GcSkyProperties PlanetSky;
+        /* 0x280 */ public GcFogProperties PlanetFog;
+        /* 0x35C */ public GcFogProperties PlanetExtremeFog;
+        /* 0x438 */ public GcFogProperties PlanetStormFog;
+        /* 0x514 */ public GcFogProperties PlanetFlightFog;
+        /* 0x5F0 */ public GcSpaceSkyProperties SpaceSkyMin;
+        /* 0x690 */ public GcSpaceSkyProperties SpaceSkyMax;
+        [NMS(Size = 4)]
+        /* 0x730 */ public GcSpaceSkyColours[] SpaceSkyColours;
+        /* 0xAB0 */ public GcPlanetWeatherColourData NightSkyColours;
+        /* 0xB60 */ public float HackSpaceInterp1;
+        /* 0xB64 */ public float HackSpaceInterp2;
+        /* 0xB68 */ public int HackSpaceColourIndex;
+        /* 0xB70 */ public Colour HeavyAirColour1;
+        /* 0xB80 */ public Colour HeavyAirColour2;
+        /* 0xB90 */ public Colour NightHorizonColour;
+        /* 0xBA0 */ public Colour NightSkyColour;
+        /* 0xBB0 */ public Colour NightFogColour;
+        /* 0xBC0 */ public Colour NightHeightFogColour;
+        /* 0xBD0 */ public GcPlanetCloudProperties PlanetCloudsMin;
+        /* 0xBF8 */ public GcPlanetCloudProperties PlanetCloudsMax;
     }
 }

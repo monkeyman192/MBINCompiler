@@ -4,24 +4,25 @@
     public class GcCameraShakeData : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string Name;
+        /* 0x00 */ public string Name;
 
-        public float TimeStart;
-        public float TotalTime;
-        public float DecayRate;
-        public float StrengthSale;
+        /* 0x10 */ public float TimeStart;
+        /* 0x14 */ public float TotalTime;
+        /* 0x18 */ public float DecayRate;
+        /* 0x1C */ public float StrengthSale;
+        /* 0x20 */ public float ThirdPersonDamp;
 
-        public GcCameraShakeCapturedData CapturedData; // 0x20
-
-        [NMS(Size = 0xC, Ignore = true)]
-        public byte[] Padding34; // offsetMechanicalData - (offsetCapturedData + szCapturedData)
-
-        public GcCameraShakeMechanicalData MechanicalData; // 0x40
-
-        public float FOVStrength;
-        public float FOVFrequency;
+        /* 0x24 */ public GcCameraShakeCapturedData CapturedData;
 
         [NMS(Size = 0x8, Ignore = true)]
-        public byte[] PaddingB8;
+        /* 0x38 */ public byte[] Padding38;
+
+       /* 0x40 */  public GcCameraShakeMechanicalData MechanicalData;
+
+        /* 0xB0 */ public float FOVStrength;
+        /* 0xB4 */ public float FOVFrequency;
+
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0xB8 */ public byte[] EndPadding;
     }
 }

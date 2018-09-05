@@ -1,12 +1,13 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcPlayerDamageData : NMSTemplate       // size: 0x128
+    [NMS(Size = 0x130)]
+    public class GcPlayerDamageData : NMSTemplate
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string Id;
         [NMS(Size = 0x20)]
         /* 0x010 */ public string DeathMessage;
-        /* 0x030 */ public TkTextureResource HitIcon; // size: 0x80? + 0x4 at the end?
+        /* 0x030 */ public TkTextureResource HitIcon;
         [NMS(Size = 4, Ignore = true)]
         public byte[] PaddingB4;
         [NMS(Size = 0x20)]
@@ -21,5 +22,11 @@
         /* 0x108 */ public string CameraShakeShield;
         [NMS(Size = 0x10)]
         /* 0x118 */ public string CameraShakeNoShield;
+        /* 0x128 */ public bool ShowTrackicon;
+        /* 0x12C */ public int PlayerDamageType;
+        public string[] PlayerDamageTypeValues()
+        {
+            return new[] { "Normal", "Toxic", "Radioactive", "Freeze", "Scorch" };
+        }
     }
 }

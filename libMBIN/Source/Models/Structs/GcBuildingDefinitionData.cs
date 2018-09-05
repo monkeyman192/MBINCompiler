@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcBuildingDefinitionData : NMSTemplate // 0x58 bytes
+    [NMS(Size = 0x58)]
+    public class GcBuildingDefinitionData : NMSTemplate
     {
         /* 0x00 */ public TkNoiseFlattenOptions FlattenType;
         /* 0x08 */ public GcBuildingClusterPlacement BuildingClusterPlacement;

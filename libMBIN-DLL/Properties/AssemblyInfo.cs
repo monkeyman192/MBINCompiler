@@ -32,8 +32,11 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.38.0.2")]
-[assembly: AssemblyFileVersion("1.38.0.2")]
+
+// Do not modify the attributes below.
+// To Update the version, see libMBIN.Version.VERSION.STRING.
+[assembly: AssemblyVersion( libMBIN.Version.VERSION_STRING )]
+[assembly: AssemblyFileVersion( libMBIN.Version.VERSION_STRING )]
 
 // Unit tests need access to internals
 [assembly: InternalsVisibleTo( "MBINCompilerTests" )] 

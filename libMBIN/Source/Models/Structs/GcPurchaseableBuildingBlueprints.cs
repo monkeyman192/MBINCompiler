@@ -4,6 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class GcPurchaseableBuildingBlueprints : NMSTemplate
     {
-        public List<NMSString0x10> Table;
+        public List<GcBuildingBlueprint> Table;
+        public List<int> GroupMaxItems;
     }
 }

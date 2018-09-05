@@ -2,365 +2,304 @@ namespace libMBIN.Models.Structs // 0x690
 {
     public class GcCreatureGlobals : NMSTemplate
     {
-        // generated with MBINRawTemplateParser
-
-        // line: char *__fastcall GcCreatureGlobals_LoadDefaults(__int64 a1)
-        // line: {
-        // line:   __int64 v1; // rdi@1
-        // line:   char *result; // rax@1
-        // line:   v1 = a1;
-        public bool Unknown0;     // offset: 0, sz: 1, origin: 0, parsed: 0        // line:   *(_BYTE *)a1 = 0;
-        public float Unknown4;     // not used??
-        public float Unknown8;     // offset: 8, sz: 4, origin: 0x3F800000i64, parsed: 1, comment: two packed floats in a QWORD?(1)
-        public float UnknownC;     // offset: 12, sz: 4, origin: 0x3F800000i64, parsed: 0, comment: two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(a1 + 8) = 0x3F800000i64;
-
-        public float Unknown10;     // offset: 0x10, sz: 4, origin: 0x3D4CCCCD, parsed: 0.05        // line:   *(_DWORD *)(a1 + 0x10) = 0x3D4CCCCD;
-        public float Unknown14;     // offset: 0x14, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(a1 + 0x14) = 0x40A00000;
-        public float Unknown18;     // offset: 0x18, sz: 4, origin: 0x41400000, parsed: 12        // line:   *(_DWORD *)(a1 + 0x18) = 0x41400000;
-        public float Unknown1C;     // offset: 0x1C, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(a1 + 0x1C) = 0x3F800000;
-
-        public float Unknown20;     // offset: 0x20, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(a1 + 0x20) = 0x3F800000;
-        public float Unknown24;     // offset: 0x24, sz: 4, origin: 0x3E4CCCCD, parsed: 0.2        // line:   *(_DWORD *)(a1 + 0x24) = 0x3E4CCCCD;
-        public float Unknown28;     // offset: 0x28, sz: 4, origin: 0x41000000, parsed: 8        // line:   *(_DWORD *)(a1 + 0x28) = 0x41000000;
-        public float Unknown2C;     // offset: 0x2C, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(a1 + 0x2C) = 0x41200000;
-
-        public float Unknown30;     // offset: 0x30, sz: 4, origin: 0x42C80000, parsed: 100        // line:   *(_DWORD *)(a1 + 0x30) = 0x42C80000;
-        public float Unknown34;     // offset: 0x34, sz: 4, origin: 0x3DCCCCCD, parsed: 0.1        // line:   *(_DWORD *)(a1 + 0x34) = 0x3DCCCCCD;
-        public float Unknown38;     // offset: 0x38, sz: 4, origin: 0x3DCCCCCD, parsed: 0.1        // line:   *(_DWORD *)(a1 + 0x38) = 0x3DCCCCCD;
-        public float Unknown3C;     // offset: 0x3C, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(a1 + 0x3C) = 0x3F800000;
-
-        public float Unknown40;     // offset: 0x40, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(a1 + 0x40) = 0x41200000;
-        public float Unknown44;     // offset: 0x44, sz: 4, origin: 0x3DCCCCCD, parsed: 0.1        // line:   *(_DWORD *)(a1 + 0x44) = 0x3DCCCCCD;
-        public float Unknown48;     // offset: 0x48, sz: 4, origin: 0x3FC00000, parsed: 1.5        // line:   *(_DWORD *)(a1 + 0x48) = 0x3FC00000;
-        public float Unknown4C;     // offset: 0x4C, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(a1 + 0x4C) = 0x3F800000;
-
-        public float Unknown50;     // offset: 0x50, sz: 4, origin: 0x3EB33333, parsed: 0.35        // line:   *(_DWORD *)(a1 + 0x50) = 0x3EB33333;
-        public float Unknown54;     // offset: 0x54, sz: 4, origin: 0x40200000, parsed: 2.5        // line:   *(_DWORD *)(a1 + 0x54) = 0x40200000;
-        public float Unknown58;     // offset: 0x58, sz: 4, origin: 0x40200000, parsed: 2.5        // line:   *(_DWORD *)(a1 + 0x58) = 0x40200000;
-        public float Unknown5C;     // offset: 0x5C, sz: 4, origin: 0x3F666666, parsed: 0.9        // line:   *(_DWORD *)(a1 + 0x5C) = 0x3F666666;
-
-        public float Unknown60;     // offset: 0x60, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(a1 + 0x60) = 0x41200000;
-        [NMS(Size = 0xC, Ignore = true)]
-        public byte[] Padding64;        // offset: 100, sz: 12, comment: auto padding 
-
-        public GcCameraShakeData Unknown70;
-
-        public float Unknown130;     // offset: 0x130, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x130) = 0x3F000000;
-        public float Unknown134;     // offset: 0x134, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x134) = 0x3F800000;
-        public float Unknown138;     // offset: 0x138, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x138) = 0x3F000000;
-        public float Unknown13C;     // offset: 0x13C, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x13C) = 0x40400000;
-
-        public float Unknown140;     // offset: 0x140, sz: 4, origin: 0x44480000, parsed: 800        // line:   *(_DWORD *)(v1 + 0x140) = 0x44480000;
-        public float Unknown144;     // offset: 0x144, sz: 4, origin: 0x442F0000, parsed: 700        // line:   *(_DWORD *)(v1 + 0x144) = 0x442F0000;
-        public float Unknown148;     // offset: 0x148, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(v1 + 0x148) = 0x40A00000;
-        public float Unknown14C;     // offset: 0x14C, sz: 4, origin: 0x44610000, parsed: 900        // line:   *(_DWORD *)(v1 + 0x14C) = 0x44610000;
-
-        public float Unknown150;     // offset: 0x150, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(v1 + 0x150) = 0x40A00000;
-        public float Unknown154;     // offset: 0x154, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x154) = 0x3F800000;
-        public float Unknown158;     // offset: 0x158, sz: 4, origin: 0x42200000, parsed: 40        // line:   *(_DWORD *)(v1 + 0x158) = 0x42200000;
-        public float Unknown15C;     // offset: 0x15C, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x15C) = 0x41200000;
-
-        public float Unknown160;     // offset: 0x160, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x160) = 0x3F800000;
-        public float Unknown164;     // offset: 0x164, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x164) = 0x3F800000;
-        public float Unknown168;     // offset: 0x168, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x168) = 0x40000000;
-        public float Unknown16C;     // offset: 0x16C, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x16C) = 0x3F000000;
-
-        public float Unknown170;     // offset: 0x170, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x170) = 0x41200000;
-        public float Unknown174;     // offset: 0x174, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x174) = 0x40400000;
-        public float Unknown178;     // offset: 0x178, sz: 4, origin: 0x42480000, parsed: 50        // line:   *(_DWORD *)(v1 + 0x178) = 0x42480000;
-        public float Unknown17C;     // offset: 0x17C, sz: 4, origin: 0x447A0000, parsed: 1000        // line:   *(_DWORD *)(v1 + 0x17C) = 0x447A0000;
-
-        public float Unknown180;     // offset: 0x180, sz: 4, origin: 0x40A33333, parsed: 5.1        // line:   *(_DWORD *)(v1 + 0x180) = 0x40A33333;
-        public float Unknown184;     // offset: 0x184, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x184) = 0x3F800000;
-        public float Unknown188;     // offset: 0x188, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x188) = 0x3E99999A;
-        public float Unknown18C;     // offset: 0x18C, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x18C) = 0x3F000000;
-
-        public float Unknown190;     // offset: 0x190, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x190) = 0x3E99999A;
-        public float Unknown194;     // offset: 0x194, sz: 4, origin: 0x41700000, parsed: 15        // line:   *(_DWORD *)(v1 + 0x194) = 0x41700000;
-        public float Unknown198;     // offset: 0x198, sz: 4, origin: 0x41A00000, parsed: 20        // line:   *(_DWORD *)(v1 + 0x198) = 0x41A00000;
-        public float Unknown19C;     // offset: 0x19C, sz: 4, origin: 0x3A83126F, parsed: 0.001        // line:   *(_DWORD *)(v1 + 0x19C) = 0x3A83126F;
-
-        public float Unknown1A0;     // offset: 0x1A0, sz: 4, origin: 0x3F4CCCCD, parsed: 0.8        // line:   *(_DWORD *)(v1 + 0x1A0) = 0x3F4CCCCD;
-        public float Unknown1A4;     // offset: 0x1A4, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x1A4) = 0x3F000000;
-        public float Unknown1A8;     // offset: 0x1A8, sz: 4, origin: 0x42480000, parsed: 50        // line:   *(_DWORD *)(v1 + 0x1A8) = 0x42480000;
-        public float Unknown1AC;     // offset: 0x1AC, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x1AC) = 0x3E99999A;
-
-        public float Unknown1B0;     // offset: 0x1B0, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x1B0) = 0x41200000;
-        public float Unknown1B4;     // offset: 0x1B4, sz: 4, origin: 0x41900000, parsed: 18        // line:   *(_DWORD *)(v1 + 0x1B4) = 0x41900000;
-        public float Unknown1B8;     // offset: 0x1B8, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x1B8) = 0x40000000;
-        public float Unknown1BC;     // offset: 0x1BC, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x1BC) = 0x40400000;
-
-        public float Unknown1C0;     // offset: 0x1C0, sz: 4, origin: 0x41000000, parsed: 8        // line:   *(_DWORD *)(v1 + 0x1C0) = 0x41000000;
-        public float Unknown1C4;     // offset: 0x1C4, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x1C4) = 0x40000000;
-        public float Unknown1C8;     // offset: 0x1C8, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x1C8) = 0x40400000;
-        public float Unknown1CC;     // offset: 0x1CC, sz: 4, origin: 0x42C80000, parsed: 100        // line:   *(_DWORD *)(v1 + 0x1CC) = 0x42C80000;
-
-        public float Unknown1D0;     // offset: 0x1D0, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x1D0) = 0x3F800000;
-        public float Unknown1D4;     // offset: 0x1D4, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(v1 + 0x1D4) = 0x40A00000;
-        public float Unknown1D8;     // offset: 0x1D8, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x1D8) = 0x3E99999A;
-        public float Unknown1DC;     // offset: 0x1DC, sz: 4, origin: 0x42480000, parsed: 50        // line:   *(_DWORD *)(v1 + 0x1DC) = 0x42480000;
-
-        public float Unknown1E0;     // offset: 0x1E0, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(v1 + 0x1E0) = 0x40A00000;
-        public float Unknown1E4;     // offset: 0x1E4, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x1E4) = 0x3F800000;
-        public float Unknown1E8;     // offset: 0x1E8, sz: 4, origin: 0x40200000, parsed: 2.5        // line:   *(_DWORD *)(v1 + 0x1E8) = 0x40200000;
-        public float Unknown1EC;     // offset: 0x1EC, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x1EC) = 0x40400000;
-
-        public float Unknown1F0;     // offset: 0x1F0, sz: 4, origin: 0x41F00000, parsed: 30        // line:   *(_DWORD *)(v1 + 0x1F0) = 0x41F00000;
-        public float Unknown1F4;     // offset: 0x1F4, sz: 4, origin: 0x43FA0000, parsed: 500        // line:   *(_DWORD *)(v1 + 0x1F4) = 0x43FA0000;
-        public float Unknown1F8;     // offset: 0x1F8, sz: 4, origin: 0x42480000, parsed: 50        // line:   *(_DWORD *)(v1 + 0x1F8) = 0x42480000;
-        public float Unknown1FC;     // offset: 0x1FC, sz: 4, origin: 0x3DCCCCCD, parsed: 0.1        // line:   *(_DWORD *)(v1 + 0x1FC) = 0x3DCCCCCD;
-
-        public float Unknown200;     // offset: 0x200, sz: 4, origin: 0x3F19999A, parsed: 0.6        // line:   *(_DWORD *)(v1 + 0x200) = 0x3F19999A;
-        public GcFlyingSnakeData Unknown204;     // offset: 0x204, sz: 4, origin: 0x41700000, parsed: 15        // line:   *(_DWORD *)(v1 + 0x204) = 0x41700000;
-
-        public GcCreatureAlertData Unknown244;     // offset: 580, sz: 4, origin: 0x41600000i64, parsed: 0, comment: two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(v1 + 0x240) = 0x41600000i64;
-        public GcCreatureAlertData Unknown25C;     // offset: 604, sz: 4, origin: 0x41700000i64, parsed: 0, comment: two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(v1 + 0x258) = 0x41700000i64;
-        public GcCreatureAlertData Unknown274;     // offset: 628, sz: 4, origin: 0x41700000i64, parsed: 0, comment: two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(v1 + 0x270) = 0x41700000i64;
-
-        public bool Unknown28C;     // offset: 0x28C, sz: 1, origin: 0, parsed: 0        // line:   *(_BYTE *)(v1 + 0x28C) = 0;
-
-        public float Unknown290;     // offset: 0x290, sz: 4, origin: 0x3F99999A, parsed: 1.2        // line:   *(_DWORD *)(v1 + 0x290) = 0x3F99999A;
-        public float Unknown294;     // offset: 0x294, sz: 4, origin: 0x40200000, parsed: 2.5        // line:   *(_DWORD *)(v1 + 0x294) = 0x40200000;
-        public float Unknown298;     // offset: 0x298, sz: 4, origin: 0x40900000, parsed: 4.5        // line:   *(_DWORD *)(v1 + 0x298) = 0x40900000;
-        public int Unknown29C;     // offset: 0x29C, sz: 4, origin: 0x28, parsed: 40        // line:   *(_DWORD *)(v1 + 0x29C) = 0x28;
-
-        public int Unknown2A0;     // offset: 0x2A0, sz: 4, origin: 0x50, parsed: 80        // line:   *(_DWORD *)(v1 + 0x2A0) = 0x50;
-        public int Unknown2A4;     // offset: 0x2A4, sz: 4, origin: 0xA0, parsed: 160        // line:   *(_DWORD *)(v1 + 0x2A4) = 0xA0;
-        public int Unknown2A8;     // offset: 0x2A8, sz: 4, origin: 0x168, parsed: 360        // line:   *(_DWORD *)(v1 + 0x2A8) = 0x168;
-
-        // missing 4 bytes at offset 680
-        // could be padding, a undefined subroutine or a pointer accessing larger memory
+        /* 0x0 */ public bool IsHurtingCreaturesACrime;
+        /* 0x4 */ public float CreatureSeed;
+        /* 0x8 */ public int MaxEcosystemCreatures;
+        /* 0xC */ public bool UncapSpawningforVideo;
+        /* 0xD */ public bool AllowSpawningOnscreen;
+        /* 0x10 */ public float ResourceSpawnTime;
+        /* 0x14 */ public float TurnInPlaceIdleTime;
+        /* 0x18 */ public float TurnInPlaceMaxAngle;
+        /* 0x1C */ public float TurnInPlaceMinTime;
+        /* 0x20 */ public float TurnInPlaceMaxSpeed;
+        /* 0x24 */ public float SceneTerrainSpawnMinDistance;
+        /* 0x28 */ public float CreatureMinAlignSpeed;
+        /* 0x2C */ public float PatrolMinDist;
+        /* 0x30 */ public float PatrolMaxDist;
+        /* 0x34 */ public float PatrolHeightOffset;
+        /* 0x38 */ public float PatrolGradientFactor;
+        /* 0x3C */ public float CreatureWaryTime;
+        /* 0x40 */ public float CreatureMinRunTime;
+        /* 0x44 */ public float CreatureHearingRange;
+        /* 0x48 */ public float CreatureSightRange;
+        /* 0x4C */ public float CreatureMoveIdle;
+        /* 0x50 */ public float CreatureTurnMin;
+        /* 0x54 */ public float CreatureTurnMax;
+        /* 0x58 */ public float CreatureBrakeForce;
+        /* 0x5C */ public float CreatureMinAnimMoveSpeed;
+        /* 0x60 */ public float CreatureLookBeforeGoingTime;
+        /* 0x64 */ public float CreatureLookBeforeFleeingTime;
+        /* 0x68 */ public float CreatureLookBeforeFleeingIfShotTime;
+        /* 0x6C */ public float CreatureLookScaryThingTime;
+        /* 0x70 */ public float CreatureLookPlayerForceLookTime;
+        /* 0x74 */ public float FootPlantError;
+        /* 0x78 */ public float RecoverHealthTime;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding2AC;        // offset: 684, sz: 4, comment: auto padding 
-
-        [NMS(Size = 0x10)]
-        public string Unknown2B0;     // offset: 0x2B0, sz: 15, origin:  "LARGECREATUREWA"        // line:   strncpy((char *)(v1 + 0x2B0), "LARGECREATUREWA", 0xFui64);
-        // line:   strupr((char *)(v1 + 0x2B0));
-        // line:   *(_BYTE *)(v1 + 0x2BF) = 0;
-        public float Unknown2C0;     // offset: 0x2C0, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x2C0) = 0x40000000;
-
-        // missing 4 bytes at offset 704
-        // could be padding, a undefined subroutine or a pointer accessing larger memory
+        /* 0x7C */ public byte[] Padding7C;
+        /* 0x80 */ public GcCameraShakeData PainShake;
+        /* 0x140 */ public float PatrolSwitchMinTime;
+        /* 0x144 */ public float ExtraFollowStrength;
+        /* 0x148 */ public float ExtraFollowFreq1;
+        /* 0x14C */ public float ExtraFollowFreq2;
+        /* 0x150 */ public float GiantSnakeEmergeHeight;
+        /* 0x154 */ public float GiantSnakeEmergeDeep;
+        /* 0x158 */ public float GiantSnakeEmergeTime;
+        /* 0x15C */ public float GiantSnakeEmergeWide;
+        /* 0x160 */ public float GiantSnakeEmergeUnderTime;
+        /* 0x164 */ public float GiantSnakeEmergeOffset;
+        /* 0x168 */ public float GiantSnakeRadius;
+        /* 0x16C */ public float GiantSnakeHeadOffset;
+        /* 0x170 */ public float ShieldFadeTime;
+        /* 0x174 */ public float SharkAlongPathSpeed;
+        /* 0x178 */ public float SwarmBrakingForce;
+        /* 0x17C */ public float SharkToPathYDamp;
+        /* 0x180 */ public float SharkAttackSpeed;
+        /* 0x184 */ public float SharkAttackAccel;
+        /* 0x188 */ public float SharkPatrolSpeed;
+        /* 0x18C */ public float SharkPatrolRadius;
+        /* 0x190 */ public float SharkPatrolEnd;
+        /* 0x194 */ public float SharkGetToPathSpeed;
+        /* 0x198 */ public float SharkAlignSpeed;
+        /* 0x19C */ public float FishBobFrequency;
+        /* 0x1A0 */ public float FishBobAmplitude;
+        /* 0x1A4 */ public float InfluenceRadius;
+        /* 0x1A8 */ public float InfluenceForce;
+        /* 0x1AC */ public float InfluenceThreshold;
+        /* 0x1B0 */ public float InfluenceDeflect;
+        /* 0x1B4 */ public float TargetSearchTimeout;
+        /* 0x1B8 */ public float AttractMinDistance;
+        /* 0x1BC */ public float SwarmMoveYFactor;
+        /* 0x1C0 */ public float DroneExplodeRadius;
+        /* 0x1C4 */ public float WeaponRepelRange;
+        /* 0x1C8 */ public float WeaponRepelAmount;
+        /* 0x1CC */ public float VelocityAlignStrength;
+        /* 0x1D0 */ public float VelocityAlignSpeed;
+        /* 0x1D4 */ public float HeightLookAhead;
+        /* 0x1D8 */ public float MaxHeightTime;
+        /* 0x1DC */ public float PlayerBirdDistance;
+        /* 0x1E0 */ public float FishSpeedMin;
+        /* 0x1E4 */ public float FishSpeedMax;
+        /* 0x1E8 */ public float FishSwimMaxAcceleration;
+        /* 0x1EC */ public float AlertDistance;
+        /* 0x1F0 */ public float RepelRange;
+        /* 0x1F4 */ public float RepelAmount;
+        /* 0x1F8 */ public float FishTurn;
+        /* 0x1FC */ public float TargetReachedDistance;
+        /* 0x200 */ public float MaxSpeed;
+        /* 0x204 */ public float MaxForce;
+        /* 0x208 */ public float MaxTorque;
+        /* 0x20C */ public float MinWaterSpawnDepth;
+        /* 0x210 */ public float WaterSpawnOffset;
+        /* 0x214 */ public float SpawnDistanceModifierForUnderwater;
+        /* 0x218 */ public float FootDustGroundTintStrength;
+        /* 0x21C */ public GcFlyingSnakeData FlyingSnakeData;
+        [NMS(Size = 0x3)]
+        /* 0x25C */ public GcCreatureAlertData[] AlertTable;
+        /* 0x2A4 */ public bool ShowScale;
+        /* 0x2A8 */ public float CreatureMedMinSize;
+        /* 0x2AC */ public float CreatureLargeMinSize;
+        /* 0x2B0 */ public float CreatureHugeMinSize;
+        /* 0x2B4 */ public int CreatureSmallHealth;
+        /* 0x2B8 */ public int CreatureMedHealth;
+        /* 0x2BC */ public int CreatureLargeHealth;
+        /* 0x2C0 */ public int CreatureHugeHealth;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding2C4;        // offset: 708, sz: 4, comment: auto padding 
-
+        /* 0x2C4 */ public byte[] Padding2C4;
         [NMS(Size = 0x10)]
-        public string Unknown2C8;     // offset: 0x2C8, sz: 15, origin:  "LARGECREATUREWA"        // line:   strncpy((char *)(v1 + 0x2C8), "LARGECREATUREWA", 0xFui64);
-        // line:   strupr((char *)(v1 + 0x2C8));
-        // line:   *(_BYTE *)(v1 + 0x2D7) = 0;
-        public float Unknown2D8;     // offset: 0x2D8, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x2D8) = 0x40400000;
-
-        // missing 4 bytes at offset 728
-        // could be padding, a undefined subroutine or a pointer accessing larger memory
+        /* 0x2C8 */ public string CreatureLargeWalkShake;
+        /* 0x2D8 */ public float CreatureLargeWalkMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding2DC;        // offset: 732, sz: 4, comment: auto padding 
-
+        /* 0x2DC */ public byte[] Padding2DC;
         [NMS(Size = 0x10)]
-        public string Unknown2E0;     // offset: 0x2E0, sz: 15, origin:  "LARGECREATUREWA"        // line:   strncpy((char *)(v1 + 0x2E0), "LARGECREATUREWA", 0xFui64);
-        // line:   strupr((char *)(v1 + 0x2E0));
-        // line:   *(_BYTE *)(v1 + 0x2EF) = 0;
-        public float Unknown2F0;     // offset: 0x2F0, sz: 4, origin: 0x40800000, parsed: 4        // line:   *(_DWORD *)(v1 + 0x2F0) = 0x40800000;
-
-        // missing 4 bytes at offset 752
-        // could be padding, a undefined subroutine or a pointer accessing larger memory
+        /* 0x2E0 */ public string CreatureLargeRunShake;
+        /* 0x2F0 */ public float CreatureLargeRunMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding2F4;        // offset: 756, sz: 4, comment: auto padding 
-
+        /* 0x2F4 */ public byte[] Padding2F4;
         [NMS(Size = 0x10)]
-        public string Unknown2F8;     // offset: 0x2F8, sz: 15, origin:  "LARGECREATUREWA"        // line:   strncpy((char *)(v1 + 0x2F8), "LARGECREATUREWA", 0xFui64);
-        // line:   strupr((char *)(v1 + 0x2F8));
-        // line:   *(_BYTE *)(v1 + 0x307) = 0;
-        public float Unknown308;     // offset: 0x308, sz: 4, origin: 0x41000000, parsed: 8        // line:   *(_DWORD *)(v1 + 0x308) = 0x41000000;
-        public float Unknown30C;     // offset: 0x30C, sz: 4, origin: 0x41F00000, parsed: 30        // line:   *(_DWORD *)(v1 + 0x30C) = 0x41F00000;
-
-        public float Unknown310;     // offset: 0x310, sz: 4, origin: 0x428C0000, parsed: 70        // line:   *(_DWORD *)(v1 + 0x310) = 0x428C0000;
-        public float Unknown314;     // offset: 0x314, sz: 4, origin: 0x41700000, parsed: 15        // line:   *(_DWORD *)(v1 + 0x314) = 0x41700000;
-        public float Unknown318;     // offset: 0x318, sz: 4, origin: 0x42700000, parsed: 60        // line:   *(_DWORD *)(v1 + 0x318) = 0x42700000;
-        public float Unknown31C;     // offset: 0x31C, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x31C) = 0x40400000;
-
-        public float Unknown320;     // offset: 0x320, sz: 4, origin: 0x42200000, parsed: 40        // line:   *(_DWORD *)(v1 + 0x320) = 0x42200000;
-        public float Unknown324;     // offset: 0x324, sz: 4, origin: 0x42200000, parsed: 40        // line:   *(_DWORD *)(v1 + 0x324) = 0x42200000;
-        public float Unknown328;     // offset: 0x328, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x328) = 0x41200000;
-        public float Unknown32C;     // offset: 0x32C, sz: 4, origin: 0x428C0000, parsed: 70        // line:   *(_DWORD *)(v1 + 0x32C) = 0x428C0000;
-
-        public int Unknown330;     // offset: 0x330, sz: 4, origin: 0x6E, parsed: 110        // line:   *(_DWORD *)(v1 + 0x330) = 0x6E;
-        public int Unknown334;     // offset: 0x334, sz: 4, origin: 0x78, parsed: 120        // line:   *(_DWORD *)(v1 + 0x334) = 0x78;
-        public int Unknown338;     // offset: 0x338, sz: 4, origin: 0x96, parsed: 150        // line:   *(_DWORD *)(v1 + 0x338) = 0x96;
-        public int Unknown33C;     // offset: 0x33C, sz: 4, origin: 0xA0, parsed: 160        // line:   *(_DWORD *)(v1 + 0x33C) = 0xA0;
-
-        public int Unknown340;     // offset: 0x340, sz: 4, origin: 0x5D, parsed: 93        // line:   *(_DWORD *)(v1 + 0x340) = 0x5D;
-        public float Unknown344;     // offset: 0x344, sz: 4, origin: 0x40800000, parsed: 4        // line:   *(_DWORD *)(v1 + 0x344) = 0x40800000;
-        public float Unknown348;     // offset: 0x348, sz: 4, origin: 0x3FC00000, parsed: 1.5        // line:   *(_DWORD *)(v1 + 0x348) = 0x3FC00000;
-        public float Unknown34C;     // offset: 0x34C, sz: 4, origin: 0x41300000, parsed: 11        // line:   *(_DWORD *)(v1 + 0x34C) = 0x41300000;
-
-        public float Unknown350;     // offset: 0x350, sz: 4, origin: 0x40E00000, parsed: 7        // line:   *(_DWORD *)(v1 + 0x350) = 0x40E00000;
-        public float Unknown354;     // offset: 0x354, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x354) = 0x3E99999A;
-        public float Unknown358;     // offset: 0x358, sz: 4, origin: 0x40E00000, parsed: 7        // line:   *(_DWORD *)(v1 + 0x358) = 0x40E00000;
-        public float Unknown35C;     // offset: 0x35C, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x35C) = 0x3E99999A;
-
-        public float Unknown360;     // offset: 0x360, sz: 4, origin: 0x42700000, parsed: 60        // line:   *(_DWORD *)(v1 + 0x360) = 0x42700000;
-        public float Unknown364;     // offset: 0x364, sz: 4, origin: 0x42A00000, parsed: 80        // line:   *(_DWORD *)(v1 + 0x364) = 0x42A00000;
-        public float Unknown368;     // offset: 0x368, sz: 4, origin: 0x41F00000, parsed: 30        // line:   *(_DWORD *)(v1 + 0x368) = 0x41F00000;
-        public float Unknown36C;     // offset: 0x36C, sz: 4, origin: 0x41F00000, parsed: 30        // line:   *(_DWORD *)(v1 + 0x36C) = 0x41F00000;
-
-        public float Unknown370;     // offset: 0x370, sz: 4, origin: 0x40A00000, parsed: 5        // line:   *(_DWORD *)(v1 + 0x370) = 0x40A00000;
-        public float Unknown374;     // offset: 0x374, sz: 4, origin: 0x3F19999A, parsed: 0.6        // line:   *(_DWORD *)(v1 + 0x374) = 0x3F19999A;
-        public float Unknown378;     // offset: 0x378, sz: 4, origin: 0x3F333333, parsed: 0.7        // line:   *(_DWORD *)(v1 + 0x378) = 0x3F333333;
-        public float Unknown37C;     // offset: 0x37C, sz: 4, origin: 0x42200000, parsed: 40        // line:   *(_DWORD *)(v1 + 0x37C) = 0x42200000;
-
-        public float Unknown380;     // offset: 0x380, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x380) = 0x3F800000;
-        public float Unknown384;     // offset: 0x384, sz: 4, origin: 0x45849000, parsed: 4242        // line:   *(_DWORD *)(v1 + 0x384) = 0x45849000;
-        public float Unknown388;     // offset: 0x388, sz: 4, origin: 0x3F19999A, parsed: 0.6        // line:   *(_DWORD *)(v1 + 0x388) = 0x3F19999A;
-        public float Unknown38C;     // offset: 0x38C, sz: 4, origin: 0x3F666666, parsed: 0.9        // line:   *(_DWORD *)(v1 + 0x38C) = 0x3F666666;
-
-        public float Unknown390;     // offset: 0x390, sz: 4, origin: 0x420C0000, parsed: 35        // line:   *(_DWORD *)(v1 + 0x390) = 0x420C0000;
-        public float Unknown394;     // offset: 0x394, sz: 4, origin: 0x41A00000, parsed: 20        // line:   *(_DWORD *)(v1 + 0x394) = 0x41A00000;
-        public float Unknown398;     // offset: 0x398, sz: 4, origin: 0x3F4CCCCD, parsed: 0.8        // line:   *(_DWORD *)(v1 + 0x398) = 0x3F4CCCCD;
-        public float Unknown39C;     // offset: 0x39C, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x39C) = 0x40000000;
-
-        public int Unknown3A0;     // offset: 0x3A0, sz: 4, origin: 0xC, parsed: 12        // line:   *(_DWORD *)(v1 + 0x3A0) = 0xC;
-        public int Unknown3A4;     // offset: 0x3A4, sz: 4, origin: 0x12, parsed: 18        // line:   *(_DWORD *)(v1 + 0x3A4) = 0x12;
-        public float Unknown3A8;     // offset: 0x3A8, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x3A8) = 0x3F800000;
-        public float Unknown3AC;     // offset: 0x3AC, sz: 4, origin: 0x3F400000, parsed: 0.75        // line:   *(_DWORD *)(v1 + 0x3AC) = 0x3F400000;
-
-        public float Unknown3B0;     // offset: 0x3B0, sz: 4, origin: 0x3F333333, parsed: 0.7        // line:   *(_DWORD *)(v1 + 0x3B0) = 0x3F333333;
-        public float Unknown3B4;     // offset: 0x3B4, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x3B4) = 0x40000000;
-        public float Unknown3B8;     // offset: 0x3B8, sz: 4, origin: 0x3E4CCCCD, parsed: 0.2        // line:   *(_DWORD *)(v1 + 0x3B8) = 0x3E4CCCCD;
-        public float Unknown3BC;     // offset: 0x3BC, sz: 4, origin: 0x3F19999A, parsed: 0.6        // line:   *(_DWORD *)(v1 + 0x3BC) = 0x3F19999A;
-
-        public float Unknown3C0;     // offset: 0x3C0, sz: 4, origin: 0x41700000, parsed: 15        // line:   *(_DWORD *)(v1 + 0x3C0) = 0x41700000;
-        public float Unknown3C4;     // offset: 0x3C4, sz: 4, origin: 0x41800000, parsed: 16        // line:   *(_DWORD *)(v1 + 0x3C4) = 0x41800000;
-        public float Unknown3C8;     // offset: 0x3C8, sz: 4, origin: 0x3F333333, parsed: 0.7        // line:   *(_DWORD *)(v1 + 0x3C8) = 0x3F333333;
-        public float Unknown3CC;     // offset: 0x3CC, sz: 4, origin: 0x40C00000, parsed: 6        // line:   *(_DWORD *)(v1 + 0x3CC) = 0x40C00000;
-
-        public float Unknown3D0;     // offset: 0x3D0, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x3D0) = 0x3F800000;
-        public float Unknown3D4;     // offset: 0x3D4, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x3D4) = 0x40000000;
-        public float Unknown3D8;     // offset: 0x3D8, sz: 4, origin: 0x40800000, parsed: 4        // line:   *(_DWORD *)(v1 + 0x3D8) = 0x40800000;
-        public float Unknown3DC;     // offset: 0x3DC, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x3DC) = 0x3F800000;
-
-        public float Unknown3E0;     // offset: 0x3E0, sz: 4, origin: 0x40200000, parsed: 2.5        // line:   *(_DWORD *)(v1 + 0x3E0) = 0x40200000;
-        public float Unknown3E4;     // offset: 0x3E4, sz: 4, origin: 0x40C00000, parsed: 6        // line:   *(_DWORD *)(v1 + 0x3E4) = 0x40C00000;
-        public float Unknown3E8;     // offset: 0x3E8, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x3E8) = 0x40400000;
-        public float Unknown3EC;     // offset: 0x3EC, sz: 4, origin: 0x40C00000, parsed: 6        // line:   *(_DWORD *)(v1 + 0x3EC) = 0x40C00000;
-
-        public float Unknown3F0;     // offset: 0x3F0, sz: 4, origin: 0x3E800000, parsed: 0.25        // line:   *(_DWORD *)(v1 + 0x3F0) = 0x3E800000;
-        public float Unknown3F4;     // offset: 0x3F4, sz: 4, origin: 0x3E800000, parsed: 0.25        // line:   *(_DWORD *)(v1 + 0x3F4) = 0x3E800000;
-        public float Unknown3F8;     // offset: 0x3F8, sz: 4, origin: 0x40C00000, parsed: 6        // line:   *(_DWORD *)(v1 + 0x3F8) = 0x40C00000;
-        public float Unknown3FC;     // offset: 0x3FC, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x3FC) = 0x40400000;
-
-        public float Unknown400;     // offset: 0x400, sz: 4, origin: 0x40C00000, parsed: 6        // line:   *(_DWORD *)(v1 + 0x400) = 0x40C00000;
-        public float Unknown404;     // offset: 0x404, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x404) = 0x40000000;
-        public float Unknown408;     // offset: 0x408, sz: 4, origin: 0x3FC00000, parsed: 1.5        // line:   *(_DWORD *)(v1 + 0x408) = 0x3FC00000;
-        public float Unknown40C;     // offset: 0x40C, sz: 4, origin: 0x42700000, parsed: 60        // line:   *(_DWORD *)(v1 + 0x40C) = 0x42700000;
-
-        public float Unknown410;     // offset: 0x410, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x410) = 0x41200000;
-        public float Unknown414;     // offset: 0x414, sz: 4, origin: 0x42700000, parsed: 60        // line:   *(_DWORD *)(v1 + 0x414) = 0x42700000;
-        public float Unknown418;     // offset: 0x418, sz: 4, origin: 0x44FA0000, parsed: 2000        // line:   *(_DWORD *)(v1 + 0x418) = 0x44FA0000;
-        public int Unknown41C;     // offset: 0x41C, sz: 4, origin: 4, parsed: 4        // line:   *(_DWORD *)(v1 + 0x41C) = 4;
-
-        public bool Unknown420;     // offset: 0x420, sz: 2, origin: 0, parsed: 0        // line:   *(_WORD *)(v1 + 0x420) = 0;
-        public bool Unknown421;
-        public float Unknown424;     // offset: 0x424, sz: 4, origin: 0x42A00000, parsed: 80        // line:   *(_DWORD *)(v1 + 0x424) = 0x42A00000;
-        public bool Unknown428;     // offset: 0x428, sz: 1, origin: 1, parsed: 1        // line:   *(_BYTE *)(v1 + 0x428) = 1;
-        public float Unknown42C;     // offset: 0x42C, sz: 4, origin: 0x3E4CCCCD, parsed: 0.2        // line:   *(_DWORD *)(v1 + 0x42C) = 0x3E4CCCCD;
-
-        public float Unknown430;     // offset: 0x430, sz: 4, origin: 0x3E4CCCCD, parsed: 0.2        // line:   *(_DWORD *)(v1 + 0x430) = 0x3E4CCCCD;
-        public float Unknown434;     // offset: 0x434, sz: 4, origin: 0x3ECCCCCD, parsed: 0.4        // line:   *(_DWORD *)(v1 + 0x434) = 0x3ECCCCCD;
-        public float Unknown438;     // offset: 0x438, sz: 4, origin: 0x3F99999A, parsed: 1.2        // line:   *(_DWORD *)(v1 + 0x438) = 0x3F99999A;
-        public bool Unknown43C;     // offset: 0x43C, sz: 1, origin: 1, parsed: 1        // line:   *(_BYTE *)(v1 + 0x43C) = 1;
-
-        // missing 3 bytes at offset 1084
-        // does 1084 contain a DWORD?
+        /* 0x2F8 */ public string CreatureHugeWalkShake;
+        /* 0x308 */ public float CreatureHugeWalkMaxShakeDist;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x30C */ public byte[] Padding30C;
+        [NMS(Size = 0x10)]
+        /* 0x310 */ public string CreatureHugeRunShake;
+        /* 0x320 */ public float CreatureHugeRunMaxShakeDist;
+        /* 0x324 */ public float SmallCreaturePerceptionDistance;
+        /* 0x328 */ public float largeCreaturePerceptionDistance;
+        /* 0x32C */ public float SmallCreatureFleePlayerDistance;
+        /* 0x330 */ public float LargeCreatureFleePlayerDistance;
+        /* 0x334 */ public float SmallCreatureAvoidPlayerDistance;
+        /* 0x338 */ public float LargeCreatureAvoidPlayerDistance;
+        /* 0x33C */ public float PredatorPerceptionDistance;
+        /* 0x340 */ public float PassiveFleePlayerDistance;
+        /* 0x344 */ public float AdultBabyKilledNoticeDistance;
+        /* 0x348 */ public int PredatorSmallHealth;
+        /* 0x34C */ public int PredatorMedHealth;
+        /* 0x350 */ public int PredatorLargeHealth;
+        /* 0x354 */ public int PredatorHugeHealth;
+        /* 0x358 */ public int PlayerPredatorHealth;
+        /* 0x35C */ public float PredatorApproachTime;
+        /* 0x360 */ public float PredatorNoticePauseTime;
+        /* 0x364 */ public float PredatorStealthDist;
+        /* 0x368 */ public float PredatorChargeDist;
+        /* 0x36C */ public float PredatorChargeDistScale;
+        /* 0x370 */ public float FishPredatorChargeDist;
+        /* 0x374 */ public float FishPredatorChargeDistScale;
+        /* 0x378 */ public float PredatorBoredomDistance;
+        /* 0x37C */ public float PlayerPredatorBoredomDistance;
+        /* 0x380 */ public float PredatorRegainInterestTime;
+        /* 0x384 */ public float PlayerPredatorRegainInterestTime;
+        /* 0x388 */ public float PredatorRunAwayDist;
+        /* 0x38C */ public float PredatorRoarProbAfterHit;
+        /* 0x390 */ public float PredatorRoarProbAfterMiss;
+        /* 0x394 */ public float PredatorRunAwayHealthPercent;
+        /* 0x398 */ public bool FiendsCanAttack;
+        /* 0x39C */ public int FiendHealth;
+        /* 0x3A0 */ public float FiendPerceptionDistance;
+        /* 0x3A4 */ public float FiendSpawnDistance;
+        /* 0x3A8 */ public float FiendDespawnDistance;
+        /* 0x3AC */ public float FiendReplicateStartDistance;
+        /* 0x3B0 */ public float FiendReplicateEndDistance;
+        /* 0x3B4 */ public float FiendAggroTime;
+        /* 0x3B8 */ public int FiendMaxEngaged;
+        /* 0x3BC */ public int FiendMaxAttackers;
+        /* 0x3C0 */ public float DelayBetweenAttacks;
+        /* 0x3C4 */ public float FiendZigZagSpeed;
+        /* 0x3C8 */ public float FiendZigZagStrength;
+        /* 0x3CC */ public int MaxFiendsToSpawn;
+        /* 0x3D0 */ public float FiendMinSpawnTime;
+        /* 0x3D4 */ public float FiendMaxSpawnTime;
+        /* 0x3D8 */ public float FiendAggroIncreaseDamageEgg;
+        /* 0x3DC */ public float FiendAggroIncreaseDestroyEgg;
+        /* 0x3E0 */ public float FiendAggroDecreasePerSpawn;
+        /* 0x3E4 */ public float RoutineSpeed;
+        /* 0x3E8 */ public float RoutineOffset;
+        /* 0x3EC */ public float RagdollTau;
+        /* 0x3F0 */ public float RagdollDamping;
+        /* 0x3F4 */ public float RagdollConeLimit;
+        /* 0x3F8 */ public float RagdollTwistLimit;
+        /* 0x3FC */ public float RagdollMotorFadeStart;
+        /* 0x400 */ public float RagdollMotorFadeEnd;
+        /* 0x404 */ public int MaxRagdollsBeforeDespawnOffscreen;
+        /* 0x408 */ public int MaxRagdollsBeforeDespawnOnscreen;
+        /* 0x40C */ public float TurnRadiusMultiplier;
+        /* 0x410 */ public float TurnSlowAreaCos;
+        /* 0x414 */ public float BadTurnPercent;
+        /* 0x418 */ public float BadTurnWeight;
+        /* 0x41C */ public float MinScaleForNavMap;
+        /* 0x420 */ public float ImpassabilityBrakeTime;
+        /* 0x424 */ public float ImpassabilityUnbrakeTime;
+        /* 0x428 */ public float ImpassabilityTurnSpeedMultiplier;
+        /* 0x42C */ public float NavMapLookAhead;
+        /* 0x430 */ public float VelocityAlignYFactorMin;
+        /* 0x434 */ public float VelocityAlignYFactorMax;
+        /* 0x438 */ public float BrakingForce;
+        /* 0x43C */ public float BrakingForceY;
+        /* 0x440 */ public float FlowFieldWeight;
+        /* 0x444 */ public float FollowWeight;
+        /* 0x448 */ public float AvoidCreaturesWeight;
+        /* 0x44C */ public float AvoidImpassableWeight;
+        /* 0x450 */ public float FollowLeaderAlignWeight;
+        /* 0x454 */ public float FollowLeaderCohereWeight;
+        /* 0x458 */ public float DefaultWalkMoveSpeed;
+        /* 0x45C */ public float DefaultTrotMoveSpeed;
+        /* 0x460 */ public float DefaultRunMoveSpeed;
+        /* 0x464 */ public float PredatorWalkMoveSpeed;
+        /* 0x468 */ public float PredatorTrotMoveSpeed;
+        /* 0x46C */ public float PredatorRunMoveSpeed;
+        /* 0x470 */ public float HeightDiffPenalty;
+        /* 0x474 */ public float EdgeClosenessPenalty;
+        /* 0x478 */ public float PelvisIkStrength;
+        /* 0x47C */ public float SteeringUpdateRate;
+        /* 0x480 */ public float PathOverestimate;
+        /* 0x484 */ public float FishWaterSurfaceAnticipate;
+        /* 0x488 */ public float FishWaterSurfaceAvoidStrength;
+        /* 0x48C */ public float FishDesiredDepth;
+        /* 0x490 */ public float FishMinHeightAboveSeaBed;
+        /* 0x494 */ public float FishSeaBedAvoidStrength;
+        /* 0x498 */ public float AttackPlayerDistance;
+        /* 0x49C */ public float SpawnCameraAngleCos;
+        /* 0x4A0 */ public float SpawnMinDistPercentage;
+        /* 0x4A4 */ public float SpawnOnscreenDist;
+        /* 0x4A8 */ public float FadeScaleMultiplier;
+        /* 0x4AC */ public float FadeScalePower;
+        /* 0x4B0 */ public float FadeDistance;
+        /* 0x4B4 */ public float MinFade;
+        /* 0x4B8 */ public float MaxFade;
+        /* 0x4BC */ public bool ProcessPendingSpawnRequests;
+        /* 0x4C0 */ public float SpawnsAvoidBaseMultiplier;
+        /* 0x4C4 */ public int PerceptionUpdateRate;
+        /* 0x4C8 */ public bool AllowSleeping;
+        /* 0x4C9 */ public bool DebugDrawTrails;
+        /* 0x4CC */ public float TrailHalfLife;
+        /* 0x4D0 */ public bool EnableTrailIk;
+        /* 0x4D4 */ public float DetailAnimBlendInTime;
+        /* 0x4D8 */ public float DetailAnimBlendOutTime;
+        /* 0x4DC */ public float DetailAnimMinPauseTime;
+        /* 0x4E0 */ public float DetailAnimMaxPauseTime;
+        /* 0x4E4 */ public bool DetailAnimPlayWhileWalking;
         [NMS(Size = 0x3, Ignore = true)]
-        public byte[] Padding43D;        // offset: 1085, sz: 3, comment: auto padding 
-
+        /* 0x4E5 */ public byte[] Padding4E5;
         [NMS(Size = 0x10)]
-        public string Unknown440;     // offset: 0x440, sz: 15, origin:  "DEATHBLOODSMALL"        // line:   strncpy((char *)(v1 + 0x440), "DEATHBLOODSMALL", 0xFui64);
-
+        /* 0x4E8 */ public string CreatureDeathEffectSmall;
         [NMS(Size = 0x10)]
-        public string Unknown450;     // offset: 0x450, sz: 13, origin:  "DEATHBLOODMED"        // line:   strncpy((char *)(v1 + 0x450), "DEATHBLOODMED", 0xDui64);
-
+        /* 0x4F8 */ public string CreatureDeathEffectMedium;
         [NMS(Size = 0x10)]
-        public string Unknown460;     // offset: 0x460, sz: 13, origin:  "DEATHBLOODBIG"        // line:   strncpy((char *)(v1 + 0x460), "DEATHBLOODBIG", 0xDui64);
-
-        public float Unknown470;     // offset: 0x470, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x470) = 0x3E99999A;
-        public float Unknown474;     // offset: 0x474, sz: 4, origin: 0x41000000, parsed: 8        // line:   *(_DWORD *)(v1 + 0x474) = 0x41000000;
-        public float Unknown478;     // offset: 0x478, sz: 4, origin: 0x41900000, parsed: 18        // line:   *(_DWORD *)(v1 + 0x478) = 0x41900000;
-        public float Unknown47C;     // offset: 0x47C, sz: 4, origin: 0x42340000, parsed: 45        // line:   *(_DWORD *)(v1 + 0x47C) = 0x42340000;
-
-        public float Unknown480;     // offset: 0x480, sz: 4, origin: 0x41A00000, parsed: 20        // line:   *(_DWORD *)(v1 + 0x480) = 0x41A00000;
-        public float Unknown484;     // offset: 0x484, sz: 4, origin: 0x428C0000, parsed: 70        // line:   *(_DWORD *)(v1 + 0x484) = 0x428C0000;
-        public float Unknown488;     // offset: 0x488, sz: 4, origin: 0x41A00000, parsed: 20        // line:   *(_DWORD *)(v1 + 0x488) = 0x41A00000;
-        public float Unknown48C;     // offset: 0x48C, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x48C) = 0x41200000;
-
-        public float Unknown490;     // offset: 0x490, sz: 4, origin: 0x3F000000i64, parsed: 0.5, comment: two packed floats in a QWORD?(1)
-        public float Unknown494;     // offset: 1172, sz: 4, origin: 0x3F000000i64, parsed: 0, comment: two packed floats in a QWORD?(2)        // line:   *(_QWORD *)(v1 + 0x490) = 0x3F000000i64;
-        public bool Unknown498;     // offset: 0x498, sz: 1, origin: 0, parsed: 0        // line:   *(_BYTE *)(v1 + 0x498) = 0;
-        public int Unknown49C;     // offset: 0x49C, sz: 4, origin: 4, parsed: 4        // line:   *(_DWORD *)(v1 + 0x49C) = 4;
-
-        public int Unknown4A0;     // offset: 0x4A0, sz: 4, origin: 4, parsed: 4        // line:   *(_DWORD *)(v1 + 0x4A0) = 4;
-        public float Unknown4A4;     // offset: 0x4A4, sz: 4, origin: 0x3E800000, parsed: 0.25        // line:   *(_DWORD *)(v1 + 0x4A4) = 0x3E800000;
-        public float Unknown4A8;     // offset: 0x4A8, sz: 4, origin: 0x3F4CCCCD, parsed: 0.8        // line:   *(_DWORD *)(v1 + 0x4A8) = 0x3F4CCCCD;
-        public float Unknown4AC;     // offset: 0x4AC, sz: 4, origin: 0x3F4CCCCD, parsed: 0.8        // line:   *(_DWORD *)(v1 + 0x4AC) = 0x3F4CCCCD;
-
-        public float Unknown4B0;     // offset: 0x4B0, sz: 4, origin: 0x3F733333, parsed: 0.95        // line:   *(_DWORD *)(v1 + 0x4B0) = 0x3F733333;
-        public float Unknown4B4;     // offset: 0x4B4, sz: 4, origin: 0x3DCCCCCD, parsed: 0.1        // line:   *(_DWORD *)(v1 + 0x4B4) = 0x3DCCCCCD;
-        public float Unknown4B8;     // offset: 0x4B8, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x4B8) = 0x3F800000;
-        public float Unknown4BC;     // offset: 0x4BC, sz: 4, origin: 0x40000000, parsed: 2        // line:   *(_DWORD *)(v1 + 0x4BC) = 0x40000000;
-
-        public float Unknown4C0;     // offset: 0x4C0, sz: 4, origin: 0x40E00000, parsed: 7        // line:   *(_DWORD *)(v1 + 0x4C0) = 0x40E00000;
-        public float Unknown4C4;     // offset: 0x4C4, sz: 4, origin: 0x41200000, parsed: 10        // line:   *(_DWORD *)(v1 + 0x4C4) = 0x41200000;
-        public float Unknown4C8;     // offset: 0x4C8, sz: 4, origin: 0x3F19999A, parsed: 0.6        // line:   *(_DWORD *)(v1 + 0x4C8) = 0x3F19999A;
-        public float Unknown4CC;     // offset: 0x4CC, sz: 4, origin: 0x3E99999A, parsed: 0.3        // line:   *(_DWORD *)(v1 + 0x4CC) = 0x3E99999A;
-
-        public float Unknown4D0;     // offset: 0x4D0, sz: 4, origin: 0x3F000000, parsed: 0.5        // line:   *(_DWORD *)(v1 + 0x4D0) = 0x3F000000;
-        public float Unknown4D4;     // offset: 0x4D4, sz: 4, origin: 0x3F4CCCCD, parsed: 0.8        // line:   *(_DWORD *)(v1 + 0x4D4) = 0x3F4CCCCD;
-        public bool Unknown4D8;     // offset: 0x4D8, sz: 1, origin: 0, parsed: 0        // line:   *(_BYTE *)(v1 + 0x4D8) = 0;
-        public float Unknown4DC;     // offset: 0x4DC, sz: 4, origin: 0x3F333333, parsed: 0.7        // line:   *(_DWORD *)(v1 + 0x4DC) = 0x3F333333;
-
-        public float Unknown4E0;     // offset: 0x4E0, sz: 4, origin: 0x40400000, parsed: 3        // line:   *(_DWORD *)(v1 + 0x4E0) = 0x40400000;
-        public float Unknown4E4;     // offset: 0x4E4, sz: 4, origin: 0x3F800000, parsed: 1        // line:   *(_DWORD *)(v1 + 0x4E4) = 0x3F800000;
-        public float Unknown4E8;     // offset: 0x4E8, sz: 4, origin: 0x3FA00000, parsed: 1.25        // line:   *(_DWORD *)(v1 + 0x4E8) = 0x3FA00000;
-        public bool Unknown4EC;     // offset: 0x4EC, sz: 1, origin: 0, parsed: 0        // line:   *(_BYTE *)(v1 + 0x4EC) = 0;
-
+        /* 0x508 */ public string CreatureDeathEffectBig;
+        /* 0x518 */ public float FootParticleTime;
+        /* 0x51C */ public float FollowPlayerDistance;
+        /* 0x520 */ public float FollowRunPlayerDistance;
+        /* 0x524 */ public float SearchItemDistance;
+        /* 0x528 */ public float SearchItemFrequency;
+        /* 0x52C */ public float SearchItemGiveUpDistance;
+        /* 0x530 */ public float SearchItemGiveUpTime;
+        /* 0x534 */ public float SearchItemNotifyTime;
+        /* 0x538 */ public float SearchSpawnRandomItemProbability;
+        /* 0x53C */ public float MiningRandomProbability;
+        /* 0x540 */ public bool DebugSearch;
+        /* 0x544 */ public int FriendlyCreatureLimit;
+        /* 0x548 */ public int FeedingTaskAmount;
+        /* 0x54C */ public float FeedingFollowTime;
+        /* 0x550 */ public float FeedingNoticeTime;
+        /* 0x554 */ public float FeedingNoticeDistance;
+        /* 0x558 */ public float AnimChangeCoolDown;
+        /* 0x55C */ public float GroupRunProbability;
+        /* 0x560 */ public float GroupBabyRunProbability;
+        /* 0x564 */ public float GroupRunStormProbability;
+        /* 0x568 */ public float GroupLookAtProbability;
+        /* 0x56C */ public float GroupLookAtDurationMin;
+        /* 0x570 */ public float GroupLookAtDurationMax;
+        /* 0x574 */ public float GroupRunDurationMin;
+        /* 0x578 */ public float GroupRunDurationMax;
+        /* 0x57C */ public float GroupFemaleProportion;
+        /* 0x580 */ public float GroupBabyProportion;
+        /* 0x584 */ public float GroupBabyScale;
+        /* 0x588 */ public float GroupBabyHealthMultiplier;
+        /* 0x58C */ public float MaxBirdsProportion;
+        /* 0x590 */ public float HerdGroupSizeMultiplier;
+        /* 0x594 */ public bool DrawRoutineFollowDebug;
+        /* 0x598 */ public float AdultCorrelationValue;
+        /* 0x59C */ public float GrassPushRadius;
+        /* 0x5A0 */ public float GrassPushStrength;
+        /* 0x5A4 */ public float GrassPushMaxSize;
+        /* 0x5A8 */ public bool DrawGrassPushRadius;
         [NMS(Size = 0x80)]
-        public string Unknown4ED; // offset: 0x4ED, sz: 128, origin:  "metadata/simulation/ecosystem/roledescriptiontables/ground/groundtablecommon.mxml"
-
+        /* 0x5A9 */ public string DefaultCreatureSettings;
         [NMS(Size = 0x80)]
-        public string Unknown56D;     // offset: 0x56D, sz: 128, origin:  "metadata/simulation/ecosystem/roledescriptiontables/air/AirTableCommon.mxml"        // line:   strncpy((char *)(v1 + 0x56D), "metadata/simulation/ecosystem/roledescriptiontables/air/AirTableCommon.mxml", 0x80ui64);
-                                      // line:   *(_BYTE *)(v1 + 0x5EC) = 0;
-
-        public float Unknown5F0;     // offset: 0x5F0, sz: 4, origin: 0x3F99999A, parsed: 1.2        // line:   *(_DWORD *)(v1 + 0x5F0) = 0x3F99999A;
-        public float Unknown5F4;     // offset: 0x5F4, sz: 4, origin: 0x3F8CCCCD, parsed: 1.1        // line:   *(_DWORD *)(v1 + 0x5F4) = 0x3F8CCCCD;
-
-        [NMS(Size = 0x10)]
-        public string Unknown5F8;
-
-        [NMS(Size = 0x10)]
-        public string Unknown608;
-
-        [NMS(Size = 0x10)]
-        public string Unknown618;
-
-        [NMS(Size = 0x10)]
-        public string Unknown628;
-
-        [NMS(Size = 0x10)]
-        public string Unknown638;
-
-        [NMS(Size = 0x10)]
-        public string Unknown648;
-
-        [NMS(Size = 0x10)]
-        public string Unknown658;
-
-        [NMS(Size = 0x10)]
-        public string Unknown668;
-
-        [NMS(Size = 0x10)]
-        public string Unknown678;
-
-        [NMS(Size = 8, Ignore = true)]
-        public string Padding688;
+        /* 0x629 */ public string DefaultAirCreatureSettings;
+        [NMS(Size = 0x80)]
+        /* 0x6A9 */ public string DefaultWaterCreatureSettings;
+        /* 0x72C */ public float CreatureSpeedMultiplier;
+        /* 0x730 */ public float PredatorSpeedMultiplier;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x734 */ public byte[] Padding734;
+        [NMS(Size = 0x3)]
+        /* 0x738 */ public NMSString0x10 FeedingSubstances;
+        [NMS(Size = 0x3)]
+        /* 0x768 */ public NMSString0x10 KillingSubstances;
+        [NMS(Size = 0x3)]
+        /* 0x798 */ public NMSString0x10 LootItems;
+        /* 0x7C8 */ public float PauseBetweenCreatureSpawnRequests;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x7CC */ public byte[] EndPadding;
     }
 }

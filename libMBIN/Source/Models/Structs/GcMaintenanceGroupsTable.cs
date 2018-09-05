@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x70)]
     public class GcMaintenanceGroupsTable : NMSTemplate
     {
-        [NMS(Size = 0x5, EnumValue = new string[5] { "Custom", "Farming", "Fuelling", "Repairing", "Cleaning" })]
+        [NMS(Size = 0x7, EnumValue = new string[7] { "Custom", "Farming", "Fuelling", "Repairing", "EasyRepairing", "Cleaning", "Frigate" })]
         public GcMaintenanceGroup[] Groups;
     }
 }

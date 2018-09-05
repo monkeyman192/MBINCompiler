@@ -254,5 +254,5 @@ paket-files/
 
 # CodeRush
 .cr/
-/MBINCompilerTests/app.config
 *.manifest
+/MBINCompilerTests/Config/*

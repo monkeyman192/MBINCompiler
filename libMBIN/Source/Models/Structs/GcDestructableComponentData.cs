@@ -2,7 +2,8 @@
 
 namespace libMBIN.Models.Structs
 {
-    public class GcDestructableComponentData : NMSTemplate      // size: 0x148
+    [NMS(Size = 0x148)]
+    public class GcDestructableComponentData : NMSTemplate
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string Explosion;
@@ -28,7 +29,7 @@ namespace libMBIN.Models.Structs
 
         /* 0x058 */ public List<GcSubstanceAmount> GivesSubstances;
 
-        /* 0x68 */ public GcStatTrackType StatsToTrack;      // not sure about this...
+        /* 0x68 */ public GcStatsEnum StatsToTrack;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x6C */ public byte[] Padding6C;
 

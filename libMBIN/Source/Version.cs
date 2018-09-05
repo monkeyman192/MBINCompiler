@@ -1,9 +1,15 @@
 ﻿namespace libMBIN {
+
     public static class Version {
 
-        public static string GetVersionString() {
-            return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        }
+        // THIS IS THE MASTER VERSION STRING. MAKE VERSION CHANGES HERE.
+        // Used by libMBIN.AssemblyInfo, MBINCompiler.AssemblyInfo
+        // and (this) libMBIN.Version
+        internal const string VERSION_STRING = "1.52.0.0";
+
+        public static System.Version AssemblyVersion => new System.Version( VERSION_STRING );
+        public static System.Version NMSVersion => new System.Version( AssemblyVersion.Major, AssemblyVersion.Minor );
 
     }
+
 }

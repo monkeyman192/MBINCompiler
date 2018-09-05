@@ -1,20 +1,21 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcPlayerSpaceshipControlData : NMSTemplate     // size = 0xF4
+    [NMS(Size = 0xFC)]
+    public class GcPlayerSpaceshipControlData : NMSTemplate
     {
-        public GcPlayerSpaceshipEngineData SpaceEngine;
-        public GcPlayerSpaceshipEngineData PlanetEngine;
+        /* 0x00 */ public GcPlayerSpaceshipEngineData SpaceEngine;
+        /* 0x58 */ public GcPlayerSpaceshipEngineData PlanetEngine;
 
-        public float ExitHeightFactorMin;
-        public float ExitHeightFactorMax;
-        public float ExitHeightFactorPlungeMin;
-        public float ExitHeightFactorPlungeMax;
-        public float ExitAngleMin;
-        public float ExitAngleMax;
-        public float ExitLeaveAngle;
+        /* 0xB0 */ public float ExitHeightFactorMin;
+        /* 0xB4 */ public float ExitHeightFactorMax;
+        /* 0xB8 */ public float ExitHeightFactorPlungeMin;
+        /* 0xBC */ public float ExitHeightFactorPlungeMax;
+        /* 0xC0 */ public float ExitAngleMin;
+        /* 0xC4 */ public float ExitAngleMax;
+        /* 0xC8 */ public float ExitLeaveAngle;
 
-        public TkCurveType ExitCurve;
-        public TkCurveType ExitDownCurve;
+        /* 0xCC */ public TkCurveType ExitCurve;
+        /* 0xD0 */ public TkCurveType ExitDownCurve;
 
         public float AngularFactor;
         public float MaxTorque;

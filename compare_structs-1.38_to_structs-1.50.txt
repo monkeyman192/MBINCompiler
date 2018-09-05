@@ -1,0 +1,378 @@
+	New structs:
+cGcJourneyMedalTiers	@ 0X14038BAA0									good
+cGcMissionIDEpochPair	@ 0X14044E4C0
+cGcCustomisationColourGroup	@ 0X140480CB0
+cGcCharacterCustomisationBoneScaleData	@ 0X140452F10
+cGcFrigateStatType	@ 0X14039AB30
+cGcScreenFilters	@ 0X1403AA270										good
+cGcRefinerUnitComponentData	@ 0X140652130
+cGcPlayerFullBodyIKComponentData	@ 0X140F160D0
+cGcProductProceduralOnlyData	@ 0X140476A20
+cGcDoShipReceiveHail	@ 0X1412329A0
+cGcMissionSchedulesTable	@ 0X14047F7A0
+cGcMissionSequenceGetToExpedition	@ 0X140A806F0
+cTkPhysRelVectorData	@ 0X1403863E0
+cGcMissionConditionWeather	@ 0X14048AA90
+cGcDate	@ 0X14047F2F0
+cGcPlayerCharacterState	@ 0X140F2C7B0
+cGcCustomisationUI	@ 0X140481DC0
+cGcCharacterInterfaceComponentData	@ 0X1408C0450
+cGcFrigateInteractionAction	@ 0X140F1AB70
+cGcDamageMultiplierLookup	@ 0X1404557F0								good?
+cGcDiscoveryRewardLookup	@ 0X14047C8D0								good
+cGcMissionConditionInCombat	@ 0X14048ACD0
+cGcLadderComponentData	@ 0X140F12EC0
+cGcStormProperties	@ 0X140466D60
+cGcNetworkPlayerMarkerComponentData	@ 0X140B3D870
+cGcThirdPersonAnimParams	@ 0X140684BC0
+cGcRefinerRecipe	@ 0X140455CC0
+cGcCustomisationRace	@ 0X1404818F0
+cGcShipDialogueTreeEnum	@ 0X14038BEC0
+cGcDailyRecurrence	@ 0X140A7D2F0
+cGcInventoryClassCostMultiplier	@ 0X14039BB20							good
+cGcCharacterCustomisationSaveData	@ 0X1404533F0
+cGcFrigateTraitStrengthByType	@ 0X14039C190
+cGcMissionSchedulingData	@ 0X14047F500
+cGcPlayerWeaponData	@ 0X140456330										good
+cGcExpeditionInterventionEventData	@ 0X14077D160
+cGcProceduralTechnologyData	@ 0X14039ED20
+cGcDay	@ 0X140A7D550
+cGcFreighterSyncComponentData	@ 0X140F61AA0
+cGcRewardPirateAttack	@ 0X1406D5F70
+cGcFreighterBaseOptions	@ 0X140656D50
+cGcRewardProcTechProduct	@ 0X1406D6A40
+cGcCostFrigateCargo	@ 0X1406B6FE0
+cGcRewardCargo	@ 0X1406D0840
+cGcFrigateStatsByClass	@ 0X14039C800
+cGcDamageType	@ 0X1404553C0											good
+cGcMissionConditionHasMoney	@ 0X14048AF00
+cGcWeeklyRecurrence	@ 0X140A7D750
+cGcMissionConditionFrigateCount	@ 0X140A76350
+cGcPlayerCharacterAnimationOverrideData	@ 0X140F15790
+cGcMissionConditionWeaponMode	@ 0X140A8FA20
+cGcMissionConditionWaitForTime	@ 0X140A77300
+cGcExpeditionEventTable	@ 0X1407B3600
+cGcSavedInteractionDialogData	@ 0X1404501F0
+cGcExpeditionCategory	@ 0X14039CC00
+cGcShipDialogue	@ 0X14038C330
+cGcExpeditionDuration	@ 0X14039B270
+cGcTerrainTextureSettings	@ 0X140465A40								good
+cGcPhotoPlant	@ 0X1404866C0
+cGcWeatherWeightings	@ 0X140464700
+cGcFrigateTraitStrengthValues	@ 0X14039BF60
+cGcFleetExpeditionSaveData	@ 0X140453C10
+cGcRewardStatDiff	@ 0X1406DCF30
+cGcPlayerCharacterStateTable	@ 0X140F2C9E0
+cGcMonthlyRecurrence	@ 0X140A7D9B0
+cGcProceduralProductCategory	@ 0X1404595C0
+cGcPhotoBuilding	@ 0X140486B20
+cGcShipMessage	@ 0X1406D91A0
+cGcTelemetryStat	@ 0X14044F2B0
+cGcProceduralProductData	@ 0X140476C00
+cGcLegacyItem	@ 0X1404771A0
+cGcNPCAnimationSetData	@ 0X140470AF0
+cGcYearlyRecurrence	@ 0X140A7DBE0
+cGcCustomisationDescriptorGroupOption	@ 0X140480EE0
+cGcExpeditionDurationValues	@ 0X14039B4B0
+cGcCustomisationUIData	@ 0X140482030
+cGcFrigateTraitIcons	@ 0X14039C9E0
+cGcPhotoFlora	@ 0X1404868F0
+cGcFrigateTraitStrength	@ 0X14039BD30
+cGcNPCNavigationAreaComponentData	@ 0X14064FC70
+cGcPhotoBuildings	@ 0X140486D50
+cGcCustomisationCameraData	@ 0X1404808A0
+cGcSpaceshipAvoidanceData	@ 0X14038C850
+cGcPlayerWeapons	@ 0X140452630
+cGcFreighterBaseComponentData	@ 0X140656F90
+cGcNPCAnimationsData	@ 0X140470D30
+cGcFrigateStats	@ 0X14039C5B0
+cGcPlayerEmote	@ 0X1411B37B0
+cGcTileTypeSets	@ 0X1404657B0								 			good
+cGcRewardRefreshHazProt	@ 0X1406D7A50
+cGcRewardDisplayTechWindow	@ 0X1406D16D0
+cGcCustomisationPresets	@ 0X140788C60
+cGcExpeditionHologramComponentData	@ 0X14064EBE0
+cGcScanEffectComponentData	@ 0X140F171B0
+cGcDoShipReceiveMessage	@ 0X140EB2CA0
+cGcMissionConditionExpeditionProgress	@ 0X140A76790
+cGcRefinerRecipeElement	@ 0X140455A70
+cGcMissionConditionRefinerActive	@ 0X140A8F7C0
+cGcFrigateUITraitLines	@ 0X140399B40
+cGcSubstanceSecondaryBiome	@ 0X140454F90
+cGcCustomisationTextureGroup	@ 0X140480A80
+cGcMissionSequenceCollectMoney	@ 0X140487290
+cGcRewardFrigateDamageResponse	@ 0X1406D2150
+cGcFrigateStatRange	@ 0X14039C3A0
+cGcMissionConditionHasFreighter	@ 0X140489140
+cGcCostFleetStoredIncome	@ 0X1406B6CC0
+cGcPurchaseableSpecials	@ 0X14047B7D0
+cGcMissionSequenceWaitRealTime	@ 0X140A88D10
+cGcRewardWikiTopic	@ 0X1406E1500
+cGcTechList	@ 0X140457CA0
+cGcCustomisationDescriptorGroupOptions	@ 0X140481190
+cGcPlayerEmoteList	@ 0X1411B3EF0
+cGcRewardUpgradeBase	@ 0X1406E0720
+cGcPassiveFrigateIncome	@ 0X14039A6F0
+cGcPhotoFauna	@ 0X140486490
+cGcPlayerCharacterComponentData	@ 0X140684EE0
+cGcFrigateClassCost	@ 0X14039B6D0
+cGcRewardProceduralTechnology	@ 0X1406D67A0
+cGcRewardTriggerStorm	@ 0X1406E0430
+cGcBroadcastLevel	@ 0X1406519C0
+cGcFrigateTraitTable	@ 0X1407B3910
+cGcCharacterCustomisationTextureOptionData	@ 0X140452D00
+cGcRewardScanEventNearestBuilding	@ 0X1406D87E0
+cGcTerrainTexture	@ 0X140465C70												good
+cGcPlayerCharacterIKStateData	@ 0X140F15A80
+cGcPersistentTerrainEdits	@ 0X14046D630
+cGcLegacyItemTable	@ 0X1404773F0
+cGcPlanetRingData	@ 0X140387600												good
+cGcExpeditionPowerup	@ 0X14039AD60
+cGcAlienPuzzleCategory	@ 0X1404750D0
+cGcShipOwnershipComponentData	@ 0X140883210
+cGcRewardInterventionResponse	@ 0X1406D2EF0
+cGcMissionConditionNearObject	@ 0X14048A8B0
+cGcWeightingCurve	@ 0X14039E6D0
+cGcMissionSequenceCompleteMission	@ 0X140A809C0
+cGcCustomisationDescriptorGroup	@ 0X1407C64E0
+cGcCustomisationPreset	@ 0X1407889D0
+cGcProceduralTechnologyTable	@ 0X14047CDA0
+cGcScreenFilterData	@ 0X140470FF0
+cGcDoShipClearCommunication	@ 0X141334120
+cGcCustomisationTextureOption	@ 0X1407C6A80
+cGcRewardSecondarySubstance	@ 0X1406D8980
+cGcCostStatCompare	@ 0X1406B9220
+cGcFrigateTraitData	@ 0X140474060
+cGcFreighterBaseOption	@ 0X140656AD0
+cGcCameraWarpSettings	@ 0X140386640
+cGcVehicleRaceInviteComponentData	@ 0X1409DEC80
+cGcRewardShipMessage	@ 0X1406D93D0
+cGcBuildingBlueprint	@ 0X14047B240
+cGcPlayerWeaponComponentData	@ 0X140B235C0
+cGcExpeditionPaymentToken	@ 0X14039A030
+cGcCreatureRoleFrequencyModifier	@ 0X140464040
+cGcRewardProceduralProductFromBiome	@ 0X1406D6630
+cGcCustomisationGroup	@ 0X140481680
+cGcProceduralTechnologyStatLevel	@ 0X14039EB30
+cGcPhotoCreature	@ 0X140486260													good
+cGcAlienPuzzleTableIndex	@ 0X140455190
+cGcExpeditionDifficultyKeyframe	@ 0X14039D280
+cGcGenericMissionStage	@ 0X14047EE00
+cGcCharacterCustomisationData	@ 0X140453160
+cGcDamageMultiplier	@ 0X1404555F0													good
+cGcProceduralTechnologyCategory	@ 0X14039E4A0
+cGcCustomisationTextureOptions	@ 0X1407C6CF0
+cGcPlayerCommunicatorMessageWeighted	@ 0X14038C0F0
+cGcPassiveFrigateIncomeArray	@ 0X14039A920
+cGcRewardProceduralProduct	@ 0X1406D63C0
+cGcCustomisationDescriptorGroups	@ 0X1407C6780
+cGcMissionConditionMissionMessagePortal	@ 0X140A8FD70
+cGcHazardModifiers	@ 0X1404618B0
+cGcCustomisationBoneScales	@ 0X1404813F0
+cGcAtmosphereEntryComponentData	@ 0X1406AD8D0
+cGcRewardMissionMessageSeeded	@ 0X1406D3FB0
+cGcPlayerCharacterStateType	@ 0X140685050
+cGcCustomisationGroups	@ 0X140481B50
+cGcFrigateClass	@ 0X14039A290
+cGcGenericMissionVersionProgress	@ 0X14047EBF0
+cGcIkConstraint	@ 0X140F15DF0
+cGcRewardModifyStat	@ 0X1406D4710
+cGcRepairTechData	@ 0X140453E60
+cTkVoxelGeneratorSettingsTypes	@ 0X140389410
+cTkMeshData	@ 0X141558E00
+cTkNetReplicatedEntityComponentData	@ 0X14044C560
+cTkAnim2dBlendNode	@ 0X14044A210
+cGcHeightAdjustComponentData	@ 0X1406AE180
+cGcExpeditionDebriefPunctuation	@ 0X14039B000
+cTkAnimBlendNode	@ 0X140449660
+cTkResourceFilterList	@ 0X141460C70
+cTkInteractiveSceneData	@ 0X1405947B0												good
+cGcPlayerCharacterIKOverrideData	@ 0X140F154E0
+cGcStoryUtilityOverride	@ 0X14064F450
+cGcBuildingSpawnSlot	@ 0X1403AB830												good
+cGcNPCProbabilityAnimationData	@ 0X1404708A0
+cGcHazardAction	@ 0X140654F30
+cGcRewardStatCompareAndSet	@ 0X1406DCB90
+cTkInteractiveControlData	@ 0X140594580											good
+cTkAnim2dBlendNodeData	@ 0X140449F80
+cTkEntitlementListData	@ 0X140591E90
+cGcRewardSpecificSpecial	@ 0X1406DADF0
+cGcCharacterLookAtData	@ 0X140F0CDC0
+cGcPlayerEffectsComponentData	@ 0X140B15220
+cTkInteractivityData	@ 0X140594A80												good
+cTkVertexStream	@ 0X14155B500
+cTkAnimVectorBlendNode	@ 0X140449C80
+cTkIndexStream	@ 0X141559430
+cTkAnimationGameData	@ 0X140448C70
+cTkMetadataReadMask	@ 0X1406100A0
+cTkResourceFilterData	@ 0X141460A10
+cTkAnimBlendTree	@ 0X140449100
+cTkMeshMetaData	@ 0X141557260
+cTkGeometryStreamData	@ 0X141559050
+cTkAnimAnimNode	@ 0X1404493D0
+cGcExpeditionEventOccurrenceRate	@ 0X14039D070
+cGcScreenFilterTable	@ 0X1404711D0
+cGcCharacterCustomisationColourData	@ 0X140452AA0
+cGcMissionConditionExpeditionCount	@ 0X140A76560
+cGcNetworkInterpolationComponentData	@ 0X140B1BBB0
+cGcCustomisationComponentData	@ 0X140452870
+cTkAnimVectorBlendNodeData	@ 0X140449A00
+cGcPlanetCloudProperties	@ 0X1403912D0											good
+cGcMonth	@ 0X14047F0C0
+cGcRewardMissionOverride	@ 0X140650FE0
+cGcExpeditionEventSaveData	@ 0X140453920
+cGcProceduralProductTable	@ 0X140476EC0
+cGcFleetFrigateSaveData	@ 0X140453680
+cGcExpeditionRewardTable	@ 0X1406BC1B0
+cGcExpeditionEventData	@ 0X14077CF80
+cGcMissionSequenceWaitForPhoto	@ 0X140486F80
+cGcRewardJetpackBoost	@ 0X1406D3320												good
+cGcDiscoveryRewardLookupTable	@ 0X14047CB10										good
+	Structs with a file size change:
+cGcRewardMoney	old: 0x8	new: 0xC	@ 0X1406D4AF0								*
+cGcMessageProjectileImpact	old: 0x40	new: 0x50	@ 0X14045F860					?
+cGcSpaceshipComponentData	old: 0x11C	new: 0x98	@ 0X14046ED80					good
+cGcBuildingDensity	old: 0x14	new: 0x10	@ 0X1410ACFF0							*
+cGcBuildingFilename	old: 0x200	new: 0x400	@ 0X140468010							good
+cGcSimpleInteractionComponentData	old: 0x118	new: 0x130	@ 0X140651220
+cGcTeleportEndpoint	old: 0x50	new: 0x90	@ 0X140451B60
+cGcMarkerComponentData	old: 0x10	new: 0x30	@ 0X140A15970
+cGcDefaultSaveData	old: 0x4EAC0	new: 0x10300	@ 0X1405AD3D0
+cGcScanEventData	old: 0x1D8	new: 0x1F0	@ 0X1404624C0							good
+cGcTradeSettings	old: 0x120	new: 0x6E0	@ 0X1404583F0
+cGcRewardMissionSeeded	old: 0x10	new: 0x20	@ 0X1406D4370
+cGcPlayerCommunicatorMessage	old: 0x28	new: 0x50	@ 0X14038BCC0
+cGcCreatureData	old: 0x58	new: 0x60	@ 0X140464280								*
+cGcRealityManagerData	old: 0x7990	new: 0x9AD0	@ 0X140458640
+cGcNodeActivationAction	old: 0x88	new: 0x108	@ 0X140655380
+cTkNoiseCaveData	old: 0x80	new: 0x88	@ 0X140383720
+cGcTechnology	old: 0x2E0	new: 0x350	@ 0X140459370
+cGcCreatureRoleData	old: 0x490	new: 0x510	@ 0X1403ACE30							good
+cGcMissionConditionStatLevel	old: 0x28	new: 0x40	@ 0X140A76900
+cGcRewardWeapon	old: 0x10	new: 0x14	@ 0X1406E1000
+cGcGeneratedShipCounts	old: 0x14	new: 0x18	@ 0X14129FC90
+cGcRewardAdvancePortalState	old: 0x1	new: 0x100	@ 0X1406D0120					good
+cGcExternalObjectListOptions	old: 0x230	new: 0x40	@ 0X1403A8EB0				good
+cGcProjectileData	old: 0x390	new: 0x3A0	@ 0X14045BFD0
+cGcBaseBuildingGroup	old: 0x30	new: 0xC8	@ 0X140484140
+cGcPlanetHazardData	old: 0x78	new: 0x50	@ 0X1403A99B0
+cGcProductData	old: 0x2D0	new: 0x3E0	@ 0X140459C60
+cGcCameraAmbientBuildingData	old: 0x48	new: 0x50	@ 0X14039F730
+cGcBuildingDefinitionTable	old: 0x183B0	new: 0x335F8	@ 0X140468620			good
+cGcRewardMission	old: 0x10	new: 0x18	@ 0X1406D3890
+cGcMissionSequenceCommunicator	old: 0x1B0	new: 0x1D8	@ 0X140A915E0
+cGcWikiCategory	old: 0x160	new: 0x168	@ 0X14047D750
+cGcPlanetGenerationIntermediateData	old: 0x3C8	new: 0x3D0	@ 0X1403AD470
+cGcBiomeData	old: 0x400	new: 0x340	@ 0X1404648F0								**
+cGcScannerIcons	old: 0x4EB0	new: 0x5BF0	@ 0X140483AD0
+cGcCreatureSwarmData	old: 0x40	new: 0x58	@ 0X140463DA0
+cGcShootableComponentData	old: 0x40	new: 0x78	@ 0X14045DAC0
+cGcAtlasRecvMonumentList	old: 0x120	new: 0x1A0	@ 0X14060A6E0
+cGcNGuiPreset	old: 0x5150	new: 0x5330	@ 0X1403A4270
+cGcBuildingFilenameList	old: 0x3600	new: 0x7400	@ 0X1404681F0						good
+cTkGraphicsSettings	old: 0x88	new: 0x90	@ 0X1403A5E10
+cGcSpaceshipTravelData	old: 0x58	new: 0x60	@ 0X14038DF40
+cTkAnimationComponentData	old: 0xF0	new: 0x158	@ 0X14044A5C0
+cTkVoxelGeneratorSettingsElement	old: 0x25F0	new: 0x2BA0	@ 0X1404650B0
+cTkParticleData	old: 0xC0	new: 0xD0	@ 0X140AF0690
+cTkGeometryData	old: 0x150	new: 0x140	@ 0X141557440
+cTkModelRendererData	old: 0x70	new: 0xB0	@ 0X140386180
+cGcCameraFollowSettings	old: 0xD0	new: 0xE0	@ 0X140384AD0
+cTkEngineSettingsMapping	old: 0x3C	new: 0x40	@ 0X1403A62A0
+cTkAnimNodeData	old: 0x20	new: 0x50	@ 0X1415555E0
+cTkGameSettings	old: 0x364	new: 0x394	@ 0X1403A6920
+cTkNGuiTextStyleData	old: 0x40	new: 0x50	@ 0X1403A1590
+cTkNoiseUberLayerData	old: 0x68	new: 0x88	@ 0X1403826D0
+cTkNoiseUberData	old: 0x28	new: 0x40	@ 0X140382270
+cTkVoxelGeneratorData	old: 0x12F8	new: 0x15D0	@ 0X1403839E0
+cGcTradeData	old: 0x90	new: 0xB0	@ 0X140458120
+cGcAISpaceshipModelData	old: 0x88	new: 0x8C	@ 0X14132B9E0
+cGcRewardSpecificWeapon	old: 0x110	new: 0x130	@ 0X1406DBF40
+cTkNGuiWindowLayoutData	old: 0x198	new: 0x10A4	@ 0X1405AD6F0
+cTkTrailData	old: 0x40	new: 0x1C	@ 0X1411AA730
+cTkVoxelGeneratorSettingsArray	old: 0x17B60	new: 0x1B440	@ 0X1404652E0
+cGcTerrainEditing	old: 0x94	new: 0x80	@ 0X14038ECA0
+cGcPlanetData	old: 0x34F0	new: 0x3BB0	@ 0X1403ADA90
+cTkNoiseFeatureData	old: 0x40	new: 0x44	@ 0X1403832D0
+cTkNGuiEditorLayout	old: 0x19800	new: 0x10A400	@ 0X1405AD8F0
+cTkTrophyEntry	old: 0x58	new: 0x78	@ 0X1403A55E0
+cTkNGuiEditorStyleData	old: 0x110	new: 0x120	@ 0X14140BEA0
+cGcNPCPlacementInfo	old: 0xA0	new: 0xB8	@ 0X140470400
+cTkNoiseGridData	old: 0x184	new: 0x1A8	@ 0X140382EC0
+cTkNGuiTextStyle	old: 0xC0	new: 0xF0	@ 0X1403A17F0
+cTkAnimationData	old: 0xE0	new: 0x130	@ 0X140448EB0
+cGcStatsEntry	old: 0x30	new: 0x40	@ 0X140457530
+cGcMissionSequenceGroup	old: 0x1D8	new: 0x200	@ 0X1404886D0
+cGcRealitySubstanceData	old: 0x200	new: 0x240	@ 0X14045A790
+cGcRealityIconTable	old: 0x3428	new: 0x3D08	@ 0X1404572B0
+cGcBaseBuildingEntry	old: 0x130	new: 0x220	@ 0X140483F60
+cGcEncounterComponentData	old: 0x10	new: 0x4	@ 0X140595A70
+cGcNGuiTextData	old: 0x550	new: 0x580	@ 0X1403A3600
+cGcPlanetResourceIconLookup	old: 0x98	new: 0x118	@ 0X140457080
+cGcGeneratorUnitComponentData	old: 0x1A0	new: 0x210	@ 0X1407A2130
+cGcBaseBuildingPalette	old: 0x20	new: 0x40	@ 0X140484350
+cGcNGuiPresetText	old: 0x330	new: 0x360	@ 0X1403A4090
+cGcCostMoney	old: 0x4	new: 0x8	@ 0X1406B8170
+cGcGenericMissionSequence	old: 0x410	new: 0x450	@ 0X14048BC10
+cGcLaserBeamData	old: 0x1A0	new: 0x1B0	@ 0X14045C2E0
+cGcTerrainControls	old: 0x70	new: 0x74	@ 0X1403AD250									good
+cGcPaletteList	old: 0xA690	new: 0xD340	@ 0X1403A8780										good
+cGcRewardTableEntitlementItem	old: 0x78	new: 0x68	@ 0X140477E60						good
+cGcMaintenanceComponentData	old: 0xF0	new: 0x130	@ 0X140651BF0
+cGcScannableComponentData	old: 0x34	new: 0x3C	@ 0X14045D220
+cGcBuildingPartSearchType	old: 0x4	new: 0x20	@ 0X140484C40
+cGcRewardSpecificProductRecipe	old: 0x10	new: 0x18	@ 0X1406D9E90
+cGcLeveledStatData	old: 0x3C0	new: 0x528	@ 0X1404735F0
+cGcBaseBuildingMaterial	old: 0xA0	new: 0x4C0	@ 0X1404845E0
+cGcBiomeList	old: 0x28	new: 0x34	@ 0X140465E50										good
+cGcExternalObjectList	old: 0x50	new: 0x60	@ 0X1404675D0								good
+cGcModelViewCollection	old: 0x850	new: 0xDC0	@ 0X140395E60
+cGcPlanetColourData	old: 0x11F0	new: 0x16C0	@ 0X1403A9DF0
+cGcInteractionBuffer	old: 0x7D00	new: 0x10	@ 0X14044F700
+cGcCreatureInfo	old: 0x418	new: 0x498	@ 0X1403ACC50										good
+cGcMaintenanceGroupsTable	old: 0x50	new: 0x70	@ 0X14047C130
+cGcUserSettingsData	old: 0x38D8	new: 0x38F0	@ 0X140447EE0
+cGcPersistentBase	old: 0x190	new: 0x1A0	@ 0X140451870
+cGcDistanceScaleComponentData	old: 0x18	new: 0x1C	@ 0X14058FEB0
+cGcMissionConditionIsTechnologyRepaired	old: 0x4	new: 0x8	@ 0X140A75340
+cGcPainAction	old: 0x18	new: 0x20	@ 0X140654CD0
+cGcDoShipFlybyClose	old: 0xC	new: 0x10	@ 0X140F6A970
+cGcSolarSystemData	old: 0x18C0	new: 0x1DA0	@ 0X14046A4D0
+cGcAtlasSendSubmitBase	old: 0x1B0	new: 0x1F0	@ 0X140471400
+cGcRewardTable	old: 0x90	new: 0xD0	@ 0X140478880										good
+cGcAtlasRecvBaseList	old: 0x7E0	new: 0x30	@ 0X14060A2A0
+cGcAtlasSendRequestBases	old: 0x28	new: 0x38	@ 0X14060B780
+cGcMissionConditionNPCHabitationHasWorker	old: 0x4	new: 0x8	@ 0X140488F50
+cGcMissionConditionBasePartBuilt	old: 0x18	new: 0x40	@ 0X140488C90
+cGcStatLevelData	old: 0x40	new: 0x60	@ 0X1404733E0
+cGcAISpaceshipMappingData	old: 0x280	new: 0x300	@ 0X14132C280
+cGcPlanetBuildingData	old: 0x60	new: 0x70	@ 0X1403AC350								good
+cGcPlayerDamageData	old: 0x128	new: 0x130	@ 0X140478AC0
+cGcPlayerSpaceshipEngineData	old: 0x54	new: 0x58	@ 0X14038CD50
+cGcCostTable	old: 0x20	new: 0x50	@ 0X1404791C0
+cGcTerrainEditsBuffer	old: 0xACC0	new: 0xAAC0	@ 0X140450AD0
+cGcAtlasMonument	old: 0x110	new: 0x190	@ 0X14048CC40
+cGcPlanetWaterData	old: 0x1B0	new: 0x1D0	@ 0X14038A2C0									good
+cGcAtlasSendSubmitMonument	old: 0x150	new: 0x1D0	@ 0X14048CE70
+cGcWeatherTable	old: 0x3F8	new: 0x578	@ 0X1404673F0										good
+cGcPlayerStateData	old: 0x4EA40	new: 0x10280	@ 0X1404541F0
+cGcStatIconTable	old: 0x2E80	new: 0x3700	@ 0X1406E8CA0
+cGcPurchaseableBuildingBlueprints	old: 0x10	new: 0x20	@ 0X14047B4A0
+cGcWeatherProperties	old: 0x900	new: 0x610	@ 0X1404671A0
+cGcEnvironmentSpawnData	old: 0x50	new: 0x60	@ 0X1403AB5F0								good
+cGcBiomeFileList	old: 0xC0	new: 0xF0	@ 0X1403A9420									good
+cGcRewardDestructTable	old: 0x48	new: 0x6C	@ 0X14047FE60				
+cGcInteractionComponentData	old: 0x170	new: 0x1E0	@ 0X14064F660							***
+cGcMissionSequenceBuild	old: 0x118	new: 0x130	@ 0X140A89460
+cGcPlayerSpaceshipControlData	old: 0xF4	new: 0xFC	@ 0X14038CF30
+cGcEntitlementRewardData	old: 0x70	new: 0x60	@ 0X1404742B0
+cGcBiomeListPerStarType	old: 0x110	new: 0x158	@ 0X14129F4D0								good
+cGcMissionSequencePirates	old: 0x80	new: 0x81	@ 0X140A8F080
+cGcNPCComponentData	old: 0x18	new: 0x20	@ 0X14064F9C0
+cGcSubstanceAmount	old: 0x20	new: 0x30	@ 0X14045DE00
+cGcCreatureRoleFilenameTable	old: 0xF0	new: 0x130	@ 0X140466B00				good
+cGcMissionSequenceShowMissionUpdateMessage	old: 0x88	new: 0x8C	@ 0X140485DB0
+cGcRewardMissionMessage	old: 0x10	new: 0x18	@ 0X1406D3C20
+cGcVehicleCheckpointComponentData	old: 0x4	new: 0xC	@ 0X140637160
+cGcDebrisData	old: 0x98	new: 0xA8	@ 0X140463530
+cGcBaseBuildingTable	old: 0x770	new: 0x19F0	@ 0X1404849F0

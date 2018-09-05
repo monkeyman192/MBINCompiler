@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
     public class GcBaseBuildingObjectTypes : NMSTemplate
     {

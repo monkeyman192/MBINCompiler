@@ -173,7 +173,7 @@ namespace libMBIN.Models
                 file.WriteLine("Deserializing Template: " + templateName);
             }*/
 
-                //Console.WriteLine("Gk Hack: " + "Deserializing Template: " + templateName);
+            //Console.WriteLine("Gk Hack: " + "Deserializing Template: " + templateName);
             
             if (obj == null)
                 return null;
@@ -187,7 +187,7 @@ namespace libMBIN.Models
                 int stringLength = reader.ReadInt32();
                 int unkC = reader.ReadInt32();
                 reader.BaseStream.Position = templatePosition + stringPos;
-                ((VariableSizeString)obj).Value = reader.ReadString(Encoding.UTF8, stringLength);
+                ((VariableSizeString)obj).Value = reader.ReadString(Encoding.UTF8, stringLength).TrimEnd('\x00');
                 reader.BaseStream.Position = templatePosition + 0x10;
                 return obj;
             }
@@ -727,7 +727,7 @@ namespace libMBIN.Models
 
                         writer.BaseStream.Position = data.Item1;
                         writer.Write(stringPos - data.Item1);
-                        writer.Write((Int32)(stringEndPos - stringPos) - 1); // -1 for null terminator
+                        writer.Write((Int32)(stringEndPos - stringPos));
                         writer.Write(listEnding);
 
                         writer.BaseStream.Position = stringEndPos;

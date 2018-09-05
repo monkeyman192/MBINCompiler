@@ -1,6 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcTileTypeSet : NMSTemplate        // size: 0x64
+    public class GcTileTypeSet : NMSTemplate
     {
         public float Probability;
 

@@ -7,7 +7,7 @@ namespace libMBIN.Models.Structs
         public int PersistentBaseTypes;
         public string[] PersistentBaseTypesValues()
         {
-            return new[] { "HomePlanetBase", "FreighterBase", "ExternalPlanetBase1" };
+            return new[] { "HomePlanetBase", "FreighterBase", "ExternalPlanetBase", "CivilianFreighterBase", "FriendsPlanetBase", "FriendsFreighterBase" };
         }
     }
 }

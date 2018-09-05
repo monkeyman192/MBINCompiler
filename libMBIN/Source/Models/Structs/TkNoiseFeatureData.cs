@@ -1,5 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x44)]
     public class TkNoiseFeatureData : NMSTemplate
     {
         public bool Active;
@@ -23,5 +24,6 @@
         public TkNoiseOffsetEnum OffsetType;
         public float SmoothRadius;
         public int SeedOffset;
+        public float TileBlendMeters;
     }
 }

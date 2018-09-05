@@ -1,16 +1,17 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x360)]
     public class GcNGuiPresetText : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string PresetID;
-        public GcNGuiLayoutData Layout;
+        /* 0x000 */ public string PresetID;
+        /* 0x010 */ public GcNGuiLayoutData Layout;
         [NMS(Size = 0x4)]
-        public byte[] Padding3C;
+        /* 0x03C */ public byte[] Padding3C;
 
-        public TkNGuiTextStyle Style;
-        public TkNGuiGraphicStyle GraphicStyle;
+        /* 0x040 */ public TkNGuiTextStyle Style;
+        /* 0x130 */ public TkNGuiGraphicStyle GraphicStyle;
         [NMS(Size = 0x80)]
-        public string Image;
+        /* 0x2E0 */ public string Image;
     }
 }

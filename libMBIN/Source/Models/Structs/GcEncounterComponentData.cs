@@ -5,14 +5,7 @@
         public int EncounterType;
         public string[] EncounterTypeValues()
         {
-            return new[] { "Guards", "Patrol", "Ambush" };
+            return new[] { "FactoryGuards", "HarvesterGuards" };
         }
-        public int EncounterRobot;
-        public string[] EncounterRobotValues()
-        {
-            return new[] { "Drones", "Quads", "Walker" };
-        }
-        public int CountMin;
-        public int CountMax;
     }
 }

@@ -2,8 +2,8 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Alignment = 0x10)]
-    public class GcLaserBeamData : NMSTemplate      // size: 0x1A0
+    [NMS(Size = 0x1B0, Alignment = 0x10)]
+    public class GcLaserBeamData : NMSTemplate
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string Id;
@@ -21,23 +21,25 @@ namespace libMBIN.Models.Structs
         /* 0x12C */ public GcAudioWwiseEvents AudioStop;
         /* 0x130 */ public GcAudioWwiseEvents AudioOverheat;
         /* 0x134 */ public int Damage;
-        [NMS(Size = 0x10)]
-        /* 0x138 */ public string PlayerDamage;
-        [NMS(Size = 0x10)]
-        /* 0x148 */ public string ImpactEffect;
-        /* 0x158 */ public List<GcProjectileImpactData> Impacts;
-        /* 0x168 */ public float HitRate;
-        /* 0x16C */ public float RagdollPush;
-        /* 0x170 */ public float MiningHitRate;
-        /* 0x174 */ public bool HasLight;
-        /* 0x175 */ public bool CanMine;
-        [NMS(Size = 0x2, Ignore = true)]
-        public byte[] Padding176;
-        /* 0x178 */ public float LightScale;
+        /* 0x138 */ public GcDamageType DamageType;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding17C;
-        /* 0x180 */ public Colour LightColour;
-        /* 0x190 */ public Colour Colour;
+        /* 0x13C */ public byte[] Padding13C;
+        [NMS(Size = 0x10)]
+        /* 0x140 */ public string PlayerDamage;
+        [NMS(Size = 0x10)]
+        /* 0x150 */ public string ImpactEffect;
+        /* 0x160 */ public List<GcProjectileImpactData> Impacts;
+        /* 0x170 */ public float HitRate;
+        /* 0x174 */ public bool SingleHit;
+        /* 0x178 */ public float RagdollPush;
+        /* 0x17C */ public float MiningHitRate;
+        /* 0x180 */ public bool HasLight;
+        /* 0x181 */ public bool CanMine;
+        /* 0x184 */ public float LightScale;
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x188 */ public byte[] Padding188;
+        /* 0x190 */ public Colour LightColour;
+        /* 0x1A0 */ public Colour Colour;
     }
 
 }

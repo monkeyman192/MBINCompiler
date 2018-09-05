@@ -1,6 +1,9 @@
-﻿namespace libMBIN.Models.Structs
+﻿using System.Collections.Generic;
+
+namespace libMBIN.Models.Structs
 {
-    public class GcScanEventData : NMSTemplate // 0x1D8 bytes
+    [NMS(Size = 0x1F0)]
+    public class GcScanEventData : NMSTemplate
     {
         [NMS(Size = 0x20)]
         /* 0x000 */ public string Name;
@@ -26,50 +29,56 @@
         {
             return new[] { "Regular", "High" };
         }
-        /* 0x054 */ public int BuildingLocation;
+
+        /* 0x54 */ public bool CanEndFromOutsideMission;
+
+        /* 0x058 */ public int BuildingLocation;
         public string[] BuildingLocationValues()
         {
             return new[] { "Nearest", "AllNearest", "Random", "RandomOnNearPlanet", "RandomOnFarPlanet" };
         }
-        /* 0x058 */ public int BuildingType;
+        /* 0x05C */ public int BuildingType;
         public string[] BuildingTypeValues()
         {
-            return new[] { "Any", "AnyShelter", "BuildingClass", "SpaceStation", "SpaceAnomaly",
-                           "Atlas", "Freighter", "ExternalPlanetBase", "PlanetBaseTerminal" };
+            return new[] { "Any", "AnyShelter", "AnyNPC", "BuildingClass", "SpaceStation", "SpaceAnomaly",
+                           "Atlas", "Freighter", "FreighterBase", "ExternalPlanetBase", "PlanetBaseTerminal",
+                           "Expedition", "TutorialShelter", "MPMissionFreighter"};
         }
-        /* 0x05C */ public GcBuildingClassification BuildingClass;
+        /* 0x060 */ public GcBuildingClassification BuildingClass;
+        /* 0x064 */ public bool AllowFriendBases;
 
-        /* 0x060 */ public int SolarSystemLocation;
+        /* 0x068 */ public int SolarSystemLocation;
         public string[] SolarSystemLocationValues()
         {
-            return new[] { "Local", "Near", "LocalOrNear"};
+            return new[] { "Local", "Near", "LocalOrNear", "NearWithNoExpeditions", "FromList"};
         }
 
-        /* 0x064 */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
-        /* 0x080 */ public bool ForceRestartInteraction;
-        [NMS(Size = 07, Ignore = true)]
-        /* 0x081 */ public byte[] Padding81;
+        /* 0x06C */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
+        /* 0x088 */ public bool ForceRestartInteraction;
+        [NMS(Size = 7, Ignore = true)]
+        /* 0x081 */ public byte[] Padding89;
         [NMS(Size = 0x10)]
-        /* 0x088 */ public string HasReward;
+        /* 0x090 */ public string HasReward;
         [NMS(Size = 0x20)]
-        /* 0x098 */ public string NextOption;
-        /* 0x0B8 */ public GcScanEventTriggers TriggerActions;
+        /* 0x0A0 */ public string NextOption;
+        /* 0x0C0 */ public GcScanEventTriggers TriggerActions;
+        /* 0x0E0 */ public List<NMSString0x100> UAsList;        //maybe??
         [NMS(Size = 0x20)]
-        /* 0x0D8 */ public string OSDMessage;
+        /* 0x0F0 */ public string OSDMessage;
         [NMS(Size = 0x20)]
-        /* 0x0F8 */ public string MarkerLabel;
-        /* 0x118 */ public TkTextureResource Markericon;
-        /* 0x19C */ public float StartTime;
-        /* 0x1A0 */ public float MessageTime;
-        /* 0x1A4 */ public float MessageDisplayTime;
-        /* 0x1A8 */ public GcAudioWwiseEvents MessageAudio;
-        /* 0x1AC */ public float IconTime;
-        /* 0x1B0 */ public float TooltipTime;
-        /* 0x1B4 */ public bool TooltipRepeats;
-        /* 0x1B5 */ public bool ShowEndTooltip;
+        /* 0x110 */ public string MarkerLabel;
+        /* 0x130 */ public TkTextureResource MarkerIcon;
+        /* 0x1B4 */ public float StartTime;
+        /* 0x1B8 */ public float MessageTime;
+        /* 0x1BC */ public float MessageDisplayTime;
+        /* 0x1C0 */ public GcAudioWwiseEvents MessageAudio;
+        /* 0x1C4 */ public float IconTime;
+        /* 0x1C8 */ public float TooltipTime;
+        /* 0x1CC */ public bool TooltipRepeats;
+        /* 0x1CD */ public bool ShowEndTooltip;
         [NMS(Size = 0x20)]
-        /* 0x1B6 */ public string TooltipMessage;
+        /* 0x1CE */ public string TooltipMessage;
         [NMS(Size = 0x2, Ignore = true)]
-        /* 0x1D6 */ public byte[] EndPadding;
+        /* 0x1EE */ public byte[] EndPadding;
     }
 }

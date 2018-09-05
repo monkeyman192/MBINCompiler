@@ -1,6 +1,6 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x58)]
+    [NMS(Size = 0x60)]
     public class GcSpaceshipTravelData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -23,5 +23,9 @@
 		/* 0x4C */ public float Falloff;
 		/* 0x50 */ public float Roll;
 		/* 0x54 */ public float MinHeight;
+        /* 0x58 */ public float AvoidTime;
+        /* 0x5C */ public bool Hovering;
+        [NMS(Size = 0x3, Ignore = true)]
+        /* 0x5D */ public byte[] Endpadding;
     }
 }

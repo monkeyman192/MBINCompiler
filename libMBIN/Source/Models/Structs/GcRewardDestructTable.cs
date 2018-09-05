@@ -2,7 +2,7 @@
 {
     public class GcRewardDestructTable : NMSTemplate
     {
-        [NMS(Size = 5)]
+        [NMS(Size = 9)]
         public GcRewardDestructRarities[] Categories;
     }
 }

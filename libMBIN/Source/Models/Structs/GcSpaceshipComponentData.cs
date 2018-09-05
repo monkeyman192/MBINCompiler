@@ -1,16 +1,15 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x98)]
     public class GcSpaceshipComponentData : NMSTemplate
     {
-        public GcSpaceshipClasses ShipClass;
+        /* 0x00 */ public GcSpaceshipClasses ShipClass;
         [NMS(Size = 0x80)]
-        public string Cockpit;
-        public float MaxHeadTurn;
-        public float MaxHeadPitchUp;
-        public float MaxHeadPitchDown;
-        public int BaseHealth;
-        public float FoVFixedDistance;
-        [NMS(Size = 0x80)]
-        public string WheelModel;
+        /* 0x04 */ public string Cockpit;
+        /* 0x84 */ public float MaxHeadTurn;
+        /* 0x88 */ public float MaxHeadPitchUp;
+        /* 0x8C */ public float MaxHeadPitchDown;
+        /* 0x90 */ public int BaseHealth;
+        /* 0x94 */ public float FoVFixedDistance;
     }
 }

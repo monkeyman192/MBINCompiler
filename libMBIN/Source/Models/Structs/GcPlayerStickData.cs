@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class GcPlayerStickData : NMSTemplate        // probably in the GcPlayerGlobals
+    [NMS(Size = 0x1C)]
+    public class GcPlayerStickData : NMSTemplate
     {
         /* 0x000 */ public float AcceleratorStickPoint;     // 3F733333h
         /* 0x004 */ public float AcceleratorMinTime;        // 3E4CCCCDh

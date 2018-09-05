@@ -3,7 +3,7 @@
 namespace libMBIN.Models.Structs
 {
     [NMS(Size = 0x70)]
-    public class TkPhysicsComponentData : NMSTemplate       // used in a global?
+    public class TkPhysicsComponentData : NMSTemplate
     {
         public TkPhysicsData Data;
         /* 0x018 */ public NMSTemplate RagdollData;
@@ -18,8 +18,9 @@ namespace libMBIN.Models.Structs
         /* 0x069 */ public bool Climbable;
         /* 0x06A */ public bool IgnoreModelOwner;
         /* 0x06B */ public bool NoVehicleCollision;
-        [NMS(Size = 4, Ignore = true)]
-        /* 0x06C */ public byte[] Padding6C;
+        /* 0x06C */ public bool CameraInvisible;
+        [NMS(Size = 3, Ignore = true)]
+        /* 0x06D */ public byte[] EndPadding;
         
     }
 }

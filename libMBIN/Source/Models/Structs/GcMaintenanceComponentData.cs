@@ -2,7 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0xF0, Alignment = 0x10)]
+    [NMS(Size = 0x130, Alignment = 0x10)]
     public class GcMaintenanceComponentData : NMSTemplate
     {
         /* 0x000 */ public List<GcMaintenanceElement> PreInstalledTech;
@@ -14,34 +14,37 @@ namespace libMBIN.Models.Structs
         /* 0x018 */ public bool AllowCraftProduct;
         /* 0x019 */ public bool AllowTransfer;
         /* 0x01A */ public bool AllowMoveAndStack;
-        /* 0x01B */ public bool AutoCompleteOnStart;
+        /* 0x01B */ public bool AllowTransferIn;
+        /* 0x01C */ public bool AutoCompleteOnStart;
+        /* 0x01D */ public bool UseModelResourceRenderer;
+        /* 0x01E */ public bool UseBoundsForIconCentre;
 
-        /* 0x01C */ public int Interactable;
+        /* 0x020 */ public int Interactable;
         public string[] InteractableValues()
         {
             return new[] { "OnlyWhenComplete", "OnlyWhenNotComplete", "Always", "Never" };
         }
 
-        /* 0x020 */ public float CompletedTransitionDelay;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x024 */ public byte[] Padding24;
+        /* 0x024 */ public float CompletedTransitionDelay;
+        /* 0x028 */ public bool ShareInteractionModelRender;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x02C */ public byte[] Padding2C;
 
         /* 0x030 */ public TkModelRendererData ModelRendererData;
 
-        /* 0x0A0 */ public int ModelRendererResource;
+        /* 0x0E0 */ public int ModelRendererResource;
         public string[] ModelRendererResourceValues()
         {
             return new[] { "ModelNode", "MasterModelNode"};
         }
 
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x0A4 */ public byte[] PaddingA4;
+        /* 0x0E4 */ public GcBroadcastLevel BroadcastLevel;
 
         [NMS(Size = 0x20)]
-        /* 0x0A8 */ public string Title;
+        /* 0x0E8 */ public string Title;
         [NMS(Size = 0x20)]
-        /* 0x0C8 */ public string Description;
+        /* 0x108 */ public string Description;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x0E8 */ public byte[] EndPadding;
+        /* 0x128 */ public byte[] EndPadding;
     }
 }

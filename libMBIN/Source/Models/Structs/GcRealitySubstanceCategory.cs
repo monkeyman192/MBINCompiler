@@ -6,7 +6,7 @@
 
         public string[] SubstanceCategoryValues()
         {
-            return new[] { "Commodity", "Technology", "Fuel", "Tradeable", "Special", "BuildingPart" };
+            return new[] { "Fuel", "Metal", "Catalyst", "Stellar", "Flora", "Earth", "Exotic", "Special", "BuildingPart" };
         }
     }
 }
