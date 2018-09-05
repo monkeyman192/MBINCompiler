@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
-
-namespace libMBIN.Models.Structs
+﻿namespace libMBIN.Models.Structs
 {
-    public class GcPlayerMissionParticipant : NMSTemplate       // size: 0x18
+    [NMS(Size = 0x20)]
+    public class GcPlayerMissionParticipant : NMSTemplate
     {
         public ulong UA;
         public GcSeed BuildingSeed;
+        public GcPlayerMissionParticipantType ParticipantType;
+        [NMS(Size = 0x4, Ignore = true)]
+        public byte[] EndPadding;
     }
 }

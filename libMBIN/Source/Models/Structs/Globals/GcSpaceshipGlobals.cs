@@ -243,6 +243,7 @@
         /* 0x87C */ public float FrigateTargetLockRange;
         /* 0x880 */ public float TargetLockRange;
         /* 0x884 */ public float TargetLockNearestAngle;
+        /* 0x888 */ public float RemotePlayerLockTimeAfterShot;
         /* 0x890 */ public Colour TargetLockPassiveColour;
         /* 0x8A0 */ public Colour TargetLockDangerColour;
         /* 0x8B0 */ public float ShieldRechargeMinHitTime;

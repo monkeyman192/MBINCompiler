@@ -2,6 +2,6 @@
 {
     public class GcRewardEnergy : NMSTemplate
     {
-        public float Amount; // might be int
+        public int Amount;
     }
 }

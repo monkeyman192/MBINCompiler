@@ -2,7 +2,7 @@
 
 namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x9AE0)]
+    [NMS(Size = 0x9B00)]
     public class GcRealityManagerData : NMSTemplate
     {
         /* 0x0000 */ public int RealityIteration;
@@ -98,51 +98,53 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x80)]
         /* 0x0D30 */ public string MaintenanceGroupsTable;
 
-        /* 0x0DB0 */ public List<GcRefinerRecipe> RefinerRecipeTable;
+        /* 0x0DB0 */ public List<GcRefinerRecipe> RefinerRecipeTable1Input;
+        /* 0x0DC0 */ public List<GcRefinerRecipe> RefinerRecipeTable2Input;
+        /* 0x0DD0 */ public List<GcRefinerRecipe> RefinerRecipeTable3Input;
 
         [NMS(Size = 0x7, EnumValue = new string[7] { "Laser", "Projectile", "Shotgun", "Minigun", "Plasma", "Missile", "Rocket"})]
-        /* 0x0DC0 */ public GcShipWeapons[] ShipWeapons;
+        /* 0x0DE0 */ public GcShipWeapons[] ShipWeapons;
 
         [NMS(Size = 0xA, EnumValue = new string[] { "Bolt", "Shotgun", "Burst", "Laser", "Rail", "Grenade", "MineGrenade", "Scope", "FrontShield", "TerrainEdit" })]
-        /* 0x0F80 */ public GcPlayerWeaponData[] PlayerWeapons;
+        /* 0x0FA0 */ public GcPlayerWeaponData[] PlayerWeapons;
 
         [NMS(Size = 0x7, EnumValue = new string[7] { "Gek", "Korvax", "Vykeen", "TradeGuild", "WarriorGuild", "ExplorerGuild", "None" })]
-        /* 0x1020 */ public NMSString0x10[] FactionStandingIDs;
+        /* 0x1040 */ public NMSString0x10[] FactionStandingIDs;
 
         [NMS(Size = 0x7, EnumValue = new string[7] { "Gek", "Korvax", "Vykeen", "TradeGuild", "WarriorGuild", "ExplorerGuild", "None" })]
-        /* 0x1090 */ public NMSString0x20[] FactionNames;
+        /* 0x10B0 */ public NMSString0x20[] FactionNames;
 
         [NMS(Size = 0x7, EnumValue = new string[7] { "Gek", "Korvax", "Vykeen", "TradeGuild", "WarriorGuild", "ExplorerGuild", "None" })]
-        /* 0x1070 */ public GcNumberedTextList[] FactionClients;
+        /* 0x1090 */ public GcNumberedTextList[] FactionClients;
 
         [NMS(Size = 0x9, EnumValue = new string[9] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy", "Photo", "Feeding" })]
-        /* 0x126C */ public GcNumberedTextList[] MissionNameFormats;
+        /* 0x128C */ public GcNumberedTextList[] MissionNameFormats;
 
         [NMS(Size = 0x9, EnumValue = new string[9] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy", "Photo", "Feeding" })]
-        /* 0x13B0 */ public GcNumberedTextList[] MissionNameAdjectives;
+        /* 0x13D0 */ public GcNumberedTextList[] MissionNameAdjectives;
 
         [NMS(Size = 0x9, EnumValue = new string[9] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy", "Photo", "Feeding" })]
-        /* 0x14F4 */ public GcNumberedTextList[] MissionNameNouns;
+        /* 0x1514 */ public GcNumberedTextList[] MissionNameNouns;
 
         [NMS(Size = 0x3)]
-        /* 0x1638 */ public float[] WeightedTextWeights;
+        /* 0x1658 */ public float[] WeightedTextWeights;
 
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1644 */ public byte[] Padding1644;
+        /* 0x1664 */ public byte[] Padding1664;
 
-        /* 0x1648 */ public GcRealityIconTable Icons;
+        /* 0x1668 */ public GcRealityIconTable Icons;
 
         [NMS(Size = 6, EnumValue = new string[6] { "None", "NoOxygen", "ExtremeHeat", "ExtremeCold", "ToxicGas", "Radiation" })]
-        /* 0x5350 */ public Colour[] HazardColours;
+        /* 0x5370 */ public Colour[] HazardColours;
 
         [NMS(Size = 3, EnumValue = new string[3] { "Common", "Uncommon", "Rare" })]
-        /* 0x53B0 */ public Colour[] RarityColours;
+        /* 0x53D0 */ public Colour[] RarityColours;
 
         [NMS(Size = 9, EnumValue = new string[9] { "Fuel", "Metal", "Catalyst", "Stellar", "Flora", "Earth", "Exotic", "Special", "BuildingPart" })]
-        /* 0x53E0 */ public Colour[] SubstanceCategoryColours;
+        /* 0x5400 */ public Colour[] SubstanceCategoryColours;
 
         [NMS(Size = 9, EnumValue = new string[9] { "Fuel", "Metal", "Catalyst", "Stellar", "Flora", "Earth", "Exotic", "Special", "BuildingPart" })]
-        /* 0x5470 */ public TkTextureResource[] SubstanceChargeIcons;
+        /* 0x5490 */ public TkTextureResource[] SubstanceChargeIcons;
 
         [NMS(Size = 0x6E, EnumValue = new string[0x6E]
             {
@@ -170,29 +172,29 @@ namespace libMBIN.Models.Structs
                 "Ship_Launcher_TakeOffCost", "Ship_PulseDrive", "Ship_PulseDrive_MiniJumpFuelSpending", "Ship_Boost", "Ship_Maneuverability",
                 "Ship_BoostManeuverability", "Ship_Teleport", "Freighter_Hyperdrive", "Freighter_Hyperdrive_JumpDistance"
             })]
-        /* 0x5914 */ public TkTextureResource[] StatCategoryIcons;
+        /* 0x5934 */ public TkTextureResource[] StatCategoryIcons;
 
         [NMS(Size = 4, EnumValue = new string[4] { "Suit", "Weapon", "Ship", "Freighter" })]
-        /* 0x91D0 */ public GcStats[] Stats;
+        /* 0x91F0 */ public GcStats[] Stats;
 
-        /* 0x9210 */ public GcTechList StationTechShops;
+        /* 0x9230 */ public GcTechList StationTechShops;
 
         [NMS(Size = 0xD)]
-        /* 0x9220 */ public GcTechList[] PlanetTechShops;
+        /* 0x9240 */ public GcTechList[] PlanetTechShops;
 
-        /* 0x92F0 */ public GcTradeSettings TradeSettings;
-        /* 0x99D0 */ public GcInventoryLayout SuitStartingSlotLayout;
-        /* 0x99F0 */ public GcInventoryLayout SuitTechOnlyStartingSlotLayout;
-        /* 0x9A10 */ public GcInventoryLayout SuitCargoStartingSlotLayout;
-        /* 0x9A30 */ public GcInventoryLayout ShipStartingLayout;
-        /* 0x9A50 */ public GcInventoryLayout ShipTechOnlyStartingLayout;
-        /* 0x9A70 */ public List<int> SuitUpgradePrices;
-        /* 0x9A80 */ public List<int> SuitTechOnlyUpgradePrices;
-        /* 0x9A90 */ public List<int> SuitCargoUpgradePrices;
-        /* 0x9AA0 */ public List<NMSString0x10> NeverSellableItems;
-        /* 0x9AB0 */ public List<NMSString0x10> NeverOfferedForSale;
+        /* 0x9310 */ public GcTradeSettings TradeSettings;
+        /* 0x99F0 */ public GcInventoryLayout SuitStartingSlotLayout;
+        /* 0x9A10 */ public GcInventoryLayout SuitTechOnlyStartingSlotLayout;
+        /* 0x9A30 */ public GcInventoryLayout SuitCargoStartingSlotLayout;
+        /* 0x9A50 */ public GcInventoryLayout ShipStartingLayout;
+        /* 0x9A70 */ public GcInventoryLayout ShipTechOnlyStartingLayout;
+        /* 0x9A90 */ public List<int> SuitUpgradePrices;
+        /* 0x9AA0 */ public List<int> SuitTechOnlyUpgradePrices;
+        /* 0x9AB0 */ public List<int> SuitCargoUpgradePrices;
+        /* 0x9AC0 */ public List<NMSString0x10> NeverSellableItems;
+        /* 0x9AD0 */ public List<NMSString0x10> NeverOfferedForSale;
         [NMS(Size = 5, EnumValue = new string[5] { "Commodity", "Technology", "Fuel", "Tradeable", "Special"})]         // not sure about these values....
-        /* 0x9AC0 */ public float[] NormalizedPriceLimits;
+        /* 0x9AE0 */ public float[] NormalizedPriceLimits;
 
         [NMS(Size = 0xC, Ignore = true)]
         public byte[] EndPadding;

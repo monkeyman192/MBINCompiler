@@ -12,6 +12,7 @@ namespace MBINCompilerTests.Database {
 
         public abstract string Name { get; }
         public abstract string[] ColumnHeadings { get; }
+        public abstract int KeyColumn { get; }
 
         private string _filePath = null;
         public string FilePath {
@@ -57,6 +58,10 @@ namespace MBINCompilerTests.Database {
         }
 
         public void Save( StreamWriter streamOut ) {
+            // sort the records first
+            records = records.OrderBy( record => record.GetFields()[KeyColumn] ).ToList();
+
+            // output
             this.FilePath = null; // unknown
             if ( ColumnHeadings != null ) {
                 // treat headings as comments

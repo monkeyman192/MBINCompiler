@@ -1,40 +1,46 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    public class TkNGuiGraphicStyleData :NMSTemplate        // size: 0x80
+    [NMS(Size = 0x80)]
+    public class TkNGuiGraphicStyleData : NMSTemplate
     {
-        public float PaddingX;
-        public float PaddingY;
-        public float MarginX;
-        public float MarginY;
-        public Colour Colour;
-        public Colour IconColour;
-        public Colour StrokeColour;
-        public int Shape;
+        /* 0x00 */ public float PaddingX;
+        /* 0x04 */ public float PaddingY;
+        /* 0x08 */ public float MarginX;
+        /* 0x0C */ public float MarginY;
+        /* 0x10 */ public Colour Colour;
+        /* 0x20 */ public Colour IconColour;
+        /* 0x30 */ public Colour StrokeColour;
+        /* 0x40 */ public int Shape;
 
         public string[] ShapeValues()
-        { return new string[] { "Rectangle", "Ellipse" }; }
+        {
+            return new[] { "Rectangle", "Ellipse" };
+        }
 
 
-        public bool SolidColour;
-        public bool HasDropShadow;
-        public bool HasOuterGradient;
-        public bool HasInnerGradient;
-        public int Gradient;
+        /* 0x44 */ public bool SolidColour;
+        /* 0x45 */ public bool HasDropShadow;
+        /* 0x46 */ public bool HasOuterGradient;
+        /* 0x47 */ public bool HasInnerGradient;
+        /* 0x48 */ public int Gradient;
 
         public string[] GradientValues()
-        { return new string[] { "None", "Vertical", "Horizontal", "HorizontalBounce" }; }
+        {
+            return new[] { "None", "Vertical", "Horizontal", "HorizontalBounce" };
+        }
 
 
-        public float GradientStartOffset;
-        public float GradientEndOffset;
+        /* 0x4C */ public float GradientStartOffset;
+        /* 0x50 */ public float GradientEndOffset;
+        /* 0x54 */ public bool GradientOffsetPercent;
 
-        [NMS(Size = 0xC, Ignore = true)]
-        public byte[] Padding1;
+        [NMS(Size = 0xB, Ignore = true)]
+        /* 0x55 */ public byte[] Padding55;
 
-        public Colour GradientColour;
-        public float CornerRadius;
-        public float StrokeSize;
-        public int Image;
-        public int Icon;
+        /* 0x60 */ public Colour GradientColour;
+        /* 0x70 */ public float CornerRadius;
+        /* 0x74 */ public float StrokeSize;
+        /* 0x78 */ public int Image;
+        /* 0x7C */ public int Icon;
     }
 }

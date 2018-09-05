@@ -9,7 +9,7 @@
         public int BroadcastLevel;
         public string[] BroadcastLevelValues()
         {
-            return new[] { "Scene", "LocalModel" };
+            return new[] { "Scene", "LocalModel", "Local" };
         }
     }
 }

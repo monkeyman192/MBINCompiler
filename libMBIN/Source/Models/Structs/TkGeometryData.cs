@@ -199,7 +199,7 @@ namespace libMBIN.Models.Structs
                 case nameof(IndexBuffer):
                     reader.Align(8, 0);
                     long listPosition = reader.BaseStream.Position;
-                    //Debug.WriteLine($"TkGeometryData.CustomDeserialize({fieldName}) start 0x{listPosition:X}");
+                    //DebugLog($"TkGeometryData.CustomDeserialize({fieldName}) start 0x{listPosition:X}");
 
                     long listStartOffset = reader.ReadInt64();
                     int numEntries = reader.ReadInt32() * ((Indices16Bit == 1) ? 2 : 1); // Adjust size
@@ -239,7 +239,7 @@ namespace libMBIN.Models.Structs
                     }
                     reader.Align(8, 0);
                     listPosition = reader.BaseStream.Position;
-                    //Debug.WriteLine($"TkGeometryData.CustomDeserialize({fieldName}) start 0x{listPosition:X}");
+                    //DebugLog($"TkGeometryData.CustomDeserialize({fieldName}) start 0x{listPosition:X}");
 
                     listStartOffset = reader.ReadInt64();
                     numEntries = reader.ReadInt32()/StreamBlockSize;   // the number of blocks of data

@@ -1,4 +1,14 @@
-﻿using System;
+﻿// These two defines require that the project is set to the 'Debug' configuration, not Release.
+// They will always be disabled/ignored in Release builds.
+
+// Uncomment to enable debug logging of the template de/serialization.
+// #define NMSTEMPLATE_DEBUG_TEMPLATE
+
+// Uncomment to enable debug logging of XML comments
+// #define NMSTEMPLATE_DEBUG_COMMENTS
+
+
+using System;
 using System.Linq;
 using System.Collections;
 using System.IO;
@@ -20,7 +30,35 @@ namespace libMBIN.Models
                 .Where(t => t.BaseType == typeof(NMSTemplate))
                 .ToDictionary(t => t.Name);
 
-        internal static bool PrintToDebug = false; // disable this when doing things in debug mode (tests etc) for a nice speedup
+        #region DebugLog
+        // Conditionally compile methods for Release optimization.
+        //
+        // DEBUG is automatically defined if the project is set to the 'Debug' build configuration.
+        // If the project is set to the 'Release' configuration, then DEBUG will not be defined.
+        // 
+        // Use the NMSTEMPLATE_* defines at the top of this file to enable/disable debug logging.
+
+        [Conditional( "DEBUG" )]
+        protected static void DebugLog( string msg ) => Console.WriteLine( msg );
+
+        // TODO: static could be problematic for threading?
+        private static bool isDebugLogTemplateEnabled = true;
+
+        [Conditional( "DEBUG" )]
+        private static void DebugLogTemplate( string msg ) {
+            #if NMSTEMPLATE_DEBUG_TEMPLATE
+                if (enableDebugLogTemplate) DebugLog( msg );
+            #endif
+        }
+
+        [Conditional( "DEBUG" )]
+        private static void DebugLogComment( string msg ) {
+            #if NMSTEMPLATE_DEBUG_COMMENTS
+                DebugLog( msg );
+            #endif
+        }
+
+        #endregion
 
         public static NMSTemplate TemplateFromName(string templateName)
         {
@@ -39,10 +77,10 @@ namespace libMBIN.Models
                 var addt = new List<Tuple<long, object>>();
                 int addtIdx = 0;
 
-                var prevPTD = PrintToDebug;
-                PrintToDebug = false;
+                var prevState = isDebugLogTemplateEnabled;
+                isDebugLogTemplateEnabled = false;
                 AppendToWriter(bw, ref addt, ref addtIdx, GetType());
-                PrintToDebug = prevPTD;
+                isDebugLogTemplateEnabled = prevState;
 
                 return ms.ToArray().Length;
             }
@@ -173,13 +211,13 @@ namespace libMBIN.Models
                 file.WriteLine("Deserializing Template: " + templateName);
             }*/
 
-            //Console.WriteLine("Gk Hack: " + "Deserializing Template: " + templateName);
+            //DebugLog("Gk Hack: " + "Deserializing Template: " + templateName);
             
             if (obj == null)
                 return null;
 
             long templatePosition = reader.BaseStream.Position;
-            if(PrintToDebug) Debug.WriteLine($"{templateName} position: 0x{templatePosition:X}");
+            DebugLogTemplate($"{templateName} position: 0x{templatePosition:X}");
 
             if (templateName == "VariableSizeString")
             {
@@ -198,8 +236,8 @@ namespace libMBIN.Models
             {
                 NMSAttribute settings = field.GetCustomAttribute<NMSAttribute>();
                 field.SetValue(obj, DeserializeValue(reader, field.FieldType, settings, templatePosition, field, obj));
-                //Console.WriteLine("Gk Hack: " + templateName + " Deserialized Value: " + field.Name + " value: " + field.GetValue(obj));
-                //Console.WriteLine($"{templateName} position: 0x{reader.BaseStream.Position:X}");
+                //DebugLog("Gk Hack: " + templateName + " Deserialized Value: " + field.Name + " value: " + field.GetValue(obj));
+                //DebugLog($"{templateName} position: 0x{reader.BaseStream.Position:X}");
                 /*using (System.IO.StreamWriter file =
                     new System.IO.StreamWriter(@"D:\mbincompiler_debug.txt", true))
                 {
@@ -208,10 +246,9 @@ namespace libMBIN.Models
                 }*/
             }
 
-            
             obj.FinishDeserialize();
 
-            if (PrintToDebug) Debug.WriteLine($"{templateName} end position: 0x{reader.BaseStream.Position:X}");
+            DebugLogTemplate($"{templateName} end position: 0x{reader.BaseStream.Position:X}");
 
             return obj;
         }
@@ -219,7 +256,7 @@ namespace libMBIN.Models
         public static List<NMSTemplate> DeserializeGenericList(BinaryReader reader, long templateStartOffset, NMSTemplate parent)
         {
             long listPosition = reader.BaseStream.Position;
-            if (PrintToDebug) Debug.WriteLine($"DeserializeGenericList start 0x{listPosition:X}");
+            DebugLogTemplate($"DeserializeGenericList start 0x{listPosition:X}");
 
             long templateNamesOffset = reader.ReadInt64();
             int numTemplates = reader.ReadInt32();
@@ -274,7 +311,7 @@ namespace libMBIN.Models
         public static List<T> DeserializeList<T>(BinaryReader reader, FieldInfo field, NMSAttribute settings, long templateStartOffset, NMSTemplate parent)
         {
             long listPosition = reader.BaseStream.Position;
-            if (PrintToDebug) Debug.WriteLine($"DeserializeList start 0x{listPosition:X}");
+            DebugLogTemplate($"DeserializeList start 0x{listPosition:X}");
 
             long listStartOffset = reader.ReadInt64();
             int numEntries = reader.ReadInt32();
@@ -468,7 +505,7 @@ namespace libMBIN.Models
         public void AppendToWriter(BinaryWriter writer, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex, Type parent, UInt32 listEnding = 0xAAAAAA01)
         {
             long templatePosition = writer.BaseStream.Position;
-            if (PrintToDebug) Debug.WriteLine($"[C] writing {GetType().Name} to offset 0x{templatePosition:X} (parent: {parent.Name})");
+            DebugLogTemplate($"[C] writing {GetType().Name} to offset 0x{templatePosition:X} (parent: {parent.Name})");
             var type = GetType();
             var fields = type.GetFields().OrderBy(field => field.MetadataToken); // hack to get fields in order of declaration (todo: use something less hacky, this might break mono?)
 
@@ -504,7 +541,7 @@ namespace libMBIN.Models
             }
             /*foreach (var entry in entryOffsetNamePairs)
             {
-                Console.WriteLine(entry);
+                DebugLog(entry);
                 var template = TemplateFromName(entry.Value);
                 //var template = (NMSTemplate)entry.Value;
                 template.AppendToWriter(writer, ref additionalData, ref addtDataIndex, GetType());
@@ -517,14 +554,14 @@ namespace libMBIN.Models
             writer.Align(0x8, 0);       // Make sure that all c~ names are offset at 0x8.
             long listPosition = writer.BaseStream.Position;
 
-            if (PrintToDebug) Debug.WriteLine($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
+            DebugLogTemplate($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
 
             writer.BaseStream.Position = listHeaderPosition;
 
             // write the list header into the template
             if (list.Count > 0)
             {
-                //Console.WriteLine($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
+                //DebugLog($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
                 writer.Write(listPosition - listHeaderPosition);
             }
             else
@@ -546,15 +583,15 @@ namespace libMBIN.Models
                 int alignment = entry.GetType().GetCustomAttribute<NMSAttribute>()?.Alignment ?? 0x4;
 
                 writer.Align(alignment, 0);
-                //Console.WriteLine($"pos 0x{writer.BaseStream.Position:X}");
-                //Console.WriteLine(entry.GetType().Name);
+                //DebugLog($"pos 0x{writer.BaseStream.Position:X}");
+                //DebugLog(entry.GetType().Name);
                 entryOffsetNamePairs.Add(new KeyValuePair<long, string>(writer.BaseStream.Position, entry.GetType().Name));
 
                 var template = (NMSTemplate)entry;
                 var listObjects = new List <Tuple<long, object>>();     // new list of objects so that this data is serialised first
                 var addtData = new Dictionary<long, object>();
-                if (PrintToDebug) Debug.WriteLine($"[C] writing {template.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
-                //Console.WriteLine($"[C] writing {template.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
+                DebugLogTemplate($"[C] writing {template.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
+                //DebugLog($"[C] writing {template.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
                 // pass the new listObject object in place of additionalData so that this branch is serialised before the whole layer
                 template.AppendToWriter(writer, ref listObjects, ref addtDataIndexThis, GetType());
                 for (int i = 0; i < listObjects.Count; i++)
@@ -565,7 +602,7 @@ namespace libMBIN.Models
                     long origPos = writer.BaseStream.Position;
                     if (data.Item2.GetType().IsGenericType && data.Item2.GetType().GetGenericTypeDefinition() == typeof(List<>))
                     {
-                        //Console.WriteLine("blahblah");
+                        //DebugLog("blahblah");
                         Type itemType = data.Item2.GetType().GetGenericArguments()[0];
                         
                         if (itemType == typeof(NMSTemplate))
@@ -579,8 +616,8 @@ namespace libMBIN.Models
                     }
                     else
                     {
-                        //Console.WriteLine("this is it!!!");
-                        //Console.WriteLine($"0x{origPos:X}");
+                        //DebugLog("this is it!!!");
+                        //DebugLog($"0x{origPos:X}");
                         // first, write the correct offset at the correct location
                         long headerPos = data.Item1;
                         writer.BaseStream.Position = headerPos;
@@ -610,10 +647,10 @@ namespace libMBIN.Models
                     long position = writer.BaseStream.Position;
                     long offset = kvp.Key - position; // get offset of this entry from the current offset
                     writer.Write(offset);
-                    //Console.WriteLine(kvp.Value);
+                    //DebugLog(kvp.Value);
                     writer.WriteString("c" + kvp.Value, Encoding.UTF8, 0x40);
-                    //Console.WriteLine(kvp.Value);
-                    //Console.WriteLine(offset);
+                    //DebugLog(kvp.Value);
+                    //DebugLog(offset);
                 }
 
                 else
@@ -638,7 +675,7 @@ namespace libMBIN.Models
             }
 
             long listPosition = writer.BaseStream.Position;
-            if (PrintToDebug) Debug.WriteLine($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
+            DebugLogTemplate($"SerializeList start 0x{listPosition:X}, header 0x{listHeaderPosition:X}");
 
             writer.BaseStream.Position = listHeaderPosition;
 
@@ -658,7 +695,7 @@ namespace libMBIN.Models
 
             foreach (var entry in list)
             {
-                if (PrintToDebug) Debug.WriteLine($"[C] writing {entry.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
+                DebugLogTemplate($"[C] writing {entry.GetType().Name} to offset 0x{writer.BaseStream.Position:X}");
                 SerializeValue(writer, entry.GetType(), entry, null, null, ref additionalData, ref addtDataIndexThis);
             }
 
@@ -690,15 +727,15 @@ namespace libMBIN.Models
                 for (i = 0; i < additionalData.Count; i++)
                 {
                     var data = additionalData[i];
-                    //Console.WriteLine($"Current i: {i}");
-                    //Console.WriteLine(data);
+                    //DebugLog($"Current i: {i}");
+                    //DebugLog(data);
                     //System.Threading.Thread.Sleep(1000);
                     //writer.BaseStream.Position = additionalDataOffset; // addtDataOffset gets updated by child templates
                     long origPos = writer.BaseStream.Position;
-                    //Console.WriteLine(origPos);
-                    //Console.WriteLine(data.Item2.GetType());
-                    //Console.WriteLine(data.Item2.GetType());
-                    //Console.WriteLine(typeof(GcRewardSubstance));
+                    //DebugLog(origPos);
+                    //DebugLog(data.Item2.GetType());
+                    //DebugLog(data.Item2.GetType());
+                    //DebugLog(typeof(GcRewardSubstance));
 
                     // get the custom alignment value from the class if it has one
                     // If the class has no alignment value associated with it, just set as default value of 4
@@ -712,11 +749,11 @@ namespace libMBIN.Models
                         writer.Align( alignment, 0 );
                     }
 
-                    //Console.WriteLine("hi");
+                    //DebugLog("hi");
 
                     if (data.Item2.GetType() == typeof(VariableSizeString))
                     {
-                        //Console.WriteLine(alignment);
+                        //DebugLog(alignment);
                         writer.BaseStream.Position = origPos; // no alignment for dynamicstrings
 
                         var str = (VariableSizeString)data.Item2;
@@ -1010,7 +1047,7 @@ namespace libMBIN.Models
                         else if (innerXmlData.GetType() == typeof(EXmlProperty))
                             element = DeserializeEXmlValue(template, elementType, field, (EXmlProperty)innerXmlData, templateType, settings);
                         else if (innerXmlData.GetType() == typeof(EXmlMeta))
-                            Console.WriteLine(((EXmlMeta)innerXmlData).Comment);
+                            DebugLogComment(((EXmlMeta)innerXmlData).Comment);
                         if (element == null)
                             throw new Exception("element == null ??!");
 
@@ -1035,9 +1072,9 @@ namespace libMBIN.Models
                         {
                             // todo: add a comment in the XML to indicate arrays (+ their size), also need to do the same for showing valid enum values
                             var error = $"{field.Name}: XML array size {data.Count - numMeta} doesn't match expected array size {settings.Size}";
-                            Console.WriteLine($"Error: {error}!");
-                            Console.WriteLine("You might have added/removed an item from an array field");
-                            Console.WriteLine("(arrays can't be shortened or extended as they're a fixed size set by the game)");
+                            DebugLogComment($"Error: {error}!");
+                            DebugLogComment("You might have added/removed an item from an array field");
+                            DebugLogComment("(arrays can't be shortened or extended as they're a fixed size set by the game)");
                             throw new Exception(error);
                         }
                         for (int i = 0; i < data.Count; ++i)
@@ -1049,7 +1086,7 @@ namespace libMBIN.Models
                             }
                             else if (data[i].GetType() == typeof(EXmlMeta))
                             {
-                                Console.WriteLine(((EXmlMeta)data[i]).Comment);     // don't need to worry about nummeta here since it is already counted above...
+                                DebugLogComment(((EXmlMeta)data[i]).Comment);     // don't need to worry about nummeta here since it is already counted above...
                             }
                         }
 
@@ -1070,7 +1107,7 @@ namespace libMBIN.Models
                             }
                             else if (data[i].GetType() == typeof(EXmlMeta))
                             {
-                                Console.WriteLine(((EXmlMeta)data[i]).Comment);
+                                DebugLogComment(((EXmlMeta)data[i]).Comment);
                                 numMeta += 1;           // increment so that the actual data is still placed at the right spot
                             }
                         }
@@ -1089,21 +1126,21 @@ namespace libMBIN.Models
         {
             NMSTemplate template = null;
 
-            //Console.WriteLine(xmlData.Name);
-            //Console.WriteLine(xmlData.GetType().ToString());
+            //DebugLog(xmlData.Name);
+            //DebugLog(xmlData.GetType().ToString());
 
             if (xmlData.GetType() == typeof(EXmlData))
                 template = TemplateFromName(((EXmlData)xmlData).Template);
             else if (xmlData.GetType() == typeof(EXmlProperty))
                 template = TemplateFromName(((EXmlProperty)xmlData).Value.Replace(".xml", ""));
             else if (xmlData.GetType() == typeof(EXmlMeta))
-                Console.WriteLine(((EXmlMeta)xmlData).Comment);
+                DebugLogComment(((EXmlMeta)xmlData).Comment);
 
             /*
-            Console.WriteLine("Getting types");
+            DebugLog("Getting types");
             foreach (var property in xmlData.Elements)
             {
-                Console.WriteLine(property.GetType());
+                DebugLog(property.GetType());
             }*/
 
             if (template == null)
@@ -1150,7 +1187,7 @@ namespace libMBIN.Models
                 {
                     EXmlMeta xmlMeta = (EXmlMeta)xmlElement;
                     string comment = xmlMeta.Comment;
-                    Console.WriteLine(comment);
+                    DebugLogComment(comment);
                 }
             }
             /*
@@ -1180,9 +1217,9 @@ namespace libMBIN.Models
 
             foreach (var xmlProperty in xmlData.Elements.OfType<EXmlMeta>())
             {
-                Console.WriteLine("Hello!!!");
+                DebugLog("Hello!!!");
                 string comment = xmlProperty.Comment;
-                Console.WriteLine(comment);
+                DebugLog(comment);
             }*/
 
             return template;
@@ -1197,25 +1234,19 @@ namespace libMBIN.Models
             foreach (var field in fields)
             {
                 var fieldType = field.FieldType.Name;
-                if (fieldType != "Int32")
-                    continue;
+                if (fieldType != "Int32") continue;
 
                 var valuesMethod = GetType().GetMethod(field.Name + "Values"); // if we have an "xxxValues()" method in the struct, use that to get the value name
-                if (valuesMethod == null)
-                    continue;
+                if (valuesMethod == null) continue;
 
                 int value = (int)field.GetValue(this);
-                if (value == -1)
-                    continue;
+                if (value == -1) continue;
 
-                string[] values = (string[])valuesMethod.Invoke(this, null);
-                try
-                {
-                    string valueStr = values[(int)value];
-                }
-                catch (IndexOutOfRangeException e){
-                    Console.WriteLine("Values index out of Range. Struct: " + GetType() + " field: " + field.Name);
-                    throw new Exception("Error");
+                string[] values = (string[]) valuesMethod.Invoke(this, null);
+                try {
+                    string valueStr = values[(int) value];
+                } catch (IndexOutOfRangeException e){
+                    throw new IndexOutOfRangeException("Values index out of Range. Struct: " + GetType() + " field: " + field.Name);
                 }
                 
             }

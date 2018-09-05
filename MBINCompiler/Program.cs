@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 using libMBIN;
 using libMBIN.Models;
@@ -41,7 +40,7 @@ namespace MBINCompiler {
             // no error checking ^^ (todo: error checking)
             var file = new MBINFile( inputPath );
             file.Load( );
-
+            
             if (getVersion) {
                 ShowMBINVersion(file, verbose);
 
@@ -58,7 +57,7 @@ namespace MBINCompiler {
                     return;
                 }
                 File.WriteAllText( outputPath, xmlString );
-                Console.WriteLine( $"XML data written to \"{outputPath}\" successfully?" );
+                Console.WriteLine( $"XML data written to \"{outputPath}\"" );
             }
         }
 
@@ -83,26 +82,13 @@ namespace MBINCompiler {
 
             using (var file = new MBINFile( outputPath )) {
                 file.Header = new MBINHeader();
-                file.Header.SetDefaults();
-                if (data.GetType() == typeof( TkGeometryData ))
-                    file.Header.Magic = 0xDDDDDDDD; // only used by TkGeometryData / .MBIN.PC files, maybe used to signal the file is PC only?
-                if (data.GetType() == typeof( TkAnimMetadata )) {
-                    file.Header.Tag = 0xFFFFFFFFFFFFFFFF;
-                    file.Header.MbinVersion = 0x9B251350AE1ABCA7;
-                    file.Header.EndPadding = 0xFEFEFEFEFEFEFEFE;
-                }
-
-                file.SetData( data );       // this will also get the length of the data
-
-                if (data.GetType() != typeof(TkAnimMetadata))
-                {
-                    file.Header.EndPadding = file.FileLength;
-                }
-
+                var type = data.GetType();
+                file.Header.SetDefaults( type );
+                file.SetData( data );
                 file.Save();
             }
 
-            Console.WriteLine( $"MBIN data written to \"{outputPath}\" successfully?" );
+            Console.WriteLine( $"MBIN data written to \"{outputPath}\"" );
         }
 
         static void DecompileFolder( string inputPath, string outputPath ) {
@@ -190,7 +176,7 @@ namespace MBINCompiler {
 
         static void ShowVersionStringVerbose() {
             Console.WriteLine( $"MBINCompiler v{MBINCompilerVersion}" );
-            Console.WriteLine( $"libMBIN v{libMBIN.Version.AssemblyVersion}" );
+            Console.WriteLine( $"libMBIN v{libMBIN.Version.GetString()}" );
         }
 
         static void ShowVersionStringCompact() {
@@ -305,29 +291,11 @@ namespace MBINCompiler {
                 } else if (IsFileType( inputPath, "exml" )) {
                     CompileFile( inputPath, outputPath );
                 } else { // assume MBIN
-                    bool isMBin = true;
-
-                    isMBin = IsFileType( inputPath, "mbin" );
-                    if (!isMBin) {
-                        if (File.Exists( inputPath ) && new FileInfo( inputPath ).Length > 0x60) {
-                            using (var stream = File.OpenRead( inputPath )) {
-                                using (var reader = new BinaryReader( stream )) {
-                                    // MBINs start with
-                                    //    CC CC CC CC C4 09 00 00
-                                    // or DD DD DD DD C4 09 00 00
-                                    var magic = reader.ReadUInt32();
-                                    var unk4 = reader.ReadUInt32();
-                                    isMBin = (magic == 0xCCCCCCCC || magic == 0xDDDDDDDD);
-                                    isMBin &= (unk4 == 2500);
-                                }
-                            }
+                    if ( !IsFileType( inputPath, "mbin" ) ) {
+                        if ( !MBINFile.IsValid( inputPath ) ) {
+                            return ShowError( $"Unknown/Unsupported file type! Expected MBIN format.\n"
+                                            + $"FilePath: {inputPath}" );
                         }
-
-                        if (!isMBin) {
-                            return ShowError( $"Unknown/Unsupported file type! Expected EXML or MBIN format.\nFilePath: {inputPath}" );
-                        }
-
-                        string ext = Path.GetExtension( inputPath ) ?? String.Empty;
                         ShowWarning( $"MBIN format detected in file with unrecognized extension. Attempting to decompile.\n"
                                    + $"FilePath: {inputPath}\n" );
                     }
@@ -336,7 +304,7 @@ namespace MBINCompiler {
                 }
 
             } catch (Exception e) {
-                return ShowError( "An unknown exception occurred!\n" + e.Message + "\nStacktrace:\n" + e.StackTrace );
+                return ShowError( $"An unknown exception occurred!\n{e.Message}\nStacktrace:\n{e.StackTrace}" );
             }
 
             //WaitForKeypress();

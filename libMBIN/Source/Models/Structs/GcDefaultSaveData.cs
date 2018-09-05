@@ -1,9 +1,9 @@
 ﻿namespace libMBIN.Models.Structs
 {
-    [NMS(Size = 0x10300)]
+    [NMS(Size = 0x103C0)]
     public class GcDefaultSaveData : NMSTemplate
     {
         /* 0x00000 */ public GcPlayerStateData State;
-        /* 0x10280 */ public GcPlayerSpawnStateData Spawn;
+        /* 0x10340 */ public GcPlayerSpawnStateData Spawn;
     }
 }

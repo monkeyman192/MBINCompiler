@@ -34,7 +34,7 @@ namespace libMBIN.Models.Structs
         public string[] CompletionRequirementValues()
         {
             return new[] { "FullyChargedAndRepaired", "AnyChargeAndRepaired", "FullyRepaired", "NotFullyCharged",
-                            "EmptySlot", "NoRequirement", "UserInstalls"};
+                            "EmptySlot", "NoRequirement", "UserInstalls", "HasIngredients"};
         }
     }
 }
