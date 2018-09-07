@@ -15,6 +15,8 @@ using MBINCompilerTests;
 
 namespace libMBIN.UnitTests {
 
+    using Logger = MBINCompilerTests.Logger;
+
     [TestClass]
     public class SerializationTests {
 
@@ -139,12 +141,12 @@ namespace libMBIN.UnitTests {
             using (var file = new MBINFile( stream )) {
                 file.Load();
                 var data = file.GetData();
-                if (data == null) throw new Exception( "deserialized data was null" );
+                if (data == null) throw new APIException( "deserialized data was null" );
 
-                if (data.SerializeEXml( false ) == null) throw new Exception( "xml serialization was null" );
+                if (data.SerializeEXml( false ) == null) throw new APIException( "xml serialization was null" );
 
                 var xmlString = EXmlFile.WriteTemplate( data );
-                if ( String.IsNullOrEmpty( xmlString ) ) throw new Exception( "xml data is null" );
+                if ( String.IsNullOrEmpty( xmlString ) ) throw new APIException( "xml data is null" );
 
                 MemoryStream memory = new MemoryStream();
                 using (TextWriter writer = new StreamWriter( memory, Encoding.Default, 4096, true )) {
@@ -157,7 +159,7 @@ namespace libMBIN.UnitTests {
 
         private static MemoryStream Compile( Stream stream ) {
             var data = EXmlFile.ReadTemplateFromStream( stream );
-            if (data == null) throw new Exception( "exml failed to deserialize" );
+            if (data == null) throw new APIException( "exml failed to deserialize" );
 
             MemoryStream memory = new MemoryStream();
             using (var file = new MBINFile( memory, true )) {
@@ -214,7 +216,7 @@ namespace libMBIN.UnitTests {
 
                     } catch ( FileNotFoundException ) { // missing
                         file.status = FileStatus.Missing;
-                    } catch ( Exception e ) { // fail
+                    } catch ( APIException e ) { // fail
                         file.status = FileStatus.Failed;
                         file.errorMessage = e.Message;
                     }
@@ -275,7 +277,7 @@ namespace libMBIN.UnitTests {
             // TODO: HACK, for debugging the test
             // Change MAX to restrict how many files will be processed.
             // For unrestricted, set to int.MaxValue
-            const int MAX = 20; // TODO FIXME! should be int.MaxValue;
+            const int MAX = int.MaxValue; // TODO FIXME! should be int.MaxValue;
 
             // TODO: searchPattern should be handled better. *.MBIN and *.MBIN.PC but not *.MBIN.BAK, etc
             // TODO: make searchPattern customizable from .runsettings
@@ -283,7 +285,7 @@ namespace libMBIN.UnitTests {
             Array.Resize( ref paths, Math.Min( MAX, paths.Length ) );
 
             FileState[] files = FileState.CreateArray( paths );
-            using ( var streamOut = new LogFileStream( "GameData Report v1.38.tsv" ) ) { // TODO: hardcoded log file name!
+            using ( var streamOut = new LogFileStream( MBINCompilerTests.Database.Utils.GetTablePath( "RecompiledGameData" ) ) ) {
                 LogHeader( streamOut );
                 bool passed = Recompile( files, streamOut );
                 LogSummary( streamOut, files.Length );

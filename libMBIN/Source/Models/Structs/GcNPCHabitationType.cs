@@ -2,10 +2,7 @@
 {
     public class GcNPCHabitationType : NMSTemplate
     {
-        public int NPCHabitationType;
-        public string[] NPCHabitationTypeValues()
-        {
-            return new[] {"WeaponsExpert", "Farmer", "Builder", "Vehicles", "Scientist" };
-        }
+		public enum NPCHabitationTypeEnum { WeaponsExpert, Farmer, Builder, Vehicles, Scientist }
+		public NPCHabitationTypeEnum NPCHabitationType;
     }
 }

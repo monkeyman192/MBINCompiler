@@ -7,11 +7,8 @@
 
         /* 0x020 */ public TkPaletteTexture Palette;
         /* 0x028 */ public float Probability;
-        /* 0x02C */ public int TextureGameplayUse;
-        public string[] TextureGameplayUseValues()
-        {
-            return new[] { "IgnoreName", "MatchName", "DoNotMatchName" };
-        }
+		public enum TextureGameplayUseEnum { IgnoreName, MatchName, DoNotMatchName }
+		public TextureGameplayUseEnum TextureGameplayUse;
 
         /* 0x030 */ public bool OverrideAverageColour;
         [NMS(Size = 0xF, Ignore = true)]

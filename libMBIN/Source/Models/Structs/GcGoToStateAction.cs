@@ -6,10 +6,7 @@
         public string State;
 
         public bool Broadcast;
-        public int BroadcastLevel;
-        public string[] BroadcastLevelValues()
-        {
-            return new[] { "Scene", "LocalModel", "Local" };
-        }
+		public enum BroadcastLevelEnum { Scene, LocalModel, Local }
+		public BroadcastLevelEnum BroadcastLevel;
     }
 }

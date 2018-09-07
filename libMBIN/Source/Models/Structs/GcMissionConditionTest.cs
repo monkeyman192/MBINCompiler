@@ -2,10 +2,7 @@
 {
     public class GcMissionConditionTest : NMSTemplate
     {
-        public int ConditionTest;
-        public string[] ConditionTestValues()
-        {
-            return new[] { "AnyFalse", "AllFalse", "AnyTrue", "AllTrue"};
-        }
+		public enum ConditionTestEnum { AnyFalse, AllFalse, AnyTrue, AllTrue }
+		public ConditionTestEnum ConditionTest;
     }
 }

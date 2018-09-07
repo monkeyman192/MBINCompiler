@@ -2,18 +2,12 @@
 {
     public class TkNGuiAlignment : NMSTemplate
     {
-        public int Vertical;
-        public int Horizontal;
 
-        public string[] VerticalValues()
-        {
-            return new[] { "Top", "Middle", "Bottom" };
-        }
+		public enum VerticalEnum { Top, Middle, Bottom }
+		public VerticalEnum Vertical;
 
 
-        public string[] HorizontalValues()
-        {
-            return new[] { "Left", "Center", "Right" };
-        }
+		public enum HorizontalEnum { Left, Center, Right }
+		public HorizontalEnum Horizontal;
     }
 }

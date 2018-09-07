@@ -2,10 +2,7 @@
 {
     public class GcInventoryClass : NMSTemplate
     {
-        public int InventoryClass;
-        public string[] InventoryClassValues()
-        {
-            return new[] { "C", "B", "A", "S" };
-        }
+		public enum InventoryClassEnum { C, B, A, S }
+		public InventoryClassEnum InventoryClass;
     }
 }

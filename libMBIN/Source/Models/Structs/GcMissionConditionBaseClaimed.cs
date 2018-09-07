@@ -4,10 +4,7 @@
     {
         /* 0x00 */ public bool Claimed;
         /* 0x04 */ public GcPersistentBaseTypes Base;
-        public int IsOnCurrentSystem;
-        public string[] IsOnCurrentSystemValues()
-        {
-            return new[] { "DontCare", "Yes", "No" };
-        }
+		public enum IsOnCurrentSystemEnum { DontCare, Yes, No }
+		public IsOnCurrentSystemEnum IsOnCurrentSystem;
     }
 }

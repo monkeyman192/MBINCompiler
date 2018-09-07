@@ -13,16 +13,10 @@ namespace libMBIN.Models.Structs
         public float PositionRangeEnd;
         public float PositionSpringTime;
         public TkCurveType PositionCurve;
-        public int Coordinates;
-        public string[] CoordinatesValues()
-        {
-            return new[] { "Polar", "Cartesian"};
-        }
-        public int BlendOp;
-        public string[] BlendOpValues()
-        {
-            return new[] { "Blend", "Add" };
-        }
+		public enum CoordinatesEnum { Polar, Cartesian }
+		public CoordinatesEnum Coordinates;
+		public enum BlendOpEnum { Blend, Add }
+		public BlendOpEnum BlendOp;
         public List<TkAnim2dBlendNodeData> BlendChildren;
     }
 }

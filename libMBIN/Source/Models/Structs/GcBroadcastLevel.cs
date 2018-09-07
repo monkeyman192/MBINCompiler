@@ -2,10 +2,7 @@
 {
     public class GcBroadcastLevel : NMSTemplate
     {
-        public int GalaxyMarkerType;
-        public string[] GalaxyMarkerTypeValues()
-        {
-            return new[] { "Scene", "LocalModel", "Local"};
-        }
+		public enum GalaxyMarkerTypeEnum { Scene, LocalModel, Local }
+		public GalaxyMarkerTypeEnum GalaxyMarkerType;
     }
 }

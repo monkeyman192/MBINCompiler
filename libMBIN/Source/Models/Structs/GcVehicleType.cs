@@ -2,10 +2,7 @@
 {
     public class GcVehicleType : NMSTemplate
     {
-        public int VehicleType;
-        public string[] VehicleTypeValues()
-        {
-            return new[] { "Buggy", "Bike", "Truck"};
-        }
+		public enum VehicleTypeEnum { Buggy, Bike, Truck }
+		public VehicleTypeEnum VehicleType;
     }
 }

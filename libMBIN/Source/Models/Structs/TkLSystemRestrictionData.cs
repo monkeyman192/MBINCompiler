@@ -3,10 +3,7 @@
     public class TkLSystemRestrictionData : NMSTemplate
     {
         public int Amount;
-        public int Restriction;
-        public string[] RestrictionValues()
-        {
-            return new[] { "NoMoreThan", "AtLeast", "AtLeastIfICan" };
-        }
+		public enum RestrictionEnum { NoMoreThan, AtLeast, AtLeastIfICan }
+		public RestrictionEnum Restriction;
     }
 }

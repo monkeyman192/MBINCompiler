@@ -2,10 +2,7 @@
 {
     public class GcJourneyMedalType : NMSTemplate
     {
-        public int MedalType;
-        public string[] MedalTypeValues()
-        {
-            return new[] { "Standings", "Missions", "Words", "Systems", "Sentinels", "Pirates", "Plants", "Units", "RaceCreatures", "DistanceWarped" };
-        }
+		public enum MedalTypeEnum { Standings, Missions, Words, Systems, Sentinels, Pirates, Plants, Units, RaceCreatures, DistanceWarped }
+		public MedalTypeEnum MedalType;
     }
 }

@@ -2,13 +2,7 @@
 {
     public class GcTradeCategory : NMSTemplate
     {
-        public int TradingClass;
-        public string[] TradingClassValues()
-        {
-            return new[]
-            {
-                "Mineral", "Tech", "Commodity", "Component", "Alloy", "Exotic", "Energy", "None"
-            };
-        }
+		public enum TradingClassEnum { Mineral, Tech, Commodity, Component, Alloy, Exotic, Energy, None }
+		public TradingClassEnum TradingClass;
     }
 }

@@ -2,11 +2,8 @@
 {
     public class GcTechnologyRarity : NMSTemplate
     {
-        public int TechnologyRarity;
 
-        public string[] TechnologyRarityValues()
-        {
-            return new[] { "Normal", "VeryCommon", "Common", "Rare", "VeryRare", "Impossible", "Always" };
-        }
+		public enum TechnologyRarityEnum { Normal, VeryCommon, Common, Rare, VeryRare, Impossible, Always }
+		public TechnologyRarityEnum TechnologyRarity;
     }
 }

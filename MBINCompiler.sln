@@ -11,6 +11,19 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "libMBIN-Shared", "libMBIN\l
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libMBIN-DLL", "libMBIN-DLL\libMBIN-DLL.csproj", "{F2D295A6-D082-4EB4-8FC9-F4687F674939}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub Templates", "GitHub Templates", "{0DF573BC-C6C6-4066-8505-92B064F927AF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\-bug-report-.md = .github\ISSUE_TEMPLATE\-bug-report-.md
+		.github\ISSUE_TEMPLATE\-feature-request-.md = .github\ISSUE_TEMPLATE\-feature-request-.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E06A34DB-29E6-4BBB-8FDD-F08AF6F02FE3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		libMBIN\libMBIN-Shared.projitems*{b6850f17-d8fd-48de-9cf2-240f1ba87236}*SharedItemsImports = 13
@@ -18,18 +31,25 @@ Global
 		libMBIN\libMBIN-Shared.projitems*{f2d295a6-d082-4eb4-8fc9-f4687f674939}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug [StdOut]|Any CPU = Debug [StdOut]|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Debug [StdOut]|Any CPU.ActiveCfg = Debug [StdOut]|Any CPU
+		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Debug [StdOut]|Any CPU.Build.0 = Debug [StdOut]|Any CPU
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug [StdOut]|Any CPU.ActiveCfg = Debug|Any CPU
+		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug [StdOut]|Any CPU.Build.0 = Debug|Any CPU
 		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug [StdOut]|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug [StdOut]|Any CPU.Build.0 = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,6 +57,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DF573BC-C6C6-4066-8505-92B064F927AF} = {E06A34DB-29E6-4BBB-8FDD-F08AF6F02FE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA99F7CB-A4A0-4314-AE1C-092F0E8A7C2E}

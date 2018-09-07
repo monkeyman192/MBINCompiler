@@ -8,11 +8,8 @@
         /* 0x14 */ public GcDamageType Type;
         /* 0x18 */ public bool Critical;
         /* 0x19 */ public bool Ineffective;
-        /* 0x1C */ public int HitType;
-        public string[] HitTypeValues()
-        {
-            return new[] {"Shootable", "Terrain", "Generic"};
-        }
+		public enum HitTypeEnum { Shootable, Terrain, Generic }
+		public HitTypeEnum HitType;
         [NMS(Size = 0x10, Ignore = true)]
         /* 0x20 */ public byte[] Padding20;     // ???
         /* 0x30 */ public Vector4f PosLocal;

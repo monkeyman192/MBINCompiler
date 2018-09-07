@@ -13,7 +13,7 @@ namespace libMBIN.Models.Structs
         /* 0x38 */ public float VoronoiPointDivisions;
         /* 0x3C */ public int VoronoiSectorSeed;
         /* 0x40 */ public int VoronoiPointSeed;
-        [NMS(Size = 0x4)]
+        [NMS(Size = 0x3)]
         /* 0x44 */ public float[] ClusterProbability;
         /* 0x54 */ public int WaypointIndex;
         /* 0x58 */ public int LandingPadIndex;

@@ -6,11 +6,8 @@
         [NMS(Size = 0x80)]
         public string Message;
         public int Amount;
-        public int CollectCurrency;
-        public string[] CollectCurrencyValues()
-        {
-            return new[] { "Units", "Nanites", "Specials"};
-        }
+		public enum CollectCurrencyEnum { Units, Nanites, Specials }
+		public CollectCurrencyEnum CollectCurrency;
         [NMS(Size = 0x80)]
         public string DebugText;
     }

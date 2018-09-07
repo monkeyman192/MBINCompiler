@@ -2,10 +2,7 @@
 {
     public class GcPhotoPlant : NMSTemplate
     {
-        public int PhotoPlantType;
-        public string[] PhotoPlantTypeValues()
-        {
-            return new[] { "Zinc", "Thamium", "Platinum"};
-        }
+		public enum PhotoPlantTypeEnum { Zinc, Thamium, Platinum }
+		public PhotoPlantTypeEnum PhotoPlantType;
     }
 }

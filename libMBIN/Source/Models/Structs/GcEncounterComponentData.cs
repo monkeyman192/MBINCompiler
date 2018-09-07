@@ -2,10 +2,7 @@
 {
     public class GcEncounterComponentData : NMSTemplate
     {
-        public int EncounterType;
-        public string[] EncounterTypeValues()
-        {
-            return new[] { "FactoryGuards", "HarvesterGuards" };
-        }
+		public enum EncounterTypeEnum { FactoryGuards, HarvesterGuards }
+		public EncounterTypeEnum EncounterType;
     }
 }

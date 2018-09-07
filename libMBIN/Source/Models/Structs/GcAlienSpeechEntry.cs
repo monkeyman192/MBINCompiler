@@ -8,11 +8,8 @@
         [NMS(Size = 0x20)]
         /* 0x10 */ public string Text;
 
-        /* 0x30 */ public int WordInteractEffect;
-        public string[] WordInteractEffectValues()
-        {
-            return new[] { "Pain", "Heal" };
-        }
+        public enum WordInteractEffectEnum { Pain, Heal };
+        /* 0x30 */ public WordInteractEffectEnum WordInteractEffect;
 
         /* 0x34 */ public GcAlienRace AlienRace;
         /* 0x38 */ public int Level;

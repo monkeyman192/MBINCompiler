@@ -16,11 +16,8 @@ namespace libMBIN.Models.Structs
         /* 0x31 */ public byte[] Padding31;
 
         /* 0x34 */ public GcCreatureTypes ForceType;
-        /* 0x38 */ public int MoveArea;
-        public string[] MoveAreaValues()
-        {
-            return new[] { "Ground", "Water", "Air", "Space" };
-        }
+		public enum MoveAreaEnum { Ground, Water, Air, Space }
+		public MoveAreaEnum MoveArea;
 
         /* 0x3C */ public float MinScale;
         /* 0x40 */ public float MaxScale;

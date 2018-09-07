@@ -5,11 +5,8 @@ namespace libMBIN.Models.Structs
     public class GcCreatureFullBodyIKComponentData : NMSTemplate        // size: 0x18
     {
         public List<GcCreatureIkData> JointData;
-        public int HeadUpAxis;
-        public string[] HeadUpAxisValues()
-        {
-            return new[] { "X", "XNeg", "Y", "YNeg", "Z", "ZNeg" };
-        }
+		public enum HeadUpAxisEnum { X, XNeg, Y, YNeg, Z, ZNeg }
+		public HeadUpAxisEnum HeadUpAxis;
 
         public bool UseFootGlue;
 

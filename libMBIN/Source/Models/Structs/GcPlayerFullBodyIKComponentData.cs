@@ -16,11 +16,8 @@ namespace libMBIN.Models.Structs
         /* 0x030 */ public GcIkConstraint COGConstraint;
         /* 0x180 */ public List<GcIkConstraint> RestrictConstraints;
 
-        /* 0x190 */ public int PlayerHeadUpAxis;
-        public string[] PlayerHeadUpAxisValues()
-        {
-            return new[] { "X", "XNeg", "Y", "YNeg", "Z", "ZNeg" };
-        }
+		public enum PlayerHeadUpAxisEnum { X, XNeg, Y, YNeg, Z, ZNeg }
+		public PlayerHeadUpAxisEnum PlayerHeadUpAxis;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x194 */ public byte[] Padding194;
         /* 0x198 */ public List<GcCreatureIkData> JointDataDepreciated;

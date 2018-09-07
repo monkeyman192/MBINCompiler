@@ -2,13 +2,7 @@
 {
     public class GcShipDialogueTreeEnum : NMSTemplate
     {
-        public int DialogueTree;
-        public string[] DialogueTreeValues()
-        {
-            return new[]
-            {
-                "Bribe", "Beg", "Ambush", "Trade", "Help", "Goods", "Hostile"
-            };
-        }
+		public enum DialogueTreeEnum { Bribe, Beg, Ambush, Trade, Help, Goods, Hostile }
+		public DialogueTreeEnum DialogueTree;
     }
 }

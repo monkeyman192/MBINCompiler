@@ -7,11 +7,8 @@
         /* 0x000 */ public string StatId;
         [NMS(Size = 0x20)]
         /* 0x010 */ public string StatTitle;
-        /* 0x030 */ public int StatMessageType;
-        public string[] StatMessageTypeValues()
-        {
-            return new[] { "Full", "Quick", "Silent"};
-        }
+		public enum StatMessageTypeEnum { Full, Quick, Silent }
+		public StatMessageTypeEnum StatMessageType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x034 */ public byte[] Padding34;
         [NMS(Size = 0x20)]

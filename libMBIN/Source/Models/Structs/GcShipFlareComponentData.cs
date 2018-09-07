@@ -2,10 +2,7 @@
 {
     public class GcShipFlareComponentData : NMSTemplate
     {
-        public int FlareType;
-        public string[] FlareTypeValues()
-        {
-            return new[] { "Default"};
-        }
+		public enum FlareTypeEnum { Default }
+		public FlareTypeEnum FlareType;
     }
 }

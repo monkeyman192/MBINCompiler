@@ -4,10 +4,7 @@
     {
         [NMS(Size = 0x20)]
         public string Event;
-        public int ScanEventTable;
-        public string[] ScanEventTableValues()
-        {
-            return new[] { "Space", "Planet", "Missions", "Tutorial" };
-        }
+		public enum ScanEventTableEnum { Space, Planet, Missions, Tutorial }
+		public ScanEventTableEnum ScanEventTable;
     }
 }

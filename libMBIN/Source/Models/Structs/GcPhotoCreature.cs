@@ -2,10 +2,7 @@
 {
     public class GcPhotoCreature : NMSTemplate
     {
-        public int PhotoCreatureType;
-        public string[] PhotoCreatureTypeValues()
-        {
-            return new[] { "Ground", "Water", "Air"};
-        }
+		public enum PhotoCreatureTypeEnum { Ground, Water, Air }
+		public PhotoCreatureTypeEnum PhotoCreatureType;
     }
 }

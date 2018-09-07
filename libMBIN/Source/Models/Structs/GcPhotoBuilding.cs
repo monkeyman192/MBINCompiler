@@ -2,11 +2,7 @@
 {
     public class GcPhotoBuilding : NMSTemplate
     {
-        public int PhotoBuildingType;
-        public string[] PhotoBuildingTypeValues()
-        {
-            return new[] { "Shelter", "Abandoned", "Shop", "Outpost", "RadioTower", "Observatory", "Depot", "Monolith", "Factory",
-                           "Portal", "Ruin", "MissionTower"};
-        }
+		public enum PhotoBuildingTypeEnum { Shelter, Abandoned, Shop, Outpost, RadioTower, Observatory, Depot, Monolith, Factory, Portal, Ruin, MissionTower }
+		public PhotoBuildingTypeEnum PhotoBuildingType;
     }
 }

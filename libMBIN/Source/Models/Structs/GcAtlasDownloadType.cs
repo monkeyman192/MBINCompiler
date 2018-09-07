@@ -2,13 +2,7 @@
 {
     public class GcAtlasDownloadType : NMSTemplate
     {
-        public int DownloadType;
-        public string[] DownloadTypeValues()
-        {
-            return new[]
-            {
-                "Unknown", "Discovery", "Base", "Message"
-            };
-        }
+		public enum DownloadTypeEnum { Unknown, Discovery, Base, Message }
+		public DownloadTypeEnum DownloadType;
     }
 }

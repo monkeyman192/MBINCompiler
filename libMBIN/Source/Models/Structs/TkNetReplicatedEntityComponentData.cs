@@ -6,15 +6,9 @@ namespace libMBIN.Models.Structs
     public class TkNetReplicatedEntityComponentData : NMSTemplate
     {
         public List<NMSString0x80> ReplicaComponentMask;
-        public int ReplicationRange;
-        public string[] ReplicationRangeValues()
-        {
-            return new[] { "Universal", "System", "Planet", "Space", "PlanetLocal" };
-        }
-        public int SpawnType;
-        public string[] SpawnTypeValues()
-        {
-            return new[] { "Basic", "Creature"};
-        }
+		public enum ReplicationRangeEnum { Universal, System, Planet, Space, PlanetLocal }
+		public ReplicationRangeEnum ReplicationRange;
+		public enum SpawnTypeEnum { Basic, Creature }
+		public SpawnTypeEnum SpawnType;
     }
 }

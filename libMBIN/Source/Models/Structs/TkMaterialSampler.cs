@@ -14,17 +14,11 @@
         public byte[] PaddingA4;
         [NMS(Size = 0x20)]
         public string MaterialAlternativeId;
-        public int TextureAddressMode;
-        public string[] TextureAddressModeValues()
-        {
-            return new[] { "Wrap", "Clamp", "ClampToBorder", "Mirror" };
-        }
+		public enum TextureAddressModeEnum { Wrap, Clamp, ClampToBorder, Mirror }
+		public TextureAddressModeEnum TextureAddressMode;
 
-        public int TextureFilterMode;
-        public string[] TextureFilterModeValues()
-        {
-            return new[] { "None", "Bilinear", "Trilinear" };
-        }
+		public enum TextureFilterModeEnum { None, Bilinear, Trilinear }
+		public TextureFilterModeEnum TextureFilterMode;
 
         public int Anisotropy;
         [NMS(Size = 4, Ignore = true)]

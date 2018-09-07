@@ -2,10 +2,7 @@
 {
     public class GcWeaponClasses : NMSTemplate
     {
-        public int WeaponClass;
-        public string[] WeaponClassValues()
-        {
-            return new[] { "Pistol", "Rifle", "Pristine", "Alien"};
-        }
+		public enum WeaponClassEnum { Pistol, Rifle, Pristine, Alien }
+		public WeaponClassEnum WeaponClass;
     }
 }

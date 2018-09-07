@@ -8,11 +8,8 @@ namespace libMBIN.Models.Structs
         public TkPhysicsData Data;
         /* 0x018 */ public NMSTemplate RagdollData;
         /* 0x060 */ public TkVolumeTriggerType VolumeTriggerType;
-        /* 0x064 */ public int SurfaceProperties;
-        public string[] SurfacePropertiesValues()
-        {
-            return new[] { "None", "Glass" };
-        }
+		public enum SurfacePropertiesEnum { None, Glass }
+		public SurfacePropertiesEnum SurfaceProperties;
         /* 0x068 */ public bool TriggerVolume;
         
         /* 0x069 */ public bool Climbable;

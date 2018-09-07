@@ -121,7 +121,7 @@ namespace libMBIN
         private void InitIo()
         {
             Reader = new BinaryReader(Stream, Encoding.ASCII);
-            Writer = new BinaryWriter(Stream);
+            Writer = Stream.CanWrite ? new BinaryWriter(Stream) : null;
         }
 
         #endregion

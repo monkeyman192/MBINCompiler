@@ -12,6 +12,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\BinaryStreamExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\Half.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\HalfHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\APIException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\System\INT_2_10_10_10_REV.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\EXmlFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\IO.cs" />
@@ -20,11 +22,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\EXmlMeta.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\EXmlData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\EXmlProperty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\TemplateException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\MBINHeader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\NMSAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\NMSTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\Colour.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcAtlasRecvMonumentList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcMissionConditionOnOtherSideOfPortal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcStatIconTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationBoneScales.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcCustomisationUIData.cs" />
@@ -37,6 +41,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcLegacyItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcLegacyItemTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcMissionConditionStatChange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkLODComponentData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkLODModelResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\TkMetadataReadMask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcPlayerEmote.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Models\Structs\GcPlayerEmoteList.cs" />

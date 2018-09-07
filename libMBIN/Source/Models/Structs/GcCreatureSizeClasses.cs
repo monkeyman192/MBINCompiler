@@ -2,13 +2,7 @@
 {
     public class GcCreatureSizeClasses : NMSTemplate
     {
-        public int CreatureSizeClass;
-        public string[] CreatureSizeClassValues()
-        {
-            return new[]
-            {
-                "Small", "Medium", "Large", "Huge"
-            };
-        }
+		public enum CreatureSizeClassEnum { Small, Medium, Large, Huge }
+		public CreatureSizeClassEnum CreatureSizeClass;
     }
 }

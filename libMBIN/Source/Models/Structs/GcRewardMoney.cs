@@ -5,10 +5,7 @@
     {
         public int AmountMin;
         public int AmountMax;
-        public int Currency;
-        public string[] CurrencyValues()
-        {
-            return new[] { "Units", "Nanites", "Specials"};
-        }
+		public enum CurrencyEnum { Units, Nanites, Specials }
+		public CurrencyEnum Currency;
     }
 }

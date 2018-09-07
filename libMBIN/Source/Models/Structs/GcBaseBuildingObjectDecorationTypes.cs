@@ -4,10 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class GcBaseBuildingObjectDecorationTypes : NMSTemplate
     {
-        public int BaseBuildingDecorationType;
-        public string[] BaseBuildingDecorationTypeValues()
-        {
-            return new[] { "Normal", "SurfaceNormal", "Ceiling", "Terrain", "Substance", "Plant", "BuildingSurfaceNormal"};
-        }
+		public enum BaseBuildingDecorationTypeEnum { Normal, SurfaceNormal, Ceiling, Terrain, Substance, Plant, BuildingSurfaceNormal }
+		public BaseBuildingDecorationTypeEnum BaseBuildingDecorationType;
     }
 }

@@ -40,12 +40,9 @@ namespace libMBIN.Models.Structs
         /* 0x0524 */ public GcSolarSystemTraderSpawnData TraderSpawnInStations;
         /* 0x0538 */ public List<GcSolarSystemLocator> Locators;
         /* 0x0548 */ public List<NMSTemplate> AsteroidGenerators;
-        /* 0x0558 */ public int AsteroidLevel;
 
-        public string[] AsteroidLevelValues()
-        {
-            return new[] { "NoRares", "SomeRares", "LotsOfRares" };
-        }
+		public enum AsteroidLevelEnum { NoRares, SomeRares, LotsOfRares }
+		public AsteroidLevelEnum AsteroidLevel;
         
         
         [NMS(Size = 4, Ignore = true)]

@@ -2,10 +2,7 @@
 {
     public class GcSolarSystemClass : NMSTemplate
     {
-        public int SolarSystemClass;
-        public string[] SolarSystemClassValues()
-        {
-            return new[] { "Default", "Initial", "Anomaly", "GameStart" };
-        }
+		public enum SolarSystemClassEnum { Default, Initial, Anomaly, GameStart }
+		public SolarSystemClassEnum SolarSystemClass;
     }
 }

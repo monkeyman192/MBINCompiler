@@ -2,10 +2,7 @@
 {
     public class GcResourceOrigin : NMSTemplate
     {
-        public int ResourceOrigin;
-        public string[] ResourceOriginValues()
-        {
-            return new[] { "Terrain", "Crystal", "Asteroid", "Robot", "Depot" };
-        }
+		public enum ResourceOriginEnum { Terrain, Crystal, Asteroid, Robot, Depot }
+		public ResourceOriginEnum ResourceOrigin;
     }
 }

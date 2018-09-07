@@ -7,11 +7,8 @@ namespace libMBIN.Models.Structs
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string MissionID;
-        /* 0x010 */ public int MissionClass;
-        public string[] MissionClassValues()
-        {
-            return new[] { "Primary", "Secondary", "ChainedSecondary", "Guide" };
-        }
+		public enum MissionClassEnum { Primary, Secondary, ChainedSecondary, Guide }
+		public MissionClassEnum MissionClass;
 
         /* 0x014 */ public bool MissionIsCritical;
         [NMS(Size = 0x20)]
@@ -51,24 +48,15 @@ namespace libMBIN.Models.Structs
         /* 0x361 */ public byte[] Padding331;
         [NMS(Size = 0x10)]
         /* 0x368 */ public string NextMissionHint;
-        /* 0x378 */ public int MessageComplete;
-        public string[] MessageCompleteValues()
-        {
-            return new[] { "Default", "Always", "Never" };
-        }
-        /* 0x37C */ public int MessageStart;
-        public string[] MessageStartValues()
-        {
-            return new[] { "Default", "Always", "Never" };
-        }
+		public enum MessageCompleteEnum { Default, Always, Never }
+		public MessageCompleteEnum MessageComplete;
+		public enum MessageStartEnum { Default, Always, Never }
+		public MessageStartEnum MessageStart;
 
         /* 0x380 */ public GcMissionBoardOptions MissionBoardOptions;
 
-        /* 0x3B0 */ public int AutoStart;
-        public string[] AutoStartValues()
-        {
-            return new[] { "None", "AllModes", "NotCreative", "Survival", "Creative", "OnSelected"};
-        }
+		public enum AutoStartEnum { None, AllModes, NotCreative, Survival, Creative, OnSelected }
+		public AutoStartEnum AutoStart;
         /* 0x3B4 */ public bool RestartOnCompletion;
         /* 0x3B5 */ public bool CancelSetsComplete;
         [NMS(Size = 0x2, Ignore = true)]

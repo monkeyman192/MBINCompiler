@@ -11,11 +11,8 @@
         /* 0x0088 */ public float SizeX;
         /* 0x008C */ public float SizeY;
         /* 0x0090 */ public float Separator;
-        /* 0x0094 */ public int WindowState;
-        public string[] WindowStateValues()
-        {
-            return new[] { "Open", "Minimised", "Closed" };
-        }
+		public enum WindowStateEnum { Open, Minimised, Closed }
+		public WindowStateEnum WindowState;
 
         [NMS(Size = 0x20)]
         /* 0x0098 */ public NMSString0x80[] Tabs;

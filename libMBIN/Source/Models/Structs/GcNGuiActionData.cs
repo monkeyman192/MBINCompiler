@@ -7,10 +7,7 @@
         [NMS(Size = 0x80)]
         public string Data;
 
-        public int Action;
-        public string[] ActionValues()
-        {
-            return new[] { "Click", "Hover", "ArrowLeft", "ArrowRight"};
-        }
+		public enum ActionEnum { Click, Hover, ArrowLeft, ArrowRight }
+		public ActionEnum Action;
     }
 }

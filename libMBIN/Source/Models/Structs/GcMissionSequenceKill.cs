@@ -4,11 +4,8 @@
     {
         [NMS(Size = 0x80)]
         /* 0x000 */ public string Message;
-        /* 0x080 */ public int KillTarget;
-        public string[] KillTargetValues()
-        {
-            return new[] { "Robots", "Drones", "Quads", "Walkers", "Predators", "Creatures", "Pirates", "Traders", "Fiends", "FeedCreatures"};
-        }
+		public enum KillTargetEnum { Robots, Drones, Quads, Walkers, Predators, Creatures, Pirates, Traders, Fiends, FeedCreatures }
+		public KillTargetEnum KillTarget;
         /* 0x084 */ public int AmountMin;
         /* 0x088 */ public int AmountMax;
         [NMS(Size = 0x80)]

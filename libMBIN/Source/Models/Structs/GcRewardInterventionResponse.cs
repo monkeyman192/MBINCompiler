@@ -2,11 +2,8 @@
 {
     public class GcRewardInterventionResponse : NMSTemplate
     {
-        public int ResponseType;
-        public string[] ResponseTypeValues()
-        {
-            return new[] { "DontIntervene", "InterveneWithMission", "MissionSuccess", "MissionFailure" };
-        }
+		public enum ResponseTypeEnum { DontIntervene, InterveneWithMission, MissionSuccess, MissionFailure }
+		public ResponseTypeEnum ResponseType;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
         [NMS(Size = 0x10)]

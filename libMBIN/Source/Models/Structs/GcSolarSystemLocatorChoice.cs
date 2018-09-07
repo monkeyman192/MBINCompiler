@@ -2,11 +2,8 @@
 {
     public class GcSolarSystemLocatorChoice : NMSTemplate       // size: 0x2C
     {
-        /* 0x00 */ public int Choice;
-        public string[] ChoiceValues()
-        {
-            return new[] { "LookupName", "AnyOfType", "SpecificIndex", "InFrontOfPlayer" };
-        }
+		public enum ChoiceEnum { LookupName, AnyOfType, SpecificIndex, InFrontOfPlayer }
+		public ChoiceEnum Choice;
 
         [NMS(Size = 0x20)]
         /* 0x04 */ public string Name;

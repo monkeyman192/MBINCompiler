@@ -2,10 +2,7 @@
 {
     public class TkUserServiceAuthProvider : NMSTemplate
     {
-        public int AuthProvider;
-        public string[] AuthProviderValues()
-        {
-            return new[] { "Null", "PSN", "Steam", "Galaxy" };
-        }
+		public enum AuthProviderEnum { Null, PSN, Steam, Galaxy }
+		public AuthProviderEnum AuthProvider;
     }
 }

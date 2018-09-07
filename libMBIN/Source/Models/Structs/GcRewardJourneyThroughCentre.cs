@@ -2,10 +2,7 @@
 {
     public class GcRewardJourneyThroughCentre : NMSTemplate
     {
-        public int CentreJourneyDestination;
-        public string[] CentreJourneyDestinationValues()
-        {
-            return new[] { "Next", "Abandoned", "Vicious", "Lush", "Balanced"};
-        }
+		public enum CentreJourneyDestinationEnum { Next, Abandoned, Vicious, Lush, Balanced }
+		public CentreJourneyDestinationEnum CentreJourneyDestination;
     }
 }

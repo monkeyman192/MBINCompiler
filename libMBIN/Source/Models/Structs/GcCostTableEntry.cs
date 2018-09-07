@@ -5,8 +5,9 @@
         [NMS(Size = 0x10)]
         /* 0x00 */ public string Id;
         /* 0x10 */ public bool DisplayCost;
-        [NMS(Size = 0x7, Ignore = true)]
-        /* 0x11 */ public byte[] Padding11;
+        /* 0x11 */ public bool DontCharge;
+        [NMS(Size = 0x6, Ignore = true)]
+        /* 0x12 */ public byte[] Padding12;
         /* 0x18 */ public NMSTemplate Cost;
     }
 }

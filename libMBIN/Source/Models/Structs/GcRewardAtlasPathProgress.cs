@@ -2,10 +2,7 @@
 {
     public class GcRewardAtlasPathProgress : NMSTemplate
     {
-        public int AtlasPathProgressType;
-        public string[] AtlasPathProgressTypeValues()
-        {
-            return new[] { "IncrementPathProgress", "FinalStoryAtlas" };
-        }
+		public enum AtlasPathProgressTypeEnum { IncrementPathProgress, FinalStoryAtlas }
+		public AtlasPathProgressTypeEnum AtlasPathProgressType;
     }
 }

@@ -56,7 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="IntRevTest.cs" />
+    <Compile Include="Source\Tests\IntRevTest.cs" />
     <Compile Include="Source\Database\AbstractRecord.cs" />
     <Compile Include="Source\Database\Tables\GameDataMBIN.cs" />
     <Compile Include="Source\Database\Utils.cs" />

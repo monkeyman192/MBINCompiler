@@ -6,11 +6,8 @@ namespace libMBIN.Models.Structs
     {
         public List<NMSString0x10> TechList;
 
-        public int TechListRewardOrder;
-        public string[] TechListRewardOrderValues()
-        {
-            return new[] { "OneRandom", "InOrder", "TryAllRandom" };
-        }
+		public enum TechListRewardOrderEnum { OneRandom, InOrder, TryAllRandom }
+		public TechListRewardOrderEnum TechListRewardOrder;
 
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding14;

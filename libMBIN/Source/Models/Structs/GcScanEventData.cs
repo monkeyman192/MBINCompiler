@@ -16,44 +16,24 @@ namespace libMBIN.Models.Structs
         /* 0x047 */ public bool AlwaysShow;
         /* 0x048 */ public bool IsCommunityPortalOverride;
 
-        /* 0x04C */ public int EventStartType;
-        public string[] EventStartTypeValues()
-        {
-            return new[] { "None", "Special", "Discovered", "Timer", "ObjectScan", "LeaveBuilding" };
-        }
-        /* 0x050 */ public int EventEndType;
-        public string[] EventEndTypeValues()
-        {
-            return new[] { "None", "Proximity", "Interact", "EnterBuilding", "TimedInteract" };
-        }
-        /* 0x054 */ public int EventPriority;
-        public string[] EventPriorityValues()
-        {
-            return new[] { "Regular", "High" };
-        }
+		public enum EventStartTypeEnum { None, Special, Discovered, Timer, ObjectScan, LeaveBuilding }
+		public EventStartTypeEnum EventStartType;
+		public enum EventEndTypeEnum { None, Proximity, Interact, EnterBuilding, TimedInteract }
+		public EventEndTypeEnum EventEndType;
+		public enum EventPriorityEnum { Regular, High }
+		public EventPriorityEnum EventPriority;
 
         /* 0x058 */ public bool CanEndFromOutsideMission;
 
-        /* 0x05C */ public int BuildingLocation;
-        public string[] BuildingLocationValues()
-        {
-            return new[] { "Nearest", "AllNearest", "Random", "RandomOnNearPlanet", "RandomOnFarPlanet" };
-        }
-        /* 0x060 */ public int BuildingType;
-        public string[] BuildingTypeValues()
-        {
-            return new[] { "Any", "AnyShelter", "AnyNPC", "BuildingClass", "SpaceStation", "SpaceAnomaly",
-                           "Atlas", "Freighter", "FreighterBase", "ExternalPlanetBase", "PlanetBaseTerminal",
-                           "Expedition", "TutorialShelter", "MPMissionFreighter"};
-        }
+		public enum BuildingLocationEnum { Nearest, AllNearest, Random, RandomOnNearPlanet, RandomOnFarPlanet }
+		public BuildingLocationEnum BuildingLocation;
+		public enum BuildingTypeEnum { Any, AnyShelter, AnyNPC, BuildingClass, SpaceStation, SpaceAnomaly, Atlas, Freighter, FreighterBase, ExternalPlanetBase, PlanetBaseTerminal, Expedition, TutorialShelter, MPMissionFreighter }
+		public BuildingTypeEnum BuildingType;
         /* 0x064 */ public GcBuildingClassification BuildingClass;
         /* 0x068 */ public bool AllowFriendBases;
 
-        /* 0x06C */ public int SolarSystemLocation;
-        public string[] SolarSystemLocationValues()
-        {
-            return new[] { "Local", "Near", "LocalOrNear", "NearWithNoExpeditions", "FromList"};
-        }
+		public enum SolarSystemLocationEnum { Local, Near, LocalOrNear, NearWithNoExpeditions, FromList }
+		public SolarSystemLocationEnum SolarSystemLocation;
 
         /* 0x070 */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
         /* 0x08C */ public bool ForceRestartInteraction;

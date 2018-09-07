@@ -2,11 +2,8 @@
 {
     public class GcProceduralProductCategory : NMSTemplate
     {
-        public int ProceduralProductCategory;
 
-        public string[] ProceduralProductCategoryValues()
-        {
-            return new[] { "Loot", "Document", "BioSample", "Fossil", "Plant", "Tool", "Farm" };
-        }
+		public enum ProceduralProductCategoryEnum { Loot, Document, BioSample, Fossil, Plant, Tool, Farm }
+		public ProceduralProductCategoryEnum ProceduralProductCategory;
     }
 }

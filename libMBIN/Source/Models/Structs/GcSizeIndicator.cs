@@ -2,10 +2,7 @@
 {
     public class GcSizeIndicator : NMSTemplate
     {
-        public int SizeIndicator;
-        public string[] SizeIndicatorValues()
-        {
-            return new[] { "Small", "Medium", "Large" };
-        }
+		public enum SizeIndicatorEnum { Small, Medium, Large }
+		public SizeIndicatorEnum SizeIndicator;
     }
 }

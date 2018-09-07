@@ -3,10 +3,7 @@
     public class GcCostMoney : NMSTemplate
     {
         public int Cost;
-        public int CostCurrency;
-        public string[] CostCurrencyValues()
-        {
-            return new[] { "Units", "Nanites", "Specials"};
-        }
+		public enum CostCurrencyEnum { Units, Nanites, Specials }
+		public CostCurrencyEnum CostCurrency;
     }
 }

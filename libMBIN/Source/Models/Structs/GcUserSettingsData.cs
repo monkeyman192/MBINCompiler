@@ -18,10 +18,7 @@
         /* 0x386C */ public int MotionBlurAmount;
         /* 0x3870 */ public int Filter;
         /* 0x3874 */ public bool DamageNumbers;
-        /* 0x3878 */ public int BaseSharingMode;
-        public string[] BaseSharingModeValues()
-        {
-            return new[] { "Undecided", "On", "Off" };
-        }
+		public enum BaseSharingModeEnum { Undecided, On, Off }
+		public BaseSharingModeEnum BaseSharingMode;
     }
 }

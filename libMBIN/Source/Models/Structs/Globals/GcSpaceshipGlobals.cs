@@ -506,8 +506,11 @@
         /* 0x104C */ public float LaunchThrustersRegenTimePeriod;
         /* 0x1050 */ public float LaunchThrustersMinimumSummonPercentage;
         /* 0x1054 */ public float LaunchThrustersSummonCostMultiplier;
-        /* 0x1058 */ public float TrailThreshold;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x105C */ public byte[] EndPadding;
+		/* 0x1058 */ public float SpeedUpDistanceThreshold;
+		/* 0x105C */ public float SpeedUpDistanceFadeThreshold;
+		/* 0x1060 */ public float SpeedUpVelocityThreshold;
+		/* 0x1064 */ public float SpeedUpVelocityCoeff;
+		/* 0x1068 */ public float MaxSpeedUpDistance;
+		/* 0x106C */ public float MaxSpeedUpVelocity;
     }
 }

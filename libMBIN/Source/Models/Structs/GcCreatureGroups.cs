@@ -2,10 +2,7 @@
 {
     public class GcCreatureGroups : NMSTemplate
     {
-        public int CreatureGroup;
-        public string[] CreatureGroupValues()
-        {
-            return new[] { "Solo", "Couple", "Group", "Herd" };
-        }
+		public enum CreatureGroupEnum { Solo, Couple, Group, Herd }
+		public CreatureGroupEnum CreatureGroup;
     }
 }

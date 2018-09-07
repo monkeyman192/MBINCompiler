@@ -2,10 +2,7 @@
 {
     public class GcWarpAction : NMSTemplate
     {
-        public int WarpType;
-        public string[] WarpTypeValues()
-        {
-            return new[] { "BlackHole" }; // one value? :D:D
-        }
+		public enum WarpTypeEnum { BlackHole }
+		public WarpTypeEnum WarpType;
     }
 }

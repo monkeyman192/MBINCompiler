@@ -6,11 +6,8 @@ namespace libMBIN.Models.Structs
     {
         [NMS(Size = 0x20)]
         public string LocatorType;
-        public int MergeProbabilityOptions;
-        public string[] MergeProbabilityOptionsValues()
-        {
-            return new[] { "Balance", "Prioritize", "Replace" };
-        }
+		public enum MergeProbabilityOptionsEnum { Balance, Prioritize, Replace }
+		public MergeProbabilityOptionsEnum MergeProbabilityOptions;
 
         public List<TkLSystemLocatorEntry> Entries;
     }

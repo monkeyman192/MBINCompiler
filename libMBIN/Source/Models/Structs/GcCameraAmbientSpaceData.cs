@@ -6,12 +6,8 @@
         /* 0x00 */ public string Animation;
         [NMS(Size = 0x10)]
         /* 0x10 */ public string DroneAnimation;
-        /* 0x20 */ public int Origin;
-        public string[] OriginValues()
-        {
-            return new[] { "SpaceStationInternals", "SpaceStationBack", "FreighterBattle", "Freighter",
-                "FreighterHangar", "AtlasStation", "BlackHole", "Anomaly" };
-        }
+		public enum OriginEnum { SpaceStationInternals, SpaceStationBack, FreighterBattle, Freighter, FreighterHangar, AtlasStation, BlackHole, Anomaly }
+		public OriginEnum Origin;
 
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x24 */ public byte[] EndPadding;

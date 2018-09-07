@@ -15,5 +15,7 @@
             this.z = z;
             this.w = w;
         }
+
+        public Quaternion() { }
     }
 }

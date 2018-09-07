@@ -6,16 +6,10 @@
         /* 0x00 */ public TkModelRendererCameraData Camera;
         /* 0x40 */ public float Fov;
         /* 0x44 */ public float AspectRatio;
-        /* 0x48 */ public int ThumbnailMode;
-        public string[] ThumbnailModeValues()
-        {
-            return new[] { "None", "HUD", "GUI" };
-        }
-        /* 0x4C */ public int FocusType;
-        public string[] FocusTypeValues()
-        {
-            return new[] { "ResourceBounds", "ResourceBoundingHeight", "NodeBoundingBox" };
-        }
+		public enum ThumbnailModeEnum { None, HUD, GUI }
+		public ThumbnailModeEnum ThumbnailMode;
+		public enum FocusTypeEnum { ResourceBounds, ResourceBoundingHeight, NodeBoundingBox }
+		public FocusTypeEnum FocusType;
 
         [NMS(Size = 0x20)]
         /* 0x50 */ public string FocusLocator;

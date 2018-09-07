@@ -6,11 +6,8 @@ namespace libMBIN.Models.Structs
     {
         [NMS(Size = 0x80)]
         /* 0x000 */ public string ExternalMaterial;
-        public int Shader;
-        /* 0x080 */ public string[] ShaderValues()
-        {
-            return new[] { "UberShader", "Sky", "Screen", "UberHack" };
-        }
+		public enum ShaderEnum { UberShader, Sky, Screen, UberHack }
+		public ShaderEnum Shader;
         /* 0x084 */ public bool Transaprent;
         /* 0x088 */ public int TransparencyLayerID;
         /* 0x08C */ public bool Additive;
@@ -59,11 +56,8 @@ namespace libMBIN.Models.Structs
         /* 0x348 */ public bool DecalDiffuse;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x349 */ public byte[] Padding1C9;
-        public int DecalNormal;
-        /* 0x34C */ public string[] DecalNormalValues()
-        {
-            return new[] { "None", "Decal", "Vertex" };
-        }
+		public enum DecalNormalEnum { None, Decal, Vertex }
+		public DecalNormalEnum DecalNormal;
         /* 0x350 */ public bool DoubleSided;
         /* 0x351 */ public bool Billboard;
         /* 0x352 */ public bool RotateAroundAt;

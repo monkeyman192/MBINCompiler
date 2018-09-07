@@ -2,10 +2,7 @@
 {
     public class GcTurretComponentData : NMSTemplate
     {
-        public int GunType;
-        public string[] GunTypeValues()
-        {
-            return new[] { "Laser", "Projectile", "Missile" };
-        }
+		public enum GunTypeEnum { Laser, Projectile, Missile }
+		public GunTypeEnum GunType;
     }
 }

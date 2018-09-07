@@ -2,10 +2,7 @@
 {
     public class GcStatType : NMSTemplate // not the same as GcStatsTypes
     {
-        public int StatType;
-        public string[] StatTypeValues()
-        {
-            return new[] { "Int", "Float", "AvgRate" };
-        }
+		public enum StatTypeEnum { Int, Float, AvgRate }
+		public StatTypeEnum StatType;
     }
 }

@@ -148,8 +148,8 @@
         /* 0x45A */ public byte[] Padding45A;
         /* 0x460 */ public Vector4f MipLevelDebug;
         /* 0x470 */ public Vector4f LensParams;
-        /* 0x480 */ public Vector4f VerticalColourTop;
-        /* 0x490 */ public Vector4f VerticalColourBottom;
+        /* 0x480 */ public Colour VerticalColourTop;
+        /* 0x490 */ public Colour VerticalColourBottom;
         /* 0x4A0 */ public Vector4f VerticalGradient;
         /* 0x4B0 */ public float ScanFadeInTime;
         /* 0x4B4 */ public float ScanFadeOutTime;

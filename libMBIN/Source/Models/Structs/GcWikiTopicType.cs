@@ -2,10 +2,7 @@
 {
     public class GcWikiTopicType : NMSTemplate
     {
-        public int WikiTopicType;
-        public string[] WikiTopicTypeValues()
-        {
-            return new[] { "List", "Grid"};
-        }
+		public enum WikiTopicTypeEnum { List, Grid }
+		public WikiTopicTypeEnum WikiTopicType;
     }
 }

@@ -11,16 +11,8 @@
         [NMS(Size = 0x1, Ignore = true)]
         /* 0x00B */ public byte[] PaddingB;
         /* 0x00C */ public TkNoiseVoxelTypeEnum NoiseVoxelType;
-        /* 0x010 */ public int NoiseGridType;
-        public string[] NoiseGridTypeValues()
-        {
-            return new[]
-            {
-                "Cube", "Cone", "Torus", "Sphere", "Cylinder", "Capsule", "Corridor", "Pipe",
-                "Puck", "SuperPrimitiveRandom", "SuperFormula_01", "SuperFormula_02", "SuperFormula_03", "SuperFormula_04", "SuperFormula_05", "SuperFormula_06",
-                "SuperFormula_07", "SuperFormula_08", "SuperFormulaRandom", "SuperFormula", "SuperPrimitive", "File"
-            };
-        }
+		public enum NoiseGridTypeEnum { Cube, Cone, Torus, Sphere, Cylinder, Capsule, Corridor, Pipe, Puck, SuperPrimitiveRandom, SuperFormula_01, SuperFormula_02, SuperFormula_03, SuperFormula_04, SuperFormula_05, SuperFormula_06, SuperFormula_07, SuperFormula_08, SuperFormulaRandom, SuperFormula, SuperPrimitive, File }
+		public NoiseGridTypeEnum NoiseGridType;
 
         [NMS(Size = 0x80)]
         /* 0x014 */ public string Filename;

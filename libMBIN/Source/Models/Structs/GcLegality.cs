@@ -2,11 +2,8 @@
 {
     public class GcLegality : NMSTemplate
     {
-        public int Legality;
 
-        public string[] LegalityValues()
-        {
-            return new[] { "Legal", "Illegal", "None" };
-        }
+		public enum LegalityEnum { Legal, Illegal, None }
+		public LegalityEnum Legality;
     }
 }

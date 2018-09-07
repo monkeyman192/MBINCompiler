@@ -9,11 +9,8 @@ namespace libMBIN.Models.Structs
         /* 0x04 */ public int MaxCount;
         /* 0x08 */ public float SwarmMovementSpeed;
         /* 0x0C */ public float SwarmMovementRadius;
-        /* 0x10 */ public int SwarmMovementType;
-        public string[] SwarmMovementTypeValues()
-        {
-            return new[] { "None", "Circle", "Random", "Search" };
-        }
+		public enum SwarmMovementTypeEnum { None, Circle, Random, Search }
+		public SwarmMovementTypeEnum SwarmMovementType;
 
         /* 0x14 */ public float Coherence;
         /* 0x18 */ public float Alignment;

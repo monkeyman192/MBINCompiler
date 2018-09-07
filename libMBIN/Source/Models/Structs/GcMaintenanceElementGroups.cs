@@ -4,10 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class GcMaintenanceElementGroups : NMSTemplate
     {
-        public int MaintenanceGroup;
-        public string[] MaintenanceGroupValues()
-        {
-            return new[] { "Custom", "Farming", "Fuelling", "Repairing", "Cleaning"};
-        }
+		public enum MaintenanceGroupEnum { Custom, Farming, Fuelling, Repairing, Cleaning }
+		public MaintenanceGroupEnum MaintenanceGroup;
     }
 }

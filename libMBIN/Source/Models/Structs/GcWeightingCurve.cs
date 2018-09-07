@@ -2,11 +2,8 @@
 {
     public class GcWeightingCurve : NMSTemplate
     {
-        public int WeightingCurve;
 
-        public string[] WeightingCurveValues()
-        {
-            return new[] { "NoWeighting", "MaxIsUncommon", "MaxIsRare", "MaxIsSuperRare", "MinIsUncommon", "MinIsRare", "MinIsSuperRare"};
-        }
+		public enum WeightingCurveEnum { NoWeighting, MaxIsUncommon, MaxIsRare, MaxIsSuperRare, MinIsUncommon, MinIsRare, MinIsSuperRare }
+		public WeightingCurveEnum WeightingCurve;
     }
 }

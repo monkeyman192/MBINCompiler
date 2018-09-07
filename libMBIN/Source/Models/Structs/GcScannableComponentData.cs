@@ -12,10 +12,7 @@
         /* 0x30 */ public bool CantagIcon;
 
         /* 0x34 */ public GcScannerIconTypes IconType;
-        /* 0x38 */ public int ScannableType;
-        public string[] ScannableTypeValues()
-        {
-            return new[] { "Binoculars", "Scanner", "Marker", "None"};
-        }
+		public enum ScannableTypeEnum { Binoculars, Scanner, Marker, None }
+		public ScannableTypeEnum ScannableType;
     }
 }

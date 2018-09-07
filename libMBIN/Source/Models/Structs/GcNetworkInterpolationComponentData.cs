@@ -2,10 +2,7 @@
 {
     public class GcNetworkInterpolationComponentData : NMSTemplate
     {
-        public int SynchroniseScale;
-        public string[] SynchroniseScaleValues()
-        {
-            return new[] { "Never", "Once", "Always" };
-        }
+		public enum SynchroniseScaleEnum { Never, Once, Always }
+		public SynchroniseScaleEnum SynchroniseScale;
     }
 }

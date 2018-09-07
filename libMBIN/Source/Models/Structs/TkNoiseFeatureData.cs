@@ -8,11 +8,8 @@
         public bool Subtract;
         public bool Trench;
         public TkNoiseVoxelTypeEnum NoiseVoxelType;
-        public int FeatureType;
-        public string[] FeatureTypeValues()
-        {
-            return new[] { "Tube", "Blob" };
-        }
+		public enum FeatureTypeEnum { Tube, Blob }
+		public FeatureTypeEnum FeatureType;
         public float Width;
         public float Height;
         public int Octaves;

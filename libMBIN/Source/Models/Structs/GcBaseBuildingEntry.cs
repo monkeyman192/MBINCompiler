@@ -50,11 +50,8 @@
         /* 0x20C */ public bool RemovesAttachedDecoration;
         /* 0x20D */ public bool EditsTerrain;
 
-        /* 0x210 */ public int BaseTerrainEditShape;
-        public string[] BaseTerrainEditShapeValues()
-        {
-            return new[] { "Cube", "Cylinder"};
-        }
+		public enum BaseTerrainEditShapeEnum { Cube, Cylinder }
+		public BaseTerrainEditShapeEnum BaseTerrainEditShape;
 
         /* 0x214 */ public float TerrainEditBaseYOffset;
         /* 0x218 */ public float TerrainEditTopYOffset;

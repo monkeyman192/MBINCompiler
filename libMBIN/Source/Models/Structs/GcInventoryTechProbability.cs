@@ -4,11 +4,8 @@
     {
         [NMS(Size = 0x10)]
         public string Tech;
-        public int DesiredTechProbability;
-        public string[] DesiredTechProbabilityValues()
-        {
-            return new[] { "Never", "Rare", "Common", "Always" };
-        }
+		public enum DesiredTechProbabilityEnum { Never, Rare, Common, Always }
+		public DesiredTechProbabilityEnum DesiredTechProbability;
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding14;
     }

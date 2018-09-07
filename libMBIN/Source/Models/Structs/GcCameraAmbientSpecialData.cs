@@ -8,10 +8,8 @@
         /* 0x10 */ public string DroneAnimation;
         /* 0x20 */
         public int CameraOrigin;
-        public string[] OriginValues()
-        {
-            return new[] {"ExternalBase"};
-        }
+		public enum OriginEnum { ExternalBase }
+		public OriginEnum Origin;
 
         /* 0x24 */ public bool UseLookAt;
         /* 0x25 */ public bool AvoidTerrain;

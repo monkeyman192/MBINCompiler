@@ -2,11 +2,8 @@
 {
     public class GcProductCategory : NMSTemplate
     {
-        public int ProductCategory;
 
-        public string[] ProductCategoryValues()
-        {
-            return new[] { "Component", "Consumable", "Tradeable", "Curiousity", "BuildingPart", "Procedural", "Emote", "CustomisationPart" };
-        }
+		public enum ProductCategoryEnum { Component, Consumable, Tradeable, Curiousity, BuildingPart, Procedural, Emote, CustomisationPart }
+		public ProductCategoryEnum ProductCategory;
     }
 }

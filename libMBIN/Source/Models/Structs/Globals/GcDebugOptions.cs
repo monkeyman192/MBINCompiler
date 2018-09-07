@@ -28,11 +28,8 @@
         /* 0x18 */ public int ScreenWidth;
         /* 0x1C */ public int ScreenHeight;
         /* 0x20 */ public bool DisableVSync;
-        /* 0x24 */ public int GameWindowMode;
-        public string[] GameWindowModeValues()
-        {
-            return new[] { "Bordered", "Borderless", "Fullscreen" };
-        }
+		public enum GameWindowModeEnum { Bordered, Borderless, Fullscreen }
+		public GameWindowModeEnum GameWindowMode;
         /* 0x28 */ public int Monitor;
         [NMS(Size = 0x100)]
         /* 0x2C */ public string ForceUniverseAddress;
@@ -40,45 +37,26 @@
         /* 0x12C */ public string ForcePlayerPosition;
         /* 0x22C */ public bool ForceInitialShip;
         /* 0x22D */ public bool ForceInitialWeapon;
-        /* 0x230 */ public int GameStateMode;
-        public string[] GameStateModeValues()
-        {
-            return new[] { "LoadPreset", "UserStorage", "FreshStart" };
-        }
-        /* 0x234 */ public int BootMode;
-        public string[] BootModeValues()
-        {
-            return new[] {"MinimalSolarSystem", "SolarSystem", "GalaxyMap", "SmokeTest",
-                          "SmokeTestGalaxyMap", "Scratchpad", "UnitTest" };
-        }
-        /* 0x238 */ public int PlayerSpawnLocationOverride;
-        public string[] PlayerSpawnLocationOverrideValues()
-        {
-            return new[] { "None", "FromSettings", "Space", "SpaceStation", "RandomPlanet", "GameStartPlanet" };
-        }
+		public enum GameStateModeEnum { LoadPreset, UserStorage, FreshStart }
+		public GameStateModeEnum GameStateMode;
+		public enum BootModeEnum { MinimalSolarSystem, SolarSystem, GalaxyMap, SmokeTest, SmokeTestGalaxyMap, Scratchpad, UnitTest }
+		public BootModeEnum BootMode;
+		public enum PlayerSpawnLocationOverrideEnum { None, FromSettings, Space, SpaceStation, RandomPlanet, GameStartPlanet }
+		public PlayerSpawnLocationOverrideEnum PlayerSpawnLocationOverride;
         [NMS(Size = 0x80)]
         /* 0x23C */ public string SceneSettings;
         [NMS(Size = 0x100)]
         /* 0x2BC */ public string WorkingDirectory;
-        /* 0x3BC */ public int SolarSystemBoot;
-        public string[] SolarSystemBootValues()
-        {
-            return new[] { "FromSettings", "Generate" };
-        }
-        /* 0x3C0 */ public int ShaderPreload;
-        public string[] ShaderPreloadValues()
-        {
-            return new[] { "Off", "Full" };
-        }
+		public enum SolarSystemBootEnum { FromSettings, Generate }
+		public SolarSystemBootEnum SolarSystemBoot;
+		public enum ShaderPreloadEnum { Off, Full }
+		public ShaderPreloadEnum ShaderPreload;
         /* 0x3C4 */ public float PresetGameMode;
         /* 0x3C8 */ public bool ShaderPreloadListExport;
         /* 0x3C9 */ public bool ShaderPreloadListImport;
         /* 0x3CA */ public bool ShaderCaching;
-        /* 0x3CC */ public int BootLoadDelay;
-        public string[] BootLoadDelayValues()
-        {
-            return new[] { "LoadAll", "WaitForPlanet", "WaitForNothing" };
-        }
+		public enum BootLoadDelayEnum { LoadAll, WaitForPlanet, WaitForNothing }
+		public BootLoadDelayEnum BootLoadDelay;
         /* 0x3D0 */ public bool MemCsv;
         /* 0x3D4 */ public float ForceTimeOfDay;
         /* 0x3D8 */ public bool UseParticles;
@@ -136,11 +114,8 @@
         /* 0x5A1 */ public bool FleetDirectorAutoMode;
         /* 0x5A4 */ public float _3dTextDistance;
         /* 0x5A8 */ public float _3dTextMinScale;
-        /* 0x5AC */ public int RecordSetting;
-        public string[] RecordSettingValues()
-        {
-            return new[] { "None", "Record", "Playback" };
-		}
+		public enum RecordSettingEnum { None, Record, Playback }
+		public RecordSettingEnum RecordSetting;
         /* 0x5B0 */ public bool DebugBuildingSpawns;
         /* 0x5B1 */ public bool StressTestLongNameDisplay;
         [NMS(Size = 0x20)]
@@ -163,11 +138,8 @@
         /* 0x6E2 */ public bool GraphFPS;
         /* 0x6E3 */ public bool GraphTexStreaming;
         /* 0x6E4 */ public bool SmokeTestDumpStatsMode;
-        /* 0x6E8 */ public int SmokeTestCycleMode;
-        public string[] SmokeTestCycleModeValues()
-        {
-            return new[] { "None", "TourSolarSystem", "RegeneratePlanet" };
-        }
+		public enum SmokeTestCycleModeEnum { None, TourSolarSystem, RegeneratePlanet }
+		public SmokeTestCycleModeEnum SmokeTestCycleMode;
         /* 0x6EC */ public bool SmokeTestCameraFly;
         /* 0x6ED */ public bool SmokeTestOutputOnly;
         /* 0x6EE */ public bool SmokeTestPureFlight;
@@ -199,18 +171,12 @@
         /* 0xA06 */ public bool RenderLowFramerate;
         /* 0xA07 */ public bool EnableComputePost;
         /* 0xA08 */ public bool SimulateNoNetworkConnection;
-        /* 0xA0C */ public int ProxyType;
-        public string[] ProxyTypeValues()
-        {
-            return new[] { "None", "ManualURI", "InetProxy" };
-        }
+		public enum ProxyTypeEnum { None, ManualURI, InetProxy }
+		public ProxyTypeEnum ProxyType;
         [NMS(Size = 0x80)]
         /* 0xA10 */ public string ProxyURI;
-        /* 0xA90 */ public int ServerEnv;
-        public string[] ServerEnvValues()
-        {
-            return new[] { "default", "dev", "qa", "prodqa", "prod", "custom", "pentest" };
-        }
+		public enum ServerEnvEnum { Default, dev, qa, prodqa, prod, custom, pentest }
+		public ServerEnvEnum ServerEnv;
         [NMS(Size = 0x80)]
         /* 0xA94 */ public string AuthBaseUrl;
         /* 0xB14 */ public bool CertificateSecurityBypass;
@@ -279,11 +245,8 @@
         /* 0x1758 */ public int ForceTerrainSettings;                   // there will be an enum/struct
         /* 0x175C */ public bool ForceTerrainType;
         /* 0x1760 */ public int ForceTerranTypeTo;                      // there will be an enum/struct
-        /* 0x1764 */ public int ForceAnomalyTo;
-        public string[] ForceAnomalyToValues()
-        {
-            return new[] { "None", "AtlasType1", "AtlasType2", "Blackhole", "Anomaly", "Spacewalk" };
-        }
+		public enum ForceAnomalyToEnum { None, AtlasType1, AtlasType2, Blackhole, Anomaly, Spacewalk }
+		public ForceAnomalyToEnum ForceAnomalyTo;
         /* 0x1768 */ public bool ForcePlanetsToHaveWater;
         /* 0x1769 */ public bool DisableLimits;
         /* 0x176A */ public bool LimitPerRegionInstances;

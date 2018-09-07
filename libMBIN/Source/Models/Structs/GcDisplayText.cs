@@ -1,12 +1,10 @@
 ﻿namespace libMBIN.Models.Structs
 {
+    [NMS(Size = 0x304)]
     public class GcDisplayText : NMSTemplate
     {
-        public int HUDTextDisplayType;      // size: 0x304
-        public string[] HUDTextDisplayTypeValues()
-        {
-            return new[] { "Full", "Compact", "EyeLevel", "Prompt", "Tooltip" };
-        }
+		public enum HUDTextDisplayTypeEnum { Full, Compact, EyeLevel, Prompt, Tooltip }
+		public HUDTextDisplayTypeEnum HUDTextDisplayType;
 
         [NMS(Size = 0x100)]
         public string Title;

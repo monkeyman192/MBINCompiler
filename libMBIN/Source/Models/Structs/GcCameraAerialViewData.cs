@@ -4,11 +4,8 @@ namespace libMBIN.Models.Structs
     public class GcCameraAerialViewData : NMSTemplate
     {
         /* 0x000 */ public float Time;
-		/* 0x004 */ public int AerialViewMode;
-        public string[] AerialViewModeValues()
-        {
-            return new[] { "FaceDown", "FaceOut", "FaceDownThenOut" };
-        }
+		public enum AerialViewModeEnum { FaceDown, FaceOut, FaceDownThenOut }
+		public AerialViewModeEnum AerialViewMode;
 		/* 0x008 */ public float TimeBack;
 		/* 0x00C */ public float StartTime;
 		/* 0x010 */ public float PauseTime;

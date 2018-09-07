@@ -2,10 +2,7 @@
 {
     public class GcTeleporterType : NMSTemplate
     {
-        public int TeleporterDestinationType;
-        public string[] TeleporterDestinationTypeValues()
-        {
-            return new[] { "Base", "Spacestation", "Atlas", "PlanetAwayFromShip"};
-        }
+		public enum TeleporterDestinationTypeEnum { Base, Spacestation, Atlas, PlanetAwayFromShip }
+		public TeleporterDestinationTypeEnum TeleporterDestinationType;
     }
 }

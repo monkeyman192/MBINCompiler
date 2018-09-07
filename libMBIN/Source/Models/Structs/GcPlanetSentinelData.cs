@@ -2,11 +2,8 @@
 {
     public class GcPlanetSentinelData : NMSTemplate
     {
-        public int SentinelLevel;
-        public string[] SentinelLevelValues()
-        {
-            return new[] { "Default", "Aggressive" };
-        }
+		public enum SentinelLevelEnum { Default, Aggressive }
+		public SentinelLevelEnum SentinelLevel;
 
         public int MaxActiveDrones;
     }

@@ -13,11 +13,8 @@
         /* 0x028 */ public GcCreatureRoleDescription Description;
         /* 0x068 */ public GcCreatureInfo Info;
         /* 0x500 */ public GcTerrainTileType TileType;
-        /* 0x504 */ public int Diet;
-        public string[] DietValues()
-        {
-            return new[] { "Carnivore", "Omnivore", "Herbivore" };
-        }
+		public enum DietEnum { Carnivore, Omnivore, Herbivore }
+		public DietEnum Diet;
         /* 0x508 */ public float BaseScale;
 
         [NMS(Size = 4, Ignore = true)]

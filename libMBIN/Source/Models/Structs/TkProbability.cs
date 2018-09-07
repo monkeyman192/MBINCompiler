@@ -2,10 +2,7 @@
 {
     public class TkProbability : NMSTemplate
     {
-        public int Probability;
-        public string[] ProbabilityValues()
-        {
-            return new[] { "Common", "Uncommon", "Rare", "Extraordinary" };
-        }
+		public enum ProbabilityEnum { Common, Uncommon, Rare, Extraordinary }
+		public ProbabilityEnum Probability;
     }
 }

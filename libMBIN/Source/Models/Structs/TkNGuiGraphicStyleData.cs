@@ -10,24 +10,18 @@
         /* 0x10 */ public Colour Colour;
         /* 0x20 */ public Colour IconColour;
         /* 0x30 */ public Colour StrokeColour;
-        /* 0x40 */ public int Shape;
 
-        public string[] ShapeValues()
-        {
-            return new[] { "Rectangle", "Ellipse" };
-        }
+		public enum ShapeEnum { Rectangle, Ellipse }
+		public ShapeEnum Shape;
 
 
         /* 0x44 */ public bool SolidColour;
         /* 0x45 */ public bool HasDropShadow;
         /* 0x46 */ public bool HasOuterGradient;
         /* 0x47 */ public bool HasInnerGradient;
-        /* 0x48 */ public int Gradient;
 
-        public string[] GradientValues()
-        {
-            return new[] { "None", "Vertical", "Horizontal", "HorizontalBounce" };
-        }
+		public enum GradientEnum { None, Vertical, Horizontal, HorizontalBounce }
+		public GradientEnum Gradient;
 
 
         /* 0x4C */ public float GradientStartOffset;

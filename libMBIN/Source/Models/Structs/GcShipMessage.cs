@@ -2,10 +2,7 @@
 {
     public class GcShipMessage : NMSTemplate
     {
-        public int MessageType;
-        public string[] MessageTypeValues()
-        {
-            return new[] { "Leave", "Fight" };
-        }
+		public enum MessageTypeEnum { Leave, Fight }
+		public MessageTypeEnum MessageType;
     }
 }

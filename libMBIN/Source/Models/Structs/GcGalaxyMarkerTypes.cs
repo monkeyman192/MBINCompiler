@@ -2,12 +2,7 @@
 {
     public class GcGalaxyMarkerTypes : NMSTemplate
     {
-        public int GalaxyMarkerType;
-        public string[] GalaxyMarkerTypeValues()
-        {
-            return new[] { "StartingLocation", "Home", "Waypoint", "Contact",
-                           "Blackhole", "AtlasStation", "Selection", "PlanetBase",
-                           "Visited", "ScanEvent"};
-        }
+		public enum GalaxyMarkerTypeEnum { StartingLocation, Home, Waypoint, Contact, Blackhole, AtlasStation, Selection, PlanetBase, Visited, ScanEvent }
+		public GalaxyMarkerTypeEnum GalaxyMarkerType;
     }
 }

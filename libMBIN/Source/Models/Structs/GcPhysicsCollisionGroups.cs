@@ -2,11 +2,7 @@
 {
     public class GcPhysicsCollisionGroups : NMSTemplate
     {
-        public int CollisionGroup;
-        public string[] CollisionGroupValues()
-        {
-            return new[] { "Normal", "Water", "Terrain", "Substance", "Asteroid", "TerrainInstance", "TerrainActivated", "Player",
-                           "Creature", "Spaceship", "Debris", "Shield", "Waypoint", "NetworkPlayer"};
-        }
+		public enum CollisionGroupEnum { Normal, Water, Terrain, Substance, Asteroid, TerrainInstance, TerrainActivated, Player, Creature, Spaceship, Debris, Shield, Waypoint, NetworkPlayer }
+		public CollisionGroupEnum CollisionGroup;
     }
 }

@@ -2,10 +2,7 @@
 {
     public class GcGenericIconTypes : NMSTemplate
     {
-        public int GenericIconType;
-        public string[] GenericIconTypeValues()
-        {
-            return new[] { "None", "Interaction", "SpaceStation", "SpaceAnomaly", "SpaceAtlas" };
-        }
+		public enum GenericIconTypeEnum { None, Interaction, SpaceStation, SpaceAnomaly, SpaceAtlas }
+		public GenericIconTypeEnum GenericIconType;
     }
 }

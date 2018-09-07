@@ -6,11 +6,8 @@ namespace libMBIN.Models.Structs
     {
         /* 0x00 */ public List<NMSString0x10> Techs;
 
-        /* 0x10 */ public int Inventory;
-        public string[] InventoryValues()
-        {
-            return new[] { "Vehicle"};
-        }
+		public enum InventoryEnum { Vehicle }
+		public InventoryEnum Inventory;
         /* 0x14 */ public bool Inverted;
     }
 }

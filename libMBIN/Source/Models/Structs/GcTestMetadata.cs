@@ -59,20 +59,14 @@ namespace libMBIN.Models.Structs
         public string DocRenamedString64;
         [NMS(Size = 0x20)]
         public string DocOptionalRenamed;
-        public int DocOptionalEnum;
-        public string[] DocOptionalEnumValues()
-        {
-            return new[] { "SomeValue1", "SomeValue2", "SomeValue3", "SomeValue4" };
-        }
+		public enum DocOptionalEnumEnum { SomeValue1, SomeValue2, SomeValue3, SomeValue4 }
+		public DocOptionalEnumEnum DocOptionalEnum;
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding5E4;
 
         public VariableSizeString TestDynamicString;
-        public int TestEnum;
-        public string[] TestEnumValues()
-        {
-            return new[] { "Default", "Option1", "Option2", "Option3" };
-        }
+		public enum TestEnumEnum { Default, Option1, Option2, Option3 }
+		public TestEnumEnum TestEnum;
 
         [NMS(Size = 0xA)]
         public float[] TestStaticArray;
@@ -90,11 +84,8 @@ namespace libMBIN.Models.Structs
             })]
         public float[] TestExternalEnumArray; // external probably means it gets enum values from outside the GcTestMetadata source file
 
-        public int TestFlags; // not mentioned in the normal template sub that we get fields from, mentioned in different one @ 0x140237E50 (which is also much easier to understand, and it seems all templates have these alternate subs...)
-        public string[] TestFlagsValues()
-        {
-            return new[] { "null", "Flag1", "Flag2" }; // null is actually a pointer to 00 in the exe, we give it a value here because xml parser treats empty values different
-        }
+		public enum TestFlagsEnum { Null, Flag1, Flag2 }
+		public TestFlagsEnum TestFlags;
 
         [NMS(Size = 0xC, Ignore = true)]
         public byte[] Padding6A4;

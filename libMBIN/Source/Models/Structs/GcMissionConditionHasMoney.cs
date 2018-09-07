@@ -3,10 +3,7 @@
     public class GcMissionConditionHasMoney : NMSTemplate
     {
         public int Amount;
-        public int TestCurrency;
-        public string[] TestCurrencyValues()
-        {
-            return new[] { "Units", "Nanites", "Specials" };
-        }
+		public enum TestCurrencyEnum { Units, Nanites, Specials }
+		public TestCurrencyEnum TestCurrency;
     }
 }

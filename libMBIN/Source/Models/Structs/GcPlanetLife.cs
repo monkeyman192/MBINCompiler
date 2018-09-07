@@ -2,10 +2,7 @@
 {
     public class GcPlanetLife : NMSTemplate
     {
-        public int LifeSetting;
-        public string[] LifeSettingValues()
-        {
-            return new[] { "Dead", "Low", "Mid", "Full" };
-        }
+		public enum LifeSettingEnum { Dead, Low, Mid, Full }
+		public LifeSettingEnum LifeSetting;
     }
 }

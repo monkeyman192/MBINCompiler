@@ -2,10 +2,7 @@
 {
     public class GcInventorySpecialSlotType : NMSTemplate
     {
-        public int InventorySpecialSlotType;
-        public string[] InventorySpecialSlotTypeValues()
-        {
-            return new[] { "Broken", "TechOnly", "Cargo"};
-        }
+		public enum InventorySpecialSlotTypeEnum { Broken, TechOnly, Cargo }
+		public InventorySpecialSlotTypeEnum InventorySpecialSlotType;
     }
 }

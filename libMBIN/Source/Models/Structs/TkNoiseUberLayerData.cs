@@ -16,11 +16,8 @@
         /* 0x64 */ public float SmoothRadius;
         /* 0x68 */ public float HeightOffset;
         /* 0x6C */ public TkNoiseOffsetEnum OffsetType;
-        /* 0x70 */ public int WaterFade;
-        public string[] WaterFadeValues()
-        {
-            return new[] { "None", "Above", "Below" };
-        }
+		public enum WaterFadeEnum { None, Above, Below }
+		public WaterFadeEnum WaterFade;
         /* 0x74 */ public float PlateauStratas;
         /* 0x78 */ public int PlateauSharpness;
         /* 0x7C */ public float PlateauRegionSize;

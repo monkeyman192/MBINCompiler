@@ -23,10 +23,7 @@
         [NMS(Size = 0x10)]
         /* 0x118 */ public string CameraShakeNoShield;
         /* 0x128 */ public bool ShowTrackicon;
-        /* 0x12C */ public int PlayerDamageType;
-        public string[] PlayerDamageTypeValues()
-        {
-            return new[] { "Normal", "Toxic", "Radioactive", "Freeze", "Scorch" };
-        }
+		public enum PlayerDamageTypeEnum { Normal, Toxic, Radioactive, Freeze, Scorch }
+		public PlayerDamageTypeEnum PlayerDamageType;
     }
 }

@@ -4,10 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class GcDefaultMissionSubstanceEnum : NMSTemplate
     {
-        public int DefaultSubstanceType;
-        public string[] DefaultSubstanceTypeValues()
-        {
-            return new[] { "None", "PrimarySubstance", "SecondarySubstance" };
-        }
+		public enum DefaultSubstanceTypeEnum { None, PrimarySubstance, SecondarySubstance }
+		public DefaultSubstanceTypeEnum DefaultSubstanceType;
     }
 }

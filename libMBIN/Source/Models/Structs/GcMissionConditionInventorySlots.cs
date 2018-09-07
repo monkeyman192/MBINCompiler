@@ -2,11 +2,8 @@
 {
     public class GcMissionConditionInventorySlots : NMSTemplate
     {
-        public int InventoryTest;
-        public string[] InventoryTestValues()
-        {
-            return new[] { "Current", "personal", "Ship", "Vehicle" };
-        }
+		public enum InventoryTestEnum { Current, personal, Ship, Vehicle }
+		public InventoryTestEnum InventoryTest;
         public int SlotsFree;
         public TkEqualityEnum Test;
     }

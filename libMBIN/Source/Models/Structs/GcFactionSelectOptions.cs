@@ -2,11 +2,8 @@
 {
     public class GcFactionSelectOptions : NMSTemplate
     {
-        public int FactionOption;
-        public string[] FactionOptionValues()
-        {
-            return new[] { "DataDefined", "CurrentMission", "CurrentSystem" };
-        }
+		public enum FactionOptionEnum { DataDefined, CurrentMission, CurrentSystem }
+		public FactionOptionEnum FactionOption;
         public GcMissionFaction Faction;
     }
 }

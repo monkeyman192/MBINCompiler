@@ -3,11 +3,8 @@
     [NMS(Size = 0x498)]
     public class GcCreatureInfo : NMSTemplate
     {
-        public int Age;
-        public string[] AgeValues()
-        {
-            return new[] { "Regular", "Weird" };
-        }
+		public enum AgeEnum { Regular, Weird }
+		public AgeEnum Age;
 
         [NMS(Size = 0x80)]
         public string Gender1;

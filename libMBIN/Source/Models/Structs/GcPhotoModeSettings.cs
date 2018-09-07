@@ -12,11 +12,8 @@ namespace libMBIN.Models.Structs
         /* 0x20 */ public bool SunDirSet;
         /* 0x24 */ public float FoV;
         /* 0x28 */ public bool FoVSet;
-        /* 0x2C */ public int DepthOfField;
-        public string[] DepthOfFieldValues()
-        {
-            return new[] { "Off", "Automatic", "Manual" };
-        }
+		public enum DepthOfFieldEnum { Off, Automatic, Manual }
+		public DepthOfFieldEnum DepthOfField;
         /* 0x30 */ public float DepthOfFieldAmount;
         /* 0x34 */ public float Vignette;
         /* 0x38 */ public int Filter;

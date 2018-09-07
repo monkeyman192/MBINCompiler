@@ -5,11 +5,8 @@
         [NMS(Size = 0x20)]
         /* 0x00 */ public string GroupNodeName;
 
-        public int ActivationType;
-        /* 0x20 */ public string[] ActivationTypeValues()
-        {
-            return new[] { "GroupNode", "Locator"};
-        }
+		public enum ActivationTypeEnum { GroupNode, Locator }
+		public ActivationTypeEnum ActivationType;
         public float FractionOfNodesActive;
         public int MaxNodesActivated;
         public int MaxGroupsActivated;

@@ -3,11 +3,8 @@
     [NMS(Size = 0x1C)]
     public class GcZoomData : NMSTemplate
     {
-        public int ZoomType;
-        public string[] ZoomTypeValues()
-        {
-            return new[] { "None", "Far", "Mid", "Close" };
-        }
+		public enum ZoomTypeEnum { None, Far, Mid, Close }
+		public ZoomTypeEnum ZoomType;
 
         /* 0x04 */ public float EffectStrength;     // 3F800000h
         /* 0x08 */ public float MoveSpeed;          // 41200000h

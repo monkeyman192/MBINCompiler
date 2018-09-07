@@ -9,11 +9,8 @@ namespace libMBIN.Models.Structs
         /* 0x0C */ public int Offset;
         /* 0x10 */ public int Normalise;
 
-        /* 0x14 */ public int Instancing;
-        public string[] InstancingValues()
-        {
-            return new[] { "PerVertex", "PerModel" };
-        }
+		public enum InstancingEnum { PerVertex, PerModel }
+		public InstancingEnum Instancing;
 
         [NMS(Size = 8)]
         /* 0x18 */ public string PlatformData;

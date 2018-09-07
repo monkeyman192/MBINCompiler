@@ -8,11 +8,13 @@ namespace libMBIN.Models.Structs
         /* 0x10 */ public string HyperdriveAccess2;
         [NMS(Size = 0x10)]
         /* 0x20 */ public string HyperdriveAccess3;
-        /* 0x30 */ public bool AllowDeconstruct;
-        /* 0x31 */ public bool AllowBinocularMarker;
-        /* 0x32 */ public bool EveryMaintenanceIsBroken;
-        /* 0x33 */ public bool SpawnResourceBlobsOnPartDelete;
-        /* 0x34 */ public bool EnableShootHitEffect;
+		/* 0x30 */ public bool AllowTeleportItemsToFreighter;
+		/* 0x31 */ public bool DisableAnomalyAmbientSpawn;
+		/* 0x32 */ public bool AllowDeconstruct;
+		/* 0x33 */ public bool AllowBinocularMarker;
+		/* 0x34 */ public bool EveryMaintenanceIsBroken;
+		/* 0x35 */ public bool SpawnResourceBlobsOnPartDelete;
+		/* 0x36 */ public bool EnableShootHitEffect;
         /* 0x38 */ public int MaxNumSameGroupTech;
         /* 0x3C */ public float ShootableAggroMinStartTime;
         /* 0x40 */ public float ShootableAggroForgetTime;

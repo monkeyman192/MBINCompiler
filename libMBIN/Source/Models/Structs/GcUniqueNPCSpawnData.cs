@@ -2,11 +2,8 @@
 {
     public class GcUniqueNPCSpawnData : NMSTemplate // 0x2C8 bytes
     {
-        /* 0x000 */ public int NPCSpawnCondition;
-        public string[] NPCSpawnConditionValues()
-        {
-            return new[] { "Always", "MiniStation" };
-        }
+		public enum NPCSpawnConditionEnum { Always, MiniStation }
+		public NPCSpawnConditionEnum NPCSpawnCondition;
 
         [NMS(Size = 4, Ignore = true)]
         /* 0x004 */ public byte[] Padding4;

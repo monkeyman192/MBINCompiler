@@ -2,10 +2,7 @@
 {
     public class GcHazardModifiers : NMSTemplate
     {
-        public int HazardModifier;
-        public string[] HazardModifierValues()
-        {
-            return new[] { "Temperature", "Toxicity", "Radiation", "LifeSupportDrain"};
-        }
+		public enum HazardModifierEnum { Temperature, Toxicity, Radiation, LifeSupportDrain }
+		public HazardModifierEnum HazardModifier;
     }
 }

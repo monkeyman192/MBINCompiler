@@ -35,6 +35,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug [StdOut]|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;DEBUG_STDOUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,8 +57,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Source\CommandLineParser.cs" />
+    <Compile Include="Source\CommandLineOptions.cs" />
+    <Compile Include="Source\CommandLine.cs" />
+    <Compile Include="Source\CompilerException.cs" />
+    <Compile Include="Source\Convert.cs" />
+    <Compile Include="Source\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Utils.cs" />
+    <Compile Include="Source\Version.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

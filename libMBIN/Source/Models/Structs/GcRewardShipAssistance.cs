@@ -2,11 +2,8 @@
 {
     public class GcRewardShipAssistance : NMSTemplate
     {
-        public int AssistanceType;
-        public string[] AssistanceTypeValues()
-        {
-            return new[] { "Police", "Wingmen"};
-        }
+		public enum AssistanceTypeEnum { Police, Wingmen }
+		public AssistanceTypeEnum AssistanceType;
 
         public float Time;
     }

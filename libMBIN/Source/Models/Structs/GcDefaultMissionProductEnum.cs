@@ -4,10 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class GcDefaultMissionProductEnum : NMSTemplate
     {
-        public int DefaultProductType;
-        public string[] DefaultProductTypeValues()
-        {
-            return new[] { "None", "PrimaryProduct", "SecondaryProduct" };
-        }
+		public enum DefaultProductTypeEnum { None, PrimaryProduct, SecondaryProduct }
+		public DefaultProductTypeEnum DefaultProductType;
     }
 }

@@ -2,10 +2,7 @@
 {
     public class GcMissionGalacticPoint : NMSTemplate      // size: 0x4
     {
-        public int GalacticPoint;
-        public string[] GalacticPointValues()
-        {
-            return new[] { "Atlas", "BlackHole" };
-        }
+		public enum GalacticPointEnum { Atlas, BlackHole }
+		public GalacticPointEnum GalacticPoint;
     }
 }

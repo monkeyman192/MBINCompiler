@@ -2,10 +2,7 @@
 {
     public class GcRewardChangeGlobalMission : NMSTemplate
     {
-        public int GlobalMission;
-        public string[] GlobalMissionValues()
-        {
-            return new[] { "Atlas", "BlackHole", "Anomaly", "Explore" };
-        }
+		public enum GlobalMissionEnum { Atlas, BlackHole, Anomaly, Explore }
+		public GlobalMissionEnum GlobalMission;
     }
 }

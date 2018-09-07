@@ -18,10 +18,7 @@
         /* 0x30 */ public float RemapFromMax;
         /* 0x34 */ public float RemapToMin;
         /* 0x38 */ public float RemapToMax;
-        /* 0x3C */ public int DebugNoiseType;
-        public string[] DebugNoiseTypeValues()
-        {
-            return new[] { "Plane", "Check", "Sine", "Uber" };
-        }
+		public enum DebugNoiseTypeEnum { Plane, Check, Sine, Uber }
+		public DebugNoiseTypeEnum DebugNoiseType;
     }
 }

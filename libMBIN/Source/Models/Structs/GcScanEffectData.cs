@@ -5,11 +5,8 @@
     {
         [NMS(Size = 0x10)]
         /* 0x00 */ public string Id;
-		/* 0x10 */ public int ScanEffectType;
-		public string[] ScanEffectTypeValues()
-		{
-			return new[] { "Building", "TargetShip", "Creature", "Ground", "Objects" };
-		}
+		public enum ScanEffectTypeEnum { Building, TargetShip, Creature, Ground, Objects }
+		public ScanEffectTypeEnum ScanEffectType;
 		[NMS(Size = 0xC, Ignore = true)]
         public byte[] Padding4;
 

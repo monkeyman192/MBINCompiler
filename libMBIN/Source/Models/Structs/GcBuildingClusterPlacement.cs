@@ -2,10 +2,7 @@
 {
     public class GcBuildingClusterPlacement : NMSTemplate
     {
-        public int BuildingClusterPlacement;
-        public string[] BuildingClusterPlacementValues()
-        {
-            return new[] { "Cluster", "Large", "Small", "None" };
-        }
+		public enum BuildingClusterPlacementEnum { Cluster, Large, Small, None }
+		public BuildingClusterPlacementEnum BuildingClusterPlacement;
     }
 }

@@ -17,11 +17,8 @@
         public float Speed;
         public Colour ColourOrigin;
         public Colour ColourEnd;
-        public int LinesPosition;
-        public string[] LinesPositionValues()
-        {
-            return new[] { "Absolute", "Relative" };
-        }
+		public enum LinesPositionEnum { Absolute, Relative }
+		public LinesPositionEnum LinesPosition;
 
         [NMS(Size = 0xC, Ignore = true)]
         public byte[] PaddingD4;

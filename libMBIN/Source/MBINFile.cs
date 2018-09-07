@@ -11,20 +11,19 @@ namespace libMBIN
 {
     public class MBINFile : IDisposable
     {
-        public MBINHeader Header;
+
+        public MBINHeader Header; // TODO: header instead of Header
         private readonly IO _io;
         private readonly string _filePath;
         private readonly bool _keepOpen;
-        public ulong FileLength = 0;
+        public ulong FileLength = 0; // TODO: fileLength instead of FileLength
 
-        public static bool IsValid( string path ) {
-            if ( File.Exists( path ) && (new FileInfo( path ).Length > 0x60) ) {
-                using ( var mbin = new MBINFile( path ) ) {
-                    mbin.Load();
-                    return mbin.Header.IsValid;
-                }
+        public static bool IsValid(string path)
+        {
+            if (!File.Exists(path)) return false;
+            using (var mbin = new MBINFile(path)) {
+                return mbin.Load() ? mbin.Header.IsValid : false;
             }
-            return false;
         }
 
         public MBINFile(string path)
@@ -43,6 +42,7 @@ namespace libMBIN
 
         public bool Load()
         {
+            if (_io.Stream.Length < 0x60) return false;
             _io.Stream.Position = 0;
             Header = (MBINHeader)NMSTemplate.DeserializeBinaryTemplate(_io.Reader, "MBINHeader");
             return true;
@@ -78,9 +78,7 @@ namespace libMBIN
 
         public void Dispose()
         {
-            if (_io != null && _keepOpen == false) {
-                _io.Dispose();
-            }
+            if (_io != null && _keepOpen == false) _io.Dispose();
         }
     }
 }

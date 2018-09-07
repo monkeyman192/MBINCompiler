@@ -2,10 +2,7 @@
 {
     public class GcGalaxyStarTypes : NMSTemplate
     {
-        public int GalaxyStarType;
-        public string[] GalaxyStarTypeValues()
-        {
-            return new[] { "Yellow", "Green", "Blue", "Red" };
-        }
+		public enum GalaxyStarTypeEnum { Yellow, Green, Blue, Red }
+		public GalaxyStarTypeEnum GalaxyStarType;
     }
 }

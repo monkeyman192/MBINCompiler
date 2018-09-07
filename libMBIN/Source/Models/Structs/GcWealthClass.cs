@@ -2,13 +2,7 @@
 {
     public class GcWealthClass : NMSTemplate
     {
-        public int WealthClass;
-        public string[] WealthClassValues()
-        {
-            return new[]
-            {
-                "Poor", "Average", "Wealthy"
-            };
-        }
+		public enum WealthClassEnum { Poor, Average, Wealthy }
+		public WealthClassEnum WealthClass;
     }
 }

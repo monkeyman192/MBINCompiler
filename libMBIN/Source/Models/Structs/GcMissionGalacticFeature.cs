@@ -2,10 +2,7 @@
 {
     public class GcMissionGalacticFeature : NMSTemplate
     {
-        public int GalacticFeature;
-        public string[] GalacticFeatureValues()
-        {
-            return new[] { "Anomaly", "Atlas", "BlackHole"};
-        }
+		public enum GalacticFeatureEnum { Anomaly, Atlas, BlackHole }
+		public GalacticFeatureEnum GalacticFeature;
     }
 }

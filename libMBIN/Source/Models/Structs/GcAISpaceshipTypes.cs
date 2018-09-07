@@ -2,10 +2,7 @@
 {
     public class GcAISpaceshipTypes : NMSTemplate
     {
-        public int ShipType;
-        public string[] ShipTypeValues()
-        {
-            return new[] { "None", "Pirate", "Police", "Trader", "Freighter" };
-        }
+		public enum ShipTypeEnum { None, Pirate, Police, Trader, Freighter }
+		public ShipTypeEnum ShipType;
     }
 }

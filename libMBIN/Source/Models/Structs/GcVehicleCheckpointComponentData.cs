@@ -2,16 +2,10 @@
 {
     public class GcVehicleCheckpointComponentData : NMSTemplate
     {
-        public int CheckpointType;
-        public string[] CheckpointTypeValues()
-        {
-            return new[] { "Checkpoint", "Start", "Finish"};
-        }
-        public int RaceType;
-        public string[] RaceTypeValues()
-        {
-            return new[] { "Vehicle", "Spaceship" };
-        }
+		public enum CheckpointTypeEnum { Checkpoint, Start, Finish }
+		public CheckpointTypeEnum CheckpointType;
+		public enum RaceTypeEnum { Vehicle, Spaceship }
+		public RaceTypeEnum RaceType;
         public float Radius;
     }
 }

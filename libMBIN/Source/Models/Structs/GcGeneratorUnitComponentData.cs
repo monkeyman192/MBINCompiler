@@ -3,11 +3,8 @@
     [NMS(Size = 0x210)]
     public class GcGeneratorUnitComponentData : NMSTemplate
     {
-        public int GeneratorUnitType;
-        /* 0x00 */ public string[] GeneratorUnitTypeValues()
-        {
-            return new[] { "MiningUnit", "GasHarvester" };
-        }
+		public enum GeneratorUnitTypeEnum { MiningUnit, GasHarvester }
+		public GeneratorUnitTypeEnum GeneratorUnitType;
         /* 0x04 */ public int ResourceMaintenanceSlotOverride;
         [NMS(Size = 0xD, EnumValue = new string[] { "Lush", "Toxic", "Scorched", "Radioactive", "Frozen", "Barren", "Dead", "Weird", "Red", "Green", "Blue", "Test", "All" })]
         /* 0x08 */ public NMSString0x10[] BiomeGasRewards;

@@ -20,10 +20,8 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x80)]
         /* 0x1C0 */ public string Description;
         /* 0x240 */ public Colour Colour;
-        /* 0x250 */ public int Quality;
-        public string[] QualityValues()
-            { return new[] { "Normal", "Rare", "Epic", "Legendary" }; }
-        /* 0x254 */ public GcProceduralTechnologyCategory Category;
+		public enum QualityEnum { Normal, Rare, Epic, Legendary }
+		public QualityEnum Quality;
         /* 0x258 */ public int NumStatsMin;
         /* 0x25C */ public int NumStatsMax;
         /* 0x260 */ public GcWeightingCurve WeightingCurve;

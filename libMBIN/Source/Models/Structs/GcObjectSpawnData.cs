@@ -6,11 +6,8 @@ namespace libMBIN.Models.Structs
     {
         [NMS(Size = 0x10)]
         /* 0x000 */ public string DebugName;
-        /* 0x010 */ public int Type;
-        public string[] TypeValues()
-        {
-            return new[] { "Instanced", "Single" };
-        }
+		public enum TypeEnum { Instanced, Single }
+		public TypeEnum Type;
         [NMS(Size = 4, Ignore = true)]
         /* 0x014 */ public byte[] Padding14;
 
@@ -24,27 +21,18 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x10)]
         /* 0x2E0 */ public string Placement;
         /* 0x2F0 */ public GcSeed PlacementSeed;
-        /* 0x300 */ public int PlacementPriority;
-        public string[] PlacementPriorityValues()
-        {
-            return new[] { "Low", "Normal", "High" };
-        }
+		public enum PlacementPriorityEnum { Low, Normal, High }
+		public PlacementPriorityEnum PlacementPriority;
 
         /* 0x304 */ public float Coverage;
         /* 0x308 */ public float FlatDensity;
         /* 0x30C */ public float SlopeDensity;
         /* 0x310 */ public float SlopeMultiplier;
 
-        /* 0x314 */ public int LargeObjectCoverage;
-        public string[] LargeObjectCoverageValues()
-        {
-            return new[] { "DoNotPlace", "DoNotPlaceClose", "OnlyPlaceAround", "AlwaysPlace" };
-        }
-        /* 0x318 */ public int OverlapStyle;
-        public string[] OverlapStyleValues()
-        {
-            return new[] { "None", "SameSeed", "All" };
-        }
+		public enum LargeObjectCoverageEnum { DoNotPlace, DoNotPlaceClose, OnlyPlaceAround, AlwaysPlace }
+		public LargeObjectCoverageEnum LargeObjectCoverage;
+		public enum OverlapStyleEnum { None, SameSeed, All }
+		public OverlapStyleEnum OverlapStyle;
         /* 0x31C */ public float MinHeight;
         /* 0x320 */ public float MaxHeight;
         /* 0x324 */ public bool RelativeToSeaLevel;
@@ -65,11 +53,8 @@ namespace libMBIN.Models.Structs
         /* 0x354 */ public float[] LodDistances;
 
         /* 0x368 */ public bool MatchGroundColour;
-        /* 0x36C */ public int GroundColourIndex;
-        public string[] GroundColourIndexValues()
-        {
-            return new[] { "Auto", "Main", "Patch" };
-        }
+		public enum GroundColourIndexEnum { Auto, Main, Patch }
+		public GroundColourIndexEnum GroundColourIndex;
 
         /* 0x370 */ public bool SwapPrimaryForSecondaryColour;
         /* 0x371 */ public bool SwapPrimaryForRandomColour;

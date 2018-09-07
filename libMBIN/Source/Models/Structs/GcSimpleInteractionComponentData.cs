@@ -5,13 +5,8 @@ namespace libMBIN.Models.Structs
     [NMS(Size = 0x130)]
     public class GcSimpleInteractionComponentData : NMSTemplate
     {
-        public int SimpleInteractionType;
-        /* 0x00 */ public string[] SimpleInteractionTypeValues()
-        {
-            return new[] { "Interact", "Treasure", "Beacon", "Scan", "Save", "CallShip", "CallVehicle", "Word", "Tech", "GenericReward", "Feed",
-                "Ladder", "ClaimBase", "TeleportStartPoint", "TeleportEndPoint", "Portal", "Chest", "ResourceHarvester",
-                "BaseCapsule", "Hologram", "NPCTerminalMessage", "VehicleBoot", "BiomeHarvester", "FreighterGalacticMap"};
-        }
+		public enum SimpleInteractionTypeEnum { Interact, Treasure, Beacon, Scan, Save, CallShip, CallVehicle, Word, Tech, GenericReward, Feed, Ladder, ClaimBase, TeleportStartPoint, TeleportEndPoint, Portal, Chest, ResourceHarvester, BaseCapsule, Hologram, NPCTerminalMessage, VehicleBoot, BiomeHarvester, FreighterGalacticMap }
+		public SimpleInteractionTypeEnum SimpleInteractionType;
 
         /* 0x04 */ public float InteractDistance;
         [NMS(Size = 0x10)]

@@ -14,27 +14,17 @@ namespace libMBIN.Models.Structs
         /* 0x1C */ public float MaxRandAmount;
         /* 0x20 */ public float AmountEmptyTimePeriod;
 
-        /* 0x24 */ public int UpdateType;
-        public string[] UpdateTypeValues()
-        {
-            return new[] { "UpdatesAlways", "UpdateOnlyWhenComplete", "UpdateOnlyWhenNotComplete"};
-        }
+		public enum UpdateTypeEnum { UpdatesAlways, UpdateOnlyWhenComplete, UpdateOnlyWhenNotComplete }
+		public UpdateTypeEnum UpdateType;
 
         /* 0x28 */ public int DamagedAfterTimePeriodMin;
         /* 0x2C */ public int DamagedAfterTimePeriodMax;
 
         /* 0x30 */
-        public int DamageStatus;
-        public string[] DamageStatusValues()
-        {
-            return new[] { "Damaged", "Repaired", "Random"};
-        }
+		public enum DamageStatusEnum { Damaged, Repaired, Random }
+		public DamageStatusEnum DamageStatus;
         /* 0x34 */
-        public int CompletionRequirement;
-        public string[] CompletionRequirementValues()
-        {
-            return new[] { "FullyChargedAndRepaired", "AnyChargeAndRepaired", "FullyRepaired", "NotFullyCharged",
-                            "EmptySlot", "NoRequirement", "UserInstalls", "HasIngredients"};
-        }
+		public enum CompletionRequirementEnum { FullyChargedAndRepaired, AnyChargeAndRepaired, FullyRepaired, NotFullyCharged, EmptySlot, NoRequirement, UserInstalls, HasIngredients }
+		public CompletionRequirementEnum CompletionRequirement;
     }
 }

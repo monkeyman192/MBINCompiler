@@ -2,10 +2,7 @@
 {
     public class GcFrigateStatType : NMSTemplate
     {
-        public int FrigateStatType;
-        public string[] FrigateStatTypeValues()
-        {
-            return new[] { "Combat", "Exploration", "Mining", "Diplomatic", "FuelBurnRate", "FuelCapacity", "Speed", "ExtraLoot", "Repair", "Invulnerable" };
-        }
+		public enum FrigateStatTypeEnum { Combat, Exploration, Mining, Diplomatic, FuelBurnRate, FuelCapacity, Speed, ExtraLoot, Repair, Invulnerable }
+		public FrigateStatTypeEnum FrigateStatType;
     }
 }

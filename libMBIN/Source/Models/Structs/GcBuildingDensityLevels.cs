@@ -2,10 +2,7 @@
 {
     public class GcBuildingDensityLevels : NMSTemplate
     {
-        public int BuildingDensity;
-        public string[] BuildingDensityValues()
-        {
-            return new[] { "Dead", "Low", "Mid", "Full", "RelicOnly", "IndustrialOnly" };
-        }
+        public enum BuildingDensityEnum { Dead, Low, Mid, Full, Weird }
+        public BuildingDensityEnum BuildingDensity;
     }
 }

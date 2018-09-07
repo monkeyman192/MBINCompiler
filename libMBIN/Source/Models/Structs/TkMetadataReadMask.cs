@@ -2,10 +2,7 @@
 {
     public class TkMetadataReadMask : NMSTemplate
     {
-        public int MetadataReadMask;
-        public string[] MetadataReadMaskValues()
-        {
-            return new[] { "Default", "SaveWhenMultiplayerClient", "SavePlayerPosition", "SavePlayerInventory" };
-        }
+		public enum MetadataReadMaskEnum { Default, SaveWhenMultiplayerClient, SavePlayerPosition, SavePlayerInventory }
+		public MetadataReadMaskEnum MetadataReadMask;
     }
 }

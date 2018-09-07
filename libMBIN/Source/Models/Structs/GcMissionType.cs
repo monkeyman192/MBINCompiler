@@ -2,10 +2,7 @@
 {
     public class GcMissionType : NMSTemplate
     {
-        public int MissionType;
-        public string[] MissionTypeValues()
-        {
-            return new[] { "SpaceCombat", "GroundCombat", "Research", "MissingPerson", "Repair", "Cargo", "Piracy", "Photo", "Feeding" };
-        }
+		public enum MissionTypeEnum { SpaceCombat, GroundCombat, Research, MissingPerson, Repair, Cargo, Piracy, Photo, Feeding }
+		public MissionTypeEnum MissionType;
     }
 }

@@ -5,11 +5,8 @@
     {
         /* 0x00 */ public GcGenericIconTypes GenericIconType;
         /* 0x04 */ public float Radius;
-        /* 0x08 */ public int DisplayMode;
-        public string[] DisplayModeValues()
-        {
-            return new[] { "Always", "SpaceOnly", "PlanetOnly" };
-        }
+		public enum DisplayModeEnum { Always, SpaceOnly, PlanetOnly }
+		public DisplayModeEnum DisplayMode;
 
         /* 0x0C */ public bool ShipScannable;
 

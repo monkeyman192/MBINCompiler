@@ -2,10 +2,7 @@
 {
     public class GcPrimaryAxis : NMSTemplate
     {
-        public int PrimaryAxis;
-        public string[] PrimaryAxisValues()
-        {
-            return new[] { "Z", "ZNeg" };
-        }
+		public enum PrimaryAxisEnum { Z, ZNeg }
+		public PrimaryAxisEnum PrimaryAxis;
     }
 }

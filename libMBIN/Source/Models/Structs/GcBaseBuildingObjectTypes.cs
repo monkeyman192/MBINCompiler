@@ -2,10 +2,7 @@
 {
     public class GcBaseBuildingObjectTypes : NMSTemplate
     {
-        public int BaseBuildingObjectType;
-        public string[] BaseBuildingObjectTypeValues()
-        {
-            return new[] { "Building", "BuildingFoundation", "BuildingDecoration", "Decoration", "Foundation" };
-        }
+		public enum BaseBuildingObjectTypeEnum { Building, BuildingFoundation, BuildingDecoration, Decoration, Foundation }
+		public BaseBuildingObjectTypeEnum BaseBuildingObjectType;
     }
 }

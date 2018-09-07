@@ -9,10 +9,7 @@
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x14 */ public byte[] Padding14;
         /* 0x18 */ public GcBuildingPartSearchType Type;
-        /* 0x38 */ public int PartInCurrentBase;
-        public string[] PartInCurrentBaseValues()
-        {
-            return new[] { "DontCare", "YesAllPlayerOwned"};
-        }
+		public enum PartInCurrentBaseEnum { DontCare, YesAllPlayerOwned }
+		public PartInCurrentBaseEnum PartInCurrentBase;
     }
 }

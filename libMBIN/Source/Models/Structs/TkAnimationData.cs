@@ -10,11 +10,8 @@ namespace libMBIN.Models.Structs
         [NMS(Size = 0x80)]
         /* 0x010 */ public string Filename;
 
-        /* 0x090 */ public int AnimType;
-        public string[] AnimTypeValues()
-        {
-            return new[] { "Loop", "OneShot", "Control" };
-        }
+		public enum AnimTypeEnum { Loop, OneShot, Control }
+		public AnimTypeEnum AnimType;
 
         /* 0x094 */ public int FrameStart;
         /* 0x098 */ public int FrameEnd;
@@ -33,11 +30,8 @@ namespace libMBIN.Models.Structs
         /* 0x100 */ public float Speed;
         /* 0x104 */ public float ActionFrameStart;
         /* 0x108 */ public float ActionFrame;
-        /* 0x10C */ public int ControlCreatureSize;
-        public string[] ControlCreatureSizeValues()
-        {
-            return new[] { "AllSizes", "SmallOnly", "LargeOnly" };
-        }
+		public enum ControlCreatureSizeEnum { AllSizes, SmallOnly, LargeOnly }
+		public ControlCreatureSizeEnum ControlCreatureSize;
 
         /* 0x110 */ public bool Additive;
         /* 0x111 */ public bool Mirrored;

@@ -14,11 +14,8 @@
         [NMS(Size = 0x80)]
         /* 0x110 */ public string OSDMessageSubtitle;
         /* 0x190 */ public Colour OSDMessageColour;
-        /* 0x1A0 */ public int OSDMessageStyle;
-        public string[] OSDMessageStyleValues()
-        {
-            return new[] { "Standard", "Fancy" };
-        }
+		public enum OSDMessageStyleEnum { Standard, Fancy }
+		public OSDMessageStyleEnum OSDMessageStyle;
         /* 0x1A4 */ public bool OSDUseMissionIcon;
         /* 0x1A5 */ public bool DisableIcon;
         /* 0x1A6 */ public bool DisableTitlePrefix;

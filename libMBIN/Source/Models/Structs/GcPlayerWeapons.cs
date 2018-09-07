@@ -2,10 +2,7 @@
 {
     public class GcPlayerWeapons : NMSTemplate
     {
-        public int WeaponMode;
-        public string[] WeaponModeValues()
-        {
-            return new[] { "Bolt", "Shotgun", "Burst", "Laser", "Rail", "Grenade", "MineGrenade", "Scope", "FrontShield", "TerrainEdit" };
-        }
+		public enum WeaponModeEnum { Bolt, Shotgun, Burst, Laser, Rail, Grenade, MineGrenade, Scope, FrontShield, TerrainEdit }
+		public WeaponModeEnum WeaponMode;
     }
 }

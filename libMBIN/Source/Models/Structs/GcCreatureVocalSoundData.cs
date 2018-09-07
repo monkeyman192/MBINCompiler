@@ -5,11 +5,8 @@
         [NMS(Size = 0x10)]
         public string Id;
 
-        public int VocalEmote;
-        public string[] VocalEmoteValues()
-        {
-            return new[] { "EmoteIdle", "EmoteFlee", "EmoteAggression", "EmoteRoar", "EmotePain", "EmoteAttack", "EmoteDie", "EmoteMiniRoarNeutral", "EmoteMiniRoarHappy", "EmoteMiniRoarAngry" };
-        }
+		public enum VocalEmoteEnum { EmoteIdle, EmoteFlee, EmoteAggression, EmoteRoar, EmotePain, EmoteAttack, EmoteDie, EmoteMiniRoarNeutral, EmoteMiniRoarHappy, EmoteMiniRoarAngry }
+		public VocalEmoteEnum VocalEmote;
 
         public float PlayFrequency;
         public float MinCooldown;

@@ -2,10 +2,7 @@
 {
     public class GcProceduralTechnologyCategory : NMSTemplate
     {
-        public int ProceduralTechnologyCategory;
-        public string[] ProceduralTechnologyCategoryValues()
-        {
-            return new[] { "None", "Combat", "Mining", "Scanning", "Protection"};
-        }
+		public enum ProceduralTechnologyCategoryEnum { None, Combat, Mining, Scanning, Protection }
+		public ProceduralTechnologyCategoryEnum ProceduralTechnologyCategory;
     }
 }

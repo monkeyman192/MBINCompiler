@@ -2,10 +2,7 @@
 {
     public class GcStatTrackType : NMSTemplate
     {
-        public int StatTrackType;
-        public string[] StatTrackTypeValues()
-        {
-            return new[] { "Set", "Add", "Max", "Min" };
-        }
+		public enum StatTrackTypeEnum { Set, Add, Max, Min }
+		public StatTrackTypeEnum StatTrackType;
     }
 }

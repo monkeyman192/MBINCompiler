@@ -9,11 +9,8 @@
         public string CompareAndSetStat;
         [NMS(Size = 0x10)]
         public string SubstanceID;
-        public int RewardCurrency;
-        public string[] RewardCurrencyValues()
-        {
-            return new[] { "None", "Units", "Nanites", "Specials" };
-        }
+		public enum RewardCurrencyEnum { None, Units, Nanites, Specials }
+		public RewardCurrencyEnum RewardCurrency;
         public int AmountPerStat;
         public int StatRewardCap;
         [NMS(Size = 0x4, Ignore = true)]

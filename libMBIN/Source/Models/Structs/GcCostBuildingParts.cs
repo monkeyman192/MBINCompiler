@@ -1,9 +1,11 @@
-﻿namespace libMBIN.Models.Structs
+﻿using System.Collections.Generic;
+
+namespace libMBIN.Models.Structs
 {
     public class GcCostBuildingParts : NMSTemplate
     {
-        [NMS(Size = 0x10)]
+        [NMS(Size = 0x20)]
         public string Description;
-        public GcBuildingCostPartCount RequiredParts;
+        public List<GcBuildingCostPartCount> RequiredParts;
     }
 }

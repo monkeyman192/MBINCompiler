@@ -2,10 +2,7 @@
 {
     public class GcFrigateClass : NMSTemplate
     {
-        public int FrigateClass;
-        public string[] FrigateClassValues()
-        {
-            return new[] { "Combat", "Exploration", "Mining", "Diplomacy", "Support" };
-        }
+		public enum FrigateClassEnum { Combat, Exploration, Mining, Diplomacy, Support }
+		public FrigateClassEnum FrigateClass;
     }
 }

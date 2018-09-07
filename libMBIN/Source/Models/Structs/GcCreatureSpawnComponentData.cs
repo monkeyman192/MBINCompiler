@@ -20,11 +20,8 @@ namespace libMBIN.Models.Structs
         /* 0x0C4 */ public float StartTimeMin;
         /* 0x0C8 */ public float StartTimeMax;
         /* 0x0CC */ public bool SpawnAlert;
-        /* 0x0D0 */ public int SpawnerMode;
-        public string[] SpawnerModeValues()
-        {
-            return new[] { "Hidden", "Visible", "HideOnSpawn", "HiddenTimer" };
-        }
+		public enum SpawnerModeEnum { Hidden, Visible, HideOnSpawn, HiddenTimer }
+		public SpawnerModeEnum SpawnerMode;
 
         [NMS(Size = 4, Ignore = true)]
         /* 0x0D4 */ public byte[] PaddingD4;

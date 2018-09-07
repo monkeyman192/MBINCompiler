@@ -33,11 +33,8 @@ namespace libMBIN.Models.Structs
         /* 0x1A8 */ public string PrefixTitleText;
         /* 0x1C8 */ public GcMissionConditionTest ConditionTest;        // not so sure about this and the condition enum
 
-        /* 0x1CC */ public int RepeatLogic;
-        public string[] RepeatLogicValues()
-        {
-            return new[] { "None", "Loop", "RestartOnConditionFail" };
-        }
+		public enum RepeatLogicEnum { None, Loop, RestartOnConditionFail }
+		public RepeatLogicEnum RepeatLogic;
         /* 0x1D0 */ public List<NMSTemplate> Conditions;
         /* 0x1E0 */ public List<NMSTemplate> Consequences;
         /* 0x1F0 */ public List<GcGenericMissionStage> Stages;

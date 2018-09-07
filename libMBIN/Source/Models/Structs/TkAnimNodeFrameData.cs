@@ -26,8 +26,7 @@ namespace libMBIN.Models.Structs
                     long listStartOffset = reader.ReadInt64();
                     int numEntries = reader.ReadInt32()/3;
                     uint listMagic = reader.ReadUInt32();
-                    if ((listMagic & 0xFF) != 1)
-                        throw new Exception($"Invalid list read, magic {listMagic:X8} expected xxxxxx01");
+                    if ((listMagic & 0xFF) != 1) throw new InvalidListException( listMagic );
 
                     long listEndPosition = reader.BaseStream.Position;
 

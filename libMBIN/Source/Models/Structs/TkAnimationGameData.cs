@@ -5,10 +5,7 @@
     {
         public bool RootMotionEnabled;
         public bool BlockPlayerMovement;
-        public int BlockPlayerWeapon;
-        public string[] BlockPlayerWeaponValues()
-        {
-            return new[] { "Unblocked", "Sheathed", "OutButCannotFire" };
-        }
+		public enum BlockPlayerWeaponEnum { Unblocked, Sheathed, OutButCannotFire }
+		public BlockPlayerWeaponEnum BlockPlayerWeapon;
     }
 }

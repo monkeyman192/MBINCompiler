@@ -8,10 +8,7 @@
         public float Scale;
         public float MinCreatureSize;
         public float MaxCreatureSize;
-        public int MoveSpeed;
-        public string[] MoveSpeedValues()
-        {
-            return new[] { "Always", "Walk", "Run" };
-        }
+		public enum MoveSpeedEnum { Always, Walk, Run }
+		public MoveSpeedEnum MoveSpeed;
     }
 }

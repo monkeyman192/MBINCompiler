@@ -2,14 +2,17 @@
 using System.IO;
 using System.Threading;
 
+using MBINCompilerTests;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using MBINCompilerTests;
 using Database = MBINCompilerTests.Database;
 
-namespace libMBIN.UnitTests.Analysis {
+namespace libMBIN.UnitTests.Analysis
+{
 
     using GameDataFile = Database.Tables.GameDataFile;
+    using Logger = MBINCompilerTests.Logger;
 
     [TestClass]
     public class GameDataFileAnalysis {
@@ -100,7 +103,7 @@ namespace libMBIN.UnitTests.Analysis {
             const int MAX = int.MaxValue;// 10000; // TODO FIXME! should be int.MaxValue;
 
             var table = new GameDataFile.Table();
-            if ( File.Exists( table.FilePath ) ) throw new Exception( $"A {table.Name} table already exists!\n{table.FilePath}" );
+            if ( File.Exists( table.FilePath ) ) throw new APIException( $"A {table.Name} table already exists!\n{table.FilePath}" );
 
             string[] files = Directory.GetFiles( RunSettings.GameDataDir, "*", SearchOption.AllDirectories );
             Array.Resize( ref files, Math.Min( MAX, files.Length ) );

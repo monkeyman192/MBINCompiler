@@ -5,11 +5,8 @@ namespace libMBIN.Models.Structs
     [NMS(Size = 0x1E0)]
     public class GcInteractionComponentData : NMSTemplate
     {
-        /* 0x000 */ public int InteractionAction;
-        public string[] InteractionActionValues()
-        {
-            return new[] { "PressButton", "HoldButton", "Shoot" };
-        }
+		public enum InteractionActionEnum { PressButton, HoldButton, Shoot }
+		public InteractionActionEnum InteractionAction;
 
         /* 0x004 */ public GcInteractionType InteractionType;
         [NMS(Size = 8, Ignore = true)]

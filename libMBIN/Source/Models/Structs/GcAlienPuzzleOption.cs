@@ -19,11 +19,8 @@ namespace libMBIN.Models.Structs
         /* 0x228 */ public string Cost;
 
         /* 0x238 */ public List<NMSString0x10> Rewards;
-        /* 0x248 */ public int Mood;
-        public string[] MoodValues()
-        {
-            return new[] { "Positive", "Negative", "Neutral", "Pity", "Dead" };
-        }
+		public enum MoodEnum { Positive, Negative, Neutral, Pity, Dead }
+		public MoodEnum Mood;
 
         /* 0x24C */ public bool KeepOpen;
         /* 0x24D */ public bool MarkInteractionComplete;

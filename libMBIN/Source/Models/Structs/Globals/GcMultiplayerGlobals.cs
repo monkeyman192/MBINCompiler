@@ -29,9 +29,8 @@
         /* 0x5C */ public float PlayerMarkerSmallIconSize;
         /* 0x60 */ public float PlayerMarkerMinShowDistance;
         /* 0x64 */ public bool PlayerMarkerCenteredName;
-        /* 0x68 */ public int AbandonedEntityWaitPeriod;       // maybe?? (it is specified at 8 bytes I think though...)
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x8C */ public byte[] Padding8C;
+        /* 0x68 */ public int AbandonedEntityWaitPeriod_A;
+        /* 0x6C */ public int AbandonedEntityWaitPeriod_B;
         /* 0x70 */ public float HostOnConnectedTimeout;
         /* 0x74 */ public int MaxSyncResponsesPerHash;
         /* 0x78 */ public float MinScore;

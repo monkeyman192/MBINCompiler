@@ -3,11 +3,8 @@
     [NMS(Size = 0x108)]
     public class GcNodeActivationAction : NMSTemplate
     {
-        public int NodeActiveState;
-        /* 0x000 */ public string[] NodeActiveStateValues()
-        {
-            return new[] { "Activate", "Deactivate", "Toggle", "Add", "Remove", "RemoveChildren" };
-        }
+		public enum NodeActiveStateEnum { Activate, Deactivate, Toggle, Add, Remove, RemoveChildren }
+		public NodeActiveStateEnum NodeActiveState;
 
         [NMS(Size = 0x80)]
         /* 0x004 */ public string Name;

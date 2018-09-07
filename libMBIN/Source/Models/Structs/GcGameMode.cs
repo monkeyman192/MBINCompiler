@@ -2,10 +2,7 @@
 {
     public class GcGameMode : NMSTemplate
     {
-        public int PresetGameMode;
-        public string[] PresetGameModeValues()
-        {
-            return new[] { "Unspecified", "Normal", "Creative", "Survival", "Ambient", "Permadeath" };
-        }
+		public enum PresetGameModeEnum { Unspecified, Normal, Creative, Survival, Ambient, Permadeath }
+		public PresetGameModeEnum PresetGameMode;
     }
 }

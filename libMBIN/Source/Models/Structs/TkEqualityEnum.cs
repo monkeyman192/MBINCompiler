@@ -4,10 +4,7 @@ namespace libMBIN.Models.Structs
 {
     public class TkEqualityEnum : NMSTemplate
     {
-        public int EqualityEnum;
-        public string[] EqualityEnumValues()
-        {
-            return new[] { "Equal", "Greater", "Less", "GreaterEqual", "LessEqual"};
-        }
+		public enum EqualityEnumEnum { Equal, Greater, Less, GreaterEqual, LessEqual }
+		public EqualityEnumEnum EqualityEnum;
     }
 }

@@ -2,10 +2,7 @@
 {
     public class GcAlienPuzzleTableIndex : NMSTemplate
     {
-        public int IndexType;
-        public string[] IndexTypeValues()
-        {
-            return new[] { "Regular", "Seeded"};
-        }
+		public enum IndexTypeEnum { Regular, Seeded }
+		public IndexTypeEnum IndexType;
     }
 }

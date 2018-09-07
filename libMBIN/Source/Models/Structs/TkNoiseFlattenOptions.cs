@@ -2,16 +2,10 @@
 {
     public class TkNoiseFlattenOptions : NMSTemplate
     {
-        public int Flattening;
-        public string[] FlatteningValues()
-        {
-            return new[] { "None", "Natural", "Artificial", "AddResource" };
-        }
+		public enum FlatteningEnum { None, Natural, Artificial, AddResource }
+		public FlatteningEnum Flattening;
 
-        public int WaterPlacement;
-        public string[] WaterPlacementValues()
-        {
-            return new[] { "None", "Underwater" };
-        }
+		public enum WaterPlacementEnum { None, Underwater }
+		public WaterPlacementEnum WaterPlacement;
     }
 }

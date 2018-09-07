@@ -2,10 +2,7 @@
 {
     public class GcShipWeaponData : NMSTemplate
     {
-        public int ShipWeapon;
-        public string[] ShipWeaponValues()
-        {
-            return new[] { "Laser", "Projectile", "Shotgun", "Minigun", "Plasma", "Missile", "Rocket"};
-        }
+		public enum ShipWeaponEnum { Laser, Projectile, Shotgun, Minigun, Plasma, Missile, Rocket }
+		public ShipWeaponEnum ShipWeapon;
     }
 }

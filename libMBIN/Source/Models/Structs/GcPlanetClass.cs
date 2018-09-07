@@ -2,10 +2,7 @@
 {
     public class GcPlanetClass : NMSTemplate
     {
-        public int PlanetClass;
-        public string[] PlanetClassValues()
-        {
-            return new[] { "Default", "Initial", "InInitialSystem" };
-        }
+		public enum PlanetClassEnum { Default, Initial, InInitialSystem }
+		public PlanetClassEnum PlanetClass;
     }
 }

@@ -2,10 +2,7 @@
 {
     public class GcJourneyCategoryType : NMSTemplate
     {
-        public int CategoryType;
-        public string[] CategoryTypeValues()
-        {
-            return new[] { "Journey", "Race", "Guild" };
-        }
+		public enum CategoryTypeEnum { Journey, Race, Guild }
+		public CategoryTypeEnum CategoryType;
     }
 }

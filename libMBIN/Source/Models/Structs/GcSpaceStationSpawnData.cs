@@ -2,11 +2,8 @@
 {
     public class GcSpaceStationSpawnData : NMSTemplate
     {
-        public int SpawnMode;
-        public string[] SpawnModeValues()
-        {
-            return new[] { "None", "UseSeed", "UseAltID" };
-        }
+		public enum SpawnModeEnum { None, UseSeed, UseAltID }
+		public SpawnModeEnum SpawnMode;
 
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding4;

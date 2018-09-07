@@ -4,11 +4,8 @@ namespace libMBIN.Models.Structs
 {
     public class GcRewardTableItemList : NMSTemplate        // size: 0x18
     {
-        public int RewardChoice;
-        public string[] RewardChoiceValues()
-        {
-            return new[] { "GiveAll", "Select", "SelectAlways", "TryEach", "SelectSilent", "TryFirst_ThenSelectAlways" };
-        }
+		public enum RewardChoiceEnum { GiveAll, Select, SelectAlways, TryEach, SelectSilent, TryFirst_ThenSelectAlways }
+		public RewardChoiceEnum RewardChoice;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
 

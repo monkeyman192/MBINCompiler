@@ -9,10 +9,8 @@
         /* 0x180 */ public float HighlightTime;
         /* 0x184 */ public float HighlightScale;
         /* 0x188 */ public float GlobalFade;
-        /* 0x18C */ public int Animate;
-        public string[] AnimateValues()
-        { return new string[] { "None", "WipeRightToLeft", "SimpleWipe", "SimpleWipeDown", "CustomWipe", "CustomWipeAlpha"}; }
-
+		public enum AnimateEnum { None, WipeRightToLeft, SimpleWipe, SimpleWipeDown, CustomWipe, CustomWipeAlpha }
+		public AnimateEnum Animate;
         /* 0x190 */ public float AnimTime;
         /* 0x194 */ public float AnimSplit;
         /* 0x198 */ public TkCurveType AnimCurve1;

@@ -23,11 +23,8 @@ namespace libMBIN.Models.Structs
         /* 0x6C */ public Vector2f Spread;
         /* 0x74 */ public Vector2f Count;
         /* 0x7C */ public Vector2f StartTime;
-        public int SpawnShape;
-        /* 0x84 */ public string[] SpawnShapeValues()
-        {
-            return new[] { "Sphere", "Cone" };
-        }
+		public enum SpawnShapeEnum { Sphere, Cone }
+		public SpawnShapeEnum SpawnShape;
 
         /* 0x88 */ public GcShipAIPerformanceArray Performances;
 
