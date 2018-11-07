@@ -3,6 +3,7 @@ using libMBIN;
 
 namespace MBINCompiler {
 
+    [Serializable]
     internal class CompilerException : Exception {
         private const string DEFAULT_MESSAGE = "An unknown compiler exception has occurred!";
 
@@ -18,6 +19,7 @@ namespace MBINCompiler {
         }
     }
 
+    [Serializable]
     internal class MbinException : CompilerException {
         private const string DEFAULT_MESSAGE = "An MBIN exception has occurred!";
 
@@ -40,6 +42,7 @@ namespace MBINCompiler {
         }
     }
 
+    [Serializable]
     internal class ExmlException : CompilerException {
         private const string DEFAULT_MESSAGE = "An EXML exception has occurred!";
 

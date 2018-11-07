@@ -7,6 +7,7 @@ namespace libMBIN {
     /// <summary>
     /// The base class for all libMBIN-specific exceptions.
     /// </summary>
+    [Serializable]
     public class APIException : System.Exception {
         private const string DEFAULT_MESSAGE = "An unknown API exception has occured!";
         public APIException()                                           : base( DEFAULT_MESSAGE                 ) { }

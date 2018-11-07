@@ -182,18 +182,32 @@ namespace MBINCompiler.Commands {
             // TODO: this should be handled better
             if ( !foundMBIN && !foundEXML ) {
                 if ( (fileList.Count == 1) && File.Exists( fileList[0] ) ) {
-                    using ( var fIn = new FileStream( fileList[0], FileMode.Open ) ) {
+                    FileStream fIn = null;
+                    MBINFile mbin = null;
+                    try
+                    {
+                        fIn = new FileStream(fileList[0], FileMode.Open);
                         // possibly MBIN? check for a valid header
-                        using ( var mbin = new MBINFile( fIn, true ) ) foundMBIN = (mbin.Load() && mbin.Header.IsValid);
-                        if ( !foundMBIN ) { // possibly EXML? check for a valid xml tag
+                        mbin = new MBINFile(fIn, true);
+                        foundMBIN = mbin.Load() && mbin.Header.IsValid;
+                        if (!foundMBIN)
+                        { // possibly EXML? check for a valid xml tag
                             var xmlTag = "<?xml version=\"1.0\" encoding=\"utf-8\"?>".ToLower();
                             var bytes = new byte[xmlTag.Length];
                             // TODO: handle potential leading whitespace?
-                            if ( fIn.Read( bytes, 0, xmlTag.Length ) == xmlTag.Length ) {
-                                var txt = System.Text.Encoding.ASCII.GetString( bytes ).ToLower();
+                            if (fIn.Read(bytes, 0, xmlTag.Length) == xmlTag.Length)
+                            {
+                                var txt = System.Text.Encoding.ASCII.GetString(bytes).ToLower();
                                 foundEXML = (txt == xmlTag);
                             }
                         }
+                    }
+                    finally
+                    {
+                        if (mbin != null)
+                            mbin.Dispose();
+                        else if (fIn != null)
+                            fIn.Dispose();
                     }
                 }
             }

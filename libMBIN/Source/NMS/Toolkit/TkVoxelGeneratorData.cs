@@ -1,5 +1,5 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
+﻿using libMBIN.NMS.GameComponents;
+using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {

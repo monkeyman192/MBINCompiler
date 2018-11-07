@@ -35,11 +35,22 @@ namespace libMBIN
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             readerSettings.IgnoreComments = false;
 
-            using ( var reader = new StringReader( xml ) )
-            using ( var xmlReader = XmlReader.Create( reader, readerSettings ) ) {
-                var template = ReadTemplateFromXmlReader( xmlReader, out templateName );
+            StringReader reader = null;
+            XmlReader xmlReader = null;
+            try
+            {
+                reader = new StringReader(xml);
+                xmlReader = XmlReader.Create(reader, readerSettings);
+                var template = ReadTemplateFromXmlReader(xmlReader, out templateName);
                 Thread.CurrentThread.CurrentCulture = origCulture;
                 return template;
+            }
+            finally
+            {
+                if (xmlReader != null)
+                    xmlReader.Dispose();
+                else if (reader != null)
+                    reader.Dispose();
             }
         }
 
@@ -78,12 +89,22 @@ namespace libMBIN
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             readerSettings.IgnoreComments = false;
 
-            using (var reader = new StringReader(xml))
-            using (var xmlReader = XmlReader.Create(reader, readerSettings))
+            StringReader reader = null;
+            XmlReader xmlReader = null;
+            try
             {
+                reader = new StringReader(xml);
+                xmlReader = XmlReader.Create(reader, readerSettings);
                 var data = (EXmlData)Serializer.Deserialize(xmlReader);
                 Thread.CurrentThread.CurrentCulture = origCulture;
                 return data;
+            }
+            finally
+            {
+                if (xmlReader != null)
+                    xmlReader.Dispose();
+                else if (reader != null)
+                    reader.Dispose();
             }
         }
 
@@ -97,9 +118,12 @@ namespace libMBIN
                 Indent = true,
                 Encoding = Encoding.UTF8
             };
-            using (var stringWriter = new EncodedStringWriter(Encoding.UTF8))
-            using (var xmlTextWriter = XmlWriter.Create(stringWriter, xmlSettings))
+            EncodedStringWriter stringWriter = null;
+            XmlWriter xmlTextWriter = null;
+            try
             {
+                stringWriter = new EncodedStringWriter(Encoding.UTF8);
+                xmlTextWriter = XmlWriter.Create(stringWriter, xmlSettings);
                 string ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
                 xmlTextWriter.WriteComment(String.Format("File created using MBINCompiler version ({0})", ver.Substring(0, ver.Length - 2)));
                 var data = template.SerializeEXml(false);
@@ -109,6 +133,13 @@ namespace libMBIN
                 var xmlData = stringWriter.GetStringBuilder().ToString();
                 Thread.CurrentThread.CurrentCulture = origCulture;
                 return xmlData;
+            }
+            finally
+            {
+                if (xmlTextWriter != null)
+                    xmlTextWriter.Dispose();
+                else if (stringWriter != null)
+                    stringWriter.Dispose();
             }
         }
 

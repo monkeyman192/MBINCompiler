@@ -51,7 +51,8 @@ namespace MBINCompilerTests.Database {
             this.FilePath = path;
         }
 
-        public void Load( string path = null ) {
+        public void Load( string path = null )
+        {
             if ( path == null ) path = this.FilePath;
             using ( var streamIn = new StreamReader( path ) ) Load( streamIn );
             this.FilePath = path;

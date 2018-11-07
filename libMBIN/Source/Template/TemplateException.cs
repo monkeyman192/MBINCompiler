@@ -5,6 +5,8 @@ namespace libMBIN {
     /// <summary>
     /// The base class for all template-related exceptions in the de/serializer.
     /// </summary>
+
+    [Serializable]
     public class TemplateException : APIException {
         private const string DEFAULT_MESSAGE = "An unknown exception has been encountered while processing a template.";
         public TemplateException()                                           : base( DEFAULT_MESSAGE ) { }
@@ -13,6 +15,7 @@ namespace libMBIN {
         public TemplateException( string message, Exception innerException ) : base( message, innerException ) { }
     }
 
+    [Serializable]
     public class UnknownTypeException : TemplateException {
         public UnknownTypeException()                         : base( GetString() ) { }
         public UnknownTypeException( Type type )              : base( GetString( type ) ) { }
@@ -23,23 +26,28 @@ namespace libMBIN {
         }
     }
 
+    [Serializable]
     public class InvalidListException : TemplateException {
         public InvalidListException( uint magic ) : base( $"Invalid list read, magic {magic:X8} expected xxxxxx01" ) { }
     }
 
+    [Serializable]
     public class DeserializeTemplateException : TemplateException {
         public DeserializeTemplateException( string name ) : base( $"Failed to deserialize template {name}!" ) { }
     }
-
+    
+    [Serializable]
     public class DeserializeTypeException : TemplateException {
         public DeserializeTypeException( string name ) : base( $"Failed to deserialize type {name}!" ) { }
         public DeserializeTypeException( Type type )   : this( type.Name ) { }
     }
 
+    [Serializable]
     public class NullDataException : TemplateException {
         public NullDataException( string dataTypeName ) : base( $"{dataTypeName} data was null!" ) { }
     }
 
+    [Serializable]
     public class ArraySizeException : TemplateException {
         public ArraySizeException( string fieldName, int actualSize, int expectedSize ) : base( GetString( fieldName, actualSize, expectedSize ) ) { }
 
@@ -50,6 +58,7 @@ namespace libMBIN {
         }
     }
 
+    [Serializable]
     public class MbinException : TemplateException
     {
         public MbinException(string fieldName, Exception innerException, string fileName) : base(GetString(fieldName, fileName), innerException) {}

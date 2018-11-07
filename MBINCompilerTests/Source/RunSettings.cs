@@ -66,6 +66,8 @@ namespace MBINCompilerTests {
         }
 
         #region Validation
+
+        [Serializable]
         public class NotConfiguredException : Exception {
             public NotConfiguredException( string parameter )
             : base( $"{parameter} not configured?\n"
@@ -73,6 +75,7 @@ namespace MBINCompilerTests {
                     + "See the comments in the Config/example.runsettings file for details." ) { }
         }
 
+        [Serializable]
         public class PathNotFoundException : Exception {
             public PathNotFoundException( string parameter, string path )
             : base( "Path not found.\n"

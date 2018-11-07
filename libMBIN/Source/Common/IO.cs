@@ -40,9 +40,7 @@ namespace libMBIN
 
         public void Dispose()
         {
-            Stream.Dispose();
-            Reader.Dispose();
-            Writer.Dispose();
+            Dispose(true);
         }
 
         #endregion
@@ -117,13 +115,35 @@ namespace libMBIN
         #endregion
 
         #region Private
-
+        private bool disposed = false; // to detect redundant calls
         private void InitIo()
         {
             Reader = new BinaryReader(Stream, Encoding.ASCII);
             Writer = Stream.CanWrite ? new BinaryWriter(Stream) : null;
         }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    if (Stream != null)
+                    {
+                        Stream.Dispose();
+                    }
+                    if (Writer != null)
+                    {
+                        Writer.Dispose();
+                    }
+                    if (Reader != null)
+                    {
+                        Reader.Dispose();
+                    }
+                }
 
+                disposed = true;
+            }
+        }
         #endregion
     }
 }

@@ -77,7 +77,18 @@ namespace libMBIN
 
         public void Dispose()
         {
-            if (_io != null && _keepOpen == false) _io.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (_io != null && _keepOpen == false)
+                {
+                    _io.Dispose();
+                }
+            }
         }
     }
 }
