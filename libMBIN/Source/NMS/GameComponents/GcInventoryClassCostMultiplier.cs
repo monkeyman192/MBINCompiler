@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(GUID = 0x50538964135E2380)]
     public class GcInventoryClassCostMultiplier : NMSTemplate
     {
-        [NMS(Size = 4, EnumValue = new[] { "C", "B", "A", "S" })]
+        [NMS( EnumType = typeof( GcInventoryClass.InventoryClassEnum ) )]
         public float[] Multiplier;
     }
 }

@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x80)]
         public string File;
 
-        [NMS(Size = 4, EnumValue = new[] { "Dead", "Low", "Mid", "Full" })]
+        [NMS( EnumType = typeof( GcPlanetLife.LifeSettingEnum ) )]
         public float[] BiomeProbability;
     }
 }

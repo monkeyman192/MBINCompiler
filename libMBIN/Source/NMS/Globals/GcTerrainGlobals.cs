@@ -15,7 +15,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0018 */ public float SubtractEditFrequency;
         /* 0x001C */ public float TerrainBeamDefaultRadius;
         /* 0x0020 */ public float TerrainBeamLightIntensity;
-                     [NMS(Size = 0x0C, Ignore = true)]
+        [NMS(Size = 0x0C, Ignore = true)]
         /* 0x0024 */ public byte[] Padding24;
         /* 0x0030 */ public Colour TerrainBeamLightColour;
         /* 0x0040 */ public float UseMax;
@@ -23,9 +23,9 @@ namespace libMBIN.NMS.Globals
         /* 0x0048 */ public float TextureFadePower;
         /* 0x004C */ public float TextureScaleMultiplier;
         /* 0x0050 */ public float TextureScalePower;
-                     [NMS(Size = 0x08)]
+        [NMS(Size = 0x08)]
         /* 0x0054 */ public float[] TextureScales;
-                     [NMS(Size = 0x08)]
+        [NMS(Size = 0x08)]
         /* 0x0074 */ public float[] TextureDistances;
         /* 0x0094 */ public float HeightBlend;
         /* 0x0098 */ public float SmoothStepBelow;
@@ -35,7 +35,7 @@ namespace libMBIN.NMS.Globals
         /* 0x00A8 */ public bool DebugFlattenAllTerrain;
         /* 0x00A9 */ public bool DebugNoFlattenForBuildings;
         /* 0x00AA */ public bool DebugLockTerrainSettingsIndex;
-                     [NMS(Size = 0x01, Ignore = true)]
+        [NMS(Size = 0x01, Ignore = true)]
         /* 0x00AB */ public byte[] PaddingAB;
         /* 0x00AC */ public int NumGeneratorCalls;
         /* 0x00B0 */ public int NumPolygoniseCalls;
@@ -48,19 +48,19 @@ namespace libMBIN.NMS.Globals
         /* 0x00CC */ public float MinWaterRatio;
         /* 0x00D0 */ public float MaxWaterRatio;
 
-                     [NMS(Size = 0x04, Ignore = true)]
+        [NMS(Size = 0x04, Ignore = true)]
         /* 0x00D4 */ public byte[] PaddingD4;
 
-                     [NMS(Size = 0x0D, EnumValue = new[] { "Lush", "Toxic", "Scorched", "Radioactive", "Frozen", "Barren", "Dead", "Weird", "Red", "Green", "Blue", "Test", "All" })]
+        [NMS( EnumType = typeof( GcBiomeType.BiomeEnum ) )]
         /* 0x00D8 */ public NMSString0x10[] MiningSubstanceBiome;
 
-                     [NMS(Size = 0x04, EnumValue = new[] { "Yellow", "Green", "Blue", "Red" })]
+        [NMS( EnumType = typeof( GcGalaxyStarTypes.GalaxyStarTypeEnum ) )]
         /* 0x01A8 */ public NMSString0x10[] MiningSubstanceStar;
 
-                     [NMS(Size = 0x04, EnumValue = new[] { "Yellow", "Green", "Blue", "Red" })]
+        [NMS( EnumType = typeof( GcGalaxyStarTypes.GalaxyStarTypeEnum ) )]
         /* 0x01E8 */ public NMSString0x10[] MiningSubstanceStarExtreme;
 
-                     [NMS(Size = 0x05)]
+        [NMS(Size = 0x05)]
         /* 0x0228 */ public NMSString0x10[] MiningSubstanceRare;
         /* 0x0278 */ public float TextureBlendScale0;
         /* 0x027C */ public float TextureBlendScale1;
@@ -79,7 +79,7 @@ namespace libMBIN.NMS.Globals
         /* 0x037C */ public float TerrainUndoFadeDepthConstant;
         /* 0x0380 */ public float TerrainUndoFadeDepthScalar;
         /* 0x0384 */ public bool TerrainEditUndosEnabled;
-                     [NMS(Size = 0x0B, Ignore = true)]
+        [NMS(Size = 0x0B, Ignore = true)]
         /* 0x0385 */ public byte[] Padding385;
     }
 }

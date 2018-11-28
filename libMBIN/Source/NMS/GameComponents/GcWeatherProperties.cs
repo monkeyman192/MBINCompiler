@@ -19,8 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2A4 */ public byte[] Padding2A4;
 
         /* 0x2B0 */ public GcWeatherColourModifiers ExtremeColourModifiers;
-        // enum struct: GcRainbowType
-        [NMS(Size = 0x4, EnumValue = new[] { "Always", "Occasional", "Storm", "None" })]
+        [NMS( EnumType = typeof( GcRainbowType.RainbowTypeEnum ) )]
         /* 0x520 */ public float[] RainbowChance;
         /* 0x530 */ public List<GcStormProperties> Storms;
 

@@ -13,14 +13,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x20 */ public float Offset;
         /* 0x24 */ public bool UseLookAt;
         /* 0x25 */ public bool AvoidTerrain;
-        [NMS(Size = 0x1D, EnumValue = new[] {
-                "None", "TerrainResource", "Shelter", "Abandoned", "Terminal", "Shop", "Outpost", "Waypoint",
-                "Beacon", "RadioTower", "Observatory", "Depot", "Factory", "Harvester", "Plaque", "Monolith",
-                "Portal", "Ruin", "Debris", "DamagedMachine", "DistressSignal", "LandingPad", "Base", "MissionTower",
-                "CrashedFreighter", "GraveInCave", "StoryGlitch", "TreasureRuins", "GameStartSpawn"
-            })]
+        [NMS( EnumType = typeof( GcBuildingClassification.BuildingClassEnum ) )]
         /* 0x26 */ public bool[] AvailableBuildings;
-        [NMS(Size = 0x7, EnumValue = new[] { "Traders", "Warriors", "Explorers", "Robots", "Atlas", "Diplomats", "None" })]
+        [NMS( EnumType = typeof( GcAlienRace.AlienRaceEnum ) )]
         /* 0x43 */ public bool[] AvailableRaces;
 
         [NMS(Size = 0x6, Ignore = true)]

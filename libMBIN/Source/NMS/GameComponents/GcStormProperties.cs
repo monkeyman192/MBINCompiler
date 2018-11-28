@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public float Weighting;
         /* 0x004 */ public GcFogProperties Fog;
         /* 0x0E0 */ public GcWeatherColourModifiers ColourModifiers;
-        [NMS(Size = 0x4, EnumValue = new[] { "Temperature", "Toxicity", "Radiation", "LifeSupportDrain" })]
+        [NMS( EnumType = typeof( GcHazardModifiers.HazardModifierEnum ) )]
         /* 0x350 */ public GcHazardValues[] HazardModifiers;        // meant to be a Vector2f. This looks nicer though in exml
     }
 }

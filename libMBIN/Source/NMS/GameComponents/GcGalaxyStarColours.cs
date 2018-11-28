@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(GUID = 0xA6EC1041FE8F1AF9)]
     public class GcGalaxyStarColours : NMSTemplate      // size: 0x40
     {
-        [NMS(Size = 0x4, EnumValue = new[] { "Yellow", "Green", "Blue", "Red" })]
+        [NMS( EnumType = typeof( GcGalaxyStarTypes.GalaxyStarTypeEnum ) )]
         public Colour[] ColourByStarType;
     }
 }

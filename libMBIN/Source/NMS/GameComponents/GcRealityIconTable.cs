@@ -24,13 +24,13 @@ namespace libMBIN.NMS.GameComponents
                                                        "Interactable", "Sentinel", "Starship", "Artifact", "Mystery", "Treasure", "Control"})]
         /* 0x0F78 */ public TkTextureResource[] BinocularDiscoveryIcons;
 
-        [NMS(Size = 0x7, EnumValue = new[] { "Mining", "HighTech", "Trading", "Manufacturing", "Fusion", "Scientific", "PowerGeneration" })]
+        [NMS( EnumType = typeof( GcTradingClass.TradingClassEnum ) )]
         /* 0x1734 */ public TkTextureResource[] DiscoveryPageTradingIcons;
 
-        [NMS(Size = 0x3, EnumValue = new[] { "Low", "Default", "High" })]
+        [NMS( EnumType = typeof( GcPlayerConflictData.ConflictLevelEnum ) )]
         /* 0x1AD0 */ public TkTextureResource[] DiscoveryPageConflictIcons;
 
-        [NMS(Size = 0x7, EnumValue = new[] { "Traders", "Warriors", "Explorers", "Robots", "Atlas", "Diplomats", "None" })]
+        [NMS( EnumType = typeof( GcAlienRace.AlienRaceEnum ) )]
         /* 0x1C5C */ public TkTextureResource[] DiscoveryPageRaceIcons;
 
         /* 0x1FF8 */ public List<GcPlanetResourceIconLookup> TerrainIconLookups;

@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(GUID = 0x3694978110105288)]
     public class GcWeatherWeightings : NMSTemplate
     {
-        [NMS(Size = 10, EnumValue = new[] { "Clear", "Dust", "Humid", "Snow", "Toxic", "Scorched", "Radioactive", "RedWeather", "GreenWeather", "BlueWeather" })]
+        [NMS( EnumType = typeof( GcWeatherOptions.WeatherEnum ) )]
         /* 0x380 */ public float[] WeatherWeightings;
     }
 }

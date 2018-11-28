@@ -17,7 +17,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x0024 */ public TkNoiseUberLayerData[] NoiseLayers;
         [NMS(Size = 9, EnumValue = new[] { "Small", "Large", "Resources_Heridium", "Resources_Iridium", "Resources_Copper", "Resources_Nickel", "Resources_Aluminium", "Resources_Gold", "Resources_Emeril" })]
         /* 0x0464 */ public TkNoiseGridData[] GridLayers;
-        [NMS(Size = 7, EnumValue = new[] { "River", "Crater", "Arches", "ArchesSmall", "Blobs", "BlobsSmall", "Substance" })]
+        [NMS( EnumType = typeof( TkFeaturesEnum.FeatureTypesEnum ) )]
         /* 0x134C */ public TkNoiseFeatureData[] Features;
         [NMS(Size = 1, EnumValue = new[] { "Underground" })]
         /* 0x1528 */ public TkNoiseCaveData[] CavesUnderground;

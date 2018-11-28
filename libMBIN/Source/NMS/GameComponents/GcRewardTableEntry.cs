@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x10)]
         public string Id;
-        [NMS(Size = 0x3, EnumValue = new[] { "Common", "Uncommon", "Rare" })]
+        [NMS( EnumType = typeof( GcRarity.RarityEnum ) )]
         public GcRewardTableCategory[] Rarities;
     }
 }

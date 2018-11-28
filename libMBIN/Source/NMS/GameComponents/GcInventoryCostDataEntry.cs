@@ -14,7 +14,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0C */ public float MaxValueInMillions;     // 42F00000h
         /* 0x10 */ public float CoolMultiplier;         // 41A00000h
         /* 0x14 */ public float TradeInMultiplier;      // 428C0000h
-        [NMS(Size = 0x4, EnumValue = new[] { "C", "B", "A", "S" })]
+        [NMS( EnumType = typeof( GcInventoryClass.InventoryClassEnum ) )]
         /* 0x18 */ public float[] ClassMultiplier;
 
     }

@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x1C, GUID = 0xB164EA8EF150DFDC)]
     public class GcAISpaceshipWeightingData : NMSTemplate
     {
-        [NMS(Size = 0x7, EnumValue = new[] { "Freighter", "Dropship", "Fighter", "Scientific", "Shuttle", "PlayerFreighter", "Royal" })]
+        [NMS( EnumType = typeof( GcSpaceshipClasses.ShipClassEnum ) )]
         public float[] CivilianClassWeightings;
     }
 }

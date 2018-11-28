@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(GUID = 0xEE43876427F39D95)]
     public class GcInventoryGenerationBaseStatData : NMSTemplate     // size: 0x40
     {
-        [NMS(Size = 0x4, EnumValue = new[] { "C", "B", "A", "S" })]
+        [NMS( EnumType = typeof( GcInventoryClass.InventoryClassEnum ) )]
         public GcInventoryGenerationBaseStatClassData[] BaseStatsPerClass;
 
     }

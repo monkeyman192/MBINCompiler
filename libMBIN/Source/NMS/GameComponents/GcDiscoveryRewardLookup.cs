@@ -13,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x10 */ public string Secondary;
 
-        [NMS(Size = 0xD, EnumValue = new[] { "Lush", "Toxic", "Scorched", "Radioactive", "Frozen", "Barren", "Dead", "Weird", "Red", "Green", "Blue", "Test", "All" })]
+        [NMS( EnumType = typeof( GcBiomeType.BiomeEnum ) )]
         /* 0x20 */ public NMSString0x10[] BiomeSpecific;
     }
 }

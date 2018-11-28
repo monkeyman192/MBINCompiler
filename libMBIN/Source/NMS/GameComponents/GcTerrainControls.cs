@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public float[] NoiseLayers;      // chance of this noise layer being active
         [NMS(Size = 9, EnumValue = new[] { "Small", "Large", "Resources_Heridium", "Resources_Iridium", "Resources_Copper", "Resources_Nickel", "Resources_Aluminium", "Resources_Gold", "Resources_Emeril" })]
         /* 0x20 */ public float[] GridLayers;
-        [NMS(Size = 7, EnumValue = new[] { "River", "Crater", "Arches", "ArchesSmall", "Blobs", "BlobsSmall", "Substance" })]
+        [NMS( EnumType = typeof( TkFeaturesEnum.FeatureTypesEnum ) )]
         /* 0x44 */ public float[] Features;         // chance of this kind of feature being active
         [NMS(Size = 1, EnumValue = new[] { "Underground" })]
         /* 0x60 */ public float[] Caves;

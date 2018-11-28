@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x64, GUID = 0x24812B86AFC66CF6)]
     public class GcExpeditionEventOccurrenceRate : NMSTemplate
     {
-        [NMS(Size = 0x5, EnumValue = new[] { "Combat", "Exploration", "Mining", "Diplomacy", "Balanced" })]
+        [NMS( EnumType = typeof( GcExpeditionCategory.ExpeditionCategoryEnum ) )]
         public GcExpeditionDurationValues[] ExpeditionCategory;
     }
 }
