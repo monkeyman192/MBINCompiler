@@ -41,7 +41,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x130 */ public List<TkMeshMetaData> StreamMetaDataArray;
 
         // TODO: add the list ending to this??
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, PropertyInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {
             if (field == null || fieldInfo == null)
                 return false;
@@ -188,7 +188,7 @@ namespace libMBIN.NMS.Toolkit
             return false;
         }
 
-        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, long templatePosition, FieldInfo fieldInfo)
+        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, long templatePosition, PropertyInfo fieldInfo)
         {
             var fieldName = fieldInfo.Name;
 

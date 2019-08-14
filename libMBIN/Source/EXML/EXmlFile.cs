@@ -69,6 +69,7 @@ namespace libMBIN
             EXmlData root = (EXmlData) Serializer.Deserialize( reader );
             templateName = root?.Template;
             NMSTemplate rootTemplate = NMSTemplate.DeserializeEXml( root );
+            Logger.LogMessage("exmlfile", "hi");
             return rootTemplate;
         }
 

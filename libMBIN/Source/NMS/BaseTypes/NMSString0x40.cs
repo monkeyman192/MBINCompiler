@@ -6,6 +6,6 @@ namespace libMBIN.NMS
     public class NMSString0x40 : NMSTemplate
     {
         [NMS(Size = 0x40)]
-        public string Value;
+        public string Value { get; set; }
     }
 }

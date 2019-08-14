@@ -24,7 +24,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x48 */ public int TransIndex;
         /* 0x4C */ public int ScaleIndex;
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, PropertyInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {
             if (field == null || fieldInfo == null)
                 return false;

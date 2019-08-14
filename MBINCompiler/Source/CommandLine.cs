@@ -149,7 +149,8 @@ namespace MBINCompiler {
         {
             if ( Quiet || !wait || Console.IsOutputRedirected ) return;
             Console.Out.WriteLine( "\nPress any key to continue . . ." );
-            Console.ReadKey();
+            Console.Read();
+            //Console.ReadKey();
         }
 
         public static string WrapLine( string txt = null, int padleft = 0, int width = 0 ) {

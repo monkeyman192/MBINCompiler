@@ -38,6 +38,7 @@ namespace libMBIN
         {
             if (_io.Stream.Length < 0x60) return false;
             _io.Stream.Position = 0;
+            Logger.LogMessage("INFO", "inside");
             Header = (MBINHeader)NMSTemplate.DeserializeBinaryTemplate(_io.Reader, "MBINHeader");
             return true;
         }
@@ -68,6 +69,7 @@ namespace libMBIN
             FileLength = (ulong)data.LongLength;
 
             Header.TemplateName = "c" + template.GetType().Name;
+
         }
 
         public static explicit operator NMSTemplate(MBINFile mbin)

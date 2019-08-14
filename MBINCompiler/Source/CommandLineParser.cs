@@ -101,6 +101,7 @@ namespace MBINCompiler
 
         private bool ParseOption( List<Option> options, Dictionary<string, string> aliases ) {
             var arg = Args[0];
+            Console.WriteLine(arg);
             if ( ( arg.Length > 1 ) && ( arg[0] == '-' ) ) {
                 char switchChar = arg[1];
                 arg = arg.Substring( 2 );
@@ -131,12 +132,13 @@ namespace MBINCompiler
                 }
                 if ( index < 0 ) return false;
 
+
                 // if the option requires a param but we don't have one yet then get the next arg
                 if ((options[index].param != null) && (val == "")) {
                     Args.RemoveAt( 0 );
                     val = Args[0];
                 }
-                    
+                Console.WriteLine($"{key}: {val}");
                 // unless multiples are allowed, remove the option from the list
                 if (!options[index].allowMultiple) options.RemoveAt( index );
 

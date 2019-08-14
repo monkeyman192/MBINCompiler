@@ -173,10 +173,12 @@ namespace MBINCompiler.Commands {
         /// <returns>fileOut</returns>
         private static string ConvertMBIN( string inputPath, FileStream fIn, MemoryStream msOut, string fileOut ) {
             var mbin = new MBINFile( fIn );
+            Logger.LogMessage("INFO", "hi");
             if ( !(mbin.Load() && mbin.Header.IsValid) ) throw new InvalidDataException( "Not a valid MBIN file!" );
-
+            Logger.LogMessage("INFO", "hi2");
             var type = NMSTemplate.GetTemplateType( mbin.Header.GetXMLTemplateName() );
             var nms = (NMSAttribute) (type.GetCustomAttributes( typeof( NMSAttribute ), false )?[0] ?? null);
+            Logger.LogMessage("INFO", type.ToString());
             var broken = nms.Broken;
             var mismatch = (mbin.Header.TemplateGUID != nms.GUID);
 

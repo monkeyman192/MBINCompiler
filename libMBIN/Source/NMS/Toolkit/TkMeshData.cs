@@ -20,7 +20,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x8C */ public int IndexDataSize;
         /* 0x90 */ public byte[] MeshDataStream;
 
-        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, long templatePosition, FieldInfo fieldInfo)
+        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, long templatePosition, PropertyInfo fieldInfo)
         {
             var fieldName = fieldInfo.Name;
             switch (fieldName)
@@ -43,7 +43,7 @@ namespace libMBIN.NMS.Toolkit
             return null;
         }
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, PropertyInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {
             var fieldName = fieldInfo.Name;
             switch (fieldName)
