@@ -97,8 +97,8 @@ namespace libMBIN.NMS.Globals
         /* 0x400 */ public bool Unknown0x400;
         /* 0x401 */ public bool UseLegacyFreighters;
         /* 0x402 */ public bool SpawnPirates;
-        /* 0x403 */ public bool SpawnRobots;
-        /* 0x404 */ public bool SpawnShips;
+        /* 0x403 */ public bool SpawnPirates;
+        /* 0x404 */ public bool SpawnRobots;
         /* 0x405 */ public bool InstanceCollision;
         /* 0x406 */ public bool MPMissions;
         /* 0x407 */ public bool Unknown0x407;
