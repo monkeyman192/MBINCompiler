@@ -7,9 +7,6 @@ install:
 script:
     - dotnet restore
     - dotnet build -r win-x64 -p:Configuration=Release /nowarn:cs0618
-    - echo $TRAVIS_TAG
-    - echo $TRAVIS_COMMIT
-    - echo $TRAVIS_COMMIT_MESSAGE
     #- msbuild /p:Configuration=Release MBINCompiler.sln
     #- dotnet test
 
@@ -38,7 +35,7 @@ deploy:
     on:
         branch: development
         tags: true
-        condition: "$TRAVIS_TAG =~ ^v[[:digit:]]"
+        condition: "$TRAVIS_COMMIT_MESSAGE =~ ^(\[DEPLOY\])"
 
 deploy:
     provider: releases
@@ -50,4 +47,4 @@ deploy:
     on:
         branch: master
         tags: true
-        condition: "$TRAVIS_TAG =~ ^v[[:digit:]]"
+        condition: "$TRAVIS_COMMIT_MESSAGE =~ ^(\[DEPLOY\])"
