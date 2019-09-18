@@ -7,6 +7,9 @@ install:
 script:
     - dotnet restore
     - dotnet build -r win-x64 -p:Configuration=Release /nowarn:cs0618
+    - echo $TRAVIS_TAG
+    - echo $TRAVIS_COMMIT
+    - echo $TRAVIS_COMMIT_MESSAGE
     #- msbuild /p:Configuration=Release MBINCompiler.sln
     #- dotnet test
 
@@ -18,10 +21,10 @@ before_deploy:
     - "echo \"Tag: $TRAVIS_TAG -> $MATCH_TAG\""
     - "[[ \"$MATCH_TAG\" == \"$LIBMBIN_VERSION\" ]] || echo \"Error: The version tag $TRAVIS_TAG must match the LIBMBIN_VERSION defined in Version.cs\" && set -e"
     - "echo \"$TRAVIS_TAG matches LIBMBIN_VERSION.\""
-    #- export TRAVIS_TAG=v$LIBMBIN_VERSION-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)
-    #- git config --local user.name "Travis-CI"
-    #- git config --local user.email "noreply@email.com"
-    #- git tag $TRAVIS_TAG
+    - export TRAVIS_TAG=v$LIBMBIN_VERSION-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)
+    - git config --local user.name "Travis-CI"
+    - git config --local user.email "noreply@email.com"
+    - git tag $TRAVIS_TAG
 
 # see https://docs.travis-ci.com/user/deployment/releases/
 deploy:
