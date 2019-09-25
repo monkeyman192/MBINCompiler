@@ -13,7 +13,7 @@ script:
 before_deploy:
     - export LIBMBIN_VERSION="$(cat libMBIN/Source/Version.cs | grep -P 'const[[:space:]]+string[[:space:]]+VERSION_STRING' | grep -oP '[0-9]+[.][0-9]+[.][0-9]+[.][0-9]+')"
     - "echo \"LIBMBIN_VERSION: $LIBMBIN_VERSION\""
-    - "[[ \"$TRAVIS_TAG\" =~ ^v([[:digit:]]+)[.]([[:digit:]]+)[.]([[:digit:]]+)(-pre([[:digit:]]+)|[.]([[:digit:]])+) ]] && export MATCH_TAG=${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.${BASH_REMATCH[3]}.${BASH_REMATCH[5]}${BASH_REMATCH[6]}"
+    - "[[ \"$TRAVIS_TAG\" =~ ^v([[:digit:]]+)[.]([[:digit:]]+)[.]([[:digit:]]+)(-[^[:digit:]]+([[:digit:]]+)|[.]([[:digit:]])+) ]] && export MATCH_TAG=${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.${BASH_REMATCH[3]}.${BASH_REMATCH[5]}${BASH_REMATCH[6]}"
     - "echo \"Tag: $TRAVIS_TAG -> $MATCH_TAG\""
     - "[[ \"$MATCH_TAG\" == \"$LIBMBIN_VERSION\" ]] && echo \"$TRAVIS_TAG matches LIBMBIN_VERSION.\" || echo \"Error: The version tag $TRAVIS_TAG must match the LIBMBIN_VERSION defined in Version.cs\" && set -e"
     #
@@ -28,11 +28,13 @@ before_deploy:
 deploy:
     provider: releases
     prerelease: true
-    github_token: $GITHUB_TOKEN
+    name: "${TRAVIS_TAG}"
+    body: "${TRAVIS_TAG}"
+    api_key: "${GITHUB_TOKEN}"
+    skip_cleanup: true
     file:
         - "Build/Release/libMBIN.dll"
         - "Build/Release/win-x64/MBINCompiler.exe"
-    skip_cleanup: true
     on:
         branch: development
         tags: true
@@ -40,11 +42,13 @@ deploy:
 
 deploy:
     provider: releases
-    github_token: $GITHUB_TOKEN
+    name: "${TRAVIS_TAG}"
+    body: "${TRAVIS_TAG}"
+    api_key: "${GITHUB_TOKEN}"
+    skip_cleanup: true
     file:
         - "Build/Release/libMBIN.dll"
         - "Build/Release/win-x64/MBINCompiler.exe"
-    skip_cleanup: true
     on:
         branch: master
         tags: true
