@@ -11,13 +11,14 @@ script:
     #- dotnet test
 
 before_deploy:
-    # Set up git user name and tag this commit
-    - export LIBMBIN_VERSION="$(cat libMBIN/Source/Version.cs | grep -P 'const[[:space:]]+string[[:space:]]+VERSION_STRING' | grep -oP '(?<=\")(.*)(?<\")')"
+    - export LIBMBIN_VERSION="$(cat libMBIN/Source/Version.cs | grep -P 'const[[:space:]]+string[[:space:]]+VERSION_STRING' | grep -oP '[0-9]+[.][0-9]+[.][0-9]+[.][0-9]+')"
     - "echo \"LIBMBIN_VERSION: $LIBMBIN_VERSION\""
     - "[[ \"$TRAVIS_TAG\" =~ ^v([[:digit:]]+)[.]([[:digit:]]+)[.]([[:digit:]]+)(-pre([[:digit:]]+)|[.]([[:digit:]])+) ]] && export MATCH_TAG=${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.${BASH_REMATCH[3]}.${BASH_REMATCH[5]}${BASH_REMATCH[6]}"
     - "echo \"Tag: $TRAVIS_TAG -> $MATCH_TAG\""
-    - "[[ \"$MATCH_TAG\" == \"$LIBMBIN_VERSION\" ]] || echo \"Error: The version tag $TRAVIS_TAG must match the LIBMBIN_VERSION defined in Version.cs\" && set -e"
-    - "echo \"$TRAVIS_TAG matches LIBMBIN_VERSION.\""
+    - "[[ \"$MATCH_TAG\" == \"$LIBMBIN_VERSION\" ]] && echo \"$TRAVIS_TAG matches LIBMBIN_VERSION.\" || echo \"Error: The version tag $TRAVIS_TAG must match the LIBMBIN_VERSION defined in Version.cs\" && set -e"
+    #
+    # Set up git user name and tag this commit
+    #
     #- export TRAVIS_TAG=v$LIBMBIN_VERSION-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)
     #- git config --local user.name "Travis-CI"
     #- git config --local user.email "noreply@email.com"
