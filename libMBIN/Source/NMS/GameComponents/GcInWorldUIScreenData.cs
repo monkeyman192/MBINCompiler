@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0x1E6D02062E36E3D, SubGUID = 0xFFAAB9AB630ACB70)]
+	[NMS(Size = 0x30, GUID = 0x1E6D02062E36E3D, NameHash = 0xFFAAB9AB630ACB70)]
     public class GcInWorldUIScreenData : NMSTemplate
     {
         public float ScreenScale;
