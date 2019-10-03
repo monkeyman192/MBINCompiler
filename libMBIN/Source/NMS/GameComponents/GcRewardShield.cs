@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x63F44A2CCB9848B4, SubGUID = 0x55E2192D51D7971B)]
+	[NMS(GUID = 0x63F44A2CCB9848B4, NameHash = 0x55E2192D51D7971B)]
     public class GcRewardShield : NMSTemplate
     {
         public int AmountMin;

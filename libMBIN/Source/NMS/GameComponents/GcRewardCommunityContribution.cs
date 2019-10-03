@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x38, GUID = 0x89B5232517B88E96, SubGUID = 0xCE090483FC7B2C67)]
+	[NMS(Size = 0x38, GUID = 0x89B5232517B88E96, NameHash = 0xCE090483FC7B2C67)]
     public class GcRewardCommunityContribution : NMSTemplate
     {
         /* 0x00 */ public GcAtlasSendSubmitContribution Contribution;      // list of??

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xE7B910E9C497C58E, SubGUID = 0xDF9F37F8504FFE4D)]
+	[NMS(Size = 0x58, GUID = 0xE7B910E9C497C58E, NameHash = 0xDF9F37F8504FFE4D)]
     public class GcCameraAmbientBuildingData : NMSTemplate
     {
         [NMS(Size = 0x10)]

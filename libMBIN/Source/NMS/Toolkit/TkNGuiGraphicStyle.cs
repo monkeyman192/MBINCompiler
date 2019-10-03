@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x210, GUID = 0x5B98CE75F0CD3F94, Alignment = 0x10, SubGUID = 0xB70875CDF93EECEC)]
+	[NMS(Size = 0x210, GUID = 0x5B98CE75F0CD3F94, Alignment = 0x10, NameHash = 0xB70875CDF93EECEC)]
     public class TkNGuiGraphicStyle : NMSTemplate
     {
         /* 0x000 */ public TkNGuiGraphicStyleData Default;

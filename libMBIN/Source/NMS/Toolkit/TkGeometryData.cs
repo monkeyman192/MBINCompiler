@@ -9,7 +9,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x140, GUID = 0xCD49AC37B4729513, SubGUID = 0xA74EA06001E7577E)]
+	[NMS(Size = 0x140, GUID = 0xCD49AC37B4729513, NameHash = 0xA74EA06001E7577E)]
     public class TkGeometryData : NMSTemplate
     {
         /* 0x000 */ public int VertexCount;

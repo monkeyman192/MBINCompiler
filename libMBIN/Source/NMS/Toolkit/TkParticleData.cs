@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xD0, GUID = 0x6FFE4AC2BE301EB6, SubGUID = 0xE9525144C4F949EB)]
+	[NMS(Size = 0xD0, GUID = 0x6FFE4AC2BE301EB6, NameHash = 0xE9525144C4F949EB)]
     public class TkParticleData : NMSTemplate
     {
         /* 0x00 */ public bool StartEnabled;

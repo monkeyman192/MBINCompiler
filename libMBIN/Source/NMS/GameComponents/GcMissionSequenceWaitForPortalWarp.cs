@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x121, GUID = 0x417C3F79FC136943, SubGUID = 0x416E9E84AB204114)]
+	[NMS(Size = 0x121, GUID = 0x417C3F79FC136943, NameHash = 0x416E9E84AB204114)]
     public class GcMissionSequenceWaitForPortalWarp : NMSTemplate
     {
         [NMS(Size = 0x80)]

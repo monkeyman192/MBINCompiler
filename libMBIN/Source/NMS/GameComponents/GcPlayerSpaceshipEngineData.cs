@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0x5526B7917EA8D181, SubGUID = 0x1C062102935FA221)]
+	[NMS(Size = 0x58, GUID = 0x5526B7917EA8D181, NameHash = 0x1C062102935FA221)]
     public class GcPlayerSpaceshipEngineData : NMSTemplate
     {
         public float ThrustForce;

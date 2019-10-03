@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x3700, GUID = 0x1E0206B2601F3050, SubGUID = 0x266F5269ED2C5661)]
+	[NMS(Size = 0x3700, GUID = 0x1E0206B2601F3050, NameHash = 0x266F5269ED2C5661)]
     public class GcStatIconTable : NMSTemplate
     {
         // near match to GcStatsTypes.StatsTypeEnum

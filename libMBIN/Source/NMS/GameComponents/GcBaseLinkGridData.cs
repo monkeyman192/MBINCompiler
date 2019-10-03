@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xA9B0407BFF169C37, SubGUID = 0x3FBB55C99E667F9E)]
+	[NMS(Size = 0x58, GUID = 0xA9B0407BFF169C37, NameHash = 0x3FBB55C99E667F9E)]
     public class GcBaseLinkGridData : NMSTemplate
     {
         /* 0x00 */ public GcBaseLinkGridConnectionData Connection;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x68, GUID = 0x7B02CE1010B72306, SubGUID = 0x184558FBF0A370E2)]
+	[NMS(Size = 0x68, GUID = 0x7B02CE1010B72306, NameHash = 0x184558FBF0A370E2)]
     public class GcOutpostComponentData : NMSTemplate
     {
         /* 0x00 */ public bool Anomaly;

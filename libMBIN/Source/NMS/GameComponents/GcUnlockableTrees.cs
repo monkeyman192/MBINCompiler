@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x220, GUID = 0xC1369536A8BADFB8, SubGUID = 0xDDC3AC505BDF81E2)]
+	[NMS(Size = 0x220, GUID = 0xC1369536A8BADFB8, NameHash = 0xDDC3AC505BDF81E2)]
     public class GcUnlockableTrees : NMSTemplate
     {
         [NMS(Size = 0xB, EnumType = typeof(GcUnlockableItemTreeGroups.UnlockableItemTreeEnum))]

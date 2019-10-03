@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x89ED051FD49328DB, SubGUID = 0xFAC452E6BECE8553)]
+	[NMS(GUID = 0x89ED051FD49328DB, NameHash = 0xFAC452E6BECE8553)]
     public class GcShipHUDTargetIconData : NMSTemplate
     {
         [NMS(Size = 0x80)]

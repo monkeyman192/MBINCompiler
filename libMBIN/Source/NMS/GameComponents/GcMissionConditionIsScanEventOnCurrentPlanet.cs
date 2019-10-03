@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x28, GUID = 0x2AB2A0C204802FD9, SubGUID = 0xEB5EF017837D2565)]
+	[NMS(Size = 0x28, GUID = 0x2AB2A0C204802FD9, NameHash = 0xEB5EF017837D2565)]
     public class GcMissionConditionIsScanEventOnCurrentPlanet : NMSTemplate
     {
         [NMS(Size = 0x20)]

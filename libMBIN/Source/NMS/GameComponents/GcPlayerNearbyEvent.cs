@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x28, Alignment = 0x4, GUID = 0x55EE6105B113335F, SubGUID = 0x8A8D7D07807BE9DC)]
+	[NMS(Size = 0x28, Alignment = 0x4, GUID = 0x55EE6105B113335F, NameHash = 0x8A8D7D07807BE9DC)]
     public class GcPlayerNearbyEvent : NMSTemplate
     {
 		public enum RequirePlayerActionEnum { None, Fire, InShip, OnFoot, OnFootOutside, Upload }

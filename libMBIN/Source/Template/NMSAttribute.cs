@@ -14,7 +14,7 @@ namespace libMBIN
         public byte Padding { get; set; }
         public int Alignment { get; set; } = 4;
         public ulong GUID { get; set; }
-        public ulong SubGUID { get; set; }
+        public ulong NameHash { get; set; }
         public bool Broken { get; set; }
         public bool IDField { get; set; } = false;
         public bool alignRelative { get; set; } = true;

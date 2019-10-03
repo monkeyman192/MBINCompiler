@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x38, GUID = 0x6093D382214F692D, SubGUID = 0xB7FEFB0DFC120BF4)]
+	[NMS(Size = 0x38, GUID = 0x6093D382214F692D, NameHash = 0xB7FEFB0DFC120BF4)]
     public class GcShipAIPlanetPatrolData : NMSTemplate
     {
         [NMS(Size = 0x10)]

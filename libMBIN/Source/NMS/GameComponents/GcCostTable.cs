@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x50, GUID = 0x82D12FC6747BC4CD, SubGUID = 0x6E62CCB542C4E505)]
+	[NMS(Size = 0x50, GUID = 0x82D12FC6747BC4CD, NameHash = 0x6E62CCB542C4E505)]
     public class GcCostTable : NMSTemplate
     {
         public List<GcCostTableEntry> SimpleInteractionTable;

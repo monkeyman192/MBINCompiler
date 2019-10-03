@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xA0, GUID = 0xA4C0459CB3BC721F, SubGUID = 0xEF85A351ABA84D63)]
+	[NMS(Size = 0xA0, GUID = 0xA4C0459CB3BC721F, NameHash = 0xEF85A351ABA84D63)]
     public class GcGrabbableData : NMSTemplate
     {
         [NMS(Size = 0x20)]

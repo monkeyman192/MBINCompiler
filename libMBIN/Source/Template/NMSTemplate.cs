@@ -173,11 +173,11 @@ namespace libMBIN
                     long startPos = reader.BaseStream.Position;
                     long offset = reader.ReadInt64();
                     string name = reader.ReadString(Encoding.ASCII, 0x40, true);
-                    ulong subGUID = reader.ReadUInt64();
+                    ulong NameHash = reader.ReadUInt64();
                     if (template != null) {
-                        ulong expected_subGUID = template.GetType().GetCustomAttribute<NMSAttribute>()?.SubGUID ?? 0;
-                        if (subGUID != expected_subGUID && template != null) {
-                            Logger.LogMessage("SubGUID", $"{template.GetType().Name} has the wrong SubGUID");
+                        ulong expected_NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        if (NameHash != expected_NameHash && template != null) {
+                            Logger.LogMessage("NameHash", $"{template.GetType().Name} has the wrong NameHash");
                         }
                     }
 
@@ -296,7 +296,7 @@ namespace libMBIN
                     long nameOffset = reader.BaseStream.Position;
                     long templateOffset = reader.ReadInt64();
                     var name = reader.ReadString(Encoding.UTF8, 0x40, true);
-                    ulong subGUID = reader.ReadUInt64();
+                    ulong NameHash = reader.ReadUInt64();
                     // Make sure we have a valid template name
                     if (name.Length > 0) {
                         var templateName = name;
@@ -304,10 +304,10 @@ namespace libMBIN
                         {
                             templateName = name.Substring(1);
                         }
-                        ulong expected_subGUID = GetTemplateType(templateName).GetCustomAttribute<NMSAttribute>()?.SubGUID ?? 0;
-                        if (subGUID != expected_subGUID)
+                        ulong expected_NameHash = GetTemplateType(templateName).GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        if (NameHash != expected_NameHash)
                         {
-                            Logger.LogMessage("SubGUID", $"{templateName} has the wrong SubGUID");
+                            Logger.LogMessage("NameHash", $"{templateName} has the wrong NameHash");
                         }
                     }
 
@@ -475,13 +475,13 @@ namespace libMBIN
                     if ( template == null || template.GetType().Name == "EmptyNode" ) {
                         writer.Write( (Int64) 0 ); // listPosition
                         writer.WriteString( "", Encoding.UTF8, 0x40 );
-                        writer.Write((Int64)0); // SubGUID
+                        writer.Write((Int64)0); // NameHash
                     } else {
                         writer.Write( (Int64) 0 );      // default value to be overridden later anyway
                         writer.WriteString( "c" + template.GetType().Name, Encoding.UTF8, 0x40 );
-                        ulong subGUID = template.GetType().GetCustomAttribute<NMSAttribute>()?.SubGUID ?? 0;
-                        if (subGUID != 0) {
-                            writer.Write(subGUID);
+                        ulong NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        if (NameHash != 0) {
+                            writer.Write(NameHash);
                         } else {
                             throw new InvalidGUIDException(template);
                         }
@@ -594,7 +594,7 @@ namespace libMBIN
             writer.Write( (Int32) list.Count );
             writer.Write( listEnding );
 
-            // reserve space for list offsets+names + SubGUID's
+            // reserve space for list offsets+names + NameHash's
             writer.BaseStream.Position = listPosition;
             writer.Write( new byte[list.Count * 0x50] );              // this seems to need to be reserved even if there are no elements (check?)
 
@@ -662,10 +662,10 @@ namespace libMBIN
                     writer.Write( offset );
                     //DebugLog(kvp.Value);
                     writer.WriteString( "c" + kvp.Value, Encoding.UTF8, 0x40 );
-                    // Get the subGUID
-                    ulong subGUID = GetTemplateType(kvp.Value).GetCustomAttribute<NMSAttribute>()?.SubGUID ?? 0;
-                    if (subGUID != 0) {
-                        writer.Write(subGUID);
+                    // Get the NameHash
+                    ulong NameHash = GetTemplateType(kvp.Value).GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                    if (NameHash != 0) {
+                        writer.Write(NameHash);
                     }
                     else {
                         throw new InvalidGUIDException(TemplateFromName(kvp.Value));
@@ -801,9 +801,9 @@ namespace libMBIN
                         writer.BaseStream.Position = data.Item1;
                         writer.Write( pos - data.Item1 );
                         writer.WriteString( "c" + template.GetType().Name, Encoding.UTF8, 0x40 );
-                        ulong subGUID = settings?.SubGUID ?? 0;
-                        if (subGUID != 0) {
-                            writer.Write(subGUID);
+                        ulong NameHash = settings?.NameHash ?? 0;
+                        if (NameHash != 0) {
+                            writer.Write(NameHash);
                         }
                         else {
                             throw new InvalidGUIDException(template);

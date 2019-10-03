@@ -30,7 +30,7 @@ namespace libMBIN {
     }
 
     public class InvalidGUIDException : TemplateException {
-        public InvalidGUIDException(NMSTemplate template) : base($"The template {template.GetType().Name} has no provided SubGUID. Please raise an issue on GitHub!") { }
+        public InvalidGUIDException(NMSTemplate template) : base($"The template {template.GetType().Name} has no provided NameHash. Please raise an issue on GitHub!") { }
     }
 
     public class GUIDMismatchException : TemplateException {

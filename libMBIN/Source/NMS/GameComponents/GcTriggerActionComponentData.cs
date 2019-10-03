@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Alignment = 0x8, Size = 0x38, GUID = 0xEC7F1B8F3E183559, SubGUID = 0x7F5DF5820C8BDB22)]
+	[NMS(Alignment = 0x8, Size = 0x38, GUID = 0xEC7F1B8F3E183559, NameHash = 0x7F5DF5820C8BDB22)]
     public class GcTriggerActionComponentData : NMSTemplate
     {
         /* 0x00 */ public bool HideModel;

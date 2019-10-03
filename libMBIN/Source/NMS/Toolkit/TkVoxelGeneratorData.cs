@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x15D0, GUID = 0x1E376F876EF204A0, SubGUID = 0x7A347325F1154095)]
+	[NMS(Size = 0x15D0, GUID = 0x1E376F876EF204A0, NameHash = 0x7A347325F1154095)]
     public class TkVoxelGeneratorData : NMSTemplate
     {
         /* 0x0000 */ public GcSeed BaseSeed;

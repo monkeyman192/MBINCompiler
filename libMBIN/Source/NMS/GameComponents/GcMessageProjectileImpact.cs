@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x50, GUID = 0x7F7BB33FA42A8A1B, SubGUID = 0x7EBC25FE326CF24B)]
+	[NMS(Size = 0x50, GUID = 0x7F7BB33FA42A8A1B, NameHash = 0x7EBC25FE326CF24B)]
     public class GcMessageProjectileImpact: NMSTemplate
     {
         [NMS(Size = 0x10)]

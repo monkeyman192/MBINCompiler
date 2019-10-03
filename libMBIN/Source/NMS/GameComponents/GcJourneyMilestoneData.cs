@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x70A99E84E5D737DB, SubGUID = 0xC35BDABF76750407)]
+	[NMS(GUID = 0x70A99E84E5D737DB, NameHash = 0xC35BDABF76750407)]
     public class GcJourneyMilestoneData : NMSTemplate
     {
         [NMS(Size = 0x10)]

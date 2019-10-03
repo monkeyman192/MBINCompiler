@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x90, GUID = 0x83D2C4892CEFB3A3, SubGUID = 0x252EDF07EC993BBF)]
+	[NMS(Size = 0x90, GUID = 0x83D2C4892CEFB3A3, NameHash = 0x252EDF07EC993BBF)]
     public class GcYearlyRecurrence : NMSTemplate
     {
         public int RecurrenceMinute;

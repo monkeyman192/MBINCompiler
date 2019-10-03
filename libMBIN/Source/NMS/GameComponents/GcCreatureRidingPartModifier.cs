@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x290, GUID = 0xEAE224822F8AC71F, SubGUID = 0xB9A3955D41C87D67)]
+	[NMS(Size = 0x290, GUID = 0xEAE224822F8AC71F, NameHash = 0xB9A3955D41C87D67)]
     public class GcCreatureRidingPartModifier : NMSTemplate
     {
         [NMS(Size = 0x20)]

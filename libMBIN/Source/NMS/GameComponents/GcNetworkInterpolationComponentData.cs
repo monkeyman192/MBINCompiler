@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x10E4E1659E2ABD9B, SubGUID = 0x1A8AEEF0DF2E3D8A)]
+	[NMS(GUID = 0x10E4E1659E2ABD9B, NameHash = 0x1A8AEEF0DF2E3D8A)]
     public class GcNetworkInterpolationComponentData : NMSTemplate
     {
 		public enum SynchroniseScaleEnum { Never, Once, Always }

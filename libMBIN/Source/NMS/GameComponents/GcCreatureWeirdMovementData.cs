@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x120, GUID = 0x495ADF9A25F53FEF, SubGUID = 0xBE42E310FC94C8E3)]
+	[NMS(Size = 0x120, GUID = 0x495ADF9A25F53FEF, NameHash = 0xBE42E310FC94C8E3)]
     public class GcCreatureWeirdMovementData : NMSTemplate
     {
         public enum MoveModeEnum { Roll, Float }

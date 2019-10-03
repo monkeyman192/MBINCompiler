@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xDE75B6D1912D4ED8, Size = 0x68, SubGUID = 0xB81D78F21EBE37)]
+	[NMS(GUID = 0xDE75B6D1912D4ED8, Size = 0x68, NameHash = 0xB81D78F21EBE37)]
     public class GcAlienSpeechEntry : NMSTemplate
     {
         [NMS(Size = 0x10)]

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x28, GUID = 0x52D0E12CB9FB2FC7, SubGUID = 0xD1183794AF82FF99)]
+	[NMS(Size = 0x28, GUID = 0x52D0E12CB9FB2FC7, NameHash = 0xD1183794AF82FF99)]
     public class GcFrigateInteractionAction : NMSTemplate
     {
 		public enum ActionTypeEnum { Repair, UpdateDamagedComponents, CargoPhoneCall }

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xC9B4A9F531E84B81, SubGUID = 0x2128EDF6E38E9344)]
+	[NMS(GUID = 0xC9B4A9F531E84B81, NameHash = 0x2128EDF6E38E9344)]
     public class GcLandingHelperComponentData : NMSTemplate
     {
         public float ActiveDistanceMin;

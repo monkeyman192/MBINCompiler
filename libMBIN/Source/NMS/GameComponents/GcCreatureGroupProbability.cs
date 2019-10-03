@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x8707DA4682020EC8, SubGUID = 0xF0E840DA05227000)]
+	[NMS(GUID = 0x8707DA4682020EC8, NameHash = 0xF0E840DA05227000)]
     public class GcCreatureGroupProbability : NMSTemplate       // size: 0x18
     {
         [NMS(Size = 0x10)]

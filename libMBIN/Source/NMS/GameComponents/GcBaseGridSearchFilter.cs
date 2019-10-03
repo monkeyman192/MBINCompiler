@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x2C, GUID = 0xBFC0D03E75009117, SubGUID = 0xA4186DCC6FC21A11)]
+	[NMS(Size = 0x2C, GUID = 0xBFC0D03E75009117, NameHash = 0xA4186DCC6FC21A11)]
     public class GcBaseGridSearchFilter : NMSTemplate
     {
         public GcLinkNetworkTypes NetworkType;

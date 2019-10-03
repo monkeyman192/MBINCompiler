@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x90, GUID = 0xFE8C7F93EF8845D4, SubGUID = 0x18CD621AAAB1F01D)]
+	[NMS(Size = 0x90, GUID = 0xFE8C7F93EF8845D4, NameHash = 0x18CD621AAAB1F01D)]
     public class GcTeleportEndpoint : NMSTemplate
     {
         /* 0x00 */ public GcUniverseAddressData UniverseAddress;

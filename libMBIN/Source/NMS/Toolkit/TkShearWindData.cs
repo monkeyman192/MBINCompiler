@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x80, GUID = 0x7411BFD5B5031BED, SubGUID = 0xB9B8ADD8C9FFC2D8)]
+	[NMS(Size = 0x80, GUID = 0x7411BFD5B5031BED, NameHash = 0xB9B8ADD8C9FFC2D8)]
     public class TkShearWindData : NMSTemplate
     {
         [NMS(Size = 0x10)]

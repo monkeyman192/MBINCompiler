@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x75A7492E264F5958, SubGUID = 0x8554BC1ADD990AB6)]
+	[NMS(GUID = 0x75A7492E264F5958, NameHash = 0x8554BC1ADD990AB6)]
     public class GcCreatureHealthData : NMSTemplate
     {
         [NMS(Size = 0x10)]

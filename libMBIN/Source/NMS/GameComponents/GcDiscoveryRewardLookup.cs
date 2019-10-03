@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xF0, GUID = 0x953D6F5550ED77E2, SubGUID = 0xA2280C1D273E7644)]
+	[NMS(Size = 0xF0, GUID = 0x953D6F5550ED77E2, NameHash = 0xA2280C1D273E7644)]
     public class GcDiscoveryRewardLookup : NMSTemplate
     {
         [NMS(Size = 0x10)]

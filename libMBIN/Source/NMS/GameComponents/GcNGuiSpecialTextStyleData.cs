@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x38, GUID = 0x52ECDFFDB4B7B1CD, SubGUID = 0x9C498422BDBE21FE)]
+	[NMS(Size = 0x38, GUID = 0x52ECDFFDB4B7B1CD, NameHash = 0x9C498422BDBE21FE)]
     public class GcNGuiSpecialTextStyleData : NMSTemplate
     {
         [NMS(Size = 0x10)]

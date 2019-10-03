@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x5DDBF9992E6372C6, SubGUID = 0xBE2904B2E88160B7)]
+	[NMS(GUID = 0x5DDBF9992E6372C6, NameHash = 0xBE2904B2E88160B7)]
     public class GcRewardCompleteMission : NMSTemplate
     {
         [NMS(Size = 0x10)]

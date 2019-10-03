@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x9A0, GUID = 0x8F68EE50F618E060, SubGUID = 0x4B63CD1B58DAF5A4)]
+	[NMS(Size = 0x9A0, GUID = 0x8F68EE50F618E060, NameHash = 0x4B63CD1B58DAF5A4)]
     public class GcTradeSettings : NMSTemplate
     {
         public GcTradeData SpaceStation;

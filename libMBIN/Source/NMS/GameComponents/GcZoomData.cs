@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C, GUID = 0x783D27F11E2B1437, SubGUID = 0x2E92A561CA97070C)]
+	[NMS(Size = 0x1C, GUID = 0x783D27F11E2B1437, NameHash = 0x2E92A561CA97070C)]
     public class GcZoomData : NMSTemplate
     {
 		public enum ZoomTypeEnum { None, Far, Mid, Close }

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x180, GUID = 0x4C9F13ECDE3CC8F7, SubGUID = 0x210E5E8D593FFE)]
+	[NMS(Size = 0x180, GUID = 0x4C9F13ECDE3CC8F7, NameHash = 0x210E5E8D593FFE)]
     public class GcMissionSequenceLeaveNexusMP : NMSTemplate
     {
         [NMS(Size = 0x80)]

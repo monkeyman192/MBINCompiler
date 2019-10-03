@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xFD0, GUID = 0x24C45175DCC970E9, SubGUID = 0xC3362B34D26192B6)]
+	[NMS(Size = 0xFD0, GUID = 0x24C45175DCC970E9, NameHash = 0xC3362B34D26192B6)]
     public class GcModelViewCollection : NMSTemplate
     {
         public enum ModelViewEnum { Suit, Weapon, Ship, Vehicle, DiscoveryMain, DiscoveryThumbnail, ToolboxMain,

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x210, GUID = 0x704DAEA1E9D05391, SubGUID = 0xC3AAF93B598F92B7)]
+	[NMS(Size = 0x210, GUID = 0x704DAEA1E9D05391, NameHash = 0xC3AAF93B598F92B7)]
     public class GcGalaxyRenderSetupData : NMSTemplate
     {
         /* 0x000 */ public Colour SunCoreColour;

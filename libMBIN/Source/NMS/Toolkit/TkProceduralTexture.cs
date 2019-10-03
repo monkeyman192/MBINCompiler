@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0x9AEC4B98273F868D, SubGUID = 0x75816D38B6B42FE4)]
+	[NMS(GUID = 0x9AEC4B98273F868D, NameHash = 0x75816D38B6B42FE4)]
     public class TkProceduralTexture : NMSTemplate      // size: 0x1D0
     {
         [NMS(Size = 0x20)]

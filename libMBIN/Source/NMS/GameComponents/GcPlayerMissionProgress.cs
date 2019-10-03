@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x370, GUID = 0xD2740B9C47F05A27, SubGUID = 0x1611798444BC0C13)]
+	[NMS(Size = 0x370, GUID = 0xD2740B9C47F05A27, NameHash = 0x1611798444BC0C13)]
     public class GcPlayerMissionProgress : NMSTemplate
     {
         [NMS(Size = 0x10)]

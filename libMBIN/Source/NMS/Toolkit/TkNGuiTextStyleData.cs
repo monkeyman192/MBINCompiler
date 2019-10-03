@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x60, GUID = 0x8B2E43B87941769B, SubGUID = 0x91FBF976CBE15B5F)]
+	[NMS(Size = 0x60, GUID = 0x8B2E43B87941769B, NameHash = 0x91FBF976CBE15B5F)]
     public class TkNGuiTextStyleData : NMSTemplate
     {
         /* 0x00 */ public Colour Colour;

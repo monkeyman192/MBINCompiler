@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4768, GUID = 0x2AD346B04A54A12F, SubGUID = 0x2A28407EECDFA4CC)]
+	[NMS(Size = 0x4768, GUID = 0x2AD346B04A54A12F, NameHash = 0x2A28407EECDFA4CC)]
     public class GcRealityIconTable : NMSTemplate
     {
         [NMS(Size = 0x6, EnumType = typeof(GcPlayerHazardType.HazardEnum))]

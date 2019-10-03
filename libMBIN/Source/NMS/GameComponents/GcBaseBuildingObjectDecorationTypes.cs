@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x48FADD6F70304AF4, SubGUID = 0xCBF38A24719D032E)]
+	[NMS(GUID = 0x48FADD6F70304AF4, NameHash = 0xCBF38A24719D032E)]
     public class GcBaseBuildingObjectDecorationTypes : NMSTemplate
     {
 		public enum BaseBuildingDecorationTypeEnum { Normal, SurfaceNormal, Ceiling, Terrain, Substance, Plant, BuildingSurfaceNormal }

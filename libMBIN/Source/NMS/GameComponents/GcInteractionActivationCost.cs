@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Alignment = 0x8, Size = 0x38, GUID = 0x21E3CCED5C322A2A, SubGUID = 0xDF5512FA05691ED2)]
+	[NMS(Alignment = 0x8, Size = 0x38, GUID = 0x21E3CCED5C322A2A, NameHash = 0xDF5512FA05691ED2)]
     public class GcInteractionActivationCost : NMSTemplate
     {
         [NMS(Size = 0x10)]

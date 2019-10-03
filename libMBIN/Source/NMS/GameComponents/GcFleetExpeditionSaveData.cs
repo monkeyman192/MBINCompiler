@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1F0, GUID = 0x4CB3ED5D550DACB8, SubGUID = 0x1CD96DF6BD8E239C)]
+	[NMS(Size = 0x1F0, GUID = 0x4CB3ED5D550DACB8, NameHash = 0x1CD96DF6BD8E239C)]
     public class GcFleetExpeditionSaveData : NMSTemplate
     {
         /* 0x000 */ public GcSeed ResourceSeed;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xECA3BFB616CCAB0, SubGUID = 0x49D48E5A22491956)]
+	[NMS(GUID = 0xECA3BFB616CCAB0, NameHash = 0x49D48E5A22491956)]
     public class GcFactionSelectOptions : NMSTemplate
     {
 		public enum FactionOptionEnum { DataDefined, CurrentMission, CurrentSystem }

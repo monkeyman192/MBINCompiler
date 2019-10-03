@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x5F60C335588B8F1E, SubGUID = 0x967BB69D82846BE5)]
+	[NMS(GUID = 0x5F60C335588B8F1E, NameHash = 0x967BB69D82846BE5)]
     public class GcGalaxyVoxelAttributesData : NMSTemplate
     {
         /* 0x00 */ public bool InsideGoalGap;

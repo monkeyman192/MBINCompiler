@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0xB55476A1D9E0E509, SubGUID = 0xCB25F378CA730AFC)]
+	[NMS(GUID = 0xB55476A1D9E0E509, NameHash = 0xCB25F378CA730AFC)]
     public class TkHeavyAirData : NMSTemplate
     {
         [NMS(Size = 0x80)]

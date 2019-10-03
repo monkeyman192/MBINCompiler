@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x20, GUID = 0x56D2CFD1D4DB01F3, SubGUID = 0x8687A0CA8457FC32)]
+	[NMS(Size = 0x20, GUID = 0x56D2CFD1D4DB01F3, NameHash = 0x8687A0CA8457FC32)]
     public class TkVertexElement : NMSTemplate
     {
         /* 0x00 */ public int SemanticID;

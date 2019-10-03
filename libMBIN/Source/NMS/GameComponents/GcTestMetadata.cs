@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xED9D01EDEE998FDB, Size = 0x6E0, SubGUID = 0xCE965FAFD6BBF99E)]
+	[NMS(GUID = 0xED9D01EDEE998FDB, Size = 0x6E0, NameHash = 0xCE965FAFD6BBF99E)]
     public class GcTestMetadata : NMSTemplate
     {
         public bool TestBool;

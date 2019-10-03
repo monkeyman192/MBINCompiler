@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x80, Alignment = 0x8, GUID = 0xF6888349F90C44AD, SubGUID = 0x387AC5FC8E642A15)]
+	[NMS(Size = 0x80, Alignment = 0x8, GUID = 0xF6888349F90C44AD, NameHash = 0x387AC5FC8E642A15)]
     public class GcShootableComponentData : NMSTemplate
     {
         /* 0x00 */ public int Health;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x190, Alignment = 0x10, GUID = 0x70F15FEDCAE3687B, SubGUID = 0x20F7F01AF38D19B2)]
+	[NMS(Size = 0x190, Alignment = 0x10, GUID = 0x70F15FEDCAE3687B, NameHash = 0x20F7F01AF38D19B2)]
     public class TkImGuiSettings : NMSTemplate
     {
         public Colour BackgroundColour;

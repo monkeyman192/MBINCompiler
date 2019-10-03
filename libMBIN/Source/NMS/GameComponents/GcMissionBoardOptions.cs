@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x80, GUID = 0xD57CD8F90F903FA9, SubGUID = 0xDD272E15749CCDF5)]
+	[NMS(Size = 0x80, GUID = 0xD57CD8F90F903FA9, NameHash = 0xDD272E15749CCDF5)]
     public class GcMissionBoardOptions : NMSTemplate
     {
         /* 0x00 */ public GcMissionType Type;

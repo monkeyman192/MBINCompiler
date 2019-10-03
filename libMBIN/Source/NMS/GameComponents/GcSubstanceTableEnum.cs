@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x17816994DE138E28, SubGUID = 0x2A7FC25DED2C3BE5)]
+    [NMS(GUID = 0x17816994DE138E28, NameHash = 0x2A7FC25DED2C3BE5)]
     public class GcSubstanceTableEnum : NMSTemplate
     {
         // 0x48 Entries

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xCB39899C49E9126, SubGUID = 0x8E8EC2C807363E97)]
+	[NMS(GUID = 0xCB39899C49E9126, NameHash = 0x8E8EC2C807363E97)]
     public class GcStatusMessageMissionMarkup : NMSTemplate
     {
         // 0x10 entries

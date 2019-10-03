@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10, GUID = 0xDE0E4B894E24695A, SubGUID = 0xFC703DAD77E37E30)]
+	[NMS(Size = 0x10, GUID = 0xDE0E4B894E24695A, NameHash = 0xFC703DAD77E37E30)]
     public class GcBuildingDensity : NMSTemplate
     {
         public float BuildingSpacing;

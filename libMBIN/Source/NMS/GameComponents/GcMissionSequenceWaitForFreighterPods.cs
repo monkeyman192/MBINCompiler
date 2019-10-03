@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x1B655E6ECEF95A07, SubGUID = 0x779C608FD9761375)]
+	[NMS(GUID = 0x1B655E6ECEF95A07, NameHash = 0x779C608FD9761375)]
     public class GcMissionSequenceWaitForFreighterPods : NMSTemplate        // size: 0x104
     {
         [NMS(Size = 0x80)]

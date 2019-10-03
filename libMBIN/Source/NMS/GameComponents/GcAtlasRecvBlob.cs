@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0xA7143BEA2E345BB0, SubGUID = 0xBC92C4FC7F1625E9)]
+	[NMS(Size = 0x40, GUID = 0xA7143BEA2E345BB0, NameHash = 0xBC92C4FC7F1625E9)]
     public class GcAtlasRecvBlob : NMSTemplate
     {
         public ulong ClientUserdata;

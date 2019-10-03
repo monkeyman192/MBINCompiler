@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x2C, GUID = 0x267CDC1694674427, SubGUID = 0xF13F97A441A8794A)]
+	[NMS(Size = 0x2C, GUID = 0x267CDC1694674427, NameHash = 0xF13F97A441A8794A)]
     public class GcAudioPulseDemo : NMSTemplate
     {
         public float MixRateSeconds;

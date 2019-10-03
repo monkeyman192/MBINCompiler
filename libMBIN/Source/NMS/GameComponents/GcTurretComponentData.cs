@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xAEC2575916A4ACFE, SubGUID = 0x88530A815E5B1B46)]
+	[NMS(Size = 0x58, GUID = 0xAEC2575916A4ACFE, NameHash = 0x88530A815E5B1B46)]
     public class GcTurretComponentData : NMSTemplate
     {
 		public enum GunTypeEnum { Laser, Projectile, Missile }

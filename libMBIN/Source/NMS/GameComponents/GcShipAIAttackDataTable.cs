@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x600CAC2FB5629419, SubGUID = 0xC501980088063B)]
+	[NMS(GUID = 0x600CAC2FB5629419, NameHash = 0xC501980088063B)]
     public class GcShipAIAttackDataTable : NMSTemplate       // size: 0x60
     {
         /* 0x00 */ public List<GcShipAICombatDefinition> Definitions;

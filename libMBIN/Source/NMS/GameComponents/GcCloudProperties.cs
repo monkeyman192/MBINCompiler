@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xF0, GUID = 0x61834312DCADA196, SubGUID = 0x21C58A0DDEF4EC87)]
+	[NMS(Size = 0xF0, GUID = 0x61834312DCADA196, NameHash = 0x21C58A0DDEF4EC87)]
     public class GcCloudProperties : NMSTemplate
     {
         /* 0x00 */ public Vector2f CoverageOffset;

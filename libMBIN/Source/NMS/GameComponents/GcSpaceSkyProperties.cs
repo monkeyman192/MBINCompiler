@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xC2EBE8CA8AF40DB1, SubGUID = 0xCB4FC853C028D8AE)]
+	[NMS(GUID = 0xC2EBE8CA8AF40DB1, NameHash = 0xCB4FC853C028D8AE)]
     public class GcSpaceSkyProperties : NMSTemplate         // size: 0xA0
     {
           public GcPlanetWeatherColourIndex ColourIndex;        // add + 0x10 to all the next values

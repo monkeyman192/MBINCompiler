@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0xAAC94F73173CF13F, SubGUID = 0x89F774448E48DD4A)]
+	[NMS(GUID = 0xAAC94F73173CF13F, NameHash = 0x89F774448E48DD4A)]
     public class TkLSystemRuleTemplate : NMSTemplate
     {
         [NMS(Size = 0x20)]

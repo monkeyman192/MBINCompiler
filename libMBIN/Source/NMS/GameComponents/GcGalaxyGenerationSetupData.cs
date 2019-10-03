@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x180, GUID = 0x139125167CF73FEB, SubGUID = 0x74E6E445263E30C1)]
+	[NMS(Size = 0x180, GUID = 0x139125167CF73FEB, NameHash = 0x74E6E445263E30C1)]
     public class GcGalaxyGenerationSetupData : NMSTemplate
     {
         /* 0x00 */ public float SpiralFormChance;

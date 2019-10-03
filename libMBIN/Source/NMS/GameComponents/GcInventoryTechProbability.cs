@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x6CAEF8DD21A894EA, SubGUID = 0x71B8CFD20DB7A5E5)]
+	[NMS(GUID = 0x6CAEF8DD21A894EA, NameHash = 0x71B8CFD20DB7A5E5)]
     public class GcInventoryTechProbability : NMSTemplate
     {
         [NMS(Size = 0x10)]

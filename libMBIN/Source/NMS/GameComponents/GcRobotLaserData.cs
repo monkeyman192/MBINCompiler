@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xF2A6C64121B1D193, SubGUID = 0xAAC69095D4C233F5)]
+	[NMS(GUID = 0xF2A6C64121B1D193, NameHash = 0xAAC69095D4C233F5)]
     public class GcRobotLaserData : NMSTemplate
     {
         [NMS(Size = 0x10)]

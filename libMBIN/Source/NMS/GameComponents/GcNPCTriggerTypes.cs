@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xD3740D8DFE14590C, SubGUID = 0xED4A21D9F7E3058B)]
+	[NMS(GUID = 0xD3740D8DFE14590C, NameHash = 0xED4A21D9F7E3058B)]
     public class GcNPCTriggerTypes : NMSTemplate
     {
         // 0xF entries

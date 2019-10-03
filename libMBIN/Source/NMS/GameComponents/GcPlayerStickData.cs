@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C, GUID = 0x2CE40353E3CAA625, SubGUID = 0x3375DA42DA55F3B3)]
+	[NMS(Size = 0x1C, GUID = 0x2CE40353E3CAA625, NameHash = 0x3375DA42DA55F3B3)]
     public class GcPlayerStickData : NMSTemplate
     {
         /* 0x000 */ public float AcceleratorStickPoint;     // 3F733333h

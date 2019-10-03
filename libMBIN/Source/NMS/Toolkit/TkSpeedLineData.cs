@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0x5B2795E2FEF75E70, SubGUID = 0xEC9FF9AD5EDADEFF)]
+	[NMS(GUID = 0x5B2795E2FEF75E70, NameHash = 0xEC9FF9AD5EDADEFF)]
     public class TkSpeedLineData : NMSTemplate
     {
         [NMS(Size = 0x80)]

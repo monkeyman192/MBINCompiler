@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x6D0C42F88531E67A, SubGUID = 0x92D4879C17049BD7)]
+	[NMS(GUID = 0x6D0C42F88531E67A, NameHash = 0x92D4879C17049BD7)]
     public class GcAudioWwiseRTPCs : NMSTemplate
     {
         // 0x50 entries

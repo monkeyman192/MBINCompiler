@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x58, GUID = 0x3CD7D2192958BA6C, SubGUID = 0x64CA3907BFF31DA, alignRelative = false)]
+	[NMS(Size = 0x58, GUID = 0x3CD7D2192958BA6C, NameHash = 0x64CA3907BFF31DA, alignRelative = false)]
     public class TkAnimMetadata : NMSTemplate
     {
         /* 0x00 */ public int FrameCount;

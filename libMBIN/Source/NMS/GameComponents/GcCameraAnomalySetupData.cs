@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xF9C90D4C466ED78B, SubGUID = 0xFB02F29777CB9D8B)]
+	[NMS(GUID = 0xF9C90D4C466ED78B, NameHash = 0xFB02F29777CB9D8B)]
     public class GcCameraAnomalySetupData : NMSTemplate     // size: 0x40
     {
         /* 0x00 */ public Vector4f CameraAt;

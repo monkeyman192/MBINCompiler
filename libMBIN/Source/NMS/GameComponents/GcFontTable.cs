@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xB9913A609DA490D3, SubGUID = 0xD77829A90743F12E)]
+	[NMS(GUID = 0xB9913A609DA490D3, NameHash = 0xD77829A90743F12E)]
 	public class GcFontTable : NMSTemplate
 	{
 		public GcFontData Table1;

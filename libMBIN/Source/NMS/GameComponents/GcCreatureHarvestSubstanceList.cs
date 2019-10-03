@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xA8, GUID = 0x6CC1A1955A4F2E63, SubGUID = 0xC8FD5EE28A99CF03)]
+	[NMS(Size = 0xA8, GUID = 0x6CC1A1955A4F2E63, NameHash = 0xC8FD5EE28A99CF03)]
     public class GcCreatureHarvestSubstanceList : NMSTemplate
     {
         [NMS(Size = 0x10)]

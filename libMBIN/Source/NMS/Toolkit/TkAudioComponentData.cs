@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xA8, GUID = 0x1345863FBC0832FF, SubGUID = 0x43843485E8F56932)]
+	[NMS(Size = 0xA8, GUID = 0x1345863FBC0832FF, NameHash = 0x43843485E8F56932)]
     public class TkAudioComponentData : NMSTemplate
     {
         [NMS(Size = 0x80)]

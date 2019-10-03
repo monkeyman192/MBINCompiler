@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0x22BF0685F597A3E9, SubGUID = 0x6A57676B42321253)]
+	[NMS(GUID = 0x22BF0685F597A3E9, NameHash = 0x6A57676B42321253)]
     public class TkPaletteTexture : NMSTemplate
     {
 		public enum PaletteEnum { Grass, Plant, Leaf, Wood, Rock, Stone, Crystal, Sand, Dirt, Metal, Paint, Plastic, Fur, Scale, Feather, Water, Cloud,

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0x67C05DCF8F3F183E, SubGUID = 0x87C83AD7D0C1D117)]
+	[NMS(Size = 0x58, GUID = 0x67C05DCF8F3F183E, NameHash = 0x87C83AD7D0C1D117)]
     public class GcCreatureSwarmData : NMSTemplate
     {
         /* 0x00 */ public int MinCount;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x70, GUID = 0xB911CEB4CA3E7843, SubGUID = 0xEC73620F98D708BF)]
+	[NMS(Size = 0x70, GUID = 0xB911CEB4CA3E7843, NameHash = 0xEC73620F98D708BF)]
     public class TkAnimAnimNode : NMSTemplate
     {
         [NMS(Size = 0x10)]

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xA385A1C7FA49076F, SubGUID = 0x39BE669FF8F8CD9)]
+	[NMS(GUID = 0xA385A1C7FA49076F, NameHash = 0x39BE669FF8F8CD9)]
     public class GcSolarSystemLocator : NMSTemplate // 0x60 bytes
     {
         [NMS(Size = 0x20)]

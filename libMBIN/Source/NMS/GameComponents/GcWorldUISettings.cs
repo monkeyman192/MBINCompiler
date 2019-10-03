@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0xE49D6EF39D256895, SubGUID = 0x1805828080FC646E)]
+	[NMS(Size = 0x30, GUID = 0xE49D6EF39D256895, NameHash = 0x1805828080FC646E)]
     public class GcWorldUISettings : NMSTemplate
     {
         public float UIWorldQuadOffset;

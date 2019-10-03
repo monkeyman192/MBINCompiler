@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0x8978C4E36935D3B7, SubGUID = 0x5289598B4907DC8E)]
+	[NMS(Size = 0x40, GUID = 0x8978C4E36935D3B7, NameHash = 0x5289598B4907DC8E)]
     public class GcNPCComponentData : NMSTemplate
     {
         /* 0x00 */ public GcAlienRace AlienRace;

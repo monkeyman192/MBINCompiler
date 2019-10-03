@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x62C7CA383FB44A6C, SubGUID = 0x7DF5AD147C5460A0)]
+	[NMS(GUID = 0x62C7CA383FB44A6C, NameHash = 0x7DF5AD147C5460A0)]
     public class GcExperienceTimers : NMSTemplate      // size: 0x20 // probably used in a global
     {
 	  /* 0x00 */ public int HighChance;         // 0Ah

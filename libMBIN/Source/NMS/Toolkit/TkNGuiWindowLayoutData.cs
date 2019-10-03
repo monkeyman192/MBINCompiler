@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x10A4, GUID = 0x72F5B7416AB51616, SubGUID = 0x9650958F04D49C46)]
+	[NMS(Size = 0x10A4, GUID = 0x72F5B7416AB51616, NameHash = 0x9650958F04D49C46)]
     public class TkNGuiWindowLayoutData : NMSTemplate
     {
         [NMS(Size = 0x80)]

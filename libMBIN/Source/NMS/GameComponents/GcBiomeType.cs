@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xE38558DF9FE4C519, SubGUID = 0x5CEE315FE3457560)]
+	[NMS(GUID = 0xE38558DF9FE4C519, NameHash = 0x5CEE315FE3457560)]
     public class GcBiomeType : NMSTemplate
     {
         // 0xD entries

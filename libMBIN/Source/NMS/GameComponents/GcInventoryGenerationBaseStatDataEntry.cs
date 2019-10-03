@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x4A53B69223F74C8F, SubGUID = 0xBE33B4E320477672)]
+	[NMS(GUID = 0x4A53B69223F74C8F, NameHash = 0xBE33B4E320477672)]
     public class GcInventoryGenerationBaseStatDataEntry : NMSTemplate     // size: 0x20
     {
         [NMS(Size = 0x10)]

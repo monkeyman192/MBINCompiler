@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x337F45FFED97901C, SubGUID = 0x741554C15123D097)]
+	[NMS(GUID = 0x337F45FFED97901C, NameHash = 0x741554C15123D097)]
     public class GcCreatureFullBodyIKComponentData : NMSTemplate        // size: 0x18
     {
         public List<GcCreatureIkData> JointData;

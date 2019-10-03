@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x198, GUID = 0xC636C30874D1207C, SubGUID = 0x8DDF831D46F0A7E)]
+	[NMS(Size = 0x198, GUID = 0xC636C30874D1207C, NameHash = 0x8DDF831D46F0A7E)]
     public class TkGraphicsSettings : NMSTemplate
     {
         /* 0x00 */ public int Version;

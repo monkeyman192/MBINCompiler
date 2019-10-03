@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x60, GUID = 0xA681CB4CFB4D2B6B, SubGUID = 0x88C0028CC5F47D1D)]
+	[NMS(Size = 0x60, GUID = 0xA681CB4CFB4D2B6B, NameHash = 0x88C0028CC5F47D1D)]
     public class GcSpaceshipTravelData : NMSTemplate
     {
         [NMS(Size = 0x10)]

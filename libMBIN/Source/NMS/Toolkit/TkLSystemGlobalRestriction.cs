@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(GUID = 0x4C98B666C4454E5A, SubGUID = 0x26AACC9ACEE360C5)]
+	[NMS(GUID = 0x4C98B666C4454E5A, NameHash = 0x26AACC9ACEE360C5)]
     public class TkLSystemGlobalRestriction : NMSTemplate
     {
         [NMS(Size = 0x20)]

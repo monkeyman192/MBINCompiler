@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x240, Alignment = 0x10, GUID = 0xFDFD8E69BF99E55B, SubGUID = 0x479CFCB871ABBE0)]
+	[NMS(Size = 0x240, Alignment = 0x10, GUID = 0xFDFD8E69BF99E55B, NameHash = 0x479CFCB871ABBE0)]
     public class GcMaintenanceComponentData : NMSTemplate
     {
         /* 0x000 */ public List<GcMaintenanceElement> PreInstalledTech;

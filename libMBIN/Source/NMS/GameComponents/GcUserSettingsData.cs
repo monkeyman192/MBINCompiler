@@ -4,7 +4,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x3908, GUID = 0xA5978ADBA3DA1EF6, SubGUID = 0x3A50D683FD1CF4BF)]
+	[NMS(Size = 0x3908, GUID = 0xA5978ADBA3DA1EF6, NameHash = 0x3A50D683FD1CF4BF)]
     public class GcUserSettingsData : NMSTemplate
     {
         /* 0x0000 */ public bool InvertLookControls;

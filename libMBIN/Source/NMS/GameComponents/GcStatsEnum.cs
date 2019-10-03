@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xF15A2E173DF0EFCA, SubGUID = 0xACDE6E8DA19EC2E2)]
+	[NMS(GUID = 0xF15A2E173DF0EFCA, NameHash = 0xACDE6E8DA19EC2E2)]
     public class GcStatsEnum : NMSTemplate
     {
         // 0xB entries

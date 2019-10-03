@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x6971D929A87B9FEA, SubGUID = 0xF848BA9A5DFC4197)]
+	[NMS(GUID = 0x6971D929A87B9FEA, NameHash = 0xF848BA9A5DFC4197)]
     public class GcCreatureTypes : NMSTemplate
     {
         // 0x1F entries

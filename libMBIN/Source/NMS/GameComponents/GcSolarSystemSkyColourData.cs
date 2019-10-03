@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x59EFF0A74DA063C5, SubGUID = 0x2C473DC1DB095F44)]
+	[NMS(GUID = 0x59EFF0A74DA063C5, NameHash = 0x2C473DC1DB095F44)]
     public class GcSolarSystemSkyColourData : NMSTemplate       // size 0xD0
     {
 	  /* 0x00 */ public Colour TopColour;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0x31C15BE6F5E4D43D, SubGUID = 0x59A43238181BB69F)]
+	[NMS(Size = 0x58, GUID = 0x31C15BE6F5E4D43D, NameHash = 0x59A43238181BB69F)]
     public class GcBuildingDefinitionData : NMSTemplate
     {
         /* 0x00 */ public TkNoiseFlattenOptions FlattenType;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x78, GUID = 0x1B8A8FEEDBCC6340, SubGUID = 0xB08E12209E446AC4)]
+	[NMS(Size = 0x78, GUID = 0x1B8A8FEEDBCC6340, NameHash = 0xB08E12209E446AC4)]
     public class TkAnim2dBlendNode : NMSTemplate
     {
         [NMS(Size = 0x10)]

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x552F89471BF9BDE2, SubGUID = 0x51606DB6648C8792)]
+	[NMS(GUID = 0x552F89471BF9BDE2, NameHash = 0x51606DB6648C8792)]
     public class GcBuildingClassification : NMSTemplate
     {
         // 0x23 entries

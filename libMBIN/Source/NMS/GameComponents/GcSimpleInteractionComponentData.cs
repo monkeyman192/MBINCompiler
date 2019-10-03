@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Alignment = 0x8, Size = 0x198, GUID = 0x21D2395E8B4015, SubGUID = 0xEAE36C86E1479AF5)]
+	[NMS(Alignment = 0x8, Size = 0x198, GUID = 0x21D2395E8B4015, NameHash = 0xEAE36C86E1479AF5)]
     public class GcSimpleInteractionComponentData : NMSTemplate
     {
         // 0x1E entries

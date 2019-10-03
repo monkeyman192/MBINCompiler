@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x98, GUID = 0xCD251BC3E44C0AB8, SubGUID = 0x4686D0FAC0A1B9EC)]
+	[NMS(Size = 0x98, GUID = 0xCD251BC3E44C0AB8, NameHash = 0x4686D0FAC0A1B9EC)]
     public class GcTerrainEditing : NMSTemplate
     {
         /* 0x0 */ public float EditPlaneMaxAdditiveOffsetFactor;

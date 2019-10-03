@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x6F0, GUID = 0xE9E887471F44735A, SubGUID = 0x32822FA2FD268A65)]
+	[NMS(Size = 0x6F0, GUID = 0xE9E887471F44735A, NameHash = 0x32822FA2FD268A65)]
     public class GcInventoryTable : NMSTemplate
     {
         /* 0x000 */ public List<GcInventoryTableEntry> Table;

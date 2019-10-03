@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C, GUID = 0xBFBA97AD59322690, SubGUID = 0x9118F575B23083D9)]
+	[NMS(Size = 0x1C, GUID = 0xBFBA97AD59322690, NameHash = 0x9118F575B23083D9)]
     public class GcInventoryValueData : NMSTemplate     // possibly in global?
     {
         /* 0x000 */ public float BaseMinValue;          // 41F00000h

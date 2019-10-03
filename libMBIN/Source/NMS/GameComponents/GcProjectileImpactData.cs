@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x9D38BEA536F71877, SubGUID = 0x2F2FAFA4A7023B71)]
+	[NMS(GUID = 0x9D38BEA536F71877, NameHash = 0x2F2FAFA4A7023B71)]
     public class GcProjectileImpactData : NMSTemplate       // size: 0x18
     {
         [NMS(Size = 0x10)]

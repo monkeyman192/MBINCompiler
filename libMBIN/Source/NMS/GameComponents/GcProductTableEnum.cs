@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x626D0C0E0D24307A, SubGUID = 0xBD7214A930BFF3F2)]
+    [NMS(GUID = 0x626D0C0E0D24307A, NameHash = 0xBD7214A930BFF3F2)]
     public class GcProductTableEnum : NMSTemplate
     {
         // 0x3BE entries

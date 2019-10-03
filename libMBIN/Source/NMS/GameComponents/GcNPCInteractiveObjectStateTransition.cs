@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x50, GUID = 0xB1964577B6115829, SubGUID = 0x5CE318610D9BD8D9)]
+	[NMS(Size = 0x50, GUID = 0xB1964577B6115829, NameHash = 0x5CE318610D9BD8D9)]
     public class GcNPCInteractiveObjectStateTransition : NMSTemplate
     {
         [NMS(Size = 0x10)]

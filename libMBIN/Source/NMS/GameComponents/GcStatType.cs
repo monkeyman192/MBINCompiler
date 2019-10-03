@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xC5B5E7E09FF7A701, SubGUID = 0xC9590B318F3C4D2)]
+	[NMS(GUID = 0xC5B5E7E09FF7A701, NameHash = 0xC9590B318F3C4D2)]
     public class GcStatType : NMSTemplate // not the same as GcStatsTypes
     {
 		public enum StatTypeEnum { Int, Float, AvgRate }

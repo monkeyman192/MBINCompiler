@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xD8, GUID = 0x2E403B18FE44F752, SubGUID = 0x3FE862FE8570BE69)]
+	[NMS(Size = 0xD8, GUID = 0x2E403B18FE44F752, NameHash = 0x3FE862FE8570BE69)]
     public class GcAlienPuzzleOption : NMSTemplate
     {
         [NMS(Size = 0x20)]

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0xCED0783DBCA95F60, SubGUID = 0x5AF4540465F27753)]
+	[NMS(GUID = 0xCED0783DBCA95F60, NameHash = 0x5AF4540465F27753)]
     public class GcSubstanceSecondaryLookup : NMSTemplate     // size: 0x20
     {
         [NMS(Size = 0x10)]

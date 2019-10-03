@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x4DDDBDFBD1267CE7, SubGUID = 0x398860441F320FF2)]
+	[NMS(GUID = 0x4DDDBDFBD1267CE7, NameHash = 0x398860441F320FF2)]
     public class GcCreatureBaitComponentData : NMSTemplate
     {
         public List<NMSString0x10> AttractList;

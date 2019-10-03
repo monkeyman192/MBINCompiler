@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0xC6A8297C630A22AF, SubGUID = 0x916C4DD873AEFE6B)]
+	[NMS(Size = 0x30, GUID = 0xC6A8297C630A22AF, NameHash = 0x916C4DD873AEFE6B)]
     public class GcGalaxyRenderAnostreakData : NMSTemplate
     {
         /* 0x00 */ public Colour OuterColour;

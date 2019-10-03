@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x1C154290758F1D41, SubGUID = 0x5384022399CAF09)]
+	[NMS(GUID = 0x1C154290758F1D41, NameHash = 0x5384022399CAF09)]
     public class GcPerformanceFlyby : NMSTemplate       // size: 0x18       in global??
     {
         public float Length;            // 44FA0000h

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10C, GUID = 0x257867F16F9C8114, SubGUID = 0xB2C5F1A083F1473A)]
+	[NMS(Size = 0x10C, GUID = 0x257867F16F9C8114, NameHash = 0xB2C5F1A083F1473A)]
     public class GcNodeActivationAction : NMSTemplate
     {
 		public enum NodeActiveStateEnum { Activate, Deactivate, Toggle, Add, Remove, RemoveChildren }

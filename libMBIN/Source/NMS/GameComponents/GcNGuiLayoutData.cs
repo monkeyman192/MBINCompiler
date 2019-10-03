@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0x5D064E6D46BE6643, SubGUID = 0xCEE71E03D7326B71)]
+	[NMS(Size = 0x40, GUID = 0x5D064E6D46BE6643, NameHash = 0xCEE71E03D7326B71)]
     public class GcNGuiLayoutData : NMSTemplate
     {
         /* 0x00 */ public float PositionX;

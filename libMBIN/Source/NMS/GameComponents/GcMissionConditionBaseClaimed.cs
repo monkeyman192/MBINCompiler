@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10, GUID = 0x8BDA101DC381ABED, SubGUID = 0xD0B8CB5F60C6775)]
+	[NMS(Size = 0x10, GUID = 0x8BDA101DC381ABED, NameHash = 0xD0B8CB5F60C6775)]
     public class GcMissionConditionBaseClaimed : NMSTemplate
     {
         /* 0x00 */ public bool Claimed;

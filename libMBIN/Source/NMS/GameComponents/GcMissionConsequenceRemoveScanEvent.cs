@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x8260892F03FDBFC0, SubGUID = 0x66D8F2741332E444)]
+	[NMS(GUID = 0x8260892F03FDBFC0, NameHash = 0x66D8F2741332E444)]
     public class GcMissionConsequenceRemoveScanEvent : NMSTemplate
     {
         [NMS(Size = 0x20)]

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x90, GUID = 0xD4D7EAB206D91BBA, SubGUID = 0x53636362EAB448BF)]
+	[NMS(Size = 0x90, GUID = 0xD4D7EAB206D91BBA, NameHash = 0x53636362EAB448BF)]
     public class GcBaseSearchFilter : NMSTemplate
     {
         /* 0x00 */ public bool OnCurrentPlanet;

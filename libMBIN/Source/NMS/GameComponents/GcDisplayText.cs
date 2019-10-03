@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x304, GUID = 0x959970D1E4FDF510, SubGUID = 0x39E3C3DE16466069)]
+	[NMS(Size = 0x304, GUID = 0x959970D1E4FDF510, NameHash = 0x39E3C3DE16466069)]
     public class GcDisplayText : NMSTemplate
     {
 		public enum HUDTextDisplayTypeEnum { Full, Compact, EyeLevel, Prompt, Tooltip }

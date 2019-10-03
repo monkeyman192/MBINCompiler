@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Alignment = 0x8, Size = 0x80, GUID = 0xB63395DB77577AEC, SubGUID = 0xC58660803669C46F)]
+	[NMS(Alignment = 0x8, Size = 0x80, GUID = 0xB63395DB77577AEC, NameHash = 0xC58660803669C46F)]
     public class TkPhysicsComponentData : NMSTemplate
     {
         /* 0x00 */ public TkPhysicsData Data;
