@@ -847,10 +847,20 @@ namespace libMBIN
 
                     break;
                 case "Single":
-                    valueString = ((float) value).ToString( "G9", System.Globalization.CultureInfo.InvariantCulture);
+                    // prefer the default, short-form string format
+                    valueString = ((float) value).ToString( System.Globalization.CultureInfo.InvariantCulture);
+                    if ( float.Parse( valueString ) != (float) value ) { // the default string format may not be accurate
+                        // if it's not accurate enough, then use the full-precision format
+                        valueString = ((float) value).ToString( "G9", System.Globalization.CultureInfo.InvariantCulture );
+                    }
                     break;
                 case "Double":
-                    valueString = ((double) value).ToString( "G17", System.Globalization.CultureInfo.InvariantCulture);
+                    // prefer the default, short-form string format
+                    valueString = ((double) value).ToString( System.Globalization.CultureInfo.InvariantCulture);
+                    if ( double.Parse( valueString ) != (double) value ) { // the default string format may not be accurate
+                        // if it's not accurate enough, then use the full-precision format
+                        valueString = ((double) value).ToString( "G17", System.Globalization.CultureInfo.InvariantCulture );
+                    }
                     break;
                 case "Byte[]":
                     valueString = value == null ? null : Convert.ToBase64String((byte[])value);
