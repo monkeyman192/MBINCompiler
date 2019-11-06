@@ -51,20 +51,17 @@ namespace MBINCompiler {
 
         public static int ShowSuccess(ErrorCode code = ErrorCode.Success)
         {
-            if (Console.IsOutputRedirected) return (int)code;
-            using (var forceConsole = new ForceConsoleOutput())
-            {
-                Console.Out.Write("MBINCompiler registered to the system path.");
-            }
+            if ( Console.IsOutputRedirected ) return (int) code;
             WaitForKeypress();
-            return (int)code;
+            return (int) code;
         }
 
         private static long lastPosition = 0;
 
         public static int ShowException( Exception e, bool wait=true ) {
             string msg = ( e.GetType() == typeof( CompilerException ) ) ? e.InnerException?.Message : null;
-            if ( Logger.LogStream.BaseStream.Position != lastPosition ) Logger.LogMessage( "" ); // new line, log only
+
+            if ( (Logger.LogStream?.BaseStream.Position ?? 0) != lastPosition ) Logger.LogMessage( "" ); // new line, log only
             ShowError( $"[{e.GetType().Name}]: {msg ?? e.Message}", wait: false );
             using ( var indent = new Logger.IndentScope() ) {
                 var b = e;
@@ -89,7 +86,7 @@ namespace MBINCompiler {
 
                 Logger.LogMessage( (e is System.IO.EndOfStreamException) ? "" : $"\n{b.StackTrace}\n" );
             }
-            lastPosition = Logger.LogStream.BaseStream.Position;
+            lastPosition = (Logger.LogStream?.BaseStream.Position ?? 0);
             WaitForKeypress( wait );
             return (int) ErrorCode.Unknown;
         }
@@ -127,7 +124,7 @@ namespace MBINCompiler {
         /// <returns>ErrorCode.CommandLine</returns>
         public static int ShowCommandLineError( string msg ) => ShowHelp( (ErrorCode) ShowError( msg, ErrorCode.CommandLine, false ) );
 
-        public static int ShowInvalidCommandLineArg( string arg ) => ShowCommandLineError( $"Invalid command line argument: {arg}" );
+        public static int ShowInvalidCommandLineArg( string arg ) => ShowCommandLineError( $"\nInvalid command line argument: {arg}\n" );
         public static int ShowInvalidCommandLineArg( CommandLineParser options ) => ShowInvalidCommandLineArg( options.RemainingArgs[0] );
 
         /// <summary>
