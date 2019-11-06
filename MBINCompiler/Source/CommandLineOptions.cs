@@ -136,15 +136,17 @@ namespace MBINCompiler
             new Option { longName = "no-threads", isHidden = true, description = "Disable multi-threading." },
         };
 
+        public static readonly List<Option> OPTIONS_REGISTER = new List<Option> {
+        };
+
+        public static readonly List<Option> OPTIONS_UNREGISTER = new List<Option> {
+        };
+
         public static readonly List<Option> OPTIONS_LIST = new List<Option> {
         };
 
-        public static readonly List<Option> OPTIONS_REGISTER = new List<Option>
-        {
-        };
 
-        private static string FormatWrapped( string prefix, int padleft, string txt, bool trim = false )
-        {
+        private static string FormatWrapped( string prefix, int padleft, string txt, bool trim = false ) {
             txt = CommandLine.WrapLine( txt, padleft );
             txt = trim ? txt.TrimStart( ' ' ) : txt;
             return String.Format( "{0,-" + $"{padleft}" + "}{1}", prefix, txt );
@@ -153,25 +155,28 @@ namespace MBINCompiler
         /// <summary>
         /// Display the help info.
         /// </summary>
-        public static string GetHelpInfo()
-        {
+        public static string GetHelpInfo() {
             string exe = GetExecutableName();
 
             var sb = new StringBuilder();
             
             sb.AppendLine( Version.GetVersionStringVerbose() );
 
-            sb.Append( "\nUsage:\n\n" +
-                   $"    {exe} help [<Option>...]\n" +
-                   $"    {exe} version [<Option>...] [<File>]\n" +
-                   $"    {exe} register [<Option>...] \n" +
-                   $"    {exe} [convert] [<Option>...] <Path> [<Path>...]\n" );
+            sb.Append( "\nUsage:\n\n"
+                 + $"    {exe} help [<Option>...]\n"
+                 + $"    {exe} version [<Option>...] [<File>]\n"
+                 + $"    {exe} [convert] [<Option>...] <Path> [<Path>...]\n"
+                 + $"    {exe} register [<Option>...] [<IconDirectory>]\n"
+                 + $"    {exe} unregister [<Option>...] \n"
+            );
 
-            sb.Append( "\n\nModes:\n\n" +
-                    FormatWrapped( "  help",     20, "Show this help info.", true ) +
-                    FormatWrapped( "  version",  20, "Show version info.", true ) +
-                    FormatWrapped( "  convert",  20, "Convert files between MBIN and EXML formats.", true ) +
-                    FormatWrapped( "  register", 20, "Add MBINCompiler to your systems PATH variable.", true) );
+            sb.Append( "\n\nModes:\n\n"
+                  + FormatWrapped( "  help",       20, "Show this help info.", true )
+                  + FormatWrapped( "  version",    20, "Show version info.", true )
+                  + FormatWrapped( "  convert",    20, "Convert files between MBIN and EXML formats.", true )
+                  + FormatWrapped( "  register",   20, "Register Windows system settings for MBINCompiler.", true)
+                  + FormatWrapped( "  unregister", 20, "Unregister Windows system settings changed by MBINCompiler.", true)
+            );
 
             if ( OPTIONS_GENERAL.Count > 0 ) {
                 sb.Append( "\n\nGeneral Options:\n" );
@@ -198,8 +203,38 @@ namespace MBINCompiler
                 foreach ( var option in OPTIONS_CONVERT ) AppendOption( sb, option );
             }
 
+            sb.Append( FormatWrapped( "\n\nregister [<Option>...] [<IconDirectory>]\n\n", 4,
+                    "    Register MBINCompiler with the windows system.\n" +
+                    "\n" +
+                    "      · adds MBINCompiler to the system PATH.\n" +
+                    "      · adds custom icons for MBIN and EXML files.\n" +
+                    "      · adds an explorer context menu item 'Convert to EXML' for MBIN files.\n" +
+                    "      · adds an explorer context menu item 'Convert to MBIN' for EXML files.\n" +
+                    "\n" +
+                    "    MBINCompiler will search for MBIN.ICO and EXML.ICO files in the <IconDirectory> if it is\n" +
+                    "    specified. If <IconDirectory> is not specified or either of ICO files are not found,\n" +
+                    "    then MBINCompiler will search for an ./Icons folder in the directory containing the exe." ) );
+
+            if (OPTIONS_REGISTER.Count > 0) {
+                sb.Append( "\nregister Options:\n" );
+                foreach ( var option in OPTIONS_REGISTER ) AppendOption( sb, option );
+            }
+
+            sb.Append( FormatWrapped( "\n\nunregister\n\n", 4,
+                    "    Unregister MBINCompiler from the windows system.\n" +
+                    "\n" +
+                    "      · removes MBINCompiler from the system PATH.\n" +
+                    "      · removes custom icons for MBIN and EXML files.\n" +
+                    "      · removes explorer context menu item 'Convert to EXML' for MBIN files.\n" +
+                    "      · removes explorer context menu item 'Convert to MBIN' for EXML files." ) );
+
+            if (OPTIONS_UNREGISTER.Count > 0) {
+                sb.Append( "\nunregister Options:\n" );
+                foreach ( var option in OPTIONS_UNREGISTER ) AppendOption( sb, option );
+            }
+
             if ( DebugMode ) {
-                sb.Append( FormatWrapped( "\n\n[list] [<Option>...]\n\n", 4,
+                sb.Append( FormatWrapped( "\n\nlist [<Option>...]\n\n", 4,
                         "    List metadata for all supported MBIN structs." ) );
 
                 if (OPTIONS_LIST.Count > 0) {
