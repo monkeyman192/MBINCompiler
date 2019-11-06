@@ -128,7 +128,7 @@ namespace MBINCompiler {
         public static int ShowCommandLineError( string msg ) => ShowHelp( (ErrorCode) ShowError( msg, ErrorCode.CommandLine, false ) );
 
         public static int ShowInvalidCommandLineArg( string arg ) => ShowCommandLineError( $"Invalid command line argument: {arg}" );
-        public static int ShowInvalidCommandLineArg( CommandLineParser options ) => ShowInvalidCommandLineArg( options.Args[0] );
+        public static int ShowInvalidCommandLineArg( CommandLineParser options ) => ShowInvalidCommandLineArg( options.RemainingArgs[0] );
 
         /// <summary>
         /// Show the version string.

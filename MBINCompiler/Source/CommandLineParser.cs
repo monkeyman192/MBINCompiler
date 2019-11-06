@@ -43,7 +43,16 @@ namespace MBINCompiler
 
         private Dictionary<string, List<Option>> optionMap;
 
-        public List<string> Args { get; private set; }
+        /// <summary>The original command line arguments passed into the CommandLineParser.</summary>
+        public List<string> CommandLineArgs { get; private set; }
+
+        /// <summary>
+        /// The remaining arguments left on the command line after parsing options.
+        /// <c>RemainingArgs.Count</c> should always be 0 after successfully parsing a valid command line.
+        /// If any invalid options are encountered while parsing then it is aborted and the first argument in the list
+        /// will be the invalid argument. Any additional arguments remaining are unprocessed, not necessarily invalid.
+        /// </summary>
+        public List<string> RemainingArgs { get; private set; }
 
         public string Verb { get; private set; }
 
@@ -53,8 +62,10 @@ namespace MBINCompiler
         private List<string> fileParams;
 
         public CommandLineParser( string[] args ) {
-            optionMap = new Dictionary<string, List<Option>>();
-            this.Args  = new List<string>( args );
+            CommandLineArgs = new List<string>( args );
+            RemainingArgs   = new List<string>( args );
+
+            optionMap  = new Dictionary<string, List<Option>>();
             optionKeys = new List<string>();
             optionArgs = new List<OptionArg>();
             fileParams = new List<string>();
@@ -71,13 +82,13 @@ namespace MBINCompiler
         private string ParseVerb( string defaultVerb = "" ) {
             Verb = defaultVerb;
             string[] verbs = GetVerbs();
-            if ( ( verbs == null ) || ( Args.Count == 0 ) ) { return Verb; }
+            if ( ( verbs == null ) || ( RemainingArgs.Count == 0 ) ) { return Verb; }
 
-            var arg = Args[0].ToLower();
+            var arg = RemainingArgs[0].ToLower();
             for ( int i = 0; i < verbs.Length; i++ ) {
-                if ( arg == verbs[i] ) {
+                if ( arg.Equals( verbs[i] ) ) {
                     Verb = verbs[i];
-                    Args.RemoveAt( 0 );
+                    RemainingArgs.RemoveAt( 0 );
                     break;
                 }
             }
@@ -93,14 +104,14 @@ namespace MBINCompiler
                 }
             }
 
-            while (Args.Count > 0) {
+            while (RemainingArgs.Count > 0) {
                 if (!ParseOption( options, aliases )) return false;
             }
             return true;
         }
 
         private bool ParseOption( List<Option> options, Dictionary<string, string> aliases ) {
-            var arg = Args[0];
+            var arg = RemainingArgs[0];
             if ( ( arg.Length > 1 ) && ( arg[0] == '-' ) ) {
                 char switchChar = arg[1];
                 arg = arg.Substring( 2 );
@@ -133,8 +144,8 @@ namespace MBINCompiler
 
                 // if the option requires a param but we don't have one yet then get the next arg
                 if ((options[index].param != null) && (val == "")) {
-                    Args.RemoveAt( 0 );
-                    val = Args[0];
+                    RemainingArgs.RemoveAt( 0 );
+                    val = RemainingArgs[0];
                 }
                     
                 // unless multiples are allowed, remove the option from the list
@@ -145,7 +156,7 @@ namespace MBINCompiler
                 fileParams.Add( arg );
             }
 
-            Args.RemoveAt( 0 );
+            RemainingArgs.RemoveAt( 0 );
             return true;
         }
 
