@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
             TradeShip, TradeCompareShips, TradeCompareWeapons, HUDThumbnail, Interaction, Freighter, TradeFreighter, TradeChest, TradeCapsule, TradeFrigate,
             TerrainBall, FreighterChest, Submarine, TradeCooker, SuitRefiner, FreighterRepair
         }
-        [NMS(Size = 0x18, EnumType = typeof(ModelViewEnum))]
+        [NMS(Size = 0x19, EnumType = typeof(ModelViewEnum))]
         public TkModelRendererData[] ModelViews;
     }
 }
