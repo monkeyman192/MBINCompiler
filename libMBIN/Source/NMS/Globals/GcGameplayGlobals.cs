@@ -38,7 +38,7 @@ namespace libMBIN.NMS.Globals
         /* 0x388 */ public float Unknown0x388;
         /* 0x38C */ public float Unknown0x38C;
         /* 0x390 */ public float Unknown0x390;
-        /* 0x394 */ public float Unknown0x394;
+        /* 0x394 */ public float HotspotScanRange;
         /* 0x398 */ public int UnknownInt0x398;
         /* 0x39C */ public int UnknownInt0x39C;
         /* 0x3A0 */ public bool Unknown0x3A0;
