@@ -5,14 +5,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x430, Alignment = 0x10, GUID = 0xF111D25A1967E8F3, NameHash = 0x0E39CB7AA4D818260)]
+	[NMS(Size = 0x440, Alignment = 0x10, GUID = 0x5D3A372D8396458E, NameHash = 0xE39CB7AA4D818260)]
     public class TkMaterialMetaData : NMSTemplate {
 
         [NMS(Size = 0x80)]
         /* 0x000 */ public string ExternalMaterial;
-		public enum ShaderEnum { UberShader, Sky, Screen, UberHack }
+		public enum ShaderEnum { UberShader, Sky, Screen, UberHack, UIScreen }
 		/* 0x080 */ public ShaderEnum Shader;
-        /* 0x084 */ public bool Transaprent;
+        /* 0x084 */ public bool Transparent;
         /* 0x088 */ public int TransparencyLayerID;
         /* 0x08C */ public bool Additive;
         /* 0x08D */ public bool VertexColour;
@@ -84,26 +84,31 @@ namespace libMBIN.NMS.Toolkit
         /* 0x390 */ public float ShellsHeight;
         /* 0x394 */ public bool Dissolve;
         /* 0x395 */ public bool InvertAlpha;
-        /* 0x396 */ public bool StretchyParticle;
-        /* 0x397 */ public bool UVScrolling;
-        /* 0x398 */ public float UVScrollX;
-        /* 0x39C */ public float UVScrollY;
-        /* 0x3A0 */ public float UVScrollNormalX;
-        /* 0x3A4 */ public float UVScrollNormalY;
-        /* 0x3A8 */ public float UVFrameTime;
-        /* 0x3AC */ public bool UVAnimation;
-        /* 0x3AD */ public bool UVTileAlts;
-        /* 0x3B0 */ public float UVNumTilesX;
-        /* 0x3B4 */ public float UVNumTilesY;
-        /* 0x3B8 */ public bool DisplacementWave;
-        /* 0x3BC */ public float WaveOneSpeed;
-        /* 0x3C0 */ public Vector4f WaveOneAmplitude;
-        /* 0x3D0 */ public Vector4f WaveOneFrequency;
-        /* 0x3E0 */ public Vector4f WaveOneFallOff;
-        /* 0x3F0 */ public float WaveTwoSpeed;
-        /* 0x400 */ public Vector4f WaveTwoAmplitude;
-        /* 0x410 */ public Vector4f WaveTwoFrequency;
-        /* 0x420 */ public Vector4f WaveTwoFallOff;
+        /* 0x396 */ public bool BeforeUI;
+        /* 0x397 */ public bool DepthMaskUI;
+        /* 0x398 */ public bool AlwaysOnTopUI;
+        /* 0x399 */ public bool StretchyParticle;
+        /* 0x39A */ public bool UVScrolling;
+        [NMS(Size = 0x1, Ignore = true)]
+        /* 0x39B */ public byte[] Padding39B;
+        /* 0x39C */ public float UVScrollX;
+        /* 0x3A0 */ public float UVScrollY;
+        /* 0x3A4 */ public float UVScrollNormalX;
+        /* 0x3A8 */ public float UVScrollNormalY;
+        /* 0x3AC */ public float UVFrameTime;
+        /* 0x3B0 */ public bool UVAnimation;
+        /* 0x3B1 */ public bool UVTileAlts;
+        /* 0x3B4 */ public float UVNumTilesX;
+        /* 0x3B8 */ public float UVNumTilesY;
+        /* 0x3BC */ public bool DisplacementWave;
+        /* 0x3C0 */ public float WaveOneSpeed;
+        /* 0x3D0 */ public Vector3f WaveOneAmplitude;
+        /* 0x3E0 */ public Vector3f WaveOneFrequency;
+        /* 0x3F0 */ public Vector3f WaveOneFallOff;
+        /* 0x400 */ public float WaveTwoSpeed;
+        /* 0x410 */ public Vector3f WaveTwoAmplitude;
+        /* 0x420 */ public Vector3f WaveTwoFrequency;
+        /* 0x430 */ public Vector3f WaveTwoFallOff;
 
     }
 
