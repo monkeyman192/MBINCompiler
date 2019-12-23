@@ -50,6 +50,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0818 */ public List<NMSString0x80> AlienPuzzlesTables;
         [NMS(Size = 0x65, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x0828 */ public bool[] LoopInteractionPuzzles;
+
+        //[NMS(Size = 0x3, Ignore = true)]
+        ///* 0x088D */ public byte[] Padding88D;
+
         [NMS(Size = 0x65, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x0890 */ public int[] InteractionPuzzlesIndexTypes;
         [NMS(Size = 0x7, EnumType = typeof(GcWeightingCurve.WeightingCurveEnum))]
@@ -125,6 +129,9 @@ namespace libMBIN.NMS.GameComponents
 
         [NMS(Size = 0x92, EnumType = typeof(GcStatsTypes.StatsTypeEnum))]
         /* 0x69B4 */ public TkTextureResource[] StatCategoryIcons;
+
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0xB4FC */ public byte[] PaddingB4FC;
 
         public enum PossessionEnum { Suit, Weapon, Ship, Freighter, Vehicle }
         [NMS(Size = 0x5, EnumType = typeof(PossessionEnum))]
