@@ -3,10 +3,10 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(GUID = 0x14E7F177E598645, NameHash = 0xB387E3560FAA5681)]
+	[NMS(Size = 0x8, GUID = 0x014E7F177E598645, NameHash = 0xB387E3560FAA5681)]
     public class GcDamageMultiplier : NMSTemplate
     {
-        public GcDamageType Type;
-        public float Multiplier;
+        /* 0x00 */ public GcDamageType Type;
+        /* 0x04 */ public float Multiplier;
     }
 }

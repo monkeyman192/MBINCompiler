@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xA8, GUID = 0xB7E4C05058F97337, NameHash = 0x28AB5E6C29FCA8E5)]
+	[NMS(Alignment = 0x8, Size = 0xA8, GUID = 0xB7E4C05058F97337, NameHash = 0x28AB5E6C29FCA8E5)]
     public class GcRealityIcon : NMSTemplate
     {
         [NMS(Size = 0x20)]
