@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
         public string QuoteLine1;
         [NMS(Size = 0x80)]
         public string QuoteLine2;
-        [NMS(Size = 0x80)]
+        [NMS(Size = 0x20)]
         public string Author;
     }
 }
