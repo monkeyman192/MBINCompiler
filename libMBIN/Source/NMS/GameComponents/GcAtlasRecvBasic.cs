@@ -5,8 +5,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0xCB04312BBC57FA84, NameHash = 0x8FEF00EACC9F4619, Broken = true)]
+    [NMS(Size = 0x10, GUID = 0xCB04312BBC57FA84, NameHash = 0x8FEF00EACC9F4619)]
     public class GcAtlasRecvBasic : NMSTemplate
     {
+        /* 0x00 */ public ulong ClientUserdata;
+        /* 0x08 */ public bool Success;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x09 */  public byte[] EndPadding;
     }
 }
