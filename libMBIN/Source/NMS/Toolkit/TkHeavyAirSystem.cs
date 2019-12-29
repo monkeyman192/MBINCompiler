@@ -15,8 +15,8 @@ namespace libMBIN.NMS.Toolkit
         /* 0x0A0 */ public Vector3f RotationSpeedRange;
         /* 0x0B0 */ public Vector3f FadeSpeedRange;
         /* 0x0C0 */ public Vector3f TwinkleRange;
-        /* 0x0D0 */ public Vector3f AmplitudMin;
-        /* 0x0E0 */ public Vector3f AmplitudMax;
+        /* 0x0D0 */ public Vector3f AmplitudeMin;
+        /* 0x0E0 */ public Vector3f AmplitudeMax;
         /* 0x0F0 */ public Colour Colour1;
         /* 0x100 */ public float Colour1Alpha;
         [NMS(Size = 0xC, Ignore = true)]
