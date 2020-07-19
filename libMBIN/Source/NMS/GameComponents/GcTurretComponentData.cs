@@ -3,22 +3,46 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xAEC2575916A4ACFE, NameHash = 0x88530A815E5B1B46)]
+	[NMS(Size = 0xB0, GUID = 0x9D323B47AF6E4A7F, NameHash = 0x88530A815E5B1B46)]
     public class GcTurretComponentData : NMSTemplate
     {
 		public enum GunTypeEnum { Laser, Projectile, Missile }
-		public GunTypeEnum GunType;
+		/* 0x00 */ public GunTypeEnum GunType;
         [NMS(Size = 0x4, Ignore = true)]
-        public byte[] Padding4;
+        /* 0x04 */ public byte[] Padding4;
         [NMS(Size = 0x10)]
-        public string LaserEffectId;
+        /* 0x08 */ public string LaserEffectId;
         [NMS(Size = 0x10)]
-        public string LaserMuzzleFlashId;
+        /* 0x18 */ public string LaserMuzzleFlashId;
         [NMS(Size = 0x10)]
-        public string ProjectileId;
+        /* 0x28 */ public string ProjectileId;
         [NMS(Size = 0x10)]
-        public string ProjectileMuzzleFlashId;
+        /* 0x38 */ public string ProjectileMuzzleFlashId;
         [NMS(Size = 0x10)]
-        public string MissileId;
+        /* 0x48 */ public string MissileId;
+        /* 0x58 */ public bool HasFreighterAlertLight;
+        /* 0x5C */ public float TurretRange;
+        /* 0x60 */ public float TurretLaserShootTime;
+        /* 0x64 */ public float TurretLaserLength;
+        /* 0x68 */ public float TurretLaserMoveSpeed;
+        /* 0x6C */ public float TurretLaserActiveTime;
+        /* 0x70 */ public float TurretLaserAbortDistance;
+        /* 0x74 */ public float TurretShootPauseTime;
+        /* 0x78 */ public int TurretBurstCount;
+        /* 0x7C */ public float TurretBurstTime;
+        /* 0x80 */ public float TurretMissileLaunchTime;
+        /* 0x84 */ public float TurretMissileLaunchSpeed;
+        /* 0x88 */ public float TurretMaxDownAngle;
+        /* 0x8C */ public float TurretSlerpFactor;
+        /* 0x90 */ public float TurretAngle;
+        /* 0x94 */ public float TurretProjectileRange;
+        /* 0x98 */ public float TurretMissileRange;
+        /* 0x9C */ public float TurretDispersionAngle;
+        /* 0xA0 */ public bool RemotePlayersCanDamage;
+        /* 0xA1 */ public bool CanMoveDuringBurst;
+        /* 0xA2 */ public bool FireInTurretFacing;
+        /* 0xA4 */ public float TurretSearchAngle;
+        /* 0xA8 */ public float TurretSearchTime;
+        /* 0xAC */ public float TurretAimOffset;
     }
 }

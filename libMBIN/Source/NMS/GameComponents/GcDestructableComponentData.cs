@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C0, Alignment = 0x8, GUID = 0xB5D1776FD909924C, NameHash = 0xE24B3D78ED0634BD)]
+	[NMS(Size = 0x1D8, Alignment = 0x8, GUID = 0x1EE6DB1CF9B7C51B, NameHash = 0xE24B3D78ED0634BD)]
     public class GcDestructableComponentData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -66,6 +66,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x80)]
         /* 0x0FC */ public TkTextureResource DestroyedModel;
         /* 0x180 */ public bool DestroyedModelUsesScale;
+        /* 0x181 */ public bool DestroyedModelCollidesWithEverything;
         /* 0x184 */ public float DestroyForce;
         /* 0x188 */ public float DestroyForceRadius;
         [NMS(Size = 0x4, Ignore = true)]
@@ -76,11 +77,15 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1A0 */ public string DestroyEffectPoint;
         /* 0x1B0 */ public float DestroyEffectTime;
         /* 0x1B4 */ public bool DestroyEffectMatrices;
-        /* 0x1B5 */ public bool ShowInteract;
-        /* 0x1B8 */ public float ShowInteractRange;
-        /* 0x1BC */ public bool GrenadeSingleHit;
-
         [NMS(Size = 3, Ignore = true)]
-        /* 0x1BD */ public byte[] EndPadding;
+        /* 0x1B5 */ public byte[] Padding1B5;
+        [NMS(Size = 0x10)]
+        /* 0x1B8 */ public string AreaDamage;
+        /* 0x1C8 */ public bool ShowInteract;
+        /* 0x1CC */ public float ShowInteractRange;
+        /* 0x1D0 */ public bool GrenadeSingleHit;
+
+        [NMS(Size = 7, Ignore = true)]
+        /* 0x1D0 */ public byte[] EndPadding;
     }
 }

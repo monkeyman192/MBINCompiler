@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0x9C0901BDD017D265, NameHash = 0xFFF2D3D18F84C008)]
+	[NMS(Size = 0x18, GUID = 0xE7A584416A401D72, NameHash = 0xFFF2D3D18F84C008)]
     public class GcCreatureAlertData : NMSTemplate
     {
         /* 0x000 */ public GcCreatureTypes AlertTarget;

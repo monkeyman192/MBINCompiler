@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xE0, GUID = 0xBFA6CFD0DFD8CE55, NameHash = 0x80953B08573D31B6)]
+	[NMS(Size = 0x100, GUID = 0x3631E06ABDA99C9F, NameHash = 0x80953B08573D31B6)]
     public class GcCustomisationDescriptorGroup : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -18,5 +18,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0xC0 */ public List<NMSString0x20> SuffixInclusionList;
         [NMS(Size = 0x10)]
         /* 0xD0 */ public string LinkedSpecialID;
+        [NMS(Size = 0x20)]
+        /* 0xE0 */ public string Tip;
     }
 }

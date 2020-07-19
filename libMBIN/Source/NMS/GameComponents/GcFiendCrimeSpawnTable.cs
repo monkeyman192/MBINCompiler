@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0xA5790FF9AE6AF9EA, NameHash = 0x4EBB7BDC5EE300EA)]
+	[NMS(Size = 0x18, GUID = 0x2F48FC8BB2261C41, NameHash = 0x4EBB7BDC5EE300EA)]
     public class GcFiendCrimeSpawnTable : NMSTemplate
     {
         public GcFiendCrime Crime;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xB8, GUID = 0xEEF0A988CB476079, NameHash = 0xDA5F4DFE0527A693)]
+	[NMS(Size = 0x100, GUID = 0xE6407D98194B7186, NameHash = 0xDA5F4DFE0527A693)]
     public class GcConsumableItem : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -18,5 +18,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x70 */ public string ButtonSubLocID;
         /* 0xB0 */ public bool CloseInventoryWhenUsed;
         /* 0xB4 */ public GcAudioWwiseEvents AudioEventOnOpen;
+        [NMS(Size = 0x40)]
+        /* 0xB8 */ public string RewardFailedLocID;
+        /* 0xF8 */ public bool DestroyItemWhenConsumed;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0xF9 */ public byte[] EndPadding;
     }
 }

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x290, GUID = 0xCD26D4D94B70AC2A, NameHash = 0x6B8472FADE3C492C)]
+	[NMS(Size = 0x290, GUID = 0x79627087CC93BF00, NameHash = 0x6B8472FADE3C492C)]
     public class GcProceduralTechnologyData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -29,8 +29,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x258 */ public int NumStatsMin;
         /* 0x25C */ public int NumStatsMax;
         /* 0x260 */ public GcWeightingCurve WeightingCurve;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x264 */ public byte[] Padding264;
         /* 0x270 */ public Colour UpgradeColour;
         /* 0x280 */ public List<GcProceduralTechnologyStatLevel> StatLevels;
     }

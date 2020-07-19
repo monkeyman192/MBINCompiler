@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x48, GUID = 0x4AC3DC89E42466F8, NameHash = 0x2E161A5A69971115)]
+	[NMS(Size = 0x50, GUID = 0x253126BB3DB6A474, NameHash = 0x2E161A5A69971115)]
     public class GcPlanetGenerationInputData : NMSTemplate
     {
         /* 0x00 */ public GcSeed Seed;
@@ -16,10 +16,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x38 */ public GcPlanetSize PlanetSize;
         /* 0x3C */ public GcBiomeType Biome;
         /* 0x40 */ public GcBiomeSubType BiomeSubType;
-        /* 0x45 */ public bool HasRings;
-        /* 0x46 */ public bool ForceContinents;
-        /* 0x47 */ public bool InEmptySystem;
+        /* 0x44 */ public bool HasRings;
+        /* 0x45 */ public bool ForceContinents;
+        /* 0x46 */ public bool InEmptySystem;
+        /* 0x48 */ public int RealityIndex;
         [NMS(Size = 0x1, Ignore = true)]
-        public byte[] EndPadding;
+        /* 0x4C */ public byte[] EndPadding;
     }
 }

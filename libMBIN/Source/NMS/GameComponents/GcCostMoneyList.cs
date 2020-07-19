@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, Alignment = 0x8, GUID = 0xC0765122D8C54073, NameHash = 0x22A3BF55F268EEBE)]
+    [NMS(Size = 0x20, Alignment = 0x8, GUID = 0x5945CFE26E9A5BFC, NameHash = 0x22A3BF55F268EEBE)]
     public class GcCostMoneyList : NMSTemplate
     {
         public List<int> Costs;
@@ -13,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
         public bool AssertIfOutOfBounds;
         public enum OutOfBoundsBehaviourEnum { NoCost, UseFirst, UseLast }
         public OutOfBoundsBehaviourEnum OutOfBoundsBehaviour;
-        public enum IndexProviderEnum { None, ShipSlot, ShipClass }
+        public enum IndexProviderEnum { None, ShipSlot, ShipClass, DailyFreighters }
         public IndexProviderEnum IndexProvider;
     }
 }

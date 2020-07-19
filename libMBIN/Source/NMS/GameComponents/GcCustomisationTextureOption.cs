@@ -5,16 +5,17 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x48, GUID = 0x28101937F4FE62D1, NameHash = 0xCDB7AC6D11C9DF03)]
+	[NMS(Size = 0x58, GUID = 0xE49536D3319A2AE4, NameHash = 0xCDB7AC6D11C9DF03)]
     public class GcCustomisationTextureOption : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string TextureOptionsID;
+        /* 0x00 */ public string TextureOptionsID;
         [NMS(Size = 0x10)]
-        public string Layer;
+        /* 0x10 */ public string Layer;
         [NMS(Size = 0x10)]
-        public string Group;
-        public TkPaletteTexture Palette;
-        public List<NMSString0x20> Options;
+        /* 0x20 */ public string Group;
+        /* 0x30 */ public TkPaletteTexture Palette;
+        /* 0x38 */ public List<NMSString0x20> Options;
+        /* 0x48 */ public List<NMSString0x20> Tips;
     }
 }

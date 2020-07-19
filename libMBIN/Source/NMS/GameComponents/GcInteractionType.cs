@@ -3,10 +3,10 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0xB5BA3E1D6B5CC2F1, NameHash = 0x47E189998F5D82E7)]
+	[NMS(Size = 0x4, GUID = 0xBA46409A98F26E55, NameHash = 0x47E189998F5D82E7)]
     public class GcInteractionType : NMSTemplate
     {
-        // size: 0x65
+        // size: 0x6C
         public enum InteractionTypeEnum {
             None, Shop, NPC, NPC_Secondary, NPC_Anomaly, NPC_Anomaly_Secondary, Ship, Outpost, SpaceStation, RadioTower,
             Monolith, Factory, AbandonedShip, Harvester, Observatory, TradingPost, DistressBeacon, Portal, Plaque, AtlasStation,
@@ -18,7 +18,7 @@ namespace libMBIN.NMS.GameComponents
             ClaimBaseAnywhere, FleetNavigator, FleetCommandPost, StoryUtility, MPMissionGiver, SpecialsShop, WaterRuin, LocationScanner, ByteBeat, NPC_CrashSite,
             NPC_Scavenger, BaseGridPart, NPC_Freighter_Crew, NPC_Freighter_Crew_Owned, AbandonedShip_With_NPC, ShipPilot, NexusMilestones, NexusDailyMission, CreatureFeeder, ExoticExtra1,
             ExoticExtra2, ExoticExtra3, ExoticExtra4, ExoticExtra5, ExoticExtra6, MapShop, NPC_Closure, StorageContainer, Teleporter_Nexus, ShipSalvage,
-            ByteBeatSwitch
+            ByteBeatSwitch, AbandonedFreighterIntro, AbandonedFreighterEnd, AbandonedFreighterProcText, AbandonedFreighterCaptLog, AbandonedFreighterCrewLog, AbandonedFreighterShop, CustomiseFreighter
         }
 		public InteractionTypeEnum InteractionType;
     }

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x178, GUID = 0x1E251A507CA92B9F, NameHash = 0x657592AF71342449)]
+    [NMS(Size = 0x178, GUID = 0x452767AA53EA123D, NameHash = 0x657592AF71342449)]
     public class GcPulseEncounterInfo : NMSTemplate
     {
         [NMS(Size = 0x10)]

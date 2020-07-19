@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0x82607315D11C8BA8, NameHash = 0x42869E79D40A84C1)]
+	[NMS(Size = 0x18, GUID = 0x7B4834F9173F66AA, NameHash = 0x42869E79D40A84C1)]
     public class GcCreatureNearbyEvent : NMSTemplate
     {
         public List<GcCreatureAlertData> AlertTable;

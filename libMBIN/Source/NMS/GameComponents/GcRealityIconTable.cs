@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4A80, GUID = 0x2AD346B04A54A12F, NameHash = 0x2A28407EECDFA4CC)]
+	[NMS(Size = 0x4B08, GUID = 0x2AD346B04A54A12F, NameHash = 0x2A28407EECDFA4CC)]
     public class GcRealityIconTable : NMSTemplate
     {
         [NMS(Size = 0x6, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
@@ -40,8 +40,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2320 */ public List<GcPlanetResourceIconLookup> PlanetResourceIconLookups;
         /* 0x2330 */ public List<TkTextureResource> RepairTechIcons;
 
-        [NMS(Size = 0x4C, EnumType = typeof(GcRealityGameIcons.GameIconsEnum))]
+        [NMS(Size = 0x4D, EnumType = typeof(GcRealityGameIcons.GameIconsEnum))]
         /* 0x2340 */ public TkTextureResource[] GameIcons;
-        /* 0x4A70 */ public List<GcRealityIcon> MissionDetailIcons;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x4AF4 */ public byte[] Padding4AF4;
+        /* 0x4AF8 */ public List<GcRealityIcon> MissionDetailIcons;
     }
 }
