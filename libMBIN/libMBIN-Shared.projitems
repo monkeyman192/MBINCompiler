@@ -402,6 +402,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFiendCrime.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcTechnologyTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcWeirdCreatureRewardList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnIfValueIs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnValueAsBool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnRandomNumber.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnOnPlayerNear.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnSetVariableValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnWaitSeconds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnSetLightIntensity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialSketchLink.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkSketchConditions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkSketchNodeConnections.cs" />
