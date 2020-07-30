@@ -5,7 +5,7 @@ using System.Text;
 namespace libMBIN.NMS.SketchNodes
 {
     [NMS(Size = 0x8)]
-    class SnOnPlayerNear
+    public class SnOnPlayerNear : NMSTemplate
     {
         /* 0x0 */ public float Distance;
         /* 0x4 */ public bool IsNear;

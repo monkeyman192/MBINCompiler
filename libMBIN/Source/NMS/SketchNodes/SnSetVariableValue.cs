@@ -5,7 +5,7 @@ using System.Text;
 namespace libMBIN.NMS.SketchNodes
 {
     [NMS(Size = 0x28)]
-    class SnSetVariableValue
+    public class SnSetVariableValue : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Variable;
         /* 0x10 */ public NMSString0x10 Value;

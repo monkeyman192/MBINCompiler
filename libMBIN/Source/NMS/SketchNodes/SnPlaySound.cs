@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+using libMBIN.NMS.GameComponents;
+
+namespace libMBIN.Source.NMS.SketchNodes
+{
+    [NMS(Size = 0x8)]
+    public class SnPlaySound : NMSTemplate
+    {
+        /* 0x0 */ public GcAudioWwiseEvents Event;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x4 */ public byte[] EndPadding;
+        // OutNode: Unnamed
+    }
+}
