@@ -28,7 +28,7 @@ namespace libMBIN
                 {
                     data = LoadExml(file);
                 }
-                else if (x == ".MBIN")
+                else if (x == ".MBIN" || x == ".PC")
                 {
                     data = LoadMbin(file);
                 }
