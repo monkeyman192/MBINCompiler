@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Usage - MBINCompiler</title>
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Usage";
+    var mkdocs_page_input_path = "usage.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="../js/download.js"></script>
+    <script type='text/javascript' src="../js/format_tables.js"></script>
+ 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MBINCompiler</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Usage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#drag-and-drop">Drag-and-drop</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#command-line">Command line</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../libmbin/usage/">libMBIN</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../classes/index.md">Classes</a>
+                    </li>
+                </ul>
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MBINCompiler</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Usage</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="usage">Usage</h2>
+<p>If you are new to modding in NMS, check out the <a href="https://nmsmodding.wikia.com/wiki/No_Man%27s_Sky_Modding_Wiki">NMS Modding Wiki</a> for how to get started before you continue with MBINCompiler.<br />
+The getting started guide can be found <a href="https://nmsmodding.fandom.com/wiki/Getting_Started">here</a>.</p>
+<p>MBINCompiler can be used in two ways; via command line, or by using drag-and-drop in Windows Explorer.</p>
+<h3 id="drag-and-drop">Drag-and-drop</h3>
+<p><img alt="dnd" src="../images/dnd.png" /></p>
+<ol>
+<li>In one window have the files you wish to convert, and the other window have the folder containing <code>MBINCompiler.exe</code></li>
+<li>Drag the <code>.MBIN</code> file onto <code>MBINCompiler.exe</code>, and an <code>.EXML</code> file will be produced in the same location as the source <code>.MBIN</code> file.
+   An entire folder can be dragged onto <code>MBINCompiler.exe</code> which will convert any <code>.MBIN</code> files contained within the folder recursively.</li>
+<li>Edit the <code>.EXML</code> file with a text editor such as <a href="https://notepad-plus-plus.org/">Notepad++</a>.</li>
+<li>Drag the <code>.EXML</code> file onto <code>MBINCompiler.exe</code>, and an <code>.MBIN</code> file will be produced in the same location as the source <code>.EXML</code> file. You will be prompted to overwrite any previously existing files.</li>
+</ol>
+<h3 id="command-line">Command line</h3>
+<p>Coming soon!!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../libmbin/usage/" class="btn btn-neutral float-right" title="libMBIN">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../libmbin/usage/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

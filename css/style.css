@@ -1,0 +1,19 @@
+img.caret_rotated {
+    transform: rotate(180deg);
+}
+
+.wy-nav-content {
+    max-width: 80%;
+}
+
+td {
+    vertical-align: top !important;
+}
+
+ol > li {
+    list-style: none !important;
+}
+
+ol > li::before {
+    content: attr(val) ") ";
+}

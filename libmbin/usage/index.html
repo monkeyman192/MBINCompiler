@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>libMBIN - MBINCompiler</title>
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+
+    
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "libMBIN";
+    var mkdocs_page_input_path = "libmbin/usage.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../../js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="../../js/download.js"></script>
+    <script type='text/javascript' src="../../js/format_tables.js"></script>
+ 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MBINCompiler</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../usage/">Usage</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">libMBIN</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#libmbinfileio">libMBIN.FileIO</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fileioloadfilestring-path">FileIO.LoadFile(string path)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fileioloadmbinstring-path">FileIO.LoadMbin(string path)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fileioloadexmlstring-path">FileIO.LoadExml(string path)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#examples">Examples:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nmstemplate">NMSTemplate</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#nmstemplatewritetombinstring-path">NMSTemplate.WriteToMbin(string path)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nmstemplatewritetoexmlstring-path">NMSTemplate.WriteToExml(string path)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../classes/index.md">Classes</a>
+                    </li>
+                </ul>
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MBINCompiler</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>libMBIN</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="usage">Usage</h1>
+<p>libMBIN is a public API for MBINCompiler which allows other applications to directly read and write <code>.MBIN</code> files.
+It also allows direct manipulation and creation of any MBINCompiler structs.</p>
+<p>All features of MBINCompiler/libMBIN can be accessed by simply adding libMBIN to your c# project and adding <code>using libMBIN</code> to the top of any file you require it in.</p>
+<h2 id="libmbinfileio">libMBIN.FileIO</h2>
+<p>This module is the primary entry point for using libMBIN. It contains a number of helpful functions that can be used to load eithe <code>.EXML</code> or <code>.MBIN</code> files into the structures used by MBINCompiler. Once you have loaded a file into the struct, you can then manipulate ony of the fields and save the structure back into either and <code>.EXML</code> or <code>.MBIN</code> file.</p>
+<h4 id="fileioloadfilestring-path"><strong>FileIO.LoadFile(string path)</strong></h4>
+<p><em>Parameters:</em><br />
+    path : <code>string</code><br />
+    The path to the file that is to be loaded. This can be either the path to an <code>.EXML</code>, or an <code>.MBIN</code>.</p>
+<p><em>Returns:</em><br />
+<code>NMSTemplate</code><br />
+    The object containing all the information from the file.<br />
+    To use this more effectively, this value should be cast to the correct type which can be known by observing the type of struct used in the header of the <code>.MBIN</code> or <code>.EXML</code> file.</p>
+<p>This function will automatically determine what the file type is and load the file into an <code>NMSTemplate</code> object.
+If you already know what type of fle is being passed in, or what to restrict the type of file loaded, then there are two further functions which can be used:</p>
+<h4 id="fileioloadmbinstring-path"><strong>FileIO.LoadMbin(string path)</strong></h4>
+<p><em>Parameters:</em><br />
+    path : <code>string</code><br />
+    The path to the <code>.MBIN</code> file that is to be loaded.</p>
+<p><em>Returns:</em><br />
+<code>NMSTemplate</code><br />
+    The object containing all the information from the file.<br />
+    To use this more effectively, this value should be cast to the correct type which can be known by observing the type of struct used in the header of the <code>.MBIN</code> file.</p>
+<h4 id="fileioloadexmlstring-path"><strong>FileIO.LoadExml(string path)</strong></h4>
+<p><em>Parameters:</em><br />
+    path : <code>string</code><br />
+    The path to the <code>.EXML</code> file that is to be loaded.</p>
+<p><em>Returns:</em><br />
+<code>NMSTemplate</code><br />
+    The object containing all the information from the file.<br />
+    To use this more effectively, this value should be cast to the correct type which can be known by observing the type of struct used in the header of the <code>.EXML</code> file.</p>
+<h3 id="examples">Examples:</h3>
+<p>Let's say we have a file, for example, <code>METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN</code> that we wish to load and modify.
+The following code (ignoring not being within a proper function etc) will load the base building table and print out the id's of all objects in it.</p>
+<pre><code class="c#">using libMBIN;
+using libMBIN.NMS.GameComponents;
+
+GcBaseBuildingTable bbTable = (GcBaseBuildingTable)FileIO.LoadMBin(&quot;BASEBUILDINGTABLE.MBIN&quot;);
+foreach (GcBaseBuildingEntry obj in bbTable.Objects)
+{
+    Console.WriteLine(obj.ID);
+}
+</code></pre>
+
+<p>Currently there is no way to determine automatically the data type of a file but this may come in future versions of the API.</p>
+<h2 id="nmstemplate">NMSTemplate</h2>
+<p>The <code>NMSTemplate</code> is a top-level object. All of <code>FileIO.LoadFile</code>, <code>FileIO.LoadMbin</code> and <code>FileIO.LoadExml</code> return a <code>NMSTemplate</code> object.
+In libMBIN, all structs are subclassed from this object, meaning that you can very easily cast the <code>NMSTemplate</code> type to the struct type that you require.</p>
+<p>This object has a few methods that are useful to write it back to an <code>.EXML</code> or <code>.MBIN</code> file:</p>
+<h4 id="nmstemplatewritetombinstring-path"><strong>NMSTemplate.WriteToMbin(string path)</strong></h4>
+<p><em>Parameters:</em><br />
+    path : <code>string</code><br />
+    The filepath of the required output file the struct will be written to.
+    Note that there is no check that the output file extension is actual <code>.MBIN</code>.</p>
+<p>This writes the current <code>NMSTemplate</code> object to an <code>.MBIN</code> file, ready to be read by the game.</p>
+<h4 id="nmstemplatewritetoexmlstring-path"><strong>NMSTemplate.WriteToExml(string path)</strong></h4>
+<p><em>Parameters:</em><br />
+    path : <code>string</code><br />
+    The filepath of the required output file the struct will be written to.
+    Note that there is no check that the output file extension is actual <code>.EXML</code>.</p>
+<p>This writes the current <code>NMSTemplate</code> object to an <code>.EXML</code> file, ready to be modified by a user manually or through the use of another program.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../usage/" class="btn btn-neutral" title="Usage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../usage/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

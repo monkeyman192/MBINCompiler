@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ base_url }}/css/style.css">
+{% endblock %}
+
+{% block libs %}
+    {{ super() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="{{ base_url }}/js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="{{ base_url }}/js/download.js"></script>
+    <script type='text/javascript' src="{{ base_url }}/js/format_tables.js"></script>
+{% endblock %}
+
+{% block site_nav %}
+    {{ super() }}
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+{% endblock %}
