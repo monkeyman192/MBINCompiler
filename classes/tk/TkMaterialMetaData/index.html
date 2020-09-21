@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>TkMaterialMetaData - MBINCompiler</title>
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "TkMaterialMetaData";
+    var mkdocs_page_input_path = "classes/tk/TkMaterialMetaData.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../../../js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="../../../js/download.js"></script>
+    <script type='text/javascript' src="../../../js/format_tables.js"></script>
+ 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> MBINCompiler</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../usage/">Usage</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../libmbin/usage/">libMBIN</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../">Classes</a>
+                    </li>
+                </ul>
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">MBINCompiler</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>TkMaterialMetaData</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="all-classes-tk-tkmaterialmetadata"><a href="../../">All classes</a> &gt; <a href="../">tk</a> &gt; TkMaterialMetaData</h2>
+<p><strong>Size</strong>: 0x4A0, <strong>GUID</strong>: 0xB55CC0128EA807DC</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExternalMaterial</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>Shader</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>UberShader</li><li val='0x1'>Sky</li><li val='0x2'>Screen</li><li val='0x3'>UberHack</li><li val='0x4'>UIScreen</li><li val='0x5'>SketchParticle</li><li val='0x6'>SketchUber</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>Transparent</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>TransparencyLayerID</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>Additive</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>VertexColour</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableZTest</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Unlit</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ReceiveShadow</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CastShadow</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShadowOnly</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UISurface</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Roughness</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>RoughnessMask</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Metallic</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MetallicMask</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SubsurfaceMask</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ParallaxMapped</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RefractionMap</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceDiffuse</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceNormal</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceMask</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailDiffuse</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailNormal</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailTiling</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiplyDetailTiling</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailImages</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiplyDetailImages</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>AOMap</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiplySecondUVSet</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>VertexDetailBlend</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailHeightBlend</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>NormalTiling</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SpaceObject</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Glow</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>GlowMask</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BrightEdge</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraRelative</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Colourisable</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ColourMask</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Multitexture</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlphaCutout</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailedAlphaCutout</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Wind</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DetailOverlay</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MatchGroundColour</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>TerrainNormalFactor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ScreenSpaceFade</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AcuteAngleFadeOut</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ClampAmbientLight</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DoubleSided</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DecalDiffuse</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DecalNormal</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>Decal</li><li val='0x2'>Vertex</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>Billboard</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RotateAroundAt</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MergedMeshBillboard</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BillboardSphereFactor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>Imposter</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ScanEffect</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>WriteLogZ</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableAmbient</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisablePostProcess</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>WarpedDiffuseLighting</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MaterialClass</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>AnisotropicFilter</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>TessellationHeight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ShellsHeight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>FurNoiseScale</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>FurNoiseThickness</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>FurNoiseTurbulence</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>FurTurbulenceScale</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>Dissolve</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>InvertAlpha</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BeforeUI</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DepthMaskUI</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysOnTopUI</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>StretchyParticle</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UVScrolling</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UVScrollX</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVScrollY</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVScrollNormalX</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVScrollNormalY</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVFrameTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVAnimation</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UVTileAlts</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UVNumTilesX</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UVNumTilesY</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DisplacementWave</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisplacementPositionOffset</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>WaveOneSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WaveOneAmplitude</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveOneFrequency</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveOneFallOff</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveTwoSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WaveTwoAmplitude</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveTwoFrequency</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WaveTwoFallOff</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>SketchData</td>
+<td><a href="../../../classes/tk/TkMaterialSketchData">TkMaterialSketchData</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

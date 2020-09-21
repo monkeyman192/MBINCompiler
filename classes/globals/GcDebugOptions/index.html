@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>GcDebugOptions - MBINCompiler</title>
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "GcDebugOptions";
+    var mkdocs_page_input_path = "classes/globals/GcDebugOptions.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../../../js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="../../../js/download.js"></script>
+    <script type='text/javascript' src="../../../js/format_tables.js"></script>
+ 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> MBINCompiler</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../usage/">Usage</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../libmbin/usage/">libMBIN</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../">Classes</a>
+                    </li>
+                </ul>
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">MBINCompiler</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>GcDebugOptions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="all-classes-globals-gcdebugoptions"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcDebugOptions</h2>
+<p><strong>Size</strong>: 0x1ED0, <strong>GUID</strong>: 0x193008B30B4182FD</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SkipAbandonedFreighterUnlocking</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AllowSavingOnAbandonedFreighters</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableAbandonedFreighterRoomsOptimisation</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>OverrideAbandonedFreighterSeed</td>
+<td>UInt64</td>
+<td></td>
+</tr>
+<tr>
+<td>ThirdPersonIsDefaultCamera</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SkipIntro</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SkipLogos</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BootDirectlyIntoSaveSlot</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>BootDirectlyIntoLastSave</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>NewSaveGameMode</td>
+<td><a href="../../../classes/gc/GcGameMode">GcGameMode</a></td>
+<td></td>
+</tr>
+<tr>
+<td>SkipPlanetDiscoverOnBoot</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>VideoCaptureMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GodMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeNoDamage</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysHaveFocus</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableVibration</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugGalaxyMapInQuickMenu</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MapWarpCheckIgnoreFuel</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MapWarpCheckIgnoreDrive</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EverythingIsFree</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EverythingIsKnown</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EverythingIsStar</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>InfiniteStamina</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>IgnoreMissionRank</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CanLeaveDialogs</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableOldMissions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseScreenEffects</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseGunImpactEffect</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RenderCreatureDetails</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SkipTutorial</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>IgnoreFreighterSpawnWarpRequirement</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MaximumFreighterSpawns</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableSaveSlotSorting</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableSaving</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlternateControls</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysShowURI</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MPMissionsAlwaysEPIC</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowFireteamMembersUA</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RevealAllTitles</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UnlockAllTitles</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LockAllTitles</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysAllowShipOperations</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysAllowVehicleOperations</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysAllowFreighterInventoryAccess</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseDebugScreenSettings</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ScreenWidth</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ScreenHeight</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableVSync</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GameWindowMode</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>Bordered</li><li val='0x1'>Borderless</li><li val='0x2'>Fullscreen</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>Monitor</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>TiledWindowsSplitCount</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>TiledWindowsIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceUniverseAddress</td>
+<td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>ForcePlayerPosition</td>
+<td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInitialShip</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInitialWeapon</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GameStateMode</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>LoadPreset</li><li val='0x1'>UserStorage</li><li val='0x2'>FreshStart</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>BootMode</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>MinimalSolarSystem</li><li val='0x1'>SolarSystem</li><li val='0x2'>GalaxyMap</li><li val='0x3'>SmokeTest</li><li val='0x4'>SmokeTestGalaxyMap</li><li val='0x5'>Scratchpad</li><li val='0x6'>UnitTest</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>PlayerSpawnLocationOverride</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>FromSettings</li><li val='0x2'>Space</li><li val='0x3'>SpaceStation</li><li val='0x4'>RandomPlanet</li><li val='0x5'>GameStartPlanet</li><li val='0x6'>SpecificLocation</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>SceneSettings</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>WorkingDirectory</td>
+<td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>SolarSystemBoot</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>FromSettings</li><li val='0x1'>Generate</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>ShaderPreload</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>Off</li><li val='0x1'>Full</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>ShaderPreloadListExport</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShaderPreloadListImport</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShaderCaching</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BootLoadDelay</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>LoadAll</li><li val='0x1'>WaitForPlanet</li><li val='0x2'>WaitForNothing</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>MemCsv</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTimeOfDay</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceSunDirectionFromPhotoMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceSunAngle</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ResetForcedSaveSlotOnLoad</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseParticles</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseHeavyAir</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseVolumetrics</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseClouds</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableCloudAnimation</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseTerrain</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseInstances</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseObjects</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseBuildings</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseCreatures</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseElevation</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseLegacyFreighters</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseLegacyBuildingTable</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableDayNightCycle</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SpawnPirates</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SpawnRobots</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SpawnShips</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SpawnPulseEncounters</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>InstanceCollision</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MPMissions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SpecialsShop</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiplePlayerFreightersInASystem</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceNexusInQuickMenu</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MouseLookEnabled</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>StartPaused</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableDebugControls</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>FixedFramerate</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ScreenshotMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RenderHud</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableDiscoveryNaming</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugDrawPlayerInteract</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInteractionToSettings</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInteractionIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractionsAllwaysGivesTech</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>InfiniteInteractions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>StopSwitchingToSecondaryInteractions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugLanguage</td>
+<td><a href="../../../classes/tk/TkLanguages">TkLanguages</a></td>
+<td></td>
+</tr>
+<tr>
+<td>AllowedLanguagesFile</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>DoAlienLanguage</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInteractionRaceTo</td>
+<td><a href="../../../classes/gc/GcAlienRace">GcAlienRace</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RealityMode</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>LoadPreset</li><li val='0x1'>Generate</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>DebugPersistentInteractions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableMissionShop</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RealityPresetFile</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>RealityGenerationIteration</td>
+<td>UInt16</td>
+<td></td>
+</tr>
+<tr>
+<td>LocTableList</td>
+<td>NMSString0x20[0x5]</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultSaveData</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>FormatDownloadStorageAreaOnBoot</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBasicLoadScreen</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BootLogoFadeRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>BootMusic</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>WeaponScale3P</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>LogMissingLocalisedText</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>FleetDirectorAutoMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>_3dTextDistance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>_3dTextMinScale</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>RecordSetting</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>Record</li><li val='0x2'>Playback</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>DebugBuildingSpawns</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>StressTestLongNameDisplay</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowLongestStrings</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SaveTestingCommand</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>NeverUseBanks</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableProfanityFilter</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableFileWatcher</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableShaderReload</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>RecurrenceTimeOffset</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>CrashDumpPath</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>CrashDumpIdentifier</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableLivePP</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugThreatLevels</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowDebugMessages</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowFramerate</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>PrintAvgFrameTimes</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowPositionDebug</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowGPUMemory</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowMempoolOverlay</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowMouseSmoothing</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowUniverseAddressOnGalaxyMap</td>
+<td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowGraphs</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowSpecificGraph</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphCommandBuffer</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphGeneration</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphFPS</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphTexStreaming</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestDumpStatsMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestCycleMode</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TourSolarSystem</li><li val='0x2'>RegeneratePlanet</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestCameraFly</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestOutputOnly</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestPureFlight</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigCaptureCycles</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigCaptureDurationInSeconds</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigCaptureFolderNameNumberOffset</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigRandomizePlanetSeed</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestSmokeBotEnabled</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestSmokeBotAutoStart</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestSmokeBotTargetWarps</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestPostBandwidthStats</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatureChatter</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatureErrors</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatureDrawVocals</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DrawCreaturesInRoutines</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CompressTextures</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugIBL</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugTerrainTextures</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableShadowSwitching</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFile</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFilePS4</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFileXboxOne</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFileVR</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFileVRPS4</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFileFrontend</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PipelineFileEditor</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>RenderLowFramerate</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableComputePost</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableEvenOddRender</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MinGPUMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysIncludeLocalPlayerInChatMessage</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SimulateNoNetworkConnection</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ProxyType</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>ManualURI</li><li val='0x2'>InetProxy</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>ProxyURI</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>ServerEnv</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>Default</li><li val='0x1'>dev</li><li val='0x2'>qa</li><li val='0x3'>prodqa</li><li val='0x4'>prod</li><li val='0x5'>custom</li><li val='0x6'>pentest</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>AuthBaseUrl</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>CertificateSecurityBypass</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>OverrideUsernameForDev</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>DiscoveryAutoSyncIntervalSeconds</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableSpaceStationSpawnOnJoin</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AutoJoinUserEnabled</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AutoJoinUserNames</td>
+<td>NMSString0x100[0x8]</td>
+<td></td>
+</tr>
+<tr>
+<td>AlwaysSaveGameAsClient</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableMonumentDownloads</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UsePadOnUnfocusedWindow</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>OverrideMatchmakingVersion</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>LoadToBase</td>
+<td>String (0x200)</td>
+<td></td>
+</tr>
+<tr>
+<td>IgnoreTransactionTimeouts</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AutoJoinRandomGames</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GOGLogin</td>
+<td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>RecordNetworkStatsOnBoot</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>FakeHandsInMultiplayer</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceSmallLobby</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableSynergy</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SynergyServer</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>SynergyPort</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowEditorPlacementPreview</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MaxNumDebugMessages</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>PreloadToolbox</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugTextureSize</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>UseProcTextureDebugger</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ProceduralModelsShown</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ProceduralModelBatchSize</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugFont</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugFontTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>CursorTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PauseTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>PlayTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>StepTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>RenderToTexture</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdEnable</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdPreviewScale</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdTracking</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdStereoRender</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdDistortionPassthru</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdMonitor</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdEyeBufferWidth</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdEyeBufferHeight</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdEyeScalePos</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdHeadScalePos</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdFrameShiftEnabled</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdUseSolidGuiPointer</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BodyTurning</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>HmdImmersionFactor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowHmdHandControllers</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowTeleportEffectLocally</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableLeftHand</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableHeadConstraints</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnablePhotomodeVR</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AllowNGuiVR</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceExtremeWeather</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceExtremeSentinels</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceStarType</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceStarTypeTo</td>
+<td><a href="../../../classes/gc/GcGalaxyStarTypes">GcGalaxyStarTypes</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBiome</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBiomeTo</td>
+<td><a href="../../../classes/gc/GcBiomeType">GcBiomeType</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBiomeSubTypeTo</td>
+<td><a href="../../../classes/gc/GcBiomeSubType">GcBiomeSubType</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBuildingRace</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBuildingRaceTo</td>
+<td><a href="../../../classes/gc/GcAlienRace">GcAlienRace</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceLifeLevel</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceLifeLevelTo</td>
+<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceCreatureLifeLevel</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceDefaultCreatureFile</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceCreatureLifeLevelTo</td>
+<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTerrainSettings</td>
+<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTerrainType</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTerranTypeTo</td>
+<td><a href="../../../classes/tk/TkVoxelGeneratorSettingsTypes">TkVoxelGeneratorSettingsTypes</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForceAnomalyTo</td>
+<td><a href="../../../classes/gc/GcGalaxyStarAnomaly">GcGalaxyStarAnomaly</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ForcePlanetsToHaveWater</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceWaterObjectFileIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceSkyColourIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceWaterColourIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ModifyPlanetsInInitialSystems</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableLimits</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LimitPerRegionInstances</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LimitPerRegionBodies</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LimitGlobalInstances</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LimitGlobalBodies</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GenerateFarLodBuildingDist</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>DeferRegionBodies</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>GenerateCostDistance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>GenerateCostAngle</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>GenerateCostLOD</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>GenerateCostWait</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DChecksEnabled</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DChecksOutputJson</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DChecksOutputBinary</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DChecksOutputFileLine</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>FrameFlipRateDefault</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>FrameFlipRateLoad</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>FrameFlipRateGame</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>MaxFrameRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableBaseBuilding</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableBaseBuildingLimits</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BaseDownloadTimeout</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableBasePowerRequirements</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EnableBaseMovingOption</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MoveBaseIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>AutomaticPartSpawnIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>BaseAdmin</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>BaseServerPlatform</td>
+<td>String (0x20)</td>
+<td></td>
+</tr>
+<tr>
+<td>BasePayloadMultiplier</td>
+<td>UInt32</td>
+<td></td>
+</tr>
+<tr>
+<td>CrossPlatformFeaturedBases</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowMissionIdInTitle</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ToolkitGlobals</td>
+<td><a href="../../../classes/tk/TkGlobals">TkGlobals</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

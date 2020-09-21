@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>GcVehicleData - MBINCompiler</title>
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "GcVehicleData";
+    var mkdocs_page_input_path = "classes/gc/GcVehicleData.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../../../js/get_version.js"></script>
+    <script type='text/javascript'>
+        window.onload = function(){
+            var mbinc_version = GetVersion();
+        }
+    </script>
+    <script type="text/javascript" src="../../../js/download.js"></script>
+    <script type='text/javascript' src="../../../js/format_tables.js"></script>
+ 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> MBINCompiler</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../usage/">Usage</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../libmbin/usage/">libMBIN</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../">Classes</a>
+                    </li>
+                </ul>
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+        <li>
+            <a onclick="GetReleases(1)" href="#" id="direct_dl">Download</a>
+        </li>
+        <li>
+            <a href="https://github.com/monkeyman192/MBINCompiler">Source code (GitHub)</a>
+        </li>
+    </ul>
+
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">MBINCompiler</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>GcVehicleData</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="all-classes-gc-gcvehicledata"><a href="../../">All classes</a> &gt; <a href="../">gc</a> &gt; GcVehicleData</h2>
+<p><strong>Size</strong>: 0x1030, <strong>GUID</strong>: 0x7BDA83B1F4CC9A6E</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>String (0x10)</td>
+<td></td>
+</tr>
+<tr>
+<td>NumWheels</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelRadius</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardExtraRadius</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardExtraHeight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardAdjustUpwards</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterEnginePower</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterEngineMaxSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterEngineFalloff</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterEngineDirectionBrake</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterEngineDirectionBrakeVertical</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterAlignDir</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UnderwaterAlignUp</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VisualRollAmount</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VisualRollOffsetY</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SteeringWheelSpringMultiplier</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SteeringWheelPushRange</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelLocs</td>
+<td>Vector4f[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelNames</td>
+<td>NMSString0x20[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionNames</td>
+<td>NMSString0x20[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelRayFakeWidthFactor</td>
+<td>Single[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelRadiusMultiplier</td>
+<td>Single[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>SuspensionAnimNames</td>
+<td>NMSString0x10[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>CustomCollision</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>CollOffset</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ExtraCollOffset</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>CollDimensions</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>InertiaDimensions</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>CollRadius</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>InertiaMull</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionlength</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionForce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionDamping</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionAnimMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionAnimMax</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TopSpeedForward</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TopSpeedReverse</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelMaxAccelForceForward</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelMaxAccelForceReverse</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelMaxDecelForceNonBraking</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelMaxDecelForceBraking</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinniness</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelDragginess</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>HardStopSpeedThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelFrontFrictionOmega</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelFrontFrictionDynamic</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelFrontFrictionDynamicThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelFrontFrictionStatic</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelFrontFrictionStaticThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideFrictionOmega</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideFrictionDynamic</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideFrictionDynamicThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideFrictionStatic</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideFrictionStaticThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TurningWheelForce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TurningWheelForceVR</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TurningWheelFrictionOmega</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TurningWheelFrictionNonBraking</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TurningWheelFrictionBraking</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelForwardAngularFactor</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WheelTurnAngularFactor</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSuspensionAngularFactor</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSideAngularFactor</td>
+<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleGravity</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleGravityWater</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpForce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirControlForce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostForce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostMaxSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostExtraMaxSpeedAir</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostSpeedFalloff</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleBoostRechargeTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirRotateXAmount</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirRotateZAmount</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirRotateTimeMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirRotateTimeMax</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleJumpAirMaxTorque</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UseBuggySuspensionHack</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>UseRoverWheelHack</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SideSkidParticle</td>
+<td>String (0x10)</td>
+<td></td>
+</tr>
+<tr>
+<td>SideSkidParticleMinRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SideSkidParticleMaxRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SideSkidParticleMinThresh</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SideSkidParticleMaxThresh</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinParticle</td>
+<td>String (0x10)</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinParticleMinRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinParticleMaxRate</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinParticleMinThresh</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelSpinParticleMaxThresh</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardVerticalResponseMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardVerticalResponseMax</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardPenetrationScaleMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardPenetrationScaleMax</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardPenetrationScaleMinClamp</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardMassScaleMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardMassScaleMax</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGuardMassScaleMinClamp</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleLinearDampingGround</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAngularDampingGround</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleLinearDampingAerial</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAngularDampingAerial</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleLinearDampingWater</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAngularDampingWater</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelStartHeight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelEndHeight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleComCheat</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSpeedMul</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioTorqueMul</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSideSkidMul</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSideSkidThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSpinSkidMul</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSpinSkidThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioImpactSpeedThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioImpactSpeedMul</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSwapSkidAndSpeed</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioBoostStart</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioBoostStop</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioHornStart</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioHornStop</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioIdleExterior</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioImpacts</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioStart</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioStop</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioSuspension</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioJump</td>
+<td>String (0x80)</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOnTopOfWater</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleUnderwaterRotateTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSuspensionThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>VehicleAudioSuspensionScale</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>NumGrassPushers</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGrassPusherStrength</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGrassPusherWobble</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGrassPusherFrequency</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGrassPusherReduce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelGrassPushers</td>
+<td>Vector4f[0xA]</td>
+<td></td>
+</tr>
+<tr>
+<td>CreatureMassScale</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>HeadlightNames</td>
+<td>NMSString0x100[0x2]</td>
+<td></td>
+</tr>
+<tr>
+<td>CockpitHeadlightNames</td>
+<td>NMSString0x100[0x2]</td>
+<td></td>
+</tr>
+<tr>
+<td>HeadlightIntensity</td>
+<td>Float</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
