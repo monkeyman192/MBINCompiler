@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-gc-gcweatherproperties"><a href="../../">All classes</a> &gt; <a href="../">gc</a> &gt; GcWeatherProperties</h2>
-<p><strong>Size</strong>: 0x620, <strong>GUID</strong>: 0xD0AF4265E2A7B6DA</p>
+<p><strong>Size</strong>: 0x7F0, <strong>GUID</strong>: 0x48FA935D54F804FC</p>
 <table>
 <thead>
 <tr>
@@ -147,12 +147,22 @@
 <td></td>
 </tr>
 <tr>
+<td>UseWeatherFog</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
 <td>Fog</td>
 <td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
 <td></td>
 </tr>
 <tr>
 <td>FlightFog</td>
+<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
+<td></td>
+</tr>
+<tr>
+<td>StormFog</td>
 <td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
 <td></td>
 </tr>
@@ -203,7 +213,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td>GcHazardValues[0x5]</td>
+<td><div class='expandable'>GcHazardValues[0x5]</div><ul class='enumValues' hidden><li>Ambient</li><li>Water</li><li>Cave</li><li>Storm</li><li>Night</li></ul></td>
 <td></td>
 </tr>
 <tr>
@@ -213,7 +223,7 @@
 </tr>
 <tr>
 <td>Toxicity</td>
-<td>GcHazardValues[0x5]</td>
+<td><div class='expandable'>GcHazardValues[0x5]</div><ul class='enumValues' hidden><li>Ambient</li><li>Water</li><li>Cave</li><li>Storm</li><li>Night</li></ul></td>
 <td></td>
 </tr>
 <tr>
@@ -223,17 +233,57 @@
 </tr>
 <tr>
 <td>Radiation</td>
-<td>GcHazardValues[0x5]</td>
+<td><div class='expandable'>GcHazardValues[0x5]</div><ul class='enumValues' hidden><li>Ambient</li><li>Water</li><li>Cave</li><li>Storm</li><li>Night</li></ul></td>
 <td></td>
 </tr>
 <tr>
 <td>LifeSupportDrain</td>
-<td>GcHazardValues[0x5]</td>
+<td><div class='expandable'>GcHazardValues[0x5]</div><ul class='enumValues' hidden><li>Ambient</li><li>Water</li><li>Cave</li><li>Storm</li><li>Night</li></ul></td>
 <td></td>
 </tr>
 <tr>
 <td>StormFilterOptions</td>
 <td>List&lt;<a href="../../../classes/gc/GcScreenFilters">GcScreenFilters</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>UseWeatherSky</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Sky</td>
+<td><a href="../../../classes/gc/GcSkyProperties">GcSkyProperties</a></td>
+<td></td>
+</tr>
+<tr>
+<td>UseLightShaftProperties</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>LightShaftProperties</td>
+<td><a href="../../../classes/gc/GcLightShaftProperties">GcLightShaftProperties</a></td>
+<td></td>
+</tr>
+<tr>
+<td>UseStormLightShaftProperties</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>StormLightShaftProperties</td>
+<td><a href="../../../classes/gc/GcLightShaftProperties">GcLightShaftProperties</a></td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherEffectsIds</td>
+<td>List&lt;<a href="../../../classes/nms/NMSString0x10">NMSString0x10</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherHazardsIds</td>
+<td>List&lt;<a href="../../../classes/nms/NMSString0x10">NMSString0x10</a>></td>
 <td></td>
 </tr>
 </tbody>
