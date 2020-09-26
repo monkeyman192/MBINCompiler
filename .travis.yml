@@ -23,11 +23,12 @@ script:
     - python3.6 -m pytest --platform ubuntu.16.04-x64 --tb=no --report
     # Build the docs
     - sudo mono Build/Release/ubuntu.16.04-x64/MBINCompilerDocs.exe CI
-    - python3.6 -m mkdocs build
+    - python3.6 -m mkdocs build -q
     # Disable jekyll builds
     - touch html_docs/site/.nojekyll
     # Set the pre-deploy script to be executable
     - sudo chmod +x ./pre_deploy.sh
+    - "echo \"Tag: $TRAVIS_TAG\""
 
 before_deploy:
     # Only want to try and get the version if we have the commit being tagged. Otherwise we can only build docs on tagged builds.
@@ -59,6 +60,7 @@ deploy:
 
 deploy:
     provider: releases
+    prerelease: true
     name: "${TRAVIS_TAG}"
     body: "${TRAVIS_TAG}"
     api_key: "${GITHUB_TOKEN}"
@@ -81,3 +83,5 @@ deploy:
     local_dir: "html_docs/site"
     on:
         branch: development
+        # deploy the docs when the commit message starts with [doc]
+        condition: commit_message =~ ^(\[doc\] )(.*)
