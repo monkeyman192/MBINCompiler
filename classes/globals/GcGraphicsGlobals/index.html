@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcgraphicsglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcGraphicsGlobals</h2>
-<p><strong>Size</strong>: 0x900, <strong>GUID</strong>: 0xEBAEB5139C17AAB</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -172,33 +172,18 @@
 <td></td>
 </tr>
 <tr>
-<td>LightShaftScattering</td>
-<td>Float</td>
+<td>Padding18</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
-<td>LightShaftStrength</td>
-<td>Float</td>
+<td>LightShaftProperties</td>
+<td>GcLightShaftProperties</td>
 <td></td>
 </tr>
 <tr>
-<td>LightShaftBottom</td>
-<td>Float</td>
-<td></td>
-</tr>
-<tr>
-<td>LightShaftTop</td>
-<td>Float</td>
-<td></td>
-</tr>
-<tr>
-<td>LightShaftColourBottom</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
-<td></td>
-</tr>
-<tr>
-<td>LightShaftColourTop</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>StormLightShaftProperties</td>
+<td>GcLightShaftProperties</td>
 <td></td>
 </tr>
 <tr>
@@ -239,6 +224,11 @@
 <tr>
 <td>Redo_On</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding9D</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -397,8 +387,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding11C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ScanColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
@@ -412,18 +407,23 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding132</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ImGui</td>
-<td><a href="../../../classes/tk/TkImGuiSettings">TkImGuiSettings</a></td>
+<td>TkImGuiSettings</td>
 <td></td>
 </tr>
 <tr>
 <td>UIColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>UIShipColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
@@ -542,38 +542,48 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding34C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ShadowSplit</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowSplitShip</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowSplitSpace</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowSplitStation</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowSplitCameraView</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowBias</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShadowQuantized</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding3B1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -717,6 +727,26 @@
 <td></td>
 </tr>
 <tr>
+<td>DOFAmountManualLightIndoor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAmountManualFullIndoor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAmountManualLight</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAmountManualFull</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>DOFNearFadeDistance</td>
 <td>Float</td>
 <td></td>
@@ -772,7 +802,32 @@
 <td></td>
 </tr>
 <tr>
+<td>DOFFarFadeDistanceManualIndoor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>DOFFarFadeDistanceManual</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAutoFarAmount</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAutoFarFarPlaneFade</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAutoFarFarPlane</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DOFAutoFarNearPlane</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -799,6 +854,11 @@
 <tr>
 <td>DOFEnableBokeh</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding489</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -967,28 +1027,33 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding50A</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>MipLevelDebug</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>LensParams</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>VerticalColourTop</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>VerticalColourBottom</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>VerticalGradient</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
@@ -1098,12 +1163,12 @@
 </tr>
 <tr>
 <td>WindDir1</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>WindDir2</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
@@ -1322,18 +1387,43 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding65B</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>TaaSettings</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>TessSettings</td>
-<td><div class='expandable'>Vector4f[0x4]</div><ul class='enumValues' hidden><li>Low</li><li>Medium</li><li>High</li><li>Ultra</li></ul></td>
+<td>Vector4f[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>TerrainMipDistanceLow</td>
+<td>Vector4f</td>
+<td></td>
+</tr>
+<tr>
+<td>TerrainMipDistanceMed</td>
+<td>Vector4f</td>
+<td></td>
+</tr>
+<tr>
+<td>TerrainMipDistanceHigh</td>
+<td>Vector4f</td>
+<td></td>
+</tr>
+<tr>
+<td>TerrainMipDistanceUlt</td>
+<td>Vector4f</td>
 <td></td>
 </tr>
 <tr>
 <td>ShellsSettings</td>
-<td><div class='expandable'>Vector4f[0x4]</div><ul class='enumValues' hidden><li>Low</li><li>Medium</li><li>High</li><li>Ultra</li></ul></td>
+<td>Vector4f[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1417,6 +1507,11 @@
 <td></td>
 </tr>
 <tr>
+<td>TerrainBlocksPerFrameOberon</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
 <td>EnableTerrainCachePs4Base</td>
 <td>Boolean</td>
 <td></td>
@@ -1447,6 +1542,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding77A</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>MinPixelSizeOfObjectsInShadowsSpace</td>
 <td>Float</td>
 <td></td>
@@ -1467,8 +1567,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding789</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CascadeRenderSequence</td>
-<td>Int32[0x4]</td>
+<td>Int32[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1489,6 +1594,11 @@
 <tr>
 <td>ForceEvictAllTextures</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding7A3</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1537,6 +1647,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding7C5</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>SharpenFilterAmount</td>
 <td>Float</td>
 <td></td>
@@ -1553,37 +1668,47 @@
 </tr>
 <tr>
 <td>GraphicsDetailPresetsPC</td>
-<td><div class='expandable'>TkGraphicsDetailPreset[0x4]</div><ul class='enumValues' hidden><li>Low</li><li>Medium</li><li>High</li><li>Ultra</li></ul></td>
+<td>TkGraphicsDetailPreset[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetPS4</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetPS4VR</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetPS4Pro</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetPS4ProVR</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetXB1</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
 <td></td>
 </tr>
 <tr>
 <td>GraphicsDetailPresetXB1X</td>
-<td><a href="../../../classes/tk/TkGraphicsDetailPreset">TkGraphicsDetailPreset</a></td>
+<td>TkGraphicsDetailPreset</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphicsDetailPresetOberon</td>
+<td>TkGraphicsDetailPreset</td>
+<td></td>
+</tr>
+<tr>
+<td>EndPadding</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 </tbody>

@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gccreatureglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcCreatureGlobals</h2>
-<p><strong>Size</strong>: 0x3370, <strong>GUID</strong>: 0xFE8B3BE8EF838E19</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -143,67 +143,72 @@
 <tbody>
 <tr>
 <td>Temperments</td>
-<td><div class='expandable'>NMSString0x20[0xA]</div><ul class='enumValues' hidden><li>None</li><li>Predator</li><li>PlayerPredator</li><li>Prey</li><li>Passive</li><li>Bird</li><li>FishPrey</li><li>FishPredator</li><li>Butterfly</li><li>Robot</li></ul></td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>TempermentDescriptions</td>
-<td><div class='expandable'>NMSString0x20[0xA]</div><ul class='enumValues' hidden><li>None</li><li>Predator</li><li>PlayerPredator</li><li>Prey</li><li>Passive</li><li>Bird</li><li>FishPrey</li><li>FishPredator</li><li>Butterfly</li><li>Robot</li></ul></td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>Diets</td>
-<td>NMSString0x20[0x3]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>WaterDiets</td>
-<td>NMSString0x20[0x3]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>DietMeat</td>
-<td>NMSString0x20[0xE]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>DietVeg</td>
-<td>NMSString0x20[0xE]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>DietDescriptions</td>
-<td>NMSString0x20[0x3]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>WaterDietDescriptions</td>
-<td>NMSString0x20[0x3]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>BiomeDescriptions</td>
-<td>NMSString0x20[0xD]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>BiomeWaterDescriptions</td>
-<td>NMSString0x20[0xD]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>BiomeAirDescriptions</td>
-<td>NMSString0x20[0xD]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>WeirdBiomeDescriptions</td>
-<td>NMSString0x20[0x14]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>OverrideIKParams</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding11E1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -257,6 +262,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding11FA</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>RidingReplicationRangeMultiplier</td>
 <td>Float</td>
 <td></td>
@@ -297,6 +307,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1216</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>RideSpeedSlow</td>
 <td>Float</td>
 <td></td>
@@ -332,6 +347,11 @@
 <td></td>
 </tr>
 <tr>
+<td>MaxCreatureSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>MaxRideLeanCounterRotate</td>
 <td>Float</td>
 <td></td>
@@ -357,13 +377,18 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding124C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CreatureSeed</td>
-<td>Int32</td>
+<td>GcSeed</td>
 <td></td>
 </tr>
 <tr>
 <td>CreatureFilter</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -377,6 +402,11 @@
 <td></td>
 </tr>
 <tr>
+<td>LowPerfFlockReduce</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>UncapSpawningforVideo</td>
 <td>Boolean</td>
 <td></td>
@@ -384,6 +414,11 @@
 <tr>
 <td>AllowSpawningOnscreen</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding128E</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -522,8 +557,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding12FC</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>PainShake</td>
-<td><a href="../../../classes/gc/GcCameraShakeData">GcCameraShakeData</a></td>
+<td>GcCameraShakeData</td>
 <td></td>
 </tr>
 <tr>
@@ -547,42 +587,72 @@
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeHeight</td>
+<td>SandWormChangeDirectionTime</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeDeep</td>
+<td>SandWormSteerAdjustTime</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeTime</td>
+<td>SandWormMaxSteer</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeWide</td>
+<td>SandWormMaxHeightAdjust</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeUnderTime</td>
+<td>SandWormJumpHeight</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeEmergeOffset</td>
+<td>SandWormJumpTime</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeRadius</td>
+<td>SandWormSubmergeDepth</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>GiantSnakeHeadOffset</td>
+<td>SandWormSubmergeTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormSurfaceTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormMaxJumps</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormDespawnDist</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormSpawnTimer</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormSpawnChanceMin</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SandWormSpawnChanceMax</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -828,17 +898,22 @@
 </tr>
 <tr>
 <td>FlyingSnakeData</td>
-<td><a href="../../../classes/gc/GcFlyingSnakeData">GcFlyingSnakeData</a></td>
+<td>GcFlyingSnakeData</td>
 <td></td>
 </tr>
 <tr>
 <td>AlertTable</td>
-<td>GcCreatureAlertData[0x4]</td>
+<td>GcCreatureAlertData[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>ShowScale</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1569</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -908,7 +983,7 @@
 </tr>
 <tr>
 <td>CreatureLargeWalkShake</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -917,8 +992,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding15B4</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CreatureLargeRunShake</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -927,8 +1007,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding15CC</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CreatureHugeWalkShake</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -937,8 +1022,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding15E4</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CreatureHugeRunShake</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1117,6 +1207,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1681</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>DelayAfterRespawnBeforeAttackable</td>
 <td>Float</td>
 <td></td>
@@ -1159,6 +1254,11 @@
 <tr>
 <td>ScuttlersCanAttack</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding16A5</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1244,6 +1344,11 @@
 <tr>
 <td>FiendOnscreenMarkers</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding16E6</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1473,6 +1578,11 @@
 </tr>
 <tr>
 <td>TurnRadiusMultiplier</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PredatorTurnRadiusMultiplier</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -1747,6 +1857,21 @@
 <td></td>
 </tr>
 <tr>
+<td>SpawnDistAtMinSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SpawnDistAtMaxSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>DespawnDistFactor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>MinFade</td>
 <td>Float</td>
 <td></td>
@@ -1759,6 +1884,11 @@
 <tr>
 <td>ProcessPendingSpawnRequests</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1891</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1782,6 +1912,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding189E</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>TrailHalfLife</td>
 <td>Float</td>
 <td></td>
@@ -1789,6 +1924,11 @@
 <tr>
 <td>EnableTrailIk</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding18A5</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1817,23 +1957,28 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding18B9</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>CreatureDeathEffectSmall</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>CreatureDeathEffectMedium</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>CreatureDeathEffectBig</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>FishDeathEffect</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1844,6 +1989,11 @@
 <tr>
 <td>PiedPiper</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1905</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1899,6 +2049,11 @@
 <tr>
 <td>DebugSearch</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1931</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -2027,6 +2182,16 @@
 <td></td>
 </tr>
 <tr>
+<td>DrawRoutineInfo</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1996</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>AdultCorrelationValue</td>
 <td>Float</td>
 <td></td>
@@ -2052,18 +2217,8 @@
 <td></td>
 </tr>
 <tr>
-<td>DefaultCreatureSettings</td>
-<td>String (0x80)</td>
-<td></td>
-</tr>
-<tr>
-<td>DefaultAirCreatureSettings</td>
-<td>String (0x80)</td>
-<td></td>
-</tr>
-<tr>
-<td>DefaultWaterCreatureSettings</td>
-<td>String (0x80)</td>
+<td>Padding19A9</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -2083,22 +2238,22 @@
 </tr>
 <tr>
 <td>DefaultKillingSubstance</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>AlienShipQuestKillingSubstance</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>AlienShipQuestCreatureWeapon</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>KillingSubstances</td>
-<td>NMSString0x10[0x3]</td>
+<td>NMSString0x10[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -2123,12 +2278,12 @@
 </tr>
 <tr>
 <td>KillingProducts</td>
-<td><div class='expandable'>GcCreatureSubstanceList[0x1A]</div><ul class='enumValues' hidden><li>Fish</li><li>Antelope</li><li>Bird</li><li>Butterfly</li><li>FlyingSnake</li><li>FlyingLizard</li><li>Diplo</li><li>Triceratops</li><li>Rodent</li><li>Cow</li><li>Cat</li><li>Strider</li><li>Trex</li><li>Shark</li><li>TwoLegAntelope</li><li>SixLegCat</li><li>SixLegCow</li><li>Grunt</li><li>Blob</li><li>Spider</li><li>FloatSpider</li><li>SwimCow</li><li>SwimRodent</li><li>Jellyfish</li><li>Crab</li><li>RockCreature</li></ul></td>
+<td>GcCreatureSubstanceList[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>HarvestingProducts</td>
-<td><div class='expandable'>GcCreatureHarvestSubstanceList[0x1A]</div><ul class='enumValues' hidden><li>Fish</li><li>Antelope</li><li>Bird</li><li>Butterfly</li><li>FlyingSnake</li><li>FlyingLizard</li><li>Diplo</li><li>Triceratops</li><li>Rodent</li><li>Cow</li><li>Cat</li><li>Strider</li><li>Trex</li><li>Shark</li><li>TwoLegAntelope</li><li>SixLegCat</li><li>SixLegCow</li><li>Grunt</li><li>Blob</li><li>Spider</li><li>FloatSpider</li><li>SwimCow</li><li>SwimRodent</li><li>Jellyfish</li><li>Crab</li><li>RockCreature</li></ul></td>
+<td>GcCreatureHarvestSubstanceList[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -2163,27 +2318,32 @@
 </tr>
 <tr>
 <td>BasicFeedingProduct</td>
-<td>String (0x10)</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotFeedingProduct</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>HerbivoreFeedingProducts</td>
-<td>GcCreatureFoodList[0x4]</td>
+<td>GcCreatureFoodList[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>CarnivoreFeedingProducts</td>
-<td>GcCreatureFoodList[0x4]</td>
+<td>GcCreatureFoodList[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>WeirdKillingRewards</td>
-<td><a href="../../../classes/gc/GcWeirdCreatureRewardList">GcWeirdCreatureRewardList</a></td>
+<td>GcWeirdCreatureRewardList</td>
 <td></td>
 </tr>
 <tr>
 <td>LootItems</td>
-<td>NMSString0x10[0x3]</td>
+<td>NMSString0x10[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -2193,12 +2353,27 @@
 </tr>
 <tr>
 <td>RockTransformChanceModifiers</td>
-<td>Single[0x4]</td>
+<td>Single[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>AngryRockProportionNormal</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>AngryRockProportionSurvival</td>
+<td>Float</td>
 <td></td>
 </tr>
 <tr>
 <td>PauseBetweenCreatureSpawnRequests</td>
 <td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>EndPadding</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 </tbody>

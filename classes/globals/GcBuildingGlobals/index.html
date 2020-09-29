@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcbuildingglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcBuildingGlobals</h2>
-<p><strong>Size</strong>: 0x3C0, <strong>GUID</strong>: 0xF069690BCD4229C9</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -143,7 +143,7 @@
 <tbody>
 <tr>
 <td>BuildingPartPreviewOffset</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector3f</td>
 <td></td>
 </tr>
 <tr>
@@ -193,12 +193,12 @@
 </tr>
 <tr>
 <td>ActiveLodDistances</td>
-<td>TkLODDistances[0x4]</td>
+<td>TkLODDistances[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>InactiveLodDistances</td>
-<td>TkLODDistances[0x4]</td>
+<td>TkLODDistances[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -219,6 +219,11 @@
 <tr>
 <td>AllowBuildingUsingIntermediates</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>PaddingE1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -403,7 +408,7 @@
 </tr>
 <tr>
 <td>LineCurve</td>
-<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
+<td>TkCurveType</td>
 <td></td>
 </tr>
 <tr>
@@ -438,6 +443,16 @@
 </tr>
 <tr>
 <td>PlanetSectorSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>LargePropTestRadius</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>LargePropExclusionRadiusExtension</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -622,8 +637,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding22C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>MarkerLineColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
@@ -697,12 +717,12 @@
 <td></td>
 </tr>
 <tr>
-<td>MaxRadiusForBases</td>
+<td>MaxRadiusForPlanetBases</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
-<td>MaximumPipeSegmentLength</td>
+<td>MaxRadiusForSpaceBases</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -782,6 +802,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding2B9</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>BuildingPlacementEffectDissolveSpeed</td>
 <td>Float</td>
 <td></td>
@@ -807,6 +832,11 @@
 <td></td>
 </tr>
 <tr>
+<td>BuildingPlacementScaleMinMax</td>
+<td>Vector2f</td>
+<td></td>
+</tr>
+<tr>
 <td>InactiveVisibleComplexityFactor</td>
 <td>Float</td>
 <td></td>
@@ -817,13 +847,18 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding2DD</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>TotalPlanetFrameTimeForComplexity</td>
-<td>Single[0x4]</td>
+<td>Single[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>TotalSpaceFrameTimeForComplexity</td>
-<td>Single[0x4]</td>
+<td>Single[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -878,12 +913,17 @@
 </tr>
 <tr>
 <td>FreighterBaseSpawnOverride</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>BaseBuildingTerrainEditBoundsOverride</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding3A9</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -904,6 +944,11 @@
 <tr>
 <td>BaseBuildingCamEnabled</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>EndPadding</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 </tbody>

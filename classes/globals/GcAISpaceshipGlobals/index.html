@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcaispaceshipglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcAISpaceshipGlobals</h2>
-<p><strong>Size</strong>: 0x1180, <strong>GUID</strong>: 0x3DDBA834D19869B0</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -179,6 +179,11 @@
 <tr>
 <td>FillUpOutposts</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding11</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -342,6 +347,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding8E</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>AttackTooCloseMinRelSpeed</td>
 <td>Float</td>
 <td></td>
@@ -362,18 +372,28 @@
 <td></td>
 </tr>
 <tr>
+<td>FlybyPlanetLandingProbability</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PaddingA4</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>PirateTravel</td>
-<td><a href="../../../classes/gc/GcSpaceshipTravelData">GcSpaceshipTravelData</a></td>
+<td>GcSpaceshipTravelData</td>
 <td></td>
 </tr>
 <tr>
 <td>PoliceTravel</td>
-<td><a href="../../../classes/gc/GcSpaceshipTravelData">GcSpaceshipTravelData</a></td>
+<td>GcSpaceshipTravelData</td>
 <td></td>
 </tr>
 <tr>
 <td>TraderAttackTravel</td>
-<td><a href="../../../classes/gc/GcSpaceshipTravelData">GcSpaceshipTravelData</a></td>
+<td>GcSpaceshipTravelData</td>
 <td></td>
 </tr>
 <tr>
@@ -388,7 +408,7 @@
 </tr>
 <tr>
 <td>Attack</td>
-<td><a href="../../../classes/gc/GcShipAIAttackData">GcShipAIAttackData</a></td>
+<td>GcShipAIAttackData</td>
 <td></td>
 </tr>
 <tr>
@@ -413,7 +433,12 @@
 </tr>
 <tr>
 <td>OutpostLanding</td>
-<td><a href="../../../classes/gc/GcSpaceshipTravelData">GcSpaceshipTravelData</a></td>
+<td>GcSpaceshipTravelData</td>
+<td></td>
+</tr>
+<tr>
+<td>PlanetLanding</td>
+<td>GcSpaceshipTravelData</td>
 <td></td>
 </tr>
 <tr>
@@ -538,42 +563,42 @@
 </tr>
 <tr>
 <td>SpaceBattleSpawnAngle</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleSpawnPitch</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleSpawnOffset</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleSunHeightAngle</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleSunAroundAngle</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleSpawnRange</td>
-<td>Vector2f[0x3]</td>
+<td>Vector2f[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattlePirateRange</td>
-<td>Vector2f[0x3]</td>
+<td>Vector2f[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceBattleGuardsRange</td>
-<td>Vector2f[0x3]</td>
+<td>Vector2f[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -613,7 +638,7 @@
 </tr>
 <tr>
 <td>ConeSpawnOffsetFactor</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
@@ -632,18 +657,23 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding46D</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>FreighterAlertLightCapitalSize</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
 <td>LegacyHangarFilename</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>HangarFilename</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -657,23 +687,28 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding57C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>FreighterDoorColourActive</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>FreighterDoorColourInactive</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>AlertLightColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>FreighterLightHitCurve</td>
-<td><a href="../../../classes/tk/TkHitCurveData">TkHitCurveData</a></td>
+<td>TkHitCurveData</td>
 <td></td>
 </tr>
 <tr>
@@ -702,13 +737,23 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding5D4</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>TurretAlertLightOffset</td>
-<td><a href="../../../classes/nms/Vector4f">Vector4f</a></td>
+<td>Vector3f</td>
 <td></td>
 </tr>
 <tr>
 <td>DisableTradeRoutes</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding5F1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -803,7 +848,7 @@
 </tr>
 <tr>
 <td>PirateFreighterAttackRange</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
@@ -818,7 +863,7 @@
 </tr>
 <tr>
 <td>FreighterMiniSpeeds</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
@@ -878,7 +923,7 @@
 </tr>
 <tr>
 <td>BountyAttack</td>
-<td><a href="../../../classes/gc/GcShipAIAttackData">GcShipAIAttackData</a></td>
+<td>GcShipAIAttackData</td>
 <td></td>
 </tr>
 <tr>
@@ -1007,6 +1052,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding7B1</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>PlanetUpAlignTime</td>
 <td>Float</td>
 <td></td>
@@ -1024,6 +1074,11 @@
 <tr>
 <td>PoliceSpawnEffect</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding7C1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1113,7 +1168,7 @@
 </tr>
 <tr>
 <td>TrailScaleCurve</td>
-<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
+<td>TkCurveType</td>
 <td></td>
 </tr>
 <tr>
@@ -1128,7 +1183,7 @@
 </tr>
 <tr>
 <td>TradeRouteIcon</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1192,13 +1247,23 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding944</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>TradeRouteColours</td>
-<td>Colour[0x5]</td>
+<td>Colour[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>EnableLoot</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding9A1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1218,12 +1283,12 @@
 </tr>
 <tr>
 <td>PoliceSideOffset</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
 <td>PoliceUpOffset</td>
-<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td>Vector2f</td>
 <td></td>
 </tr>
 <tr>
@@ -1289,6 +1354,11 @@
 <tr>
 <td>FreighterIgnorePlayer</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding9F1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1467,6 +1537,11 @@
 <td></td>
 </tr>
 <tr>
+<td>PaddingA7D</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>WarpInPlayerLocatorTime</td>
 <td>Float</td>
 <td></td>
@@ -1493,7 +1568,7 @@
 </tr>
 <tr>
 <td>WarpInCurve</td>
-<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
+<td>TkCurveType</td>
 <td></td>
 </tr>
 <tr>
@@ -1548,12 +1623,12 @@
 </tr>
 <tr>
 <td>ShipBullet</td>
-<td><a href="../../../classes/gc/GcProjectileLineData">GcProjectileLineData</a></td>
+<td>GcProjectileLineData</td>
 <td></td>
 </tr>
 <tr>
 <td>TraderTravel</td>
-<td><a href="../../../classes/gc/GcSpaceshipTravelData">GcSpaceshipTravelData</a></td>
+<td>GcSpaceshipTravelData</td>
 <td></td>
 </tr>
 <tr>
@@ -1833,27 +1908,32 @@
 </tr>
 <tr>
 <td>Death</td>
-<td><a href="../../../classes/gc/GcShipAIDeathData">GcShipAIDeathData</a></td>
+<td>GcShipAIDeathData</td>
 <td></td>
 </tr>
 <tr>
 <td>AttackPlanet</td>
-<td><a href="../../../classes/gc/GcShipAIAttackData">GcShipAIAttackData</a></td>
+<td>GcShipAIAttackData</td>
 <td></td>
 </tr>
 <tr>
 <td>TraderAttack</td>
-<td><a href="../../../classes/gc/GcShipAIAttackData">GcShipAIAttackData</a></td>
+<td>GcShipAIAttackData</td>
 <td></td>
 </tr>
 <tr>
 <td>WingmanPathData</td>
-<td><a href="../../../classes/gc/GcShipAIPlanetPatrolData">GcShipAIPlanetPatrolData</a></td>
+<td>GcShipAIPlanetPatrolData</td>
+<td></td>
+</tr>
+<tr>
+<td>PaddingE18</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>DebugShipSpawns</td>
-<td>GcAIShipDebugSpawnData[0x4]</td>
+<td>GcAIShipDebugSpawnData[0x]</td>
 <td></td>
 </tr>
 </tbody>

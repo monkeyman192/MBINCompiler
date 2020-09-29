@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcdebugoptions"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcDebugOptions</h2>
-<p><strong>Size</strong>: 0x1ED0, <strong>GUID</strong>: 0x193008B30B4182FD</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -141,6 +141,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>ForceScanEventsToGoPrime</td>
+<td>Boolean</td>
+<td></td>
+</tr>
 <tr>
 <td>SkipAbandonedFreighterUnlocking</td>
 <td>Boolean</td>
@@ -154,6 +159,11 @@
 <tr>
 <td>DisableAbandonedFreighterRoomsOptimisation</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding4</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -177,6 +187,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding13</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>BootDirectlyIntoSaveSlot</td>
 <td>Int32</td>
 <td></td>
@@ -187,8 +202,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding19</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>NewSaveGameMode</td>
-<td><a href="../../../classes/gc/GcGameMode">GcGameMode</a></td>
+<td>GcGameMode</td>
 <td></td>
 </tr>
 <tr>
@@ -257,6 +277,11 @@
 <td></td>
 </tr>
 <tr>
+<td>DisableHazards</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
 <td>IgnoreMissionRank</td>
 <td>Boolean</td>
 <td></td>
@@ -308,6 +333,11 @@
 </tr>
 <tr>
 <td>DisableSaving</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DisableStorms</td>
 <td>Boolean</td>
 <td></td>
 </tr>
@@ -367,6 +397,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding45</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ScreenWidth</td>
 <td>Int32</td>
 <td></td>
@@ -379,6 +414,11 @@
 <tr>
 <td>DisableVSync</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding51</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -403,12 +443,12 @@
 </tr>
 <tr>
 <td>ForceUniverseAddress</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>ForcePlayerPosition</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -419,6 +459,11 @@
 <tr>
 <td>ForceInitialWeapon</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding266</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -438,12 +483,12 @@
 </tr>
 <tr>
 <td>SceneSettings</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>WorkingDirectory</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -472,6 +517,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding3FF</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>BootLoadDelay</td>
 <td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>LoadAll</li><li val='0x1'>WaitForPlanet</li><li val='0x2'>WaitForNothing</li></ol></td>
 <td></td>
@@ -482,13 +532,28 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding405</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceTimeOfDay</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceInitialTimeOfDay</td>
 <td>Float</td>
 <td></td>
 </tr>
 <tr>
 <td>ForceSunDirectionFromPhotoMode</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding411</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -597,6 +662,11 @@
 <td></td>
 </tr>
 <tr>
+<td>LoadMissions</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
 <td>MPMissions</td>
 <td>Boolean</td>
 <td></td>
@@ -613,6 +683,11 @@
 </tr>
 <tr>
 <td>ForceNexusInQuickMenu</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>MissionSurveyEnabled</td>
 <td>Boolean</td>
 <td></td>
 </tr>
@@ -662,6 +737,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding43B</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceInteractionIndex</td>
 <td>Int32</td>
 <td></td>
@@ -682,13 +762,18 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding443</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>DebugLanguage</td>
-<td><a href="../../../classes/tk/TkLanguages">TkLanguages</a></td>
+<td>TkLanguages</td>
 <td></td>
 </tr>
 <tr>
 <td>AllowedLanguagesFile</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -697,8 +782,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding469</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceInteractionRaceTo</td>
-<td><a href="../../../classes/gc/GcAlienRace">GcAlienRace</a></td>
+<td>GcAlienRace</td>
 <td></td>
 </tr>
 <tr>
@@ -718,7 +808,7 @@
 </tr>
 <tr>
 <td>RealityPresetFile</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -728,12 +818,12 @@
 </tr>
 <tr>
 <td>LocTableList</td>
-<td>NMSString0x20[0x5]</td>
+<td>NMSString0x20[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>DefaultSaveData</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -747,6 +837,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding61A</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>BootLogoFadeRate</td>
 <td>Float</td>
 <td></td>
@@ -754,6 +849,11 @@
 <tr>
 <td>BootMusic</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding621</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -769,6 +869,11 @@
 <tr>
 <td>FleetDirectorAutoMode</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding62A</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -803,7 +908,7 @@
 </tr>
 <tr>
 <td>SaveTestingCommand</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -827,18 +932,23 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding65F</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>RecurrenceTimeOffset</td>
 <td>Int32</td>
 <td></td>
 </tr>
 <tr>
 <td>CrashDumpPath</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>CrashDumpIdentifier</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -888,12 +998,17 @@
 </tr>
 <tr>
 <td>ShowUniverseAddressOnGalaxyMap</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>ShowGraphs</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding80E</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -927,8 +1042,43 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding819</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>SmokeTestCycleMode</td>
 <td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TourSolarSystem</li><li val='0x2'>RegeneratePlanet</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestScenario</td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TerrainSnapShotFromAltitude</li><li val='0x2'>BelowCloudLayerSnapShot</li><li val='0x3'>Flying</li></ol></td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestLegacyOutput</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding825</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigPlanetPositionCount</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigScenarioPreambleLength</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestConfigScenarioLength</td>
+<td>Float</td>
 <td></td>
 </tr>
 <tr>
@@ -944,6 +1094,11 @@
 <tr>
 <td>SmokeTestPureFlight</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding837</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -974,6 +1129,11 @@
 <tr>
 <td>SmokeTestSmokeBotAutoStart</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding847</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1028,37 +1188,37 @@
 </tr>
 <tr>
 <td>PipelineFile</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFilePS4</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFileXboxOne</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFileVR</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFileVRPS4</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFileFrontend</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PipelineFileEditor</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1092,13 +1252,18 @@
 <td></td>
 </tr>
 <tr>
+<td>PaddingBDB</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ProxyType</td>
 <td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>ManualURI</li><li val='0x2'>InetProxy</li></ol></td>
 <td></td>
 </tr>
 <tr>
 <td>ProxyURI</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1108,7 +1273,7 @@
 </tr>
 <tr>
 <td>AuthBaseUrl</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1118,7 +1283,12 @@
 </tr>
 <tr>
 <td>OverrideUsernameForDev</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>PaddingD05</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1138,7 +1308,7 @@
 </tr>
 <tr>
 <td>AutoJoinUserNames</td>
-<td>NMSString0x100[0x8]</td>
+<td>NMSString0x100[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1157,13 +1327,18 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1511</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>OverrideMatchmakingVersion</td>
 <td>Int32</td>
 <td></td>
 </tr>
 <tr>
 <td>LoadToBase</td>
-<td>String (0x200)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1178,7 +1353,7 @@
 </tr>
 <tr>
 <td>GOGLogin</td>
-<td>String (0x100)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
@@ -1203,7 +1378,12 @@
 </tr>
 <tr>
 <td>SynergyServer</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding183E</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1217,6 +1397,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1845</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>MaxNumDebugMessages</td>
 <td>Int32</td>
 <td></td>
@@ -1227,6 +1412,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding184D</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>DebugTextureSize</td>
 <td>Int32</td>
 <td></td>
@@ -1234,6 +1424,11 @@
 <tr>
 <td>UseProcTextureDebugger</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1855</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1248,42 +1443,47 @@
 </tr>
 <tr>
 <td>DebugFont</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>DebugFontTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>CursorTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PauseTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>PlayTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>StepTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>RenderToTexture</td>
-<td>String (0x80)</td>
+<td>String (0x)</td>
 <td></td>
 </tr>
 <tr>
 <td>HmdEnable</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1BE1</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1304,6 +1504,11 @@
 <tr>
 <td>HmdDistortionPassthru</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1BEB</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1344,6 +1549,11 @@
 <tr>
 <td>BodyTurning</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1C03</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1397,8 +1607,18 @@
 <td></td>
 </tr>
 <tr>
+<td>ForceLoadAllWeather</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1C12</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceStarTypeTo</td>
-<td><a href="../../../classes/gc/GcGalaxyStarTypes">GcGalaxyStarTypes</a></td>
+<td>GcGalaxyStarTypes</td>
 <td></td>
 </tr>
 <tr>
@@ -1407,13 +1627,33 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1C19</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceBiomeTo</td>
-<td><a href="../../../classes/gc/GcBiomeType">GcBiomeType</a></td>
+<td>GcBiomeSubType</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceScreenFilter</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1C21</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceScreenFilterTo</td>
+<td>GcScreenFilters</td>
 <td></td>
 </tr>
 <tr>
 <td>ForceBiomeSubTypeTo</td>
-<td><a href="../../../classes/gc/GcBiomeSubType">GcBiomeSubType</a></td>
+<td>GcBiomeSubType</td>
 <td></td>
 </tr>
 <tr>
@@ -1422,8 +1662,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1C2D</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceBuildingRaceTo</td>
-<td><a href="../../../classes/gc/GcAlienRace">GcAlienRace</a></td>
+<td>GcAlienRace</td>
 <td></td>
 </tr>
 <tr>
@@ -1432,8 +1677,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1C35</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceLifeLevelTo</td>
-<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td>GcPlanetLife</td>
 <td></td>
 </tr>
 <tr>
@@ -1447,13 +1697,38 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1C3E</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultGroundCreatureTable</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultAirCreatureTable</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultWaterCreatureTable</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultCaveCreatureTable</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceCreatureLifeLevelTo</td>
-<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td>GcPlanetLife</td>
 <td></td>
 </tr>
 <tr>
 <td>ForceTerrainSettings</td>
-<td><a href="../../../classes/gc/GcPlanetLife">GcPlanetLife</a></td>
+<td>GcPlanetLife</td>
 <td></td>
 </tr>
 <tr>
@@ -1462,18 +1737,48 @@
 <td></td>
 </tr>
 <tr>
-<td>ForceTerranTypeTo</td>
-<td><a href="../../../classes/tk/TkVoxelGeneratorSettingsTypes">TkVoxelGeneratorSettingsTypes</a></td>
+<td>Padding1C89</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTerrainTypeTo</td>
+<td>TkVoxelGeneratorSettingsTypes</td>
+<td></td>
+</tr>
+<tr>
+<td>ForcePrimeTerrain</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceBinaryStar</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceTernaryStar</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1C93</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>ForceAnomalyTo</td>
-<td><a href="../../../classes/gc/GcGalaxyStarAnomaly">GcGalaxyStarAnomaly</a></td>
+<td>GcGalaxyStarAnomaly</td>
 <td></td>
 </tr>
 <tr>
 <td>ForcePlanetsToHaveWater</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1C99</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1488,6 +1793,11 @@
 </tr>
 <tr>
 <td>ForceWaterColourIndex</td>
+<td>Int32</td>
+<td></td>
+</tr>
+<tr>
+<td>ForceGrassColourIndex</td>
 <td>Int32</td>
 <td></td>
 </tr>
@@ -1522,6 +1832,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1CB2</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>GenerateFarLodBuildingDist</td>
 <td>Int32</td>
 <td></td>
@@ -1529,6 +1844,11 @@
 <tr>
 <td>DeferRegionBodies</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1CB9</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1602,6 +1922,11 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1CE2</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>BaseDownloadTimeout</td>
 <td>Float</td>
 <td></td>
@@ -1614,6 +1939,11 @@
 <tr>
 <td>EnableBaseMovingOption</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1CEA</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1633,7 +1963,12 @@
 </tr>
 <tr>
 <td>BaseServerPlatform</td>
-<td>String (0x20)</td>
+<td>String (0x)</td>
+<td></td>
+</tr>
+<tr>
+<td>Padding1D15</td>
+<td>Byte[0x]</td>
 <td></td>
 </tr>
 <tr>
@@ -1652,8 +1987,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding1D1E</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>ToolkitGlobals</td>
-<td><a href="../../../classes/tk/TkGlobals">TkGlobals</a></td>
+<td>TkGlobals</td>
 <td></td>
 </tr>
 </tbody>

@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcskyglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcSkyGlobals</h2>
-<p><strong>Size</strong>: 0xD30, <strong>GUID</strong>: 0x1C33B31C77657041</p>
+<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
 <table>
 <thead>
 <tr>
@@ -178,22 +178,22 @@
 </tr>
 <tr>
 <td>FogAdjust</td>
-<td><a href="../../../classes/gc/GcPhotoModeAdjustData">GcPhotoModeAdjustData</a></td>
+<td>GcPhotoModeAdjustData</td>
 <td></td>
 </tr>
 <tr>
 <td>CloudAdjust</td>
-<td><a href="../../../classes/gc/GcPhotoModeAdjustData">GcPhotoModeAdjustData</a></td>
+<td>GcPhotoModeAdjustData</td>
 <td></td>
 </tr>
 <tr>
 <td>VignetteAdjust</td>
-<td><a href="../../../classes/gc/GcPhotoModeAdjustData">GcPhotoModeAdjustData</a></td>
+<td>GcPhotoModeAdjustData</td>
 <td></td>
 </tr>
 <tr>
 <td>DoFAdjustMagnitudeMaxCurve</td>
-<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
+<td>TkCurveType</td>
 <td></td>
 </tr>
 <tr>
@@ -202,8 +202,13 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding6C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>SunRotationAxis</td>
-<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td>Vector3f</td>
 <td></td>
 </tr>
 <tr>
@@ -232,7 +237,22 @@
 <td></td>
 </tr>
 <tr>
+<td>PhotoModeVignette</td>
+<td>Vector2f</td>
+<td></td>
+</tr>
+<tr>
 <td>PhotoModeSunSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateWeatherWhenSunLocked</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherFilterSpaceTransitionChangeTime</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -322,6 +342,16 @@
 <td></td>
 </tr>
 <tr>
+<td>MaxCloudCover</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>MaxStormCloudCover</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>ForceFlightSetting</td>
 <td>Boolean</td>
 <td></td>
@@ -367,53 +397,93 @@
 <td></td>
 </tr>
 <tr>
+<td>CloudCoverSmoothTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>CloudRatioSmoothTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>StormCloudTopColourMinBlend</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>StormCloudTopColourMaxBlend</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>StormCloudBottomColourMinBlend</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>StormCloudBottomColourMaxBlend</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>StormCloudSmoothTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>SleepSunFromSettings</td>
 <td>Boolean</td>
 <td></td>
 </tr>
 <tr>
+<td>Padding135</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>SleepSunFromSettingsPos</td>
-<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td>Vector3f</td>
 <td></td>
 </tr>
 <tr>
 <td>SunPosition</td>
-<td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td>Vector3f</td>
 <td></td>
 </tr>
 <tr>
 <td>AsteroidColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>DayLightColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightLightColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>DuskLightColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightHeavyAirColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceLightColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>AbandonedFreighterFogColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
@@ -697,53 +767,38 @@
 <td></td>
 </tr>
 <tr>
-<td>PlanetSky</td>
-<td><a href="../../../classes/gc/GcSkyProperties">GcSkyProperties</a></td>
+<td>PlanetProperties</td>
+<td>GcPlanetSkyProperties</td>
 <td></td>
 </tr>
 <tr>
-<td>PlanetFog</td>
-<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
-<td></td>
-</tr>
-<tr>
-<td>PlanetExtremeFog</td>
-<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
-<td></td>
-</tr>
-<tr>
-<td>PlanetStormFog</td>
-<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
-<td></td>
-</tr>
-<tr>
-<td>PlanetFlightFog</td>
-<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
+<td>PlanetPrimeProperties</td>
+<td>GcPlanetSkyProperties</td>
 <td></td>
 </tr>
 <tr>
 <td>AbandonedFreighterFog</td>
-<td><a href="../../../classes/gc/GcFogProperties">GcFogProperties</a></td>
+<td>GcFogProperties</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceSkyMin</td>
-<td><a href="../../../classes/gc/GcSpaceSkyProperties">GcSpaceSkyProperties</a></td>
+<td>GcSpaceSkyProperties</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceSkyMax</td>
-<td><a href="../../../classes/gc/GcSpaceSkyProperties">GcSpaceSkyProperties</a></td>
+<td>GcSpaceSkyProperties</td>
 <td></td>
 </tr>
 <tr>
 <td>SpaceSkyColours</td>
-<td>GcSpaceSkyColours[0x4]</td>
+<td>GcSpaceSkyColours[0x]</td>
 <td></td>
 </tr>
 <tr>
 <td>NightSkyColours</td>
-<td><a href="../../../classes/gc/GcPlanetWeatherColourData">GcPlanetWeatherColourData</a></td>
+<td>GcPlanetWeatherColourData</td>
 <td></td>
 </tr>
 <tr>
@@ -762,43 +817,88 @@
 <td></td>
 </tr>
 <tr>
+<td>Padding104C</td>
+<td>Byte[0x]</td>
+<td></td>
+</tr>
+<tr>
 <td>HeavyAirColour1</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>HeavyAirColour2</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightHorizonColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightSkyColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightFogColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>NightHeightFogColour</td>
-<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td>Colour</td>
 <td></td>
 </tr>
 <tr>
 <td>PlanetCloudsMin</td>
-<td><a href="../../../classes/gc/GcPlanetCloudProperties">GcPlanetCloudProperties</a></td>
+<td>GcPlanetCloudProperties</td>
 <td></td>
 </tr>
 <tr>
 <td>PlanetCloudsMax</td>
-<td><a href="../../../classes/gc/GcPlanetCloudProperties">GcPlanetCloudProperties</a></td>
+<td>GcPlanetCloudProperties</td>
+<td></td>
+</tr>
+<tr>
+<td>BinaryStarChance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>TernaryStarChance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomGain</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomGainSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomThreshold</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomThresholdSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomImpulseSpeed</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherBloomCurve</td>
+<td>TkCurveType</td>
 <td></td>
 </tr>
 </tbody>
