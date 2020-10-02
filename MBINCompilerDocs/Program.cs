@@ -262,9 +262,15 @@ namespace MBINCompilerDocs
 
         static void update_class_list(List<Type> classes, StringBuilder md, bool includeDir = false) {
             foreach (var t in classes) {
-                //Console.WriteLine(t.Name);
+                Console.WriteLine(t);
                 var classNMSType = GetNMSType(t);
+                foreach (CustomAttributeNamedArgument cata in t.CustomAttributes.First().NamedArguments)
+                {
+                    Console.WriteLine(cata.MemberName);
+                    Console.WriteLine(cata.TypedValue.Value);
+                }
                 int? size = t.GetCustomAttribute<NMSAttribute>()?.Size;
+                //Console.WriteLine(size);
                 ulong? guid = t.GetCustomAttribute<NMSAttribute>()?.GUID;
                 if (classNMSType != null) {
                     if (includeDir == true) {
@@ -313,7 +319,6 @@ namespace MBINCompilerDocs
                  p.Namespace == "libMBIN.NMS" &&
                  p.IsEnum == false
             ).OrderBy(p => p.Name).ToList();
-
             // Create the directory if needed
             GenerateDirs();
 
