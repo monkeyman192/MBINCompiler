@@ -131,7 +131,8 @@
             <div class="section">
               
                 <h2 id="all-classes-gc-gcplayerhazarddata"><a href="../../">All classes</a> &gt; <a href="../">gc</a> &gt; GcPlayerHazardData</h2>
-<p><strong>Size</strong>: 0x, <strong>GUID</strong>: 0x</p>
+<p><strong>Size</strong>: 0x58, <strong>GUID</strong>: 0xBBCFC24EB018B5F3</p>
+<p>A class to define various environmental hazard damage and effects on the player.<br/>For more details see <a href="https://wiki.step-project.com/NMS:Reference_Guides/HazardTable">here</a></p>
 <table>
 <thead>
 <tr>
@@ -144,42 +145,37 @@
 <tr>
 <td>ProtectionInitialTime</td>
 <td>Float</td>
-<td></td>
+<td>Time in seconds before starting depleting protection charge</td>
 </tr>
 <tr>
 <td>ProtectionTime</td>
-<td>Vector2f</td>
-<td></td>
+<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td><em>x component</em>: Time in seconds to deplete an amount of 100 protection charges below TriggerValue<br/><em>y component</em>: Time in seconds to deplete an amount of 100 protection charges over CapValue</td>
 </tr>
 <tr>
 <td>DamageRate</td>
-<td>Vector2f</td>
+<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
 <td></td>
 </tr>
 <tr>
 <td>WoundRate</td>
-<td>Vector2f</td>
+<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
 <td></td>
 </tr>
 <tr>
 <td>RechargeInitialTime</td>
 <td>Float</td>
-<td></td>
+<td>Time in seconds before starting replenishing protection charge</td>
 </tr>
 <tr>
 <td>RechargeTime</td>
 <td>Float</td>
-<td></td>
-</tr>
-<tr>
-<td>Padding24</td>
-<td>Byte[0x]</td>
-<td></td>
+<td>Time in seconds to replenish 100 protection charges</td>
 </tr>
 <tr>
 <td>Damage</td>
-<td>String (0x)</td>
-<td></td>
+<td>String (0x10)</td>
+<td>Type of damages if protection falls to 0</td>
 </tr>
 <tr>
 <td>Increases</td>
@@ -188,23 +184,23 @@
 </tr>
 <tr>
 <td>Curve</td>
-<td>TkCurveType</td>
+<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
 <td></td>
 </tr>
 <tr>
 <td>TriggerValue</td>
 <td>Float</td>
-<td></td>
+<td>Under this value, depletion rate is described by <em>ProtectionTime.x</em></td>
 </tr>
 <tr>
 <td>CapValue</td>
 <td>Float</td>
-<td></td>
+<td>Over this value, depletion rate is described by <em>ProtectionTime.y</em></td>
 </tr>
 <tr>
 <td>CriticalValue</td>
 <td>Float</td>
-<td></td>
+<td>Notification trigger</td>
 </tr>
 <tr>
 <td>OutputMultiplier</td>
