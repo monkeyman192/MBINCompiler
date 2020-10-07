@@ -179,7 +179,7 @@ If you already know what type of fle is being passed in, or what to restrict the
 <h3 id="examples">Examples:</h3>
 <p>Let's say we have a file, for example, <code>METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN</code> that we wish to load and modify.
 The following code (ignoring not being within a proper function etc) will load the base building table and print out the id's of all objects in it.</p>
-<pre><code class="c#">using libMBIN;
+<pre><code class="language-c#">using libMBIN;
 using libMBIN.NMS.GameComponents;
 
 GcBaseBuildingTable bbTable = (GcBaseBuildingTable)FileIO.LoadMBin(&quot;BASEBUILDINGTABLE.MBIN&quot;);
@@ -188,7 +188,6 @@ foreach (GcBaseBuildingEntry obj in bbTable.Objects)
     Console.WriteLine(obj.ID);
 }
 </code></pre>
-
 <p>Currently there is no way to determine automatically the data type of a file but this may come in future versions of the API.</p>
 <h2 id="nmstemplate">NMSTemplate</h2>
 <p>The <code>NMSTemplate</code> is a top-level object. All of <code>FileIO.LoadFile</code>, <code>FileIO.LoadMbin</code> and <code>FileIO.LoadExml</code> return a <code>NMSTemplate</code> object.
