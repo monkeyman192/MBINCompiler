@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcdebugoptions"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcDebugOptions</h2>
-<p><strong>Size</strong>: 0x1F38, <strong>GUID</strong>: 0x25367B82E3E17D03</p>
+<p><strong>Size</strong>: 0x1FE0, <strong>GUID</strong>: 0xDE8EC1FE3A23726E</p>
 <table>
 <thead>
 <tr>
@@ -459,6 +459,11 @@
 <tr>
 <td>WorkingDirectory</td>
 <td>String (0x100)</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugScene</td>
+<td>String (0x80)</td>
 <td></td>
 </tr>
 <tr>
@@ -958,12 +963,12 @@
 </tr>
 <tr>
 <td>SmokeTestCycleMode</td>
-<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TourSolarSystem</li><li val='0x2'>RegeneratePlanet</li></ol></td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TourPlanet</li><li val='0x2'>TourSolarSystem</li><li val='0x3'>TourGalaxy</li><li val='0x4'>TourUDAs</li></ol></td>
 <td></td>
 </tr>
 <tr>
 <td>SmokeTestScenario</td>
-<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TerrainSnapShotFromAltitude</li><li val='0x2'>BelowCloudLayerSnapShot</li><li val='0x3'>Flying</li></ol></td>
+<td><div class='expandable'>Enum</div><ol class='enumValues' hidden><li val='0x0'>None</li><li val='0x1'>TerrainSnapShotFromAltitude</li><li val='0x2'>BelowCloudLayerSnapShot</li><li val='0x3'>Flying</li><li val='0x4'>UltraBiomeSnapShot</li></ol></td>
 <td></td>
 </tr>
 <tr>
@@ -1039,6 +1044,11 @@
 <tr>
 <td>SmokeTestPostBandwidthStats</td>
 <td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>SmokeTestForcePlanetDetail</td>
+<td>String (0x20)</td>
 <td></td>
 </tr>
 <tr>
@@ -1133,6 +1143,11 @@
 </tr>
 <tr>
 <td>MinGPUMode</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Proto2DevKit</td>
 <td>Boolean</td>
 <td></td>
 </tr>
