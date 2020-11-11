@@ -248,7 +248,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0C7C */ public ProxyTypeEnum ProxyType;
         [NMS(Size = 0x80)]
         /* 0x0C80 */ public string ProxyURI;
-		public enum ServerEnvEnum { default, dev, qa, prodqa, prod, custom, pentest }
+		public enum ServerEnvEnum { Default, dev, qa, prodqa, prod, custom, pentest }
         /* 0x0D00 */ public ServerEnvEnum ServerEnv;
         [NMS(Size = 0x80)]
         /* 0x0D04 */ public string AuthBaseUrl;
