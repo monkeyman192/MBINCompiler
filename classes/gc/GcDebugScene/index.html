@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-gc-gcdebugscene"><a href="../../">All classes</a> &gt; <a href="../">gc</a> &gt; GcDebugScene</h2>
-<p><strong>Size</strong>: 0x140, <strong>GUID</strong>: 0xE140355C837DFCBF</p>
+<p><strong>Size</strong>: 0x8C0, <strong>GUID</strong>: 0xCB3E2B6AC56EA79D</p>
 <table>
 <thead>
 <tr>
@@ -152,8 +152,28 @@
 <td></td>
 </tr>
 <tr>
-<td>KeyPress</td>
+<td>AutoSave</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>TriggerActions</td>
 <td>List&lt;<a href="../../../classes/gc/GcExperienceDebugTriggerInput">GcExperienceDebugTriggerInput</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>FlyCamSmooth</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>FlyCamSmoothFactor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>FlyCamSpeedModifier</td>
+<td>Float</td>
 <td></td>
 </tr>
 <tr>
@@ -162,8 +182,33 @@
 <td></td>
 </tr>
 <tr>
+<td>ForcePlayerWalk</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>DebugShipPaths</td>
+<td>List&lt;<a href="../../../classes/gc/GcDebugShipTravelLine">GcDebugShipTravelLine</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>DebugCameraPaths</td>
+<td>List&lt;<a href="../../../classes/gc/GcDebugCamera">GcDebugCamera</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>DebugCreatureSpawns</td>
+<td>List&lt;<a href="../../../classes/gc/GcCreatureDebugSpawnData">GcCreatureDebugSpawnData</a>></td>
+<td></td>
+</tr>
+<tr>
 <td>DebugMechSpawns</td>
 <td>List&lt;<a href="../../../classes/gc/GcMechDebugSpawnData">GcMechDebugSpawnData</a>></td>
+<td></td>
+</tr>
+<tr>
+<td>DebugEnemyShipSpawns</td>
+<td>List&lt;<a href="../../../classes/gc/GcAIShipDebugSpawnData">GcAIShipDebugSpawnData</a>></td>
 <td></td>
 </tr>
 <tr>
@@ -172,8 +217,8 @@
 <td></td>
 </tr>
 <tr>
-<td>DebugExperienceRender</td>
-<td>Boolean</td>
+<td>VehicleCameraOverride</td>
+<td><div class='expandable'>GcCameraFollowSettings[0x7]</div><ul class='enumValues' hidden><li>Bike</li><li>Buggy</li><li>Truck</li><li>WheeledBike</li><li>Hovercraft</li><li>Submarine</li><li>Mech</li></ul></td>
 <td></td>
 </tr>
 <tr>
@@ -254,6 +299,31 @@
 <tr>
 <td>SandwormSpawnPos</td>
 <td><a href="../../../classes/nms/Vector3f">Vector3f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>CameraSpinTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraSpinRevolutions</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraSpinVerticalOffset</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraSpinDistanceOffset</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraSpinEasing</td>
+<td><a href="../../../classes/tk/TkCurveType">TkCurveType</a></td>
 <td></td>
 </tr>
 </tbody>
