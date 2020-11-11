@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x9C0, GUID = 0x6625D546328F9B2B)]
+    [NMS(Size = 0x9C0, GUID = 0x606C7DEC02D96460)]
     public class GcGraphicsGlobals : NMSTemplate
     {
         /* 0x000 */ public float LUTDistanceFlightMultiplier;
@@ -302,6 +302,7 @@ namespace libMBIN.NMS.Globals
         /* 0x7BC */ public float SpaceIBLBlendDistance;
         /* 0x7C0 */ public float NoFocusMaxFPS;
         /* 0x7C4 */ public bool EnableCrossPipeSharing;
+        /* 0x7C5 */ public bool EnableSSR;
         /* 0x7C8 */ public float SharpenFilterAmount;
         /* 0x7CC */ public float SharpenFilterDepthFactorStart;
         /* 0x7D0 */ public float SharpenFilterDepthFactorEnd;

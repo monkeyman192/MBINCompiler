@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x6F0, GUID = 0x4119E1712178CA66)]
+    [NMS(Size = 0x6F0, GUID = 0x4AB168D8BF669DDC)]
     public class GcEnvironmentGlobals : NMSTemplate
     {
         [NMS(Size = 0x4)]
@@ -18,8 +18,6 @@ namespace libMBIN.NMS.Globals
         /* 0x2CC */ public float SphereLodTextureScale;
         /* 0x2D0 */ public bool ForceAddUnderwaterProps;
         /* 0x2D1 */ public bool ForceAddCaveProps;
-        [NMS(Size = 0x2, Ignore = true)]
-        /* 0x2D2 */ public byte[] Padding2D2;
         /* 0x2D4 */ public float DistortionStep;
         /* 0x2D8 */ public float HDeform;
         /* 0x2DC */ public float SDeform;
@@ -42,8 +40,6 @@ namespace libMBIN.NMS.Globals
         /* 0x324 */ public float SpaceToxicity;
         /* 0x328 */ public float ShipToxicity;
         /* 0x32C */ public bool MatchPlantPalettes;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x32D */ public byte[] Padding32D;
         /* 0x330 */ public float DuplicateColourThreshold;
         public enum SwitchTypeEnum { None, Debug, Enabled }
         /* 0x334 */ public SwitchTypeEnum SwitchType;
@@ -98,8 +94,6 @@ namespace libMBIN.NMS.Globals
         /* 0x40C */ public float[] FarBlendHeight;
         /* 0x41C */ public float FarBlendLength;
         /* 0x420 */ public float IndoorColourBlendTime;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x424 */ public byte[] Padding424;
         /* 0x430 */ public Colour IndoorAmbientColour;
         /* 0x440 */ public float LightDirectionHeight;
         /* 0x444 */ public float LightDirectionBlend;

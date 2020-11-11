@@ -131,7 +131,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcPetData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcScreenFilterOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSeasonalGameModeData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcExperienceDebugTriggers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcAIShipDebugSpawnData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMechDebugSpawnData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcInventoryStoreBalance.cs" />

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x5460, GUID = 0xC907F63998B56F57)]
+    [NMS(Size = 0x5470, GUID = 0xE7399A92F12BA137)]
     public class GcCameraGlobals : NMSTemplate
     {
         /* 0x0000 */ public TkModelRendererData FreighterCustomisationStandardCamera;
@@ -254,61 +254,65 @@ namespace libMBIN.NMS.Globals
         /* 0x4F00 */ public float DebugCameraSlowFactor;
         /* 0x4F04 */ public float DebugCameraFastFactor;
         /* 0x4F08 */ public float DebugCameraSpaceFastFactor;
-        /* 0x4F0C */ public float OffsetCamFOV;
-        /* 0x4F10 */ public Vector3f OffsetCamOffset;
-        /* 0x4F20 */ public Vector3f OffsetCamRotation;
-        /* 0x4F30 */ public float ObjectFocusTime;
-        /* 0x4F34 */ public float CharCamFocusHeight;
-        /* 0x4F38 */ public float CharCamMaxDistance;
-        /* 0x4F3C */ public float CharCamMinDistance;
-        /* 0x4F40 */ public float CharCamHeight;
-        /* 0x4F44 */ public float CharCamOffsetTime;
-        /* 0x4F48 */ public float CharCamAutoDirStartTime;
-        /* 0x4F4C */ public float CharCamLookOffset;
-        /* 0x4F50 */ public float CharCamLookOffsetFactor;
-        /* 0x4F54 */ public float CharCamDeflectSpeed;
-        /* 0x4F58 */ public float CharCamMinSpeed;
-        /* 0x4F5C */ public float CharCamRightStickX;
-        /* 0x4F60 */ public float CharCamRightStickY;
-        /* 0x4F64 */ public float FirstPersonCamHeight;
-        [NMS(Size = 0x8)]
-        /* 0x4F70 */ public Vector3f[] FirstPersonCamOffset;
-        /* 0x4FF0 */ public Vector3f FirstPersonInShipCamOffset;
-        /* 0x5000 */ public float FirstPersonFoV;
-        /* 0x5004 */ public float ThirdPersonFoV;
-        /* 0x5008 */ public float CombatFoV;
-        /* 0x500C */ public float FirstPersonZoom1FoV;
-        /* 0x5010 */ public float FirstPersonZoom2FoV;
-        /* 0x5014 */ public float ShipFoVMin;
-        /* 0x5018 */ public float ShipFoVMin2;
-        /* 0x501C */ public float ShipFoVMax;
-        /* 0x5020 */ public float ShipWarpFoV;
-        /* 0x5024 */ public float ShipFoVMin3rdPerson;
-        /* 0x5028 */ public float ShipFoVMax3rdPerson;
-        /* 0x502C */ public float ShipFoVBoost;
-        /* 0x5030 */ public float ShipFoVMiniJump;
-        /* 0x5034 */ public float ShipFoVSpring;
-        /* 0x5038 */ public float ShipMiniJumpFoVSpring;
-        /* 0x503C */ public float FoVSpring;
-        /* 0x5040 */ public float FoVSpringSights;
-        /* 0x5044 */ public float FoVAdjust;
-        /* 0x5048 */ public bool FollowDrawCamProbes;
-        /* 0x504C */ public GcCameraAnimationData AmbientCameraAnimations;
-        /* 0x50D0 */ public TkTextureResource AmbientDroneAnimations;
+        /* 0x4F0C */ public float DebugCameraHeightForAccelerateBegin;
+        /* 0x4F10 */ public float DebugCameraSpeedAtPlanetThreshold;
+        /* 0x4F14 */ public float DebugCameraHeightForAccelerateEnd;
+        /* 0x4F18 */ public float DebugCameraMaxSpeed;
+        /* 0x4F1C */ public float OffsetCamFOV;
+        /* 0x4F20 */ public Vector3f OffsetCamOffset;
+        /* 0x4F30 */ public Vector3f OffsetCamRotation;
+        /* 0x4F40 */ public float ObjectFocusTime;
+        /* 0x4F44 */ public float CharCamFocusHeight;
+        /* 0x4F48 */ public float CharCamMaxDistance;
+        /* 0x4F4C */ public float CharCamMinDistance;
+        /* 0x4F50 */ public float CharCamHeight;
+        /* 0x4F54 */ public float CharCamOffsetTime;
+        /* 0x4F58 */ public float CharCamAutoDirStartTime;
+        /* 0x4F5C */ public float CharCamLookOffset;
+        /* 0x4F60 */ public float CharCamLookOffsetFactor;
+        /* 0x4F64 */ public float CharCamDeflectSpeed;
+        /* 0x4F68 */ public float CharCamMinSpeed;
+        /* 0x4F6C */ public float CharCamRightStickX;
+        /* 0x4F70 */ public float CharCamRightStickY;
+        /* 0x4F74 */ public float FirstPersonCamHeight;
+        [NMS(Size = 0x8 )]
+        /* 0x4F80 */ public Vector3f[] FirstPersonCamOffset;
+        /* 0x5000 */ public Vector3f FirstPersonInShipCamOffset;
+        /* 0x5010 */ public float FirstPersonFoV;
+        /* 0x5014 */ public float ThirdPersonFoV;
+        /* 0x5018 */ public float CombatFoV;
+        /* 0x501C */ public float FirstPersonZoom1FoV;
+        /* 0x5020 */ public float FirstPersonZoom2FoV;
+        /* 0x5024 */ public float ShipFoVMin;
+        /* 0x5028 */ public float ShipFoVMin2;
+        /* 0x502C */ public float ShipFoVMax;
+        /* 0x5030 */ public float ShipWarpFoV;
+        /* 0x5034 */ public float ShipFoVMin3rdPerson;
+        /* 0x5038 */ public float ShipFoVMax3rdPerson;
+        /* 0x503C */ public float ShipFoVBoost;
+        /* 0x5040 */ public float ShipFoVMiniJump;
+        /* 0x5044 */ public float ShipFoVSpring;
+        /* 0x5048 */ public float ShipMiniJumpFoVSpring;
+        /* 0x504C */ public float FoVSpring;
+        /* 0x5050 */ public float FoVSpringSights;
+        /* 0x5054 */ public float FoVAdjust;
+        /* 0x5058 */ public bool FollowDrawCamProbes;
+        /* 0x505C */ public GcCameraAnimationData AmbientCameraAnimations;
+        /* 0x50E0 */ public TkTextureResource AmbientDroneAnimations;
         [NMS(Size = 0x80)]
-        /* 0x5154 */ public string CameraAmbientAnimationsData;
-        /* 0x51D4 */ public float CameraAmbientAutoSwitchMinTime;
-        /* 0x51D8 */ public float CameraAmbientAutoSwitchMaxTime;
+        /* 0x5164 */ public string CameraAmbientAnimationsData;
+        /* 0x51E4 */ public float CameraAmbientAutoSwitchMinTime;
+        /* 0x51E8 */ public float CameraAmbientAutoSwitchMaxTime;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x51DC */ public byte[] Padding51DC;
-        /* 0x51E0 */ public TkModelRendererData CameraNPCShipInteraction;
-        /* 0x5290 */ public TkModelRendererData CameraNPCShopInteraction;
-        [NMS(Size = 0x4)]
-        /* 0x5340 */ public TkPhysRelVectorData[] SavedCameraPositions;
-        [NMS(Size = 0x4)]
-        /* 0x53C0 */ public Vector3f[] SavedCameraFacing;
-        /* 0x5400 */ public GcCameraWarpSettings WarpSettings;
+        /* 0x51EC */ public byte[] Padding51EC;
+        /* 0x51F0 */ public TkModelRendererData CameraNPCShipInteraction;
+        /* 0x52A0 */ public TkModelRendererData CameraNPCShopInteraction;
+        [NMS(Size = 0x4 )]
+        /* 0x5350 */ public TkPhysRelVectorData[] SavedCameraPositions;
+        [NMS(Size = 0x4 )]
+        /* 0x53D0 */ public Vector3f[] SavedCameraFacing;
+        /* 0x5410 */ public GcCameraWarpSettings WarpSettings;
         [NMS(Size = 0xC, Ignore = true)]
-        /* 0x5454 */ public byte[] EndPadding;
+        /* 0x5464 */ public byte[] EndPadding;
     }
 }

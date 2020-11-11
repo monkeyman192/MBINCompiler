@@ -3,14 +3,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1290, GUID = 0x920FE246971E69DB)]
+    [NMS(Size = 0x1290, GUID = 0xCB9A3722313BF580)]
     public class GcSpaceshipGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool AllowSideScreenPointing;
         /* 0x0001 */ public bool AddShipToCollectionOnEnter;
         /* 0x0002 */ public bool EnablePulseDriveSpaceStationOrient;
-                                        
-                                            
         /* 0x0004 */ public float DockingApproachRollHmdMod;
         /* 0x0008 */ public float DockingApproachSpeedHmdMod;
         /* 0x000C */ public float DockingApproachBrakeHmdMod;
@@ -83,8 +81,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0110 */ public bool ApplyHeightAlign;
         /* 0x0111 */ public bool DoPreCollision;
         /* 0x0112 */ public bool SpeedTrackModeEnabled;
-                                        
-                                              
         /* 0x0114 */ public int TrailMaxNumPointsPerFrameOverride;
         /* 0x0118 */ public float TestTrailSpeed;
         /* 0x011C */ public float TestTrailRadius;
@@ -99,8 +95,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0140 */ public float WingmanSpeedApproachSpeedSpace;
         /* 0x0144 */ public float DockingAttractAlign;
         /* 0x0148 */ public float DockingAttractAlignRange;
-                                        
-                                              
         /* 0x0150 */ public Colour LandingEffectSpaceColourOverride;
         /* 0x0160 */ public Colour GroundEffectBuildingColour;
         /* 0x0170 */ public Colour GroundEffectWaterColour;
@@ -144,8 +138,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0220 */ public float DirectionDockingIndicatorAngleRange;
         /* 0x0224 */ public float DirectionDockingIndicatorMinHeight;
         /* 0x0228 */ public float DirectionDockingIndicatorMaxHeight;
-                                        
-                                              
         /* 0x0230 */ public Colour DirectionDockingInRangeColour;
         /* 0x0240 */ public Colour DirectionDockingOutRangeColour;
         /* 0x0250 */ public float DirectionDockingCircleOffset;
@@ -161,8 +153,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0278 */ public float GroundNearEffectNormalOffset;
         /* 0x027C */ public float GroundNearEffectBuildingFade;
         /* 0x0280 */ public bool TestShipAnims;
-                                        
-                                              
         /* 0x0284 */ public float TestShipAnimRoll;
         /* 0x0288 */ public float TestShipAnimThrust;
         /* 0x028C */ public float TestShipAnimPulse;
@@ -246,8 +236,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0460 */ public float HoverLandManeuvreBrake;
         /* 0x0464 */ public float LandingOnGroundTip;
         /* 0x0468 */ public bool LandingCheckBuildings;
-                                        
-                                              
         /* 0x046C */ public float LandingCheckBuildingRadiusFactor;
         /* 0x0470 */ public float AutoLevelWaterMargin;
         /* 0x0474 */ public float AutoLevelWaterTorque;
@@ -304,8 +292,6 @@ namespace libMBIN.NMS.Globals
         /* 0x09EC */ public float ShuttleTakeOffMod;
         /* 0x09F0 */ public float ExplorerTakeOffMod;
         /* 0x09F4 */ public float RoyalTakeOffMod;
-                                        
-                                              
         /* 0x0A00 */ public Colour AlarmLightColour;
         [NMS(Size = 0x2)]
         /* 0x0A10 */ public Vector3f[] AlarmLightOffsets;
@@ -321,14 +307,11 @@ namespace libMBIN.NMS.Globals
         /* 0x0A54 */ public float AutoLevelMaxAngle;
         /* 0x0A58 */ public bool AutoEjectOnLanding;
         /* 0x0A59 */ public bool LandedCockpitFreeLook;
-                                        
-                                              
         /* 0x0A5C */ public float FrigateTargetLockRange;
-        /* 0x0A60 */ public float TargetLockRange;
-        /* 0x0A64 */ public float TargetLockNearestAngle;
-        /* 0x0A68 */ public float RemotePlayerLockTimeAfterShot;
-                                        
-                                              
+        /* 0x0A60 */ public float ResetTargetLockAngle;
+        /* 0x0A64 */ public float TargetLockRange;
+        /* 0x0A68 */ public float TargetLockNearestAngle;
+        /* 0x0A6C */ public float RemotePlayerLockTimeAfterShot;
         /* 0x0A70 */ public Colour TargetLockPassiveColour;
         /* 0x0A80 */ public Colour TargetLockDangerColour;
         /* 0x0A90 */ public float ShieldRechargeMinHitTime;
@@ -363,21 +346,15 @@ namespace libMBIN.NMS.Globals
         /* 0x0B04 */ public float MuzzleLightIntensity;
         /* 0x0B08 */ public float MuzzleAnimSpeed;
         /* 0x0B0C */ public TkHitCurveData MuzzleLightCurve;
-                                        
-                                              
         /* 0x0B20 */ public Colour MuzzleLightColour;
         /* 0x0B30 */ public Vector3f DamageLightOffsetTop;
         /* 0x0B40 */ public Vector3f DamageLightOffsetLeft;
         /* 0x0B50 */ public Vector3f DamageLightOffsetRight;
         /* 0x0B60 */ public float DamageLightIntensity;
         /* 0x0B64 */ public TkHitCurveData DamageLightCurve;
-                                        
-                                              
         /* 0x0B80 */ public Colour DamageLightColourShield;
         /* 0x0B90 */ public Colour DamageLightColour;
         /* 0x0BA0 */ public bool AltAtmosphere;
-                                        
-                                              
         /* 0x0BA4 */ public float AsteroidHitAngle;
         /* 0x0BA8 */ public float AsteroidHitAngleBoosting;
         /* 0x0BAC */ public float AimCritAngle;
@@ -535,8 +512,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0EC0 */ public float LootDampForce;
         /* 0x0EC4 */ public float LootCollectDistance;
         /* 0x0EC8 */ public float GunOffset3rdPersonMultiplier;
-                                        
-                                              
         /* 0x0ED0 */ public Vector3f GunOffsetLeft;
         /* 0x0EE0 */ public Vector3f GunOffsetRight;
         /* 0x0EF0 */ public Vector3f GunOffsetLeft2;
@@ -613,8 +588,6 @@ namespace libMBIN.NMS.Globals
         /* 0x126C */ public float MaxSpeedUpVelocity;
         /* 0x1270 */ public float StickLandThreshold;
         /* 0x1274 */ public float StickPulseThreshold;
-                                        
-                                               
         /* 0x1280 */ public Vector3f StickAnimationDamping;
     }
 }

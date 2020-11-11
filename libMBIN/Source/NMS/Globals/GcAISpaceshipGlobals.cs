@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x11E0, GUID = 0x733BC12BC59713C1)]
+    [NMS(Size = 0x11E0, GUID = 0xC28CBC9542ECD3D9)]
     public class GcAISpaceshipGlobals : NMSTemplate
     {
         /* 0x000 */ public float MinimumCircleTimeBeforeLanding;
@@ -14,8 +14,6 @@ namespace libMBIN.NMS.Globals
         /* 0x00E */ public bool GroundEffectEnabled;
         /* 0x00F */ public bool AtmosphereEffectEnabled;
         /* 0x010 */ public bool FillUpOutposts;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x011 */ public byte[] Padding11;
         /* 0x014 */ public float SalvageTime;
         /* 0x018 */ public float SalvageRemovalTime;
         /* 0x01C */ public float SalvageValueMultiplier;
@@ -48,8 +46,6 @@ namespace libMBIN.NMS.Globals
         /* 0x088 */ public float DistanceFlareFlickerAmp;
         /* 0x08C */ public bool AttackRepositionBoost;
         /* 0x08D */ public bool AttackShipsFollowLeader;
-        [NMS(Size = 0x2, Ignore = true)]
-        /* 0x08E */ public byte[] Padding8E;
         /* 0x090 */ public float AttackTooCloseMinRelSpeed;
         /* 0x094 */ public float RewardLootOffset;
         /* 0x098 */ public float RewardLootOffsetSpeed;
@@ -115,8 +111,6 @@ namespace libMBIN.NMS.Globals
         /* 0x464 */ public float ConeSpawnFlattenUp;
         /* 0x468 */ public float ConeSpawnFlattenDown;
         /* 0x46C */ public bool FreighterAlertLights;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x46D */ public byte[] Padding46D;
         /* 0x470 */ public float FreighterAlertLightCapitalSize;
         [NMS(Size = 0x80)]
         /* 0x474 */ public string LegacyHangarFilename;
@@ -124,8 +118,6 @@ namespace libMBIN.NMS.Globals
         /* 0x4F4 */ public string HangarFilename;
         /* 0x574 */ public float PoliceFreighterWarpOutRange;
         /* 0x578 */ public float MissileRange;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x57C */ public byte[] Padding57C;
         /* 0x580 */ public Colour FreighterDoorColourActive;
         /* 0x590 */ public Colour FreighterDoorColourInactive;
         /* 0x5A0 */ public Colour AlertLightColour;
@@ -135,12 +127,8 @@ namespace libMBIN.NMS.Globals
         /* 0x5C8 */ public int MaxNumTurretMissiles;
         /* 0x5CC */ public float TurretOriginOffset;
         /* 0x5D0 */ public float TurretAlertLightIntensity;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x5D4 */ public byte[] Padding5D4;
         /* 0x5E0 */ public Vector3f TurretAlertLightOffset;
         /* 0x5F0 */ public bool DisableTradeRoutes;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x5F1 */ public byte[] Padding5F1;
         /* 0x5F4 */ public float AttackFreighterGetThereBoost;
         /* 0x5F8 */ public float AttackFreighterApproach;
         /* 0x5FC */ public float AttackFreighterWingmanAlignMinDist;
@@ -200,14 +188,10 @@ namespace libMBIN.NMS.Globals
         /* 0x7A8 */ public float HeightTestSampleTime;
         /* 0x7AC */ public float OutpostToLandingDistance;
         /* 0x7B0 */ public bool FreightersSamePalette;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x7B1 */ public byte[] Padding7B1;
         /* 0x7B4 */ public float PlanetUpAlignTime;
         /* 0x7B8 */ public float CollisionReactionTime;
         /* 0x7BC */ public float FreighterScale;
         /* 0x7C0 */ public bool PoliceSpawnEffect;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x7C1 */ public byte[] Padding7C1;
         /* 0x7C4 */ public int MaxNumFreighters;
         /* 0x7C8 */ public float ShipSpawnStationRadius;
         /* 0x7CC */ public float ShipSpawnAnomalyRadius;
@@ -242,13 +226,9 @@ namespace libMBIN.NMS.Globals
         /* 0x938 */ public float TradeRouteFlickerFreq;
         /* 0x93C */ public float TradeRouteFlickerAmp;
         /* 0x940 */ public int TradeRouteMaxNum;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x944 */ public byte[] Padding944;
         [NMS(Size = 0x5)]
         /* 0x950 */ public Colour[] TradeRouteColours;
         /* 0x9A0 */ public bool EnableLoot;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x9A1 */ public byte[] Padding9A1;
         /* 0x9A4 */ public float LaserHitOffset;
         /* 0x9A8 */ public float DirectionBrakeThresholdSq;
         /* 0x9AC */ public int PoliceNumPerTarget;
@@ -267,8 +247,6 @@ namespace libMBIN.NMS.Globals
         /* 0x9E8 */ public float FreighterLaunchTime;
         /* 0x9EC */ public float FreighterLaunchStartTime;
         /* 0x9F0 */ public bool FreighterIgnorePlayer;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x9F1 */ public byte[] Padding9F1;
         /* 0x9F4 */ public int FreighterNotifySquadAlertLevel;
         /* 0x9F8 */ public int FreighterMaxNumLaunchedShips;
         /* 0x9FC */ public float FreighterSpawnMargin;
@@ -304,8 +282,6 @@ namespace libMBIN.NMS.Globals
         /* 0xA74 */ public float ScaleHeightMin;
         /* 0xA78 */ public float ScaleHeightMax;
         /* 0xA7C */ public bool ScaleDisabledWhenOnFreighter;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0xA7D */ public byte[] PaddingA7D;
         /* 0xA80 */ public float WarpInPlayerLocatorTime;
         /* 0xA84 */ public float WarpInPlayerLocatorMinOffset;
         /* 0xA88 */ public float WarpInTime;
