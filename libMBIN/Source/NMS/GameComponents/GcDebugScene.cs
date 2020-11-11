@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x001 */ public bool DebugDraw;
         [NMS(Size = 0x6, Ignore = true)]
         /* 0x002 */ public byte[] Padding2;
-        /* 0x008 */ public List<GcExperienceDebugTriggers> KeyPress;
+        /* 0x008 */ public List<GcExperienceDebugTriggerInput> KeyPress; //false reference to allow compilation
         /* 0x018 */ public List<GcNPCDebugSpawnData> DebugNPCSpawns;
         /* 0x028 */ public List<GcMechDebugSpawnData> DebugMechSpawns;
         /* 0x038 */ public List<GcAIShipDebugSpawnData> DebugShipSpawns;
