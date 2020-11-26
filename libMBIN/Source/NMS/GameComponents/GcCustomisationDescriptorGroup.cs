@@ -14,10 +14,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x010 */ public string Title;
         [NMS(Size = 0x80)]
         /* 0x030 */ public string Image;
-        [NMS(Size = 0x10)]
-        /* 0x0B0 */ public string Descriptors;
-        [NMS(Size = 0x10)]
-        /* 0x0C0 */ public string SuffixInclusionList;
+        /* 0x0B0 */ public List<NMSString0x20> Descriptors;
+        /* 0x0C0 */ public List<NMSString0x20> SuffixInclusionList;
         [NMS(Size = 0x10)]
         /* 0x0D0 */ public string LinkedSpecialID;
         [NMS(Size = 0x20)]
