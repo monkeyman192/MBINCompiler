@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+
 using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x3930, GUID = 0x838C05025A95A72C, NameHash = 0x3A50D683FD1CF4BF)]
+    [NMS(Size = 0x3938, GUID = 0xB0BA9A867A5C3D5C, NameHash = 0x3A50D683FD1CF4BF)]
     public class GcUserSettingsData : NMSTemplate
     {
         /* 0x0000 */ public bool InvertLookControls;
@@ -28,7 +29,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3884 */ public bool XboxOneXHighResolutionMode;
         /* 0x3885 */ public bool PS4VignetteAndScanlines;
         public enum BaseSharingModeEnum { Undecided, On, Off }
-		/* 0x3888 */ public BaseSharingModeEnum BaseSharingMode;
+        /* 0x3888 */ public BaseSharingModeEnum BaseSharingMode;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x388C */ public byte[] Padding380C;
         /* 0x3890 */ public List<NMSString0x10> SeenSubstances;
@@ -64,5 +65,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3927 */ public bool BaseComplexityLimitsEnabled;
         /* 0x3928 */ public bool EnableLargeLobbies;
         /* 0x392C */ public int FireteamSessionCount;
+        /* 0x3930 */ public int VibrationStrength;
+        /* 0x3934 */ public int TriggerFeedbackStrength;
     }
 }

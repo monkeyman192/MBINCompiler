@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x6B20, GUID = 0xEB8881D74B04A1C1)]
+    [NMS(Size = 0x6B20, GUID = 0x247D7AAF0267A0F6)]
     public class GcUIGlobals : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -236,14 +236,15 @@ namespace libMBIN.NMS.Globals
         /* 0x0870 */ public float CompassDistanceSpaceScaleMin;
         /* 0x0874 */ public float CompassDistanceSpaceScaleRange;
         /* 0x0878 */ public float CompassDistanceScale;
-        /* 0x087C */ public float CompassDistanceMaxAngle;
-        /* 0x0880 */ public float CompassDistanceYOffset;
-        /* 0x0884 */ public float CompassAngleClamp;
-        /* 0x0888 */ public float CompassAngleFade;
-        /* 0x088C */ public TkCurveType CompassCurve;
-        /* 0x0890 */ public float CompassAngleClampSpace;
-        /* 0x0894 */ public float BaseComplexityDangerFactor;
-        /* 0x0898 */ public float BaseComplexityWarningFactor;
+        /* 0x087C */ public float CompassDistanceShipMinScale;
+        /* 0x0880 */ public float CompassDistanceMaxAngle;
+        /* 0x0884 */ public float CompassDistanceYOffset;
+        /* 0x0888 */ public float CompassAngleClamp;
+        /* 0x088C */ public float CompassAngleFade;
+        /* 0x0890 */ public TkCurveType CompassCurve;
+        /* 0x0894 */ public float CompassAngleClampSpace;
+        /* 0x0898 */ public float BaseComplexityDangerFactor;
+        /* 0x089C */ public float BaseComplexityWarningFactor;
         /* 0x08A0 */ public Colour BaseComplexityDefaultColour;
         /* 0x08B0 */ public Colour BaseComplexityWarningColour;
         /* 0x08C0 */ public Colour BaseComplexityDangerColour;

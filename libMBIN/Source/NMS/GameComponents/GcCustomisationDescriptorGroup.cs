@@ -5,20 +5,25 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x100, GUID = 0x3631E06ABDA99C9F, NameHash = 0x80953B08573D31B6)]
+    [NMS(Size = 0x108, GUID = 0xF0E75D8E9CE969CA, NameHash = 0x80953B08573D31B6)]
     public class GcCustomisationDescriptorGroup : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        /* 0x00 */ public string GroupID;
+        /* 0x000 */ public string GroupID;
         [NMS(Size = 0x20)]
-        /* 0x10 */ public string Title;
+        /* 0x010 */ public string Title;
         [NMS(Size = 0x80)]
-        /* 0x30 */ public string Image;
-        /* 0xB0 */ public List<NMSString0x20> Descriptors;
-        /* 0xC0 */ public List<NMSString0x20> SuffixInclusionList;
+        /* 0x030 */ public string Image;
         [NMS(Size = 0x10)]
-        /* 0xD0 */ public string LinkedSpecialID;
+        /* 0x0B0 */ public string Descriptors;
+        [NMS(Size = 0x10)]
+        /* 0x0C0 */ public string SuffixInclusionList;
+        [NMS(Size = 0x10)]
+        /* 0x0D0 */ public string LinkedSpecialID;
         [NMS(Size = 0x20)]
-        /* 0xE0 */ public string Tip;
+        /* 0x0E0 */ public string Tip;
+        /* 0x100 */ public bool HiddenInCustomiser;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x101 */ public byte[] EndPadding;
     }
 }

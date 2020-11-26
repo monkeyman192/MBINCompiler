@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x11E0, GUID = 0xC28CBC9542ECD3D9)]
+    [NMS(Size = 0x11E0, GUID = 0x2624BDF53371AE48)]
     public class GcAISpaceshipGlobals : NMSTemplate
     {
         /* 0x000 */ public float MinimumCircleTimeBeforeLanding;
