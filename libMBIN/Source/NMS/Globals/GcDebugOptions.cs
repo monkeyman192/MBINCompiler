@@ -324,7 +324,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1CB1 */ public bool ForceLoadAllWeather;
         /* 0x1CB4 */ public GcGalaxyStarTypes ForceStarTypeTo;
         /* 0x1CB8 */ public bool ForceBiome;
-        /* 0x1CBC */ public GcBiomeSubType ForceBiomeTo;
+        /* 0x1CBC */ public GcBiomeType ForceBiomeTo;
         /* 0x1CC0 */ public bool ForceScreenFilter;
         /* 0x1CC4 */ public GcScreenFilters ForceScreenFilterTo;
         /* 0x1CC8 */ public GcBiomeSubType ForceBiomeSubTypeTo;
