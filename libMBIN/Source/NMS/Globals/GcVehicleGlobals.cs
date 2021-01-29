@@ -263,7 +263,10 @@ namespace libMBIN.NMS.Globals
         /* 0x4B4 */ public float StickReverseTurnStiffness;
         /* 0x4B8 */ public GcScanData VehicleScan;
         /* 0x4CC */ public GcScanData VehicleLocalScan;
-        [NMS(Size = 0x7, EnumType = typeof(GcVehicleType.VehicleTypeEnum))]
+        //Do not use GcVehicleType.VehicleTypeEnum: GcVehicleGlobals.MBIN content swaps Buggy and Bike entries
+        //[NMS(Size = 0x7, EnumType = typeof(GcVehicleType.VehicleTypeEnum))]
+		public enum VehicleGlobalsTypeEnum { Bike, Buggy, Truck, WheeledBike, Hovercraft, Submarine, Mech }
+        [NMS(Size = 0x7, EnumType = typeof(VehicleGlobalsTypeEnum))]
         /* 0x4E0 */ public GcVehicleData[] VehicleDataTable;
     }
 }
