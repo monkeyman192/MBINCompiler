@@ -16,7 +16,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2C */ public GcCreatureSizeClasses MaxSize;
         /* 0x30 */ public int MinGroupSize;
         /* 0x34 */ public int MaxGroupSize;
-        /* 0x38 */ public float Density;
+        /* 0x38 */ public GcCreatureGenerationDensity Density;
         /* 0x3C */ public GcCreatureActiveTime ActiveTime;
         /* 0x40 */ public float ProbabilityOfBeingEnabled;
         /* 0x44 */ public float IncreasedSpawnDistance;

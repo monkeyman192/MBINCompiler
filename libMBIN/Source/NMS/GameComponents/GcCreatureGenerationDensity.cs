@@ -10,6 +10,6 @@ namespace libMBIN.NMS.GameComponents
     {
         // Size: 0x4
         public enum DensityEnum { Sparse, Normal, Dense, VeryDense };
-        public DensityEnum DensityTime;
+        public DensityEnum Density;
     }
 }
