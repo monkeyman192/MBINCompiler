@@ -496,6 +496,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardPetEgg.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardPetEggHatch.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardPlanetSubstance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionEggMachinePageOpen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasCreatureEggItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnIfValueIs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnValueAsBool.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnRandomNumber.cs" />
