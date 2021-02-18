@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x5470, GUID = 0xE7399A92F12BA137)]
+    [NMS(Size = 0x5840, GUID = 0xC0E430882673D987)]
     public class GcCameraGlobals : NMSTemplate
     {
         /* 0x0000 */ public TkModelRendererData FreighterCustomisationStandardCamera;
@@ -275,7 +275,7 @@ namespace libMBIN.NMS.Globals
         /* 0x4F6C */ public float CharCamRightStickX;
         /* 0x4F70 */ public float CharCamRightStickY;
         /* 0x4F74 */ public float FirstPersonCamHeight;
-        [NMS(Size = 0x8 )]
+        [NMS(Size = 0x8)]
         /* 0x4F80 */ public Vector3f[] FirstPersonCamOffset;
         /* 0x5000 */ public Vector3f FirstPersonInShipCamOffset;
         /* 0x5010 */ public float FirstPersonFoV;
@@ -296,23 +296,50 @@ namespace libMBIN.NMS.Globals
         /* 0x504C */ public float FoVSpring;
         /* 0x5050 */ public float FoVSpringSights;
         /* 0x5054 */ public float FoVAdjust;
-        /* 0x5058 */ public bool FollowDrawCamProbes;
-        /* 0x505C */ public GcCameraAnimationData AmbientCameraAnimations;
-        /* 0x50E0 */ public TkTextureResource AmbientDroneAnimations;
+        /* 0x5058 */ public bool CreatureInteractionInterpolateDuringHold;
+        /* 0x505C */ public float CreatureSizeMin;
+        /* 0x5060 */ public float CreatureSizeMax;
+        /* 0x5064 */ public float CreatureInteractionMinDist;
+        /* 0x5068 */ public float CreatureInteractionPushCameraDownForCreatureBiggerThan;
+        /* 0x506C */ public float CreatureInteractionPushCameraDownAmount;
+        /* 0x5070 */ public float CreatureInteractionDistMulMin;
+        /* 0x5074 */ public float CreatureInteractionDistMulMax;
+        /* 0x5078 */ public float CreatureInteractionYawMin;
+        /* 0x507C */ public float CreatureInteractionYawMax;
+        /* 0x5080 */ public float CreatureInteractionPitchSplit;
+        /* 0x5084 */ public float CreatureInteractionPitchMin;
+        /* 0x5088 */ public float CreatureInteractionPitchMax;
+        /* 0x508C */ public float CreatureInteractionMaxDownhillPitchAroundPlayer;
+        /* 0x5090 */ public float CreatureInteractionDownhillPitchTransfer;
+        /* 0x5094 */ public float CreatureInteractionMaxUphillPitchAroundPlayer;
+        /* 0x5098 */ public float CreatureInteractionUphillPitchTransfer;
+        /* 0x509C */ public float CreatureInteractionFoVSplitSize;
+        /* 0x50A0 */ public float CreatureInteractionFoVMin;
+        /* 0x50A4 */ public float CreatureInteractionFoVMax;
+        /* 0x50A8 */ public float CreatureInteractionCamSpring;
+        /* 0x50AC */ public float CreatureInteractionHeadHeightSpring;
+        /* 0x50B0 */ public bool FollowDrawCamProbes;
+        /* 0x50B4 */ public GcCameraAnimationData AmbientCameraAnimations;
+        /* 0x5138 */ public TkTextureResource AmbientDroneAnimations;
         [NMS(Size = 0x80)]
-        /* 0x5164 */ public string CameraAmbientAnimationsData;
-        /* 0x51E4 */ public float CameraAmbientAutoSwitchMinTime;
-        /* 0x51E8 */ public float CameraAmbientAutoSwitchMaxTime;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x51EC */ public byte[] Padding51EC;
-        /* 0x51F0 */ public TkModelRendererData CameraNPCShipInteraction;
-        /* 0x52A0 */ public TkModelRendererData CameraNPCShopInteraction;
-        [NMS(Size = 0x4 )]
-        /* 0x5350 */ public TkPhysRelVectorData[] SavedCameraPositions;
-        [NMS(Size = 0x4 )]
-        /* 0x53D0 */ public Vector3f[] SavedCameraFacing;
-        /* 0x5410 */ public GcCameraWarpSettings WarpSettings;
+        /* 0x51BC */ public string CameraAmbientAnimationsData;
+        /* 0x523C */ public float CameraAmbientAutoSwitchMinTime;
+        /* 0x5240 */ public float CameraAmbientAutoSwitchMaxTime;
         [NMS(Size = 0xC, Ignore = true)]
-        /* 0x5464 */ public byte[] EndPadding;
+        /* 0x5244 */ public byte[] Padding5244;
+        /* 0x5250 */ public TkModelRendererData CameraNPCShipInteraction;
+        /* 0x5300 */ public TkModelRendererData CameraNPCShopInteraction;
+        /* 0x53B0 */ public TkModelRendererData CameraCreatureCustomiseDefault;
+        /* 0x5460 */ public TkModelRendererData CameraCreatureCustomiseLeft;
+        /* 0x5510 */ public TkModelRendererData CameraCreatureCustomiseRight;
+        /* 0x55C0 */ public TkModelRendererData CameraCreatureCustomiseFront;
+        /* 0x5670 */ public TkModelRendererData CameraCreatureCustomiseBack;
+        [NMS(Size = 0x4)]
+        /* 0x5720 */ public TkPhysRelVectorData[] SavedCameraPositions;
+        [NMS(Size = 0x4)]
+        /* 0x57A0 */ public Vector3f[] SavedCameraFacing;
+        /* 0x57E0 */ public GcCameraWarpSettings WarpSettings;
+        [NMS(Size = 0xC, Ignore = true)]
+        /* 0x5834 */ public byte[] EndPadding;
     }
 }

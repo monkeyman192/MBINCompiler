@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x9C0, GUID = 0x606C7DEC02D96460)]
+    [NMS(Size = 0x9C0, GUID = 0x5B8F3D449F3BDED1)]
     public class GcGraphicsGlobals : NMSTemplate
     {
         /* 0x000 */ public float LUTDistanceFlightMultiplier;
@@ -52,9 +52,10 @@ namespace libMBIN.NMS.Globals
         /* 0x104 */ public float Old_TopRimPower;
         /* 0x108 */ public float Old_TopRimIntensity;
         /* 0x10C */ public float ModelRendererLightIntensity;
-        /* 0x110 */ public float ScanFresnel;
-        /* 0x114 */ public float ScanClamp;
-        /* 0x118 */ public float ScanAlpha;
+        /* 0x110 */ public float PetModelRendererLightIntensity;
+        /* 0x114 */ public float ScanFresnel;
+        /* 0x118 */ public float ScanClamp;
+        /* 0x11C */ public float ScanAlpha;
         /* 0x120 */ public Colour ScanColour;
         /* 0x130 */ public bool DebugLinesDepthTest;
         /* 0x131 */ public bool CenterRenderSpaceOffset;

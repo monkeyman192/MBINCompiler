@@ -1,10 +1,11 @@
-﻿using libMBIN.NMS.Toolkit;
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x50, Alignment = 0x10, GUID = 0x5184B44469E17BE1, NameHash = 0x28E8DAB19EC55198)]
+    [NMS(Size = 0x50, GUID = 0xCF20BAC0F40D296B, NameHash = 0x28E8DAB19EC55198)]
     public class GcCreatureComponentData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -14,9 +15,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x18 */ public string DeathEffect;
         /* 0x28 */ public List<GcReplacementEffectData> ReplacementImpacts;
-        /* 0x38 */ public float DiscoveryUIScaler;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x3C */ public byte[] Padding3C;
+        /* 0x38 */ public float AccessoryPitchOffset;
+        /* 0x3C */ public float DiscoveryUIScaler;
         /* 0x40 */ public Vector3f DiscoveryUIOffset;
     }
 }

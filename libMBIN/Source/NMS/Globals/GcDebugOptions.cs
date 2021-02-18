@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1FE0, GUID = 0xDE8EC1FE3A23726E)]
+    [NMS(Size = 0x1FE0, GUID = 0x0F1234829ECDB7C5)]
     public class GcDebugOptions : NMSTemplate
     {
         /* 0x0000 */ public bool ForceScanEventsToGoPrime;
@@ -143,16 +143,17 @@ namespace libMBIN.NMS.Globals
         public enum RealityModeEnum { LoadPreset, Generate }
         /* 0x04F0 */ public RealityModeEnum RealityMode;
         /* 0x04F4 */ public bool DebugPersistentInteractions;
-        /* 0x04F5 */ public bool DisableMissionShop;
+        /* 0x04F5 */ public bool UseHighlightedOptionStyle;
+        /* 0x04F6 */ public bool DisableMissionShop;
         [NMS(Size = 0x80)]
-        /* 0x04F6 */ public string RealityPresetFile;
-        /* 0x0576 */ public ushort RealityGenerationIteration;
+        /* 0x04F7 */ public string RealityPresetFile;
+        /* 0x0578 */ public ushort RealityGenerationIteration;
         [NMS(Size = 0x5)]
-        /* 0x0578 */ public NMSString0x20[] LocTableList;
+        /* 0x057A */ public NMSString0x20[] LocTableList;
         [NMS(Size = 0x80)]
-        /* 0x0618 */ public string DefaultSaveData;
-        /* 0x0698 */ public bool FormatDownloadStorageAreaOnBoot;
-        /* 0x0699 */ public bool ForceBasicLoadScreen;
+        /* 0x061A */ public string DefaultSaveData;
+        /* 0x069A */ public bool FormatDownloadStorageAreaOnBoot;
+        /* 0x069B */ public bool ForceBasicLoadScreen;
         /* 0x069C */ public float BootLogoFadeRate;
         /* 0x06A0 */ public bool BootMusic;
         /* 0x06A4 */ public float WeaponScale3P;
@@ -202,9 +203,10 @@ namespace libMBIN.NMS.Globals
         /* 0x08A8 */ public int SmokeTestConfigPlanetPositionCount;
         /* 0x08AC */ public float SmokeTestConfigScenarioPreambleLength;
         /* 0x08B0 */ public float SmokeTestConfigScenarioLength;
-        /* 0x08B4 */ public bool SmokeTestCameraFly;
-        /* 0x08B5 */ public bool SmokeTestOutputOnly;
-        /* 0x08B6 */ public bool SmokeTestPureFlight;
+        /* 0x08B4 */ public bool SmokeTestFastExit;
+        /* 0x08B5 */ public bool SmokeTestCameraFly;
+        /* 0x08B6 */ public bool SmokeTestOutputOnly;
+        /* 0x08B7 */ public bool SmokeTestPureFlight;
         /* 0x08B8 */ public int SmokeTestConfigCaptureCycles;
         /* 0x08BC */ public float SmokeTestConfigCaptureDurationInSeconds;
         /* 0x08C0 */ public int SmokeTestConfigCaptureFolderNameNumberOffset;
