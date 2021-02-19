@@ -131,7 +131,7 @@
             <div class="section">
               
                 <h2 id="all-classes-globals-gcuiglobals"><a href="../../">All classes</a> &gt; <a href="../">globals</a> &gt; GcUIGlobals</h2>
-<p><strong>Size</strong>: 0x6B20, <strong>GUID</strong>: 0x247D7AAF0267A0F6</p>
+<p><strong>Size</strong>: 0x6E00, <strong>GUID</strong>: 0x2D634E9F5F38006</p>
 <table>
 <thead>
 <tr>
@@ -141,6 +141,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>EggModifiyAnimMaxSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>EggModifiyAnimLoopTime</td>
+<td>Float</td>
+<td></td>
+</tr>
 <tr>
 <td>ExplorationLogMissionID</td>
 <td>String (0x10)</td>
@@ -278,6 +288,36 @@
 </tr>
 <tr>
 <td>InWorldInteractLabelFarRange</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetSlotUnlockBounceTime</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetHUDMarkerExtraFollowInfoDistance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetHUDMarkerHideDistance</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetHUDMarkerHideDistanceShort</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetHUDMarkerOffset</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetMoodMarkerOffset</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -1207,6 +1247,11 @@
 <td></td>
 </tr>
 <tr>
+<td>CreatureIconMergeAngle</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>MissionObjectiveBaseHeight</td>
 <td>Float</td>
 <td></td>
@@ -1737,6 +1782,16 @@
 <td></td>
 </tr>
 <tr>
+<td>IntermediateInteractionPageCursorOffset</td>
+<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td></td>
+</tr>
+<tr>
+<td>CursorlessDialogPageCursorOffset</td>
+<td><a href="../../../classes/nms/Vector2f">Vector2f</a></td>
+<td></td>
+</tr>
+<tr>
 <td>MissionSpecificMissionPercent</td>
 <td>Int32</td>
 <td></td>
@@ -2202,6 +2257,11 @@
 <td></td>
 </tr>
 <tr>
+<td>CreatureIconOffsetPhysics</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>DelayBeforeHidingHangarAfterGalaxyMap</td>
 <td>Float</td>
 <td></td>
@@ -2633,6 +2693,16 @@
 </tr>
 <tr>
 <td>SmallSpaceIconSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetHoverIconSize</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>PetIconSize</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -3943,17 +4013,17 @@
 </tr>
 <tr>
 <td>HazardTextures</td>
-<td><div class='expandable'>NMSString0x80[0x6]</div><ul class='enumValues' hidden><li>None</li><li>NoOxygen</li><li>ExtremeHeat</li><li>ExtremeCold</li><li>ToxicGas</li><li>Radiation</li></ul></td>
+<td>NMSString0x80[0x6]</td>
 <td></td>
 </tr>
 <tr>
 <td>HazardNormalMaps</td>
-<td><div class='expandable'>NMSString0x80[0x6]</div><ul class='enumValues' hidden><li>None</li><li>NoOxygen</li><li>ExtremeHeat</li><li>ExtremeCold</li><li>ToxicGas</li><li>Radiation</li></ul></td>
+<td>NMSString0x80[0x6]</td>
 <td></td>
 </tr>
 <tr>
 <td>HazardHeightmaps</td>
-<td><div class='expandable'>NMSString0x80[0x6]</div><ul class='enumValues' hidden><li>None</li><li>NoOxygen</li><li>ExtremeHeat</li><li>ExtremeCold</li><li>ToxicGas</li><li>Radiation</li></ul></td>
+<td>NMSString0x80[0x6]</td>
 <td></td>
 </tr>
 <tr>
@@ -4448,6 +4518,51 @@
 </tr>
 <tr>
 <td>ByteBeatSwitchPanelSplit</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuInnerColourSelected</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuOuterColourSelected</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuInnerColourUnselected</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuOuterColourUnselected</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuInnerColourDisabled</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuOuterColourDisabled</td>
+<td><a href="../../../classes/nms/Colour">Colour</a></td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuInnerRadius</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuInnerRadiusCursor</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>RadialMenuWedgeOffset</td>
 <td>Float</td>
 <td></td>
 </tr>
@@ -5097,7 +5212,17 @@
 <td></td>
 </tr>
 <tr>
+<td>HUDPetMarkerAngleTest</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
 <td>HUDMarkerHoverAngleTestGround</td>
+<td>Float</td>
+<td></td>
+</tr>
+<tr>
+<td>HUDPetCentreScreenAngle</td>
 <td>Float</td>
 <td></td>
 </tr>
