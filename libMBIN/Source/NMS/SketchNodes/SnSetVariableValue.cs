@@ -12,5 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x20 */ public bool NetSync;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x21 */ public byte[] EndPadding;
+        // IONode: Case 0: none, Case 1: "Value", Case 2: "Variable", Case 3: "NetSync"
     }
 }

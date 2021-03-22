@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace libMBIN.Source.NMS.SketchNodes
+namespace libMBIN.NMS.SketchNodes
 {
     [NMS(Size = 0x8)]
     public class SnSetScannableComponentUsed : NMSTemplate

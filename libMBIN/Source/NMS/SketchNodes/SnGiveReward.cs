@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace libMBIN.Source.NMS.SketchNodes
+namespace libMBIN.NMS.SketchNodes
 {
-    [NMS(Size = 0x0)]
+    [NMS(Size = 0x10)]
     public class SnGiveReward : NMSTemplate
     {
         [NMS(Size = 0x10)]

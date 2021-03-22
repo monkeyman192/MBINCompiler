@@ -379,7 +379,15 @@ namespace libMBIN
 
                     if (field.IsEnum) {
                         reader.Align( 4 );
-                        return fieldType == "Int32" ? (object)reader.ReadInt32() : (object)reader.ReadUInt32();
+                        string enumType = Enum.GetUnderlyingType(field).ToString();
+                        switch (enumType) {
+                            case "System.Int32":
+                                return reader.ReadInt32();
+                            case "System.UInt64":
+                                return reader.ReadUInt64();
+                            default:
+                                return reader.ReadUInt32();
+                        }
                     }
 
                     if (field.IsArray) {
@@ -546,7 +554,11 @@ namespace libMBIN
                         writer.WriteString( (string) fieldData, Encoding.UTF8, size, false, stringPadding );
                     } else {
                         byte[] bytes = (byte[]) fieldData;
-                        if (ignore != true) size = bytes?.Length ?? 0;
+                        if (ignore != true) {
+                            size = bytes?.Length ?? 0;
+                        } else {
+                            bytes = new byte[1] { stringPadding };
+                        }
                         Array.Resize( ref bytes, size);
                         writer.Write( bytes );
                     }
@@ -779,11 +791,16 @@ namespace libMBIN
                         //DebugLog($"0x{origPos:X}");
                         // first, write the correct offset at the correct location
                         long headerPos = data.Item1;
+                        var GenericObject = data.Item2;
+                        Int32 size = GenericObject.GetType().GetCustomAttribute<NMSAttribute>()?.Size ?? 0;
                         writer.BaseStream.Position = headerPos;
                         long offset = origPos - headerPos;
-                        writer.Write( offset );
+                        if (size != 0) {
+                            writer.Write(offset);
+                        } else {
+                            writer.Write(0x0);
+                        }
                         writer.BaseStream.Position = origPos;
-                        var GenericObject = data.Item2;
                         int newDataIndex = i + 1;
                         SerializeValue( writer, GenericObject.GetType(), GenericObject, null, null, ref listObjects, ref newDataIndex, listEnding );
                     }
@@ -927,7 +944,7 @@ namespace libMBIN
                             // this is serialising a list of generic type
                             SerializeGenericList( writer, (IList) data.Item2, data.Item1, ref additionalData, i + 1, listEnding );
                         } else {
-                            // this is serialising a list if a particular type
+                            // this is serialising a list of a particular type
                             SerializeList( writer, (IList) data.Item2, data.Item1, ref additionalData, i + 1, listEnding );
                         }
 

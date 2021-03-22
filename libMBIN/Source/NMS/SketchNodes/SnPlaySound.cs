@@ -4,7 +4,7 @@ using System.Text;
 
 using libMBIN.NMS.GameComponents;
 
-namespace libMBIN.Source.NMS.SketchNodes
+namespace libMBIN.NMS.SketchNodes
 {
     [NMS(Size = 0x8)]
     public class SnPlaySound : NMSTemplate

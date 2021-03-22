@@ -4,13 +4,14 @@ using System.Text;
 
 using libMBIN.NMS.GameComponents;
 
-namespace libMBIN.Source.NMS.SketchNodes
+namespace libMBIN.NMS.SketchNodes
 {
-    [NMS(Size = 0x8)]
+    [NMS(Size = 0xC)]
     public class SnSetHazard : NMSTemplate
     {
         /* 0x0 */ public GcPlayerHazardType Hazard;
-        /* 0x4 */ public float Strength;
-        // OutNode: Unnamed
+        /* 0x4 */ public float Duration;
+        /* 0x8 */ public float Strength;
+        // IONode
     }
 }
