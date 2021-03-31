@@ -11,6 +11,6 @@ namespace libMBIN.NMS.SketchNodes
         [NMS(Size = 0x3, Ignore = true, Padding = 0x44)]
         /* 0x1 */ public byte[] Padding1;
         /* 0x4 */ public float Seconds;
-        // IONode: 0: Src, 1: "Seconds", !2: "Fade In"
+        // IONode: Out: 0: Src, 1: Seconds, 2: FadeIn
     }
 }

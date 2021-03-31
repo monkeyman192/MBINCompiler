@@ -14,6 +14,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x08 */ public string Anim;
         [NMS(Size = 0x8)]
         /* 0x18 */ public byte[] Endpadding;
-        // IONode: Unnamed
+        // OutNode: 0: Src
     }
 }

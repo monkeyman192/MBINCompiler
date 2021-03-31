@@ -7,5 +7,6 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x0)]
     public class SnOnSpawned : NMSTemplate
     {
+        // OutNode: 0: Src
     }
 }

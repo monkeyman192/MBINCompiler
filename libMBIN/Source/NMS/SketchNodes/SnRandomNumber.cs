@@ -9,6 +9,6 @@ namespace libMBIN.NMS.SketchNodes
     {
         /* 0x0 */ public float Min;
         /* 0x4 */ public float Max;
-        // OutNode: 'Number'
+        // IONode: Out: 0: Src, 1: Min, 2: Max
     }
 }

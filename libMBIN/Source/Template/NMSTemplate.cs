@@ -554,12 +554,12 @@ namespace libMBIN
                         writer.WriteString( (string) fieldData, Encoding.UTF8, size, false, stringPadding );
                     } else {
                         byte[] bytes = (byte[]) fieldData;
-                        if (ignore != true) {
+                        if (ignore != true || settings?.DefaultValue != null ) {
                             size = bytes?.Length ?? 0;
+                            Array.Resize(ref bytes, size);
                         } else {
-                            bytes = new byte[1] { stringPadding };
+                            bytes = Enumerable.Repeat<byte>(stringPadding, size).ToArray();
                         }
-                        Array.Resize( ref bytes, size);
                         writer.Write( bytes );
                     }
                     break;
@@ -690,8 +690,9 @@ namespace libMBIN
                         Type enumType = Enum.GetUnderlyingType(field.FieldType);
                         if (enumType.Name == "UInt32") {
                             writer.Write((uint)Enum.Parse(field.FieldType, fieldData.ToString()));
-                        }
-                        else {
+                        } else if (enumType.Name == "UInt64") {
+                            writer.Write((ulong)Enum.Parse(field.FieldType, fieldData.ToString()));
+                        } else {
                             writer.Write((int)Enum.Parse(field.FieldType, fieldData.ToString()));
                         }
 
@@ -1334,6 +1335,8 @@ namespace libMBIN
                             Type enumType = Enum.GetUnderlyingType(field.FieldType);
                             if (enumType.Name == "UInt32") {
                                 return (uint)Enum.Parse(field.FieldType, xmlProperty.Value);
+                            } else if (enumType.Name == "UInt64") {
+                                return (ulong)Enum.Parse(field.FieldType, xmlProperty.Value);
                             } else {
                                 return (int)Enum.Parse(field.FieldType, xmlProperty.Value);
                             }

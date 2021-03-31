@@ -9,6 +9,6 @@ namespace libMBIN.NMS.SketchNodes
     {
         [NMS(Size = 0x10)]
         /* 0x0 */ public string Anim;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Anim
     }
 }

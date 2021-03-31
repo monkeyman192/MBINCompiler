@@ -12,5 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x08 */ public SnCurve Curve;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x3C */ public byte[] EndPadding;
+        // IONode: Out: 0: Src, 1: Health, 2:Duration
     }
 }

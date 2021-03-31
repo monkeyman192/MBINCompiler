@@ -11,7 +11,7 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x10 */ public float Intensity;
         /* 0x14 */ public float Duration;
         /* 0x18 */ public SnCurve Curve;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x3C */ public byte[] EndPadding;
+        /* 0x3C */ public int Unknown; // These last 4 bytes are either a float or an int... Probably part of the curve data
+        // IONode: Out: 0: Src, 1: Light, 2: Intensity, 3: Duration
     }
 }

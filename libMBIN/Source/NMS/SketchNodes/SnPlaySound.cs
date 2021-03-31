@@ -12,6 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x0 */ public GcAudioWwiseEvents Event;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x4 */ public byte[] EndPadding;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Sound
     }
 }

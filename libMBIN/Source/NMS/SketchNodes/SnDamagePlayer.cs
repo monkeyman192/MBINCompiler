@@ -12,6 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x10 */ public float Range;
         [NMS(Size = 0x4, Ignore = true, Padding = 0x44)]
         /* 0x14 */ public byte[] EndPadding;
-        // IONode: 0: Src, 1: "Damage", !2: "Range"
+        // IONode: Out: 0: Src, 1: Damage, 2: Range
     }
 }

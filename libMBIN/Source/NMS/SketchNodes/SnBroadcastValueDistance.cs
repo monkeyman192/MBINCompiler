@@ -12,6 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x4 */ public byte[] Padding4;
         [NMS(Size = 0x10)]
         /* 0x8 */ public string Value;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Range, 2: Value
     }
 }

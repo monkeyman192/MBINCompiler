@@ -12,6 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x0 */ public GcPlayerHazardType Hazard;
         /* 0x4 */ public float Duration;
         /* 0x8 */ public float Strength;
-        // IONode
+        // IONode: Out: 0: Src, 1: Duration, 2: Strength
     }
 }

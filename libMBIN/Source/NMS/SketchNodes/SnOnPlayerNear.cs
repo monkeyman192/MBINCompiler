@@ -8,6 +8,6 @@ namespace libMBIN.NMS.SketchNodes
     public class SnOnPlayerNear : NMSTemplate
     {
         /* 0x0 */ public float Distance;
-        // OutNode: "IsNear"
+        // OutNode: 0: IsNear
     }
 }

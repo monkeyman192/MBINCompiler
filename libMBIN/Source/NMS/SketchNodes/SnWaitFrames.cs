@@ -8,6 +8,6 @@ namespace libMBIN.NMS.SketchNodes
     public class SnWaitFrames : NMSTemplate
     {
         /* 0x0 */ public int Frames;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Frames
     }
 }

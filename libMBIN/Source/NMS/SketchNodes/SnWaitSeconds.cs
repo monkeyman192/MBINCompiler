@@ -8,6 +8,6 @@ namespace libMBIN.NMS.SketchNodes
     public class SnWaitSeconds : NMSTemplate
     {
         /* 0x0 */ public float Seconds;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Seconds
     }
 }

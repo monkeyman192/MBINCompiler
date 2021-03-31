@@ -12,6 +12,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x10 */ public float Timeout;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x14 */ public byte[] EndPadding;
-        // OutNode: 'Value'
+        // IONode: Out: 0: Src, 1: Variable, 2: Timeout; In: 0: Value
     }
 }

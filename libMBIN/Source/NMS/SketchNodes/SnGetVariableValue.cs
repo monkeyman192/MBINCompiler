@@ -9,6 +9,6 @@ namespace libMBIN.NMS.SketchNodes
     {
         [NMS(Size = 0x10)]
         /* 0x0 */ public string Variable;
-        // OutNode: 'Value'
+        // IONode: Out: 0: Src; In: 0: Value
     }
 }

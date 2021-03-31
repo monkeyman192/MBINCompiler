@@ -7,6 +7,6 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x0)]
     public class SnDestroyDestructables : NMSTemplate
     {
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src
     }
 }

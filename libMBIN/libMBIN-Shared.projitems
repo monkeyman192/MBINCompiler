@@ -766,7 +766,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialShaderMillLink.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialShaderMillNode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnComponentEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnCurvePoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnGetPlanetColour.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnMathsFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnPlayAnim_short.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnStopSounds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnSetLightColour.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnVector3f.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnCurve.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnIfValueIs.cs" />

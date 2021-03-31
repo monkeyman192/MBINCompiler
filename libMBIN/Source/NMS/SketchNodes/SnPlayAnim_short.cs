@@ -4,14 +4,12 @@ using System.Text;
 
 namespace libMBIN.NMS.SketchNodes
 {
-    [NMS(Size = 0x18)]
-    public class SnPlayAnim : NMSTemplate
+    [NMS(Size = 0x10)]
+    public class SnPlayAnim_short : NMSTemplate
     {
+        // This is a weird case where the PlayAnim data is only 0x10 long. This isn't in the exe and is only one file. Maybe the file is old.
         [NMS(Size = 0x10)]
         /* 0x00 */ public string Anim;
-        /* 0x10 */ public bool Synchronised;
-        [NMS(Size = 0x7, Ignore = true)]
-        /* 0x11 */ public byte[] EndPadding;
         // IONode: Out: 0: Src, 1: Anim
     }
 }

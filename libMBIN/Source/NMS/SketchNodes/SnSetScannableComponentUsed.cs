@@ -10,6 +10,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x0 */ public bool Used;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x1 */ public byte[] Endpadding;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Used
     }
 }

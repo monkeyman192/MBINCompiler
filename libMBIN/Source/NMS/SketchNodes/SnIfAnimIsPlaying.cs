@@ -8,10 +8,10 @@ namespace libMBIN.NMS.SketchNodes
     public class SnIfAnimIsPlaying : NMSTemplate
     {
         /* 0x00 */ public bool Not;
-        [NMS(Size = 0x7, Ignore = true)]
+        [NMS(Size = 0x7, Ignore = true)]    // sometimes has Padding = 0x44, sometimes doesn't...?
         /* 0x01 */ public byte[] Padding1;
         [NMS(Size = 0x10)]
         /* 0x08 */ public string Anim;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Anim
     }
 }

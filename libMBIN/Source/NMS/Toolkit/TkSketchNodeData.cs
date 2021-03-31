@@ -61,8 +61,16 @@ namespace libMBIN.NMS.Toolkit
                     uint listMagic = reader.ReadUInt32();
                     if ((listMagic & 0xFF) != 1) throw new InvalidListException(listMagic, reader.BaseStream.Position);
 
+                    NMSTemplate template;
+
                     // Create the template of the type we care about
-                    NMSTemplate template = NMSTemplate.TemplateFromName($"Sn{TypeName}");
+                    // This is one weird case which I am guessing is deprecated.
+                    if (TypeName.ToString() == "PlayAnim" && entrySize == 0x10) {
+                        template = NMSTemplate.TemplateFromName($"SnPlayAnim_short");
+                    } else {
+                        template = NMSTemplate.TemplateFromName($"Sn{TypeName}");
+                    }
+                    
 
                     // Move the reader to the appropriate location
                     var templatePosition = listPosition + listStartOffset;

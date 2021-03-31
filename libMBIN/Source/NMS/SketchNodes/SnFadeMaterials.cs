@@ -11,5 +11,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x00 */ public string Node;
         /* 0x10 */ public float Duration;
         /* 0x14 */ public SnCurve Curve;
+        // IONode: Out: 0: Src, 1: Node, 2: Duration
     }
 }

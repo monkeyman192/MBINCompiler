@@ -11,6 +11,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x00 */ public string Particles;
         [NMS(Size = 0x10)]
         /* 0x10 */ public string AtNode;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Particle, 2: AtNode
     }
 }

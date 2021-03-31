@@ -9,6 +9,6 @@ namespace libMBIN.NMS.SketchNodes
     {
         [NMS(Size = 0x10)]
         /* 0x00 */ public string ShakeId;
-        // OutNode: Unnamed
+        // IoNode: Out: 0: Src, 1: ShakeId
     }
 }

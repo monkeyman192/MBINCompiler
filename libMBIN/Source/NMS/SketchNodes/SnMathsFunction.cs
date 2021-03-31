@@ -10,6 +10,6 @@ namespace libMBIN.NMS.SketchNodes
     {
         [NMS(Size = 0x40)]
         /* 0x0 */ public string Expression;
-        // OutNode: 'Value'
+        // IONode: In: 0: x; Out: 0: y
     }
 }

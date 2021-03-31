@@ -11,6 +11,6 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x00 */ public string Event;
         [NMS(Size = 0x10)]
         /* 0x00 */ public string Value;
-        // OutNode: Unnamed
+        // IONode: Out: 0: Src, 1: Value, 2: Event
     }
 }

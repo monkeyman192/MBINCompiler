@@ -10,6 +10,6 @@ namespace libMBIN.NMS.SketchNodes
         // WIP
         // I think this is possibly given to the shaders `gAcesCurveParams`?
         [NMS(Size = 0x12)]
-        public ushort[] Points;
+        public SnCurvePoint[] Points;
     }
 }
