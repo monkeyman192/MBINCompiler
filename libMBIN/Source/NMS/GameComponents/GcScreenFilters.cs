@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcScreenFilters : NMSTemplate
     {
         // 0x52 entries
-		public enum ScreenFiltersEnum {
+		public enum ScreenFilterEnum {
             Default, DefaultStorm, Frozen, FrozenStorm, Toxic, ToxicStorm, Radioactive, RadioactiveStorm, Scorched, ScorchedStorm,
             Barren, BarrenStorm, Weird1, Weird2, Weird3, Weird4, Weird5, Weird6, Weird7, Weird8,
             Vintage, HyperReal, Desaturated, Amber, GBGreen, Apocalypse, Diffusion, Green, BlackAndWhite, Isolation,
@@ -18,6 +18,6 @@ namespace libMBIN.NMS.GameComponents
             HueShiftA, HueShiftB, HueShiftC, HueShiftD, WarmStripe, NMSRetroA, NMSRetroB, NMSRetroC, NMSRetroD, NMSRetroE,
             NMSRetroF, NMSRetroG
         }
-		public ScreenFiltersEnum ScreenFilters;
+		public ScreenFilterEnum ScreenFilter;
     }
 }
