@@ -18,6 +18,6 @@ namespace libMBIN.NMS.GameComponents
             HueShiftA, HueShiftB, HueShiftC, HueShiftD, WarmStripe, NMSRetroA, NMSRetroB, NMSRetroC, NMSRetroD, NMSRetroE,
             NMSRetroF, NMSRetroG
         }
-		public ScreenFiltersEnum ScreenFilters;
+		public ScreenFiltersEnum ScreenFilter;
     }
 }

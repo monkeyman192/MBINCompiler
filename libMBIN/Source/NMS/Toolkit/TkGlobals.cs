@@ -10,7 +10,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkGlobals : NMSTemplate
     {
         public enum AssertsLevelsEnum { Disabled, Ignored, Skipped, Enabled }
-        /* 0x000 */ public AssertsLevelsEnum AssertsLevels;
+        /* 0x000 */ public AssertsLevelsEnum AssertsLevel;
         /* 0x004 */ public bool DefaultSelectIgnoreAsserts;
         [Flags]
         public enum EnabledChannelsEnum

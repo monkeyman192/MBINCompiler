@@ -9,8 +9,8 @@ namespace libMBIN.NMS.Toolkit
         // Size: 0x15
         public enum TerrainSettingsEnum {
             FloatingIslands, GrandCanyon, MountainRavines, HugeArches, Alien, Craters, Caverns, Alpine, LilyPad, Desert,
-            WaterworldPrime, FloatingIslandsPrime, GrandCanyonPrime, MountainRavinesPrime, HugeArchesPrime, AlienPrime, CratersPrime, CavernsPrime, AlpinePrime, LilyPadPrime,
-            DesertPrime
+            WaterworldPrime, FloatingIslandsPrime, GrandCanyonPrime, MountainRavinesPrime, HugeArchesPrime, AlienPrime,
+            CratersPrime, CavernsPrime, AlpinePrime, LilyPadPrime, DesertPrime
         }
         public TerrainSettingsEnum TerrainSettings;
     }
