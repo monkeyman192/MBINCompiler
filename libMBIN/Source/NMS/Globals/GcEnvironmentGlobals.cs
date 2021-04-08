@@ -44,7 +44,7 @@ namespace libMBIN.NMS.Globals
         /* 0x32C */ public bool MatchPlantPalettes;
         /* 0x330 */ public float DuplicateColourThreshold;
         public enum SwitchTypeEnum { None, Debug, Enabled }
-        /* 0x334 */ public SwitchTypeEnum SwitchType;
+        /* 0x334 */ public SwitchTypeEnum PushForceAirFactor;
         /* 0x338 */ public float GrassNormalUpright;
         /* 0x33C */ public float GrassNormalOffset;
         /* 0x340 */ public float GrassNormalSpherify;
@@ -88,6 +88,8 @@ namespace libMBIN.NMS.Globals
         /* 0x3D8 */ public List<float> SpacePlanetFogStrength;
         /* 0x3E8 */ public List<float> SkyBlendLength;
         /* 0x3F8 */ public float SkyAtmospherePower;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x3FC */ public byte[] Padding3FC;
         /* 0x400 */ public List<float> SkyAtmosphereBlendLength;
         /* 0x410 */ public List<float> FarBlendHeight;
         /* 0x420 */ public float FarBlendLength;
@@ -102,6 +104,8 @@ namespace libMBIN.NMS.Globals
         /* 0x458 */ public float ObjectSpawnDetailRadius;
         /* 0x45C */ public float InteractionRadius;
         /* 0x460 */ public bool EnableWind;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x461 */ public byte[] Padding461;
         /* 0x468 */ public List<TkShearWindData> ShearWindSettings;
         /* 0x478 */ public int HotspotsLOD;
         /* 0x47C */ public float RegionHotspotProbability;

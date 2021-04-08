@@ -19,7 +19,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0044 */ public float CombatDefenderSpawnDelay;
         /* 0x0048 */ public float PostCombatSpawnDelay;
         /* 0x004C */ public float CombatSpawnDelay;
-        /* 0x0050 */ public List<float>CombatSpawnDelayIncreaseByInventoryClass;
+        /* 0x0050 */ public List<float> CombatSpawnDelayIncreaseByInventoryClass;
         /* 0x0060 */ public int ExplorationPointsRequiredForScan;
         /* 0x0064 */ public GcInteractionDof FleetInteractionDepthOfField;
         /* 0x0078 */ public int PercentChangeOfFrigateBeingPurchasable;
@@ -37,7 +37,7 @@ namespace libMBIN.NMS.Globals
         /* 0x00BC */ public int MaximumSpeedIncrease;
         /* 0x00C0 */ public float CameraPauseAfterStartingExpedition;
         /* 0x00C4 */ public float UITraitLinesAngle;
-        /* 0x00C8 */ public List<TkLODDistances> UITraitLineLengths;
+        /* 0x00C8 */ public List<GcFrigateUITraitLines> UITraitLineLengths;
         /* 0x00D8 */ public List<NMSString0x20> RacialTermForCaptain;
         /* 0x00E8 */ public float TimeBeforeShowingHangar;
         /* 0x00EC */ public float TimeBeforeHidingHangar;
@@ -48,6 +48,7 @@ namespace libMBIN.NMS.Globals
         /* 0x00F7 */ public bool DisablePlayerFleets;
         [NMS(Size = 0x20)]
         /* 0x00F8 */ public string DebugInterventionEvent;
+        // 0x9 entries
         public enum ForceDebriefEntryTypeEnum { None, PrimarySuccess, PrimaryFailure, PrimaryDamage,
             SecondarySuccess, SecondaryFailure, SecondaryDamage, GenericSuccess, GenericFailure };
         /* 0x0118 */ public ForceDebriefEntryTypeEnum ForceDebriefEntryType;
@@ -147,12 +148,16 @@ namespace libMBIN.NMS.Globals
         /* 0x0868 */ public GcFrigateStatsByClass FrigateInitialStats;
         /* 0x0A48 */ public GcFrigateTraitIcons TraitIcons;
         /* 0x0F48 */ public GcFrigateTraitIcons NegativeTraitIcons;
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x1448 */ public byte[] Padding1448;
         /* 0x1450 */ public GcScanEffectData FrigateScanEffect;
         /* 0x14A0 */ public GcScanEffectData FrigateHologramScanEffect;
         /* 0x14F0 */ public GcScanEffectData CompletedFrigateHologramScanEffect;
         /* 0x1540 */ public GcScanEffectData DamagedFrigateHologramScanEffect;
         /* 0x1590 */ public GcScanEffectData DestroyedFrigateHologramScanEffect;
         /* 0x15E0 */ public GcExpeditionEventOccurrenceRate EventTypeOccurrenceChance;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1644 */ public byte[] Padding1644;
         /* 0x1648 */ public List<NMSString0x80> FrigateHologramModels;
         /* 0x1658 */ public List<NMSString0x80> FrigatePlanetModels;
         /* 0x1668 */ public List<int> ExpeditionRankBoundaries;
