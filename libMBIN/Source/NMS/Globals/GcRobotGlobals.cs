@@ -1,4 +1,6 @@
-﻿using libMBIN.NMS.Toolkit;
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
@@ -111,6 +113,8 @@ namespace libMBIN.NMS.Globals
         /* 0x1F0 */ public bool DroneClickToMove;
         /* 0x1F4 */ public float DroneInvestigateMinScanTimeAttackMe;
         /* 0x1F8 */ public float DroneInvestigateMinScanTime;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1FC */ public byte[] Padding1FC;
         /* 0x200 */ public GcScanEffectData DroneScanEffect;
         /* 0x250 */ public float HeightTestSampleDistance;
         /* 0x254 */ public float HeightTestSampleTime;
