@@ -27,8 +27,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0048 */ public GcPlayerHazardType StormBonusMiningHeatWeather;
         /* 0x004C */ public GcPlayerHazardType StormBonusMiningAmountWeather;
         /* 0x0050 */ public float AlienPodThreshold2;
-        /* 0x0054 */ public float AlienPodThreshold1;  // Yes... these are the order in the exe...
-        /* 0x0060*/ public Colour BulletTraceLineColour;
+        /* 0x0054 */ public float AlienPodThreshold1;
+        /* 0x0060 */ public Colour BulletTraceLineColour;
         /* 0x0070 */ public float BulletTraceLineWidth;
         /* 0x0074 */ public float TracerBeamStart;
         /* 0x0078 */ public float TracerBeamEnd;
@@ -39,7 +39,7 @@ namespace libMBIN.NMS.Globals
         /* 0x008C */ public float SalvageValueAsProds;
         /* 0x0090 */ public int SalvageSubstanceValueThreshold;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x0094 */ public byte[] Padding74;
+        /* 0x0094 */ public byte[] Padding94;
         [NMS(Size = 0x4)]
         /* 0x0098 */ public NMSString0x10[] SalvageRewardsShuttle;
         [NMS(Size = 0x4)]
@@ -56,7 +56,7 @@ namespace libMBIN.NMS.Globals
         /* 0x025C */ public float MultidimensionalFadeTime;
         /* 0x0260 */ public float TeleporterDistanceTravelledMultiplier;
         [NMS(Size = 0xC, Ignore = true)]
-        /* 0x0264 */ public byte[] Padding354;
+        /* 0x0264 */ public byte[] Padding264;
         /* 0x0270 */ public GcScanEffectData BinocularSelectedEffect;
         /* 0x02C0 */ public Colour BinocularSelectedColour;
         /* 0x02D0 */ public Colour BinocularSelectedUnknownColour;
@@ -96,7 +96,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0364 */ public int CreaturesToBaitForTutorial;
         /* 0x0368 */ public int CreaturesToFeedForTutorial;
         /* 0x036C */ public bool DisableGalaxyMapInQuickMenu;
-        /* 0x036C */ public bool DisableNexusInQuickMenu;
+        /* 0x036D */ public bool DisableNexusInQuickMenu;
         /* 0x036E */ public bool EnableTeleporters;
         /* 0x036F */ public bool AllowSpaceScanEvents;
         /* 0x0370 */ public bool CanMoveTechnology;
@@ -192,6 +192,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0680 */ public float CommunicatorSpawnScale;
         /* 0x0684 */ public float CommunicatorSpawnRotation;
         /* 0x0688 */ public float CommunicatorFadeTime;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x068C */ public byte[] Padding68C;
         /* 0x0690 */ public List<GcScanEffectData> CommunicatorEffectTable;
         /* 0x06A0 */ public int MaxNumMissionsFromMissionGiver;
         /* 0x06A4 */ public float InteractionMinTimeBeforeHighlightedOptionSelection;
@@ -282,7 +284,7 @@ namespace libMBIN.NMS.Globals
         /* 0x08B4 */ public GcExperienceTimers FlybyTimers;
         /* 0x08D4 */ public GcExperienceTimers SpaceFlybyTimers;
         [NMS(Size = 0x5)]
-        /* 0x0904 */ public int[] FreighterTechQualityWeightings;
+        /* 0x08F4 */ public int[] FreighterTechQualityWeightings;
         /* 0x0908 */ public int SentinelsHigh;
         /* 0x090C */ public int SentinelsLow;
         /* 0x0910 */ public float AsteroidHitForce;
@@ -336,6 +338,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0AF0 */ public float HoverTimeToScan;
         /* 0x0AF4 */ public float HoverTimeToScanCreatures;
         /* 0x0AF8 */ public int HoverVisiblePointsNeeded;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0AFC */ public byte[] PaddingAFC;
         /* 0x0B00 */ public List<GcZoomData> ZoomLevels;
         /* 0x0B10 */ public GcScanEffectData PassiveScanEffect;
         /* 0x0B60 */ public GcScanEffectData BuildingScanEffect;
@@ -401,7 +405,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1274 */ public float HUDDamageScaler;
         /* 0x1278 */ public float HUDDamageRadius;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x127C */ public byte[] Padding148C;
+        /* 0x127C */ public byte[] Padding127C;
         /* 0x1280 */ public GcShipHUDTargetData HUDTarget;
         /* 0x16B0 */ public float HUDLabelTime;
         /* 0x16B4 */ public float HUDLabelAngle;
@@ -446,7 +450,7 @@ namespace libMBIN.NMS.Globals
         /* 0x17DC */ public GcTracerData BulletTracer;
         /* 0x17F4 */ public GcTracerData ShipTracer;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x180C */ public byte[] Padding1A1C;
+        /* 0x180C */ public byte[] Padding180C;
         [NMS(Size = 0x10)]
         /* 0x1810 */ public string DefaultAnim;
         /* 0x1820 */ public bool DebugDrawTriggerBoxes;
@@ -528,7 +532,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1AE0 */ public float MaxRespawnOnGroundHeight;
         /* 0x1AE4 */ public float DeadPlanetGravityFactor;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1AE8 */ public byte[] Padding1CF8;
+        /* 0x1AE8 */ public byte[] Padding1AE8;
         /* 0x1AF0 */ public GcScanEffectData ShipSalvageScanEffect;
         /* 0x1B40 */ public float SalvageShipPitch;
         /* 0x1B44 */ public float SalvageShipHeightOffset;
@@ -538,7 +542,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1B54 */ public float SalvageShipExplodeShipDistance;
         /* 0x1B58 */ public float SalvageShipOneRevolutionTime;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1B5C */ public byte[] Padding1D6C;
+        /* 0x1B5C */ public byte[] Padding1B5C;
         [NMS(Size = 0x20)]
         /* 0x1B60 */ public string CommunicatorFireteamNexusExitDialog;
         [NMS(Size = 0x20)]
@@ -553,9 +557,9 @@ namespace libMBIN.NMS.Globals
         /* 0x1BBC */ public float PulseEncounterStopSpeed;
         [NMS(Size = 0x5)]
         /* 0x1BC0 */ public int[] AlienShipEvolveCosts;
-	/* 0x1BD4 */ public float SpawnerWeaponRange;
-	/* 0x1BD8 */ public TkTextureResource WeaponSpawnObject;
-	/* 0x1C5C */ public TkTextureResource WeaponSpawnAltObject;
+        /* 0x1BD4 */ public float SpawnerWeaponRange;
+        /* 0x1BD8 */ public TkTextureResource WeaponSpawnObject;
+        /* 0x1C5C */ public TkTextureResource WeaponSpawnAltObject;
     }
 }
 
