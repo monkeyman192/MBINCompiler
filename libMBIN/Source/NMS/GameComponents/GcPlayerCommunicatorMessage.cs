@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x20)]
         /* 0x00 */ public string Dialog;
         /* 0x20 */ public bool ShowHologram;
+        // 0x8 entries
 		public enum CommunicatorTypeEnum { HoloExplorer, HoloSceptic, HoloNoone, Generic, PlayerFreighterCaptain, Polo, Nada, QuicksilverBot }
 		public CommunicatorTypeEnum CommunicatorType;
         /* 0x28 */ public GcAlienRace RaceOverride;

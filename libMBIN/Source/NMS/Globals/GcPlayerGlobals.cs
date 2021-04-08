@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1C50, GUID = 0xE1FF6D5955EA6F71)]
+    [NMS(Size = 0x1C80, GUID = 0xE1FF6D5955EA6F71)]
     public class GcPlayerGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool ForceFreighterProcTechRandom;
@@ -363,6 +363,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0B00 */ public float JetpackIgnitionForce;
         /* 0x0B04 */ public float JetpackIgnitionTime;
         /* 0x0B08 */ public float JetpackMinIgnitionTime;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0B0C */ public byte[] PaddingB0C;
         /* 0x0B10 */ public List<float> JetpackTankTimes;
         /* 0x0B20 */ public float JetpackFillRate;
         /* 0x0B24 */ public float JetpackFillRateHardMode;
@@ -435,11 +437,12 @@ namespace libMBIN.NMS.Globals
         /* 0x0C2C */ public float MaximumHorizontalOffsetVR;
         /* 0x0C30 */ public float CrouchHeightToDisableLegBlendingVR;
         /* 0x0C34 */ public bool UseEnergy;
-        /* 0x0C35 */ public bool InventoryDamage;
-        /* 0x0C36 */ public bool NeverPreyedOn;
-        /* 0x0C37 */ public bool PermanantFire;
-        /* 0x0C38 */ public bool PermanantAltFire;
-        /* 0x0C39 */ public bool LuckyWithTech;
+        /* 0x0C35 */ public bool UseHazardProtection;
+        /* 0x0C36 */ public bool InventoryDamage;
+        /* 0x0C37 */ public bool NeverPreyedOn;
+        /* 0x0C38 */ public bool PermanantFire;
+        /* 0x0C39 */ public bool PermanantAltFire;
+        /* 0x0C3A */ public bool LuckyWithTech;
         /* 0x0C3C */ public int ChanceHighGradeIllegal;
         /* 0x0C40 */ public int BulletCostReducer;
         /* 0x0C44 */ public int BulletClipMultiplier;
@@ -575,7 +578,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0EF4 */ public float ScanFadeOutTime;
         /* 0x0EF8 */ public float ScanBeamWidth;
         /* 0x0EFC */ public float ScanRotateBeamWdith;
-        /* 0x0EF0 */ public float ScanBeamMainWidth;
+        /* 0x0F00 */ public float ScanBeamMainWidth;
         /* 0x0F04 */ public float WantedDroneEventRadius;
         /* 0x0F08 */ public float WantedMinSpaceTime;
         /* 0x0F0C */ public float WantedMinPlanetTime;
@@ -584,6 +587,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0F18 */ public float WantedWitnessFuzzyTime;
         /* 0x0F1C */ public float WantedMinorCrimeAmount;
         /* 0x0F20 */ public float WantedTimeoutAggressive;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0F24 */ public byte[] PaddingF24;
         /* 0x0F28 */ public List<float> WantedTimeout;
         /* 0x0F38 */ public List<float> WantedEscalateTime;
         /* 0x0F48 */ public List<float> WantedExtremeEscalateTime;
@@ -607,7 +612,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0F98 */ public float LaserRecoil;
         /* 0x0F9C */ public float BeamRecoil;
         /* 0x0FA0 */ public float GrenadeRecoil;
-        /* 0x0FA5 */ public float GunRecoilSpring;
+        /* 0x0FA4 */ public float GunRecoilSpring;
         /* 0x0FA8 */ public float BlastRecoilSpring;
         /* 0x0FAC */ public float RailRecoilSpring;
         /* 0x0FB0 */ public float PulseRecoilSpring;
@@ -675,7 +680,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1410 */ public float ExperienceDroneTimeMax;
         /* 0x1414 */ public float ExperienceFlybyScareRadius;
         /* 0x1418 */ public float ExperienceFlybyScareTime;
-        /* 0x142C */ public Vector2f ExperienceFlybyStartAngle;
+        /* 0x141C */ public Vector2f ExperienceFlybyStartAngle;
         /* 0x1424 */ public float ExperienceAlertRange;
         /* 0x1428 */ public float ExperienceAlertSightRange;
         /* 0x142C */ public float ExperienceAlertSightAngle;
@@ -694,6 +699,8 @@ namespace libMBIN.NMS.Globals
         /* 0x14D8 */ public float LabelOffset;
         /* 0x14DC */ public float AtmosphereEffectTime;
         /* 0x14E0 */ public float AtmosphereEffectOffset;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x14E4 */ public byte[] Padding14E4;
         /* 0x14E8 */ public List<GcCreatureAlertData> AlertTable;
         /* 0x14F8 */ public float PainFlickerAmount;
         /* 0x14FC */ public float PainColourSeperateAmount;
@@ -846,17 +853,21 @@ namespace libMBIN.NMS.Globals
         /* 0x1808 */ public float CriticalHitTime;
         /* 0x180C */ public float CriticalHitDesatTime;
         /* 0x1810 */ public float CriticalHitDesatFreq;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1814 */ public byte[] Padding1814;
         /* 0x1818 */ public List<GcCameraSpawnSetupData> FirstSpawnDataTable;
         /* 0x1828 */ public GcInventoryValueData ShipValueData;
         /* 0x1844 */ public GcInventoryValueData WeaponValueData;
         /* 0x1860 */ public GcInventoryValueData FreighterValueData;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x187C */ public byte[] Padding187C;
         /* 0x1880 */ public List<float> TechRarityData;
         /* 0x1890 */ public List<float> TechLearningProbabilities;
         /* 0x18A0 */ public int NumTechShopSlots;
         /* 0x18A4 */ public float GrassPushDistance;
         /* 0x18A8 */ public float GrassPushDistanceFeet;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x18AC */ public byte[] Padding1908;
+        /* 0x18AC */ public byte[] Padding18AC;
         /* 0x18B0 */ public GcCameraAnomalySetupData AnomalyBlachHoleSpawnData;
         /* 0x18F0 */ public GcCameraAnomalySetupData AnomalyAtlasStationSpawnData;
         /* 0x1930 */ public GcCameraAnomalySetupData AnomalyMiniStationSpawnData;
@@ -870,14 +881,14 @@ namespace libMBIN.NMS.Globals
         /* 0x1998 */ public float TerrainLaserRange;
         /* 0x199C */ public float VehicleLaserRange;
         /* 0x19A0 */ public GcPlayerCommunicatorMessage PirateHailMessage;
-        /* 0x1AC0 */ public GcShipDialogue TraderHailMessages;
+        /* 0x19F0 */ public GcShipDialogue TraderHailMessages;
         [NMS(Size = 0x4)]
-        /* 0x1C28 */ public GcShipDialogueTreeEnum[] TraderHailReceiveRegular;
+        /* 0x1C58 */ public GcShipDialogueTreeEnum[] TraderHailReceiveRegular;
         [NMS(Size = 0x2)]
-        /* 0x1C38 */ public GcShipDialogueTreeEnum[] TraderHailReceiveFight;
+        /* 0x1C68 */ public GcShipDialogueTreeEnum[] TraderHailReceiveFight;
         [NMS(Size = 0x2)]
-        /* 0x1C40 */ public GcShipDialogueTreeEnum[] TraderHailSend;
+        /* 0x1C70 */ public GcShipDialogueTreeEnum[] TraderHailSend;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1C48 */ public byte[] EndPadding;
+        /* 0x1C78 */ public byte[] EndPadding;
     }
 }

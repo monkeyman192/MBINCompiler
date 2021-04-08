@@ -11,6 +11,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0000 */ public float EggModifiyAnimMaxSize;
         /* 0x0004 */ public float EggModifiyAnimLoopTime;
         /* 0x0008 */ public int SeasonFinalStageIndex;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x000C */ public byte[] PaddingC;
         /* 0x0010 */ public List<GcSeasonalRingArray> SeasonalRingTable;
         /* 0x0020 */ public float SeasonalRingMultiplier;
         /* 0x0024 */ public float SeasonalRingPulseTime;
@@ -401,8 +403,8 @@ namespace libMBIN.NMS.Globals
         /* 0x117C */ public float FrontendWaitResponse;
         /* 0x1180 */ public float FrontendWaitInitial;
         /* 0x1184 */ public float FrontendWaitInitialTerminal;
-        /* 0x1189 */ public float FrontendWaitFadeTextOut;
-        /* 0x119C */ public float FrontendWaitFadeTextFrameOut;
+        /* 0x1188 */ public float FrontendWaitFadeTextOut;
+        /* 0x118C */ public float FrontendWaitFadeTextFrameOut;
         /* 0x1190 */ public float FrontendWaitFadeProgressiveDialogOut;
         /* 0x1194 */ public float FrontendWaitResponseOffset;
         /* 0x1198 */ public float TalkBoxAlienTextSpeed;
@@ -534,8 +536,8 @@ namespace libMBIN.NMS.Globals
         /* 0x1468 */ public float CrosshairTargetLockSize;
         [NMS(Size = 0xF)]
         /* 0x146C */ public float[] CrosshairTargetLockSizeSpecific;
-        /* 0x14A0 */ public TkCurveType CrosshairTargetLockCurve;
-        /* 0x14A4 */ public TkCurveType CrosshairTargetLockAlphaCurve;
+        /* 0x14A8 */ public TkCurveType CrosshairTargetLockCurve;
+        /* 0x14AC */ public TkCurveType CrosshairTargetLockAlphaCurve;
         /* 0x14B0 */ public Colour CrosshairColour;
         /* 0x14C0 */ public TkHitCurveData CrosshairLeadHitCurve;
         /* 0x14D0 */ public TkHitCurveData ShootableHitCurve;
@@ -665,6 +667,8 @@ namespace libMBIN.NMS.Globals
         /* 0x17A0 */ public float WantedLevelWitnessAlpha;
         /* 0x17A4 */ public float WantedLevelScanAlpha;
         /* 0x17A8 */ public float WantedLevelScannedRate;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x17AC */ public byte[] Padding17AC;
         /* 0x17B0 */ public List<NMSString0x80> StatIcons;
         /* 0x17C0 */ public bool ShowJetpackNotificationForNonTerrain;
         /* 0x17C4 */ public float StatsMessageDelayTime;
@@ -848,7 +852,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1CA0 */ public float InteractionLabelPixelHeightMax;
         /* 0x1CA4 */ public float ScanTime;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1CA8 */ public byte[] Padding4628;
+        /* 0x1CA8 */ public byte[] Padding1CA8;
         /* 0x1CB0 */ public GcModelViewCollection ModelViews;
         /* 0x3150 */ public Colour CursorColour;
         /* 0x3160 */ public Colour CursorConfirmColour;

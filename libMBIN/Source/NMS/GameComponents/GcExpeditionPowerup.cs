@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         public string ProductId;
         public GcFrigateStatType StatModified;
-        public int ChargeValue;
+        public int ValueChange;
         [NMS(Size = 0x20)]
         public string SelectionDescription;
         [NMS(Size = 0x20)]
