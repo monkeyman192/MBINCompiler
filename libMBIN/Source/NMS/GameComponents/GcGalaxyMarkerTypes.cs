@@ -7,7 +7,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcGalaxyMarkerTypes : NMSTemplate
     {
         // 0xF entries
-        public enum GalaxyMarkerTypeEnum { StartingLocation, Home, Waypoint, Contact, Blackhole, AtlasStation, Selection, PlanetBase, Visited, ScanEvent, Expedition, NetworkPlayer, Freighter, PathIcon, SeasonParty }
+        public enum GalaxyMarkerTypeEnum { StartingLocation, Home, Waypoint, Contact, Blackhole, AtlasStation, Selection, PlanetBase,
+            Visited, ScanEvent, Expedition, NetworkPlayer, Freighter, PathIcon , SeasonParty
+        }
         public GalaxyMarkerTypeEnum GalaxyMarkerType;
     }
 }
