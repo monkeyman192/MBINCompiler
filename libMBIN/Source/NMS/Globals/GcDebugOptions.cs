@@ -57,12 +57,12 @@ namespace libMBIN.NMS.Globals
         /* 0x0041 */ public bool AlwaysAllowShipOperations;
         /* 0x0042 */ public bool AlwaysAllowVehicleOperations;
         /* 0x0043 */ public bool AlwaysAllowFreighterInventoryAccess;
-        [NMS(Size = 0x200, Ignore = true)]
-        /* 0x0044 */  public string SeasonalDataOverrideFile;
+        [NMS(Size = 0x200)]
+        /* 0x0044 */ public string SeasonalDataOverrideFile;
         /* 0x0244 */ public bool UnlockAllSeasonRewards;
         /* 0x0245 */ public bool UnlockAllTwitchRewards;
-        [NMS(Size = 0x400)]
-        /* 0x0246 */ public string DebugTwitchRewards;
+        [NMS(Size = 0x4)]
+        /* 0x0246 */ public NMSString0x100[] DebugTwitchRewards;
         /* 0x0646 */ public bool UseDebugScreenSettings;
         /* 0x0648 */ public int ScreenWidth;
         /* 0x064C */ public int ScreenHeight;
@@ -159,6 +159,8 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x80)]
         /* 0x0AFB */ public string RealityPresetFile;
         /* 0x0B7C */ public ushort RealityGenerationIteration;
+        [NMS(Size = 0x2, Ignore = true)]
+        /* 0x0B7E */ public byte[] PaddingB7E;
         /* 0x0B80 */ public List<NMSString0x20> LocTableList;
         [NMS(Size = 0x80)]
         /* 0x0B90 */ public string DefaultSaveData;
@@ -301,7 +303,7 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x80)]
         /* 0x1EF8 */ public string DebugFontTexture;
         [NMS(Size = 0x80)]
-        /* 0x1F78*/ public string CursorTexture;
+        /* 0x1F78 */ public string CursorTexture;
         [NMS(Size = 0x80)]
         /* 0x1FF8 */ public string PauseTexture;
         [NMS(Size = 0x80)]
@@ -332,8 +334,8 @@ namespace libMBIN.NMS.Globals
         /* 0x2225 */ public bool AllowNGuiVR;
         /* 0x2226 */ public bool ForceExtremeWeather;
         /* 0x2227 */ public bool ForceExtremeSentinels;
-        /* 0x2229 */ public bool ForceStarType;
-        /* 0x222A */ public bool ForceLoadAllWeather;
+        /* 0x2228 */ public bool ForceStarType;
+        /* 0x2229 */ public bool ForceLoadAllWeather;
         /* 0x222C */ public GcGalaxyStarTypes ForceStarTypeTo;
         /* 0x2230 */ public bool ForceBiome;
         /* 0x2234 */ public GcBiomeType ForceBiomeTo;
@@ -347,7 +349,7 @@ namespace libMBIN.NMS.Globals
         /* 0x2254 */ public bool ForceCreatureLifeLevel;
         /* 0x2255 */ public bool ForceDefaultCreatureFile;
         [NMS(Size = 0x2, Ignore = true)]
-        /* 0x2256 */ public byte[] Padding2036;
+        /* 0x2256 */ public byte[] Padding2256;
         [NMS(Size = 0x10)]
         /* 0x2258 */ public string DefaultGroundCreatureTable;
         [NMS(Size = 0x10)]
@@ -391,6 +393,7 @@ namespace libMBIN.NMS.Globals
         /* 0x22F4 */ public float MaxFrameRate;
         /* 0x22F8 */ public bool DisableBaseBuilding;
         /* 0x22F9 */ public bool DisableBaseBuildingLimits;
+        /* 0x22FA */ public bool AllowGlobalPartSnapping;
         /* 0x22FC */ public float BaseDownloadTimeout;
         /* 0x2300 */ public bool DisableBasePowerRequirements;
         /* 0x2301 */ public bool EnableBaseMovingOption;
