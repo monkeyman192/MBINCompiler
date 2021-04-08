@@ -9,18 +9,12 @@ namespace libMBIN.NMS.Globals
     public class GcSolarGenerationGlobals : NMSTemplate
     {
         /* 0x000 */ public bool MassiveSolarSystems;
-        [NMS(Size = 0xF, Ignore = true)]
-        /* 0x001 */ public byte[] Padding1;
         /* 0x010 */ public Vector3f SolarSystemSize;
         /* 0x020 */ public float SolarSystemMaximumRadius;
         /* 0x024 */ public float SolarSystemMaximumRadiusMassive;
         /* 0x028 */ public bool GenerateMaximumSolarSystem;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x029 */ public byte[] Padding29;
         /* 0x02C */ public int GenerateForcedNumberPlanets;
         /* 0x030 */ public bool UseSingleRacePerSystem;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x031 */ public byte[] Padding31;
         /* 0x034 */ public Vector2f PerPlanetGenerationAngleChangeDegreesRange;
         /* 0x03C */ public Vector2f PerPlanetGenerationElevationChangeDegreesRange;
         /* 0x044 */ public Vector2f SpawnPointStationToPlanetInterpRange;
@@ -37,8 +31,6 @@ namespace libMBIN.NMS.Globals
         /* 0x07C */ public float PlanetInvalidAsteroidZone;
         /* 0x080 */ public bool AsteroidsEnabled;
         /* 0x081 */ public bool AsteroidsCheckNoise;
-        [NMS(Size = 0x2, Ignore = true)]
-        /* 0x082 */ public byte[] Padding82;
         /* 0x084 */ public float AsteroidNoiseScale;
         /* 0x088 */ public float AsteroidDetailNoiseScale;
         /* 0x08C */ public int AsteroidNoiseOctaves;
@@ -109,6 +101,8 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x4, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x1E0 */ public float[] EmptySystemProbability;
         /* 0x1F0 */ public int CivilianTraderSpaceshipsCacheCount;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1F4 */ public byte[] Padding1F4;
         /* 0x1F8 */ public List<float> SpaceshipSpawnFreqMultipliers;
         /* 0x208 */ public List<GcAISpaceshipWeightingData> SpaceshipWeightings;
         /* 0x218 */ public float PlanetRingProbability;

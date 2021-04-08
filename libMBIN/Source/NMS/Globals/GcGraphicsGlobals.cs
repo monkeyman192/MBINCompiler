@@ -150,6 +150,8 @@ namespace libMBIN.NMS.Globals
         /* 0x480 */ public float DOFFarPlaneInteraction;
         /* 0x484 */ public float DOFFarFadeDistanceInteraction;
         /* 0x488 */ public bool DOFEnableBokeh;
+        /* 0x489 */ public bool DOFEnableNewBokehShader;
+        /* 0x48A */ public bool DOFEnablePhysCamera;
         /* 0x48C */ public float VignetteStart;
         /* 0x490 */ public float VignetteEnd;
         /* 0x494 */ public float VignetteStartTurnVR;
@@ -290,6 +292,8 @@ namespace libMBIN.NMS.Globals
         /* 0x780 */ public float MinPixelSizeOfObjectsInShadowsPlanet;
         /* 0x784 */ public float MinPixelSizeOfObjectsInShadowsCockpitOnPlanet;
         /* 0x788 */ public bool AllowPartialCascadeRender;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x789 */ public byte[] Padding789;
         /* 0x790 */ public List<int> CascadeRenderSequence;
         /* 0x7A0 */ public int SupersamplingLevel;
         /* 0x7A4 */ public bool EnableTextureStreaming;
@@ -304,7 +308,7 @@ namespace libMBIN.NMS.Globals
         /* 0x7C0 */ public float SpaceIBLBlendDistance;
         /* 0x7C4 */ public float NoFocusMaxFPS;
         /* 0x7C8 */ public bool EnableCrossPipeSharing;
-        /* 0x7C9 */ public bool EnableSSR;
+        /* 0x7C9 */ public bool Enable42;
         /* 0x7CC */ public float SharpenFilterAmount;
         /* 0x7D0 */ public float SharpenFilterDepthFactorStart;
         /* 0x7D4 */ public float SharpenFilterDepthFactorEnd;
@@ -318,6 +322,6 @@ namespace libMBIN.NMS.Globals
         /* 0x9AC */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
         /* 0x9E0 */ public TkGraphicsDetailPreset GraphicsDetailPresetOberon;
         [NMS(Size = 0xC, Ignore = true)]
-	/* 0xA14 */ public byte[] EndPadding;
+        /* 0xA14 */ public byte[] EndPadding;
     }
 }

@@ -1,4 +1,6 @@
-﻿using libMBIN.NMS.Toolkit;
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
@@ -24,8 +26,6 @@ namespace libMBIN.NMS.Globals
         /* 0x0D8 */ public float HologramDistanceMultiplier;
         /* 0x0DC */ public float HologramDistanceMultiplierAlt;
         /* 0x0E0 */ public bool AllowBuildingUsingIntermediates;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x0E1 */ public byte[] PaddingE1;
         /* 0x0E4 */ public float BuildingWaterMargin;
         /* 0x0E8 */ public float BuildingLineAlphaEnd0;
         /* 0x0EC */ public float BuildingLineAlphaEnd1;
@@ -112,8 +112,6 @@ namespace libMBIN.NMS.Globals
         /* 0x230 */ public float SpaceMarkerOffsetPlanet;
         /* 0x234 */ public float SpaceMarkerOffsetSamePlanet;
         /* 0x238 */ public float MarkerLineWidth;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x23C */ public byte[] Padding22C;
         /* 0x240 */ public Colour MarkerLineColour;
         /* 0x250 */ public float AmountToMoveMarkerRoundSphere;
         /* 0x254 */ public float MarkerTransitionDistance;
@@ -146,8 +144,6 @@ namespace libMBIN.NMS.Globals
         /* 0x2C0 */ public float BuildingPlacementConeEndRadius;
         /* 0x2C4 */ public float BuildingPlacementConeEndDistance;
         /* 0x2C8 */ public bool BuildingPlacementEffectEnabled;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x2C9 */ public byte[] Padding2B9;
         /* 0x2CC */ public float BuildingPlacementEffectDissolveSpeed;
         /* 0x2D0 */ public float BuildingPlacementEffectFadeWaitTime;
         /* 0x2D4 */ public float BuildingPlacementEffectCrossFadeTime;
@@ -156,8 +152,6 @@ namespace libMBIN.NMS.Globals
         /* 0x2E0 */ public Vector2f BuildingPlacementScaleMinMax;
         /* 0x2E8 */ public float InactiveVisibleComplexityFactor;
         /* 0x2EC */ public bool DebugForceShowInactives;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x2ED */ public byte[] Padding2DD;
         [NMS(Size = 0x4)]
         /* 0x2F0 */ public float[] TotalPlanetFrameTimeForComplexity;
         [NMS(Size = 0x4)]
@@ -175,8 +169,6 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x80)]
         /* 0x338 */ public string FreighterBaseSpawnOverride;
         /* 0x3B8 */ public bool BaseBuildingTerrainEditBoundsOverride;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x3B9 */ public byte[] Padding3A9;
         /* 0x3BC */ public float BaseBuildingTerrainEditBaseYOffset;
         /* 0x3C0 */ public float BaseBuildingTerrainEditTopYOffset;
         /* 0x3C4 */ public float BaseBuildingTerrainEditBoundsScalar;

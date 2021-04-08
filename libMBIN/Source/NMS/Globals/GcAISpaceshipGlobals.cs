@@ -107,10 +107,10 @@ namespace libMBIN.NMS.Globals
         /* 0x43C */ public float SpaceBattleFlybyTime;
         /* 0x440 */ public int SpaceBattleLevel;
         /* 0x444 */ public Vector2f ConeSpawnOffsetFactor;
-        /* 0x448 */ public float ConeSpawnFlattenUp;
-        /* 0x44C */ public float ConeSpawnFlattenDown;
-        /* 0x450 */ public bool FreighterAlertLights;
-        /* 0x454 */ public float FreighterAlertLightCapitalSize;
+        /* 0x44C */ public float ConeSpawnFlattenUp;
+        /* 0x450 */ public float ConeSpawnFlattenDown;
+        /* 0x454 */ public bool FreighterAlertLights;
+        /* 0x458 */ public float FreighterAlertLightCapitalSize;
         [NMS(Size = 0x80)]
         /* 0x45C */ public string LegacyHangarFilename;
         [NMS(Size = 0x80)]

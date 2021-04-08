@@ -401,8 +401,12 @@ namespace libMBIN.NMS.Globals
         /* 0x0C58 */ public float CombatBoostTurnDamp;
         /* 0x0C5C */ public float MarkerEventTime;
         /* 0x0C60 */ public int GunAmmoMultiplier;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0C64 */ public byte[] PaddingC64;
         /* 0x0C68 */ public List<GcPlayerSpaceshipAim> LaserAimArray;
         /* 0x0C78 */ public int LaserAimLevel;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x0C7C */ public byte[] PaddingC7C;
         /* 0x0C80 */ public List<GcPlayerSpaceshipAim> GunAimArray;
         /* 0x0C90 */ public int TakeOffCost;
         /* 0x0C94 */ public int LandingCost;

@@ -103,7 +103,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1AA8 */ public GcCameraFollowSettings CharacterRideCamHuge;
         /* 0x1BA8 */ public float ThirdPersonCameraChangeBlendTime;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1BAC */ public byte[] Padding1BA4;
+        /* 0x1BAC */ public byte[] Padding1BAC;
         /* 0x1BB0 */ public GcCameraFollowSettings BuggyFollowCam;
         /* 0x1CB0 */ public GcCameraFollowSettings HovercraftFollowCam;
         /* 0x1DB0 */ public GcCameraFollowSettings SubmarineFollowCam;
@@ -246,7 +246,6 @@ namespace libMBIN.NMS.Globals
         /* 0x2DF8 */ public float BobRollAmount;
         /* 0x2DFC */ public float BobRollOffset;
         /* 0x2E00 */ public float BobFwdAmount;
-
         /* 0x2E04 */ public float CamSeed1;
         /* 0x2E08 */ public float CamSeed2;
         /* 0x2E0C */ public float CamWander1Phase;
@@ -331,7 +330,7 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x30F8 */ public byte[] Padding30F8;
         /* 0x3100 */ public TkModelRendererData CameraNPCShipInteraction;
-        /* 0x51B0 */ public TkModelRendererData CameraNPCShopInteraction;
+        /* 0x31B0 */ public TkModelRendererData CameraNPCShopInteraction;
         /* 0x3260 */ public TkModelRendererData CameraCreatureCustomiseDefault;
         /* 0x3310 */ public TkModelRendererData CameraCreatureCustomiseLeft;
         /* 0x33C0 */ public TkModelRendererData CameraCreatureCustomiseRight;

@@ -5,8 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-//    [NMS(Size = 0x3F40, GUID = 0x3E4661EE52DC24D4)]
-    [NMS(Size = 0x20C0, GUID = 0x3E4661EE52DC24D4)]
+    [NMS(Size = 0x2280, GUID = 0x3E4661EE52DC24D4)]
     public class GcCreatureGlobals : NMSTemplate
     {
         [NMS(Size = 0x20)]
@@ -213,17 +212,17 @@ namespace libMBIN.NMS.Globals
         /* 0x17F8 */ public string CreatureLargeWalkShake;
         /* 0x1808 */ public float CreatureLargeWalkMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x180C */ public byte[] Padding185C;
+        /* 0x180C */ public byte[] Padding180C;
         [NMS(Size = 0x10)]
         /* 0x1810 */ public string CreatureLargeRunShake;
         /* 0x1820 */ public float CreatureLargeRunMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1824 */ public byte[] Padding1874;
+        /* 0x1824 */ public byte[] Padding1824;
         [NMS(Size = 0x10)]
         /* 0x1828 */ public string CreatureHugeWalkShake;
         /* 0x1838 */ public float CreatureHugeWalkMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x183C */ public byte[] Padding188C;
+        /* 0x183C */ public byte[] Padding183C;
         [NMS(Size = 0x10)]
         /* 0x1840 */ public string CreatureHugeRunShake;
         /* 0x1850 */ public float CreatureHugeRunMaxShakeDist;
@@ -406,7 +405,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1B0C */ public float DetailAnimMaxPauseTime;
         /* 0x1B10 */ public bool DetailAnimPlayWhileWalking;
         [NMS(Size = 0x7, Ignore = true)]
-        /* 0x1B11 */ public byte[] Padding1B61;
+        /* 0x1B11 */ public byte[] Padding1B11;
         [NMS(Size = 0x10)]
         /* 0x1B18 */ public string CreatureDeathEffectSmall;
         [NMS(Size = 0x10)]
@@ -519,7 +518,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1D38 */ public float PetEggHatchScaleChange;
         /* 0x1D3C */ public float PetEggHatchTraitChange;
         /* 0x1D40 */ public float PetEggHatchColourChangeChance;
-        /* 0x1D44 */ public GcBiomeType PetForceBehaviour;
+        /* 0x1D44 */ public GcPetBehaviours PetForceBehaviour;
         /* 0x1D48 */ public float PetMaxSizeOffPlanet;
         /* 0x1D4C */ public float PetTeleportDistOffPlanet;
         /* 0x1D50 */ public float PetTeleportDistOnPlanet;
@@ -533,8 +532,8 @@ namespace libMBIN.NMS.Globals
         /* 0x1D70 */ public float PetMaxTurnRad;
         /* 0x1D74 */ public float PetMoodCurvePower;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1D88 */ public byte[] Padding1DC8;
-        /* 0x1D90 */ public GcScanEffectData PetOffPlanetEffect;
+        /* 0x1D78 */ public byte[] Padding1D78;
+        /* 0x1D80 */ public GcScanEffectData PetOffPlanetEffect;
         [NMS(Size = 0x80)]
         /* 0x1DD0 */ public string PetEggResourceFile;
         [NMS(Size = 0x80)]
@@ -546,14 +545,14 @@ namespace libMBIN.NMS.Globals
         /* 0x1EE0 */ public float PetEggMinGrowthToLay;
         /* 0x1EE4 */ public bool PetForceSummonFromEgg;
         [NMS(Size = 0x3, Ignore = true)]
-        /* 0x1EE5 */ public byte[] Padding1F35;
+        /* 0x1EE5 */ public byte[] Padding1EE5;
         [NMS(Size = 0x10)]
         /* 0x1EE8 */ public string PetEggsplosionEffect;
         /* 0x1EF8 */ public bool RidingPositionTest;
         /* 0x1EF9 */ public bool PetAnimTest;
         /* 0x1EFA */ public bool UsePetTeleportEffect;
-        /* 0x1F00 */ public float PetTeleportEffectTime;
-        /* 0x1F04 */ public float PetThrowArcRange;
+        /* 0x1EFC */ public float PetTeleportEffectTime;
+        /* 0x1F00 */ public float PetThrowArcRange;
         /* 0x1F10 */ public Colour PetThrowArcColour;
         /* 0x1F20 */ public float PetOrderMinRange;
         /* 0x1F24 */ public float PetOrderMaxRange;
@@ -561,7 +560,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1F2C */ public float PetAccessoryStateInterval;
         /* 0x1F30 */ public float PetInteractionLightHeight;
         /* 0x1F34 */ public float PetInteractionLightIntensityMin;
-        /* 0x1F3C */ public float PetInteractionLightIntensityMax;
+        /* 0x1F38 */ public float PetInteractionLightIntensityMax;
         /* 0x1F40 */ public Colour PetInteractionLightColour;
         /* 0x1F50 */ public float AnimChangeCoolDown;
         /* 0x1F54 */ public float GroupRunProbability;
@@ -594,7 +593,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1FBC */ public float CreatureSpeedMultiplier;
         /* 0x1FC0 */ public float PredatorSpeedMultiplier;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1FC4 */ public byte[] Padding1FE4;
+        /* 0x1FC4 */ public byte[] Padding1FC4;
         [NMS(Size = 0x10)]
         /* 0x1FC8 */ public string DefaultKillingSubstance;
         [NMS(Size = 0x10)]
@@ -621,17 +620,19 @@ namespace libMBIN.NMS.Globals
         /* 0x2070 */ public bool AllBaitIsBasic;
         /* 0x2071 */ public bool CanAlwaysLayEgg;
         [NMS(Size = 0x6, Ignore = true)]
-        /* 0x2072 */ public byte[] Padding383A;
+        /* 0x2072 */ public byte[] Padding2072;
         /* 0x2078 */ public List<GcCreatureFoodList> HerbivoreFeedingProducts;
         /* 0x2088 */ public List<GcCreatureFoodList> CarnivoreFeedingProducts;
         /* 0x2098 */ public GcWeirdCreatureRewardList WeirdKillingRewards;
-        /* 0x20A8 */ public List<NMSString0x10> LootItems;
-        /* 0x20B8 */ public float RockTransformGlobalChance;
-        /* 0x20C0 */ public List<float> RockTransformChanceModifiers;
-        /* 0x20D0 */ public float AngryRockProportionNormal;
-        /* 0x20D4 */ public float AngryRockProportionSurvival;
-        /* 0x20D8 */ public int PauseBetweenCreatureSpawnRequests;
+        /* 0x2248 */ public List<NMSString0x10> LootItems;
+        /* 0x2258 */ public float RockTransformGlobalChance;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x20DC */ public byte[] EndPadding;
+        /* 0x225C */ public byte[] Padding225C;
+        /* 0x2260 */ public List<float> RockTransformChanceModifiers;
+        /* 0x2270 */ public float AngryRockProportionNormal;
+        /* 0x2274 */ public float AngryRockProportionSurvival;
+        /* 0x2278 */ public int PauseBetweenCreatureSpawnRequests;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x227C */ public byte[] EndPadding;
     }
 }
