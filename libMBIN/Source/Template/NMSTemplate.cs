@@ -199,7 +199,17 @@ namespace libMBIN
                         return fieldType == "Int32" ? (object)reader.ReadInt32() : (object)reader.ReadUInt32();
                     }
 
-                    if (field.IsArray) {
+					if( typeof(IEnumArray).IsAssignableFrom(field) ) {
+						var array     = Activator.CreateInstance(field) as IEnumArray;
+						var length    = array.Length;
+						var arrayType = array.GetElementType();
+						for( int i = 0; i < length; ++i ) {
+							object val = DeserializeValue( reader, arrayType, settings, templatePosition, fieldInfo, parent );
+							array.Value(i, val);
+						}
+						return array;
+					}
+					if (field.IsArray) {
                         var arrayType = field.GetElementType();
                         var length = GetEnumNames( fieldInfo.Name, settings ).Length;
                         Array array = Array.CreateInstance(arrayType, length);
@@ -486,7 +496,20 @@ namespace libMBIN
                         var fieldValue = (NMS.VariableSizeString) fieldData;
                         additionalData.Insert( addtDataIndex++, new Tuple<long, object>( fieldPos, fieldValue ) );
 
-                    } else if ( fieldType.IsArray ) {
+                    }
+					else if( typeof(IEnumArray).IsAssignableFrom(fieldType) ) {
+						var array  = fieldData as IEnumArray;
+						if( array == null ) array = Activator.CreateInstance(fieldType) as IEnumArray;
+						var arrayType = array.GetElementType();
+
+						foreach( var obj in array ) {
+							long fieldPos = writer.BaseStream.Position;
+							var realObj = obj;
+							if( realObj == null ) realObj = Activator.CreateInstance(arrayType);
+
+							SerializeValue(writer, realObj.GetType(), realObj, realObj.GetType().GetCustomAttribute<NMSAttribute>(), field, ref additionalData, ref addtDataIndex, listEnding);
+						}
+					} else if ( fieldType.IsArray ) {
                         var arrayType = fieldType.GetElementType();
                         Array array = (Array) fieldData;
                         int length = GetEnumNames( field.Name, settings ).Length;
@@ -915,7 +938,27 @@ namespace libMBIN
                         templateXmlData.Name = field.Name;
 
                         return templateXmlData;
-                    } else if ( fieldType.IsArray ) {
+                    }
+					else if( typeof(IEnumArray).IsAssignableFrom(fieldType) ) {
+						var array  = value as IEnumArray;
+						if( array == null ) array = Activator.CreateInstance(fieldType) as IEnumArray;
+						var enumType  = array.GetEnumType();
+						var arrayType = array.GetElementType();
+						EXmlProperty arrayProperty = new EXmlProperty {
+							Name  = field.Name,
+							// todo: change to Type = when type added to xml property
+							Value = enumType.Name + ".xml",
+						};
+
+						i = 0;
+						foreach( var template in array ) {
+							EXmlBase data = SerializeEXmlValue( arrayType, field, settings, template );
+							data.Name = array.Name(i++);
+							arrayProperty.Elements.Add(data);
+						}
+
+						return arrayProperty;
+					} else if ( fieldType.IsArray ) {
                         var arrayType = field.FieldType.GetElementType();
                         EXmlProperty arrayProperty = new EXmlProperty {
                             Name = field.Name
@@ -1151,7 +1194,26 @@ namespace libMBIN
                         }
 
                         return array;
-                    } else if (field.FieldType.IsArray) {
+                    }
+					else if( typeof(IEnumArray).IsAssignableFrom(fieldType) ) {
+						var array  = Activator.CreateInstance(fieldType) as IEnumArray;
+						int length = array.Length;
+						//List<EXmlProperty> data = xmlProperty.Elements.OfType<EXmlProperty>().ToList();
+						List<EXmlBase> data = xmlProperty.Elements.ToList();
+						int numMeta = 0;
+						for( int i = 0; i < data.Count; ++i ) {
+							if( data[i].GetType() == typeof(EXmlProperty) ) {
+								object element = DeserializeEXmlValue(template, array.GetElementType(), field, (EXmlProperty)data[i], templateType, settings);
+								array.Value(i - numMeta, element);
+							}
+							else if( data[i].GetType() == typeof(EXmlMeta) ) {
+								DebugLogComment(((EXmlMeta)data[i]).Comment);
+								numMeta += 1;           // increment so that the actual data is still placed at the right spot
+							}
+						}
+
+						return array;
+					} else if (field.FieldType.IsArray) {
                         int length = GetArrayLength( field.Name, settings );
                         Array array = Array.CreateInstance(field.FieldType.GetElementType(), length);
                         //List<EXmlProperty> data = xmlProperty.Elements.OfType<EXmlProperty>().ToList();

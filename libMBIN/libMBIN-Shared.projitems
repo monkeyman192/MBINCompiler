@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\Async.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\BinaryStreamExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\Crc32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Common\EnumArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\FileIO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\Half.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\HalfHelper.cs" />
