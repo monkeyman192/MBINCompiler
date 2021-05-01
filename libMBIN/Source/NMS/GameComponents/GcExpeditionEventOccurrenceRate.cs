@@ -7,6 +7,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcExpeditionEventOccurrenceRate : NMSTemplate
     {
         [NMS(Size = 0x5, EnumType = typeof(GcExpeditionCategory.ExpeditionCategoryEnum))]
-        public GcExpeditionDurationValues[] ExpeditionCategory;
+        public CgExpeditionCategoryStrength[] ExpeditionCategory;
     }
 }

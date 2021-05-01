@@ -8,6 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x10)]
         public string Id;
-        public GcRewardTableItemList Common;
+        public GcRewardTableItemList List;
     }
 }

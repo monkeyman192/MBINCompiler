@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x80, GUID = 0xCA5FBE1F6ACA4F92, NameHash = 0x74BA808E86F0EC01)]
+    [NMS(Size = 0x80, Alignment = 0x8, GUID = 0xCA5FBE1F6ACA4F92, NameHash = 0x74BA808E86F0EC01)]
     public class GcScannableComponentData : NMSTemplate
     {
         /* 0x00 */ public float ScanRange;

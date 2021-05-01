@@ -615,9 +615,6 @@ namespace libMBIN
                 for ( int i = 0; i < listObjects.Count; i++ ) {
                     var data = listObjects[i];
                     //writer.BaseStream.Position = additionalDataOffset; // addtDataOffset gets updated by child templates
-                    int alignment2 = entry.GetType().GetCustomAttribute<NMSAttribute>()?.Alignment ?? 0x8;
-                    writer.Align( alignment2, entryName); // todo: check if this alignment is correct
-                    long origPos = writer.BaseStream.Position;
                     if ( data.Item2.GetType().IsGenericType && data.Item2.GetType().GetGenericTypeDefinition() == typeof( List<> ) ) {
                         Type itemType = data.Item2.GetType().GetGenericArguments()[0];
 
@@ -627,6 +624,9 @@ namespace libMBIN
                             SerializeList( writer, (IList) data.Item2, data.Item1, ref listObjects, i + 1, listEnding );
                         }
                     } else {
+                        int alignment2 = data.Item2.GetType().GetCustomAttribute<NMSAttribute>()?.Alignment ?? 0x8;
+                        writer.Align( alignment2, data.Item2.GetType().Name );
+                        long origPos = writer.BaseStream.Position;
                         //DebugLog("this is it!!!");
                         //DebugLog($"0x{origPos:X}");
                         // first, write the correct offset at the correct location

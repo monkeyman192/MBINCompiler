@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         public bool Damaged;
         public bool NeedsInstall;
         public bool FullBox;
-        [NMS(Size = 0x5)]
+        [NMS(Size = 0x5, Ignore = true)]
         public byte[] EndPadding;
     }
 }

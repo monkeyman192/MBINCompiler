@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x70, GUID = 0xA4A9375C75E0A9D9, NameHash = 0xF5A68FEB65BA7107)]
+    [NMS(Size = 0x70, Alignment = 0x8, GUID = 0xA4A9375C75E0A9D9, NameHash = 0xF5A68FEB65BA7107)]
     public class TkCreatureTailParams : NMSTemplate
     {
         [NMS(Size = 0x20)]

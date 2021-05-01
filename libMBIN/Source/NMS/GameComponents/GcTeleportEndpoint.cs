@@ -15,7 +15,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x44 */ public string Name;
         /* 0x84 */ public bool CalcWarpOffset;
         /* 0x85 */ public bool IsFeatured;
-        [NMS(Size = 0xA)]
+        [NMS(Size = 0xA, Ignore = true)]
         /* 0x85 */ public byte[] EndPadding;
     }
 }
