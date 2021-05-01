@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x20)]
         /* 0x008 */ public string Event;
         /* 0x028 */ public float Time;
-        /* 0x02C */ public bool AllowOtherPlayerBase;
+        /* 0x02C */ public bool AllowOtherPlayersBase;
         [NMS(Size = 0x80)]
         /* 0x02D */ public string DebugText;
         [NMS(Size = 0x3, Ignore = true)]

@@ -21,7 +21,7 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Size = 0x7, EnumType = typeof(TkFeaturesEnum.FeatureTypesEnum))]
         /* 0x134C */ public TkNoiseFeatureData[] Features;
         [NMS(Size = 1, EnumType = typeof(TkCavesEnum.CavesTypesEnum))]
-        /* 0x1528 */ public TkNoiseCaveData[] CavesUnderground;
+        /* 0x1528 */ public TkNoiseCaveData[] Caves;
         /* 0x15B0 */ public float MinimumCaveDepth;
         /* 0x15B4 */ public float CaveRoofSmoothingDist;
         /* 0x15B8 */ public float MaximumSeaLevelCaveDepth;

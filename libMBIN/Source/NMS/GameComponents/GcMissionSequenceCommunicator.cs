@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x80)]
         /* 0x080 */ public string VRMessage;
         [NMS(Size = 0x80)]
-        /* 0x100 */ public string OSTMessage;
+        /* 0x100 */ public string OSDMessage;
         /* 0x180 */ public GcPlayerCommunicatorMessage Comms;
         /* 0x1D0 */ public bool AutoOpen;
         [NMS(Size = 0x80)]

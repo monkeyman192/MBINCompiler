@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcModelExplosionRule : NMSTemplate
     {
         public enum MatchNodeTypeEnum { Any, Mesh, Model, Joint }
-        /* 0x00 */ public MatchNodeTypeEnum GetMatchNodeType;
+        /* 0x00 */ public MatchNodeTypeEnum MatchNodeType;
         public enum MatchNameEnum { ContainsString, ExactString }
         /* 0x04 */ public MatchNameEnum MatchName;
         [NMS(Size = 0x20)]

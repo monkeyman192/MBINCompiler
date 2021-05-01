@@ -11,6 +11,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x20)]
         public string Title;
         [NMS(Size = 0x10)]
-        public string TextureOptionsGroup;
+        public string TextureOptionGroup;
     }
 }

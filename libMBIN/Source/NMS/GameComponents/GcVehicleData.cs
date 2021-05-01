@@ -44,7 +44,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x490 */ public Vector3f CollDimensions;
         /* 0x4A0 */ public Vector3f InertiaDimensions;
         /* 0x4B0 */ public float CollRadius;
-        /* 0x4B4 */ public float InertiaMull;
+        /* 0x4B4 */ public float InertiaMul;
         /* 0x4B8 */ public float WheelSuspensionlength;
         /* 0x4BC */ public float WheelSuspensionForce;
         /* 0x4C0 */ public float WheelSuspensionDamping;
@@ -71,7 +71,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x514 */ public float WheelSideFrictionStaticThreshold;
         /* 0x518 */ public bool LockVehicleAxis;
         /* 0x51C */ public float TurningWheelForce;
-        /* 0x520 */ public float TurningWheelForceVR;
+        /* 0x520 */ public float TurningWheelForceDamperVR;
         /* 0x524 */ public float TurningWheelFrictionOmega;
         /* 0x528 */ public float TurningWheelFrictionNonBraking;
         /* 0x52C */ public float TurningWheelFrictionBraking;

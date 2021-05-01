@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public ulong Timestamp;
         [NMS(Size = 0x10)]
-        /* 0x08 */ public string ObjectId;
+        /* 0x08 */ public string ObjectID;
         /* 0x18 */ public ulong GalacticAddress;
         /* 0x20 */ public ulong RegionSeed;
         /* 0x28 */ public ulong UserData;

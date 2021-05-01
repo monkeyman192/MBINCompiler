@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x88 */ public float Radius;
         /* 0x8C */ public float Scale;
         /* 0x90 */ public float Speed;
-        /* 0x94 */ public float AngularSpeed;
+        /* 0x94 */ public float AnglularSpeed;
         /* 0x98 */ public GcSeed OverrideSeed;
     }
 }

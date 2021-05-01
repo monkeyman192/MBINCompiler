@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         public float Rarity;
         [NMS(Size = 0xC, Ignore = true)]
         public byte[] Padding4;
-        public Colour primary;
+        public Colour Primary;
         public List<Colour> Secondary;
     }
 }

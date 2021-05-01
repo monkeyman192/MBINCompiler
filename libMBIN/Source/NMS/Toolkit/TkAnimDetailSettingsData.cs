@@ -9,7 +9,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimDetailSettingsData : NMSTemplate
     {
         public float Distance;
-        public bool DisableAnims;
+        public bool DisableAnim;
         public int NumCulledFrames;
     }
 }

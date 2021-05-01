@@ -15,7 +15,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x18 */ public float YFOV;
         public enum ViewShapeEnum { Pyramid, Cone };
         /* 0x1C */ public ViewShapeEnum ViewShape;
-        /* 0x20 */ public bool RayCast;
+        /* 0x20 */ public bool Raycast;
         [NMS(Size = 0x20)]
         /* 0x21 */ public string SenseLocator;
         [NMS(Size = 0x7, Ignore = true)]

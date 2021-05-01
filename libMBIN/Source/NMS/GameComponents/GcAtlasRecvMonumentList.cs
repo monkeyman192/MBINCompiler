@@ -10,6 +10,6 @@ namespace libMBIN.NMS.GameComponents
         public int NumberOfThings;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] PaddingC;
-        public GcAtlasMonument Mounments;
+        public GcAtlasMonument Monuments;
     }
 }

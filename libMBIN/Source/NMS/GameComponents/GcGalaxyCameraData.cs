@@ -25,7 +25,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x40 */ public float ZoomOutPushDist;                // 400CCCCDh
         /* 0x44 */ public float ZoomOutRate;                    // 3ECCCCCDh
         /* 0x48 */ public float ZoomInRate;                     // 40400000h
-        /* 0x4C */ public float MinZoomDIstance;
+        /* 0x4C */ public float MinZoomDistance;
         /* 0x50 */ public float MaxZoomDistance;
         /* 0x54 */ public float MinPushingZoomDistance;
         /* 0x58 */ public float MinPushingZoomDistanceScaler;

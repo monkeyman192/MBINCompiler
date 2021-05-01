@@ -15,6 +15,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x18 */ public string NewMission;
 
-        /* 0x28 */ public List<NMSString0x10> CompleteMissions;
+        /* 0x28 */ public List<NMSString0x10> CompletedMissions;
     }
 }

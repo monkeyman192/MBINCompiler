@@ -13,6 +13,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public float Facing;                     // [rdi+10h], eax
         /* 0x14 */ public int Count;                        // 3
         /* 0x18 */ public GcRealityCommonFactions Faction;
-        /* 0x1C */ public GcAISpaceshipRoles ShipRoles;     // [rdi+1Ch], eax
+        /* 0x1C */ public GcAISpaceshipRoles ShipRole;     // [rdi+1Ch], eax
     }
 }

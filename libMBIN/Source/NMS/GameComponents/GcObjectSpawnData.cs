@@ -19,7 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2D0 */ public List<GcTerrainTileType> ExtraTileTypes;
         [NMS(Size = 0x10)]
         /* 0x2E0 */ public string Placement;
-        /* 0x2F0 */ public GcSeed PlacementSeed;
+        /* 0x2F0 */ public GcSeed Seed;
 		public enum PlacementPriorityEnum { Low, Normal, High }
 		/* 0x300 */ public PlacementPriorityEnum PlacementPriority;
         /* 0x304 */ public float Coverage;

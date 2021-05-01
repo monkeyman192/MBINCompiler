@@ -16,6 +16,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x18 */ public string TypeID;
         [NMS(Size = 0x20)]
-        /* 0x28 */ public string CantAffortString;
+        /* 0x28 */ public string CantAffordString;
     }
 }

@@ -16,7 +16,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x12 */ public bool LookAtModel;
         [NMS(Size = 0x40)]
         /* 0x14 */ public string LookAtNode;
-        /* 0x54 */ public bool FaceLookA;
+        /* 0x54 */ public bool FaceLookAt;
         /* 0x55 */ public bool MaintainLookAt;
         /* 0x56 */ public bool PlayIdles;
         /* 0x57 */ public bool CanConverse;

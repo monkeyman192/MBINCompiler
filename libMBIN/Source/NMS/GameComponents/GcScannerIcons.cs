@@ -60,8 +60,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0xF994 */ public GcScannerIcon MessageBeacon;
         /* 0xFAA0 */ public GcScannerIcon MessageBeaconSmall;
         /* 0xFBAC */ public GcScannerIcon BaseBuildingMarker;
-        /* 0xFCB8 */ public GcScannerIcon PlanetNorthPole;
-        /* 0xFDC4 */ public GcScannerIcon PlanetSouthPole;
+        /* 0xFCB8 */ public GcScannerIcon PlanetPoleNorth;
+        /* 0xFDC4 */ public GcScannerIcon PlanetPoleSouth;
         /* 0xFED0 */ public GcScannerIcon MonumentMarker;
         /* 0xFFDC */ public GcScannerIcon NetworkPlayerMarker;
         /* 0x100E8 */ public GcScannerIcon NetworkPlayerMarkerShip;

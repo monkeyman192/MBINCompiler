@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcProductProceduralOnlyData : NMSTemplate
     {
         /* 0x000 */ public int DropWeight;
-        /* 0x004 */ public int BasevalueMin;
+        /* 0x004 */ public int BaseValueMin;
         /* 0x008 */ public int BaseValueMax;
         /* 0x00C */ public int AgeMin;
         /* 0x010 */ public int AgeMax;

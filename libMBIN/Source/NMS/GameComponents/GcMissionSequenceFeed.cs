@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
         public string Message;
         public bool RequireSpecificBait;
         public int AmountMin;
-        public int Amountmax;
+        public int AmountMax;
         [NMS(Size = 0x80)]
         public string DebugText;
     }

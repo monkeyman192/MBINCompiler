@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x78, GUID = 0x201EF4D59CBBD069, NameHash = 0xB125AED843BB9164)]
     public class GcEnvironmentProperties : NMSTemplate
     {
-        /* 0x00 */ public float FlightFogheight;
+        /* 0x00 */ public float FlightFogHeight;
         /* 0x04 */ public float FlightFogBlend;
         /* 0x08 */ public float CloudHeightMin;
         /* 0x0C */ public float CloudHeightMax;

@@ -15,7 +15,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x050 */ public TkTextureResource MarkerIcon;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0D4 */ public byte[] PaddingD4;
-        /* 0x0D8 */ public GcPulseEncounterSpawnConditions SpawnCondition;
+        /* 0x0D8 */ public GcPulseEncounterSpawnConditions SpawnConditions;
         /* 0x138 */ public float SpawnChance;
         /* 0x13C */ public float SpawnDistance;
         /* 0x140 */ public GcAudioWwiseEvents AudioEvent;

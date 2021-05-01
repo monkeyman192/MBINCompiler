@@ -67,7 +67,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3A0 */ public string PinObjective;
         [NMSDescription("Notification hints to collect this item. This string is referenced in each language file for translation")]
         [NMS(Size = 0x20)]
-        /* 0x3C0 */ public string PinObjeectiveTip;
+        /* 0x3C0 */ public string PinObjectiveTip;
         /* 0x3E0 */ public bool CookingIngredient;
         /* 0x3E4 */ public float CookingValue;
         /* 0x3E8 */ public bool GoodForSelling;

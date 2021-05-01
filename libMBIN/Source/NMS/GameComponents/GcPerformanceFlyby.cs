@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         public float Length;            // 44FA0000h
         public float Offset;            // 43480000h
         public bool Locked;             // 0
-        public float LockedOffset;      // 42C80000h
+        public float LockOffset;      // 42C80000h
         public float LockTime;          // 40A00000h
         public float LockSpeed;         // 3F000000h
     }

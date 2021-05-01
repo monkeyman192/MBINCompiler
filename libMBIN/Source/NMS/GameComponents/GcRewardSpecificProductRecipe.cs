@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x10)]
         public string Id;
-        public bool Slient;
+        public bool Silent;
         [NMS(Size = 0x7, Ignore = true)]
         public byte[] EndPadding;
     }

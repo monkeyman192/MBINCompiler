@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcAtlasRecvFeaturedBasesQueryList : NMSTemplate
     {
         /* 0x00 */ public ulong ClientUserdata;
-        /* 0x08 */ public int NumberOfbases;
+        /* 0x08 */ public int NumberOfBases;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0C */ public byte[] PaddingC;
         /* 0x10 */ public List<GcPersistentBase> Bases;

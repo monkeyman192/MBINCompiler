@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureRidingPartModifier : NMSTemplate
     {
         [NMS(Size = 0x20)]
-        /* 0x000 */ public string Partname;
+        /* 0x000 */ public string PartName;
         [NMS(Size = 0x100)]
         /* 0x020 */ public string JointName;
         /* 0x120 */ public float MinScale;

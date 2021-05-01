@@ -15,6 +15,6 @@ namespace libMBIN.NMS.GameComponents
         public string Username;
         [NMS(Size = 0x40)]
         public string Platform;
-        public int TimeStamp;
+        public int Timestamp;
     }
 }

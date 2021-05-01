@@ -13,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
         // I think this isn't quite right but I'm not sure what to put instead...
         /* 0x08 */ public byte[] Padding8;
         /* 0x10 */ public GcUniverseAddressData UniverseAddress;
-        /* 0x28 */ public GcGameMode Gamemode;
+        /* 0x28 */ public GcGameMode GameMode;
         /* 0x2C */ public int MaxResults;
         /* 0x30 */ public int MaxBytes;
         /* 0x34 */ public int MinVersion;

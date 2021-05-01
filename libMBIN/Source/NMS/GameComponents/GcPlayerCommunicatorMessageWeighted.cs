@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerCommunicatorMessageWeighted : NMSTemplate
     {
         public GcPlayerCommunicatorMessage Message;
-        public int Weighted;
+        public int Weight;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] EndPadding;
     }

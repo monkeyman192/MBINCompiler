@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
 		[NMS(Size = 0x10)]
         /* 0x10 */ public string DisplayTechId;
         [NMS(Size = 0x20)]
-        /* 0x20 */ public string Setname;
+        /* 0x20 */ public string SetName;
         /* 0x40 */ public bool Silent;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x41 */ public byte[] EndPadding;

@@ -9,6 +9,6 @@ namespace libMBIN.NMS.Toolkit
     public class TkCavesEnum : NMSTemplate
     {
         public enum CavesTypesEnum { Underground }
-        public CavesTypesEnum CavesTypes;
+        public CavesTypesEnum CaveTypes;
     }
 }

@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
     {
         public bool Universal;
         public bool Static;
-        public float ArrivalDist;
+        public float ArriveDist;
         public enum AttractorTypeEnum { Food, Harvester }
         public AttractorTypeEnum AttractorType;
     }

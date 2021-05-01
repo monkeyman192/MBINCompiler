@@ -30,7 +30,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x594 */ public float MaxXZRotation;
         /* 0x598 */ public float Radius;
         /* 0x59C */ public float MinHeight;
-        /* 0x5A0 */ public float Maxheight;
+        /* 0x5A0 */ public float MaxHeight;
         /* 0x5A4 */ public int InstanceID;
         /* 0x5B0 */ public Vector3f AABBMin;
         /* 0x5C0 */ public Vector3f AABBMax;

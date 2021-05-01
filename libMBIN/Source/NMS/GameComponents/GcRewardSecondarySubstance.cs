@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x10)]
         public string ID;
-        public float Amountfactor;
+        public float AmountFactor;
         public bool RewardAsBlobs;
         [NMS(Size = 0x3, Ignore = true)]
         public byte[] EndPadding;

@@ -16,7 +16,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x4C */ public byte[] Padding4C;
         [NMS(Size = 0x10)]
-        /* 0x50 */ public string SplitProjectile;
+        /* 0x50 */ public string SpitProjectile;
         [NMS(Size = 0x40)]
         /* 0x60 */ public string AttackLight;
         /* 0xA0 */ public float IdleLightIntensity;

@@ -26,7 +26,7 @@ namespace libMBIN.NMS.GameComponents
 		/* 0x300 */ public PlayerHeadUpAxisEnum PlayerHeadUpAxis;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x304 */ public byte[] Padding304;
-        /* 0x308 */ public List<GcCreatureIkData> JointDataDepreciated;
+        /* 0x308 */ public List<GcCreatureIkData> JointDataDeprecated;
         /* 0x318 */ public bool UseFootGlue;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x319 */ public byte[] Padding319;

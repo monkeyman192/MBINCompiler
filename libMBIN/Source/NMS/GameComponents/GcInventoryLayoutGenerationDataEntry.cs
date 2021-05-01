@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
     {
         public int MinSlots;            // 1
         public int MaxSlots;            // 5
-        public int MinExtraTech;        // 1
-        public int MaxExtraTech;        // 3
+        public int MinTechSlots;        // 1
+        public int MaxTechSlots;        // 3
     }
 }

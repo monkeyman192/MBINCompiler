@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSendChatMessage : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string StatusMessageID;
+        public string StatusMessageId;
         [NMS(Size = 0x20)]
         public string CustomText;
     }

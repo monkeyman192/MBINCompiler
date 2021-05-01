@@ -9,7 +9,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkCreatureTailComponentData : NMSTemplate
     {
         /* 0x00 */ public GcPrimaryAxis LengthAxis;
-        /* 0x04 */ public bool CanuseDefaultParams;
+        /* 0x04 */ public bool CanUseDefaultParams;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x05 */ public byte[] Padding5;
         /* 0x08 */ public TkCreatureTailParams DefaultParams;

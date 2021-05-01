@@ -10,6 +10,6 @@ namespace libMBIN.NMS.GameComponents
     {
         // 0xB entries
         public enum UnlockableItemTreeEnum { Test, BasicBaseParts, BasicTechParts, BaseParts, SpecialBaseParts, SuitTech, ShipTech, WeapTech, ExocraftTech, CraftProducts, FreighterTech }
-        public UnlockableItemTreeEnum GetUnlockableItemTree;
+        public UnlockableItemTreeEnum UnlockableItemTree;
     }
 }

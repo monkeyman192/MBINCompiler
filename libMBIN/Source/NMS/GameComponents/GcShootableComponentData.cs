@@ -27,7 +27,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x36 */ public bool HitEffectEnabled;
         /* 0x37 */ public bool HitEffectEntireModel;
         /* 0x38 */ public bool IsArmoured;
-        /* 0x39 */ public bool IgnoreTerrainEditKill;
+        /* 0x39 */ public bool IgnoreTerrainEditKills;
         [NMS(Size = 0x20)]
         /* 0x3A */ public string NameOverride;
         [NMS(Size = 0x6, Ignore = true)]

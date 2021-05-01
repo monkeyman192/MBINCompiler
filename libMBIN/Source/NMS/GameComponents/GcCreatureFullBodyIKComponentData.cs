@@ -21,7 +21,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3C */ public float FootAngleSpeed;
         /* 0x40 */ public float MaxFootAngle;
         /* 0x44 */ public bool UsePistons;
-        /* 0x45 */ public bool Mesh;
+        /* 0x45 */ public bool Mech;
         [NMS(Size = 2, Ignore = true)]
         /* 0x46 */ public byte[] EndPadding;
     }

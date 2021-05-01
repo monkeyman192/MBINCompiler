@@ -31,8 +31,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x02D */ public byte[] Padding2D;
 
-        /* 0x030 */ public TkModelRendererData ModelRendererData;
-        /* 0x0E0 */ public TkModelRendererData ModelRendererDataAlt;
+        /* 0x030 */ public TkModelRendererData ModelRenderData;
+        /* 0x0E0 */ public TkModelRendererData ModelRenderDataAlt;
 
 		public enum ModelRendererResourceEnum { ModelNode, MasterModelNode }
 		/* 0x190 */ public ModelRendererResourceEnum ModelRendererResource;

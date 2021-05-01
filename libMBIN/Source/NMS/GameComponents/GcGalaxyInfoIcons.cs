@@ -16,7 +16,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x3, EnumType = typeof(GcPlayerConflictData.ConflictLevelEnum))]
         /* 0x9CC */ public TkTextureResource[] ConflictIcons;
         /* 0xB58 */ public TkTextureResource ConflictTechNotInstalledIcon;
-        /* 0xBDC */ public TkTextureResource Warpicon;
+        /* 0xBDC */ public TkTextureResource WarpIcon;
         /* 0xC60 */ public TkTextureResource WarpErrorIcon;
         /* 0xCE4 */ public TkTextureResource WarpTechNotInstalledIcon;
     }

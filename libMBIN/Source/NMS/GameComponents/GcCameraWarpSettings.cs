@@ -26,6 +26,6 @@ namespace libMBIN.NMS.GameComponents
         public float OffsetXRange;
         public TkCurveType OffsetXCurve;
         public float RollRange;
-        public float YawRange;
+        public float YawnRange;
     }
 }

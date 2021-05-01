@@ -14,7 +14,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x08 */ public string Id;
         /* 0x18 */ public float MinRandAmount;
         /* 0x1C */ public float MaxRandAmount;
-        /* 0x20 */ public int MaxCapactiy;
+        /* 0x20 */ public int MaxCapacity;
         /* 0x24 */ public float AmountEmptyTimePeriod;
 		public enum UpdateTypeEnum { UpdatesAlways, UpdateOnlyWhenComplete, UpdateOnlyWhenNotComplete }
 		/* 0x28 */ public UpdateTypeEnum UpdateType;

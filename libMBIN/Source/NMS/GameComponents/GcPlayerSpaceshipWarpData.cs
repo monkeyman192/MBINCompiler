@@ -17,6 +17,6 @@ namespace libMBIN.NMS.GameComponents
 		/* 0x020 */ public float ExitHoldAlphaTime;
 		/* 0x024 */ public TkCurveType ExitTunnelCurve;
 		/* 0x028 */ public float ExitTunnelDistance;
-		/* 0x02C */ public float ExitWorldDistance;
+		/* 0x02C */ public float ExitWorldlDistance;
     }
 }

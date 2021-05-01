@@ -9,6 +9,6 @@ namespace libMBIN.NMS.GameComponents
         // 0xB entries
 		public enum InterationBufferTypeEnum { Distress_Signal, Crate, Destructable, Terrain, Cost, Building, Creature, Maintenance,
                                                Personal, Personal_Maintenance, FireteamSync }
-		public InterationBufferTypeEnum InterationBufferType;
+		public InterationBufferTypeEnum InteractionBufferType;
     }
 }

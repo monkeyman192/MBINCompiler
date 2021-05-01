@@ -9,6 +9,6 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Size = 0x10)]
         public string EntitlementId;
         [NMS(Size = 0x40)]
-        public string ServicesID;
+        public string ServiceID;
     }
 }

@@ -13,7 +13,7 @@ namespace libMBIN.NMS.Toolkit
 
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
-        public List<GcInputActionMapping> Keymapping;
+        public List<GcInputActionMapping> KeyMapping;
         public List<GcInputActionMapping2> KeyMapping2;
     }
 }

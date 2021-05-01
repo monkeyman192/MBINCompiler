@@ -19,7 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00458 */ public GcInventoryContainer ShipInventory;
         /* 0x005B8 */ public GcInventoryContainer WeaponInventory;
         [NMS(Size = 0x3)]
-        /* 0x00718 */ public GcMultitoolData[] MultiTools;
+        /* 0x00718 */ public GcMultitoolData[] Multitools;
         /* 0x00C58 */ public int ActiveMultioolIndex;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x00C5C */ public byte[] PaddingC5C;
@@ -270,7 +270,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2BD58 */ public float VRCameraOffset;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x2BD5C */ public byte[] Padding2BD5C;
-        /* 0x2BD60 */ public GcSeasonalGameModeData SeasonalData;
+        /* 0x2BD60 */ public GcSeasonalGameModeData SeasonData;
         /* 0x2C1B0 */ public GcSeasonStateData SeasonState;
         /* 0x2C200 */ public bool RestartAllInactiveSeasonalMissions;
         [NMS(Size = 0x7, Ignore = true)]

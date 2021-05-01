@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceCompleteMission : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        public string Misssion;
+        public string Mission;
         public bool UseSeed;
         [NMS(Size = 0x80)]
         public string DebugText;

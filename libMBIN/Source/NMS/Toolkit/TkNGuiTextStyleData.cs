@@ -11,7 +11,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x14 */ public float FontSpacing;
         /* 0x18 */ public bool IsIndented;
         /* 0x19 */ public bool HasDropShadow;
-        /* 0x20 */ public Colour DropShadowColour;
+        /* 0x20 */ public Colour ShadowColour;
         /* 0x30 */ public float DropShadowAngle;
         /* 0x34 */ public float DropShadowOffset;
         /* 0x38 */ public bool HasOutline;

@@ -16,6 +16,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x18 */ public string MustBeBeforeQuestItem;
         [NMS(Size = 0x10)]
         /* 0x28 */ public string MustBeAfterQuestItem;
-        /* 0x38 */ public List<NMSString0x10> ValidRoomsIDs;
+        /* 0x38 */ public List<NMSString0x10> ValidRoomIDs;
     }
 }

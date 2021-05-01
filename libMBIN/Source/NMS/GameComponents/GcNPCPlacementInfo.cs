@@ -13,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x20)]
         /* 0x10 */ public string SpawnUnderNodeName;
         [NMS(Size = 0x20)]
-        /* 0x30 */ public string PlacementNodeName;
+        /* 0x30 */ public string PlacmentNodeName;
         /* 0x50 */ public bool MustPlace;
         /* 0x54 */ public float SpawnChance;
         /* 0x58 */ public float FractionOfNodesActive;

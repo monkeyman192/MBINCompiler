@@ -37,7 +37,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0778 */ public string RecipeTable;
         [NMS(Size = 0x80)]
         /* 0x07F8 */ public string AlienWordsTable;
-        /* 0x0878 */ public List<NMSString0x80> AlienPuzzlesTables;
+        /* 0x0878 */ public List<NMSString0x80> AlienPuzzleTables;
         [NMS(Size = 0x72, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x0888 */ public bool[] LoopInteractionPuzzles;
         [NMS(Size = 0x72, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
@@ -124,7 +124,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0xD668 */ public List<NMSString0x10> NeverOfferedForSale;
         public enum GoodsTypeEnum { Commodity, Technology, Fuel, Tradeable, Special }
         [NMS(Size = 0x5, EnumType = typeof(GoodsTypeEnum))]         // TODO: not sure about these values....
-        /* 0xD678 */ public float[] NormalizedPriceLimits;
+        /* 0xD678 */ public float[] NormalisedPriceLimits;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0xD68C */ public byte[] PaddingD68C;
         /* 0xD690 */ public List<GcFiendCrimeSpawnTable> FiendCrimeSpawnTable;

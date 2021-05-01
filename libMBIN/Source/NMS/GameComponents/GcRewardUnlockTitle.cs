@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardUnlockTitle : NMSTemplate
     {
         [NMS(Size = 0x10)]
-        /* 0x00 */ public string titleID;
+        /* 0x00 */ public string TitleID;
         /* 0x10 */ public bool NoMusic;
         /* 0x11 */ public bool ShowEvenIfAlreadyUnlocked;
         [NMS(Size = 0x6, Ignore = true)]

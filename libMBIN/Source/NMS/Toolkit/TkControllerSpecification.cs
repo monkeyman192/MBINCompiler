@@ -8,7 +8,7 @@ namespace libMBIN.NMS.Toolkit
     {
         [NMS(Size = 0x10)]
         public string Id;
-        public TkButtonImageLookup ImageLookup;
+        public TkButtonImageLookup ButtonImageLookup;
         public TkAxisImageLookup AxisImageLookup;
         public TkChordsImageLookup ChordsImageLookup;
     }

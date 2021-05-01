@@ -25,9 +25,9 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         public string HitReact0H;
         [NMS(Size = 0x10)]
-        public string HitReac1H;
+        public string HitReact1H;
         [NMS(Size = 0x10)]
-        public string HitReac2H;
+        public string HitReact2H;
         public bool KeepHeadForward;
         [NMS(Size = 0x7, Ignore = true)]
         public byte[] EndPadding;

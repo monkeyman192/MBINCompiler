@@ -12,6 +12,6 @@ namespace libMBIN.NMS.GameComponents
             TechResource, FuelResource, MineralResource, SpaceAnomaly, SpaceAtlas, ExternalBase, PlanetBaseTerminal, Nexus, AbandonedFreighter,
             Telescope, Outpost, UpgradePod, Cog, Ruins, Portal, Library, Abandoned, SmallBuilding, StoryGlitch, GraveInCave, HoloHub
         }
-		public ScanBuildingIconTypesEnum ScanBuildingIconTypes;
+		public ScanBuildingIconTypesEnum ScanBuildingIconType;
     }
 }

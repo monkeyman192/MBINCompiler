@@ -4,7 +4,7 @@
     public class GcAtlasShared : NMSTemplate
     {
         // TODO: there is something fishy going on here...
-        public ulong ClientUserData;
+        public ulong ClientUserdata;
         [NMS(Size = 0x8, Ignore = true)]
         public byte[] EndPadding;
     }

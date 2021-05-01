@@ -10,6 +10,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public GcTerrainTileType TileType;
         public int MaxObjectsToSpawn;
-        public List<GcObjectSpawnData> ObjectData;
+        public List<GcObjectSpawnData> Objects;
     }
 }

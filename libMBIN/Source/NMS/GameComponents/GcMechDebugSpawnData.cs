@@ -18,7 +18,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4C */ public bool UseCustomisation;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x4D */ public byte[] Padding4D;
-        /* 0x50 */ public GcCharacterCustomisationSaveData CustomisationData;
+        /* 0x50 */ public GcCharacterCustomisationSaveData CustomisatonData;
         [NMS(Size = 0x8, Ignore = true)]
         /* 0xA8 */ public byte[] EndPadding;
     }

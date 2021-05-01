@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public string VolumeBBName;
         /* 0x20 */ public float VolumeMinDist;
         /* 0x24 */ public float VolumeMaxDist;
-        /* 0x28 */ public float MinVolumne;
+        /* 0x28 */ public float MinVolume;
         /* 0x2C */ public float MaxVolume;
         [NMS(Size = 0x20)]
         /* 0x30 */ public string PitchStartLocator;

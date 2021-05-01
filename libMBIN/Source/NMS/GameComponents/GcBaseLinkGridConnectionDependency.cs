@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseLinkGridConnectionDependency : NMSTemplate
     {
         /* 0x00 */ public GcBaseLinkGridConnectionData Connection;
-        /* 0x38 */ public int DependentRateRate;
+        /* 0x38 */ public int DependentRate;
         public enum DependentEffectEnum { None, EnablesRate, DisablesRate, EnablesConnection, DisablesConnection }
         /* 0x3C */ public DependentEffectEnum DependentEffect;
         /* 0x40 */ public bool DisableWhenOffline;
