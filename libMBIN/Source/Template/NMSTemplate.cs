@@ -189,15 +189,10 @@ namespace libMBIN
                     reader.BaseStream.Position = endPos;
                     return template;
                 default:
-                    if ( fieldType == "Colour" ) { // TODO: not needed
-                        reader.Align( 0x10 );
+                    if ( fieldType == "VariableStringSize" ) {
+                        reader.Align( 0x8 );
                     }
 
-                    if ( fieldType == "VariableStringSize" || fieldType == "GcRewardProduct" ) { // TODO: I don't think we need to specify GcRewardProduct here explicitly...
-                        reader.Align( 0x4 );
-                    }
-
-                    // todo: align for VariableSizeString?
                     if (field.IsEnum) {
                         reader.Align( 4 );
                         return fieldType == "Int32" ? (object)reader.ReadInt32() : (object)reader.ReadUInt32();
@@ -477,10 +472,8 @@ namespace libMBIN
                     // have something defined so that it just ignores it
                     break;
                 default:
-                    if ( fieldType.Name == "Colour" ) writer.Align( 0x10, field?.Name ?? fieldType.Name ); // TODO: should not be needed
-
-                    // todo: align for VariableSizeString?
                     if ( fieldType.Name == "VariableSizeString" ) {
+                        writer.Align( 0x8, field?.Name ?? fieldType.Name );
                         // write empty DynamicString header
                         long fieldPos = writer.BaseStream.Position;
                         writer.Write( (Int64) 0 ); // listPosition
