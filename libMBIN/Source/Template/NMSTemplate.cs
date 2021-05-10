@@ -659,10 +659,16 @@ namespace libMBIN
                 int alignment_default = 0x4;
                 if (list[0].GetType().BaseType == typeof(NMSTemplate)) {
                     alignment_default = 0x8;
-                } else if (list[0].GetType() == typeof(UInt16)) {
-                    alignment_default = 0x2;
                 } else if (list[0].GetType() == typeof(byte)){
                     alignment_default = 0x1;
+                } else if (list[0].GetType() == typeof(Int16)) {
+                    alignment_default = 0x2;
+                } else if (list[0].GetType() == typeof(UInt16)) {
+                    alignment_default = 0x2;
+                } else if (list[0].GetType() == typeof(Int64)) {
+                    alignment_default = 0x8;
+                } else if (list[0].GetType() == typeof(UInt64)) {
+                    alignment_default = 0x8;
                 }
                 int alignment = list[0].GetType().GetCustomAttribute<NMSAttribute>()?.Alignment ?? alignment_default;
                 // NMSString0xXX will get a default value of 0x4, but we want it to be 0x8 in lists.
@@ -694,13 +700,6 @@ namespace libMBIN
 
             foreach ( var entry in list ) {
                 DebugLogTemplate( $"[C] writing {entry.GetType().Name} to offset 0x{writer.BaseStream.Position:X}" );
-                int alignment = entry.GetType().GetCustomAttribute<NMSAttribute>()?.Alignment ?? 0x4;
-                if (entry.GetType() == typeof(UInt16)) {
-                    alignment = 0x2;
-                } else if (entry.GetType() == typeof(byte)) {
-                    alignment = 0x1;
-                }
-                writer.Align(alignment, entry.GetType().Name );
                 SerializeValue( writer, entry.GetType(), entry, null, null, ref additionalData, ref addtDataIndexThis, listEnding );
             }
         }
