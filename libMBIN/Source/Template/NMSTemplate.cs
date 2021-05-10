@@ -168,10 +168,14 @@ namespace libMBIN
                     long offset = reader.ReadInt64();
                     string name = reader.ReadString(Encoding.ASCII, 0x40, true);
                     ulong NameHash = reader.ReadUInt64();
-                    if (template != null) {
-                        ulong expected_NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
-                        if (NameHash != expected_NameHash && template != null) {
-                            Logger.LogMessage("NameHash", $"{template.GetType().Name} has the wrong NameHash");
+                    if ( name.Length > 0 ) {
+                        var templateName = name;
+                        if ( name.StartsWith( "c" ) && name.Length > 1 ) {
+                            templateName = name.Substring( 1 );
+                        }
+                        ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        if ( NameHash != expected_NameHash ) {
+                            Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
                         }
                     }
 
@@ -287,7 +291,7 @@ namespace libMBIN
                         if ( name.StartsWith( "c" ) && name.Length > 1 ) {
                             templateName = name.Substring( 1 );
                         }
-                        ulong expected_NameHash = GetTemplateType( templateName ).GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
                         if ( NameHash != expected_NameHash ) {
                             Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
                         }
@@ -636,7 +640,7 @@ namespace libMBIN
                     //DebugLog(kvp.Value);
                     writer.WriteString( "c" + kvp.Value, Encoding.UTF8, 0x40 );
                     // Get the NameHash
-                    ulong NameHash = GetTemplateType(kvp.Value).GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                    ulong NameHash = GetTemplateType(kvp.Value)?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
                     if ( NameHash != 0 ) {
                         writer.Write( NameHash );
                     } else {
