@@ -727,38 +727,15 @@ namespace libMBIN
                     //DebugLog($"Current i: {i}");
                     //DebugLog(data);
                     //writer.BaseStream.Position = additionalDataOffset; // addtDataOffset gets updated by child templates
-                    long origPos = writer.BaseStream.Position;
-
-                    // get the custom alignment value from the class if it has one
-                    // If the class has no alignment value associated with it, just set as default value of 4
-                    NMSAttribute settings = data.Item2?.GetType().GetCustomAttribute<NMSAttribute>();
-                    int alignment = settings?.Alignment ?? 0x4;
 
                     if ( data.Item2 == null ) {
-                        writer.Align( alignment, "List<null>" );
                         SerializeList( writer, new List<int>(), data.Item1, ref additionalData, i + 1, listEnding );  // pass an empty list. Data type doesn't matter...
                         continue;
                     }
 
-                    // we don't want alignment if the data is purely byte[] data
-                    if ( data.Item2.GetType() == typeof( byte[] ) ) {
-                        alignment = 1;
-
-                    } else if ( data.Item2.GetType() == typeof( List<ushort> ) ) {
-                        alignment = 2;
-
-                    // if we have an empty list we do not want to do alignment otherwise it can put off other things
-                    } else if ( data.Item2.GetType().IsGenericType && data.Item2.GetType().GetGenericTypeDefinition() == typeof( List<> ) ) {
-                        if ( ((IList) data.Item2).Count == 0 ) alignment = 1;
-
-                    }
-
-                    writer.Align( alignment, data.Item2.GetType().Name );
+                    NMSAttribute settings = data.Item2?.GetType().GetCustomAttribute<NMSAttribute>();
 
                     if ( data.Item2.GetType() == typeof( NMS.VariableSizeString ) ) {
-                        //DebugLog(alignment);
-                        writer.BaseStream.Position = origPos; // no alignment for dynamicstrings
-
                         var str = (NMS.VariableSizeString) data.Item2;
 
                         var stringPos = writer.BaseStream.Position;
@@ -773,6 +750,7 @@ namespace libMBIN
                         writer.BaseStream.Position = stringEndPos;
 
                     } else if ( data.Item2.GetType().BaseType == typeof( NMSTemplate ) ) {
+                        writer.Align( settings?.Alignment ?? 0x4, data.Item2.GetType().Name );
                         var pos = writer.BaseStream.Position;
                         var template = (NMSTemplate) data.Item2;
                         int i2 = i + 1;
