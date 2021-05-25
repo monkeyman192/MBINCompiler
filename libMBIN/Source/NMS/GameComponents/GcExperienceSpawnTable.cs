@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x110, GUID = 0xDBA9E65E06DDD541, NameHash = 0x5F4CA33999F0D259)]
+	[NMS(Size = 0x120, GUID = 0x72EE84117BBBC18E, NameHash = 0x5F4CA33999F0D259)]
     public class GcExperienceSpawnTable : NMSTemplate
     {
         /* 0x000 */ public List<GcAIShipSpawnData> FlybySpawns;
@@ -25,5 +25,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0E0 */ public List<GcPulseEncounterInfo> PulseEncounters;
         /* 0x0F0 */ public List<GcPlayerExperienceSpawnTable> CreatureSpawnTable;
         /* 0x100 */ public List<GcPlayerExperienceSpawnArchetypeData> CreatureSpawnArchetypes;
+        /* 0x110 */ public List<GcAIShipSpawnData> FrigateFlybySpawns;
     }
 }

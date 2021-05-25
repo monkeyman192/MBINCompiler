@@ -16,7 +16,7 @@ namespace libMBIN
 
         // used for format V1
         internal const ulong TKANIMMETADATA_TAG     = 0xFFFFFFFFFFFFFFFF; // only used for TkAnimMetadata
-        internal const ulong TKANIMMETADATA_VERSION = 0x9B251350AE1ABCA7; // only used for TkAnimMetadata
+        internal const ulong TKANIMMETADATA_VERSION = 0x3CD7D2192958BA6C; // only used for TkAnimMetadata
         internal const ulong TKANIMMETADATA_PADDING = 0xFEFEFEFEFEFEFEFE; // only used for TkAnimMetadata
 
         // used for format V2

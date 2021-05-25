@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcVehicleType : NMSTemplate
     {
         //Note: enum in exe shows Buggy, Bike, ... but GcVehicleGlobals.MBIN shows that the first entry is Bike and 2nd is Buggy
-        // 0x7 entries
+        // size: 0x7
         public enum VehicleTypeEnum { Buggy, Bike, Truck, WheeledBike, Hovercraft, Submarine, Mech }
 		public VehicleTypeEnum VehicleType;
     }

@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x00 */ public string Id;
         /* 0x10 */ public GcInputActions Action;
-        /* 0x14 */ public TkTriggerFeedbackData Data;   // may be a list...
+        /* 0x14 */ public TkTriggerFeedbackData Data;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x24 */ public byte[] EndPadding;
     }

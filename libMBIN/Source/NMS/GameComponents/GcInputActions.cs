@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x4, GUID = 0x7A5368FD92225B24, NameHash = 0xB3E8C8CD4B9DB0B1)]
     public class GcInputActions : NMSTemplate
     {
-        // 0x111 entries
+        // size: 0x111
         public enum InputActionEnum {
             Invalid, Player_Forward, Player_Back, Player_Left, Player_Right, Player_SwimUp, Player_SwimDown, Player_Interact, Player_Melee, Player_Scan,
             Player_Torch, Player_Binoculars, Player_Zoom, Player_ShowHUD, Player_Jump, Player_Run, Player_Shoot, Player_Grenade, Player_Reload, Player_ChangeWeapon,

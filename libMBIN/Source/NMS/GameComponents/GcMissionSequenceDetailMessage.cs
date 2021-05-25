@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xF8, Alignment = 0x8, GUID = 0xBC4498BEC87C34C8, NameHash = 0xA29EE4D703004484)]
+	[NMS(Size = 0xF8, Alignment = 0x8, GUID = 0x24B2FB46F1D69264, NameHash = 0xA29EE4D703004484)]
     public class GcMissionSequenceDetailMessage : NMSTemplate
     {
         [NMS(Size = 0x20)]

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x110, GUID = 0xDFFB3F29873D789A, NameHash = 0xF83A832D3507037F)]
+    [NMS(Size = 0x110, GUID = 0x5F1FB2F7C63E5760, NameHash = 0xF83A832D3507037F)]
     public class GcMissionSequenceRepairTech : NMSTemplate
     {
         [NMS(Size = 0x80)]

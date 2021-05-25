@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x198, GUID = 0x0000000000000000, NameHash = 0x4E7A7CEB00A9346B)]
+    [NMS(Size = 0x198, GUID = 0xC5BCD08BAB773978, NameHash = 0x4E7A7CEB00A9346B)]
     public class GcTargetMissionSurveyOptions : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -18,6 +18,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x80)]
         /* 0x111 */ public string SurveyHint;
         [NMS(Size = 0x7, Ignore = true)]
-        /* 0x191 */ public string EndPadding;
+        /* 0x191 */ public byte[] EndPadding;
     }
 }

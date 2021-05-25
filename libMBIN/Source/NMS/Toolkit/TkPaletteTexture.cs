@@ -6,7 +6,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x8, GUID = 0x565979C690E12DA2, NameHash = 0x6A57676B42321253)]
     public class TkPaletteTexture : NMSTemplate
     {
-        // 0x37 entries
+        // size: 0x37
 		public enum PaletteEnum {
             Grass, Plant, Leaf, Wood, Rock, Stone, Crystal, Sand, Dirt, Metal,
             Paint, Plastic, Fur, Scale, Feather, Water, Cloud, Sky, Space, Underbelly,
@@ -16,7 +16,7 @@ namespace libMBIN.NMS.Toolkit
             Cave, GrassAlt, BioShip_Body, BioShip_Underbelly, BioShip_Cockpit
         }
 		public PaletteEnum Palette;
-        // 0x8 entries
+        // size: 0x8
 		public enum ColourAltEnum { Primary, Alternative1, Alternative2, Alternative3, Alternative4, Unique, MatchGround, None }
 		public ColourAltEnum ColourAlt;
     }

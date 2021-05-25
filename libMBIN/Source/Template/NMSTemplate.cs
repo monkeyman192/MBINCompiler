@@ -1038,7 +1038,7 @@ namespace libMBIN
                 if ( (arrayLength != 0) && (arrayLength != length) ) {
                     string enumTypeName = enumType?.ToString() ?? "EnumValue";
                     EmitWarning( $"The defined Size for {fieldName} does not match the length of {enumTypeName}!\n" +
-                                            $"{arrayLength} != {length}" );
+                                            $"{"0x" + arrayLength.ToString("X")} != {"0x" + length.ToString("X")}" );
                 }
 
                 // if the field has both an EnumType and EnumValue setting, then make sure they match

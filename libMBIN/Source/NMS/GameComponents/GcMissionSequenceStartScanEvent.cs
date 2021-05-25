@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xB0, Alignment = 0x8, GUID = 0x9F22B7277977588E, NameHash = 0x84E26BAA3B367507)]
+	[NMS(Size = 0xB0, Alignment = 0x8, GUID = 0x90CF75D7BA76F02A, NameHash = 0x84E26BAA3B367507)]
     public class GcMissionSequenceStartScanEvent : NMSTemplate
     {
         public enum ScanTableEnum { Space, Planet, Missions, Tutorial, MissionsCreative, Vehicle, NPCPlanetSite, Seasonal };

@@ -20,7 +20,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x60 */ public GcSeed Seed;
         /* 0x70 */ public GcRealityCommonFactions Faction;
         /* 0x74 */ public GcAISpaceshipRoles ShipRole;
-        /* 0x78 */ public List<int> ShipChoiceSequence;     // maybe float list.
+        /* 0x78 */ public List<int> ShipChoiceSequence;
         /* 0x88 */ public Vector2f ShipCountRange;
         /* 0x90 */ public Vector2f WarpIntervalRange;
         /* 0x98 */ public Vector2f SpeedRange;

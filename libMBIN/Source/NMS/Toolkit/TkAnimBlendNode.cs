@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xF8, GUID = 0x7886A38513257F16, NameHash = 0xA394D25E5A975DA5)]
+	[NMS(Size = 0x108, GUID = 0x7886A38513257F16, NameHash = 0xA394D25E5A975DA5)]
     public class TkAnimBlendNode : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -20,6 +20,6 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x64 */ public byte[] Padding64;
         /* 0x68 */ public NMSTemplate BlendLeft;
-        /* 0xB0 */ public NMSTemplate BlendRight;
+        /* 0xB8 */ public NMSTemplate BlendRight;
     }
 }

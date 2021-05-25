@@ -5,10 +5,9 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xC8, GUID = 0x37F6B86B46BC4BDD, NameHash = 0xBAC942D350F478B1)]
+    [NMS(Size = 0xC8, GUID = 0x8F71353B2FED771, NameHash = 0xBAC942D350F478B1)]
     public class GcVehicleScanTableEntry : NMSTemplate
     {
-        
         /* 0x00 */ public List<NMSString0x20> ScanList;
         [NMS(Size = 0x20)]
         /* 0x10 */ public string Name;

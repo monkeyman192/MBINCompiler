@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x20, GUID = 0x4C2C0909B85A05A0, NameHash = 0x74723646531009E2)]
+	[NMS(Size = 0x20, GUID = 0x52E86888EF0146C8, NameHash = 0x74723646531009E2)]
     public class GcAISpaceshipPreloadCacheData : NMSTemplate
     {
         /* 0x00 */ public GcRealityCommonFactions Faction;

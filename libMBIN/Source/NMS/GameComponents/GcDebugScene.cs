@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1AB0, GUID = 0x611B2B10B024223B, NameHash = 0xB5B196A1179FFE00)]
+    [NMS(Size = 0x1AD0, GUID = 0x7E25C7AEC48DD019, NameHash = 0xB5B196A1179FFE00)]
     public class GcDebugScene : NMSTemplate
     {
         /* 0x0000 */ public bool Active;
@@ -63,12 +63,17 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x1A70 */ public string PulseEncounter;
         /* 0x1A80 */ public Vector3f SandwormSpawnPos;
-        /* 0x1A90 */ public float CameraSpinTime;
-        /* 0x1A94 */ public float CameraSpinRevolutions;
-        /* 0x1A98 */ public float CameraSpinVerticalOffset;
-        /* 0x1A9C */ public float CameraSpinDistanceOffset;
-        /* 0x1AA0 */ public TkCurveType CameraSpinEasing;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x1AA4 */ public byte[] EndPadding;
+        /* 0x1A90 */ public Vector3f DebugFrigateFlybySpawnPos;
+        /* 0x1AA0 */ public float DebugFrigateFlybyRotation;
+        /* 0x1AA4 */ public float DebugFrigateFlybyHeightOffset;
+        [NMS(Size = 0x10)]
+        /* 0x1AA8 */ public string NormandyReward;
+        /* 0x1AB8 */ public float CameraSpinTime;
+        /* 0x1ABC */ public float CameraSpinRevolutions;
+        /* 0x1AC0 */ public float CameraSpinVerticalOffset;
+        /* 0x1AC4 */ public float CameraSpinDistanceOffset;
+        /* 0x1AC8 */ public TkCurveType CameraSpinEasing;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1ACC */ public byte[] EndPadding;
     }
 }

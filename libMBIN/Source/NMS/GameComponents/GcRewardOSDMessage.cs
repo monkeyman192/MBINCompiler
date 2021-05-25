@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC0, Alignment = 0x10, GUID = 0x99A2F2CCE99404C5, NameHash = 0x53D72723F082671D)]
+    [NMS(Size = 0xD0, Alignment = 0x10, GUID = 0x686C3DD252BAB451, NameHash = 0x53D72723F082671D)]
     public class GcRewardOSDMessage : NMSTemplate
     {
         /* 0x00 */ public float Time;
@@ -14,5 +14,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x28 */ public GcAudioWwiseEvents AudioEvent;
         /* 0x2C */ public TkTextureResource Icon;
         /* 0xB0 */ public Colour MessageColour;
+        /* 0xC0 */ public bool UseTimedMessage;
+        [NMS(Size = 0xF, Ignore = true)]
+        /* 0xC1 */ public byte[] EndPadding;
     }
 }

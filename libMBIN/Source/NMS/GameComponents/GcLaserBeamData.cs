@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C0, Alignment = 0x10, GUID = 0x3FBCDE0C57DD060, NameHash = 0x1AA966F8BA4E3153)]
+	[NMS(Size = 0x1C0, Alignment = 0x10, GUID = 0x940B61A1D3CEBB8E, NameHash = 0x1AA966F8BA4E3153)]
     public class GcLaserBeamData : NMSTemplate
     {
         [NMS(Size = 0x10)]

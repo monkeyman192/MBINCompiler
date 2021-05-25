@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x8, GUID = 0xD04AE98C149C7C02, NameHash = 0xF1F483BCEFC0AD13)]
     public class GcRewardOpenPage : NMSTemplate
     {
-        // 0xB entries
+        // size: 0xB
 		public enum PageToOpenEnum { FreighterShipTransfer, DisplayPortalUa, ExpeditionSelect, TraderInventory, ExpeditionDetails,
             ExpeditionDebrief, BuildingPartsShop, ExocraftShop, NexusTechShop, ScrapDealerShop, BuyShip }
 		public PageToOpenEnum PageToOpen;

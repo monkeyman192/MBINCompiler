@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x450, GUID = 0x6EE858016CEB57F9, NameHash = 0xFD6B0BE30E218605)]
+	[NMS(Size = 0x498, GUID = 0x82EDCC2C4DAB7F03, NameHash = 0xFD6B0BE30E218605)]
     public class GcSeasonalGameModeData : NMSTemplate
     {
         /* 0x000 */ public int SeasonId;
@@ -36,25 +36,33 @@ namespace libMBIN.NMS.GameComponents
         /* 0x348 */ public string SeasonName;
         [NMS(Size = 0x20)]
         /* 0x368 */ public string SeasonNameUpper;
-        /* 0x388 */ public int StartingSuitSlots;
-        /* 0x38C */ public int StartingSuitTechSlots;
-        /* 0x390 */ public int StartingSuitCargoSlots;
+        [NMS(Size = 0x20)]
+        /* 0x388 */ public string MainMissionTitle;  // Aligned
+        [NMS(Size = 0x20)]
+        /* 0x3A8 */ public string MainMissionMessage;  // Aligned
+        /* 0x3C8 */ public int StartingSuitSlots;
+        /* 0x3CC */ public int StartingSuitTechSlots;
+        /* 0x3D0 */ public int StartingSuitCargoSlots;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x394 */ public byte[] Padding394;
-        /* 0x398 */ public GcSeed WeaponSeed;
-        /* 0x3A8 */ public GcSeed ShipSeed;
-        /* 0x3B8 */ public GcSpaceshipClasses ShipType;
+        /* 0x3D4 */ public byte[] Padding3D4;
+        /* 0x3D8 */ public GcSeed WeaponSeed;
+        /* 0x3E8 */ public GcSeed ShipSeed;
+        /* 0x3F8 */ public GcSpaceshipClasses ShipType;
+        /* 0x3FC */ public bool StartWithFreighter;
+        /* 0x400 */ public GcAlienRace FreighterRace;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0x3BC */ public byte[] Padding3BC;
-        /* 0x3C0 */ public GcInventoryLayout WeaponInventoryLayout;
-        /* 0x3E0 */ public GcInventoryLayout ShipInventoryLayout;
-        /* 0x400 */ public GcInventoryLayout ShipTechInventoryLayout;
-        /* 0x420 */ public bool UseDefaultAppearance;
-        /* 0x421 */ public bool StartNextToShip;
-        /* 0x424 */ public float DistanceFromShipAtStartOfGame;
-        /* 0x428 */ public bool ShipStartsDamaged;
-        /* 0x429 */ public bool AllowMissionDetailMessages;
-        /* 0x430 */ public List<GcSeasonalStage> Stages;
-        /* 0x440 */ public GcScanEventTable ScanEventTable;
+        /* 0x404 */ public byte[] Padding404;
+        /* 0x408 */ public GcInventoryLayout WeaponInventoryLayout;
+        /* 0x428 */ public GcInventoryLayout ShipInventoryLayout;
+        /* 0x448 */ public GcInventoryLayout ShipTechInventoryLayout;
+        /* 0x468 */ public bool UseDefaultAppearance;
+        /* 0x469 */ public bool StartNextToShip;
+        /* 0x46C */ public float DistanceFromShipAtStartOfGame;
+        /* 0x470 */ public bool ShipStartsDamaged;
+        /* 0x471 */ public bool AllowMissionDetailMessages;
+        [NMS(Size = 0x6, Ignore = true)]
+        /* 0x472 */ public byte[] Padding472;
+        /* 0x478 */ public List<GcSeasonalStage> Stages;
+        /* 0x488 */ public GcScanEventTable ScanEventTable;
     }
 }

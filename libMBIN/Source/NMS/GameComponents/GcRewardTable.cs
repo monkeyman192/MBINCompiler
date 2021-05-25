@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x110, GUID = 0x560FBAD5354B4033, NameHash = 0x2ECD4E3663FDB26F)]
+	[NMS(Size = 0x130, GUID = 0x29F1A6CFFB862932, NameHash = 0x2ECD4E3663FDB26F)]
     public class GcRewardTable : NMSTemplate
     {
         /* 0x000 */ public List<GcGenericRewardTableEntry> GenericTable;
@@ -24,6 +24,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0D0 */ public List<GcGenericRewardTableEntry> MixerRewardTable;
         /* 0x0E0 */ public List<GcGenericRewardTableEntry> TwitchRewardTable;
         /* 0x0F0 */ public List<GcGenericRewardTableEntry> NPCPlanetSiteTable;
-        /* 0x100 */ public List<GcGenericRewardTableEntry> SeasonRewardTable;
+        /* 0x100 */ public List<GcGenericRewardTableEntry> SeasonRewardTable1;
+        /* 0x110 */ public List<GcGenericRewardTableEntry> SeasonRewardTable2;
+        /* 0x120 */ public List<GcGenericRewardTableEntry> SeasonRewardTable3;
     }
 }

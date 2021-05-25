@@ -10,7 +10,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkInputAxisEnum : NMSTemplate
     {
         // In the exe there is both a None and an Invalid entry, but both have the enum value of 0x0, which we can't really handle so I'll just ignore the "None" value...
-        // 0x30 entries
+        // size: 0x30
         public enum InputAxisEnum {
             Invalid, LeftStick, LeftStickX, LeftStickY, RightStick, RightStickX, RightStickY, LeftTrigger, RightTrigger,
             Mouse, MouseX, MouseY, MousePositiveX, MouseNegativeX, MousePositiveY, MouseNegativeY, MouseWheel, MouseWheelPositive, MouseWheelNegative,

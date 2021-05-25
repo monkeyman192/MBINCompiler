@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x6D0, GUID = 0x401EBE30418019F7, NameHash = 0x6A104C45E1F1638D)]
+    [NMS(Size = 0x6D0, GUID = 0xF1BD945926480534, NameHash = 0x6A104C45E1F1638D)]
     public class GcModBasePart : NMSTemplate
     {
         [NMS(Size = 0x40)]

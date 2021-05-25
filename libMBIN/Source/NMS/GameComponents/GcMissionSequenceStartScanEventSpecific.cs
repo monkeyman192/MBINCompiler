@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x100, Alignment = 0x10, GUID = 0x0AA264BBBB3F5C3F, NameHash = 0x83CCE421927A9559)]
+    [NMS(Size = 0x100, Alignment = 0x10, GUID = 0xCDB543AB27830175, NameHash = 0x83CCE421927A9559)]
     public class GcMissionSequenceStartScanEventSpecific : NMSTemplate
     {
         /* 0x00 */ public bool IMeantThisAndKnowWhatItDoes;

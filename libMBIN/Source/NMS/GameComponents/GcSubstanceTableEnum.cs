@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x4, GUID = 0xFC82337D51C3AB87, NameHash = 0x2A7FC25DED2C3BE5)]
     public class GcSubstanceTableEnum : NMSTemplate
     {
-        // 0x4C Entries
+        // size: 0x4C
         public enum gcsubstancetableEnumEnum {
             None, FUEL1, FUEL2, OXYGEN, LAUNCHSUB, LAUNCHSUB2, ROCKETSUB, LAND1, LAND2, LAND3,
             SAND1, CATALYST1, CATALYST2, CAVE1, CAVE2, WATER1, WATER2, WATERPLANT, YELLOW2, RED2,

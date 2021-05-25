@@ -3,10 +3,10 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0x88D5BE0AA7AE6B79, NameHash = 0xEFC8FCE1F6004590)]
+	[NMS(Size = 0x4, GUID = 0x820E799003AAABBF, NameHash = 0xEFC8FCE1F6004590)]
     public class GcPhotoPlant : NMSTemplate
     {
-		public enum PhotoPlantTypeEnum { Zinc, Thamium, Platinum }
+		public enum PhotoPlantTypeEnum { Sodium, Oxygen, PluePlant }
 		public PhotoPlantTypeEnum PhotoPlantType;
     }
 }

@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x4, GUID = 0x1F165EB008AD6F87, NameHash = 0x8A4027FC041677F0)]
     public class GcScannerIconTypes : NMSTemplate
     {
-        // Size: 0x34
+        // size: 0x34
 		public enum ScanIconTypeEnum {
             None, Health, Shield, Hazard, LifeSupport, Tech, BluePlant, CaveSubstance, LaunchCrystals, Power,
             Carbon, CarbonPlus, Oxygen, Mineral, Sodium, SodiumPlus, Crate, Artifact, Plant, HazardPlant,

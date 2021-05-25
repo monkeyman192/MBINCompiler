@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xC8, GUID = 0x2A154F64AFC15699, NameHash = 0x8318BC4815036659)]
+	[NMS(Size = 0xC8, GUID = 0x31F4B7FF54348572, NameHash = 0x8318BC4815036659)]
     public class GcExplosionData : NMSTemplate
     {
         [NMS(Size = 0x10)]
@@ -23,7 +23,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0xBB */ public bool AllowShootableDebris;
         /* 0xBC */ public bool AllowDestructableDebris;
         /* 0xC0 */ public float MaxSpawnDistance;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0xC4 */ public byte[] EndPadding;
+        /* 0xC4 */ public float CamShakeCustomMaxDistance;
     }
 }

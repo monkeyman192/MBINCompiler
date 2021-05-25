@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10, GUID = 0x75D905A089ADB7E0, NameHash = 0xA9AA29AB69917BF0)]
+	[NMS(Size = 0x10, GUID = 0xE35B0F0E2C3AA549, NameHash = 0xA9AA29AB69917BF0)]
     public class GcConsumableItemTable : NMSTemplate
     {
         public List<GcConsumableItem> Table;

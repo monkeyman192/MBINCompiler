@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xD8, GUID = 0x36FC71E993158B0A, NameHash = 0xF1949393FDAF963A)]
+    [NMS(Size = 0xD8, GUID = 0x2527AC6B9E39D4F8, NameHash = 0xF1949393FDAF963A)]
     public class GcSeasonalStage : NMSTemplate
     {
         /* 0x00 */ public List<GcSeasonalMilestone> Milestones;

@@ -8,7 +8,7 @@ namespace libMBIN.NMS.Toolkit
     [NMS(Size = 0x4, GUID = 0x17C1C8DC8893E779, NameHash = 0x2DD2249029019040)]
     public class TkNGuiEditorGraphicType : NMSTemplate
     {
-        // 0x48 entries
+        // size: 0x48
         public enum NGuiEditorGraphicEnum {
             Panel, Button, Text, Graphic, WindowTitleBar, WindowTitleBarInactive, WindowTab, WindowTabInactive, Window, WindowPane,
             WindowResize, WindowClose, WindowMinimize, WindowMaximize, ScrollBarBackground, ScrollBarForeground, TreeNodeCollapsed, TreeNodeExpanded, CheckBoxTrue, CheckBoxFalse,
