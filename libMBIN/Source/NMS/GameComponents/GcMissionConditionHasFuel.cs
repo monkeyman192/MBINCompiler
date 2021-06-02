@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public GcStatsTypes TargetStat;
         public int Amount;
-        [NMS(Size = 0x10)]
-        public string SpecificTechID;
+        public NMSString0x10 SpecificTechID;
     }
 }

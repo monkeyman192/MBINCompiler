@@ -9,7 +9,6 @@ namespace libMBIN.NMS.GameComponents
         public float Delay;
         public enum MenuToCloseEnum { QuickMenu, BuildMenu, Inventory, AllDetailMessages }
         public MenuToCloseEnum MenuToClose;
-        [NMS(Size = 0x80)]
-        public string DebugText;
+        public NMSString0x80 DebugText;
     }
 }

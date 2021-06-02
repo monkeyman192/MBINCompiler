@@ -12,8 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x010 */ public GcAtlasMonument Monument;
 		public enum MonumentRolesEnum { Creator, CoCreator }
 		/* 0x1A0 */ public MonumentRolesEnum MonumentRoles;
-        [NMS(Size = 0x20)]
-        /* 0x1A4 */ public string OtherUser;
+        /* 0x1A4 */ public NMSString0x20 OtherUser;
         [NMS(Size = 0xC, Ignore = true)]
         /* 0x1C4 */ public byte[] EndPadding;
     }

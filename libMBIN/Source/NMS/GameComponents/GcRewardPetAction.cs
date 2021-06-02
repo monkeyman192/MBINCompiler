@@ -11,9 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcCreaturePetRewardActions PetAction;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string PlayerEmoteID;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string EffectID;
+        /* 0x08 */ public NMSString0x10 PlayerEmoteID;
+        /* 0x18 */ public NMSString0x10 EffectID;
     }
 }

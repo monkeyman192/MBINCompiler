@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x5D0, GUID = 0xF96A60B3E3E74A10, NameHash = 0xF5D7FBFDE561D6FB)]
     public class GcPlayerOwnershipData : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        /* 0x000 */ public string Name;
+        /* 0x000 */ public NMSString0x20 Name;
         /* 0x020 */ public GcResourceElement Resource;
         /* 0x2C8 */ public GcInventoryContainer Inventory;
         /* 0x428 */ public GcInventoryContainer Inventory_TechOnly;

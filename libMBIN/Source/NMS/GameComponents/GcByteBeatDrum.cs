@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x58, GUID = 0x6887BA8A0295E6C8, NameHash = 0xAAB4AB6EC567BC2F)]
     public class GcByteBeatDrum : NMSTemplate
     {
-        [NMS(Size = 0x40)]
-        /* 0x00 */ public string Tree;
+        /* 0x00 */ public NMSString0x40 Tree;
         /* 0x40 */ public float Volume;
         /* 0x44 */ public float Duration;
         /* 0x48 */ public float OctaveShift;

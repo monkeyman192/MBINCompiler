@@ -57,8 +57,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0041 */ public bool AlwaysAllowShipOperations;
         /* 0x0042 */ public bool AlwaysAllowVehicleOperations;
         /* 0x0043 */ public bool AlwaysAllowFreighterInventoryAccess;
-        [NMS(Size = 0x200)]
-        /* 0x0044 */ public string SeasonalDataOverrideFile;
+        /* 0x0044 */ public NMSString0x200 SeasonalDataOverrideFile;
         /* 0x0244 */ public bool UnlockAllSeasonRewards;
         /* 0x0245 */ public bool UnlockAllTwitchRewards;
         [NMS(Size = 0x4)]
@@ -72,10 +71,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0658 */ public int Monitor;
         /* 0x065C */ public int TiledWindowsSplitCount;
         /* 0x0660 */ public int TiledWindowsIndex;
-        [NMS(Size = 0x100)]
-        /* 0x0664 */ public string ForceUniverseAddress;
-        [NMS(Size = 0x100)]
-        /* 0x0764 */ public string ForcePlayerPosition;
+        /* 0x0664 */ public NMSString0x100 ForceUniverseAddress;
+        /* 0x0764 */ public NMSString0x100 ForcePlayerPosition;
         /* 0x0864 */ public bool ForceInitialShip;
         /* 0x0865 */ public bool ForceInitialWeapon;
         public enum GameStateModeEnum { LoadPreset, UserStorage, FreshStart }
@@ -84,12 +81,9 @@ namespace libMBIN.NMS.Globals
         /* 0x086C */ public BootModeEnum BootMode;
         public enum PlayerSpawnLocationOverrideEnum { None, FromSettings, Space, SpaceStation, RandomPlanet, GameStartPlanet, SpecificLocation }
         /* 0x0870 */ public PlayerSpawnLocationOverrideEnum PlayerSpawnLocationOverride;
-        [NMS(Size = 0x80)]
-        /* 0x0874 */ public string SceneSettings;
-        [NMS(Size = 0x100)]
-        /* 0x08F4 */ public string WorkingDirectory;
-        [NMS(Size = 0x80)]
-        /* 0x09F4 */ public string DebugScene;
+        /* 0x0874 */ public NMSString0x80 SceneSettings;
+        /* 0x08F4 */ public NMSString0x100 WorkingDirectory;
+        /* 0x09F4 */ public NMSString0x80 DebugScene;
         public enum SolarSystemBootEnum { FromSettings, Generate }
         /* 0x0A74 */ public SolarSystemBootEnum SolarSystemBoot;
         public enum ShaderPreloadEnum { Off, Full }
@@ -147,8 +141,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0AC5 */ public bool InfiniteInteractions;
         /* 0x0AC6 */ public bool StopSwitchingToSecondaryInteractions;
         /* 0x0AC8 */ public TkLanguages DebugLanguage;
-        [NMS(Size = 0x20)]
-        /* 0x0ACC */ public string AllowedLanguagesFile;
+        /* 0x0ACC */ public NMSString0x20 AllowedLanguagesFile;
         /* 0x0AEC */ public bool DoAlienLanguage;
         /* 0x0AF0 */ public GcAlienRace ForceInteractionRaceTo;
         public enum RealityModeEnum { LoadPreset, Generate }
@@ -156,14 +149,12 @@ namespace libMBIN.NMS.Globals
         /* 0x0AF8 */ public bool DebugPersistentInteractions;
         /* 0x0AF9 */ public bool UseHighlightedOptionStyle;
         /* 0x0AFA */ public bool DisableMissionShop;
-        [NMS(Size = 0x80)]
-        /* 0x0AFB */ public string RealityPresetFile;
+        /* 0x0AFB */ public NMSString0x80 RealityPresetFile;
         /* 0x0B7C */ public ushort RealityGenerationIteration;
         [NMS(Size = 0x2, Ignore = true)]
         /* 0x0B7E */ public byte[] PaddingB7E;
         /* 0x0B80 */ public List<NMSString0x20> LocTableList;
-        [NMS(Size = 0x80)]
-        /* 0x0B90 */ public string DefaultSaveData;
+        /* 0x0B90 */ public NMSString0x80 DefaultSaveData;
         /* 0x0C10 */ public bool FormatDownloadStorageAreaOnBoot;
         /* 0x0C11 */ public bool ForceBasicLoadScreen;
         /* 0x0C14 */ public float BootLogoFadeRate;
@@ -178,17 +169,14 @@ namespace libMBIN.NMS.Globals
         /* 0x0C30 */ public bool DebugBuildingSpawns;
         /* 0x0C31 */ public bool StressTestLongNameDisplay;
         /* 0x0C32 */ public bool ShowLongestStrings;
-        [NMS(Size = 0x20)]
-        /* 0x0C33 */ public string SaveTestingCommand;
+        /* 0x0C33 */ public NMSString0x20 SaveTestingCommand;
         /* 0x0C53 */ public bool NeverUseBanks;
         /* 0x0C54 */ public bool DisableProfanityFilter;
         /* 0x0C55 */ public bool DisableFileWatcher;
         /* 0x0C56 */ public bool DisableShaderReload;
         /* 0x0C58 */ public int RecurrenceTimeOffset;
-        [NMS(Size = 0x80)]
-        /* 0x0C5C */ public string CrashDumpPath;
-        [NMS(Size = 0x20)]
-        /* 0x0CDC */ public string CrashDumpIdentifier;
+        /* 0x0C5C */ public NMSString0x80 CrashDumpPath;
+        /* 0x0CDC */ public NMSString0x20 CrashDumpIdentifier;
         /* 0x0CFC */ public bool EnableLivePP;
         /* 0x0CFD */ public bool DebugThreatLevels;
         /* 0x0CFE */ public bool ShowDebugMessages;
@@ -198,8 +186,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0D02 */ public bool ShowGPUMemory;
         /* 0x0D03 */ public bool ShowMempoolOverlay;
         /* 0x0D04 */ public bool ShowMouseSmoothing;
-        [NMS(Size = 0x100)]
-        /* 0x0D05 */ public string ShowUniverseAddressOnGalaxyMap;
+        /* 0x0D05 */ public NMSString0x100 ShowUniverseAddressOnGalaxyMap;
         /* 0x0E05 */ public bool ShowGraphs;
         /* 0x0E08 */ public int ShowSpecificGraph;
         /* 0x0E0C */ public bool GraphCommandBuffer;
@@ -227,8 +214,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0E3E */ public bool SmokeTestSmokeBotAutoStart;
         /* 0x0E40 */ public int SmokeTestSmokeBotTargetWarps;
         /* 0x0E44 */ public bool SmokeTestPostBandwidthStats;
-        [NMS(Size = 0x20)]
-        /* 0x0E45 */ public string SmokeTestForcePlanetDetail;
+        /* 0x0E45 */ public NMSString0x20 SmokeTestForcePlanetDetail;
         /* 0x0E65 */ public bool CreatureChatter;
         /* 0x0E66 */ public bool CreatureErrors;
         /* 0x0E67 */ public bool CreatureDrawVocals;
@@ -237,20 +223,13 @@ namespace libMBIN.NMS.Globals
         /* 0x0E6A */ public bool DebugIBL;
         /* 0x0E6B */ public bool DebugTerrainTextures;
         /* 0x0E6C */ public bool DisableShadowSwitching;
-        [NMS(Size = 0x80)]
-        /* 0x0E6D */ public string PipelineFile;
-        [NMS(Size = 0x80)]
-        /* 0x0EED */ public string PipelineFilePS4;
-        [NMS(Size = 0x80)]
-        /* 0x0F6D */ public string PipelineFileXboxOne;
-        [NMS(Size = 0x80)]
-        /* 0x0FED */ public string PipelineFileVR;
-        [NMS(Size = 0x80)]
-        /* 0x106D */ public string PipelineFileVRPS4;
-        [NMS(Size = 0x80)]
-        /* 0x10ED */ public string PipelineFileFrontend;
-        [NMS(Size = 0x80)]
-        /* 0x116D */ public string PipelineFileEditor;
+        /* 0x0E6D */ public NMSString0x80 PipelineFile;
+        /* 0x0EED */ public NMSString0x80 PipelineFilePS4;
+        /* 0x0F6D */ public NMSString0x80 PipelineFileXboxOne;
+        /* 0x0FED */ public NMSString0x80 PipelineFileVR;
+        /* 0x106D */ public NMSString0x80 PipelineFileVRPS4;
+        /* 0x10ED */ public NMSString0x80 PipelineFileFrontend;
+        /* 0x116D */ public NMSString0x80 PipelineFileEditor;
         /* 0x11ED */ public bool RenderLowFramerate;
         /* 0x11EE */ public bool EnableComputePost;
         /* 0x11EF */ public bool EnableEvenOddRender;
@@ -260,15 +239,12 @@ namespace libMBIN.NMS.Globals
         /* 0x11F3 */ public bool SimulateNoNetworkConnection;
         public enum ProxyTypeEnum { None, ManualURI, InetProxy }
         /* 0x11F4 */ public ProxyTypeEnum ProxyType;
-        [NMS(Size = 0x80)]
-        /* 0x11F8 */ public string ProxyURI;
+        /* 0x11F8 */ public NMSString0x80 ProxyURI;
         public enum ServerEnvEnum { Default, dev, qa, prodqa, prod, custom, pentest }
         /* 0x1278 */ public ServerEnvEnum ServerEnv;
-        [NMS(Size = 0x80)]
-        /* 0x127C */ public string AuthBaseUrl;
+        /* 0x127C */ public NMSString0x80 AuthBaseUrl;
         /* 0x12FC */ public bool CertificateSecurityBypass;
-        [NMS(Size = 0x20)]
-        /* 0x12FD */ public string OverrideUsernameForDev;
+        /* 0x12FD */ public NMSString0x20 OverrideUsernameForDev;
         /* 0x1320 */ public int DiscoveryAutoSyncIntervalSeconds;
         /* 0x1324 */ public bool DisableSpaceStationSpawnOnJoin;
         /* 0x1325 */ public bool AutoJoinUserEnabled;
@@ -278,18 +254,15 @@ namespace libMBIN.NMS.Globals
         /* 0x1B27 */ public bool DisableMonumentDownloads;
         /* 0x1B28 */ public bool UsePadOnUnfocusedWindow;
         /* 0x1B2C */ public int OverrideMatchmakingVersion;
-        [NMS(Size = 0x200)]
-        /* 0x1B30 */ public string LoadToBase;
+        /* 0x1B30 */ public NMSString0x200 LoadToBase;
         /* 0x1D30 */ public bool IgnoreTransactionTimeouts;
         /* 0x1D31 */ public bool AutoJoinRandomGames;
-        [NMS(Size = 0x100)]
-        /* 0x1D32 */ public string GOGLogin;
+        /* 0x1D32 */ public NMSString0x100 GOGLogin;
         /* 0x1E32 */ public bool RecordNetworkStatsOnBoot;
         /* 0x1E33 */ public bool FakeHandsInMultiplayer;
         /* 0x1E34 */ public bool ForceSmallLobby;
         /* 0x1E35 */ public bool EnableSynergy;
-        [NMS(Size = 0x20)]
-        /* 0x1E36 */ public string SynergyServer;
+        /* 0x1E36 */ public NMSString0x20 SynergyServer;
         /* 0x1E58 */ public int SynergyPort;
         /* 0x1E5C */ public bool ShowEditorPlacementPreview;
         /* 0x1E60 */ public int MaxNumDebugMessages;
@@ -298,20 +271,13 @@ namespace libMBIN.NMS.Globals
         /* 0x1E6C */ public bool UseProcTextureDebugger;
         /* 0x1E70 */ public int ProceduralModelsShown;
         /* 0x1E74 */ public int ProceduralModelBatchSize;
-        [NMS(Size = 0x80)]
-        /* 0x1E78 */ public string DebugFont;
-        [NMS(Size = 0x80)]
-        /* 0x1EF8 */ public string DebugFontTexture;
-        [NMS(Size = 0x80)]
-        /* 0x1F78 */ public string CursorTexture;
-        [NMS(Size = 0x80)]
-        /* 0x1FF8 */ public string PauseTexture;
-        [NMS(Size = 0x80)]
-        /* 0x2078 */ public string PlayTexture;
-        [NMS(Size = 0x80)]
-        /* 0x20F8 */ public string StepTexture;
-        [NMS(Size = 0x80)]
-        /* 0x2178 */ public string RenderToTexture;
+        /* 0x1E78 */ public NMSString0x80 DebugFont;
+        /* 0x1EF8 */ public NMSString0x80 DebugFontTexture;
+        /* 0x1F78 */ public NMSString0x80 CursorTexture;
+        /* 0x1FF8 */ public NMSString0x80 PauseTexture;
+        /* 0x2078 */ public NMSString0x80 PlayTexture;
+        /* 0x20F8 */ public NMSString0x80 StepTexture;
+        /* 0x2178 */ public NMSString0x80 RenderToTexture;
         /* 0x21F8 */ public bool HmdEnable;
         /* 0x21FC */ public int HmdPreviewScale;
         /* 0x2200 */ public bool HmdTracking;
@@ -350,14 +316,10 @@ namespace libMBIN.NMS.Globals
         /* 0x2255 */ public bool ForceDefaultCreatureFile;
         [NMS(Size = 0x2, Ignore = true)]
         /* 0x2256 */ public byte[] Padding2256;
-        [NMS(Size = 0x10)]
-        /* 0x2258 */ public string DefaultGroundCreatureTable;
-        [NMS(Size = 0x10)]
-        /* 0x2268 */ public string DefaultAirCreatureTable;
-        [NMS(Size = 0x10)]
-        /* 0x2278 */ public string DefaultWaterCreatureTable;
-        [NMS(Size = 0x10)]
-        /* 0x2288 */ public string DefaultCaveCreatureTable;
+        /* 0x2258 */ public NMSString0x10 DefaultGroundCreatureTable;
+        /* 0x2268 */ public NMSString0x10 DefaultAirCreatureTable;
+        /* 0x2278 */ public NMSString0x10 DefaultWaterCreatureTable;
+        /* 0x2288 */ public NMSString0x10 DefaultCaveCreatureTable;
         /* 0x2298 */ public GcPlanetLife ForceCreatureLifeLevelTo;
         /* 0x229C */ public GcPlanetLife ForceTerrainSettings;
         /* 0x22A0 */ public bool ForceTerrainType;
@@ -400,8 +362,7 @@ namespace libMBIN.NMS.Globals
         /* 0x2304 */ public int MoveBaseIndex;
         /* 0x2308 */ public int AutomaticPartSpawnIndex;
         /* 0x230C */ public bool BaseAdmin;
-        [NMS(Size = 0x20)]
-        /* 0x230D */ public string BaseServerPlatform;       // "pc"
+        /* 0x230D */ public NMSString0x20 BaseServerPlatform;       // "pc"
         /* 0x2330 */ public uint BasePayloadMultiplier;
         /* 0x2334 */ public bool CrossPlatformFeaturedBases;
         /* 0x2335 */ public bool ShowMissionIdInTitle;

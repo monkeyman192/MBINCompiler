@@ -76,16 +76,11 @@ namespace libMBIN.NMS.Globals
         /* 0x118 */ public float RemoveDuplicateChatMessageTime;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x11C */ public byte[] Padding11C;
-        [NMS(Size = 0x10)]
-        /* 0x120 */ public string StandardMissionSecondReward;
-        [NMS(Size = 0x10)]
-        /* 0x130 */ public string QuicksilverMissionSecondReward;
-        [NMS(Size = 0x10)]
-        /* 0x140 */ public string EpicMissionSecondReward;
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string WeekendMissionSecondReward;
-        [NMS(Size = 0x10)]
-        /* 0x160 */ public string EpicMissionRewardOverride;
+        /* 0x120 */ public NMSString0x10 StandardMissionSecondReward;
+        /* 0x130 */ public NMSString0x10 QuicksilverMissionSecondReward;
+        /* 0x140 */ public NMSString0x10 EpicMissionSecondReward;
+        /* 0x150 */ public NMSString0x10 WeekendMissionSecondReward;
+        /* 0x160 */ public NMSString0x10 EpicMissionRewardOverride;
         /* 0x170 */ public TkTextureResource EpicMissionIcon;
         /* 0x1F4 */ public TkTextureResource EpicMissionIconSelected;
         /* 0x278 */ public TkTextureResource EpicMissionIconNotSelected;

@@ -10,10 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x160 */ public GcInventoryLayout WeaponLayout;
         /* 0x180 */ public GcExactResource WeaponResource;
         /* 0x210 */ public GcWeaponClasses WeaponType;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x214 */ public byte[] Padding214;
-        [NMS(Size = 0x20)]
-        /* 0x218 */ public string NameOverride;
+        /* 0x218 */ public NMSString0x20A NameOverride;
         /* 0x238 */ public bool IsGift;
         /* 0x239 */ public bool IsRewardWeapon;
         /* 0x23A */ public bool FormatAsSeasonal;

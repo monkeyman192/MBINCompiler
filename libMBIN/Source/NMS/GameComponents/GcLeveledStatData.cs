@@ -6,18 +6,14 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x528, GUID = 0x7028D9A0A4FD3F8, NameHash = 0x987EE8E8873AED6B)]
     public class GcLeveledStatData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string StatId;
-        [NMS(Size = 0x20)]
-        /* 0x010 */ public string StatTitle;
+        /* 0x000 */ public NMSString0x10 StatId;
+        /* 0x010 */ public NMSString0x20 StatTitle;
 		public enum StatMessageTypeEnum { Full, Quick, Silent }
 		public StatMessageTypeEnum StatMessageType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x034 */ public byte[] Padding34;
-        [NMS(Size = 0x20)]
-        /* 0x038 */ public string NotifyMessage;
-        [NMS(Size = 0x20)]
-        /* 0x058 */ public string NotifyMessageSingular;
+        /* 0x038 */ public NMSString0x20 NotifyMessage;
+        /* 0x058 */ public NMSString0x20 NotifyMessageSingular;
 
         /* 0x078 */ public bool ShowInTerminal;
         /* 0x079 */ public bool ShowStatLevel;

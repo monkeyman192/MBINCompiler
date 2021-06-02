@@ -8,12 +8,9 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x390, GUID = 0x374D52E5F2CE0419, NameHash = 0xCC070D1A8B81739E)]
     public class GcCreatureSpawnComponentData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string TriggerID;
-        [NMS(Size = 0x80)]
-        /* 0x010 */ public string Model;
-        [NMS(Size = 0x10)]
-        /* 0x090 */ public string Creature;
+        /* 0x000 */ public NMSString0x10 TriggerID;
+        /* 0x010 */ public NMSString0x80 Model;
+        /* 0x090 */ public NMSString0x10 Creature;
 
         /* 0x0A0 */ public GcCreatureTypes CreatureType;
         /* 0x0A4 */ public GcAISpaceshipTypes ShipAIOverride;

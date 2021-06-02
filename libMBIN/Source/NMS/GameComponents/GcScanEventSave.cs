@@ -9,15 +9,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public int Table;
         [NMS(Size = 4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string Event;
+        /* 0x08 */ public NMSString0x20 Event;
         /* 0x28 */ public ulong GalacticAddress;
         /* 0x30 */ public GcSeed BuildingSeed;
         /* 0x40 */ public Vector3f BuildingLocation;
         /* 0x50 */ public GcBuildingClassification BuildingClass;
         /* 0x54 */ public float Time;
-        [NMS(Size = 0x10)]
-        /* 0x58 */ public string MissionID;
+        /* 0x58 */ public NMSString0x10 MissionID;
         /* 0x68 */ public ulong MissionSeed;
         /* 0x70 */ public GcPlayerMissionParticipantType ParticipantType;
         [NMS(Size = 0xC, Ignore = true)]

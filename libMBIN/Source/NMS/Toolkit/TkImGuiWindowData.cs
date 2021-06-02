@@ -6,8 +6,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0xA8, GUID = 0x159F70DC858BFEB9, NameHash = 0x431A784D584CBE50)]
     public class TkImGuiWindowData : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        public string Type;
+        public NMSString0x80 Type;
 
         public int WindowX;
         public int WindowY;

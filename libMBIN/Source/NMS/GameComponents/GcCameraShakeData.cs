@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0xC0, GUID = 0x2BDD0C90F80F5BE7, NameHash = 0x381A76E400DE3EE7)]
     public class GcCameraShakeData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Name;
+        /* 0x00 */ public NMSString0x10 Name;
 
         /* 0x10 */ public float TimeStart;
         /* 0x14 */ public float TotalTime;

@@ -9,23 +9,18 @@ namespace libMBIN.NMS.GameComponents
     public class GcProductData : NMSTemplate
     {
         [NMSDescription("Internal item name. This is the ID that will be used to refer to this product in other files (eg. rewardtable)")]
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Id;
+        /* 0x000 */ public NMSString0x10 Id;
         [NMSDescription("Uppercase item real name. This name is referenced in each language file for translation")]
-        [NMS(Size = 0x80)]
-        /* 0x010 */ public string Name;
+        /* 0x010 */ public NMSString0x80 Name;
         [NMSDescription("Lowercase item real name. This name is referenced in each language file for translation")]
-        [NMS(Size = 0x80)]
-        /* 0x090 */ public string NameLower;
+        /* 0x090 */ public NMSString0x80 NameLower;
         [NMSDescription("Item subtitle. This string is referenced in each language file for translation")]
         /* 0x110 */ public VariableSizeString Subtitle;
         [NMSDescription("Item description. This string is referenced in each language file for translation")]
         /* 0x120 */ public VariableSizeString Description;
-        [NMS(Size = 0x20)]
-        /* 0x130 */ public string Hint;
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string GroupID;
-        /* 0x160 */ public TkTextureResource DebrisFile;
+        /* 0x130 */ public NMSString0x20A Hint;
+        /* 0x150 */ public NMSString0x10 GroupID;
+        /* 0x160 */ public TkModelResource DebrisFile;
         [NMSDescription("Base item value in units")]
         /* 0x1E4 */ public int BaseValue;
         /* 0x1E8 */ public int Level;
@@ -57,24 +52,20 @@ namespace libMBIN.NMS.GameComponents
         /* 0x384 */ public bool IsCraftable;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x385 */ public byte[] Padding385;
-        [NMS(Size = 0x10)]
-        /* 0x388 */ public string DeploysInto;
+        /* 0x388 */ public NMSString0x10 DeploysInto;
         /* 0x398 */ public float EconomyInfluenceMultiplier;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x39C */ public byte[] Padding39C;
         [NMSDescription("Notification when this substance has to be crafted. This string is referenced in each language file for translation")]
-        [NMS(Size = 0x20)]
-        /* 0x3A0 */ public string PinObjective;
+        /* 0x3A0 */ public NMSString0x20 PinObjective;
         [NMSDescription("Notification hints to collect this item. This string is referenced in each language file for translation")]
-        [NMS(Size = 0x20)]
-        /* 0x3C0 */ public string PinObjeectiveTip;
+        /* 0x3C0 */ public NMSString0x20 PinObjeectiveTip;
         /* 0x3E0 */ public bool CookingIngredient;
         /* 0x3E4 */ public float CookingValue;
         /* 0x3E8 */ public bool GoodForSelling;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x3E9 */ public byte[] Padding3E9;
-        [NMS(Size = 0x10)]
-        /* 0x3F0 */ public string GiveRewardOnSpecialPurchase;
+        /* 0x3F0 */ public NMSString0x10 GiveRewardOnSpecialPurchase;
         /* 0x400 */ public bool EggModifierIngredient;
         [NMS(Size = 0xF, Ignore = true)]
         /* 0x401 */ public byte[] EndPadding;

@@ -8,12 +8,9 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x1C0, Alignment = 0x10, GUID = 0x940B61A1D3CEBB8E, NameHash = 0x1AA966F8BA4E3153)]
     public class GcLaserBeamData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Id;
-        [NMS(Size = 0x80)]
-        /* 0x010 */ public string BeamFile;
-        [NMS(Size = 0x80)]
-        /* 0x090 */ public string BeamCoreFile;
+        /* 0x000 */ public NMSString0x10 Id;
+        /* 0x010 */ public NMSString0x80 BeamFile;
+        /* 0x090 */ public NMSString0x80 BeamCoreFile;
         /* 0x110 */ public float Width;
         /* 0x114 */ public float HitWidth;
         /* 0x118 */ public float PulseFrequency;
@@ -27,10 +24,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x138 */ public GcDamageType DamageType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x13C */ public byte[] Padding13C;
-        [NMS(Size = 0x10)]
-        /* 0x140 */ public string PlayerDamage;
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string ImpactEffect;
+        /* 0x140 */ public NMSString0x10 PlayerDamage;
+        /* 0x150 */ public NMSString0x10 ImpactEffect;
         /* 0x160 */ public List<GcProjectileImpactData> Impacts;
         /* 0x170 */ public float HitRate;
         /* 0x174 */ public bool SingleHit;

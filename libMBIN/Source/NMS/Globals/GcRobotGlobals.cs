@@ -166,13 +166,11 @@ namespace libMBIN.NMS.Globals
         /* 0x30C */ public float WalkerGunRate;
         /* 0x310 */ public float WalkerTitanFallHeight;
         /* 0x314 */ public float WalkerTitanFallSpeed;
-        [NMS(Size = 0x10)]
-        /* 0x318 */ public string WalkerTitanFallEffect;
+        /* 0x318 */ public NMSString0x10 WalkerTitanFallEffect;
         /* 0x328 */ public float WalkerTitanFallEffectScale;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x32C */ public byte[] Padding32C;
-        [NMS(Size = 0x10)]
-        /* 0x330 */ public string WalkerTitanFallShake;
+        /* 0x330 */ public NMSString0x10 WalkerTitanFallShake;
         /* 0x340 */ public float QuadAlertRange;
         /* 0x344 */ public float QuadAttackRange;
         /* 0x348 */ public float QuadAttackMinRange;

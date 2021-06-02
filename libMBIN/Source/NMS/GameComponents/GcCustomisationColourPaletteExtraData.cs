@@ -9,6 +9,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationColourPaletteExtraData : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x10> ProductToUnlock;
-        /* 0x10 */ public List<NMSString0x20> TipText;
+        /* 0x10 */ public List<NMSString0x20A> TipText;
     }
 }

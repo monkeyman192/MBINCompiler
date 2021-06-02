@@ -39,16 +39,11 @@ namespace libMBIN.NMS.GameComponents
 
         /* 0x194 */ public GcBroadcastLevel BroadcastLevel;
 
-        [NMS(Size = 0x20)]
-        /* 0x198 */ public string Title;
-        [NMS(Size = 0x20)]
-        /* 0x1B8 */ public string Description;
-        [NMS(Size = 0x20)]
-        /* 0x1D8 */ public string ActionButtonOverride;
-        [NMS(Size = 0x20)]
-        /* 0x1F8 */ public string ActionDescriptionOverride;
-        [NMS(Size = 0x20)]
-        /* 0x218 */ public string ActionWarningOverride;
+        /* 0x198 */ public NMSString0x20 Title;
+        /* 0x1B8 */ public NMSString0x20 Description;
+        /* 0x1D8 */ public NMSString0x20 ActionButtonOverride;
+        /* 0x1F8 */ public NMSString0x20 ActionDescriptionOverride;
+        /* 0x218 */ public NMSString0x20 ActionWarningOverride;
         /* 0x238 */ public float InWorldUIScaler;
         /* 0x23C */ public bool InteractionRequiresPower;
         [NMS(Size = 0x3, Ignore = true)]

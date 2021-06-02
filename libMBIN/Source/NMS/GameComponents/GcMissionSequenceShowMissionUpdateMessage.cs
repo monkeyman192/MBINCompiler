@@ -10,14 +10,12 @@ namespace libMBIN.NMS.GameComponents
 		/* 0x00 */ public MissionUpdateMessageEnum MissionUpdateMessage;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string CustomMessageLocID;
+        /* 0x08 */ public NMSString0x20 CustomMessageLocID;
         /* 0x28 */ public bool SetMissionSelected;
         /* 0x29 */ public bool WaitForMessageOver;
         /* 0x2A */ public bool ShowChangeMissionNotify;
 		public enum PlayMusicStingEnum { None, Start, End }
 		/* 0x2C */ public PlayMusicStingEnum PlayMusicSting;
-        [NMS(Size = 0x80)]
-        /* 0x30 */ public string DebugText;
+        /* 0x30 */ public NMSString0x80 DebugText;
     }
 }

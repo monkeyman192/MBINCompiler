@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x60, GUID = 0xA681CB4CFB4D2B6B, NameHash = 0x88C0028CC5F47D1D)]
     public class GcSpaceshipTravelData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public float MinSpeed;
         /* 0x14 */ public float MaxSpeed;
         /* 0x18 */ public float BoostSpeed;

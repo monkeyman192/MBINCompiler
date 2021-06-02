@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x3B0, GUID = 0x47809F6F80D413D0, NameHash = 0x98B648B5C054B7F7)]
     public class GcProjectileData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Id;
+        /* 0x000 */ public NMSString0x10 Id;
         /* 0x010 */ public GcResourceElement Model;
         /* 0x2B8 */ public GcAudioWwiseEvents FireAudioEvent;
         /* 0x2BC */ public GcAudioWwiseEvents OverheatAudioEvent;
@@ -32,8 +31,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2FC */ public bool HitOnBounce;
         [NMS(Size = 3, Ignore = true)]
         /* 0x2FD */ public byte[] Padding2FD;
-        [NMS(Size = 0x10)]
-        /* 0x300 */ public string PlayerDamage;
+        /* 0x300 */ public NMSString0x10 PlayerDamage;
         /* 0x310 */ public bool UseCustomBulletData;
         /* 0x314 */ public GcProjectileLineData CustomBulletData;
         /* 0x33C */ public bool UseDamageNumberData;
@@ -49,10 +47,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x360 */ public BehaviourFlagsEnum BehaviourFlags;
 		public enum ClassEnum { Player, PlayerShip, Ship, Robot }
 		/* 0x364 */ public ClassEnum Class;
-        [NMS(Size = 0x10)]
-        /* 0x368 */ public string DefaultImpact;
-        [NMS(Size = 0x10)]
-        /* 0x378 */ public string CriticalImpact;
+        /* 0x368 */ public NMSString0x10 DefaultImpact;
+        /* 0x378 */ public NMSString0x10 CriticalImpact;
         /* 0x388 */ public List<GcProjectileImpactData> Impacts;
         /* 0x3A0 */ public Vector3f ImpactOffset;
     }

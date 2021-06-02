@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
 
     public class GcRewardTrigger : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string Trigger;
+        public NMSString0x10 Trigger;
     }
 }

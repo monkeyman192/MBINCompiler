@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcProceduralProductCategory Type;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string OSDMessage;
+        /* 0x08 */ public NMSString0x20A OSDMessage;
         /* 0x28 */ public bool SubIfPlayerAlreadyHasOne;
         /* 0x29 */ public bool OverrideRarity;
         /* 0x2C */ public GcRarity Rarity;

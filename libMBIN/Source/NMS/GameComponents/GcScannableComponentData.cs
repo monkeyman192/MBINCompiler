@@ -7,8 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcScannableComponentData : NMSTemplate
     {
         /* 0x00 */ public float ScanRange;
-        [NMS(Size = 0x20)]
-        /* 0x04 */ public string ScanName;
+        /* 0x04 */ public NMSString0x20 ScanName;
         /* 0x24 */ public float ScanTime;
         /* 0x28 */ public float CompassRangeMultiplier;
         /* 0x2C */ public float AlwaysShowRange;
@@ -25,12 +24,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x42 */ public bool TellPlayerIfFreighterObjectUsed;
         [NMS(Size = 0x5, Ignore = true)]
         /* 0x43 */ public byte[] Padding43;
-        [NMS(Size = 0x20)]
-        /* 0x48 */ public string FreighterObjectAlreadyUsedLocID;
+        /* 0x48 */ public NMSString0x20 FreighterObjectAlreadyUsedLocID;
         /* 0x68 */ public bool AllowedToMerge;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x69 */ public byte[] Padding69;
-        [NMS(Size = 0x10)]
-        /* 0x70 */ public string MissionSurveyId;
+        /* 0x70 */ public NMSString0x10 MissionSurveyId;
     }
 }

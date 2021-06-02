@@ -11,14 +11,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public float NearDist;
         /* 0x04 */ public float FarDist;
         /* 0x08 */ public float ModifyDistanceForHeight;
-        [NMS(Size = 0x40)]
-        /* 0x0C */ public string SpitJoint;
+        /* 0x0C */ public NMSString0x40 SpitJoint;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x4C */ public byte[] Padding4C;
-        [NMS(Size = 0x10)]
-        /* 0x50 */ public string SplitProjectile;
-        [NMS(Size = 0x40)]
-        /* 0x60 */ public string AttackLight;
+        /* 0x50 */ public NMSString0x10 SplitProjectile;
+        /* 0x60 */ public NMSString0x40 AttackLight;
         /* 0xA0 */ public float IdleLightIntensity;
         /* 0xA4 */ public float AttackLightIntensity;
         /* 0xA8 */ public int MinFlurryHits;

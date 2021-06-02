@@ -6,10 +6,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x104, GUID = 0xF54F66C4367F1536, NameHash = 0x785DA5C6069D4C12)]
     public class GcMissionSequenceGetUnits : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x000 */ public string Message;
+        /* 0x000 */ public NMSString0x80 Message;
         /* 0x080 */ public int Amount;
-        [NMS(Size = 0x80)]
-        /* 0x084 */ public string DebugText;
+        /* 0x084 */ public NMSString0x80 DebugText;
     }
 }

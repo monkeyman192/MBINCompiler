@@ -9,8 +9,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimPoseComponentData : NMSTemplate
     {
         /* 0x00 */ public List<TkAnimPoseData> PoseAnims;
-        [NMS(Size = 0x80)]
-        /* 0x10 */ public string Filename;
+        /* 0x10 */ public NMSString0x80 Filename;
         /* 0x90 */ public List<TkAnimPoseCorrelationData> Correlations;
         /* 0xA0 */ public List<TkAnimPoseExampleData> Examples;
         /* 0xB0 */ public List<float> CorrelationMat;

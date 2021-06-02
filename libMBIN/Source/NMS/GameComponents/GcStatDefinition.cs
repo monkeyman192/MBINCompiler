@@ -12,8 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x04 */ public GcStatTrackType TrackType;
         /* 0x08 */ public GcStatDisplayType DisplayType;
         /* 0x0C */ public GcStatValueData DefaultValue;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string Id;
+        /* 0x18 */ public NMSString0x10 Id;
         /* 0x28 */ public bool TelemetryUpload;
         /* 0x29 */ public bool IsProgression;
         /* 0x2C */ public int MissionMessageDecimals;

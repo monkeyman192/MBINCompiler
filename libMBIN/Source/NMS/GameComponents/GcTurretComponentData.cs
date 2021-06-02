@@ -10,16 +10,11 @@ namespace libMBIN.NMS.GameComponents
 		/* 0x00 */ public GunTypeEnum GunType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string LaserEffectId;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string LaserMuzzleFlashId;
-        [NMS(Size = 0x10)]
-        /* 0x28 */ public string ProjectileId;
-        [NMS(Size = 0x10)]
-        /* 0x38 */ public string ProjectileMuzzleFlashId;
-        [NMS(Size = 0x10)]
-        /* 0x48 */ public string MissileId;
+        /* 0x08 */ public NMSString0x10 LaserEffectId;
+        /* 0x18 */ public NMSString0x10 LaserMuzzleFlashId;
+        /* 0x28 */ public NMSString0x10 ProjectileId;
+        /* 0x38 */ public NMSString0x10 ProjectileMuzzleFlashId;
+        /* 0x48 */ public NMSString0x10 MissileId;
         /* 0x58 */ public bool HasFreighterAlertLight;
         /* 0x5C */ public float TurretRange;
         /* 0x60 */ public float TurretLaserShootTime;

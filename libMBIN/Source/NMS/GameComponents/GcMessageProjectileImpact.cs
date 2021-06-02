@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x50, GUID = 0x9C6FF0332EAD43B3, NameHash = 0x7EBC25FE326CF24B)]
     public class GcMessageProjectileImpact: NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public int Damage;
         /* 0x14 */ public GcDamageType Type;
         /* 0x18 */ public bool Critical;

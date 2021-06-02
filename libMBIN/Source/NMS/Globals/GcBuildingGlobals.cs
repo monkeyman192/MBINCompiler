@@ -166,8 +166,7 @@ namespace libMBIN.NMS.Globals
         /* 0x32C */ public float StartCrashSiteMaxDistance;
         /* 0x330 */ public float StartShelterMinDistance;
         /* 0x334 */ public float StartShelterMaxDistance;
-        [NMS(Size = 0x80)]
-        /* 0x338 */ public string FreighterBaseSpawnOverride;
+        /* 0x338 */ public NMSString0x80 FreighterBaseSpawnOverride;
         /* 0x3B8 */ public bool BaseBuildingTerrainEditBoundsOverride;
         /* 0x3BC */ public float BaseBuildingTerrainEditBaseYOffset;
         /* 0x3C0 */ public float BaseBuildingTerrainEditTopYOffset;

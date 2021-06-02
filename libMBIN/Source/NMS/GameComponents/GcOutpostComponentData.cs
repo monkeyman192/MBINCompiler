@@ -16,8 +16,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x05 */ public bool AIDestination;
         /* 0x06 */ public bool HasDoors;
         /* 0x07 */ public bool HasOwnGravity;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string Door;
+        /* 0x08 */ public NMSString0x10 Door;
         /* 0x18 */ public bool CheckLandingAreaClear;
         /* 0x1C */ public float CircleRadius;
         /* 0x20 */ public float ApproachRange;

@@ -6,8 +6,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x80, GUID = 0x7411BFD5B5031BED, NameHash = 0xB9B8ADD8C9FFC2D8)]
     public class TkShearWindData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Name;
+        /* 0x00 */ public NMSString0x10 Name;
         /* 0x10 */ public float OverallWindStrength;
         /* 0x14 */ public float LdsWindStrength;
         /* 0x18 */ public float LdsWindSpeed;

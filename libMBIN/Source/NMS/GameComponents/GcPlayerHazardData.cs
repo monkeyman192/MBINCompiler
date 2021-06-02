@@ -22,8 +22,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 4, Ignore = true)]
         public byte[] Padding24;
         [NMSDescription("Type of damages if protection falls to 0")]
-        [NMS(Size = 0x10)]
-        public string Damage;
+        public NMSString0x10 Damage;
         public bool Increases;
         public TkCurveType Curve;
         [NMSDescription("Under this value, depletion rate is described by *ProtectionTime.x*")]

@@ -10,15 +10,9 @@ namespace libMBIN.NMS.GameComponents
     {
         public enum MultiItemRewardTypeEnum { Product, Substance, ProcTech, ProcProduct, InventorySlot }
         /* 0x00 */ public MultiItemRewardTypeEnum MultiItemRewardType;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string Id;
+        /* 0x08 */ public NMSString0x10 Id;
         /* 0x18 */ public int Amount;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1C */ public byte[] Padding1C;
-        [NMS(Size = 0x20)]
-        /* 0x20 */ public string ProcTechGroup;
+        /* 0x20 */ public NMSString0x20A ProcTechGroup;
         /* 0x40 */ public int ProcTechQuality;
         /* 0x44 */ public GcProceduralProductCategory ProcProdType;
         /* 0x48 */ public GcRarity ProcProdRarity;

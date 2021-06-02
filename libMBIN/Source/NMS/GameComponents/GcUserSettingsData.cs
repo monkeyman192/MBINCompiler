@@ -35,8 +35,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3890 */ public List<NMSString0x10> SeenSubstances;
         /* 0x38A0 */ public List<NMSString0x10> SeenTechnologies;
         /* 0x38B0 */ public List<NMSString0x10> SeenProducts;
-        /* 0x38C0 */ public List<NMSString0x20> SeenWikiTopics;
-        /* 0x38D0 */ public List<NMSString0x20> UnlockedWikiTopics;
+        /* 0x38C0 */ public List<NMSString0x20A> SeenWikiTopics;
+        /* 0x38D0 */ public List<NMSString0x20A> UnlockedWikiTopics;
         /* 0x38E0 */ public List<NMSString0x10> UnlockedTitles;
         /* 0x38F0 */ public List<NMSString0x10> UnlockedSeasonRewards;
         /* 0x3900 */ public List<NMSString0x10> UnlockedTwitchRewards;

@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x3B0, GUID = 0x143DC5BFD62FF1E9, NameHash = 0x43EBB2E6AFAC5863)]
     public class GcObjectSpawnData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string DebugName;
+        /* 0x000 */ public NMSString0x10 DebugName;
 		public enum TypeEnum { Instanced, Single }
 		/* 0x010 */ public TypeEnum Type;
         [NMS(Size = 4, Ignore = true)]
@@ -17,8 +16,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x018 */ public GcResourceElement Resource;
         /* 0x2C0 */ public List<GcResourceElement> AltResources;
         /* 0x2D0 */ public List<GcTerrainTileType> ExtraTileTypes;
-        [NMS(Size = 0x10)]
-        /* 0x2E0 */ public string Placement;
+        /* 0x2E0 */ public NMSString0x10 Placement;
         /* 0x2F0 */ public GcSeed PlacementSeed;
 		public enum PlacementPriorityEnum { Low, Normal, High }
 		/* 0x300 */ public PlacementPriorityEnum PlacementPriority;
@@ -70,7 +68,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x398 */ public float ShearWindStrength;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x39C */ public byte[] Padding39C;
-        [NMS(Size = 0x10)]
-        /* 0x3A0 */ public string DestroyedByVehicleEffect;
+        /* 0x3A0 */ public NMSString0x10 DestroyedByVehicleEffect;
     }
 }

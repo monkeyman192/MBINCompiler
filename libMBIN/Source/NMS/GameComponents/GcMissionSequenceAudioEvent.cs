@@ -7,7 +7,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceAudioEvent : NMSTemplate
     {
         public GcAudioWwiseEvents AudioEvent;
-        [NMS(Size = 0x80)]
-        public string DebugText;
+        public NMSString0x80 DebugText;
     }
 }

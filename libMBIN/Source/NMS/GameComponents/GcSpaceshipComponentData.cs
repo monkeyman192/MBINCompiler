@@ -7,8 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpaceshipComponentData : NMSTemplate
     {
         /* 0x00 */ public GcSpaceshipClasses ShipClass;
-        [NMS(Size = 0x80)]
-        /* 0x04 */ public string Cockpit;
+        /* 0x04 */ public NMSString0x80 Cockpit;
         /* 0x84 */ public float MaxHeadTurn;
         /* 0x88 */ public float MaxHeadPitchUp;
         /* 0x8C */ public float MaxHeadPitchDown;

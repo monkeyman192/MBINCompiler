@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x30, GUID = 0x900EB9C7527F9E30, NameHash = 0xA1B202DE9A10A705)]
     public class GcPlayerExperienceSpawnTable : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Event;
+        /* 0x00 */ public NMSString0x10 Event;
         public enum ExperienceSpawnTypeEnum { Freighter, Mission };
         /* 0x10 */ public ExperienceSpawnTypeEnum ExperienceSpawnType;
         /* 0x14 */ public float ResponseRate;

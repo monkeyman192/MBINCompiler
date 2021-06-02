@@ -8,25 +8,18 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0xC8, GUID = 0xDCDFAF5EBCC7DF34, NameHash = 0xA12AC584067DF8E0)]
     public class GcNPCPlacementInfo : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string PlacementRuleId;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string SpawnUnderNodeName;
-        [NMS(Size = 0x20)]
-        /* 0x30 */ public string PlacementNodeName;
+        /* 0x00 */ public NMSString0x10 PlacementRuleId;
+        /* 0x10 */ public NMSString0x20 SpawnUnderNodeName;
+        /* 0x30 */ public NMSString0x20 PlacementNodeName;
         /* 0x50 */ public bool MustPlace;
         /* 0x54 */ public float SpawnChance;
         /* 0x58 */ public float FractionOfNodesActive;
         /* 0x5C */ public int MaxNodesActivated;
-        [NMS(Size = 0x10)]
-        /* 0x60 */ public string SpawnSpecific;
+        /* 0x60 */ public NMSString0x10 SpawnSpecific;
         /* 0x70 */ public GcAlienRace Race;
         /* 0x74 */ public GcInteractionType InteractionOverride;
         /* 0x78 */ public GcTechnologyCategory TechShopCategory;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x7C */ public byte[] Padding7C;
-        [NMS(Size = 0x20)]
-        /* 0x80 */ public string ForceInteraction;
+        /* 0x80 */ public NMSString0x20A ForceInteraction;
         /* 0xA0 */ public List<GcAlienPuzzleMissionOverride> PuzzleMissionOverrideTable;
         /* 0xB0 */ public bool DisableInteraction;
         /* 0xB1 */ public bool UseFreighterNPC;

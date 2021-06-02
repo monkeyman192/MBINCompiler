@@ -8,11 +8,8 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x30, GUID = 0x582FB45B0B3B9CFB, NameHash = 0xE9EC3242091011CC)]
     public class GcUnlockableTwitchReward : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string TwitchId;
-        [NMS(Size = 0x10)]
-        public string ProductId;
-        [NMS(Size = 0x10)]
-        public string LinkedGroupId;
+        public NMSString0x10 TwitchId;
+        public NMSString0x10 ProductId;
+        public NMSString0x10 LinkedGroupId;
     }
 }

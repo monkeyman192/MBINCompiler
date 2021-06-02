@@ -19,8 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x50 */ public float HoverHeight;
         /* 0x54 */ public float WarpOutTime;
         /* 0x58 */ public bool Wingman;
-        [NMS(Size = 0x80)]
-        /* 0x59 */ public string SpecificModel;
+        /* 0x59 */ public NMSString0x80 SpecificModel;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0xD9 */ public byte[] PaddingD9;
         /* 0xE0 */ public GcSeed Seed;

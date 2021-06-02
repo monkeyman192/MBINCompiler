@@ -55,19 +55,16 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1A14 */ public byte[] Padding1A14;
         /* 0x1A18 */ public GcSeed DebugFlybySeed;
-        [NMS(Size = 0x10)]
-        /* 0x1A28 */ public string DebugExperienceCamShake;
+        /* 0x1A28 */ public NMSString0x10 DebugExperienceCamShake;
         /* 0x1A40 */ public Vector3f DebugShipSpawnPos;
         /* 0x1A50 */ public Vector3f DebugShipSpawnFacing;
         /* 0x1A60 */ public Vector3f DebugShipSpawnUp;
-        [NMS(Size = 0x10)]
-        /* 0x1A70 */ public string PulseEncounter;
+        /* 0x1A70 */ public NMSString0x10 PulseEncounter;
         /* 0x1A80 */ public Vector3f SandwormSpawnPos;
         /* 0x1A90 */ public Vector3f DebugFrigateFlybySpawnPos;
         /* 0x1AA0 */ public float DebugFrigateFlybyRotation;
         /* 0x1AA4 */ public float DebugFrigateFlybyHeightOffset;
-        [NMS(Size = 0x10)]
-        /* 0x1AA8 */ public string NormandyReward;
+        /* 0x1AA8 */ public NMSString0x10 NormandyReward;
         /* 0x1AB8 */ public float CameraSpinTime;
         /* 0x1ABC */ public float CameraSpinRevolutions;
         /* 0x1AC0 */ public float CameraSpinVerticalOffset;

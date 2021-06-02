@@ -20,8 +20,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x50 */ public int Width;
         /* 0x54 */ public int Height;
         /* 0x58 */ public bool IsCool;
-        [NMS(Size = 0x100)]
-        /* 0x59 */ public string Name;
+        /* 0x59 */ public NMSString0x100 Name;
         /* 0x15C */ public int Version;
     }
 }

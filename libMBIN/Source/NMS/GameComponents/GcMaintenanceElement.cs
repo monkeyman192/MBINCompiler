@@ -10,8 +10,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public GcMaintenanceElementGroups ItemGroupOverride;
         /* 0x04 */ public GcInventoryType Type;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string Id;
+        /* 0x08 */ public NMSString0x10 Id;
         /* 0x18 */ public float MinRandAmount;
         /* 0x1C */ public float MaxRandAmount;
         /* 0x20 */ public int MaxCapactiy;

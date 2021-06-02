@@ -8,16 +8,13 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x510, GUID = 0x7CA24430493DA074, NameHash = 0xF75874C269CFFEA3)]
     public class GcSceneSettings : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x000 */ public string NextSettingFile;
+        /* 0x000 */ public NMSString0x80 NextSettingFile;
 
-        [NMS(Size = 0x80)]
-        /* 0x080 */ public string SceneFile;
+        /* 0x080 */ public NMSString0x80 SceneFile;
 
         /* 0x100 */ public List<NMSString0x80> PlanetSceneFiles;
 
-        [NMS(Size = 0x80)]
-        /* 0x110 */ public string SolarSystemFile;
+        /* 0x110 */ public NMSString0x80 SolarSystemFile;
 
         [NMS(Size = 0x5)]
         /* 0x190 */ public NMSString0x80[] PlanetFiles;
@@ -34,7 +31,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4E0 */ public List<NMSTemplate> Events;
         /* 0x4F0 */ public List<NMSTemplate> PostWarpEvents;
 
-        [NMS(Size = 0x10)]
-        /* 0x500 */ public string SpawnerOptionId;
+        /* 0x500 */ public NMSString0x10 SpawnerOptionId;
     }
 }

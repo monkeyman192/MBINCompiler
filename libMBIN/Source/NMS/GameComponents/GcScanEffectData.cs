@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x50, Alignment = 0x10, GUID = 0x14E69D97BE09FE17, NameHash = 0xCB9E3018E759F166)]
     public class GcScanEffectData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
 		public enum ScanEffectTypeEnum { Building, TargetShip, Creature, Ground, Objects }
 		/* 0x10 */ public ScanEffectTypeEnum ScanEffectType;
 		[NMS(Size = 0xC, Ignore = true)]

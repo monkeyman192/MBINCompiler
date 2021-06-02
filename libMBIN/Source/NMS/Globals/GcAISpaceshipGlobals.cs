@@ -112,10 +112,8 @@ namespace libMBIN.NMS.Globals
         /* 0x450 */ public float ConeSpawnFlattenDown;
         /* 0x454 */ public bool FreighterAlertLights;
         /* 0x458 */ public float FreighterAlertLightCapitalSize;
-        [NMS(Size = 0x80)]
-        /* 0x45C */ public string LegacyHangarFilename;
-        [NMS(Size = 0x80)]
-        /* 0x4DC */ public string HangarFilename;
+        /* 0x45C */ public NMSString0x80 LegacyHangarFilename;
+        /* 0x4DC */ public NMSString0x80 HangarFilename;
         /* 0x55C */ public float PoliceFreighterWarpOutRange;
         /* 0x560 */ public float MissileRange;
         /* 0x570 */ public Colour FreighterDoorColourActive;
@@ -212,8 +210,7 @@ namespace libMBIN.NMS.Globals
         /* 0x7F8 */ public TkCurveType TrailScaleCurve;
         /* 0x7FC */ public float TradeRouteSeekOutpostRange;
         /* 0x800 */ public float TradeRouteFollowOffset;
-        [NMS(Size = 0x100)]
-        /* 0x804 */ public string TradeRouteIcon;
+        /* 0x804 */ public NMSString0x100 TradeRouteIcon;
         /* 0x904 */ public float TradeRouteSpawnDistance;
         /* 0x908 */ public float TradeRouteTrailDrawDistance;
         /* 0x90C */ public float TradeRouteTrailFadeTime;

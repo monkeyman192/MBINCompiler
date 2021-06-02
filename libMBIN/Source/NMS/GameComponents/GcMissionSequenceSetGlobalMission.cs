@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
 		public enum GlobalMissionEnum { Atlas, BlackHole, Anomaly, Explore }
 		public GlobalMissionEnum GlobalMission;
-        [NMS(Size = 0x80)]
-        /* 0x090 */ public string DebugText;
+        /* 0x090 */ public NMSString0x80 DebugText;
     }
 }

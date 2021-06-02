@@ -15,16 +15,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0D */ public bool IsGuildShopMission;
         /* 0x0E */ public bool IsPlanetProcMission;
         /* 0x0F */ public bool IsMultiplayerEventMission;
-        [NMS(Size = 0x10)]
-        /* 0x10 */ public string RewardPenaltyOnAbandon;
+        /* 0x10 */ public NMSString0x10 RewardPenaltyOnAbandon;
         /* 0x20 */ public List<GcMissionFaction> Faction;
         /* 0x30 */ public int Weighting;
         /* 0x34 */ public bool IgnoreCalculatedObjective;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x35 */ public byte[] Padding35;
-        [NMS(Size = 0x20)]
-        /* 0x38 */ public string MultiplayerMissionInitialWarpScanEvent;
-        /* 0x58 */ public List<NMSString0x20> DefaultItemInitialWarpScanEvents;
+        /* 0x38 */ public NMSString0x20A MultiplayerMissionInitialWarpScanEvent;
+        /* 0x58 */ public List<NMSString0x20A> DefaultItemInitialWarpScanEvents;
         public enum DefaultItemTypeForInitialWarpEnum { None, PrimaryProduct, PrimarySubstance, SecondaryProduct, SecondarySubstance }
         /* 0x68 */ public DefaultItemTypeForInitialWarpEnum DefaultItemTypeForInitialWarp;
         [NMS(Size = 0x4, Ignore = true)]

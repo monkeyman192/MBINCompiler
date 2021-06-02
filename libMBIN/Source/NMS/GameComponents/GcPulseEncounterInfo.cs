@@ -6,12 +6,9 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x198, GUID = 0x481358C9DD885704, NameHash = 0x657592AF71342449)]
     public class GcPulseEncounterInfo : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Id;
-        [NMS(Size = 0x20)]
-        /* 0x010 */ public string MarkerLabel;
-        [NMS(Size = 0x20)]
-        /* 0x030 */ public string ChatMessageName;
+        /* 0x000 */ public NMSString0x10 Id;
+        /* 0x010 */ public NMSString0x20 MarkerLabel;
+        /* 0x030 */ public NMSString0x20 ChatMessageName;
         /* 0x050 */ public TkTextureResource MarkerIcon;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0D4 */ public byte[] PaddingD4;

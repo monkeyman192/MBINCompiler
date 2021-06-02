@@ -9,7 +9,6 @@ namespace libMBIN.NMS.GameComponents
         public GcTechnologyCategory Category;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        public string RewardGroup;
+        public NMSString0x10 RewardGroup;
     }
 }

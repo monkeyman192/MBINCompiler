@@ -8,8 +8,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x4C0, Alignment = 0x10, GUID = 0x10851B0614A48EAB, NameHash = 0xE39CB7AA4D818260)]
     public class TkMaterialMetaData : NMSTemplate {
 
-        [NMS(Size = 0x80)]
-        /* 0x000 */ public string ExternalMaterial;
+        /* 0x000 */ public NMSString0x80 ExternalMaterial;
 		public enum ShaderEnum { UberShader, Sky, Screen, UberHack, UIScreen, ShaderMillParticle, ShaderMillUber }
 		/* 0x080 */ public ShaderEnum Shader;
         /* 0x084 */ public bool Transparent;
@@ -28,16 +27,11 @@ namespace libMBIN.NMS.Toolkit
         /* 0x09A */ public bool MetallicMask;
         /* 0x09B */ public bool SubsurfaceMask;
         /* 0x09C */ public bool RefractionMap;
-        [NMS(Size = 0x80)]
-        /* 0x09D */ public string ForceDiffuse;
-        [NMS(Size = 0x80)]
-        /* 0x11D */ public string ForceNormal;
-        [NMS(Size = 0x80)]
-        /* 0x19D */ public string ForceMask;
-        [NMS(Size = 0x80)]
-        /* 0x21D */ public string DetailDiffuse;
-        [NMS(Size = 0x80)]
-        /* 0x29D */ public string DetailNormal;
+        /* 0x09D */ public NMSString0x80 ForceDiffuse;
+        /* 0x11D */ public NMSString0x80 ForceNormal;
+        /* 0x19D */ public NMSString0x80 ForceMask;
+        /* 0x21D */ public NMSString0x80 DetailDiffuse;
+        /* 0x29D */ public NMSString0x80 DetailNormal;
         /* 0x320 */ public float DetailTiling;
         /* 0x324 */ public float MultiplyDetailTiling;
         /* 0x328 */ public int DetailImages;
@@ -78,8 +72,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x36B */ public bool DisableAmbient;
         /* 0x36C */ public bool DisablePostProcess;
         /* 0x36D */ public bool WarpedDiffuseLighting;
-        [NMS(Size = 0x20)]
-        /* 0x36E */ public string MaterialClass;
+        /* 0x36E */ public NMSString0x20 MaterialClass;
         /* 0x38E */ public bool AnisotropicFilter;
         /* 0x390 */ public float TessellationHeight;
         /* 0x394 */ public float ShellsHeight;

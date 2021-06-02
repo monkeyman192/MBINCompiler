@@ -10,10 +10,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public int AmountMin;
         /* 0x04 */ public int AmountMax;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string Specific;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string SpecificSecondary;
+        /* 0x08 */ public NMSString0x10 Specific;
+        /* 0x18 */ public NMSString0x10 SpecificSecondary;
         /* 0x28 */ public GcRealitySubstanceCategory Category;
         /* 0x2C */ public GcRarity Rarity;
     }

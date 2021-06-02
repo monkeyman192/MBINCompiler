@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public Colour PrimaryColour;
         public Colour SecondaryColour;
-        [NMS(Size = 0x20)]
-        public string Name;
+        public NMSString0x20 Name;
     }
 }

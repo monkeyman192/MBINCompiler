@@ -55,8 +55,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0F0 */ public int RareAsteroidMaxResources;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0F4 */ public byte[] PaddingF4;
-        [NMS(Size = 0x10)]
-        /* 0x0F8 */ public string RareAsteroidResource;
+        /* 0x0F8 */ public NMSString0x10 RareAsteroidResource;
         /* 0x108 */ public int RareAsteroidHealth;
         /* 0x10C */ public float CommonAsteroidScale;
         /* 0x110 */ public int CommonAsteroidMinResources;
@@ -64,18 +63,12 @@ namespace libMBIN.NMS.Globals
         /* 0x118 */ public int CommonAsteroidResourceFuelMultiplier;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x11C */ public byte[] Padding11C;
-        [NMS(Size = 0x10)]
-        /* 0x120 */ public string CommonAsteroidResourceFuel;
-        [NMS(Size = 0x10)]
-        /* 0x130 */ public string RareAsteroidResourceFuel;     // GEODE_SPACE
-        [NMS(Size = 0x10)]
-        /* 0x140 */ public string CommonAsteroidResourceProduct;     // GEODE_ASTEROID
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string CommonAsteroidResourceMain;
-        [NMS(Size = 0x10)]
-        /* 0x160 */ public string CommonAsteroidResourceSecondary;
-        [NMS(Size = 0x10)]
-        /* 0x170 */ public string RareAsteroidDataProduct;
+        /* 0x120 */ public NMSString0x10 CommonAsteroidResourceFuel;
+        /* 0x130 */ public NMSString0x10 RareAsteroidResourceFuel;     // GEODE_SPACE
+        /* 0x140 */ public NMSString0x10 CommonAsteroidResourceProduct;     // GEODE_ASTEROID
+        /* 0x150 */ public NMSString0x10 CommonAsteroidResourceMain;
+        /* 0x160 */ public NMSString0x10 CommonAsteroidResourceSecondary;
+        /* 0x170 */ public NMSString0x10 RareAsteroidDataProduct;
         /* 0x180 */ public float CommonAsteroidResourceFuelOdds;
         /* 0x184 */ public float RareAsteroidResourceFuelOdds;
         /* 0x188 */ public float CommonAsteroidResourceProductOdds;

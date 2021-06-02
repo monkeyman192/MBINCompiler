@@ -6,12 +6,9 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x121, GUID = 0x417C3F79FC136943, NameHash = 0x416E9E84AB204114)]
     public class GcMissionSequenceWaitForPortalWarp : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x000 */ public string Message;
-        [NMS(Size = 0x80)]
-        /* 0x080 */ public string DebugText;
+        /* 0x000 */ public NMSString0x80 Message;
+        /* 0x080 */ public NMSString0x80 DebugText;
         /* 0x100 */ public bool WarpToSpace;
-        [NMS(Size = 0x20)]
-        /* 0x101 */ public string OverrideUA;
+        /* 0x101 */ public NMSString0x20 OverrideUA;
     }
 }

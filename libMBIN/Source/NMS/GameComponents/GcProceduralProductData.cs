@@ -16,8 +16,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
         /* 0x450 */ public GcProductProceduralOnlyData[] ProceduralData;
         /* 0x828 */ public GcBiomeList PerBiomeDropWeights;
-        [NMS(Size = 0x20)]
-        /* 0x8A8 */ public string DeployableProductID;
+        /* 0x8A8 */ public NMSString0x20 DeployableProductID;
         /* 0x8C8 */ public bool RecordsStat;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x8C9 */ public byte[] EndPadding;

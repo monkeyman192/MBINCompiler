@@ -20,11 +20,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5C */ public float RadiusMinimum;
         /* 0x60 */ public float RadiusBaseOffset;
         /* 0x64 */ public float RadiusEdge;
-        [NMS(Size = 0x80)]
-        /* 0x68 */ public string Icon;
+        /* 0x68 */ public NMSString0x80 Icon;
         /* 0xE8 */ public Vector2f IconSize;
-        [NMS(Size = 0x20)]
-        /* 0xF0 */ public string MarkerLabel;
+        /* 0xF0 */ public NMSString0x20 MarkerLabel;
         /* 0x110 */ public Vector2f TimeScaleRange;
 
         [NMS(Size = 0x8, Ignore = true)]

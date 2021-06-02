@@ -17,20 +17,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x040 */ public GcTerrainControls Terrain;
         /* 0x0B8 */ public GcBiomeType Biome;
         /* 0x0BC */ public GcBiomeSubType BiomeSubType;
-        [NMS(Size = 0x80)]
-        /* 0x0C0 */ public string TerrainFile;
-        [NMS(Size = 0x80)]
-        /* 0x140 */ public string CreatureLandFile;
-        [NMS(Size = 0x80)]
-        /* 0x1C0 */ public string CreatureCaveFile;
-        [NMS(Size = 0x80)]
-        /* 0x240 */ public string CreatureWaterFile;
-        [NMS(Size = 0x80)]
-        /* 0x2C0 */ public string CreatureExtraWaterFile;
-        [NMS(Size = 0x80)]
-        /* 0x340 */ public string CreatureAirFile;
-        [NMS(Size = 0x80)]
-        /* 0x3C0 */ public string CreatureRobotFile;
+        /* 0x0C0 */ public NMSString0x80 TerrainFile;
+        /* 0x140 */ public NMSString0x80 CreatureLandFile;
+        /* 0x1C0 */ public NMSString0x80 CreatureCaveFile;
+        /* 0x240 */ public NMSString0x80 CreatureWaterFile;
+        /* 0x2C0 */ public NMSString0x80 CreatureExtraWaterFile;
+        /* 0x340 */ public NMSString0x80 CreatureAirFile;
+        /* 0x3C0 */ public NMSString0x80 CreatureRobotFile;
         /* 0x440 */ public List<GcExternalObjectListOptions> ExternalObjectLists;
         /* 0x450 */ public List<int> ExternalObjectListIndices;
         /* 0x460 */ public bool Prime;

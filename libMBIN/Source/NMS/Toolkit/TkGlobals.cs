@@ -19,10 +19,8 @@ namespace libMBIN.NMS.Toolkit
             Alt = 0x20, AltWarn = 0x40, AltError = 0x80
         }
         /* 0x008 */ public EnabledChannelsEnum EnabledChannels;
-        [NMS(Size = 0x100)]
-        /* 0x00C */ public string IncludeLogFilter;
-        [NMS(Size = 0x100)]
-        /* 0x10C */ public string ExcludeLogFilter;
+        /* 0x00C */ public NMSString0x100 IncludeLogFilter;
+        /* 0x10C */ public NMSString0x100 ExcludeLogFilter;
         /* 0x20C */ public int LoadBalanceTimeoutMS;
         /* 0x210 */ public int VRLoadBalanceTimeoutMS;
         /* 0x214 */ public bool LogInputSetup;

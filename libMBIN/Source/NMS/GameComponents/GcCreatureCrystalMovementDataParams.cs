@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureCrystalMovementDataParams : NMSTemplate
     {
         /* 0x00 */ public List<GcBiomeSubType> ValidBiomes;
-        /* 0x10 */ public List<NMSString0x20> ValidDescriptors;
+        /* 0x10 */ public List<NMSString0x20A> ValidDescriptors;
         /* 0x20 */ public int NumShards;
         /* 0x24 */ public bool UseTerrainAngle;
         /* 0x25 */ public bool ScaleOnAppear;
@@ -36,10 +36,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x78 */ public float WalkSpeedModifier;
         /* 0x7C */ public float RunSpeedModifier;
         /* 0x80 */ public float ParticleScale;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x84 */ public byte[] Padding84;
-        [NMS(Size = 0x10)]
-        /* 0x88 */ public string DustEffect;
+        /* 0x88 */ public NMSString0x10 DustEffect;
         /* 0x98 */ public GcAudioWwiseEvents Audio;
         /* 0x9C */ public GcAudioWwiseEvents RetractAudio;
         /* 0xA0 */ public GcAudioWwiseEvents MoveStartAudio;
@@ -50,10 +47,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0xB0 */ public DeathTypeEnum DeathType;
         public enum SubTypeEnum { Crystal, Tentacle}
         /* 0xB4 */ public SubTypeEnum SubType;
-        [NMS(Size = 0x20)]
-        /* 0xB8 */ public string TentacleStartJoint;
-        [NMS(Size = 0x20)]
-        /* 0xD8 */ public string TentacleEndJoint;
+        /* 0xB8 */ public NMSString0x20 TentacleStartJoint;
+        /* 0xD8 */ public NMSString0x20 TentacleEndJoint;
         /* 0xF8 */ public float TentacleSpeed;
         /* 0xFC */ public float TentacleChurnSpeed;
         /* 0x100 */ public float TentacleIdleLookChance;

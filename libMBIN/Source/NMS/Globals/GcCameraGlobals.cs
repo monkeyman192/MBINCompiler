@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x3650, GUID = 0x5A97F710157A2074, NameHash = 0xA826BCA4D4C3DFE3)]
+    [NMS(Size = 0x3650, GUID = 0x5F55D9DADA608A77, NameHash = 0xA826BCA4D4C3DFE3)]
     public class GcCameraGlobals : NMSTemplate
     {
         /* 0x0000 */ public TkModelRendererData FreighterCustomisationStandardCamera;
@@ -323,8 +323,7 @@ namespace libMBIN.NMS.Globals
         /* 0x2F64 */ public bool FollowDrawCamProbes;
         /* 0x2F68 */ public GcCameraAnimationData AmbientCameraAnimations;
         /* 0x2FEC */ public TkTextureResource AmbientDroneAnimations;
-        [NMS(Size = 0x80)]
-        /* 0x3070 */ public string CameraAmbientAnimationsData;
+        /* 0x3070 */ public NMSString0x80 CameraAmbientAnimationsData;
         /* 0x30F0 */ public float CameraAmbientAutoSwitchMinTime;
         /* 0x30F4 */ public float CameraAmbientAutoSwitchMaxTime;
         [NMS(Size = 0x8, Ignore = true)]

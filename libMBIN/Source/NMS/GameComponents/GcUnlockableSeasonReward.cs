@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x38, GUID = 0x2A4CED29CC453DF1, NameHash = 0xC06F148BB67FE0E2)]
     public class GcUnlockableSeasonReward : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string ID;
+        /* 0x00 */ public NMSString0x10 ID;
         /* 0x10 */ public bool MustBeUnlocked;
         /* 0x11 */ public bool UniqueInventoryItem;
         [NMS(Size = 0x6, Ignore = true)]

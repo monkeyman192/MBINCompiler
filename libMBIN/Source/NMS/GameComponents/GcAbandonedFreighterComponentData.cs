@@ -12,8 +12,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x084 */ public byte[] Padding84;
         /* 0x088 */ public List<GcFreighterDungeonChoice> DungeonOptions;
-        [NMS(Size = 0x20)]
-        /* 0x098 */ public string MarkerLabel;
+        /* 0x098 */ public NMSString0x20 MarkerLabel;
         /* 0x0B8 */ public TkTextureResource MarkerIcon;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x13C */ public byte[] EndPadding;

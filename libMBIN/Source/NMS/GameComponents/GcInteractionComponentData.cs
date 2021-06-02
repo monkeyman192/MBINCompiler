@@ -25,10 +25,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x184 */ public byte[] Padding184;
         /* 0x188 */ public GcInteractionActivationCost ActivationCost;
-        [NMS(Size = 0x10)]
-        /* 0x1C0 */ public string TriggerAction;
-        [NMS(Size = 0x10)]
-        /* 0x1D0 */ public string TriggerActionOnPrepare;
+        /* 0x1C0 */ public NMSString0x10 TriggerAction;
+        /* 0x1D0 */ public NMSString0x10 TriggerActionOnPrepare;
         /* 0x1E0 */ public bool BroadcastTriggerAction;
         /* 0x1E4 */ public float InteractAngle;
         /* 0x1E8 */ public float InteractDistance;

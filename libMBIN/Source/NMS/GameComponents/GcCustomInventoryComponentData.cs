@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x28, GUID = 0x9A9C381629097F2D, NameHash = 0xB16E966B1CE41461)]
     public class GcCustomInventoryComponentData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string Size;
+        public NMSString0x10 Size;
         public List<GcInventoryTechProbability> DesiredTechs;
 
         public bool Cool;

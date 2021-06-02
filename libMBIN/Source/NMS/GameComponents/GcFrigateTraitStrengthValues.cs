@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0xA, EnumType = typeof(GcFrigateTraitStrength.FrigateTraitStrengthEnum))]
         /* 0x00 */ public int[] StatAlteration;
-        [NMS(Size = 0x20)]
-        /* 0x28 */ public string StatLocID;
+        /* 0x28 */ public NMSString0x20 StatLocID;
         /* 0x48 */ public bool StatDisplaysPositive;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x49 */ public byte[] EndPadding;

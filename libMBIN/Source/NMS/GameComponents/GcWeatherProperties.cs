@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x7F0, GUID = 0x48FA935D54F804FC, NameHash = 0xD216CE8E772352C)]
     public class GcWeatherProperties : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Name;
+        /* 0x000 */ public NMSString0x10 Name;
         /* 0x010 */ public bool UseWeatherFog;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x011 */ public byte[] Padding11;

@@ -12,8 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public MatchNodeTypeEnum GetMatchNodeType;
         public enum MatchNameEnum { ContainsString, ExactString }
         /* 0x04 */ public MatchNameEnum MatchName;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string String;
+        /* 0x08 */ public NMSString0x20 String;
         public enum ExplodeActionEnum { RelativeToParent, DontMove, SaveCenter, RelativeToSaved }
         /* 0x28 */ public ExplodeActionEnum ExplodeAction;
         /* 0x30 */ public Vector3f AxisMultiplier;

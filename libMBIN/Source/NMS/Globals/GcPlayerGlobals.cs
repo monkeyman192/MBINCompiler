@@ -172,8 +172,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0644 */ public float TeleportMotionOffsetAmount;
         /* 0x0648 */ public float TeleportMotionOffsetUp;
         /* 0x064C */ public float TeleportTotalTime;
-        [NMS(Size = 0x80)]
-        /* 0x0650 */ public string NoShadowMaterial;
+        /* 0x0650 */ public NMSString0x80 NoShadowMaterial;
         /* 0x06D0 */ public float HolsterGrabRadius;
         /* 0x06D4 */ public float HolsterGrabFrontOffset;
         /* 0x06D8 */ public float HolsterScale;
@@ -183,11 +182,9 @@ namespace libMBIN.NMS.Globals
         /* 0x06F0 */ public Vector3f HolsterOffset;
         /* 0x0700 */ public float HeadBinocularsOffset;
         /* 0x0704 */ public float HeadBinocularsRadius;
-        [NMS(Size = 0x10)]
-        /* 0x0708 */ public string DebugSearchGroup;
+        /* 0x0708 */ public NMSString0x10 DebugSearchGroup;
         /* 0x0720 */ public Colour SearchGroupIconColour;
-        [NMS(Size = 0x80)]
-        /* 0x0730 */ public string DefaultShipFilename;
+        /* 0x0730 */ public NMSString0x80 DefaultShipFilename;
         /* 0x07B0 */ public GcSeed DefaultShipSeed;
         /* 0x07C0 */ public GcScanEffectData ArmourHighlightScanEffect;
         /* 0x0810 */ public float HitReactNoiseAmount;
@@ -462,10 +459,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0C84 */ public float CombatEscapeRadius;
         /* 0x0C88 */ public float CombatEscapeTime;
         /* 0x0C8C */ public bool UpgradeExosuitWithProduct;
-        [NMS(Size = 0x3, Ignore = true)]
-        /* 0x0C8D */ public byte[] PaddingC8D;
-        [NMS(Size = 0x10)]
-        /* 0x0C90 */ public string ExosuitUpgradeProduct;
+        /* 0x0C90 */ public NMSString0x10 ExosuitUpgradeProduct;
         /* 0x0CA0 */ public int SuitInventoryStartSeed;
         /* 0x0CA4 */ public int MaxNumShipsAttackingPlayer;
         /* 0x0CA8 */ public float ObjectScanTime;
@@ -482,10 +476,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0CD4 */ public float PirateBattleWarnTime;
         /* 0x0CD8 */ public float PirateBattleMarkerTime;
         /* 0x0CDC */ public float PirateBattleMaxTime;
-        [NMS(Size = 0x20)]
-        /* 0x0CE0 */ public string TraderHailReceiveOSDLoc;
-        [NMS(Size = 0x20)]
-        /* 0x0D00 */ public string TraderHailRefusedOSDLoc;
+        /* 0x0CE0 */ public NMSString0x20A TraderHailReceiveOSDLoc;
+        /* 0x0D00 */ public NMSString0x20A TraderHailRefusedOSDLoc;
         /* 0x0D20 */ public float TraderHailTime;
         /* 0x0D24 */ public float TraderApproachTime;
         /* 0x0D28 */ public float TraderHailDistance;
@@ -514,10 +506,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0D98 */ public float PulseEncounterMarkerAlwaysHideDistance;
         /* 0x0D9C */ public float PulseEncounterSpawnEffectDistance;
         /* 0x0DA0 */ public float PulseEncounterSpawnEffectTime;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x0DA4 */ public byte[] PaddingDA4;
-        [NMS(Size = 0x10)]
-        /* 0x0DA8 */ public string PulseEncounterSpaceEggID;
+        /* 0x0DA8 */ public NMSString0x10 PulseEncounterSpaceEggID;
         /* 0x0DB8 */ public float LaserMiningDamageMultiplier;
         /* 0x0DBC */ public float ShieldRechargeMinTimeSinceDamage;
         /* 0x0DC0 */ public float ShieldRechargeRate;
@@ -692,8 +681,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1454 */ public float ExperienceDroneSpawnAngle;
         /* 0x1458 */ public float ExperienceMessageBroadcastNearbyDistance;
         /* 0x145C */ public float WantedEnemyAttackAmount;
-        [NMS(Size = 0x80)]
-        /* 0x1460 */ public string Gun;
+        /* 0x1460 */ public NMSString0x80 Gun;
         /* 0x14E0 */ public float StickDeadZoneMin;
         /* 0x14E4 */ public float StickDeadZoneMax;
         /* 0x14E8 */ public TkCurveType StickCurve;
@@ -814,10 +802,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1748 */ public float FreeJetpackSlopeAnglePrime;
         /* 0x174C */ public float FullClipReloadSpeedMultiplier;
         /* 0x1750 */ public float ReloadTapButtonSpeedIncrease;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1754 */ public byte[] Padding1754;
-        [NMS(Size = 0x10)]
-        /* 0x1758 */ public string FootDustEffect;
+        /* 0x1758 */ public NMSString0x10 FootDustEffect;
         /* 0x1768 */ public float FootDustScale;
         /* 0x176C */ public float ClingBrakeMultiplier;
         /* 0x1770 */ public float ClingAngleThreshold;

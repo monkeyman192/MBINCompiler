@@ -8,11 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x30, GUID = 0xB71A10E23C5105BD, NameHash = 0x8A61B341C43F08CE)]
     public class GcBaseBuildingProperties : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string DefaultInBaseObject;
-        [NMS(Size = 0x10)]
-        public string DefaultOnTerrainObject;
-        [NMS(Size = 0x10)]
-        public string DefaultInFreighterObject;
+        public NMSString0x10 DefaultInBaseObject;
+        public NMSString0x10 DefaultOnTerrainObject;
+        public NMSString0x10 DefaultInFreighterObject;
     }
 }

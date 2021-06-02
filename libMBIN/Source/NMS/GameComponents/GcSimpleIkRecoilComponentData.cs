@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x120, GUID = 0x2F34AAE6D58F523F, NameHash = 0xF516885AE98E72E8)]
     public class GcSimpleIkRecoilComponentData : NMSTemplate
     {
-		[NMS(Size = 0x100)]
-        /* 0x000 */ public string EndJoint;
+		/* 0x000 */ public NMSString0x100 EndJoint;
         /* 0x100 */ public float HitReactDirectedMin;
         /* 0x104 */ public float HitReactDirectedMax;
         /* 0x108 */ public float HitReactRandomMin;

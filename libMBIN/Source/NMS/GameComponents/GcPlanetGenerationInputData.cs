@@ -9,10 +9,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcSeed Seed;
         /* 0x10 */ public GcGalaxyStarTypes Star;
         /* 0x14 */ public GcPlanetClass Class;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string CommonSubstance;
-        [NMS(Size = 0x10)]
-        /* 0x28 */ public string RareSubstance;
+        /* 0x18 */ public NMSString0x10 CommonSubstance;
+        /* 0x28 */ public NMSString0x10 RareSubstance;
         /* 0x38 */ public GcPlanetSize PlanetSize;
         /* 0x3C */ public GcBiomeType Biome;
         /* 0x40 */ public GcBiomeSubType BiomeSubType;

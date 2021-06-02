@@ -8,13 +8,10 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public bool ScanCargo;
         /* 0x04 */ public int NumSquads;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string AttackDefinition;
-        [NMS(Size = 0x20)]
-        /* 0x18 */ public string RewardMessageOverride;
+        /* 0x08 */ public NMSString0x10 AttackDefinition;
+        /* 0x18 */ public NMSString0x20 RewardMessageOverride;
         /* 0x38 */ public bool Silent;
         /* 0x3C */ public float DistanceOverride;
-        [NMS(Size = 0x80)]
-        /* 0x40 */ public string DebugText;
+        /* 0x40 */ public NMSString0x80 DebugText;
     }
 }

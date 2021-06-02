@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x6420, GUID = 0x8C639FE8E6E9A6C3, NameHash = 0x31B2A19D40422178)]
     public class GcNGuiPreset : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x0000 */ public string Font;
+        /* 0x0000 */ public NMSString0x80 Font;
         [NMS(Size = 0xA)]
         /* 0x0080 */ public GcNGuiPresetGraphic[] Layer;
         [NMS(Size = 0xA)]

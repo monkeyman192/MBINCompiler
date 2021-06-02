@@ -9,40 +9,27 @@ namespace libMBIN.NMS.GameComponents
 		public enum AgeEnum { Regular, Weird }
 		public AgeEnum Age;
 
-        [NMS(Size = 0x80)]
-        public string Gender1;
-        [NMS(Size = 0x80)]
-        public string Gender2;
-        [NMS(Size = 0x80)]
-        public string Temperament;
-        [NMS(Size = 0x80)]
-        public string Diet;
-        [NMS(Size = 0x80)]
-        public string Weight1;
-        [NMS(Size = 0x80)]
-        public string Height1;
-        [NMS(Size = 0x80)]
-        public string Weight2;
-        [NMS(Size = 0x80)]
-        public string Height2;
+        public NMSString0x80 Gender1;
+        public NMSString0x80 Gender2;
+        public NMSString0x80 Temperament;
+        public NMSString0x80 Diet;
+        public NMSString0x80 Weight1;
+        public NMSString0x80 Height1;
+        public NMSString0x80 Weight2;
+        public NMSString0x80 Height2;
 
         public float Weight1Float;
         public float Height1Float;
         public float Weight2Float;
         public float Height2Float;
 
-        [NMS(Size = 0x80)]
-        public string Notes;
+        public NMSString0x80 Notes;
 
         public GcRarity Rarity;
 
-        [NMS(Size = 0x20)]
-        public string BiomeDesc;
-        [NMS(Size = 0x20)]
-        public string TempermentDesc;
-        [NMS(Size = 0x20)]
-        public string DietDesc;
-        [NMS(Size = 0x20)]
-        public string NotesDesc;
+        public NMSString0x20 BiomeDesc;
+        public NMSString0x20 TempermentDesc;
+        public NMSString0x20 DietDesc;
+        public NMSString0x20 NotesDesc;
     }
 }

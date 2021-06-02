@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x18, GUID = 0x9BBD56EFA4E311E3, NameHash = 0xC04EFF3E2A378ED7)]
     public class GcRewardDisplayTechWindow : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string TechID;
+        public NMSString0x10 TechID;
         public bool Damaged;
         public bool NeedsInstall;
         public bool FullBox;

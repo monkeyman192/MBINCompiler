@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x9C, GUID = 0x698532BFF8C2F781, NameHash = 0xF6BC04E88CDBB164)]
     public class GcObjectDefinitionData : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x00 */ public string Filename;
+        /* 0x00 */ public NMSString0x80 Filename;
 		public enum ObjectRenderTypeEnum { Instanced, Single }
 		public ObjectRenderTypeEnum ObjectRenderType;
         /* 0x84 */ public bool AutoCollision;

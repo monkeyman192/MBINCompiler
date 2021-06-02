@@ -10,9 +10,7 @@ namespace libMBIN.NMS.GameComponents
         public float EntryTime;
         public float EntryOffset;
         public float EditTerrainRadius;
-        [NMS(Size = 0x10)]
-        public string ImpactEffect;
-        [NMS(Size = 0x10)]
-        public string FlareEffect;
+        public NMSString0x10 ImpactEffect;
+        public NMSString0x10 FlareEffect;
     }
 }

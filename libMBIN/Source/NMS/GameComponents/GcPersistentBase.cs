@@ -17,23 +17,18 @@ namespace libMBIN.NMS.GameComponents
         /* 0x038 */ public ulong LastUpdateTimestamp;
         /* 0x040 */ public List<GcPersistentBaseEntry> Objects;
 
-        [NMS(Size = 0x40)]
-        /* 0x050 */ public string RID;
+        /* 0x050 */ public NMSString0x40 RID;
         /* 0x090 */ public GcDiscoveryOwner Owner;
-        [NMS(Size = 0x40)]
-        /* 0x194 */ public string Name;
+        /* 0x194 */ public NMSString0x40 Name;
         /* 0x1D4 */ public GcPersistentBaseTypes BaseType;
-        [NMS(Size = 0x40)]
-        /* 0x1D8 */ public string LastEditedById;
-        [NMS(Size = 0x40)]
-        /* 0x218 */ public string LastEditedByUsername;
+        /* 0x1D8 */ public NMSString0x40 LastEditedById;
+        /* 0x218 */ public NMSString0x40 LastEditedByUsername;
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x258 */ public byte[] Padding0x258;
         /* 0x260 */ public Vector3f ScreenshotAt;
         /* 0x270 */ public Vector3f ScreenshotPos;
         /* 0x280 */ public GcGameMode GameMode;
-        [NMS(Size = 0x20)]
-        /* 0x284 */ public string PlatformToken;
+        /* 0x284 */ public NMSString0x20 PlatformToken;
         /* 0x2A4 */ public bool IsReported;
         /* 0x2A5 */ public bool IsFeatured;
         [NMS(Size = 0xA, Ignore = true)]

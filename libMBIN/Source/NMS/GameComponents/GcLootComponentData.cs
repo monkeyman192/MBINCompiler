@@ -7,8 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcLootComponentData : NMSTemplate
     {
         /* 0x00 */ public Vector2f Timed;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string TimeOutEffect;
+        /* 0x08 */ public NMSString0x10 TimeOutEffect;
         /* 0x18 */ public bool DeathPoint;
         /* 0x1C */ public float FlashPercent;
         /* 0x20 */ public int NumFlashes;
@@ -16,7 +15,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x25 */ public bool KeepUpright;
         [NMS(Size = 0x2, Ignore = true)]
         /* 0x26 */ public byte[] Padding26;
-        [NMS(Size = 0x10)]
-        /* 0x28 */ public string Reward;
+        /* 0x28 */ public NMSString0x10 Reward;
     }
 }

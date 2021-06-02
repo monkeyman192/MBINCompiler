@@ -9,19 +9,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialShaderMillLink : NMSTemplate
     {
         /* 0x00 */ public int InputNode;
-        [NMS(Size = 0x20)]
-        /* 0x04 */ public string InputConnect;
+        /* 0x04 */ public NMSString0x20 InputConnect;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x24 */ public byte[] Padding24;
-        [NMS(Size = 0x10)]
-        /* 0x28 */ public string InputShuffle;
+        /* 0x28 */ public NMSString0x10 InputShuffle;
         /* 0x38 */ public int OutputNode;
-        [NMS(Size = 0x20)]
-        /* 0x3C */ public string OutputConnect;
+        /* 0x3C */ public NMSString0x20 OutputConnect;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x5C */ public byte[] Padding5C;
-        [NMS(Size = 0x10)]
-        /* 0x60 */ public string OutputShuffle;
+        /* 0x60 */ public NMSString0x10 OutputShuffle;
         /* 0x70 */ public int Count;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x74 */ public byte[] EndPadding;

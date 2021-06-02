@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0xC8, GUID = 0x31F4B7FF54348572, NameHash = 0x8318BC4815036659)]
     public class GcExplosionData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public TkModelResource Model;
         /* 0x94 */ public GcAudioWwiseEvents AudioEvent;
         /* 0x98 */ public List<GcDebrisData> Debris;

@@ -9,11 +9,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetData : NMSTemplate
     {
         /* 0x000 */ public float Scale;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x004 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x008 */ public string CreatureID;
-        /* 0x018 */ public List<NMSString0x20> Descriptors;
+        /* 0x008 */ public NMSString0x10 CreatureID;
+        /* 0x018 */ public List<NMSString0x20A> Descriptors;
         /* 0x028 */ public GcSeed CreatureSeed;
         /* 0x038 */ public GcSeed CreatureSecondarySeed;
         /* 0x048 */ public ulong SpeciesSeed;
@@ -30,8 +27,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0A8 */ public ulong LastTrustDecreaseTime;
         /* 0x0B0 */ public bool EggModified;
         /* 0x0B1 */ public bool HasBeenSummoned;
-        [NMS(Size = 0x20)]
-        /* 0x0B2 */ public string CustomName;
+        /* 0x0B2 */ public NMSString0x20 CustomName;
         /* 0x0D4 */ public float Trust;
         /* 0x0D8 */ public GcDiscoveryOwner SenderData;
         [NMS(Size = 0x3, EnumType = typeof(GcCreaturePetTraits.PetTraitsEnum))]

@@ -8,23 +8,17 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x360, GUID = 0x2D72DDC037724378, NameHash = 0x9F1CE8466638E767)]
     public class GcTechnology : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string ID;
-        [NMS(Size = 0x20)]
-        /* 0x020 */ public string Group;
-        [NMS(Size = 0x80)]
-        /* 0x030 */ public string Name;
-        [NMS(Size = 0x80)]
-        /* 0x0B0 */ public string NameLower;
+        /* 0x000 */ public NMSString0x10 ID;
+        /* 0x020 */ public NMSString0x20A Group;
+        /* 0x030 */ public NMSString0x80 Name;
+        /* 0x0B0 */ public NMSString0x80 NameLower;
         /* 0x130 */ public VariableSizeString Subtitle;
         /* 0x140 */ public VariableSizeString Description;
         /* 0x150 */ public bool Teach;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x151 */ public byte[] Padding151;
-        [NMS(Size = 0x20)]
-        /* 0x158 */ public string HintStart;
-        [NMS(Size = 0x20)]
-        /* 0x178 */ public string HintEnd;
+        /* 0x158 */ public NMSString0x20A HintStart;
+        /* 0x178 */ public NMSString0x20A HintEnd;
         /* 0x198 */ public TkTextureResource Icon;
         /* 0x220 */ public Colour Colour;
         /* 0x230 */ public int Level;
@@ -35,10 +29,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x250 */ public float ChargeMultiplier;
         /* 0x254 */ public bool BuildFullyCharged;
         /* 0x255 */ public bool UsesAmmo;
-        [NMS(Size = 0x2, Ignore = true)]
-        /* 0x256 */ public byte[] Padding256;
-        [NMS(Size = 0x10)]
-        /* 0x258 */ public string AmmoId;
+        /* 0x258 */ public NMSString0x10 AmmoId;
         /* 0x268 */ public bool PrimaryItem;
         /* 0x269 */ public bool Upgrade;
         /* 0x26A */ public bool Core;
@@ -54,17 +45,12 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x294 */ public byte[] Padding294;
         /* 0x298 */ public List<GcStatsBonus> StatBonuses;
-        [NMS(Size = 0x10)]
-        /* 0x2A8 */ public string RequiredTech;
+        /* 0x2A8 */ public NMSString0x10 RequiredTech;
         /* 0x2B8 */ public int RequiredLevel;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x2BC */ public byte[] Padding2BC;
-        [NMS(Size = 0x20)]
-        /* 0x2C0 */ public string FocusLocator;
+        /* 0x2C0 */ public NMSString0x20A FocusLocator;
         /* 0x2E0 */ public Colour UpgradeColour;
         /* 0x2F0 */ public Colour LinkColour;
-        [NMS(Size = 0x10)]
-        /* 0x300 */ public string RewardGroup;
+        /* 0x300 */ public NMSString0x10 RewardGroup;
         /* 0x310 */ public int BaseValue;
         /* 0x314 */ public GcItemPriceModifiers Cost;
         /* 0x328 */ public int RequiredRank;
@@ -75,7 +61,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x339 */ public byte[] Padding339;
         /* 0x340 */ public VariableSizeString DamagedDescription;
-        [NMS(Size = 0x10)]
-        /* 0x350 */ public string ParentTechId;
+        /* 0x350 */ public NMSString0x10 ParentTechId;
     }
 }

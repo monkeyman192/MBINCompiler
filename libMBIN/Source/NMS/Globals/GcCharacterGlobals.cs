@@ -20,8 +20,7 @@ namespace libMBIN.NMS.Globals
         /* 0x02C */ public float WaterEffectRearBackOffset;
         /* 0x030 */ public float CharacterRotationOffsetY;
         /* 0x034 */ public float CharacterRoughHeadHeight;
-        [NMS(Size = 0x80)]
-        /* 0x038 */ public string CharacterFile;
+        /* 0x038 */ public NMSString0x80 CharacterFile;
         /* 0x0B8 */ public GcSeed CharacterSeedOverride;
         /* 0x0C8 */ public float DontShowCharacterWithinCameraDistance;
         /* 0x0CC */ public float CharacterTurnSpeed;
@@ -54,20 +53,13 @@ namespace libMBIN.NMS.Globals
         /* 0x138 */ public float LadderCooldownAfterBeforeAutoClimb;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x13C */ public byte[] Padding13C;
-        [NMS(Size = 0x10)]
-        /* 0x140 */ public string LadderClimbIdle;
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string LadderClimbUp;
-        [NMS(Size = 0x10)]
-        /* 0x160 */ public string LadderClimbDown;
-        [NMS(Size = 0x10)]
-        /* 0x170 */ public string LadderMountBottom;
-        [NMS(Size = 0x10)]
-        /* 0x180 */ public string LadderDismountBottom;
-        [NMS(Size = 0x10)]
-        /* 0x190 */ public string LadderMountTop;
-        [NMS(Size = 0x10)]
-        /* 0x1A0 */ public string LadderDismountTop;
+        /* 0x140 */ public NMSString0x10 LadderClimbIdle;
+        /* 0x150 */ public NMSString0x10 LadderClimbUp;
+        /* 0x160 */ public NMSString0x10 LadderClimbDown;
+        /* 0x170 */ public NMSString0x10 LadderMountBottom;
+        /* 0x180 */ public NMSString0x10 LadderDismountBottom;
+        /* 0x190 */ public NMSString0x10 LadderMountTop;
+        /* 0x1A0 */ public NMSString0x10 LadderDismountTop;
         /* 0x1B0 */ public float SlopeAngleForUphillClimb;
         /* 0x1B4 */ public float SlopeAngleForDownhillClimb;
         /* 0x1B8 */ public float SlidingBrake;

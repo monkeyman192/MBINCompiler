@@ -11,20 +11,15 @@ namespace libMBIN.NMS.Globals
         /* 0x000 */ public int RecentToolboxIndex;
         /* 0x004 */ public int SelectedToolboxIndex;
         /* 0x008 */ public bool OverrideBiome;
-        [NMS(Size = 0x80)]
-        /* 0x009 */ public string BiomeFile;
+        /* 0x009 */ public NMSString0x80 BiomeFile;
         /* 0x089 */ public bool OverrideWaterBiome;
-        [NMS(Size = 0x80)]
-        /* 0x08A */ public string WaterBiomeFile;
+        /* 0x08A */ public NMSString0x80 WaterBiomeFile;
         /* 0x10A */ public bool OverrideCaveBiome;
-        [NMS(Size = 0x80)]
-        /* 0x10B */ public string CaveBiomeFile;
+        /* 0x10B */ public NMSString0x80 CaveBiomeFile;
         /* 0x18B */ public bool OverrideTerrain;
-        [NMS(Size = 0x80)]
-        /* 0x18C */ public string TerrainFile;
+        /* 0x18C */ public NMSString0x80 TerrainFile;
         /* 0x20C */ public bool OverrideAtmosphere;
-        [NMS(Size = 0x80)]
-        /* 0x20D */ public string AtmosphereFile;
+        /* 0x20D */ public NMSString0x80 AtmosphereFile;
         /* 0x290 */ public List<Vector3f> ForceResource;
         /* 0x2A0 */ public float ForceResourceSize;
         [NMS(Size = 0x4, Ignore = true)]

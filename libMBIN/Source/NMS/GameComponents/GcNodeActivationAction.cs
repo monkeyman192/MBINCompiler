@@ -9,10 +9,8 @@ namespace libMBIN.NMS.GameComponents
 		public enum NodeActiveStateEnum { Activate, Deactivate, Toggle, Add, Remove, RemoveChildren }
 		/* 0x000 */ public NodeActiveStateEnum NodeActiveState;
 
-        [NMS(Size = 0x80)]
-        /* 0x004 */ public string Name;
-        [NMS(Size = 0x80)]
-        /* 0x084 */ public string SceneToAdd;
+        /* 0x004 */ public NMSString0x80 Name;
+        /* 0x084 */ public NMSString0x80 SceneToAdd;
         /* 0x104 */ public bool IncludePhysics;
         /* 0x105 */ public bool IncludeChildPhysics;
         /* 0x106 */ public bool NotifyNPC;

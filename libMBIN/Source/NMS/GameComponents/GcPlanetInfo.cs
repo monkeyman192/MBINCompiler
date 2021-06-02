@@ -6,20 +6,13 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x383, GUID = 0x265C96B5655DF648, NameHash = 0x458D53EF402BA3C9)]
     public class GcPlanetInfo : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        public string PlanetDescription;
-        [NMS(Size = 0x80)]
-        public string PlanetType;
-        [NMS(Size = 0x80)]
-        public string Weather;
-        [NMS(Size = 0x80)]
-        public string Resources;
-        [NMS(Size = 0x80)]
-        public string Flora;
-        [NMS(Size = 0x80)]
-        public string Fauna;
-        [NMS(Size = 0x80)]
-        public string Sentinels;
+        public NMSString0x80 PlanetDescription;
+        public NMSString0x80 PlanetType;
+        public NMSString0x80 Weather;
+        public NMSString0x80 Resources;
+        public NMSString0x80 Flora;
+        public NMSString0x80 Fauna;
+        public NMSString0x80 Sentinels;
 
         public bool IsWeatherExtreme;
         public bool AreSentinelsExtreme;

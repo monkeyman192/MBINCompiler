@@ -15,18 +15,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x088 */ public GcMissionPageHint PageHint;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x08C */ public byte[] Padding8C;
-        [NMS(Size = 0x20)]
-        /* 0x090 */ public string PageDataLocID;
-        [NMS(Size = 0x10)]
-        /* 0x0B0 */ public string BuildMenuHint;
-        [NMS(Size = 0x10)]
-        /* 0x0C0 */ public string InventoryHint;
-        [NMS(Size = 0x80)]
-        /* 0x0D0 */ public string DebugText;
-        [NMS(Size = 0x20)]
-        /* 0x150 */ public string ObjectiveID;
-        [NMS(Size = 0x20)]
-        /* 0x170 */ public string ObjectiveTipID;
+        /* 0x090 */ public NMSString0x20 PageDataLocID;
+        /* 0x0B0 */ public NMSString0x10 BuildMenuHint;
+        /* 0x0C0 */ public NMSString0x10 InventoryHint;
+        /* 0x0D0 */ public NMSString0x80 DebugText;
+        /* 0x150 */ public NMSString0x20 ObjectiveID;
+        /* 0x170 */ public NMSString0x20 ObjectiveTipID;
         /* 0x190 */ public bool HasCategoryOverride;
         /* 0x194 */ public GcMissionCategory OverrideCategory;
         /* 0x198 */ public bool HasColourOverride;
@@ -34,8 +28,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1B0 */ public bool PrefixTitle;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x1B1 */ public byte[] Padding1B1;
-        [NMS(Size = 0x20)]
-        /* 0x1B8 */ public string PrefixTitleText;
+        /* 0x1B8 */ public NMSString0x20 PrefixTitleText;
         /* 0x1D8 */ public bool BlockPinning;
         /* 0x1DC */ public GcMissionConditionTest ConditionTest;
 		public enum RepeatLogicEnum { None, Loop, RestartOnConditionFail }

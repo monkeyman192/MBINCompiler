@@ -10,8 +10,7 @@ namespace libMBIN.NMS.GameComponents
     {
         public enum MoveModeEnum { Roll, Float, Drill }
         /* 0x000 */ public MoveModeEnum MoveMode;
-        [NMS(Size = 0x100)]
-        /* 0x004 */ public string Node;
+        /* 0x004 */ public NMSString0x100 Node;
         /* 0x104 */ public float BobSpeed;
         /* 0x108 */ public float BobAmount;
         /* 0x10C */ public float SpinSpeed;

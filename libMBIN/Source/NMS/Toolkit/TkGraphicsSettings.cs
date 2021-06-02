@@ -38,8 +38,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x91 */ public bool UseArbSparseTexture;
         public enum HDRModeEnum { Off, HDR400, HDR600, HDR1000 }
         /* 0x94 */ public HDRModeEnum HDRMode;
-        [NMS(Size = 0x100)]
-        /* 0x98 */ public string AdapterName;
+        /* 0x98 */ public NMSString0x100 AdapterName;
         /* 0x198 */ public int AdapterIndex;
         /* 0x19C */ public int NumGraphicsThreadsBeta;
     }

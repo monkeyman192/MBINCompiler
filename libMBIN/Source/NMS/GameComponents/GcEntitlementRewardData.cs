@@ -6,16 +6,12 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x60, GUID = 0x54366264A902610C, NameHash = 0x748EDC86AFA4F5A3)]
     public class GcEntitlementRewardData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string EntitlementId;
+        public NMSString0x10 EntitlementId;
 
-        [NMS(Size = 0x10)]
-        public string RewardId;
+        public NMSString0x10 RewardId;
 
-        [NMS(Size = 0x20)]
-        public string Name;
+        public NMSString0x20A Name;
 
-        [NMS(Size = 0x20)]
-        public string Error;
+        public NMSString0x20A Error;
     }
 }

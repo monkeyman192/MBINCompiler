@@ -8,20 +8,16 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x3D80, GUID = 0x3B32E4127BBB1770, NameHash = 0x25EDFA0EC4C3AF0A)]
     public class GcPlanetData : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x0000 */ public string Name;
+        /* 0x0000 */ public NMSString0x80 Name;
         /* 0x0080 */ public GcPlanetLife Life;
         /* 0x0084 */ public GcPlanetLife CreatureLife;
         /* 0x0088 */ public GcPlanetHazardData Hazard;
         public enum ResourceLevelEnum { Low, High }
         /* 0x00D8 */ public ResourceLevelEnum ResourceLevel;
         /* 0x00DC */ public GcBuildingDensityLevels BuildingLevel;
-        [NMS(Size = 0x10)]
-        /* 0x00E0 */ public string CommonSubstanceID;
-        [NMS(Size = 0x10)]
-        /* 0x00F0 */ public string UncommonSubstanceID;
-        [NMS(Size = 0x10)]
-        /* 0x0100 */ public string RareSubstanceID;
+        /* 0x00E0 */ public NMSString0x10 CommonSubstanceID;
+        /* 0x00F0 */ public NMSString0x10 UncommonSubstanceID;
+        /* 0x0100 */ public NMSString0x10 RareSubstanceID;
         /* 0x0110 */ public List<GcPlanetDataResourceHint> ExtraResourceHints;
         /* 0x0120 */ public GcPlanetColourData Colours;
         [NMS(Size = 0x17)]
@@ -29,8 +25,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1AA0 */ public GcPlanetWeatherData Weather;
         /* 0x1C00 */ public GcPlanetCloudProperties Clouds;
         /* 0x1C40 */ public GcPlanetWaterData Water;
-        [NMS(Size = 0x80)]
-        /* 0x1DC0 */ public string TerrainFile;
+        /* 0x1DC0 */ public NMSString0x80 TerrainFile;
         /* 0x1E40 */ public TkVoxelGeneratorData Terrain;
         /* 0x3410 */ public int TileTypeSet;
         [NMS(Size = 0x4, Ignore = true)]

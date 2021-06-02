@@ -10,7 +10,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public bool InvertMode;
         public GcGameMode Mode;
-        [NMS(Size = 0x20)]
-        public string CostStringCantAfford;
+        public NMSString0x20A CostStringCantAfford;
     }
 }

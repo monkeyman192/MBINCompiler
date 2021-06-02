@@ -9,17 +9,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public bool Dev;
         /* 0x001 */ public bool QA;
         /* 0x002 */ public bool Prod;
-        [NMS(Size = 0x20)]
-        /* 0x003 */ public string Platform;
-        [NMS(Size = 0x40)]
-        /* 0x023 */ public string UserId;
-        [NMS(Size = 0x40)]
-        /* 0x063 */ public string UserName;
-        [NMS(Size = 0x40)]
-        /* 0x0A3 */ public string BaseName;
-        [NMS(Size = 0x40)]
-        /* 0x0E3 */ public string UA;
-        [NMS(Size = 0x40)]
-        /* 0x123 */ public string BaseId;
+        /* 0x003 */ public NMSString0x20 Platform;
+        /* 0x023 */ public NMSString0x40 UserId;
+        /* 0x063 */ public NMSString0x40 UserName;
+        /* 0x0A3 */ public NMSString0x40 BaseName;
+        /* 0x0E3 */ public NMSString0x40 UA;
+        /* 0x123 */ public NMSString0x40 BaseId;
     }
 }

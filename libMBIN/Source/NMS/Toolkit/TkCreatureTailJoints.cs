@@ -8,10 +8,8 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x60, GUID = 0xFEB421323879E283, NameHash = 0x38D7F8085AD4CE3)]
     public class TkCreatureTailJoints : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        /* 0x00 */ public string StartJoint;
-        [NMS(Size = 0x20)]
-        /* 0x20 */ public string EndJoint;
+        /* 0x00 */ public NMSString0x20 StartJoint;
+        /* 0x20 */ public NMSString0x20 EndJoint;
         /* 0x40 */ public float InterpSpeedHead;
         /* 0x44 */ public float InterpSpeedTail;
         /* 0x48 */ public float PullSpeedMin;

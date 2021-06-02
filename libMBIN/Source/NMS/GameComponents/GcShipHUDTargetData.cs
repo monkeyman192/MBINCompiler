@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         public GcShipHUDTargetIconData IconData;
 
-        [NMS(Size = 0x80)]
-        public string Arrow;
+        public NMSString0x80 Arrow;
 
         public float IconSizeIn;
         public float IconMinSize;

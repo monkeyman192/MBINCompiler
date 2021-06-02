@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x80, Alignment = 0x10, GUID = 0x590CDDA0790B637E, NameHash = 0x11A53087B029E4F)]
     public class GcGeneratedBaseRoomTemplate : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Name;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string LocId;
+        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x10 */ public NMSString0x20 LocId;
         /* 0x30 */ public Colour PrimaryColour;
         /* 0x40 */ public Colour SecondaryColour;
         /* 0x50 */ public int MinPathLength;

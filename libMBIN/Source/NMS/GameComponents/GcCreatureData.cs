@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x58, GUID = 0xC271DD5B240D368B, NameHash = 0x132EB7906E53B7A7)]
     public class GcCreatureData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public bool OnlySpawnWhenIdIsForced;
         /* 0x14 */ public GcCreatureTypes ForceType;
         /* 0x18 */ public GcCreatureTypes RealType;

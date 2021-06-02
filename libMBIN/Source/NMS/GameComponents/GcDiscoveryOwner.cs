@@ -7,14 +7,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryOwner : NMSTemplate
     {
 
-        [NMS(Size = 0x40)]
-        public string LocalID;
-        [NMS(Size = 0x40)]
-        public string OnlineID;
-        [NMS(Size = 0x40)]
-        public string Username;
-        [NMS(Size = 0x40)]
-        public string Platform;
+        public NMSString0x40 LocalID;
+        public NMSString0x40 OnlineID;
+        public NMSString0x40 Username;
+        public NMSString0x40 Platform;
         public int TimeStamp;
     }
 }

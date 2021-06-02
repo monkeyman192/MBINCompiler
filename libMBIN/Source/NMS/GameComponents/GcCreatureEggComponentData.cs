@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x10, GUID = 0xF20EA781CD819BCC, NameHash = 0xD7C6DB081E11D22E)]
     public class GcCreatureEggComponentData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string Id;
+        public NMSString0x10 Id;
     }
 }

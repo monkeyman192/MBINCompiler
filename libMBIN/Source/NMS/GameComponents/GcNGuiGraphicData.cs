@@ -10,7 +10,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x068 */ public byte[] Padding68;
         /* 0x070 */ public TkNGuiGraphicStyle Style;
-        [NMS(Size = 0x80)]
-        /* 0x290 */ public string Image;
+        /* 0x290 */ public NMSString0x80 Image;
     }
 }

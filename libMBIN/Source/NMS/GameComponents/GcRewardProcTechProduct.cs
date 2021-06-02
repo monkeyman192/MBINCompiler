@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x38, Alignment = 0x8, GUID = 0xDC9DA4C51D20A130, NameHash = 0x6D88488E4483F056)]
     public class GcRewardProcTechProduct : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        public string Group;
+        public NMSString0x20A Group;
         public int WeightedChanceNormal;
         public int WeightedChanceRare;
         public int WeightedChanceEpic;

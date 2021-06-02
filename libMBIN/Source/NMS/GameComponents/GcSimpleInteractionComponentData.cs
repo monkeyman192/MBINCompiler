@@ -20,16 +20,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x008 */ public bool Use2dInteractDistance;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x009 */ public byte[] Padding9;
-        [NMS(Size = 0x10)]
-        /* 0x010 */ public string Id;
+        /* 0x010 */ public NMSString0x10 Id;
         /* 0x020 */ public GcRarity Rarity;
         /* 0x024 */ public GcSizeIndicator Size;
-        [NMS(Size = 0x10)]
-        /* 0x028 */ public string TriggerAction;
-        [NMS(Size = 0x10)]
-        /* 0x038 */ public string TriggerActionOnPrepare;
-        [NMS(Size = 0x10)]
-        /* 0x048 */ public string TriggerActionToggle;
+        /* 0x028 */ public NMSString0x10 TriggerAction;
+        /* 0x038 */ public NMSString0x10 TriggerActionOnPrepare;
+        /* 0x048 */ public NMSString0x10 TriggerActionToggle;
         /* 0x058 */ public bool BroadcastTriggerAction;
         /* 0x05C */ public float Delay;
         /* 0x060 */ public bool HideContents;
@@ -42,18 +38,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0AC */ public bool StartsBuried;
         /* 0x0AD */ public bool MustBeVisibleToInteract;
         /* 0x0AE */ public bool NeedsStorm;
-        [NMS(Size = 0x1, Ignore = true)]
-        /* 0xAF */ public byte[] PaddingAF;
-        [NMS(Size = 0x20)]
-        /* 0x0B0 */ public string Name;
-        [NMS(Size = 0x20)]
-        /* 0x0D0 */ public string VRInteractMessage;
-        [NMS(Size = 0x20)]
-        /* 0x0F0 */ public string TerminalMessage;
-        [NMS(Size = 0x20)]
-        /* 0x110 */ public string ScanType;
-        [NMS(Size = 0x20)]
-        /* 0x130 */ public string ScanData;
+        /* 0x0B0 */ public NMSString0x20A Name;
+        /* 0x0D0 */ public NMSString0x20A VRInteractMessage;
+        /* 0x0F0 */ public NMSString0x20A TerminalMessage;
+        /* 0x110 */ public NMSString0x20A ScanType;
+        /* 0x130 */ public NMSString0x20A ScanData;
         /* 0x150 */ public GcDiscoveryTypes ScanIcon;
         /* 0x154 */ public bool ActivateLocatorsFromRarity;
         [NMS(Size = 0x3, Ignore = true)]

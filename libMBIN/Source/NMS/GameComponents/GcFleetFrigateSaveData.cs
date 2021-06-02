@@ -11,8 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public GcSeed ResourceSeed;
         /* 0x010 */ public GcSeed HomeSystemSeed;
         /* 0x020 */ public ulong TimeOfLastIncomeCollection;
-        [NMS(Size = 0x100)]
-        /* 0x028 */ public string CustomName;
+        /* 0x028 */ public NMSString0x100 CustomName;
         /* 0x128 */ public GcFrigateClass FrigateClass;
         /* 0x12C */ public GcAlienRace Race;
         /* 0x130 */ public int TotalNumberOfExpeditions;

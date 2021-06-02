@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0xB, EnumType = typeof(GcFrigateStatType.FrigateStatTypeEnum))]
         /* 0x00 */ public GcFrigateStatRange[] Stats;
-        [NMS(Size = 0x10)]
-        /* 0x50 */ public string InitialTrait;
+        /* 0x50 */ public NMSString0x10 InitialTrait;
     }
 }

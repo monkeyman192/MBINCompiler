@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
         public ulong GalacticAddress;
         public float Supply;
         public float Demand;
-        [NMS(Size = 0x10)]
-        public string Product;
+        public NMSString0x10 Product;
         public ulong Timestamp;
     }
 }

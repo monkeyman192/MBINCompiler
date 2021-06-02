@@ -34,12 +34,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x31 */ public bool NeedsAbandonedSystem;
         [NMS(Size = 0x6, Ignore = true)]
         /* 0x32 */ public byte[] Padding32;
-        [NMS(Size = 0x10)]
-        /* 0x38 */ public string NeedsResourceHint;
+        /* 0x38 */ public NMSString0x10 NeedsResourceHint;
         /* 0x48 */ public bool NeedsHighCreatureLevel;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x49 */ public byte[] Padding49;
-        [NMS(Size = 0x20)]
-        /* 0x50 */ public string SamePlanetAsEvent;
+        /* 0x50 */ public NMSString0x20 SamePlanetAsEvent;
     }
 }

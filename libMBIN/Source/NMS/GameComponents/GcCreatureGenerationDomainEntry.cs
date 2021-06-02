@@ -9,7 +9,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGenerationDomainEntry : NMSTemplate
     {
         public GcCreatureGenerationDensity DensityModifier;
-        [NMS(Size = 0x80)]
-        public string File;
+        public NMSString0x80 File;
     }
 }

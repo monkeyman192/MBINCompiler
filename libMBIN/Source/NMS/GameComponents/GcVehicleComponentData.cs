@@ -9,10 +9,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcVehicleType Class;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string VehicleType;
-        [NMS(Size = 0x80)]
-        /* 0x18 */ public string Cockpit;
+        /* 0x08 */ public NMSString0x10 VehicleType;
+        /* 0x18 */ public NMSString0x80 Cockpit;
         /* 0x98 */ public float MaxHeadTurn;
         /* 0x9C */ public float MaxHeadPitchUp;
         /* 0xA0 */ public float MaxHeadPitchDown;

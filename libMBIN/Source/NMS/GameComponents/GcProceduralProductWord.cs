@@ -10,7 +10,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcNameGeneratorWord Word;
         /* 0x28 */ public GcNameGeneratorWord UncommonWordWord;
         /* 0x50 */ public GcNameGeneratorWord RareWord;
-        [NMS(Size = 0x20)]
-        /* 0x78 */ public string ReplaceKey;
+        /* 0x78 */ public NMSString0x20 ReplaceKey;
     }
 }

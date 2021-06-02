@@ -10,8 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2A8 */ public bool UseCustomMessage;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x2A9 */ public byte[] Padding2A9;
-        [NMS(Size = 0x20)]
-        /* 0x2B0 */ public string CustomHailOSD;
+        /* 0x2B0 */ public NMSString0x20 CustomHailOSD;
         /* 0x2D0 */ public GcPlayerCommunicatorMessage HailingMessage;
     }
 }

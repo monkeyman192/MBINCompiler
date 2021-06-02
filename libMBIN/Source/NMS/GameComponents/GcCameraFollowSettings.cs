@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x100, GUID = 0xA9061708E46005BD, NameHash = 0x200FDA306DC86654)]
     public class GcCameraFollowSettings : NMSTemplate
     {
-        [NMS(Size =  0x10)]
-        /* 0x00 */ public string Name;
+        /* 0x00 */ public NMSString0x10 Name;
         /* 0x10 */ public float MinSpeed;
         /* 0x14 */ public float SpeedRange;
         [NMSDescription("Horizontal offset relative to the center (0). Negative values move the camera left, positive values move it right")]

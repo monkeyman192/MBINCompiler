@@ -9,10 +9,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialShaderMillNode : NMSTemplate
     {
         /* 0x00 */ public int Id;
-        [NMS(Size = 0x20)]
-        /* 0x04 */ public string Type;
-        [NMS(Size = 0x20)]
-        /* 0x24 */ public string Value;
+        /* 0x04 */ public NMSString0x20 Type;
+        /* 0x24 */ public NMSString0x20 Value;
         /* 0x44 */ public int IValue;
         /* 0x48 */ public int IValue2;
         /* 0x4C */ public float FValue;

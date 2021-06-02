@@ -12,8 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public TestEncounterTypeEnum TestEncounterType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string SpecificObjectID;
+        /* 0x08 */ public NMSString0x10 SpecificObjectID;
         /* 0x18 */ public bool RequireFullySpawned;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x19 */ public byte[] EndPadding;

@@ -11,10 +11,8 @@ namespace libMBIN.NMS.Globals
         /* 0x000 */ public float VehicleSolarRegenFactor;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x004 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x008 */ public string VehicleStrongLaser;
-        [NMS(Size = 0x10)]
-        /* 0x018 */ public string MechStrongLaser;
+        /* 0x008 */ public NMSString0x10 VehicleStrongLaser;
+        /* 0x018 */ public NMSString0x10 MechStrongLaser;
         /* 0x028 */ public bool UseFirstPersonCamera;
         /* 0x02C */ public float LevelVehicleCameraFactor;
         /* 0x030 */ public bool ShowAllCheckpoints;
@@ -41,8 +39,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0A4 */ public bool MechAltJumpMode;
         /* 0x0A8 */ public float MechContrailAlpha;
         /* 0x0AC */ public float MechJetpackJetScaleTime;
-        [NMS(Size = 0x10)]
-        /* 0x0B0 */ public string MechJetpackEffect;
+        /* 0x0B0 */ public NMSString0x10 MechJetpackEffect;
         /* 0x0C0 */ public float MechTurnSpeed;
         /* 0x0C4 */ public float MechJetpackTurnSpeed;
         /* 0x0D0 */ public Vector3f MechTurretAngleLmits;

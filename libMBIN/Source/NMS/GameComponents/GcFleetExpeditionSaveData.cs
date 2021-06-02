@@ -16,10 +16,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x044 */ public byte[] Padding44;
         /* 0x048 */ public List<NMSString0x10> Powerups;
-        [NMS(Size = 0x100)]
-        /* 0x058 */ public string CustomName;
-        [NMS(Size = 0x10)]
-        /* 0x158 */ public string InterventionEventMissionID;
+        /* 0x058 */ public NMSString0x100 CustomName;
+        /* 0x158 */ public NMSString0x10 InterventionEventMissionID;
         /* 0x168 */ public ulong StartTime;
         /* 0x170 */ public ulong PauseTime;
         /* 0x178 */ public ulong TimeOfLastUAChange;

@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public GcDefaultMissionProductEnum ProductType;
         public GcDefaultMissionSubstanceEnum SubstanceType;
-        [NMS(Size = 0x10)]
-        public string ID;
+        public NMSString0x10 ID;
     }
 }

@@ -6,10 +6,8 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0xA4, GUID = 0x381C116EDA8419EA, NameHash = 0xF818362C38FEA359)]
     public class TkLSystemGlobalVariation : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        public string Name;
-        [NMS(Size = 0x80)]
-        public string Model;
+        public NMSString0x20 Name;
+        public NMSString0x80 Model;
 
         public int Variations;
     }

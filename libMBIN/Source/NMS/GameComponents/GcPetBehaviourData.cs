@@ -26,7 +26,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x48 */ public List<GcPetBehaviourMoodModifier> MoodBehaviourModifiers;
         [NMS(Size = 0x2, EnumType = typeof(GcCreaturePetMood.PetMoodEnum))]
         /* 0x58 */ public float[] MoodModifyOnComplete;
-        [NMS(Size = 0x20)]
-        /* 0x60 */ public string LabelText;
+        /* 0x60 */ public NMSString0x20 LabelText;
     }
 }

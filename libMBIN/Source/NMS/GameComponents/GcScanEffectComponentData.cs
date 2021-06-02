@@ -9,7 +9,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcScanEffectComponentData : NMSTemplate
     {
         public List<GcScanEffectData> ScanEffects;
-        [NMS(Size = 0x40)]
-        public string NodeName;
+        public NMSString0x40 NodeName;
     }
 }

@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0xC8, Alignment = 0x8, GUID = 0xD860F7A0405EE7AB, NameHash = 0x35C91009067A6431)]
     public class GcAIShipSpawnData : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        /* 0x00 */ public string Message;
-        [NMS(Size = 0x20)]
-        /* 0x00 */ public string OSDMessage;
+        /* 0x00 */ public NMSString0x20 Message;
+        /* 0x00 */ public NMSString0x20 OSDMessage;
         /* 0x40 */ public TkInputEnum Shortcut;
         /* 0x44 */ public bool WarpIn;
         [NMS(Size = 0x3, Ignore = true)]
@@ -19,10 +17,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x48 */ public GcAISpaceshipRoles Role;
         /* 0x4C */ public float MinRange;
         /* 0x50 */ public Vector2f Scale;
-        [NMS(Size = 0x10)]
-        /* 0x58 */ public string Reward;
-        [NMS(Size = 0x20)]
-        /* 0x68 */ public string RewardMessage;
+        /* 0x58 */ public NMSString0x10 Reward;
+        /* 0x68 */ public NMSString0x20 RewardMessage;
         /* 0x88 */ public bool AttackFreighter;
         /* 0x8C */ public Vector2f Spread;
         /* 0x94 */ public Vector2f Count;

@@ -8,24 +8,15 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x320, GUID = 0x6D091499DCEB214D, NameHash = 0xDE6FCE33E294F619)]
     public class GcGrabPlayerComponentData : NMSTemplate
     {
-        [NMS(Size = 0x100)]
-        /* 0x000 */ public string LookJoint;
-        [NMS(Size = 0x100)]
-        /* 0x100 */ public string GrabJoint;
-        [NMS(Size = 0x10)]
-        /* 0x200 */ public string DefendAnim;
-        [NMS(Size = 0x10)]
-        /* 0x210 */ public string IdleAnim;
-        [NMS(Size = 0x10)]
-        /* 0x220 */ public string GrabAnim;
-        [NMS(Size = 0x10)]
-        /* 0x230 */ public string HoldAnim;
-        [NMS(Size = 0x10)]
-        /* 0x240 */ public string HitReactAnim;
-        [NMS(Size = 0x10)]
-        /* 0x250 */ public string PlayerGrabbedAnim;
-        [NMS(Size = 0x10)]
-        /* 0x260 */ public string DamageType;
+        /* 0x000 */ public NMSString0x100 LookJoint;
+        /* 0x100 */ public NMSString0x100 GrabJoint;
+        /* 0x200 */ public NMSString0x10 DefendAnim;
+        /* 0x210 */ public NMSString0x10 IdleAnim;
+        /* 0x220 */ public NMSString0x10 GrabAnim;
+        /* 0x230 */ public NMSString0x10 HoldAnim;
+        /* 0x240 */ public NMSString0x10 HitReactAnim;
+        /* 0x250 */ public NMSString0x10 PlayerGrabbedAnim;
+        /* 0x260 */ public NMSString0x10 DamageType;
         /* 0x270 */ public float DamageTime;
         /* 0x274 */ public float TriggerRange;
         /* 0x278 */ public GcAudioWwiseEvents GrabBeginAudioEvent;

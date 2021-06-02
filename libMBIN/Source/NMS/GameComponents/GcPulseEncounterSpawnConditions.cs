@@ -13,16 +13,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x04 */ public bool AllowedWhileOnMPMission;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x05 */ public byte[] Padding3;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string RequiresProduct;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string RequiresMissionComplete;
-        [NMS(Size = 0x10)]
-        /* 0x28 */ public string RequiresMissionActive;
-        [NMS(Size = 0x10)]
-        /* 0x38 */ public string RequiresMissionNotComplete;
-        [NMS(Size = 0x10)]
-        /* 0x48 */ public string RequiresMissionNotActive;
+        /* 0x08 */ public NMSString0x10 RequiresProduct;
+        /* 0x18 */ public NMSString0x10 RequiresMissionComplete;
+        /* 0x28 */ public NMSString0x10 RequiresMissionActive;
+        /* 0x38 */ public NMSString0x10 RequiresMissionNotComplete;
+        /* 0x48 */ public NMSString0x10 RequiresMissionNotActive;
         /* 0x58 */ public bool RequiresAlienShip;
         /* 0x59 */ public bool StandardEncounter;
         [NMS(Size = 0x6, Ignore = true)]

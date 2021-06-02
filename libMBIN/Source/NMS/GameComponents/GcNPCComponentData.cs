@@ -10,8 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcAlienRace AlienRace;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string HologramEffect;
+        /* 0x08 */ public NMSString0x10 HologramEffect;
         /* 0x18 */ public bool IsOldStyleNPC;
         /* 0x19 */ public bool IsMech;
         [NMS(Size = 0x6, Ignore = true)]

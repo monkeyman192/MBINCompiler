@@ -10,7 +10,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
         /* 0x08 */ public NMSTemplate Reward;
-        [NMS(Size = 0x40)]
-        /* 0x58 */ public string LabelID;
+        /* 0x58 */ public NMSString0x40 LabelID;
     }
 }

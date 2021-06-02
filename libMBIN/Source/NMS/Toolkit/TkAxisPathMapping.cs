@@ -11,17 +11,12 @@ namespace libMBIN.NMS.Toolkit
         /* 0x000 */ public TkInputAxisEnum Id;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x004 */ public byte[] Padding4;
-        [NMS(Size = 0x20)]
-        /* 0x008 */ public string Name;
-        [NMS(Size = 0x80)]
-        /* 0x028 */ public string SolidIcon;
-        [NMS(Size = 0x80)]
-        /* 0x0A8 */ public string OverlayIcon;
-        [NMS(Size = 0x80)]
-        /* 0x128 */ public string SpecialIcon;
+        /* 0x008 */ public NMSString0x20 Name;
+        /* 0x028 */ public NMSString0x80 SolidIcon;
+        /* 0x0A8 */ public NMSString0x80 OverlayIcon;
+        /* 0x128 */ public NMSString0x80 SpecialIcon;
         /* 0x1A8 */ public TkInputHandEnum Hand;
-        [NMS(Size = 0x20)]
-        /* 0x1AC */ public string OpenVROriginNames;
+        /* 0x1AC */ public NMSString0x20 OpenVROriginNames;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1CC */ public byte[] EndPadding;
     }

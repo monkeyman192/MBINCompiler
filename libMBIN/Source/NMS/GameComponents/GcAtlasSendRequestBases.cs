@@ -18,8 +18,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x30 */ public int MaxBytes;
         /* 0x34 */ public int MinVersion;
         /* 0x38 */ public int MaxVersion;
-        [NMS(Size = 0x20)]
-        /* 0x3C */ public string SpecificUserId;
+        /* 0x3C */ public NMSString0x20 SpecificUserId;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x5C */ public byte[] EndPadding;
     }

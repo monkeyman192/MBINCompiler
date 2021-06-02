@@ -13,9 +13,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0C */ public byte[] PaddingC;
 
-        [NMS(Size = 0x10)]
-        /* 0x10 */ public string Stat;
-        [NMS(Size = 0x10)]
-        /* 0x20 */ public string OtherStat;
+        /* 0x10 */ public NMSString0x10 Stat;
+        /* 0x20 */ public NMSString0x10 OtherStat;
     }
 }

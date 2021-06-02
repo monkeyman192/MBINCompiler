@@ -6,8 +6,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x370, GUID = 0xD2740B9C47F05A27, NameHash = 0x1611798444BC0C13)]
     public class GcPlayerMissionProgress : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Mission;
+        /* 0x00 */ public NMSString0x10 Mission;
         /* 0x10 */ public int Progress;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x14 */ public byte[] Padding14;

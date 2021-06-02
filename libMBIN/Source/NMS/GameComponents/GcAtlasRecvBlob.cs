@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x00 */ public byte[] Padding0;
         /* 0x08 */ public ulong ClientUserdata;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string Name;
+        /* 0x10 */ public NMSString0x20 Name;
         /* 0x30 */ public int DataTimestamp;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x34 */ public byte[] Padding34;

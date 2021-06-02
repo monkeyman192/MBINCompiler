@@ -8,10 +8,8 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0xB8, Alignment = 0x8, GUID = 0xC3D61DFE9D3AB5CD, NameHash = 0xE09F11724D654285)]
     public class TkLSystemRule : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        public string Name;
-        [NMS(Size = 0x80)]
-        public string Model;
+        public NMSString0x20 Name;
+        public NMSString0x80 Model;
 
         public List<TkLSystemInnerRule> Rules;
 

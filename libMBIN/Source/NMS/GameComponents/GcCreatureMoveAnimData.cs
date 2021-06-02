@@ -6,12 +6,9 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x50, GUID = 0xD57D0C98B9949A51, NameHash = 0x50CC62720AB69C5)]
     public class GcCreatureMoveAnimData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Anim;
-        [NMS(Size = 0x10)]
-        /* 0x10 */ public string AnimLeft;
-        [NMS(Size = 0x10)]
-        /* 0x20 */ public string AnimRight;
+        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x10 */ public NMSString0x10 AnimLeft;
+        /* 0x20 */ public NMSString0x10 AnimRight;
         /* 0x30 */ public float AnimSpeed;
         /* 0x34 */ public float MinSpeedScale;
         /* 0x38 */ public float MaxSpeedScale;

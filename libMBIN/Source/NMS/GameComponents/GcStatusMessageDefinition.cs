@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x50, GUID = 0x846620CB71D58CFD, NameHash = 0x93C1244DBEE0E0CF)]
     public class GcStatusMessageDefinition : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string Message;
+        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x10 */ public NMSString0x20 Message;
         /* 0x30 */ public bool AddPlayerNamePrefix;
         /* 0x31 */ public bool AddPetNamePrefix;
         /* 0x32 */ public bool IncludePlayerName;

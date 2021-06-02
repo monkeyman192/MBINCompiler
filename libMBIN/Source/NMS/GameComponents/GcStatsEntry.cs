@@ -15,7 +15,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x29 */ public byte[] Padding29;
 
-        [NMS(Size = 0x10)]
-        /* 0x30 */ public string BaseTechID;
+        /* 0x30 */ public NMSString0x10 BaseTechID;
     }
 }

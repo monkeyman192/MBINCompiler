@@ -6,16 +6,12 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x260, GUID = 0x067E5523FF7E6036, NameHash = 0xD811F4C9E014843E)]
     public class GcRealitySubstanceData : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        /* 0x000 */ public string Name;
-        [NMS(Size = 0x20)]
-        /* 0x020 */ public string NameLower;
-        [NMS(Size = 0x10)]
-        /* 0x040 */ public string ID;
-        [NMS(Size = 0x20)]
-        /* 0x050 */ public string Symbol;
+        /* 0x000 */ public NMSString0x20 Name;
+        /* 0x020 */ public NMSString0x20 NameLower;
+        /* 0x040 */ public NMSString0x10 ID;
+        /* 0x050 */ public NMSString0x20 Symbol;
         /* 0x070 */ public TkTextureResource Icon;
-        /* 0x0F4 */ public TkTextureResource DebrisFile;
+        /* 0x0F4 */ public TkModelResource DebrisFile;
         /* 0x178 */ public VariableSizeString Subtitle;
         /* 0x188 */ public VariableSizeString Description;
         /* 0x1A0 */ public Colour Colour;
@@ -32,12 +28,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1F4 */ public GcTradeCategory tradeCategory;
         /* 0x1F8 */ public bool WikiEnabled;
         /* 0x1FC */ public float EconomyInfluenceMultiplier;
-        [NMS(Size = 0x20)]
-        /* 0x200 */ public string PinObjective;
-        [NMS(Size = 0x20)]
-        /* 0x220 */ public string PinObjectiveTip;
-        [NMS(Size = 0x10)]
-        /* 0x240 */ public string WikiMissionID;
+        /* 0x200 */ public NMSString0x20A PinObjective;
+        /* 0x220 */ public NMSString0x20A PinObjectiveTip;
+        /* 0x240 */ public NMSString0x10 WikiMissionID;
         /* 0x250 */ public bool CookingIngredient;
         /* 0x251 */ public bool GoodForSelling;
         /* 0x252 */ public bool EggModifierIngredient;

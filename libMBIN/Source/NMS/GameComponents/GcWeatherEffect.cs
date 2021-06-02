@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x1C0, GUID = 0x9F315BB206C6CFB4, NameHash = 0x419E50F8E497D496)]
     public class GcWeatherEffect : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Id;
-        [NMS(Size = 0x20)]
-        /* 0x010 */ public string OSDMessage;
+        /* 0x000 */ public NMSString0x10 Id;
+        /* 0x010 */ public NMSString0x20 OSDMessage;
         /* 0x030 */ public List<GcWeightedFilename> Effects;
         public enum SpawnConditionsEnum { Anytime, DuringStorm, AtNight, NotInStorm, AtNightNotInStorm };
         /* 0x040 */ public SpawnConditionsEnum SpawnConditions;
@@ -19,10 +17,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x048 */ public bool AllowedInCreative;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x49 */ public byte[] Padding49;
-        [NMS(Size = 0x10)]
-        /* 0x050 */ public string ForcedOnByHazard;
-        [NMS(Size = 0x10)]
-        /* 0x060 */ public string BlockedByCluster;
+        /* 0x050 */ public NMSString0x10 ForcedOnByHazard;
+        /* 0x060 */ public NMSString0x10 BlockedByCluster;
         public enum WeatherEffectBehaviourEnum { Static, Wander, ChasePlayer };
         /* 0x070 */ public WeatherEffectBehaviourEnum WeatherEffectBehaviour;
         public enum WeatherEffectSpawnTypeEnum { Single, Cluster, Patch };
@@ -42,8 +38,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0A8 */ public bool FadeoutVisuals;
         /* 0x0A9 */ public bool FadeoutAudio;
         /* 0x0AC */ public GcAudioWwiseEvents Audio;
-        [NMS(Size = 0x80)]
-        /* 0x0B0 */ public string ImpactGift;
+        /* 0x0B0 */ public NMSString0x80 ImpactGift;
         /* 0x130 */ public float ImpactGiftChance;
         /* 0x134 */ public float ClusterSpawnChance;
         /* 0x138 */ public float ClusterMinLifetime;

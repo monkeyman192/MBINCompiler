@@ -8,7 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         public int RecurrenceMinute;
         public int RecurrenceHour;
-        [NMS(Size = 0x80)]
-        public string DebugText;
+        public NMSString0x80 DebugText;
     }
 }

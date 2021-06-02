@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
 		public enum ChoiceEnum { LookupName, AnyOfType, SpecificIndex, InFrontOfPlayer }
 		public ChoiceEnum Choice;
 
-        [NMS(Size = 0x20)]
-        /* 0x04 */ public string Name;
+        /* 0x04 */ public NMSString0x20 Name;
         /* 0x24 */ public GcSolarSystemLocatorTypes LocatorType;
         /* 0x28 */ public int Index;
     }

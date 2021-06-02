@@ -7,8 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPersistentBBObjectData : NMSTemplate // size = 0x60
     {
         /* 0x00 */ public ulong Timestamp;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string ObjectId;
+        /* 0x08 */ public NMSString0x10 ObjectId;
         /* 0x18 */ public ulong GalacticAddress;
         /* 0x20 */ public ulong RegionSeed;
         /* 0x28 */ public ulong UserData;

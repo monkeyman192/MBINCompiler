@@ -8,10 +8,8 @@ namespace libMBIN.NMS.Toolkit
     [NMS(Size = 0xC00, GUID = 0x033D9E9B61DD55AF, NameHash = 0x40643395614391FA)]
     public class TkNGuiUserSettings : NMSTemplate
     {
-        [NMS(Size = 0x100)]
-        /* 0x000 */ public string LastLoadedModel;
-        [NMS(Size = 0x100)]
-        /* 0x100 */ public string LastActiveLayout;
+        /* 0x000 */ public NMSString0x100 LastLoadedModel;
+        /* 0x100 */ public NMSString0x100 LastActiveLayout;
         [NMS(Size = 0xA)]
         /* 0x200 */ public NMSString0x100[] FileBrowserRecents;
     }

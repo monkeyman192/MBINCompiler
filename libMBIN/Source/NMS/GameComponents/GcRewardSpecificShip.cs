@@ -10,10 +10,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2A8 */ public GcInventoryLayout ShipLayout;
         /* 0x2C8 */ public GcInventoryContainer ShipInventory;
         /* 0x428 */ public GcSpaceshipClasses ShipType;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x42C */ public byte[] Padding42C;
-        [NMS(Size = 0x20)]
-        /* 0x430 */ public string NameOverride;
+        /* 0x430 */ public NMSString0x20A NameOverride;
         /* 0x450 */ public bool IsGift;
         /* 0x451 */ public bool IsRewardShip;
         /* 0x452 */ public bool FormatAsSeasonal;

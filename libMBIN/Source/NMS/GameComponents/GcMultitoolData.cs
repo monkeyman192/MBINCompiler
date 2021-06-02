@@ -11,8 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public GcInventoryLayout Layout;
         /* 0x020 */ public GcInventoryContainer Store;
         /* 0x180 */ public GcSeed Seed;
-        [NMS(Size = 0x20)]
-        /* 0x190 */ public string Name;
+        /* 0x190 */ public NMSString0x20 Name;
         /* 0x1B0 */ public bool IsLarge;
         /* 0x1B4 */ public int PrimaryMode;
         /* 0x1B8 */ public int SecondaryMode;

@@ -14,12 +14,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x7FD */ public bool SwapPrimaryForRandomColour;
         /* 0x800 */ public float MinScale;
         /* 0x804 */ public float MaxScale;
-        [NMS(Size = 0x10)]
-        /* 0x808 */ public string CreatureID;
+        /* 0x808 */ public NMSString0x10 CreatureID;
         /* 0x818 */ public GcCreatureTypes CreatureType;
         /* 0x81C */ public GcCreatureRoles CreatureRole;
-        [NMS(Size = 0x20)]
-        /* 0x820 */ public string Filter;
+        /* 0x820 */ public NMSString0x20 Filter;
         /* 0x840 */ public int CreatureMinGroupSize;
         /* 0x844 */ public int CreatureMaxGroupSize;
         /* 0x848 */ public float CreatureGroupsPerSquareKm;

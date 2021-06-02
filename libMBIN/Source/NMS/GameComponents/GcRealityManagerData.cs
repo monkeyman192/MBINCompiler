@@ -18,25 +18,16 @@ namespace libMBIN.NMS.GameComponents
         /* 0x01D4 */ public byte[] Padding1D4;
         /* 0x01D8 */ public List<GcSubstanceSecondaryLookup> SubstanceSecondaryLookups;
         /* 0x01E8 */ public GcSubstanceSecondaryBiome SubstanceSecondaryBiome;
-        [NMS(Size = 0x80)]
-        /* 0x03E8 */ public string TechnologyTable;
-        [NMS(Size = 0x80)]
-        /* 0x0468 */ public string SubstanceTable;
-        [NMS(Size = 0x80)]
-        /* 0x04E8 */ public string ProductTable;
-        [NMS(Size = 0x80)]
-        /* 0x0568 */ public string ProceduralProductTable;
-        [NMS(Size = 0x80)]
-        /* 0x05E8 */ public string ProceduralTechnologyTable;
-        [NMS(Size = 0x80)]
-        /* 0x0668 */ public string LegacyItemConversionTable;
+        /* 0x03E8 */ public NMSString0x80 TechnologyTable;
+        /* 0x0468 */ public NMSString0x80 SubstanceTable;
+        /* 0x04E8 */ public NMSString0x80 ProductTable;
+        /* 0x0568 */ public NMSString0x80 ProceduralProductTable;
+        /* 0x05E8 */ public NMSString0x80 ProceduralTechnologyTable;
+        /* 0x0668 */ public NMSString0x80 LegacyItemConversionTable;
         /* 0x06E8 */ public List<TkRawID> LegacyRepairTable;
-        [NMS(Size = 0x80)]
-        /* 0x06F8 */ public string ConsumableItemTable;
-        [NMS(Size = 0x80)]
-        /* 0x0778 */ public string RecipeTable;
-        [NMS(Size = 0x80)]
-        /* 0x07F8 */ public string AlienWordsTable;
+        /* 0x06F8 */ public NMSString0x80 ConsumableItemTable;
+        /* 0x0778 */ public NMSString0x80 RecipeTable;
+        /* 0x07F8 */ public NMSString0x80 AlienWordsTable;
         /* 0x0878 */ public List<NMSString0x80> AlienPuzzlesTables;
         [NMS(Size = 0x73, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x0888 */ public bool[] LoopInteractionPuzzles;
@@ -47,32 +38,19 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0ADC */ public byte[] PaddingADC;
         /* 0x0AE8 */ public List<GcDamageMultiplierLookup> DamageMultiplierTable;
-        [NMS(Size = 0x80)]
-        /* 0x0AF8 */ public string RewardTable;
-        [NMS(Size = 0x80)]
-        /* 0x0B78 */ public string DiscoveryRewardTable;
-        [NMS(Size = 0x80)]
-        /* 0x0BF8 */ public string InventoryTable;
-        [NMS(Size = 0x80)]
-        /* 0x0C78 */ public string DamageTable;
-        [NMS(Size = 0x80)]
-        /* 0x0CF8 */ public string PurchaseableBuildingBlueprintsTable;
-        [NMS(Size = 0x80)]
-        /* 0x0D78 */ public string PurchaseableSpecialsTable;
-        [NMS(Size = 0x80)]
-        /* 0x0DF8 */ public string UnlockableSeasonRewardsTable;
-        [NMS(Size = 0x80)]
-        /* 0x0E78 */ public string UnlockableTwitchRewardsTable;
-        [NMS(Size = 0x80)]
-        /* 0x0EF8 */ public string CostTable;
-        [NMS(Size = 0x80)]
-        /* 0x0F78 */ public string TradingCostTable;
-        [NMS(Size = 0x80)]
-        /* 0x0FF8 */ public string TradingClassDataTable;
-        [NMS(Size = 0x80)]
-        /* 0x1078 */ public string MaintenanceGroupsTable;
-        [NMS(Size = 0x80)]
-        /* 0x10F8 */ public string UnlockableItemTrees;
+        /* 0x0AF8 */ public NMSString0x80 RewardTable;
+        /* 0x0B78 */ public NMSString0x80 DiscoveryRewardTable;
+        /* 0x0BF8 */ public NMSString0x80 InventoryTable;
+        /* 0x0C78 */ public NMSString0x80 DamageTable;
+        /* 0x0CF8 */ public NMSString0x80 PurchaseableBuildingBlueprintsTable;
+        /* 0x0D78 */ public NMSString0x80 PurchaseableSpecialsTable;
+        /* 0x0DF8 */ public NMSString0x80 UnlockableSeasonRewardsTable;
+        /* 0x0E78 */ public NMSString0x80 UnlockableTwitchRewardsTable;
+        /* 0x0EF8 */ public NMSString0x80 CostTable;
+        /* 0x0F78 */ public NMSString0x80 TradingCostTable;
+        /* 0x0FF8 */ public NMSString0x80 TradingClassDataTable;
+        /* 0x1078 */ public NMSString0x80 MaintenanceGroupsTable;
+        /* 0x10F8 */ public NMSString0x80 UnlockableItemTrees;
         /* 0x1178 */ public List<GcFreighterCargoOption> FreighterCargoOptions;
         [NMS(Size = 0x7, EnumType = typeof(GcShipWeapons.ShipWeaponEnum))]
         /* 0x1188 */ public GcShipWeaponData[] ShipWeapons;

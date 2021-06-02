@@ -41,8 +41,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0xB0 */ public Colour ColourStart;
         /* 0xC0 */ public Colour ColourMiddle;
         /* 0xD0 */ public Colour ColourEnd;
-        [NMS(Size = 0x10)]
-        /* 0xE0 */ public string UserColour;
+        /* 0xE0 */ public NMSString0x10 UserColour;
         /* 0xF0 */ public float MaxRenderDistance;
         /* 0xF4 */ public float MaxSpawnDistance;
         [NMS(Size = 8, Ignore = true)]

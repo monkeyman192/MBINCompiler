@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x50, GUID = 0x4C926B203874A03B, NameHash = 0x40F7E71C83A33DA0)]
     public class GcMessageNPCBehaviourEvent : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string BehaviourEvent;
-        [NMS(Size = 0x10)]
-        /* 0x10 */ public string UserData;
+        /* 0x00 */ public NMSString0x10 BehaviourEvent;
+        /* 0x10 */ public NMSString0x10 UserData;
         /* 0x20 */ public GcNPCTriggerTypes InteractionTrigger;
         /* 0x24 */ public int InteractionSubType;
         /* 0x30 */ public Vector3f Position;

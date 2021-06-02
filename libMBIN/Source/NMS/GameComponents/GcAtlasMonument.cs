@@ -11,16 +11,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x018 */ public byte[] Padding18;
         /* 0x020 */ public Vector4f Position;
         /* 0x030 */ public Vector4f At;
-        [NMS(Size = 0x40)]
-        /* 0x040 */ public string RID;
-        [NMS(Size = 0x40)]
-        /* 0x080 */ public string CreatorName;
-        [NMS(Size = 0x40)]
-        /* 0x0C0 */ public string CreatorOnlineID;
-        [NMS(Size = 0x40)]
-        /* 0x100 */ public string CocreatorName;
-        [NMS(Size = 0x40)]
-        /* 0x140 */ public string CocreatorOnlineID;
+        /* 0x040 */ public NMSString0x40 RID;
+        /* 0x080 */ public NMSString0x40 CreatorName;
+        /* 0x0C0 */ public NMSString0x40 CreatorOnlineID;
+        /* 0x100 */ public NMSString0x40 CocreatorName;
+        /* 0x140 */ public NMSString0x40 CocreatorOnlineID;
         /* 0x180 */ public ulong Timestamp;
         [NMS(Size = 0x8, Ignore = true)]
         public byte[] EndPadding;

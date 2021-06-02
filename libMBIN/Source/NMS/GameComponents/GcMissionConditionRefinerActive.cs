@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public bool HasFuel;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x01 */ public byte[] Padding1;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string ActiveRecipe;
+        /* 0x08 */ public NMSString0x20 ActiveRecipe;
         /* 0x28 */ public int AmountToMake;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x2C */ public byte[] EndPadding;

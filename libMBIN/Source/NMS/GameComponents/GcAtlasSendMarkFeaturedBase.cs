@@ -7,7 +7,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcAtlasSendMarkFeaturedBase : NMSTemplate
     {
         /* 0x00 */ public ulong ClientUserdata;
-        [NMS(Size = 0x40)]
-        /* 0x08 */ public string BaseID;
+        /* 0x08 */ public NMSString0x40 BaseID;
     }
 }

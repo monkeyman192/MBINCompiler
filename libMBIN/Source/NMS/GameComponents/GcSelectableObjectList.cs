@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x28, GUID = 0x8159D3D6B6276FF1, NameHash = 0x5035CC19B55D3442)]
     public class GcSelectableObjectList : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string Name;
+        public NMSString0x10 Name;
         public GcAlienRace Race;
         public List<GcSelectableObjectData> Options;
     }

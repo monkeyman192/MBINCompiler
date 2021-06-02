@@ -6,8 +6,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x10A4, GUID = 0x72F5B7416AB51616, NameHash = 0x9650958F04D49C46)]
     public class TkNGuiWindowLayoutData : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x0000 */ public string Name;
+        /* 0x0000 */ public NMSString0x80 Name;
         /* 0x0080 */ public float PositionX;
         /* 0x0084 */ public float PositionY;
         /* 0x0088 */ public float SizeX;

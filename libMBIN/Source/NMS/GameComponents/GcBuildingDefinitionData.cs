@@ -15,8 +15,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public float[] Density;
         /* 0x28 */ public int NumOverridesToGenerate;
         /* 0x2C */ public int NumModelsToGenerate;
-        [NMS(Size = 0x20)]
-        /* 0x30 */ public string TextureNameHint;
+        /* 0x30 */ public NMSString0x20 TextureNameHint;
         /* 0x50 */ public float OverrideRadius;
         /* 0x54 */ public bool GivesShelter;
         /* 0x58 */ public float MinHeight;

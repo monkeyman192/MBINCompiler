@@ -9,12 +9,9 @@ namespace libMBIN.NMS.GameComponents
         public GcDefaultMissionProductEnum Default;
         [NMS(Size = 0x4, Ignore = true)]
         public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        public string ID;
-        [NMS(Size = 0x10)]
-        public string DisplayAs;
-        [NMS(Size = 0x10)]
-        public string AwardDisplayIDDuringMission;
+        public NMSString0x10 ID;
+        public NMSString0x10 DisplayAs;
+        public NMSString0x10 AwardDisplayIDDuringMission;
         public int AmountMin;
         public int AmountMax;
     }

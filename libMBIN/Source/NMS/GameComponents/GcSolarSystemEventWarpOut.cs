@@ -9,8 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSolarSystemEventWarpOut : NMSTemplate
     {
         /* 0x00 */ public float Time;
-        [NMS(Size = 0x20)]
-        /* 0x04 */ public string SquadName;
+        /* 0x04 */ public NMSString0x20 SquadName;
         /* 0x24 */ public Vector2f WarpIntervalRange;
     }
 }

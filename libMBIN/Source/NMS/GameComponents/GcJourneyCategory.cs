@@ -13,12 +13,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x008 */ public GcMissionFaction Faction;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x00C */ public byte[] PaddingC;
-        [NMS(Size = 0x20)]
-        /* 0x010 */ public string NameIDLower;
-        [NMS(Size = 0x20)]
-        /* 0x030 */ public string NameIDUpper;
-        [NMS(Size = 0x20)]
-        /* 0x050 */ public string DescriptionID;
+        /* 0x010 */ public NMSString0x20A NameIDLower;
+        /* 0x030 */ public NMSString0x20A NameIDUpper;
+        /* 0x050 */ public NMSString0x20A DescriptionID;
         /* 0x070 */ public TkTextureResource IconOn;
         /* 0x0F4 */ public TkTextureResource IconOff;
         /* 0x178 */ public List<GcJourneyMedal> Medals;

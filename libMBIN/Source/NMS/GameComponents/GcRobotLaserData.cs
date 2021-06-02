@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x50, GUID = 0xF2A6C64121B1D193, NameHash = 0xAAC69095D4C233F5)]
     public class GcRobotLaserData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string LaserID;
+        /* 0x00 */ public NMSString0x10 LaserID;
         /* 0x10 */ public float LaserSpringTime;
         /* 0x14 */ public float LaserActiveSpringTime;
         /* 0x18 */ public int LaserMiningDamage;

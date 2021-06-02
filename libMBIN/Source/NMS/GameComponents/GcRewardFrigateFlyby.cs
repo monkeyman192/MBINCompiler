@@ -8,15 +8,11 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x000 */ public GcFrigateFlybyType FlybyType;
         /* 0x004 */ public float AppearanceDelay;
-        [NMS(Size = 0x20)]  // Aligned
-        /* 0x008 */ public string CommunicatorOSDLocId;
+        /* 0x008 */ public NMSString0x20A CommunicatorOSDLocId;
         /* 0x028 */ public GcPlayerCommunicatorMessage CommunicatorMessage;
         /* 0x078 */ public TkTextureResource MarkerIcon;
         /* 0x0FC */ public GcAudioWwiseEvents PulseAudio;
         /* 0x100 */ public GcAudioWwiseEvents AudioSting;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x104 */ public byte[] Padding104;
-        [NMS(Size = 0x10)]
-        /* 0x108 */ public string CameraShake;
+        /* 0x108 */ public NMSString0x10 CameraShake;
     }
 }

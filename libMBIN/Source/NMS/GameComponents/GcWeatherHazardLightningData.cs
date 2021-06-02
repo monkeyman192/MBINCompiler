@@ -20,12 +20,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x124 */ public float StormDuration;
         /* 0x128 */ public int MinStrikes;
         /* 0x12C */ public int MaxStrikes;
-        [NMS(Size = 0x10)]
-        /* 0x130 */ public string ShakeID;
-        [NMS(Size = 0x10)]
-        /* 0x140 */ public string ImpactParticle;
-        [NMS(Size = 0x10)]
-        /* 0x150 */ public string DamageID;
+        /* 0x130 */ public NMSString0x10 ShakeID;
+        /* 0x140 */ public NMSString0x10 ImpactParticle;
+        /* 0x150 */ public NMSString0x10 DamageID;
         /* 0x160 */ public float FullDamageRadius;
         /* 0x164 */ public float DamageRadius;
     }

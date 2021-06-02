@@ -8,8 +8,7 @@ namespace libMBIN.NMS.Globals
     [NMS(Size = 0x2280, GUID = 0x3E4661EE52DC24D4, NameHash = 0xE2DEF8CC8775E050)]
     public class GcCreatureGlobals : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        /* 0x0000 */ public string PetCarePuzzleOverrideID;
+        /* 0x0000 */ public NMSString0x20 PetCarePuzzleOverrideID;
         /* 0x0020 */ public float CreatureInteractionRangeBoostHuge;
         /* 0x0024 */ public float CreatureInteractionRangeBoostLarge;
         /* 0x0028 */ public float CreatureInteractionRangeBoostMedium;
@@ -81,8 +80,7 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x14D4 */ public byte[] Padding14D4;
         /* 0x14D8 */ public GcSeed CreatureSeed;
-        [NMS(Size = 0x20)]
-        /* 0x14E8 */ public string CreatureFilter;
+        /* 0x14E8 */ public NMSString0x20 CreatureFilter;
         /* 0x1508 */ public int MaxEcosystemCreaturesNormal;
         /* 0x150C */ public int MaxEcosystemCreaturesLow;
         /* 0x1510 */ public float LowPerfFlockReduce;
@@ -208,23 +206,19 @@ namespace libMBIN.NMS.Globals
         /* 0x17F0 */ public int CreatureHugeHealth;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x17F4 */ public byte[] Padding17F4;
-        [NMS(Size = 0x10)]
-        /* 0x17F8 */ public string CreatureLargeWalkShake;
+        /* 0x17F8 */ public NMSString0x10 CreatureLargeWalkShake;
         /* 0x1808 */ public float CreatureLargeWalkMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x180C */ public byte[] Padding180C;
-        [NMS(Size = 0x10)]
-        /* 0x1810 */ public string CreatureLargeRunShake;
+        /* 0x1810 */ public NMSString0x10 CreatureLargeRunShake;
         /* 0x1820 */ public float CreatureLargeRunMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1824 */ public byte[] Padding1824;
-        [NMS(Size = 0x10)]
-        /* 0x1828 */ public string CreatureHugeWalkShake;
+        /* 0x1828 */ public NMSString0x10 CreatureHugeWalkShake;
         /* 0x1838 */ public float CreatureHugeWalkMaxShakeDist;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x183C */ public byte[] Padding183C;
-        [NMS(Size = 0x10)]
-        /* 0x1840 */ public string CreatureHugeRunShake;
+        /* 0x1840 */ public NMSString0x10 CreatureHugeRunShake;
         /* 0x1850 */ public float CreatureHugeRunMaxShakeDist;
         /* 0x1854 */ public float SmallCreaturePerceptionDistance;
         /* 0x1858 */ public float largeCreaturePerceptionDistance;
@@ -406,14 +400,10 @@ namespace libMBIN.NMS.Globals
         /* 0x1B10 */ public bool DetailAnimPlayWhileWalking;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x1B11 */ public byte[] Padding1B11;
-        [NMS(Size = 0x10)]
-        /* 0x1B18 */ public string CreatureDeathEffectSmall;
-        [NMS(Size = 0x10)]
-        /* 0x1B28 */ public string CreatureDeathEffectMedium;
-        [NMS(Size = 0x10)]
-        /* 0x1B38 */ public string CreatureDeathEffectBig;
-        [NMS(Size = 0x10)]
-        /* 0x1B48 */ public string FishDeathEffect;
+        /* 0x1B18 */ public NMSString0x10 CreatureDeathEffectSmall;
+        /* 0x1B28 */ public NMSString0x10 CreatureDeathEffectMedium;
+        /* 0x1B38 */ public NMSString0x10 CreatureDeathEffectBig;
+        /* 0x1B48 */ public NMSString0x10 FishDeathEffect;
         /* 0x1B58 */ public float FootParticleTime;
         /* 0x1B5C */ public bool PiedPiper;
         /* 0x1B60 */ public float PetInteractTurnToFaceMinAngle;
@@ -499,8 +489,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1CE8 */ public int PetEggModificationItemLimit;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1CEC */ public byte[] Padding1CEC;
-        [NMS(Size = 0x10)]
-        /* 0x1CF0 */ public string PetEggMaxChangeProduct;
+        /* 0x1CF0 */ public NMSString0x10 PetEggMaxChangeProduct;
         /* 0x1D00 */ public float PetEggSubstanceModifier;
         /* 0x1D04 */ public float PetEggScaleRangeModifier;
         /* 0x1D08 */ public float PetEggScaleRangeMax;
@@ -534,10 +523,8 @@ namespace libMBIN.NMS.Globals
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x1D78 */ public byte[] Padding1D78;
         /* 0x1D80 */ public GcScanEffectData PetOffPlanetEffect;
-        [NMS(Size = 0x80)]
-        /* 0x1DD0 */ public string PetEggResourceFile;
-        [NMS(Size = 0x80)]
-        /* 0x1E50 */ public string PetEggHatchResourceFile;
+        /* 0x1DD0 */ public NMSString0x80 PetEggResourceFile;
+        /* 0x1E50 */ public NMSString0x80 PetEggHatchResourceFile;
         /* 0x1ED0 */ public float PetEggHatchScale;
         /* 0x1ED4 */ public float PetEggHatchOffset;
         /* 0x1ED8 */ public float PetEggMaxLonely;
@@ -546,8 +533,7 @@ namespace libMBIN.NMS.Globals
         /* 0x1EE4 */ public bool PetForceSummonFromEgg;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x1EE5 */ public byte[] Padding1EE5;
-        [NMS(Size = 0x10)]
-        /* 0x1EE8 */ public string PetEggsplosionEffect;
+        /* 0x1EE8 */ public NMSString0x10 PetEggsplosionEffect;
         /* 0x1EF8 */ public bool RidingPositionTest;
         /* 0x1EF9 */ public bool PetAnimTest;
         /* 0x1EFA */ public bool UsePetTeleportEffect;
@@ -594,12 +580,9 @@ namespace libMBIN.NMS.Globals
         /* 0x1FC0 */ public float PredatorSpeedMultiplier;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1FC4 */ public byte[] Padding1FC4;
-        [NMS(Size = 0x10)]
-        /* 0x1FC8 */ public string DefaultKillingSubstance;
-        [NMS(Size = 0x10)]
-        /* 0x1FD8 */ public string AlienShipQuestKillingSubstance;
-        [NMS(Size = 0x10)]
-        /* 0x1FE8 */ public string AlienShipQuestCreatureWeapon;
+        /* 0x1FC8 */ public NMSString0x10 DefaultKillingSubstance;
+        /* 0x1FD8 */ public NMSString0x10 AlienShipQuestKillingSubstance;
+        /* 0x1FE8 */ public NMSString0x10 AlienShipQuestCreatureWeapon;
         /* 0x1FF8 */ public List<NMSString0x10> KillingSubstances;
         /* 0x2008 */ public int CreatureKillRewardAmountSmall;
         /* 0x200C */ public int CreatureKillRewardAmountMed;
@@ -613,10 +596,8 @@ namespace libMBIN.NMS.Globals
         /* 0x2044 */ public int CreatureHarvestAmountHuge;
         /* 0x2048 */ public float HarvestCooldownMin;
         /* 0x204C */ public float HarvestCooldownMax;
-        [NMS(Size = 0x10)]
-        /* 0x2050 */ public string BasicFeedingProduct;
-        [NMS(Size = 0x10)]
-        /* 0x2060 */ public string RobotFeedingProduct;
+        /* 0x2050 */ public NMSString0x10 BasicFeedingProduct;
+        /* 0x2060 */ public NMSString0x10 RobotFeedingProduct;
         /* 0x2070 */ public bool AllBaitIsBasic;
         /* 0x2071 */ public bool CanAlwaysLayEgg;
         [NMS(Size = 0x6, Ignore = true)]

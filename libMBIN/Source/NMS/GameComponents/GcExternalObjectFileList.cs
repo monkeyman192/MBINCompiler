@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x38, GUID = 0x1D288621A5B4021B, NameHash = 0x76D3572C2A9662D2)]
     public class GcExternalObjectFileList : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
+        /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public bool OnlyOnExtremeWeather;
         /* 0x11 */ public bool OnlyOnExtremeSentinels;
         /* 0x12 */ public bool OnlyOnDeepWater;

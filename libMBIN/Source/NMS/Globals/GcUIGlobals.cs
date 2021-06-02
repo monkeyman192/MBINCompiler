@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x44F0, GUID = 0xC8CF05F1144F378E, NameHash = 0x95C306B1A90F3E08)]
+    [NMS(Size = 0x44F0, GUID = 0xB03A4315276D77B4, NameHash = 0x95C306B1A90F3E08)]
     public class GcUIGlobals : NMSTemplate
     {
         /* 0x0000 */ public float EggModifiyAnimMaxSize;
@@ -25,8 +25,7 @@ namespace libMBIN.NMS.Globals
         /* 0x003C */ public float EndOfSeasonAlertDelay;
         /* 0x0040 */ public int ShowDaysIfLessThan;
         /* 0x0044 */ public int ShowWeeksIfLessThan;
-        [NMS(Size = 0x10)]
-        /* 0x0048 */ public string ExplorationLogMissionID;
+        /* 0x0048 */ public NMSString0x10 ExplorationLogMissionID;
         /* 0x0058 */ public int ForceOpenHazardProtInventoryThreshold;
         /* 0x005C */ public float PlanetDataExtraRadius;
         /* 0x0060 */ public float StackSizeRateChangeRate;
@@ -99,8 +98,7 @@ namespace libMBIN.NMS.Globals
         /* 0x01D8 */ public Vector2f InWorldGameGuiAlignment;
         /* 0x01E0 */ public int InWorldInteractLabelWidth;
         /* 0x01E4 */ public int InWorldInteractLabelHeight;
-        [NMS(Size = 0x20)]
-        /* 0x01E8 */ public string VRDistanceWarningUIFile;
+        /* 0x01E8 */ public NMSString0x20 VRDistanceWarningUIFile;
         /* 0x0208 */ public bool ShowVRDistanceWarning;
         /* 0x0210 */ public Vector3f FaceLockedScreenOffset;
         /* 0x0220 */ public int VRFaceLockedScreenWidth;
@@ -229,10 +227,8 @@ namespace libMBIN.NMS.Globals
         /* 0x0820 */ public List<Vector2f> InventoryIconPositions;
         /* 0x0830 */ public Colour PickedItemBorderColour;
         /* 0x0840 */ public Colour MultiplayerMissionParticipantsColour;
-        [NMS(Size = 0x10)]
-        /* 0x0850 */ public string MultiplayerMissionInteractStartTrigger;
-        [NMS(Size = 0x10)]
-        /* 0x0860 */ public string MultiplayerMissionInteractEndTrigger;
+        /* 0x0850 */ public NMSString0x10 MultiplayerMissionInteractStartTrigger;
+        /* 0x0860 */ public NMSString0x10 MultiplayerMissionInteractEndTrigger;
         /* 0x0870 */ public float NotificationHazardMinTimeAfterRecharge;
         /* 0x0874 */ public float LoadFadeInDefaultTime;
         /* 0x0878 */ public float DroneIndicatorRadius;
@@ -340,11 +336,9 @@ namespace libMBIN.NMS.Globals
         /* 0x0F24 */ public float LowHealthShieldMin;
         /* 0x0F28 */ public float LowHealthShieldFactor;
         /* 0x0F2C */ public int MaxDialogCharSizeRoman;
-        [NMS(Size = 0x20)]
-        /* 0x0F30 */ public string MaxDialogCharSizeRomanString;
+        /* 0x0F30 */ public NMSString0x20 MaxDialogCharSizeRomanString;
         /* 0x0F50 */ public int MaxDialogCharSizeIdeographic;
-        [NMS(Size = 0x20)]
-        /* 0x0F54 */ public string MaxDialogCharSizeIdeographicString;
+        /* 0x0F54 */ public NMSString0x20 MaxDialogCharSizeIdeographicString;
         /* 0x0F74 */ public float ShipOverheatSwitchMessageWait;
         /* 0x0F78 */ public float ShipOverheatSwitchMessageTime;
         /* 0x0F7C */ public bool LeadTargetEnabled;
@@ -630,10 +624,7 @@ namespace libMBIN.NMS.Globals
         /* 0x16B0 */ public float TechDisplayDelayTime;
         /* 0x16B4 */ public float CriticalMessageTime;
         /* 0x16B8 */ public int NumDeathQuotes;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x16BC */ public byte[] Padding16BC;
-        [NMS(Size = 0x10)]
-        /* 0x16C0 */ public string ShowStatWithDeathQuote;
+        /* 0x16C0 */ public NMSString0x10 ShowStatWithDeathQuote;
         /* 0x16D0 */ public bool EnableKanaConversion;
         /* 0x16D4 */ public float HUDDisplayTime;
         /* 0x16D8 */ public float HUDPlayerTrackDangerPulse;
@@ -729,12 +720,9 @@ namespace libMBIN.NMS.Globals
         /* 0x18B0 */ public float DeathMessageTotalTime;
         /* 0x18C0 */ public Colour DeathMessageColour;
         /* 0x18D0 */ public Colour PinnedRecipeBorder;
-        [NMS(Size = 0x20)]
-        /* 0x18E0 */ public string DistanceUnitM;
-        [NMS(Size = 0x20)]
-        /* 0x1900 */ public string DistanceUnitKM;
-        [NMS(Size = 0x20)]
-        /* 0x1920 */ public string DistanceUnitMpS;
+        /* 0x18E0 */ public NMSString0x20 DistanceUnitM;
+        /* 0x1900 */ public NMSString0x20 DistanceUnitKM;
+        /* 0x1920 */ public NMSString0x20 DistanceUnitMpS;
         /* 0x1940 */ public float ZoomHUDElementsOffsetX;
         /* 0x1944 */ public float ZoomHUDElementsOffsetY;
         /* 0x1948 */ public float ZoomHUDElementTime;
@@ -1060,24 +1048,15 @@ namespace libMBIN.NMS.Globals
         /* 0x3870 */ public Colour HUDOutpostColour;
         /* 0x3880 */ public Vector2f HUDMarkerPrimaryIndicatorOffset;
         /* 0x3888 */ public Vector2f HUDMarkerCompassPrimaryIndicatorOffset;
-        [NMS(Size = 0x100)]
-        /* 0x3890 */ public string HUDMarkerIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3990 */ public string HUDMarkerPrimaryIndicatorIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3A90 */ public string HUDMarkerColourIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3B90 */ public string HUDPointIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3C90 */ public string HUDSpaceshipIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3D90 */ public string HUDSaveIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3E90 */ public string HUDDeathPointIcon;
-        [NMS(Size = 0x100)]
-        /* 0x3F90 */ public string HUDHexAnimIcon;
-        [NMS(Size = 0x100)]
-        /* 0x4090 */ public string HUDCircleAnimIcon;
+        /* 0x3890 */ public NMSString0x100 HUDMarkerIcon;
+        /* 0x3990 */ public NMSString0x100 HUDMarkerPrimaryIndicatorIcon;
+        /* 0x3A90 */ public NMSString0x100 HUDMarkerColourIcon;
+        /* 0x3B90 */ public NMSString0x100 HUDPointIcon;
+        /* 0x3C90 */ public NMSString0x100 HUDSpaceshipIcon;
+        /* 0x3D90 */ public NMSString0x100 HUDSaveIcon;
+        /* 0x3E90 */ public NMSString0x100 HUDDeathPointIcon;
+        /* 0x3F90 */ public NMSString0x100 HUDHexAnimIcon;
+        /* 0x4090 */ public NMSString0x100 HUDCircleAnimIcon;
         /* 0x4190 */ public float HUDMarkerAnimSpeed;
         /* 0x4194 */ public float HUDMarkerAnimScale;
         /* 0x4198 */ public float HUDMarkerAnimOffset;

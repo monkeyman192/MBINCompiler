@@ -5,13 +5,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1CE0, GUID = 0xB36B01A8EEDB59BA, NameHash = 0x71CAF682B6986E6E)]
+    [NMS(Size = 0x1CE0, GUID = 0xB7CDA1B1ABAE281C, NameHash = 0x71CAF682B6986E6E)]
     public class GcGameplayGlobals : NMSTemplate
     {
         /* 0x0000 */ public float ShipScanPlanetRechargeMultiplier;
         /* 0x0004 */ public float ShipScanSpaceRechargeMultiplier;
-        [NMS(Size = 0x10)]
-        /* 0x0008 */ public string FreeSuitSlotID;
+        /* 0x0008 */ public NMSString0x10 FreeSuitSlotID;
         /* 0x0018 */ public float InitialLocationProtectionRadiusMultiplier;
         /* 0x001C */ public float PartyPlanetSearchDistance;
         /* 0x0020 */ public int MaxActiveWeatherHazardGifts;
@@ -312,14 +311,10 @@ namespace libMBIN.NMS.Globals
         /* 0x095C */ public int ResourceDirtReducer;            // Do not set to 0
         /* 0x0960 */ public int ResourceDirtMinAmount;
         /* 0x0964 */ public int ResourceDirtMaxAmount;
-        [NMS(Size = 0x10)]
-        /* 0x0968 */ public string ResourceDirtSubstanceID;
-        [NMS(Size = 0x10)]
-        /* 0x0978 */ public string BioShipTerrainResource;        // "SUNGOLD" -> Liquid Sun substance
-        [NMS(Size = 0x20)]
-        /* 0x0988 */ public string RobotResource;
-        [NMS(Size = 0x20)]
-        /* 0x09A8 */ public string DepotResource;
+        /* 0x0968 */ public NMSString0x10 ResourceDirtSubstanceID;
+        /* 0x0978 */ public NMSString0x10 BioShipTerrainResource;        // "SUNGOLD" -> Liquid Sun substance
+        /* 0x0988 */ public NMSString0x20 RobotResource;
+        /* 0x09A8 */ public NMSString0x20 DepotResource;
         /* 0x09C8 */ public float DockNodeBuyRadius;
         /* 0x09CC */ public float BeaconInteractRange;
         /* 0x09D0 */ public float ShipInteractRadius;
@@ -418,8 +413,7 @@ namespace libMBIN.NMS.Globals
         /* 0x16C4 */ public float HUDLabelOffsetZ;
         /* 0x16C8 */ public float HUDLabelScale;
         /* 0x16CC */ public float MaxSpawnTime;
-        [NMS(Size = 0x80)]
-        /* 0x16D0 */ public string ResourceParticleFile;
+        /* 0x16D0 */ public NMSString0x80 ResourceParticleFile;
         /* 0x1750 */ public float ResourceParticleSpeed;
         /* 0x1754 */ public float ResourceParticleSpread;
         /* 0x1758 */ public int ResourceParticleMaxNum;
@@ -454,8 +448,7 @@ namespace libMBIN.NMS.Globals
         /* 0x17F4 */ public GcTracerData ShipTracer;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x180C */ public byte[] Padding180C;
-        [NMS(Size = 0x10)]
-        /* 0x1810 */ public string DefaultAnim;
+        /* 0x1810 */ public NMSString0x10 DefaultAnim;
         /* 0x1820 */ public bool DebugDrawTriggerBoxes;
         /* 0x1824 */ public float SpeedReadoutMultiplier;
         /* 0x1828 */ public float SpaceSpeedReadoutMultiplier;
@@ -493,8 +486,7 @@ namespace libMBIN.NMS.Globals
         /* 0x18D8 */ public float LaserExplosionForceRadius;
         /* 0x18DC */ public float LaserExplosionForce;
         /* 0x18E0 */ public float LaserExplosionForceMaxForceRadius;
-        [NMS(Size = 0x80)]
-        /* 0x18E4 */ public string InitialDebrisScene;
+        /* 0x18E4 */ public NMSString0x80 InitialDebrisScene;
         /* 0x1964 */ public float BonusSameTypeElementsAdd;
         /* 0x1968 */ public float BonusSameTypeElementsMultiply;
         /* 0x196C */ public float BonusChildTypeElementsAdd;
@@ -506,10 +498,8 @@ namespace libMBIN.NMS.Globals
         /* 0x1984 */ public float JumpToCenterFuelCost;
         /* 0x1988 */ public int WarpsBetweenMiniStation;
         /* 0x198C */ public float HoursBetweenMiniStation;
-        [NMS(Size = 0x80)]
-        /* 0x1990 */ public string LegacyBaseBuildingTable;
-        [NMS(Size = 0x80)]
-        /* 0x1A10 */ public string BaseBuildingTable;
+        /* 0x1990 */ public NMSString0x80 LegacyBaseBuildingTable;
+        /* 0x1A10 */ public NMSString0x80 BaseBuildingTable;
         /* 0x1A90 */ public ulong NPCWorkerInteractionCooldown;
         /* 0x1A98 */ public float LightStrength;
         /* 0x1A9C */ public float AirLockDoorRange;
@@ -546,10 +536,8 @@ namespace libMBIN.NMS.Globals
         /* 0x1B58 */ public float SalvageShipOneRevolutionTime;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x1B5C */ public byte[] Padding1B5C;
-        [NMS(Size = 0x20)]
-        /* 0x1B60 */ public string CommunicatorFireteamNexusExitDialog;
-        [NMS(Size = 0x20)]
-        /* 0x1B80 */ public string CommunicatorNexusExitAbandonWarningDialog;
+        /* 0x1B60 */ public NMSString0x20 CommunicatorFireteamNexusExitDialog;
+        /* 0x1B80 */ public NMSString0x20 CommunicatorNexusExitAbandonWarningDialog;
         /* 0x1BA0 */ public float PulseEncounterCheckTimer;
         /* 0x1BA4 */ public float PulseEncounterChance;
         /* 0x1BA8 */ public float PulseEncounterChanceStandard;

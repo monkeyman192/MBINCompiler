@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         public GcHUDComponent Data;
 
-        [NMS(Size = 0x80)]
-        public string Text;
+        public NMSString0x80 Text;
 
         [NMS(Size = 8, Ignore = true)]
         public byte[] PaddingA8;

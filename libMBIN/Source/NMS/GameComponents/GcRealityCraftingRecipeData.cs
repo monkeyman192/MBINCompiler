@@ -9,7 +9,6 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 3)]
         public GcRealitySubstanceCraftingMix[] Inputs;
 
-        [NMS(Size = 0x10)]
-        public string OutputID;
+        public NMSString0x10 OutputID;
     }
 }

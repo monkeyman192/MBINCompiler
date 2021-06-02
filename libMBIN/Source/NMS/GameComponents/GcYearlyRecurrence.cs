@@ -10,7 +10,6 @@ namespace libMBIN.NMS.GameComponents
         public int RecurrenceHour;
         public int RecurrenceDay;
         public GcMonth RecurrenceMonth;
-        [NMS(Size = 0x80)]
-        public string DebugText;
+        public NMSString0x80 DebugText;
     }
 }

@@ -17,8 +17,7 @@ namespace libMBIN.NMS.Toolkit
 		public enum NoiseGridTypeEnum { Cube, Cone, Torus, Sphere, Cylinder, Capsule, Corridor, Pipe, Puck, SuperPrimitiveRandom, SuperFormula_01, SuperFormula_02, SuperFormula_03, SuperFormula_04, SuperFormula_05, SuperFormula_06, SuperFormula_07, SuperFormula_08, SuperFormulaRandom, SuperFormula, SuperPrimitive, File }
 		public NoiseGridTypeEnum NoiseGridType;
 
-        [NMS(Size = 0x80)]
-        /* 0x014 */ public string Filename;
+        /* 0x014 */ public NMSString0x80 Filename;
         /* 0x094 */ public float MinWidth;
         /* 0x098 */ public float MaxWidth;
         /* 0x09C */ public float MinHeight;

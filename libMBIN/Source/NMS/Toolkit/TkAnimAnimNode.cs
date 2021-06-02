@@ -6,12 +6,9 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x70, GUID = 0xB911CEB4CA3E7843, NameHash = 0xEC73620F98D708BF)]
     public class TkAnimAnimNode : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        public string NodeId;
-        [NMS(Size = 0x10)]
-        public string AnimId;
-        [NMS(Size = 0x40)]
-        public string PhaseIn;
+        public NMSString0x10 NodeId;
+        public NMSString0x10 AnimId;
+        public NMSString0x40 PhaseIn;
         public TkCurveType PhaseCurve;
         public float PhseRangeBegin;
         public float PhaseRangeEnd;

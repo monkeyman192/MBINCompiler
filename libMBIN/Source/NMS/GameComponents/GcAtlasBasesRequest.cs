@@ -14,7 +14,6 @@ namespace libMBIN.NMS.GameComponents
         public int MayBytes;
         public int MinVersion;
         public int MaxVersion;
-        [NMS(Size = 0x20)]
-        public string SpecificUserId;
+        public NMSString0x20 SpecificUserId;
     }
 }

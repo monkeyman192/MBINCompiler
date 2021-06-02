@@ -9,13 +9,10 @@ namespace libMBIN.NMS.GameComponents
     {
 		public enum HUDTextDisplayTypeEnum { Full, Compact, EyeLevel, Prompt, Tooltip }
 		/* 0x000 */ public HUDTextDisplayTypeEnum HUDTextDisplayType;
-        [NMS(Size = 0x100)]
-        /* 0x004 */ public string Title;
-        [NMS(Size = 0x100)]
-        /* 0x104 */ public string Subtitle1;
-        [NMS(Size = 0x100)]
-        /* 0x204 */ public string Subtitle2;
+        /* 0x004 */ public NMSString0x100 Title;
+        /* 0x104 */ public NMSString0x100 Subtitle1;
+        /* 0x204 */ public NMSString0x100 Subtitle2;
         /* 0x304 */ public GcAlienRace UseAlienLanguage;
-        /* 0x308 */ public List<NMSString0x20> ChooseRandomTextOptions;
+        /* 0x308 */ public List<NMSString0x20A> ChooseRandomTextOptions;
     }
 }

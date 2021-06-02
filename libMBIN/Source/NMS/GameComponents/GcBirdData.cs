@@ -15,7 +15,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x18 */ public float FlapSpeedMaxScale;
         /* 0x1C */ public float FlapSpeedForMinScale;
         /* 0x20 */ public float FlapSpeedForMaxScale;
-        [NMS(Size = 0x80)]
-        /* 0x24 */ public string CircleAttractor;
+        /* 0x24 */ public NMSString0x80 CircleAttractor;
     }
 }

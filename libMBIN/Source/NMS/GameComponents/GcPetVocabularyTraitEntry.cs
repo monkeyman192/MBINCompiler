@@ -11,9 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcCreaturePetTraits Traits;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x04 */ public byte[] Padding4;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string Positive;
-        [NMS(Size = 0x20)]
-        /* 0x28 */ public string Negative;
+        /* 0x08 */ public NMSString0x20 Positive;
+        /* 0x28 */ public NMSString0x20 Negative;
     }
 }

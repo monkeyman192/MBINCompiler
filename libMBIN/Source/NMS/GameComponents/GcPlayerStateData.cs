@@ -49,18 +49,14 @@ namespace libMBIN.NMS.GameComponents
         /* 0x02F08 */ public List<NMSString0x10> KnownTech;
         /* 0x02F18 */ public List<NMSString0x10> KnownProducts;
         /* 0x02F28 */ public List<NMSString0x10> KnownSpecials;
-        /* 0x02F38 */ public List<NMSString0x20> KnownRefinerRecipes;
+        /* 0x02F38 */ public List<NMSString0x20A> KnownRefinerRecipes;
         /* 0x02F48 */ public List<GcWordKnowledge> KnownWords;
         /* 0x02F58 */ public List<GcWordGroupKnowledge> KnownWordGroups;
         /* 0x02F68 */ public List<GcPlayerMissionProgress> MissionProgress;
         /* 0x02F78 */ public int PostMissionIndex;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x02F7C */ public byte[] Padding2F7C;
-        [NMS(Size = 0x10)]
-        /* 0x02F80 */ public string CurrentMissionID;
+        /* 0x02F80 */ public NMSString0x10 CurrentMissionID;
         /* 0x02F90 */ public ulong CurrentMissionSeed;
-        [NMS(Size = 0x10)]
-        /* 0x02F98 */ public string PreviousMissionID;
+        /* 0x02F98 */ public NMSString0x10 PreviousMissionID;
         /* 0x02FA8 */ public ulong PreviousMissionSeed;
         /* 0x02FB0 */ public int MissionVersion;
         [NMS(Size = 0x4, Ignore = true)]
@@ -80,8 +76,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x03048 */ public int Nanites;
         /* 0x0304C */ public int Specials;
         /* 0x03050 */ public bool ThirdPersonShip;
-        [NMS(Size = 0x7, Ignore = true)]
-        /* 0x03051 */ public byte[] Padding3051;
         /* 0x03058 */ public ulong TimeAlive;
         /* 0x03060 */ public ulong TotalPlayTime;
         /* 0x03068 */ public List<GcScanEventSave> MarkerStack;
@@ -107,7 +101,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x73, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x03230 */ public GcSavedInteractionRaceData[] SavedInteractionIndicies;
         /* 0x04090 */ public List<GcSavedInteractionDialogData> SavedInteractionDialogTable;
-        /* 0x040A0 */ public List<NMSString0x20> InteractionProgressTable;
+        /* 0x040A0 */ public List<NMSString0x20A> InteractionProgressTable;
         [NMS(Size = 0xA)]
         /* 0x040B0 */ public GcUniverseAddressData[] AtlasStationAdressData;
         [NMS(Size = 0xB)]
@@ -127,20 +121,12 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x10)]
         /* 0x043E0 */ public GcSeed[] PlanetSeeds;
         /* 0x044E0 */ public int PrimaryPlanet;
-        [NMS(Size = 4, Ignore = true)]
-        /* 0x044E4 */ public byte[] Padding44E4;
         /* 0x044E8 */ public ulong TimeLastSpaceBattle;
         /* 0x044F0 */ public int WarpsLastSpaceBattle;
-        [NMS(Size = 4, Ignore = true)]
-        /* 0x044F4 */ public byte[] Padding44F4;
         /* 0x044F8 */ public ulong ActiveSpaceBattleUA;
         /* 0x04500 */ public ulong TimeLastMiniStation;
         /* 0x04508 */ public int WarpsLastMiniStation;
-        [NMS(Size = 4, Ignore = true)]
-        /* 0x0450C */ public byte[] Padding450C;
         /* 0x04510 */ public ulong MiniStationUA;
-        [NMS(Size = 8, Ignore = true)]
-        /* 0x04518 */ public byte[] Padding4518;
         /* 0x04520 */ public Vector4f AnomalyPositionOverride;
         /* 0x04530 */ public GcUniverseAddressData GameStartAddress1;
         /* 0x04548 */ public GcUniverseAddressData GameStartAddress2;
@@ -204,8 +190,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x28BB0 */ public GcPlayerOwnershipData[] ShipOwnership;
         /* 0x2AE90 */ public int PrimaryShip;
         /* 0x2AE94 */ public bool MultiShipEnabled;
-        [NMS(Size = 0x20)]
-        /* 0x2AE95 */ public string PlayerFreighterName;
+        /* 0x2AE95 */ public NMSString0x20 PlayerFreighterName;
         [NMS(Size = 0xB, Ignore = true)]
         /* 0x2AEB5 */ public byte[] Padding2AEB5;
         /* 0x2AEC0 */ public Vector4f StartGameShipPosition;
@@ -231,8 +216,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2B5B6 */ public byte[] Padding2B5B6;
         [NMS(Size = 0x3)]
         /* 0x2B5B8 */ public GcCharacterCustomisationData[] Outfits;
-        [NMS(Size = 0x10)]
-        /* 0x2B690 */ public string JetpackEffect;
+        /* 0x2B690 */ public NMSString0x10 JetpackEffect;
         /* 0x2B6A0 */ public GcSeed FleetSeed;
         /* 0x2B6B0 */ public List<GcFleetFrigateSaveData> FleetFrigates;
         /* 0x2B6C0 */ public List<GcFleetExpeditionSaveData> FleetExpeditions;
@@ -261,10 +245,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2BD50 */ public int BannerIcon;
         /* 0x2BD54 */ public int BannerMainColour;
         /* 0x2BD58 */ public int BannerBackgroundColour;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x2BD5C */ public byte[] Padding2BD5C;
-        [NMS(Size = 0x10)]
-        /* 0x2BD60 */ public string BannerTitleId;
+        /* 0x2BD60 */ public NMSString0x10 BannerTitleId;
         /* 0x2BD70 */ public int TelemetryUploadVersion;
         /* 0x2BD74 */ public bool UsesThirdPersonVehicleCam;
         /* 0x2BD78 */ public float VRCameraOffset;

@@ -7,7 +7,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureIkData : NMSTemplate
     {
         public GcCreatureIkType CreatureIkType;
-        [NMS(Size = 0x100)]
-        public string JointName;
+        public NMSString0x100 JointName;
     }
 }

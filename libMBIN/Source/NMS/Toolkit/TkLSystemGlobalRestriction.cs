@@ -8,10 +8,8 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0xB0, GUID = 0x4C98B666C4454E5A, NameHash = 0x26AACC9ACEE360C5)]
     public class TkLSystemGlobalRestriction : NMSTemplate
     {
-        [NMS(Size = 0x20)]
-        public string Name;
-        [NMS(Size = 0x80)]
-        public string Model;
+        public NMSString0x20 Name;
+        public NMSString0x80 Model;
 
         public List<TkLSystemRestrictionData> Restrictions;
     }

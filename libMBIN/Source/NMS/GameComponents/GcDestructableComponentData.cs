@@ -8,24 +8,20 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x1F8, Alignment = 0x8, GUID = 0x9B51CEDAED51D099, NameHash = 0xE24B3D78ED0634BD)]
     public class GcDestructableComponentData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Explosion;
+        /* 0x000 */ public NMSString0x10 Explosion;
         /* 0x010 */ public float ExplosionScale;
         /* 0x014 */ public bool ExplosionScaleToBounds;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x015 */ public byte[] Padding15;
-        [NMS(Size = 0x10)]
-        /* 0x018 */ public string VehicleDestroyEffect;
-        [NMS(Size = 0x10)]
-        /* 0x028 */ public string TriggerAction;
+        /* 0x018 */ public NMSString0x10 VehicleDestroyEffect;
+        /* 0x028 */ public NMSString0x10 TriggerAction;
         /* 0x038 */ public int IncreaseWanted;
         /* 0x03C */ public bool IncreaseFiendWanted;
         /* 0x040 */ public float IncreaseFiendWantedChance;
         /* 0x044 */ public bool NotifyEncounter;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x045 */ public byte[] Padding45;
-        [NMS(Size = 0x10)]
-        /* 0x048 */ public string LootReward;
+        /* 0x048 */ public NMSString0x10 LootReward;
         /* 0x058 */ public int LootRewardAmountMin;
         /* 0x05C */ public int LootRewardAmountMax;
         /* 0x060 */ public bool CanDestroyFromStoredInteraction;
@@ -35,14 +31,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x078 */ public GcStatsEnum StatToTrack;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x07C */ public byte[] Padding7C;
-        [NMS(Size = 0x10)]
-        /* 0x080 */ public string GivesReward;
+        /* 0x080 */ public NMSString0x10 GivesReward;
         /* 0x090 */ public bool RewardIfDestroyedByOther;
         /* 0x091 */ public bool HideReward;
         [NMS(Size = 0x6, Ignore = true)]
         /* 0x092 */ public byte[] Padding92;
-        [NMS(Size = 0x20)]
-        /* 0x098 */ public string OverrideRewardLoc;
+        /* 0x098 */ public NMSString0x20 OverrideRewardLoc;
         /* 0x0B8 */ public float HardModeSubstanceMultiplier;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x0BC */ public byte[] PaddingBC;
@@ -62,16 +56,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x198 */ public float DestroyForceRadius;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x19C */ public byte[] Padding19C;
-        [NMS(Size = 0x10)]
-        /* 0x1A0 */ public string DestroyEffect;
-        [NMS(Size = 0x10)]
-        /* 0x1B0 */ public string DestroyEffectPoint;
+        /* 0x1A0 */ public NMSString0x10 DestroyEffect;
+        /* 0x1B0 */ public NMSString0x10 DestroyEffectPoint;
         /* 0x1C0 */ public float DestroyEffectTime;
         /* 0x1C4 */ public bool DestroyEffectMatrices;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x1C5 */ public byte[] Padding1C5;
-        [NMS(Size = 0x10)]
-        /* 0x1C8 */ public string AreaDamage;
+        /* 0x1C8 */ public NMSString0x10 AreaDamage;
         /* 0x1D8 */ public bool ShowInteract;
         /* 0x1DC */ public float ShowInteractRange;
         /* 0x1E0 */ public bool GrenadeSingleHit;

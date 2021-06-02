@@ -8,14 +8,12 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0xA0, GUID = 0x31ACFD1014283D9A, NameHash = 0x8D18F9F6D2A592B3)]
     public class GcNPCInteractiveObjectState : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Name;
+        /* 0x00 */ public NMSString0x10 Name;
         /* 0x10 */ public bool FaceSpawnDir;
         /* 0x10 */ public bool FaceNodeDir;
         /* 0x11 */ public bool FaceInvNodeDir;
         /* 0x12 */ public bool LookAtModel;
-        [NMS(Size = 0x40)]
-        /* 0x14 */ public string LookAtNode;
+        /* 0x14 */ public NMSString0x40 LookAtNode;
         /* 0x54 */ public bool FaceLookA;
         /* 0x55 */ public bool MaintainLookAt;
         /* 0x56 */ public bool PlayIdles;

@@ -8,13 +8,11 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x4B0, GUID = 0x8C5CCFEA425668CE, NameHash = 0xFAE86B2801335B6D)]
     public class GcGenericMissionSequence : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string MissionID;
+        /* 0x000 */ public NMSString0x10 MissionID;
 		public enum MissionClassEnum { Primary, Secondary, ChainedSecondary, Guide, Wiki, Seasonal }
 		/* 0x010 */ public MissionClassEnum MissionClass;
         /* 0x014 */ public bool MissionIsCritical;
-        [NMS(Size = 0x20)]
-        /* 0x015 */ public string MissionObjective;
+        /* 0x015 */ public NMSString0x20 MissionObjective;
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x035 */ public byte[] Padding35;
         /* 0x038 */ public GcNumberedTextList MissionTitles;
@@ -32,10 +30,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x2C8 */ public GcMissionPageHint MissionPageHint;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x2CC */ public byte[] Padding2CC;
-        [NMS(Size = 0x20)]
-        /* 0x2D0 */ public string MissionPageLocID;
-        [NMS(Size = 0x10)]
-        /* 0x2F0 */ public string MissionBuildMenuHint;
+        /* 0x2D0 */ public NMSString0x20 MissionPageLocID;
+        /* 0x2F0 */ public NMSString0x10 MissionBuildMenuHint;
         /* 0x300 */ public bool MissionHasColourOverride;
         /* 0x310 */ public Colour MissionColourOverride;
         /* 0x320 */ public int BeginCheckFrequency;
@@ -43,8 +39,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x368 */ public bool PrefixTitle;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x369 */ public byte[] Padding339;
-        [NMS(Size = 0x10)]
-        /* 0x370 */ public string NextMissionHint;
+        /* 0x370 */ public NMSString0x10 NextMissionHint;
 		public enum MessageCompleteEnum { Default, Always, Never }
 		/* 0x380 */ public MessageCompleteEnum MessageComplete;
 		public enum MessageStartEnum { Default, Always, Never }

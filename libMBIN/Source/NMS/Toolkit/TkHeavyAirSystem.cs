@@ -8,8 +8,7 @@ namespace libMBIN.NMS.Toolkit
     [NMS(Size = 0x130, GUID = 0x2B1F7A1D933F3D13, NameHash = 0x9564BC3EDB74BBA1)]
     public class TkHeavyAirSystem : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        /* 0x000 */ public string Material;
+        /* 0x000 */ public NMSString0x80 Material;
         /* 0x080 */ public Vector3f MajorDirection;
         /* 0x090 */ public Vector3f ScaleRange;
         /* 0x0A0 */ public Vector3f RotationSpeedRange;

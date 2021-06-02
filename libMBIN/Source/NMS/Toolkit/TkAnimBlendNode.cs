@@ -8,10 +8,8 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x108, GUID = 0x7886A38513257F16, NameHash = 0xA394D25E5A975DA5)]
     public class TkAnimBlendNode : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string NodeId;
-        [NMS(Size = 0x40)]
-        /* 0x10 */ public string WeightIn;
+        /* 0x00 */ public NMSString0x10 NodeId;
+        /* 0x10 */ public NMSString0x40 WeightIn;
         /* 0x50 */ public float WeightRangeBegin;
         /* 0x54 */ public float WeightRangeEnd;
         /* 0x58 */ public float WeightSpringTime;

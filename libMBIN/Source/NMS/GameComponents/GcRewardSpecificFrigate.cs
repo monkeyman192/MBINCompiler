@@ -12,10 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x08 */ public ulong FrigateSeed;
         /* 0x10 */ public ulong SystemSeed;
         /* 0x18 */ public GcAlienRace AlienRace;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x1C */ public byte[] Padding1C;
-        [NMS(Size = 0x20)]  // Aligned
-        /* 0x20 */ public string NameOverride;
+        /* 0x20 */ public NMSString0x20A NameOverride;
         /* 0x40 */ public bool IsGift;
         /* 0x41 */ public bool IsRewardFrigate;
         /* 0x42 */ public bool FormatAsSeasonal;

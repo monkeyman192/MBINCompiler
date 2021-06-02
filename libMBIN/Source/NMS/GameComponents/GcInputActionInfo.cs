@@ -10,22 +10,14 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x3, Ignore = true)]
         /* 0x001 */ public byte[] Padding1;
         /* 0x004 */ public GcInputActions Pairing;
-        [NMS(Size = 0x80)]
-        /* 0x008 */ public string TextTag;
-        [NMS(Size = 0x20)]
-        /* 0x088 */ public string LocTag;
-        [NMS(Size = 0x80)]
-        /* 0x0A8 */ public string SolidIcon;
-        [NMS(Size = 0x80)]
-        /* 0x128 */ public string OverlayIcon;
-        [NMS(Size = 0x80)]
-        /* 0x1A8 */ public string SpecialIcon;
-        [NMS(Size = 0x20)]
-        /* 0x228 */ public string ExternalId;
-        [NMS(Size = 0x20)]
-        /* 0x248 */ public string ExternalLoc;
-        [NMS(Size = 0x20)]
-        /* 0x268 */ public string ExternalDigitalAliasId;
+        /* 0x008 */ public NMSString0x80 TextTag;
+        /* 0x088 */ public NMSString0x20 LocTag;
+        /* 0x0A8 */ public NMSString0x80 SolidIcon;
+        /* 0x128 */ public NMSString0x80 OverlayIcon;
+        /* 0x1A8 */ public NMSString0x80 SpecialIcon;
+        /* 0x228 */ public NMSString0x20 ExternalId;
+        /* 0x248 */ public NMSString0x20 ExternalLoc;
+        /* 0x268 */ public NMSString0x20 ExternalDigitalAliasId;
         public enum InputActionInfoFlagsEnum { None = 0x0, HideInControlsPage = 0x1, OnlyVR = 0x2, OnlyNonVR = 0x4 }
         /* 0x288 */ public InputActionInfoFlagsEnum InputActionInfoFlags;
         [NMS(Size = 0x4, Ignore = true)]

@@ -8,8 +8,7 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x1030, GUID = 0xAE76290DFDABEA7, NameHash = 0x904DB42CF570F4BB)]
     public class GcVehicleData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string Name;
+        /* 0x000 */ public NMSString0x10 Name;
         /* 0x010 */ public int NumWheels;
         /* 0x014 */ public float WheelRadius;
         /* 0x018 */ public float WheelGuardExtraRadius;
@@ -98,14 +97,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5AD */ public bool UseRoverWheelHack;
         [NMS(Size = 0x2, Ignore = true)]
         /* 0x5AE */ public byte[] Padding5AE;
-        [NMS(Size = 0x10)]
-        /* 0x5B0 */ public string SideSkidParticle;
+        /* 0x5B0 */ public NMSString0x10 SideSkidParticle;
         /* 0x5C0 */ public float SideSkidParticleMinRate;
         /* 0x5C4 */ public float SideSkidParticleMaxRate;
         /* 0x5C8 */ public float SideSkidParticleMinThresh;
         /* 0x5CC */ public float SideSkidParticleMaxThresh;
-        [NMS(Size = 0x10)]
-        /* 0x5D0 */ public string WheelSpinParticle;
+        /* 0x5D0 */ public NMSString0x10 WheelSpinParticle;
         /* 0x5E0 */ public float WheelSpinParticleMinRate;
         /* 0x5E4 */ public float WheelSpinParticleMaxRate;
         /* 0x5E8 */ public float WheelSpinParticleMinThresh;
@@ -136,26 +133,16 @@ namespace libMBIN.NMS.GameComponents
         /* 0x64C */ public float AudioImpactSpeedThreshold;
         /* 0x650 */ public float AudioImpactSpeedMul;
         /* 0x654 */ public bool VehicleAudioSwapSkidAndSpeed;
-        [NMS(Size = 0x80)]
-        /* 0x655 */ public string AudioBoostStart;
-        [NMS(Size = 0x80)]
-        /* 0x6D5 */ public string AudioBoostStop;
-        [NMS(Size = 0x80)]
-        /* 0x755 */ public string AudioHornStart;
-        [NMS(Size = 0x80)]
-        /* 0x7D5 */ public string AudioHornStop;
-        [NMS(Size = 0x80)]
-        /* 0x855 */ public string AudioIdleExterior;
-        [NMS(Size = 0x80)]
-        /* 0x8D5 */ public string AudioImpacts;
-        [NMS(Size = 0x80)]
-        /* 0x955 */ public string AudioStart;
-        [NMS(Size = 0x80)]
-        /* 0x9D5 */ public string AudioStop;
-        [NMS(Size = 0x80)]
-        /* 0xA55 */ public string AudioSuspension;
-        [NMS(Size = 0x80)]
-        /* 0xAD5 */ public string AudioJump;
+        /* 0x655 */ public NMSString0x80 AudioBoostStart;
+        /* 0x6D5 */ public NMSString0x80 AudioBoostStop;
+        /* 0x755 */ public NMSString0x80 AudioHornStart;
+        /* 0x7D5 */ public NMSString0x80 AudioHornStop;
+        /* 0x855 */ public NMSString0x80 AudioIdleExterior;
+        /* 0x8D5 */ public NMSString0x80 AudioImpacts;
+        /* 0x955 */ public NMSString0x80 AudioStart;
+        /* 0x9D5 */ public NMSString0x80 AudioStop;
+        /* 0xA55 */ public NMSString0x80 AudioSuspension;
+        /* 0xAD5 */ public NMSString0x80 AudioJump;
         /* 0xB55 */ public bool DriveOnTopOfWater;
         /* 0xB58 */ public float VehicleUnderwaterRotateTime;
         /* 0xB5C */ public float VehicleAudioSuspensionThreshold;

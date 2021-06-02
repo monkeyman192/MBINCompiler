@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x290, Alignment = 0x10, GUID = 0xCFC4E29700DBAD43, NameHash = 0xCBC8926C6C9D9A51)]
     public class GcCreatureRidingData : NMSTemplate
     {
-        [NMS(Size = 0x100)]
-        /* 0x000 */ public string JointName;
-        [NMS(Size = 0x100)]
-        /* 0x100 */ public string AdditionalScaleJoint;
+        /* 0x000 */ public NMSString0x100 JointName;
+        /* 0x100 */ public NMSString0x100 AdditionalScaleJoint;
         /* 0x200 */ public Vector3f Offset;
         /* 0x210 */ public Vector3f RotationOffset;
         /* 0x220 */ public Vector3f VROffset;
@@ -25,10 +23,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x249 */ public byte[] Padding249;
         /* 0x250 */ public List<GcCreatureRidingPartModifier> PartModifiers;
-        [NMS(Size = 0x10)]
-        /* 0x260 */ public string IdleRidingAnim;
-        [NMS(Size = 0x10)]
-        /* 0x270 */ public string DefaultRidingAnim;
+        /* 0x260 */ public NMSString0x10 IdleRidingAnim;
+        /* 0x270 */ public NMSString0x10 DefaultRidingAnim;
         /* 0x280 */ public List<GcCreatureRidingAnimation> RidingAnims;
     }
 }

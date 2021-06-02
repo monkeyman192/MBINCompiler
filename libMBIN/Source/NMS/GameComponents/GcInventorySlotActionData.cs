@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x02 */ public bool Scales;
         /* 0x04 */ public float Time;                       // 3F800000h
         /* 0x08 */ public float ScaleAtMin;                 // 3F800000h
-        /* 0x0C */ public float SclaeAtMax;                 // 40000000h
+        /* 0x0C */ public float ScaleAtMax;                 // 40000000h
         /* 0x10 */ public TkCurveType AnimCurve;
         /* 0x14 */ public GcAudioWwiseEvents SuitAudio;
         /* 0x18 */ public GcAudioWwiseEvents ActionAudio;

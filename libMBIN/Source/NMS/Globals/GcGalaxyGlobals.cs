@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x26C0, GUID = 0xBED38FC0F18F4ABA, NameHash = 0x3BC94060600296E8)]
+    [NMS(Size = 0x26C0, GUID = 0xE4A5856BEF1E74DA, NameHash = 0x3BC94060600296E8)]
     public class GcGalaxyGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool NewStyleLookAtCamera;
@@ -24,8 +24,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0034 */ public float HexMarkerRadius;
         /* 0x0038 */ public float HexMarkerRotation;
         /* 0x003C */ public float HexMarkerOuterWidth;
-        [NMS(Size = 0x80)]
-        /* 0x0040 */ public string MarkerDefaultHex;
+        /* 0x0040 */ public NMSString0x80 MarkerDefaultHex;
         /* 0x00C0 */ public float PathToTargetLineTimeFactor;
         /* 0x00C4 */ public float PathToTargetIndicatorTimeFactor;
         /* 0x00C8 */ public float PathUISelectionMultiplierPad;

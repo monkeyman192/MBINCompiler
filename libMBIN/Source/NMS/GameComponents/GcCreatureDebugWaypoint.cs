@@ -13,8 +13,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public WaypointTypeEnum WaypointType;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x14 */ public byte[] Padding14;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string Anim;
+        /* 0x18 */ public NMSString0x10 Anim;
         /* 0x28 */ public float Time;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x2C */ public byte[] EndPadding;

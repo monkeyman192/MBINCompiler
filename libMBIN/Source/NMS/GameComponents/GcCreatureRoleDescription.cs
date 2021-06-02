@@ -8,10 +8,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public GcCreatureRoles Role;
         /* 0x04 */ public GcCreatureTypes ForceType;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string ForceID;
-        [NMS(Size = 0x10)]
-        /* 0x18 */ public string RequireTag;
+        /* 0x08 */ public NMSString0x10 ForceID;
+        /* 0x18 */ public NMSString0x10 RequireTag;
         /* 0x28 */ public GcCreatureSizeClasses MinSize;
         /* 0x2C */ public GcCreatureSizeClasses MaxSize;
         /* 0x30 */ public int MinGroupSize;
@@ -20,7 +18,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x3C */ public GcCreatureActiveTime ActiveTime;
         /* 0x40 */ public float ProbabilityOfBeingEnabled;
         /* 0x44 */ public float IncreasedSpawnDistance;
-        [NMS(Size = 0x20)]
-        /* 0x48 */ public string Filter;
+        /* 0x48 */ public NMSString0x20 Filter;
     }
 }

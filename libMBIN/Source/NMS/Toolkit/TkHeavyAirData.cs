@@ -6,8 +6,7 @@ namespace libMBIN.NMS.Toolkit
 	[NMS(Size = 0x140, GUID = 0xB55476A1D9E0E509, NameHash = 0xCB25F378CA730AFC)]
     public class TkHeavyAirData : NMSTemplate
     {
-        [NMS(Size = 0x80)]
-        public string Material;
+        public NMSString0x80 Material;
         public int NumberOfParticles;
         public float Radius;
         public float RadiusY;

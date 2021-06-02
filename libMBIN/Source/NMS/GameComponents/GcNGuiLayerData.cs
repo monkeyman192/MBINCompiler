@@ -12,11 +12,9 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x8, Ignore = true)]
         /* 0x068 */ public byte[] Padding68;
         /* 0x070 */ public TkNGuiGraphicStyle Style;
-        [NMS(Size = 0x80)]
-        /* 0x290 */ public string Image;
+        /* 0x290 */ public NMSString0x80 Image;
         /* 0x310 */ public List<NMSTemplate> Children;
-        [NMS(Size = 0x80)]
-        /* 0x320 */ public string DataFilename;
+        /* 0x320 */ public NMSString0x80 DataFilename;
         public enum AltModeEnum { None, Normal, Alt}
         /* 0x3A0 */ public AltModeEnum AltMode;
         [NMS(Size = 0xC, Ignore = true)]

@@ -6,12 +6,9 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(GUID = 0xDE75B6D1912D4ED8, Size = 0x68, NameHash = 0xB81D78F21EBE37)]
     public class GcAlienSpeechEntry : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Id;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string Text;
-        [NMS(Size = 0x20)]
-        /* 0x30 */ public string Group;
+        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x10 */ public NMSString0x20A Text;
+        /* 0x30 */ public NMSString0x20A Group;
         /* 0x50 */ public GcWordCategoryTableEnum Category;
         /* 0x54 */ public int Frequency;
         public enum WordInteractEffectEnum { Pain, Heal };

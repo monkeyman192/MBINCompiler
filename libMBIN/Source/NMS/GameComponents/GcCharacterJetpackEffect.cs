@@ -6,9 +6,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(Size = 0x110, GUID = 0x6A79A5924840FD6F, NameHash = 0x62232E26DA2D21F1)]
     public class GcCharacterJetpackEffect : NMSTemplate
     {
-        [NMS(Size = 0x100)]
-        /* 0x000 */ public string NodeName;
-        [NMS(Size = 0x10)]
-        /* 0x100 */ public string Effect;
+        /* 0x000 */ public NMSString0x100 NodeName;
+        /* 0x100 */ public NMSString0x10 Effect;
     }
 }

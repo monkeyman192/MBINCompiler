@@ -13,8 +13,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0C */ public bool ShipScannable;
         [NMS(Size = 3, Ignore = true)]
         /* 0x0D */ public byte[] PaddingD;
-        [NMS(Size = 0x20)]
-        /* 0x10 */ public string CustomName;
+        /* 0x10 */ public NMSString0x20 CustomName;
         /* 0x30 */ public bool UseCustomIcon;
         /* 0x34 */ public GcRealityGameIcons CustomIcon;
     }

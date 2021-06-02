@@ -8,20 +8,13 @@ namespace libMBIN.NMS.GameComponents
 	[NMS(Size = 0x290, GUID = 0xEF2EA77780E698D8, NameHash = 0x6B8472FADE3C492C)]
     public class GcProceduralTechnologyData : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x000 */ public string ID;
-        [NMS(Size = 0x10)]
-        /* 0x010 */ public string Template;
-        [NMS(Size = 0x20)]
-        /* 0x020 */ public string Group;
-        [NMS(Size = 0x80)]
-        /* 0x040 */ public string Name;
-        [NMS(Size = 0x80)]
-        /* 0x0C0 */ public string NameLower;
-        [NMS(Size = 0x80)]
-        /* 0x140 */ public string Subtitle;
-        [NMS(Size = 0x80)]
-        /* 0x1C0 */ public string Description;
+        /* 0x000 */ public NMSString0x10 ID;
+        /* 0x010 */ public NMSString0x10 Template;
+        /* 0x020 */ public NMSString0x20A Group;
+        /* 0x040 */ public NMSString0x80 Name;
+        /* 0x0C0 */ public NMSString0x80 NameLower;
+        /* 0x140 */ public NMSString0x80 Subtitle;
+        /* 0x1C0 */ public NMSString0x80 Description;
         /* 0x240 */ public Colour Colour;
 		public enum QualityEnum { Normal, Rare, Epic, Legendary, Illegal }
 		/* 0x250 */ public QualityEnum Quality;
