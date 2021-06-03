@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBINCompiler", "MBINCompiler\MBINCompiler.csproj", "{CE736EF9-7BE9-4FF0-9551-78F0071AA373}"
 EndProject
@@ -29,6 +29,8 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		libMBIN\libMBIN-Shared.projitems*{b6850f17-d8fd-48de-9cf2-240f1ba87236}*SharedItemsImports = 13
+		libMBIN\libMBIN-Shared.projitems*{ce736ef9-7be9-4ff0-9551-78f0071aa373}*SharedItemsImports = 5
+		libMBIN\libMBIN-Shared.projitems*{f2d295a6-d082-4eb4-8fc9-f4687f674939}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

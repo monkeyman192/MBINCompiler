@@ -7,5 +7,8 @@ namespace libMBIN.NMS
     public class VariableSizeString : NMSTemplate
     {
         public string Value;
-    }
+
+		public static implicit operator VariableSizeString ( string str ) => new VariableSizeString { Value = str };
+		public static implicit operator string ( VariableSizeString str ) => str.Value;
+	}
 }

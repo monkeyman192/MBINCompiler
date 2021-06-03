@@ -20,5 +20,8 @@ namespace libMBIN.NMS
         }
 
         public NMSString0x100() { }
-    }
+
+		public static implicit operator NMSString0x100 ( string str ) => new NMSString0x100(str);
+		public static implicit operator string ( NMSString0x100 str ) => str.Value;
+	}
 }
