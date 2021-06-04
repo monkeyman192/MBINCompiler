@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1030, GUID = 0xAE76290DFDABEA7, NameHash = 0x904DB42CF570F4BB)]
+    [NMS(Size = 0x1230, GUID = 0x838D0D49170F902B, NameHash = 0x904DB42CF570F4BB)]
     public class GcVehicleData : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Name;
@@ -160,9 +160,11 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x2)]
         /* 0xC24 */ public NMSString0x100[] HeadlightNames;
         [NMS(Size = 0x2)]
-        /* 0xE24 */ public NMSString0x100[] CockpitHeadlightNames;
-        /* 0x1024 */ public float HeadlightIntensity;
+        /* 0xE24 */ public NMSString0x100[] VolumetricHeadlightNames;
+        [NMS(Size = 0x2)]
+        /* 0x1024 */ public NMSString0x100[] CockpitHeadlightNames;
+        /* 0x1224 */ public float HeadlightIntensity;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1028 */ public byte[] EndPadding;
+        /* 0x1228 */ public byte[] EndPadding;
     }
 }
