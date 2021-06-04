@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1C0, Alignment = 0x8, GUID = 0x3BE4B4A7E69DF575, NameHash = 0xEAE36C86E1479AF5)]
+    [NMS(Size = 0x1C8, Alignment = 0x8, GUID = 0x5142359D32BAE2D2, NameHash = 0xEAE36C86E1479AF5)]
     public class GcSimpleInteractionComponentData : NMSTemplate
     {
         // size: 0x21
@@ -18,8 +18,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public SimpleInteractionTypeEnum SimpleInteractionType;
         /* 0x004 */ public float InteractDistance;
         /* 0x008 */ public bool Use2dInteractDistance;
-        [NMS(Size = 0x7, Ignore = true)]
-        /* 0x009 */ public byte[] Padding9;
         /* 0x010 */ public NMSString0x10 Id;
         /* 0x020 */ public GcRarity Rarity;
         /* 0x024 */ public GcSizeIndicator Size;
@@ -33,29 +31,32 @@ namespace libMBIN.NMS.GameComponents
         /* 0x064 */ public GcFiendCrime InteractFiendCrimeType;
         /* 0x068 */ public float InteractFiendCrimeChance;
         /* 0x06C */ public int InteractCrimeLevel;
-        /* 0x070 */ public GcInteractionActivationCost ActivationCost;
-        /* 0x0A8 */ public GcStatsEnum StatToTrack;
-        /* 0x0AC */ public bool StartsBuried;
-        /* 0x0AD */ public bool MustBeVisibleToInteract;
-        /* 0x0AE */ public bool NeedsStorm;
-        /* 0x0B0 */ public NMSString0x20A Name;
-        /* 0x0D0 */ public NMSString0x20A VRInteractMessage;
-        /* 0x0F0 */ public NMSString0x20A TerminalMessage;
-        /* 0x110 */ public NMSString0x20A ScanType;
-        /* 0x130 */ public NMSString0x20A ScanData;
-        /* 0x150 */ public GcDiscoveryTypes ScanIcon;
-        /* 0x154 */ public bool ActivateLocatorsFromRarity;
+        /* 0x070 */ public bool NotifyEncounter;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0x071 */ public byte[] Paddin71;
+        /* 0x078 */ public GcInteractionActivationCost ActivationCost;
+        /* 0x0B0 */ public GcStatsEnum StatToTrack;
+        /* 0x0B4 */ public bool StartsBuried;
+        /* 0x0B5 */ public bool MustBeVisibleToInteract;
+        /* 0x0B6 */ public bool NeedsStorm;
+        /* 0x0B8 */ public NMSString0x20A Name;
+        /* 0x0D8 */ public NMSString0x20A VRInteractMessage;
+        /* 0x0F8 */ public NMSString0x20A TerminalMessage;
+        /* 0x118 */ public NMSString0x20A ScanType;
+        /* 0x138 */ public NMSString0x20A ScanData;
+        /* 0x158 */ public GcDiscoveryTypes ScanIcon;
+        /* 0x15C */ public bool ActivateLocatorsFromRarity;
         [NMS(Size = 0x3, Ignore = true)]
-        /* 0x155 */ public byte[] Padding155;
+        /* 0x15D */ public byte[] Padding15D;
         [NMS(Size = 0x3)]
-        /* 0x158 */ public NMSString0x10[] RarityLocators;
-        /* 0x188 */ public List<GcInteractionBaseBuildingState> BaseBuildingTriggerActions;
-        /* 0x198 */ public List<GcRewardMissionOverride> RewardOverrideTable;
-        /* 0x1A8 */ public List<GcPersistencyMissionOverride> PersistencyBufferOverride;
-        /* 0x1B8 */ public bool UsePersonalPersistentBuffer;
-        /* 0x1B9 */ public bool ReseedOnRewardSuccess;
-        /* 0x1BA */ public bool CanCollectInMech;
+        /* 0x160 */ public NMSString0x10[] RarityLocators;
+        /* 0x190 */ public List<GcInteractionBaseBuildingState> BaseBuildingTriggerActions;
+        /* 0x1A0 */ public List<GcRewardMissionOverride> RewardOverrideTable;
+        /* 0x1B0 */ public List<GcPersistencyMissionOverride> PersistencyBufferOverride;
+        /* 0x1C0 */ public bool UsePersonalPersistentBuffer;
+        /* 0x1C1 */ public bool ReseedOnRewardSuccess;
+        /* 0x1C2 */ public bool CanCollectInMech;
         [NMS(Size = 0x5, Ignore = true)]
-        /* 0x1BB */ public byte[] EndPadding;
+        /* 0x1C3 */ public byte[] EndPadding;
     }
 }

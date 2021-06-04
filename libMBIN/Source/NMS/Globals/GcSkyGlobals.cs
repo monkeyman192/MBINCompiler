@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0xDE0, GUID = 0xB296374F545CDF71, NameHash = 0x5BED7FBA4647E787)]
+    [NMS(Size = 0xDF0, GUID = 0x344278B166590F2C, NameHash = 0x5BED7FBA4647E787)]
     public class GcSkyGlobals : NMSTemplate
     {
         /* 0x000 */ public float RainbowDistance;
@@ -28,44 +29,46 @@ namespace libMBIN.NMS.Globals
         /* 0x090 */ public float SunClampAngle;
         /* 0x094 */ public Vector2f PhotoModeVignette;
         /* 0x09C */ public float PhotoModeSunSpeed;
-        /* 0x0A0 */ public bool UpdateWeatherWhenSunLocked;
-        /* 0x0A4 */ public float WeatherFilterSpaceTransitionChangeTime;
-        /* 0x0A8 */ public float FreshStartTimeOfDay;
-        /* 0x0AC */ public bool ForceStormSetting;
-        /* 0x0B0 */ public float ForceStormStrength;
-        /* 0x0B4 */ public float StormScreenFilterFadeTime;
-        /* 0x0B8 */ public float StormScreenFilterDistance;
-        /* 0x0BC */ public float MinTimeBetweenStormsLow;
-        /* 0x0C0 */ public float MaxTimeBetweenStormsLow;
-        /* 0x0C4 */ public float MinTimeBetweenStormsHigh;
-        /* 0x0C8 */ public float MaxTimeBetweenStormsHigh;
-        /* 0x0CC */ public float MinTimeBetweenStormsExtremeFallback;
-        /* 0x0D0 */ public float MaxTimeBetweenStormsExtremeFallback;
-        /* 0x0D4 */ public float MinStormLengthLow;
-        /* 0x0D8 */ public float MaxStormLengthLow;
-        /* 0x0DC */ public float MinStormLengthHigh;
-        /* 0x0E0 */ public float MaxStormLengthHigh;
-        /* 0x0E4 */ public float StormWarningTime;
-        /* 0x0E8 */ public float StormTransitionTime;
-        /* 0x0EC */ public float MaxCloudCover;
-        /* 0x0F0 */ public float MaxStormCloudCover;
-        /* 0x0F4 */ public bool ForceFlightSetting;
-        /* 0x0F8 */ public float ForceFlightStrength;
-        /* 0x0FC */ public float ToFootFadeTime;
-        /* 0x100 */ public float ToFlightFadeTime;
-        /* 0x104 */ public float InFlightStormStrength;
-        /* 0x108 */ public float CreatureStormThreshold;
-        /* 0x10C */ public float TakeoffStormThreshold;
-        /* 0x110 */ public float ExtremeAudioLevel;
-        /* 0x114 */ public float StormAudioLevel;
-        /* 0x118 */ public float CloudCoverSmoothTime;
-        /* 0x11C */ public float CloudRatioSmoothTime;
-        /* 0x120 */ public float StormCloudTopColourMinBlend;
-        /* 0x124 */ public float StormCloudTopColourMaxBlend;
-        /* 0x128 */ public float StormCloudBottomColourMinBlend;
-        /* 0x12C */ public float StormCloudBottomColourMaxBlend;
-        /* 0x130 */ public float StormCloudSmoothTime;
-        /* 0x134 */ public bool SleepSunFromSettings;
+        /* 0x0A0 */ public float PhotoModeMacroMaxDOFAngle;
+        /* 0x0A4 */ public float PhotoModeMacroMaxDOFAperture;
+        /* 0x0A8 */ public bool UpdateWeatherWhenSunLocked;
+        /* 0x0AC */ public float WeatherFilterSpaceTransitionChangeTime;
+        /* 0x0B0 */ public float FreshStartTimeOfDay;
+        /* 0x0B4 */ public bool ForceStormSetting;
+        /* 0x0B8 */ public float ForceStormStrength;
+        /* 0x0BC */ public float StormScreenFilterFadeTime;
+        /* 0x0C0 */ public float StormScreenFilterDistance;
+        /* 0x0C4 */ public float MinTimeBetweenStormsLow;
+        /* 0x0C8 */ public float MaxTimeBetweenStormsLow;
+        /* 0x0CC */ public float MinTimeBetweenStormsHigh;
+        /* 0x0D0 */ public float MaxTimeBetweenStormsHigh;
+        /* 0x0D4 */ public float MinTimeBetweenStormsExtremeFallback;
+        /* 0x0D8 */ public float MaxTimeBetweenStormsExtremeFallback;
+        /* 0x0DC */ public float MinStormLengthLow;
+        /* 0x0E0 */ public float MaxStormLengthLow;
+        /* 0x0E4 */ public float MinStormLengthHigh;
+        /* 0x0E8 */ public float MaxStormLengthHigh;
+        /* 0x0EC */ public float StormWarningTime;
+        /* 0x0F0 */ public float StormTransitionTime;
+        /* 0x0F4 */ public float MaxCloudCover;
+        /* 0x0F8 */ public float MaxStormCloudCover;
+        /* 0x0FC */ public bool ForceFlightSetting;
+        /* 0x100 */ public float ForceFlightStrength;
+        /* 0x104 */ public float ToFootFadeTime;
+        /* 0x108 */ public float ToFlightFadeTime;
+        /* 0x10C */ public float InFlightStormStrength;
+        /* 0x110 */ public float CreatureStormThreshold;
+        /* 0x114 */ public float TakeoffStormThreshold;
+        /* 0x118 */ public float ExtremeAudioLevel;
+        /* 0x11C */ public float StormAudioLevel;
+        /* 0x120 */ public float CloudCoverSmoothTime;
+        /* 0x124 */ public float CloudRatioSmoothTime;
+        /* 0x128 */ public float StormCloudTopColourMinBlend;
+        /* 0x12C */ public float StormCloudTopColourMaxBlend;
+        /* 0x130 */ public float StormCloudBottomColourMinBlend;
+        /* 0x134 */ public float StormCloudBottomColourMaxBlend;
+        /* 0x138 */ public float StormCloudSmoothTime;
+        /* 0x13C */ public bool SleepSunFromSettings;
         /* 0x140 */ public Vector3f SleepSunFromSettingsPos;
         /* 0x150 */ public Vector3f SunPosition;
         /* 0x160 */ public Colour AsteroidColour;
@@ -159,5 +162,10 @@ namespace libMBIN.NMS.Globals
         /* 0xDD4 */ public float WeatherBloomThresholdSpeed;
         /* 0xDD8 */ public float WeatherBloomImpulseSpeed;
         /* 0xDDC */ public TkCurveType WeatherBloomCurve;
+        /* 0xDE0 */ public float MaxRainWetness;
+        /* 0xDE4 */ public float RainWetnessFadeInTime;
+        /* 0xDE8 */ public float RainWetnessFadeOutTime;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0xDEC */ public byte[] EndPadding;
     }
 }

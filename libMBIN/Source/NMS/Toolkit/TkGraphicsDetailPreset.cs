@@ -5,13 +5,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x34, GUID = 0x4A85C125FBFA5451, NameHash = 0x56E0EB96EB3713F0)]
+	[NMS(Size = 0x38, GUID = 0xDB5598A7AE4E6F4E, NameHash = 0x56E0EB96EB3713F0)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
         public TkGraphicsDetailTypes TextureQuality;
         public TkGraphicsDetailTypes AnimationQuality;
         public TkGraphicsDetailTypes ShadowQuality;
         public TkGraphicsDetailTypes PostProcessingEffects;
+        public TkGraphicsDetailTypes ReflectionsQuality;
         public TkGraphicsDetailTypes VolumetricsQuality;
         public TkGraphicsDetailTypes TerrainTessellation;
         public TkGraphicsDetailTypes PlanetQuality;

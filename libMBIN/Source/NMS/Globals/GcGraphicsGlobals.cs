@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0xA20, GUID = 0xF8372A5337A07B2D, NameHash = 0xB24409E83457E875)]
+    [NMS(Size = 0xA60, GUID = 0x995DC68934FA83A2, NameHash = 0xB24409E83457E875)]
     public class GcGraphicsGlobals : NMSTemplate
     {
         /* 0x000 */ public float LUTDistanceFlightMultiplier;
@@ -87,8 +88,9 @@ namespace libMBIN.NMS.Globals
         /* 0x338 */ public float ShadowLengthShip;
         /* 0x33C */ public float ShadowLengthSpace;
         /* 0x340 */ public float ShadowLengthStation;
-        /* 0x344 */ public float ShadowLengthFreighterAbandoned;
-        /* 0x348 */ public float ShadowLengthCameraView;
+        /* 0x344 */ public float ShadowLengthFreighter;
+        /* 0x348 */ public float ShadowLengthFreighterAbandoned;
+        /* 0x34C */ public float ShadowLengthCameraView;
         /* 0x350 */ public Vector4f ShadowSplit;
         /* 0x360 */ public Vector4f ShadowSplitShip;
         /* 0x370 */ public Vector4f ShadowSplitSpace;
@@ -249,13 +251,14 @@ namespace libMBIN.NMS.Globals
         /* 0x648 */ public float TaaHighFreqConstant;
         /* 0x64C */ public float TaaAccumDelay;
         /* 0x650 */ public float FrustumJitterAmount;
-        /* 0x654 */ public bool UseTaaResolve;
-        /* 0x655 */ public bool ApplyTaaTest;
-        /* 0x656 */ public bool ShowTaaBuf;
-        /* 0x657 */ public bool TonemapInLuminance;
-        /* 0x658 */ public bool ShowTaaVarianceBuf;
-        /* 0x659 */ public bool ShowTaaNVarianceBuf;
-        /* 0x65A */ public bool ShowTaaCVarianceBuf;
+        /* 0x654 */ public float FrustumJitterAmountDLSS;
+        /* 0x658 */ public bool UseTaaResolve;
+        /* 0x659 */ public bool ApplyTaaTest;
+        /* 0x65A */ public bool ShowTaaBuf;
+        /* 0x65B */ public bool TonemapInLuminance;
+        /* 0x65C */ public bool ShowTaaVarianceBuf;
+        /* 0x65D */ public bool ShowTaaNVarianceBuf;
+        /* 0x65E */ public bool ShowTaaCVarianceBuf;
         /* 0x660 */ public Vector4f TaaSettings;
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
         /* 0x670 */ public Vector4f[] TessSettings;
@@ -308,20 +311,27 @@ namespace libMBIN.NMS.Globals
         /* 0x7C0 */ public float SpaceIBLBlendDistance;
         /* 0x7C4 */ public float NoFocusMaxFPS;
         /* 0x7C8 */ public bool EnableCrossPipeSharing;
-        /* 0x7C9 */ public bool Enable42;
+        /* 0x7C9 */ public bool EnableSSR;
+        /* 0x7CA */ public bool ShowReflectionProbes;
         /* 0x7CC */ public float SharpenFilterAmount;
         /* 0x7D0 */ public float SharpenFilterDepthFactorStart;
         /* 0x7D4 */ public float SharpenFilterDepthFactorEnd;
         [NMS(Size = 0x4, EnumType = typeof( TkGraphicsDetailTypes.GraphicDetailEnum ))]
         /* 0x7D8 */ public TkGraphicsDetailPreset[] GraphicsDetailPresetsPC;
-        /* 0x8A8 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4;
-        /* 0x8DC */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4VR;
-        /* 0x910 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4Pro;
-        /* 0x944 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4ProVR;
-        /* 0x978 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1;
-        /* 0x9AC */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
-        /* 0x9E0 */ public TkGraphicsDetailPreset GraphicsDetailPresetOberon;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0xA14 */ public byte[] EndPadding;
+        /* 0x8B8 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4;
+        /* 0x8F0 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4VR;
+        /* 0x928 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4Pro;
+        /* 0x960 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4ProVR;
+        /* 0x998 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1;
+        /* 0x9D0 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
+        /* 0xA08 */ public TkGraphicsDetailPreset GraphicsDetailPresetOberon;
+        /* 0xA40 */ public float PhotoModeBloomGainMin;
+        /* 0xA44 */ public float PhotoModeBloomThresholdMin;
+        /* 0xA48 */ public float PhotoModeDefaultBloomValue;
+        /* 0xA4C */ public float PhotoModeMediumValue;
+        /* 0xA50 */ public float PhotoModeBloomGainMedium;
+        /* 0xA54 */ public float PhotoModeBloomThresholdMedium;
+        /* 0xA58 */ public float PhotoModeBloomGainMax;
+        /* 0xA5C */ public float PhotoModeBloomThresholdMax;
     }
 }

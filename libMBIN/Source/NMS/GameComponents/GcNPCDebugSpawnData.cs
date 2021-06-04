@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x380, GUID = 0xE6A5BBF8E86045CD, NameHash = 0x1D427C136EB50E9D)]
+    [NMS(Size = 0x380, GUID = 0x2BFC0C7970E3EF42, NameHash = 0x1D427C136EB50E9D)]
     public class GcNPCDebugSpawnData : NMSTemplate
     {
         /* 0x000 */ public Vector3f Position;
@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x049 */ public byte[] Padding49;
         /* 0x050 */ public List<NMSString0x10> Idles;
         /* 0x060 */ public bool Run;
+        /* 0x061 */ public bool RidePet;
         /* 0x064 */ public GcAlienRace Race;
         /* 0x068 */ public GcSeed Seed;
         /* 0x078 */ public bool AddPetAccessories;

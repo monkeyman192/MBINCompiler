@@ -3,24 +3,26 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x7C, GUID = 0x4E677597C10B7408, NameHash = 0xC02F1D19584B44D)]
+	[NMS(Size = 0x90, GUID = 0xB3029E8E98933199, NameHash = 0xC02F1D19584B44D)]
     public class TkEngineSettingsMapping : NMSTemplate
     {
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        public float[] ShadowMultiplier;
+        /* 0x00 */ public float[] ShadowMultiplier;
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        public float[] ReflectionMultiplier;
+        /* 0x10 */ public float[] ReflectionMultiplier;
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        public float[] IKFullBodyIterations;
+        /* 0x20 */ public float[] ReflectionProbesMultiplier;
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        public float[] CloudsResolutionScale;
+        /* 0x30 */ public float[] IKFullBodyIterations;
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        public float[] CloudsMaxIterations;
+        /* 0x40 */ public float[] CloudsResolutionScale;
+        [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        /* 0x50 */ public float[] CloudsMaxIterations;
 
         [NMSDescription("An array of properties which require a game restart to apply")]
-        [NMS(Size = 0x2A, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
-        public bool[] NeedsGameRestart;
+        [NMS(Size = 0x2E, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
+        /* 0x60 */ public bool[] NeedsGameRestart;
         [NMS(Size = 0x2, Ignore = true)]
-        public byte[] EndPadding;
+        /* 0x8E */ public byte[] EndPadding;
     }
 }

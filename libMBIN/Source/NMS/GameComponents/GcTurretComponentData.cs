@@ -3,13 +3,11 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xB0, GUID = 0x9D323B47AF6E4A7F, NameHash = 0x88530A815E5B1B46)]
+	[NMS(Size = 0xA8, GUID = 0xBB6DFF049368D63D, NameHash = 0x88530A815E5B1B46)]
     public class GcTurretComponentData : NMSTemplate
     {
 		public enum GunTypeEnum { Laser, Projectile, Missile }
 		/* 0x00 */ public GunTypeEnum GunType;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x04 */ public byte[] Padding4;
         /* 0x08 */ public NMSString0x10 LaserEffectId;
         /* 0x18 */ public NMSString0x10 LaserMuzzleFlashId;
         /* 0x28 */ public NMSString0x10 ProjectileId;
@@ -36,8 +34,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0xA0 */ public bool RemotePlayersCanDamage;
         /* 0xA1 */ public bool CanMoveDuringBurst;
         /* 0xA2 */ public bool FireInTurretFacing;
-        /* 0xA4 */ public float TurretSearchAngle;
-        /* 0xA8 */ public float TurretSearchTime;
-        /* 0xAC */ public float TurretAimOffset;
+        /* 0xA4 */ public float TurretAimOffset;
     }
 }

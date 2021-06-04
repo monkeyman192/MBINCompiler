@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1F0, GUID = 0x2BC31D4B0F326B49, NameHash = 0x995CD6C5BC075C98)]
+	[NMS(Size = 0x1F8, GUID = 0xB63A18B6EB667948, NameHash = 0x995CD6C5BC075C98)]
     public class GcPetData : NMSTemplate
     {
         /* 0x000 */ public float Scale;
@@ -19,20 +19,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x060 */ public ulong UA;
         /* 0x068 */ public GcSeed ColourBaseSeed;
         /* 0x078 */ public GcSeed BoneScaleSeed;
-        /* 0x088 */ public GcBiomeType Biome;
-        /* 0x08C */ public GcCreatureTypes CreatureType;
-        /* 0x090 */ public ulong BirthTime;
-        /* 0x098 */ public ulong LastEggTime;
-        /* 0x0A0 */ public ulong LastTrustIncreaseTime;
-        /* 0x0A8 */ public ulong LastTrustDecreaseTime;
-        /* 0x0B0 */ public bool EggModified;
-        /* 0x0B1 */ public bool HasBeenSummoned;
-        /* 0x0B2 */ public NMSString0x20 CustomName;
-        /* 0x0D4 */ public float Trust;
-        /* 0x0D8 */ public GcDiscoveryOwner SenderData;
+        /* 0x088 */ public bool HasFur;
+        /* 0x08C */ public GcBiomeType Biome;
+        /* 0x090 */ public GcCreatureTypes CreatureType;
+        /* 0x098 */ public ulong BirthTime;
+        /* 0x0A0 */ public ulong LastEggTime;
+        /* 0x0A8 */ public ulong LastTrustIncreaseTime;
+        /* 0x0B0 */ public ulong LastTrustDecreaseTime;
+        /* 0x0B8 */ public bool EggModified;
+        /* 0x0B9 */ public bool HasBeenSummoned;
+        /* 0x0BA */ public NMSString0x20 CustomName;
+        /* 0x0DC */ public float Trust;
+        /* 0x0E0 */ public GcDiscoveryOwner SenderData;
         [NMS(Size = 0x3, EnumType = typeof(GcCreaturePetTraits.PetTraitsEnum))]
-        /* 0x1DC */ public float[] Traits;
+        /* 0x1E4 */ public float[] Traits;
         [NMS(Size = 0x2, EnumType = typeof(GcCreaturePetMood.PetMoodEnum))]
-        /* 0x1E8 */ public float[] Moods;
+        /* 0x1F0 */ public float[] Moods;
     }
 }

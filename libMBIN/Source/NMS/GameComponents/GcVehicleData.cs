@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1030, GUID = 0xAE76290DFDABEA7, NameHash = 0x904DB42CF570F4BB)]
+	[NMS(Size = 0x1230, GUID = 0x1B1C85741985A052, NameHash = 0x904DB42CF570F4BB)]
     public class GcVehicleData : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Name;
@@ -95,8 +95,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5A8 */ public float VehicleJumpAirMaxTorque;
         /* 0x5AC */ public bool UseBuggySuspensionHack;
         /* 0x5AD */ public bool UseRoverWheelHack;
-        [NMS(Size = 0x2, Ignore = true)]
-        /* 0x5AE */ public byte[] Padding5AE;
         /* 0x5B0 */ public NMSString0x10 SideSkidParticle;
         /* 0x5C0 */ public float SideSkidParticleMinRate;
         /* 0x5C4 */ public float SideSkidParticleMaxRate;
@@ -160,9 +158,11 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Size = 0x2)]
         /* 0xC24 */ public NMSString0x100[] HeadlightNames;
         [NMS(Size = 0x2)]
-        /* 0xE24 */ public NMSString0x100[] CockpitHeadlightNames;
-        /* 0x1024 */ public float HeadlightIntensity;
+        /* 0xE24 */ public NMSString0x100[] VolumetricHeadlightNames;
+        [NMS(Size = 0x2)]
+        /* 0x1024 */ public NMSString0x100[] CockpitHeadlightNames;
+        /* 0x1224 */ public float HeadlightIntensity;
         [NMS(Size = 0x8, Ignore = true)]
-        /* 0x1028 */ public byte[] EndPadding;
+        /* 0x1228 */ public byte[] EndPadding;
     }
 }

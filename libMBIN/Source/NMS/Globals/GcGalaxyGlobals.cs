@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x26C0, GUID = 0xE4A5856BEF1E74DA, NameHash = 0x3BC94060600296E8)]
+    [NMS(Size = 0x26C0, GUID = 0x62118C7FEAD48BF5, NameHash = 0x3BC94060600296E8)]
     public class GcGalaxyGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool NewStyleLookAtCamera;
@@ -142,7 +142,7 @@ namespace libMBIN.NMS.Globals
         /* 0x0890 */ public Colour[] ConflictFilterDeuteranopiaColours;
         [NMS(Size = 0x3, EnumType = typeof(GcPlayerConflictData.ConflictLevelEnum))]
         /* 0x08C0 */ public Colour[] ConflictFilterTritanopiaColours;
-        [NMS(Size = 0xF, EnumType = typeof( GcGalaxyMarkerTypes.GalaxyMarkerTypeEnum))]
+        [NMS(Size = 0xF, EnumType = typeof(GcGalaxyMarkerTypes.GalaxyMarkerTypeEnum))]
         /* 0x08F0 */ public GcGalaxyMarkerSettings[] MarkerSettings;
         /* 0x19D0 */ public float IntroFadeInRate;
         /* 0x19D4 */ public float IntroTitleFadeTrigger;

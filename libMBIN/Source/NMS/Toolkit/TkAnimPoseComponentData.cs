@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xD8, GUID = 0xA3CCC64442F50323, NameHash = 0x6DF806B869216436)]
+	[NMS(Size = 0xE0, GUID = 0xB3A49725481F71E5, NameHash = 0x6DF806B869216436)]
     public class TkAnimPoseComponentData : NMSTemplate
     {
         /* 0x00 */ public List<TkAnimPoseData> PoseAnims;
@@ -17,5 +17,8 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Size = 4, Ignore = true)]
         /* 0xC4 */ public byte[] PaddingC4;
         /* 0xC8 */ public List<TkAnimPoseBabyModifier> BabyModifiers;
+        /* 0xD8 */ public bool ShouldRandomise;
+        [NMS(Size = 0x7, Ignore = true)]
+        /* 0xD9 */ public byte[] EndPadding;
     }
 }

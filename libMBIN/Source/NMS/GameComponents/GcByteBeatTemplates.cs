@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xA8, GUID = 0xBC8B1A3D2F8ADF9F, NameHash = 0xBBB68492659143C4)]
+    [NMS(Size = 0xB8, GUID = 0x9FE0AD3EF56B036C, NameHash = 0xBBB68492659143C4)]
     public class GcByteBeatTemplates : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x40> InitalTrees;
@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x9C */ public float TemplateCombineChanceAtRoot;
         /* 0xA0 */ public float TemplateCombineChance;
         [NMS(Size = 0x4, Ignore = true)]
-        /* 0xA4 */ public byte[] EndPadding;
+        /* 0xA4 */ public byte[] PaddingA4;
+        /* 0xA8 */ public List<GcByteBeatSong> Songs;
     }
 }

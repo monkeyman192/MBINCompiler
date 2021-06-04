@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x118, Alignment = 0x8, GUID = 0x3914B6AF0B456EE9, NameHash = 0xDE1F17CE7E01A8C2)]
+	[NMS(Size = 0x118, Alignment = 0x8, GUID = 0x62AB8216A3AA8DC1, NameHash = 0xDE1F17CE7E01A8C2)]
     public class GcAlienPuzzleEntry : NMSTemplate
     {
         /* 0x000 */ public int ProgressionIndex;
@@ -22,8 +22,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x098 */ public bool TranslateAlienText;
         /* 0x099 */ public bool TranslationBrackets;
         /* 0x09A */ public bool ProgressiveDialogue;
-        [NMS(Size = 0x5, Ignore = true)]
-        /* 0x09B */ public byte[] Padding9B;
         /* 0x0A0 */ public NMSString0x20A RequiresScanEvent;
         /* 0x0C0 */ public List<GcAlienPuzzleOption> Options;
         /* 0x0D0 */ public List<NMSString0x20A> AdditionalText;

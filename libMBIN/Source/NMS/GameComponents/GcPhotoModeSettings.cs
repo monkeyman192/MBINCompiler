@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x60, GUID = 0xF0ED1B5B7129BC50, NameHash = 0xE5075EC0403F94CA)]
+	[NMS(Size = 0x60, GUID = 0x4C02A41D41E19035, NameHash = 0xE5075EC0403F94CA)]
     public class GcPhotoModeSettings : NMSTemplate
     {
         /* 0x00 */ public float Fog;
@@ -25,7 +25,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x48 */ public float DepthOfFieldPhysAperture;
         /* 0x4C */ public float Vignette;
         /* 0x50 */ public int Filter;
-        [NMS(Size = 0xC, Ignore = true)]
-        /* 0x54 */ public byte[] EndPadding;
+        /* 0x54 */ public float Bloom;
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x58 */ public byte[] EndPadding;
     }
 }

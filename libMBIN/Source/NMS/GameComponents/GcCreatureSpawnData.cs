@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x870, GUID = 0x69215BF6BF06CB83, NameHash = 0x17AC2C984675F276)]
+	[NMS(Size = 0x870, GUID = 0x581465750D0D676F, NameHash = 0x17AC2C984675F276)]
     public class GcCreatureSpawnData : NMSTemplate
     {
         /* 0x000 */ public GcResourceElement Resource;
@@ -17,7 +17,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x808 */ public NMSString0x10 CreatureID;
         /* 0x818 */ public GcCreatureTypes CreatureType;
         /* 0x81C */ public GcCreatureRoles CreatureRole;
-        /* 0x820 */ public NMSString0x20 Filter;
+        /* 0x820 */ public NMSString0x20A Filter;
         /* 0x840 */ public int CreatureMinGroupSize;
         /* 0x844 */ public int CreatureMaxGroupSize;
         /* 0x848 */ public float CreatureGroupsPerSquareKm;
@@ -27,7 +27,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x858 */ public float CreatureActiveInDayChance;
         /* 0x85C */ public float CreatureActiveInNightChance;
         /* 0x860 */ public GcRarity Rarity;
-        /* 0x864 */ public bool Herd;
+        /* 0x864 */ public bool AllowFur;
+        /* 0x865 */ public bool Herd;
         /* 0x868 */ public int RoleDataIndex;
         [NMS(Size = 0x4, Ignore = true)]
         /* 0x86C */ public byte[] EndPadding;
