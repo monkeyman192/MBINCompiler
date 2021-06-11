@@ -19,9 +19,22 @@ namespace libMBIN.NMS
             this.Value = str;
         }
 
-        public NMSString0x200() { }
+        public NMSString0x200() {}
 
 		public static implicit operator NMSString0x200 ( string str ) => new NMSString0x200(str);
 		public static implicit operator string ( NMSString0x200 str ) => str.Value;
+
+		public int CompareTo ( INMSString RHS )
+		{
+			return string.Compare(StringValue(), RHS?.StringValue());
+		}
+		public bool Equals ( INMSString RHS )
+		{
+			return string.Equals(StringValue(), RHS?.StringValue());
+		}
+		public override string ToString ()
+		{
+			return StringValue();
+		}
 	}
 }

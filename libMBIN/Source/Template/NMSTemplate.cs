@@ -189,8 +189,8 @@ namespace libMBIN
                     reader.BaseStream.Position = endPos;
                     return template;
                 default:
-                    if ( fieldType == "VariableStringSize") {
-                        reader.Align( 0x8 );
+                    if ( fieldType == "VariableStringSize") {  // typo: VariableSizeString
+						reader.Align( 0x8 );
                     }
 
                     if (field.IsEnum) {
