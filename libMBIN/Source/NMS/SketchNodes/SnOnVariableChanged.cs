@@ -7,8 +7,7 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x10)]
     public class SnOnVariableChanged : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x0 */ public string Variable;
+        /* 0x0 */ public NMSString0x10 Variable;
         // OutNode1: 0: "Old Value"
         // OutNode2: 0: "New Value"
     }

@@ -8,8 +8,7 @@ namespace libMBIN.NMS.SketchNodes
     public class SnOnComponentEvent : NMSTemplate
     {
         /* 0x00 */ public SnComponentEnum Component;
-        [NMS(Size = 0x20)]
-        /* 0x08 */ public string Event;  // May be one of ('ArmourDestroyed', 'Shot' or 'Interaction', 'Interaction')
+        /* 0x08 */ public NMSString0x20 Event;  // May be one of ('ArmourDestroyed', 'Shot' or 'Interaction', 'Interaction')
         // OutNode: 0: "Event Value"
 
         // Some data relating to 'Event' and 'Component':

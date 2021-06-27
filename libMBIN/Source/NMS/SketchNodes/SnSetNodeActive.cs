@@ -10,8 +10,7 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x00 */ public bool Active;
         [NMS(Size = 0x7, Ignore = true)]
         /* 0x01 */ public byte[] Padding1;
-        [NMS(Size = 0x10)]
-        /* 0x80 */ public string Name;
+        /* 0x80 */ public NMSString0x10 Name;
         // IONode: Out: 0: Src, 1: Node, 2: Active
     }
 }

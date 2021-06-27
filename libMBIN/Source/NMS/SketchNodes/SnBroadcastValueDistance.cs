@@ -8,10 +8,7 @@ namespace libMBIN.NMS.SketchNodes
     public class SnBroadcastValueDistance : NMSTemplate
     {
         /* 0x0 */ public float Range;
-        [NMS(Size = 0x4, Ignore = true)]
-        /* 0x4 */ public byte[] Padding4;
-        [NMS(Size = 0x10)]
-        /* 0x8 */ public string Value;
+        /* 0x8 */ public NMSString0x10 Value;
         // IONode: Out: 0: Src, 1: Range, 2: Value
     }
 }

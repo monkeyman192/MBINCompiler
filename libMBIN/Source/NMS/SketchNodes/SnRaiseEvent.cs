@@ -7,10 +7,8 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x20)]
     public class SnRaiseEvent : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Event;
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Value;
+        /* 0x00 */ public NMSString0x10 Event;
+        /* 0x00 */ public NMSString0x10 Value;
         // IONode: Out: 0: Src, 1: Value, 2: Event
     }
 }

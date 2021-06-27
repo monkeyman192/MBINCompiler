@@ -7,8 +7,7 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x48)]
     public class SnTranslateNode : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Node;
+        /* 0x00 */ public NMSString0x10 Node;
         /* 0x10 */ public SnVector3f Translation;
         /* 0x1C */ public float Duration;
         /* 0x20 */ public SnCurve Curve;

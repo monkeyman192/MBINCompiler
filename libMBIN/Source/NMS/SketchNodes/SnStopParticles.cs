@@ -7,8 +7,7 @@ namespace libMBIN.NMS.SketchNodes
     [NMS(Size = 0x10)]
     public class SnStopParticles : NMSTemplate
     {
-        [NMS(Size = 0x10)]
-        /* 0x0 */ public string AtNode;
+        /* 0x0 */ public NMSString0x10 AtNode;
         // IoNode: Out: 0: Src, 1: AtNode
     }
 }

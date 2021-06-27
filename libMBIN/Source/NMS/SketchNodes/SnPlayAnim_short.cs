@@ -8,8 +8,7 @@ namespace libMBIN.NMS.SketchNodes
     public class SnPlayAnim_short : NMSTemplate
     {
         // This is a weird case where the PlayAnim data is only 0x10 long. This isn't in the exe and is only one file. Maybe the file is old.
-        [NMS(Size = 0x10)]
-        /* 0x00 */ public string Anim;
+        /* 0x00 */ public NMSString0x10 Anim;
         // IONode: Out: 0: Src, 1: Anim
     }
 }

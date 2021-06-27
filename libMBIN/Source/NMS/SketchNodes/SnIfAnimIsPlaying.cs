@@ -10,8 +10,7 @@ namespace libMBIN.NMS.SketchNodes
         /* 0x00 */ public bool Not;
         [NMS(Size = 0x7, Ignore = true)]    // sometimes has Padding = 0x44, sometimes doesn't...?
         /* 0x01 */ public byte[] Padding1;
-        [NMS(Size = 0x10)]
-        /* 0x08 */ public string Anim;
+        /* 0x08 */ public NMSString0x10 Anim;
         // IONode: Out: 0: Src, 1: Anim
     }
 }
