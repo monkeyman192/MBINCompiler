@@ -9,9 +9,9 @@ namespace libMBIN.NMS.SketchNodes
     public class SnIfValueIs : NMSTemplate
     {
         /* 0x0 */ public TkSketchConditions Condition;
-        [NMS(Size = 0x4, Ignore = true, Padding = 0x44)]
+        [NMS(Size = 0x4)]
         /* 0x4 */ public byte[] Padding4;
-        /* 0x8 */ public NMSString0x10 Is;
+        /* 0x8 */ public SnNMSString0x10 Is;
         // IONode: Out: 0: Value, 1 & 2: "Value as bool"; In: 0: Src, 1: Is True, 2: Is False
     }
 }

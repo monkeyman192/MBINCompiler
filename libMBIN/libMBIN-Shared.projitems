@@ -765,6 +765,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialShaderMillFlag.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialShaderMillLink.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkMaterialShaderMillNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnNMSString0x10.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnOnComponentEvent_long.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnComponentEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnCurvePoint.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\SketchNodes\SnGetPlanetColour.cs" />

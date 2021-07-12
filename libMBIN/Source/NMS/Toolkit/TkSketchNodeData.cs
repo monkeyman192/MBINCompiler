@@ -65,12 +65,13 @@ namespace libMBIN.NMS.Toolkit
 
                     // Create the template of the type we care about
                     // This is one weird case which I am guessing is deprecated.
-                    if (TypeName.ToString() == "PlayAnim" && entrySize == 0x10) {
+                    if (TypeName.Value == "PlayAnim" && entrySize == 0x10) {
                         template = NMSTemplate.TemplateFromName($"SnPlayAnim_short");
+                    } else if (TypeName.Value == "OnComponentEvent" && entrySize == 0x48) {
+                        template = NMSTemplate.TemplateFromName($"SnOnComponentEvent_long");
                     } else {
-                        template = NMSTemplate.TemplateFromName($"Sn{TypeName}");
+                        template = NMSTemplate.TemplateFromName($"Sn{TypeName.Value}");
                     }
-                    
 
                     // Move the reader to the appropriate location
                     var templatePosition = listPosition + listStartOffset;

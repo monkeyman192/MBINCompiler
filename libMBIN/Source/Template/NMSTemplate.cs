@@ -558,6 +558,7 @@ namespace libMBIN
                             size = bytes?.Length ?? 0;
                             Array.Resize(ref bytes, size);
                         } else {
+                            // TODO: see if this is working....
                             bytes = Enumerable.Repeat<byte>(stringPadding, size).ToArray();
                         }
                         writer.Write( bytes );

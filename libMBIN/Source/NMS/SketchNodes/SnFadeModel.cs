@@ -8,7 +8,7 @@ namespace libMBIN.NMS.SketchNodes
     public class SnFadeModel : NMSTemplate
     {
         /* 0x0 */ public bool FadeIn;
-        [NMS(Size = 0x3, Ignore = true, Padding = 0x44)]
+        [NMS(Size = 0x3)]
         /* 0x1 */ public byte[] Padding1;
         /* 0x4 */ public float Seconds;
         // IONode: Out: 0: Src, 1: Seconds, 2: FadeIn

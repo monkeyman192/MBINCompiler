@@ -8,9 +8,9 @@ namespace libMBIN.NMS.SketchNodes
     public class SnSetNodeActive : NMSTemplate
     {
         /* 0x00 */ public bool Active;
-        [NMS(Size = 0x7, Ignore = true)]
+        [NMS(Size = 0x7)]
         /* 0x01 */ public byte[] Padding1;
-        /* 0x80 */ public NMSString0x10 Name;
+        /* 0x80 */ public SnNMSString0x10 Name;
         // IONode: Out: 0: Src, 1: Node, 2: Active
     }
 }
