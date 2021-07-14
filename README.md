@@ -8,6 +8,15 @@ _**For Developers:** You can download a precompiled DLL or get the libMBIN sourc
 
 [DOWNLOAD LATEST RELEASE](../../releases)  
 
+** PLEASE NOTE:** MBINCompiler requires .NET 5 to run. If you do not have this you can download is [here](https://dotnet.microsoft.com/download/dotnet/5.0/runtime)
+Some applications which depend on libMBIN however require a .NET 4 version of the library, and this is also provided with the downloads in each release.
+
+Each release contains the following files:
+
+- libMBIN.dll: A library which can be used by other applications to directly interface with the serilialised data contained within .MBIN files.
+- MBINCompiler.exe: The main application used to convert .MBIN file to .EXML files and back again. Drag a file or folder of files onto the exe and away you go!
+- mapping.json: A .json file which contains a mapping to de-obfuscate the save file .json used by the game.
+- report.json: A report generated which indicated which of the test files passed or failed the automated tests. This is just for reporting purposes.
 
 ## DESCRIPTION
 A modding tool for the game: [No Man's Sky](https://www.nomanssky.com/) that converts the game's MBIN data files (binary) into human-readable EXML files (text) that can be edited with any text editor and then converted back again for use in a modded game.
@@ -82,6 +91,19 @@ Include:
 - name and path of the file relative to the GAMEDATA folder
 - the MBINCompiler version you are using
 - the NMS version of the MBIN file
+
+## Building MBINCompiler/libMBIN
+
+While this library targets multiple frameworks, building MBINCompiler and libMBIN locally will need to be done via the use of the `dotnet publish` command and the framework needs to be specified by the `-f` argument.
+
+The full command to build all the libraries under the .NET  framework looks like:
+
+```sh
+dotnet publish -c Release -f net5.0-windows -r win-x64 -o Build/Release/net5/ /nowarn:cs0618
+```
+
+For convenience we have included two batch scripts which build either the entire project for the .NET 5 framework (`build.bat`), or just libMBIN for the .NET 4 framework (`build-dotnet4.bat`).
+
 
 ## TESTING INSTRUCTIONS
 

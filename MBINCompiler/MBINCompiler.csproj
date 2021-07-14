@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFrameworks>net452;net5.0-windows</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <Configurations>Debug;Release</Configurations>
     <Platforms>AnyCPU;x64</Platforms>
@@ -47,54 +47,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  <!-- <ItemGroup> -->
-    <!-- <Compile Include="Source\CommandLineParser.cs" /> -->
-    <!-- <Compile Include="Source\CommandLineOptions.cs" /> -->
-    <!-- <Compile Include="Source\CommandLine.cs" /> -->
-    <!-- <Compile Include="Source\Commands\Command.cs" /> -->
-    <!-- <Compile Include="Source\Commands\ConvertMode.cs" /> -->
-    <!-- <Compile Include="Source\Commands\RegisterMode.cs" /> -->
-    <!-- <Compile Include="Source\Commands\ListMode.cs" /> -->
-    <!-- <Compile Include="Source\CompilerException.cs" /> -->
-    <!-- <Compile Include="Source\Commands\Convert.cs" /> -->
-    <!-- <Compile Include="Source\Commands\HelpMode.cs" /> -->
-    <!-- <Compile Include="Source\Commands\VersionMode.cs" /> -->
-    <!-- <Compile Include="Source\Program.cs" /> -->
-    <!-- <Compile Include="Properties\AssemblyInfo.cs" /> -->
-    <!-- <Compile Include="Source\Utils.cs" /> -->
-    <!-- <Compile Include="Source\Version.cs" /> -->
-  <!-- </ItemGroup> -->
-  <!-- <Import Project="..\libMBIN\libMBIN-Shared.projitems" Label="Shared" /> -->
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
-  
-  <PropertyGroup Condition="$(TargetFramework.StartsWith('net4')) and '$(OS)' == 'Unix'">
-    <!-- When compiling .NET SDK 2.0 projects targeting .NET 4.x on Mono using 'dotnet build' you -->
-    <!-- have to teach MSBuild where the Mono copy of the reference asssemblies is -->
-    <!-- Look in the standard install locations -->
-    <BaseFrameworkPathOverrideForMono Condition="'$(BaseFrameworkPathOverrideForMono)' == '' AND EXISTS('/Library/Frameworks/Mono.framework/Versions/Current/lib/mono')">/Library/Frameworks/Mono.framework/Versions/Current/lib/mono</BaseFrameworkPathOverrideForMono>
-    <BaseFrameworkPathOverrideForMono Condition="'$(BaseFrameworkPathOverrideForMono)' == '' AND EXISTS('/usr/lib/mono')">/usr/lib/mono</BaseFrameworkPathOverrideForMono>
-    <BaseFrameworkPathOverrideForMono Condition="'$(BaseFrameworkPathOverrideForMono)' == '' AND EXISTS('/usr/local/lib/mono')">/usr/local/lib/mono</BaseFrameworkPathOverrideForMono>
-    <!-- If we found Mono reference assemblies, then use them -->
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net40'">$(BaseFrameworkPathOverrideForMono)/4.0-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net45'">$(BaseFrameworkPathOverrideForMono)/4.5-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net451'">$(BaseFrameworkPathOverrideForMono)/4.5.1-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net452'">$(BaseFrameworkPathOverrideForMono)/4.5.2-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net46'">$(BaseFrameworkPathOverrideForMono)/4.6-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net461'">$(BaseFrameworkPathOverrideForMono)/4.6.1-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net462'">$(BaseFrameworkPathOverrideForMono)/4.6.2-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net47'">$(BaseFrameworkPathOverrideForMono)/4.7-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net471'">$(BaseFrameworkPathOverrideForMono)/4.7.1-api</FrameworkPathOverride>
-    <FrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != '' AND '$(TargetFramework)' == 'net472'">$(BaseFrameworkPathOverrideForMono)/4.7.2-api</FrameworkPathOverride>
-    <EnableFrameworkPathOverride Condition="'$(BaseFrameworkPathOverrideForMono)' != ''">true</EnableFrameworkPathOverride>
-    <!-- Add the Facades directory.  Not sure how else to do this. Necessary at least for .NET 4.5 -->
-    <AssemblySearchPaths Condition="'$(BaseFrameworkPathOverrideForMono)' != ''">$(FrameworkPathOverride)/Facades;$(AssemblySearchPaths)</AssemblySearchPaths>
   </PropertyGroup>
 
   <Target Name="Clean-DotNetExe" AfterTargets="Clean" Condition="$(TargetFramework.StartsWith('netcore'))">

@@ -24,15 +24,21 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.6"
-      - name: Build Windows binary
-        run: dotnet publish -c Release -r win-x64 -o Build/Release/ /nowarn:cs0618
+      - name: Build Windows .net 5 binary
+        run: dotnet publish -c Release -f net5.0-windows -r win-x64 -o Build/Release/net5/ /nowarn:cs0618
+      - name: Build Windows net452 binary
+        run: dotnet publish libMBIN-DLL -c Release -f net452 -r win-x64 -o Build/Release/net4/ /nowarn:cs0618
+      - name: Move some files to rename them
+        run: |
+          cp Build/Release/net5/MBINCompiler.exe Build/Release/MBINCompiler.exe
+          cp Build/Release/net4/libMBIN.dll Build/Release/net4/libMBIN-dotnet4.dll
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pytest requests mkdocs==1.0.4
       - name: Generate save data mapping
         run : |
-          Build/Release/SaveFileMapping.exe
+          Build/Release/net5/SaveFileMapping.exe
           pwd
           ls
         shell: bash
@@ -43,8 +49,9 @@ jobs:
         with:
           name: MBINCompiler
           path: |
-            Build/Release/MBINCompiler.exe
-            Build/Release/libMBIN.dll
+            Build/Release/net5/MBINCompiler.exe
+            Build/Release/net5/libMBIN.dll
+            Build/Release/net4/libMBIN-dotnet4.dll
             mapping.json
             report.json
   release:
@@ -70,8 +77,9 @@ jobs:
           name: "${{ env.TAG }}"
           tag_name: ${{ env.TAG }}
           files: |
-            Build/Release/MBINCompiler.exe
-            Build/Release/libMBIN.dll
+            Build/Release/net5/MBINCompiler.exe
+            Build/Release/net5/libMBIN.dll
+            Build/Release/net4/libMBIN-dotnet4.dll
             mapping.json
             report.json
         env:
