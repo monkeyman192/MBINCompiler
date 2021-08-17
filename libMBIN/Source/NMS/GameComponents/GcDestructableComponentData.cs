@@ -35,7 +35,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x108 */ public bool UseSystemColorsForTexture;
         /* 0x109 */ public bool RemoveModel;
         /* 0x10A */ public bool HideModel;
-        /* 0x10C */ public TkTextureResource DestroyedModel;
+        /* 0x10C */ public TkModelResource DestroyedModel;
         /* 0x190 */ public bool DestroyedModelUsesScale;
         /* 0x191 */ public bool DestroyedModelCollidesWithEverything;
         /* 0x194 */ public float DestroyForce;

@@ -7,7 +7,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkLODModelResource : NMSTemplate
     {
         /* 0x00 */ public TkModelResource LODModel;
-        /* 0x84 */ public float CrossFadeTime;
-        /* 0x88 */ public float CrossFadeOverlap;
+        /* 0x84 */ public float Distance;
+        /* 0x88 */ public float SwapThreshold;
     }
 }

@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public NMSString0x10 PerceptionId;
         /* 0x10 */ public bool ActiveWhenIdle;
         /* 0x11 */ public bool ActiveWhenTargetAcquired;
-        /* 0x12 */ public bool ActiveWhenTargetLost;
+        /* 0x12 */ public bool ActiveWhenSearching;
         /* 0x18 */ public NMSString0x10 LaserEffectId;
 }
 }

@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x20 */ public float[] GridLayers;
         [NMS(Size = 0x7, EnumType = typeof(TkFeaturesEnum.FeatureTypesEnum))]
         /* 0x44 */ public float[] Features;         // chance of this kind of feature being active
-        [NMS(Size = 1, EnumType = typeof(TkCavesEnum.CavesTypesEnum))]
+        [NMS(Size = 1, EnumType = typeof(TkCavesEnum.CaveTypesEnum))]
         /* 0x60 */ public float[] Caves;
         /* 0x64 */ public float WaterActiveFrequency;       // 3F4CCCCDh        
         /* 0x68 */ public float HighWaterActiveFrequency;   // 3E800000h
