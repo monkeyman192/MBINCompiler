@@ -7,17 +7,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraShakeData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-
         /* 0x10 */ public float TimeStart;
         /* 0x14 */ public float TotalTime;
         /* 0x18 */ public float DecayRate;
-        /* 0x1C */ public float StrengthSale;
+        /* 0x1C */ public float StrengthScale;
         /* 0x20 */ public float ThirdPersonDamp;
-
         /* 0x24 */ public GcCameraShakeCapturedData CapturedData;
-
-       /* 0x40 */  public GcCameraShakeMechanicalData MechanicalData;
-
+        /* 0x40 */ public GcCameraShakeMechanicalData MechanicalData;
         /* 0xB0 */ public float FOVStrength;
         /* 0xB4 */ public float FOVFrequency;
     }

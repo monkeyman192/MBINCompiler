@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcAIShipSpawnData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Message;
-        /* 0x00 */ public NMSString0x20A OSDMessage;
+        /* 0x20 */ public NMSString0x20A OSDMessage;
         /* 0x40 */ public TkInputEnum Shortcut;
         /* 0x44 */ public bool WarpIn;
         /* 0x48 */ public GcAISpaceshipRoles Role;

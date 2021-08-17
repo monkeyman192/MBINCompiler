@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 using libMBIN.NMS.Toolkit;
@@ -9,9 +10,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureDebugSpawnData : NMSTemplate
     {
         /* 0x00 */ public int CreatureIndex;
-        /* 0x04 */ public float InitalDelay;
+        /* 0x04 */ public float InitialDelay;
         /* 0x08 */ public List<GcCreatureDebugWaypoint> Waypoints;
-        public enum OnCompleteEnum { Hold, Loop, Destroy };
+        // size: 0x3
+        public enum OnCompleteEnum { Hold, Loop, Destroy }
         /* 0x18 */ public OnCompleteEnum OnComplete;
         /* 0x1C */ public float SmoothTime;
         /* 0x20 */ public int CurrentWaypoint;

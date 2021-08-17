@@ -9,10 +9,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBaseDecorationTemplate : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public TkTextureResource TemplateScene;
+        /* 0x10 */ public TkModelResource TemplateScene;
         /* 0x94 */ public float Probability;
         /* 0x98 */ public int MaxPerRoom;
-        public enum DecorationLayerEnum { Stairs, Corridor, Room, Door, Decoration1, Decoration2, Decoration3, DecoratonCorridor };
+        public enum DecorationLayerEnum { Stairs, Corridor, Room, Door, Decoration1, Decoration2, Decoration3, DecoratonCorridor }
         /* 0x9C */ public DecorationLayerEnum DecorationLayer;
         /* 0xA0 */ public List<int> InvalidRoomIndexes;
     }

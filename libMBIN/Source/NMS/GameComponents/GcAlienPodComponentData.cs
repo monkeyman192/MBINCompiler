@@ -18,7 +18,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x24 */ public float AgroSpookTime;
         /* 0x28 */ public float AgroSpookTimeMin;
         /* 0x2C */ public float AgroSpookTimeMax;
-        /* 0x30 */ public float GlowIntensitymin;
+        /* 0x30 */ public float GlowIntensityMin;
         /* 0x34 */ public float GlowIntensityMax;
         /* 0x38 */ public float InstaAgroDistance;
         /* 0x3C */ public float GunfireAgro;

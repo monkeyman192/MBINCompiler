@@ -11,7 +11,7 @@ namespace libMBIN.NMS.GameComponents
         public GcUniverseAddressData UniverseAddress;
         public GcGameMode GameMode;
         public int MaxResults;
-        public int MayBytes;
+        public int MaxBytes;
         public int MinVersion;
         public int MaxVersion;
         public NMSString0x20 SpecificUserId;

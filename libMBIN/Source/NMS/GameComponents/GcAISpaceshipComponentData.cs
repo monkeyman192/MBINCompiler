@@ -9,7 +9,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public GcAISpaceshipTypes Type;
         /* 0x04 */ public GcSpaceshipClasses Class;
         /* 0x08 */ public GcPrimaryAxis Axis;
-        /* 0x0C */ public TkTextureResource Hangar;
+        /* 0x0C */ public TkModelResource Hangar;
         /* 0x90 */ public bool IsSpaceAnomaly;
     }
 }
