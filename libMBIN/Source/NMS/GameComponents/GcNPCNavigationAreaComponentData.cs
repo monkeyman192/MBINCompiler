@@ -1,18 +1,23 @@
-﻿using libMBIN.NMS.Toolkit;
+﻿using System;
+using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1C, GUID = 0xB6A2F7B50BCDC166, NameHash = 0xB4FC959D6A910DEB)]
+    [NMS(Size = 0x1C, GUID = 0x5565E718EAF218C8, NameHash = 0xB4FC959D6A910DEB)]
     public class GcNPCNavigationAreaComponentData : NMSTemplate
     {
-        public enum NavAreaTypeEnum { Normal, BuildingWithExterior, Debris, Ship, Mech, PlanetMech, Demo }
-        public NavAreaTypeEnum NavAreaType;
-        public float MinRadius;
-        public float MaxRadius;
-        public float SphereCastHeightClearance;         // 3F000000h
-        public float NeighbourCandidateDistance;        // 41100000h
-        public float MaxNeighbourSlope;                 // 41200000h
-        public float ConnectionLengthFactor;            // 3F4CCCCDh
+        // size: 0x8
+        public enum NavAreaTypeEnum { Normal, BuildingWithExterior, Debris, Ship, Mech, PlanetMech, Demo, WFCBase
+        }
+        /* 0x00 */ public NavAreaTypeEnum NavAreaType;
+        /* 0x04 */ public float MinRadius;
+        /* 0x08 */ public float MaxRadius;
+        /* 0x0C */ public float SphereCastHeightClearance;
+        /* 0x10 */ public float NeighbourCandidateDistance;
+        /* 0x14 */ public float MaxNeighbourSlope;
+        /* 0x18 */ public float ConnectionLengthFactor;
     }
 }
