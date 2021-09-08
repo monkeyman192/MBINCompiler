@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x3D0, GUID = 0x8C5CA1D29D21C021, NameHash = 0x1D427C136EB50E9D)]
+    [NMS(Size = 0x3B0, GUID = 0x8C5CA1D29D21C021, NameHash = 0x1D427C136EB50E9D)]
     public class GcNPCDebugSpawnData : NMSTemplate
     {
         /* 0x000 */ public Vector3f Position;
@@ -24,5 +24,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x07C */ public float PetFollowOffset;
         /* 0x080 */ public GcPetData Pet;
         /* 0x2A0 */ public GcPetCustomisationData PetAccessoryCustomisation;
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x3A8 */ public byte[] EndPadding;
     }
 }

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1DD0, GUID = 0xE1E96F5FAFBA2FEF, NameHash = 0x71CAF682B6986E6E)]
+    [NMS(Size = 0x1DD0, GUID = 0x3299112CC1D42C20, NameHash = 0x71CAF682B6986E6E)]
     public class GcGameplayGlobals : NMSTemplate
     {
         /* 0x0000 */ public NMSString0x10 NexusRecipeCostType;
