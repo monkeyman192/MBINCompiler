@@ -35,7 +35,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1D0 */ public List<GcClothCollisionBone> CollisionBones;
         /* 0x1E0 */ public List<GcClothAttachmentCirlce> AttachmentCircles;
         /* 0x1F0 */ public List<GcClothAttachmentLine> AttachmentLines;
-        /* 0x200 */ public List<GcAttachmentPointData> AttachmentPointSets;
+        /* 0x200 */ public List<GcAttachmentPointSet> AttachmentPointSets;
         /* 0x210 */ public GcConstraintsToCreateSpec ConstraintsToCreate;
         /* 0x260 */ public float AttractionStrength;
         /* 0x264 */ public bool UseInitialShapeAsAttractorShape;
