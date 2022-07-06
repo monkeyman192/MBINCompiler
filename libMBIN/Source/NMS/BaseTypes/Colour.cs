@@ -72,7 +72,7 @@ namespace libMBIN.NMS
         /// <returns></returns>
         public override string ToString()
         {
-            return $"RGBA ({R}, {G}, {B}, {A})";
+            return $"RGBA ({this.R}, {this.G}, {this.B}, {this.A})";
         }
 
         /// <summary>
