@@ -66,7 +66,7 @@ namespace libMBIN.NMS
         public Colour() { }
 
         /// <summary>
-        /// Returns a formatted string for this Color.
+        /// Returns a formatted string for this Color. Values will be printed in NMS-Style, between 0 and 1.
         /// <br/>Output: RGBA (R, G, B, A)
         /// </summary>
         /// <returns></returns>
