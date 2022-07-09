@@ -79,7 +79,11 @@
         /// <returns></returns>
         public override string ToString()
         {
-            return $"Colour [A={this.A}, R={this.R}, G={this.G}, B={this.B}]";
+            int a = (int)(this.A * 255);
+            int r = (int)(this.R * 255);
+            int g = (int)(this.G * 255);
+            int b = (int)(this.B * 255);
+            return $"Colour [A={a}, R={r}, G={g}, B={b}]";
         }
 
         /// <summary>
