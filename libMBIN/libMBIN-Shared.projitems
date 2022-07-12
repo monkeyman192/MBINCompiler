@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\APIException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\INT_2_10_10_10_REV.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Common\MathHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\EXML\EXmlFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Common\IO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\MBIN\MBINFile.cs" />
