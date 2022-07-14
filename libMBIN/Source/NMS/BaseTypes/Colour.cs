@@ -51,10 +51,10 @@ namespace libMBIN.NMS
         /// <param name="A">Alpha component of the colour. Value can be anything between 0 and 1.</param>
         public Colour(float R, float G, float B, float A = 1f)
         {
-            this.R = MathHelper.Clampf(R, 0, 1);
-            this.G = MathHelper.Clampf(G, 0, 1);
-            this.B = MathHelper.Clampf(B, 0, 1);
-            this.A = MathHelper.Clampf(A, 0, 1);
+            this.R = R;
+            this.G = G;
+            this.B = B;
+            this.A = A;
         }
 
         /// <summary>
@@ -67,10 +67,10 @@ namespace libMBIN.NMS
         /// <param name="A">Alpha component of the colour. Value can be any whole number between 0 and 255.</param>
         public Colour(byte R, byte G, byte B, byte A = 255)
         {
-            this.R = R / 255;
-            this.G = G / 255;
-            this.B = B / 255;
-            this.A = A / 255;
+            this.R = R / 255f;
+            this.G = G / 255f;
+            this.B = B / 255f;
+            this.A = A / 255f;
         }
 
         public Colour() { }
@@ -137,10 +137,10 @@ namespace libMBIN.NMS
         /// <returns></returns>
         public static Colour FromSystemDrawingColor(System.Drawing.Color systemColor)
         {
-            float a = systemColor.A / 255;
-            float r = systemColor.R / 255;
-            float g = systemColor.G / 255;
-            float b = systemColor.B / 255;
+            float a = systemColor.A / 255f;
+            float r = systemColor.R / 255f;
+            float g = systemColor.G / 255f;
+            float b = systemColor.B / 255f;
             return new Colour(r, g, b, a);
         }
     }

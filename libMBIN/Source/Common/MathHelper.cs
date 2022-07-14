@@ -26,7 +26,7 @@
         /// <param name="minimum"></param>
         /// <param name="maximum"></param>
         /// <returns></returns>
-        public static float Clampf(float value, float minimum, float maximum)
+        public static float Clamp(float value, float minimum, float maximum)
         {
             if (value < minimum)
                 value = minimum;
