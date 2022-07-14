@@ -91,7 +91,7 @@ namespace libMBIN.NMS
         /// <param name="FLOAT"></param>
         /// <param name="FORMAT"></param>
         /// <returns></returns>
-        public string ToString(bool FLOAT = true, string FORMAT = "Colour [R: {0}, G: {1}, B: {2}, A: {3}]")
+        public string ToString(bool FLOAT, string FORMAT = "Colour [R: {0}, G: {1}, B: {2}, A: {3}]")
         {
             if (FLOAT) return string.Format(FORMAT, this.R, this.G, this.B, this.A);
 
