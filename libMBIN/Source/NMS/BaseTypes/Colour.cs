@@ -76,6 +76,21 @@ namespace libMBIN.NMS
         public Colour() { }
 
         /// <summary>
+        /// Returns a new Colour based on this one, with all of it's values clamped between lower and upper.
+        /// </summary>
+        /// <param name="minimum">The lowest possible amount each value can be.</param>
+        /// <param name="maximum">The highest possible amount each value can be.</param>
+        /// <returns></returns>
+        public Colour Clamp(float minimum = 0, float maximum = 1)
+        {
+            return new Colour(
+                MathHelper.Clamp(R, minimum, maximum),
+                MathHelper.Clamp(G, minimum, maximum),
+                MathHelper.Clamp(B, minimum, maximum),
+                MathHelper.Clamp(A, minimum, maximum));
+        }
+
+        /// <summary>
         /// Returns a formatted string for this Color. Values will be printed in NMS-Style, between 0 and 1.
         /// <br/>Output: Colour [R: 0.58, G: 0.35, B: 0.80, A: 1]
         /// </summary>
@@ -86,17 +101,18 @@ namespace libMBIN.NMS
         }
 
         /// <summary>
-        /// 
+        /// Returns a formatted string for this Color.
+        /// <br/>Provides option to specify your own format.
         /// </summary>
-        /// <param name="FLOAT"></param>
-        /// <param name="FORMAT"></param>
+        /// <param name="useFloat"></param>
+        /// <param name="format"></param>
         /// <returns></returns>
-        public string ToString(bool FLOAT, string FORMAT = "Colour [R: {0}, G: {1}, B: {2}, A: {3}]")
+        public string ToString(bool useFloat, string format = "Colour [R: {0}, G: {1}, B: {2}, A: {3}]")
         {
-            if (FLOAT) return string.Format(FORMAT, this.R, this.G, this.B, this.A);
+            if (useFloat) return string.Format(format, this.R, this.G, this.B, this.A);
 
             var color = this.ToSystemDrawingColor();
-            return string.Format(FORMAT, color.R, color.G, color.B, color.A);
+            return string.Format(format, color.R, color.G, color.B, color.A);
         }
 
         /// <summary>
