@@ -104,8 +104,11 @@ namespace libMBIN.NMS
         /// Returns a formatted string for this Colour.
         /// <br/>Provides option to specify your own format.
         /// </summary>
-        /// <param name="useFloat"></param>
-        /// <param name="format"></param>
+        /// <param name="useFloat">Whether or not values should be printed in float form between 0 and 1, or 
+        /// in standard RGB form between 0 and 255.</param>
+        /// <param name="format">The format that the string should follow. Allows you to specify how the string should be printed.
+        /// <br/>Requires that you provide slots 0, 1, 2, and 3 for each of the RGBA values.
+        /// <br/>The same as using String.Format.</param>
         /// <returns></returns>
         public string ToString(bool useFloat, string format = "Colour [R: {0}, G: {1}, B: {2}, A: {3}]")
         {
