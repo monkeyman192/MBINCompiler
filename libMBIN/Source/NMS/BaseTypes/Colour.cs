@@ -42,7 +42,7 @@ namespace libMBIN.NMS
 
 
         /// <summary>
-        /// Creates a Color while providing it with float RGB values.
+        /// Creates a Colour while providing it with float RGB values.
         /// <br/>Values must be between 0 - 1.
         /// </summary>
         /// <param name="R">Red component of the colour. Value can be anything between 0 and 1.</param>
@@ -58,7 +58,7 @@ namespace libMBIN.NMS
         }
 
         /// <summary>
-        /// Creates a Color while providing it with standard RGB values.
+        /// Creates a Colour while providing it with standard RGB values.
         /// <br/>Values must be whole numbers between 0 - 255.
         /// </summary>
         /// <param name="R">Red component of the colour. Value can be any whole number between 0 and 255.</param>
@@ -91,7 +91,7 @@ namespace libMBIN.NMS
         }
 
         /// <summary>
-        /// Returns a formatted string for this Color. Values will be printed in NMS-Style, between 0 and 1.
+        /// Returns a formatted string for this Colour. Values will be printed in NMS-Style, between 0 and 1.
         /// <br/>Output: Colour [R: 0.58, G: 0.35, B: 0.80, A: 1]
         /// </summary>
         /// <returns></returns>
@@ -101,7 +101,7 @@ namespace libMBIN.NMS
         }
 
         /// <summary>
-        /// Returns a formatted string for this Color.
+        /// Returns a formatted string for this Colour.
         /// <br/>Provides option to specify your own format.
         /// </summary>
         /// <param name="useFloat"></param>
