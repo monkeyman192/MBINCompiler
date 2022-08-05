@@ -14,10 +14,16 @@ import time
 import pymem
 
 
-PATT = re.compile(b'\x00(c((?:Gc)|(?:Tk)|(?:Cg))\w+)\x00')
 # TODO: A list of extra class names to include that don't adhere to the above
 # pattern. If there are any???
-EXTRA_CLASSES = []
+EXTRA_CLASSES = ['cAxisSpecification', 'cCgExpeditionCategoryStrength']
+
+NAME_MAPPING = {
+    'GcDefaulMissionProduct': 'GcDefaultMissionProduct',
+    'GcDefaulMissionSubstance': 'GcDefaultMissionSubstance',
+}
+
+SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')
 
 STATIC_BASE = 0x140000000
 TYPE_MAPPING = {
@@ -58,14 +64,14 @@ TYPE_MAPPING = {
     0x26: 'Vector4f',
 }
 PREFIX_MAPPING = {
-    'cCg': 'GameComponents',
-    'cGc': 'GameComponents',
-    'cTk': 'Toolkit'
+    'ccg': 'GameComponents',
+    'cgc': 'GameComponents',
+    'ctk': 'Toolkit'
 }
 USING_MAPPING = {
-    'Gc': 'libMBIN.NMS.GameComponents',
-    'Cg': 'libMBIN.NMS.GameComponents',
-    'Tk': 'libMBIN.NMS.Toolkit'
+    'gc': 'libMBIN.NMS.GameComponents',
+    'cg': 'libMBIN.NMS.GameComponents',
+    'tk': 'libMBIN.NMS.Toolkit'
 }
 
 FIELD_TEMPLATE = "        /* {0} */ public {1} {2};"
@@ -163,8 +169,8 @@ class Field(ABC):
 
     @property
     def field_offset(self):
-        return '{0:>0{width}}'.format(
-            fmt_hex(self._field_offset), width=self.max_offset_width
+        return '0x{0:>0{width}}'.format(
+            fmt_hex(self._field_offset)[2:], width=self.max_offset_width
         )
 
     @property
@@ -214,12 +220,17 @@ class CustomField(Field):
         # Now get the actual name.
         self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
 
-        if self.field_type[:2] in ('Gc', 'Tk'):
-            self.required_using = {USING_MAPPING[self.field_type[:2]], }
+        if self.field_type[:2].lower() in ('cg', 'gc', 'tk'):
+            self.required_using = {
+                USING_MAPPING.get(self.field_type[:2].lower(),
+                                  'libMBIN.NMS.GameComponents'),
+            }
+        elif self.field_type == 'AxisSpecification':
+            self.required_using = {'libMBIN.NMS.GameComponents', }
 
     @property
     def field_type(self):
-        return self._field_type
+        return NAME_MAPPING.get(self._field_type, self._field_type)
 
 
 class ArrayField(Field):
@@ -237,7 +248,10 @@ class ArrayField(Field):
                 struct.unpack_from('<Q', data, offset=0x30)[0]
             )
             self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
-            self.required_using = {USING_MAPPING[self._field_type[:2]], }
+            self.required_using = {
+                USING_MAPPING.get(self._field_type[:2].lower(),
+                                  'libMBIN.NMS.GameComponents'),
+            }
         else:
             self._field_type = TYPE_MAPPING.get(
                 array_type_raw, f'unknown {array_type_raw:X}'
@@ -245,7 +259,7 @@ class ArrayField(Field):
 
     @property
     def field_type(self):
-        return f'{self._field_type}[]'
+        return f'{NAME_MAPPING.get(self._field_type, self._field_type)}[]'
 
 
     def __str__(self):
@@ -269,7 +283,10 @@ class ListField(Field):
                 struct.unpack_from('<Q', data, offset=0x30)[0]
             )
             self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
-            self.required_using.add(USING_MAPPING[self._field_type[:2]])
+            self.required_using.add(
+                USING_MAPPING.get(self._field_type[:2].lower(),
+                                  'libMBIN.NMS.GameComponents')
+            )
         else:
             self._field_type = TYPE_MAPPING.get(
                 array_type_raw, f"unknown {array_type_raw:X}"
@@ -277,7 +294,7 @@ class ListField(Field):
 
     @property
     def field_type(self):
-        return f'List<{self._field_type}>'
+        return f'List<{NAME_MAPPING.get(self._field_type, self._field_type)}>'
 
 
 class EnumField(Field):
@@ -332,7 +349,9 @@ class NMSClass():
         self.guid = fmt_hex(guid)
         self.required_usings = set()
         if self.name != 'GcDebugOptions' and not self.name.endswith('Globals'):
-            self.namespace = USING_MAPPING.get(self.name[:2])
+            self.namespace = USING_MAPPING.get(
+                self.name[:2].lower(), 'libMBIN.NMS.GameComponents'
+            )
         else:
             self.namespace = 'libMBIN.NMS.Globals'
         self.size = 1
@@ -385,14 +404,16 @@ def read_class(nms_mem: pymem.Pymem, address: int):
     if (name.startswith('cGc') and name.endswith('Globals')) or name == 'cGcDebugOptions':
         dir_ = 'Globals'
     else:
-        dir_ = PREFIX_MAPPING.get(name[:3], "unknown")
+        dir_ = PREFIX_MAPPING.get(name[:3].lower(), "GameComponents")
     out_dir = f'./output/{dir_}'
     if not op.exists(out_dir):
         os.makedirs(out_dir, exist_ok=True)
     fields = extract(nms_mem, ptr_data, field_num)
-    cls = NMSClass(name[1:], name_hash, guid)
+    # If the name needs to be fix do so here.
+    name = NAME_MAPPING.get(name[1:], name[1:])
+    cls = NMSClass(name, name_hash, guid)
     cls.add_fields(fields)
-    with open(op.join(out_dir, name[1:] + '.cs'), 'w') as f:
+    with open(op.join(out_dir, name + '.cs'), 'w') as f:
         f.write(str(cls))
 
 
@@ -424,11 +445,25 @@ def find_classes(nms_path: pathlib.Path):
 
         subdata = data[rdata_offset: rdata_offset + rdata_size]
         # Find all the classes which match the regex.
-        for m in re.finditer(PATT, data):
+        for m in re.finditer(b'(c((?:Gc)|(?:Tk))\w+)\x00', data, flags=re.IGNORECASE):
             # For each one, extract the name, and also record the location the
             # name occurs at.
             name = m[0].strip(b'\x00').decode()
-            addr = m.span()[0] + 1 + virtual_offset + STATIC_BASE
+            if not name.startswith('c'):
+                continue
+            addr = m.span()[0] + virtual_offset + STATIC_BASE
+            # Now search the exe for this address.
+            found_addr = subdata.find(struct.pack('<Q', addr))
+            # If we find it, then at this location we will have all the data we
+            # need.
+            if found_addr != -1:
+                found_addr += rdata_offset
+                yield name, found_addr + virtual_offset
+        for name in EXTRA_CLASSES:
+            # For the extra classes we'll be lazy and find them slightly
+            # differently...
+            addr = data.find(name.encode())
+            addr = addr + virtual_offset + STATIC_BASE
             # Now search the exe for this address.
             found_addr = subdata.find(struct.pack('<Q', addr))
             # If we find it, then at this location we will have all the data we
@@ -443,7 +478,7 @@ if __name__ == '__main__':
         description='Run NMS.exe and extract all the class definitions'
     )
     parser.add_argument(
-        'nms_path',
+        '--nms_path',
         type=pathlib.Path,
         default='C://GOG Games//No Man\'s Sky//Binaries//NMS.exe'
     )
@@ -460,8 +495,15 @@ if __name__ == '__main__':
         nms = pymem.Pymem('NMS.exe')
         nms_base = nms.base_address
         t1 = time.time()
+        names = []
         for name, offset in find_classes(args.nms_path):
             read_class(nms, nms_base + offset)
+            if name[1:] in NAME_MAPPING:
+                name = 'c' + NAME_MAPPING[name[1:]]
+            names.append(name)
+        names.sort()
+        with open(SUMMARY_FILE, 'w') as f:
+            f.write('\n'.join(names))
         print(f'Took {time.time() - t1}s')
         # Kill the NMS process.
     except Exception as exc:

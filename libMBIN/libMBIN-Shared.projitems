@@ -31,6 +31,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\BaseTypes\NMSString0x400.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\BaseTypes\NMSString0x200.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\BaseTypes\NMSString0x20A.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\BaseTypes\GcNodeID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\BaseTypes\GcResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\CgExpeditionCategoryStrength.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcAntagonistPerception.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcAntagonistFriend.cs" />
