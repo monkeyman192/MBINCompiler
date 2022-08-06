@@ -20,6 +20,8 @@ ACTUALLY_GLOBALS = ['GcSceneOptions', 'GcSmokeTestOptions', 'GcDebugOptions']
 NAME_MAPPING = {
     'GcDefaulMissionProduct': 'GcDefaultMissionProduct',
     'GcDefaulMissionSubstance': 'GcDefaultMissionSubstance',
+    'gcwordcategorytableEnum': 'GcWordCategoryTableEnum',
+    'GCHUDEffectRewardData': 'GcHUDEffectRewardData',
 }
 
 SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')
