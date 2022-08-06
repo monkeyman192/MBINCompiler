@@ -14,10 +14,9 @@ import time
 import pymem
 
 
-# TODO: A list of extra class names to include that don't adhere to the above
-# pattern. If there are any???
 EXTRA_CLASSES = ['cAxisSpecification', 'cCgExpeditionCategoryStrength']
-
+# Classes that don't look like globals but actually are.
+ACTUALLY_GLOBALS = ['GcSceneOptions', 'GcSmokeTestOptions', 'GcDebugOptions']
 NAME_MAPPING = {
     'GcDefaulMissionProduct': 'GcDefaultMissionProduct',
     'GcDefaulMissionSubstance': 'GcDefaultMissionSubstance',
@@ -218,7 +217,7 @@ class CustomField(Field):
             struct.unpack_from('<Q', data, offset=0x30)[0]
         )
         # Now get the actual name.
-        self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
+        self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
 
         if self.field_type[:2].lower() in ('cg', 'gc', 'tk'):
             self.required_using = {
@@ -247,7 +246,7 @@ class ArrayField(Field):
             ptr_custom_type = nms_mem.read_ulonglong(
                 struct.unpack_from('<Q', data, offset=0x30)[0]
             )
-            self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
+            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
             self.required_using = {
                 USING_MAPPING.get(self._field_type[:2].lower(),
                                   'libMBIN.NMS.GameComponents'),
@@ -282,7 +281,7 @@ class ListField(Field):
             ptr_custom_type = nms_mem.read_ulonglong(
                 struct.unpack_from('<Q', data, offset=0x30)[0]
             )
-            self._field_type = nms_mem.read_string(ptr_custom_type)[1:]
+            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
             self.required_using.add(
                 USING_MAPPING.get(self._field_type[:2].lower(),
                                   'libMBIN.NMS.GameComponents')
@@ -310,7 +309,7 @@ class EnumField(Field):
         for i in range(enum_count):
             idx = nms_mem.read_uint(ptr_enum_data + i * 0x10)
             ptr_enum_name = nms_mem.read_ulonglong(ptr_enum_data + i * 0x10 + 0x8)
-            enum_name = nms_mem.read_string(ptr_enum_name)
+            enum_name = nms_mem.read_string(ptr_enum_name, byte=128)
             # If the string starts with a number we need to prefix with an
             # underscore so that the name is not illegal.
             if enum_name[0].isdigit():
@@ -348,7 +347,7 @@ class NMSClass():
         self.name_hash = fmt_hex(name_hash)
         self.guid = fmt_hex(guid)
         self.required_usings = set()
-        if self.name != 'GcDebugOptions' and not self.name.endswith('Globals'):
+        if self.name not in ACTUALLY_GLOBALS and not self.name.endswith('Globals'):
             self.namespace = USING_MAPPING.get(
                 self.name[:2].lower(), 'libMBIN.NMS.GameComponents'
             )
@@ -357,14 +356,22 @@ class NMSClass():
         self.size = 1
 
     def add_fields(self, fields: list[Field]):
+        # Add a list of field objects.
+        # This is a little hacky and could be done a bit better but this does
+        # work...
         self.fields = fields
         max_offset_width = 1
+        # For each field find if it requires something and add it to the
+        # required usings.
         for field in fields:
             if field.required_using:
                 self.required_usings.update(field.required_using)
+        # If there are some fields, calculate the maximum offset so that we can
+        # nicely format the offset comments.
         if self.fields:
-            max_offset_width = len(self.fields[-1].field_offset)
+            max_offset_width = len(self.fields[-1].field_offset) - 2
             self.size = self.fields[-1]._field_offset + self.fields[-1].field_size
+        # Finally, for each field, give it this found max_offset_width
         for field in self.fields:
             field.max_offset_width = max_offset_width
 
@@ -400,8 +407,8 @@ def read_class(nms_mem: pymem.Pymem, address: int):
     data = nms_mem.read_bytes(address, 0x24)
     ptr_name, name_hash, guid, ptr_data, field_num = struct.unpack(
         '<QQQQI', data)
-    name = nms_mem.read_string(ptr_name)
-    if (name.startswith('cGc') and name.endswith('Globals')) or name == 'cGcDebugOptions':
+    name = nms_mem.read_string(ptr_name, byte=128)
+    if (name.startswith('cGc') and name.endswith('Globals')) or name[1:] in ACTUALLY_GLOBALS:
         dir_ = 'Globals'
     else:
         dir_ = PREFIX_MAPPING.get(name[:3].lower(), "GameComponents")

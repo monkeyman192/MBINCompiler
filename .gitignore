@@ -275,3 +275,6 @@ results.txt
 # Auto-generated documentation
 docs/classes/
 html_docs/
+
+# TEMP: auto-extraction script output
+output/**/*.cs
