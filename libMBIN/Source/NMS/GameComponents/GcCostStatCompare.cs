@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x60, GUID = 0xE4F40DAA66FEC322, NameHash = 0xA889775D93694AA7)]
+	[NMS(GUID = 0xE4F40DAA66FEC322, NameHash = 0xA889775D93694AA7)]
     public class GcCostStatCompare : NMSTemplate
     {
         public NMSString0x10 CoreStat;

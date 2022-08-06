@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x34, GUID = 0xA762E30993D934E3, NameHash = 0xCD8F8BFF2399836A)]
+	[NMS(GUID = 0xA762E30993D934E3, NameHash = 0xCD8F8BFF2399836A)]
     public class GcResourceCollectEffect : NMSTemplate      // in GcPlayerGlobals
     {
         /* 0x000 */ public float PlayerOffset;

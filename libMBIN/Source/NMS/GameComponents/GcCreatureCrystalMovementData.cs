@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0x706A38FBD824A7CE, NameHash = 0x46EB806ED8904120)]
+    [NMS(GUID = 0x706A38FBD824A7CE, NameHash = 0x46EB806ED8904120)]
     public class GcCreatureCrystalMovementData : NMSTemplate
     {
         /* 0x0 */ public List<GcCreatureCrystalMovementDataParams> Params;

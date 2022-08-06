@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC, GUID = 0x3A01D3B8282C7E65, NameHash = 0xB8C015B2B3985468)]
+    [NMS(GUID = 0x3A01D3B8282C7E65, NameHash = 0xB8C015B2B3985468)]
     public class GcSentinelSpawnData : NMSTemplate
     {
         /* 0x0 */ public GcSentinelTypes Type;

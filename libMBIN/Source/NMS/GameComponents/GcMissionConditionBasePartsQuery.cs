@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xF0, GUID = 0x551F2CE669AC9111, NameHash = 0xDC4640E07A221674)]
+	[NMS(GUID = 0x551F2CE669AC9111, NameHash = 0xDC4640E07A221674)]
     public class GcMissionConditionBasePartsQuery : NMSTemplate
     {
         public GcBasePartSearchFilter PartsSeachFilter;

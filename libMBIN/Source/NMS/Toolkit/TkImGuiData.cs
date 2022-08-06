@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x59B8, GUID = 0xEAAFDE92AF042A96, NameHash = 0xE8F15AD4B3CB30AC)]
+	[NMS(GUID = 0xEAAFDE92AF042A96, NameHash = 0xE8F15AD4B3CB30AC)]
     public class TkImGuiData : NMSTemplate
     {
         public TkImGuiWindowData MainWindow;

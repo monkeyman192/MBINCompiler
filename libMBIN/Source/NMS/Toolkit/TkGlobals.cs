@@ -6,7 +6,7 @@ using System;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x220, GUID = 0x4E77CADABC3706BC, NameHash = 0xB62E6456DFE47836)]
+    [NMS(GUID = 0x4E77CADABC3706BC, NameHash = 0xB62E6456DFE47836)]
     public class TkGlobals : NMSTemplate
     {
         public enum AssertsLevelEnum { Disabled, Ignored, Skipped, Enabled }

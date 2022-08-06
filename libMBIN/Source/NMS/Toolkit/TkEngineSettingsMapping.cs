@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x94, GUID = 0xB3029E8E98933199, NameHash = 0x0C02F1D19584B44D)]
+    [NMS(GUID = 0xB3029E8E98933199, NameHash = 0x0C02F1D19584B44D)]
     public class TkEngineSettingsMapping : NMSTemplate
     {
         [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]

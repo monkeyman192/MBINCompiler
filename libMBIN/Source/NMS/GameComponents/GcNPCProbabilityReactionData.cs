@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x28, GUID = 0x77E5494830D1074A, NameHash = 0x260459086692280D)]
+	[NMS(GUID = 0x77E5494830D1074A, NameHash = 0x260459086692280D)]
     public class GcNPCProbabilityReactionData : NMSTemplate
     {
         public NMSString0x10 Name;

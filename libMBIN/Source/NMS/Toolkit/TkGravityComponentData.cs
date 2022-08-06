@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x8, GUID = 0xBDFFADEBB13FAB24, NameHash = 0x3EB24220A135426C)]
+    [NMS(GUID = 0xBDFFADEBB13FAB24, NameHash = 0x3EB24220A135426C)]
     public class TkGravityComponentData : NMSTemplate
     {
         /* 0x0 */ public float Strength;

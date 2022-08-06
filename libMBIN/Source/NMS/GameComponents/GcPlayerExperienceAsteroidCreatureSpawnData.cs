@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0xF44118A54573310B, NameHash = 0xEC6598B33FE9523A)]
+    [NMS(GUID = 0xF44118A54573310B, NameHash = 0xEC6598B33FE9523A)]
     public class GcPlayerExperienceAsteroidCreatureSpawnData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;

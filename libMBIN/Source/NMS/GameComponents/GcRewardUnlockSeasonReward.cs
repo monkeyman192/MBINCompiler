@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0xE6212DF525ECA350, NameHash = 0x7AB9EBA17278DE9B)]
+    [NMS(GUID = 0xE6212DF525ECA350, NameHash = 0x7AB9EBA17278DE9B)]
     public class GcRewardUnlockSeasonReward : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ProductID;

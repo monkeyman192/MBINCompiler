@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0xD3740D8DFE14590C, NameHash = 0xED4A21D9F7E3058B)]
+	[NMS(GUID = 0xD3740D8DFE14590C, NameHash = 0xED4A21D9F7E3058B)]
     public class GcNPCTriggerTypes : NMSTemplate
     {
         // size: 0xF

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x68, GUID = 0xBBE337CA5A46D965, NameHash = 0xCABBB7951E50DCAF)]
+	[NMS(GUID = 0xBBE337CA5A46D965, NameHash = 0xCABBB7951E50DCAF)]
     public class TkJointBindingData : NMSTemplate
     {
         [NMS(Size = 16)]

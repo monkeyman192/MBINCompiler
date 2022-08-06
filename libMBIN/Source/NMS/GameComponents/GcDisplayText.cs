@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x318, GUID = 0x67991AA77D99A38E, NameHash = 0x39E3C3DE16466069)]
+	[NMS(GUID = 0x67991AA77D99A38E, NameHash = 0x39E3C3DE16466069)]
     public class GcDisplayText : NMSTemplate
     {
 		public enum HUDTextDisplayTypeEnum { Full, Compact, EyeLevel, Prompt, Tooltip }

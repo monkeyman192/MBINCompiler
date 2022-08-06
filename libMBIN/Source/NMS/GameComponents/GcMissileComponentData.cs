@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x28, GUID = 0x3084C666AE66E619, NameHash = 0x342DA8D8BE5A9CE3)]
+    [NMS(GUID = 0x3084C666AE66E619, NameHash = 0x342DA8D8BE5A9CE3)]
     public class GcMissileComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Explosion;

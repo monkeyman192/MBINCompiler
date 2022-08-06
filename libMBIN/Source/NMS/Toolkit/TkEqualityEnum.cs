@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x4, GUID = 0xBC8ED0AD6D388727, NameHash = 0xF02414A33F663A2)]
+	[NMS(GUID = 0xBC8ED0AD6D388727, NameHash = 0xF02414A33F663A2)]
     public class TkEqualityEnum : NMSTemplate
     {
 		public enum EqualityEnumEnum { Equal, Greater, Less, GreaterEqual, LessEqual }

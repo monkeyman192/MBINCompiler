@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x919BCD22E78FFAC0, NameHash = 0xD7DAD354CC760BEE)]
+    [NMS(GUID = 0x919BCD22E78FFAC0, NameHash = 0xD7DAD354CC760BEE)]
     public class GcBaseBuildingPartAudioLocationEntry : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 PartId;

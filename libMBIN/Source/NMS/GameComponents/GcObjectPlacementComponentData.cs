@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x34, GUID = 0x3D75143BE008F7FF, NameHash = 0x6520972F5B89CD77)]
+	[NMS(GUID = 0x3D75143BE008F7FF, NameHash = 0x6520972F5B89CD77)]
     public class GcObjectPlacementComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20 GroupNodeName;

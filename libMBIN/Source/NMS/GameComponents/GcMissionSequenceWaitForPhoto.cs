@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x248, GUID = 0xA5D631EA00E6DF53, NameHash = 0x2EB82866D685EFBF)]
+	[NMS(GUID = 0xA5D631EA00E6DF53, NameHash = 0x2EB82866D685EFBF)]
     public class GcMissionSequenceWaitForPhoto : NMSTemplate
     {
         /* 0x000 */ public NMSString0x80 Message;

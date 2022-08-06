@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x160, GUID = 0xCDCC9259306D4B7B, NameHash = 0x2862D9C79079A037)]
+	[NMS(GUID = 0xCDCC9259306D4B7B, NameHash = 0x2862D9C79079A037)]
     public class GcCreatureHoverMovementDataParams : NMSTemplate
     {
         /* 0x000 */ public List<NMSString0x20A> ValidDescriptors;

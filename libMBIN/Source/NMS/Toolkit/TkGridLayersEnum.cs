@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0x9BC78147660AB1EA, NameHash = 0x0FEF6F10412C7B60)]
+    [NMS(GUID = 0x9BC78147660AB1EA, NameHash = 0x0FEF6F10412C7B60)]
     public class TkGridLayersEnum : NMSTemplate
     {
         // size: 0x9

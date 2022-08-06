@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x30, GUID = 0x4D08A872C503D8EE, NameHash = 0x474596B01166F6A6)]
+	[NMS(GUID = 0x4D08A872C503D8EE, NameHash = 0x474596B01166F6A6)]
     public class TkNoiseLayerData : NMSTemplate
     {
         /* 0x00 */ public bool Active;

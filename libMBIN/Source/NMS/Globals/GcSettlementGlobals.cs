@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x5210, GUID = 0x5DF4C2715B3155C3, NameHash = 0x8652A1B779227539)]
+    [NMS(GUID = 0x5DF4C2715B3155C3, NameHash = 0x8652A1B779227539)]
     public class GcSettlementGlobals : NMSTemplate
     {
         /* 0x0000 */ public List<NMSString0x20A> ScanEventsThatPreventSentinelAlert;

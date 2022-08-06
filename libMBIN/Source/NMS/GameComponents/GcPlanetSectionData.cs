@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0xF9B2EE21C846E8CC, NameHash = 0x408CCAADC93DEEFE)]
+    [NMS(GUID = 0xF9B2EE21C846E8CC, NameHash = 0x408CCAADC93DEEFE)]
     public class GcPlanetSectionData : NMSTemplate
     {
         /* 0x0 */ public ulong DiscovererUID;

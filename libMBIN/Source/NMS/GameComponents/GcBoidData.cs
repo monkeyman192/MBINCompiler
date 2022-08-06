@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x2C, GUID = 0x4F4457FDB9B16E09, NameHash = 0xC455782DFAD32032)]
+	[NMS(GUID = 0x4F4457FDB9B16E09, NameHash = 0xC455782DFAD32032)]
     public class GcBoidData : NMSTemplate
     {
         /* 0x000 */ public float Coherence;             // 3F000000

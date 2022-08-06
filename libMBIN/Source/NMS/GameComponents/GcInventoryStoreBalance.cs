@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x54, GUID = 0xE5E19BF12FB5A55C, NameHash = 0x950617F05949472B)]
+	[NMS(GUID = 0xE5E19BF12FB5A55C, NameHash = 0x950617F05949472B)]
     public class GcInventoryStoreBalance : NMSTemplate
     {
         /* 0x00 */ public int DefaultSubstanceMaxAmount;

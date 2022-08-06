@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0xFC0B28004AD759EC, NameHash = 0x69AE13F58EC1B23A)]
+	[NMS(GUID = 0xFC0B28004AD759EC, NameHash = 0x69AE13F58EC1B23A)]
     public class GcPlayerSpaceshipWarpData : NMSTemplate
     {
         /* 0x000 */ public float EntryTime;

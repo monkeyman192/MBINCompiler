@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0x703C4FBFD011682A, NameHash = 0x1B2443FC607CC2A)]
+	[NMS(GUID = 0x703C4FBFD011682A, NameHash = 0x1B2443FC607CC2A)]
     public class GcRegionHotspotTypes : NMSTemplate
     {
         // size: 0x6

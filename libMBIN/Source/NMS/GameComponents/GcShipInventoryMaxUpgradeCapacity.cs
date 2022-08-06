@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0x9CCE7F992A936F32, NameHash = 0xC51C8A0A49F892DC)]
+    [NMS(GUID = 0x9CCE7F992A936F32, NameHash = 0xC51C8A0A49F892DC)]
     public class GcShipInventoryMaxUpgradeCapacity : NMSTemplate
     {
         [NMS(Size = 0x4)]

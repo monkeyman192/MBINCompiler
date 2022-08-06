@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x5E12DB2AF27BE1C0, NameHash = 0xF1F483BCEFC0AD13)]
+    [NMS(GUID = 0x5E12DB2AF27BE1C0, NameHash = 0xF1F483BCEFC0AD13)]
     public class GcRewardOpenPage : NMSTemplate
     {
         // size: 0xF

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0x4DEB11EC99BFE346, NameHash = 0x76BB9C78D7AE1C6B)]
+    [NMS(GUID = 0x4DEB11EC99BFE346, NameHash = 0x76BB9C78D7AE1C6B)]
     public class TkMetadataReadMask : NMSTemplate
     {
         [Flags]

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x44, GUID = 0x97685109DC2E7CF2, NameHash = 0x71B7896BF38DAAE4)]
+	[NMS(GUID = 0x97685109DC2E7CF2, NameHash = 0x71B7896BF38DAAE4)]
     public class GcAlienPodComponentData : NMSTemplate
     {
         /* 0x00 */ public float AgroRate;

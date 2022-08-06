@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0xDEA890BD07BB5AF9, NameHash = 0xD0217E81661C9C1D)]
+    [NMS(GUID = 0xDEA890BD07BB5AF9, NameHash = 0xD0217E81661C9C1D)]
     public class GcBackgroundSpaceEncounterSpawnConditions : NMSTemplate
     {
         /* 0x0 */ public bool NeedsEmptySystem;

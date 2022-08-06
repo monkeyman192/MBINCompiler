@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1D0, GUID = 0x18C90AC3ABEDC7CD, NameHash = 0x756972574B9CCB08)]
+	[NMS(GUID = 0x18C90AC3ABEDC7CD, NameHash = 0x756972574B9CCB08)]
     public class GcHUDManagerData : NMSTemplate
     {
         public GcTextPreset TitleFont;

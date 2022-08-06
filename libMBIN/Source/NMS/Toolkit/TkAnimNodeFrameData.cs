@@ -10,7 +10,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x30, GUID = 0x122A23E7D278667B, NameHash = 0x270204EDCEE4DB62)]
+	[NMS(GUID = 0x122A23E7D278667B, NameHash = 0x270204EDCEE4DB62)]
     public class TkAnimNodeFrameData : NMSTemplate
     {
         public List<Quaternion> Rotations;

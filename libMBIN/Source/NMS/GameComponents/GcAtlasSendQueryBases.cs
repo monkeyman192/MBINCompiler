@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x20, GUID = 0x1CDFF537966634C8, NameHash = 0x993780B561119F0D)]
+	[NMS(GUID = 0x1CDFF537966634C8, NameHash = 0x993780B561119F0D)]
     public class GcAtlasSendQueryBases : NMSTemplate
     {
         [NMS(Size = 0x8, Ignore = true)]

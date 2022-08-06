@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xB0, GUID = 0xA45C8D02FAACDDE6, NameHash = 0x778378F86BB2392C)]
+    [NMS(GUID = 0xA45C8D02FAACDDE6, NameHash = 0x778378F86BB2392C)]
     public class GcSmokeBotPlanetReport : NMSTemplate
     {
         /* 0x00 */ public ulong UA;

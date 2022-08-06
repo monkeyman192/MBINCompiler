@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x7137E0498FD3E4D2, NameHash = 0xCFB91CCA40995CDC)]
+    [NMS(GUID = 0x7137E0498FD3E4D2, NameHash = 0xCFB91CCA40995CDC)]
     public class GcInventoryLayoutSizeType : NMSTemplate
     {
         // size: 0x22

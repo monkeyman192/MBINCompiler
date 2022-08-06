@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x2E0, GUID = 0x15DB46BA1821E7C8, NameHash = 0xB88BA2B1282BE1C1)]
+    [NMS(GUID = 0x15DB46BA1821E7C8, NameHash = 0xB88BA2B1282BE1C1)]
     public class GcNPCWorkerData : NMSTemplate
     {
         /* 0x000 */ public GcResourceElement ResourceElement;

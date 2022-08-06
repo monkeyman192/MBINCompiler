@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x48, GUID = 0xD3753EC3463891, NameHash = 0xBA1C4B136F163FC8)]
+	[NMS(GUID = 0xD3753EC3463891, NameHash = 0xBA1C4B136F163FC8)]
     public class GcQuestItemPlacementRule : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 QuestItemID;

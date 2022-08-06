@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x8, GUID = 0x5978C85EB0847DD4, NameHash = 0xABC2014E670A8EEF)]
+	[NMS(GUID = 0x5978C85EB0847DD4, NameHash = 0xABC2014E670A8EEF)]
     public class GcDoShipFlybyIntercept : NMSTemplate
     {
         public float Speed;     // 43FA0000h

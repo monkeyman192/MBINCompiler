@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x70, GUID = 0xBEB7BC266C45CBB3, NameHash = 0xE523CFAD6AFB4BB6)]
+    [NMS(GUID = 0xBEB7BC266C45CBB3, NameHash = 0xE523CFAD6AFB4BB6)]
     public class GcScanEventSolarSystemLookup : NMSTemplate
     {
         /* 0x00 */ public bool UseStarType;

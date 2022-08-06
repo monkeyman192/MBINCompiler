@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x20, GUID = 0x1D8475D6A5DE0D20, NameHash = 0x7DB6471B493F5A78)]
+	[NMS(GUID = 0x1D8475D6A5DE0D20, NameHash = 0x7DB6471B493F5A78)]
     public class GcPurchaseableBuildingBlueprints : NMSTemplate
     {
         public List<GcBuildingBlueprint> Table;

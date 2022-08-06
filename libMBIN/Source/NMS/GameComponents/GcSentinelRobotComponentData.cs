@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xB711DEA3460FE542, NameHash = 0xC3E852EF937E74B5)]
+    [NMS(GUID = 0xB711DEA3460FE542, NameHash = 0xC3E852EF937E74B5)]
     public class GcSentinelRobotComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;

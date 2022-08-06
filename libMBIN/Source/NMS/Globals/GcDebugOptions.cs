@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x2680, GUID = 0xD32E94DB7E1C41C8, NameHash = 0x013FED27DF728C38)]
+    [NMS(GUID = 0xD32E94DB7E1C41C8, NameHash = 0x013FED27DF728C38)]
     public class GcDebugOptions : NMSTemplate
     {
         /* 0x0000 */ public bool ForceScanEventsToGoPrime;

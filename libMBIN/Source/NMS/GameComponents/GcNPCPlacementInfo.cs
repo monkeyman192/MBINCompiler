@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xD0, GUID = 0x806078820FBC53F0, NameHash = 0xA12AC584067DF8E0)]
+    [NMS(GUID = 0x806078820FBC53F0, NameHash = 0xA12AC584067DF8E0)]
     public class GcNPCPlacementInfo : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 PlacementRuleId;

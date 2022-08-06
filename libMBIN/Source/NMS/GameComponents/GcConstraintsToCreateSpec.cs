@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x50, GUID = 0xEC5F0C21DD9275B0, NameHash = 0x6C0B3270B9591BB1)]
+    [NMS(GUID = 0xEC5F0C21DD9275B0, NameHash = 0x6C0B3270B9591BB1)]
     public class GcConstraintsToCreateSpec : NMSTemplate
     {
         /* 0x00 */ public bool Horizontal_1x0;

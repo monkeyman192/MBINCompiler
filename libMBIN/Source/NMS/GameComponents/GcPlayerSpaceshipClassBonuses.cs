@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0x9E42C06E5A1542B3, NameHash = 0xFA78E3D1251A147D)]
+	[NMS(GUID = 0x9E42C06E5A1542B3, NameHash = 0xFA78E3D1251A147D)]
     public class GcPlayerSpaceshipClassBonuses : NMSTemplate
     {
         /* 0x00 */ public float ThrustForceMax;         // 42480000h

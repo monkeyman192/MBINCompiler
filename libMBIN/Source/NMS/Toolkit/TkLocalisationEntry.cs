@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x130, GUID = 0x38832725CE598FFB, NameHash = 0xBCFA2AE11CD16318)]
+	[NMS(GUID = 0x38832725CE598FFB, NameHash = 0xBCFA2AE11CD16318)]
     public class TkLocalisationEntry : NMSTemplate
     {
         public NMSString0x20A Id;

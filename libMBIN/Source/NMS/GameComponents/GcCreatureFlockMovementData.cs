@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x60, GUID = 0xFDEE1400FF8775A9, NameHash = 0xED083CF705C39B97)]
+    [NMS(GUID = 0xFDEE1400FF8775A9, NameHash = 0xED083CF705C39B97)]
     public class GcCreatureFlockMovementData : NMSTemplate
     {
         /* 0x00 */ public int MinFlockMembers;

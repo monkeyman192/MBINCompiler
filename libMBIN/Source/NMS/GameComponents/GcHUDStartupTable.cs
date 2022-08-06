@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x150, GUID = 0x74BCB9ABA0B6A6C8 , NameHash = 0xB0A39161047DD10D)]
+    [NMS(GUID = 0x74BCB9ABA0B6A6C8 , NameHash = 0xB0A39161047DD10D)]
     public class GcHUDStartupTable : NMSTemplate
     {
         /* 0x00 */ public float FadeInFlashTime;        // 40000000h

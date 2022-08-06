@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10C, GUID = 0x818EF9AAA4C46A66, NameHash = 0x85905E340468CC13)]
+	[NMS(GUID = 0x818EF9AAA4C46A66, NameHash = 0x85905E340468CC13)]
     public class GcScannerIcon : NMSTemplate
     {
         /* 0x000 */ public TkTextureResource Main;

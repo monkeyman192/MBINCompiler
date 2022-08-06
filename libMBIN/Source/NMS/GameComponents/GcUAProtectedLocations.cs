@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x694C9DF94CECC153, NameHash = 0xD522308022E072F4)]
+    [NMS(GUID = 0x694C9DF94CECC153, NameHash = 0xD522308022E072F4)]
     public class GcUAProtectedLocations : NMSTemplate
     {
         /* 0x00 */ public ulong UA;

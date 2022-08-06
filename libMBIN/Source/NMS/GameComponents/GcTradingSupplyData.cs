@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x28, GUID = 0x47465FFF4364C345, NameHash = 0x5D0FDAEE020A4D6C)]
+    [NMS(GUID = 0x47465FFF4364C345, NameHash = 0x5D0FDAEE020A4D6C)]
     public class GcTradingSupplyData : NMSTemplate
     {
         /* 0x00 */ public ulong GalacticAddress;

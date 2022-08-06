@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0xB61378ABA919F3CC, NameHash = 0x87FB8E825C599E66)]
+    [NMS(GUID = 0xB61378ABA919F3CC, NameHash = 0x87FB8E825C599E66)]
     public class GcDefaultMissionItemsTable : NMSTemplate
     {
         /* 0x00 */ public List<GcDefaultMissionSubstance> PrimarySubstances;

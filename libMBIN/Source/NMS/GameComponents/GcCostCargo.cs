@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0x1F6C9AEB838BC892, NameHash = 0x847A4B9861936A13)]
+	[NMS(GUID = 0x1F6C9AEB838BC892, NameHash = 0x847A4B9861936A13)]
     public class GcCostCargo : NMSTemplate
     {
         public int Slots;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0x9A90AA1BA5899070, NameHash = 0x9C74A74AB0211EF6)]
+    [NMS(GUID = 0x9A90AA1BA5899070, NameHash = 0x9C74A74AB0211EF6)]
     public class GcDoShipFlybyClose : NMSTemplate
     {
         public float LockOffset;        // 42C80000h

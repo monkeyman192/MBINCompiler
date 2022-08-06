@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xF14318395DCE2662, NameHash = 0x76E8D6F5EA35F60C)]
+    [NMS(GUID = 0xF14318395DCE2662, NameHash = 0x76E8D6F5EA35F60C)]
     public class GcRewardPirateAttack : NMSTemplate
     {
         /* 0x0 */ public bool Instant;

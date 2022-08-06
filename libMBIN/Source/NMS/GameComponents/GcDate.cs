@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x14, GUID = 0x84C13BF671FD2DBE, NameHash = 0x806D452BB139AB67)]
+	[NMS(GUID = 0x84C13BF671FD2DBE, NameHash = 0x806D452BB139AB67)]
     public class GcDate : NMSTemplate
     {
         public int Minute;

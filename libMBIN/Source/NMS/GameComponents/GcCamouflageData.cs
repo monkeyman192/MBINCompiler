@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x9C, GUID = 0x09C19CFB204FB798, NameHash = 0x4548C9A8732E084E)]
+    [NMS(GUID = 0x09C19CFB204FB798, NameHash = 0x4548C9A8732E084E)]
     public class GcCamouflageData : NMSTemplate
     {
         /* 0x00 */ public TkMaterialResource CamouflageMaterial;

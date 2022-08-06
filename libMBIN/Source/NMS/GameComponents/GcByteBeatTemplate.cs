@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0x4A35B9B8FCE6DD42, NameHash = 0xB764F802BDE36ADF)]
+    [NMS(GUID = 0x4A35B9B8FCE6DD42, NameHash = 0xB764F802BDE36ADF)]
     public class GcByteBeatTemplate : NMSTemplate
     {
         public float Weight;

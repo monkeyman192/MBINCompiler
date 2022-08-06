@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1370, GUID = 0x6E96773F7845FDFE, NameHash = 0xC45203411E9AFE95)]
+    [NMS(GUID = 0x6E96773F7845FDFE, NameHash = 0xC45203411E9AFE95)]
     public class GcSpaceshipGlobals : NMSTemplate
     {
         /* 0x0000 */ public float ShieldLeechMul;

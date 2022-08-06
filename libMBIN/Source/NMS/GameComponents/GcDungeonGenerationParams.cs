@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x80, GUID = 0xFCFC86CC50CA838B, NameHash = 0xFD9E29934900184E)]
+	[NMS(GUID = 0xFCFC86CC50CA838B, NameHash = 0xFD9E29934900184E)]
     public class GcDungeonGenerationParams : NMSTemplate
     {
         /* 0x00 */ public uint SizeX;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1F40, GUID = 0x5CC978CA1C42A233, NameHash = 0x71CAF682B6986E6E)]
+    [NMS(GUID = 0x5CC978CA1C42A233, NameHash = 0x71CAF682B6986E6E)]
     public class GcGameplayGlobals : NMSTemplate
     {
         /* 0x0000 */ public float CargoShieldStrength;

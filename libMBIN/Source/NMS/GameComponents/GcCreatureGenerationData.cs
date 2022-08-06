@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xDD0, GUID = 0x6889644F70A02214, NameHash = 0x4742E3FE43A533C7)]
+    [NMS(GUID = 0x6889644F70A02214, NameHash = 0x4742E3FE43A533C7)]
     public class GcCreatureGenerationData : NMSTemplate
     {
         [NMS(Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]

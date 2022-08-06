@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x20, GUID = 0xDA10D58FC718E8E9, NameHash = 0xDB0FD87A0597E5FD)]
+    [NMS(GUID = 0xDA10D58FC718E8E9, NameHash = 0xDB0FD87A0597E5FD)]
     public class TkNetReplicatedEntityComponentData : NMSTemplate
     {
         public List<NMSString0x80> ReplicaComponentMask;

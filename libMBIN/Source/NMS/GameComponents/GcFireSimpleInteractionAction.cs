@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1, GUID = 0xF3B310872F6802A2, NameHash = 0xB05F0E4E11C5EDEA)]
+	[NMS(GUID = 0xF3B310872F6802A2, NameHash = 0xB05F0E4E11C5EDEA)]
     public class GcFireSimpleInteractionAction : NMSTemplate
     {
     }

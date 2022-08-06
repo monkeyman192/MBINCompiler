@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC0, GUID = 0xC2DB9DDFB8693F8E, NameHash = 0x0CEE815614F8FABAF)]
+    [NMS(GUID = 0xC2DB9DDFB8693F8E, NameHash = 0x0CEE815614F8FABAF)]
     public class GcCustomisationBannerImageData : NMSTemplate
     {
         /* 0x00 */ public TkTextureResource BannerImage;

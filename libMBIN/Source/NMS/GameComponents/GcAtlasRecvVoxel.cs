@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xAB31E38EB110A2EB, NameHash = 0xC62154F49D5EBD3E)]
+	[NMS(GUID = 0xAB31E38EB110A2EB, NameHash = 0xC62154F49D5EBD3E)]
     public class GcAtlasRecvVoxel : NMSTemplate
     {
         [NMS(Size = 0x8, Ignore = true)]

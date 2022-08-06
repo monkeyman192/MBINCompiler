@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0xB97BC599BFC776D7, NameHash = 0xD38FE493F39C7CF8)]
+    [NMS(GUID = 0xB97BC599BFC776D7, NameHash = 0xD38FE493F39C7CF8)]
     public class GcSentinelnWaveGroup : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x10> Waves;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0xD8, GUID = 0x8CE6144467FBF05A, NameHash = 0x330286CE11647D4C)]
+    [NMS(GUID = 0x8CE6144467FBF05A, NameHash = 0x330286CE11647D4C)]
     public class TkMaterialSampler : NMSTemplate
     {
         public NMSString0x20 Name;

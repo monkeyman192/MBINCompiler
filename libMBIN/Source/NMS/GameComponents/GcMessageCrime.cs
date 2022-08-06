@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0x1CCB7BDC1ECBB02A, NameHash = 0x0C64AF7F76101CD0)]
+    [NMS(GUID = 0x1CCB7BDC1ECBB02A, NameHash = 0x0C64AF7F76101CD0)]
     public class GcMessageCrime : NMSTemplate
     {
         // size: 0xD

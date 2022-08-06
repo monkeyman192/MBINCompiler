@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x94, GUID = 0xB81AC33DDA9C1C25, NameHash = 0xA0C253D5A5EF8A51)]
+    [NMS(GUID = 0xB81AC33DDA9C1C25, NameHash = 0xA0C253D5A5EF8A51)]
     public class TkLODSettingsData : NMSTemplate
     {
         [NMS(Size = 5)]

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x324, GUID = 0x6C8F5A786241F589, NameHash = 0xFABB438AC71DAB8D)]
+    [NMS(GUID = 0x6C8F5A786241F589, NameHash = 0xFABB438AC71DAB8D)]
     public class GcBiomeListPerStarType : NMSTemplate
     {
         [NMS(Size = 0x4, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]

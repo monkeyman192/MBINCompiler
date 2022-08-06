@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x6C, GUID = 0xAFD832D5AAAFFA2A, NameHash = 0x76DA44862CDF100D)]
+	[NMS(GUID = 0xAFD832D5AAAFFA2A, NameHash = 0x76DA44862CDF100D)]
     public class GcGalaxyCameraData : NMSTemplate
     {
         /* 0x00 */ public float CameraFOV;                      // 42C80000h

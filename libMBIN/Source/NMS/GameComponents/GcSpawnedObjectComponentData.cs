@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1, GUID = 0x119B8BC3DF2A39FA, NameHash = 0x7B019C2E35255293)]
+	[NMS(GUID = 0x119B8BC3DF2A39FA, NameHash = 0x7B019C2E35255293)]
     public class GcSpawnedObjectComponentData : NMSTemplate
     {
         public bool CanBeTeleported;

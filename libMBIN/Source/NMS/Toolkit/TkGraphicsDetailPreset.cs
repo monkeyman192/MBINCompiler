@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x44, GUID = 0x931A29826B925349, NameHash = 0x56E0EB96EB3713F0)]
+    [NMS(GUID = 0x931A29826B925349, NameHash = 0x56E0EB96EB3713F0)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
         /* 0x00 */ public TkGraphicsDetailTypes TextureQuality;

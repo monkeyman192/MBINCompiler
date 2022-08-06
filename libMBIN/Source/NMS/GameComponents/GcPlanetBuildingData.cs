@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x48, GUID = 0x16FE2FB1C3EF0823, NameHash = 0xF6213EDD899A8CAE)]
+    [NMS(GUID = 0x16FE2FB1C3EF0823, NameHash = 0xF6213EDD899A8CAE)]
     public class GcPlanetBuildingData : NMSTemplate
     {
         /* 0x00 */ public List<GcBuildingSpawnSlot> BuildingSlots;

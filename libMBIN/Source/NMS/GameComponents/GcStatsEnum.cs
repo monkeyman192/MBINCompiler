@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x2E8F4E3686653011, NameHash = 0xACDE6E8DA19EC2E2)]
+    [NMS(GUID = 0x2E8F4E3686653011, NameHash = 0xACDE6E8DA19EC2E2)]
     public class GcStatsEnum : NMSTemplate
     {
         // size: 0x11

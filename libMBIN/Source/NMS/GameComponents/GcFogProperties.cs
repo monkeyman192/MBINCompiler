@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xE0, GUID = 0xEB22050406B72B26, NameHash = 0x32F1C073DAE21750)]
+    [NMS(GUID = 0xEB22050406B72B26, NameHash = 0x32F1C073DAE21750)]
     public class GcFogProperties : NMSTemplate
     {
         /* 0x00 */ public float FogStrength;

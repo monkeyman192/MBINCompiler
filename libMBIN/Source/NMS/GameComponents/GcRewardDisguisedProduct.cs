@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0xDE62A068FABD286A, NameHash = 0xDBFECF3462D8A0FB)]
+	[NMS(GUID = 0xDE62A068FABD286A, NameHash = 0xDBFECF3462D8A0FB)]
     public class GcRewardDisguisedProduct : NMSTemplate
     {
         public GcDefaultMissionProductEnum Default;

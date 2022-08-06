@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0xE20, GUID = 0xE717333B20474A1D, NameHash = 0x5BED7FBA4647E787)]
+    [NMS(GUID = 0xE717333B20474A1D, NameHash = 0x5BED7FBA4647E787)]
     public class GcSkyGlobals : NMSTemplate
     {
         /* 0x000 */ public float RainbowDistance;

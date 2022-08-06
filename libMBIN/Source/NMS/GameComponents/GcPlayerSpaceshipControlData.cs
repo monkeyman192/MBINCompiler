@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x21C, GUID = 0xAB72AFECF5631053, NameHash = 0x49B6F6CA72CF5A3F)]
+    [NMS(GUID = 0xAB72AFECF5631053, NameHash = 0x49B6F6CA72CF5A3F)]
     public class GcPlayerSpaceshipControlData : NMSTemplate
     {
         /* 0x000 */ public GcPlayerSpaceshipEngineData SpaceEngine;

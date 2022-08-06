@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x870, GUID = 0x91F4D6E2D2815BD5, NameHash = 0xD679E7C47BC9313C)]
+	[NMS(GUID = 0x91F4D6E2D2815BD5, NameHash = 0xD679E7C47BC9313C)]
     public class GcCustomisationBannerGroup : NMSTemplate
     {
         /* 0x000 */ public List<GcCustomisationBannerImageData> BannerImages;

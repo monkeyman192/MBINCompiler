@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x0A4B34E32383495F, NameHash = 0x8E1D4F74D55F5091)]
+    [NMS(GUID = 0x0A4B34E32383495F, NameHash = 0x8E1D4F74D55F5091)]
     public class GcRewardTraderFlyby : NMSTemplate
     {
         /* 0x0 */ public int ExperienceSpawnIndex;

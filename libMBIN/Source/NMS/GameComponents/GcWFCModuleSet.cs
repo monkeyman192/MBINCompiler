@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xA0, GUID = 0x94BFF1BF30BC4484, NameHash = 0x12D00A471DB28074)]
+    [NMS(GUID = 0x94BFF1BF30BC4484, NameHash = 0x12D00A471DB28074)]
     public class GcWFCModuleSet : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20 Name;

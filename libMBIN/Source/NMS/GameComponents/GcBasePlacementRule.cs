@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xB8, GUID = 0x31F288CF154849B3, NameHash = 0xE9F8FE2C0612C3FE)]
+    [NMS(GUID = 0x31F288CF154849B3, NameHash = 0xE9F8FE2C0612C3FE)]
     public class GcBasePlacementRule : NMSTemplate
     {
         /* 0x00 */ public List<NMSTemplate> Conditions;

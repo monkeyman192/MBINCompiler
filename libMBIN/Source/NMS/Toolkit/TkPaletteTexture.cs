@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x8, GUID = 0x8AE44D0FFA901B0F, NameHash = 0x6A57676B42321253)]
+    [NMS(GUID = 0x8AE44D0FFA901B0F, NameHash = 0x6A57676B42321253)]
     public class TkPaletteTexture : NMSTemplate
     {
         // size: 0x3A

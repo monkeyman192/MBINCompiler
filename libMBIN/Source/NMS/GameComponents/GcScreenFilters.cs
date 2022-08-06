@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0x2290E56D747DED58, NameHash = 0xE50E9B26CC742B3D)]
+	[NMS(GUID = 0x2290E56D747DED58, NameHash = 0xE50E9B26CC742B3D)]
     public class GcScreenFilters : NMSTemplate
     {
         // size: 0x52

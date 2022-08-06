@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0xD3E230DB23C781, NameHash = 0x6F5F53519B901CD4)]
+	[NMS(GUID = 0xD3E230DB23C781, NameHash = 0x6F5F53519B901CD4)]
     public class GcPhotoModeAdjustData : NMSTemplate
     {
         /* 0x00 */ public float AdjustMin;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x38, GUID = 0x9ADBD39AC80BA7EA, NameHash = 0x6ECD1E12A5E7A194)]
+	[NMS(GUID = 0x9ADBD39AC80BA7EA, NameHash = 0x6ECD1E12A5E7A194)]
     public class GcNPCProbabilityAnimationData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;

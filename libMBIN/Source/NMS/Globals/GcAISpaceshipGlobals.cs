@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0xF70, GUID = 0x57D137DB00D02984, NameHash = 0xD338272248F67908)]
+    [NMS(GUID = 0x57D137DB00D02984, NameHash = 0xD338272248F67908)]
     public class GcAISpaceshipGlobals : NMSTemplate
     {
         /* 0x000 */ public GcPlayerSquadronConfig PlayerSquadronConfig;

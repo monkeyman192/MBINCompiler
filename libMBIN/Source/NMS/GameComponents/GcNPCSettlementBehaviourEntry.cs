@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x48, GUID = 0x1A735D64B5D4C86F, NameHash = 0xB268E74AC135A1A5)]
+    [NMS(GUID = 0x1A735D64B5D4C86F, NameHash = 0xB268E74AC135A1A5)]
     public class GcNPCSettlementBehaviourEntry : NMSTemplate
     {
         /* 0x00 */ public float RunWhenOutdoorsProbability;

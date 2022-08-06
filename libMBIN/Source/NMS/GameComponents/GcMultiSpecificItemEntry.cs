@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x78, GUID = 0x2B4D90F7E808C657, NameHash = 0x7439D28A897F0ACC)]
+    [NMS(GUID = 0x2B4D90F7E808C657, NameHash = 0x7439D28A897F0ACC)]
     public class GcMultiSpecificItemEntry : NMSTemplate
     {
         public enum MultiItemRewardTypeEnum { Product, Substance, ProcTech, ProcProduct, InventorySlot, CommunityTierProduct }

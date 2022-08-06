@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x8, GUID = 0x3FB7925A5726DFD9, NameHash = 0x56A47F95DD76DC72)]
+    [NMS(GUID = 0x3FB7925A5726DFD9, NameHash = 0x56A47F95DD76DC72)]
     public class TkEmitFromParticleInfo : NMSTemplate
     {
         /* 0x0 */ public int OtherEmitterIndex;

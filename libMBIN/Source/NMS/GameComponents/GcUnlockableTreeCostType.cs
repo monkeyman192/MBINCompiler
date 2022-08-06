@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x48, GUID = 0x832997B4B5A24FD9, NameHash = 0x702F7B1A0F3F0830)]
+	[NMS(GUID = 0x832997B4B5A24FD9, NameHash = 0x702F7B1A0F3F0830)]
     public class GcUnlockableTreeCostType : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 CostTypeID;

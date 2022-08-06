@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x58, GUID = 0xD34E85AF0D1C9296, NameHash = 0x7652773CA720B160)]
+    [NMS(GUID = 0xD34E85AF0D1C9296, NameHash = 0x7652773CA720B160)]
     public class GcDroneWeaponData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;

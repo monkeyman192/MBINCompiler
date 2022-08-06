@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xB58, GUID = 0x2514752BC3F1D4DC, NameHash = 0xB0AEFBA1BDCC6569)]
+    [NMS(GUID = 0x2514752BC3F1D4DC, NameHash = 0xB0AEFBA1BDCC6569)]
     public class GcByteBeatIcons : NMSTemplate
     {
         [NMS(Size = 0x12, EnumType = typeof(GcByteBeatToken.ByteBeatTokenEnum))]

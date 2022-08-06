@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x53C0, GUID = 0x94332187E55E7E7B, NameHash = 0x8D353F7BD3E655C5)]
+    [NMS(GUID = 0x94332187E55E7E7B, NameHash = 0x8D353F7BD3E655C5)]
     public class GcCustomisationColourPalettes : NMSTemplate
     {
         [NMS(Size = 0x14, EnumType = typeof(GcCustomisationComponentData.CustomisationDataTypeEnum))]

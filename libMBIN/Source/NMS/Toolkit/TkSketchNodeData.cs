@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x50, GUID = 0xE32C93208E1FC4AE, NameHash = 0x34A0F43E0ECB3765)]
+    [NMS(GUID = 0xE32C93208E1FC4AE, NameHash = 0x34A0F43E0ECB3765)]
     public class TkSketchNodeData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20 TypeName;

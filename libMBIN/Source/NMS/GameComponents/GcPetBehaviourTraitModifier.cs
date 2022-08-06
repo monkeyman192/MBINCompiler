@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1C, GUID = 0xEE15C8AC01C9E69C, NameHash = 0xE41D8EA9BE5AA4F8)]
+    [NMS(GUID = 0xEE15C8AC01C9E69C, NameHash = 0xE41D8EA9BE5AA4F8)]
     public class GcPetBehaviourTraitModifier : NMSTemplate
     {
         /* 0x00 */ public GcCreaturePetTraits Trait;

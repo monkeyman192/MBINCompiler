@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xB0, GUID = 0x28585643215796C6, NameHash = 0x6F8C3831DC1540EC)]
+	[NMS(GUID = 0x28585643215796C6, NameHash = 0x6F8C3831DC1540EC)]
     public class GcPlayerSpawnStateData : NMSTemplate
     {
         /* 0x00 */ public Vector4f PlayerPositionInSystem;

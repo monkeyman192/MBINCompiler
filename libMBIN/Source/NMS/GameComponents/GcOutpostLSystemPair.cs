@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x420, GUID = 0xDBC5A035A3C5D89D, NameHash = 0x3C7F32FAD34D5752)]
+	[NMS(GUID = 0xDBC5A035A3C5D89D, NameHash = 0x3C7F32FAD34D5752)]
     public class GcOutpostLSystemPair : NMSTemplate
     {
         public NMSString0x20 Locator;

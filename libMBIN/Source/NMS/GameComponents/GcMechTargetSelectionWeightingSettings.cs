@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0x6014A71F79C6A516, NameHash = 0x5CE6C6E85ABBB6DB)]
+    [NMS(GUID = 0x6014A71F79C6A516, NameHash = 0x5CE6C6E85ABBB6DB)]
     public class GcMechTargetSelectionWeightingSettings : NMSTemplate
     {
         /* 0x00 */ public float ThreatWeightFactorBase;

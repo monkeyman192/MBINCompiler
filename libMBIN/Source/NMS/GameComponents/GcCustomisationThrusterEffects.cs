@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0x4185DB4ECF22EA33, NameHash = 0xFD3FA61F96564C04)]
+    [NMS(GUID = 0x4185DB4ECF22EA33, NameHash = 0xFD3FA61F96564C04)]
     public class GcCustomisationThrusterEffects : NMSTemplate
     {
         /* 0x00 */ public List<GcCustomisationThrusterEffect> JetpackEffects;

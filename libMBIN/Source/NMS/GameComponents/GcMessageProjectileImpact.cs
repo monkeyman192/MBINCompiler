@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x70, GUID = 0x7BF78EB75CE1F030, NameHash = 0x7EBC25FE326CF24B)]
+    [NMS(GUID = 0x7BF78EB75CE1F030, NameHash = 0x7EBC25FE326CF24B)]
     public class GcMessageProjectileImpact : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
@@ -15,6 +15,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x18 */ public bool Critical;
         /* 0x19 */ public bool Ineffective;
         /* 0x1A */ public bool LaserHeatBoost;
+        [NMS(Size = 0x4, Ignore = true)]
+        /* 0x1C */ public byte[] Padding1C;
         // size: 0x3
         public enum HitTypeEnum { Shootable, Terrain, Generic }
         /* 0x20 */ public HitTypeEnum HitType;

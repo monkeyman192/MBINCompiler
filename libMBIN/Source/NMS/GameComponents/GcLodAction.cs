@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x89C4406BFD4EF7CF, NameHash = 0x0DBF378E750E7647)]
+    [NMS(GUID = 0x89C4406BFD4EF7CF, NameHash = 0x0DBF378E750E7647)]
     public class GcLodAction : NMSTemplate
     {
 		/* 0x00 */ public int LodOverride;

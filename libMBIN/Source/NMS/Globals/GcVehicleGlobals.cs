@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0xD00, GUID = 0x5669DFB0E8B5048E, NameHash = 0x9B5DDD6D76FBC918)]
+    [NMS(GUID = 0x5669DFB0E8B5048E, NameHash = 0x9B5DDD6D76FBC918)]
     public class GcVehicleGlobals : NMSTemplate
     {
         /* 0x000 */ public float UnderwaterScannerIconRangeBoost;

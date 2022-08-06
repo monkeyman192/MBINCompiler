@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x20, GUID = 0x4A883BBD9F48ADC6, NameHash = 0xE02A1CA9048E3A96)]
+	[NMS(GUID = 0x4A883BBD9F48ADC6, NameHash = 0xE02A1CA9048E3A96)]
     public class TkInstanceWindComponentData : NMSTemplate
     {
         /* 0x00 */ public bool EnableLdsWind;

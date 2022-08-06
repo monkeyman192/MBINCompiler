@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC, GUID = 0x86C95D0A39321796, NameHash = 0xF0679B25F5343B25)]
+    [NMS(GUID = 0x86C95D0A39321796, NameHash = 0xF0679B25F5343B25)]
     public class GcWFCTerrainConstraint : NMSTemplate
     {
         public enum DirectionEnum { Left, Back, Right, Forward, LeftBack, RightBack, RightForward, LeftForward, All }

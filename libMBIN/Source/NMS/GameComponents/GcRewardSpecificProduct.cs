@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x48, GUID = 0xB8E5A601DB5F5271, NameHash = 0x691B32769ECE3BC6)]
+    [NMS(GUID = 0xB8E5A601DB5F5271, NameHash = 0x691B32769ECE3BC6)]
     public class GcRewardSpecificProduct : NMSTemplate
     {
         /* 0x00 */ public GcDefaultMissionProductEnum Default;

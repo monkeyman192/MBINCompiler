@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x50, GUID = 0xDE4BAD5519791942, NameHash = 0x51E8334202D1B952)]
+    [NMS(GUID = 0xDE4BAD5519791942, NameHash = 0x51E8334202D1B952)]
     public class GcExternalObjectListOptions : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;

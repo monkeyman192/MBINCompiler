@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x22C0, GUID = 0xD4E3FD6AE10880DB, NameHash = 0xE2DEF8CC8775E050)]
+    [NMS(GUID = 0xD4E3FD6AE10880DB, NameHash = 0xE2DEF8CC8775E050)]
     public class GcCreatureGlobals : NMSTemplate
     {
         /* 0x0000 */ public int NumCreaturesRequiredForDiscoveryMission;

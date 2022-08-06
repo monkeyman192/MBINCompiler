@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x163, GUID = 0xA383984B7DBD6058, NameHash = 0x5CA0B64244DF6963)]
+    [NMS(GUID = 0xA383984B7DBD6058, NameHash = 0x5CA0B64244DF6963)]
     public class GcAtlasActiveFeaturedBaseHeader : NMSTemplate
     {
         /* 0x000 */ public bool Dev;

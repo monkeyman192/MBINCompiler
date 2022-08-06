@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x320, GUID = 0x9C67B4FAEE40B081, NameHash = 0xDC95ACD037A3B77)]
+    [NMS(GUID = 0x9C67B4FAEE40B081, NameHash = 0xDC95ACD037A3B77)]
     public class GcByteBeatSong : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Id;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4F6D0, GUID = 0x54A825C6A161A63B, NameHash = 0x9808AB95D152F880)]
+	[NMS(GUID = 0x54A825C6A161A63B, NameHash = 0x9808AB95D152F880)]
     public class GcBuildingDefinitionTable : NMSTemplate
     {
         [NMS(Size = 0x8, EnumType = typeof(GcAlienRace.AlienRaceEnum))]

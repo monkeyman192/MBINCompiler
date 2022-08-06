@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x78, GUID = 0x0F59C3FE552760B2, NameHash = 0xA14126BE226C6660)]
+    [NMS(GUID = 0x0F59C3FE552760B2, NameHash = 0xA14126BE226C6660)]
     public class GcActionSet : NMSTemplate
     {
         /* 0x00 */ public GcActionSetType Type;

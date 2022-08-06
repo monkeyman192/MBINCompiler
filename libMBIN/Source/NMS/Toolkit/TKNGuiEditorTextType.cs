@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0x9A0DF076C90E3269, NameHash = 0x4780AB6325CE84C6)]
+    [NMS(GUID = 0x9A0DF076C90E3269, NameHash = 0x4780AB6325CE84C6)]
     public class TKNGuiEditorTextType : NMSTemplate
     {
         // size: 0xE

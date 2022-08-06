@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x260CA4DBC9210432, NameHash = 0x7BBDF0D5167BC705)]
+    [NMS(GUID = 0x260CA4DBC9210432, NameHash = 0x7BBDF0D5167BC705)]
     public class GcDissolveEffectComponentData : NMSTemplate
     {
         /* 0x0 */ public float DissolveBeginHeight;

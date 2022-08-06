@@ -10,7 +10,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xA0, GUID = 0x990A0508C5DCEEE6, NameHash = 0xF671716161E708E3)]
+	[NMS(GUID = 0x990A0508C5DCEEE6, NameHash = 0xF671716161E708E3, Broken = true)]
     public class TkMeshData : NMSTemplate
     {
         [NMS(Size = 0x80, Padding = 0xFE)]

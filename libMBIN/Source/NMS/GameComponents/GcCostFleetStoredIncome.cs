@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x736A0876AAFC8598, NameHash = 0x77F73B95EA71A04C)]
+    [NMS(GUID = 0x736A0876AAFC8598, NameHash = 0x77F73B95EA71A04C)]
     public class GcCostFleetStoredIncome : NMSTemplate
     {
         /* 0x0 */ public GcFrigateClass Class;

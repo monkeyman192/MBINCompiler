@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x2F8, GUID = 0xD0BDC9CD22246DA2, NameHash = 0x89A5F03E5191DE14)]
+    [NMS(GUID = 0xD0BDC9CD22246DA2, NameHash = 0x89A5F03E5191DE14)]
     public class GcWeatherHazardMeteorData : NMSTemplate
     {
         /* 0x000 */ public TkModelResource IndicatorDecal;

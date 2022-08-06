@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x2A8, GUID = 0x881D66B2698C4CE8, NameHash = 0xE1CDA71E5D51FD24)]
+    [NMS(GUID = 0x881D66B2698C4CE8, NameHash = 0xE1CDA71E5D51FD24)]
     public class GcSelectableObjectSpawnData : NMSTemplate
     {
         /* 0x0 */ public GcResourceElement Resource;

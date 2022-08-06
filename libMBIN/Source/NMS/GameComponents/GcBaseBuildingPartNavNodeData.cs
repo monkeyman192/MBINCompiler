@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x60, GUID = 0x2AF73E21338B190, NameHash = 0xAE95337199B47CD)]
+    [NMS(GUID = 0x2AF73E21338B190, NameHash = 0xAE95337199B47CD)]
     public class GcBaseBuildingPartNavNodeData : NMSTemplate
     {
         /* 0x00 */ public GcNPCNavSubgraphNodeType Type;

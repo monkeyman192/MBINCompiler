@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4300, GUID = 0x1D9203BD9828AB1E, NameHash = 0xB5B196A1179FFE00)]
+    [NMS(GUID = 0x1D9203BD9828AB1E, NameHash = 0xB5B196A1179FFE00)]
     public class GcDebugScene : NMSTemplate
     {
         /* 0x0000 */ public bool Active;

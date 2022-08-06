@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xC, GUID = 0x27E0D4AB08937C59, NameHash = 0x5A9334071F34CD7A)]
+	[NMS(GUID = 0x27E0D4AB08937C59, NameHash = 0x5A9334071F34CD7A)]
     public class GcRewardHealth : NMSTemplate
     {
         public int AmountMin;

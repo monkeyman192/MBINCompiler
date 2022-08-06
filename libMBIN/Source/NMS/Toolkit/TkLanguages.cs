@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0x86B61CEEE4451AD, NameHash = 0xEA37791FF01A5AF4)]
+    [NMS(GUID = 0x86B61CEEE4451AD, NameHash = 0xEA37791FF01A5AF4)]
     public class TkLanguages : NMSTemplate
     {
         // size: 0x12

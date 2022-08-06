@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x38, GUID = 0x24AFDEE56923EAD3, NameHash = 0xC6506D02A6391EEB)]
+	[NMS(GUID = 0x24AFDEE56923EAD3, NameHash = 0xC6506D02A6391EEB)]
     public class GcPersistentTerrainEdits : NMSTemplate
     {
         public ulong GalacticAddress;

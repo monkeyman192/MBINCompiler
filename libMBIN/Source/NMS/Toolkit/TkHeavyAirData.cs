@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x140, GUID = 0xB5AD1E575E115E05, NameHash = 0xCB25F378CA730AFC)]
+	[NMS(GUID = 0xB5AD1E575E115E05, NameHash = 0xCB25F378CA730AFC)]
     public class TkHeavyAirData : NMSTemplate
     {
         /* 0x000 */ public NMSString0x80 Material;

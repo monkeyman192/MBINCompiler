@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x218, GUID = 0xB058828D80BEBB28, NameHash = 0x4E7A7CEB00A9346B)]
+    [NMS(GUID = 0xB058828D80BEBB28, NameHash = 0x4E7A7CEB00A9346B)]
     public class GcTargetMissionSurveyOptions : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 TargetMissionSurveyId;

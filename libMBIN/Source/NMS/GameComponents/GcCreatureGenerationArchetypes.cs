@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0x2B55D7152697FB96, NameHash = 0x0CFE07CC2C3280EC)]
+    [NMS(GUID = 0x2B55D7152697FB96, NameHash = 0x0CFE07CC2C3280EC)]
     public class GcCreatureGenerationArchetypes : NMSTemplate
     {
         public List<GcCreatureGenerationDomainTable> GroundArchetypes;

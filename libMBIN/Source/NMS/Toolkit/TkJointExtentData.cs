@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x30, GUID = 0x570DB1A0C98C0858, NameHash = 0xB538605B35EDD12C)]
+	[NMS(GUID = 0x570DB1A0C98C0858, NameHash = 0xB538605B35EDD12C)]
     public class TkJointExtentData : NMSTemplate
     {
         [NMS(Size = 3)]

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x18, GUID = 0x3F840374AD3BDE3C, NameHash = 0x7F33053EA7D28399)]
+	[NMS(GUID = 0x3F840374AD3BDE3C, NameHash = 0x7F33053EA7D28399)]
     public class TkLODComponentData : NMSTemplate
     {
         /* 0x10 */ public List<TkLODModelResource> LODModel;

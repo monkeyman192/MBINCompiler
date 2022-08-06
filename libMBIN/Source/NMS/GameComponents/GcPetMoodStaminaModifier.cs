@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1C, GUID = 0xA6532DABE5A58927, NameHash = 0xE63B46A8CA0EF245)]
+    [NMS(GUID = 0xA6532DABE5A58927, NameHash = 0xE63B46A8CA0EF245)]
     public class GcPetMoodStaminaModifier : NMSTemplate
     {
         /* 0x00 */ public GcCreaturePetMood Mood;

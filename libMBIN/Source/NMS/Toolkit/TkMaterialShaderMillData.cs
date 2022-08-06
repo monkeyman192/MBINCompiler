@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x58, GUID = 0x829BC54E2E108D7, NameHash = 0xE5F4152C8F8FC861)]
+    [NMS(GUID = 0x829BC54E2E108D7, NameHash = 0xE5F4152C8F8FC861)]
     public class TkMaterialShaderMillData : NMSTemplate
     {
         /* 0x00 */ public List<TkMaterialShaderMillNode> ShaderMillNodes;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x418CE861C6D3D21C, NameHash = 0x49D48E5A22491956)]
+    [NMS(GUID = 0x418CE861C6D3D21C, NameHash = 0x49D48E5A22491956)]
     public class GcFactionSelectOptions : NMSTemplate
     {
         // size: 0x3

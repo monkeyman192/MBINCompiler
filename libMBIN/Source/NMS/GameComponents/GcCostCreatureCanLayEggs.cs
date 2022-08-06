@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1, GUID = 0x9366301DF9713DFE, NameHash = 0xE4D1EC387723E628)]
+    [NMS(GUID = 0x9366301DF9713DFE, NameHash = 0xE4D1EC387723E628)]
     public class GcCostCreatureCanLayEggs : NMSTemplate
     {
     }

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x1FD88C577C760036, NameHash = 0x26C3924987148B0B)]
+    [NMS(GUID = 0x1FD88C577C760036, NameHash = 0x26C3924987148B0B)]
     public class GcRewardMultiSpecificItems : NMSTemplate
     {
         /* 0x0 */ public bool Silent;

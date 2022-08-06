@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0xDBA6938E9D54B281, NameHash = 0x7F0943EC9DBC0BDD)]
+	[NMS(GUID = 0xDBA6938E9D54B281, NameHash = 0x7F0943EC9DBC0BDD)]
     public class GcGeneratedBaseTemplatesTable : NMSTemplate
     {
         /* 0x00 */ public List<GcGeneratedBaseDecorationTemplate> DecorationTemplates;

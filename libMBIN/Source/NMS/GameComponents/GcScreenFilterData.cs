@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xB0, GUID = 0x129967321DE298AA, NameHash = 0xFFDCD21B79EE81DE)]
+	[NMS(GUID = 0x129967321DE298AA, NameHash = 0xFFDCD21B79EE81DE)]
     public class GcScreenFilterData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A LocText;

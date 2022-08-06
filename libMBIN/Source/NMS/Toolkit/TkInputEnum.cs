@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0xBE3D3712B6DF1EB8, NameHash = 0x8C2EDCD50FA3956F)]
+    [NMS(GUID = 0xBE3D3712B6DF1EB8, NameHash = 0x8C2EDCD50FA3956F)]
     public class TkInputEnum : NMSTemplate
     {
         // size: 0x9B

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x360, GUID = 0x9D5FB82FF4D44F8E, NameHash = 0x6577C3680F2E5DB6)]
+    [NMS(GUID = 0x9D5FB82FF4D44F8E, NameHash = 0x6577C3680F2E5DB6)]
     public class GcTerrainGlobals : NMSTemplate
     {
         /* 0x000 */ public float RegisterTerrainMinDistance;

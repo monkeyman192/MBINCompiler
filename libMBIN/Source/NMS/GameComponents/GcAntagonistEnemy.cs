@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0x71CAAD93EF1D64EC, NameHash = 0xFF1B80B6AD49D2A3)]
+	[NMS(GUID = 0x71CAAD93EF1D64EC, NameHash = 0xFF1B80B6AD49D2A3)]
     public class GcAntagonistEnemy : NMSTemplate
     {
         /* 0x0 */ public float HatredFactor;

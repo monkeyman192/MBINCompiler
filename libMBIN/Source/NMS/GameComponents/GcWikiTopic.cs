@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x190, GUID = 0x0C604F5777777583, NameHash = 0x55D566D2C6EFD1C1)]
+    [NMS(GUID = 0x0C604F5777777583, NameHash = 0x55D566D2C6EFD1C1)]
     public class GcWikiTopic : NMSTemplate
     {
         /* 0x000 */ public NMSString0x20A TopicID;

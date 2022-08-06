@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0x3AAEF54B3BF203E, NameHash = 0x6DC70ADC2461C621)]
+    [NMS(GUID = 0x3AAEF54B3BF203E, NameHash = 0x6DC70ADC2461C621)]
     public class TkInputAxisEnum : NMSTemplate
     {
         // In the exe there is both a None and an Invalid entry, but both have the enum value of 0x0, which we can't really handle so I'll just ignore the "None" value...

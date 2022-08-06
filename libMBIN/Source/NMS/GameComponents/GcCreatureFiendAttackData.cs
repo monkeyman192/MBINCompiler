@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0xE8, GUID = 0x254F5939772BE7DC, NameHash = 0x41B161469E53B05E)]
+	[NMS(GUID = 0x254F5939772BE7DC, NameHash = 0x41B161469E53B05E)]
     public class GcCreatureFiendAttackData : NMSTemplate
     {
         /* 0x00 */ public float NearDist;

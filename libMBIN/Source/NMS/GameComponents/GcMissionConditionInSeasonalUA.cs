@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x19E228671D96D85F, NameHash = 0x15FCC555BAF3FC21)]
+    [NMS(GUID = 0x19E228671D96D85F, NameHash = 0x15FCC555BAF3FC21)]
     public class GcMissionConditionInSeasonalUA : NMSTemplate
     {
         /* 0x0 */ public int SpecificRendevousPlanetIndex;

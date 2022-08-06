@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x18, GUID = 0x181CDFB6B5D7A1BE, NameHash = 0x1C317C9CAD203EF4)]
+	[NMS(GUID = 0x181CDFB6B5D7A1BE, NameHash = 0x1C317C9CAD203EF4)]
     public class GcVibrationData : NMSTemplate
     {
         public float OutputStrength;

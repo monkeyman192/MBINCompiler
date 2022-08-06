@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x6AFAB998CDB60C14, NameHash = 0x84273D91716DB052)]
+    [NMS(GUID = 0x6AFAB998CDB60C14, NameHash = 0x84273D91716DB052)]
     public class GcMissionConditionUnderwaterDepth : NMSTemplate
     {
         /* 0x0 */ public float Depth;

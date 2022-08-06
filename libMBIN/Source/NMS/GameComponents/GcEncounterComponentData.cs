@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x72AB02DDFF433465, NameHash = 0x1BAD68301EABDA5C)]
+    [NMS(GUID = 0x72AB02DDFF433465, NameHash = 0x1BAD68301EABDA5C)]
     public class GcEncounterComponentData : NMSTemplate
     {
         /* 0x0 */ public GcEncounterType EncounterType;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC, GUID = 0xD29C8914DE73E509, NameHash = 0xF9B9838B50251311)]
+    [NMS(GUID = 0xD29C8914DE73E509, NameHash = 0xF9B9838B50251311)]
     public class GcPlanetTerrainColour : NMSTemplate
     {
         /* 0x0 */ public TkPaletteTexture Palette;

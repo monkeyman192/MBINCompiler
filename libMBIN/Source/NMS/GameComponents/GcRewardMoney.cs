@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0x00049A9E7C5470A0, NameHash = 0x2B59E601DE0BDEF9)]
+    [NMS(GUID = 0x00049A9E7C5470A0, NameHash = 0x2B59E601DE0BDEF9)]
     public class GcRewardMoney : NMSTemplate
     {
         /* 0x0 */ public int AmountMin;

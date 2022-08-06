@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0xD2947B48751240C7, NameHash = 0x95E6C4BF9139916C)]
+    [NMS(GUID = 0xD2947B48751240C7, NameHash = 0x95E6C4BF9139916C)]
     public class GcLightShaftProperties : NMSTemplate
     {
         /* 0x00 */ public float LightShaftScattering;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x5C, GUID = 0xDDA826D0D091C6EF, NameHash = 0x523281BEC01AA0F4)]
+    [NMS(GUID = 0xDDA826D0D091C6EF, NameHash = 0x523281BEC01AA0F4)]
     public class TkParticleBurstData : NMSTemplate
     {
         /* 0x00 */ public TkEmitterFloatProperty BurstAmount;

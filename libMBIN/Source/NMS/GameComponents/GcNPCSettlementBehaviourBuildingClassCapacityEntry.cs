@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x08820812411BAD8D, NameHash = 0x6180CAFA8774C28A)]
+    [NMS(GUID = 0x08820812411BAD8D, NameHash = 0x6180CAFA8774C28A)]
     public class GcNPCSettlementBehaviourBuildingClassCapacityEntry : NMSTemplate
     {
         /* 0x0 */ public GcBuildingClassification BuildingClass;

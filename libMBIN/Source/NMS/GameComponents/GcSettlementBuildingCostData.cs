@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0xF8385AE8C29B67B0, NameHash = 0x1746DC1EE79AD525)]
+    [NMS(GUID = 0xF8385AE8C29B67B0, NameHash = 0x1746DC1EE79AD525)]
     public class GcSettlementBuildingCostData : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x10> Products;

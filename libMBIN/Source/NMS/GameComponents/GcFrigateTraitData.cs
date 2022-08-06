@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x58, GUID = 0xB182431F45859CBA, NameHash = 0x3A526CC4024569BA)]
+	[NMS(GUID = 0xB182431F45859CBA, NameHash = 0x3A526CC4024569BA)]
     public class GcFrigateTraitData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;

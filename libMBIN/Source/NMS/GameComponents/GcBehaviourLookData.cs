@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x78, GUID = 0xDB5BC94E38FAF983, NameHash = 0x79CECC228E0EBC79)]
+    [NMS(GUID = 0xDB5BC94E38FAF983, NameHash = 0x79CECC228E0EBC79)]
     public class GcBehaviourLookData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 LookTargetKey;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x78, GUID = 0x4CD249EBEAECA3B9, NameHash = 0xAB111A88D43A92B4)]
+    [NMS(GUID = 0x4CD249EBEAECA3B9, NameHash = 0xAB111A88D43A92B4)]
     public class GcExoMechWeaponData : NMSTemplate
     {
         /* 0x00 */ public List<GcMechWeaponLocation> LocationPriority;

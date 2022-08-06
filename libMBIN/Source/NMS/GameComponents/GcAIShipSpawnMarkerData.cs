@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC0, GUID = 0xE3FBCADF222A13EF, NameHash = 0xDB40771B3EB38336)]
+    [NMS(GUID = 0xE3FBCADF222A13EF, NameHash = 0xDB40771B3EB38336)]
     public class GcAIShipSpawnMarkerData : NMSTemplate
     {
         /* 0x00 */ public TkTextureResource MarkerIcon;

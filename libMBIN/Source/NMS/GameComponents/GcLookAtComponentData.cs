@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x2C, GUID = 0xA585E45D072429E9, NameHash = 0xC264A609B1BBACB5)]
+    [NMS(GUID = 0xA585E45D072429E9, NameHash = 0xC264A609B1BBACB5)]
     public class GcLookAtComponentData : NMSTemplate
     {
         public enum LookAtTypeEnum { Player }

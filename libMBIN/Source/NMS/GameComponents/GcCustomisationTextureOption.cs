@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x58, GUID = 0x4280C761A71669E2, NameHash = 0xCDB7AC6D11C9DF03)]
+    [NMS(GUID = 0x4280C761A71669E2, NameHash = 0xCDB7AC6D11C9DF03)]
     public class GcCustomisationTextureOption : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 TextureOptionsID;

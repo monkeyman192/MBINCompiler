@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x98, GUID = 0x06CD970039C9D523, NameHash = 0xCB9E3321AA0276BD)]
+    [NMS(GUID = 0x06CD970039C9D523, NameHash = 0xCB9E3321AA0276BD)]
     public class GcFreighterBaseGlobals : NMSTemplate
     {
         /* 0x00 */ public int MaxTotalNPCCount;

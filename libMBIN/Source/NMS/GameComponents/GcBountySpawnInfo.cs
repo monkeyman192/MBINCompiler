@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x270, GUID = 0x25794F3AEF274B3C, NameHash = 0x39C7A4F372F6707C)]
+    [NMS(GUID = 0x25794F3AEF274B3C, NameHash = 0x39C7A4F372F6707C)]
     public class GcBountySpawnInfo : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Id;

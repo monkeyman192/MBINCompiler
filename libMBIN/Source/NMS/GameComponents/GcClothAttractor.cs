@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xA0, GUID = 0x3F180C7E73899430, NameHash = 0xDF6FAA4A31B4C454)]
+    [NMS(GUID = 0x3F180C7E73899430, NameHash = 0xDF6FAA4A31B4C454)]
     public class GcClothAttractor : NMSTemplate
     {
         /* 0x00 */ public float AttractionStrength;

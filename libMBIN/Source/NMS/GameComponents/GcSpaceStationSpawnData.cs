@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x140, GUID = 0x1CDF915FBA8D3FEF, NameHash = 0x1FD33D08A7082C22)]
+    [NMS(GUID = 0x1CDF915FBA8D3FEF, NameHash = 0x1FD33D08A7082C22)]
     public class GcSpaceStationSpawnData : NMSTemplate
     {
 		public enum SpawnModeEnum { None, UseSeed, UseAltID }

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0xA54BD82E7B3A463D, NameHash = 0xD772C003DA86A5A1)]
+    [NMS(GUID = 0xA54BD82E7B3A463D, NameHash = 0xD772C003DA86A5A1)]
     public class GcRewardSpecificSeasonalSubstance : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;

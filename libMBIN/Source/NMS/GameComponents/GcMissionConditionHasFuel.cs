@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0xB8CC262F0C524010, NameHash = 0x2A8282CD4FA96596)]
+    [NMS(GUID = 0xB8CC262F0C524010, NameHash = 0x2A8282CD4FA96596)]
     public class GcMissionConditionHasFuel : NMSTemplate
     {
         /* 0x00 */ public GcStatsTypes TargetStat;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x28, GUID = 0x3E92534447257CA6, NameHash = 0x2FAF173AC809FC4C)]
+	[NMS(GUID = 0x3E92534447257CA6, NameHash = 0x2FAF173AC809FC4C)]
     public class TkAnimDetailSettings : NMSTemplate
     {
         public float MaxVisibleAngle;

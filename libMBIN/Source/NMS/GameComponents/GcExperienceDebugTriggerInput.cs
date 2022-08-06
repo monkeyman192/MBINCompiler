@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x48884CF562BD61C5, NameHash = 0x0BCDA670B36E2534)]
+    [NMS(GUID = 0x48884CF562BD61C5, NameHash = 0x0BCDA670B36E2534)]
     public class GcExperienceDebugTriggerInput : NMSTemplate
     {
         // size: 0xD

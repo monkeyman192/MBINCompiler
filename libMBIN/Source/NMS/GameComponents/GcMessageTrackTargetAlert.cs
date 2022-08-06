@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0xDB104196CBE2503A, NameHash = 0xACD740CC9B208196)]
+    [NMS(GUID = 0xDB104196CBE2503A, NameHash = 0xACD740CC9B208196)]
     public class GcMessageTrackTargetAlert : NMSTemplate
     {
         /* 0x00 */ public int Attacker;

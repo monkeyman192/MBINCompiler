@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0xB0, GUID = 0xA017550C35F2FA8F, NameHash = 0x53EC68060BE631FB)]
+	[NMS(GUID = 0xA017550C35F2FA8F, NameHash = 0x53EC68060BE631FB)]
     public class TkModelRendererData : NMSTemplate
     {
         /* 0x00 */ public TkModelRendererCameraData Camera;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x48, GUID = 0x5972CF272DDD8DCA, NameHash = 0x3FE2B5A3043E562F)]
+    [NMS(GUID = 0x5972CF272DDD8DCA, NameHash = 0x3FE2B5A3043E562F)]
     public class GcCreatureGenerationOptionalWeightedList : NMSTemplate
     {
         /* 0x0 */ public float Probability;

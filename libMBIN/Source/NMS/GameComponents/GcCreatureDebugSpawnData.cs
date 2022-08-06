@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0xE2C3ED24D5C83A8E, NameHash = 0x5995CC3B21976698)]
+    [NMS(GUID = 0xE2C3ED24D5C83A8E, NameHash = 0x5995CC3B21976698)]
     public class GcCreatureDebugSpawnData : NMSTemplate
     {
         /* 0x00 */ public int CreatureIndex;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x370, GUID = 0x54BA2C0CF8D5F7B3, NameHash = 0xE9525144C4F949EB)]
+    [NMS(GUID = 0x54BA2C0CF8D5F7B3, NameHash = 0xE9525144C4F949EB)]
     public class TkParticleData : NMSTemplate
     {
         /* 0x000 */ public uint AudioEvent;

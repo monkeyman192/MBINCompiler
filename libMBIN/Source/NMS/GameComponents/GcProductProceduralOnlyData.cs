@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x148, GUID = 0x2DF4B2BD8E92EEA7, NameHash = 0xEACA21EDB93AD84A)]
+	[NMS(GUID = 0x2DF4B2BD8E92EEA7, NameHash = 0xEACA21EDB93AD84A)]
     public class GcProductProceduralOnlyData : NMSTemplate
     {
         /* 0x000 */ public int DropWeight;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x40, GUID = 0x55BA4726F9A4A05D, NameHash = 0xA720068E4459862)]
+	[NMS(GUID = 0x55BA4726F9A4A05D, NameHash = 0xA720068E4459862)]
     public class TkNoiseUberData : NMSTemplate
     {
         /* 0x00 */ public int Octaves;

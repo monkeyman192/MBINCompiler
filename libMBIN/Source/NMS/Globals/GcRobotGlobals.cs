@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x1110, GUID = 0xC356AF05AFCF791A, NameHash = 0xDD7401143C40F868)]
+    [NMS(GUID = 0xC356AF05AFCF791A, NameHash = 0xDD7401143C40F868)]
     public class GcRobotGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool ForceShowDebugMoveTrail;

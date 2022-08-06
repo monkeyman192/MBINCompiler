@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x92B0D75CF9321047, NameHash = 0xA32EA4A9B1B5B242)]
+    [NMS(GUID = 0x92B0D75CF9321047, NameHash = 0xA32EA4A9B1B5B242)]
     public class GcTechnologyTableEnum : NMSTemplate
     {
         // size: 0x11B

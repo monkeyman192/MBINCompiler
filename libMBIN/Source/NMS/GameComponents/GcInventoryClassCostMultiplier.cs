@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x10, GUID = 0x50538964135E2380, NameHash = 0x1FA80ABD4B6B665)]
+	[NMS(GUID = 0x50538964135E2380, NameHash = 0x1FA80ABD4B6B665)]
     public class GcInventoryClassCostMultiplier : NMSTemplate
     {
         [NMS(Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]

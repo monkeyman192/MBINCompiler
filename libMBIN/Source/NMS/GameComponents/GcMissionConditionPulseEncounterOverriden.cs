@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1, GUID = 0xF092F88AC97C0E5D, NameHash = 0x92A198B8C0B98C10)]
+    [NMS(GUID = 0xF092F88AC97C0E5D, NameHash = 0x92A198B8C0B98C10)]
     public class GcMissionConditionPulseEncounterOverriden : NMSTemplate
     {
     }

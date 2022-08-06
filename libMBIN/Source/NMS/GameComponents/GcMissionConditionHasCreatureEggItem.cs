@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x921B1E869D0F6343, NameHash = 0x6FDB38E1B65AEDCB)]
+    [NMS(GUID = 0x921B1E869D0F6343, NameHash = 0x6FDB38E1B65AEDCB)]
     public class GcMissionConditionHasCreatureEggItem : NMSTemplate
     {
         public enum EggItemTypeEnum { Egg, ValidCatalyst }

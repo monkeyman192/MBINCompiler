@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0xD488F83279CACB83, NameHash = 0x093D7C024B58A671)]
+    [NMS(GUID = 0xD488F83279CACB83, NameHash = 0x093D7C024B58A671)]
     public class GcMissionConditionUsingPortal : NMSTemplate
     {
         public enum PortalTypeEnum { Any, Story, NotStory }

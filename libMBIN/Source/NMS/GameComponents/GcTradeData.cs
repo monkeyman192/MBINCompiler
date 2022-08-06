@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xD0, GUID = 0x8AAD82F7812779CF, NameHash = 0x66FAEFAF4E8E7167)]
+    [NMS(GUID = 0x8AAD82F7812779CF, NameHash = 0x66FAEFAF4E8E7167)]
     public class GcTradeData : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x10> AlwaysPresentProducts;

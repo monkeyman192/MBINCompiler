@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xE0, GUID = 0xB129C1474D31C711, NameHash = 0x7F61AD955291D8A9)]
+    [NMS(GUID = 0xB129C1474D31C711, NameHash = 0x7F61AD955291D8A9)]
     public class GcPlayerWeaponBiomeProperties : NMSTemplate
     {
         /* 0x00 */ public GcBiomeType Biome;

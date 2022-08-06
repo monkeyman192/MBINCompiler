@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x38, GUID = 0x9CD3DEC9FFE18F3E, NameHash = 0xBBBD45634207B79F)]
+    [NMS(GUID = 0x9CD3DEC9FFE18F3E, NameHash = 0xBBBD45634207B79F)]
     public class GcBaseMiniPortalComponentData : NMSTemplate
     {
         /* 0x00 */ public bool AllowVehicles;

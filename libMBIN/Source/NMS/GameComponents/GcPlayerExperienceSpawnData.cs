@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x98, GUID = 0x077DC59C00406CFA, NameHash = 0x76E523097495B90)]
+	[NMS(GUID = 0x077DC59C00406CFA, NameHash = 0x76E523097495B90)]
     public class GcPlayerExperienceSpawnData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Archetype;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xB14B995BBE187BB1, NameHash = 0xC64F181FDA941A39)]
+    [NMS(GUID = 0xB14B995BBE187BB1, NameHash = 0xC64F181FDA941A39)]
     public class GcRewardWeaponSlot : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Cost;

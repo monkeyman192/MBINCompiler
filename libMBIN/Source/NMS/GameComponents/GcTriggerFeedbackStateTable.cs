@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x10, GUID = 0x4EBC349D72354BAF, NameHash = 0x6E458F753254E426)]
+    [NMS(GUID = 0x4EBC349D72354BAF, NameHash = 0x6E458F753254E426)]
     public class GcTriggerFeedbackStateTable : NMSTemplate
     {
         /* 0x0 */ public List<GcTriggerFeedbackState> Events;

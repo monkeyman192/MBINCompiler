@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xE4E6338F9F235C3D, NameHash = 0xC04EFF3E2A378ED7)]
+    [NMS(GUID = 0xE4E6338F9F235C3D, NameHash = 0xC04EFF3E2A378ED7)]
     public class GcRewardDisplayTechWindow : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 TechID;

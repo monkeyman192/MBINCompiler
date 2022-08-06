@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x1A8, GUID = 0x7A2164A5AF820818, NameHash = 0x8762991A70BCCE8C)]
+	[NMS(GUID = 0x7A2164A5AF820818, NameHash = 0x8762991A70BCCE8C)]
     public class GcWikiPage : NMSTemplate
     {
         /* 0x000 */ public NMSString0x20A PageID;

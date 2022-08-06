@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x6240, GUID = 0xCA9FC0C02DD62CD5, NameHash = 0x95C306B1A90F3E08)]
+    [NMS(GUID = 0xCA9FC0C02DD62CD5, NameHash = 0x95C306B1A90F3E08)]
     public class GcUIGlobals : NMSTemplate
     {
         /* 0x0000 */ public float FreighterMegaWarpTransitionTime;

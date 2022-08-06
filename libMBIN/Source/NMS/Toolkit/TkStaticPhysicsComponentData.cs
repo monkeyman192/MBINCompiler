@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x28, GUID = 0x165FCE1A454006C6, NameHash = 0x4955878C6E8051DB)]
+    [NMS(GUID = 0x165FCE1A454006C6, NameHash = 0x4955878C6E8051DB)]
     public class TkStaticPhysicsComponentData : NMSTemplate
     {
         /* 0x00 */ public TkPhysicsData Data;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x148, GUID = 0x98BF723C39B6BB58, NameHash = 0x8201F7ADD0F5959D)]
+	[NMS(GUID = 0x98BF723C39B6BB58, NameHash = 0x8201F7ADD0F5959D)]
     public class GcFreighterBaseComponentData : NMSTemplate
     {
         public enum FreighterBaseGenerationModeEnum { Prefab, WFC }

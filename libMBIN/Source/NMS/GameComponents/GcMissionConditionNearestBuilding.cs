@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xA3686EFA1015060D, NameHash = 0x116C1EDD24B089D5)]
+    [NMS(GUID = 0xA3686EFA1015060D, NameHash = 0x116C1EDD24B089D5)]
     public class GcMissionConditionNearestBuilding : NMSTemplate
     {
         /* 0x0 */ public GcBuildingClassification Building;

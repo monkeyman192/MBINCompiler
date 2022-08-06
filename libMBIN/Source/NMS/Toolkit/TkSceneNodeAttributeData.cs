@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-	[NMS(Size = 0x130, GUID = 0x65B3EC85D2F35211, NameHash = 0x502F1C3425CDC8EC)]
+	[NMS(GUID = 0x65B3EC85D2F35211, NameHash = 0x502F1C3425CDC8EC)]
     public class TkSceneNodeAttributeData : NMSTemplate
     {
         public NMSString0x10 Name;

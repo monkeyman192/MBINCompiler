@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0xA8, GUID = 0xB3867276182069C1, NameHash = 0xB49AE407F95DCEE4)]
+    [NMS(GUID = 0xB3867276182069C1, NameHash = 0xB49AE407F95DCEE4)]
     public class TkMaterialAlternative : NMSTemplate
     {
         public enum TextureTypeEnum { Diffuse, Normal, Ambient, Environment }

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0xB31ADC3F23E932F1, NameHash = 0xA4F2D5595864317D)]
+    [NMS(GUID = 0xB31ADC3F23E932F1, NameHash = 0xA4F2D5595864317D)]
     public class TkVolumeTriggerType : NMSTemplate
     {
         // size: 0x12

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x78, GUID = 0xFF0643125795309F, NameHash = 0x51D536C649733342)]
+    [NMS(GUID = 0xFF0643125795309F, NameHash = 0x51D536C649733342)]
     public class TkTrophyEntry : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 TrophyId;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x180, GUID = 0xFEDFF4827AD935C7, NameHash = 0x8A1CA9D7910E2ABB)]
+    [NMS(GUID = 0xFEDFF4827AD935C7, NameHash = 0x8A1CA9D7910E2ABB)]
     public class GcJudgementMessageOptions : NMSTemplate
     {
         /* 0x000 */ public NMSString0x80 MessageInSettlement;

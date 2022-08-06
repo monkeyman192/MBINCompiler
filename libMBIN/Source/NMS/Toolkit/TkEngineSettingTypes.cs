@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x4, GUID = 0xDAC65296273E1B45, NameHash = 0x943946549DEC2216)]
+    [NMS(GUID = 0xDAC65296273E1B45, NameHash = 0x943946549DEC2216)]
     public class TkEngineSettingTypes : NMSTemplate
     {
         // size: 0x31

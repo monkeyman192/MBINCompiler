@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1, GUID = 0x8DAC5CD2F7B112FA, NameHash = 0x3083BCFB99A561CE)]
+    [NMS(GUID = 0x8DAC5CD2F7B112FA, NameHash = 0x3083BCFB99A561CE)]
     public class GcMissionConditionHasIllegalGoods : NMSTemplate
     {
         /* 0x0 */ public bool IncludeNipNip;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x588, GUID = 0xA87BCE144343C714, NameHash = 0x69B43206529CA591)]
+    [NMS(GUID = 0xA87BCE144343C714, NameHash = 0x69B43206529CA591)]
     public class GcBaseBuildingTable : NMSTemplate
     {
         /* 0x000 */ public TkModelResource LegModel;

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x8, GUID = 0x9003B7393B151C5E, NameHash = 0xE81087792E50B0E9)]
+    [NMS(GUID = 0x9003B7393B151C5E, NameHash = 0xE81087792E50B0E9)]
     public class GcMessageUpdateFrigateSpeed : NMSTemplate
     {
         /* 0x0 */ public float StartSpeed;

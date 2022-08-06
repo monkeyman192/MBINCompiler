@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x38, GUID = 0x740062672DE20E4F, NameHash = 0xF6BA3ABDC071904B)]
+    [NMS(GUID = 0x740062672DE20E4F, NameHash = 0xF6BA3ABDC071904B)]
     public class GcRewardCustomExpeditionLogEntry : NMSTemplate
     {
         /* 0x00 */ public bool FromIntervention;

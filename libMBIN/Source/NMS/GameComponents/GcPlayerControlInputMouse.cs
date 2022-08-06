@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x30, GUID = 0x674E6B4FEAEAB468, NameHash = 0x8CC79014E9CB899E)]
+    [NMS(GUID = 0x674E6B4FEAEAB468, NameHash = 0x8CC79014E9CB899E)]
     public class GcPlayerControlInputMouse : NMSTemplate
     {
         /* 0x00 */ public GcCharacterControlInputValidity Validity;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x650, GUID = 0x5EA924B84E8AD457, NameHash = 0x2FD5560612237D4D)]
+	[NMS(GUID = 0x5EA924B84E8AD457, NameHash = 0x2FD5560612237D4D)]
     public class GcBiomeData : NMSTemplate
     {
         /* 0x000 */ public NMSString0x80 TextureFile;

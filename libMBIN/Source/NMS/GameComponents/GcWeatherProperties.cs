@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x800, GUID = 0xCFA3F3198B086BA8, NameHash = 0x0D216CE8E772352C)]
+    [NMS(GUID = 0xCFA3F3198B086BA8, NameHash = 0x0D216CE8E772352C)]
     public class GcWeatherProperties : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Name;

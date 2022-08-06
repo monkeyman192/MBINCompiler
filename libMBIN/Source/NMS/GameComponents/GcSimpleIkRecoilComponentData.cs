@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x120, GUID = 0x2F34AAE6D58F523F, NameHash = 0xF516885AE98E72E8)]
+	[NMS(GUID = 0x2F34AAE6D58F523F, NameHash = 0xF516885AE98E72E8)]
     public class GcSimpleIkRecoilComponentData : NMSTemplate
     {
 		/* 0x000 */ public NMSString0x100 EndJoint;

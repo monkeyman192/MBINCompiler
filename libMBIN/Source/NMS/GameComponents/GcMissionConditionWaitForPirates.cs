@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xC, GUID = 0xE12F8920D7BA097C, NameHash = 0x978040CE6A2C247B)]
+    [NMS(GUID = 0xE12F8920D7BA097C, NameHash = 0x978040CE6A2C247B)]
     public class GcMissionConditionWaitForPirates : NMSTemplate
     {
         /* 0x0 */ public int LivingPirates;

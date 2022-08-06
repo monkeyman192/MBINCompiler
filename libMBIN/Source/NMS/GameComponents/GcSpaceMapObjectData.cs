@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0x3925BC926E37BEEA, NameHash = 0x47334DD09E6C3FE9)]
+	[NMS(GUID = 0x3925BC926E37BEEA, NameHash = 0x47334DD09E6C3FE9)]
     public class GcSpaceMapObjectData : NMSTemplate
     {
         /* 0x00 */ public Colour Colour;

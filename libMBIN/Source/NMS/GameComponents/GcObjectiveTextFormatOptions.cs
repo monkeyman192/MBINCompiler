@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x48, GUID = 0x4AB263BB8D6733B4, NameHash = 0x2B3787F904F75390)]
+    [NMS(GUID = 0x4AB263BB8D6733B4, NameHash = 0x2B3787F904F75390)]
     public class GcObjectiveTextFormatOptions : NMSTemplate
     {
         /* 0x00 */ public bool ObjectivesCanBeFormattedBySequences;

@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0x2ECC1844681E933E, NameHash = 0x8F7F2EBCF9C0EDF)]
+    [NMS(GUID = 0x2ECC1844681E933E, NameHash = 0x8F7F2EBCF9C0EDF)]
     public class GcColouriseComponentData : NMSTemplate
     {
         /* 0x00 */ public Colour PrimaryColour;

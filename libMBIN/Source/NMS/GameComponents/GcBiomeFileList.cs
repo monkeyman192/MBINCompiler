@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x130, GUID = 0xE7B20F162CA4FB38, NameHash = 0x369AF9F4E4E055D0)]
+    [NMS(GUID = 0xE7B20F162CA4FB38, NameHash = 0x369AF9F4E4E055D0)]
     public class GcBiomeFileList : NMSTemplate
     {
         [NMS(Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]

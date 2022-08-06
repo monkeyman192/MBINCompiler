@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1, GUID = 0x108E8DF229CF987C, NameHash = 0xF4AE26E6078EBE15)]
+    [NMS(GUID = 0x108E8DF229CF987C, NameHash = 0xF4AE26E6078EBE15)]
     public class GcMissionConditionWaterInSystem : NMSTemplate
     {
     }

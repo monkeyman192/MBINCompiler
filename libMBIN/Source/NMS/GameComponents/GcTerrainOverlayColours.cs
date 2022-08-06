@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0x9FC4D65E7DF7EFBF, NameHash = 0x61E7123A54EFD252)]
+    [NMS(GUID = 0x9FC4D65E7DF7EFBF, NameHash = 0x61E7123A54EFD252)]
     public class GcTerrainOverlayColours : NMSTemplate
     {
         /* 0x000 */ public float Cutoff;        // 3F000000h

@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0xC53BF72D9881A45D, NameHash = 0xBC637850359D6328)]
+    [NMS(GUID = 0xC53BF72D9881A45D, NameHash = 0xBC637850359D6328)]
     public class GcEncyclopediaComponentData : NMSTemplate
     {
         /* 0x0 */ public GcDiscoveryTypes Type;

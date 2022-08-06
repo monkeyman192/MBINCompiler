@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x3D20, GUID = 0x2B16D846A9427D6A, NameHash = 0xA826BCA4D4C3DFE3)]
+    [NMS(GUID = 0x2B16D846A9427D6A, NameHash = 0xA826BCA4D4C3DFE3)]
     public class GcCameraGlobals : NMSTemplate
     {
         /* 0x0000 */ public bool OffsetCombatCameraHorizontal;

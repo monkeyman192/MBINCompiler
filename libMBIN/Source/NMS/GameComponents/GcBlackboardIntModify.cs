@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x18, GUID = 0xF703DA92989CFC02, NameHash = 0x35ADD8DCDEBE91B7)]
+    [NMS(GUID = 0xF703DA92989CFC02, NameHash = 0x35ADD8DCDEBE91B7)]
     public class GcBlackboardIntModify : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Key;

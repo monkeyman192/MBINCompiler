@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0xFAA9F9CF1F2377E8, NameHash = 0x037D134945C6DC0E)]
+    [NMS(GUID = 0xFAA9F9CF1F2377E8, NameHash = 0x037D134945C6DC0E)]
     public class GcMessageFiendCrime : NMSTemplate
     {
         /* 0x00 */ public Vector3f Position;

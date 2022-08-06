@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x40, GUID = 0x1A17963717B304A1, NameHash = 0x8AE34D6AD8F2EB14)]
+	[NMS(GUID = 0x1A17963717B304A1, NameHash = 0x8AE34D6AD8F2EB14)]
     public class GcFlyingSnakeData : NMSTemplate 
     {
 		  /* 0x00 */ public float CircleSpeed;

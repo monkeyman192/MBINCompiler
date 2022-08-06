@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x3B0, GUID = 0xD7E48ABB6B97E571, NameHash = 0x7333B5EC725370EF)]
+    [NMS(GUID = 0xD7E48ABB6B97E571, NameHash = 0x7333B5EC725370EF)]
     public class GcPlanetSkyProperties : NMSTemplate
     {
         /* 0x000 */ public GcSkyProperties PlanetSky;

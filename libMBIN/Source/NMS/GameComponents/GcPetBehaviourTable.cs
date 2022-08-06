@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x1010, GUID = 0xF089BEE581695079, NameHash = 0x39BD1ED2FC8D7524)]
+    [NMS(GUID = 0xF089BEE581695079, NameHash = 0x39BD1ED2FC8D7524)]
     public class GcPetBehaviourTable : NMSTemplate
     {
         [NMS(Size = 0x1C, EnumType = typeof(GcPetBehaviours.PetBehaviourEnum))]

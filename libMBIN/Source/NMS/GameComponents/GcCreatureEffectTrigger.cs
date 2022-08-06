@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0x136FE5E14CD7D098, NameHash = 0x4E07F5FB46E3BD82)]
+    [NMS(GUID = 0x136FE5E14CD7D098, NameHash = 0x4E07F5FB46E3BD82)]
     public class GcCreatureEffectTrigger : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Effect;

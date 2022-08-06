@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(Size = 0x24, GUID = 0x183EF44FE92F3F19, NameHash = 0x984D549B93F94207)]
+    [NMS(GUID = 0x183EF44FE92F3F19, NameHash = 0x984D549B93F94207)]
     public class TkTransformData : NMSTemplate
     {
         /* 0x00 */ public float TransX;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x30, GUID = 0x4407DD0C57805BE6, NameHash = 0x36E137A2EA118340)]
+	[NMS(GUID = 0x4407DD0C57805BE6, NameHash = 0x36E137A2EA118340)]
     public class GcRegionHotspotData : NMSTemplate
     {
         /* 0x00 */ public float ProbabilityWeighting;

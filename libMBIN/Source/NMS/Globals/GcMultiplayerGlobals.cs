@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x310, GUID = 0x020B74531D4B36C5, NameHash = 0xAE0EEF5ED0659FF3)]
+    [NMS(GUID = 0x020B74531D4B36C5, NameHash = 0xAE0EEF5ED0659FF3)]
     public class GcMultiplayerGlobals : NMSTemplate
     {
         /* 0x000 */ public Vector2f FullSimHandUpdateDistance;

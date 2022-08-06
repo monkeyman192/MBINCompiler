@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x40, GUID = 0xC28183E700DC8C96, NameHash = 0x6CCA924D787E12E)]
+    [NMS(GUID = 0xC28183E700DC8C96, NameHash = 0x6CCA924D787E12E)]
     public class GcBehaviourMoveToTargetData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 TargetKey;

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x4, GUID = 0xF4CE658A01F5C02E, NameHash = 0x22715A99B359A960)]
+	[NMS(GUID = 0xF4CE658A01F5C02E, NameHash = 0x22715A99B359A960)]
     public class GcSizeIndicator : NMSTemplate
     {
 		public enum SizeIndicatorEnum { Small, Medium, Large }

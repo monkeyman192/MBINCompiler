@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x247393F01AF63A6C, NameHash = 0x92D4879C17049BD7)]
+    [NMS(GUID = 0x247393F01AF63A6C, NameHash = 0x92D4879C17049BD7)]
     public class GcAudioWwiseRTPCs : NMSTemplate
     {
         // size: 0x5E

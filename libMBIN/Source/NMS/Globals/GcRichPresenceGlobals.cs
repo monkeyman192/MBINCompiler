@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(Size = 0x24, GUID = 0x37A021DF6D707809, NameHash = 0x9B12FDDE20DE4536)]
+    [NMS(GUID = 0x37A021DF6D707809, NameHash = 0x9B12FDDE20DE4536)]
     public class GcRichPresenceGlobals : NMSTemplate
     {
         /* 0x00 */ public bool ShowOnScreen;

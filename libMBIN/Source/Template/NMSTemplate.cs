@@ -159,6 +159,9 @@ namespace libMBIN
             if (field.FieldType.IsArray) {
                 size = SizeOf(field.FieldType.GetElementType());
                 size *= field.GetCustomAttribute<NMSAttribute>()?.Size ?? 0;
+            } else if (field.FieldType.Name == "String") {
+                // The length of a string is an attribute.
+                size = field.GetCustomAttribute<NMSAttribute>()?.Size ?? 0;
             } else {
                 size = SizeOf(field.FieldType);
             }
@@ -213,8 +216,37 @@ namespace libMBIN
                         size = settings.Size;
                         break;
                     }
+
+                    // For a class which inherits from the NMSTemplate, iterate over
+                    // the fields and get the total size by adding up the sizes of the
+                    // fields.
+                    int max_alignment = 1;
+                    int alignment = 1;
+                    foreach (FieldInfo field in type.GetFields()) {
+                        alignment = AlignOf(field.FieldType);
+                        // If the current size doesn't match the alignment of the current field,
+                        // then align it.
+                        if (size % alignment != 0) {
+                            size += (alignment - (size % alignment));
+                        }
+                        size += SizeOf(field);
+                        // Update the max alignment.
+                        if (alignment > max_alignment) {
+                            max_alignment = alignment;
+                        }
+                    }
+                    // Finally, ensure that the total size is a multiple of the max alignment.
+                    if (size % max_alignment != 0) {
+                        size += (max_alignment - (size % max_alignment));
+                    }
+                    // If the size is still 0 after this then it means that we got a class derived
+                    // from NMSTemplate which has no fields. We still give this a nominal size of 1.
+                    if (size == 0) {
+                        size = 1;
+                    }
                     break;
             }
+
             if (size != 0) { return size; }
             // If we have got here then we have got a type which we cannot determine the size of. Raise an error.
             throw new ArgumentException($"{type.Name} has an unknown size.");

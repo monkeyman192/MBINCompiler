@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0xA0, GUID = 0x2608B5B9ED8DC24B, NameHash = 0xBF03A94511E0F7B0)]
+    [NMS(GUID = 0x2608B5B9ED8DC24B, NameHash = 0xBF03A94511E0F7B0)]
     public class GcSmokeBotStats : NMSTemplate
     {
         /* 0x00 */ public float AvgCpuFPS;

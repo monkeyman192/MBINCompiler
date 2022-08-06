@@ -5,7 +5,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-	[NMS(Size = 0x90, GUID = 0xFD90E327F71AB0E7, NameHash = 0xD040D4124F0456EF)]
+	[NMS(GUID = 0xFD90E327F71AB0E7, NameHash = 0xD040D4124F0456EF)]
     public class GcPersistentBaseEntry : NMSTemplate
     {
         /* 0x00 */ public ulong Timestamp;

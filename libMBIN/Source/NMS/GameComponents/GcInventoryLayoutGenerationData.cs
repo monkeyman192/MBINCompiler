@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x330, GUID = 0x676DBC9D32D0F8EC, NameHash = 0x7AA76AD6E14A0C29)]
+    [NMS(GUID = 0x676DBC9D32D0F8EC, NameHash = 0x7AA76AD6E14A0C29)]
     public class GcInventoryLayoutGenerationData : NMSTemplate
     {
         [NMS(Size = 0x22, EnumType = typeof(GcInventoryLayoutSizeType.SizeTypeEnum))]

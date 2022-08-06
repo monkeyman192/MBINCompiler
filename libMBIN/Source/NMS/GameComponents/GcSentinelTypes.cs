@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0xCD205D74A8917586, NameHash = 0x4C87DB0C59434DB3)]
+    [NMS(GUID = 0xCD205D74A8917586, NameHash = 0x4C87DB0C59434DB3)]
     public class GcSentinelTypes : NMSTemplate
     {
         // size: 0x9

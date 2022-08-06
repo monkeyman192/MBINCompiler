@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x20, GUID = 0x025A0B6777D89F0C, NameHash = 0x42A6687A1AF1F42A)]
+    [NMS(GUID = 0x025A0B6777D89F0C, NameHash = 0x42A6687A1AF1F42A)]
     public class GcButtonSpawnOffset : NMSTemplate
     {
         /* 0x00 */ public float AngleMin;

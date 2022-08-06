@@ -6,7 +6,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(Size = 0x4, GUID = 0x1779D4E78CAA8C32, NameHash = 0xE3BDE57931D2177D)]
+    [NMS(GUID = 0x1779D4E78CAA8C32, NameHash = 0xE3BDE57931D2177D)]
     public class GcVehicleWeaponMode : NMSTemplate
     {
         // size: 0x4
