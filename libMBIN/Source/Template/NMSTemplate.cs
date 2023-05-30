@@ -202,7 +202,7 @@ namespace libMBIN
                     break;
 
                 case "NMSTemplate":
-                    size = 0x50;
+                    size = 0x48;
                     break;
 
                 default:
@@ -390,16 +390,16 @@ namespace libMBIN
                     long startPos = reader.BaseStream.Position;
                     long offset = reader.ReadInt64();
                     string name = reader.ReadString(Encoding.ASCII, 0x40, true);
-                    ulong NameHash = reader.ReadUInt64();
+                    // ulong NameHash = reader.ReadUInt64();
                     if ( name.Length > 0 ) {
                         var templateName = name;
                         if ( name.StartsWith( "c" ) && name.Length > 1 ) {
                             templateName = name.Substring( 1 );
                         }
-                        ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
-                        if ( NameHash != expected_NameHash ) {
-                            Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
-                        }
+                        // ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        // if ( NameHash != expected_NameHash ) {
+                        //     Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
+                        // }
                     }
 
                     long endPos = reader.BaseStream.Position;
@@ -511,17 +511,17 @@ namespace libMBIN
                     long nameOffset = reader.BaseStream.Position;
                     long templateOffset = reader.ReadInt64();
                     var name = reader.ReadString( Encoding.UTF8, 0x40, true );
-                    ulong NameHash = reader.ReadUInt64();
+                    // ulong NameHash = reader.ReadUInt64();
                     // Make sure we have a valid template name
                     if ( name.Length > 0 ) {
                         var templateName = name;
                         if ( name.StartsWith( "c" ) && name.Length > 1 ) {
                             templateName = name.Substring( 1 );
                         }
-                        ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
-                        if ( NameHash != expected_NameHash ) {
-                            Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
-                        }
+                        // ulong expected_NameHash = GetTemplateType( templateName )?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        // if ( NameHash != expected_NameHash ) {
+                        //     Logger.LogMessage( "NameHash", $"{templateName} has the wrong NameHash" );
+                        // }
                     }
 
                     // sometimes there are lists which have n values, but less than n actual structs in them. We replace the empty thing with EmptyNode
@@ -672,16 +672,16 @@ namespace libMBIN
                     if ( template == null || template.GetType().Name == "EmptyNode" ) {
                         writer.Write( (Int64) 0 ); // listPosition
                         writer.WriteString( "", Encoding.UTF8, 0x40 );
-                        writer.Write((Int64)0); // NameHash
+                        // writer.Write((Int64)0); // NameHash
                     } else {
                         writer.Write( (Int64) 0 );      // default value to be overridden later anyway
                         writer.WriteString( "c" + template.GetType().Name, Encoding.UTF8, 0x40 );
-                        ulong NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
-                        if (NameHash != 0) {
-                            writer.Write(NameHash);
-                        } else {
-                            throw new InvalidGUIDException(template);
-                        }
+                        // ulong NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                        // if (NameHash != 0) {
+                        //     writer.Write(NameHash);
+                        // } else {
+                        //     throw new InvalidGUIDException(template);
+                        // }
 
                         var data = new Tuple<long, object>( refPos, template );
                         if ( addtDataIndex >= additionalData.Count ) {
@@ -794,7 +794,7 @@ namespace libMBIN
 
             // reserve space for list offsets+names + NameHash's
             writer.BaseStream.Position = listPosition;
-            writer.Write( new byte[list.Count * 0x50] );              // this seems to need to be reserved even if there are no elements (check?)
+            writer.Write( new byte[list.Count * 0x48] );              // this seems to need to be reserved even if there are no elements (check?)
 
             int addtDataIndexThis = 0;
 
@@ -859,17 +859,17 @@ namespace libMBIN
                     //DebugLog(kvp.Value);
                     writer.WriteString( "c" + kvp.Value, Encoding.UTF8, 0x40 );
                     // Get the NameHash
-                    ulong NameHash = GetTemplateType(kvp.Value)?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
-                    if ( NameHash != 0 ) {
-                        writer.Write( NameHash );
-                    } else {
-                        throw new InvalidGUIDException( TemplateFromName( kvp.Value ) );
-                    }
+                    // ulong NameHash = GetTemplateType(kvp.Value)?.GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+                    // if ( NameHash != 0 ) {
+                    //     writer.Write( NameHash );
+                    // } else {
+                    //     throw new InvalidGUIDException( TemplateFromName( kvp.Value ) );
+                    // }
                     //DebugLog(kvp.Value);
                     //DebugLog(offset);
                 } else {
-                    // this is called when the header 0x50 bytes is empty because it is an empty node.
-                    writer.WriteString( "", Encoding.UTF8, 0x50 );
+                    // this is called when the header 0x48 bytes is empty because it is an empty node.
+                    writer.WriteString( "", Encoding.UTF8, 0x48 );
                 }
             }
 
@@ -917,7 +917,7 @@ namespace libMBIN
 
                 if ( GetType() == typeof( NMS.Toolkit.TkAnimMetadata ) ) {
                     listEnding = 0xFEFEFE01;
-                } else if ( GetType() == typeof( NMS.Toolkit.TkGeometryStreamData ) || GetType() == typeof( NMS.Toolkit.TkGeometryData ) ) {
+                } else if ( GetType() == typeof( NMS.Toolkit.TkGeometryData ) ) {
                     listEnding = 0x00000001;
                 }
 
@@ -963,13 +963,13 @@ namespace libMBIN
                         writer.BaseStream.Position = data.Item1;
                         writer.Write( pos - data.Item1 );
                         writer.WriteString( "c" + template.GetType().Name, Encoding.UTF8, 0x40 );
-                        ulong NameHash = settings?.NameHash ?? 0;
-                        if (NameHash != 0) {
-                            writer.Write(NameHash);
-                        }
-                        else {
-                            throw new InvalidGUIDException(template);
-                        }
+                        // ulong NameHash = settings?.NameHash ?? 0;
+                        // if (NameHash != 0) {
+                        //     writer.Write(NameHash);
+                        // }
+                        // else {
+                        //     throw new InvalidGUIDException(template);
+                        // }
                         writer.BaseStream.Position = endPos;
 
                     } else if ( data.Item2.GetType().IsGenericType && data.Item2.GetType().GetGenericTypeDefinition() == typeof( List<> ) ) {

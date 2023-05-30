@@ -1,18 +1,16 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3BF2793CD5E47362, NameHash = 0x1C94F7F917E32E73)]
     public class GcSpaceshipComponentData : NMSTemplate
     {
-        /* 0x00 */ public GcSpaceshipClasses Class;
-        /* 0x04 */ public NMSString0x80 Cockpit;
-        /* 0x84 */ public float MaxHeadTurn;
-        /* 0x88 */ public float MaxHeadPitchUp;
-        /* 0x8C */ public float MaxHeadPitchDown;
-        /* 0x90 */ public int DefaultHealth;
-        /* 0x94 */ public float FoVFixedDistance;
-        /* 0xA0 */ public TkModelRendererData Renderer;
+        public GcSpaceshipClasses ShipClass;
+        public NMSString0x80 Cockpit;
+        public float MaxHeadTurn;
+        public float MaxHeadPitchUp;
+        public float MaxHeadPitchDown;
+        public int BaseHealth;
+        public float FoVFixedDistance;
     }
 }

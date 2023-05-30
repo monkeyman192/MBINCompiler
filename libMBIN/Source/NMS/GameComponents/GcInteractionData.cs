@@ -1,10 +1,16 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBD2BC029069D4E1F, NameHash = 0x84279994558A47D)]
-    public class GcInteractionData : NMSTemplate
+    public class GcInteractionData : NMSTemplate // 0x20 bytes
     {
-        /* 0x00 */ public ulong GalacticAddress;
-        /* 0x08 */ public ulong Value;
-        /* 0x10 */ public Vector4f Position;
+        public ulong GalacticAddress;
+        public float Value;
+        public bool Flag;
+        [NMS(Size = 0x3, Ignore = true)]
+        public byte[] PaddingD;
+
+        public Vector4f Position;
     }
 }

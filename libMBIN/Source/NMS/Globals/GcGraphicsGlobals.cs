@@ -1,339 +1,272 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x127EDCDB5C006C4C, NameHash = 0xB24409E83457E875)]
+    // loaded at 0x141624650
     public class GcGraphicsGlobals : NMSTemplate
     {
-        /* 0x000 */ public float LUTDistanceFlightMultiplier;
-        /* 0x004 */ public float SunLightIntensity;
-        /* 0x008 */ public float SunLightBlendTime;
-        /* 0x00C */ public float HBAOBias;
-        /* 0x010 */ public float HBAORadius;
-        /* 0x014 */ public float HBAOIntensity;
-        /* 0x020 */ public GcLightShaftProperties LightShaftProperties;
-        /* 0x050 */ public GcLightShaftProperties StormLightShaftProperties;
-        /* 0x080 */ public float SunRayDensity;
-        /* 0x084 */ public float SunRayDecay;
-        /* 0x088 */ public float SunRayExposure;
-        /* 0x08C */ public float SunRayWeight;
-        /* 0x090 */ public float Brightness;
-        /* 0x094 */ public float Contrast;
-        /* 0x098 */ public float Saturation;
-        /* 0x09C */ public bool Redo_On;
-        /* 0x0A0 */ public float Redo_LightIntensity;
-        /* 0x0A4 */ public float Redo_SkyIntensity;
-        /* 0x0A8 */ public float Redo_BounceIntensity;
-        /* 0x0AC */ public float New_BounceLightWarp;
-        /* 0x0B0 */ public float New_BounceLightPower;
-        /* 0x0B4 */ public float New_BounceLightIntensity;
-        /* 0x0B8 */ public float New_SkyLightWarp;
-        /* 0x0BC */ public float New_SkyLightPower;
-        /* 0x0C0 */ public float New_SkyLightIntensity;
-        /* 0x0C4 */ public float New_SideRimWarp;
-        /* 0x0C8 */ public float New_SideRimColourMixer;
-        /* 0x0CC */ public float New_TopRimWarp;
-        /* 0x0D0 */ public float New_TopRimColourMixer;
-        /* 0x0D4 */ public float New_TopRimPower;
-        /* 0x0D8 */ public float New_TopRimIntensity;
-        /* 0x0DC */ public float Old_BounceLightWarp;
-        /* 0x0E0 */ public float Old_BounceLightPower;
-        /* 0x0E4 */ public float Old_BounceLightIntensity;
-        /* 0x0E8 */ public float Old_SkyLightWarp;
-        /* 0x0EC */ public float Old_SkyLightPower;
-        /* 0x0F0 */ public float Old_SkyLightIntensity;
-        /* 0x0F4 */ public float Old_SideRimWarp;
-        /* 0x0F8 */ public float Old_SideRimColourMixer;
-        /* 0x0FC */ public float Old_TopRimWarp;
-        /* 0x100 */ public float Old_TopRimColourMixer;
-        /* 0x104 */ public float Old_TopRimPower;
-        /* 0x108 */ public float Old_TopRimIntensity;
-        /* 0x10C */ public float ModelRendererLightIntensity;
-        /* 0x110 */ public float PetModelRendererLightIntensity;
-        /* 0x114 */ public float WonderModelRendererLightIntensity;
-        /* 0x118 */ public float ScanFresnel;
-        /* 0x11C */ public float ScanClamp;
-        /* 0x120 */ public float ScanAlpha;
-        /* 0x130 */ public Colour ScanColour;
-        /* 0x140 */ public bool DebugLinesDepthTest;
-        /* 0x141 */ public bool CenterRenderSpaceOffset;
-        /* 0x150 */ public TkImGuiSettings ImGui;
-        /* 0x2E0 */ public Colour UIColour;
-        /* 0x2F0 */ public Colour UIShipColour;
-        /* 0x300 */ public float HUDMotionXSpring;
-        /* 0x304 */ public float HUDMotionYSpring;
-        /* 0x308 */ public float HUDMotionPosSpring;
-        /* 0x30C */ public float HUDMotionX;
-        /* 0x310 */ public float HUDMotionY;
-        /* 0x314 */ public float HUDMotionPos;
-        /* 0x318 */ public float HUDDistance;
-        /* 0x31C */ public float NearClipDistance;
-        /* 0x320 */ public float FarClipDistance;
-        /* 0x324 */ public float WarpK;
-        /* 0x328 */ public float WarpKCube;
-        /* 0x32C */ public float WarpScale;
-        /* 0x330 */ public float WarpKDispersion;
-        /* 0x334 */ public int ShadowMapSize;
-        /* 0x338 */ public float DirectionLightRadius;
-        /* 0x33C */ public float DirectionLightFOV;
-        /* 0x340 */ public float DirectionLightShadowBias;
-        /* 0x344 */ public float ShadowLength;
-        /* 0x348 */ public float ShadowLengthShip;
-        /* 0x34C */ public float ShadowLengthSpace;
-        /* 0x350 */ public float ShadowLengthStation;
-        /* 0x354 */ public float ShadowLengthFreighter;
-        /* 0x358 */ public float ShadowLengthFreighterAbandoned;
-        /* 0x35C */ public float ShadowLengthCameraView;
-        /* 0x360 */ public Vector4f ShadowSplit;
-        /* 0x370 */ public Vector4f ShadowSplitShip;
-        /* 0x380 */ public Vector4f ShadowSplitSpace;
-        /* 0x390 */ public Vector4f ShadowSplitStation;
-        /* 0x3A0 */ public Vector4f ShadowSplitCameraView;
-        /* 0x3B0 */ public Vector4f ShadowBias;
-        /* 0x3C0 */ public bool ShadowQuantized;
-        /* 0x3C4 */ public float ShadowBillboardOffset;
-        /* 0x3C8 */ public float QuantizeTime;
-        /* 0x3CC */ public float QuantizeTimeShip;
-        /* 0x3D0 */ public float QuantizeTimeSpace;
-        /* 0x3D4 */ public float QuantizeTimeCameraView;
-        /* 0x3D8 */ public float ToneMapExposure;
-        /* 0x3DC */ public float HDRExposure;
-        /* 0x3E0 */ public float HDRGamma;
-        /* 0x3E4 */ public float HDRLutExposure;
-        /* 0x3E8 */ public float HDRLutGamma;
-        /* 0x3EC */ public float HDRLutToe;
-        /* 0x3F0 */ public float HDRThreshold;
-        /* 0x3F4 */ public float HDROffset;
-        /* 0x3F8 */ public float LensThreshold;
-        /* 0x3FC */ public float LensOffset;
-        /* 0x400 */ public float LensScale;
-        /* 0x404 */ public float LensDirt;
-        /* 0x408 */ public float ToneMapExposureCave;
-        /* 0x40C */ public float HDRExposureCave;
-        /* 0x410 */ public float HDRThresholdCave;
-        /* 0x414 */ public float HDROffsetCave;
-        /* 0x418 */ public float LensThresholdCave;
-        /* 0x41C */ public float LensOffsetCave;
-        /* 0x420 */ public float LensScaleCave;
-        /* 0x424 */ public float LensDirtCave;
-        /* 0x428 */ public float DOFNearPlane;
-        /* 0x42C */ public float DOFFarPlane;
-        /* 0x430 */ public float DOFAmountManual;
-        /* 0x434 */ public float DOFAmountManualLightIndoor;
-        /* 0x438 */ public float DOFAmountManualFullIndoor;
-        /* 0x43C */ public float DOFAmountManualLight;
-        /* 0x440 */ public float DOFAmountManualFull;
-        /* 0x444 */ public float DOFNearFadeDistance;
-        /* 0x448 */ public float DOFNearFadeDistanceManual;
-        /* 0x44C */ public float DOFFarFadeDistance;
-        /* 0x450 */ public float DOFFarPlaneCave;
-        /* 0x454 */ public float DOFFarFadeDistanceCave;
-        /* 0x458 */ public float DOFFarPlaneSpace;
-        /* 0x45C */ public float DOFFarFadeDistanceSpace;
-        /* 0x460 */ public float DOFFarStrengthWater;
-        /* 0x464 */ public float DOFFarPlaneWater;
-        /* 0x468 */ public float DOFFarFadeDistanceWater;
-        /* 0x46C */ public float DOFFarPlaneManual;
-        /* 0x470 */ public float DOFFarFadeDistanceManualIndoor;
-        /* 0x474 */ public float DOFFarFadeDistanceManual;
-        /* 0x478 */ public float DOFAutoFarAmount;
-        /* 0x47C */ public float DOFAutoFarFarPlaneFade;
-        /* 0x480 */ public float DOFAutoFarFarPlane;
-        /* 0x484 */ public float DOFAutoFarNearPlane;
-        /* 0x488 */ public float DOFNearMinInteraction;
-        /* 0x48C */ public float DOFNearAdjustInteraction;
-        /* 0x490 */ public float DOFFarPlaneInteraction;
-        /* 0x494 */ public float DOFFarFadeDistanceInteraction;
-        /* 0x498 */ public bool DOFEnableBokeh;
-        /* 0x499 */ public bool DOFEnableNewBokehShader;
-        /* 0x49A */ public bool DOFEnablePhysCamera;
-        /* 0x49C */ public float VignetteStart;
-        /* 0x4A0 */ public float VignetteEnd;
-        /* 0x4A4 */ public float VignetteStartTurnVR;
-        /* 0x4A8 */ public float VignetteEndTurnVR;
-        /* 0x4AC */ public float VignetteStartMoveVR;
-        /* 0x4B0 */ public float VignetteEndMoveVR;
-        /* 0x4B4 */ public float VignetteVRTurnInterpTime;
-        /* 0x4B8 */ public float VignetteVRMoveInterpTime;
-        /* 0x4BC */ public float VignetteStartMoveVRShip;
-        /* 0x4C0 */ public float VignetteEndMoveVRShip;
-        /* 0x4C4 */ public float VignetteVRMoveInterpTimeShip;
-        /* 0x4C8 */ public float VignetteStartTurnVRShip;
-        /* 0x4CC */ public float VignetteEndTurnVRShip;
-        /* 0x4D0 */ public float VignetteVRTurnInterpTimeShip;
-        /* 0x4D4 */ public float VignetteStartTurnRidingVR;
-        /* 0x4D8 */ public float VignetteEndTurnRidingVR;
-        /* 0x4DC */ public float VignetteVRTurnRidingInterpTime;
-        /* 0x4E0 */ public float VignetteStartRidingVR;
-        /* 0x4E4 */ public float VignetteEndRidingVR;
-        /* 0x4E8 */ public float VignetteVRRidingInterpTime;
-        /* 0x4EC */ public float LowHealthVignetteStart;
-        /* 0x4F0 */ public float LowHealthVignetteEnd;
-        /* 0x4F4 */ public float LowHealthDesaturationIntensityMin;
-        /* 0x4F8 */ public float LowHealthDesaturationIntensityMax;
-        /* 0x4FC */ public float LowHealthDesaturationIntensityTimeSinceHit;
-        /* 0x500 */ public float LowHealthOverlayIntensity;
-        /* 0x504 */ public float LowHealthFadeInTime;
-        /* 0x508 */ public float LowHealthFadeOutTime;
-        /* 0x50C */ public float LowHealthPulseRateLowShield;
-        /* 0x510 */ public float LowHealthPulseRateFullShield;
-        /* 0x514 */ public float LowHealthStrengthLowShield;
-        /* 0x518 */ public float LowHealthStrengthFullShield;
-        /* 0x51C */ public float ShieldDownScanlineTime;
-        /* 0x520 */ public bool FullscreenScanEffect;
-        /* 0x521 */ public bool UseImposters;
-        /* 0x530 */ public Vector4f MipLevelDebug;
-        /* 0x540 */ public Vector4f LensParams;
-        /* 0x550 */ public Colour VerticalColourTop;
-        /* 0x560 */ public Colour VerticalColourBottom;
-        /* 0x570 */ public Vector4f VerticalGradient;
-        /* 0x580 */ public float ScanFadeInTime;
-        /* 0x584 */ public float ScanFadeOutTime;
-        /* 0x588 */ public float ScanEffectSpeed;
-        /* 0x58C */ public float ScanObjectFade;
-        /* 0x590 */ public float ScanBandWidth;
-        /* 0x594 */ public float ScanHeightScale;
-        /* 0x598 */ public float ScanDistance;
-        /* 0x59C */ public float ScanHorizontalScale;
-        /* 0x5A0 */ public float Single1ScanTime;
-        /* 0x5A4 */ public float Single1ScanHeightScale;
-        /* 0x5A8 */ public float Single1ScanBandWidth;
-        /* 0x5AC */ public float Single1ScanEffectSpeed;
-        /* 0x5B0 */ public float Single1ScanObjectFade;
-        /* 0x5B4 */ public float Single1ScanHorizontalScale;
-        /* 0x5B8 */ public float Single2ScanTime;
-        /* 0x5BC */ public float Single2ScanHeightScale;
-        /* 0x5C0 */ public float Single2ScanBandWidth;
-        /* 0x5C4 */ public float Single2ScanEffectSpeed;
-        /* 0x5C8 */ public float Single2ScanObjectFade;
-        /* 0x5CC */ public float Single2ScanHorizontalScale;
-        /* 0x5D0 */ public float TeleportFlashTime;
-        /* 0x5D4 */ public Vector2f WindDir1;
-        /* 0x5DC */ public Vector2f WindDir2;
-        /* 0x5E4 */ public float AtmosphereSize;
-        /* 0x5E8 */ public float RingSize;
-        /* 0x5EC */ public float RingRadius;
-        /* 0x5F0 */ public float RingAvoidanceSphereInterpTime;
-        /* 0x5F4 */ public float HueVariance;
-        /* 0x5F8 */ public float SaturationVariance;
-        /* 0x5FC */ public float ValueVariance;
-        /* 0x600 */ public float FoliageSaturationMin;
-        /* 0x604 */ public float FoliageSaturationMax;
-        /* 0x608 */ public float FoliageValueMin;
-        /* 0x60C */ public float FoliageValueMax;
-        /* 0x610 */ public float GrassSaturationMin;
-        /* 0x614 */ public float GrassSaturationMax;
-        /* 0x618 */ public float GrassValueMin;
-        /* 0x61C */ public float GrassValueMax;
-        /* 0x620 */ public float SkySaturationMin;
-        /* 0x624 */ public float SkySaturationMax;
-        /* 0x628 */ public float SkyValueMin;
-        /* 0x62C */ public float SkyValueMax;
-        /* 0x630 */ public float SpaceScale;
-        /* 0x634 */ public float SpaceMieFactor;
-        /* 0x638 */ public float SpaceSunFactor;
-        /* 0x63C */ public float MaxSpaceFogStrength;
-        /* 0x640 */ public float ReflectionStrength;
-        /* 0x644 */ public float AlphaCutoutMin;
-        /* 0x648 */ public float AlphaCutoutMax;
-        /* 0x64C */ public float WaterHueShift;
-        /* 0x650 */ public float WaterSaturation;
-        /* 0x654 */ public float WaterValue;
-        /* 0x658 */ public float MaxParticleRenderRange;
-        /* 0x65C */ public float MaxParticleRenderRangeSpace;
-        /* 0x660 */ public float MotionBlurShutterSpeed;
-        /* 0x664 */ public float MotionBlurShutterAngle;
-        /* 0x668 */ public float TaaLowFreqConstant;
-        /* 0x66C */ public float TaaHighFreqConstant;
-        /* 0x670 */ public float TaaAccumDelay;
-        /* 0x674 */ public float FrustumJitterAmount;
-        /* 0x678 */ public float FrustumJitterAmountDLSS;
-        /* 0x67C */ public bool UseTaaResolve;
-        /* 0x67D */ public bool ApplyTaaTest;
-        /* 0x67E */ public bool ShowTaaBuf;
-        /* 0x67F */ public bool TonemapInLuminance;
-        /* 0x680 */ public bool ShowTaaVarianceBuf;
-        /* 0x681 */ public bool ShowTaaNVarianceBuf;
-        /* 0x682 */ public bool ShowTaaCVarianceBuf;
-        /* 0x690 */ public Vector4f TaaSettings;
-        [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        /* 0x6A0 */ public Vector4f[] TessSettings;
-        /* 0x6E0 */ public Vector4f TerrainMipDistanceLow;
-        /* 0x6F0 */ public Vector4f TerrainMipDistanceMed;
-        /* 0x700 */ public Vector4f TerrainMipDistanceHigh;
-        /* 0x710 */ public Vector4f TerrainMipDistanceUlt;
-        [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        /* 0x720 */ public Vector4f[] ShellsSettings;
-        /* 0x760 */ public int TerrainAnisoLow;
-        /* 0x764 */ public int TerrainAnisoMed;
-        /* 0x768 */ public int TerrainAnisoHi;
-        /* 0x76C */ public int TerrainAnisoUlt;
-        /* 0x770 */ public int TerrainDroppedMipsLow;
-        /* 0x774 */ public int TerrainDroppedMipsMed;
-        /* 0x778 */ public float TerrainMipBiasLow;
-        /* 0x77C */ public float TerrainMipBiasMed;
-        /* 0x780 */ public int TerrainBlocksPerFrameLow;
-        /* 0x784 */ public int TerrainBlocksPerFrameMed;
-        /* 0x788 */ public int TerrainBlocksPerFrameHi;
-        /* 0x78C */ public int TerrainBlocksPerFrameUlt;
-        /* 0x790 */ public int TerrainBlocksPerFramePs430;
-        /* 0x794 */ public int TerrainBlocksPerFramePs460;
-        /* 0x798 */ public int TerrainBlocksPerFrameXb130;
-        /* 0x79C */ public int TerrainBlocksPerFrameXb160;
-        /* 0x7A0 */ public int TerrainBlocksPerFrameOberon;
-        /* 0x7A4 */ public bool EnableTerrainCachePs4Base;
-        /* 0x7A5 */ public bool EnableTerrainCachePs4Pro;
-        /* 0x7A6 */ public bool EnableTerrainCacheXb1Base;
-        /* 0x7A7 */ public bool EnableTerrainCacheXb1X;
-        /* 0x7A8 */ public bool ForceCachedTerrain;
-        /* 0x7A9 */ public bool ForceUncachedTerrain;
-        /* 0x7AC */ public float MinPixelSizeOfObjectsInShadowsSpace;
-        /* 0x7B0 */ public float MinPixelSizeOfObjectsInShadowsPlanet;
-        /* 0x7B4 */ public float MinPixelSizeOfObjectsInShadowsCockpitOnPlanet;
-        /* 0x7B8 */ public bool AllowPartialCascadeRender;
-        /* 0x7C0 */ public List<int> CascadeRenderSequence;
-        /* 0x7D0 */ public int SupersamplingLevel;
-        /* 0x7D4 */ public bool EnableTextureStreaming;
-        /* 0x7D5 */ public bool ForceStreamAllTextures;
-        /* 0x7D6 */ public bool ForceEvictAllTextures;
-        /* 0x7D8 */ public int TargetTextureMemUsageMB;
-        /* 0x7DC */ public float MotionBlurThresholdOnFoot;
-        /* 0x7E0 */ public float MotionBlurThresholdInVehicle;
-        /* 0x7E4 */ public float MotionBlurThresholdSpace;
-        /* 0x7E8 */ public float MotionBlurThresholdDefault;
-        /* 0x7EC */ public float SpaceIBLBlendStart;
-        /* 0x7F0 */ public float SpaceIBLBlendDistance;
-        /* 0x7F4 */ public float NoFocusMaxFPS;
-        /* 0x7F8 */ public bool EnableCrossPipeSharing;
-        /* 0x7F9 */ public bool EnableSSR;
-        /* 0x7FA */ public bool ShowReflectionProbes;
-        /* 0x7FC */ public float SharpenFilterAmount;
-        /* 0x800 */ public float SharpenFilterDepthFactorStart;
-        /* 0x804 */ public float SharpenFilterDepthFactorEnd;
-        [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        /* 0x808 */ public TkGraphicsDetailPreset[] GraphicsDetailPresetsPC;
-        /* 0x938 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4;
-        /* 0x984 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4VR;
-        /* 0x9D0 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4Pro;
-        /* 0xA1C */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4ProVR;
-        /* 0xA68 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1;
-        /* 0xAB4 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
-        /* 0xB00 */ public TkGraphicsDetailPreset GraphicsDetailPresetOberon;
-        /* 0xB4C */ public TkGraphicsDetailPreset GraphicsDetailPresetNX64Handheld;
-        /* 0xB98 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS5;
-        /* 0xBE4 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS5VR;
-        /* 0xC30 */ public bool EnableVariableUpdate;
-        [NMS(Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        /* 0xC34 */ public float[] VariableUpdatePeriodModifers;
-        /* 0xC44 */ public float PhotoModeBloomGainMin;
-        /* 0xC48 */ public float PhotoModeBloomThresholdMin;
-        /* 0xC4C */ public float PhotoModeDefaultBloomValue;
-        /* 0xC50 */ public float PhotoModeMediumValue;
-        /* 0xC54 */ public float PhotoModeBloomGainMedium;
-        /* 0xC58 */ public float PhotoModeBloomThresholdMedium;
-        /* 0xC5C */ public float PhotoModeBloomGainMax;
-        /* 0xC60 */ public float PhotoModeBloomThresholdMax;
+        public float Unknown0;
+        public float Unknown4;
+        public float Unknown8;
+        public float UnknownC;
+
+        public float Unknown10;
+        public float Unknown14;
+        public float Unknown18;
+        public float Unknown1C;
+
+        public float Unknown20;
+        public float Unknown24;
+        public float Unknown28;
+        public float Unknown2C;
+
+        public float Unknown30;
+        public float Unknown34;
+        public float Unknown38;
+        public float Unknown3C;
+
+        public bool Unknown40; // unused?
+        public bool Unknown41; // used
+        public float Unknown44;
+        public float Unknown48;
+        public float Unknown4C;
+
+        public TkImGuiSettings ImGuiSettings;
+
+        public float Unknown1E0;
+        public float Unknown1E4;
+        public float Unknown1E8;
+        public float Unknown1EC;
+
+        public float Unknown1F0;
+        public float Unknown1F4;
+        public float Unknown1F8;
+        public float Unknown1FC;
+
+        public float Unknown200;
+        public float Unknown204;
+        public float Unknown208;
+        public float Unknown20C;
+
+        public float Unknown210;
+        public float Unknown214;
+        public float Unknown218;
+        public float Unknown21C;
+
+        public float EngineRenderDistance;
+        public float Unknown224;
+        public float Unknown228;
+        public float Unknown22C;
+
+        public float Unknown230;
+        public int Unknown234; // unused?
+        public float Unknown238;
+        public float Unknown23C;
+
+        public float Unknown240;
+        public float Unknown244;
+        public float Unknown248;
+        public float Unknown24C;
+
+        public float Unknown250;
+        public float Unknown254;
+        public float Unknown258;
+        public float Unknown25C;
+
+        public float Unknown260;
+        public float Unknown264;
+        public float Unknown268;
+        public float Unknown26C;
+
+        public float Unknown270;
+        public float Unknown274;
+        public float Unknown278;
+        public float Unknown27C;
+
+        public float Unknown280;
+        public float Unknown284;
+        public float Unknown288;
+        public float Unknown28C;
+
+        public float Unknown290;
+        public float Unknown294;
+        public float Unknown298;
+        public float Unknown29C;
+
+        public float Unknown2A0;
+        public float Unknown2A4;
+        public float Unknown2A8;
+        public float Unknown2AC;
+
+        public float Unknown2B0;
+        public float Unknown2B4;
+        public float Unknown2B8;
+        public float Unknown2BC;
+
+        public bool Unknown2C0; // unused?
+        public float Unknown2C4;
+        public float Unknown2C8;
+        public float Unknown2CC;
+
+        public float Unknown2D0;
+        public float Unknown2D4;
+        public float Unknown2D8;
+        public float Unknown2DC;
+
+        public float Unknown2E0;
+        public float Unknown2E4;
+        public float Unknown2E8;
+        public float Unknown2EC;
+
+        public float Unknown2F0;
+        public float Unknown2F4;
+        public float Unknown2F8;
+        public float Unknown2FC;
+
+        public float Unknown300;
+        public float Unknown304;
+        public float Unknown308;
+        public float Unknown30C;
+
+        public float Unknown310;
+        public float Unknown314;
+        public float Unknown318;
+        public float Unknown31C;
+
+        public float Unknown320;
+        public float Unknown324;
+        public float Unknown328;
+        public float Unknown32C;
+
+        public float Unknown330;
+        public float Unknown334;
+        public float Unknown338;
+        public float Unknown33C;
+
+        public float Unknown340;
+        public float Unknown344;
+        public float Unknown348;
+        public float Unknown34C;
+
+        public float Unknown350;
+        public float Unknown354;
+        public float Unknown358;
+        public float Unknown35C;
+
+        public float Unknown360;
+        public bool Unknown364; // unused?
+        public bool Unknown365; // used
+        public float Unknown368;
+        public float Unknown36C;
+
+        public float Unknown370;
+        public float Unknown374;
+        public float Unknown378;
+        public float Unknown37C;
+
+        public float Unknown380;
+        public float Unknown384;
+        public float Unknown388;
+        public float Unknown38C;
+
+        public float Unknown390;
+        public float Unknown394;
+        public float Unknown398;
+        public float Unknown39C;
+
+        public float Unknown3A0;
+        public float Unknown3A4;
+        public float Unknown3A8;
+        public float Unknown3AC;
+
+        public float Unknown3B0;
+        public float Unknown3B4;
+        public float Unknown3B8;
+        public float Unknown3BC;
+
+        public float Unknown3C0;
+        public float Unknown3C4;
+        public float Unknown3C8;
+        public float Unknown3CC;
+
+        public float Unknown3D0;
+        public float Unknown3D4;
+        public float Unknown3D8;
+        public float Unknown3DC;
+
+        public float Unknown3E0;
+        public float Unknown3E4;
+        public float Unknown3E8;
+        public float Unknown3EC;
+
+        public float Unknown3F0;
+        public float Unknown3F4;
+        public float Unknown3F8;
+        public float Unknown3FC;
+
+        public float Unknown400;
+        public float Unknown404;
+        public float Unknown408;
+        public float Unknown40C;
+
+        public float Unknown410;
+        public float Unknown414;
+        public float Unknown418;
+        public float Unknown41C;
+
+        public float Unknown420;
+        public float Unknown424;
+        public float Unknown428;
+        public float Unknown42C;
+
+        public float Unknown430;
+        public float Unknown434;
+        public float Unknown438;
+        public float Unknown43C;
+
+        public float Unknown440;
+        public float Unknown444;
+        public float Unknown448;
+        public float Unknown44C;
+
+        public float Unknown450;
+        public float Unknown454;
+        public float Unknown458;
+        public float Unknown45C;
+
+        public float Unknown460;
+        public float Unknown464;
+        public float Unknown468;
+        public float Unknown46C;
+
+        public float Unknown470;
+        public float Unknown474;
+        public float Unknown478;
+        public float Unknown47C;
+
+        public float Unknown480;
+        public float Unknown484;
+        public float Unknown488;
+        public float Unknown48C;
+
+        public GcPlanetWaterData Unknown490;
+
+        public GcPlanetWaterData Unknown640;
+
+        public float Unknown7F0;
+        public float Unknown7F4;
+        public float Unknown7F8;
+        public float Unknown7FC;
+
+        public bool Unknown800;
+
+        [NMS(Size = 4)]
+        public int[] Unknown804;
+
+        public int Unknown814;
+
+        [NMS(Size = 8, Ignore = true)]
+        public byte[] Padding818;
     }
 }

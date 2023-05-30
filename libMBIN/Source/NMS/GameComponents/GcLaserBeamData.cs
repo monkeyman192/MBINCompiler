@@ -1,9 +1,10 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7B98E5A171943EF, NameHash = 0x1AA966F8BA4E3153)]
     public class GcLaserBeamData : NMSTemplate
     {
         /* 0x000 */ public NMSString0x10 Id;
@@ -15,31 +16,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x11C */ public float PulseAmplitude;
         /* 0x120 */ public float StartTime;
         /* 0x124 */ public float EndTime;
-        /* 0x128 */ public GcAudioWwiseEvents AudioStart;
-        /* 0x12C */ public GcAudioWwiseEvents AudioStop;
-        /* 0x130 */ public GcAudioWwiseEvents AudioOverheat;
-        /* 0x134 */ public int DefaultDamage;
-        /* 0x138 */ public float ExtraPlayerDamage;
-        /* 0x13C */ public GcDamageType DamageType;
-        /* 0x140 */ public float CriticalHitModifier;
-        /* 0x148 */ public NMSString0x10 PlayerDamage;
-        /* 0x158 */ public NMSString0x10 ImpactEffect;
-        /* 0x168 */ public List<GcProjectileImpactData> Impacts;
-        /* 0x178 */ public float HitRate;
-        /* 0x17C */ public bool SingleHit;
-        /* 0x180 */ public float RagdollPush;
-        /* 0x184 */ public float PhysicsPush;
-        /* 0x188 */ public float MiningHitRate;
-        /* 0x18C */ public bool HasLight;
-        /* 0x18D */ public bool CanMine;
-        /* 0x18E */ public bool ApplyCombatLevelMultipliers;
-        /* 0x190 */ public float DroneImpulse;
-        /* 0x194 */ public float PiercingDamagePercentage;
-        /* 0x198 */ public float LightIntensity;
-        /* 0x1A0 */ public Colour LightColour;
-        /* 0x1B0 */ public Colour Colour;
-        /* 0x1C0 */ public Vector3f ImpactOffset;
-        /* 0x1D0 */ public List<GcImpactCombatEffectData> CombatEffectsOnImpact;
-        /* 0x1E0 */ public List<GcCombatEffectDamageMultiplier> CombatEffectDamageMultipliers;
+        /* 0x128 */ public GcAudioWwiseEvents AkEvent1;
+        /* 0x12C */ public GcAudioWwiseEvents AkEvent2;
+        /* 0x130 */ public GcAudioWwiseEvents AkEvent3;
+        /* 0x134 */ public int Damage;
+        /* 0x138 */ public NMSString0x10 PlayerDamage;
+        /* 0x148 */ public NMSString0x10 ImpactEffect;
+        /* 0x158 */ public List<GcProjectileImpactData> Impacts;
+        /* 0x168 */ public float HitRate;
+        /* 0x16C */ public float RagdollPush;
+        /* 0x170 */ public float MiningHitRate;
+        /* 0x174 */ public bool HasLight;
+        /* 0x175 */ public bool CanMine;
+        /* 0x178 */ public float LightScale;
+        /* 0x180 */ public Colour LightColour;
+        /* 0x190 */ public Colour Colour;
     }
+
 }

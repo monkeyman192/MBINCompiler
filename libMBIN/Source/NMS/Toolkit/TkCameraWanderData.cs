@@ -1,10 +1,12 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xDBA93D8744C56CD0, NameHash = 0xF23D44C69F4360D8)]
     public class TkCameraWanderData : NMSTemplate
     {
-        /* 0x0 */ public bool CamWander;
-        /* 0x4 */ public float CamWanderPhase;
-        /* 0x8 */ public float CamWanderAmplitude;
+        public bool CamWander;
+        public float CamWanderPhase;
+        public float CamWanderAmplitude;
     }
 }

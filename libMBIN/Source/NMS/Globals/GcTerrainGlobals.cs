@@ -1,65 +1,61 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x9ABC6B6AFE809E46, NameHash = 0x6577C3680F2E5DB6)]
     public class GcTerrainGlobals : NMSTemplate
     {
-        /* 0x000 */ public float RegisterTerrainMinDistance;
-        /* 0x004 */ public float TerrainBeamUndoRangeFromLastAdd;
-        /* 0x008 */ public float TerrainBeamHologramTimeout;
-        /* 0x00C */ public float MouseWheelRotatePlaneSensitivity;
-        /* 0x010 */ public float SubtractEditOffset;
-        /* 0x014 */ public float SubtractEditLength;
-        /* 0x018 */ public float SubtractEditFrequency;
-        /* 0x01C */ public float TerrainBeamDefaultRadius;
-        /* 0x020 */ public float TerrainBeamLightIntensity;
-        /* 0x030 */ public Colour TerrainBeamLightColour;
-        /* 0x040 */ public float UseMax;
-        /* 0x044 */ public float TextureFadeDistance;
-        /* 0x048 */ public float TextureFadePower;
-        /* 0x04C */ public float TextureScaleMultiplier;
-        /* 0x050 */ public float TextureScalePower;
-        /* 0x054 */ public float HeightBlend;
-        /* 0x058 */ public float SmoothStepBelow;
-        /* 0x05C */ public float SmoothStepAbove;
-        /* 0x060 */ public float SmoothStepStrength;
-        /* 0x064 */ public float TileBlendMultiplier;
-        /* 0x068 */ public bool DebugFlattenAllTerrain;
-        /* 0x069 */ public bool DebugNoFlattenForBuildings;
-        /* 0x06A */ public bool DebugLockTerrainSettingsIndex;
-        /* 0x06C */ public int NumGeneratorCalls;
-        /* 0x070 */ public int NumPolygoniseCalls;
-        /* 0x074 */ public int NumPostPolygoniseCalls;
-        /* 0x078 */ public float MinHighWaterLevel;
-        /* 0x07C */ public float MaxHighWaterLevel;
-        /* 0x080 */ public float MinHighWaterRegionRatio;
-        /* 0x084 */ public float MinHighWaterRatio;
-        /* 0x088 */ public float MaxHighWaterRatio;
-        /* 0x08C */ public float MinWaterRatio;
-        /* 0x090 */ public float MaxWaterRatio;
-        [NMS(Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]
-        /* 0x098 */ public NMSString0x10[] MiningSubstanceBiome;
-        /* 0x198 */ public List<NMSString0x10> MiningSubstanceStar;
-        /* 0x1A8 */ public List<NMSString0x10> MiningSubstanceStarExtreme;
-        /* 0x1B8 */ public List<NMSString0x10> MiningSubstanceRare;
-        /* 0x1C8 */ public float TextureBlendScale0;
-        /* 0x1CC */ public float TextureBlendScale1;
-        /* 0x1D0 */ public float TextureBlendScale2;
-        /* 0x1D4 */ public float TextureBlendOffset;
-        /* 0x1D8 */ public GcTerrainOverlayColours HueOverlay;
-        /* 0x1F0 */ public GcTerrainOverlayColours SaturationOverlay;
-        /* 0x208 */ public GcTerrainOverlayColours ValueOverlay;
-        /* 0x220 */ public GcTerrainEditing TerrainEditing;
-        /* 0x2B8 */ public float TerrainUndoCubesRange;
-        /* 0x2BC */ public float TerrainUndoCubesAlpha;
-        /* 0x2C0 */ public float TerrainUndoCubesNoiseThreshold;
-        /* 0x2C4 */ public float TerrainUndoCubesNoiseFactor;
-        /* 0x2C8 */ public float TerrainUndoFadeDepthConstant;
-        /* 0x2CC */ public float TerrainUndoFadeDepthScalar;
-        /* 0x2D0 */ public bool DebugRegionHotspots;
-        /* 0x2D1 */ public NMSString0x80 RegionHotspotsTable;
-        /* 0x354 */ public int TerrainPrimeIndexStart;
+        public bool Unknown0; // if set, skips a lot of code
+        public bool Unknown1; // unused?
+        public bool Unknown2; // if unset, does some more calcs
+        public bool Unknown3; // unused
+
+        public int Unknown4; // planet gen related
+        public int Unknown8; // planet gen related
+        public int UnknownC; // planet gen related
+
+        public float Unknown10; // unused?
+        public float Unknown14; // unused?
+        public float Unknown18;
+        public float Unknown1C;
+
+        public float Unknown20;
+        public float Unknown24;
+        public float Unknown28;
+        public int Unknown2C;
+
+        public bool Unknown30;
+        public bool Unknown31; // unused
+        public bool Unknown32; // unused
+        public bool Unknown33; // unused
+        public int Unknown34;
+        public int Unknown38;
+        public bool Unknown3C; // if set, overrides some values with the values from 34 / 40 / 4C
+        public bool Unknown3D; // unused
+        public bool Unknown3E; // unused
+        public bool Unknown3F; // unused
+
+        public int Unknown40;
+        public int Unknown44;
+        public bool Unknown48;
+        public bool Unknown49; // unused
+        public bool Unknown4A; // unused
+        public bool Unknown4B; // unused
+        public float Unknown4C;
+
+        public float Unknown50; // unused?
+        public float Unknown54; // unused?
+        public float Unknown58; // unused?
+        public float Unknown5C;
+
+        public float Unknown60;
+        public float Unknown64;
+        public float Unknown68;
+        public float Unknown6C;
+
+        public float Unknown70;
+        public float Unknown74;
+        public float Unknown78;
+        public float Unknown7C;
     }
 }

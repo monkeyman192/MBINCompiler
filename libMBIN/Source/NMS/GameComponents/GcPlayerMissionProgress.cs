@@ -1,15 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC4054BE6D6E72C73, NameHash = 0x1611798444BC0C13)]
-    public class GcPlayerMissionProgress : NMSTemplate
+    public class GcPlayerMissionProgress : NMSTemplate // 0x18 bytes
     {
-        /* 0x00 */ public NMSString0x10 Mission;
-        /* 0x10 */ public int Progress;
-        /* 0x18 */ public ulong Seed;
-        /* 0x20 */ public ulong Data;
-        [NMS(Size = 0xD, EnumType = typeof(GcPlayerMissionParticipantType.ParticipantTypeEnum))]
-        /* 0x30 */ public GcPlayerMissionParticipant[] Participants;
+        public NMSString0x10 Mission;
+        public int Progress;
+
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding14;
     }
 }

@@ -1,15 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBB8B17B3CC5FF674, NameHash = 0xC66C80C1B41A77FD)]
     public class GcSolarSystemClass : NMSTemplate
     {
-        // size: 0x4
-        public enum SolarSystemClassEnum : uint {
-            Default,
-            Initial,
-            Anomaly,
-            GameStart,
+        public int SolarSystemClass;
+        public string[] SolarSystemClassValues()
+        {
+            return new[] { "Default", "Initial", "Anomaly", "GameStart" };
         }
-        /* 0x0 */ public SolarSystemClassEnum SolarSystemClass;
     }
 }

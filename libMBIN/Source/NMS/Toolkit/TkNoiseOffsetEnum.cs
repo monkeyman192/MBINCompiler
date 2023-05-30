@@ -1,15 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xFC67D2D7540961D5, NameHash = 0xFCAC758E3056BFEF)]
     public class TkNoiseOffsetEnum : NMSTemplate
     {
-        // size: 0x4
-        public enum OffsetTypeEnum : uint {
-            Zero,
-            Base,
-            All,
-            SeaLevel,
+        public int OffsetType;
+        public string[] OffsetTypeValues()
+        {
+            return new[] { "Zero", "Base", "All", "SeaLevel" };
         }
-        /* 0x0 */ public OffsetTypeEnum OffsetType;
     }
 }

@@ -1,12 +1,13 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFAD7013839A1D08E, NameHash = 0x29C1A8399A70F9A7)]
     public class GcRewardTableEntry : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x10 Id;
-        [NMS(Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
-        /* 0x10 */ public GcRewardTableCategory[] Rarities;
+        public NMSString0x10 Id;
+        public GcRewardTableCategory Common; // This actually is a GcRewardTableCategory[3], values are GcRarity
+        public GcRewardTableCategory Uncommon;
+        public GcRewardTableCategory Rare;
     }
 }

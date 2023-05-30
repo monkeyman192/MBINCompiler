@@ -98,7 +98,6 @@ namespace SaveFileMapping
             data.Add(new Tuple<string, string>(HashName("GameKnowledgeData"), "GameKnowledgeData"));
             data.Add(new Tuple<string, string>(HashName("Waypoints"), "Waypoints"));
             // Waypoints is a list of GcGalaxyWaypoint's:
-            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcGalaxyWaypoint), data);
             data.Add(new Tuple<string, string>(HashName("DiscoveryManagerData"), "DiscoveryManagerData"));
             data.Add(new Tuple<string, string>(HashName("DiscoveryData-v1"), "DiscoveryData-v1"));
             data.Add(new Tuple<string, string>(HashName("ReserveStore"), "ReserveStore"));

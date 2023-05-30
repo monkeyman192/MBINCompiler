@@ -1,18 +1,23 @@
+﻿using System.Collections.Generic;
+
 using libMBIN.NMS.Toolkit;
-using System.Collections.Generic;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xC073B9F61779E1C7, NameHash = 0x6DF806B869216436)]
     public class TkAnimPoseComponentData : NMSTemplate
     {
-        /* 0x00 */ public List<TkAnimPoseData> PoseAnims;
-        /* 0x10 */ public NMSString0x80 Filename;
-        /* 0x90 */ public List<TkAnimPoseCorrelationData> Correlations;
-        /* 0xA0 */ public List<TkAnimPoseExampleData> Examples;
-        /* 0xB0 */ public List<float> CorrelationMat;
-        /* 0xC0 */ public float AdultCorrelationValue;
-        /* 0xC8 */ public List<TkAnimPoseBabyModifier> BabyModifiers;
-        /* 0xD8 */ public bool ShouldRandomise;
+        public List<TkAnimPoseData> PoseAnims;
+
+        public NMSString0x80 Filename;
+
+        public List<TkAnimPoseCorrelationData> Correlations;
+        public List<TkAnimPoseExampleData> Examples;
+        public List<float> CorrelationMat;
+
+        public float AdultCorrelationValue;
+
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] PaddingC4;
     }
 }

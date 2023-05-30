@@ -1,16 +1,17 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x112E6E11E83935D1, NameHash = 0x71B8CFD20DB7A5E5)]
     public class GcInventoryTechProbability : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x10 Tech;
-        // size: 0x4
-        public enum DesiredTechProbabilityEnum : uint {
-            Never,
-            Rare,
-            Common,
-            Always,
+        public NMSString0x10 Tech;
+        public int DesiredTechProbability;
+        public string[] DesiredTechProbabilityValues()
+        {
+            return new[] { "Never", "Rare", "Common", "Always" };
         }
-        /* 0x10 */ public DesiredTechProbabilityEnum DesiredTechProbability;
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding14;
     }
 }

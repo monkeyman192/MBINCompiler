@@ -1,11 +1,17 @@
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF2D00947D92DFB8A, NameHash = 0xD77829A90743F12E)]
-    public class GcFontTable : NMSTemplate
-    {
-        [NMS(Size = 0x8, EnumType = typeof(GcFontTypesEnum.FontEnum))]
-        /* 0x0 */ public GcFontData[] Table;
-    }
+	public class GcFontTable : NMSTemplate
+	{
+		public GcFontData Table1;
+		public GcFontData Table2;
+		public GcFontData Table3;
+		public GcFontData Table4;
+		public GcFontData Table5;
+		public GcFontData Table6;
+		public GcFontData Table7;
+		public GcFontData Table8;
+	}
 }

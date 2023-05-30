@@ -1,72 +1,66 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x7F874A3588713672, NameHash = 0x7B6EECDDCAF6F923)]
     public class GcAudioGlobals : NMSTemplate
     {
-        /* 0x000 */ public GcAudioNPCDoppler NPCEngines;
-        /* 0x054 */ public GcAudio3PointDopplerData DroneDoppler;
-        /* 0x060 */ public float AuxSendCaveRampDistance;
-        /* 0x064 */ public float AuxSendOutdoorsRampDistance;
-        /* 0x068 */ public float LadderStepDistance;
-        /* 0x06C */ public float ShorelineSenseStartUp;
-        /* 0x070 */ public float ShorelineSenseProbeDist;
-        /* 0x074 */ public float ShorelineSenseBlend;
-        /* 0x078 */ public float ShorelineSenseBaseU;
-        /* 0x07C */ public Vector2f ShorelineSenseUJitter;
-        /* 0x084 */ public Vector2f ShorelineSenseVJitter;
-        /* 0x08C */ public Vector2f ShorelineSenseRadius;
-        /* 0x094 */ public float ShorelineValidityRate;
-        /* 0x098 */ public float ShorelineRTPCSmoothRate;
-        /* 0x09C */ public float ShorelineObstructionSmoothRate;
-        /* 0x0A0 */ public float ShorelineObstructionMul;
-        /* 0x0A4 */ public float DroneDopplerExtentsFactor;
-        /* 0x0A8 */ public float DistanceReportMin;
-        /* 0x0AC */ public float DistanceReportMax;
-        /* 0x0B0 */ public float DistanceSquishScaleToListener;
-        /* 0x0B4 */ public float DistanceSquishMaxTravel;
-        /* 0x0B8 */ public int ByteBeatMaxGeneratingAudio;
-        /* 0x0BC */ public float ByteBeatCrossfadeTime;
-        /* 0x0C0 */ public float ByteBeatVisualisationTime;
-        /* 0x0C4 */ public int ByteBeatVisualisationMode;
-        /* 0x0C8 */ public int ByteBeatVisualisationPixelStep;
-        /* 0x0CC */ public int ByteBeatVisualisationMiniPixelStep;
-        /* 0x0D0 */ public int ByteBeatNonSilentAttempts;
-        /* 0x0D4 */ public float ByteBeatNonSilentTime;
-        /* 0x0D8 */ public float ByteBeatNonSilentAvgInterpSpeed;
-        /* 0x0DC */ public float ByteBeatNonSilentSDCutoff;
-        /* 0x0E0 */ public float ByteBeatBeginAtTonicProbability;
-        /* 0x0E4 */ public float ByteBeatChangeNoteProbability;
-        /* 0x0E8 */ public float ByteBeatSkipNoteProbability;
-        /* 0x0F0 */ public List<float> ByteBeatScaleDegreeProbability;
-        /* 0x100 */ public float ByteBeatSpeakerVolumeInterSpeed;
-        /* 0x104 */ public Vector2f ByteBeatSpeakerMaxAmplitude;
-        /* 0x10C */ public Vector2f ByteBeatSpeakerMinFrequency;
-        /* 0x114 */ public Vector2f ByteBeatSpeakerMaxFrequency;
-        /* 0x11C */ public int ByteBeatPlayerNumLoops;
-        /* 0x120 */ public float ByteBeatPlayerFadeOut;
-        /* 0x124 */ public float ByteBeatDrumMixLow;
-        /* 0x128 */ public float ByteBeatDrumMixHigh;
-        /* 0x12C */ public float ByteBeatSynthMixLow;
-        /* 0x130 */ public float ByteBeatSynthMixHigh;
-        /* 0x134 */ public float AtlasStationActiveDistance;
-        /* 0x138 */ public float MiniStationActiveDistance;
-        /* 0x13C */ public float PlayerDepthUnderwaterMax;
-        /* 0x140 */ public float PlayerLowerOffsetEmitterMul;
-        /* 0x144 */ public bool ObstructionEnabled;
-        /* 0x148 */ public float ObstructionSmoothTime;
-        /* 0x14C */ public float ObstructionValueMax;
-        /* 0x150 */ public float ObstructionAuxControlWhenVisible;
-        /* 0x154 */ public float ObstructionAuxControlWhenHidden;
-        /* 0x158 */ public bool PulseMusicEnabled;
-        /* 0x159 */ public bool LockListenerMatrix;
-        /* 0x15A */ public bool EnableVRSpecificAudio;
-        /* 0x15C */ public float ArmFoleySpeedMultiplier;
-        /* 0x160 */ public float ArmWhooshFoleyValueTrigger;
-        /* 0x164 */ public float MinSecondsBetweenArmWhooshes;
-        /* 0x168 */ public Vector2f CommsChatterFalloffFreighers;
-        /* 0x170 */ public Vector2f CommsChatterFalloffShips;
+        // the func that uses the blocks of floats below (up to 0x3C) seems to associate each 3 with a different NPC type
+        public float Unknown0; // None
+        public float Unknown4; // None
+        public float Unknown8; // None
+        public float UnknownC; // Pirate
+        public float Unknown10; // Pirate
+        public float Unknown14; // Pirate
+        public float Unknown18; // Police
+        public float Unknown1C; // Police
+        public float Unknown20; // Police
+        public float Unknown24; // Trader
+        public float Unknown28; // Trader
+        public float Unknown2C; // Trader
+        public float Unknown30; // Freighter
+        public float Unknown34; // Freighter
+        public float Unknown38; // Freighter
+
+        public float Unknown3C;
+        public float Unknown40;
+        public float Unknown44;
+        public float Unknown48;
+        public float Unknown4C;
+        public float Unknown50;
+        public float Unknown54;
+        public float Unknown58;
+        public float Unknown5C;
+        public float Unknown60;
+        public float Unknown64;
+        public float Unknown68;
+        public float Unknown6C;
+        public float Unknown70;
+        public float Unknown74;
+        public float Unknown78;
+        public float Unknown7C;
+        public float Unknown80;
+        public float Unknown84;
+        public float Unknown88;
+        public float Unknown8C;
+        public float Unknown90;
+        public float Unknown94;
+        public float Unknown98;
+        public float Unknown9C;
+        public float UnknownA0;
+        public float UnknownA4;
+        public float UnknownA8;
+
+        public bool UnknownAC; // if false, main code chunk inside cGcAudioManager::RunObstructionQueries won't get run (default true)
+
+        public float UnknownB0;
+        public float UnknownB4;
+        public float UnknownB8;
+        public float UnknownBC;
+
+        public bool UnknownC0; // if true, loads music from /MUSIC/PULSE.XML? (default true)
+
+        [NMS(Size = 3, Ignore = true)]
+        public byte[] PaddingC1;
     }
 }

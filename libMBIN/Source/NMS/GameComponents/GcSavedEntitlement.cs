@@ -1,8 +1,10 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEB6CA826D9390F53, NameHash = 0xCEE0D0F77485755F)]
-    public class GcSavedEntitlement : NMSTemplate
+    public class GcSavedEntitlement : NMSTemplate // 0x100 bytes
     {
-        /* 0x0 */ public NMSString0x100 EntitlementId;
+        public NMSString0x100 EntitlementId;
     }
 }

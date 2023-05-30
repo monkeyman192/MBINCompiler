@@ -1,8 +1,9 @@
-namespace libMBIN.NMS.GameComponents
-{
-    [NMS(GUID = 0x529860E9149DC2FE, NameHash = 0x9621F73F2ADCB476)]
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
+namespace libMBIN.NMS.GameComponents {
     public class GcRewardDestructEntry : NMSTemplate
     {
-        /* 0x0 */ public float HealthFactor;
+        public float HealthFactor;
     }
 }

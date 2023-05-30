@@ -1,23 +1,21 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xEC91040F8A270DB4, NameHash = 0x1A9F7FA6E4ED2B3E)]
     public class GcSmokeTestOptions : NMSTemplate
     {
-        /* 0x00 */ public float InitialPause;
-        /* 0x04 */ public float SmokeTestFlashTimeDuration;
-        /* 0x08 */ public float CameraHeight;
-        /* 0x0C */ public float CameraFastHeight;
-        /* 0x10 */ public float CameraMoveSpeed;
-        /* 0x14 */ public float CameraFastMoveSpeed;
-        /* 0x18 */ public float CameraRotateSpeed;
-        /* 0x1C */ public float CameraPitchAngleDeg;
-        /* 0x20 */ public float CameraPitchSpeedRange;
-        /* 0x24 */ public bool GifMode;
-        /* 0x28 */ public int GifFrames;
-        /* 0x2C */ public float GifTimeBetweenKeyframes;
-        /* 0x30 */ public float PlanetFlightTime;
-        /* 0x34 */ public float PlanetFlightTimeout;
-        /* 0x38 */ public float SmokeBotTurnAngle;
-        /* 0x3C */ public int SmokeBotNumWalksBeforeWarp;
+        public float Unknown0; // 20.0
+        public float Unknown4; // 0.1
+        public float Unknown8; // 4.5
+        public float UnknownC; // 5
+
+        public int Unknown10; // 0 (unused?)
+        public int Unknown14; // 0
+        public int Unknown18; // 0 (unused?)
+        public int Unknown1C; // 25 (unused?)
+
+        public float Unknown20; // 0.3
+        public float Unknown24; // 60.0
     }
 }

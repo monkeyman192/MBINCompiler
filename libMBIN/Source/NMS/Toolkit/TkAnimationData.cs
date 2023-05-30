@@ -1,45 +1,51 @@
+﻿using System.Collections.Generic;
+
 using libMBIN.NMS.Toolkit;
-using System.Collections.Generic;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2B3F7ACFE888523E, NameHash = 0x3A0F3C26A4978A6F)]
-    public class TkAnimationData : NMSTemplate
+    public class TkAnimationData : NMSTemplate // 0xE0 bytes
     {
-        /* 0x000 */ public NMSString0x10 Anim;
-        /* 0x010 */ public NMSString0x10 AdditiveBaseAnim;
-        /* 0x020 */ public NMSString0x80 Filename;
-        /* 0x0A0 */ public NMSString0x40 StartNode;
-        /* 0x0E0 */ public List<NMSString0x40> ExtraStartNodes;
-        /* 0x0F0 */ public TkAnimationGameData GameData;
-        /* 0x0F8 */ public int FrameStart;
-        /* 0x0FC */ public int FrameEnd;
-        /* 0x100 */ public int Priority;
-        /* 0x104 */ public float OffsetMin;
-        /* 0x108 */ public float OffsetMax;
-        /* 0x10C */ public float Delay;
-        /* 0x110 */ public float Speed;
-        /* 0x114 */ public float ActionStartFrame;
-        /* 0x118 */ public float ActionFrame;
-        /* 0x11C */ public float AdditiveBaseFrame;
-        // size: 0x4
-        public enum AnimTypeEnum : uint {
-            Loop,
-            OneShot,
-            Control,
-            OneShotBlendable,
+        [NMS(Size = 0x10)]
+        /* 0x000 */ public string Anim;
+        [NMS(Size = 0x80)]
+        /* 0x010 */ public string Filename;
+
+        /* 0x090 */ public int AnimType;
+        public string[] AnimTypeValues()
+        {
+            return new[] { "Loop", "OneShot", "Control" };
         }
-        /* 0x120 */ public AnimTypeEnum AnimType;
-        // size: 0x3
-        public enum CreatureSizeEnum : uint {
-            AllSizes,
-            SmallOnly,
-            LargeOnly,
+
+        /* 0x094 */ public int FrameStart;
+        /* 0x098 */ public int FrameEnd;
+        [NMS(Size = 4, Ignore = true)]
+        /* 0x09C */ public byte[] Padding9C;
+
+        [NMS(Size = 0x10)]
+        /* 0x0A0 */ public string StartNode;
+        /* 0x0B0 */ public List<NMSString0x10> ExtraStartNodes;
+
+        /* 0x0C0 */ public int Priority;
+
+        /* 0x0C4 */ public float LoopOffsetMin;
+        /* 0x0C8 */ public float LoopOffsetMax;
+
+        /* 0x0CC */ public float ControlDelay;
+        /* 0x0D0 */ public float ControlSpeed;
+        /* 0x0D4 */ public float ControlActionFrame;
+        /* 0x0D8 */ public int ControlCreatureSize;
+        public string[] ControlCreatureSizeValues()
+        {
+            return new[] { "AllSizes", "SmallOnly", "LargeOnly" };
         }
-        /* 0x124 */ public CreatureSizeEnum CreatureSize;
-        /* 0x128 */ public bool Additive;
-        /* 0x129 */ public bool Mirrored;
-        /* 0x12A */ public bool Active;
-        /* 0x12B */ public bool Has30HzFrames;
+
+        /* 0x0DC */ public bool FlagsAdditive;
+        /* 0x0DD */ public bool FlagsMirrored;
+        /* 0x0DE */ public bool FlagsActive;
+
+        [NMS(Size = 1, Ignore = true)]
+        /* 0x0DF */ public byte[] PaddingDF;
     }
 }

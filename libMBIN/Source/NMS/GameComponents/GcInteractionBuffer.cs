@@ -1,12 +1,16 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x66D42310D501E21, NameHash = 0x7355BB5E5AC6EB4A)]
-    public class GcInteractionBuffer : NMSTemplate
+    public class GcInteractionBuffer : NMSTemplate // 0x7D10 bytes
     {
-        /* 0x00 */ public List<GcInteractionData> Interactions;
-        /* 0x10 */ public int CurrentPos;
+        [NMS(Size = 0x3E8)]
+        public GcInteractionData[] Interactions;
+
+        public float CurrentPos;
+
+        [NMS(Size = 0xC, Ignore = true)]
+        public byte[] Padding7D04;
     }
 }

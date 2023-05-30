@@ -1,44 +1,47 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC5C07B1E131F00A8, NameHash = 0xD216CE8E772352C)]
     public class GcWeatherProperties : NMSTemplate
     {
-        /* 0x000 */ public NMSString0x10 Name;
-        /* 0x010 */ public bool UseWeatherFog;
-        /* 0x014 */ public GcFogProperties Fog;
-        /* 0x0F4 */ public GcFogProperties FlightFog;
-        /* 0x1D4 */ public GcFogProperties StormFog;
-        /* 0x2B4 */ public GcFogProperties ExtremeFog;
-        /* 0x3A0 */ public GcWeatherColourModifiers ExtremeColourModifiers;
-        [NMS(Size = 0x4, EnumType = typeof(GcRainbowType.RainbowTypeEnum))]
-        /* 0x640 */ public float[] RainbowChance;
-        /* 0x650 */ public List<GcStormProperties> Storms;
-        /* 0x660 */ public List<NMSString0x80> HeavyAir;
-        /* 0x670 */ public float LowStormsChance;
-        /* 0x674 */ public float HighStormsChance;
-        /* 0x678 */ public float ExtremeWeatherChance;
-        /* 0x67C */ public bool OverrideTemperature;
-        [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x680 */ public GcHazardValues[] Temperature;
-        /* 0x6A8 */ public bool OverrideToxicity;
-        [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x6AC */ public GcHazardValues[] Toxicity;
-        /* 0x6D4 */ public bool OverrideRadiation;
-        [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x6D8 */ public GcHazardValues[] Radiation;
-        [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x700 */ public GcHazardValues[] LifeSupportDrain;
-        /* 0x728 */ public List<GcScreenFilters> StormFilterOptions;
-        /* 0x738 */ public bool UseWeatherSky;
-        /* 0x73C */ public GcSkyProperties Sky;
-        /* 0x76C */ public bool UseLightShaftProperties;
-        /* 0x770 */ public GcLightShaftProperties LightShaftProperties;
-        /* 0x7A0 */ public bool UseStormLightShaftProperties;
-        /* 0x7B0 */ public GcLightShaftProperties StormLightShaftProperties;
-        /* 0x7E0 */ public List<NMSString0x10> WeatherEffectsIds;
-        /* 0x7F0 */ public List<NMSString0x10> WeatherHazardsIds;
+        public NMSString0x10 Name;
+
+        public GcFogProperties Fog;
+        public GcFogProperties FlightFog;
+        public GcFogProperties StormFog;
+        public GcFogProperties ExtremeFog;
+
+        public GcWeatherColourModifiers StormColourModifiers;
+        public GcWeatherColourModifiers ExtremeColourModifiers;
+
+        public List<NMSString0x80> HeavyAir;
+
+        public float LowStormsChance;
+        public float HighStormsChance;
+        public float ExtremeWeatherChance;
+
+        public bool OverrideTemperature;
+        public GcHazardValues Temperature1;
+        public GcHazardValues Temperature2;
+        public GcHazardValues Temperature3;
+        public GcHazardValues Temperature4;
+        public GcHazardValues Temperature5;
+
+        public bool OverrideToxicity;
+        public GcHazardValues Toxicity1;
+        public GcHazardValues Toxicity2;
+        public GcHazardValues Toxicity3;
+        public GcHazardValues Toxicity4;
+        public GcHazardValues Toxicity5;
+
+        public bool OverrideRadiation;
+        public GcHazardValues Radiation1;
+        public GcHazardValues Radiation2;
+        public GcHazardValues Radiation3;
+        public GcHazardValues Radiation4;
+        public GcHazardValues Radiation5;
     }
 }

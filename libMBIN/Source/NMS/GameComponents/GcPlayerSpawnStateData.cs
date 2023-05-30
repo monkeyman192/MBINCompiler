@@ -1,30 +1,21 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC0D8ABF2503E00DC, NameHash = 0x6F8C3831DC1540EC)]
     public class GcPlayerSpawnStateData : NMSTemplate
     {
-        /* 0x00 */ public Vector4f PlayerPositionInSystem;
-        /* 0x10 */ public Vector4f PlayerTransformAt;
-        /* 0x20 */ public Vector4f PlayerDeathRespawnPositionInSystem;
-        /* 0x30 */ public Vector4f PlayerDeathRespawnTransformAt;
-        /* 0x40 */ public Vector4f ShipPositionInSystem;
-        /* 0x50 */ public Vector4f ShipTransformAt;
-        // size: 0x7
-        public enum LastKnownPlayerStateEnum : uint {
-            OnFoot,
-            InShip,
-            InStation,
-            AboardFleet,
-            InNexus,
-            AbandonedFreighter,
-            InShipLanded,
+        public Vector4f PlayerPositionInSystem;
+        public Vector4f PlayerTransformAt;
+        public Vector4f ShipPositionInSystem;
+        public Vector4f ShipTransformAt;
+        public int LastKnownPlayerState;
+        public string[] LastKnownPlayerStateValues()
+        {
+            return new[] { "OnFoot", "InShip", "OnStation" };
         }
-        /* 0x60 */ public LastKnownPlayerStateEnum LastKnownPlayerState;
-        /* 0x70 */ public Vector4f FreighterPositionInSystem;
-        /* 0x80 */ public Vector4f FreighterTransformAt;
-        /* 0x90 */ public Vector4f FreighterTransformUp;
-        /* 0xA0 */ public Vector4f AbandonedFreighterPositionInSystem;
-        /* 0xB0 */ public Vector4f AbandonedFreighterTransformAt;
-        /* 0xC0 */ public Vector4f AbandonedFreighterTransformUp;
+
+        [NMS(Size = 0xC, Ignore = true)]
+        public byte[] Padding44;
     }
 }

@@ -1,36 +1,44 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE7D4DE3BBE9E232, NameHash = 0x2FE28DE7841506AF)]
-    public class GcBuildingSpawnData : NMSTemplate
+    public class GcBuildingSpawnData : NMSTemplate // 0x5D0 bytes
     {
         /* 0x000 */ public float Density;
+        [NMS(Size = 4, Ignore = true)]
+        /* 0x004 */ public byte[] Padding4;
+
         /* 0x008 */ public GcResourceElement Resource;
-        /* 0x2B0 */ public int LSystemID;
-        /* 0x2B4 */ public int WFCModuleSet;
-        /* 0x2B8 */ public int WFCBuildingPreset;
-        /* 0x2BC */ public bool AutoCollision;
-        /* 0x2C0 */ public GcSeed Seed;
-        /* 0x2D0 */ public GcBuildingClassification Classification;
-        [NMS(Size = 0x8)]
-        /* 0x2D4 */ public int[] ClusterLayouts;
-        /* 0x2F4 */ public int ClusterLayoutCount;
-        /* 0x2F8 */ public float ClusterSpacing;
-        /* 0x2FC */ public TkNoiseFlattenOptions FlattenType;
-        /* 0x304 */ public bool GivesShelter;
-        /* 0x305 */ public bool AlignToNormal;
-        /* 0x306 */ public bool LowerIntoGround;
-        /* 0x308 */ public float Scale;
-        /* 0x30C */ public float MaxXZRotation;
-        /* 0x310 */ public float Radius;
-        /* 0x314 */ public float MinHeight;
-        /* 0x318 */ public float MaxHeight;
-        /* 0x31C */ public int InstanceID;
-        /* 0x320 */ public Vector3f AABBMin;
-        /* 0x330 */ public Vector3f AABBMax;
-        /* 0x340 */ public bool BuildingSizeCalculated;
-        /* 0x341 */ public bool IgnoreParticlesAABB;
+        /* 0x2B0 */ public GcResourceElement UnderwaterResource;
+        /* 0x558 */ public int LSystemID;
+        /* 0x55C */ public int UnderwaterLSystemID;
+        /* 0x560 */ public bool AutoCollision;
+        [NMS(Size = 7, Ignore = true)]
+        /* 0x561 */ public byte[] Padding561;
+
+        /* 0x568 */ public GcSeed Seed;
+        /* 0x578 */ public GcBuildingClassification BuildingClass;
+        /* 0x57C */ public GcBuildingClusterPlacement BuildingClusterPlacement;
+        /* 0x580 */ public bool AddWaypoint;
+        /* 0x581 */ public bool AddShelter;
+        /* 0x582 */ public bool AddLandingPad;
+        /* 0x583 */ public bool GivesShelter;
+
+        /* 0x584 */ public bool PositioningAlignToNormal;
+        /* 0x585 */ public bool PositioningLowerIntoGround;
+        /* 0x588 */ public float PositioningScale;
+        /* 0x58C */ public float PositioningMaxXZRotation;
+        /* 0x590 */ public float PositioningRadius;
+
+        /* 0x594 */ public int InstanceID;
+        [NMS(Size = 0x8, Ignore = true)]
+        /* 0x598 */ public byte[] Padding598;
+
+        /* 0x5A0 */ public Vector4f AABBMin;
+        /* 0x5B0 */ public Vector4f AABBMax;
+        /* 0x5C0 */ public bool BuildingSizeCalculated;
+        [NMS(Size = 0xF, Ignore = true)]
+        /* 0x5C1 */ public byte[] Padding5C1;
     }
 }

@@ -1,16 +1,21 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA15AE0B7A2B7CE16, NameHash = 0xCC070D1A8B81739E)]
     public class GcCreatureSpawnComponentData : NMSTemplate
     {
-        /* 0x000 */ public NMSString0x10 TriggerID;
-        /* 0x010 */ public NMSString0x80 Model;
-        /* 0x090 */ public NMSString0x10 Creature;
+        [NMS(Size = 0x10)]
+        /* 0x000 */ public string TriggerID;
+        [NMS(Size = 0x80)]
+        /* 0x010 */ public string Model;
+        [NMS(Size = 0x10)]
+        /* 0x090 */ public string Creature;
+
         /* 0x0A0 */ public GcCreatureTypes CreatureType;
-        /* 0x0A4 */ public GcAISpaceshipTypes ShipAIOverride;
+        /* 0x0A4 */ public GcAISpaceshipTypes ShipType;
         /* 0x0A8 */ public GcSeed Seed;
         /* 0x0B8 */ public int FunctionKey;
         /* 0x0BC */ public float TriggerDistance;
@@ -18,14 +23,15 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0C4 */ public float StartTimeMin;
         /* 0x0C8 */ public float StartTimeMax;
         /* 0x0CC */ public bool SpawnAlert;
-        // size: 0x4
-        public enum SpawnerModeEnum : uint {
-            Hidden,
-            Visible,
-            HideOnSpawn,
-            HiddenTimer,
+        /* 0x0D0 */ public int SpawnerMode;
+        public string[] SpawnerModeValues()
+        {
+            return new[] { "Hidden", "Visible", "HideOnSpawn", "HiddenTimer" };
         }
-        /* 0x0D0 */ public SpawnerModeEnum SpawnerMode;
+
+        [NMS(Size = 4, Ignore = true)]
+        /* 0x0D4 */ public byte[] PaddingD4;
+
         /* 0x0D8 */ public GcResourceElement SpecificModel;
         /* 0x380 */ public List<GcSpawnComponentOption> SpawnOptionList;
     }

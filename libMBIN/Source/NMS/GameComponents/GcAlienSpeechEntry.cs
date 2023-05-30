@@ -1,22 +1,24 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC9729B0D1412C4AB, NameHash = 0xB81D78F21EBE37)]
     public class GcAlienSpeechEntry : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public NMSString0x20A Text;
-        /* 0x30 */ public NMSString0x20A Group;
-        /* 0x50 */ public GcWordCategoryTableEnum Category;
-        /* 0x54 */ public int Frequency;
-        // size: 0x2
-        public enum WordInteractEffectEnum : uint {
-            Pain,
-            Heal,
+        public NMSString0x10 Id;
+
+        public NMSString0x20 Text;
+
+        public int WordInteractEffect;
+
+        public string[] WordInteractEffectValues()
+        {
+            return new[] { "Pain", "Heal" };
         }
-        /* 0x58 */ public WordInteractEffectEnum WordInteractEffect;
-        /* 0x5C */ public GcAlienRace Race;
-        /* 0x60 */ public int Level;
+
+        public GcAlienRace AlienRace;
+        public int Level;
+        [NMS(Ignore = true)]
+        public int Padding;
     }
 }

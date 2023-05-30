@@ -1,11 +1,14 @@
+﻿using System.Collections.Generic;
+
 using libMBIN.NMS.Toolkit;
-using System.Collections.Generic;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x740D7DA407B20357, NameHash = 0x2E2EA6E03BFB1DF8)]
     public class TkProceduralTextureChosenOptionList : NMSTemplate
     {
-        /* 0x0 */ public List<TkProceduralTextureChosenOptionSampler> Samplers;
+        // list entries are aligned 0x10, not the default 0x8 todo: attribute for this!
+        // this can be seen at 1402BF509 (1.0 gog), where the alignment argument is being set to 0x10
+        public List<TkProceduralTextureChosenOptionSampler> Samplers; 
     }
 }

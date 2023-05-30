@@ -1,32 +1,30 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x14961F4B4436B554, NameHash = 0xB70875CDF93EECEC)]
     public class TkNGuiGraphicStyle : NMSTemplate
     {
-        /* 0x000 */ public TkNGuiGraphicStyleData Default;
-        /* 0x090 */ public TkNGuiGraphicStyleData Highlight;
-        /* 0x120 */ public TkNGuiGraphicStyleData Active;
-        /* 0x1B0 */ public Vector2f CustomMinStart;
-        /* 0x1B8 */ public Vector2f CustomMaxStart;
-        /* 0x1C0 */ public float HighlightTime;
-        /* 0x1C4 */ public float HighlightScale;
-        /* 0x1C8 */ public float GlobalFade;
-        /* 0x1CC */ public float AnimTime;
-        /* 0x1D0 */ public float AnimSplit;
-        /* 0x1D4 */ public TkCurveType AnimCurve1;
-        /* 0x1D5 */ public TkCurveType AnimCurve2;
-        // size: 0x6
-        public enum AnimateEnum : byte {
-            None,
-            WipeRightToLeft,
-            SimpleWipe,
-            SimpleWipeDown,
-            CustomWipe,
-            CustomWipeAlpha,
-        }
-        /* 0x1D6 */ public AnimateEnum Animate;
-        /* 0x1D7 */ public bool InheritStyleFromParentLayer;
+        public TkNGuiGraphicStyleData Default;
+        public TkNGuiGraphicStyleData Highlight;
+        public TkNGuiGraphicStyleData Active;
+        public float HighlightTime;
+        public float HighlightScale;
+
+        public int Animate;
+        public string[] AnimateValues()
+        { return new string[] { "None", "WipeRightToLeft", "SimpleWipe", "CustomWipe"}; }
+
+
+        public float AnimTime;
+        public float AnimSplit;
+        public TkCurveType AnimCurve1;
+        public TkCurveType AnimCurve2;
+
+        public Vector2f CustomMinStart;
+        public Vector2f CustomMaxStart;
+
+        [NMS(Size = 0x4, Ignore = true)]
+        public byte[] Padding;
     }
 }

@@ -1,16 +1,16 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x45FAC0221192A379, NameHash = 0x893933F89479A7D8)]
     public class GcRewardProduct : NMSTemplate
     {
-        /* 0x00 */ public GcRealitySubstanceCategory ItemCategory;
-        /* 0x04 */ public GcRarity ItemRarity;
-        /* 0x08 */ public int ItemLevel;
-        [NMS(Size = 0x9, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
-        /* 0x0C */ public bool[] AllowedProductTypes;
-        /* 0x18 */ public int AmountMin;
-        /* 0x1C */ public int AmountMax;
+        public GcRealitySubstanceCategory Category;
+        public GcRarity Rarity;
+        public int ItemLevel;
+        [NMS(Size = 4, EnumValue = new[] { "Component", "Device", "Consumable", "Curiosity" })]
+        public bool[] AllowedProductTypes;
+        public int AmountMin;
+        public int AmountMax;
     }
 }

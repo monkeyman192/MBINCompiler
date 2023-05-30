@@ -1,8 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD05438BAE2A32DFB, NameHash = 0xFC703DAD77E37E30)]
-    public class GcBuildingDensity : NMSTemplate
+    public class GcBuildingDensity : NMSTemplate // 0x14 bytes
     {
-        /* 0x0 */ public float BuildingSpacing;
+        public float BuildingSpacing;
+        public float BuildingClusterChance1; // todo: change this to float[]
+        public float BuildingClusterChance2;
+        public float BuildingClusterChance3;
+        public float BuildingClusterChance4;
     }
 }

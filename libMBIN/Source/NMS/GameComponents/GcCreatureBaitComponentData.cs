@@ -1,14 +1,20 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x98F3859A288FF087, NameHash = 0x398860441F320FF2)]
     public class GcCreatureBaitComponentData : NMSTemplate
     {
-        /* 0x00 */ public List<NMSString0x10> AttractList;
-        /* 0x10 */ public float BaitStrength;
-        /* 0x14 */ public float BaitRadius;
-        /* 0x18 */ public bool Debug;
-        /* 0x19 */ public bool InducesRage;
+        public List<NMSString0x10> AttractList;
+        public float BaitStrength;
+        public float BaitRadius;
+
+        public bool Debug;
+        public bool InducesRage;
+
+        [NMS(Size = 6, Ignore = true)]
+        public byte[] Padding1A;
     }
 }

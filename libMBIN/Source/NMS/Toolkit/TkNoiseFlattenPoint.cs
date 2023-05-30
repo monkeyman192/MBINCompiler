@@ -1,20 +1,23 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xCD402697FFDFC91B, NameHash = 0xCE87D0159308C03A)]
-    public class TkNoiseFlattenPoint : NMSTemplate
+    public class TkNoiseFlattenPoint : NMSTemplate  // 0x28 bytes
     {
-        /* 0x00 */ public float Density;
-        /* 0x04 */ public float FlattenRadius;
-        /* 0x08 */ public float TurbulenceFrequency;
-        /* 0x0C */ public float TurbulenceAmplitude;
-        /* 0x10 */ public int TurbulenceOctaves;
-        /* 0x14 */ public TkNoiseFlattenOptions FlattenType;
-        /* 0x1C */ public int Classification;
-        /* 0x20 */ public int Placement;
-        /* 0x24 */ public bool AddWaypoint;
-        /* 0x25 */ public bool AddShelter;
-        /* 0x26 */ public bool AddLandingPad;
+        public float Density;
+        public float FlattenRadius;
+        public float TurbulenceFrequency;
+        public float TurbulenceAmplitude;
+        public int TurbulenceOctaves;
+        public TkNoiseFlattenOptions FlattenType;
+        public int Classification;
+        public int Placement;
+        public bool AddWaypoint;
+        public bool AddShelter;
+        public bool AddLandingPad;
+
+        [NMS(Size = 1, Ignore = true)]
+        public byte[] Padding27;
     }
 }

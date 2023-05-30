@@ -1,27 +1,20 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xECD3D5DCA792D16, NameHash = 0xF97DB1C704357E47)]
     public class GcRewardTableItemList : NMSTemplate
     {
-        // size: 0xA
-        public enum RewardChoiceEnum : uint {
-            GiveAll,
-            Select,
-            SelectAlways,
-            TryEach,
-            SelectSilent,
-            GiveAllSilent,
-            TryFirst_ThenSelectAlways,
-            SelectFromSuccess,
-            SelectAlwaysSilent,
-            SelectFromSuccessSilent,
+        public bool EntitlementLinked;
+        public NMSString0x20 EntitlementId;
+        public int RewardChoice;
+        public string[] RewardChoiceValues()
+        {
+            return new[] { "GiveAll", "Select", "TryEach" };
         }
-        /* 0x0 */ public RewardChoiceEnum RewardChoice;
-        /* 0x4 */ public bool OverrideZeroSeed;
-        /* 0x5 */ public bool UseInventoryChoiceOverride;
-        /* 0x8 */ public List<GcRewardTableItem> List;
+
+        public List<GcRewardTableItem> List;
     }
 }

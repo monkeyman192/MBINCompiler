@@ -1,10 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDB2C35167751204F, NameHash = 0x5DC80D176A978C38)]
     public class GcShipAIPerformanceArray : NMSTemplate
     {
-        /* 0x0 */ public List<NMSTemplate> Array;
+        public List<NMSTemplate> Array;
     }
 }

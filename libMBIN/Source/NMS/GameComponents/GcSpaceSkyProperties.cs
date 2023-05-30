@@ -1,41 +1,49 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x157FDABAEA56DDB6, NameHash = 0xCB4FC853C028D8AE)]
-    public class GcSpaceSkyProperties : NMSTemplate
+    public class GcSpaceSkyProperties : NMSTemplate // 0x130 bytes
     {
-        /* 0x00 */ public GcPlanetWeatherColourIndex ColourIndex;
-        /* 0x10 */ public Colour PlanetSkyColour;
-        /* 0x20 */ public Colour PlanetHorizonColour;
-        /* 0x30 */ public float SunStrength;
-        /* 0x34 */ public float SunSize;
-        /* 0x38 */ public float StarVisibility;
-        /* 0x3C */ public float CenterPower;
-        /* 0x40 */ public float AtmosphereThickness;
-        /* 0x44 */ public float HorizonMultiplier;
-        /* 0x48 */ public float HorizonFadeSpeed;
-        /* 0x4C */ public float PlanetFogStrength;
-        /* 0x50 */ public float SpaceFogStrength;
-        /* 0x54 */ public float SpaceFogColourStrength;
-        /* 0x58 */ public float SpaceFogColour2Strength;
-        /* 0x5C */ public float SpaceFogMax;
-        /* 0x60 */ public float SpaceFogPlanetMax;
-        /* 0x64 */ public float NebulaFrequency;
-        /* 0x68 */ public float NebulaSparseness;
-        /* 0x6C */ public float NebulaWispyness;
-        /* 0x70 */ public float NebulaWispyness1;
-        /* 0x74 */ public float NebulaBrightness;
-        /* 0x78 */ public float NebulaSeed;
-        /* 0x7C */ public float NebulaTendrilStrength;
-        /* 0x80 */ public float NebulaFogAmount;
-        /* 0x84 */ public float NebulaCloudStrength;
-        /* 0x88 */ public float NebulaCloudStrength1;
-        /* 0x8C */ public float NebulaNoiseFrequency;
-        /* 0x90 */ public float CloudNoiseFrequency;
-        /* 0x94 */ public float NebulaTurbulenceStrength;
-        /* 0x98 */ public float NebulaFBMStrength;
-        /* 0x9C */ public float NebulaFBMStrength1;
-        /* 0xA0 */ public float NebulaDistortionStrength;
+        public Colour CloudColour;
+        public Colour ColourTop;
+        public Colour ColourMid;
+        public Colour ColourBottom;
+        public Colour NebulaColour1;
+        public Colour NebulaColour2;
+        public Colour NebulaColour3;
+        public Colour NebulaShadowColour;
+        public Colour PlanetSkyColour;
+        public Colour PlanetHorizonColour;
+        public Colour FogColour;
+        public Colour FogColour2;
+        public float SunStrength;
+        public float SunSize;
+        public float StarVisibility;
+        public float CenterPower;
+        public float AtmosphereThickness;
+        public float HorizonMultiplier;
+        public float HorizonFadeSpeed;
+        public float PlanetFogStrength;
+        public float SpaceFogStrength;
+        public float SpaceFogColourStrength;
+        public float SpaceFogColour2Strength;
+        public float SpaceFogMax;
+        public float SpaceFogPlanetMax;
+        public float CloudScale;
+        public float CloudOffset;
+        public float CloudBrightness;
+        public float NebulaSeed;
+        public float NebulaAnimSpeed;
+        public float NebulaScale;
+        public float NebulaBrightness;
+        public float NebulaOffset;
+        public float NebulaCoverageScale;
+        public float NebulaCoverageStrength;
+        public float NebulaShadowOffset;
+        public float NebulaBlend0;
+        public float NebulaBlend1;
+        public float NebulaBlend2;
+        public float NebulaBlend3;
     }
 }

@@ -1,19 +1,19 @@
+﻿using System.Collections.Generic;
+
 using libMBIN.NMS.Toolkit;
-using System.Collections.Generic;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x83F8EF11C161AA7C, NameHash = 0x4F8B68FB20F9A030)]
-    public class TkLSystemInnerRule : NMSTemplate
+    public class TkLSystemInnerRule : NMSTemplate // 0x38 bytes
     {
-        /* 0x00 */ public NMSString0x20 LocatorType;
-        // size: 0x3
-        public enum MergeProbabilityOptionsEnum : uint {
-            Balance,
-            Prioritize,
-            Replace,
+        public NMSString0x20 LocatorType;
+        public int MergeProbabilityOptions;
+        public string[] MergeProbabilityOptionsValues()
+        {
+            return new[] { "Balance", "Prioritize", "Replace" };
         }
-        /* 0x20 */ public MergeProbabilityOptionsEnum MergeProbabilityOptions;
-        /* 0x28 */ public List<TkLSystemLocatorEntry> Entries;
+
+        public List<TkLSystemLocatorEntry> Entries;
     }
 }

@@ -1,14 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC6D7101DE9D4929B, NameHash = 0xC9590B318F3C4D2)]
-    public class GcStatType : NMSTemplate
+    public class GcStatType : NMSTemplate // not the same as GcStatsTypes
     {
-        // size: 0x3
-        public enum StatTypeEnum : uint {
-            Int,
-            Float,
-            AvgRate,
+        public int StatType;
+        public string[] StatTypeValues()
+        {
+            return new[] { "Int", "Float", "AvgRate" };
         }
-        /* 0x0 */ public StatTypeEnum StatType;
     }
 }

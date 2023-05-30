@@ -1,38 +1,29 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4B24E25067FB7537, NameHash = 0x53EC68060BE631FB)]
-    public class TkModelRendererData : NMSTemplate
+    public class TkModelRendererData : NMSTemplate // 0x70 bytes
     {
-        /* 0x00 */ public TkModelRendererCameraData Camera;
-        /* 0x40 */ public float Fov;
-        /* 0x44 */ public float AspectRatio;
-        // size: 0x3
-        public enum ThumbnailModeEnum : uint {
-            None,
-            HUD,
-            GUI,
+        public TkModelRendererCameraData Camera;
+        public float Fov;
+        public float AspectRatio;
+        public int ThumbnailMode;
+        public string[] ThumbnailModeValues()
+        {
+            return new[] { "None", "HUD", "GUI" };
         }
-        /* 0x48 */ public ThumbnailModeEnum ThumbnailMode;
-        // size: 0x4
-        public enum FocusTypeEnum : uint {
-            ResourceBounds,
-            ResourceBoundingHeight,
-            NodeBoundingBox,
-            DiscoveryView,
+        public int FocusType;
+        public string[] FocusTypeValues()
+        {
+            return new[] { "ResourceBounds", "ResourceBoundingHeight", "NodeBoundingBox" };
         }
-        /* 0x4C */ public FocusTypeEnum FocusType;
-        /* 0x50 */ public NMSString0x20A FocusLocator;
-        /* 0x70 */ public Vector3f FocusOffset;
-        /* 0x80 */ public float FocusInterpTime;
-        /* 0x84 */ public float BlendInTime;
-        /* 0x88 */ public float BlendInOffset;
-        /* 0x90 */ public NMSString0x10 Anim;
-        /* 0xA0 */ public float HeightOffset;
-        /* 0xA4 */ public bool UsePlayerCameraInHmd;
-        /* 0xA5 */ public bool AlignUIToCameraInHmd;
-        /* 0xA6 */ public bool UseSensibleCameraFocusNodeIsNowOffsetNode;
-        /* 0xA7 */ public bool LookForFocusInMasterModel;
+
+        public NMSString0x10 Anim;
+
+        public float HeightOffset;
+
+        [NMS(Size = 0xC, Ignore = true)]
+        public byte[] Padding64;
     }
 }

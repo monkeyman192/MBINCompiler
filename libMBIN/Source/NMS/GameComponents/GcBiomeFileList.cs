@@ -1,15 +1,16 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5233F130695BC50, NameHash = 0x369AF9F4E4E055D0)]
     public class GcBiomeFileList : NMSTemplate
     {
-        [NMS(Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]
-        /* 0x000 */ public GcBiomeFileListOptions[] BiomeFiles;
-        /* 0x100 */ public List<GcBiomeType> ValidStartPlanetBiome;
-        /* 0x110 */ public List<GcExternalObjectListOptions> CommonExternalObjectLists;
-        /* 0x120 */ public List<GcExternalObjectFileList> OptionalExternalObjectLists;
+        [NMS(Size = 8)]
+        public NMSString0x80[] BiomeFiles;
+
+        public List<GcExternalObjectListOptions> CommonExternalObjectLists;
+        public List<GcExternalObjectFileList> OptionalExternalObjectLists;
     }
 }

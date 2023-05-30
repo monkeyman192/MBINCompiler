@@ -1,20 +1,26 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x14273A3293A528F0, NameHash = 0x431A784D584CBE50)]
     public class TkImGuiWindowData : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x80 Type;
-        /* 0x80 */ public int WindowX;
-        /* 0x84 */ public int WindowY;
-        /* 0x88 */ public int WindowW;
-        /* 0x8C */ public int WindowH;
-        /* 0x90 */ public int WindowMinW;
-        /* 0x94 */ public int WindowMinH;
-        /* 0x98 */ public bool WindowResize;
-        /* 0x9C */ public int WindowScroll;
-        /* 0xA0 */ public int WindowTab;
-        /* 0xA4 */ public bool WindowOpen;
-        /* 0xA5 */ public bool WindowMinimised;
-        /* 0xA6 */ public bool WindowUsed;
+        public NMSString0x80 Type;
+
+        public int WindowX;
+        public int WindowY;
+        public int WindowW;
+        public int WindowH;
+        public int WindowMinW;
+        public int WindowMinH;
+        public bool WindowResize;
+        public int WindowScroll;
+        public int WindowTab;
+        public bool WindowOpen;
+        public bool WindowMinimised;
+        public bool WindowUsed;
+
+        [NMS(Size = 1, Ignore = true)]
+        public byte[] PaddingA7;
     }
 }

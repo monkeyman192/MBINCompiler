@@ -1,11 +1,17 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x111DA9154F0C5DA9, NameHash = 0xBEE79269D7359654)]
     public class TkProceduralTextureList : NMSTemplate
     {
-        [NMS(Size = 0x8)]
-        /* 0x0 */ public TkProceduralTextureLayer[] Layers;
+        public TkProceduralTextureLayer Layer1;
+        public TkProceduralTextureLayer Layer2;
+        public TkProceduralTextureLayer Layer3;
+        public TkProceduralTextureLayer Layer4;
+        public TkProceduralTextureLayer Layer5;
+        public TkProceduralTextureLayer Layer6;
+        public TkProceduralTextureLayer Layer7;
+        public TkProceduralTextureLayer Layer8;
     }
 }

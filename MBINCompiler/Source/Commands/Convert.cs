@@ -185,29 +185,30 @@ namespace MBINCompiler.Commands {
         /// <param name="fileOut">Output file path. Passed through as the return value. Not actually used.</param>
         /// <returns>fileOut</returns>
         private static string ConvertMBIN( string inputPath, FileStream fIn, MemoryStream msOut, string fileOut ) {
-            var mbin = new MBINFile( fIn );
+            MBINFile mbin = new MBINFile( fIn );
             if ( !(mbin.Load() && mbin.Header.IsValid) ) throw new InvalidDataException( "Not a valid MBIN file!" );
 
-            var type = NMSTemplate.GetTemplateType( mbin.Header.GetXMLTemplateName() );
-            var nms = (NMSAttribute) (type.GetCustomAttributes( typeof( NMSAttribute ), false )?[0] ?? null);
-            var broken = nms.Broken;
-            // GUID's for the old files
-            ulong[] UnsupportedGUIDs = new ulong[] { };
-            var mismatch = (mbin.Header.TemplateGUID != nms.GUID);
-            bool unsupported = (UnsupportedGUIDs.Contains(mbin.Header.TemplateGUID));
+            Type type = NMSTemplate.GetTemplateType( mbin.Header.GetXMLTemplateName() );
+            // Get the Attribute. If there isn't one just don't worry about it...
+            object[] attr = type.GetCustomAttributes( typeof( NMSAttribute ), false );
+            if (attr.Length != 0) {
+                NMSAttribute nms = (NMSAttribute) (type.GetCustomAttributes( typeof( NMSAttribute ), false )?[0] ?? null);
+                bool broken = nms.Broken;
+                // GUID's for the old files
+                ulong[] UnsupportedGUIDs = new ulong[] { };
+                bool mismatch = (mbin.Header.TemplateGUID != nms.GUID);
+                bool unsupported = (UnsupportedGUIDs.Contains(mbin.Header.TemplateGUID));
 
-            //if ( broken && mismatch ) {
-            //    FileIsUnsupported( fIn.Name, mbin );
-            //} else
-            if (broken) {
-                FileIsBroken(inputPath, mbin);
-            } else if ( unsupported ) {
-                FileIsUnused(inputPath, mbin);
-            } else if ( mismatch ) {
-                FileIsUnrecognized( inputPath, mbin, nms.GUID );
+                if (broken) {
+                    FileIsBroken(inputPath, mbin);
+                } else if ( unsupported ) {
+                    FileIsUnused(inputPath, mbin);
+                } else if ( mismatch ) {
+                    FileIsUnrecognized( inputPath, mbin, nms.GUID );
+                }
             }
 
-            var sw = new StreamWriter( msOut );
+            StreamWriter sw = new StreamWriter( msOut );
 
             NMSTemplate data = null;
             string msg = "";
@@ -252,7 +253,7 @@ namespace MBINCompiler.Commands {
                 if ( nms.Broken ) FileIsBroken( inputPath, data );
 
                 if ( data is null ) throw new InvalidDataException( $"Failed to deserialize EXML." );
-                if ( data is libMBIN.NMS.Toolkit.TkGeometryData | data is libMBIN.NMS.Toolkit.TkGeometryStreamData ) fileOut += ".PC";
+                if ( data is libMBIN.NMS.Toolkit.TkGeometryData ) fileOut += ".PC";
 
                 var mbin = new MBINFile( msOut ) { Header = new MBINHeader() };
                 mbin.Header.SetDefaults( data.GetType(), FormatVersion );

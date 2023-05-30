@@ -1,27 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9F5CC8BA811F301D, NameHash = 0x5CEE315FE3457560)]
     public class GcBiomeType : NMSTemplate
     {
-        // size: 0x10
-        public enum BiomeEnum : uint {
-            Lush,
-            Toxic,
-            Scorched,
-            Radioactive,
-            Frozen,
-            Barren,
-            Dead,
-            Weird,
-            Red,
-            Green,
-            Blue,
-            Test,
-            Swamp,
-            Lava,
-            Waterworld,
-            All,
+        public int Biome;
+        public string[] BiomeValues()
+        {
+            return new[] { "Lush", "Toxic", "Scorched", "Radioactive", "Frozen", "Barren", "Dead", "Test", "All" };
         }
-        /* 0x0 */ public BiomeEnum Biome;
     }
 }

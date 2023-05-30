@@ -1,15 +1,15 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x429C66D080EC8365, NameHash = 0x74723646531009E2)]
     public class GcAISpaceshipPreloadCacheData : NMSTemplate
     {
-        /* 0x00 */ public GcRealityCommonFactions Faction;
-        /* 0x04 */ public GcAISpaceshipRoles ShipRole;
-        /* 0x08 */ public GcSpaceshipClasses ShipClass;
-        /* 0x0C */ public GcFrigateClass FrigateClass;
-        /* 0x10 */ public GcSeed Seed;
-        /* 0x20 */ public NMSString0x20A TextureDescriptorHint;
+        public GcAISpaceshipRoles ShipRole;
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding4;
+
+        public GcSeed Seed;
+        public NMSString0x100 AltId;
     }
 }

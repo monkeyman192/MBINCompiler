@@ -1,14 +1,14 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x69BD755CF9F65D66, NameHash = 0x9EB26F87ECDE68DC)]
     public class GcPlanetClass : NMSTemplate
     {
-        // size: 0x3
-        public enum PlanetClassEnum : uint {
-            Default,
-            Initial,
-            InInitialSystem,
+        public int PlanetClass;
+        public string[] PlanetClassValues()
+        {
+            return new[] { "Default", "Initial", "InInitialSystem" };
         }
-        /* 0x0 */ public PlanetClassEnum PlanetClass;
     }
 }

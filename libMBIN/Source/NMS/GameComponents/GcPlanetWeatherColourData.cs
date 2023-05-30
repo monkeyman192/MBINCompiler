@@ -1,18 +1,23 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x79EC01ECC601AA7F, NameHash = 0xA699A80ACABBB3C5)]
     public class GcPlanetWeatherColourData : NMSTemplate
     {
-        /* 0x00 */ public Colour SkyColour;
-        /* 0x10 */ public Colour SkyUpperColour;
-        /* 0x20 */ public Colour SkySolarColour;
-        /* 0x30 */ public Colour HorizonColour;
-        /* 0x40 */ public Colour SunColour;
-        /* 0x50 */ public Colour FogColour;
-        /* 0x60 */ public Colour HeightFogColour;
-        /* 0x70 */ public Vector3f SkyGradientSpeed;
-        /* 0x80 */ public Colour LightColour;
-        /* 0x90 */ public Colour CloudColour1;
-        /* 0xA0 */ public Colour CloudColour2;
+        public Colour SkyColour;
+        public Colour SkyUpperColour;
+        public Colour SkySolarColour;
+        public Colour HorizonColour;
+        public Colour SunColour;
+        public Colour FogColour;
+        public Colour HeightFogColour;
+
+        [NMS(Size = 0x10)]
+        public byte[] SkyGradientSpeed; // not sure what type this is?
+
+        public Colour LightColour;
+        public Colour CloudColour1;
+        public Colour CloudColour2;
     }
 }

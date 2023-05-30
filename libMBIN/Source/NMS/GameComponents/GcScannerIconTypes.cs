@@ -1,68 +1,18 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2E3A45B79D124688, NameHash = 0x8A4027FC041677F0)]
     public class GcScannerIconTypes : NMSTemplate
     {
-        // size: 0x39
-        public enum ScanIconTypeEnum : uint {
-            None,
-            Health,
-            Shield,
-            Hazard,
-            LifeSupport,
-            Tech,
-            BluePlant,
-            CaveSubstance,
-            LaunchCrystals,
-            Power,
-            Carbon,
-            CarbonPlus,
-            Oxygen,
-            Mineral,
-            Sodium,
-            SodiumPlus,
-            Crate,
-            Artifact,
-            Plant,
-            HazardPlant,
-            ArtifactCrate,
-            BuriedTech,
-            BuriedRare,
-            Drone,
-            CustomMarker,
-            SignalBooster,
-            Refiner,
-            Grave,
-            Rare1,
-            Rare2,
-            Rare3,
-            Pearl,
-            RareEgg,
-            HazardEgg,
-            FishFiend,
-            Clam,
-            CaveStone,
-            StormCrystal,
-            BiomeTrophy,
-            PowerHotspot,
-            MineralHotspot,
-            GasHotspot,
-            HarvestPlant,
-            Cooker,
-            CreaturePoop,
-            FreighterTeleporter,
-            FreighterDoor,
-            FreighterTerminal,
-            FreighterHeater,
-            FreighterDataPad,
-            LandedPilot,
-            PetEgg,
-            Sandworm,
-            FriendlyDrone,
-            CorruptedCrystal,
-            CorruptedMachine,
-            RobotHead,
+        public int ScanIconType;
+        public string[] ScanIconTypeValues()
+        {
+            return new[]
+            {
+                "None", "Health", "Shield", "Hazard", "Tech", "Heridium", "Platinum", "Chrysonite", "Signal", "Fuel",
+				"Carbon", "Plutonium", "Thamium", "Mineral", "Iron", "Zinc", "Titanium", "Multi", "Artifact", "TechRecipe", "RareProp", "Trade", "Exotic"
+            };
         }
-        /* 0x0 */ public ScanIconTypeEnum ScanIconType;
     }
 }

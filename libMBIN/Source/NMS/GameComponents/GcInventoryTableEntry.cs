@@ -1,13 +1,22 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6BC5FBD403817F20, NameHash = 0xBA68F4D576FCF49E)]
     public class GcInventoryTableEntry : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public int MinSize;
-        /* 0x14 */ public int MaxSize;
-        /* 0x18 */ public GcInventoryLayoutSizeType LayoutSizeType;
+        public NMSString0x10 Id;
+        public int MinSize;
+        public int MaxSize;
+        public int SizeType;
+        public string[] SizeTypeValues()
+        {
+            return new[] { "SciSmall", "SciMedium", "SciLarge", "FgtSmall", "FgtMedium", "FgtLarge", "ShuSmall", "ShtMedium", "ShtLarge", "DrpSmall", "DrpMedium", "DrpLarge",
+						   "WeaponSmall", "WeaponMedium", "WeaponLarge", "FreighterSmall", "FreighterMedium", "FreighterLarge", "BuggySmall", "BuggyMedium", "BuggyLarge",
+						   "ChestSmall", "ChestMedium", "ChestLarge"}; // Shu/Sht spelling mistake(?) is from the exe
+        }
+
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding1C;
     }
 }

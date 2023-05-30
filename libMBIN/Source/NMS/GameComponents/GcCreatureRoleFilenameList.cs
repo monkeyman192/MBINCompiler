@@ -1,11 +1,12 @@
+﻿using System.Collections.Generic;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x98342C1E58BC7D1F, NameHash = 0x963F45EDCB1413E2)]
-    public class GcCreatureRoleFilenameList : NMSTemplate
+    public class GcCreatureRoleFilenameList : NMSTemplate // 0x10 bytes
     {
-        /* 0x0 */ public List<GcCreatureRoleFilename> Options;
+        public List<GcCreatureRoleFilename> Options;
     }
 }

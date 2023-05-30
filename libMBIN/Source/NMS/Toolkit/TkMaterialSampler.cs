@@ -1,30 +1,33 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB1F00BB1F804178A, NameHash = 0x330286CE11647D4C)]
     public class TkMaterialSampler : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x20 Name;
-        /* 0x20 */ public NMSString0x80 Map;
-        /* 0xA0 */ public bool IsCube;
-        /* 0xA1 */ public bool UseCompression;
-        /* 0xA2 */ public bool UseMipMaps;
-        /* 0xA3 */ public bool IsSRGB;
-        /* 0xA8 */ public NMSString0x20A MaterialAlternativeId;
-        // size: 0x4
-        public enum TextureAddressModeEnum : uint {
-            Wrap,
-            Clamp,
-            ClampToBorder,
-            Mirror,
+        public NMSString0x20 Name;
+        public NMSString0x80 Map;
+        public bool IsCube;
+        public bool UseCompression;
+        public bool UseMipMaps;
+        public bool IsSRGB;
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] PaddingA4;
+        public NMSString0x10 MaterialAlternativeId;
+        public int TextureAddressMode;
+        public string[] TextureAddressModeValues()
+        {
+            return new[] { "Wrap", "Clamp", "ClampToBorder", "Mirror" };
         }
-        /* 0xC8 */ public TextureAddressModeEnum TextureAddressMode;
-        // size: 0x3
-        public enum TextureFilterModeEnum : uint {
-            None,
-            Bilinear,
-            Trilinear,
+
+        public int TextureFilterMode;
+        public string[] TextureFilterModeValues()
+        {
+            return new[] { "None", "Bilinear", "Trilinear" };
         }
-        /* 0xCC */ public TextureFilterModeEnum TextureFilterMode;
-        /* 0xD0 */ public int Anisotropy;
+
+        public int Anisotropy;
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] PaddingC4;
     }
 }

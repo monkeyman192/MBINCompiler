@@ -1,12 +1,17 @@
+﻿using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
-using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x64289A7C149B1115, NameHash = 0x18F53DCA811C8E56)]
     public class TkGameSettings : NMSTemplate
     {
-        /* 0x00 */ public List<GcInputActionMapping> KeyMapping;
-        /* 0x10 */ public List<GcInputActionMapping2> KeyMapping2;
+        public int LanguageSetting;
+        public string[] LanguageSettingValues()
+        {
+            return new[] { "default", "english", "french", "italian", "german", "spanish", "russian", "polish", "dutch", "portuguese", "brazilianportuguese", "japanese", "traditionalchinese", "simplifiedchinese", "korean" };
+        }
+
+        [NMS(Size = 0x1F, EnumValue = new[] { "Player_Forward", "Player_Back", "Player_Left", "Player_Right", "Player_SwimUp", "Player_SwimDown", "Player_Interact", "Player_Melee", "Player_Scan", "Player_Torch", "Player_Binoculars", "Player_Zoom", "Player_ShowHUD", "Player_Jump", "Player_Run", "Player_Shoot", "Player_Grenade", "Player_Reload", "Player_ChangeWeapon", "Ship_Thrust", "Ship_Brake", "Ship_Boost", "Ship_RollLeft", "Ship_RollRight", "Ship_Exit", "Ship_Land", "Ship_Shoot", "Ship_ChangeWeapon", "Ship_Scan", "Ship_PulseJump", "Ship_GalacticMap" })]
+        public GcInputActionMapping[] KeyMapping;
     }
 }

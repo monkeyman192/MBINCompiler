@@ -1,15 +1,15 @@
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3B3EF978A93CD288, NameHash = 0xAD03B051106BCE0A)]
     public class GcRewardChangeGlobalMission : NMSTemplate
     {
-        // size: 0x4
-        public enum GlobalMissionEnum : uint {
-            Atlas,
-            BlackHole,
-            Anomaly,
-            Explore,
+        public int GlobalMission;
+
+        public string[] GlobalMissionValues()
+        {
+            return new[] { "Atlas", "BlackHole", "Anomaly", "Explore" };
         }
-        /* 0x0 */ public GlobalMissionEnum GlobalMission;
     }
 }

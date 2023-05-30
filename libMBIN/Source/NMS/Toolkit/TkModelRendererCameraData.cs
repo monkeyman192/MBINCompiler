@@ -1,17 +1,22 @@
-using libMBIN.NMS.Toolkit;
+﻿using libMBIN.NMS.Toolkit;
+using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x53AA0C1A964B5E9F, NameHash = 0xE2B8850DAEBB8F74)]
-    public class TkModelRendererCameraData : NMSTemplate
+    public class TkModelRendererCameraData : NMSTemplate // 0x40 bytes
     {
-        /* 0x00 */ public float Distance;
-        /* 0x10 */ public Vector3f Offset;
-        /* 0x20 */ public float Roll;
-        /* 0x24 */ public float Pitch;
-        /* 0x28 */ public float Rotate;
-        /* 0x2C */ public float LightPitch;
-        /* 0x30 */ public float LightRotate;
-        /* 0x34 */ public TkCameraWanderData Wander;
+        public float Distance;
+        [NMS(Size = 0xC, Ignore = true)]
+        public byte[] Padding4;
+
+        public Vector4f Offset;
+        public float Pitch;
+        public float Rotate;
+        public float LightPitch;
+        public float LightRotate;
+        public TkCameraWanderData Wander;
+
+        [NMS(Size = 4, Ignore = true)]
+        public byte[] Padding3C;
     }
 }
