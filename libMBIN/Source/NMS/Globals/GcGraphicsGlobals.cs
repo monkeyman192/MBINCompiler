@@ -12,7 +12,7 @@ namespace libMBIN.NMS.Globals
         /* 0xC */ public float UnknownC; // [ethan] SkyLightIntensity?
 
         /* 0x10 */ public float Unknown10; // [ethan] SideRimWarp?
-        /* 0x14 */ public float Unknown14; // [ethan] SideRimColourMixer? (context clues point to "SideRimIntensity"?)
+        /* 0x14 */ public float Unknown14; // [ethan] SideRimColourMixer? (context clues suggest "SideRimIntensity"?)
         /* 0x18 */ public float TopRimWarp;
         /* 0x1C */ public float TopRimIntensity;
 
