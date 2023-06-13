@@ -6,267 +6,241 @@ namespace libMBIN.NMS.Globals
     // loaded at 0x141624650
     public class GcGraphicsGlobals : NMSTemplate
     {
-        public float Unknown0;
-        public float Unknown4;
-        public float Unknown8;
-        public float UnknownC;
+        /* 0x0 */ public float Unknown0; // [ethan] BounceLightPower?
+        /* 0x4 */ public float Unknown4; // [ethan] BounceLightIntensity?
+        /* 0x8 */ public float Unknown8; // [ethan] SkyLightPower?
+        /* 0xC */ public float UnknownC; // [ethan] SkyLightIntensity?
 
-        public float Unknown10;
-        public float Unknown14;
-        public float Unknown18;
-        public float Unknown1C;
+        /* 0x10 */ public float Unknown10; // [ethan] SideRimWarp?
+        /* 0x14 */ public float Unknown14; // [ethan] SideRimColourMixer? (context clues suggest "SideRimIntensity"?)
+        /* 0x18 */ public float TopRimWarp;
+        /* 0x1C */ public float TopRimIntensity;
 
-        public float Unknown20;
-        public float Unknown24;
-        public float Unknown28;
-        public float Unknown2C;
+        /* 0x20 */ public float ModelRendererLightIntensity;
+        /* 0x24 */ public float ScanFresnel;
+        /* 0x28 */ public float ScanClamp;
+        /* 0x2C */ public float ScanAlpha;
 
-        public float Unknown30;
-        public float Unknown34;
-        public float Unknown38;
-        public float Unknown3C;
+        /* 0x30 */ public Colour ScanColour;
 
-        public bool Unknown40; // unused?
-        public bool Unknown41; // used
-        public float Unknown44;
-        public float Unknown48;
-        public float Unknown4C;
+        /* 0x40 */ public bool DebugLinesDepthTest; // unused? // [ethan]: this is a debug build feature
+        /* 0x41 */ public bool CenterRenderSpaceOffset; // used
+        /* 0x44 */ public float Unknown44; // [ethan] padding?
+        /* 0x48 */ public float Unknown48;
+        /* 0x4C */ public float Unknown4C;
 
         public TkImGuiSettings ImGuiSettings;
 
-        public float Unknown1E0;
-        public float Unknown1E4;
-        public float Unknown1E8;
-        public float Unknown1EC;
+        /* 0x1E0 */ public Colour UIColour;
 
-        public float Unknown1F0;
-        public float Unknown1F4;
-        public float Unknown1F8;
-        public float Unknown1FC;
+        /* 0x1F0 */ public Colour UIShipColour;
 
-        public float Unknown200;
-        public float Unknown204;
-        public float Unknown208;
-        public float Unknown20C;
+        /* 0x200 */ public float HUDMotionXSpring;
+        /* 0x204 */ public float HUDMotionYSpring;
+        /* 0x208 */ public float HUDMotionPosSpring;
+        /* 0x20C */ public float HUDMotionX;
 
-        public float Unknown210;
-        public float Unknown214;
-        public float Unknown218;
-        public float Unknown21C;
+        /* 0x210 */ public float HUDMotionY;
+        /* 0x214 */ public float HUDMotionPos;
+        /* 0x218 */ public float HUDDistance;
+        /* 0x21C */ public float NearClipDistance;
 
-        public float EngineRenderDistance;
-        public float Unknown224;
-        public float Unknown228;
-        public float Unknown22C;
+        /* 0x220 */ public float FarClipDistance;// [ethan] mm named it EngineRenderDistance
+        /* 0x224 */ public float WarpK;
+        /* 0x228 */ public float WarpKCube;
+        /* 0x22C */ public float WarpScale;
 
-        public float Unknown230;
-        public int Unknown234; // unused?
-        public float Unknown238;
-        public float Unknown23C;
+        /* 0x230 */ public float WarpKDispersion;
+        /* 0x234 */ public int ShadowMapSize; // unused?
+        /* 0x238 */ public float DirectionLightRadius;
+        /* 0x23C */ public float DirectionLightFOV;
 
-        public float Unknown240;
-        public float Unknown244;
-        public float Unknown248;
-        public float Unknown24C;
+        /* 0x240 */ public float DirectionLightShadowBias;
+        /* 0x244 */ public float ShadowLength;
+        /* 0x248 */ public float ShadowLengthShip;
+        /* 0x24C */ public float ShadowLengthSpace;
 
-        public float Unknown250;
-        public float Unknown254;
-        public float Unknown258;
-        public float Unknown25C;
+        /* 0x250 */ public float ShadowLengthStation;
+        /* 0x254 */ public float ShadowLengthCameraView;
+        /* 0x258 */ public float Unknown258; // [ethan] padding?
+        /* 0x25C */ public float Unknown25C;
 
-        public float Unknown260;
-        public float Unknown264;
-        public float Unknown268;
-        public float Unknown26C;
+        /* 0x260 */ public Vector4f ShadowSplit;
 
-        public float Unknown270;
-        public float Unknown274;
-        public float Unknown278;
-        public float Unknown27C;
+        /* 0x270 */ public Vector4f ShadowSplitShip;
 
-        public float Unknown280;
-        public float Unknown284;
-        public float Unknown288;
-        public float Unknown28C;
+        /* 0x280 */ public Vector4f ShadowSplitSpace;
 
-        public float Unknown290;
-        public float Unknown294;
-        public float Unknown298;
-        public float Unknown29C;
+        /* 0x290 */ public Vector4f ShadowSplitStation;
 
-        public float Unknown2A0;
-        public float Unknown2A4;
-        public float Unknown2A8;
-        public float Unknown2AC;
+        /* 0x2A0 */ public Vector4f ShadowSplitCameraView;
 
-        public float Unknown2B0;
-        public float Unknown2B4;
-        public float Unknown2B8;
-        public float Unknown2BC;
+        /* 0x2B0 */ public Vector4f ShadowBias;
 
-        public bool Unknown2C0; // unused?
-        public float Unknown2C4;
-        public float Unknown2C8;
-        public float Unknown2CC;
+        /* RC1 ONLY */
 
-        public float Unknown2D0;
-        public float Unknown2D4;
-        public float Unknown2D8;
-        public float Unknown2DC;
+        // [ethan] I do not feel like offsetting all the offsets AGAIN
+        //         so, the offsets used here are the actual ones in RC1;
+        //         assume all offsets going forward for RC1 are +0x10.
+        //         I have no idea what type these are :P
 
-        public float Unknown2E0;
-        public float Unknown2E4;
-        public float Unknown2E8;
-        public float Unknown2EC;
+        /* 0x2C0 */ public bool UnknownRC1_2C0;
+        /* 0x2C4 */ public bool UnknownRC1_2C4;
+        /* 0x2C8 */ public int UnknownRC1_2C8;
+        /* 0x2CC */ public int UnknownRC1_2CC;
 
-        public float Unknown2F0;
-        public float Unknown2F4;
-        public float Unknown2F8;
-        public float Unknown2FC;
+        /* RC1 ONLY END */
 
-        public float Unknown300;
-        public float Unknown304;
-        public float Unknown308;
-        public float Unknown30C;
+        /* 0x2C0 */ public bool ShadowQuantized; // unused?
+        /* 0x2C4 */ public float ShadowBillboardOffset;
+        /* 0x2C8 */ public float QuantizeTime;
+        /* 0x2CC */ public float QuantizeTimeShip;
 
-        public float Unknown310;
-        public float Unknown314;
-        public float Unknown318;
-        public float Unknown31C;
+        /* 0x2D0 */ public float QuantizeTimeSpace;
+        /* 0x2D4 */ public float QuantizeTimeCameraView;
+        /* 0x2D8 */ public float ToneMapExposure;
+        /* 0x2DC */ public float HDRExposure;
 
-        public float Unknown320;
-        public float Unknown324;
-        public float Unknown328;
-        public float Unknown32C;
+        /* 0x2E0 */ public float HDRThreshold;
+        /* 0x2E4 */ public float HDROffset; // [ethan] this value did not match, but everything else did, sooo
+        /* 0x2E8 */ public float LensThreshold;
+        /* 0x2EC */ public float LensOffset;
 
-        public float Unknown330;
-        public float Unknown334;
-        public float Unknown338;
-        public float Unknown33C;
+        /* 0x2F0 */ public float LensScale;
+        /* 0x2F4 */ public float LensDirt;
+        /* 0x2F8 */ public float ToneMapExposureCave;
+        /* 0x2FC */ public float HDRExposureCave;
 
-        public float Unknown340;
-        public float Unknown344;
-        public float Unknown348;
-        public float Unknown34C;
+        /* 0x300 */ public float HDRThresholdCave;
+        /* 0x304 */ public float HDROffsetCave; // [ethan] ...especially since this DOES match
+        /* 0x308 */ public float LensThresholdCave;
+        /* 0x30C */ public float LensOffsetCave;
 
-        public float Unknown350;
-        public float Unknown354;
-        public float Unknown358;
-        public float Unknown35C;
+        /* 0x310 */ public float LensScaleCave;
+        /* 0x314 */ public float LensDirtCave;
+        /* 0x318 */ public float DOFNearPlane;
+        /* 0x31C */ public float DOFFarPlane;
 
-        public float Unknown360;
-        public bool Unknown364; // unused?
-        public bool Unknown365; // used
-        public float Unknown368;
-        public float Unknown36C;
+        /* 0x320 */ public float DOFNearFadeDistance;
+        /* 0x324 */ public float DOFFarFadeDistance;
+        /* 0x328 */ public float DOFFarPlaneCave;
+        /* 0x32C */ public float DOFFarFadeDistanceCave;
 
-        public float Unknown370;
-        public float Unknown374;
-        public float Unknown378;
-        public float Unknown37C;
+        /* 0x330 */ public float DOFFarPlaneSpace;
+        /* 0x334 */ public float DOFFarFadeDistanceSpace;
+        /* 0x338 */ public float DOFFarPlaneWater;
+        /* 0x33C */ public float DOFFarFadeDistanceWater;
 
-        public float Unknown380;
-        public float Unknown384;
-        public float Unknown388;
-        public float Unknown38C;
+        /* 0x340 */ public float VignetteStart;
+        /* 0x344 */ public float VignetteEnd;
+        /* 0x348 */ public float LowHealthVignetteStart;
+        /* 0x34C */ public float LowHealthVignetteEnd;
 
-        public float Unknown390;
-        public float Unknown394;
-        public float Unknown398;
-        public float Unknown39C;
+        /* 0x350 */ public float LowHealthDesaturationIntensity;
+        /* 0x354 */ public float LowHealthOverlayIntensity;
+        /* 0x358 */ public float LowHealthFadeInTime;
+        /* 0x35C */ public float LowHealthFadeOutTime;
 
-        public float Unknown3A0;
-        public float Unknown3A4;
-        public float Unknown3A8;
-        public float Unknown3AC;
+        /* 0x360 */ public float ShieldDownScanlineTime;
+        
+        /* 0x364 */ public bool FullscreenScanEffect; // unused?
+        /* 0x365 */ public bool UseImposters; // used
+        /* RC1: 0x366, don't know the type */ public int UnknownRC1_364;
+        /* 0x368 */ public int Unknown368; // [ethan] padding?
+        /* 0x36C */ public float Unknown36C;
 
-        public float Unknown3B0;
-        public float Unknown3B4;
-        public float Unknown3B8;
-        public float Unknown3BC;
+        /* 0x370 */ public Vector4f MipLevelDebug;
 
-        public float Unknown3C0;
-        public float Unknown3C4;
-        public float Unknown3C8;
-        public float Unknown3CC;
+        /* 0x380 */ public Vector4f LensParams;
 
-        public float Unknown3D0;
-        public float Unknown3D4;
-        public float Unknown3D8;
-        public float Unknown3DC;
+        /* 0x390 */ public Vector4f VerticalColourTop;
 
-        public float Unknown3E0;
-        public float Unknown3E4;
-        public float Unknown3E8;
-        public float Unknown3EC;
+        /* 0x3A0 */ public Vector4f VerticalColourBottom;
 
-        public float Unknown3F0;
-        public float Unknown3F4;
-        public float Unknown3F8;
-        public float Unknown3FC;
+        /* 0x3B0 */ public Vector4f VerticalGradient;
 
-        public float Unknown400;
-        public float Unknown404;
-        public float Unknown408;
-        public float Unknown40C;
+        /* 0x3C0 */ public float ScanFadeInTime;
+        /* 0x3C4 */ public float ScanFadeOutTime;
+        /* 0x3C8 */ public float ScanEffectSpeed;
+        /* 0x3CC */ public float ScanObjectFade;
 
-        public float Unknown410;
-        public float Unknown414;
-        public float Unknown418;
-        public float Unknown41C;
+        /* 0x3D0 */ public float ScanBandWidth;
+        /* 0x3D4 */ public float ScanHeightScale;
+        /* 0x3D8 */ public float ScanDistance;
+        /* 0x3DC */ public float ScanHorizontalScale;
 
-        public float Unknown420;
-        public float Unknown424;
-        public float Unknown428;
-        public float Unknown42C;
+        /* 0x3E0 */ public float Single1ScanTime;
+        /* 0x3E4 */ public float Single1ScanHeightScale;
+        /* 0x3E8 */ public float Single1ScanBandWidth;
+        /* 0x3EC */ public float Single1ScanEffectSpeed;
 
-        public float Unknown430;
-        public float Unknown434;
-        public float Unknown438;
-        public float Unknown43C;
+        /* 0x3F0 */ public float Single1ScanObjectFade;
+        /* 0x3F4 */ public float Single1ScanHorizontalScale;
+        /* 0x3F8 */ public float Single2ScanTime;
+        /* 0x3FC */ public float Single2ScanHeightScale;
 
-        public float Unknown440;
-        public float Unknown444;
-        public float Unknown448;
-        public float Unknown44C;
+        /* 0x400 */ public float Single2ScanBandWidth;
+        /* 0x404 */ public float Single2ScanEffectSpeed;
+        /* 0x408 */ public float Single2ScanObjectFade;
+        /* 0x40C */ public float Single2ScanHorizontalScale;
 
-        public float Unknown450;
-        public float Unknown454;
-        public float Unknown458;
-        public float Unknown45C;
+        /* 0x410 */ public float TeleportFlashTime;
+        /* 0x414 */ public Vector2f WindDir1;
+        /* 0x41C */ public Vector2f WindDir2;
 
-        public float Unknown460;
-        public float Unknown464;
-        public float Unknown468;
-        public float Unknown46C;
+        /* 0x424 */ public float AtmosphereSize;
+        /* 0x428 */ public float Unknown428; // [ethan] ...huevariance?
+        /* 0x42C */ public float Unknown42C; //         ...saturationvariance?
 
-        public float Unknown470;
-        public float Unknown474;
-        public float Unknown478;
-        public float Unknown47C;
+        /* 0x430 */ public float Unknown430; //         ...valuevariance? or all three padding?
+        /* 0x434 */ public float FoliageSaturationMin;
+        /* 0x438 */ public float FoliageSaturationMax;
+        /* 0x43C */ public float FoliageValueMin;
 
-        public float Unknown480;
-        public float Unknown484;
-        public float Unknown488;
-        public float Unknown48C;
+        /* 0x440 */ public float FoliageValueMax;
+        /* 0x444 */ public float GrassSaturationMin;
+        /* 0x448 */ public float GrassSaturationMax;
+        /* 0x44C */ public float GrassValueMin;
 
-        public GcPlanetWaterData Unknown490;
+        /* 0x450 */ public float GrassValueMax;
+        /* 0x454 */ public float SkySaturationMin;
+        /* 0x458 */ public float SkySaturationMax;
+        /* 0x45C */ public float SkyValueMin;
 
-        public GcPlanetWaterData Unknown640;
+        /* 0x460 */ public float SkyValueMax;
+        /* 0x464 */ public float SpaceScale;
+        /* 0x468 */ public float SpaceMieFactor;
+        /* 0x46C */ public float SpaceSunFactor;
 
-        public float Unknown7F0;
-        public float Unknown7F4;
-        public float Unknown7F8;
-        public float Unknown7FC;
+        /* 0x470 */ public float MaxSpaceFogStrength;
+        /* 0x474 */ public float ReflectionStrength;
+        /* 0x478 */ public float AlphaCutoutMin; // [ethan] these are explicitly defined in ubershader
+        /* 0x47C */ public float AlphaCutoutMax; // so are these values actually used?
 
-        public bool Unknown800;
+        /* 0x480 */ public float WaterHueShift;
+        /* 0x484 */ public float WaterSaturation;
+        /* 0x488 */ public float WaterValue;
+        /* 0x48C */ public float Unknown48C; // [ethan] padding?
+
+        /* 0x490 */ public GcPlanetWaterData WaterDataMin;
+
+        /* 0x640 */ public GcPlanetWaterData WaterDataMax;
+
+        /* 0x7F0 */ public float Unknown7F0; // [ethan] padding?
+        /* 0x7F4 */ public float MinPixelSizeOfObjectsInShadowsSpace;
+        /* 0x7F8 */ public float MinPixelSizeOfObjectsInShadowsPlanet;
+        /* 0x7FC */ public float MinPixelSizeOfObjectsInShadowsCockpitOnPlanet;
+
+        /* RC1: NOT PRESENT
+
+        /* 0x800 *//* public bool AllowPartialCascadeRender;
 
         [NMS(Size = 4)]
-        public int[] Unknown804;
+        /* 0x804 *//* public int[] CascadeRenderSequence;
 
-        public int Unknown814;
+        /* 0x814 *//* public int SupersamplingLevel;
 
         [NMS(Size = 8, Ignore = true)]
-        public byte[] Padding818;
+        public byte[] Padding818; */
     }
 }
