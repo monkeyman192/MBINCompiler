@@ -23,12 +23,20 @@ jobs:
             7.0.100
       - name: Build Windows binaries
         run: |
-          dotnet publish libMBIN-DLL -c Release -f net6.0-windows -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
-          dotnet publish MBINCompiler -c Release -f net6.0-windows -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
-          dotnet publish SaveFileMapping -c Release -f net6.0-windows -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
-          dotnet publish libMBIN-DLL -c Release -f net7.0-windows -r win-x64 -o Build/Release/net7/ /nowarn:cs0618
-          dotnet publish MBINCompiler -c Release -f net7.0-windows -r win-x64 -o Build/Release/net7/ /nowarn:cs0618
+          dotnet publish libMBIN-DLL -c Release -f net6.0 -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
+          dotnet publish MBINCompiler -c Release -f net6.0 -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
+          dotnet publish SaveFileMapping -c Release -f net6.0 -r win-x64 -o Build/Release/net6/ /nowarn:cs0618
+          dotnet publish libMBIN-DLL -c Release -f net7.0 -r win-x64 -o Build/Release/net7/ /nowarn:cs0618
+          dotnet publish MBINCompiler -c Release -f net7.0 -r win-x64 -o Build/Release/net7/ /nowarn:cs0618
+      - name: Build Linux binaries
+        run: |
+          dotnet publish libMBIN-DLL -c Release -f net6.0 -r linux-x64 -o Build/Release/linux-x64/net6/ /nowarn:cs0618
+          dotnet publish MBINCompiler -c Release -f net6.0 -r linux-x64 -o Build/Release/linux-x64/net6/ /nowarn:cs0618
+          dotnet publish SaveFileMapping -c Release -f net6.0 -r linux-x64 -o Build/Release/linux-x64/net6/ /nowarn:cs0618
+          dotnet publish libMBIN-DLL -c Release -f net7.0 -r linux-x64 -o Build/Release/linux-x64/net7/ /nowarn:cs0618
+          dotnet publish MBINCompiler -c Release -f net7.0 -r linux-x64 -o Build/Release/linux-x64/net7/ /nowarn:cs0618
       - name: Move the exe so the tests can find it easier
+        shell: bash
         run: |
           cp Build/Release/net6/MBINCompiler.exe MBINCompiler.exe
           cp Build/Release/net6/libMBIN.dll libMBIN.dll
@@ -45,8 +53,20 @@ jobs:
       - name: Run tests
         run: python -m pytest --mbincompiler_path="MBINCompiler.exe" --tb=no --report
       - name: Generate save data mapping
-        run : Build/Release/net6/SaveFileMapping.exe
         shell: bash
+        run : |
+          Build/Release/net6/SaveFileMapping.exe
+          ls Build/Release/net6/
+          ls .
+      - name: Build packages
+        shell: bash
+        run: |
+          /usr/bin/tar -zcvf "MBINCompiler-linux-x64-dotnet6.tgz" report.json mapping.json --directory=Build/Release/linux-x64/net6/ MBINCompiler libMBIN.dll
+          cp Build/Release/linux-x64/net7/MBINCompiler Build/Release/linux-x64/net7/MBINCompiler-dotnet7
+          cp Build/Release/linux-x64/net7/libMBIN.dll Build/Release/linux-x64/net7/libMBIN-dotnet7.dll
+          /usr/bin/tar -zcvf MBINCompiler-linux-x64-dotnet7.tgz report.json mapping.json --directory=Build/Release/linux-x64/net7/ MBINCompiler-dotnet7 libMBIN-dotnet7.dll
+          7z a -tzip "MBINCompiler-win-x64-dotnet6.zip" MBINCompiler.exe libMBIN.dll report.json mapping.json
+          7z a -tzip MBINCompiler-win-x64-dotnet7.zip MBINCompiler-dotnet7.exe libMBIN-dotnet7.dll report.json mapping.json
       - name: Upload binary for release
         uses: actions/upload-artifact@v3
         with:
@@ -58,6 +78,10 @@ jobs:
             libMBIN-dotnet7.dll
             report.json
             mapping.json
+            MBINCompiler-win-x64-dotnet6.zip
+            MBINCompiler-win-x64-dotnet7.zip
+            MBINCompiler-linux-x64-dotnet6.tgz
+            MBINCompiler-linux-x64-dotnet7.tgz
   release:
     name: Release MBINCompiler binaries and other data
     # Only run this job if the commit was tagged.
@@ -88,6 +112,10 @@ jobs:
             libMBIN-dotnet7.dll
             report.json
             mapping.json
+            MBINCompiler-win-x64-dotnet6.zip
+            MBINCompiler-win-x64-dotnet7.zip
+            MBINCompiler-linux-x64-dotnet6.tgz
+            MBINCompiler-linux-x64-dotnet7.tgz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check if tag doesn't match version

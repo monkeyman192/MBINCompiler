@@ -4,7 +4,7 @@
     <RootNamespace>libMBIN</RootNamespace>
     <AssemblyName>libMBIN</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TargetFrameworks>net6.0-windows;net7.0-windows</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Configurations>Release;Debug;Release-XML</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -72,6 +72,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+
   <!-- <ItemGroup> -->
     <!-- <Reference Include="System" /> -->
     <!-- <Reference Include="System.Core" /> -->
