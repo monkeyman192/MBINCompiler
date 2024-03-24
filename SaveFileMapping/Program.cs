@@ -140,8 +140,11 @@ namespace SaveFileMapping
 
             // Also add the GcUserSettingsData class
             var account_mapping = new HashSet<Tuple<string, string>>();
+            // Add UserSettingsData first as it marks the start of this chunk of data
             account_mapping.Add(new Tuple<string, string>(HashName("UserSettingsData"), "UserSettingsData"));
             UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcUserSettingsData), account_mapping);
+            // Add some other values we need (again):
+            account_mapping.Add(new Tuple<string, string>(HashName("Version"), "Version"));
 
             var main_data = new Dictionary<string, object>();
             main_data["libMBIN_version"] = libMBIN.Version.AssemblyVersion.ToString();
