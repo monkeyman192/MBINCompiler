@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBCBBA511F0D4D266, NameHash = 0xA12AC584067DF8E0)]
+    [NMS(GUID = 0x232EAAEF8A20BBF0, NameHash = 0xA12AC584067DF8E0)]
     public class GcNPCPlacementInfo : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 PlacementRuleId;
@@ -28,6 +28,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0xCA */ public bool SpawnMoving;
         /* 0xCB */ public bool CanTurn;
         /* 0xCC */ public bool SpawnInAbandoned;
+        /* 0xCD */ public bool IsMannequin;
         /* 0xD0 */ public List<NMSString0x10> HideDuringMissions;
         /* 0xE0 */ public bool OnlyUsePuzzleOverridesIfPlayerOwned;
         /* 0xE1 */ public bool UseScanToRevealData;
