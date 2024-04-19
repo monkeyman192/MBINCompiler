@@ -7,8 +7,8 @@ namespace libMBIN.NMS.Globals
     public class GcScratchpadGlobals : NMSTemplate
     {
         /* 0x00 */ public List<GcPresetTextureData> IBLMaps;
-        /* 0x10 */ public List<GcPresetTextureData> TerrainTextures;
-        /* 0x20 */ public List<GcPresetTextureData> OverlayTextures;
-        /* 0x30 */ public List<Colour> TerrainColours;
+        /* 0x10 */ public List<GcPresetTextureData> OverlayTextures;
+        /* 0x20 */ public List<Colour> TerrainColours;
+        /* 0x30 */ public List<GcPresetTextureData> TerrainTextures;
     }
 }

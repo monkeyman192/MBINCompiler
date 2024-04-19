@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSandwormTimerAndFrequencyOverride : NMSTemplate
     {
         /* 0x0 */ public ulong PackedUA;
-        /* 0x8 */ public float Timer;
-        /* 0xC */ public float SpawnChance;
+        /* 0x8 */ public float SpawnChance;
+        /* 0xC */ public float Timer;
     }
 }

@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardShipSlot : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Cost;
-        /* 0x10 */ public bool AwardCostAndOpenWindow;
-        /* 0x14 */ public int NumTokens;
-        /* 0x18 */ public bool IsAlien;
-        /* 0x19 */ public bool FallbackOpenWindowIfBlocked;
+        /* 0x10 */ public int NumTokens;
+        /* 0x14 */ public bool AwardCostAndOpenWindow;
+        /* 0x15 */ public bool FallbackOpenWindowIfBlocked;
+        /* 0x16 */ public bool IsAlien;
     }
 }

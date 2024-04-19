@@ -8,8 +8,8 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]
         /* 0x000 */ public GcBiomeFileListOptions[] BiomeFiles;
-        /* 0x100 */ public List<GcBiomeType> ValidStartPlanetBiome;
-        /* 0x110 */ public List<GcExternalObjectListOptions> CommonExternalObjectLists;
-        /* 0x120 */ public List<GcExternalObjectFileList> OptionalExternalObjectLists;
+        /* 0x100 */ public List<GcExternalObjectListOptions> CommonExternalObjectLists;
+        /* 0x110 */ public List<GcExternalObjectFileList> OptionalExternalObjectLists;
+        /* 0x120 */ public List<GcBiomeType> ValidStartPlanetBiome;
     }
 }

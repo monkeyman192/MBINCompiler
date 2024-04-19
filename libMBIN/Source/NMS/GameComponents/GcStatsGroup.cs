@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsGroup : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public TkTextureResource Icon;
-        /* 0x98 */ public List<GcStatsEntry> StatIds;
+        /* 0x10 */ public List<GcStatsEntry> StatIds;
+        /* 0x20 */ public TkTextureResource Icon;
     }
 }

@@ -6,10 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipInventoryMaxUpgradeCapacity : NMSTemplate
     {
         [NMS(Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
-        /* 0x00 */ public int[] MaxInventoryCapacity;
+        /* 0x00 */ public int[] MaxCargoInventoryCapacity;
         [NMS(Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
-        /* 0x10 */ public int[] MaxTechInventoryCapacity;
+        /* 0x10 */ public int[] MaxInventoryCapacity;
         [NMS(Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
-        /* 0x20 */ public int[] MaxCargoInventoryCapacity;
+        /* 0x20 */ public int[] MaxTechInventoryCapacity;
     }
 }

@@ -7,9 +7,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostGroup : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Text;
-        /* 0x20 */ public int TakeTextFromIndex;
-        /* 0x24 */ public int HideOptionIfCantAffordIndex;
-        /* 0x28 */ public GcMissionConditionTest Test;
-        /* 0x30 */ public List<NMSTemplate> Costs;
+        /* 0x20 */ public List<NMSTemplate> Costs;
+        /* 0x30 */ public int HideOptionIfCantAffordIndex;
+        /* 0x34 */ public int TakeTextFromIndex;
+        /* 0x38 */ public GcMissionConditionTest Test;
     }
 }

@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 ProductID;
         /* 0x10 */ public NMSString0x10 SubstanceID;
-        /* 0x20 */ public GcCreaturePetTraits Trait;
-        /* 0x24 */ public bool IncreasesTrait;
-        /* 0x28 */ public int BaseValueOverride;
+        /* 0x20 */ public int BaseValueOverride;
+        /* 0x24 */ public GcCreaturePetTraits Trait;
+        /* 0x28 */ public bool IncreasesTrait;
     }
 }

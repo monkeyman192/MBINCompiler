@@ -4,13 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceDetailMessagePoint : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Text;
+        /* 0x20 */ public NMSString0x10 InsertItemName;
         // size: 0x3
         public enum PointStateEnum : uint {
             Statement,
             ObjectiveIncomplete,
             ObjectiveComplete,
         }
-        /* 0x20 */ public PointStateEnum PointState;
-        /* 0x28 */ public NMSString0x10 InsertItemName;
+        /* 0x30 */ public PointStateEnum PointState;
     }
 }

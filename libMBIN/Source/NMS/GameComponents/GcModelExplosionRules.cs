@@ -8,8 +8,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public List<GcModelExplosionRule> Rules;
         [NMS(Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
-        /* 0x10 */ public bool[] UseRules;
+        /* 0x10 */ public float[] ShipSalvageDisplayScales;
         [NMS(Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
-        /* 0x1C */ public float[] ShipSalvageDisplayScales;
+        /* 0x38 */ public bool[] UseRules;
     }
 }

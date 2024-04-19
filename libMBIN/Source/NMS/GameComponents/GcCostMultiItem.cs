@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostMultiItem : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A DisplayLocID;
-        /* 0x20 */ public bool OnlyTakeIfCanAfford;
-        /* 0x28 */ public List<GcItemAmountCostPair> ItemList;
+        /* 0x20 */ public List<GcItemAmountCostPair> ItemList;
+        /* 0x30 */ public bool OnlyTakeIfCanAfford;
     }
 }

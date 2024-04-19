@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 RoomID;
         [NMS(Size = 0x5, EnumType = typeof(GcFreighterNPCType.FreighterNPCTypeEnum))]
-        /* 0x10 */ public float[] SpawnCapacity;
+        /* 0x10 */ public float[] POISelectionWeight;
         [NMS(Size = 0x5, EnumType = typeof(GcFreighterNPCType.FreighterNPCTypeEnum))]
-        /* 0x24 */ public float[] POISelectionWeight;
+        /* 0x24 */ public float[] SpawnCapacity;
     }
 }

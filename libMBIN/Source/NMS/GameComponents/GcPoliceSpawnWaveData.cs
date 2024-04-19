@@ -7,6 +7,6 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x000 */ public GcAIShipSpawnData ShipData;
         [NMS(Size = 0x4)]
-        /* 0x1E0 */ public int[] MaxCountsForFireteamSize;
+        /* 0x1C0 */ public int[] MaxCountsForFireteamSize;
     }
 }

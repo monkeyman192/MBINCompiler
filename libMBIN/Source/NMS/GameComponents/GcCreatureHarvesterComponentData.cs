@@ -6,6 +6,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureHarvesterComponentData : NMSTemplate
     {
         /* 0x000 */ public GcMaintenanceComponentData MaintenanceData;
-        /* 0x420 */ public int NumSlots;
+        /* 0x3E0 */ public int NumSlots;
     }
 }

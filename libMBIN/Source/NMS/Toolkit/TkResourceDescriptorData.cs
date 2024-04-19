@@ -6,9 +6,9 @@ namespace libMBIN.NMS.Toolkit
     public class TkResourceDescriptorData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Id;
-        /* 0x20 */ public NMSString0x80 Name;
-        /* 0xA0 */ public List<NMSString0x80> ReferencePaths;
-        /* 0xB0 */ public float Chance;
-        /* 0xB8 */ public List<NMSTemplate> Children;
+        /* 0x20 */ public List<NMSTemplate> Children;
+        /* 0x30 */ public List<NMSString0x80> ReferencePaths;
+        /* 0x40 */ public float Chance;
+        /* 0x44 */ public NMSString0x80 Name;
     }
 }

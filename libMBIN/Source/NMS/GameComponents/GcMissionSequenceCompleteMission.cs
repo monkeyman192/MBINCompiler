@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceCompleteMission : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Mission;
-        /* 0x10 */ public bool UseSeed;
-        /* 0x11 */ public NMSString0x80 DebugText;
+        /* 0x10 */ public NMSString0x80 DebugText;
+        /* 0x90 */ public bool UseSeed;
     }
 }

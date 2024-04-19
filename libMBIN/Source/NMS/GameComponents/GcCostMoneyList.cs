@@ -8,14 +8,6 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public List<int> Costs;
         /* 0x10 */ public GcCurrency CostCurrency;
-        /* 0x14 */ public bool AssertIfOutOfBounds;
-        // size: 0x3
-        public enum OutOfBoundsBehaviourEnum : uint {
-            NoCost,
-            UseFirst,
-            UseLast,
-        }
-        /* 0x18 */ public OutOfBoundsBehaviourEnum OutOfBoundsBehaviour;
         // size: 0x9
         public enum IndexProviderEnum : uint {
             None,
@@ -28,6 +20,14 @@ namespace libMBIN.NMS.GameComponents
             PilotSlot,
             PilotRank,
         }
-        /* 0x1C */ public IndexProviderEnum IndexProvider;
+        /* 0x14 */ public IndexProviderEnum IndexProvider;
+        // size: 0x3
+        public enum OutOfBoundsBehaviourEnum : uint {
+            NoCost,
+            UseFirst,
+            UseLast,
+        }
+        /* 0x18 */ public OutOfBoundsBehaviourEnum OutOfBoundsBehaviour;
+        /* 0x1C */ public bool AssertIfOutOfBounds;
     }
 }

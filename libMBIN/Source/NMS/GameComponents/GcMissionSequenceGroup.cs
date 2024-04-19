@@ -7,35 +7,30 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0xBEA5909A9D17C463, NameHash = 0x51B3554FFBEBED66)]
     public class GcMissionSequenceGroup : NMSTemplate
     {
-        /* 0x000 */ public bool Silent;
-        /* 0x004 */ public TkTextureResource Icon;
-        /* 0x088 */ public GcMissionPageHint PageHint;
-        /* 0x090 */ public NMSString0x20A PageDataLocID;
-        /* 0x0B0 */ public NMSString0x10 BuildMenuHint;
-        /* 0x0C0 */ public NMSString0x10 InventoryHint;
-        /* 0x0D0 */ public NMSString0x10 TerrainTarget;
-        /* 0x0E0 */ public NMSString0x80 DebugText;
-        /* 0x160 */ public NMSString0x20A ObjectiveID;
-        /* 0x180 */ public NMSString0x20A ObjectiveTipID;
-        /* 0x1A0 */ public bool HasCategoryOverride;
-        /* 0x1A4 */ public GcMissionCategory OverrideCategory;
-        /* 0x1A8 */ public bool HasColourOverride;
-        /* 0x1B0 */ public Colour ColourOverride;
-        /* 0x1C0 */ public bool PrefixTitle;
-        /* 0x1C8 */ public NMSString0x20A PrefixTitleText;
-        /* 0x1E8 */ public bool BlockPinning;
-        /* 0x1E9 */ public bool AutoPinRepairs;
-        /* 0x1EA */ public bool BlockSpaceBattles;
-        /* 0x1EC */ public GcMissionConditionTest ConditionTest;
-        /* 0x1F0 */ public bool HideFromLogIfConditionsMet;
-        /* 0x1F1 */ public bool DoConsequencesIfNeverActivated;
+        /* 0x000 */ public Colour ColourOverride;
+        /* 0x010 */ public GcTargetMissionSurveyOptions SurveyTarget;
+        /* 0x228 */ public GcSeasonalObjectiveOverrides SeasonalObjectiveOverrides;
+        /* 0x278 */ public GcObjectiveTextFormatOptions ObjectiveFormatting;
+        /* 0x2C0 */ public NMSString0x20A ObjectiveID;
+        /* 0x2E0 */ public NMSString0x20A ObjectiveTipID;
+        /* 0x300 */ public NMSString0x20A PageDataLocID;
+        /* 0x320 */ public NMSString0x20A PrefixTitleText;
+        /* 0x340 */ public NMSString0x10 BuildMenuHint;
+        /* 0x350 */ public List<NMSTemplate> Conditions;
+        /* 0x360 */ public List<NMSTemplate> Consequences;
+        /* 0x370 */ public NMSString0x10 InventoryHint;
+        /* 0x380 */ public List<GcGenericMissionStage> Stages;
+        /* 0x390 */ public NMSString0x10 TerrainTarget;
+        /* 0x3A0 */ public TkTextureResource Icon;
+        /* 0x424 */ public GcCustomNotifyTimerOptions CustomNotifyTimers;
+        /* 0x430 */ public GcMissionConditionTest ConditionTest;
         // size: 0x3
-        public enum RepeatLogicEnum : uint {
+        public enum GalMapPathOverrideEnum : uint {
             None,
-            Loop,
-            RestartOnConditionFail,
+            BlackHole,
+            Atlas,
         }
-        /* 0x1F4 */ public RepeatLogicEnum RepeatLogic;
+        /* 0x434 */ public GalMapPathOverrideEnum GalMapPathOverride;
         // size: 0x4
         public enum IconStyleEnum : uint {
             Default,
@@ -43,21 +38,26 @@ namespace libMBIN.NMS.GameComponents
             Square,
             NoFrame,
         }
-        /* 0x1F8 */ public IconStyleEnum IconStyle;
+        /* 0x438 */ public IconStyleEnum IconStyle;
+        /* 0x43C */ public GcMissionCategory OverrideCategory;
+        /* 0x440 */ public GcMissionPageHint PageHint;
         // size: 0x3
-        public enum GalMapPathOverrideEnum : uint {
+        public enum RepeatLogicEnum : uint {
             None,
-            BlackHole,
-            Atlas,
+            Loop,
+            RestartOnConditionFail,
         }
-        /* 0x1FC */ public GalMapPathOverrideEnum GalMapPathOverride;
-        /* 0x200 */ public TkInputEnum SpecialButtonIcon;
-        /* 0x208 */ public GcObjectiveTextFormatOptions ObjectiveFormatting;
-        /* 0x250 */ public GcSeasonalObjectiveOverrides SeasonalObjectiveOverrides;
-        /* 0x2A0 */ public GcTargetMissionSurveyOptions SurveyTarget;
-        /* 0x4B8 */ public GcCustomNotifyTimerOptions CustomNotifyTimers;
-        /* 0x4C8 */ public List<NMSTemplate> Conditions;
-        /* 0x4D8 */ public List<NMSTemplate> Consequences;
-        /* 0x4E8 */ public List<GcGenericMissionStage> Stages;
+        /* 0x444 */ public RepeatLogicEnum RepeatLogic;
+        /* 0x448 */ public TkInputEnum SpecialButtonIcon;
+        /* 0x44C */ public NMSString0x80 DebugText;
+        /* 0x4CC */ public bool AutoPinRepairs;
+        /* 0x4CD */ public bool BlockPinning;
+        /* 0x4CE */ public bool BlockSpaceBattles;
+        /* 0x4CF */ public bool DoConsequencesIfNeverActivated;
+        /* 0x4D0 */ public bool HasCategoryOverride;
+        /* 0x4D1 */ public bool HasColourOverride;
+        /* 0x4D2 */ public bool HideFromLogIfConditionsMet;
+        /* 0x4D3 */ public bool PrefixTitle;
+        /* 0x4D4 */ public bool Silent;
     }
 }

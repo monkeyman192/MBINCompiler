@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissileComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Explosion;
-        /* 0x10 */ public float NoTargetLife;
-        /* 0x18 */ public NMSString0x10 Trail;
+        /* 0x10 */ public NMSString0x10 Trail;
+        /* 0x20 */ public float NoTargetLife;
     }
 }

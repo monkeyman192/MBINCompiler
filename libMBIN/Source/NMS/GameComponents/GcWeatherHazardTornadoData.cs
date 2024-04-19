@@ -5,9 +5,9 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public float SuckInRadius;
         /* 0x04 */ public float SuckInStrength;
-        /* 0x08 */ public float SuckUpRadius;
-        /* 0x0C */ public float SuckUpStrength;
-        /* 0x10 */ public float SuckUpHeight;
-        /* 0x14 */ public float SuckUpHeightCutoff;
+        /* 0x08 */ public float SuckUpHeight;
+        /* 0x0C */ public float SuckUpHeightCutoff;
+        /* 0x10 */ public float SuckUpRadius;
+        /* 0x14 */ public float SuckUpStrength;
     }
 }

@@ -6,10 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasMultiTool : NMSTemplate
     {
         /* 0x0 */ public GcInventoryClass InventoryClass;
-        /* 0x4 */ public bool CheckAllTools;
-        /* 0x5 */ public bool BetterClassMatches;
-        /* 0x6 */ public bool TakeValueFromSeasonData;
-        /* 0x7 */ public bool MustMatchWeaponClass;
-        /* 0x8 */ public GcWeaponClasses WeaponClass;
+        /* 0x4 */ public GcWeaponClasses WeaponClass;
+        /* 0x8 */ public bool BetterClassMatches;
+        /* 0x9 */ public bool CheckAllTools;
+        /* 0xA */ public bool MustMatchWeaponClass;
+        /* 0xB */ public bool TakeValueFromSeasonData;
     }
 }

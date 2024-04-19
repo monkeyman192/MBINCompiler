@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryTableEntry : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public int MinSize;
+        /* 0x10 */ public GcInventoryLayoutSizeType LayoutSizeType;
         /* 0x14 */ public int MaxSize;
-        /* 0x18 */ public GcInventoryLayoutSizeType LayoutSizeType;
+        /* 0x18 */ public int MinSize;
     }
 }

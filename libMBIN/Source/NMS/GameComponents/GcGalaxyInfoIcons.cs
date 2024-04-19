@@ -10,14 +10,14 @@ namespace libMBIN.NMS.GameComponents
         /* 0x000 */ public TkTextureResource[] RaceIcons;
         [NMS(Size = 0x7, EnumType = typeof(GcTradingClass.TradingClassEnum))]
         /* 0x4A4 */ public TkTextureResource[] EconomyIcons;
-        /* 0x840 */ public TkTextureResource EconomyTechNotInstalledIcon;
-        [NMS(Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]
-        /* 0x8C4 */ public TkTextureResource[] WealthIcons;
         [NMS(Size = 0x4, EnumType = typeof(GcPlayerConflictData.ConflictLevelEnum))]
-        /* 0xAD4 */ public TkTextureResource[] ConflictIcons;
-        /* 0xCE4 */ public TkTextureResource ConflictTechNotInstalledIcon;
-        /* 0xD68 */ public TkTextureResource WarpIcon;
-        /* 0xDEC */ public TkTextureResource WarpErrorIcon;
+        /* 0x840 */ public TkTextureResource[] ConflictIcons;
+        [NMS(Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]
+        /* 0xA50 */ public TkTextureResource[] WealthIcons;
+        /* 0xC60 */ public TkTextureResource ConflictTechNotInstalledIcon;
+        /* 0xCE4 */ public TkTextureResource EconomyTechNotInstalledIcon;
+        /* 0xD68 */ public TkTextureResource WarpErrorIcon;
+        /* 0xDEC */ public TkTextureResource WarpIcon;
         /* 0xE70 */ public TkTextureResource WarpTechNotInstalledIcon;
     }
 }

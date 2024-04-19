@@ -6,6 +6,6 @@ namespace libMBIN.NMS.Toolkit
     public class TkNoiseCaveData : NMSTemplate
     {
         /* 0x00 */ public TkNoiseFeatureData Mouth;
-        /* 0x44 */ public TkNoiseFeatureData Tunnel;
+        /* 0x40 */ public TkNoiseFeatureData Tunnel;
     }
 }

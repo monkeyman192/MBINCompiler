@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsPartyPlanetUnlocked : NMSTemplate
     {
         /* 0x0 */ public int SpecificRendevousPlanetIndex;
-        /* 0x4 */ public bool TakeIndexFromSeasonData;
-        /* 0x5 */ public bool TakeIndexFromMilestoneStage;
+        /* 0x4 */ public bool TakeIndexFromMilestoneStage;
+        /* 0x5 */ public bool TakeIndexFromSeasonData;
     }
 }

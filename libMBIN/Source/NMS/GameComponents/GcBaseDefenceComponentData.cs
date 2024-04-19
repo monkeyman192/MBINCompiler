@@ -7,9 +7,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseDefenceComponentData : NMSTemplate
     {
         /* 0x00 */ public List<GcBaseDefenceTrigger> Triggers;
-        /* 0x10 */ public float LostUncertaintyThreshold;
-        /* 0x14 */ public float SearchTime;
-        /* 0x18 */ public bool PrioritiseThreats;
-        /* 0x1C */ public float LaserRangeAnimateTime;
+        /* 0x10 */ public float LaserRangeAnimateTime;
+        /* 0x14 */ public float LostUncertaintyThreshold;
+        /* 0x18 */ public float SearchTime;
+        /* 0x1C */ public bool PrioritiseThreats;
     }
 }

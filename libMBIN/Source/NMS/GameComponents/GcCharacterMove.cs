@@ -4,12 +4,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterMove : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Input;
-        /* 0x10 */ public float Strength;
         // size: 0x2
         public enum ModeEnum : uint {
             SetVelocity,
             ApplyForce,
         }
-        /* 0x14 */ public ModeEnum Mode;
+        /* 0x10 */ public ModeEnum Mode;
+        /* 0x14 */ public float Strength;
     }
 }

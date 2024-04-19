@@ -7,6 +7,7 @@ namespace libMBIN.NMS.GameComponents
     {
         [NMS(Size = 0x3, EnumType = typeof(GcCurrency.CurrencyEnum))]
         /* 0x00 */ public float[] Multipliers;
+        /* 0x0C */ public float TradeBuyPriceMarkupMod;
         // size: 0x3
         public enum FreeCostTypesEnum {
             Currency,
@@ -14,9 +15,8 @@ namespace libMBIN.NMS.GameComponents
             Product,
         }
         [NMS(Size = 0x3, EnumType = typeof(FreeCostTypesEnum))]
-        /* 0x0C */ public bool[] FreeCostTypes;
-        /* 0x10 */ public float TradeBuyPriceMarkupMod;
+        /* 0x10 */ public bool[] FreeCostTypes;
+        /* 0x13 */ public bool CostManagerCostsAreFree;
         /* 0x14 */ public bool InteractionsCostsAreFree;
-        /* 0x15 */ public bool CostManagerCostsAreFree;
     }
 }

@@ -5,17 +5,17 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x5D83CC274F0C9132, NameHash = 0xD0D744F61AB1E31B)]
     public class GcMissionSequenceCollectLocalSubstance : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x80 Message;
-        /* 0x80 */ public NMSString0x20A UseScanEventToDetermineLocation;
-        /* 0xA0 */ public GcLocalSubstanceType LocalSubstanceType;
-        /* 0xA4 */ public int Amount;
-        /* 0xA8 */ public bool UseDefaultValue;
-        /* 0xAC */ public float DefaultValueMultiplier;
-        /* 0xB0 */ public bool WaitForSelected;
-        /* 0xB1 */ public bool CanFormatObjectives;
-        /* 0xB2 */ public bool FromNow;
-        /* 0xB3 */ public bool CanSetIcon;
-        /* 0xB4 */ public bool TakeAmountFromSeasonData;
-        /* 0xB5 */ public NMSString0x80 DebugText;
+        /* 0x000 */ public NMSString0x20A UseScanEventToDetermineLocation;
+        /* 0x020 */ public int Amount;
+        /* 0x024 */ public float DefaultValueMultiplier;
+        /* 0x028 */ public GcLocalSubstanceType LocalSubstanceType;
+        /* 0x02C */ public NMSString0x80 DebugText;
+        /* 0x0AC */ public NMSString0x80 Message;
+        /* 0x12C */ public bool CanFormatObjectives;
+        /* 0x12D */ public bool CanSetIcon;
+        /* 0x12E */ public bool FromNow;
+        /* 0x12F */ public bool TakeAmountFromSeasonData;
+        /* 0x130 */ public bool UseDefaultValue;
+        /* 0x131 */ public bool WaitForSelected;
     }
 }

@@ -6,16 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcTerrainEditsBuffer : NMSTemplate
     {
         [NMS(Size = 0x100)]
-        /* 0x0000 */ public ulong[] GalacticAddresses;
+        /* 0x00000 */ public Vector3f[] BufferAnchors;
         [NMS(Size = 0x100)]
-        /* 0x0800 */ public int[] BufferSizes;
-        [NMS(Size = 0x100)]
-        /* 0x0C00 */ public byte[] BufferAges;
-        [NMS(Size = 0x100)]
-        /* 0x0D00 */ public Vector3f[] BufferAnchors;
-        [NMS(Size = 0x100)]
-        /* 0x1D00 */ public bool[] BufferProtected;
+        /* 0x01000 */ public ulong[] GalacticAddresses;
         [NMS(Size = 0x7530)]
-        /* 0x1E00 */ public GcTerrainEdit[] Edits;
+        /* 0x01800 */ public GcTerrainEdit[] Edits;
+        [NMS(Size = 0x100)]
+        /* 0x3C180 */ public int[] BufferSizes;
+        [NMS(Size = 0x100)]
+        /* 0x3C580 */ public byte[] BufferAges;
+        [NMS(Size = 0x100)]
+        /* 0x3C680 */ public bool[] BufferProtected;
     }
 }

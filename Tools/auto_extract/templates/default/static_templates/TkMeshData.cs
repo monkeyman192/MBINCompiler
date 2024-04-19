@@ -11,12 +11,12 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xD3AC8F6F7A4D55FC, NameHash = 0xF671716161E708E3)]
     public class TkMeshData : NMSTemplate
     {
+        /* 0x00 */ public byte[] MeshDataStream;
+        /* 0x10 */ public ulong Hash;
+        /* 0x18 */ public int IndexDataSize;
+        /* 0x1C */ public int VertexDataSize;
         [NMS(Size = 0x80, Padding = 0xFE)]
-        /* 0x00 */ public string IdString;
-        /* 0x80 */ public ulong Hash;
-        /* 0x88 */ public int VertexDataSize;
-        /* 0x8C */ public int IndexDataSize;
-        /* 0x90 */ public byte[] MeshDataStream;
+        /* 0x20 */ public NMSString0x80 IdString;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
             var fieldName = fieldInfo.Name;

@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 CreatureType;
         /* 0x10 */ public NMSString0x10 Item;
-        /* 0x20 */ public NMSString0x80 Desc;
-        /* 0xA0 */ public int MinBlobs;
+        /* 0x20 */ public int MinBlobs;
+        /* 0x24 */ public NMSString0x80 Desc;
     }
 }

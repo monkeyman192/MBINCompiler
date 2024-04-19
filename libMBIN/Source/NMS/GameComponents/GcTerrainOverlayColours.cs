@@ -4,10 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcTerrainOverlayColours : NMSTemplate
     {
         /* 0x00 */ public float Cutoff;
-        /* 0x04 */ public float Scale;
-        /* 0x08 */ public float Strength;
-        /* 0x0C */ public float FlightStrength;
-        /* 0x10 */ public float PulseStrength;
-        /* 0x14 */ public float PulsePeriod;
+        /* 0x04 */ public float FlightStrength;
+        /* 0x08 */ public float PulsePeriod;
+        /* 0x0C */ public float PulseStrength;
+        /* 0x10 */ public float Scale;
+        /* 0x14 */ public float Strength;
     }
 }

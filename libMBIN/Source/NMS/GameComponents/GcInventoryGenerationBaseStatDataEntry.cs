@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryGenerationBaseStatDataEntry : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 BaseStatID;
-        /* 0x10 */ public float Min;
-        /* 0x14 */ public float Max;
-        /* 0x18 */ public float MinFixedAdd;
-        /* 0x1C */ public float MaxFixedAdd;
+        /* 0x10 */ public float Max;
+        /* 0x14 */ public float MaxFixedAdd;
+        /* 0x18 */ public float Min;
+        /* 0x1C */ public float MinFixedAdd;
     }
 }

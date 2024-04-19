@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 TechID;
         /* 0x10 */ public bool Damaged;
-        /* 0x11 */ public bool NeedsInstall;
-        /* 0x12 */ public bool FullBox;
+        /* 0x11 */ public bool FullBox;
+        /* 0x12 */ public bool NeedsInstall;
     }
 }

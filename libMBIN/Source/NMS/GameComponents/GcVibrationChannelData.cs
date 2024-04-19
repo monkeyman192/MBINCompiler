@@ -6,6 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcVibrationChannelData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
+        // size: 0x2
+        public enum DataEnum {
+            Left,
+            Right,
+        }
+        [NMS(Size = 0x2, EnumType = typeof(DataEnum))]
+        /* 0x10 */ public GcVibrationData[] Data;
         // size: 0x4
         public enum VRAffectedHandsEnum : uint {
             Both,
@@ -13,15 +20,8 @@ namespace libMBIN.NMS.GameComponents
             RightOnly,
             DisableInVR,
         }
-        /* 0x10 */ public VRAffectedHandsEnum VRAffectedHands;
-        /* 0x14 */ public bool VROnly;
-        /* 0x15 */ public bool VRSwapHandForLeftHanded;
-        // size: 0x2
-        public enum DataEnum {
-            Left,
-            Right,
-        }
-        [NMS(Size = 0x2, EnumType = typeof(DataEnum))]
-        /* 0x18 */ public GcVibrationData[] Data;
+        /* 0x40 */ public VRAffectedHandsEnum VRAffectedHands;
+        /* 0x44 */ public bool VROnly;
+        /* 0x45 */ public bool VRSwapHandForLeftHanded;
     }
 }

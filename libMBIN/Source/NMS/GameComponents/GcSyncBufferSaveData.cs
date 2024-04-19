@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcSyncBufferSaveData : NMSTemplate
     {
         /* 0x00 */ public ulong SpaceAddress;
-        /* 0x08 */ public NMSString0x40 OwnerOnlineId;
-        /* 0x48 */ public NMSString0x20 OwnerPlatformId;
-        /* 0x68 */ public uint BufferVersion;
-        /* 0x6C */ public uint ItemsCount;
+        /* 0x08 */ public uint BufferVersion;
+        /* 0x0C */ public uint ItemsCount;
+        /* 0x10 */ public NMSString0x40 OwnerOnlineId;
+        /* 0x50 */ public NMSString0x20 OwnerPlatformId;
     }
 }

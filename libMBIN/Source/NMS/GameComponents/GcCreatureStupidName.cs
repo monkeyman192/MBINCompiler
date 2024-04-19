@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureStupidName : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public int Count;
-        /* 0x18 */ public List<NMSString0x80> Names;
+        /* 0x10 */ public List<NMSString0x80> Names;
+        /* 0x20 */ public int Count;
     }
 }

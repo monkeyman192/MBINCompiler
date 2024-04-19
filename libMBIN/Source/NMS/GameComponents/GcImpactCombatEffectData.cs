@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcImpactCombatEffectData : NMSTemplate
     {
         /* 0x0 */ public GcCombatEffectType CombatEffectType;
-        /* 0x4 */ public float TotalDuration;
+        /* 0x4 */ public float CurrentDuration;
         /* 0x8 */ public float DamagePerSeccond;
-        /* 0xC */ public float CurrentDuration;
+        /* 0xC */ public float TotalDuration;
     }
 }

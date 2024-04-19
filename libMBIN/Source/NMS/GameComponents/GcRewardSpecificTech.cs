@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 TechId;
         /* 0x10 */ public bool AutoPin;
-        /* 0x11 */ public bool Silent;
-        /* 0x12 */ public bool HideInSeasonRewards;
+        /* 0x11 */ public bool HideInSeasonRewards;
+        /* 0x12 */ public bool Silent;
     }
 }

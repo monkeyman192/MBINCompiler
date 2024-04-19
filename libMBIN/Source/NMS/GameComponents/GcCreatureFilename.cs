@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureFilename : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;
-        /* 0x10 */ public NMSString0x80 Filename;
-        /* 0x90 */ public NMSString0x80 ExtraFilename;
+        /* 0x10 */ public NMSString0x80 ExtraFilename;
+        /* 0x90 */ public NMSString0x80 Filename;
     }
 }

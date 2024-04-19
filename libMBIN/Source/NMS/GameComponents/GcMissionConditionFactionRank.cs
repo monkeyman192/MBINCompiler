@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionFactionRank : NMSTemplate
     {
         /* 0x0 */ public GcMissionFaction Faction;
-        /* 0x4 */ public bool UseSystemRace;
-        /* 0x8 */ public int Rank;
+        /* 0x4 */ public int Rank;
+        /* 0x8 */ public bool UseSystemRace;
     }
 }

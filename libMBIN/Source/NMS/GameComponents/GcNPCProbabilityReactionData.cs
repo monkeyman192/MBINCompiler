@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCProbabilityReactionData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-        /* 0x10 */ public float Probability;
-        /* 0x18 */ public List<GcNPCRaceProbabilityModifierData> RaceModifiers;
+        /* 0x10 */ public List<GcNPCRaceProbabilityModifierData> RaceModifiers;
+        /* 0x20 */ public float Probability;
     }
 }

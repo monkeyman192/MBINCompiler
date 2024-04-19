@@ -4,10 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationCameraData : NMSTemplate
     {
         /* 0x00 */ public int InteractionCameraIndex;
-        /* 0x04 */ public NMSString0x20 InteracttionCameraFocusJoint;
-        /* 0x24 */ public float MinPitch;
-        /* 0x28 */ public float MaxPitch;
-        /* 0x2C */ public float MinYaw;
-        /* 0x30 */ public float MaxYaw;
+        /* 0x04 */ public float MaxPitch;
+        /* 0x08 */ public float MaxYaw;
+        /* 0x0C */ public float MinPitch;
+        /* 0x10 */ public float MinYaw;
+        /* 0x14 */ public NMSString0x20 InteracttionCameraFocusJoint;
     }
 }

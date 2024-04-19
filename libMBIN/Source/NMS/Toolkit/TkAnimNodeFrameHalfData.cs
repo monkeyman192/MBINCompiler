@@ -11,8 +11,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimNodeFrameHalfData : NMSTemplate
     {
         /* 0x00 */ public List<Quaternion> Rotations;
-        /* 0x10 */ public List<Vector3f> Translations;
-        /* 0x20 */ public List<Vector3f> Scales;
+        /* 0x10 */ public List<Vector3f> Scales;
+        /* 0x20 */ public List<Vector3f> Translations;
 
         public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {
             var fieldName = fieldInfo.Name;

@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x0 */ public float Duration;
         /* 0x4 */ public float ForwardBoost;
-        /* 0x8 */ public float UpBoost;
-        /* 0xC */ public float IgnitionBoost;
+        /* 0x8 */ public float IgnitionBoost;
+        /* 0xC */ public float UpBoost;
     }
 }

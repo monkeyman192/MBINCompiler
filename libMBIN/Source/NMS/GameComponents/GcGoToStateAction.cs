@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcGoToStateAction : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 State;
-        /* 0x10 */ public bool Broadcast;
-        /* 0x14 */ public GcBroadcastLevel BroadcastLevel;
+        /* 0x10 */ public GcBroadcastLevel BroadcastLevel;
+        /* 0x14 */ public bool Broadcast;
     }
 }

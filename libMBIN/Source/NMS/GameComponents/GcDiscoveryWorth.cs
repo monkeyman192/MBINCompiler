@@ -6,9 +6,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryWorth : NMSTemplate
     {
         [NMS(Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
-        /* 0x00 */ public int[] Record;
+        /* 0x00 */ public int[] OnScan;
         [NMS(Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
-        /* 0x0C */ public int[] OnScan;
+        /* 0x0C */ public int[] Record;
         /* 0x18 */ public int Mission;
     }
 }

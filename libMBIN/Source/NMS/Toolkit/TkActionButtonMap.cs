@@ -7,8 +7,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkActionButtonMap : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ActionId;
-        /* 0x10 */ public bool ScaleToFitFont;
-        /* 0x14 */ public TkInputEnum PadButtonId;
-        /* 0x18 */ public List<TkPlatformButtonPair> Platforms;
+        /* 0x10 */ public List<TkPlatformButtonPair> Platforms;
+        /* 0x20 */ public TkInputEnum PadButtonId;
+        /* 0x24 */ public bool ScaleToFitFont;
     }
 }

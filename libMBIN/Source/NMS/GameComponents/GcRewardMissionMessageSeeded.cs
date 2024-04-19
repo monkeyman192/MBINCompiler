@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardMissionMessageSeeded : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 MessageID;
-        /* 0x10 */ public bool BroadcastInMultiplayer;
-        /* 0x11 */ public bool BroadcastToActiveMultiplayerMission;
-        /* 0x18 */ public NMSString0x10 SpecificMissionID;
+        /* 0x10 */ public NMSString0x10 SpecificMissionID;
+        /* 0x20 */ public bool BroadcastInMultiplayer;
+        /* 0x21 */ public bool BroadcastToActiveMultiplayerMission;
     }
 }

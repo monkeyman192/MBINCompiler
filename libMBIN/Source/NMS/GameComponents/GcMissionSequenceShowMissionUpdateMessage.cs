@@ -3,17 +3,14 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0xEE266C4D1F9F6075, NameHash = 0x2431FBC75DE4AEB6)]
     public class GcMissionSequenceShowMissionUpdateMessage : NMSTemplate
     {
+        /* 0x00 */ public NMSString0x20A CustomMessageLocID;
+        /* 0x20 */ public NMSString0x20A CustomObjectiveLocID;
         // size: 0x2
         public enum MissionUpdateMessageEnum : uint {
             Start,
             End,
         }
-        /* 0x00 */ public MissionUpdateMessageEnum MissionUpdateMessage;
-        /* 0x08 */ public NMSString0x20A CustomMessageLocID;
-        /* 0x28 */ public NMSString0x20A CustomObjectiveLocID;
-        /* 0x48 */ public bool SetMissionSelected;
-        /* 0x49 */ public bool WaitForMessageOver;
-        /* 0x4A */ public bool ShowChangeMissionNotify;
+        /* 0x40 */ public MissionUpdateMessageEnum MissionUpdateMessage;
         // size: 0x4
         public enum PlayMusicStingEnum : uint {
             None,
@@ -21,7 +18,10 @@ namespace libMBIN.NMS.GameComponents
             End,
             Corrupted,
         }
-        /* 0x4C */ public PlayMusicStingEnum PlayMusicSting;
-        /* 0x50 */ public NMSString0x80 DebugText;
+        /* 0x44 */ public PlayMusicStingEnum PlayMusicSting;
+        /* 0x48 */ public NMSString0x80 DebugText;
+        /* 0xC8 */ public bool SetMissionSelected;
+        /* 0xC9 */ public bool ShowChangeMissionNotify;
+        /* 0xCA */ public bool WaitForMessageOver;
     }
 }

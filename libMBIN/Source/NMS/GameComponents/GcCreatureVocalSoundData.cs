@@ -4,6 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureVocalSoundData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
+        /* 0x10 */ public float MaxCooldown;
+        /* 0x14 */ public float MinCooldown;
+        /* 0x18 */ public float PlayFrequency;
         // size: 0xA
         public enum VocalEmoteEnum : uint {
             EmoteIdle,
@@ -17,10 +20,7 @@ namespace libMBIN.NMS.GameComponents
             EmoteMiniRoarHappy,
             EmoteMiniRoarAngry,
         }
-        /* 0x10 */ public VocalEmoteEnum VocalEmote;
-        /* 0x14 */ public float PlayFrequency;
-        /* 0x18 */ public float MinCooldown;
-        /* 0x1C */ public float MaxCooldown;
+        /* 0x1C */ public VocalEmoteEnum VocalEmote;
         /* 0x20 */ public bool PlayImmediately;
         /* 0x21 */ public bool PlayOnlyOnce;
     }

@@ -6,9 +6,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcEcosystemCreatureData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Creature;
-        /* 0x10 */ public GcTerrainTileType TileType;
+        /* 0x10 */ public float MaxHeight;
         /* 0x14 */ public float MinHeight;
-        /* 0x18 */ public float MaxHeight;
-        /* 0x1C */ public float Rarity;
+        /* 0x18 */ public float Rarity;
+        /* 0x1C */ public GcTerrainTileType TileType;
     }
 }

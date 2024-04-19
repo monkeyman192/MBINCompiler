@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionEventRequiresRGB : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Event;
-        /* 0x20 */ public bool IgnoreIfPlayerHasAccess;
-        /* 0x24 */ public GcGalaxyStarTypes StarType;
+        /* 0x20 */ public GcGalaxyStarTypes StarType;
+        /* 0x24 */ public bool IgnoreIfPlayerHasAccess;
     }
 }

@@ -6,9 +6,9 @@ namespace libMBIN.NMS.Toolkit
     public class TkLanguageFontTableEntry : NMSTemplate
     {
         /* 0x000 */ public TkLanguages Language;
-        /* 0x004 */ public NMSString0x80 GameFont;
-        /* 0x084 */ public NMSString0x80 GameFont2;
-        /* 0x104 */ public NMSString0x80 ConsoleFont;
-        /* 0x184 */ public NMSString0x80 ConsoleFont2;
+        /* 0x004 */ public NMSString0x80 ConsoleFont;
+        /* 0x084 */ public NMSString0x80 ConsoleFont2;
+        /* 0x104 */ public NMSString0x80 GameFont;
+        /* 0x184 */ public NMSString0x80 GameFont2;
     }
 }

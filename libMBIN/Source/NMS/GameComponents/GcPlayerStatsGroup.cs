@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerStatsGroup : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 GroupId;
-        /* 0x10 */ public ulong Address;
-        /* 0x18 */ public List<GcPlayerStat> Stats;
+        /* 0x10 */ public List<GcPlayerStat> Stats;
+        /* 0x20 */ public ulong Address;
     }
 }

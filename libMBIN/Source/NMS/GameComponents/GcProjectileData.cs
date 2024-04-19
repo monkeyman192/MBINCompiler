@@ -7,43 +7,17 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x1EB3B94D8ED480F4, NameHash = 0x98B648B5C054B7F7)]
     public class GcProjectileData : NMSTemplate
     {
-        /* 0x000 */ public NMSString0x10 Id;
-        /* 0x010 */ public GcResourceElement Model;
-        /* 0x2B8 */ public GcAudioWwiseEvents FireAudioEvent;
-        /* 0x2BC */ public GcAudioWwiseEvents ChargedFireAudioEvent;
-        /* 0x2C0 */ public GcAudioWwiseEvents OverheatAudioEvent;
-        /* 0x2C4 */ public float Scale;
-        /* 0x2C8 */ public bool IsAutonomous;
-        /* 0x2C9 */ public bool ApplyCombatLevelMultipliers;
-        /* 0x2CC */ public float Radius;
-        /* 0x2D0 */ public float CapsuleHeight;
-        /* 0x2D4 */ public float DefaultSpeed;
-        /* 0x2D8 */ public float Gravity;
-        /* 0x2DC */ public float Life;
-        /* 0x2E0 */ public float Offset;
-        /* 0x2E4 */ public float RagdollPush;
-        /* 0x2E8 */ public float PhysicsPush;
-        /* 0x2EC */ public float DroneImpulse;
-        /* 0x2F0 */ public int DefaultDamage;
-        /* 0x2F4 */ public float ExtraPlayerDamage;
-        /* 0x2F8 */ public GcDamageType DamageType;
-        /* 0x2FC */ public int DefaultBounces;
-        /* 0x300 */ public float BounceMaxSpeed;
-        /* 0x304 */ public float BounceDamping;
-        /* 0x308 */ public float BounceFinalStopTime;
-        /* 0x30C */ public bool HitOnBounce;
-        /* 0x310 */ public NMSString0x10 PlayerDamage;
-        /* 0x320 */ public float CriticalHitModifier;
-        /* 0x324 */ public float PiercingDamagePercentage;
-        /* 0x328 */ public bool UseCustomBulletData;
-        /* 0x32C */ public GcProjectileLineData CustomBulletData;
-        /* 0x354 */ public bool UseDamageNumberData;
-        /* 0x358 */ public float DamageImpactMergeTime;
-        /* 0x35C */ public float DamageImpactTimeBetweenNumbers;
-        /* 0x360 */ public float DamageImpactMinDistance;
-        /* 0x370 */ public Colour Colour;
-        /* 0x380 */ public bool OverrideLightColour;
-        /* 0x390 */ public Colour LightColour;
+        /* 0x000 */ public Colour Colour;
+        /* 0x010 */ public Vector3f ImpactOffset;
+        /* 0x020 */ public Colour LightColour;
+        /* 0x030 */ public GcResourceElement Model;
+        /* 0x2D8 */ public List<GcImpactCombatEffectData> CombatEffectsOnImpact;
+        /* 0x2E8 */ public NMSString0x10 CriticalImpact;
+        /* 0x2F8 */ public NMSString0x10 DefaultImpact;
+        /* 0x308 */ public NMSString0x10 Id;
+        /* 0x318 */ public List<GcProjectileImpactData> Impacts;
+        /* 0x328 */ public NMSString0x10 PlayerDamage;
+        /* 0x338 */ public GcProjectileLineData CustomBulletData;
         // size: 0x8
         [Flags]
         public enum BehaviourFlagsEnum : uint {
@@ -56,7 +30,12 @@ namespace libMBIN.NMS.GameComponents
             ScareCreatures = 0x20,
             ExplosionForce = 0x40,
         }
-        /* 0x3A0 */ public BehaviourFlagsEnum BehaviourFlags;
+        /* 0x360 */ public BehaviourFlagsEnum BehaviourFlags;
+        /* 0x364 */ public float BounceDamping;
+        /* 0x368 */ public float BounceFinalStopTime;
+        /* 0x36C */ public float BounceMaxSpeed;
+        /* 0x370 */ public float CapsuleHeight;
+        /* 0x374 */ public GcAudioWwiseEvents ChargedFireAudioEvent;
         // size: 0x4
         public enum ClassEnum : uint {
             Player,
@@ -64,11 +43,32 @@ namespace libMBIN.NMS.GameComponents
             Ship,
             Robot,
         }
-        /* 0x3A4 */ public ClassEnum Class;
-        /* 0x3A8 */ public NMSString0x10 DefaultImpact;
-        /* 0x3B8 */ public NMSString0x10 CriticalImpact;
-        /* 0x3C8 */ public List<GcProjectileImpactData> Impacts;
-        /* 0x3E0 */ public Vector3f ImpactOffset;
-        /* 0x3F0 */ public List<GcImpactCombatEffectData> CombatEffectsOnImpact;
+        /* 0x378 */ public ClassEnum Class;
+        /* 0x37C */ public float CriticalHitModifier;
+        /* 0x380 */ public float DamageImpactMergeTime;
+        /* 0x384 */ public float DamageImpactMinDistance;
+        /* 0x388 */ public float DamageImpactTimeBetweenNumbers;
+        /* 0x38C */ public GcDamageType DamageType;
+        /* 0x390 */ public int DefaultBounces;
+        /* 0x394 */ public int DefaultDamage;
+        /* 0x398 */ public float DefaultSpeed;
+        /* 0x39C */ public float DroneImpulse;
+        /* 0x3A0 */ public float ExtraPlayerDamage;
+        /* 0x3A4 */ public GcAudioWwiseEvents FireAudioEvent;
+        /* 0x3A8 */ public float Gravity;
+        /* 0x3AC */ public float Life;
+        /* 0x3B0 */ public float Offset;
+        /* 0x3B4 */ public GcAudioWwiseEvents OverheatAudioEvent;
+        /* 0x3B8 */ public float PhysicsPush;
+        /* 0x3BC */ public float PiercingDamagePercentage;
+        /* 0x3C0 */ public float Radius;
+        /* 0x3C4 */ public float RagdollPush;
+        /* 0x3C8 */ public float Scale;
+        /* 0x3CC */ public bool ApplyCombatLevelMultipliers;
+        /* 0x3CD */ public bool HitOnBounce;
+        /* 0x3CE */ public bool IsAutonomous;
+        /* 0x3CF */ public bool OverrideLightColour;
+        /* 0x3D0 */ public bool UseCustomBulletData;
+        /* 0x3D1 */ public bool UseDamageNumberData;
     }
 }

@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourPlayAnimData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Anim;
-        /* 0x10 */ public float BlendInTime;
-        /* 0x14 */ public float BlendOutAt;
-        /* 0x18 */ public List<GcBehaviourPlayAnimTrigger> Triggers;
+        /* 0x10 */ public List<GcBehaviourPlayAnimTrigger> Triggers;
+        /* 0x20 */ public float BlendInTime;
+        /* 0x24 */ public float BlendOutAt;
     }
 }

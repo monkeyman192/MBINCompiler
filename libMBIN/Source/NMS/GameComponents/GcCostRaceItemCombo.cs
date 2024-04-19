@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostRaceItemCombo : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public int Amount;
-        /* 0x14 */ public GcAlienRace AlienRace;
+        /* 0x10 */ public GcAlienRace AlienRace;
+        /* 0x14 */ public int Amount;
     }
 }

@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemFilterStageDataMatchID : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A DisabledMessage;
-        /* 0x20 */ public GcItemFilterMatchIDType MatchType;
-        /* 0x28 */ public List<NMSString0x10> ValidIds;
+        /* 0x20 */ public List<NMSString0x10> ValidIds;
+        /* 0x30 */ public GcItemFilterMatchIDType MatchType;
     }
 }

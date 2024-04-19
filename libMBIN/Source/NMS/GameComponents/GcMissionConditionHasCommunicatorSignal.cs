@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasCommunicatorSignal : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A SpecificSignalID;
-        /* 0x20 */ public bool SpecificSignalIsCurrentIntervention;
-        /* 0x21 */ public bool CallMustBePending;
+        /* 0x20 */ public bool CallMustBePending;
+        /* 0x21 */ public bool SpecificSignalIsCurrentIntervention;
     }
 }

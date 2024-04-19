@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPassiveFrigateIncome : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 IncomeId;
-        /* 0x10 */ public GcInventoryType IncomeType;
-        /* 0x14 */ public int AmountOfIncomeRewarded;
-        /* 0x18 */ public int ForEveryXAmountOfTheStat;
+        /* 0x10 */ public int AmountOfIncomeRewarded;
+        /* 0x14 */ public int ForEveryXAmountOfTheStat;
+        /* 0x18 */ public GcInventoryType IncomeType;
     }
 }

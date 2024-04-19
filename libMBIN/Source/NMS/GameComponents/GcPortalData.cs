@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPortalData : NMSTemplate
     {
         /* 0x0 */ public float RuneRotateTime;
-        /* 0x4 */ public bool SkipRuneEntry;
-        /* 0x5 */ public bool KnowAllRunes;
+        /* 0x4 */ public bool KnowAllRunes;
+        /* 0x5 */ public bool SkipRuneEntry;
     }
 }

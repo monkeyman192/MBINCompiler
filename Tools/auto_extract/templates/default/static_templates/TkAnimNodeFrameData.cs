@@ -10,9 +10,9 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xC4C8B7669C8C9D44, NameHash = 0x270204EDCEE4DB62)]
     public class TkAnimNodeFrameData : NMSTemplate
     {
-        /* 0x00 */ public List<Quaternion> Rotations;
-        /* 0x10 */ public List<Vector3f> Translations;
-        /* 0x20 */ public List<Vector3f> Scales;
+        /* 0x00 */ public List<ushort> Rotations;
+        /* 0x10 */ public List<Vector3f> Scales;
+        /* 0x20 */ public List<Vector3f> Translations;
 
 
         public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {

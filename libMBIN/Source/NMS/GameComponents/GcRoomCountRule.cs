@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRoomCountRule : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 RoomID;
-        /* 0x10 */ public int Min;
-        /* 0x14 */ public int Max;
+        /* 0x10 */ public int Max;
+        /* 0x14 */ public int Min;
     }
 }

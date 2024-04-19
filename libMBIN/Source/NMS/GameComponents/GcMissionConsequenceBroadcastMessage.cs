@@ -4,10 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConsequenceBroadcastMessage : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 MessageID;
-        /* 0x10 */ public bool Seeded;
-        /* 0x11 */ public bool SendToAllMatchingSeeds;
+        /* 0x10 */ public bool BroadcastToActiveMultiplayerMission;
+        /* 0x11 */ public bool CanSendToInactive;
         /* 0x12 */ public bool Multiplayer;
-        /* 0x13 */ public bool CanSendToInactive;
-        /* 0x14 */ public bool BroadcastToActiveMultiplayerMission;
+        /* 0x13 */ public bool Seeded;
+        /* 0x14 */ public bool SendToAllMatchingSeeds;
     }
 }

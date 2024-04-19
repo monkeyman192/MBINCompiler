@@ -92,6 +92,8 @@ def download_data():
             shutil.rmtree(op.join(DATA_PATH, 'data'))
         with zipfile.ZipFile(data) as data_zip:
             data_zip.extractall(DATA_PATH)
+        with open(op.join(DATA_PATH, "data", ".version"), "r") as f:
+            print(f"Loaded test data version {f.read().strip()}")
 
 
 def fail_comparison(file, loc):

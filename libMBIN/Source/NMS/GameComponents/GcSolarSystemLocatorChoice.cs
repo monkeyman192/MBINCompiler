@@ -12,9 +12,9 @@ namespace libMBIN.NMS.GameComponents
             SpecificIndex,
             InFrontOfPlayer,
         }
-        /* 0x00 */ public ChoiceEnum Choice;
-        /* 0x04 */ public NMSString0x20 Name;
-        /* 0x24 */ public GcSolarSystemLocatorTypes Type;
-        /* 0x28 */ public int Index;
+        /* 0x0 */ public ChoiceEnum Choice;
+        /* 0x4 */ public int Index;
+        /* 0x8 */ public GcSolarSystemLocatorTypes Type;
+        /* 0xC */ public NMSString0x20 Name;
     }
 }

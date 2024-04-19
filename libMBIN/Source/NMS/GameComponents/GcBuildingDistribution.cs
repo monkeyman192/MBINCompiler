@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingDistribution : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-        /* 0x10 */ public int MinDistance;
-        /* 0x14 */ public int MaxDistance;
+        /* 0x10 */ public int MaxDistance;
+        /* 0x14 */ public int MinDistance;
     }
 }

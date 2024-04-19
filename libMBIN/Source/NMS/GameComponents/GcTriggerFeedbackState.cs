@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcTriggerFeedbackState : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public GcInputActions Action;
-        /* 0x14 */ public TkTriggerFeedbackData Data;
+        /* 0x10 */ public TkTriggerFeedbackData Data;
+        /* 0x20 */ public GcInputActions Action;
     }
 }

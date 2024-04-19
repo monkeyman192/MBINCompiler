@@ -7,7 +7,13 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public List<NMSString0x10> Costs;
         /* 0x10 */ public int Amount;
-        /* 0x14 */ public bool AssertIfOutOfBounds;
+        // size: 0x3
+        public enum ItemIndexProviderEnum : uint {
+            None,
+            Biome,
+            SubBiome,
+        }
+        /* 0x14 */ public ItemIndexProviderEnum ItemIndexProvider;
         // size: 0x3
         public enum ItemOutOfBoundsBehaviourEnum : uint {
             NoCost,
@@ -15,12 +21,6 @@ namespace libMBIN.NMS.GameComponents
             UseLast,
         }
         /* 0x18 */ public ItemOutOfBoundsBehaviourEnum ItemOutOfBoundsBehaviour;
-        // size: 0x3
-        public enum ItemIndexProviderEnum : uint {
-            None,
-            Biome,
-            SubBiome,
-        }
-        /* 0x1C */ public ItemIndexProviderEnum ItemIndexProvider;
+        /* 0x1C */ public bool AssertIfOutOfBounds;
     }
 }

@@ -7,12 +7,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureMovementData : NMSTemplate
     {
         /* 0x00 */ public List<GcCreatureMoveAnimData> Anims;
-        /* 0x10 */ public float MoveRange;
-        /* 0x14 */ public float MoveSpeedScale;
-        /* 0x18 */ public float TurnRadiusScale;
-        /* 0x1C */ public float HeightMin;
-        /* 0x20 */ public float HeightMax;
-        /* 0x24 */ public float HeightTime;
+        /* 0x10 */ public float HeightMax;
+        /* 0x14 */ public float HeightMin;
+        /* 0x18 */ public float HeightTime;
+        /* 0x1C */ public float MoveRange;
+        /* 0x20 */ public float MoveSpeedScale;
+        /* 0x24 */ public float TurnRadiusScale;
         /* 0x28 */ public bool Herd;
     }
 }

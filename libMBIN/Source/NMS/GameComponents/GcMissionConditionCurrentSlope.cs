@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCurrentSlope : NMSTemplate
     {
         /* 0x0 */ public float SlopeAngle;
-        /* 0x4 */ public bool Abs;
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x8 */ public bool Abs;
     }
 }

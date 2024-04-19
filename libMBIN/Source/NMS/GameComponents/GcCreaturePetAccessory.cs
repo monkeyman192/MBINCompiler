@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreaturePetAccessory : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A RequiredDescriptor;
-        /* 0x20 */ public List<GcCreaturePetAccessorySlot> Slots;
-        /* 0x30 */ public List<NMSString0x20A> HideParts;
+        /* 0x20 */ public List<NMSString0x20A> HideParts;
+        /* 0x30 */ public List<GcCreaturePetAccessorySlot> Slots;
     }
 }

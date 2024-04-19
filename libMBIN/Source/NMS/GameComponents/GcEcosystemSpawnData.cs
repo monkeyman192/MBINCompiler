@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcEcosystemSpawnData : NMSTemplate
     {
         /* 0x00 */ public List<GcEcosystemCreatureData> Creatures;
-        /* 0x10 */ public float CreatureMinNoise;
-        /* 0x14 */ public float CreatureMaxNoise;
+        /* 0x10 */ public float CreatureMaxNoise;
+        /* 0x14 */ public float CreatureMinNoise;
     }
 }

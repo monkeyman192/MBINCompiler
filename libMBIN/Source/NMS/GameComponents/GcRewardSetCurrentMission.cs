@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetCurrentMission : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Mission;
-        /* 0x10 */ public bool Silent;
-        /* 0x11 */ public bool Seeded;
+        /* 0x10 */ public bool Seeded;
+        /* 0x11 */ public bool Silent;
     }
 }

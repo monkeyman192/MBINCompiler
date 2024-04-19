@@ -4,7 +4,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiActionData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 LayerID;
-        /* 0x10 */ public NMSString0x80 Data;
         // size: 0x4
         public enum ActionEnum : uint {
             Click,
@@ -12,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             ArrowLeft,
             ArrowRight,
         }
-        /* 0x90 */ public ActionEnum Action;
+        /* 0x10 */ public ActionEnum Action;
+        /* 0x14 */ public NMSString0x80 Data;
     }
 }

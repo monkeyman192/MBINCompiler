@@ -5,15 +5,15 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 Id;
         /* 0x10 */ public float Range;
-        /* 0x14 */ public float XFOV;
-        /* 0x18 */ public float YFOV;
         // size: 0x2
         public enum ViewShapeEnum : uint {
             Pyramid,
             Cone,
         }
-        /* 0x1C */ public ViewShapeEnum ViewShape;
-        /* 0x20 */ public bool Raycast;
-        /* 0x21 */ public NMSString0x20 SenseLocator;
+        /* 0x14 */ public ViewShapeEnum ViewShape;
+        /* 0x18 */ public float XFOV;
+        /* 0x1C */ public float YFOV;
+        /* 0x20 */ public NMSString0x20 SenseLocator;
+        /* 0x40 */ public bool Raycast;
     }
 }

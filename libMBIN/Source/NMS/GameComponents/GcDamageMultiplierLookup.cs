@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcDamageMultiplierLookup : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public float Default;
-        /* 0x18 */ public List<GcDamageMultiplier> Multipliers;
+        /* 0x10 */ public List<GcDamageMultiplier> Multipliers;
+        /* 0x20 */ public float Default;
     }
 }

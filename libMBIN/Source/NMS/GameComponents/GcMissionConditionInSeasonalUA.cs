@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionInSeasonalUA : NMSTemplate
     {
         /* 0x0 */ public int SpecificRendevousPlanetIndex;
-        /* 0x4 */ public bool SpecificIndexOnlyNeedsToMatchSystem;
-        /* 0x5 */ public bool TakeIndexFromSeasonData;
+        /* 0x4 */ public bool CompleteIfRendezvousDone;
+        /* 0x5 */ public bool SpecificIndexOnlyNeedsToMatchSystem;
         /* 0x6 */ public bool TakeIndexFromMilestoneStage;
-        /* 0x7 */ public bool CompleteIfRendezvousDone;
+        /* 0x7 */ public bool TakeIndexFromSeasonData;
     }
 }

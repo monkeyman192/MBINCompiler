@@ -6,11 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcPulseEncounterSpawnTrader : NMSTemplate
     {
         /* 0x000 */ public GcResourceElement CustomShipResource;
-        /* 0x2A8 */ public bool UseSystemSeedForResource;
-        /* 0x2A9 */ public bool UseCustomMessage;
-        /* 0x2B0 */ public NMSString0x20A CustomHailOSD;
-        /* 0x2D0 */ public bool WarpOutOnCombatStart;
-        /* 0x2D4 */ public GcRealityCommonFactions ShipTrailFactionOverride;
-        /* 0x2D8 */ public GcPlayerCommunicatorMessage HailingMessage;
+        /* 0x2A8 */ public GcPlayerCommunicatorMessage HailingMessage;
+        /* 0x2F8 */ public NMSString0x20A CustomHailOSD;
+        /* 0x318 */ public GcRealityCommonFactions ShipTrailFactionOverride;
+        /* 0x31C */ public bool UseCustomMessage;
+        /* 0x31D */ public bool UseSystemSeedForResource;
+        /* 0x31E */ public bool WarpOutOnCombatStart;
     }
 }

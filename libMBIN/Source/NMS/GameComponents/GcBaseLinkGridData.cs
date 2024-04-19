@@ -7,15 +7,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseLinkGridData : NMSTemplate
     {
         /* 0x00 */ public GcBaseLinkGridConnectionData Connection;
-        /* 0x38 */ public int Rate;
-        /* 0x3C */ public int Storage;
+        /* 0x38 */ public List<GcBaseLinkGridConnectionDependency> DependentConnections;
         // size: 0x3
         public enum DependsOnEnvironmentEnum : uint {
             None,
             DayNight,
             Storms,
         }
-        /* 0x40 */ public DependsOnEnvironmentEnum DependsOnEnvironment;
+        /* 0x48 */ public DependsOnEnvironmentEnum DependsOnEnvironment;
         // size: 0x4
         public enum DependsOnHotspotsEnum : uint {
             None,
@@ -23,7 +22,8 @@ namespace libMBIN.NMS.GameComponents
             Mineral,
             Gas,
         }
-        /* 0x44 */ public DependsOnHotspotsEnum DependsOnHotspots;
-        /* 0x48 */ public List<GcBaseLinkGridConnectionDependency> DependentConnections;
+        /* 0x4C */ public DependsOnHotspotsEnum DependsOnHotspots;
+        /* 0x50 */ public int Rate;
+        /* 0x54 */ public int Storage;
     }
 }

@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0xED77BBD7595FB24A, NameHash = 0xAEBE0762190D9B2)]
     public class GcBuildingPartSearchType : NMSTemplate
     {
+        /* 0x00 */ public List<GcPersistentBaseTypes> BaseSearchFilters;
         // size: 0x4
         public enum BuildPartSearchTypeEnum : uint {
             Base,
@@ -13,9 +14,8 @@ namespace libMBIN.NMS.GameComponents
             AllPlayerOwned,
             OtherPlayerBase,
         }
-        /* 0x00 */ public BuildPartSearchTypeEnum BuildPartSearchType;
-        /* 0x08 */ public List<GcPersistentBaseTypes> BaseSearchFilters;
-        /* 0x18 */ public bool IncludeOnlyOverlappingBases;
-        /* 0x19 */ public bool IncludeGlobalBaseObjects;
+        /* 0x10 */ public BuildPartSearchTypeEnum BuildPartSearchType;
+        /* 0x14 */ public bool IncludeGlobalBaseObjects;
+        /* 0x15 */ public bool IncludeOnlyOverlappingBases;
     }
 }

@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public NMSString0x10 Mission;
         /* 0x10 */ public NMSString0x10 MissionNoGroundCombat;
         /* 0x20 */ public NMSString0x10 MissionNoSpaceCombat;
-        /* 0x30 */ public bool InheritActiveMultiplayerMissionSeed;
-        /* 0x31 */ public bool SelectMissionAsLocalMissionBoard;
-        /* 0x32 */ public bool ForceUseConversationSeed;
+        /* 0x30 */ public bool ForceUseConversationSeed;
+        /* 0x31 */ public bool InheritActiveMultiplayerMissionSeed;
+        /* 0x32 */ public bool SelectMissionAsLocalMissionBoard;
     }
 }

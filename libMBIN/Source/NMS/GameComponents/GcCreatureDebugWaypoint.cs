@@ -4,14 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureDebugWaypoint : NMSTemplate
     {
         /* 0x00 */ public Vector3f Position;
+        /* 0x10 */ public NMSString0x10 Anim;
+        /* 0x20 */ public float Time;
         // size: 0x3
         public enum WaypointTypeEnum : uint {
             Move,
             MoveAlt,
             Idle,
         }
-        /* 0x10 */ public WaypointTypeEnum WaypointType;
-        /* 0x18 */ public NMSString0x10 Anim;
-        /* 0x28 */ public float Time;
+        /* 0x24 */ public WaypointTypeEnum WaypointType;
     }
 }

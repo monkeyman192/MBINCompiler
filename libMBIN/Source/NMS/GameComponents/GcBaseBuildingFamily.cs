@@ -6,12 +6,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingFamily : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;
+        /* 0x10 */ public List<NMSString0x10> ObjectIDs;
         // size: 0x2
         public enum FamilyTypeEnum : uint {
             Replacements,
             Extras,
         }
-        /* 0x10 */ public FamilyTypeEnum FamilyType;
-        /* 0x18 */ public List<NMSString0x10> ObjectIDs;
+        /* 0x20 */ public FamilyTypeEnum FamilyType;
     }
 }
