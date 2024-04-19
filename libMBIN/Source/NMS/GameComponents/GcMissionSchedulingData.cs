@@ -7,11 +7,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSchedulingData : NMSTemplate
     {
         /* 0x00 */ public NMSTemplate RecurrenceType;
-        /* 0x50 */ public GcDate StartDate;
-        /* 0x64 */ public GcDate EndDate;
-        /* 0x78 */ public bool IndependentStart;
-        /* 0x79 */ public bool HasEndDate;
-        /* 0x80 */ public ulong EarlyEndOffset;
-        /* 0x88 */ public List<NMSString0x10> MissionIDs;
+        /* 0x50 */ public List<NMSString0x10> MissionIDs;
+        /* 0x60 */ public ulong EarlyEndOffset;
+        /* 0x68 */ public GcDate EndDate;
+        /* 0x7C */ public GcDate StartDate;
+        /* 0x90 */ public bool HasEndDate;
+        /* 0x91 */ public bool IndependentStart;
     }
 }

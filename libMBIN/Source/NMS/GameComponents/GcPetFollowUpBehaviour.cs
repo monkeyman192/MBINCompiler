@@ -6,11 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetFollowUpBehaviour : NMSTemplate
     {
         /* 0x00 */ public GcPetBehaviours Behaviour;
-        /* 0x04 */ public bool TraitBased;
-        /* 0x08 */ public GcCreaturePetTraits Trait;
+        /* 0x04 */ public GcCreaturePetTraits Trait;
+        /* 0x08 */ public float TraitMax;
         /* 0x0C */ public float TraitMin;
-        /* 0x10 */ public float TraitMax;
+        /* 0x10 */ public float WeightMax;
         /* 0x14 */ public float WeightMin;
-        /* 0x18 */ public float WeightMax;
+        /* 0x18 */ public bool TraitBased;
     }
 }

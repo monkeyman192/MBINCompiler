@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSettlementCustomJudgement : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 CustomJudgement;
-        /* 0x10 */ public bool Silent;
-        /* 0x11 */ public bool CanOverrideNonCustomJudgement;
+        /* 0x10 */ public bool CanOverrideNonCustomJudgement;
+        /* 0x11 */ public bool Silent;
     }
 }

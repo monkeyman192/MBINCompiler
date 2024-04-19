@@ -6,11 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetMoodStaminaModifier : NMSTemplate
     {
         /* 0x00 */ public GcCreaturePetMood Mood;
-        /* 0x04 */ public float MoodMin;
-        /* 0x08 */ public float MoodMax;
-        /* 0x0C */ public float StaminaDrainModifierMin;
-        /* 0x10 */ public float StaminaDrainModifierMax;
-        /* 0x14 */ public float StaminaRechargeModifierMin;
-        /* 0x18 */ public float StaminaRechargeModifierMax;
+        /* 0x04 */ public float MoodMax;
+        /* 0x08 */ public float MoodMin;
+        /* 0x0C */ public float StaminaDrainModifierMax;
+        /* 0x10 */ public float StaminaDrainModifierMin;
+        /* 0x14 */ public float StaminaRechargeModifierMax;
+        /* 0x18 */ public float StaminaRechargeModifierMin;
     }
 }

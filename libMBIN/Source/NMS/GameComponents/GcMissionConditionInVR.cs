@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionInVR : NMSTemplate
     {
         /* 0x0 */ public bool NeedsHandControllers;
-        /* 0x1 */ public bool NeedsSnapTurnOn;
-        /* 0x2 */ public bool NeedsNoHandControllers;
-        /* 0x3 */ public bool NeedsTeleportOn;
-        /* 0x4 */ public bool NeedsSmoothMoveOn;
+        /* 0x1 */ public bool NeedsNoHandControllers;
+        /* 0x2 */ public bool NeedsSmoothMoveOn;
+        /* 0x3 */ public bool NeedsSnapTurnOn;
+        /* 0x4 */ public bool NeedsTeleportOn;
     }
 }

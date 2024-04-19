@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBaseTemplatesTable : NMSTemplate
     {
         /* 0x00 */ public List<GcGeneratedBaseDecorationTemplate> DecorationTemplates;
-        /* 0x10 */ public List<GcGeneratedBaseRoomTemplate> RoomTemplates;
-        /* 0x20 */ public List<GcGeneratedBaseThemeTemplate> ThemeTemplates;
-        /* 0x30 */ public List<GcGeneratedBasePruningRule> PruningRules;
+        /* 0x10 */ public List<GcGeneratedBasePruningRule> PruningRules;
+        /* 0x20 */ public List<GcGeneratedBaseRoomTemplate> RoomTemplates;
+        /* 0x30 */ public List<GcGeneratedBaseThemeTemplate> ThemeTemplates;
     }
 }

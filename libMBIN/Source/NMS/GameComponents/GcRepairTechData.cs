@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRepairTechData : NMSTemplate
     {
         /* 0x000 */ public GcMaintenanceContainer MaintenanceContainer;
-        /* 0x198 */ public int InventoryType;
-        /* 0x19C */ public int InventorySubIndex;
-        /* 0x1A0 */ public GcInventoryIndex InventoryIndex;
+        /* 0x198 */ public GcInventoryIndex InventoryIndex;
+        /* 0x1A0 */ public int InventorySubIndex;
+        /* 0x1A4 */ public int InventoryType;
     }
 }

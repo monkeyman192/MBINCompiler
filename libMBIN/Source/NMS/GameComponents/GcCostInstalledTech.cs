@@ -4,8 +4,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostInstalledTech : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public float MinChargePercent;
-        /* 0x14 */ public bool BurnCharge;
         // size: 0x6
         public enum InventoryToCheckEnum : uint {
             All,
@@ -15,6 +13,8 @@ namespace libMBIN.NMS.GameComponents
             Freighter,
             Buggy,
         }
-        /* 0x18 */ public InventoryToCheckEnum InventoryToCheck;
+        /* 0x10 */ public InventoryToCheckEnum InventoryToCheck;
+        /* 0x14 */ public float MinChargePercent;
+        /* 0x18 */ public bool BurnCharge;
     }
 }

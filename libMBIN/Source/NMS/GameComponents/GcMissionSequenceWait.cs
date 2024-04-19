@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public float Time;
         /* 0x04 */ public NMSString0x80 DebugText;
-        /* 0x84 */ public bool SuppressMessages;
-        /* 0x85 */ public bool MultiplyTimeBySeasonValue;
+        /* 0x84 */ public bool MultiplyTimeBySeasonValue;
+        /* 0x85 */ public bool SuppressMessages;
     }
 }

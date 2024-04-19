@@ -11,8 +11,8 @@ namespace libMBIN.NMS.Toolkit
             Vibration,
         }
         /* 0x0 */ public FeedbackTypeEnum FeedbackType;
-        /* 0x4 */ public float Strength;
+        /* 0x4 */ public float Frequency;
         /* 0x8 */ public float Position;
-        /* 0xC */ public float Frequency;
+        /* 0xC */ public float Strength;
     }
 }

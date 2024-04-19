@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFrigateFlybyOption : NMSTemplate
     {
         /* 0x0 */ public GcFrigateClass FrigateClass;
-        /* 0x4 */ public int MinCount;
-        /* 0x8 */ public int MaxCount;
+        /* 0x4 */ public int MaxCount;
+        /* 0x8 */ public int MinCount;
         /* 0xC */ public float Weight;
     }
 }

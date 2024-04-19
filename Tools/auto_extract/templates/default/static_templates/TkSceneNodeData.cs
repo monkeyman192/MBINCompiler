@@ -10,12 +10,12 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x1DCCBBEBB4547EB4, NameHash = 0x2C1B6B0E807F7193)]
     public class TkSceneNodeData : NMSTemplate
     {
-        /* 0x00 */ public NMSString0x80 Name;
-        /* 0x80 */ public uint NameHash;
-        /* 0x88 */ public NMSString0x10 Type;
-        /* 0x98 */ public TkTransformData Transform;
-        /* 0xC0 */ public List<TkSceneNodeAttributeData> Attributes;
-        /* 0xD0 */ public List<TkSceneNodeData> Children;
+        /* 0x00 */ public List<TkSceneNodeAttributeData> Attributes;
+        /* 0x10 */ public List<TkSceneNodeData> Children;
+        /* 0x20 */ public NMSString0x10 Type;
+        /* 0x30 */ public TkTransformData Transform;
+        /* 0x54 */ public uint NameHash;
+        /* 0x58 */ public NMSString0x80 Name;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
             var fieldName = fieldInfo.Name;

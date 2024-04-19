@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 Technology;
         /* 0x10 */ public bool AllowPartiallyInstalled;
-        /* 0x11 */ public bool TeachIfNotKnown;
-        /* 0x12 */ public bool TakeTechFromSeasonData;
+        /* 0x11 */ public bool TakeTechFromSeasonData;
+        /* 0x12 */ public bool TeachIfNotKnown;
     }
 }

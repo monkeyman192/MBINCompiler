@@ -7,9 +7,9 @@ namespace libMBIN.NMS.GameComponents
         public enum LookAtTypeEnum : uint {
             Player,
         }
-        /* 0x00 */ public LookAtTypeEnum LookAtType;
-        /* 0x04 */ public NMSString0x20 NodeName;
-        /* 0x24 */ public float RotationRateFactor;
-        /* 0x28 */ public float MinRotationRateDegrees;
+        /* 0x0 */ public LookAtTypeEnum LookAtType;
+        /* 0x4 */ public float MinRotationRateDegrees;
+        /* 0x8 */ public float RotationRateFactor;
+        /* 0xC */ public NMSString0x20 NodeName;
     }
 }

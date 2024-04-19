@@ -7,9 +7,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureRoleDescriptionTable : NMSTemplate
     {
         /* 0x00 */ public List<GcCreatureRoleDescription> RoleDescription;
-        /* 0x10 */ public float MinScaleVariance;
+        /* 0x10 */ public GcPlanetLife LifeLevel;
         /* 0x14 */ public float MaxScaleVariance;
-        /* 0x18 */ public GcTerrainTileType TileType;
-        /* 0x1C */ public GcPlanetLife LifeLevel;
+        /* 0x18 */ public float MinScaleVariance;
+        /* 0x1C */ public GcTerrainTileType TileType;
     }
 }

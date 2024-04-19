@@ -3,6 +3,18 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xCB4322D4B3C4E8AE, NameHash = 0x6A57676B42321253)]
     public class TkPaletteTexture : NMSTemplate
     {
+        // size: 0x8
+        public enum ColourAltEnum : uint {
+            Primary,
+            Alternative1,
+            Alternative2,
+            Alternative3,
+            Alternative4,
+            Unique,
+            MatchGround,
+            None,
+        }
+        /* 0x0 */ public ColourAltEnum ColourAlt;
         // size: 0x3F
         public enum PaletteEnum : uint {
             Grass,
@@ -69,18 +81,6 @@ namespace libMBIN.NMS.Toolkit
             SpaceStationAlt,
             SpaceStationLights,
         }
-        /* 0x0 */ public PaletteEnum Palette;
-        // size: 0x8
-        public enum ColourAltEnum : uint {
-            Primary,
-            Alternative1,
-            Alternative2,
-            Alternative3,
-            Alternative4,
-            Unique,
-            MatchGround,
-            None,
-        }
-        /* 0x4 */ public ColourAltEnum ColourAlt;
+        /* 0x4 */ public PaletteEnum Palette;
     }
 }

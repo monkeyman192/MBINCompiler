@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingProperties : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 DefaultInBaseObject;
-        /* 0x10 */ public NMSString0x10 DefaultOnTerrainObject;
-        /* 0x20 */ public NMSString0x10 DefaultInFreighterObject;
+        /* 0x10 */ public NMSString0x10 DefaultInFreighterObject;
+        /* 0x20 */ public NMSString0x10 DefaultOnTerrainObject;
     }
 }

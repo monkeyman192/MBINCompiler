@@ -13,7 +13,6 @@ namespace libMBIN.NMS.Toolkit
             Enabled,
         }
         /* 0x000 */ public AssertsLevelEnum AssertsLevel;
-        /* 0x004 */ public bool DefaultSelectIgnoreAsserts;
         // size: 0x9
         [Flags]
         public enum EnabledChannelsEnum : uint {
@@ -27,19 +26,7 @@ namespace libMBIN.NMS.Toolkit
             AltWarn = 0x40,
             AltError = 0x80,
         }
-        /* 0x008 */ public EnabledChannelsEnum EnabledChannels;
-        /* 0x00C */ public NMSString0x100 IncludeLogFilter;
-        /* 0x10C */ public NMSString0x100 ExcludeLogFilter;
-        /* 0x20C */ public int LoadBalanceTimeoutMS;
-        /* 0x210 */ public int VRLoadBalanceTimeoutMS;
-        /* 0x214 */ public int PSVR2LoadBalanceTimeoutMS;
-        /* 0x218 */ public bool LogInputSetup;
-        /* 0x219 */ public bool LogInputChanges;
-        /* 0x21A */ public bool DisableResScaling;
-        /* 0x21C */ public int LODOverride;
-        /* 0x220 */ public bool ColourLODs;
-        /* 0x221 */ public bool MinGPUMode;
-        /* 0x222 */ public bool ForceGPUPreset;
+        /* 0x004 */ public EnabledChannelsEnum EnabledChannels;
         // size: 0xD
         public enum ForceGPUPresetToEnum : uint {
             PC_Low,
@@ -56,55 +43,68 @@ namespace libMBIN.NMS.Toolkit
             MacOS,
             iOS,
         }
-        /* 0x224 */ public ForceGPUPresetToEnum ForceGPUPresetTo;
-        /* 0x228 */ public float WwiseVibrationMultiplierPrimary;
-        /* 0x22C */ public float WwiseVibrationMultiplierSecondary;
-        /* 0x230 */ public bool UseHeavyAir;
-        /* 0x231 */ public bool SimulateDisabledParticleRefractions;
-        /* 0x232 */ public bool DisableMultiplayer;
-        /* 0x233 */ public bool SmokeTestSmokeBotAutoStart;
-        /* 0x234 */ public bool UseDebugScreenSettings;
-        /* 0x238 */ public int ScreenWidth;
-        /* 0x23C */ public int ScreenHeight;
-        /* 0x240 */ public bool DisableVSync;
+        /* 0x008 */ public ForceGPUPresetToEnum ForceGPUPresetTo;
+        /* 0x00C */ public int FrameFlipRateDefault;
+        /* 0x010 */ public int FrameFlipRateGame;
+        /* 0x014 */ public int FrameFlipRateLoad;
         // size: 0x3
         public enum GameWindowModeEnum : uint {
             Bordered,
             Borderless,
             Fullscreen,
         }
-        /* 0x244 */ public GameWindowModeEnum GameWindowMode;
-        /* 0x248 */ public int Monitor;
-        /* 0x24C */ public int TiledWindowsSplitCount;
-        /* 0x250 */ public int TiledWindowsIndex;
-        /* 0x254 */ public bool SampleCollisionWithCamera;
-        /* 0x255 */ public bool ShowPlayerCollisions;
-        /* 0x258 */ public float UpdatePeriod;
-        /* 0x25C */ public float UpdatePeriodSteam;
-        /* 0x260 */ public float VoiceUpdatePeriod;
-        /* 0x264 */ public float VoiceUpdatePeriodSteam;
+        /* 0x018 */ public GameWindowModeEnum GameWindowMode;
+        /* 0x01C */ public int HmdEyeBufferHeight;
+        /* 0x020 */ public int HmdEyeBufferWidth;
+        /* 0x024 */ public float HmdEyeScalePos;
+        /* 0x028 */ public float HmdHeadScalePos;
+        /* 0x02C */ public float HmdImmersionFactor;
+        /* 0x030 */ public int HmdMonitor;
+        /* 0x034 */ public int HmdPreviewScale;
+        /* 0x038 */ public int LoadBalanceTimeoutMS;
+        /* 0x03C */ public int LODOverride;
+        /* 0x040 */ public float MaxFrameRate;
+        /* 0x044 */ public int Monitor;
+        /* 0x048 */ public int PSVR2LoadBalanceTimeoutMS;
+        /* 0x04C */ public int ScreenHeight;
+        /* 0x050 */ public int ScreenWidth;
+        /* 0x054 */ public int TiledWindowsIndex;
+        /* 0x058 */ public int TiledWindowsSplitCount;
         // size: 0x3
         public enum TrialStatusEnum : uint {
             SystemDefault,
             ForceTrial,
             ForceFullGame,
         }
-        /* 0x268 */ public TrialStatusEnum TrialStatus;
-        /* 0x26C */ public bool HmdEnable;
-        /* 0x26D */ public bool HmdFoveated;
-        /* 0x270 */ public int HmdPreviewScale;
-        /* 0x274 */ public bool HmdTracking;
-        /* 0x275 */ public bool HmdStereoRender;
-        /* 0x276 */ public bool HmdDistortionPassthru;
-        /* 0x278 */ public int HmdMonitor;
-        /* 0x27C */ public int HmdEyeBufferWidth;
-        /* 0x280 */ public int HmdEyeBufferHeight;
-        /* 0x284 */ public float HmdEyeScalePos;
-        /* 0x288 */ public float HmdHeadScalePos;
-        /* 0x28C */ public float HmdImmersionFactor;
-        /* 0x290 */ public int FrameFlipRateDefault;
-        /* 0x294 */ public int FrameFlipRateLoad;
-        /* 0x298 */ public int FrameFlipRateGame;
-        /* 0x29C */ public float MaxFrameRate;
+        /* 0x05C */ public TrialStatusEnum TrialStatus;
+        /* 0x060 */ public float UpdatePeriod;
+        /* 0x064 */ public float UpdatePeriodSteam;
+        /* 0x068 */ public float VoiceUpdatePeriod;
+        /* 0x06C */ public float VoiceUpdatePeriodSteam;
+        /* 0x070 */ public int VRLoadBalanceTimeoutMS;
+        /* 0x074 */ public float WwiseVibrationMultiplierPrimary;
+        /* 0x078 */ public float WwiseVibrationMultiplierSecondary;
+        /* 0x07C */ public NMSString0x100 ExcludeLogFilter;
+        /* 0x17C */ public NMSString0x100 IncludeLogFilter;
+        /* 0x27C */ public bool ColourLODs;
+        /* 0x27D */ public bool DefaultSelectIgnoreAsserts;
+        /* 0x27E */ public bool DisableMultiplayer;
+        /* 0x27F */ public bool DisableResScaling;
+        /* 0x280 */ public bool DisableVSync;
+        /* 0x281 */ public bool ForceGPUPreset;
+        /* 0x282 */ public bool HmdDistortionPassthru;
+        /* 0x283 */ public bool HmdEnable;
+        /* 0x284 */ public bool HmdFoveated;
+        /* 0x285 */ public bool HmdStereoRender;
+        /* 0x286 */ public bool HmdTracking;
+        /* 0x287 */ public bool LogInputChanges;
+        /* 0x288 */ public bool LogInputSetup;
+        /* 0x289 */ public bool MinGPUMode;
+        /* 0x28A */ public bool SampleCollisionWithCamera;
+        /* 0x28B */ public bool ShowPlayerCollisions;
+        /* 0x28C */ public bool SimulateDisabledParticleRefractions;
+        /* 0x28D */ public bool SmokeTestSmokeBotAutoStart;
+        /* 0x28E */ public bool UseDebugScreenSettings;
+        /* 0x28F */ public bool UseHeavyAir;
     }
 }

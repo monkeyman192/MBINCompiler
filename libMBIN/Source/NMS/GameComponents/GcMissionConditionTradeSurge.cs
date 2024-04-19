@@ -4,13 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionTradeSurge : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A ControllingScanEvent;
-        /* 0x20 */ public int TimeToCompleteInMinutes;
         // size: 0x3
         public enum SurgeTestTypeEnum : uint {
             Timer,
             Collection,
             Delivery,
         }
-        /* 0x24 */ public SurgeTestTypeEnum SurgeTestType;
+        /* 0x20 */ public SurgeTestTypeEnum SurgeTestType;
+        /* 0x24 */ public int TimeToCompleteInMinutes;
     }
 }

@@ -5,11 +5,11 @@ namespace libMBIN.NMS.Toolkit
     {
         [NMS(Size = 0x10)]
         /* 0x00 */ public float[] InvBindMatrix;
-        [NMS(Size = 0x3)]
-        /* 0x40 */ public float[] BindTranslate;
         [NMS(Size = 0x4)]
-        /* 0x4C */ public float[] BindRotate;
+        /* 0x40 */ public float[] BindRotate;
         [NMS(Size = 0x3)]
-        /* 0x5C */ public float[] BindScale;
+        /* 0x50 */ public float[] BindScale;
+        [NMS(Size = 0x3)]
+        /* 0x5C */ public float[] BindTranslate;
     }
 }

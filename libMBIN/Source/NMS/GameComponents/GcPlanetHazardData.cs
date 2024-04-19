@@ -6,12 +6,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetHazardData : NMSTemplate
     {
         [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x00 */ public float[] Temperature;
+        /* 0x00 */ public float[] LifeSupportDrain;
         [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x14 */ public float[] Toxicity;
+        /* 0x14 */ public float[] Radiation;
         [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x28 */ public float[] Radiation;
+        /* 0x28 */ public float[] Temperature;
         [NMS(Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]
-        /* 0x3C */ public float[] LifeSupportDrain;
+        /* 0x3C */ public float[] Toxicity;
     }
 }

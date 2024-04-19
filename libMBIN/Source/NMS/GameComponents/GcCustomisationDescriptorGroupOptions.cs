@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorGroupOptions : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A GroupTitle;
-        /* 0x20 */ public bool FirstOptionIsEmpty;
-        /* 0x28 */ public List<GcCustomisationDescriptorGroupOption> DescriptorGroupOptions;
-        /* 0x38 */ public List<NMSString0x10> PrerequisiteGroup;
+        /* 0x20 */ public List<GcCustomisationDescriptorGroupOption> DescriptorGroupOptions;
+        /* 0x30 */ public List<NMSString0x10> PrerequisiteGroup;
+        /* 0x40 */ public bool FirstOptionIsEmpty;
     }
 }

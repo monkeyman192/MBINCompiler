@@ -6,6 +6,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerCommunicatorMessageWeighted : NMSTemplate
     {
         /* 0x00 */ public GcPlayerCommunicatorMessage Message;
-        /* 0x58 */ public int Weight;
+        /* 0x50 */ public int Weight;
     }
 }

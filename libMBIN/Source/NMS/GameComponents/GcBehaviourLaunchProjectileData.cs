@@ -6,9 +6,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourLaunchProjectileData : NMSTemplate
     {
         /* 0x00 */ public TkBlackboardDefaultValueId Projectile;
-        /* 0x28 */ public NMSString0x40 LaunchJoint;
-        /* 0x68 */ public int Amount;
-        /* 0x6C */ public float HorizontalDispersion;
-        /* 0x70 */ public float VerticalDispersion;
+        /* 0x28 */ public int Amount;
+        /* 0x2C */ public float HorizontalDispersion;
+        /* 0x30 */ public float VerticalDispersion;
+        /* 0x34 */ public NMSString0x40 LaunchJoint;
     }
 }

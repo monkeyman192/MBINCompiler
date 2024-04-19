@@ -10,7 +10,7 @@ namespace libMBIN.NMS.GameComponents
             ExternalBase,
         }
         /* 0x20 */ public CameraOriginEnum CameraOrigin;
-        /* 0x24 */ public bool UseLookAt;
-        /* 0x25 */ public bool AvoidTerrain;
+        /* 0x24 */ public bool AvoidTerrain;
+        /* 0x25 */ public bool UseLookAt;
     }
 }

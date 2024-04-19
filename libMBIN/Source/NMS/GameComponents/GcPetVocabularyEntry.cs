@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetVocabularyEntry : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A GenericFallback;
-        /* 0x20 */ public float OddsOfProcReplacement;
-        /* 0x28 */ public List<GcPetVocabularyTraitEntry> Vocabulary;
+        /* 0x20 */ public List<GcPetVocabularyTraitEntry> Vocabulary;
+        /* 0x30 */ public float OddsOfProcReplacement;
     }
 }

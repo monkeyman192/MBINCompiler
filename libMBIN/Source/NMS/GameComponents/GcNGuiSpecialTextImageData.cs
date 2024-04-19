@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiSpecialTextImageData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-        /* 0x10 */ public bool ScaleToFitFont;
-        /* 0x14 */ public Vector2f Size;
-        /* 0x1C */ public NMSString0x80 Path;
+        /* 0x10 */ public Vector2f Size;
+        /* 0x18 */ public NMSString0x80 Path;
+        /* 0x98 */ public bool ScaleToFitFont;
     }
 }

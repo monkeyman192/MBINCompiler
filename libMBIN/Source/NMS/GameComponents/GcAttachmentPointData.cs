@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAttachmentPointData : NMSTemplate
     {
         /* 0x00 */ public Vector3f Position;
-        /* 0x10 */ public int SimP;
+        /* 0x10 */ public float AttractionStartDistance;
         /* 0x14 */ public float AttractionStrength;
-        /* 0x18 */ public float AttractionStartDistance;
+        /* 0x18 */ public int SimP;
     }
 }

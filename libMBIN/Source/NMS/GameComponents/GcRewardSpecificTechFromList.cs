@@ -6,13 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSpecificTechFromList : NMSTemplate
     {
         /* 0x00 */ public List<NMSString0x10> TechList;
-        /* 0x10 */ public bool FailIfAllKnown;
         // size: 0x3
         public enum TechListRewardOrderEnum : uint {
             OneRandom,
             InOrder,
             TryAllRandom,
         }
-        /* 0x14 */ public TechListRewardOrderEnum TechListRewardOrder;
+        /* 0x10 */ public TechListRewardOrderEnum TechListRewardOrder;
+        /* 0x14 */ public bool FailIfAllKnown;
     }
 }

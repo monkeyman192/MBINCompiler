@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFreighterCargoOption : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;
-        /* 0x10 */ public int MinAmount;
-        /* 0x14 */ public int MaxAmount;
+        /* 0x10 */ public int MaxAmount;
+        /* 0x14 */ public int MinAmount;
         /* 0x18 */ public int PercentChance;
     }
 }

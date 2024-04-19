@@ -5,14 +5,14 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x401F7F6C34A94AA4, NameHash = 0xE8F15AD4B3CB30AC)]
     public class TkImGuiData : NMSTemplate
     {
-        /* 0x0000 */ public TkImGuiWindowData MainWindow;
-        /* 0x00A8 */ public bool Maximised;
-        /* 0x00AC */ public int DimensionX;
-        /* 0x00B0 */ public int DimensionY;
-        [NMS(Size = 0xA)]
-        /* 0x00B4 */ public NMSString0x80[] RecentToolbox;
         [NMS(Size = 0x80)]
-        /* 0x05B4 */ public TkImGuiWindowData[] WindowTable;
-        /* 0x59B4 */ public int WindowCount;
+        /* 0x0000 */ public TkImGuiWindowData[] WindowTable;
+        /* 0x5200 */ public TkImGuiWindowData MainWindow;
+        /* 0x52A4 */ public int DimensionX;
+        /* 0x52A8 */ public int DimensionY;
+        /* 0x52AC */ public int WindowCount;
+        [NMS(Size = 0xA)]
+        /* 0x52B0 */ public NMSString0x80[] RecentToolbox;
+        /* 0x57B0 */ public bool Maximised;
     }
 }

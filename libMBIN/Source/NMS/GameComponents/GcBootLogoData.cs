@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBootLogoData : NMSTemplate
     {
         [NMS(Size = 0x4)]
-        /* 0x000 */ public NMSString0x100[] Textures;
+        /* 0x00 */ public float[] DisplayTime;
         [NMS(Size = 0x4)]
-        /* 0x400 */ public float[] DisplayTime;
+        /* 0x10 */ public NMSString0x100[] Textures;
     }
 }

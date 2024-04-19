@@ -14,13 +14,13 @@ namespace libMBIN.NMS.GameComponents
             Weapon,
         }
         /* 0x00 */ public InventoryTestEnum InventoryTest;
+        /* 0x04 */ public int SlotsFree;
         // size: 0x2
         public enum SlotTypeEnum : uint {
             FreeSlot,
             BrokenSlot,
         }
-        /* 0x04 */ public SlotTypeEnum SlotType;
-        /* 0x08 */ public int SlotsFree;
+        /* 0x08 */ public SlotTypeEnum SlotType;
         /* 0x0C */ public TkEqualityEnum Test;
         /* 0x10 */ public bool TestAllSlotsUnlocked;
         /* 0x11 */ public bool TestOnlyMainInventory;

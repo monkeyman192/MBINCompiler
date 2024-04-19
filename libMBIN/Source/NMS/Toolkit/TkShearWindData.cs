@@ -6,17 +6,17 @@ namespace libMBIN.NMS.Toolkit
     public class TkShearWindData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-        /* 0x10 */ public float OverallWindStrength;
-        /* 0x14 */ public float LdsWindStrength;
-        /* 0x18 */ public float LdsWindSpeed;
-        /* 0x1C */ public float ShearWindSpeed;
-        /* 0x20 */ public float WindShearVertpushStrength;
-        /* 0x24 */ public float WindShearGradientStrength;
-        /* 0x28 */ public float WindShearToDotLdsFactor;
-        /* 0x2C */ public float WindStrengthToVertpush;
-        /* 0x30 */ public TkShearWindOctaveData Octave0;
-        /* 0x44 */ public TkShearWindOctaveData Octave1;
-        /* 0x58 */ public TkShearWindOctaveData Octave2;
-        /* 0x6C */ public TkShearWindOctaveData Octave3;
+        /* 0x10 */ public TkShearWindOctaveData Octave0;
+        /* 0x24 */ public TkShearWindOctaveData Octave1;
+        /* 0x38 */ public TkShearWindOctaveData Octave2;
+        /* 0x4C */ public TkShearWindOctaveData Octave3;
+        /* 0x60 */ public float LdsWindSpeed;
+        /* 0x64 */ public float LdsWindStrength;
+        /* 0x68 */ public float OverallWindStrength;
+        /* 0x6C */ public float ShearWindSpeed;
+        /* 0x70 */ public float WindShearGradientStrength;
+        /* 0x74 */ public float WindShearToDotLdsFactor;
+        /* 0x78 */ public float WindShearVertpushStrength;
+        /* 0x7C */ public float WindStrengthToVertpush;
     }
 }

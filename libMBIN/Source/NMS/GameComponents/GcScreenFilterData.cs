@@ -4,9 +4,9 @@ namespace libMBIN.NMS.GameComponents
     public class GcScreenFilterData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A LocText;
-        /* 0x20 */ public NMSString0x80 Filename;
-        /* 0xA0 */ public float FadeDistance;
-        /* 0xA4 */ public bool SelectableInPhotoMode;
-        /* 0xA8 */ public float HdrAreaAdjust;
+        /* 0x20 */ public float FadeDistance;
+        /* 0x24 */ public float HdrAreaAdjust;
+        /* 0x28 */ public NMSString0x80 Filename;
+        /* 0xA8 */ public bool SelectableInPhotoMode;
     }
 }

@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetaryMappingValues : NMSTemplate
     {
         /* 0x0 */ public GcPlanetSize PlanetSize;
-        /* 0x4 */ public ushort SectionPerSide;
-        /* 0x6 */ public ushort PolesPerSection;
+        /* 0x4 */ public ushort PolesPerSection;
+        /* 0x6 */ public ushort SectionPerSide;
     }
 }

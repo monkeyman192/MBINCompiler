@@ -258,7 +258,7 @@ class Field(ABC):
         self._field_name_is_duplicate = False
         self.field_size = struct.unpack_from('<I', data, offset=0x24)[0]
         self._array_size = struct.unpack_from('<I', data, offset=0x28)[0]
-        self._field_offset = struct.unpack_from('<I', data, offset=0x2C)[0]
+        self._field_offset = int(struct.unpack_from('<I', data, offset=0x2C)[0])
 
         # Sort out the requirements for this field.
         self.required_using: set = set()
@@ -533,6 +533,7 @@ class NMSClass():
         # This is a little hacky and could be done a bit better but this does
         # work...
         self.fields = fields
+        self.fields.sort(key=lambda x: x._field_offset)
         max_offset_width = 1
         # For each field find if it requires something and add it to the
         # required usings.

@@ -8,7 +8,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public List<GcCreatureRoleData> AvailableRoles;
         /* 0x10 */ public float MaxProportionFlying;
-        /* 0x14 */ public bool HasSandWorms;
-        /* 0x18 */ public float SandWormFrequency;
+        /* 0x14 */ public float SandWormFrequency;
+        /* 0x18 */ public bool HasSandWorms;
     }
 }

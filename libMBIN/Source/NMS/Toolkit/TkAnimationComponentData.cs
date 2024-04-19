@@ -8,8 +8,8 @@ namespace libMBIN.NMS.Toolkit
     {
         /* 0x000 */ public TkAnimationData Idle;
         /* 0x130 */ public List<TkAnimationData> Anims;
-        /* 0x140 */ public List<TkAnimBlendTree> Trees;
-        /* 0x150 */ public bool NetSyncAnimations;
-        /* 0x158 */ public List<TkAnimJointLODData> JointLODOverrides;
+        /* 0x140 */ public List<TkAnimJointLODData> JointLODOverrides;
+        /* 0x150 */ public List<TkAnimBlendTree> Trees;
+        /* 0x160 */ public bool NetSyncAnimations;
     }
 }

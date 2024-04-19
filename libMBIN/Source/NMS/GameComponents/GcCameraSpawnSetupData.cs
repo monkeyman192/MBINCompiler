@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraSpawnSetupData : NMSTemplate
     {
         /* 0x0 */ public float Distance;
-        /* 0x4 */ public bool InFrontOfShip;
+        /* 0x4 */ public float HorizontalProportion;
         /* 0x8 */ public float YawProportion;
-        /* 0xC */ public float HorizontalProportion;
+        /* 0xC */ public bool InFrontOfShip;
     }
 }

@@ -4,16 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcObjectSpawnDataVariant : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ID;
-        /* 0x10 */ public float Coverage;
-        /* 0x14 */ public float FlatDensity;
-        /* 0x18 */ public float SlopeDensity;
-        /* 0x1C */ public float SlopeMultiplier;
-        /* 0x20 */ public int MaxRegionRadius;
-        /* 0x24 */ public int MaxImposterRadius;
-        /* 0x28 */ public float FadeOutStartDistance;
-        /* 0x2C */ public float FadeOutEndDistance;
-        /* 0x30 */ public float FadeOutOffsetDistance;
         [NMS(Size = 0x5)]
-        /* 0x34 */ public float[] LodDistances;
+        /* 0x10 */ public float[] LodDistances;
+        /* 0x24 */ public float Coverage;
+        /* 0x28 */ public float FadeOutEndDistance;
+        /* 0x2C */ public float FadeOutOffsetDistance;
+        /* 0x30 */ public float FadeOutStartDistance;
+        /* 0x34 */ public float FlatDensity;
+        /* 0x38 */ public int MaxImposterRadius;
+        /* 0x3C */ public int MaxRegionRadius;
+        /* 0x40 */ public float SlopeDensity;
+        /* 0x44 */ public float SlopeMultiplier;
     }
 }

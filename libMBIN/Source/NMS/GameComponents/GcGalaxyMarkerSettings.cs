@@ -4,21 +4,21 @@ namespace libMBIN.NMS.GameComponents
     public class GcGalaxyMarkerSettings : NMSTemplate
     {
         [NMS(Size = 0x3)]
-        /* 0x000 */ public Colour[] Colours;
-        /* 0x030 */ public Colour OutlineColour;
-        /* 0x040 */ public float OutlineWidth;
-        /* 0x044 */ public int EdgeCount;
-        /* 0x048 */ public float RotationBase;
-        /* 0x04C */ public float LineWidth;
-        /* 0x050 */ public float LineWidthFade;
-        /* 0x054 */ public float SizeScale;
-        /* 0x058 */ public float RadiusFixed;
-        /* 0x05C */ public float RadiusMinimum;
-        /* 0x060 */ public float RadiusBaseOffset;
-        /* 0x064 */ public float RadiusEdge;
-        /* 0x068 */ public NMSString0x80 Icon;
-        /* 0x0E8 */ public Vector2f IconSize;
-        /* 0x0F0 */ public NMSString0x20 MarkerLabel;
-        /* 0x110 */ public Vector2f TimeScaleRange;
+        /* 0x00 */ public Colour[] Colours;
+        /* 0x30 */ public Colour OutlineColour;
+        /* 0x40 */ public Vector2f IconSize;
+        /* 0x48 */ public Vector2f TimeScaleRange;
+        /* 0x50 */ public int EdgeCount;
+        /* 0x54 */ public float LineWidth;
+        /* 0x58 */ public float LineWidthFade;
+        /* 0x5C */ public float OutlineWidth;
+        /* 0x60 */ public float RadiusBaseOffset;
+        /* 0x64 */ public float RadiusEdge;
+        /* 0x68 */ public float RadiusFixed;
+        /* 0x6C */ public float RadiusMinimum;
+        /* 0x70 */ public float RotationBase;
+        /* 0x74 */ public float SizeScale;
+        /* 0x78 */ public NMSString0x80 Icon;
+        /* 0xF8 */ public NMSString0x20 MarkerLabel;
     }
 }

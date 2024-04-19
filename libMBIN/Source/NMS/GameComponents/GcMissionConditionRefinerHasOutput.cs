@@ -5,7 +5,7 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public NMSString0x10 OutputProduct;
         /* 0x10 */ public int OutputAmount;
-        /* 0x14 */ public bool UseDefaultAmount;
-        /* 0x15 */ public bool MustBeCooker;
+        /* 0x14 */ public bool MustBeCooker;
+        /* 0x15 */ public bool UseDefaultAmount;
     }
 }

@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraShakeComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ShakeID;
-        /* 0x10 */ public float FalloffDistanceMin;
-        /* 0x14 */ public float FalloffDistanceMax;
+        /* 0x10 */ public float FalloffDistanceMax;
+        /* 0x14 */ public float FalloffDistanceMin;
     }
 }

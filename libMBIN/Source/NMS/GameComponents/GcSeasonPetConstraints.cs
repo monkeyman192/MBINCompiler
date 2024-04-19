@@ -6,12 +6,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonPetConstraints : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 CreatureId;
-        /* 0x10 */ public float MinRelativeScale;
-        /* 0x14 */ public float MaxRelativeScale;
-        /* 0x18 */ public bool SpecificBiome;
-        /* 0x1C */ public GcBiomeType Biome;
-        /* 0x20 */ public float StartingTrust;
-        /* 0x28 */ public ulong TimeSinceLastEgg;
-        /* 0x30 */ public ulong TimeSinceBirth;
+        /* 0x10 */ public ulong TimeSinceBirth;
+        /* 0x18 */ public ulong TimeSinceLastEgg;
+        /* 0x20 */ public GcBiomeType Biome;
+        /* 0x24 */ public float MaxRelativeScale;
+        /* 0x28 */ public float MinRelativeScale;
+        /* 0x2C */ public float StartingTrust;
+        /* 0x30 */ public bool SpecificBiome;
     }
 }

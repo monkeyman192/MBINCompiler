@@ -4,15 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpawnDensity : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Name;
-        /* 0x10 */ public bool Active;
         // size: 0x3
         public enum CoverageTypeEnum : uint {
             Total,
             SmoothPatch,
             GridPatch,
         }
-        /* 0x14 */ public CoverageTypeEnum CoverageType;
-        /* 0x18 */ public float PatchSize;
-        /* 0x1C */ public float RegionScale;
+        /* 0x10 */ public CoverageTypeEnum CoverageType;
+        /* 0x14 */ public float PatchSize;
+        /* 0x18 */ public float RegionScale;
+        /* 0x1C */ public bool Active;
     }
 }

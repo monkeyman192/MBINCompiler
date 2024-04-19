@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcHazardAction : NMSTemplate
     {
         /* 0x0 */ public GcPlayerHazardType Hazard;
-        /* 0x4 */ public float Strength;
-        /* 0x8 */ public float Radius;
+        /* 0x4 */ public float Radius;
+        /* 0x8 */ public float Strength;
         /* 0xC */ public bool RadiusBasedStrength;
     }
 }

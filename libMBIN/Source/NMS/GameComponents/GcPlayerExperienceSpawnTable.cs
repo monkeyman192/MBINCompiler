@@ -7,15 +7,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerExperienceSpawnTable : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Event;
+        /* 0x10 */ public List<GcPlayerExperienceSpawnData> Spawns;
         // size: 0x2
         public enum ExperienceSpawnTypeEnum : uint {
             Freighter,
             Mission,
         }
-        /* 0x10 */ public ExperienceSpawnTypeEnum ExperienceSpawnType;
-        /* 0x14 */ public float ResponseRate;
-        /* 0x18 */ public float PerSpawnDelay;
-        /* 0x1C */ public bool Destroy;
-        /* 0x20 */ public List<GcPlayerExperienceSpawnData> Spawns;
+        /* 0x20 */ public ExperienceSpawnTypeEnum ExperienceSpawnType;
+        /* 0x24 */ public float PerSpawnDelay;
+        /* 0x28 */ public float ResponseRate;
+        /* 0x2C */ public bool Destroy;
     }
 }

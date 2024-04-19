@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardDummyLocID : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A LocID;
-        /* 0x20 */ public int AmountMin;
-        /* 0x24 */ public int AmountMax;
+        /* 0x20 */ public int AmountMax;
+        /* 0x24 */ public int AmountMin;
     }
 }

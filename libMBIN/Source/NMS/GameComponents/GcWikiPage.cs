@@ -6,11 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcWikiPage : NMSTemplate
     {
         /* 0x000 */ public NMSString0x20A PageID;
-        /* 0x020 */ public TkTextureResource Icon;
-        /* 0x0A4 */ public NMSString0x40 Content;
-        /* 0x0E4 */ public NMSString0x40 VRContent;
-        /* 0x124 */ public NMSString0x40 VRAnyHandControlContent;
-        /* 0x164 */ public NMSString0x40 VRMoveControllerContent;
-        /* 0x1A4 */ public TkTextureResource ContentImage;
+        /* 0x020 */ public TkTextureResource ContentImage;
+        /* 0x0A4 */ public TkTextureResource Icon;
+        /* 0x128 */ public NMSString0x40 Content;
+        /* 0x168 */ public NMSString0x40 VRAnyHandControlContent;
+        /* 0x1A8 */ public NMSString0x40 VRContent;
+        /* 0x1E8 */ public NMSString0x40 VRMoveControllerContent;
     }
 }

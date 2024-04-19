@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpaceshipShieldComponentData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 ShieldID;
-        /* 0x10 */ public bool RotateOnHit;
-        /* 0x11 */ public bool IgnoreHitsWhenPlayerAimingElsewhere;
+        /* 0x10 */ public bool IgnoreHitsWhenPlayerAimingElsewhere;
+        /* 0x11 */ public bool RotateOnHit;
     }
 }

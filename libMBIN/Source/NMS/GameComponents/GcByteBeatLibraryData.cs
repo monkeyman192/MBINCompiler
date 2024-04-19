@@ -9,9 +9,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0000 */ public GcByteBeatSong[] MySongs;
         [NMS(Size = 0x10)]
         /* 0x1900 */ public NMSString0x10[] Playlist;
-        /* 0x1A00 */ public bool Shuffle;
-        /* 0x1A01 */ public bool AutoplayOnFoot;
-        /* 0x1A02 */ public bool AutoplayInShip;
-        /* 0x1A03 */ public bool AutoplayInVehicle;
+        /* 0x1A00 */ public bool AutoplayInShip;
+        /* 0x1A01 */ public bool AutoplayInVehicle;
+        /* 0x1A02 */ public bool AutoplayOnFoot;
+        /* 0x1A03 */ public bool Shuffle;
     }
 }

@@ -5,9 +5,9 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x000 */ public NMSString0x10 Id;
         /* 0x010 */ public NMSString0x800 Path;
-        /* 0x810 */ public NMSString0x80 NameField;
-        /* 0x890 */ public NMSString0x80 SubTitleField;
-        /* 0x910 */ public NMSString0x80 DescriptionField;
-        /* 0x990 */ public NMSString0x80 ImageField;
+        /* 0x810 */ public NMSString0x80 DescriptionField;
+        /* 0x890 */ public NMSString0x80 ImageField;
+        /* 0x910 */ public NMSString0x80 NameField;
+        /* 0x990 */ public NMSString0x80 SubTitleField;
     }
 }

@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRefinerUnitComponentData : NMSTemplate
     {
         /* 0x000 */ public GcMaintenanceComponentData MaintenanceData;
-        /* 0x420 */ public int NumInputs;
-        /* 0x424 */ public bool IsCooker;
+        /* 0x3E0 */ public int NumInputs;
+        /* 0x3E4 */ public bool IsCooker;
     }
 }

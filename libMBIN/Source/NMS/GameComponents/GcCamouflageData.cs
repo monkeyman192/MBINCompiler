@@ -8,9 +8,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public TkMaterialResource CamouflageMaterial;
         /* 0x84 */ public float DissolveTime;
         /* 0x88 */ public float DissolveTimeVR;
-        /* 0x8C */ public float FadeOutTime;
-        /* 0x90 */ public float FadeInTime;
-        /* 0x94 */ public float LowQualityFresnelModifier;
-        /* 0x98 */ public float LowQualityBrightnessMultiplier;
+        /* 0x8C */ public float FadeInTime;
+        /* 0x90 */ public float FadeOutTime;
+        /* 0x94 */ public float LowQualityBrightnessMultiplier;
+        /* 0x98 */ public float LowQualityFresnelModifier;
     }
 }

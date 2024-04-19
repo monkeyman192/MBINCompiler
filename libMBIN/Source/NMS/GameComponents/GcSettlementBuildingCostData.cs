@@ -8,8 +8,8 @@ namespace libMBIN.NMS.GameComponents
     {
         /* 0x00 */ public List<NMSString0x10> Products;
         /* 0x10 */ public List<NMSString0x10> Substances;
-        /* 0x20 */ public int AmountMin;
-        /* 0x24 */ public int AmountMax;
+        /* 0x20 */ public int AmountMax;
+        /* 0x24 */ public int AmountMin;
         /* 0x28 */ public GcCurrency Currency;
     }
 }

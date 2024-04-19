@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
         /* 0x00 */ public NMSString0x20A Event;
         /* 0x20 */ public float Distance;
         /* 0x24 */ public bool AllowInShip;
-        /* 0x25 */ public bool RequiresFullFireteam;
-        /* 0x26 */ public bool MustMatchThisMissionIDSeed;
+        /* 0x25 */ public bool MustMatchThisMissionIDSeed;
+        /* 0x26 */ public bool RequiresFullFireteam;
         /* 0x27 */ public bool ReturnTrueIfMarkerGone;
     }
 }

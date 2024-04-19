@@ -6,8 +6,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionBaseQuery : NMSTemplate
     {
         /* 0x00 */ public GcBaseSearchFilter BaseSearchFilter;
-        /* 0x98 */ public int MinBasesFound;
-        /* 0x9C */ public int MaxBasesFound;
+        /* 0x98 */ public int MaxBasesFound;
+        /* 0x9C */ public int MinBasesFound;
         /* 0xA0 */ public float SearchDistanceLimit;
         /* 0xA4 */ public bool TakeSpecificPartIdFromSeasonData;
     }

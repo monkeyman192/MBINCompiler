@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetInteractionMissionState : NMSTemplate
     {
         /* 0x0 */ public GcInteractionMissionState MissionState;
-        /* 0x4 */ public bool SetForThisInteraction;
-        /* 0x8 */ public GcInteractionType SetForInteractionClassInMyBuilding;
+        /* 0x4 */ public GcInteractionType SetForInteractionClassInMyBuilding;
+        /* 0x8 */ public bool SetForThisInteraction;
     }
 }

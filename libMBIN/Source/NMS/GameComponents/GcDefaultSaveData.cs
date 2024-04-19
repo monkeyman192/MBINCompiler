@@ -6,6 +6,6 @@ namespace libMBIN.NMS.GameComponents
     public class GcDefaultSaveData : NMSTemplate
     {
         /* 0x00000 */ public GcPlayerStateData State;
-        /* 0x750D0 */ public GcPlayerSpawnStateData Spawn;
+        /* 0x74360 */ public GcPlayerSpawnStateData Spawn;
     }
 }

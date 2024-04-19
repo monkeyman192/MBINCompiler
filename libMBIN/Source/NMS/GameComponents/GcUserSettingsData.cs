@@ -8,126 +8,30 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x3DF85DC4FC201AF5, NameHash = 0x3A50D683FD1CF4BF)]
     public class GcUserSettingsData : NMSTemplate
     {
-        /* 0x0000 */ public bool InvertLookControls;
-        /* 0x0001 */ public bool InvertFlightControls;
-        /* 0x0002 */ public bool InvertVRInWorldFlightControls;
-        /* 0x0003 */ public bool VRVehiclesUseWorldControls;
-        /* 0x0004 */ public bool HUDHidden;
-        /* 0x0005 */ public bool Vibration;
-        /* 0x0008 */ public int ScreenBrightness;
-        /* 0x000C */ public int MusicVolume;
-        /* 0x0010 */ public int SfxVolume;
-        /* 0x0014 */ public int LookSensitivityMode1;
-        /* 0x0018 */ public int LookSensitivityMode2;
-        /* 0x001C */ public int FlightSensitivityMode1;
-        /* 0x0020 */ public int FlightSensitivityMode2;
-        /* 0x0024 */ public int CursorSensitivityMode1;
-        /* 0x0028 */ public int CursorSensitivityMode2;
-        /* 0x002C */ public int MouseSpringSmoothing;
-        /* 0x0030 */ public GcBlockListPersistence BlockList;
-        /* 0x3880 */ public int MotionBlurAmount;
-        /* 0x3884 */ public int Filter;
-        /* 0x3888 */ public bool DamageNumbers;
-        // size: 0x3
-        public enum PS4FixedFPSEnum : uint {
-            Invalid,
-            False,
-            True,
-        }
-        /* 0x388C */ public PS4FixedFPSEnum PS4FixedFPS;
-        /* 0x3890 */ public float PS4FOVFoot;
-        /* 0x3894 */ public float PS4FOVShip;
-        /* 0x3898 */ public bool XboxOneXHighResolutionMode;
-        /* 0x3899 */ public bool PS4VignetteAndScanlines;
+        /* 0x0000 */ public List<NMSString0x10> SeenProducts;
+        /* 0x0010 */ public List<NMSString0x10> SeenSubstances;
+        /* 0x0020 */ public List<NMSString0x10> SeenTechnologies;
+        /* 0x0030 */ public List<NMSString0x20A> SeenWikiTopics;
+        /* 0x0040 */ public List<NMSString0x10> UnlockedPlatformRewards;
+        /* 0x0050 */ public List<NMSString0x10> UnlockedSeasonRewards;
+        /* 0x0060 */ public List<NMSString0x10> UnlockedSpecials;
+        /* 0x0070 */ public List<NMSString0x10> UnlockedTitles;
+        /* 0x0080 */ public List<NMSString0x10> UnlockedTwitchRewards;
+        /* 0x0090 */ public List<NMSString0x20A> UnlockedWikiTopics;
+        /* 0x00A0 */ public List<NMSString0x80> UpgradedUsers;
+        /* 0x00B0 */ public GcBlockListPersistence BlockList;
+        /* 0x3900 */ public GcGyroSettingsData GyroSettings;
         // size: 0x3
         public enum BaseSharingModeEnum : uint {
             Undecided,
             On,
             Off,
         }
-        /* 0x389C */ public BaseSharingModeEnum BaseSharingMode;
-        /* 0x38A0 */ public List<NMSString0x10> SeenSubstances;
-        /* 0x38B0 */ public List<NMSString0x10> SeenTechnologies;
-        /* 0x38C0 */ public List<NMSString0x10> SeenProducts;
-        /* 0x38D0 */ public List<NMSString0x20A> SeenWikiTopics;
-        /* 0x38E0 */ public List<NMSString0x20A> UnlockedWikiTopics;
-        /* 0x38F0 */ public List<NMSString0x10> UnlockedTitles;
-        /* 0x3900 */ public List<NMSString0x10> UnlockedSpecials;
-        /* 0x3910 */ public List<NMSString0x10> UnlockedSeasonRewards;
-        /* 0x3920 */ public List<NMSString0x10> UnlockedTwitchRewards;
-        /* 0x3930 */ public List<NMSString0x10> UnlockedPlatformRewards;
-        /* 0x3940 */ public bool VoiceChat;
-        /* 0x3941 */ public bool Multiplayer;
-        /* 0x3942 */ public bool InstantUIInputs;
-        /* 0x3943 */ public bool InstantUIDelete;
-        /* 0x3944 */ public bool SpeechToText;
-        /* 0x3945 */ public bool Translate;
-        /* 0x3946 */ public bool CrossPlatform;
-        // size: 0x4
-        public enum TemperatureUnitEnum : uint {
-            Invalid,
-            C,
-            F,
-            K,
-        }
-        /* 0x3948 */ public TemperatureUnitEnum TemperatureUnit;
-        /* 0x394C */ public bool UseOldMouseFlight;
-        /* 0x3950 */ public int LastSeenCommunityMission;
-        /* 0x3954 */ public int LastSeenCommunityMissionTier;
-        // size: 0x2
-        public enum MovementModeEnum : uint {
-            Teleporter,
-            Smooth,
-        }
-        /* 0x3958 */ public MovementModeEnum MovementMode;
-        /* 0x395C */ public GcMovementDirection MovementDirectionPad;
-        /* 0x3960 */ public GcMovementDirection MovementDirectionHands;
-        /* 0x3964 */ public bool EnableControllerCursorInVR;
-        /* 0x3965 */ public bool BaseBuildingShowOptionsFromVision;
-        // size: 0x2
-        public enum TurnModeEnum : uint {
-            Smooth,
-            Snap,
-        }
-        /* 0x3968 */ public TurnModeEnum TurnMode;
-        /* 0x396C */ public float VRVignetteStrength;
-        /* 0x3970 */ public bool UseShipAutoControlVignette;
-        /* 0x3974 */ public float HUDZoom;
-        /* 0x3978 */ public float FrontendZoom;
-        /* 0x397C */ public bool UseAutoTorch;
-        // size: 0x4
-        public enum UIColourSchemeEnum : uint {
-            Default,
-            Protanopia,
-            Deuteranopia,
-            Tritanopia,
-        }
-        /* 0x3980 */ public UIColourSchemeEnum UIColourScheme;
-        /* 0x3984 */ public bool EnableModdingConsole;
-        /* 0x3985 */ public bool HeadBob;
-        /* 0x3986 */ public bool VRHeadBob;
-        /* 0x3987 */ public bool VRShowBody;
-        /* 0x3988 */ public bool UseCharacterHeightForCamera;
-        /* 0x3989 */ public bool BaseComplexityLimitsEnabled;
-        /* 0x398A */ public bool EnableLargeLobbies;
-        /* 0x398C */ public int FireteamSessionCount;
-        /* 0x3990 */ public int HeadsetVibrationStrength;
-        /* 0x3994 */ public int VibrationStrength;
-        /* 0x3998 */ public int CamerShakeStrength;
-        /* 0x399C */ public int TriggerFeedbackStrength;
-        // size: 0x3
-        public enum SpaceCombatFollowModeEnum : uint {
-            Disabled,
-            Hold,
-            Toggle,
-        }
-        /* 0x39A0 */ public SpaceCombatFollowModeEnum SpaceCombatFollowMode;
-        /* 0x39A8 */ public List<NMSString0x80> UpgradedUsers;
-        /* 0x39B8 */ public bool AllowWhiteScreenTransitions;
-        /* 0x39B9 */ public bool AccessibleText;
-        /* 0x39BA */ public bool AutoScanDiscoveries;
-        /* 0x39BB */ public bool SprintScanSwap;
-        /* 0x39BC */ public bool PlaceJumpSwap;
+        /* 0x3974 */ public BaseSharingModeEnum BaseSharingMode;
+        /* 0x3978 */ public int CamerShakeStrength;
+        /* 0x397C */ public int CursorSensitivityMode1;
+        /* 0x3980 */ public int CursorSensitivityMode2;
+        /* 0x3984 */ public GcHand DominantHand;
         // size: 0x4
         [Flags]
         public enum EyeTrackingFlagsEnum : uint {
@@ -136,24 +40,120 @@ namespace libMBIN.NMS.GameComponents
             WristMenus = 0x2,
             Menus = 0x4,
         }
-        /* 0x39C0 */ public EyeTrackingFlagsEnum EyeTrackingFlags;
-        /* 0x39C4 */ public bool MoveableWristMenus;
-        /* 0x39C8 */ public GcGyroSettingsData GyroSettings;
-        /* 0x3A4C */ public TkLanguages Language;
-        /* 0x3A50 */ public bool AutoRotateThirdPersonPlayerCamera;
-        /* 0x3A54 */ public GcHand DominantHand;
-        /* 0x3A58 */ public float HazardEffectsStrength;
-        /* 0x3A5C */ public bool QuickMenuBuildMenuSwap;
+        /* 0x3988 */ public EyeTrackingFlagsEnum EyeTrackingFlags;
+        /* 0x398C */ public int Filter;
+        /* 0x3990 */ public int FireteamSessionCount;
+        /* 0x3994 */ public int FlightSensitivityMode1;
+        /* 0x3998 */ public int FlightSensitivityMode2;
+        /* 0x399C */ public float FrontendZoom;
+        /* 0x39A0 */ public float HazardEffectsStrength;
+        /* 0x39A4 */ public int HeadsetVibrationStrength;
         // size: 0x2
         public enum HighResVRUIEnum : uint {
             High,
             Low,
         }
-        /* 0x3A60 */ public HighResVRUIEnum HighResVRUI;
-        /* 0x3A64 */ public float PlayerHUDVROffset;
-        /* 0x3A68 */ public float ShipHUDVROffset;
-        /* 0x3A6C */ public bool HighlightInteractableObjects;
-        /* 0x3A6D */ public bool VRHandControllerSwapYawAndRoll;
-        /* 0x3A6E */ public bool VRHandControllerEnableTwist;
+        /* 0x39A8 */ public HighResVRUIEnum HighResVRUI;
+        /* 0x39AC */ public float HUDZoom;
+        /* 0x39B0 */ public TkLanguages Language;
+        /* 0x39B4 */ public int LastSeenCommunityMission;
+        /* 0x39B8 */ public int LastSeenCommunityMissionTier;
+        /* 0x39BC */ public int LookSensitivityMode1;
+        /* 0x39C0 */ public int LookSensitivityMode2;
+        /* 0x39C4 */ public int MotionBlurAmount;
+        /* 0x39C8 */ public int MouseSpringSmoothing;
+        /* 0x39CC */ public GcMovementDirection MovementDirectionHands;
+        /* 0x39D0 */ public GcMovementDirection MovementDirectionPad;
+        // size: 0x2
+        public enum MovementModeEnum : uint {
+            Teleporter,
+            Smooth,
+        }
+        /* 0x39D4 */ public MovementModeEnum MovementMode;
+        /* 0x39D8 */ public int MusicVolume;
+        /* 0x39DC */ public float PlayerHUDVROffset;
+        // size: 0x3
+        public enum PS4FixedFPSEnum : uint {
+            Invalid,
+            False,
+            True,
+        }
+        /* 0x39E0 */ public PS4FixedFPSEnum PS4FixedFPS;
+        /* 0x39E4 */ public float PS4FOVFoot;
+        /* 0x39E8 */ public float PS4FOVShip;
+        /* 0x39EC */ public int ScreenBrightness;
+        /* 0x39F0 */ public int SfxVolume;
+        /* 0x39F4 */ public float ShipHUDVROffset;
+        // size: 0x3
+        public enum SpaceCombatFollowModeEnum : uint {
+            Disabled,
+            Hold,
+            Toggle,
+        }
+        /* 0x39F8 */ public SpaceCombatFollowModeEnum SpaceCombatFollowMode;
+        // size: 0x4
+        public enum TemperatureUnitEnum : uint {
+            Invalid,
+            C,
+            F,
+            K,
+        }
+        /* 0x39FC */ public TemperatureUnitEnum TemperatureUnit;
+        /* 0x3A00 */ public int TriggerFeedbackStrength;
+        // size: 0x2
+        public enum TurnModeEnum : uint {
+            Smooth,
+            Snap,
+        }
+        /* 0x3A04 */ public TurnModeEnum TurnMode;
+        // size: 0x4
+        public enum UIColourSchemeEnum : uint {
+            Default,
+            Protanopia,
+            Deuteranopia,
+            Tritanopia,
+        }
+        /* 0x3A08 */ public UIColourSchemeEnum UIColourScheme;
+        /* 0x3A0C */ public int VibrationStrength;
+        /* 0x3A10 */ public float VRVignetteStrength;
+        /* 0x3A14 */ public bool AccessibleText;
+        /* 0x3A15 */ public bool AllowWhiteScreenTransitions;
+        /* 0x3A16 */ public bool AutoRotateThirdPersonPlayerCamera;
+        /* 0x3A17 */ public bool AutoScanDiscoveries;
+        /* 0x3A18 */ public bool BaseBuildingShowOptionsFromVision;
+        /* 0x3A19 */ public bool BaseComplexityLimitsEnabled;
+        /* 0x3A1A */ public bool CrossPlatform;
+        /* 0x3A1B */ public bool DamageNumbers;
+        /* 0x3A1C */ public bool EnableControllerCursorInVR;
+        /* 0x3A1D */ public bool EnableLargeLobbies;
+        /* 0x3A1E */ public bool EnableModdingConsole;
+        /* 0x3A1F */ public bool HeadBob;
+        /* 0x3A20 */ public bool HighlightInteractableObjects;
+        /* 0x3A21 */ public bool HUDHidden;
+        /* 0x3A22 */ public bool InstantUIDelete;
+        /* 0x3A23 */ public bool InstantUIInputs;
+        /* 0x3A24 */ public bool InvertFlightControls;
+        /* 0x3A25 */ public bool InvertLookControls;
+        /* 0x3A26 */ public bool InvertVRInWorldFlightControls;
+        /* 0x3A27 */ public bool MoveableWristMenus;
+        /* 0x3A28 */ public bool Multiplayer;
+        /* 0x3A29 */ public bool PlaceJumpSwap;
+        /* 0x3A2A */ public bool PS4VignetteAndScanlines;
+        /* 0x3A2B */ public bool QuickMenuBuildMenuSwap;
+        /* 0x3A2C */ public bool SpeechToText;
+        /* 0x3A2D */ public bool SprintScanSwap;
+        /* 0x3A2E */ public bool Translate;
+        /* 0x3A2F */ public bool UseAutoTorch;
+        /* 0x3A30 */ public bool UseCharacterHeightForCamera;
+        /* 0x3A31 */ public bool UseOldMouseFlight;
+        /* 0x3A32 */ public bool UseShipAutoControlVignette;
+        /* 0x3A33 */ public bool Vibration;
+        /* 0x3A34 */ public bool VoiceChat;
+        /* 0x3A35 */ public bool VRHandControllerEnableTwist;
+        /* 0x3A36 */ public bool VRHandControllerSwapYawAndRoll;
+        /* 0x3A37 */ public bool VRHeadBob;
+        /* 0x3A38 */ public bool VRShowBody;
+        /* 0x3A39 */ public bool VRVehiclesUseWorldControls;
+        /* 0x3A3A */ public bool XboxOneXHighResolutionMode;
     }
 }

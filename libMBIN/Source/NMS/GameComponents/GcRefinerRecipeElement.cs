@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRefinerRecipeElement : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public GcInventoryType Type;
-        /* 0x14 */ public int Amount;
+        /* 0x10 */ public int Amount;
+        /* 0x14 */ public GcInventoryType Type;
     }
 }

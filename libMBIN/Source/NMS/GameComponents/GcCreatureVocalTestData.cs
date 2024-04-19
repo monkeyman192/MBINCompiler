@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureVocalTestData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public NMSString0x20 Genus;
-        /* 0x30 */ public float Size;
-        /* 0x34 */ public float Squawk;
+        /* 0x10 */ public float Size;
+        /* 0x14 */ public float Squawk;
+        /* 0x18 */ public NMSString0x20 Genus;
     }
 }

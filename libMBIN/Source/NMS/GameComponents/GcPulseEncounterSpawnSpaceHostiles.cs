@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPulseEncounterSpawnSpaceHostiles : NMSTemplate
     {
         /* 0x000 */ public GcResourceElement CustomShipResource;
-        /* 0x2A8 */ public int NumberOfShips;
-        /* 0x2B0 */ public NMSString0x10 AttackDefinition;
+        /* 0x2A8 */ public NMSString0x10 AttackDefinition;
+        /* 0x2B8 */ public int NumberOfShips;
     }
 }

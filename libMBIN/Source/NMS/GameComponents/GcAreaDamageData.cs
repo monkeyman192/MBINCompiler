@@ -4,12 +4,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcAreaDamageData : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Id;
-        /* 0x10 */ public float Radius;
-        /* 0x14 */ public float DelayPerMetre;
-        /* 0x18 */ public NMSString0x10 PlayerDamageId;
-        /* 0x28 */ public float Damage;
-        /* 0x2C */ public bool InstantKill;
+        /* 0x10 */ public NMSString0x10 PlayerDamageId;
+        /* 0x20 */ public float Damage;
+        /* 0x24 */ public float DelayPerMetre;
+        /* 0x28 */ public float Radius;
+        /* 0x2C */ public bool DamageCreatures;
         /* 0x2D */ public bool DamagePlayers;
-        /* 0x2E */ public bool DamageCreatures;
+        /* 0x2E */ public bool InstantKill;
     }
 }

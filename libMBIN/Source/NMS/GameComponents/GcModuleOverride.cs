@@ -7,8 +7,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcModuleOverride : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 Module;
-        /* 0x10 */ public float ProbabilityMultiplier;
-        /* 0x14 */ public float OriginalSceneProbability;
-        /* 0x18 */ public List<GcWeightedResource> Scenes;
+        /* 0x10 */ public List<GcWeightedResource> Scenes;
+        /* 0x20 */ public float OriginalSceneProbability;
+        /* 0x24 */ public float ProbabilityMultiplier;
     }
 }

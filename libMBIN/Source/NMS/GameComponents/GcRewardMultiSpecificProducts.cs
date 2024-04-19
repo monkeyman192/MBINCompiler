@@ -6,7 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardMultiSpecificProducts : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A SetName;
-        /* 0x20 */ public bool UseListPopup;
-        /* 0x28 */ public List<NMSString0x10> ProductIds;
+        /* 0x20 */ public List<NMSString0x10> ProductIds;
+        /* 0x30 */ public bool UseListPopup;
     }
 }

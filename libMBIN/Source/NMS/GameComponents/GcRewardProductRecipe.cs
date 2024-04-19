@@ -6,10 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardProductRecipe : NMSTemplate
     {
         /* 0x00 */ public GcRealitySubstanceCategory ItemCatagory;
-        /* 0x04 */ public GcRarity ItemRarity;
-        /* 0x08 */ public bool IgnoreRarity;
-        /* 0x0C */ public int ItemLevel;
+        /* 0x04 */ public int ItemLevel;
+        /* 0x08 */ public GcRarity ItemRarity;
         [NMS(Size = 0x9, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
-        /* 0x10 */ public bool[] AllowedProductTypes;
+        /* 0x0C */ public bool[] AllowedProductTypes;
+        /* 0x15 */ public bool IgnoreRarity;
     }
 }

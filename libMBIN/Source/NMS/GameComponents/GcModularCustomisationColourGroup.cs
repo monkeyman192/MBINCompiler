@@ -7,7 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationColourGroup : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A Title;
-        /* 0x20 */ public int DefaultColourIndex;
-        /* 0x28 */ public List<GcModularCustomisationColourGroupPalette> Palettes;
+        /* 0x20 */ public List<GcModularCustomisationColourGroupPalette> Palettes;
+        /* 0x30 */ public int DefaultColourIndex;
     }
 }

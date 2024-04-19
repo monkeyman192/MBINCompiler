@@ -4,16 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcSkyProperties : NMSTemplate
     {
         /* 0x00 */ public float AtmosphereThickness;
-        /* 0x04 */ public float HorizonMultiplier;
+        /* 0x04 */ public float DayHorizonTightness;
         /* 0x08 */ public float DuskHorizonMultiplier;
-        /* 0x0C */ public float NightHorizonMultiplier;
-        /* 0x10 */ public float HorizonFadeSpeed;
-        /* 0x14 */ public float DayHorizonTightness;
+        /* 0x0C */ public float HorizonFadeSpeed;
+        /* 0x10 */ public float HorizonMultiplier;
+        /* 0x14 */ public float NightHorizonMultiplier;
         /* 0x18 */ public float SunSize;
         /* 0x1C */ public float SunStrength;
         /* 0x20 */ public float SunSurroundSize;
         /* 0x24 */ public float SunSurroundStrength;
-        /* 0x28 */ public float UpperSkyFadeSpeed;
-        /* 0x2C */ public float UpperSkyFadeOffset;
+        /* 0x28 */ public float UpperSkyFadeOffset;
+        /* 0x2C */ public float UpperSkyFadeSpeed;
     }
 }

@@ -6,10 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionWaitForPirates : NMSTemplate
     {
         /* 0x0 */ public int LivingPirates;
-        /* 0x4 */ public bool CountHostileTraders;
-        /* 0x5 */ public bool CompleteOnlyInSpace;
-        /* 0x6 */ public bool CareAboutAttackingPlayer;
-        /* 0x7 */ public bool CheckAllFireteamMembers;
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x8 */ public bool CareAboutAttackingPlayer;
+        /* 0x9 */ public bool CheckAllFireteamMembers;
+        /* 0xA */ public bool CompleteOnlyInSpace;
+        /* 0xB */ public bool CountHostileTraders;
     }
 }

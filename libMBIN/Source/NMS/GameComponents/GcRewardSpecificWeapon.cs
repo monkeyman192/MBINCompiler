@@ -6,13 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSpecificWeapon : NMSTemplate
     {
         /* 0x000 */ public GcInventoryContainer WeaponInventory;
-        /* 0x158 */ public GcInventoryLayout WeaponLayout;
-        /* 0x178 */ public GcExactResource WeaponResource;
-        /* 0x208 */ public GcWeaponClasses WeaponType;
-        /* 0x20C */ public GcInventoryLayoutSizeType InventorySizeOverride;
-        /* 0x210 */ public NMSString0x20A NameOverride;
-        /* 0x230 */ public bool IsGift;
-        /* 0x231 */ public bool IsRewardWeapon;
-        /* 0x232 */ public bool FormatAsSeasonal;
+        /* 0x158 */ public GcExactResource WeaponResource;
+        /* 0x1E8 */ public NMSString0x20A NameOverride;
+        /* 0x208 */ public GcInventoryLayout WeaponLayout;
+        /* 0x220 */ public GcInventoryLayoutSizeType InventorySizeOverride;
+        /* 0x224 */ public GcWeaponClasses WeaponType;
+        /* 0x228 */ public bool FormatAsSeasonal;
+        /* 0x229 */ public bool IsGift;
+        /* 0x22A */ public bool IsRewardWeapon;
     }
 }

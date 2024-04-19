@@ -4,7 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionBasePartNear : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 PartID;
-        /* 0x10 */ public bool TakeIDFromSeasonData;
-        /* 0x14 */ public float Distance;
+        /* 0x10 */ public float Distance;
+        /* 0x14 */ public bool TakeIDFromSeasonData;
     }
 }

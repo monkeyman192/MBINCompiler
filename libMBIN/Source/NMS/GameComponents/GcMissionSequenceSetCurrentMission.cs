@@ -4,8 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceSetCurrentMission : NMSTemplate
     {
         /* 0x00 */ public NMSString0x10 MissionID;
-        /* 0x10 */ public bool FirstIncompleteMilestone;
-        /* 0x11 */ public bool Silent;
-        /* 0x12 */ public NMSString0x80 DebugText;
+        /* 0x10 */ public NMSString0x80 DebugText;
+        /* 0x90 */ public bool FirstIncompleteMilestone;
+        /* 0x91 */ public bool Silent;
     }
 }

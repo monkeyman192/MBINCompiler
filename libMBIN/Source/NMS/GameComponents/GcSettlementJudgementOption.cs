@@ -7,15 +7,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementJudgementOption : NMSTemplate
     {
         /* 0x00 */ public NMSString0x20A OptionText;
-        /* 0x20 */ public List<GcSettlementJudgementPerkOption> Perks;
-        /* 0x30 */ public bool HidePerkInJudgement;
-        /* 0x38 */ public List<GcSettlementStatChange> StatChanges;
-        /* 0x48 */ public List<NMSString0x10> AdditionalRewards;
-        /* 0x58 */ public NMSString0x10 ChainedJudgementID;
-        /* 0x68 */ public bool UsePolicyPerk;
-        /* 0x69 */ public bool UsePolicyStat;
-        /* 0x6A */ public bool UseGiftReward;
-        /* 0x6B */ public bool UseTechPerk;
-        /* 0x6C */ public bool OptionIsPositiveForNPC;
+        /* 0x20 */ public List<NMSString0x10> AdditionalRewards;
+        /* 0x30 */ public NMSString0x10 ChainedJudgementID;
+        /* 0x40 */ public List<GcSettlementJudgementPerkOption> Perks;
+        /* 0x50 */ public List<GcSettlementStatChange> StatChanges;
+        /* 0x60 */ public bool HidePerkInJudgement;
+        /* 0x61 */ public bool OptionIsPositiveForNPC;
+        /* 0x62 */ public bool UseGiftReward;
+        /* 0x63 */ public bool UsePolicyPerk;
+        /* 0x64 */ public bool UsePolicyStat;
+        /* 0x65 */ public bool UseTechPerk;
     }
 }

@@ -7,10 +7,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureFeederComponentData : NMSTemplate
     {
         /* 0x000 */ public GcMaintenanceComponentData MaintenanceData;
-        /* 0x420 */ public int NumInputs;
-        /* 0x424 */ public int NumMealsPerBait;
-        /* 0x428 */ public List<NMSString0x100> DispenseNodes;
-        /* 0x438 */ public float DispenseVelocity;
-        /* 0x43C */ public float DispensePeriod;
+        /* 0x3E0 */ public List<NMSString0x100> DispenseNodes;
+        /* 0x3F0 */ public float DispensePeriod;
+        /* 0x3F4 */ public float DispenseVelocity;
+        /* 0x3F8 */ public int NumInputs;
+        /* 0x3FC */ public int NumMealsPerBait;
     }
 }
