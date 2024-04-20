@@ -144,7 +144,6 @@ DONT_OVERRIDE = [
     'TkAnimNodeFrameHalfData',
     'TkGeometryData',
     'TkMeshData',
-    'TkSceneNodeData',
 ]
 
 SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')

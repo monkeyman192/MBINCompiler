@@ -1,3 +1,5 @@
+// Note: This is left for reference but isn't used.
+
 using System;
 using System.Collections.Generic;
 using System.IO;

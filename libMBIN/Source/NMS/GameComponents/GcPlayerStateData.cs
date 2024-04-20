@@ -102,6 +102,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x71A50 */ public GcStoryPageSeenDataArray[] SeenStories;
         [NMS(Size = 0x4, EnumType = typeof(GcSynchronisedBufferType.SyncBufferTypeEnum))]
         /* 0x71AE0 */ public GcSyncBufferSaveDataArray[] SyncBuffersData;
+        /* 0x71CB8 */ public GcPortalSaveData VisitedPortal;
         /* 0x71B20 */ public GcInventoryLayout Chest10Layout;
         /* 0x71B38 */ public GcInventoryLayout Chest1Layout;
         /* 0x71B50 */ public GcInventoryLayout Chest2Layout;
@@ -119,7 +120,6 @@ namespace libMBIN.NMS.GameComponents
         /* 0x71C70 */ public GcInventoryLayout FreighterLayout;
         /* 0x71C88 */ public GcInventoryLayout RocketLockerLayout;
         /* 0x71CA0 */ public GcInventoryLayout ShipLayout;
-        /* 0x71CB8 */ public GcPortalSaveData VisitedPortal;
         /* 0x71CD8 */ public GcInventoryLayout WeaponLayout;
         /* 0x71CF0 */ public NMSString0x10 BannerTitleId;
         /* 0x71D00 */ public List<GcPersistentBBObjectData> BaseBuildingObjects;

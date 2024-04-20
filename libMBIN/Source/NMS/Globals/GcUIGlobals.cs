@@ -21,10 +21,10 @@ namespace libMBIN.NMS.Globals
         /* 0x2310 */ public TkNGuiTreeViewTemplate FileBrowserTreeViewTemplate;
         /* 0x2390 */ public TkNGuiTreeViewTemplate SceneInfoTreeViewTemplate;
         /* 0x2410 */ public TkNGuiTreeViewTemplate SkeletonToolsTreeViewTemplate;
-        /* 0x2490 */ public GcHUDEffectRewardData OSDEpicItemRewardEffect;
-        /* 0x24E0 */ public GcHUDEffectRewardData OSDRareItemRewardEffect;
         /* 0x2530 */ public GcScanEffectData DebugEditorPreviewEffect;
         /* 0x2580 */ public GcScanEffectData FreighterSummonScanEffect;
+        /* 0x2490 */ public GcHUDEffectRewardData OSDEpicItemRewardEffect;
+        /* 0x24E0 */ public GcHUDEffectRewardData OSDRareItemRewardEffect;
         /* 0x25D0 */ public GcScanEffectData TargetDisplayScanEffect;
         [NMS(Size = 0x4, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x2620 */ public Colour[] SystemHooverLEDColours;

@@ -150,6 +150,8 @@ def pytest_terminal_summary(terminalreporter):
                 clean_fname = fname.split('mbin_', 1)[1].split(op.sep, 1)[1]
             except Exception:  # noqa
                 clean_fname = fname
+            if not clean_fname.endswith(".MBIN") and not clean_fname.endswith(".PC"):
+                clean_fname = clean_fname + ".MBIN"
             failed_fpaths.append(clean_fname)
             results.append((clean_fname, err.replace('\n', '')))
     if results != []:
