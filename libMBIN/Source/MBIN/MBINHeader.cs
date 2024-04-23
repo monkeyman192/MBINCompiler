@@ -9,7 +9,9 @@ namespace libMBIN
     {
         internal const uint  MBIN_MAGIC    = 0xCCCCCCCC;         // MBIN format ID
         internal const uint  MBIN_MAGIC_PC = 0xDDDDDDDD;         // only used by TkGeometryData and TkGeometryStreamData (*.MBIN.PC)
-        internal const uint  MBIN_VERSION  = 2500;               // vanilla version
+        // Note: The MBIN_VERSION used to be 2500, but as of the 14144058 steam version this changed to 3250,
+        // presumably to indicate that the file format is indeed different (fields became ordered, probably for optimization reasons...)
+        internal const uint  MBIN_VERSION  = 3250;               // vanilla version
 
         // used for format V1
         internal const ulong MBINCVER_TAG  = 0x726576434E49424D; // "revCNIBM" ("MBINCver")

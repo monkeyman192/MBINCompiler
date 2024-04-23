@@ -16,7 +16,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x18 */ public int IndexDataSize;
         /* 0x1C */ public int VertexDataSize;
         [NMS(Size = 0x80, Padding = 0xFE)]
-        /* 0x20 */ public NMSString0x80 IdString;
+        /* 0x20 */ public string IdString;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
             var fieldName = fieldInfo.Name;
