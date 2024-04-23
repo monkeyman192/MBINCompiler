@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
-using System.Text;
-
 using libMBIN.NMS.Toolkit;
+using System.Collections.Generic;
+
 namespace libMBIN.NMS.Toolkit
 {
     [NMS(GUID = 0x1DCCBBEBB4547EB4, NameHash = 0x2C1B6B0E807F7193)]
@@ -16,31 +12,5 @@ namespace libMBIN.NMS.Toolkit
         /* 0x30 */ public TkTransformData Transform;
         /* 0x54 */ public uint NameHash;
         /* 0x58 */ public NMSString0x80 Name;
-
-        public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
-            var fieldName = fieldInfo.Name;
-            switch (fieldName)
-                {
-                case nameof(NameHash):
-                    ulong NEXT_GUID = 0xD5756F96B501B8A2;
-                    long returnPos = reader.BaseStream.Position;
-
-                    // Check to see if we are loading a pre-Beyond version:
-                    reader.BaseStream.Position = 0x10;
-                    ulong GUID = reader.ReadUInt64();
-                    var byteName = Encoding.UTF8.GetBytes(this.Name.ToString());
-                    var crc32 = new Crc32();
-                    // Make sure we return the read position
-                    reader.BaseStream.Position = returnPos;
-                    if (GUID == NEXT_GUID) {
-                        return (UInt64)crc32.Get(byteName);
-                    }
-                    else {
-                        // just deserialize as normal...
-                        return null;
-                    }
-            }
-            return null;
-        }
     }
 }
