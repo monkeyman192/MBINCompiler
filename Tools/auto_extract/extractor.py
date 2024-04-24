@@ -241,6 +241,7 @@ class Field(ABC):
         self.data = data
         self.raw_field_type = 0x00
         self.field_size = 0x0
+        self.field_index = 0x0
 
         # properties which are overwritten by subclasses which need to specify
         # them.
@@ -660,6 +661,7 @@ def extract(nms_mem: pymem.Pymem, address: int, field_count: int) -> tuple[list[
     for i in range(field_count):
         data = nms_mem.read_bytes(address + i * 0x60, 0x60)
         field = Field.instantiate(data, nms_mem)
+        field.field_index = i
         # As we add fields, determine if the field is an array with an
         # associated enum. If it is then set a flag.
         if (not has_enum_arrays
