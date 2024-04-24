@@ -32,7 +32,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x13C */ public int VertexCount;
 
         // TODO: add the list ending to this??
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex) {
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex) {
             if (field == null || fieldInfo == null) return false;
 
             Dictionary<int, int> TypeMap = new Dictionary<int, int> { { 5131, 8 }, { 36255, 4 }, { 5121, 4 } };
@@ -51,7 +51,7 @@ namespace libMBIN.NMS.Toolkit
                     IList data = (IList)fieldData;
 
                     if (Indices16Bit != 1) { // if 32bit indices, we can just pass it directly
-                        additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, data));
+                        additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, data, 0));
                     }
                     else {
                         // otherwise we have to create 32bit indices from the 16bit ones
@@ -70,7 +70,7 @@ namespace libMBIN.NMS.Toolkit
                             list32Bit.Add(val32Bit);
                         }
 
-                        additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, list32Bit));
+                        additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, list32Bit, 0));
                     }
                     addtDataIndex++;
                     return true;
