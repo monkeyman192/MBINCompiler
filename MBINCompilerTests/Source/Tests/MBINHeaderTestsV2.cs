@@ -9,8 +9,8 @@ namespace libMBIN.UnitTests {
         private const ushort FORMAT_V0 = 0;
         private const ushort FORMAT_V2 = 2;
 
-        private const uint FORMAT_ID0 = (MBINHeader.MBIN_VERSION & 0xFFFF) | (FORMAT_V0 & 0xFFFF) << 16;
-        private const uint FORMAT_ID2 = (MBINHeader.MBIN_VERSION & 0xFFFF) | (FORMAT_V2 & 0xFFFF) << 16;
+        private const uint FORMAT_ID0 = (MBINHeader.MBIN_VERSION_1 & 0xFFFF) | (FORMAT_V0 & 0xFFFF) << 16;
+        private const uint FORMAT_ID2 = (MBINHeader.MBIN_VERSION_1 & 0xFFFF) | (FORMAT_V2 & 0xFFFF) << 16;
 
         private static readonly System.Version NMS_VERSION = Version.NMSVersion;
         private static readonly System.Version API_VERSION = Version.AssemblyVersion;
@@ -60,7 +60,7 @@ namespace libMBIN.UnitTests {
         private MBINHeader HeaderCommon => CreateMockHeader();
         private MBINHeader HeaderTkGeometryData => CreateMockHeader(
                 magic:      MBINHeader.MBIN_MAGIC_PC,
-                formatID:   MBINHeader.MBIN_VERSION,
+                formatID:   MBINHeader.MBIN_VERSION_1,
                 versionID:  MBINHeader.TKGEOMETRYDATA_TAG,
                 guid:       TKGEOMETRYDATA_GUID,
                 metaOffset: MBINHeader.TKGEOMETRYDATA_PADDING
@@ -105,7 +105,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( TEMPLATE_NAME,             HeaderCommon.TemplateName );
             Assert.AreEqual( METAOFFSET,                HeaderCommon.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,   HeaderCommon.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,   HeaderCommon.FormatNMS );
             Assert.AreEqual( FORMAT_V2,                 HeaderCommon.FormatAPI );
 
             Assert.AreEqual( NMS_VERSION_ID,            HeaderCommon.VersionID_NMS );
@@ -124,7 +124,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( TEMPLATE_NAME,                     HeaderTkGeometryData.TemplateName );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_PADDING, HeaderTkGeometryData.MetaOffset   );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           HeaderTkGeometryData.FormatNMS    );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           HeaderTkGeometryData.FormatNMS    );
             Assert.AreEqual( FORMAT_V0,                         HeaderTkGeometryData.FormatAPI    );
         }
 
@@ -140,7 +140,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                      header.TemplateName );
             Assert.AreEqual( 0ul,                     header.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, header.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, header.FormatNMS );
             Assert.AreEqual( FORMAT_V2,               header.FormatAPI );
 
             Assert.AreEqual( NMS_VERSION_STRING,      header.VersionNMS.ToString() );
@@ -159,7 +159,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                                header.TemplateName          );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_PADDING, header.MetaOffset            );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatNMS             );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatNMS             );
             Assert.AreEqual( FORMAT_V0,                         header.FormatAPI             );
         }
 
@@ -175,7 +175,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                      header.TemplateName );
             Assert.AreEqual( 0ul,                     header.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, header.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, header.FormatNMS );
             Assert.AreEqual( FORMAT_V2,               header.FormatAPI );
 
             Assert.AreEqual( NMS_VERSION_STRING,      header.VersionNMS.ToString() );
@@ -194,7 +194,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                                header.TemplateName );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_PADDING, header.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatNMS );
             Assert.AreEqual( FORMAT_V0,                         header.FormatAPI );
         }
 
@@ -210,7 +210,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                      header.TemplateName );
             Assert.AreEqual( 0ul,                     header.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, header.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, header.FormatNMS );
             Assert.AreEqual( FORMAT_V2,               header.FormatAPI );
 
             Assert.AreEqual( NMS_VERSION_STRING,      header.VersionNMS.ToString() );
@@ -229,7 +229,7 @@ namespace libMBIN.UnitTests {
             Assert.AreEqual( "",                                header.TemplateName );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_PADDING, header.MetaOffset );
 
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatNMS );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatNMS );
             Assert.AreEqual( FORMAT_V0,                         header.FormatAPI );
         }
 

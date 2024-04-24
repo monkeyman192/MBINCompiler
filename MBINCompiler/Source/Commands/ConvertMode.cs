@@ -19,13 +19,6 @@ namespace MBINCompiler.Commands {
             UseThreads   = !options.GetOptionSwitch( "no-threads" );
             StreamToConsole = options.GetOptionSwitch("stream");
             HideVersionInfo = options.GetOptionSwitch("no-version");
-            
-            var arg = options.GetOptionArg( "format-version" );
-            if ( arg != null ) {
-                MBINHeader.Format version;
-                if ( !Enum.TryParse( arg.value, out version ) ) return CommandLine.ShowInvalidCommandLineArg( $"{arg.name}={arg.value}" );
-                FormatVersion = version;
-            }
 
             if ( paths.Count < 1 ) return CommandLine.ShowHelp( ErrorCode.CommandLine );
             var inputDir = paths[0];

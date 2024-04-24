@@ -74,9 +74,6 @@ namespace MBINCompiler
         // --exclude
         public static List<string> ExcludeFilters { get => optExcludeFilters; internal set => optExcludeFilters = value; }
 
-        // --format-version
-        public static HeaderFormat FormatVersion { get => optFormatVersion; internal set => optFormatVersion = value; }
-
         // --no-threads
         public static bool UseThreads { get => optUseThreads; internal set => optUseThreads = value; }
 
@@ -146,10 +143,6 @@ namespace MBINCompiler
                                         "Multiple glob patterns are separated by a semicolon.\n" +
                                         "The default is --exclude=\"LANGUAGE\\*;*.GEOMETRY.*\".\n" +
                                         "The --exclude filter is applied after --include." },
-
-            new Option { shortName = 'V', longName = "format-version", param = "[0|1|2]", isHidden = true,
-                            description = "\nOutput using the specified MBIN format version.\n" +
-                                          "Default is version 2." },
 
             new Option { longName = "no-threads", isHidden = true, description = "Disable multi-threading." },
 

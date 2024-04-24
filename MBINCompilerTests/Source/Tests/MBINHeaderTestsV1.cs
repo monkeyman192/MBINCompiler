@@ -27,7 +27,7 @@ namespace libMBIN.UnitTests {
 
         private MBINHeader CreateMockHeader(
                     uint magic    = MBINHeader.MBIN_MAGIC,
-                    uint formatID = MBINHeader.MBIN_VERSION,
+                    uint formatID = MBINHeader.MBIN_VERSION_1,
                     ulong tag     = MBINHeader.MBINCVER_TAG,
                     ulong version = ~0ul,
                     string name   = TEMPLATE_NAME,
@@ -104,7 +104,7 @@ namespace libMBIN.UnitTests {
         [TestMethod]
         public void TestCreateHeaderCommon() {
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,   HeaderCommon.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, HeaderCommon.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, HeaderCommon.FormatID );
             Assert.AreEqual( MBINHeader.MBINCVER_TAG, HeaderCommon.Timestamp );
             Assert.AreEqual( VERSION_ID,              HeaderCommon.TemplateGUID );
             Assert.AreEqual( TEMPLATE_NAME,           HeaderCommon.TemplateName );
@@ -116,7 +116,7 @@ namespace libMBIN.UnitTests {
         [TestMethod]
         public void TestCreateHeaderTkGeometryData() {
             Assert.AreEqual( MBINHeader.MBIN_MAGIC_PC,          HeaderTkGeometryData.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           HeaderTkGeometryData.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           HeaderTkGeometryData.FormatID );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_TAG,     HeaderTkGeometryData.Timestamp );
             Assert.AreEqual( TKGEOMETRYDATA_GUID,               HeaderTkGeometryData.TemplateGUID );
             Assert.AreEqual( TEMPLATE_NAME,                     HeaderTkGeometryData.TemplateName );
@@ -128,7 +128,7 @@ namespace libMBIN.UnitTests {
         [TestMethod]
         public void TestCreateHeaderTkAnimMetadata() {
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,             HeaderTkAnimMetadata.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           HeaderTkAnimMetadata.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           HeaderTkAnimMetadata.FormatID );
             Assert.AreEqual( MBINHeader.TKANIMMETADATA_TAG,     HeaderTkAnimMetadata.Timestamp );
             Assert.AreEqual( TKANIMMETADATA_GUID,               HeaderTkAnimMetadata.TemplateGUID );
             Assert.AreEqual( TEMPLATE_NAME,                     HeaderTkAnimMetadata.TemplateName );
@@ -141,7 +141,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaultsV1();
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,   header.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, header.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, header.FormatID );
             Assert.AreEqual( MBINHeader.MBINCVER_TAG, header.Tag );
             Assert.AreEqual( VERSION_ID,              header.MbinVersion );
             Assert.AreEqual( "",                      header.TemplateName );
@@ -156,7 +156,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaultsV1( typeof( NMS.Toolkit.TkGeometryData ) );
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC_PC,          header.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatID );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_TAG,     header.Tag );
             Assert.AreEqual( TKGEOMETRYDATA_GUID,               header.MbinVersion );
             Assert.AreEqual( "",                                header.TemplateName );
@@ -171,7 +171,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaultsV1( typeof( NMS.Toolkit.TkAnimMetadata ) );
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,             header.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatID );
             Assert.AreEqual( MBINHeader.TKANIMMETADATA_TAG,     header.Tag );
             Assert.AreEqual( TKANIMMETADATA_GUID,               header.MbinVersion );
             Assert.AreEqual( "",                                header.TemplateName );
@@ -186,7 +186,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaults( format: MBINHeader.Format.V1 );
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,   header.MagicID      );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION, header.FormatID     );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1, header.FormatID     );
             Assert.AreEqual( MBINHeader.MBINCVER_TAG, header.Tag          );
             Assert.AreEqual( VERSION_ID,              header.MbinVersion  );
             Assert.AreEqual( "",                      header.TemplateName );
@@ -201,7 +201,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaults( typeof( NMS.Toolkit.TkGeometryData ), MBINHeader.Format.V1 );
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC_PC,          header.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatID );
             Assert.AreEqual( MBINHeader.TKGEOMETRYDATA_TAG,     header.Tag );
             Assert.AreEqual( TKGEOMETRYDATA_GUID,               header.MbinVersion );
             Assert.AreEqual( "",                                header.TemplateName );
@@ -216,7 +216,7 @@ namespace libMBIN.UnitTests {
             header.SetDefaults( typeof( NMS.Toolkit.TkAnimMetadata ), MBINHeader.Format.V1 );
 
             Assert.AreEqual( MBINHeader.MBIN_MAGIC,             header.MagicID );
-            Assert.AreEqual( MBINHeader.MBIN_VERSION,           header.FormatID );
+            Assert.AreEqual( MBINHeader.MBIN_VERSION_1,           header.FormatID );
             Assert.AreEqual( MBINHeader.TKANIMMETADATA_TAG,     header.Tag );
             Assert.AreEqual( TKANIMMETADATA_GUID,               header.MbinVersion );
             Assert.AreEqual( "",                                header.TemplateName );

@@ -255,7 +255,7 @@ namespace MBINCompiler.Commands {
                 if ( data is libMBIN.NMS.Toolkit.TkGeometryData | data is libMBIN.NMS.Toolkit.TkGeometryStreamData ) fileOut += ".PC";
 
                 var mbin = new MBINFile( msOut ) { Header = new MBINHeader() };
-                mbin.Header.SetDefaults( data.GetType(), FormatVersion );
+                mbin.Header.SetDefaults( data.GetType() );
                 mbin.SetData( data );
                 mbin.Save();
             } catch ( Exception e ) {

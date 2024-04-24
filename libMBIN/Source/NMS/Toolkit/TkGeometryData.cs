@@ -89,8 +89,16 @@ namespace libMBIN.NMS.Toolkit
                     reader.Align(0x08);
                     long listPosition = reader.BaseStream.Position;
 
+                    // Read the Indices16Bit explictly since the field will not have the right value if it's read
+                    // after the `IndexBuffer` data.
+                    long currPos = OffsetOf("IndexBuffer");
+                    long seekPos = OffsetOf("Indices16Bit");
+                    reader.BaseStream.Position = listPosition + (seekPos - currPos);
+                    int _Indices16Bit = reader.ReadInt32();
+
+                    reader.BaseStream.Position = listPosition;
                     long listStartOffset = reader.ReadInt64();
-                    int numEntries = reader.ReadInt32() * ((Indices16Bit == 1) ? 2 : 1); // Adjust size
+                    int numEntries = reader.ReadInt32() * ((_Indices16Bit == 1) ? 2 : 1); // Adjust size
                     uint listMagic = reader.ReadUInt32();
                     if ((listMagic & 0xFF) != 1) throw new InvalidListException(listMagic, reader.BaseStream.Position);
 
@@ -99,7 +107,7 @@ namespace libMBIN.NMS.Toolkit
                     reader.BaseStream.Position = listPosition + listStartOffset;
                     var indices = new List<int>();
                     for (int i = 0; i < numEntries; i++) {
-                        if (Indices16Bit == 1) {
+                        if (_Indices16Bit == 1) {
                             indices.Add((int)reader.ReadUInt16());
                         }
                         else {
