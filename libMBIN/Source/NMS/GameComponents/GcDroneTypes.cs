@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Combat,
             Corrupted,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DroneTypeEnum DroneType;
     }
 }

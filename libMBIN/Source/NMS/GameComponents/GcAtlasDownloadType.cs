@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Base,
             Message,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DownloadTypeEnum DownloadType;
     }
 }

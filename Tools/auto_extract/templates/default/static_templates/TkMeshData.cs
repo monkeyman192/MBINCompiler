@@ -1,7 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
@@ -11,11 +9,15 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xD3AC8F6F7A4D55FC, NameHash = 0xF671716161E708E3)]
     public class TkMeshData : NMSTemplate
     {
+        [NMS(Index = 4)]
         /* 0x00 */ public byte[] MeshDataStream;
+        [NMS(Index = 1)]
         /* 0x10 */ public ulong Hash;
+        [NMS(Index = 3)]
         /* 0x18 */ public int IndexDataSize;
+        [NMS(Index = 2)]
         /* 0x1C */ public int VertexDataSize;
-        [NMS(Size = 0x80, Padding = 0xFE)]
+        [NMS(Index = 0, Size = 0x80, Padding = 0xFE)]
         /* 0x20 */ public string IdString;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
@@ -40,7 +42,7 @@ namespace libMBIN.NMS.Toolkit
             return null;
         }
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex)
             {
             var fieldName = fieldInfo.Name;
             switch (fieldName)
@@ -54,7 +56,7 @@ namespace libMBIN.NMS.Toolkit
                     writer.Write((Int32) (MeshDataStream?.Length ?? 0)); // size of data chunk in bytes
                     writer.Write((UInt32) 0xFEFEFE01);
 
-                    additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, fieldData));
+                    additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, fieldData, 4));
                     addtDataIndex++;
                     return true;
             }

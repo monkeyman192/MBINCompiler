@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             FinalStoryAtlas,
             StoreLoopingCompleteStations,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AtlasPathProgressTypeEnum AtlasPathProgressType;
     }
 }

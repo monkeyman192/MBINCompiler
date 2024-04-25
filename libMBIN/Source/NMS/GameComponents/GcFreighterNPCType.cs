@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             WorkerTech,
             WorkerIndustry,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FreighterNPCTypeEnum FreighterNPCType;
     }
 }

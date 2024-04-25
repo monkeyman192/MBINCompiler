@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Race,
             Guild,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CategoryTypeEnum CategoryType;
     }
 }

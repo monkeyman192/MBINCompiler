@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Connection,
             PointOfInterest,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCNavSubgraphNodeTypeEnum NPCNavSubgraphNodeType;
     }
 }

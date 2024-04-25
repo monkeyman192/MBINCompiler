@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Combat,
             Ease,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DifficultyOptionGroupEnum DifficultyOptionGroup;
     }
 }

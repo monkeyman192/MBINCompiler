@@ -11,8 +11,11 @@ namespace libMBIN.NMS.GameComponents
             ShipTech,
             Weapon,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventoryToTestEnum InventoryToTest;
+        [NMS(Index = 1)]
         /* 0x4 */ public int NumberOfBrokenSlots;
+        [NMS(Index = 2)]
         /* 0x8 */ public TkEqualityEnum Test;
     }
 }

@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             NoSeason,
             NoMain,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SaveContextQueryEnum SaveContextQuery;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Empty,
             Abandoned,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionSystemTypeEnum MissionSystemType;
     }
 }

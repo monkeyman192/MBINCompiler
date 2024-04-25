@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Robot,
             Depot,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ResourceOriginEnum ResourceOrigin;
     }
 }

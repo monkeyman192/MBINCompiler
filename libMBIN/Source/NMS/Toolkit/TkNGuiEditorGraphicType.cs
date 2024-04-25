@@ -83,6 +83,7 @@ namespace libMBIN.NMS.Toolkit
             Tooltip,
             ContextMenuButton,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NGuiEditorGraphicEnum NGuiEditorGraphic;
     }
 }

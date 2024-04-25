@@ -54,6 +54,7 @@ namespace libMBIN.NMS.Toolkit
             EditorPin,
             DynamicPanelTitle,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NGuiEditorComponentSizeEnum NGuiEditorComponentSize;
     }
 }

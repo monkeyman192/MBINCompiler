@@ -21,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Cup,
             Staff,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCPropEnum NPCProp;
     }
 }

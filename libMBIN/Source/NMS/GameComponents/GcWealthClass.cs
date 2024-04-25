@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Wealthy,
             Pirate,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WealthClassEnum WealthClass;
     }
 }

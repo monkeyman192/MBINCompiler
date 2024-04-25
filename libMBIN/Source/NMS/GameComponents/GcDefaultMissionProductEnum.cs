@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             PrimaryProduct,
             SecondaryProduct,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DefaultProductTypeEnum DefaultProductType;
     }
 }

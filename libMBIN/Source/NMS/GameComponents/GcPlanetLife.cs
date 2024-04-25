@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Mid,
             Full,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public LifeSettingEnum LifeSetting;
     }
 }

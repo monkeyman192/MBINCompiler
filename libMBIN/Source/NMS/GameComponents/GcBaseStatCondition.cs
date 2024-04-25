@@ -8,7 +8,9 @@ namespace libMBIN.NMS.GameComponents
             HasTeleporter,
             HasMainframe,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BaseStatEnum BaseStat;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool StatValue;
     }
 }

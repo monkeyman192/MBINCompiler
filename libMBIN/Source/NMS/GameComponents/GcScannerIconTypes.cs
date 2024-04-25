@@ -72,6 +72,7 @@ namespace libMBIN.NMS.GameComponents
             Terrain,
             FuelAsteroid,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ScanIconTypeEnum ScanIconType;
     }
 }

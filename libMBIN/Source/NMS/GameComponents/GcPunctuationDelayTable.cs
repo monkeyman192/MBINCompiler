@@ -14,7 +14,7 @@ namespace libMBIN.NMS.GameComponents
             FourthRace,
             Builders,
         }
-        [NMS(Size = 0x6, EnumType = typeof(PunctuationDelaysEnum))]
+        [NMS(Index = 0, Size = 0x6, EnumType = typeof(PunctuationDelaysEnum))]
         /* 0x0 */ public GcPunctuationDelayData[] PunctuationDelays;
     }
 }

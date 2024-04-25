@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             A,
             S,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventoryClassEnum InventoryClass;
     }
 }

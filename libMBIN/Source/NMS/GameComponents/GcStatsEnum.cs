@@ -27,6 +27,7 @@ namespace libMBIN.NMS.GameComponents
             DRONE_SHARDS,
             MECHS_KILLED,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatEnumEnum StatEnum;
     }
 }

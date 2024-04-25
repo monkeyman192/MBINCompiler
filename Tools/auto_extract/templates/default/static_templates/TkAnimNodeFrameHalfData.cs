@@ -10,8 +10,11 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x1F03D88C79D4545B, NameHash = 0xFD9A1D5E0981C57C)]
     public class TkAnimNodeFrameHalfData : NMSTemplate
     {
+        [NMS(Index = 0)]
         /* 0x00 */ public List<Quaternion> Rotations;
+        [NMS(Index = 2)]
         /* 0x10 */ public List<Vector3f> Scales;
+        [NMS(Index = 1)]
         /* 0x20 */ public List<Vector3f> Translations;
 
         public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {
@@ -105,7 +108,7 @@ namespace libMBIN.NMS.Toolkit
             return null;
         }
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex)
             {
             if (field == null || fieldInfo == null)
                 return false;
@@ -153,7 +156,7 @@ namespace libMBIN.NMS.Toolkit
 
                     }
 
-                    additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, outputData));
+                    additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, outputData, 0));
                     addtDataIndex++;
                     return true;
             }

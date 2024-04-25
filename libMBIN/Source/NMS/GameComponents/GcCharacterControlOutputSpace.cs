@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             CameraRelativeTopDown,
             Raw,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CharacterControlOutputSpaceEnum CharacterControlOutputSpace;
     }
 }

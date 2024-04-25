@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Grenades,
             Flamethrower,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SentinelQuadWeaponModeEnum SentinelQuadWeaponMode;
     }
 }

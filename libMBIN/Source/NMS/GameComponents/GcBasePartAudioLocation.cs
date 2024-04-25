@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Freighter_TechRoom,
             Freighter_IndustrialRoom,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BasePartAudioLocationEnum BasePartAudioLocation;
     }
 }

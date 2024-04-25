@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Normal,
             Fast,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HazardDrainDifficultyEnum HazardDrainDifficulty;
     }
 }

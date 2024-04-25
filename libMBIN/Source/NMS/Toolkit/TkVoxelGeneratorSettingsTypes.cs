@@ -27,6 +27,7 @@ namespace libMBIN.NMS.Toolkit
             LilyPadPrime,
             DesertPrime,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TerrainSettingsEnum TerrainSettings;
     }
 }

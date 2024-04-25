@@ -29,6 +29,7 @@ namespace libMBIN.NMS.GameComponents
             ShipInside,
             PlayerInside,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InvalidPlacementReasonEnum InvalidPlacementReason;
     }
 }

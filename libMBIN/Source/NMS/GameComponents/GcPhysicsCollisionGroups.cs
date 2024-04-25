@@ -25,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             NPCs = 0x4000,
             Trigger = 0x8000,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CollisionGroupEnum CollisionGroup;
     }
 }

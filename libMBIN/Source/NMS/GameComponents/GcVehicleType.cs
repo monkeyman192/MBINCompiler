@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Submarine,
             Mech,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public VehicleTypeEnum VehicleType;
     }
 }

@@ -14,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             Dance,
             None,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCInteractiveObjectTypeEnum NPCInteractiveObjectType;
     }
 }

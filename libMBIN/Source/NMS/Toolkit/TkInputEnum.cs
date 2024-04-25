@@ -193,6 +193,7 @@ namespace libMBIN.NMS.Toolkit
             GestureBackpack_LeftHanded = 0x173,
             MaxEnumValue = 0x174,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InputButtonEnum InputButton;
     }
 }

@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Lush,
             Balanced,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CentreJourneyDestinationEnum CentreJourneyDestination;
     }
 }

@@ -22,7 +22,9 @@ namespace libMBIN.NMS.GameComponents
             FleetManagement,
             WeaponCustomisation,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PageToOpenEnum PageToOpen;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool ReinteractWhenComplete;
     }
 }

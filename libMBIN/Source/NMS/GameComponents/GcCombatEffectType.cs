@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Stun,
             Slow,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CombatEffectTypeEnum CombatEffectType;
     }
 }

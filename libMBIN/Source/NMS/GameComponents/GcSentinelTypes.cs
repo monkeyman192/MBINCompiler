@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Walker,
             FriendlyDrone,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SentinelTypeEnum SentinelType;
     }
 }

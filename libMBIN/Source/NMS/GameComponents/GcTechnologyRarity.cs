@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Impossible,
             Always,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TechnologyRarityEnum TechnologyRarity;
     }
 }

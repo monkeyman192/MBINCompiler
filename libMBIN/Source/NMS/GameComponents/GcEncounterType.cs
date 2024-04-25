@@ -14,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             DroneHiveGuards,
             CorruptDronePillar,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public EncounterTypeEnum EncounterType;
     }
 }

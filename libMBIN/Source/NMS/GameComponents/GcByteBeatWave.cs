@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Square,
             Triangle,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ByteBeatWaveEnum ByteBeatWave;
     }
 }

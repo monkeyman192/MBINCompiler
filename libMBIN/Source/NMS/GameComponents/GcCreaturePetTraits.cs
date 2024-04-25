@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Aggression,
             Independence,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PetTraitEnum PetTrait;
     }
 }

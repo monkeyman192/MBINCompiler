@@ -9,8 +9,11 @@ namespace libMBIN.NMS.Toolkit
             Sheathed,
             OutButCannotFire,
         }
+        [NMS(Index = 2)]
         /* 0x0 */ public BlockPlayerWeaponEnum BlockPlayerWeapon;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool BlockPlayerMovement;
+        [NMS(Index = 0)]
         /* 0x5 */ public bool RootMotionEnabled;
     }
 }

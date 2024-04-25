@@ -9,6 +9,7 @@ namespace libMBIN.NMS.Toolkit
             Center,
             Right,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public HorizontalEnum Horizontal;
         // size: 0x3
         public enum VerticalEnum : byte {
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.Toolkit
             Middle,
             Bottom,
         }
+        [NMS(Index = 0)]
         /* 0x1 */ public VerticalEnum Vertical;
     }
 }

@@ -16,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             EnginesRepaired,
             PulsingToPlanet,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public EngineStatusEnum EngineStatus;
     }
 }

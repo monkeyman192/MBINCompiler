@@ -9,30 +9,51 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x3705D946A3B218D4, NameHash = 0xA74EA06001E7577E)]
     public class TkGeometryData : NMSTemplate
     {
+        [NMS(Index = 18)]
         /* 0x000 */ public TkVertexLayout SmallVertexLayout;
+        [NMS(Index = 17)]
         /* 0x020 */ public TkVertexLayout VertexLayout;
+        [NMS(Index = 12)]
         /* 0x040 */ public List<int> BoundHullVertEd;
+        [NMS(Index = 16)]
         /* 0x050 */ public List<Vector4f> BoundHullVerts;
+        [NMS(Index = 11)]
         /* 0x060 */ public List<int> BoundHullVertSt;
+        [NMS(Index = 19)]
         /* 0x070 */ public List<int> IndexBuffer;
+        [NMS(Index = 4)]
         /* 0x080 */ public List<TkJointBindingData> JointBindings;
+        [NMS(Index = 5)]
         /* 0x090 */ public List<TkJointExtentData> JointExtents;
+        [NMS(Index = 7)]
         /* 0x0A0 */ public List<TkJointMirrorAxis> JointMirrorAxes;
+        [NMS(Index = 6)]
         /* 0x0B0 */ public List<int> JointMirrorPairs;
+        [NMS(Index = 15)]
         /* 0x0C0 */ public List<Vector4f> MeshAABBMax;
+        [NMS(Index = 14)]
         /* 0x0D0 */ public List<Vector4f> MeshAABBMin;
+        [NMS(Index = 13)]
         /* 0x0E0 */ public List<int> MeshBaseSkinMat;
+        [NMS(Index = 10)]
         /* 0x0F0 */ public List<int> MeshVertREnd;
+        [NMS(Index = 9)]
         /* 0x100 */ public List<int> MeshVertRStart;
+        [NMS(Index = 8)]
         /* 0x110 */ public List<int> SkinMatrixLayout;
+        [NMS(Index = 20)]
         /* 0x120 */ public List<TkMeshMetaData> StreamMetaDataArray;
+        [NMS(Index = 3)]
         /* 0x130 */ public int CollisionIndexCount;
+        [NMS(Index = 1)]
         /* 0x134 */ public int IndexCount;
+        [NMS(Index = 2)]
         /* 0x138 */ public int Indices16Bit;
+        [NMS(Index = 0)]
         /* 0x13C */ public int VertexCount;
 
         // TODO: add the list ending to this??
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex) {
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex) {
             if (field == null || fieldInfo == null) return false;
 
             Dictionary<int, int> TypeMap = new Dictionary<int, int> { { 5131, 8 }, { 36255, 4 }, { 5121, 4 } };
@@ -51,7 +72,7 @@ namespace libMBIN.NMS.Toolkit
                     IList data = (IList)fieldData;
 
                     if (Indices16Bit != 1) { // if 32bit indices, we can just pass it directly
-                        additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, data));
+                        additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, data, 0));
                     }
                     else {
                         // otherwise we have to create 32bit indices from the 16bit ones
@@ -70,7 +91,7 @@ namespace libMBIN.NMS.Toolkit
                             list32Bit.Add(val32Bit);
                         }
 
-                        additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, list32Bit));
+                        additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, list32Bit, 0));
                     }
                     addtDataIndex++;
                     return true;

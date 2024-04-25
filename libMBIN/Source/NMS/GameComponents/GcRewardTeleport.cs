@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Station3,
             Atlas,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TeleportRewardTypeEnum TeleportRewardType;
     }
 }

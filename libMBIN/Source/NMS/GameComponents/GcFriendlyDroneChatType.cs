@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             LoseWanted,
             Idle,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FriendlyDroneChatTypeEnum FriendlyDroneChatType;
     }
 }

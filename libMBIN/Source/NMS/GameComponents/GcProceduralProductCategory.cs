@@ -32,6 +32,7 @@ namespace libMBIN.NMS.GameComponents
             DismantleTech,
             DismantleData,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ProceduralProductCategoryEnum ProceduralProductCategory;
     }
 }

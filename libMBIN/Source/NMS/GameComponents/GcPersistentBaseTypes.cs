@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             GeneratedPlanetBase,
             GeneratedPlanetBaseEdits,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PersistentBaseTypesEnum PersistentBaseTypes;
     }
 }

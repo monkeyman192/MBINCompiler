@@ -8,7 +8,9 @@ namespace libMBIN.NMS.GameComponents
             Egg,
             ValidCatalyst,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public EggItemTypeEnum EggItemType;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool IncludeEggMachineInventoryInSearch;
     }
 }

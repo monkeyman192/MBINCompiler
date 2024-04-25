@@ -21,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             SetProp,
             Interact_StartFromRemote,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCTriggerEnum NPCTrigger;
     }
 }

@@ -23,6 +23,7 @@ namespace libMBIN.NMS.GameComponents
             Always,
             None,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionMarkupEnum MissionMarkup;
     }
 }

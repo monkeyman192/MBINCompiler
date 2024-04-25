@@ -95,6 +95,7 @@ namespace libMBIN.NMS.GameComponents
             StealthEmpty,
             DefenceForce,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public GameIconsEnum GameIcons;
     }
 }

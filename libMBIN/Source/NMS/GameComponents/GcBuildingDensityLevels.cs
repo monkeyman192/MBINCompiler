@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             Weird,
             HalfWeird,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BuildingDensityEnum BuildingDensity;
     }
 }

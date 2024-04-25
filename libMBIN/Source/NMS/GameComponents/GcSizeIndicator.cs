@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Medium,
             Large,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SizeIndicatorEnum SizeIndicator;
     }
 }

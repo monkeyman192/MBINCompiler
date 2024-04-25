@@ -22,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             RobotShip,
             AllShipsExceptAlien,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TechnologyCategoryEnum TechnologyCategory;
     }
 }

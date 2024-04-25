@@ -20,6 +20,7 @@ namespace libMBIN.NMS.GameComponents
             S9ExoTech,
             S9ShipTech,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public UnlockableItemTreeEnum UnlockableItemTree;
     }
 }

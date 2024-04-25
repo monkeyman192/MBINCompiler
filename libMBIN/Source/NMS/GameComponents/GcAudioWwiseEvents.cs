@@ -2582,6 +2582,7 @@ namespace libMBIN.NMS.GameComponents
             WPN_TERRAIN_END = 0x33B1CD16,
             WPN_TERRAIN_UNDO = 0x89B7D91D,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AkEventEnum AkEvent;
     }
 }

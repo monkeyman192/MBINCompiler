@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Sols,
             Distance,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatDisplayTypeEnum StatDisplayType;
     }
 }

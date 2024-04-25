@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Normal,
             Expensive,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FuelUseDifficultyEnum FuelUseDifficulty;
     }
 }

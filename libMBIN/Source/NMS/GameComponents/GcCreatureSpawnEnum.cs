@@ -32,6 +32,7 @@ namespace libMBIN.NMS.GameComponents
             Escape,
             Warp,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public IncrementorEnum Incrementor;
     }
 }

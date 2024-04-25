@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             NoBuilding,
             NoSystem,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public RewardScanEventOutcomeEnum RewardScanEventOutcome;
     }
 }

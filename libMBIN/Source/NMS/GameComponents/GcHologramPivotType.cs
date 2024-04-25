@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Origin,
             CentreBounds,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HologramPivotTypeEnum HologramPivotType;
     }
 }

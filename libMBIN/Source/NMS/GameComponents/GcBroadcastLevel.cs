@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             LocalModel,
             Local,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BroadcastLevelEnum BroadcastLevel;
     }
 }

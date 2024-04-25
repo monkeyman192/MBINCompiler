@@ -22,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             Waterworld,
             All,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BiomeEnum Biome;
     }
 }

@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Herbivore,
             Robot,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DietEnum Diet;
     }
 }

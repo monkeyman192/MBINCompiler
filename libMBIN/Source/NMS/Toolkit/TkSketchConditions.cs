@@ -12,6 +12,7 @@ namespace libMBIN.NMS.Toolkit
             GreaterEqual,
             LessEqual,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ConditionEnum Condition;
     }
 }

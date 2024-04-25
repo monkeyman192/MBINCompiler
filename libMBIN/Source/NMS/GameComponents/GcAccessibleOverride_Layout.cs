@@ -11,7 +11,9 @@ namespace libMBIN.NMS.GameComponents
             LayerHeight,
             MaxWidth,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AccessibleOverride_LayoutEnum AccessibleOverride_Layout;
+        [NMS(Index = 1)]
         /* 0x4 */ public float FloatValue;
     }
 }

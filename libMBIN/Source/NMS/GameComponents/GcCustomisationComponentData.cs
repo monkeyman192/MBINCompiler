@@ -30,6 +30,7 @@ namespace libMBIN.NMS.GameComponents
             Ship_12,
             PirateFreighter,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CustomisationDataTypeEnum CustomisationDataType;
     }
 }

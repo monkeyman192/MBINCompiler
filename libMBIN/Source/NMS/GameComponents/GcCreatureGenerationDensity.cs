@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Dense,
             VeryDense,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DensityEnum Density;
     }
 }

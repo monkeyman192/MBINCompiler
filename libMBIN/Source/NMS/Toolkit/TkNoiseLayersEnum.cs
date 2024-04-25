@@ -14,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             Elevation,
             Continent,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NoiseLayerTypesEnum NoiseLayerTypes;
     }
 }

@@ -9,7 +9,9 @@ namespace libMBIN.NMS.GameComponents
             Once,
             Always,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SynchroniseScaleEnum SynchroniseScale;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool SupportTeleportation;
     }
 }

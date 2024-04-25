@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             ShuttingDown,
             ShutDown,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SentinelCoverStateEnum SentinelCoverState;
     }
 }

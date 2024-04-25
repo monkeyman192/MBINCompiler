@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Sofa,
             Sit,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCSeatedPostureEnum NPCSeatedPosture;
     }
 }

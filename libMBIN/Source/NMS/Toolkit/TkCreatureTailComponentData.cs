@@ -7,9 +7,13 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x38F8BA7B7D94CFC6, NameHash = 0x787641F134B1AFBD)]
     public class TkCreatureTailComponentData : NMSTemplate
     {
+        [NMS(Index = 2)]
         /* 0x00 */ public TkCreatureTailParams DefaultParams;
+        [NMS(Index = 3)]
         /* 0x70 */ public List<TkCreatureTailParams> ParamVariations;
+        [NMS(Index = 0)]
         /* 0x80 */ public GcPrimaryAxis LengthAxis;
+        [NMS(Index = 1)]
         /* 0x84 */ public bool CanUseDefaultParams;
     }
 }

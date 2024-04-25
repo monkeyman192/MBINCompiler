@@ -22,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             SeasonParty,
             Settlement,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public GalaxyMarkerTypeEnum GalaxyMarkerType;
     }
 }

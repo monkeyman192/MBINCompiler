@@ -25,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             StunGrenade,
             Stealth,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WeaponModeEnum WeaponMode;
     }
 }

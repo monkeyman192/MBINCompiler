@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             PlantGrowth,
             ByteBeat,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public LinkNetworkTypeEnum LinkNetworkType;
     }
 }

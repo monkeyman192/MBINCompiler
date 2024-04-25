@@ -21,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Flyer,
             Cave,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderCreatureCategoryEnum WonderCreatureCategory;
     }
 }

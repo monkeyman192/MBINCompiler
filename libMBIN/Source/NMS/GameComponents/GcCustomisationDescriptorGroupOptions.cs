@@ -6,9 +6,13 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x6C2848F5D0E37898, NameHash = 0x57CBFDF164E923E9)]
     public class GcCustomisationDescriptorGroupOptions : NMSTemplate
     {
+        [NMS(Index = 0)]
         /* 0x00 */ public NMSString0x20A GroupTitle;
+        [NMS(Index = 2)]
         /* 0x20 */ public List<GcCustomisationDescriptorGroupOption> DescriptorGroupOptions;
+        [NMS(Index = 3)]
         /* 0x30 */ public List<NMSString0x10> PrerequisiteGroup;
+        [NMS(Index = 1)]
         /* 0x40 */ public bool FirstOptionIsEmpty;
     }
 }

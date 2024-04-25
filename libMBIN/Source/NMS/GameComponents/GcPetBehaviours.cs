@@ -34,6 +34,7 @@ namespace libMBIN.NMS.GameComponents
             Greet,
             TeleportToPlayer,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PetBehaviourEnum PetBehaviour;
     }
 }

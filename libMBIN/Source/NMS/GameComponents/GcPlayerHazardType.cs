@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             ToxicGas,
             Radiation,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HazardEnum Hazard;
     }
 }

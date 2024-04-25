@@ -197,6 +197,7 @@ namespace libMBIN.NMS.GameComponents
             Vehicle_FuelRegen,
             Vehicle_AutoPilot,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatsTypeEnum StatsType;
     }
 }

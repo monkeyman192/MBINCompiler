@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Rare,
             Plant,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public LocalSubstanceTypeEnum LocalSubstanceType;
     }
 }

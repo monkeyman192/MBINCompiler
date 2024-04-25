@@ -33,6 +33,7 @@ namespace libMBIN.NMS.GameComponents
             Swamp,
             Lava,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BiomeSubTypeEnum BiomeSubType;
     }
 }

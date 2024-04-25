@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Yes,
             No,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FreighterInCurrentSystemEnum FreighterInCurrentSystem;
     }
 }

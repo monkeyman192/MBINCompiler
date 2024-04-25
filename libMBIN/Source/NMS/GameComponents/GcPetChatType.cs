@@ -27,6 +27,7 @@ namespace libMBIN.NMS.GameComponents
             Customise,
             Unsummoned,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PetChatTypeEnum PetChatType;
     }
 }

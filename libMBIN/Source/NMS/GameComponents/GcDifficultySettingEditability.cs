@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             LockedVisible,
             LockedHidden,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DifficultySettingEditabilityEnum DifficultySettingEditability;
     }
 }

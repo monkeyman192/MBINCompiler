@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             BlockedByBrokenTech,
             TechBonus,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventorySpecialSlotTypeEnum InventorySpecialSlotType;
     }
 }

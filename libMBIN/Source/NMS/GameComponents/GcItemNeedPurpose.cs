@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             Charging,
             Paying,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ItemPurposeEnum ItemPurpose;
     }
 }

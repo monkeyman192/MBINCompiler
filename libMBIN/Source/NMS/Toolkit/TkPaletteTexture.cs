@@ -14,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             MatchGround,
             None,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public ColourAltEnum ColourAlt;
         // size: 0x3F
         public enum PaletteEnum : uint {
@@ -81,6 +82,7 @@ namespace libMBIN.NMS.Toolkit
             SpaceStationAlt,
             SpaceStationLights,
         }
+        [NMS(Index = 0)]
         /* 0x4 */ public PaletteEnum Palette;
     }
 }

@@ -10,6 +10,7 @@ namespace libMBIN.NMS.Toolkit
             Rare,
             Extraordinary,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ProbabilityEnum Probability;
     }
 }

@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             PlayerShip,
             PlayerMultiTool,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HologramTypeEnum HologramType;
     }
 }

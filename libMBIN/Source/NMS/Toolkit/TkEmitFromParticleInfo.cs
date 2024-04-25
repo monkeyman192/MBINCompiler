@@ -8,7 +8,9 @@ namespace libMBIN.NMS.Toolkit
             PerParticle,
             Distance,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public EmissionRateTypeEnum EmissionRateType;
+        [NMS(Index = 0)]
         /* 0x4 */ public int OtherEmitterIndex;
     }
 }

@@ -7,10 +7,15 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x9A45A2E9AF4C4E10, NameHash = 0x276FB03774F36C9F)]
     public class GcStoryCategory : NMSTemplate
     {
+        [NMS(Index = 0)]
         /* 0x00 */ public NMSString0x20A CategoryID;
+        [NMS(Index = 1)]
         /* 0x20 */ public NMSString0x20A CategoryIDUpper;
+        [NMS(Index = 4)]
         /* 0x40 */ public List<GcStoryPage> Pages;
+        [NMS(Index = 3)]
         /* 0x50 */ public TkTextureResource IconOff;
+        [NMS(Index = 2)]
         /* 0xD4 */ public TkTextureResource IconOn;
     }
 }

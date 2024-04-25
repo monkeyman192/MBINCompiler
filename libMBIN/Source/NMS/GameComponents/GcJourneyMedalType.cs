@@ -16,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             RaceCreatures,
             DistanceWarped,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MedalTypeEnum MedalType;
     }
 }

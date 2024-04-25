@@ -89,6 +89,7 @@ namespace libMBIN.NMS.GameComponents
             NMSRetroG,
             CorruptSentinels,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ScreenFilterEnum ScreenFilter;
     }
 }

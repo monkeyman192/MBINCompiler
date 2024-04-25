@@ -13,6 +13,7 @@ namespace libMBIN.NMS.Toolkit
             Vector,
             Attachment,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BlackboardTypeEnum BlackboardType;
     }
 }

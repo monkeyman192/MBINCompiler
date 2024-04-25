@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Browse,
             Relatives,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BaseBuildingModeEnum BaseBuildingMode;
     }
 }

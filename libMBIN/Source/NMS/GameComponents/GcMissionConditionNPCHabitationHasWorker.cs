@@ -11,7 +11,9 @@ namespace libMBIN.NMS.GameComponents
             Yes,
             No,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public WorkerInCurrentBaseEnum WorkerInCurrentBase;
+        [NMS(Index = 0)]
         /* 0x4 */ public GcNPCHabitationType WorkerType;
     }
 }

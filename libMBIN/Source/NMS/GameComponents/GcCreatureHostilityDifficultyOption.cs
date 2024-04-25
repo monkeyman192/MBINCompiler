@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             AttackIfProvoked,
             FullEcosystem,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureHostilityDifficultyEnum CreatureHostilityDifficulty;
     }
 }

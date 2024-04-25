@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Permadeath,
             Seasonal,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PresetGameModeEnum PresetGameMode;
     }
 }

@@ -23,6 +23,7 @@ namespace libMBIN.NMS.GameComponents
             HarvestPlant,
             FriendlyDrone,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DiscoveryTypeEnum DiscoveryType;
     }
 }

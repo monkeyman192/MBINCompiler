@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Explode,
             Disabled,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HologramStateEnum HologramState;
     }
 }

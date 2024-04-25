@@ -7,6 +7,7 @@ namespace libMBIN.NMS.GameComponents
         public enum FlareTypeEnum : uint {
             Default,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FlareTypeEnum FlareType;
     }
 }

@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Liquid,
             Substance,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TileTypeEnum TileType;
     }
 }

@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Robot,
             Pet,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureRoleEnum CreatureRole;
     }
 }

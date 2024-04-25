@@ -24,6 +24,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceshipShield,
             FreighterShield,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ImpactEnum Impact;
     }
 }

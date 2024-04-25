@@ -7,6 +7,7 @@ namespace libMBIN.NMS.Toolkit
         public enum CaveTypesEnum : uint {
             Underground,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CaveTypesEnum CaveTypes;
     }
 }

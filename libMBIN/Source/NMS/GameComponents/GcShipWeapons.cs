@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Missile,
             Rocket,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ShipWeaponEnum ShipWeapon;
     }
 }

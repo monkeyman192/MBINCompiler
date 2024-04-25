@@ -5,11 +5,13 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x3FE5960472FA8854, NameHash = 0xB9FD998A06AA6DE0)]
     public class GcDifficultyInventoryStackSizeOptionData : NMSTemplate
     {
-        [NMS(Size = 0xD, EnumType = typeof(GcInventoryStackSizeGroup.InventoryStackSizeGroupEnum))]
+        [NMS(Index = 3, Size = 0xD, EnumType = typeof(GcInventoryStackSizeGroup.InventoryStackSizeGroupEnum))]
         /* 0x00 */ public int[] MaxProductStackSizes;
-        [NMS(Size = 0xD, EnumType = typeof(GcInventoryStackSizeGroup.InventoryStackSizeGroupEnum))]
+        [NMS(Index = 2, Size = 0xD, EnumType = typeof(GcInventoryStackSizeGroup.InventoryStackSizeGroupEnum))]
         /* 0x34 */ public int[] MaxSubstanceStackSizes;
+        [NMS(Index = 1)]
         /* 0x68 */ public int ProductStackLimit;
+        [NMS(Index = 0)]
         /* 0x6C */ public int SubstanceStackLimit;
     }
 }

@@ -5,8 +5,11 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x1E17BECA4DE7169E, NameHash = 0xC626640FD5AAB001)]
     public class TkLODModelResource : NMSTemplate
     {
+        [NMS(Index = 0)]
         /* 0x00 */ public TkModelResource LODModel;
+        [NMS(Index = 1)]
         /* 0x84 */ public float Distance;
+        [NMS(Index = 2)]
         /* 0x88 */ public float SwapThreshold;
     }
 }

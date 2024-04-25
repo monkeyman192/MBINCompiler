@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Debug,
             Obsolete,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ActionUseTypeEnum ActionUseType;
     }
 }

@@ -46,6 +46,7 @@ namespace libMBIN.NMS.GameComponents
             BuildMenuPlacementMode_Right,
             BuildMenuPlacementMode_Left,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ActionSetTypeEnum ActionSetType;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Ship,
             Weapon,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ProgressTypeEnum ProgressType;
     }
 }

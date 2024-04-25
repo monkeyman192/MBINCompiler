@@ -29,6 +29,7 @@ namespace libMBIN.NMS.GameComponents
             ShipRocket,
             None,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public RemoteWeaponTypeEnum RemoteWeaponType;
     }
 }
