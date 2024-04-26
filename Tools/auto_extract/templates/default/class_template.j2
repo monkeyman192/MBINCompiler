@@ -16,6 +16,7 @@
             {{ enum_val[1] }}{% if field.requires_values %} = {{enum_val[0] }}{% endif %},
 {%- endfor %}
         }
+        [NMS(Index = {{ field.field_index }})]
         /* {{ field.field_offset }} */ public {{ field.field_name }}Enum {{ field.field_name }};
 {%- elif field._is_array_field %}{# End of enum chunk, start of array chunk #}
 {%- if field.local_enum %}
@@ -26,11 +27,13 @@
 {%- endfor %}
         }
 {%- endif %}
-        [NMS(Size = {{ field.array_size }}{% if field.array_enum_type is not none %}, EnumType = typeof({{ field.array_enum_type }}){% endif %})]
+        [NMS(Index = {{ field.field_index }}, Size = {{ field.array_size }}{% if field.array_enum_type is not none %}, EnumType = typeof({{ field.array_enum_type }}){% endif %})]
         /* {{ field.field_offset }} */ public {{ field.field_type }}[] {{ field.field_name }};
 {%- elif field._is_list_field %}{# End of array chunk, start of list chunk #}
+        [NMS(Index = {{ field.field_index }})]
         /* {{ field.field_offset }} */ public List<{{ field.field_type }}> {{ field.field_name }};
 {%- else %}{# End of array chunk, start of normal field chunk #}
+        [NMS(Index = {{ field.field_index }})]
         /* {{ field.field_offset }} */ public {{ field.field_type }} {{ field.field_name }};
 {%- endif %}
 {%- endfor %}

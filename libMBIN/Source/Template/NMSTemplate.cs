@@ -1224,7 +1224,7 @@ namespace libMBIN
                 xmlData = new EXmlData { Template = type.Name };
             }
 
-            var fields = type.GetFields().OrderBy(field => field.MetadataToken); // hack to get fields in order of declaration (todo: use something less hacky, this might break mono?)
+            var fields = type.GetFields().OrderBy(field => field.GetCustomAttribute<NMSAttribute>()?.Index ?? 0); // Order fields in declared order
 
             foreach ( var field in fields ) {
 
