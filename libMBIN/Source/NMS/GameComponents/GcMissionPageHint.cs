@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             Expedition,
             Options,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionPageHintEnum MissionPageHint;
     }
 }

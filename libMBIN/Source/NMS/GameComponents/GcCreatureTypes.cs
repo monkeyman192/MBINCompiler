@@ -56,6 +56,7 @@ namespace libMBIN.NMS.GameComponents
             Brainless,
             Pet,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureTypeEnum CreatureType;
     }
 }

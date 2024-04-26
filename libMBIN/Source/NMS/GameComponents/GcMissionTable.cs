@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x4670C55FC287167F, NameHash = 0x26335C55292A7766)]
     public class GcMissionTable : NMSTemplate
     {
+        [NMS(Index = 0)]
         /* 0x0 */ public List<GcGenericMissionSequence> Missions;
     }
 }

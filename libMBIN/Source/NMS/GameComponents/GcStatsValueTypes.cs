@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             DistanceWarped,
             DamageSustained,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatsValueEnum StatsValue;
     }
 }

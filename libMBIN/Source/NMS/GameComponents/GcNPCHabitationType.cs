@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Vehicles,
             Scientist,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NPCHabitationTypeEnum NPCHabitationType;
     }
 }

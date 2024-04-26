@@ -56,6 +56,7 @@ namespace libMBIN.NMS.GameComponents
             SpawnDockedShips,
             LaunchDockedShips,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ExperienceDebugTriggerActionEnum ExperienceDebugTriggerAction;
     }
 }

@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Scanning,
             Protection,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ProceduralTechnologyCategoryEnum ProceduralTechnologyCategory;
     }
 }

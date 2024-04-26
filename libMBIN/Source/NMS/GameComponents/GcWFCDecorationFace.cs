@@ -9,7 +9,9 @@ namespace libMBIN.NMS.GameComponents
             RequireCanWalk,
             RequireCanNotWalk,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public CanWalkEnum CanWalk;
+        [NMS(Index = 0)]
         /* 0x4 */ public NMSString0x80 RequiredFace;
     }
 }

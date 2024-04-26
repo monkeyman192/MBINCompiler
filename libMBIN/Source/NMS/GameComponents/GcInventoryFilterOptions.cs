@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Consumable,
             Deployable,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventoryFilterEnum InventoryFilter;
     }
 }

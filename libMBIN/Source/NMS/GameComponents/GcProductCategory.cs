@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             CustomisationPart,
             CreatureEgg,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ProductCategoryEnum ProductCategory;
     }
 }

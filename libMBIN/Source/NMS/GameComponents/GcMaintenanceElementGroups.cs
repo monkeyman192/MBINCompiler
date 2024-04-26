@@ -16,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Runes,
             RobotHeads,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MaintenanceGroupEnum MaintenanceGroup;
     }
 }

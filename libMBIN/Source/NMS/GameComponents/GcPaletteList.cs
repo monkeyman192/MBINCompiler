@@ -71,7 +71,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceStationAlt,
             SpaceStationLights,
         }
-        [NMS(Size = 0x3F, EnumType = typeof(PalettesEnum))]
+        [NMS(Index = 0, Size = 0x3F, EnumType = typeof(PalettesEnum))]
         /* 0x0 */ public GcPaletteData[] Palettes;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.Toolkit
             Flatten,
             TerrainEdits,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FlatteningEnum Flattening;
         // size: 0x4
         public enum WaterPlacementEnum : uint {
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.Toolkit
             Underwater,
             UnderwaterOnly,
         }
+        [NMS(Index = 1)]
         /* 0x4 */ public WaterPlacementEnum WaterPlacement;
     }
 }

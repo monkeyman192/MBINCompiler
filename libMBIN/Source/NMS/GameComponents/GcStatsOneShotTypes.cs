@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             ShipWarped,
             WeaponFired,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatsOneShotEnum StatsOneShot;
     }
 }

@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             TECH,
             THREAT,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public wordcategorytableEnumEnum wordcategorytableEnum;
     }
 }

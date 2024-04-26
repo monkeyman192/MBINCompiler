@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Normal,
             AbandonedSystem,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BuildingSystemTypeEnum BuildingSystemType;
     }
 }

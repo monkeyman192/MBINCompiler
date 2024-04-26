@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             PerfectionMax,
             PerfectionMin,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderPlanetCategoryEnum WonderPlanetCategory;
     }
 }

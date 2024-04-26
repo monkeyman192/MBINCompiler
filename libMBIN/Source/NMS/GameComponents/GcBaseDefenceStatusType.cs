@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Disabled,
             Security,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BaseDefenceStatusEnum BaseDefenceStatus;
     }
 }

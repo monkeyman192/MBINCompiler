@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Conflict,
             Request,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SettlementJudgementTypeEnum SettlementJudgementType;
     }
 }

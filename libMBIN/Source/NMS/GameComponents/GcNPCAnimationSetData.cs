@@ -6,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x1196BB295CE46EAF, NameHash = 0xF3A35A6135FAD505)]
     public class GcNPCAnimationSetData : NMSTemplate
     {
-        [NMS(Size = 0x9, EnumType = typeof(GcAlienMood.MoodEnum))]
+        [NMS(Index = 5, Size = 0x9, EnumType = typeof(GcAlienMood.MoodEnum))]
         /* 0x000 */ public GcNPCAnimationList[] MoodAnims;
-        [NMS(Size = 0x9, EnumType = typeof(GcAlienMood.MoodEnum))]
+        [NMS(Index = 6, Size = 0x9, EnumType = typeof(GcAlienMood.MoodEnum))]
         /* 0x090 */ public NMSString0x10[] MoodLoops;
+        [NMS(Index = 2)]
         /* 0x120 */ public List<GcNPCProbabilityAnimationData> ChatterAnimations;
+        [NMS(Index = 4)]
         /* 0x130 */ public List<GcNPCProbabilityAnimationData> GreetAnimations;
+        [NMS(Index = 0)]
         /* 0x140 */ public List<GcNPCProbabilityAnimationData> IdleAnimations;
+        [NMS(Index = 1)]
         /* 0x150 */ public List<GcNPCProbabilityAnimationData> IdleFlavourAnimations;
+        [NMS(Index = 3)]
         /* 0x160 */ public List<GcNPCProbabilityAnimationData> ListenAnimations;
     }
 }

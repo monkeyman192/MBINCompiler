@@ -14,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             AttachedAbandonedShip,
             Weapon,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventoryToRepairEnum InventoryToRepair;
     }
 }

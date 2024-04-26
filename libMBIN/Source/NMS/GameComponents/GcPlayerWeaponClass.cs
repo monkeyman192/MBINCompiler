@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Spawner,
             SpawnerAlt,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WeaponClassEnum WeaponClass;
     }
 }

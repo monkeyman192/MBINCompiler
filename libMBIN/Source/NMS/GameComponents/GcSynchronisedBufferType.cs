@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Example2,
             Example3,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SyncBufferTypeEnum SyncBufferType;
     }
 }

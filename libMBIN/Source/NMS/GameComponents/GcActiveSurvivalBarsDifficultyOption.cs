@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             HealthAndHazard,
             All,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ActiveSurvivalBarsDifficultyEnum ActiveSurvivalBarsDifficulty;
     }
 }

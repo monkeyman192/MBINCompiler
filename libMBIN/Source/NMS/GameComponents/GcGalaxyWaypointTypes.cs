@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             Gameplay_Mission,
             Gameplay_SeasonParty,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public GalaxyWaypointTypeEnum GalaxyWaypointType;
     }
 }

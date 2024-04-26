@@ -12,6 +12,7 @@ namespace libMBIN.NMS.Toolkit
             Trophy3 = 0x3,
             Trophy4 = 0x4,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TrophyEnum Trophy;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Story,
             NotStory,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PortalTypeEnum PortalType;
     }
 }

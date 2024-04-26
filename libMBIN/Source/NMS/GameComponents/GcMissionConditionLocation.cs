@@ -35,6 +35,7 @@ namespace libMBIN.NMS.GameComponents
             AtlasStation,
             AtlasStationFinal,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionPlayerLocationEnum MissionPlayerLocation;
     }
 }

@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             HeadRelative,
             NotSet,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MovementDirectionEnum MovementDirection;
     }
 }

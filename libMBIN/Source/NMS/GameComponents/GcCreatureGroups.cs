@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Group,
             Herd,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureGroupEnum CreatureGroup;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Seeded,
             Random,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public IndexTypeEnum IndexType;
     }
 }

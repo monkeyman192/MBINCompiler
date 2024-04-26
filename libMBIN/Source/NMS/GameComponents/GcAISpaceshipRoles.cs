@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             TinyFreighter,
             Frigate,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AIShipRoleEnum AIShipRole;
     }
 }

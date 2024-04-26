@@ -13,6 +13,7 @@ namespace libMBIN.NMS.Toolkit
             BlobsSmall,
             Substance,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FeatureTypesEnum FeatureTypes;
     }
 }

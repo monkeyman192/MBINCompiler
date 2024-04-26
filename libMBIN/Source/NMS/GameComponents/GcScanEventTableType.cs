@@ -14,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             NPCPlanetSite,
             Seasonal,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ScanTableEnum ScanTable;
     }
 }

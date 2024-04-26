@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             PadOnly,
             KeyboardAnMouseOnly,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CharacterControlInputValidityEnum CharacterControlInputValidity;
     }
 }

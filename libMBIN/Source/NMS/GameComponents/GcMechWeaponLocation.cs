@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             ArmLeft,
             ArmRight,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MechWeaponLocationEnum MechWeaponLocation;
     }
 }

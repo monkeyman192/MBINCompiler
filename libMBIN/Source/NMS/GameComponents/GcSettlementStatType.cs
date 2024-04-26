@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Debt,
             Alert,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SettlementStatTypeEnum SettlementStatType;
     }
 }

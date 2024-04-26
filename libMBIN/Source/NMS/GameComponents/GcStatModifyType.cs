@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Add,
             Subtract,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ModifyTypeEnum ModifyType;
     }
 }

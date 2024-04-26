@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             PendingRedemption,
             Redeemed,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SeasonEndRewardsRedemptionStateEnum SeasonEndRewardsRedemptionState;
     }
 }

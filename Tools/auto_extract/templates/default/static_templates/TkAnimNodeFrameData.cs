@@ -10,8 +10,11 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xC4C8B7669C8C9D44, NameHash = 0x270204EDCEE4DB62)]
     public class TkAnimNodeFrameData : NMSTemplate
     {
-        /* 0x00 */ public List<ushort> Rotations;
+        [NMS(Index = 0)]
+        /* 0x00 */ public List<Quaternion> Rotations;
+        [NMS(Index = 2)]
         /* 0x10 */ public List<Vector3f> Scales;
+        [NMS(Index = 1)]
         /* 0x20 */ public List<Vector3f> Translations;
 
 

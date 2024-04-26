@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Hungry,
             Lonely,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PetMoodEnum PetMood;
     }
 }

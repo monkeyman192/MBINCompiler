@@ -9,7 +9,9 @@ namespace libMBIN.NMS.Toolkit
             Balanced,
             Aggressive,
         }
+        [NMS(Index = 1)]
         /* 0x0 */ public DynamicResScalingAggressivenessEnum DynamicResScalingAggressiveness;
+        [NMS(Index = 0)]
         /* 0x4 */ public float LowestDynamicResScalingFactor;
     }
 }

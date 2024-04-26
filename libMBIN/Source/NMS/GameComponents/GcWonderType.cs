@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Mineral,
             Custom,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderTypeEnum WonderType;
     }
 }

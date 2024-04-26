@@ -10,6 +10,7 @@ namespace libMBIN.NMS.Toolkit
             Highlight,
             Active,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NGuiForcedStyleEnum NGuiForcedStyle;
     }
 }

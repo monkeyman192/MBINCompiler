@@ -57,6 +57,7 @@ namespace libMBIN.NMS.Toolkit
             FakeLeftStick = 0x30,
             FakeRightStick = 0x31,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InputAxisEnum InputAxis;
     }
 }

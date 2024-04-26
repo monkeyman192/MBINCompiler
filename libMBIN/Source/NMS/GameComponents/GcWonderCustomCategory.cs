@@ -18,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Custom11,
             Custom12,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderCustomCategoryEnum WonderCustomCategory;
     }
 }

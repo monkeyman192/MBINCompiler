@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             LeftForward,
             All,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DirectionEnum Direction;
         // size: 0x3
         public enum LevelsEnum : uint {
@@ -22,12 +23,14 @@ namespace libMBIN.NMS.GameComponents
             Upper,
             Both,
         }
+        [NMS(Index = 1)]
         /* 0x4 */ public LevelsEnum Levels;
         // size: 0x2
         public enum TerrainEnum : uint {
             RequireAbove,
             RequireBelow,
         }
+        [NMS(Index = 2)]
         /* 0x8 */ public TerrainEnum Terrain;
     }
 }

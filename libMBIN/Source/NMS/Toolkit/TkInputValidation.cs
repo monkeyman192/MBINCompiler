@@ -10,6 +10,7 @@ namespace libMBIN.NMS.Toolkit
             Released,
             HeldOver,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InputValidationEnum InputValidation;
     }
 }

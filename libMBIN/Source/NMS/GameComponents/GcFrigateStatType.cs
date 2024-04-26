@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Invulnerable,
             Stealth,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public FrigateStatTypeEnum FrigateStatType;
     }
 }

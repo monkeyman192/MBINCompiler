@@ -146,6 +146,7 @@ namespace libMBIN.NMS.GameComponents
             SeasonTerminal,
             NPC_Freighter_Captain_Pirate,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InteractionTypeEnum InteractionType;
     }
 }

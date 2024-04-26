@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Dead,
             Confused,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MoodEnum Mood;
     }
 }

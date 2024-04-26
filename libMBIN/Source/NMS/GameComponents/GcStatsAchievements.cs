@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             FirstWarp,
             FirstDiscovery,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatsAchievementsEnum StatsAchievements;
     }
 }

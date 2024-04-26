@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceAtlas,
             Nexus,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public GenericIconTypeEnum GenericIconType;
     }
 }

@@ -12,7 +12,9 @@ namespace libMBIN.NMS.GameComponents
             SlowWalkOn,
             OpenDoors,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AbandonedFreighterMissionStateEnum AbandonedFreighterMissionState;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool Silent;
     }
 }

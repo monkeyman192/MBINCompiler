@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Scientific,
             Shuttle,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ModularCustomisationResourceTypeEnum ModularCustomisationResourceType;
     }
 }

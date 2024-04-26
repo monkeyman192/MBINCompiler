@@ -1,7 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
@@ -11,11 +9,15 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0xD3AC8F6F7A4D55FC, NameHash = 0xF671716161E708E3)]
     public class TkMeshData : NMSTemplate
     {
+        [NMS(Index = 4)]
         /* 0x00 */ public byte[] MeshDataStream;
+        [NMS(Index = 1)]
         /* 0x10 */ public ulong Hash;
+        [NMS(Index = 3)]
         /* 0x18 */ public int IndexDataSize;
+        [NMS(Index = 2)]
         /* 0x1C */ public int VertexDataSize;
-        [NMS(Size = 0x80, Padding = 0xFE)]
+        [NMS(Index = 0, Size = 0x80, Padding = 0xFE)]
         /* 0x20 */ public string IdString;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {

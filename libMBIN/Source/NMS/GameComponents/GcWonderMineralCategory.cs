@@ -14,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             RadFact,
             ToxFact,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderMineralCategoryEnum WonderMineralCategory;
     }
 }

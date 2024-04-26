@@ -1,6 +1,7 @@
-import pytest
 import os.path as op
 import os
+
+import pytest
 
 from utils import compare_mbins, failed_files
 

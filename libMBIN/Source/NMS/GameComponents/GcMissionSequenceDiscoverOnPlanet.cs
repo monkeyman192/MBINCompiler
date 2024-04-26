@@ -9,9 +9,13 @@ namespace libMBIN.NMS.GameComponents
             Vegetable,
             Mineral,
         }
+        [NMS(Index = 2)]
         /* 0x00 */ public DiscoverTargetOnThisPlanetEnum DiscoverTargetOnThisPlanet;
+        [NMS(Index = 0)]
         /* 0x04 */ public float PercentToDiscover;
+        [NMS(Index = 3)]
         /* 0x08 */ public NMSString0x80 DebugText;
+        [NMS(Index = 1)]
         /* 0x88 */ public NMSString0x80 Message;
     }
 }

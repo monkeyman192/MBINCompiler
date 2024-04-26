@@ -24,6 +24,7 @@ namespace libMBIN.NMS.Toolkit
             TencentChinese,
             Korean,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public LanguageEnum Language;
     }
 }

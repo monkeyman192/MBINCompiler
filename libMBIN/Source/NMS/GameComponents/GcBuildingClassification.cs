@@ -61,6 +61,7 @@ namespace libMBIN.NMS.GameComponents
             AbandonedRobotCamp,
             RobotHead,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BuildingClassEnum BuildingClass;
     }
 }

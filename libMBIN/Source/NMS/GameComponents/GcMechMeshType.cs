@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Exocraft,
             Sentinel,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MechMeshTypeEnum MechMeshType;
     }
 }

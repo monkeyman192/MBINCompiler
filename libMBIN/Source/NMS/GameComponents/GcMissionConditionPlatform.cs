@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Undefined,
             NintendoSwitch,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionPlatformEnum MissionPlatform;
     }
 }

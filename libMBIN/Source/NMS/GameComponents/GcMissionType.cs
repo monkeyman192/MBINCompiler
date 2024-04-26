@@ -28,6 +28,7 @@ namespace libMBIN.NMS.GameComponents
             LocalSentinels,
             BuildersLanguage,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MissionTypeEnum MissionType;
     }
 }

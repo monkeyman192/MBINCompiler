@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             MonoCorrupted,
             GiftGiven,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InteractionMissionStateEnum InteractionMissionState;
     }
 }

@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Timber,
             Fibreglass,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StyleEnum Style;
     }
 }

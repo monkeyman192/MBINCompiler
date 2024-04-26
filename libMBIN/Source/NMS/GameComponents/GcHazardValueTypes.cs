@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Storm,
             Night,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HazardValueEnum HazardValue;
     }
 }

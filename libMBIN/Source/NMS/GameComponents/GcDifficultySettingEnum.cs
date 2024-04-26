@@ -34,6 +34,7 @@ namespace libMBIN.NMS.GameComponents
             SprintingCost,
             BreakTechOnDamage,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DifficultySettingEnum DifficultySetting;
     }
 }

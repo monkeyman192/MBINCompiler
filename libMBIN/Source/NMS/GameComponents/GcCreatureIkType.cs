@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceshipFoot,
             SpaceshipToe,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureIkTypeEnum CreatureIkType;
     }
 }

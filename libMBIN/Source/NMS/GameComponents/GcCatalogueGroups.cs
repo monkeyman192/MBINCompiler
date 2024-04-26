@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             Recipes,
             Wonders,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CatalogueGroupEnum CatalogueGroup;
     }
 }

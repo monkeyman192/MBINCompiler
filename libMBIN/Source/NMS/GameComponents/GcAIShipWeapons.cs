@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Laser,
             MiningLaser,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AIShipWeaponEnum AIShipWeapon;
     }
 }

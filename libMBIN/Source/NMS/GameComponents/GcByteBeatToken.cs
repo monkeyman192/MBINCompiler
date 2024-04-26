@@ -24,6 +24,7 @@ namespace libMBIN.NMS.GameComponents
             OpenParenthesis,
             CloseParenthesis,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ByteBeatTokenEnum ByteBeatToken;
     }
 }

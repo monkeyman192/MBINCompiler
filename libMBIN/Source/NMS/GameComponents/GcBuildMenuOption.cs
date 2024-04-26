@@ -22,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             PlaceWire,
             CycleRotateMode,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BuildMenuOptionEnum BuildMenuOption;
     }
 }

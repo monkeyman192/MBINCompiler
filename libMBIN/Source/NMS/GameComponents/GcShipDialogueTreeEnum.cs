@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Goods,
             Hostile,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DialogueTreeEnum DialogueTree;
     }
 }

@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             AnyTrue,
             AllTrue,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ConditionTestEnum ConditionTest;
     }
 }

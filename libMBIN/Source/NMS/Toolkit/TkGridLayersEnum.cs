@@ -15,6 +15,7 @@ namespace libMBIN.NMS.Toolkit
             Resources_Gold,
             Resources_Emeril,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public GridLayerTypesEnum GridLayerTypes;
     }
 }

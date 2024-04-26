@@ -6,22 +6,29 @@ namespace libMBIN.NMS.GameComponents
     [NMS(GUID = 0x46127FC79E756668, NameHash = 0x32822FA2FD268A65)]
     public class GcInventoryTable : NMSTemplate
     {
-        [NMS(Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
+        [NMS(Index = 7, Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
         /* 0x0000 */ public GcInventoryGenerationBaseStatData[] ShipBaseStatsData;
-        [NMS(Size = 0xA, EnumType = typeof(GcWeaponClasses.WeaponStatClassEnum))]
+        [NMS(Index = 8, Size = 0xA, EnumType = typeof(GcWeaponClasses.WeaponStatClassEnum))]
         /* 0x0280 */ public GcInventoryGenerationBaseStatData[] WeaponBaseStatsData;
+        [NMS(Index = 6)]
         /* 0x0500 */ public GcInventoryGenerationBaseStatData VehicleBaseStatsData;
+        [NMS(Index = 9)]
         /* 0x0540 */ public List<GcInventoryBaseStat> BaseStats;
+        [NMS(Index = 0)]
         /* 0x0550 */ public List<GcInventoryTableEntry> Table;
+        [NMS(Index = 1)]
         /* 0x0560 */ public GcInventoryLayoutGenerationData GenerationData;
-        [NMS(Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
+        [NMS(Index = 10, Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
         /* 0x1280 */ public GcShipInventoryMaxUpgradeCapacity[] ShipInventoryMaxUpgradeSize;
+        [NMS(Index = 2)]
         /* 0x1460 */ public GcInventoryCostData ShipCostData;
-        [NMS(Size = 0xA, EnumType = typeof(GcWeaponClasses.WeaponStatClassEnum))]
+        [NMS(Index = 3, Size = 0xA, EnumType = typeof(GcWeaponClasses.WeaponStatClassEnum))]
         /* 0x15F0 */ public GcInventoryCostDataEntry[] WeaponCostData;
-        [NMS(Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]
+        [NMS(Index = 5, Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]
         /* 0x1780 */ public GcInventoryClassProbabilities[] ClassProbabilityData;
+        [NMS(Index = 4)]
         /* 0x17C0 */ public GcInventoryCostDataEntry VehicleCostData;
+        [NMS(Index = 11)]
         /* 0x17E8 */ public GcWeaponInventoryMaxUpgradeCapacity WeaponInventoryMaxUpgradeSize;
     }
 }

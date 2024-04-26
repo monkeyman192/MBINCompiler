@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             Rare,
             SuperRare,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureRarityEnum CreatureRarity;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Water,
             Air,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PhotoCreatureTypeEnum PhotoCreatureType;
     }
 }

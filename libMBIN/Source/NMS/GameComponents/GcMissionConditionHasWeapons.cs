@@ -10,6 +10,7 @@ namespace libMBIN.NMS.GameComponents
             CombatPrimaryInstalled,
             CombatSecondaryInstalled,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WeaponTestEnum WeaponTest;
     }
 }

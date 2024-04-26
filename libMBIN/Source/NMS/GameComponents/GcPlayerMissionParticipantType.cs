@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             Secondary8,
             Secondary9,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ParticipantTypeEnum ParticipantType;
     }
 }

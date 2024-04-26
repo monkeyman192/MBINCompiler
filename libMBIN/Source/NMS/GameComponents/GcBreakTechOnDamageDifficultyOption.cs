@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Low,
             High,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public BreakTechOnDamageProbabilityEnum BreakTechOnDamageProbability;
     }
 }

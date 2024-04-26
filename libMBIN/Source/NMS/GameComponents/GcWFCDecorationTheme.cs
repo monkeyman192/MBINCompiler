@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Default,
             Construction,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WFCDecorationThemeEnum WFCDecorationTheme;
     }
 }

@@ -70,6 +70,7 @@ namespace libMBIN.NMS.Toolkit
             _F63_DISSOLVE,
             _F64_,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MaterialFlagEnum MaterialFlag;
     }
 }

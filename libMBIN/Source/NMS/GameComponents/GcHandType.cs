@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Offhand,
             Dominant,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HandTypeEnum HandType;
     }
 }

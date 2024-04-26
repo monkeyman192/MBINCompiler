@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Milk,
             HarvestSpecial,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public PetActionEnum PetAction;
     }
 }

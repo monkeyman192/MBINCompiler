@@ -10,6 +10,7 @@ namespace libMBIN.NMS.Toolkit
             Ground,
             Water,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public NavMeshAreaTypeEnum NavMeshAreaType;
     }
 }

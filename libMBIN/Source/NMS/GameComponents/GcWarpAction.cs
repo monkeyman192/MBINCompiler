@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             BlackHole,
             SpacePOI,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WarpTypeEnum WarpType;
     }
 }

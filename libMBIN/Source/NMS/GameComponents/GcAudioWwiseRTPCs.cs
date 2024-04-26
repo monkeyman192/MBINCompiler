@@ -103,6 +103,7 @@ namespace libMBIN.NMS.GameComponents
             WPN_PL_JAVELIN_CHARGE = 0xF04467B0,
             WPN_PL_NEUTRON_CANNON_CHARGE = 0x60C92E72,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AkRTPCEnum AkRTPC;
     }
 }

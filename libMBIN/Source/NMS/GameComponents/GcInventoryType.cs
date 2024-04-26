@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Technology,
             Product,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InventoryTypeEnum InventoryType;
     }
 }

@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Gas1 = 0x10,
             Gas2 = 0x20,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HotspotTypeEnum HotspotType;
     }
 }

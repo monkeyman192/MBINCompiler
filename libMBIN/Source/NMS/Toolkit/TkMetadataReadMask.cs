@@ -14,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             SavePlayerInventory = 0x8,
             SaveDifficultySettings = 0x10,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public MetadataReadMaskEnum MetadataReadMask;
     }
 }

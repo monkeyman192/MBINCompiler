@@ -6,10 +6,15 @@ namespace libMBIN.NMS.Toolkit
     [NMS(GUID = 0x42A7CE67E1CAAAA6, NameHash = 0x34A0F43E0ECB3765)]
     public class TkSketchNodeData : NMSTemplate
     {
+        [NMS(Index = 5)]
         /* 0x00 */ public List<TkSketchNodeConnections> Connections;
+        [NMS(Index = 6)]
         /* 0x10 */ public List<byte> CustomData;
+        [NMS(Index = 3)]
         /* 0x20 */ public int PositionX;
+        [NMS(Index = 4)]
         /* 0x24 */ public int PositionY;
+        [NMS(Index = 2)]
         /* 0x28 */ public int SelectedVariant;
         // size: 0x6
         public enum TriggerTypeEnum : uint {
@@ -20,7 +25,9 @@ namespace libMBIN.NMS.Toolkit
             QueueLatest,
             QueueAll,
         }
+        [NMS(Index = 1)]
         /* 0x2C */ public TriggerTypeEnum TriggerType;
+        [NMS(Index = 0)]
         /* 0x30 */ public NMSString0x20 TypeName;
     }
 }

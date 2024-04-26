@@ -10,7 +10,9 @@ namespace libMBIN.NMS.GameComponents
             Gas,
             Minerals,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ForHotspotTypeEnum ForHotspotType;
+        [NMS(Index = 1)]
         /* 0x4 */ public bool RequireAlreadyAnalysed;
     }
 }

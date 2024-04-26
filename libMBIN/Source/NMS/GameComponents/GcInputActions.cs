@@ -300,6 +300,7 @@ namespace libMBIN.NMS.GameComponents
             DumpVertStats,
             Player_TagMarker,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public InputActionEnum InputAction;
     }
 }

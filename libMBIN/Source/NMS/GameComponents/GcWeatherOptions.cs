@@ -22,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             Fire,
             ClearCold,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WeatherEnum Weather;
     }
 }

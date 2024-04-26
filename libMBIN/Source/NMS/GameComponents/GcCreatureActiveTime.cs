@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             MostlyNight,
             OnlyNight,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CreatureActiveTimeEnum CreatureActiveTime;
     }
 }

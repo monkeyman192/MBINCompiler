@@ -14,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             NSO,
             GameCenter,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public AuthProviderEnum AuthProvider;
     }
 }

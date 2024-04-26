@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Summon,
             Dismiss,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SummonEventTypeEnum SummonEventType;
     }
 }

@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Uncommon,
             Rare,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public RarityEnum Rarity;
     }
 }

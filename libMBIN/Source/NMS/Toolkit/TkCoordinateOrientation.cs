@@ -8,6 +8,7 @@ namespace libMBIN.NMS.Toolkit
             None,
             Random,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CoordinateOrientationEnum CoordinateOrientation;
     }
 }

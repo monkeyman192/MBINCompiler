@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Toggle,
             OptionList,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public DifficultySettingTypeEnum DifficultySettingType;
     }
 }

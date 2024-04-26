@@ -16,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Settlement,
             Freighter,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public TeleporterDestinationTypeEnum TeleporterDestinationType;
     }
 }

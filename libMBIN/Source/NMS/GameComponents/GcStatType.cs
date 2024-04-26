@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Float,
             AvgRate,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public StatTypeEnum StatType;
     }
 }

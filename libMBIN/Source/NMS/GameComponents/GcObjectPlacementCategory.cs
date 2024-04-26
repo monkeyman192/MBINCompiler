@@ -11,6 +11,7 @@ namespace libMBIN.NMS.GameComponents
             ResourceLarge,
             ResourceDebris,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ObjectPlacementEnum ObjectPlacement;
     }
 }

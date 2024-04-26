@@ -16,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Sail,
             Robot,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ShipClassEnum ShipClass;
     }
 }

@@ -35,6 +35,7 @@ namespace libMBIN.NMS.GameComponents
             CustomWonders,
             DebugSweep,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WikiTopicTypeEnum WikiTopicType;
     }
 }

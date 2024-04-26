@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             Decoration,
             Other,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public SettlementConstructionLevelEnum SettlementConstructionLevel;
     }
 }

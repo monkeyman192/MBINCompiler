@@ -8,13 +8,16 @@ namespace libMBIN.NMS.GameComponents
             Checkpoint,
             Start,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public CheckpointTypeEnum CheckpointType;
         // size: 0x2
         public enum RaceTypeEnum : uint {
             Vehicle,
             Spaceship,
         }
+        [NMS(Index = 1)]
         /* 0x4 */ public RaceTypeEnum RaceType;
+        [NMS(Index = 2)]
         /* 0x8 */ public float Radius;
     }
 }

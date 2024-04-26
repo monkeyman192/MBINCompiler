@@ -12,6 +12,7 @@ namespace libMBIN.NMS.GameComponents
             ShowExpeditionCaptain,
             AbortExpedition,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ResponseEnum Response;
     }
 }

@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceHorror,
             SpaceBones,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public WonderTreasureCategoryEnum WonderTreasureCategory;
     }
 }

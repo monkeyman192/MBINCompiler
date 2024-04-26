@@ -284,6 +284,7 @@ namespace libMBIN
                 case "List`1":
                 case "NMSTemplate":
                 case "VariableSizeString":
+                    // TODO: See whether or not `max(0x8, AlignOf(<list subtype>))` is acctually the right value...
                     alignment = 0x8;
                     break;
 
@@ -314,19 +315,13 @@ namespace libMBIN
                     if (type.BaseType == typeof(NMSTemplate)) {
                         alignment = 1;
 
-                        // Since fields are ordered by alignment, the first element will
-                        // have the largest alignment.
-                        FieldInfo[] fields = type.GetFields();
-                        if (fields.Length > 0) {
-                            alignment = AlignOf(fields[0].FieldType);
+                        foreach (FieldInfo field in type.GetFields()) {
+                            int align = AlignOf(field.FieldType);
+                            if (align > alignment) {
+                                alignment = align;
+                                if (alignment >= 0x10) break;
+                            }
                         }
-                        // foreach (FieldInfo field in type.GetFields()) {
-                        //     int align = AlignOf(field.FieldType);
-                        //     if (align > alignment) {
-                        //         alignment = align;
-                        //         if (alignment >= 0x10) break;
-                        //     }
-                        // }
 
                         break;
                     }
@@ -920,9 +915,13 @@ namespace libMBIN
                 var additionalData = new List<Tuple<long, object>>();
 
                 UInt32 listEnding = 0xAAAAAA01;
+                List<int> listOrder = new List<int>{};
+                bool reorderList = false;
 
                 if ( GetType() == typeof( NMS.Toolkit.TkAnimMetadata ) ) {
                     listEnding = 0xFEFEFE01;
+                    listOrder = new List<int>{4, 3, 0, 1, 2};
+                    reorderList = true;
                 } else if ( GetType() == typeof( NMS.Toolkit.TkGeometryStreamData ) || GetType() == typeof( NMS.Toolkit.TkGeometryData ) ) {
                     listEnding = 0x00000001;
                 }
@@ -932,6 +931,13 @@ namespace libMBIN
                 AppendToWriter( writer, ref additionalData, ref i, GetType(), listEnding );
 
                 // now write values of lists etc
+
+                // Reorder the list if it's required.
+                // This generally isn't but Animation and Geometry files are in "EXML-order", so we need to fix them.
+                if (reorderList) {
+                    additionalData = listOrder.Select(i => additionalData[i]).ToList();
+                }
+
                 for ( i = 0; i < additionalData.Count; i++ ) {
                     var data = additionalData[i];
                     //DebugLog($"Current i: {i}");
@@ -1224,7 +1230,7 @@ namespace libMBIN
                 xmlData = new EXmlData { Template = type.Name };
             }
 
-            var fields = type.GetFields().OrderBy(field => field.GetCustomAttribute<NMSAttribute>()?.Index ?? 0); // Order fields in declared order
+            var fields = type.GetFields().OrderBy(field => field.GetCustomAttribute<NMSAttribute>()?.Index ?? field.MetadataToken); // Order fields in declared order
 
             foreach ( var field in fields ) {
 

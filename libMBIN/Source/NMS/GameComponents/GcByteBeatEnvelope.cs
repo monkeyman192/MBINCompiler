@@ -9,6 +9,7 @@ namespace libMBIN.NMS.GameComponents
             Med,
             Long,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public ByteBeatEnvelopeEnum ByteBeatEnvelope;
     }
 }

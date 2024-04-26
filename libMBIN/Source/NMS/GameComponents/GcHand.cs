@@ -8,6 +8,7 @@ namespace libMBIN.NMS.GameComponents
             Right,
             Left,
         }
+        [NMS(Index = 0)]
         /* 0x0 */ public HandEnum Hand;
     }
 }
