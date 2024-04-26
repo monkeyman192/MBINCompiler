@@ -134,6 +134,8 @@ FLAG_ENUM_FIXES = {
 EXTRA_ATTRIBUTES = {
     'GcPlayerClothComponentData': ', Alignment = 0x10',
     'GcClothComponentData': ', Alignment = 0x10',
+    'GcMultiColouriseComponentData': ', Alignment = 0x10',
+    'GcScanEffectComponentData': ', Alignment = 0x10',
 }
 # List of classes to avoid overwriting as the have custom deserialisation
 # methods.
