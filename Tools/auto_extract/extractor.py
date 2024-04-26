@@ -136,6 +136,7 @@ EXTRA_ATTRIBUTES = {
     'GcClothComponentData': ', Alignment = 0x10',
     'GcMultiColouriseComponentData': ', Alignment = 0x10',
     'GcScanEffectComponentData': ', Alignment = 0x10',
+    'GcSpringAttachmentComponentData': ', Alignment = 0x10',
 }
 # List of classes to avoid overwriting as the have custom deserialisation
 # methods.
@@ -146,6 +147,7 @@ DONT_OVERRIDE = [
     'TkAnimNodeFrameHalfData',
     'TkGeometryData',
     'TkMeshData',
+    'TkAnimNodeData',
 ]
 
 SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')

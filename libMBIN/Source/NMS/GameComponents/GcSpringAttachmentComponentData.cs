@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE9FF30673A2D8237, NameHash = 0x70622F0C8DD198C)]
+    [NMS(GUID = 0xE9FF30673A2D8237, NameHash = 0x70622F0C8DD198C, Alignment = 0x10)]
     public class GcSpringAttachmentComponentData : NMSTemplate
     {
         [NMS(Index = 3)]

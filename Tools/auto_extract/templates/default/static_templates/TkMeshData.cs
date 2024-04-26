@@ -42,7 +42,7 @@ namespace libMBIN.NMS.Toolkit
             return null;
         }
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
             {
             var fieldName = fieldInfo.Name;
             switch (fieldName)
@@ -56,7 +56,7 @@ namespace libMBIN.NMS.Toolkit
                     writer.Write((Int32) (MeshDataStream?.Length ?? 0)); // size of data chunk in bytes
                     writer.Write((UInt32) 0xFEFEFE01);
 
-                    additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, fieldData, 4));
+                    additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, fieldData));
                     addtDataIndex++;
                     return true;
             }

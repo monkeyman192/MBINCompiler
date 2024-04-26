@@ -109,7 +109,7 @@ namespace libMBIN.NMS.Toolkit
             return null;
         }
 
-        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex)
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
             {
             if (field == null || fieldInfo == null)
                 return false;
@@ -157,7 +157,7 @@ namespace libMBIN.NMS.Toolkit
 
                     }
 
-                    additionalData.Insert(addtDataIndex, new Tuple<long, object, ushort>(listPos, outputData, 0));
+                    additionalData.Insert(addtDataIndex, new Tuple<long, object>(listPos, outputData));
                     addtDataIndex++;
                     return true;
             }

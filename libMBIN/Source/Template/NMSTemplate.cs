@@ -91,7 +91,7 @@ namespace libMBIN
             using (var ms = new MemoryStream())
             using (var bw = new BinaryWriter(ms))
             {
-                var addt = new List<Tuple<long, object, ushort>>();
+                var addt = new List<Tuple<long, object>>();
                 int addtIdx = 0;
 
                 var prevState = isDebugLogTemplateEnabled;
@@ -284,6 +284,7 @@ namespace libMBIN
                 case "List`1":
                 case "NMSTemplate":
                 case "VariableSizeString":
+                    // TODO: See whether or not `max(0x8, AlignOf(<list subtype>))` is acctually the right value...
                     alignment = 0x8;
                     break;
 
@@ -577,7 +578,7 @@ namespace libMBIN
             return list;
         }
 
-        public void SerializeValue( BinaryWriter writer, Type fieldType, object fieldData, NMSAttribute settings, FieldInfo field, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex, UInt32 listEnding = 0xAAAAAA01 ) {
+        public void SerializeValue( BinaryWriter writer, Type fieldType, object fieldData, NMSAttribute settings, FieldInfo field, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex, UInt32 listEnding = 0xAAAAAA01 ) {
             //Logger.LogDebug( $"{field?.DeclaringType.Name}.{field?.Name}\ttype:\t{fieldType.Name}\tadditionalData.Count:\t{additionalData?.Count ?? 0}\taddtDataIndex:\t{addtDataIndex}" );
 
             if (CustomSerialize(writer, fieldType, fieldData, settings, field, ref additionalData, ref addtDataIndex)) return;
@@ -650,7 +651,7 @@ namespace libMBIN
                         if ( listData == null ) break;
                         if ( listData.Count == 0 ) break;
 
-                        var data = new Tuple<long, object, ushort>( listPos, listData, 0 );
+                        var data = new Tuple<long, object>( listPos, listData );
                         if ( addtDataIndex >= additionalData.Count ) {
                             additionalData.Add( data );
                         } else {
@@ -683,7 +684,7 @@ namespace libMBIN
                             throw new InvalidGUIDException(template);
                         }
 
-                        var data = new Tuple<long, object, ushort>( refPos, template, 0 );
+                        var data = new Tuple<long, object>( refPos, template );
                         if ( addtDataIndex >= additionalData.Count ) {
                             additionalData.Add( data );
                         } else {
@@ -706,7 +707,7 @@ namespace libMBIN
                         writer.Write( listEnding );
 
                         var fieldValue = (NMS.VariableSizeString) fieldData;
-                        additionalData.Insert( addtDataIndex++, new Tuple<long, object, ushort>( fieldPos, fieldValue, 0 ) );
+                        additionalData.Insert( addtDataIndex++, new Tuple<long, object>( fieldPos, fieldValue ) );
 
                     } else if ( fieldType.IsArray ) {
                         var arrayType = fieldType.GetElementType();
@@ -748,7 +749,7 @@ namespace libMBIN
             }
         }
 
-        public void AppendToWriter( BinaryWriter writer, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex, Type parent, UInt32 listEnding = 0xAAAAAA01 ) {
+        public void AppendToWriter( BinaryWriter writer, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex, Type parent, UInt32 listEnding = 0xAAAAAA01 ) {
             long templatePosition = writer.BaseStream.Position;
             //Logger.LogDebug( $"[C] writing {GetType().Name} to offset 0x{templatePosition:X} (parent: {parent.Name})" );
             var type = GetType();
@@ -771,7 +772,7 @@ namespace libMBIN
             }
         }
 
-        public void SerializeGenericList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object, ushort>> additionalData, int addtDataIndex, UInt32 listEnding )
+        public void SerializeGenericList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object>> additionalData, int addtDataIndex, UInt32 listEnding )
         // This serialises a List of NMSTemplate objects
         {
             writer.Align( 0x8, list.GetType().Name );       // Make sure that all c~ names are offset at 0x8.     // make rel to listHeaderPosition?
@@ -808,7 +809,7 @@ namespace libMBIN
                 entryOffsetNamePairs.Add( new KeyValuePair<long, string>( writer.BaseStream.Position, entryName) );
 
                 var template = (NMSTemplate) entry;
-                var listObjects = new List<Tuple<long, object, ushort>>();     // new list of objects so that this data is serialised first
+                var listObjects = new List<Tuple<long, object>>();     // new list of objects so that this data is serialised first
                 var addtData = new Dictionary<long, object>();
                 //Logger.LogDebug( $"[C] writing {template.GetType().Name} to offset 0x{writer.BaseStream.Position:X}" );
                 // pass the new listObject object in place of additionalData so that this branch is serialised before the whole layer
@@ -876,7 +877,7 @@ namespace libMBIN
             writer.BaseStream.Position = dataEndOffset;
         }
 
-        public void SerializeList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object, ushort>> additionalData, int addtDataIndex, UInt32 listEnding = (UInt32) 0xAAAAAA01 ) {
+        public void SerializeList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object>> additionalData, int addtDataIndex, UInt32 listEnding = (UInt32) 0xAAAAAA01 ) {
             // first thing we want to do is align the writer with the location of the first element of the list
             if ( list.Count != 0 ) {
                 writer.Align( AlignOf(list[0].GetType()), list[0].GetType().Name );
@@ -911,12 +912,16 @@ namespace libMBIN
         public byte[] SerializeBytes() {
             using ( var stream = new MemoryStream() )
             using ( var writer = new BinaryWriter( stream, Encoding.ASCII ) ) {
-                var additionalData = new List<Tuple<long, object, ushort>>();
+                var additionalData = new List<Tuple<long, object>>();
 
                 UInt32 listEnding = 0xAAAAAA01;
+                List<int> listOrder = new List<int>{};
+                bool reorderList = false;
 
                 if ( GetType() == typeof( NMS.Toolkit.TkAnimMetadata ) ) {
                     listEnding = 0xFEFEFE01;
+                    listOrder = new List<int>{4, 3, 0, 1, 2};
+                    reorderList = true;
                 } else if ( GetType() == typeof( NMS.Toolkit.TkGeometryStreamData ) || GetType() == typeof( NMS.Toolkit.TkGeometryData ) ) {
                     listEnding = 0x00000001;
                 }
@@ -926,6 +931,13 @@ namespace libMBIN
                 AppendToWriter( writer, ref additionalData, ref i, GetType(), listEnding );
 
                 // now write values of lists etc
+
+                // Reorder the list if it's required.
+                // This generally isn't but Animation and Geometry files are in "EXML-order", so we need to fix them.
+                if (reorderList) {
+                    additionalData = listOrder.Select(i => additionalData[i]).ToList();
+                }
+
                 for ( i = 0; i < additionalData.Count; i++ ) {
                     var data = additionalData[i];
                     //DebugLog($"Current i: {i}");
@@ -985,11 +997,6 @@ namespace libMBIN
 
                     } else if ( data.Item2.GetType() == typeof( byte[] ) ) {
                         // write the offset in the list header
-                        // The 3rd item in the tuple is the alignment override.
-                        // 0 indicates no override, but a non-zero value can be used to force an alignment.
-                        if (data.Item3 > 0) {
-                            writer.Align(data.Item3, data.Item2.GetType().Name);
-                        }
                         long dataPosition = writer.BaseStream.Position;
                         writer.BaseStream.Position = data.Item1;
                         writer.Write( dataPosition - data.Item1 );
@@ -1550,7 +1557,7 @@ namespace libMBIN
             return null;
         }
 
-        public virtual bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object, ushort>> additionalData, ref int addtDataIndex)
+        public virtual bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
         {
             return false;
         }

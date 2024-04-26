@@ -65,6 +65,8 @@ namespace libMBIN {
                 Array.Resize(ref stringBytes, stringBytes.Length + 1);
                 byte[] paddingArray = Enumerable.Repeat(padding, (size ?? default(int)) - stringBytes.Length - 1).ToArray();    // I don't like the null-coalescence here, but it won't ever be default(int) because of the check beforehand...
                 stringBytes = stringBytes.Concat(paddingArray).ToArray();
+                // Add the one null byte after the padding.
+                Array.Resize(ref stringBytes, stringBytes.Length + 1);
             }
             else
             {
