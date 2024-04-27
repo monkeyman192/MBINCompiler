@@ -7,7 +7,6 @@ namespace libMBIN
     {
         public int Size { get; set; }
         public bool Ignore { get; set; }
-        public object DefaultValue { get; set; }
         [Obsolete( "Use EnumType instead." )]
         public string[] EnumValue { get; set; }
         public Type EnumType { get; set; }
