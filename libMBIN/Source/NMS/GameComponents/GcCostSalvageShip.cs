@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x39FA18D3EA1B3F1B, NameHash = 0x9A04247FE2D03F05)]
+    [NMS(GUID = 0x4BE6FE4C814CFCCE, NameHash = 0x9A04247FE2D03F05)]
     public class GcCostSalvageShip : NMSTemplate
     {
         [NMS(Index = 1, Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]

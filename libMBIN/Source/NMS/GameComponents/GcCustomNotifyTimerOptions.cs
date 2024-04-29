@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1B04EBF0C9459B33, NameHash = 0xB254C2F2874C6D05)]
+    [NMS(GUID = 0xE5FE30CE02B2FD5B, NameHash = 0xB254C2F2874C6D05)]
     public class GcCustomNotifyTimerOptions : NMSTemplate
     {
         [NMS(Index = 1)]

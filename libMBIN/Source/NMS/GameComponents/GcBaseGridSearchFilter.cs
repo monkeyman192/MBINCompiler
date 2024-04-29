@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x502237C1EE9366E8, NameHash = 0xA4186DCC6FC21A11)]
+    [NMS(GUID = 0x3DBD16777EDF1EC9, NameHash = 0xA4186DCC6FC21A11)]
     public class GcBaseGridSearchFilter : NMSTemplate
     {
         [NMS(Index = 12)]

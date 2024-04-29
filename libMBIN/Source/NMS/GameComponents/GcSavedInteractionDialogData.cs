@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCEC35274FD7C68F5, NameHash = 0xC148692F6AE43572)]
+    [NMS(GUID = 0x652B76C42140EDA0, NameHash = 0xC148692F6AE43572)]
     public class GcSavedInteractionDialogData : NMSTemplate
     {
         [NMS(Index = 1)]

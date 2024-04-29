@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA4159AB1AA0D170A, NameHash = 0x73308053CF12ECFF)]
+    [NMS(GUID = 0xE87D23E3B31E9499, NameHash = 0x73308053CF12ECFF)]
     public class GcHUDMarkerData : NMSTemplate
     {
         [NMS(Index = 2)]

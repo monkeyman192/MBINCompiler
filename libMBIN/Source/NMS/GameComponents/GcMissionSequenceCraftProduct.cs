@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD3A927AFE0D717C5, NameHash = 0xE4A60FB879FE42CD)]
+    [NMS(GUID = 0x61A1B3ED2A236C5C, NameHash = 0xE4A60FB879FE42CD)]
     public class GcMissionSequenceCraftProduct : NMSTemplate
     {
         [NMS(Index = 0)]

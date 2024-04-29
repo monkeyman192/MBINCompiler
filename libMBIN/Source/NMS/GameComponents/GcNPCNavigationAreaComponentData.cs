@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAB6146971456B356, NameHash = 0xB4FC959D6A910DEB)]
+    [NMS(GUID = 0xDD5F1888E15870B6, NameHash = 0xB4FC959D6A910DEB)]
     public class GcNPCNavigationAreaComponentData : NMSTemplate
     {
         [NMS(Index = 7)]

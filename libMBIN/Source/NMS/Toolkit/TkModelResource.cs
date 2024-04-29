@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xE51AD91853C53588, NameHash = 0xBE5E5CB33D0EB022)]
+    [NMS(GUID = 0x87A842CB41034233, NameHash = 0xBE5E5CB33D0EB022)]
     public class TkModelResource : NMSTemplate
     {
         [NMS(Index = 1)]

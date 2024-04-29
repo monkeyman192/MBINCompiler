@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3CFA999F9B2E42A4, NameHash = 0xD9C971EFC16BB550)]
+    [NMS(GUID = 0xCF5F0C77737DC61C, NameHash = 0xD9C971EFC16BB550)]
     public class GcCostItemFromList : NMSTemplate
     {
         [NMS(Index = 1)]

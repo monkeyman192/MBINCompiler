@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x50342415C20360EF, NameHash = 0x3DFA2A5571B31ADB)]
+    [NMS(GUID = 0xE921D7D87B329B58, NameHash = 0x3DFA2A5571B31ADB)]
     public class GcEcosystemCreatureData : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF588B1A7241558D0, NameHash = 0xC04EFF3E2A378ED7)]
+    [NMS(GUID = 0x241D6EAC69AF02F5, NameHash = 0xC04EFF3E2A378ED7)]
     public class GcRewardDisplayTechWindow : NMSTemplate
     {
         [NMS(Index = 0)]

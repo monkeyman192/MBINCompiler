@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xACC78F5C88ED57CC, NameHash = 0x21C58A0DDEF4EC87)]
+    [NMS(GUID = 0x112D5C8D7E3D0B38, NameHash = 0x21C58A0DDEF4EC87)]
     public class GcCloudProperties : NMSTemplate
     {
         [NMS(Index = 2)]

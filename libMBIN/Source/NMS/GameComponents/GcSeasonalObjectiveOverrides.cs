@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAA8625B017954A5A, NameHash = 0x72F6D505CBF23F96)]
+    [NMS(GUID = 0x2B5665F2048F43D3, NameHash = 0x72F6D505CBF23F96)]
     public class GcSeasonalObjectiveOverrides : NMSTemplate
     {
         [NMS(Index = 1)]

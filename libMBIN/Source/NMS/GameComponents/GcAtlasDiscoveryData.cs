@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x96A8C4489DAC50F2, NameHash = 0x34272E24BB717FCB)]
+    [NMS(GUID = 0x2812029DE9DC070C, NameHash = 0x34272E24BB717FCB)]
     public class GcAtlasDiscoveryData : NMSTemplate
     {
         [NMS(Index = 3, Size = 0x5)]

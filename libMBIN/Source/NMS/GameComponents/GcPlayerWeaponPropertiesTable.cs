@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7152005A95666400, NameHash = 0xD90787619164B12C)]
+    [NMS(GUID = 0xEF86F9CE4CB8B5A9, NameHash = 0xD90787619164B12C)]
     public class GcPlayerWeaponPropertiesTable : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x13, EnumType = typeof(GcPlayerWeapons.WeaponModeEnum))]

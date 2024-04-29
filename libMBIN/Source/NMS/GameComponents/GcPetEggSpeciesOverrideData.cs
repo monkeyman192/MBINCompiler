@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6B85B3F076600E6D, NameHash = 0x66A7186A5DDD202A)]
+    [NMS(GUID = 0x48DCE697621A43CF, NameHash = 0x66A7186A5DDD202A)]
     public class GcPetEggSpeciesOverrideData : NMSTemplate
     {
         [NMS(Index = 0)]

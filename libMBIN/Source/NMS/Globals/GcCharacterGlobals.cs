@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x790A4A578F2ABC82, NameHash = 0x9904F7D363A81377)]
+    [NMS(GUID = 0xD0D4E18EE29238B7, NameHash = 0x9904F7D363A81377)]
     public class GcCharacterGlobals : NMSTemplate
     {
         [NMS(Index = 18)]

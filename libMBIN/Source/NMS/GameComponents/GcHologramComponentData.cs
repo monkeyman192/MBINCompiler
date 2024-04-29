@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x936AAB6252C334A9, NameHash = 0xF82082B5132B253)]
+    [NMS(GUID = 0x9CA15A54C9EAFC73, NameHash = 0xF82082B5132B253)]
     public class GcHologramComponentData : NMSTemplate
     {
         [NMS(Index = 1)]

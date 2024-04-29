@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x34CDA59FB3D4AFD7, NameHash = 0x235BD45A5DEBE0D8)]
+    [NMS(GUID = 0x3C0B431F0CA0933A, NameHash = 0x235BD45A5DEBE0D8)]
     public class GcCustomisationShipTrails : NMSTemplate
     {
         [NMS(Index = 0)]

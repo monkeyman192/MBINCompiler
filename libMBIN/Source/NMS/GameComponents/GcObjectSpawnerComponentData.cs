@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x668542673C3E202F, NameHash = 0x8EEA012026874C5C)]
+    [NMS(GUID = 0xDEE7BE8957FA8185, NameHash = 0x8EEA012026874C5C)]
     public class GcObjectSpawnerComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9127D9C65177A897, NameHash = 0xCD8F8BFF2399836A)]
+    [NMS(GUID = 0xB1EDCE8B90F846B4, NameHash = 0xCD8F8BFF2399836A)]
     public class GcResourceCollectEffect : NMSTemplate
     {
         [NMS(Index = 12)]

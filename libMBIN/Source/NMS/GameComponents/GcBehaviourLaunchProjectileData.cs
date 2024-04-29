@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1F1BB35707F734B, NameHash = 0x4442EB7E64C68AC9)]
+    [NMS(GUID = 0x9615CAD533B3FA9E, NameHash = 0x4442EB7E64C68AC9)]
     public class GcBehaviourLaunchProjectileData : NMSTemplate
     {
         [NMS(Index = 0)]

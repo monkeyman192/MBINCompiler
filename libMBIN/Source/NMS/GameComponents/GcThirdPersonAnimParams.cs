@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4BA36A3444947135, NameHash = 0x2AA340CCDBA01EAD)]
+    [NMS(GUID = 0x1DED3B31DC66E184, NameHash = 0x2AA340CCDBA01EAD)]
     public class GcThirdPersonAnimParams : NMSTemplate
     {
         [NMS(Index = 6)]

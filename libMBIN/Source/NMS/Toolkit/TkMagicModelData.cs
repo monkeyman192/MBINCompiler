@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF5809AA74DC5AE51, NameHash = 0x1A5D6B5DC6FCD174)]
+    [NMS(GUID = 0x2C1B94202EDC3D3A, NameHash = 0x1A5D6B5DC6FCD174)]
     public class TkMagicModelData : NMSTemplate
     {
         [NMS(Index = 1)]

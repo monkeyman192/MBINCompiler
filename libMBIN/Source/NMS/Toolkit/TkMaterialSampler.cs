@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB1F00BB1F804178A, NameHash = 0x330286CE11647D4C)]
+    [NMS(GUID = 0xC65052A26EF49760, NameHash = 0x330286CE11647D4C)]
     public class TkMaterialSampler : NMSTemplate
     {
         [NMS(Index = 6)]

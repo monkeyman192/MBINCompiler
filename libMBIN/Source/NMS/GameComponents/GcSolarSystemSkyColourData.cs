@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3FCFDB1505B25B0D, NameHash = 0x2C473DC1DB095F44)]
+    [NMS(GUID = 0x1140C78C74EC58F1, NameHash = 0x2C473DC1DB095F44)]
     public class GcSolarSystemSkyColourData : NMSTemplate
     {
         [NMS(Index = 2)]

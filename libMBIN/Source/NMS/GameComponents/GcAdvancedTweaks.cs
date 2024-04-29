@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9C824D1D76FB05A6, NameHash = 0x1C1691C0F8971C4A)]
+    [NMS(GUID = 0x57BE9EA5EF1EB23, NameHash = 0x1C1691C0F8971C4A)]
     public class GcAdvancedTweaks : NMSTemplate
     {
         [NMS(Index = 5)]

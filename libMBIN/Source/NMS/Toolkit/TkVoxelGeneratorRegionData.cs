@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x18388706836A5878, NameHash = 0xA1EC10F083963380)]
+    [NMS(GUID = 0xF9268186DE01A614, NameHash = 0xA1EC10F083963380)]
     public class TkVoxelGeneratorRegionData : NMSTemplate
     {
         [NMS(Index = 4)]

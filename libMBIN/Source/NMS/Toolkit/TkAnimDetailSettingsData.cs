@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x5D553D432D3E9B1C, NameHash = 0x19B524BD08F5E823)]
+    [NMS(GUID = 0x2F9589B5B3C4DAD5, NameHash = 0x19B524BD08F5E823)]
     public class TkAnimDetailSettingsData : NMSTemplate
     {
         [NMS(Index = 0)]

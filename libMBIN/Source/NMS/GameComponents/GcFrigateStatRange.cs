@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE2A9742A320EFC44, NameHash = 0x2962BA5BB3EC43E1)]
+    [NMS(GUID = 0xD5A93DD151EC35BB, NameHash = 0x2962BA5BB3EC43E1)]
     public class GcFrigateStatRange : NMSTemplate
     {
         [NMS(Index = 1)]

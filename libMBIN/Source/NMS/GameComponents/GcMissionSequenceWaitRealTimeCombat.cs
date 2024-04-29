@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x295C0C71FB3CCFD1, NameHash = 0xB497A82E7D25F7C4)]
+    [NMS(GUID = 0x1A25B3515DFC74A, NameHash = 0xB497A82E7D25F7C4)]
     public class GcMissionSequenceWaitRealTimeCombat : NMSTemplate
     {
         [NMS(Index = 4)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xEC91040F8A270DB4, NameHash = 0x1A9F7FA6E4ED2B3E)]
+    [NMS(GUID = 0x73382C86DE895B55, NameHash = 0x1A9F7FA6E4ED2B3E)]
     public class GcSmokeTestOptions : NMSTemplate
     {
         [NMS(Index = 3)]

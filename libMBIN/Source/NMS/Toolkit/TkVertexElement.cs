@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x1E084E1510B4A072, NameHash = 0x8687A0CA8457FC32)]
+    [NMS(GUID = 0xE9C836BE3FD03AC9, NameHash = 0x8687A0CA8457FC32)]
     public class TkVertexElement : NMSTemplate
     {
         [NMS(Index = 6)]

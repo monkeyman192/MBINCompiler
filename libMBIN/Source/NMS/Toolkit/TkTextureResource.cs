@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xE143B09D707BBE56, NameHash = 0x2316F23520D820A9)]
+    [NMS(GUID = 0x7330800178739C0, NameHash = 0x2316F23520D820A9)]
     public class TkTextureResource : NMSTemplate
     {
         [NMS(Index = 1)]

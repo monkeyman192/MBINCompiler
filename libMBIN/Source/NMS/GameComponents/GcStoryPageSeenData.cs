@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7C2A568CBB89D1D5, NameHash = 0xCE185B81994AC0B)]
+    [NMS(GUID = 0xBC16E59DDA16C1A0, NameHash = 0xCE185B81994AC0B)]
     public class GcStoryPageSeenData : NMSTemplate
     {
         [NMS(Index = 1)]

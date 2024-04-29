@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF80054E2AA7C77FE, NameHash = 0x95E6C4BF9139916C)]
+    [NMS(GUID = 0x2FAB28BBC29C3BDB, NameHash = 0x95E6C4BF9139916C)]
     public class GcLightShaftProperties : NMSTemplate
     {
         [NMS(Index = 4)]

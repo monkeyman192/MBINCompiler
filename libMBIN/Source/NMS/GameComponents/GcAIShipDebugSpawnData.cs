@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD616A0433497617, NameHash = 0xDFA8A7A9DD3ACC08)]
+    [NMS(GUID = 0x2AB741BC2592BFD6, NameHash = 0xDFA8A7A9DD3ACC08)]
     public class GcAIShipDebugSpawnData : NMSTemplate
     {
         [NMS(Index = 1)]

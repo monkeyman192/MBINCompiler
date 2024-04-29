@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x8ABC1ABB8765470E, NameHash = 0xA720068E4459862)]
+    [NMS(GUID = 0xBC6530CC576628F9, NameHash = 0xA720068E4459862)]
     public class TkNoiseUberData : NMSTemplate
     {
         [NMS(Index = 6)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAC70928D1A18CD, NameHash = 0xCE277CF591D7A4A9)]
+    [NMS(GUID = 0x4E4C2A182B66036A, NameHash = 0xCE277CF591D7A4A9)]
     public class GcSettlementStatStrengthRanges : NMSTemplate
     {
         [NMS(Index = 1)]

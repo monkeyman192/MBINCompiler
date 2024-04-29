@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x103B4E1E1547DE0E, NameHash = 0xDB40771B3EB38336)]
+    [NMS(GUID = 0xDA4DC529E1A2EE7E, NameHash = 0xDB40771B3EB38336)]
     public class GcAIShipSpawnMarkerData : NMSTemplate
     {
         [NMS(Index = 1)]

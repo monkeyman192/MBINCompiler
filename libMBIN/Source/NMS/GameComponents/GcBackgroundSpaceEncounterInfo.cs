@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x57D664ECDFC788E7, NameHash = 0x9803054FC61F20F4)]
+    [NMS(GUID = 0x171E55E3181B731E, NameHash = 0x9803054FC61F20F4)]
     public class GcBackgroundSpaceEncounterInfo : NMSTemplate
     {
         [NMS(Index = 7)]

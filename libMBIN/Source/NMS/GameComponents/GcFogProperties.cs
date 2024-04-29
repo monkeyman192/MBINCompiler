@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5E76621B34CEBAAF, NameHash = 0x32F1C073DAE21750)]
+    [NMS(GUID = 0x1C552D51A31D25DF, NameHash = 0x32F1C073DAE21750)]
     public class GcFogProperties : NMSTemplate
     {
         [NMS(Index = 9)]

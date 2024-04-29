@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB4F5A3CBC47938A4, NameHash = 0xFAE78D5DE55087ED)]
+    [NMS(GUID = 0x67B516F4259E0D2B, NameHash = 0xFAE78D5DE55087ED)]
     public class GcAntagonistComponentData : NMSTemplate
     {
         [NMS(Index = 6, Size = 0x6, EnumType = typeof(GcAntagonistGroup.AntagonistGroupEnum))]

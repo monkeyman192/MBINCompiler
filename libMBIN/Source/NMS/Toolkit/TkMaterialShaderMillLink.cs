@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB4E29DBAD60FA279, NameHash = 0xFC506DC8F06CBE6D)]
+    [NMS(GUID = 0xD942ACA02AE4846, NameHash = 0xFC506DC8F06CBE6D)]
     public class TkMaterialShaderMillLink : NMSTemplate
     {
         [NMS(Index = 2)]

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2A90662F35B374DF, NameHash = 0x33CAC73016241300)]
+    [NMS(GUID = 0xFEC71B8D5F1F364, NameHash = 0x33CAC73016241300)]
     public class GcJourneyMedal : NMSTemplate
     {
         [NMS(Index = 2)]

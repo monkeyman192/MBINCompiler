@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD574FC0402980788, NameHash = 0xCEE815614F8FABAF)]
+    [NMS(GUID = 0x925F14F898A88661, NameHash = 0xCEE815614F8FABAF)]
     public class GcCustomisationBannerImageData : NMSTemplate
     {
         [NMS(Index = 3)]

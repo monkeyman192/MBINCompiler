@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3D69CE9F54FAB4EC, NameHash = 0x6F44BB3A2BA686D8)]
+    [NMS(GUID = 0xFE7AB9E75AB5D4B8, NameHash = 0x6F44BB3A2BA686D8)]
     public class GcRewardOpenUnlockTree : NMSTemplate
     {
         [NMS(Index = 1)]

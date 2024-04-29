@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE9DDAD00F059FF0A, NameHash = 0x73B8C106776DC488)]
+    [NMS(GUID = 0xAEB9051D13359D9C, NameHash = 0x73B8C106776DC488)]
     public class GcCustomisationThrusterJet : NMSTemplate
     {
         [NMS(Index = 1)]

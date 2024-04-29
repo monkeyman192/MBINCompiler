@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x193FC11F040913E9, NameHash = 0xE9525144C4F949EB)]
+    [NMS(GUID = 0xDBB25C326305ADBD, NameHash = 0xE9525144C4F949EB)]
     public class TkParticleData : NMSTemplate
     {
         [NMS(Index = 46)]

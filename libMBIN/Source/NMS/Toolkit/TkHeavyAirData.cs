@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x5ED48C0489FB7DD4, NameHash = 0xCB25F378CA730AFC)]
+    [NMS(GUID = 0x36E8AD5F62B703C6, NameHash = 0xCB25F378CA730AFC)]
     public class TkHeavyAirData : NMSTemplate
     {
         [NMS(Index = 18)]

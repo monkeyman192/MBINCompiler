@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xAA241672A87E189B, NameHash = 0x78E77E9B846089A1)]
+    [NMS(GUID = 0x18225C1DB242EC3F, NameHash = 0x78E77E9B846089A1)]
     public class GcPlacementGlobals : NMSTemplate
     {
         [NMS(Index = 14, Size = 0x5)]

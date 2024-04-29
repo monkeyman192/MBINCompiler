@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xADA440911976CE1D, NameHash = 0x806D452BB139AB67)]
+    [NMS(GUID = 0x5E499CAF949487F0, NameHash = 0x806D452BB139AB67)]
     public class GcDate : NMSTemplate
     {
         [NMS(Index = 2)]

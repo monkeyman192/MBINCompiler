@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xFFFB0FD90DBE99B2, NameHash = 0x3EB24220A135426C)]
+    [NMS(GUID = 0xE85BA739408AAF81, NameHash = 0x3EB24220A135426C)]
     public class TkGravityComponentData : NMSTemplate
     {
         [NMS(Index = 1)]

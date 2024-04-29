@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x42BCABB3F2D44B9B, NameHash = 0x71B7896BF38DAAE4)]
+    [NMS(GUID = 0x6F6B6B9FBCA21D27, NameHash = 0x71B7896BF38DAAE4)]
     public class GcAlienPodComponentData : NMSTemplate
     {
         [NMS(Index = 1)]

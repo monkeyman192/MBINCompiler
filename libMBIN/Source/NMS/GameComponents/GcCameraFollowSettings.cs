@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDF33D9C6EF3F5AF1, NameHash = 0x200FDA306DC86654)]
+    [NMS(GUID = 0xAB9C2FD249F5899, NameHash = 0x200FDA306DC86654)]
     public class GcCameraFollowSettings : NMSTemplate
     {
         [NMS(Index = 0)]

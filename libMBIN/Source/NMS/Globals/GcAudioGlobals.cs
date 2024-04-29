@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x7F874A3588713672, NameHash = 0x7B6EECDDCAF6F923)]
+    [NMS(GUID = 0x13ECEAE165398736, NameHash = 0x7B6EECDDCAF6F923)]
     public class GcAudioGlobals : NMSTemplate
     {
         [NMS(Index = 34)]

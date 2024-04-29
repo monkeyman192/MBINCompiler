@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE6B0B3233CA22BC9, NameHash = 0x309D52938C546138)]
+    [NMS(GUID = 0x8EEA48F70E5A7AC, NameHash = 0x309D52938C546138)]
     public class GcRefinerRecipe : NMSTemplate
     {
         [NMS(Index = 0)]

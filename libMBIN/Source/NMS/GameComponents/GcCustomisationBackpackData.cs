@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB44E6EA2FA256B5F, NameHash = 0xF9391B96F83DAF40)]
+    [NMS(GUID = 0x2D5E51F8B89FD5D1, NameHash = 0xF9391B96F83DAF40)]
     public class GcCustomisationBackpackData : NMSTemplate
     {
         [NMS(Index = 1)]

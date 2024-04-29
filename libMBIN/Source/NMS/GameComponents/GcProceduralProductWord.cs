@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD6EF0AF761A6413, NameHash = 0xB732A8EFDEA74BA)]
+    [NMS(GUID = 0x4135C5B423401FF9, NameHash = 0xB732A8EFDEA74BA)]
     public class GcProceduralProductWord : NMSTemplate
     {
         [NMS(Index = 2)]

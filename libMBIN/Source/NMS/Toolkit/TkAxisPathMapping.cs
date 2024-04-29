@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x60587FED618E0B51, NameHash = 0x19C4AA7DA3B42958)]
+    [NMS(GUID = 0xAA6C0373F50A6CB4, NameHash = 0x19C4AA7DA3B42958)]
     public class TkAxisPathMapping : NMSTemplate
     {
         [NMS(Index = 1)]

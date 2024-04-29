@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x68B164F921EC075F, NameHash = 0x907551D5CDAAAA41)]
+    [NMS(GUID = 0xF3099B57AE8E193A, NameHash = 0x907551D5CDAAAA41)]
     public class GcPlayerControlInputRemap : NMSTemplate
     {
         [NMS(Index = 1)]

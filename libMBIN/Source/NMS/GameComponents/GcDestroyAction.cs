@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD55AF973037FCEEB, NameHash = 0xD01AAF2CB5C146A1)]
+    [NMS(GUID = 0x73DD874D50C93433, NameHash = 0xD01AAF2CB5C146A1)]
     public class GcDestroyAction : NMSTemplate
     {
         [NMS(Index = 2)]

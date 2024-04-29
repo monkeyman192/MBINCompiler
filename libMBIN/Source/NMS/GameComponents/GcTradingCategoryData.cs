@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8CB3BE00363FBA01, NameHash = 0x39D1580ABEEE58C3)]
+    [NMS(GUID = 0x194B6C263C83192A, NameHash = 0x39D1580ABEEE58C3)]
     public class GcTradingCategoryData : NMSTemplate
     {
         [NMS(Index = 1)]

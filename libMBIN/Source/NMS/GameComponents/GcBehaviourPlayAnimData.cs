@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD8B574543FC643C2, NameHash = 0xBFB26332AE955464)]
+    [NMS(GUID = 0xC504A9FC785716EE, NameHash = 0xBFB26332AE955464)]
     public class GcBehaviourPlayAnimData : NMSTemplate
     {
         [NMS(Index = 0)]

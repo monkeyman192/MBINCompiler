@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x623038C9F447B3B2, NameHash = 0xA012CD9DA9418E41)]
+    [NMS(GUID = 0xEA9B09935F5FBEB2, NameHash = 0xA012CD9DA9418E41)]
     public class TkChordPathMapping : NMSTemplate
     {
         [NMS(Index = 1)]

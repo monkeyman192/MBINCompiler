@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6D3A4695659CC613, NameHash = 0x210E5E8D593FFE)]
+    [NMS(GUID = 0xFC7A4C3AA1BBBE5D, NameHash = 0x210E5E8D593FFE)]
     public class GcMissionSequenceLeaveNexusMP : NMSTemplate
     {
         [NMS(Index = 2)]

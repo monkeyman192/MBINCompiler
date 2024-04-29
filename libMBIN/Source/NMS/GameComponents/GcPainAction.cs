@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8BB641E9E7281432, NameHash = 0x9B8944FB55B77041)]
+    [NMS(GUID = 0x7535BE58B20247F0, NameHash = 0x9B8944FB55B77041)]
     public class GcPainAction : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x49DC6D819EDE244D, NameHash = 0x2B3787F904F75390)]
+    [NMS(GUID = 0x8722D32CBF096EE2, NameHash = 0x2B3787F904F75390)]
     public class GcObjectiveTextFormatOptions : NMSTemplate
     {
         [NMS(Index = 1)]

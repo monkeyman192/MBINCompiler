@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE41F59D24256A6FE, NameHash = 0x2BC6A341CEA135BF)]
+    [NMS(GUID = 0xD78249A7DD8D0B74, NameHash = 0x2BC6A341CEA135BF)]
     public class GcMessageSubstanceMined : NMSTemplate
     {
         [NMS(Index = 1)]

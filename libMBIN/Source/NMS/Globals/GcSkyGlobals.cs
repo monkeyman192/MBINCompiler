@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x2AA99DA80860B343, NameHash = 0x5BED7FBA4647E787)]
+    [NMS(GUID = 0xCE6A167659169449, NameHash = 0x5BED7FBA4647E787)]
     public class GcSkyGlobals : NMSTemplate
     {
         [NMS(Index = 130)]

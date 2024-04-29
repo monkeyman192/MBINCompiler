@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xED72E6401538143D, NameHash = 0x364FCE7012B92513)]
+    [NMS(GUID = 0xFA65248DE9799010, NameHash = 0x364FCE7012B92513)]
     public class GcSaveContextDataMask : NMSTemplate
     {
         [NMS(Index = 12)]

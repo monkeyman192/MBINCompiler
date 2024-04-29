@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDAF010C15889DC1D, NameHash = 0xC06F148BB67FE0E2)]
+    [NMS(GUID = 0xFE49409B2BB77F0E, NameHash = 0xC06F148BB67FE0E2)]
     public class GcUnlockableSeasonReward : NMSTemplate
     {
         [NMS(Index = 6)]

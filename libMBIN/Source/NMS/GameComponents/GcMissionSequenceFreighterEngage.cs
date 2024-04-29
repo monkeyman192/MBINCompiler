@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x58BA8A8354A7C52B, NameHash = 0x5755416737105B76)]
+    [NMS(GUID = 0xB60BE1132B2E286E, NameHash = 0x5755416737105B76)]
     public class GcMissionSequenceFreighterEngage : NMSTemplate
     {
         [NMS(Index = 5)]

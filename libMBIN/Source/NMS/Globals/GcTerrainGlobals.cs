@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x9ABC6B6AFE809E46, NameHash = 0x6577C3680F2E5DB6)]
+    [NMS(GUID = 0xA91CE98008E9EEEA, NameHash = 0x6577C3680F2E5DB6)]
     public class GcTerrainGlobals : NMSTemplate
     {
         [NMS(Index = 9)]

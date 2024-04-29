@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x3584805A4D182B6F, NameHash = 0x502F1C3425CDC8EC)]
+    [NMS(GUID = 0xFA230F4FE3C78CA3, NameHash = 0x502F1C3425CDC8EC)]
     public class TkSceneNodeAttributeData : NMSTemplate
     {
         [NMS(Index = 1)]

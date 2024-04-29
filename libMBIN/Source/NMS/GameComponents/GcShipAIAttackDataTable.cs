@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6F42C726DA6DDA51, NameHash = 0xC501980088063B)]
+    [NMS(GUID = 0x7C56CC78FC4A9CF3, NameHash = 0xC501980088063B)]
     public class GcShipAIAttackDataTable : NMSTemplate
     {
         [NMS(Index = 4, Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]

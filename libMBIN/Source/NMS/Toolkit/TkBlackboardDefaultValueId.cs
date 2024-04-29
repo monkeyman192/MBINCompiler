@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x8120304A040520DE, NameHash = 0x51BC6BBE6D56FC99)]
+    [NMS(GUID = 0x7588654D4CA29937, NameHash = 0x51BC6BBE6D56FC99)]
     public class TkBlackboardDefaultValueId : NMSTemplate
     {
         [NMS(Index = 1)]

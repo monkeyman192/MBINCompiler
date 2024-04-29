@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xBF8A4BFFAC520664, NameHash = 0xC1A3BA40B3A88476)]
+    [NMS(GUID = 0x2BFDCFF1D94DDF7, NameHash = 0xC1A3BA40B3A88476)]
     public class TkActionButtonMap : NMSTemplate
     {
         [NMS(Index = 0)]

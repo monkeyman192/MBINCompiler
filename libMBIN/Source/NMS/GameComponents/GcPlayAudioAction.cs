@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC1A655F641271435, NameHash = 0x7C82C5EBE3916386)]
+    [NMS(GUID = 0xE93896A344D2A1D9, NameHash = 0x7C82C5EBE3916386)]
     public class GcPlayAudioAction : NMSTemplate
     {
         [NMS(Index = 2)]

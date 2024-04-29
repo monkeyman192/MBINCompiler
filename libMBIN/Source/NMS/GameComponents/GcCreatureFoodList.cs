@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBC20E05A80B75CA6, NameHash = 0x8FD3FE17A0260717)]
+    [NMS(GUID = 0xE3DEF036714B601C, NameHash = 0x8FD3FE17A0260717)]
     public class GcCreatureFoodList : NMSTemplate
     {
         [NMS(Index = 2)]

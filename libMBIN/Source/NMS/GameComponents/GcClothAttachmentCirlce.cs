@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x22A3925ECEBE9AB2, NameHash = 0xE5DC8328938D3562)]
+    [NMS(GUID = 0xC398307B379D11FE, NameHash = 0xE5DC8328938D3562)]
     public class GcClothAttachmentCirlce : NMSTemplate
     {
         [NMS(Index = 7)]

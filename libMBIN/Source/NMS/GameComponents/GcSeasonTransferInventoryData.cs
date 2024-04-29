@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4CB4538036FB3C3B, NameHash = 0xE386FFCF32C92476)]
+    [NMS(GUID = 0x5DC741F6F7713554, NameHash = 0xE386FFCF32C92476)]
     public class GcSeasonTransferInventoryData : NMSTemplate
     {
         [NMS(Index = 2)]

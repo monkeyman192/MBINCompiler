@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB5DBBE772BEDA04, NameHash = 0x762F430C6C191529)]
+    [NMS(GUID = 0x189EB3495D6A00C4, NameHash = 0x762F430C6C191529)]
     public class GcAttachmentPointSet : NMSTemplate
     {
         [NMS(Index = 3)]

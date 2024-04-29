@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAE05B747C16C3CA0, NameHash = 0x89A5D7902BDAFE9B, Alignment = 0x10)]
+    [NMS(GUID = 0xF470C35C199DB332, NameHash = 0x89A5D7902BDAFE9B, Alignment = 0x10)]
     public class GcClothComponentData : NMSTemplate
     {
         [NMS(Index = 2)]

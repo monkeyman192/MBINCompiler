@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x28C0AACFCC45B57C, NameHash = 0x3C7F32FAD34D5752)]
+    [NMS(GUID = 0x97FF5B3ACAE1CDF1, NameHash = 0x3C7F32FAD34D5752)]
     public class GcOutpostLSystemPair : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]

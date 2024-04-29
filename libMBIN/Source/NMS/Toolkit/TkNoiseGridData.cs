@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4C8832CFE3785F00, NameHash = 0xA45052EB66E281C7)]
+    [NMS(GUID = 0x4D8313137B2EA4B7, NameHash = 0xA45052EB66E281C7)]
     public class TkNoiseGridData : NMSTemplate
     {
         [NMS(Index = 18)]

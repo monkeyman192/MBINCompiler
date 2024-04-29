@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAC60C40B229BE2E8, NameHash = 0xD0AB76328A1D707)]
+    [NMS(GUID = 0x7DA265CAAF9FCDBC, NameHash = 0xD0AB76328A1D707)]
     public class GcSettlementCustomJudgement : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDE9730230B3623F0, NameHash = 0x43A40CA703B36FA8)]
+    [NMS(GUID = 0x5F6938C030D12841, NameHash = 0x43A40CA703B36FA8)]
     public class GcMissionSequenceEnsureBarrelsAtPlayerSettlement : NMSTemplate
     {
         [NMS(Index = 2)]

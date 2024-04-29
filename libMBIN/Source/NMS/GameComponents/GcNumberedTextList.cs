@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA81FF2AEC999F301, NameHash = 0x2C7E1C9121ED92E2)]
+    [NMS(GUID = 0x5EAB9FD3A89E7E80, NameHash = 0x2C7E1C9121ED92E2)]
     public class GcNumberedTextList : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFEC3DBA59D002B84, NameHash = 0xE16B8EC5F09E6041)]
+    [NMS(GUID = 0x2C234564A178CC1C, NameHash = 0xE16B8EC5F09E6041)]
     public class GcVROverride_Layout : NMSTemplate
     {
         [NMS(Index = 1)]

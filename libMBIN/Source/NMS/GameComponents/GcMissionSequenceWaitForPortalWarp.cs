@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB6578B7A967F7DF, NameHash = 0x416E9E84AB204114)]
+    [NMS(GUID = 0x2C8718831ABFC1C4, NameHash = 0x416E9E84AB204114)]
     public class GcMissionSequenceWaitForPortalWarp : NMSTemplate
     {
         [NMS(Index = 1)]
