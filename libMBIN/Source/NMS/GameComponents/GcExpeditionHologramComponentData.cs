@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1E2E4E9836123C36, NameHash = 0xDCBE648F7DED1A9F)]
+    [NMS(GUID = 0xABDDD41E52F1ADE6, NameHash = 0xDCBE648F7DED1A9F)]
     public class GcExpeditionHologramComponentData : NMSTemplate
     {
         [NMS(Index = 3)]

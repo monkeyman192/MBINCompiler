@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD47555CB038B9503, NameHash = 0xE431AE3102063AE2)]
+    [NMS(GUID = 0xA4875CD4636367FC, NameHash = 0xE431AE3102063AE2)]
     public class GcSeasonTransferInventoryConfig : NMSTemplate
     {
         [NMS(Index = 1)]

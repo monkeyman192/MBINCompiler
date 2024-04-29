@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7AFE826662D10562, NameHash = 0x63DAFA0869073279)]
+    [NMS(GUID = 0x5AA132559917B614, NameHash = 0x63DAFA0869073279)]
     public class GcAtlasFeaturedBaseStateChange : NMSTemplate
     {
         [NMS(Index = 4)]

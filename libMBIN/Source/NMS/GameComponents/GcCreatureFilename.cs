@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6DF89878559E8C87, NameHash = 0x964386EAF98E113C)]
+    [NMS(GUID = 0xB4702E2ADF2F7506, NameHash = 0x964386EAF98E113C)]
     public class GcCreatureFilename : NMSTemplate
     {
         [NMS(Index = 0)]

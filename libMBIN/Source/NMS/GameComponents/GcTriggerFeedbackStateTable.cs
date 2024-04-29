@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5EEDF377F0834C8F, NameHash = 0x6E458F753254E426)]
+    [NMS(GUID = 0x7C62850407418770, NameHash = 0x6E458F753254E426)]
     public class GcTriggerFeedbackStateTable : NMSTemplate
     {
         [NMS(Index = 0)]

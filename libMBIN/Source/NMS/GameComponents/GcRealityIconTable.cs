@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAC7CA061653F89A1, NameHash = 0x2A28407EECDFA4CC)]
+    [NMS(GUID = 0x74CCA4734352A5DE, NameHash = 0x2A28407EECDFA4CC)]
     public class GcRealityIconTable : NMSTemplate
     {
         [NMS(Index = 16)]

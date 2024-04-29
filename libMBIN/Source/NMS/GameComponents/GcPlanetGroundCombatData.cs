@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x258B7B9B1934FA6B, NameHash = 0xD04EA6F623D821D9)]
+    [NMS(GUID = 0x8C75540CD2D41D04, NameHash = 0xD04EA6F623D821D9)]
     public class GcPlanetGroundCombatData : NMSTemplate
     {
         [NMS(Index = 3)]

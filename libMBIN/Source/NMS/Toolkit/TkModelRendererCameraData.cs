@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x53AA0C1A964B5E9F, NameHash = 0xE2B8850DAEBB8F74)]
+    [NMS(GUID = 0x51E47EDE6BD9B328, NameHash = 0xE2B8850DAEBB8F74)]
     public class TkModelRendererCameraData : NMSTemplate
     {
         [NMS(Index = 1)]

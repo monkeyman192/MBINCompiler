@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA80E51B7009021F3, NameHash = 0xA5B9F71571A61869)]
+    [NMS(GUID = 0xF87DDF56DAA314E3, NameHash = 0xA5B9F71571A61869)]
     public class GcTorpedoComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

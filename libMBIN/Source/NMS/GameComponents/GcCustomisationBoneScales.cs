@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBB9FCA6782A31A70, NameHash = 0x79EA3335C4095B8E)]
+    [NMS(GUID = 0x2922CA68978BF69D, NameHash = 0x79EA3335C4095B8E)]
     public class GcCustomisationBoneScales : NMSTemplate
     {
         [NMS(Index = 0)]

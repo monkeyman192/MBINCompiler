@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF2C93E6788CE0821, NameHash = 0x4E07F5FB46E3BD82)]
+    [NMS(GUID = 0xE58D24448D3B7558, NameHash = 0x4E07F5FB46E3BD82)]
     public class GcCreatureEffectTrigger : NMSTemplate
     {
         [NMS(Index = 3)]

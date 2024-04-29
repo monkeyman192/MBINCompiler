@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF9ABC14D825E9E66, NameHash = 0x489FC19669F32DA6)]
+    [NMS(GUID = 0x9ECEE94CFAF08527, NameHash = 0x489FC19669F32DA6)]
     public class GcAtlasSendSubmitContribution : NMSTemplate
     {
         [NMS(Index = 1)]

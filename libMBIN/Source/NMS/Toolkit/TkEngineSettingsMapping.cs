@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x748F1302B93289DF, NameHash = 0xC02F1D19584B44D)]
+    [NMS(GUID = 0xAFDEF5840730C649, NameHash = 0xC02F1D19584B44D)]
     public class TkEngineSettingsMapping : NMSTemplate
     {
         [NMS(Index = 5, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]

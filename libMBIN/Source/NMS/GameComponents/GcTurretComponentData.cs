@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9411927715FC9B8E, NameHash = 0x88530A815E5B1B46)]
+    [NMS(GUID = 0xA779423F7F2D0D8C, NameHash = 0x88530A815E5B1B46)]
     public class GcTurretComponentData : NMSTemplate
     {
         [NMS(Index = 1)]

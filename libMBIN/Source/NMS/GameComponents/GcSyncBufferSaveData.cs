@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x42BCA060447AA539, NameHash = 0xEFA8947B437770B8)]
+    [NMS(GUID = 0x54FA1460A75D28A2, NameHash = 0xEFA8947B437770B8)]
     public class GcSyncBufferSaveData : NMSTemplate
     {
         [NMS(Index = 0)]

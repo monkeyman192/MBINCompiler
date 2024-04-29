@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDDB5F6B408399220, NameHash = 0x15072D4E11178622)]
+    [NMS(GUID = 0x6DA0E8F8F8615F2F, NameHash = 0x15072D4E11178622)]
     public class GcDifficultyFuelUseOptionData : NMSTemplate
     {
         [NMS(Index = 1)]

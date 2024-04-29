@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x53AB8296E1933C71, NameHash = 0x8A35BC3F94D0949F)]
+    [NMS(GUID = 0xA21378A248765720, NameHash = 0x8A35BC3F94D0949F)]
     public class GcPunctuationDelayTable : NMSTemplate
     {
         // size: 0x6

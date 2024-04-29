@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3C57930CC9E6FEFB, NameHash = 0x74723646531009E2)]
+    [NMS(GUID = 0xD405E2B6FC6898F7, NameHash = 0x74723646531009E2)]
     public class GcAISpaceshipPreloadCacheData : NMSTemplate
     {
         [NMS(Index = 5)]

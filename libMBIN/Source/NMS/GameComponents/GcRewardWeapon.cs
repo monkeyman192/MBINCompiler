@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7537C0789888A6DC, NameHash = 0xDF91F2B5F746FB61)]
+    [NMS(GUID = 0x80D472F237A9663, NameHash = 0xDF91F2B5F746FB61)]
     public class GcRewardWeapon : NMSTemplate
     {
         [NMS(Index = 7, Size = 0x4, EnumType = typeof(GcMultitoolPoolType.MultiToolPoolTypeEnum))]

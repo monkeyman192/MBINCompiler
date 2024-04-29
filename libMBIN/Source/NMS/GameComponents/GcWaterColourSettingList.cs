@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x393AEE313EAF1227, NameHash = 0xB2E60FCA3C5550F9)]
+    [NMS(GUID = 0xC198EC693DF0524C, NameHash = 0xB2E60FCA3C5550F9)]
     public class GcWaterColourSettingList : NMSTemplate
     {
         [NMS(Index = 0)]

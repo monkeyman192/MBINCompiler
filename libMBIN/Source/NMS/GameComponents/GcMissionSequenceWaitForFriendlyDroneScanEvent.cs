@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7BDD2A2532E47943, NameHash = 0xD5B668729A28BD2C)]
+    [NMS(GUID = 0x35FBEB3CE6BBF0BD, NameHash = 0xD5B668729A28BD2C)]
     public class GcMissionSequenceWaitForFriendlyDroneScanEvent : NMSTemplate
     {
         [NMS(Index = 4)]

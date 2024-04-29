@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3589DA89D687D2BD, NameHash = 0x7471FD77815538C2)]
+    [NMS(GUID = 0xFBF9D528D51461E4, NameHash = 0x7471FD77815538C2)]
     public class GcMissionSequenceReward : NMSTemplate
     {
         [NMS(Index = 1)]

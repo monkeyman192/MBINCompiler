@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFB4A23D1D214B86E, NameHash = 0xC217A4AF3130299A)]
+    [NMS(GUID = 0xB012F23468B6487C, NameHash = 0xC217A4AF3130299A)]
     public class GcSolarSystemEventWarpOut : NMSTemplate
     {
         [NMS(Index = 2)]

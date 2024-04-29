@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x614385FBCB576753, NameHash = 0xB526D2F0411DDF0B)]
+    [NMS(GUID = 0x389816CBF372F115, NameHash = 0xB526D2F0411DDF0B)]
     public class GcCooldownDecoratorData : NMSTemplate
     {
         [NMS(Index = 2)]

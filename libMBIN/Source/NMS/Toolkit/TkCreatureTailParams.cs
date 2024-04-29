@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4EBCA4EEA1161646, NameHash = 0xF5A68FEB65BA7107)]
+    [NMS(GUID = 0x7309D611FE3E1EEF, NameHash = 0xF5A68FEB65BA7107)]
     public class TkCreatureTailParams : NMSTemplate
     {
         [NMS(Index = 0)]

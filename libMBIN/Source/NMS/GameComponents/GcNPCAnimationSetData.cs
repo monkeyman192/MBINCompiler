@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1196BB295CE46EAF, NameHash = 0xF3A35A6135FAD505)]
+    [NMS(GUID = 0xB95CD35A030B4663, NameHash = 0xF3A35A6135FAD505)]
     public class GcNPCAnimationSetData : NMSTemplate
     {
         [NMS(Index = 5, Size = 0x9, EnumType = typeof(GcAlienMood.MoodEnum))]

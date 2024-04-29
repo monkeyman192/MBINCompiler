@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8A949772CCF6EBE3, NameHash = 0xC8C9C8064A5C8F6E)]
+    [NMS(GUID = 0xFC3A4AA91496ACDD, NameHash = 0xC8C9C8064A5C8F6E)]
     public class GcBlackboardFloatCompareDecoratorData : NMSTemplate
     {
         [NMS(Index = 4)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA2624B0255DB35E9, NameHash = 0xF401654236F18FA9)]
+    [NMS(GUID = 0xB834CD4686822D90, NameHash = 0xF401654236F18FA9)]
     public class GcAsteroidGenerationData : NMSTemplate
     {
         [NMS(Index = 4)]

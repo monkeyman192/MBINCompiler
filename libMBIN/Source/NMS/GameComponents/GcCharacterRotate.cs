@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8711BCE724BA3946, NameHash = 0x1BC08C4BC1CAA288)]
+    [NMS(GUID = 0x6E1649735EA99E41, NameHash = 0x1BC08C4BC1CAA288)]
     public class GcCharacterRotate : NMSTemplate
     {
         [NMS(Index = 0)]

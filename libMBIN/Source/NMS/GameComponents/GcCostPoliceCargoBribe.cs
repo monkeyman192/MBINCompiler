@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCB153FDD7AE81D64, NameHash = 0xE0CD9FCE9BCD8413)]
+    [NMS(GUID = 0x85157F11EA3E4F80, NameHash = 0xE0CD9FCE9BCD8413)]
     public class GcCostPoliceCargoBribe : NMSTemplate
     {
         [NMS(Index = 2)]

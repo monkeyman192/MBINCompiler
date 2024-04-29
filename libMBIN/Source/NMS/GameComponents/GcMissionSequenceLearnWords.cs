@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8008BE4D421EA485, NameHash = 0x2A6B4FAF511D932F)]
+    [NMS(GUID = 0x28039A6858BD451D, NameHash = 0x2A6B4FAF511D932F)]
     public class GcMissionSequenceLearnWords : NMSTemplate
     {
         [NMS(Index = 1)]

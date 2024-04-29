@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x42A7CE67E1CAAAA6, NameHash = 0x34A0F43E0ECB3765)]
+    [NMS(GUID = 0xB85AFC2D24B0D090, NameHash = 0x34A0F43E0ECB3765)]
     public class TkSketchNodeData : NMSTemplate
     {
         [NMS(Index = 5)]

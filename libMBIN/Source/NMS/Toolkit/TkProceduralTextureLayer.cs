@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xD4A075B52F129B27, NameHash = 0x6AA5D445686C3721)]
+    [NMS(GUID = 0x2428E618D832F18C, NameHash = 0x6AA5D445686C3721)]
     public class TkProceduralTextureLayer : NMSTemplate
     {
         [NMS(Index = 2)]

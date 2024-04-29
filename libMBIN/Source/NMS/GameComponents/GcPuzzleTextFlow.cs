@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5370598C079E49CC, NameHash = 0x44CB81CE83D73B16)]
+    [NMS(GUID = 0x3977179DE904AE7D, NameHash = 0x44CB81CE83D73B16)]
     public class GcPuzzleTextFlow : NMSTemplate
     {
         [NMS(Index = 0)]

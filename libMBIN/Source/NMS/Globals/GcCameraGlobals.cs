@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x7CECE75BD11930AD, NameHash = 0xA826BCA4D4C3DFE3)]
+    [NMS(GUID = 0x79A5B5DA2FF7F9E, NameHash = 0xA826BCA4D4C3DFE3)]
     public class GcCameraGlobals : NMSTemplate
     {
         [NMS(Index = 351)]

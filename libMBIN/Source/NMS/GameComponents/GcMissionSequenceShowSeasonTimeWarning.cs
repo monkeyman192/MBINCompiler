@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDF027FC6EF251E3D, NameHash = 0x232C5143BAE4E2F9)]
+    [NMS(GUID = 0x188EDCD03E0C58D2, NameHash = 0x232C5143BAE4E2F9)]
     public class GcMissionSequenceShowSeasonTimeWarning : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3E1BAB2D23187208, NameHash = 0xFAC452E6BECE8553)]
+    [NMS(GUID = 0x4B56DD8166CBA2AB, NameHash = 0xFAC452E6BECE8553)]
     public class GcShipHUDTargetIconData : NMSTemplate
     {
         [NMS(Index = 0)]

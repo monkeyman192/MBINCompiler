@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB2FF18440DA1DBF7, NameHash = 0x1FD33D08A7082C22)]
+    [NMS(GUID = 0xF4BFC7159347CAF3, NameHash = 0x1FD33D08A7082C22)]
     public class GcSpaceStationSpawnData : NMSTemplate
     {
         [NMS(Index = 4)]

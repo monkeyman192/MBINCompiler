@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4FAE8CB924972158, NameHash = 0x68945B9C7D77B53)]
+    [NMS(GUID = 0xBABBD124A383C47F, NameHash = 0x68945B9C7D77B53)]
     public class GcSentinelResource : NMSTemplate
     {
         [NMS(Index = 1)]

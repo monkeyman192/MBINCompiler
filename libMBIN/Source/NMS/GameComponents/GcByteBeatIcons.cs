@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x15AE941666ED5A7C, NameHash = 0xB0AEFBA1BDCC6569)]
+    [NMS(GUID = 0x5454ADF25E4638D9, NameHash = 0xB0AEFBA1BDCC6569)]
     public class GcByteBeatIcons : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x12, EnumType = typeof(GcByteBeatToken.ByteBeatTokenEnum))]

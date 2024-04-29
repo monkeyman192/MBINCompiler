@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x95D7E51CBBB0370B, NameHash = 0x27C076F10CE0DEC2)]
+    [NMS(GUID = 0xEB57FE4A12B06864, NameHash = 0x27C076F10CE0DEC2)]
     public class GcBlackboardValueDecoratorData : NMSTemplate
     {
         [NMS(Index = 2)]

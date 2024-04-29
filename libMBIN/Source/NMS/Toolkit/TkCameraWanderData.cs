@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xDBA93D8744C56CD0, NameHash = 0xF23D44C69F4360D8)]
+    [NMS(GUID = 0xBAC537230555C840, NameHash = 0xF23D44C69F4360D8)]
     public class TkCameraWanderData : NMSTemplate
     {
         [NMS(Index = 2)]

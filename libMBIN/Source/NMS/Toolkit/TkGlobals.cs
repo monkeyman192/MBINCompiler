@@ -2,7 +2,7 @@ using System;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xEB7C9677BE54349F, NameHash = 0xB62E6456DFE47836)]
+    [NMS(GUID = 0xD6F9EFA8F1D5AF80, NameHash = 0xB62E6456DFE47836)]
     public class TkGlobals : NMSTemplate
     {
         // size: 0x4

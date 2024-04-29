@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7B0FAF5D4550E94B, NameHash = 0x15A053481CA45D03)]
+    [NMS(GUID = 0xDFB30024A6060F1, NameHash = 0x15A053481CA45D03)]
     public class GcCreatureRoleFilenameTable : NMSTemplate
     {
         [NMS(Index = 6, Size = 0x1B, EnumType = typeof(GcBiomeSubType.BiomeSubTypeEnum))]

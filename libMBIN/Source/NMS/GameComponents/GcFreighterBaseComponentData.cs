@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF6A553967FD2E51B, NameHash = 0x8201F7ADD0F5959D)]
+    [NMS(GUID = 0x885CB5F8C0E58A92, NameHash = 0x8201F7ADD0F5959D)]
     public class GcFreighterBaseComponentData : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]

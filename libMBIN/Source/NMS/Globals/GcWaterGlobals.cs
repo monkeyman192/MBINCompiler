@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xA518900715F7C824, NameHash = 0x6A6072ECC3DD12D0)]
+    [NMS(GUID = 0xC520A969A6AE129F, NameHash = 0x6A6072ECC3DD12D0)]
     public class GcWaterGlobals : NMSTemplate
     {
         [NMS(Index = 13)]

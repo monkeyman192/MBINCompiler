@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDFC505E8066AB0E7, NameHash = 0x95028D8CB7957BEF)]
+    [NMS(GUID = 0xCF7254B0803F8138, NameHash = 0x95028D8CB7957BEF)]
     public class GcAbandonedFreighterComponentData : NMSTemplate
     {
         [NMS(Index = 2)]

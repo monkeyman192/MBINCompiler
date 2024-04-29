@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2639E8BCA820BC3C, NameHash = 0x44CED54C76C8DDA0)]
+    [NMS(GUID = 0xC6B7AEFAC77C4099, NameHash = 0x44CED54C76C8DDA0)]
     public class GcClothAttachmentLine : NMSTemplate
     {
         [NMS(Index = 5)]

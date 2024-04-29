@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC3426A684FE1AE00, NameHash = 0xDF9F37F8504FFE4D)]
+    [NMS(GUID = 0xCE2513E76F155AB0, NameHash = 0xDF9F37F8504FFE4D)]
     public class GcCameraAmbientBuildingData : NMSTemplate
     {
         [NMS(Index = 0)]

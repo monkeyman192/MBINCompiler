@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x285F130A426C7C92, NameHash = 0x309337FC0812738C)]
+    [NMS(GUID = 0xFC2F551F9E6D9020, NameHash = 0x309337FC0812738C)]
     public class GcPetBehaviourData : NMSTemplate
     {
         [NMS(Index = 14)]

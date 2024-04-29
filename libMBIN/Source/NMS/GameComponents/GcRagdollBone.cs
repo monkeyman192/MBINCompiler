@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA2BC2C0094D0DA23, NameHash = 0xC016E2C8C89F4CF4)]
+    [NMS(GUID = 0x4311DB2434073FB8, NameHash = 0xC016E2C8C89F4CF4)]
     public class GcRagdollBone : NMSTemplate
     {
         [NMS(Index = 16)]

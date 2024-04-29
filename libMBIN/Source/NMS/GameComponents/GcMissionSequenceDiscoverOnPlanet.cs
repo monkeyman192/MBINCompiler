@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC36EF22C8FB1973C, NameHash = 0x368D06565D9CC1)]
+    [NMS(GUID = 0x5E6C06F2C393C482, NameHash = 0x368D06565D9CC1)]
     public class GcMissionSequenceDiscoverOnPlanet : NMSTemplate
     {
         // size: 0x3

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB7876A6C27FE78F0, NameHash = 0x6A504B01F7CE5428)]
+    [NMS(GUID = 0xDED3C56539BEF4B9, NameHash = 0x6A504B01F7CE5428)]
     public class GcMissionConditionCookingSearch : NMSTemplate
     {
         [NMS(Index = 0)]

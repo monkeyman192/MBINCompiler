@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5E786BA034E9F7BC, NameHash = 0xBCA190142B227B20)]
+    [NMS(GUID = 0x60EED6B341476FB0, NameHash = 0xBCA190142B227B20)]
     public class GcFreighterRoomNPCData : NMSTemplate
     {
         [NMS(Index = 0)]

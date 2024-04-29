@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE2E229E8595D4D81, NameHash = 0x2137035790C4EDC0)]
+    [NMS(GUID = 0xBA3698FC5728B5DE, NameHash = 0x2137035790C4EDC0)]
     public class GcCustomisationBobbleHead : NMSTemplate
     {
         [NMS(Index = 0)]

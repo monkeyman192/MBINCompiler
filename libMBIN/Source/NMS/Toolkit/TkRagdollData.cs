@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4C15A6F0B63EEF90, NameHash = 0x52912F535A46A50C)]
+    [NMS(GUID = 0x8B827A7C40B5D08F, NameHash = 0x52912F535A46A50C)]
     public class TkRagdollData : NMSTemplate
     {
         [NMS(Index = 2)]

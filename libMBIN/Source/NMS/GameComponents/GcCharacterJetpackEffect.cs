@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3FE1762E262C2474, NameHash = 0x62232E26DA2D21F1)]
+    [NMS(GUID = 0xE1DD9179C58BAF15, NameHash = 0x62232E26DA2D21F1)]
     public class GcCharacterJetpackEffect : NMSTemplate
     {
         [NMS(Index = 1)]

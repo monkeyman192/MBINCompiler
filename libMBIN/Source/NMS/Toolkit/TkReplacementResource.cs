@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2B7F822770CF00D, NameHash = 0xC683578709BD3232)]
+    [NMS(GUID = 0x51C689949992882A, NameHash = 0xC683578709BD3232)]
     public class TkReplacementResource : NMSTemplate
     {
         [NMS(Index = 0)]

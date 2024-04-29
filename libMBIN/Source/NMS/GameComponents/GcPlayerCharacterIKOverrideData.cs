@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE6B2A22C3B50E5B0, NameHash = 0xD3E29E0D0AAA3B2B)]
+    [NMS(GUID = 0x88F1554F7D6D4913, NameHash = 0xD3E29E0D0AAA3B2B)]
     public class GcPlayerCharacterIKOverrideData : NMSTemplate
     {
         [NMS(Index = 2)]

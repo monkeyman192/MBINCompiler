@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5B414C643A992848, NameHash = 0x41BFFB2F8544AD51)]
+    [NMS(GUID = 0x11FAD9442CE68B69, NameHash = 0x41BFFB2F8544AD51)]
     public class GcMissionConditionNPCHabitationHasWorker : NMSTemplate
     {
         // size: 0x3

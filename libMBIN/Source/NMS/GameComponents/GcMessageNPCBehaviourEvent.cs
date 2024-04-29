@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3FC636475190B910, NameHash = 0x40F7E71C83A33DA0)]
+    [NMS(GUID = 0x299DC08D290667D3, NameHash = 0x40F7E71C83A33DA0)]
     public class GcMessageNPCBehaviourEvent : NMSTemplate
     {
         [NMS(Index = 4)]

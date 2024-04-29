@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAA9317C35082588, NameHash = 0xD1618D63DA15668C)]
+    [NMS(GUID = 0x41B5FDD3F9EDD88C, NameHash = 0xD1618D63DA15668C)]
     public class GcAudioAreaTriggerComponentData : NMSTemplate
     {
         [NMS(Index = 2)]

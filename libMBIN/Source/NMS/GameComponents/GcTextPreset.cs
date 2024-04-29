@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x31219BCC0FF4CD30, NameHash = 0x4CF465C68C10EBB4)]
+    [NMS(GUID = 0x36D1073B58311D08, NameHash = 0x4CF465C68C10EBB4)]
     public class GcTextPreset : NMSTemplate
     {
         [NMS(Index = 3)]

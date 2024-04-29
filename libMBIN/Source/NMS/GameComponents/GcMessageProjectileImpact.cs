@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAF66E462C127861F, NameHash = 0x7EBC25FE326CF24B)]
+    [NMS(GUID = 0xAC37B735FA39F762, NameHash = 0x7EBC25FE326CF24B)]
     public class GcMessageProjectileImpact : NMSTemplate
     {
         [NMS(Index = 8)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x3F104057D08F304F, NameHash = 0x174C8C3DB33CE268)]
+    [NMS(GUID = 0x8E06537D3E708020, NameHash = 0x174C8C3DB33CE268)]
     public class TkNoiseUberLayerData : NMSTemplate
     {
         [NMS(Index = 0)]

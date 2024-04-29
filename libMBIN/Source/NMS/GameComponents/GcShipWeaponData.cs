@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4E88564BD2E816CD, NameHash = 0x73BA1311CF8E1962)]
+    [NMS(GUID = 0x40D6C8DD9FFEAD0F, NameHash = 0x73BA1311CF8E1962)]
     public class GcShipWeaponData : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x644182599B16C32E, NameHash = 0x916C4DD873AEFE6B)]
+    [NMS(GUID = 0xB57646BA374E31A1, NameHash = 0x916C4DD873AEFE6B)]
     public class GcGalaxyRenderAnostreakData : NMSTemplate
     {
         [NMS(Index = 1)]

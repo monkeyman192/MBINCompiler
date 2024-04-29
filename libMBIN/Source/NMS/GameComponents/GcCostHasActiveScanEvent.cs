@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2F2901151340C2B1, NameHash = 0xC87FA7A77434B86F)]
+    [NMS(GUID = 0x58095E48F83B0290, NameHash = 0xC87FA7A77434B86F)]
     public class GcCostHasActiveScanEvent : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8DB16379E37A198F, NameHash = 0x5CA0B64244DF6963)]
+    [NMS(GUID = 0x56C6A2F1A9178850, NameHash = 0x5CA0B64244DF6963)]
     public class GcAtlasActiveFeaturedBaseHeader : NMSTemplate
     {
         [NMS(Index = 8)]

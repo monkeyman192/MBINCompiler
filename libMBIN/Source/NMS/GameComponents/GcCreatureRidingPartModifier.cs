@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x66B10ABD887EC31F, NameHash = 0xB9A3955D41C87D67)]
+    [NMS(GUID = 0x58B505BD03236568, NameHash = 0xB9A3955D41C87D67)]
     public class GcCreatureRidingPartModifier : NMSTemplate
     {
         [NMS(Index = 7)]

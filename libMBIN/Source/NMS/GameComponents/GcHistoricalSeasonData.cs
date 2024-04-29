@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAEC0B12984C1344, NameHash = 0x270ED26636E9BF5B)]
+    [NMS(GUID = 0x500ED63F2A218433, NameHash = 0x270ED26636E9BF5B)]
     public class GcHistoricalSeasonData : NMSTemplate
     {
         [NMS(Index = 0)]

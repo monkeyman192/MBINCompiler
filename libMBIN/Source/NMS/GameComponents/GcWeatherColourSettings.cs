@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x49916E75AC6E9D46, NameHash = 0x156BFFBB5A2228FA)]
+    [NMS(GUID = 0x921C3232F93D6F91, NameHash = 0x156BFFBB5A2228FA)]
     public class GcWeatherColourSettings : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]

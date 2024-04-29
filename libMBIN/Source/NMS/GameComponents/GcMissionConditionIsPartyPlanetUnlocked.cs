@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4577DB384FD71892, NameHash = 0xD08AEA33ACABB2E9)]
+    [NMS(GUID = 0xBAB1829874BEF429, NameHash = 0xD08AEA33ACABB2E9)]
     public class GcMissionConditionIsPartyPlanetUnlocked : NMSTemplate
     {
         [NMS(Index = 0)]

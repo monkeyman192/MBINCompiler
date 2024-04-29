@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC54F39F8901E7E52, NameHash = 0xD1F40E0F6517D194)]
+    [NMS(GUID = 0x6E73D72454ADAF9C, NameHash = 0xD1F40E0F6517D194)]
     public class GcRectangularInitialShape : NMSTemplate
     {
         [NMS(Index = 3)]

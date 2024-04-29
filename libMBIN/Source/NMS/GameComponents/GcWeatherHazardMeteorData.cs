@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2D274E737EA18C13, NameHash = 0x89A5F03E5191DE14)]
+    [NMS(GUID = 0x7F0AEE5EB6D7BD87, NameHash = 0x89A5F03E5191DE14)]
     public class GcWeatherHazardMeteorData : NMSTemplate
     {
         [NMS(Index = 18)]
