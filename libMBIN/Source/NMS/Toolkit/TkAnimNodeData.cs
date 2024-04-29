@@ -9,7 +9,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x4 */ public int ScaleIndex;
         [NMS(Index = 2)]
         /* 0x8 */ public int TransIndex;
-        [NMS(Index = 0, Size = 0x40, Padding = 0xFE)]
+        [NMS(Index = 0)]
         /* 0xC */ public NMSString0x40 Node;
     }
 }

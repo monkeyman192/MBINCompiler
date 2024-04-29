@@ -16,12 +16,17 @@ namespace libMBIN {
             if (mod != 0) reader.BaseStream.Position += (alignBy - mod);
         }
 
-        public static void Align( this BinaryWriter writer, int alignBy, string name ) {
+        public static void Align( this BinaryWriter writer, int alignBy, string name, byte paddingByte = 0 ) {
             long offset = writer.BaseStream.Position;
 
             long mod = offset % alignBy;
             if ( mod != 0 ) {
-                writer.Write( new byte[alignBy - mod] );
+                if (paddingByte != 0) {
+                    byte[] paddingArray = Enumerable.Repeat(paddingByte, (int)(alignBy - mod)).ToArray();
+                    writer.Write( paddingArray );
+                } else {
+                    writer.Write( new byte[alignBy - mod] );
+                }
                 NMSTemplate.DebugLogTemplate( $"[C] aligned {name} to offset 0x{writer.BaseStream.Position:X}" );
             }
         }

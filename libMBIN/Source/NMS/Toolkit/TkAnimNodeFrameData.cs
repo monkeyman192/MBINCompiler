@@ -13,9 +13,9 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Index = 0)]
         /* 0x00 */ public List<Quaternion> Rotations;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<Vector3f> Scales;
+        /* 0x10 */ public List<Vector4f> Scales;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<Vector3f> Translations;
+        /* 0x20 */ public List<Vector4f> Translations;
 
 
         public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {
@@ -62,7 +62,7 @@ namespace libMBIN.NMS.Toolkit
                         2 -> y
                         1 -> z
                         0 -> w */
-                        ushort dropcomponent = (ushort)(i_x << 1 | i_y << 0);
+                        ushort dropcomponent = (ushort)(i_x << 1 | i_y);
 
                         //Mask Values (strip most significant bit)
                         c_x = (UInt16)(c_x & 0x7FFF);
@@ -70,9 +70,9 @@ namespace libMBIN.NMS.Toolkit
                         c_z = (UInt16)(c_z & 0x7FFF);
 
                         Quaternion q = new Quaternion(
-                            ((float)(c_x - 0x3FFF)) * norm * scale,
-                            ((float)(c_y - 0x3FFF)) * norm * scale,
-                            ((float)(c_z - 0x3FFF)) * norm * scale,
+                            (float)((c_x - 0x3FFF) * norm * scale),
+                            (float)((c_y - 0x3FFF) * norm * scale),
+                            (float)((c_z - 0x3FFF) * norm * scale),
                             0.0f);
 
                         //I assume that W is positive by default
@@ -204,7 +204,7 @@ namespace libMBIN.NMS.Toolkit
 
         private UInt16 ConvertQuat(float qi)
             {
-            return (UInt16)(0x3FFF * (Math.Sqrt(2) * qi + 1));
+            return (UInt16)Math.Round(0x3FFF * (Math.Sqrt(2) * qi + 1));
         }
     }
 }

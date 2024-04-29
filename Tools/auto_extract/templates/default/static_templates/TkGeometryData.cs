@@ -61,7 +61,7 @@ namespace libMBIN.NMS.Toolkit
             var fieldName = fieldInfo.Name;
             switch (fieldName) {
                 case nameof(IndexBuffer):
-                    writer.Align(8, fieldName);
+                    writer.Align(8, fieldName, 0xFE);
 
                     // write empty list header
                     long listPos = writer.BaseStream.Position;
