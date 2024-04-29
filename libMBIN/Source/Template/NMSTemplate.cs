@@ -583,7 +583,6 @@ namespace libMBIN
 
             if (CustomSerialize(writer, fieldType, fieldData, settings, field, ref additionalData, ref addtDataIndex)) return;
 
-            if ( settings?.DefaultValue != null ) fieldData = settings.DefaultValue;
             switch ( fieldType.Name ) {
                 case "String":
                 case "Byte[]":
@@ -1019,9 +1018,6 @@ namespace libMBIN
             int i = 0;
             string valueString = String.Empty;
 
-            if ( settings?.DefaultValue != null ) {
-                value = settings.DefaultValue;
-            }
 
             switch (fieldType.Name)
             {
@@ -1418,23 +1414,9 @@ namespace libMBIN
                 DebugLogComment( ((EXmlMeta) xmlData).Comment );
             }
 
-            /*
-            DebugLog("Getting types");
-            foreach (var property in xmlData.Elements)
-            {
-                DebugLog(property.GetType());
-            }*/
-
             if (template == null) return null;
 
             Type templateType = template.GetType();
-            var templateFields = templateType.GetFields().OrderBy(field => field.MetadataToken); // hack to get fields in order of declaration (todo: use something less hacky, this might break mono?)
-
-            foreach (var templateField in templateFields) {
-                // check to see if the object has a default value in the struct
-                NMSAttribute settings = templateField.GetCustomAttribute<NMSAttribute>();
-                if (settings?.DefaultValue != null) templateField.SetValue(template, settings.DefaultValue);
-            }
 
             using ( var indentScope = new Logger.IndentScope() ) {
 

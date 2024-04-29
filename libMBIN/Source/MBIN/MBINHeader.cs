@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Text;
+using System.Globalization;
 
 namespace libMBIN
 {
@@ -9,9 +10,10 @@ namespace libMBIN
     {
         internal const uint  MBIN_MAGIC    = 0xCCCCCCCC;         // MBIN format ID
         internal const uint  MBIN_MAGIC_PC = 0xDDDDDDDD;         // only used by TkGeometryData and TkGeometryStreamData (*.MBIN.PC)
+        internal const uint  MBIN_VERSION_OLD  = 2500;               // vanilla version
         // Note: The MBIN_VERSION used to be 2500, but as of the 14144058 steam version this changed to 3250,
         // presumably to indicate that the file format is indeed different (fields became ordered, probably for optimization reasons...)
-        internal const uint  MBIN_VERSION  = 3250;               // vanilla version
+        internal const uint  MBIN_VERSION  = 3250;               // vanilla version with ordered fields
 
         // used for format V1
         internal const ulong MBINCVER_TAG  = 0x726576434E49424D; // "revCNIBM" ("MBINCver")
@@ -24,11 +26,11 @@ namespace libMBIN
         internal const ulong TKGEOMETRYDATA_TAG     = 0xFFFFFFFFFFFFFFFF; // used by TkGeometryData and TkGeometryStreamData
         internal const ulong TKGEOMETRYDATA_PADDING = 0xFEFEFEFEFEFEFEFE; // used by TkGeometryData and TkGeometryStreamData
 
-        public enum Format { V0, V1, V2 }
+        public enum Format { V0, V1, V2, V3 }
 
         #region // Fields
 
-        /// <summary><b><i>Format V0, V1 and V2:</i></b>
+        /// <summary><b><i>All formats:</i></b>
         ///     For *.MBIN files, this value is always 0xCCCCCCCC.
         ///     For *.MBIN.PC files, this is always 0xDDDDDDDD.
         /// </summary>
@@ -40,6 +42,8 @@ namespace libMBIN
         /// <b><i>Format V2:</i></b>
         ///     Low short is NMS Format ID (always 2500)
         ///     High short is libMBIN Format ID. (always 0 for format V0 and V1)
+        /// <b><i>Format V3:</i></b>
+        ///     NMS MBIN format version (Always 3250)
         /// </summary>
         /* 0x04 */ public uint FormatID;// { get; set; }
 
@@ -51,12 +55,12 @@ namespace libMBIN
         /// </summary>
         /* 0x08 */ public ulong Timestamp;
 
-        /// <summary><b><i>Format V0 and V2:</i></b>
+        /// <summary><b><i>Format V0, V2 and V3:</i></b>
         ///     Unique across templates (files using the same template share the same GUID).
         /// </summary>
         /* 0x10 */ public ulong TemplateGUID;
 
-        /// <summary><b><i>Format V0, V1 and V2:</i></b>
+        /// <summary><b><i>All formats:</i></b>
         ///     The name of the data template the MBIN file is using.
         ///     Eg. <c>"cGcTestMetadata"</c>
         /// </summary>
@@ -64,7 +68,10 @@ namespace libMBIN
         [NMS( Size = 0x40 )] // 64 bytes
         /* 0x18 */ public string TemplateName;
 
-        /// <summary><b><i>Format V0 and V1:</i></b> Not used.</summary>
+        /// <summary><b><i>Format V0 and V1:</i></b> Not used.
+        /// <b><i>Format V2 and V3:</i></b>
+        ///     Full of non-zero padding bytes for anim and geometry files.
+        /// </summary>
         /* 0x58 */ public ulong EndPadding;
         /* Size = 0x60 */
 
@@ -90,7 +97,7 @@ namespace libMBIN
         #region // V2 Properties
 
         /// <summary><b><i>Format V2:</i></b>
-        ///     The low short from <see cref="FormatID"/>. (always 2500)
+        ///     The low short from <see cref="FormatID"/>. (always 3250)
         /// </summary>
         /// <seealso cref="FormatAPI"/>
         /// <seealso cref="FormatID"/>
@@ -175,13 +182,23 @@ namespace libMBIN
         // used for format V1
         private string MbinVersionString; // Version of the mbin file as read initially as a string
 
-        public bool IsValid => ((MagicID == MBIN_MAGIC) || (MagicID == MBIN_MAGIC_PC)) && (FormatNMS == MBIN_VERSION);
+        public bool IsValid => (
+            ((MagicID == MBIN_MAGIC) || (MagicID == MBIN_MAGIC_PC))
+            && ((FormatNMS == MBIN_VERSION_OLD) || (FormatNMS == MBIN_VERSION))
+        );
 
-        public int GetFormat() => IsFormatV0 ? 0 : IsFormatV1 ? 1 : FormatAPI;
+        public int GetFormat() {
+            if (IsFormatV0) return 0;
+            if (IsFormatV1) return 1;
+            if (IsFormatV2) return 2;
+            if (IsFormatV3) return 3;
+            return -1;
+        }
 
-        public bool IsFormatV0 => (FormatAPI == 0) && (Tag != MBINCVER_TAG);
-        public bool IsFormatV1 => (FormatAPI == 0) && (Tag == MBINCVER_TAG);
-        public bool IsFormatV2 => (FormatAPI == 2);
+        public bool IsFormatV0 => (FormatAPI == 0) && (Tag != MBINCVER_TAG) && (FormatNMS == MBIN_VERSION_OLD);
+        public bool IsFormatV1 => (FormatAPI == 0) && (Tag == MBINCVER_TAG) && (FormatNMS == MBIN_VERSION_OLD);
+        public bool IsFormatV2 => (FormatAPI == 2) && (FormatNMS == MBIN_VERSION_OLD);
+        public bool IsFormatV3 => (FormatAPI == 0) && (FormatNMS == MBIN_VERSION);
 
         // remove the "c" (compiled?) from the start of the template name
         public string GetXMLTemplateName() {
@@ -209,7 +226,7 @@ namespace libMBIN
         public void SetDefaultsV0( Type type = null ) {
             // MBIN_MAGIC_PC is only used by TkGeometryData (*.MBIN.PC)
             MagicID      = (type == typeof(NMS.Toolkit.TkGeometryData) | type == typeof(NMS.Toolkit.TkGeometryStreamData)) ? MBIN_MAGIC_PC : MBIN_MAGIC;
-            FormatID     = MBIN_VERSION;
+            FormatID     = MBIN_VERSION_OLD;
             Timestamp    = 0;
             TemplateGUID = type?.GetCustomAttribute<NMSAttribute>()?.GUID ?? 0;
             TemplateName = string.Empty;
@@ -247,12 +264,52 @@ namespace libMBIN
             VersionAPI = Version.AssemblyVersion;
         }
 
-        public void SetDefaults( Type type = null, Format format = Format.V2 ) {
+        public void SetDefaultsV3( Type type = null ) {
+            // V3 differs from V2 in that the MBIN header version is no longer written
+            SetDefaultsV0( type );
+            // We unfortunately can't write the `FormatAPI` value to the mbin file any more since it seems
+            // like HG is reading the MBIN format version as a uint32 now, so we don't have the extra 2
+            // bytes to play with.
+            FormatID     = MBIN_VERSION;
+            FormatAPI = 0;
+            VersionNMS = Version.NMSVersion;
+            VersionAPI = Version.AssemblyVersion;
+        }
+
+        public void SetDefaults( Type type = null, Format format = Format.V3 ) {
             switch (format) {
                 case Format.V0: SetDefaultsV0( type ); break;
                 case Format.V1: SetDefaultsV1( type ); break;
-                default:        SetDefaultsV2( type ); break;
+                case Format.V2: SetDefaultsV2( type ); break;
+                default:        SetDefaultsV3( type ); break;
             }
+        }
+
+        public bool IsModded() {
+            if (Timestamp == TKGEOMETRYDATA_TAG || Timestamp == 0) {
+                // Note: This will not be correct for old files. Only V3 will return the right value.
+                return false;
+            }
+
+            if (IsFormatV1 || IsFormatV2) {
+                // We can only detect V1 and V2 headers if we are modded.
+                return true;
+            } else if (IsFormatV3) {
+                DateTime dt = new DateTime();
+                bool success = DateTime.TryParseExact(
+                    Timestamp.ToString(),
+                    "yyyyMMddHHmm",
+                    CultureInfo.InvariantCulture,
+                    DateTimeStyles.None,
+                    out dt
+                );
+                // If we correctly parsed the timestamp then we are vanilla since no header version
+                // writes a valid timestamp.
+                return !success;
+            }
+
+            // If we aren't sure, fall back to assuming we are not modded.
+            return false;
         }
 
         internal static ulong StringToUlong( string s ) {
