@@ -48,7 +48,7 @@ namespace libMBIN.NMS.Toolkit
             switch (fieldName)
                 {
                 case nameof(MeshDataStream):
-                    writer.Align(8, fieldName );
+                    writer.Align(8, fieldName, 0xFE );
 
                     // write empty list header
                     long listPos = writer.BaseStream.Position;
