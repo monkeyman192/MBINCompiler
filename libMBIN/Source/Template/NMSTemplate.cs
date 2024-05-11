@@ -1270,6 +1270,8 @@ namespace libMBIN
                     return xmlProperty.Value;
                 case "Single":
                     return float.Parse(xmlProperty.Value);
+                case "Double":
+                    return double.Parse(xmlProperty.Value);
                 case "Boolean":
                     return bool.Parse(xmlProperty.Value);
                 case "Byte":
