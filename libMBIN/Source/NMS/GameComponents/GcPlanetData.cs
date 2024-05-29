@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFEAA440AFB0C1436, NameHash = 0x25EDFA0EC4C3AF0A)]
+    [NMS(GUID = 0x1886F4E854F02764, NameHash = 0x25EDFA0EC4C3AF0A)]
     public class GcPlanetData : NMSTemplate
     {
         [NMS(Index = 10)]
@@ -63,12 +63,12 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 24)]
         /* 0x3BDC */ public GcPlanetInfo PlanetInfo;
         [NMS(Index = 0)]
-        /* 0x40E1 */ public NMSString0x80 Name;
+        /* 0x40E2 */ public NMSString0x80 Name;
         [NMS(Index = 15)]
-        /* 0x4161 */ public NMSString0x80 TerrainFile;
+        /* 0x4162 */ public NMSString0x80 TerrainFile;
         [NMS(Index = 27)]
-        /* 0x41E1 */ public bool InAbandonedSystem;
+        /* 0x41E2 */ public bool InAbandonedSystem;
         [NMS(Index = 26)]
-        /* 0x41E2 */ public bool InEmptySystem;
+        /* 0x41E3 */ public bool InEmptySystem;
     }
 }

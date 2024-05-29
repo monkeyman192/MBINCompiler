@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF651380B8EE89A91, NameHash = 0x8B94093DC3901046)]
+    [NMS(GUID = 0x94292A9E1E79B23E, NameHash = 0x8B94093DC3901046)]
     public class GcAudioWwiseEvents : NMSTemplate
     {
-        // size: 0xA10
+        // size: 0xA11
         public enum AkEventEnum : uint {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
@@ -1936,6 +1936,7 @@ namespace libMBIN.NMS.GameComponents
             SANDWORM_LP = 0x6E353C11,
             SANDWORM_LP_STOP = 0xAAC8AD74,
             SANDWORM_OUTOFGROUND = 0xE4FE7575,
+            SANDWORM_UNDERGROUND_WAIL_LP = 0xB2928D5F,
             SC_TR_HARV = 0x3234D002,
             SCAN_OFF = 0x70FDCEA8,
             SCAN_ON = 0x8022EEB2,

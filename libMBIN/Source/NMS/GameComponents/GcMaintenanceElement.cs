@@ -2,13 +2,15 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9898428D33A7FA52, NameHash = 0x79BDBA7746F3C796)]
+    [NMS(GUID = 0x7F9C3C6F1A027E6E, NameHash = 0x79BDBA7746F3C796)]
     public class GcMaintenanceElement : NMSTemplate
     {
+        [NMS(Index = 9)]
+        /* 0x00 */ public NMSString0x20A LocatorOverride;
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x20 */ public NMSString0x10 Id;
         [NMS(Index = 6)]
-        /* 0x10 */ public float AmountEmptyTimePeriod;
+        /* 0x30 */ public float AmountEmptyTimePeriod;
         // size: 0x9
         public enum CompletionRequirementEnum : uint {
             FullyChargedAndRepaired,
@@ -21,41 +23,41 @@ namespace libMBIN.NMS.GameComponents
             HasIngredients,
             GroupInstall,
         }
-        [NMS(Index = 13)]
-        /* 0x14 */ public CompletionRequirementEnum CompletionRequirement;
+        [NMS(Index = 14)]
+        /* 0x34 */ public CompletionRequirementEnum CompletionRequirement;
+        [NMS(Index = 12)]
+        /* 0x38 */ public int DamagedAfterTimePeriodMax;
         [NMS(Index = 11)]
-        /* 0x18 */ public int DamagedAfterTimePeriodMax;
-        [NMS(Index = 10)]
-        /* 0x1C */ public int DamagedAfterTimePeriodMin;
+        /* 0x3C */ public int DamagedAfterTimePeriodMin;
         // size: 0x3
         public enum DamageStatusEnum : uint {
             Damaged,
             Repaired,
             Random,
         }
-        [NMS(Index = 12)]
-        /* 0x20 */ public DamageStatusEnum DamageStatus;
+        [NMS(Index = 13)]
+        /* 0x40 */ public DamageStatusEnum DamageStatus;
         [NMS(Index = 0)]
-        /* 0x24 */ public GcMaintenanceElementGroups ItemGroupOverride;
+        /* 0x44 */ public GcMaintenanceElementGroups ItemGroupOverride;
         [NMS(Index = 5)]
-        /* 0x28 */ public int MaxCapacity;
+        /* 0x48 */ public int MaxCapacity;
         [NMS(Index = 4)]
-        /* 0x2C */ public float MaxRandAmount;
+        /* 0x4C */ public float MaxRandAmount;
         [NMS(Index = 3)]
-        /* 0x30 */ public float MinRandAmount;
+        /* 0x50 */ public float MinRandAmount;
         [NMS(Index = 1)]
-        /* 0x34 */ public GcInventoryType Type;
+        /* 0x54 */ public GcInventoryType Type;
         // size: 0x3
         public enum UpdateTypeEnum : uint {
             UpdatesAlways,
             UpdateOnlyWhenComplete,
             UpdateOnlyWhenNotComplete,
         }
-        [NMS(Index = 9)]
-        /* 0x38 */ public UpdateTypeEnum UpdateType;
+        [NMS(Index = 10)]
+        /* 0x58 */ public UpdateTypeEnum UpdateType;
         [NMS(Index = 8)]
-        /* 0x3C */ public bool BlockDiscardWhenAllowedForParent;
+        /* 0x5C */ public bool BlockDiscardWhenAllowedForParent;
         [NMS(Index = 7)]
-        /* 0x3D */ public bool HideWhenComplete;
+        /* 0x5D */ public bool HideWhenComplete;
     }
 }

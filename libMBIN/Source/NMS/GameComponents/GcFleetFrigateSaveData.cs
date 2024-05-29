@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7C18540B4C679770, NameHash = 0xE6F863FE26F77270)]
+    [NMS(GUID = 0x435E58CE581A8ED5, NameHash = 0xE6F863FE26F77270)]
     public class GcFleetFrigateSaveData : NMSTemplate
     {
         [NMS(Index = 2)]

@@ -2,10 +2,10 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD3177D62BC4C6C67, NameHash = 0xE523CFAD6AFB4BB6)]
+    [NMS(GUID = 0xF9D24197A44C992B, NameHash = 0xE523CFAD6AFB4BB6)]
     public class GcScanEventSolarSystemLookup : NMSTemplate
     {
-        [NMS(Index = 32)]
+        [NMS(Index = 33)]
         /* 0x00 */ public NMSString0x20A SamePlanetAsEvent;
         [NMS(Index = 28)]
         /* 0x20 */ public NMSString0x10 NeedsResourceHint;
@@ -13,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x30 */ public GcPlanetTradingData TradingData;
         [NMS(Index = 24)]
         /* 0x38 */ public GcBiomeType NeedsBiomeType;
-        [NMS(Index = 33)]
+        [NMS(Index = 34)]
         /* 0x3C */ public int SamePlanetAsSeasonParty;
         [NMS(Index = 6)]
         /* 0x40 */ public GcGalaxyStarTypes StarType;
@@ -63,15 +63,17 @@ namespace libMBIN.NMS.GameComponents
         /* 0x65 */ public bool RequireUndiscovered;
         [NMS(Index = 29)]
         /* 0x66 */ public bool SuitableForCreatureDiscovery;
-        [NMS(Index = 31)]
+        [NMS(Index = 32)]
         /* 0x67 */ public bool SuitableForCreatureTaming;
+        [NMS(Index = 31)]
+        /* 0x68 */ public bool SuitableForRobotCreatureDiscovery;
         [NMS(Index = 30)]
-        /* 0x68 */ public bool SuitableForWeirdCreatureDiscovery;
+        /* 0x69 */ public bool SuitableForWeirdCreatureDiscovery;
         [NMS(Index = 0)]
-        /* 0x69 */ public bool UseStarType;
+        /* 0x6A */ public bool UseStarType;
         [NMS(Index = 2)]
-        /* 0x6A */ public bool UseTrading;
+        /* 0x6B */ public bool UseTrading;
         [NMS(Index = 1)]
-        /* 0x6B */ public bool UseWealth;
+        /* 0x6C */ public bool UseWealth;
     }
 }

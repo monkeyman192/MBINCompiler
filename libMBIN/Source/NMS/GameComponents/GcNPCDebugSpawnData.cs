@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2B81A3BC74D4BE08, NameHash = 0x1D427C136EB50E9D)]
+    [NMS(GUID = 0x28C217D189727590, NameHash = 0x1D427C136EB50E9D)]
     public class GcNPCDebugSpawnData : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -17,26 +17,26 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 15)]
         /* 0x238 */ public GcPetCustomisationData PetAccessoryCustomisation;
         [NMS(Index = 7)]
-        /* 0x340 */ public List<NMSString0x10> Idles;
+        /* 0x370 */ public List<NMSString0x10> Idles;
         [NMS(Index = 11)]
-        /* 0x350 */ public GcSeed Seed;
+        /* 0x380 */ public GcSeed Seed;
         [NMS(Index = 5)]
-        /* 0x360 */ public List<Vector3f> Waypoints;
+        /* 0x390 */ public List<Vector3f> Waypoints;
         [NMS(Index = 4)]
-        /* 0x370 */ public float InitialDelay;
+        /* 0x3A0 */ public float InitialDelay;
         [NMS(Index = 13)]
-        /* 0x374 */ public float PetFollowOffset;
+        /* 0x3A4 */ public float PetFollowOffset;
         [NMS(Index = 10)]
-        /* 0x378 */ public GcAlienRace Race;
+        /* 0x3A8 */ public GcAlienRace Race;
         [NMS(Index = 12)]
-        /* 0x37C */ public bool AddPetAccessories;
+        /* 0x3AC */ public bool AddPetAccessories;
         [NMS(Index = 3)]
-        /* 0x37D */ public bool FollowWaypoints;
+        /* 0x3AD */ public bool FollowWaypoints;
         [NMS(Index = 6)]
-        /* 0x37E */ public bool PlayIdles;
+        /* 0x3AE */ public bool PlayIdles;
         [NMS(Index = 9)]
-        /* 0x37F */ public bool RidePet;
+        /* 0x3AF */ public bool RidePet;
         [NMS(Index = 8)]
-        /* 0x380 */ public bool Run;
+        /* 0x3B0 */ public bool Run;
     }
 }
