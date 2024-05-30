@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA965B3AF547BD202, NameHash = 0xCE9968E4A5D8329B)]
+    [NMS(GUID = 0xB9722ABC485B9624, NameHash = 0xCE9968E4A5D8329B)]
     public class GcMissionConditionIsFrigateFlybyActive : NMSTemplate
     {
         [NMS(Index = 0)]

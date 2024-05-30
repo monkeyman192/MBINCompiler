@@ -2,10 +2,10 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x9F76C3595E94342A, NameHash = 0x75816D38B6B42FE4)]
+    [NMS(GUID = 0x724ADD978CB8C258, NameHash = 0x75816D38B6B42FE4)]
     public class TkProceduralTexture : NMSTemplate
     {
-        [NMS(Index = 5)]
+        [NMS(Index = 6)]
         /* 0x000 */ public Colour AverageColour;
         [NMS(Index = 0)]
         /* 0x010 */ public NMSString0x20A Name;
@@ -21,13 +21,15 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 3)]
         /* 0x03C */ public TextureGameplayUseEnum TextureGameplayUse;
-        [NMS(Index = 6)]
-        /* 0x040 */ public NMSString0x80 Diffuse;
-        [NMS(Index = 8)]
-        /* 0x0C0 */ public NMSString0x80 Mask;
         [NMS(Index = 7)]
+        /* 0x040 */ public NMSString0x80 Diffuse;
+        [NMS(Index = 9)]
+        /* 0x0C0 */ public NMSString0x80 Mask;
+        [NMS(Index = 8)]
         /* 0x140 */ public NMSString0x80 Normal;
         [NMS(Index = 4)]
-        /* 0x1C0 */ public bool OverrideAverageColour;
+        /* 0x1C0 */ public bool Multiply;
+        [NMS(Index = 5)]
+        /* 0x1C1 */ public bool OverrideAverageColour;
     }
 }

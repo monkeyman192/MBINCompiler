@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x383DBEA33F7678A9, NameHash = 0x4A57F915F84ABBCD)]
+    [NMS(GUID = 0x3199344A43B9184A, NameHash = 0x4A57F915F84ABBCD)]
     public class GcAlienPuzzleMissionOverride : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -13,5 +13,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x40 */ public GcSeed OptionalMissionSeed;
         [NMS(Index = 3)]
         /* 0x50 */ public bool ForceMissionSeed;
+        [NMS(Index = 5)]
+        /* 0x51 */ public bool RequireMainMissionActiveWhenUsingAlt;
     }
 }

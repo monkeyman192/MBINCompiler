@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFAD56E13CDC1B26, NameHash = 0xCD20631E8DC06987)]
+    [NMS(GUID = 0xDA1D5F3CD3BFAAA9, NameHash = 0xCD20631E8DC06987)]
     public class GcMechDebugSpawnData : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -16,12 +16,12 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 8)]
         /* 0x40 */ public GcCharacterCustomisationSaveData CustomisatonData;
         [NMS(Index = 6)]
-        /* 0x98 */ public float MoveDelay;
+        /* 0xA8 */ public float MoveDelay;
         [NMS(Index = 5)]
-        /* 0x9C */ public float TitanFallDelay;
+        /* 0xAC */ public float TitanFallDelay;
         [NMS(Index = 4)]
-        /* 0xA0 */ public bool Running;
+        /* 0xB0 */ public bool Running;
         [NMS(Index = 7)]
-        /* 0xA1 */ public bool UseCustomisation;
+        /* 0xB1 */ public bool UseCustomisation;
     }
 }

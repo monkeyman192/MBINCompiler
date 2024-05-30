@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6ECE5D2B5BFD0959, NameHash = 0x902E6B8A4F1B75A6)]
+    [NMS(GUID = 0xC2DD8AF8F537AC4A, NameHash = 0x902E6B8A4F1B75A6)]
     public class GcExperienceDebugTriggerActionTypes : NMSTemplate
     {
-        // size: 0x32
+        // size: 0x33
         public enum ExperienceDebugTriggerActionEnum : uint {
             None,
             Drones,
@@ -45,6 +45,7 @@ namespace libMBIN.NMS.GameComponents
             PetMine,
             PetMineAndDeposit,
             RidePet,
+            GhostShip,
             Normandy,
             LivingFrigate,
             UpgradeSettlement,

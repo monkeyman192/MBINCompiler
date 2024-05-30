@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x894B0D7B5EE0AC3A, NameHash = 0x479CFCB871ABBE0)]
+    [NMS(GUID = 0xB429D5D9BE8B879C, NameHash = 0x479CFCB871ABBE0)]
     public class GcMaintenanceComponentData : NMSTemplate
     {
         [NMS(Index = 22)]
         /* 0x000 */ public TkModelRendererData ModelRenderData;
         [NMS(Index = 23)]
         /* 0x0B0 */ public TkModelRendererData ModelRenderDataAlt;
-        [NMS(Index = 51)]
+        [NMS(Index = 52)]
         /* 0x160 */ public GcMaintenanceGroupInstallData GroupInstallSetup;
         [NMS(Index = 28)]
         /* 0x1F0 */ public NMSString0x20A ActionButtonOverride;
@@ -35,20 +35,22 @@ namespace libMBIN.NMS.GameComponents
         /* 0x310 */ public NMSString0x20A TransferButtonOverride;
         [NMS(Index = 31)]
         /* 0x330 */ public NMSString0x20A TransferDescriptionOverride;
+        [NMS(Index = 48)]
+        /* 0x350 */ public List<NMSString0x10> ForceDamageDuringMissions;
         [NMS(Index = 47)]
-        /* 0x350 */ public NMSString0x10 GiveRewardOnCompletion;
+        /* 0x360 */ public NMSString0x10 GiveRewardOnCompletion;
         [NMS(Index = 0)]
-        /* 0x360 */ public List<GcMaintenanceElement> PreInstalledTech;
+        /* 0x370 */ public List<GcMaintenanceElement> PreInstalledTech;
         [NMS(Index = 46)]
-        /* 0x370 */ public NMSString0x10 StartMissionOnCompletion;
+        /* 0x380 */ public NMSString0x10 StartMissionOnCompletion;
         [NMS(Index = 45)]
-        /* 0x380 */ public NMSString0x10 StartMissionOnUse;
-        [NMS(Index = 50)]
-        /* 0x390 */ public GcAudioWwiseEvents AudioIDOnSuccess;
+        /* 0x390 */ public NMSString0x10 StartMissionOnUse;
+        [NMS(Index = 51)]
+        /* 0x3A0 */ public GcAudioWwiseEvents AudioIDOnSuccess;
         [NMS(Index = 25)]
-        /* 0x394 */ public GcBroadcastLevel BroadcastLevel;
+        /* 0x3A4 */ public GcBroadcastLevel BroadcastLevel;
         [NMS(Index = 19)]
-        /* 0x398 */ public float CompletedTransitionDelay;
+        /* 0x3A8 */ public float CompletedTransitionDelay;
         // size: 0x4
         public enum InteractableEnum : uint {
             OnlyWhenComplete,
@@ -57,73 +59,73 @@ namespace libMBIN.NMS.GameComponents
             Never,
         }
         [NMS(Index = 17)]
-        /* 0x39C */ public InteractableEnum Interactable;
+        /* 0x3AC */ public InteractableEnum Interactable;
         [NMS(Index = 41)]
-        /* 0x3A0 */ public float InWorldUIForcedOffset;
+        /* 0x3B0 */ public float InWorldUIForcedOffset;
         [NMS(Index = 42)]
-        /* 0x3A4 */ public float InWorldUIForcedOffsetV2;
+        /* 0x3B4 */ public float InWorldUIForcedOffsetV2;
         [NMS(Index = 39)]
-        /* 0x3A8 */ public float InWorldUIMinDistOverride;
+        /* 0x3B8 */ public float InWorldUIMinDistOverride;
         [NMS(Index = 40)]
-        /* 0x3AC */ public float InWorldUIMinDistOverrideV2;
+        /* 0x3BC */ public float InWorldUIMinDistOverrideV2;
         [NMS(Index = 38)]
-        /* 0x3B0 */ public float InWorldUIScaler;
+        /* 0x3C0 */ public float InWorldUIScaler;
         // size: 0x2
         public enum ModelRendererResourceEnum : uint {
             ModelNode,
             MasterModelNode,
         }
         [NMS(Index = 24)]
-        /* 0x3B4 */ public ModelRendererResourceEnum ModelRendererResource;
+        /* 0x3C4 */ public ModelRendererResourceEnum ModelRendererResource;
         [NMS(Index = 1)]
-        /* 0x3B8 */ public int VisibleMaintenanceSlots;
+        /* 0x3C8 */ public int VisibleMaintenanceSlots;
         [NMS(Index = 3)]
-        /* 0x3BC */ public bool AllowCharge;
+        /* 0x3CC */ public bool AllowCharge;
         [NMS(Index = 7)]
-        /* 0x3BD */ public bool AllowCraftProduct;
+        /* 0x3CD */ public bool AllowCraftProduct;
         [NMS(Index = 5)]
-        /* 0x3BE */ public bool AllowDiscard;
+        /* 0x3CE */ public bool AllowDiscard;
         [NMS(Index = 4)]
-        /* 0x3BF */ public bool AllowDismantle;
+        /* 0x3CF */ public bool AllowDismantle;
         [NMS(Index = 6)]
-        /* 0x3C0 */ public bool AllowInstallTech;
+        /* 0x3D0 */ public bool AllowInstallTech;
         [NMS(Index = 9)]
-        /* 0x3C1 */ public bool AllowMoveAndStack;
+        /* 0x3D1 */ public bool AllowMoveAndStack;
         [NMS(Index = 11)]
-        /* 0x3C2 */ public bool AllowPinning;
+        /* 0x3D2 */ public bool AllowPinning;
         [NMS(Index = 2)]
-        /* 0x3C3 */ public bool AllowRepair;
+        /* 0x3D3 */ public bool AllowRepair;
         [NMS(Index = 8)]
-        /* 0x3C4 */ public bool AllowTransfer;
+        /* 0x3D4 */ public bool AllowTransfer;
         [NMS(Index = 10)]
-        /* 0x3C5 */ public bool AllowTransferIn;
+        /* 0x3D5 */ public bool AllowTransferIn;
         [NMS(Index = 12)]
-        /* 0x3C6 */ public bool AutoCompleteOnStart;
-        [NMS(Index = 52)]
-        /* 0x3C7 */ public bool DisableSynchronise;
+        /* 0x3D6 */ public bool AutoCompleteOnStart;
+        [NMS(Index = 53)]
+        /* 0x3D7 */ public bool DisableSynchronise;
         [NMS(Index = 18)]
-        /* 0x3C8 */ public bool ForceNoninteraction;
-        [NMS(Index = 49)]
-        /* 0x3C9 */ public bool ForceOneClickRepair;
+        /* 0x3D8 */ public bool ForceNoninteraction;
+        [NMS(Index = 50)]
+        /* 0x3D9 */ public bool ForceOneClickRepair;
         [NMS(Index = 15)]
-        /* 0x3CA */ public bool ForceRemoveUIRenderLayer;
+        /* 0x3DA */ public bool ForceRemoveUIRenderLayer;
         [NMS(Index = 16)]
-        /* 0x3CB */ public bool HideMaxAmountOnProductSlots;
+        /* 0x3DB */ public bool HideMaxAmountOnProductSlots;
         [NMS(Index = 44)]
-        /* 0x3CC */ public bool InteractionRequiresPower;
+        /* 0x3DC */ public bool InteractionRequiresPower;
         [NMS(Index = 43)]
-        /* 0x3CD */ public bool InWorldUIUseCameraUp;
-        [NMS(Index = 48)]
-        /* 0x3CE */ public bool OpenInteractionOnQuit;
+        /* 0x3DD */ public bool InWorldUIUseCameraUp;
+        [NMS(Index = 49)]
+        /* 0x3DE */ public bool OpenInteractionOnQuit;
         [NMS(Index = 20)]
-        /* 0x3CF */ public bool ShareInteractionModelRender;
+        /* 0x3DF */ public bool ShareInteractionModelRender;
         [NMS(Index = 37)]
-        /* 0x3D0 */ public bool SilenceSuitVOIAlerts;
+        /* 0x3E0 */ public bool SilenceSuitVOIAlerts;
         [NMS(Index = 14)]
-        /* 0x3D1 */ public bool UseBoundsForIconCentre;
+        /* 0x3E1 */ public bool UseBoundsForIconCentre;
         [NMS(Index = 21)]
-        /* 0x3D2 */ public bool UseInteractionStyleCameraEvent;
+        /* 0x3E2 */ public bool UseInteractionStyleCameraEvent;
         [NMS(Index = 13)]
-        /* 0x3D3 */ public bool UseModelResourceRenderer;
+        /* 0x3E3 */ public bool UseModelResourceRenderer;
     }
 }

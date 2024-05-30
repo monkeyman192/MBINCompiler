@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEA27B0FBCCD36680, NameHash = 0x39F4E912A931EB8F)]
+    [NMS(GUID = 0xCF2FDE5A8AF44596, NameHash = 0x39F4E912A931EB8F)]
     public class GcModularCustomisationConfig : NMSTemplate
     {
         [NMS(Index = 8)]
@@ -23,11 +23,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x250 */ public NMSString0x20A SubtitleSlotsFullLocId;
         [NMS(Index = 1)]
         /* 0x270 */ public NMSString0x20A TitleLocId;
-        [NMS(Index = 12)]
-        /* 0x290 */ public List<GcModularCustomisationColourGroup> ColourData;
+        [NMS(Index = 13)]
+        /* 0x290 */ public List<GcModularCustomisationColourData> ColourDataPriorityList;
         [NMS(Index = 11)]
         /* 0x2A0 */ public List<GcModularCustomisationSlotConfig> Slots;
-        [NMS(Index = 13)]
+        [NMS(Index = 12)]
         /* 0x2B0 */ public List<GcModularCustomisationTextureGroup> TextureData;
         [NMS(Index = 9)]
         /* 0x2C0 */ public GcCustomisationCameraData CameraData;
