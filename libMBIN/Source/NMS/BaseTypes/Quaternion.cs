@@ -1,22 +1,28 @@
-﻿using libMBIN.NMS.Toolkit;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS
 {
-    [NMS(Size = 0x10, Alignment = 0x2)]
     public class Quaternion : NMSTemplate
     {
-        public float x;
-        public float y;
-        public float z;
-        public float w;
+        public double x;
+        public double y;
+        public double z;
+        public double w;
+        public int dropComponent;
 
-        public Quaternion(float x, float y, float z, float w)
+        public Quaternion(double x, double y, double z, double w, int dropComponent)
         {
             this.x = x;
             this.y = y;
             this.z = z;
             this.w = w;
+            this.dropComponent = dropComponent;
         }
 
         public Quaternion() { }
@@ -29,6 +35,21 @@ namespace libMBIN.NMS
         public override string ToString()
         {
             return $"({this.x}, {this.y}, {this.z}, {this.w})";
+        }
+
+        public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
+            {
+            if (field == null || fieldInfo == null)
+                return false;
+
+            switch (fieldInfo.Name)
+                {
+                case nameof(dropComponent):
+                    // Do nothing...
+                    return true;
+            }
+
+            return false;
         }
     }
 }

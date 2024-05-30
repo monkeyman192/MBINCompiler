@@ -13,9 +13,9 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Index = 0)]
         /* 0x00 */ public List<Quaternion> Rotations;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<Vector3f> Scales;
+        /* 0x10 */ public List<Vector4f> Scales;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<Vector3f> Translations;
+        /* 0x20 */ public List<Vector4f> Translations;
 
         public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {
             var fieldName = fieldInfo.Name;
@@ -39,9 +39,10 @@ namespace libMBIN.NMS.Toolkit
                     // worker values
                     UInt16 c_x, c_y, c_z;
                     UInt16 i_x, i_y;
-                    // a few normalisation/scaling values
-                    float norm = 1.0f / 0x3FFF;
-                    float scale = 1.0f / (float)Math.Sqrt(2.0f);
+                    // The scaling factor. This is slightly different to the one in the exe.
+                    // The value in the exe is 0.000030518509 times some other factors,
+                    // however using this decimal value results in decompiled values which are much more messy.
+                    double scale = 1.0f / (0x3FFF * Math.Sqrt(2.0f));
                     // now, iterate over the input data.
                     // We will read in the data in chunks of 6 bytes
                     for (int i = 0; i < numEntries; i++)
@@ -52,49 +53,42 @@ namespace libMBIN.NMS.Toolkit
                         c_z = reader.ReadUInt16();
 
                         // determine most significant bit (0 or 1)
-                        i_x = (UInt16)(c_x >> 0xF);
+                        i_x = (UInt16)(c_x >> 0xE);
                         i_y = (UInt16)(c_y >> 0xF);
-                        //i_z = (UInt16)(c_z >> 0xF);
 
                         /* dropcomponent indicates which component of the quaternion has been dropped
                         3 -> x
                         2 -> y
                         1 -> z
                         0 -> w */
-                        ushort dropcomponent = (ushort)(i_x << 1 | i_y << 0);
+                        ushort dropcomponent = (ushort)(i_y | i_x & 2);
 
                         //Mask Values (strip most significant bit)
-                        c_x = (UInt16)(c_x & 0x7FFF);
-                        c_y = (UInt16)(c_y & 0x7FFF);
-                        c_z = (UInt16)(c_z & 0x7FFF);
-
-                        Quaternion q = new Quaternion(
-                            ((float)(c_x - 0x3FFF)) * norm * scale,
-                            ((float)(c_y - 0x3FFF)) * norm * scale,
-                            ((float)(c_z - 0x3FFF)) * norm * scale,
-                            0.0f);
+                        double qx = scale * ((c_x & 0x7FFF) - 0x3FFF);
+                        double qy = scale * ((c_y & 0x7FFF) - 0x3FFF);
+                        double qz = scale * (c_z - 0x3FFF);
 
                         //I assume that W is positive by default
-                        q.w = (float)Math.Sqrt(Math.Max(1.0f - q.x * q.x - q.y * q.y - q.z * q.z, 0.0));
+                        double qw = Math.Sqrt(Math.Max(Math.Min(1.0f - qx * qx - qy * qy - qz * qz, 1.0), 0.0));
                         // output Quaternion
                         Quaternion qo;
 
                         switch (dropcomponent)
                             {
                             case 3:     // qx was dropped
-                                qo = new Quaternion(q.w, q.x, q.y, q.z);
+                                qo = new Quaternion(qw, qx, qy, qz, 3 - dropcomponent);
                                 break;
                             case 2:     // qy was dropped
-                                qo = new Quaternion(q.x, q.w, q.y, q.z);
+                                qo = new Quaternion(qx, qw, qy, qz, 3 - dropcomponent);
                                 break;
                             case 1:     // qz was dropped
-                                qo = new Quaternion(q.x, q.y, q.w, q.z);
+                                qo = new Quaternion(qx, qy, qw, qz, 3 - dropcomponent);
                                 break;
                             case 0:     // qw was dropped
-                                qo = new Quaternion(q.x, q.y, q.z, q.w);
+                                qo = new Quaternion(qx, qy, qz, qw, 3 - dropcomponent);
                                 break;
                             default:
-                                qo = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);        // shouldn't ever get here
+                                qo = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f, 0);        // shouldn't ever get here
                                 break;
                         }
                         data.Add(qo);
@@ -133,12 +127,17 @@ namespace libMBIN.NMS.Toolkit
                     foreach (Quaternion q in data)
                         {
                         List<UInt16> convertedQ = new List<UInt16>
-                        {ConvertQuat(q.x),
-                         ConvertQuat(q.y),
-                         ConvertQuat(q.z),
-                         ConvertQuat(q.w)};
+                        {
+                            ConvertQuat(q.x),
+                            ConvertQuat(q.y),
+                            ConvertQuat(q.z),
+                            ConvertQuat(q.w),
+                        };
 
-                        int dropcomponent = (int)DetermineDropComponent(convertedQ);
+                        // Get the drop component from the value stored in the exml.
+                        // For more details see the comment above the DetermineDropComponent method.
+                        int dropcomponent = q.dropComponent;
+                        // int dropcomponent = DetermineDropComponent(convertedQ);
 
                         // remove the element we wish to discard
                         convertedQ.RemoveAt(dropcomponent);
@@ -164,6 +163,14 @@ namespace libMBIN.NMS.Toolkit
             return false;
         }
 
+        // Note: This function doesn't quite work. There are a few edge cases that it doesn't quite handle.
+        // To get around this we'll just store the dropped component, but if these edge cases can be fixed,
+        // then we can stop storing the drop component and just determine it from the data.
+        // Some bytes which cannot have their drop component determined correctly (little endian):
+        // e475 b01b 601f
+        // ee80 deca 107f
+        // f4e6 388d c672
+        // f3e6 398d c572
         private UInt16 DetermineDropComponent(List<UInt16> arr)
             {
             UInt16 max_loc = 0;        // x by default
@@ -201,9 +208,9 @@ namespace libMBIN.NMS.Toolkit
             return max_loc;
         }
 
-        private UInt16 ConvertQuat(float qi)
+        private UInt16 ConvertQuat(double qi)
             {
-            return (UInt16)(0x3FFF * (Math.Sqrt(2) * qi + 1));
+            return (UInt16)Math.Round(0x3FFF * (Math.Sqrt(2) * qi + 1));
         }
     }
 }
