@@ -85,66 +85,73 @@ namespace SaveFileMapping
 
         static void Main(string[] args)
         {
-            var main_data = new Dictionary<string, object>();
-            Type s = typeof(libMBIN.NMS.GameComponents.GcPlayerStateData);
-            var data = new HashSet<Tuple<string, string>>();
-            UpdateHashes(s, data);
+            var save_mapping = new HashSet<Tuple<string, string>>();
+            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcPlayerStateData), save_mapping);
             // Add some other values we need:
             // Added Keys:
-            data.Add(new Tuple<string, string>(HashName("Version"), "Version"));
-            data.Add(new Tuple<string, string>(HashName("Platform"), "Platform"));
-            data.Add(new Tuple<string, string>(HashName("ActiveContext"), "ActiveContext"));
-            data.Add(new Tuple<string, string>(HashName("GameMode"), "GameMode"));
-            data.Add(new Tuple<string, string>(HashName("ReserveStore"), "ReserveStore"));
-            data.Add(new Tuple<string, string>(HashName("ReserveManaged"), "ReserveManaged"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Version"), "Version"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Platform"), "Platform"));
+            save_mapping.Add(new Tuple<string, string>(HashName("ActiveContext"), "ActiveContext"));
+            save_mapping.Add(new Tuple<string, string>(HashName("GameMode"), "GameMode"));
+            save_mapping.Add(new Tuple<string, string>(HashName("ReserveStore"), "ReserveStore"));
+            save_mapping.Add(new Tuple<string, string>(HashName("ReserveManaged"), "ReserveManaged"));
             // Open Objects:
-            data.Add(new Tuple<string, string>(HashName("CommonStateData"), "CommonStateData"));
+            save_mapping.Add(new Tuple<string, string>(HashName("CommonStateData"), "CommonStateData"));
             // CommonStateData is of type GcPlayerCommonStateData
-            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcPlayerCommonStateData), data);
-            data.Add(new Tuple<string, string>(HashName("BaseContext"), "BaseContext"));
-            data.Add(new Tuple<string, string>(HashName("ExpeditionContext"), "ExpeditionContext"));
-            data.Add(new Tuple<string, string>(HashName("PlayerStateData"), "PlayerStateData"));
-            data.Add(new Tuple<string, string>(HashName("SpawnStateData"), "SpawnStateData"));
-            data.Add(new Tuple<string, string>(HashName("GameKnowledgeData"), "GameKnowledgeData"));
-            data.Add(new Tuple<string, string>(HashName("DiscoveryManagerData"), "DiscoveryManagerData"));
-            data.Add(new Tuple<string, string>(HashName("DiscoveryData-v1"), "DiscoveryData-v1"));
+            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcPlayerCommonStateData), save_mapping);
+            save_mapping.Add(new Tuple<string, string>(HashName("BaseContext"), "BaseContext"));
+            save_mapping.Add(new Tuple<string, string>(HashName("ExpeditionContext"), "ExpeditionContext"));
+            save_mapping.Add(new Tuple<string, string>(HashName("PlayerStateData"), "PlayerStateData"));
+            save_mapping.Add(new Tuple<string, string>(HashName("SpawnStateData"), "SpawnStateData"));
+            save_mapping.Add(new Tuple<string, string>(HashName("GameKnowledgeData"), "GameKnowledgeData"));
+            save_mapping.Add(new Tuple<string, string>(HashName("DiscoveryManagerData"), "DiscoveryManagerData"));
+            save_mapping.Add(new Tuple<string, string>(HashName("DiscoveryData-v1"), "DiscoveryData-v1"));
             // Open Arrays:
-            data.Add(new Tuple<string, string>(HashName("MultiTool"), "MultiTool"));
-            data.Add(new Tuple<string, string>(HashName("Waypoints"), "Waypoints"));
+            save_mapping.Add(new Tuple<string, string>(HashName("MultiTool"), "MultiTool"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Waypoints"), "Waypoints"));
             // Waypoints is a list of GcGalaxyWaypoint's:
-            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcGalaxyWaypoint), data);
+            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcGalaxyWaypoint), save_mapping);
             // Session::SavePersistent
-            data.Add(new Tuple<string, string>(HashName("Store"), "Store"));
-            data.Add(new Tuple<string, string>(HashName("Record"), "Record"));
-            data.Add(new Tuple<string, string>(HashName("TSrec"), "TSrec"));
-            data.Add(new Tuple<string, string>(HashName("Available"), "Available"));
-            data.Add(new Tuple<string, string>(HashName("Enqueued"), "Enqueued"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Store"), "Store"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Record"), "Record"));
+            save_mapping.Add(new Tuple<string, string>(HashName("TSrec"), "TSrec"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Available"), "Available"));
+            save_mapping.Add(new Tuple<string, string>(HashName("Enqueued"), "Enqueued"));
             // Not sure if these are still used, but kept for any kind of backward compatibility.
-            data.Add(new Tuple<string, string>(HashName("OWS"), "OWS"));
-            data.Add(new Tuple<string, string>(HashName("LID"), "LID"));
-            data.Add(new Tuple<string, string>(HashName("UID"), "UID"));
-            data.Add(new Tuple<string, string>(HashName("DM"), "DM"));
-            data.Add(new Tuple<string, string>(HashName("CN"), "CN"));
-            data.Add(new Tuple<string, string>(HashName("FL"), "FL"));
-            data.Add(new Tuple<string, string>(HashName("RID"), "RID"));
-            data.Add(new Tuple<string, string>(HashName("PTK"), "PTK"));
-            data.Add(new Tuple<string, string>(HashName("H"), "H"));
-            data.Add(new Tuple<string, string>(HashName("R"), "R"));
-            data.Add(new Tuple<string, string>(HashName("C"), "C"));
-            data.Add(new Tuple<string, string>(HashName("U"), "U"));
-            data.Add(new Tuple<string, string>(HashName("F"), "F"));
-            data.Add(new Tuple<string, string>(HashName("DD"), "DD"));
-            data.Add(new Tuple<string, string>(HashName("UA"), "UA"));
-            data.Add(new Tuple<string, string>(HashName("DT"), "DT"));
-            data.Add(new Tuple<string, string>(HashName("VP"), "VP"));
-            data.Add(new Tuple<string, string>(HashName("TS"), "TS"));
-            data.Add(new Tuple<string, string>(HashName("USN"), "USN"));
-            // Also add the GcUserSettingsData class
-            data.Add(new Tuple<string, string>(HashName("UserSettingsData"), "UserSettingsData"));
-            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcUserSettingsData), data);
+            save_mapping.Add(new Tuple<string, string>(HashName("OWS"), "OWS"));
+            save_mapping.Add(new Tuple<string, string>(HashName("LID"), "LID"));
+            save_mapping.Add(new Tuple<string, string>(HashName("UID"), "UID"));
+            save_mapping.Add(new Tuple<string, string>(HashName("DM"), "DM"));
+            save_mapping.Add(new Tuple<string, string>(HashName("CN"), "CN"));
+            save_mapping.Add(new Tuple<string, string>(HashName("FL"), "FL"));
+            save_mapping.Add(new Tuple<string, string>(HashName("RID"), "RID"));
+            save_mapping.Add(new Tuple<string, string>(HashName("PTK"), "PTK"));
+            save_mapping.Add(new Tuple<string, string>(HashName("H"), "H"));
+            save_mapping.Add(new Tuple<string, string>(HashName("R"), "R"));
+            save_mapping.Add(new Tuple<string, string>(HashName("C"), "C"));
+            save_mapping.Add(new Tuple<string, string>(HashName("U"), "U"));
+            save_mapping.Add(new Tuple<string, string>(HashName("F"), "F"));
+            save_mapping.Add(new Tuple<string, string>(HashName("DD"), "DD"));
+            save_mapping.Add(new Tuple<string, string>(HashName("UA"), "UA"));
+            save_mapping.Add(new Tuple<string, string>(HashName("DT"), "DT"));
+            save_mapping.Add(new Tuple<string, string>(HashName("VP"), "VP"));
+            save_mapping.Add(new Tuple<string, string>(HashName("TS"), "TS"));
+            save_mapping.Add(new Tuple<string, string>(HashName("USN"), "USN"));
 
+            // Also add the GcUserSettingsData class
+            var account_mapping = new HashSet<Tuple<string, string>>();
+            // Add UserSettingsData first as it marks the start of this chunk of data
+            account_mapping.Add(new Tuple<string, string>(HashName("UserSettingsData"), "UserSettingsData"));
+            UpdateHashes(typeof(libMBIN.NMS.GameComponents.GcUserSettingsData), account_mapping);
+            // Add some other values we need (again):
+            account_mapping.Add(new Tuple<string, string>(HashName("Version"), "Version"));
+
+            var main_data = new Dictionary<string, object>();
             main_data["libMBIN_version"] = libMBIN.Version.AssemblyVersion.ToString();
-            main_data["Mapping"] = data;
+            main_data["Mapping"] = save_mapping.ToList().Concat(account_mapping.ToList());
+            // main_data["Mapping_save"] = save_mapping; // alternatively split mapping in 2
+            // main_data["Mapping_account"] = account_mapping;
+
             var options = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = new MappingPolicy(),
