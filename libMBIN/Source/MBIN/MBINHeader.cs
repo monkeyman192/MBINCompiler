@@ -13,7 +13,8 @@ namespace libMBIN
         internal const uint  MBIN_VERSION_OLD  = 2500;               // vanilla version
         // Note: The MBIN_VERSION used to be 2500, but as of the 14144058 steam version this changed to 3250,
         // presumably to indicate that the file format is indeed different (fields became ordered, probably for optimization reasons...)
-        internal const uint  MBIN_VERSION  = 3250;               // vanilla version with ordered fields
+        internal const uint MBIN_VERSION_3250 = 3250;           // Version with ordered fields.
+        internal const uint  MBIN_VERSION = 3300;               // vanilla version with ordered fields and no template name.
 
         // used for format V1
         internal const ulong MBINCVER_TAG  = 0x726576434E49424D; // "revCNIBM" ("MBINCver")
@@ -26,7 +27,7 @@ namespace libMBIN
         internal const ulong TKGEOMETRYDATA_TAG     = 0xFFFFFFFFFFFFFFFF; // used by TkGeometryData and TkGeometryStreamData
         internal const ulong TKGEOMETRYDATA_PADDING = 0xFEFEFEFEFEFEFEFE; // used by TkGeometryData and TkGeometryStreamData
 
-        public enum Format { V0, V1, V2, V3 }
+        public enum Format { V0, V1, V2, V3, V4 }
 
         #region // Fields
 
@@ -192,12 +193,14 @@ namespace libMBIN
             if (IsFormatV1) return 1;
             if (IsFormatV2) return 2;
             if (IsFormatV3) return 3;
+            if (IsFormatV4) return 4;
             return -1;
         }
 
         public bool IsFormatV0 => (FormatAPI == 0) && (Tag != MBINCVER_TAG) && (FormatNMS == MBIN_VERSION_OLD);
         public bool IsFormatV1 => (FormatAPI == 0) && (Tag == MBINCVER_TAG) && (FormatNMS == MBIN_VERSION_OLD);
         public bool IsFormatV2 => (FormatAPI == 2) && (FormatNMS == MBIN_VERSION_OLD);
+        public bool IsFormatV4 => (FormatAPI == 0) && (FormatNMS == MBIN_VERSION);
         public bool IsFormatV3 => (FormatAPI == 0) && (FormatNMS == MBIN_VERSION);
 
         // remove the "c" (compiled?) from the start of the template name
@@ -276,12 +279,25 @@ namespace libMBIN
             VersionAPI = Version.AssemblyVersion;
         }
 
-        public void SetDefaults( Type type = null, Format format = Format.V3 ) {
+        public void SetDefaultsV4( Type type = null ) {
+            // V3 differs from V2 in that the MBIN header version is no longer written
+            SetDefaultsV0( type );
+            // We unfortunately can't write the `FormatAPI` value to the mbin file any more since it seems
+            // like HG is reading the MBIN format version as a uint32 now, so we don't have the extra 2
+            // bytes to play with.
+            FormatID     = MBIN_VERSION;
+            FormatAPI = 0;
+            VersionNMS = Version.NMSVersion;
+            VersionAPI = Version.AssemblyVersion;
+        }
+
+        public void SetDefaults( Type type = null, Format format = Format.V4 ) {
             switch (format) {
                 case Format.V0: SetDefaultsV0( type ); break;
                 case Format.V1: SetDefaultsV1( type ); break;
                 case Format.V2: SetDefaultsV2( type ); break;
-                default:        SetDefaultsV3( type ); break;
+                case Format.V3: SetDefaultsV3( type ); break;
+                default:        SetDefaultsV4( type ); break;
             }
         }
 
