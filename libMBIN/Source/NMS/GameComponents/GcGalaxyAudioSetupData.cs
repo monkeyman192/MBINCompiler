@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF10967725F6D59E, NameHash = 0xA3F156D44BBFB2B9)]
+    [NMS(GUID = 0x9A09AFCC3824206F, NameHash = 0xBEC6F214)]
     public class GcGalaxyAudioSetupData : NMSTemplate
     {
         [NMS(Index = 6)]

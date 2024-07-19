@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAEFA3EB9A24DD308, NameHash = 0x9ED3D0A38623AF53)]
+    [NMS(GUID = 0xD6A149FD3BA838BC, NameHash = 0xF2AB3A18)]
     public class GcPetAccessoryTable : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x1E, EnumType = typeof(GcPetAccessoryType.PetAccessoryEnum))]

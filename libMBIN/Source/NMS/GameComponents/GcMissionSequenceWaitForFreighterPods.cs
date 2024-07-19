@@ -1,15 +1,15 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6537BF60A4AAB12B, NameHash = 0x779C608FD9761375)]
+    [NMS(GUID = 0x40466401094177D8, NameHash = 0xC8793BE)]
     public class GcMissionSequenceWaitForFreighterPods : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x000 */ public int Amount;
         [NMS(Index = 3)]
-        /* 0x004 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x084 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 1)]
+        /* 0x20 */ public int Amount;
         [NMS(Index = 2)]
-        /* 0x104 */ public bool TakeAmountFromPulseEncounter;
+        /* 0x24 */ public bool TakeAmountFromPulseEncounter;
     }
 }

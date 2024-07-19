@@ -1,15 +1,15 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7A4968C8B9305AD4, NameHash = 0x3C3DF65980E5A451)]
+    [NMS(GUID = 0xCE5A3AF133C12ECA, NameHash = 0xCB1AFECA)]
     public class GcMissionSequenceWaitForAbandFreighterDoorOpen : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x000 */ public float MinTime;
         [NMS(Index = 3)]
-        /* 0x004 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x084 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x104 */ public NMSString0x80 MessageOvertime;
+        /* 0x20 */ public VariableSizeString MessageOvertime;
+        [NMS(Index = 2)]
+        /* 0x30 */ public float MinTime;
     }
 }

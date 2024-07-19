@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6F6CF54C4C7DD57F, NameHash = 0xBF5651AA301FD576)]
+    [NMS(GUID = 0x6F6CF54C4C7DD57F, NameHash = 0x447541E0)]
     public class GcRewardOverridePulseEncounterChance : NMSTemplate
     {
         [NMS(Index = 0)]

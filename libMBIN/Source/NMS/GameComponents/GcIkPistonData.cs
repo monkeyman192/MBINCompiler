@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF75AED0AA1591651, NameHash = 0x1C7FB8C61B710244)]
+    [NMS(GUID = 0xF75AED0AA1591651, NameHash = 0x1C410552)]
     public class GcIkPistonData : NMSTemplate
     {
         [NMS(Index = 0)]

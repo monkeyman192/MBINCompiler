@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x590CEF821149BD94, NameHash = 0xF8A296780D76172F)]
+    [NMS(GUID = 0x2BA96FBCE77A37E0, NameHash = 0x2333DE53)]
     public class GcMissionConditionFreighterBattle : NMSTemplate
     {
         [NMS(Index = 1)]

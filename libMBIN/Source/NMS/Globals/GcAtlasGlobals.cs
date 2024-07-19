@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x405F807A69628F3A, NameHash = 0xD5128E119194249)]
+    [NMS(GUID = 0x405F807A69628F3A, NameHash = 0x4FED5F3D)]
     public class GcAtlasGlobals : NMSTemplate
     {
         [NMS(Index = 0)]

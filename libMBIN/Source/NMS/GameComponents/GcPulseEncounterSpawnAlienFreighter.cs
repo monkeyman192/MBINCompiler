@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD385A16FD8414CB8, NameHash = 0x5F7F34583E5B29AA)]
+    [NMS(GUID = 0xD385A16FD8414CB8, NameHash = 0x29A6C9DD)]
     public class GcPulseEncounterSpawnAlienFreighter : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF83A3527A0E8420D, NameHash = 0xB3E8C8CD4B9DB0B1)]
+    [NMS(GUID = 0x79949766BD798E20, NameHash = 0x26A0D337)]
     public class GcInputActions : NMSTemplate
     {
-        // size: 0x126
+        // size: 0x122
         public enum InputActionEnum : uint {
             Invalid,
             Player_Forward,
@@ -71,8 +71,6 @@ namespace libMBIN.NMS.GameComponents
             Fe_Alt1X,
             Fe_Transfer,
             Fe_Destroy,
-            Gm_Select,
-            Gm_Restart,
             UI_Left,
             UI_Right,
             UI_Left_Sub,
@@ -216,8 +214,6 @@ namespace libMBIN.NMS.GameComponents
             UI_CameraX,
             UI_CameraY,
             UI_ViewPlayerInfo,
-            UI_NextInputControls,
-            UI_PrevInputControls,
             UI_ToggleBuySell,
             UI_ToggleTradeInventory,
             UI_TouchScrollY,
@@ -226,7 +222,6 @@ namespace libMBIN.NMS.GameComponents
             UI_CharacterCustomisation_Camera,
             UI_CharacterCustomisation_RotateCamera,
             UI_CharacterCustomisation_PitchCamera,
-            GameMode_CancelDelete,
             GameMode_TitleStart,
             GameMode_ChangeUser,
             Binocs_NextMode,
@@ -276,6 +271,7 @@ namespace libMBIN.NMS.GameComponents
             BaseBuilding_NextPart,
             TogglePause,
             TogglePlanet,
+            ToggleFreezeCulling,
             Suicide,
             Reset,
             AddLastToolbox,

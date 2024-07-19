@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC3B08D1986260430, NameHash = 0x75E1ADCE47B381E6)]
+    [NMS(GUID = 0x617738D45CA39D41, NameHash = 0x95A6BF76)]
     public class GcVibrationDataTable : NMSTemplate
     {
         [NMS(Index = 0)]

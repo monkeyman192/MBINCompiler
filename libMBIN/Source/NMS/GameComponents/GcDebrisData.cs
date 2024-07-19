@@ -2,22 +2,22 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF40172EC91235DB8, NameHash = 0xC9F6512AC970CD07)]
+    [NMS(GUID = 0x56FACB1782B83DCF, NameHash = 0x99BAD1E4)]
     public class GcDebrisData : NMSTemplate
     {
-        [NMS(Index = 6)]
-        /* 0x00 */ public GcSeed OverrideSeed;
         [NMS(Index = 0)]
-        /* 0x10 */ public TkModelResource Filename;
+        /* 0x00 */ public TkModelResource Filename;
+        [NMS(Index = 6)]
+        /* 0x18 */ public GcSeed OverrideSeed;
         [NMS(Index = 5)]
-        /* 0x94 */ public float AnglularSpeed;
+        /* 0x28 */ public float AnglularSpeed;
         [NMS(Index = 1)]
-        /* 0x98 */ public int Number;
+        /* 0x2C */ public int Number;
         [NMS(Index = 2)]
-        /* 0x9C */ public float Radius;
+        /* 0x30 */ public float Radius;
         [NMS(Index = 3)]
-        /* 0xA0 */ public float Scale;
+        /* 0x34 */ public float Scale;
         [NMS(Index = 4)]
-        /* 0xA4 */ public float Speed;
+        /* 0x38 */ public float Speed;
     }
 }

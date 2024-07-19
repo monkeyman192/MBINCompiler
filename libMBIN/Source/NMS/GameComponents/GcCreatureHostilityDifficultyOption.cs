@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD86131FEFF826FFC, NameHash = 0x2B740202A0E2CC57)]
+    [NMS(GUID = 0xD86131FEFF826FFC, NameHash = 0xF05D9C14)]
     public class GcCreatureHostilityDifficultyOption : NMSTemplate
     {
         // size: 0x3

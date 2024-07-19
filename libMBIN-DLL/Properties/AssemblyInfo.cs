@@ -40,6 +40,3 @@ using System.Runtime.InteropServices;
 
 // MBINCompiler needs access to libMBIN.Version.VERSION_STRING
 [assembly: InternalsVisibleTo( "MBINCompiler" )]
-
-// Unit tests needs access to internals
-[assembly: InternalsVisibleTo( "MBINCompilerTests" )]

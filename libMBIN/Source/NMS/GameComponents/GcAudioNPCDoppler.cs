@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x866658EDEE3C2AC8, NameHash = 0xC02D1C8C9CF91C83)]
+    [NMS(GUID = 0x5B71C70C9ED2A183, NameHash = 0x308DBEDE)]
     public class GcAudioNPCDoppler : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x7, EnumType = typeof(GcAISpaceshipTypes.ShipTypeEnum))]

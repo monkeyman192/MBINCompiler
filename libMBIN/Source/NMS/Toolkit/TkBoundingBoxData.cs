@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2F9ED93F3BDB4EEE, NameHash = 0x46C380A7C1CCD790)]
+    [NMS(GUID = 0x2F9ED93F3BDB4EEE, NameHash = 0xC61F29E0)]
     public class TkBoundingBoxData : NMSTemplate
     {
         [NMS(Index = 1)]

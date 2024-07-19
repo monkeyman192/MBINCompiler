@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x40DCE6DF94C5699B, NameHash = 0x36EF2564DBF81DFA)]
+    [NMS(GUID = 0x291A603BF262939C, NameHash = 0xDF07C8C6)]
     public class TkAnimPoseCorrelationData : NMSTemplate
     {
         [NMS(Index = 0)]

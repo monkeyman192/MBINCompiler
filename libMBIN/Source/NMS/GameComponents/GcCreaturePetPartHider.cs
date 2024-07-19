@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x888689E0AFD2F84F, NameHash = 0xC7B26C36881B633D)]
+    [NMS(GUID = 0x888689E0AFD2F84F, NameHash = 0x3D34159D)]
     public class GcCreaturePetPartHider : NMSTemplate
     {
         [NMS(Index = 1)]

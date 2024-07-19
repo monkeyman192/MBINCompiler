@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCBD94A72AECBA114, NameHash = 0xBC8B5F2250F65891)]
+    [NMS(GUID = 0xCBD94A72AECBA114, NameHash = 0x67EE1437)]
     public class GcShipDialogueTreeEnum : NMSTemplate
     {
         // size: 0x7

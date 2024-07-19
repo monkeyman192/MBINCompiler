@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x81C4363EF63C416C, NameHash = 0x9564BC3EDB74BBA1)]
+    [NMS(GUID = 0xE45D69DB07524A09, NameHash = 0x5A04D1F9)]
     public class TkHeavyAirSystem : NMSTemplate
     {
         [NMS(Index = 7)]
@@ -21,11 +21,11 @@ namespace libMBIN.NMS.Toolkit
         /* 0x70 */ public Vector3f ScaleRange;
         [NMS(Index = 5)]
         /* 0x80 */ public Vector3f TwinkleRange;
-        [NMS(Index = 9)]
-        /* 0x90 */ public float Colour1Alpha;
-        [NMS(Index = 11)]
-        /* 0x94 */ public float Colour2Alpha;
         [NMS(Index = 0)]
-        /* 0x98 */ public NMSString0x80 Material;
+        /* 0x90 */ public VariableSizeString Material;
+        [NMS(Index = 9)]
+        /* 0xA0 */ public float Colour1Alpha;
+        [NMS(Index = 11)]
+        /* 0xA4 */ public float Colour2Alpha;
     }
 }

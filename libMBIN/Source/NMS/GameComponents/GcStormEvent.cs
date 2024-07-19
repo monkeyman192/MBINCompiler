@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5702E88EB1A1E38B, NameHash = 0xFDBC0E456811CE9E)]
+    [NMS(GUID = 0x5702E88EB1A1E38B, NameHash = 0x23A3A749)]
     public class GcStormEvent : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC4F7FE24129EBB10, NameHash = 0x90485A00D3954CE2)]
+    [NMS(GUID = 0xC4F7FE24129EBB10, NameHash = 0x5A212AF3)]
     public class GcAtmosphereEntryComponentData : NMSTemplate
     {
         [NMS(Index = 5)]

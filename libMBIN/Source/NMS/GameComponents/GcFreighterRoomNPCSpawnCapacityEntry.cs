@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x84636CEB90E27C40, NameHash = 0x990CE1CD4E45ADF3)]
+    [NMS(GUID = 0x84636CEB90E27C40, NameHash = 0xFC96930E)]
     public class GcFreighterRoomNPCSpawnCapacityEntry : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x5D934A889912272A, NameHash = 0x91EF3068AEC32FB7)]
+    [NMS(GUID = 0x5D934A889912272A, NameHash = 0xE4B500D2)]
     public class TkUserServiceAuthProvider : NMSTemplate
     {
         // size: 0x8

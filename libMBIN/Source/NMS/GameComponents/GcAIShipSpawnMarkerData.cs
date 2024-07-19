@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDA4DC529E1A2EE7E, NameHash = 0xDB40771B3EB38336)]
+    [NMS(GUID = 0x21D5A3379472120A, NameHash = 0x5934F9B0)]
     public class GcAIShipSpawnMarkerData : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -10,11 +10,11 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 0)]
         /* 0x20 */ public TkTextureResource MarkerIcon;
         [NMS(Index = 4)]
-        /* 0xA4 */ public float MaxVisibleRange;
+        /* 0x38 */ public float MaxVisibleRange;
         [NMS(Index = 5)]
-        /* 0xA8 */ public float MinAngleVisible;
+        /* 0x3C */ public float MinAngleVisible;
         [NMS(Index = 3)]
-        /* 0xAC */ public float MinVisibleRange;
+        /* 0x40 */ public float MinVisibleRange;
         // size: 0x3
         public enum ShipsToMarkEnum : uint {
             None,
@@ -22,8 +22,8 @@ namespace libMBIN.NMS.GameComponents
             All,
         }
         [NMS(Index = 6)]
-        /* 0xB0 */ public ShipsToMarkEnum ShipsToMark;
+        /* 0x44 */ public ShipsToMarkEnum ShipsToMark;
         [NMS(Index = 2)]
-        /* 0xB4 */ public bool HideDuringCombat;
+        /* 0x48 */ public bool HideDuringCombat;
     }
 }

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE01BE0B6BD142C64, NameHash = 0x8CBF91F9F8428E08)]
+    [NMS(GUID = 0xE01BE0B6BD142C64, NameHash = 0xDA426786)]
     public class GcAISpaceshipTypes : NMSTemplate
     {
         // size: 0x7

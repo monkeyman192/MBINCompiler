@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x40FF2F8B931C7F29, NameHash = 0x1D2BBA30C6CC5A88)]
+    [NMS(GUID = 0xEFDC10447044CE57, NameHash = 0x3ECB0104)]
     public class GcSaveContextDataMaskTable : NMSTemplate
     {
         [NMS(Index = 1)]

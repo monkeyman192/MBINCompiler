@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.IO;
 
 namespace libMBIN
@@ -36,7 +37,7 @@ namespace libMBIN
 
         public bool Load()
         {
-            if (_io.Stream.Length < 0x60) return false;
+            if (_io.Stream.Length < MBINHeader.HEADER_SIZE) return false;
             _io.Stream.Position = 0;
             Header = (MBINHeader)NMSTemplate.DeserializeBinaryTemplate(_io.Reader, "MBINHeader");
             return true;
@@ -53,21 +54,21 @@ namespace libMBIN
 
         public NMSTemplate GetData()
         {
-            _io.Stream.Position = 0x60;
+            _io.Stream.Position = MBINHeader.HEADER_SIZE;
             return NMSTemplate.DeserializeBinaryTemplate(_io.Reader, Header.GetXMLTemplateName());
         }
 
         public void SetData(NMSTemplate template)
         {
-            _io.Stream.SetLength(0x60);
-            _io.Stream.Position = 0x60;
+            _io.Stream.SetLength(MBINHeader.HEADER_SIZE);
+            _io.Stream.Position = MBINHeader.HEADER_SIZE;
 
             byte[] data = template.SerializeBytes();
             _io.Writer.Write(data);
 
             FileLength = (ulong)data.LongLength;
-
-            Header.TemplateName = "c" + template.GetType().Name;
+            Header.NameHash = template.GetType().GetCustomAttribute<NMSAttribute>()?.NameHash ?? 0;
+            Header.TemplateGUID = template.GetType().GetCustomAttribute<NMSAttribute>()?.GUID ?? 0;
         }
 
         public static explicit operator NMSTemplate(MBINFile mbin)

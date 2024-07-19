@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x82C2E1DE66FB5479, NameHash = 0xF1F483BCEFC0AD13)]
+    [NMS(GUID = 0x82C2E1DE66FB5479, NameHash = 0x1AD5DE55)]
     public class GcRewardOpenPage : NMSTemplate
     {
         // size: 0x10

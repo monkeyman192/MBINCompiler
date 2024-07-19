@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x34827E14E7CDCAFA, NameHash = 0xED4A21D9F7E3058B)]
+    [NMS(GUID = 0x34827E14E7CDCAFA, NameHash = 0xED81F7C6)]
     public class GcNPCTriggerTypes : NMSTemplate
     {
         // size: 0xF

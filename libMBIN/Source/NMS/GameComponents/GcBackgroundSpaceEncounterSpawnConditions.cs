@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFE241DE420039D26, NameHash = 0xD0217E81661C9C1D)]
+    [NMS(GUID = 0xFE241DE420039D26, NameHash = 0x52BE77F8)]
     public class GcBackgroundSpaceEncounterSpawnConditions : NMSTemplate
     {
         [NMS(Index = 5)]

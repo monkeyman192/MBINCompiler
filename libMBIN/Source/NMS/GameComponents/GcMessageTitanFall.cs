@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x969CB143BD6474A9, NameHash = 0x35A64B8A8E9358C9)]
+    [NMS(GUID = 0x969CB143BD6474A9, NameHash = 0x8AB3CE3E)]
     public class GcMessageTitanFall : NMSTemplate
     {
     }

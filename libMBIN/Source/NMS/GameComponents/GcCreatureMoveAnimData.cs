@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE3BE34A55F235F3C, NameHash = 0x50CC62720AB69C5)]
+    [NMS(GUID = 0x56F2F04A205348EC, NameHash = 0x627FE9E1)]
     public class GcCreatureMoveAnimData : NMSTemplate
     {
         [NMS(Index = 0)]

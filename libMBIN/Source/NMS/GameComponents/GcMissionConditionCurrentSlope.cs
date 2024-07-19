@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x48701375371714C6, NameHash = 0xBEBEB02AB2408708)]
+    [NMS(GUID = 0x31BD7D95C132F5F9, NameHash = 0x5B37185)]
     public class GcMissionConditionCurrentSlope : NMSTemplate
     {
         [NMS(Index = 0)]

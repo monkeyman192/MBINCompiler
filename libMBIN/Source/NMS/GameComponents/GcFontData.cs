@@ -1,11 +1,11 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x66A8AD1A3E8DFAA3, NameHash = 0x1297324AF39B5F4E)]
+    [NMS(GUID = 0x7119B895413DD133, NameHash = 0xE98A05A5)]
     public class GcFontData : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x0 */ public int MinCharWidth;
         [NMS(Index = 0)]
-        /* 0x4 */ public NMSString0x80 File;
+        /* 0x00 */ public VariableSizeString File;
+        [NMS(Index = 1)]
+        /* 0x10 */ public int MinCharWidth;
     }
 }

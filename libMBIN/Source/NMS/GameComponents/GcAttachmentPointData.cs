@@ -1,15 +1,11 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9E5EE9DE84542AC2, NameHash = 0x5E18E1A975BA4573)]
+    [NMS(GUID = 0x57878A41DE9669CC, NameHash = 0x7ECCAEA3)]
     public class GcAttachmentPointData : NMSTemplate
     {
         [NMS(Index = 0)]
         /* 0x00 */ public Vector3f Position;
-        [NMS(Index = 3)]
-        /* 0x10 */ public float AttractionStartDistance;
-        [NMS(Index = 2)]
-        /* 0x14 */ public float AttractionStrength;
         [NMS(Index = 1)]
-        /* 0x18 */ public int SimP;
+        /* 0x10 */ public int SimP;
     }
 }

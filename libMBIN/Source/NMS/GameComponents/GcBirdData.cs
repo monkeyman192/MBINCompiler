@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF6E44946691E091B, NameHash = 0x840B4D8139B48954)]
+    [NMS(GUID = 0xF6E44946691E091B, NameHash = 0xE81450AF)]
     public class GcBirdData : NMSTemplate
     {
         [NMS(Index = 3)]

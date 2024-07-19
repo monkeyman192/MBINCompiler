@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF51F2B3B7EA6080C, NameHash = 0x6E17046D2670AB02)]
+    [NMS(GUID = 0x4984DB68189018, NameHash = 0x1A88D4A0)]
     public class GcBaseBuildingPartAudioLocationTable : NMSTemplate
     {
         [NMS(Index = 0)]

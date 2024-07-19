@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x18E65DC6E8DC9DAA, NameHash = 0x4533D19670B0A519)]
+    [NMS(GUID = 0x18E65DC6E8DC9DAA, NameHash = 0xA200B6EB)]
     public class GcAISpaceshipRoles : NMSTemplate
     {
         // size: 0x7

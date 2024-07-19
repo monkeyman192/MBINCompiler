@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4BA9B6B5970A9008, NameHash = 0x8B5246BFCB875531)]
+    [NMS(GUID = 0xD5217F7F60F122F3, NameHash = 0x9A5051F7)]
     public class TkNGuiLayoutList : NMSTemplate
     {
         [NMS(Index = 0)]

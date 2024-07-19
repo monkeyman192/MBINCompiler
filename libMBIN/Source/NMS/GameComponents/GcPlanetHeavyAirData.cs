@@ -2,12 +2,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5BBB3ED386E8039A, NameHash = 0x2E1B1C402A21253)]
+    [NMS(GUID = 0x9B14EDCCD9AFFD2A, NameHash = 0xF2CCFFA0)]
     public class GcPlanetHeavyAirData : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x5)]
-        /* 0x00 */ public GcHeavyAirColourData[] Colours;
+        /* 0x000 */ public GcHeavyAirColourData[] Colours;
         [NMS(Index = 0)]
-        /* 0xA0 */ public NMSString0x80 Filename;
+        /* 0x140 */ public VariableSizeString Filename;
     }
 }

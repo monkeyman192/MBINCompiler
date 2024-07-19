@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x9E1E61825555FB4C, NameHash = 0xC24CCFE195015403)]
+    [NMS(GUID = 0x9E1E61825555FB4C, NameHash = 0x367EBA03)]
     public class TkResourceDescriptorData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -10,7 +10,7 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Index = 4)]
         /* 0x20 */ public List<NMSTemplate> Children;
         [NMS(Index = 2)]
-        /* 0x30 */ public List<NMSString0x80> ReferencePaths;
+        /* 0x30 */ public List<VariableSizeString> ReferencePaths;
         [NMS(Index = 3)]
         /* 0x40 */ public float Chance;
         [NMS(Index = 1)]

@@ -20,6 +20,17 @@ import pymem
 
 GUID_REGEX = re.compile(r'GUID = (0x[a-fA-F0-9]+)')
 
+RESTRICTED_NAMES = (
+    "abstract", "as", "base", "bool", "break", "byte", "case", "catch", "char", "checked", "class", "const",
+    "continue", "decimal", "default", "delegate", "do", "double", "else", "enum", "event", "explicit",
+    "extern", "false", "finally", "fixed", "float", "for", "foreach", "goto", "if", "implicit", "in", "int",
+    "interface", "internal", "is", "lock", "long", "namespace", "new", "null", "object", "operator", "out",
+    "override", "params", "private", "protected", "public", "readonly", "ref", "return", "sbyte", "sealed",
+    "short", "sizeof", "stackalloc", "static", "string", "struct", "switch", "this", "throw", "true", "try",
+    "typeof", "uint", "ulong", "unchecked", "unsafe", "ushort", "using", "virtual", "void", "volatile",
+    "while",
+)
+
 
 if __name__ == "__main__":
     # Handle the loading of the config first before declaring any constants, as
@@ -111,7 +122,10 @@ ENUM_OVERRIDES = {
     },
 }
 
-EXTRA_CLASSES = ['cAxisSpecification', 'cCgExpeditionCategoryStrength']
+EXTRA_CLASSES = [
+    'cAxisSpecification', 'cSimShape', 'cMapping', 'cDirectMesh',
+    'cMappedMesh', 'cInfluencesOnMappedPoint', 'cShapePoint', 'cMappingInfluence',
+]
 # Classes that don't look like globals but actually are.
 ACTUALLY_GLOBALS = ['GcSceneOptions', 'GcSmokeTestOptions', 'GcDebugOptions']
 NAME_MAPPING = {
@@ -143,10 +157,10 @@ EXTRA_ATTRIBUTES = {
 # TODO: If the GUID changes we need to raise an important message so that we may
 # fix it manually.
 DONT_OVERRIDE = [
-    'TkAnimNodeFrameData',
-    'TkAnimNodeFrameHalfData',
-    'TkGeometryData',
-    'TkMeshData',
+    # 'TkAnimNodeFrameData',
+    # 'TkAnimNodeFrameHalfData',
+    # 'TkGeometryData',
+    # 'TkMeshData',
 ]
 
 SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')
@@ -165,38 +179,50 @@ TYPE_MAPPING = {
     0x02: 'byte',
     0x03: 'CUSTOM',
     0x04: 'NMSTemplate',
-    0x05: 'Colour',
-    0x06: 'LIST',
-    0x07: 'VariableSizeString',
-    0x09: 'ENUM',
-    0x0A: 'NMSString0x80',  # Technically a "filename" -> GcFilename (?)
-    0x0B: 'FLAGENUM',
-    0x0C: 'float',
-    0x0D: 'NMSString0x10',
-    0x0E: 'NMSString0x20A',  # There seems to be no difference in use between this
-    0x0F: 'NMSString0x20A',  # and this...
-    0x11: 'short',
-    0x12: 'int',
-    0x13: 'long',
-    0x14: 'GcNodeID',
-    0x15: 'GcResource',
-    0x16: 'GcSeed',
-    0x17: 'ARRAY',
-    0x18: 'NMSString0x20',
-    0x19: 'NMSString0x40',
-    0x1A: 'NMSString0x80',
-    0x1B: 'NMSString0x100',
-    0x1C: 'NMSString0x200',
-    0x1D: 'NMSString0x400',
-    0x1E: 'NMSString0x800',
-    0x20: 'ushort',
-    0x21: 'uint',
-    0x22: 'ulong',
-    0x24: 'Vector2f',
-    0x25: 'Vector3f',
-    0x26: 'Vector4f',
+    0x05: 'LinkableNMSTemplate',
+    0x06: 'Colour',
+    0x07: 'LIST',
+    0x08: 'VariableSizeString',
+    0x09: 'VariableSizeWString',
+    0x0A: 'HashedString',
+    0x0B: 'ENUM',
+    0x0C: 'VariableSizeString',  # Technically a "filename" -> GcFilename (?)
+    0x0D: 'FLAGENUM',
+    0x0E: 'float',
+    0x0F: 'NMSString0x10',
+    0x10: 'NMSString0x20A',  # There seems to be no difference in use between this
+    0x11: 'NMSString0x20A',  # and this...
+    0x12: 'sbyte',
+    0x13: 'short',
+    0x14: 'int',
+    0x15: 'long',
+    0x16: 'GcNodeID',
+    0x17: 'GcResource',
+    0x18: 'GcSeed',
+    0x19: 'ARRAY',
+    0x1A: 'NMSString0x20',
+    0x1B: 'NMSString0x40',
+    0x1C: 'NMSString0x80',
+    0x1D: 'NMSString0x100',
+    0x1E: 'NMSString0x200',
+    0x1F: 'NMSString0x400',
+    0x20: 'NMSString0x800',
+    0x21: 'byte',
+    0x22: 'ushort',
+    0x23: 'uint',
+    0x24: 'ulong',
+    0x25: 'UniqueId',
+    0x26: 'Vector2f',
+    0x27: 'Vector3f',
+    0x28: 'Vector4f',
+    0x29: 'wchar',
+    0x2A: 'halfVector3',
+    0x2B: 'TkPhysRelVec3',
+    0x2C: 'HashMap',
 }
-PRIMITIVES = (0x01, 0x02, 0x09, 0x0B, 0x0C, 0x11, 0x12, 0x13, 0x20, 0x21, 0x22)
+
+TYPE_MAPPING_REV = {value: key for key, value in TYPE_MAPPING.items()}
+
 PREFIX_MAPPING = {
     'ccg': 'GameComponents',
     'cgc': 'GameComponents',
@@ -205,7 +231,22 @@ PREFIX_MAPPING = {
 
 
 """
-Details on the format of the 0x60 bytes for each field:
+Details on the format of the 0x60 bytes for each field (from cTkMetaDataMember definition):
+
+0x00: char *mpacName;
+0x08: unsigned int miNameHash;
+0x10: char *mpacCategoryName;
+0x18: unsigned int miCategoryHash;
+0x1C: cTkMetaDataMember::eType mType;
+0x20: cTkMetaDataMember::eType mInnerType;
+0x24: int miSize;
+0x28: int miCount;
+0x2C: int miOffset;
+0x30: cTkMetaDataClass *mpClassMetadata;
+0x38: cTkMetaDataEnumLookup *mpEnumLookup;
+0x40: int miNumEnumMembers;
+0x44: FloatEditOptions mFloatEditOptions;
+0x50: FloatLimits mFloatLimits;
 
 0x00: (uint64*) pointer to the name of the field. This is null-terminated.
 0x08: ???
@@ -231,6 +272,16 @@ Details on the format of the 0x60 bytes for each field:
 0x50: ???
 """
 
+"""
+Details on the 0x28 bytes that is TkMetaDataClass:
+
+0x00: char *mpacName;
+0x08: unsigned __int64 muNameHash;
+0x10: unsigned __int64 muTemplateHash;
+0x18: cTkMetaDataMember *maMembers;
+0x20: int miNumMembers;
+"""
+
 
 def fmt_hex(x: int) -> str:
     """ Return the integer input formatted as a upper-case hexadecimal value """
@@ -242,7 +293,7 @@ class Field(ABC):
     # This gives some basic functionality and does some common processing.
     def __init__(self, data: bytes, nms_mem):
         self.data = data
-        self.raw_field_type = 0x00
+        self.raw_field_type = TYPE_MAPPING_REV['undefined']
         self.field_size = 0x0
         self.field_index = 0x0
 
@@ -304,18 +355,20 @@ class Field(ABC):
         by deferring it to the individual classes.
         """
         raw_type = struct.unpack_from('<I', data, offset=0x1C)[0]
-        if raw_type == 0x09 or raw_type == 0x0B:
+        if raw_type == TYPE_MAPPING_REV['ENUM'] or raw_type == TYPE_MAPPING_REV['FLAGENUM']:
             ef = EnumField(data, nms_mem)
-            if raw_type == 0x0B:
+            if raw_type == TYPE_MAPPING_REV['FLAGENUM']:
                 ef.is_flag = True
             ef.check_flag_overwrites()
             return ef
-        elif raw_type == 0x06:
+        elif raw_type == TYPE_MAPPING_REV['LIST']:
             return ListField(data, nms_mem)
-        elif raw_type == 0x17:
+        elif raw_type == TYPE_MAPPING_REV['ARRAY']:
             return ArrayField(data, nms_mem)
-        elif raw_type == 0x03:
+        elif raw_type == TYPE_MAPPING_REV['CUSTOM']:
             return CustomField(data, nms_mem)
+        elif raw_type == TYPE_MAPPING_REV["HashMap"]:
+            return HashMapField(data, nms_mem)
         else:
             return NormalField(data, nms_mem, raw_type)
 
@@ -329,7 +382,7 @@ class NormalField(Field):
 class CustomField(Field):
     def __init__(self, data: bytes, nms_mem: pymem.Pymem):
         super().__init__(data, nms_mem)
-        self.raw_field_type = 0x03
+        self.raw_field_type = TYPE_MAPPING_REV['CUSTOM']
 
         # Get the pointer to the custom type name.
         ptr_custom_type = nms_mem.read_ulonglong(
@@ -351,21 +404,21 @@ class CustomField(Field):
         return NAME_MAPPING.get(self._field_type, self._field_type)
 
 
-class ArrayField(Field):
+class HashMapField(Field):
     def __init__(self, data: bytes, nms_mem: pymem.Pymem):
         super().__init__(data, nms_mem)
-        self.raw_field_type = 0x17
+        self.raw_field_type = TYPE_MAPPING_REV['HashMap']
         # Multiply the field size by the array size to get the correct size
         self.field_size *= self._array_size
         self.array_enum = None
         self.ptr_enum: int = 0
         self.array_enum_type: Optional[str] = None
-        self._is_array_field = True
+        self._is_hash_map_field = True
         self.local_enum = False
 
         array_type_raw = struct.unpack_from('<I', data, offset=0x20)[0]
         # A custom array subtype.
-        if array_type_raw == 0x03:
+        if array_type_raw == TYPE_MAPPING_REV['CUSTOM']:
             ptr_custom_type = nms_mem.read_ulonglong(
                 struct.unpack_from('<Q', data, offset=0x30)[0]
             )
@@ -391,11 +444,61 @@ class ArrayField(Field):
         self.array_enum = []
         for i in range(self._array_size):
             ptr_enum_name = nms_mem.read_ulonglong(self.ptr_enum + i * 0x10 + 0x8)
-            name = nms_mem.read_string(ptr_enum_name, byte=128)
-            # 'default' (all lowercase) is a resticted word in c#.
-            # Replace the leading 'd' with 'D'.
-            if name == 'default':
-                name = 'Default'
+            name: str = nms_mem.read_string(ptr_enum_name, byte=128)
+            # Capitalize restricted words in c#
+            if name in RESTRICTED_NAMES:
+                name = name.capitalize()
+            self.array_enum.append(name)
+
+    @property
+    def field_type(self):
+        return f'{NAME_MAPPING.get(self._field_type, self._field_type)}'
+
+
+class ArrayField(Field):
+    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+        super().__init__(data, nms_mem)
+        self.raw_field_type = TYPE_MAPPING_REV['ARRAY']
+        # Multiply the field size by the array size to get the correct size
+        self.field_size *= self._array_size
+        self.array_enum = None
+        self.ptr_enum: int = 0
+        self.array_enum_type: Optional[str] = None
+        self._is_array_field = True
+        self.local_enum = False
+
+        array_type_raw = struct.unpack_from('<I', data, offset=0x20)[0]
+        # A custom array subtype.
+        if array_type_raw == TYPE_MAPPING_REV['CUSTOM']:
+            ptr_custom_type = nms_mem.read_ulonglong(
+                struct.unpack_from('<Q', data, offset=0x30)[0]
+            )
+            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
+            self.required_using.add(
+                constants.USING_MAPPING.get(self._field_type[:2].lower(),
+                                            constants.USING_MAPPING['gc'])
+            )
+        else:
+            self._field_type = TYPE_MAPPING.get(
+                array_type_raw, f'unknown {array_type_raw:X}'
+            )
+        # Determine the associated EnumType
+        self.ptr_enum = struct.unpack_from('<Q', data, offset=0x38)[0]
+        # This may be a nullptr, in which case we end as we have no enum to get.
+        if self.ptr_enum == 0:
+            return
+        # If the pointer is non-zero, then it will be a pointer to the enums
+        # either associated with some other class, or an inline one.
+        # We need to keep track of the pointer do we can determine what class
+        # it was later.
+        # Get all the values of the enum:
+        self.array_enum = []
+        for i in range(self._array_size):
+            ptr_enum_name = nms_mem.read_ulonglong(self.ptr_enum + i * 0x10 + 0x8)
+            name: str = nms_mem.read_string(ptr_enum_name, byte=128)
+            # Capitalize restricted words in c#
+            if name in RESTRICTED_NAMES:
+                name = name.capitalize()
             self.array_enum.append(name)
 
     @property
@@ -406,7 +509,7 @@ class ArrayField(Field):
 class ListField(Field):
     def __init__(self, data: bytes, nms_mem: pymem.Pymem):
         super().__init__(data, nms_mem)
-        self.raw_field_type = 0x06
+        self.raw_field_type = TYPE_MAPPING_REV['LIST']
         self.field_size = 0x10
         self.required_using.add('System.Collections.Generic')
         self._is_list_field = True
@@ -435,7 +538,7 @@ class EnumField(Field):
     def __init__(self, data: bytes, nms_mem: pymem.Pymem):
         super().__init__(data, nms_mem)
         self._is_flag: bool = False
-        self.raw_field_type = 0x09
+        self.raw_field_type = TYPE_MAPPING_REV['ENUM']
         self.requires_values = False
         self._is_enum_field = True
 
@@ -446,16 +549,15 @@ class EnumField(Field):
         for i in range(enum_count):
             idx = nms_mem.read_uint(self.ptr_enum + i * 0x10)
             ptr_enum_name = nms_mem.read_ulonglong(self.ptr_enum + i * 0x10 + 0x8)
-            enum_name = nms_mem.read_string(ptr_enum_name, byte=128)
+            enum_name: str = nms_mem.read_string(ptr_enum_name, byte=128)
             # If the string starts with a number we need to prefix with an
             # underscore so that the name is not illegal.
             if enum_name:
                 if enum_name[0].isdigit():
                     enum_name = '_' + enum_name
-                # 'default' (all lowercase) is a resticted word in c#.
-                # Replace the leading 'd' with 'D'.
-                if enum_name == 'default':
-                    enum_name = 'Default'
+                # Capitalize restricted words in c#
+                if enum_name in RESTRICTED_NAMES:
+                    enum_name = enum_name.capitalize()
             else:
                 enum_name = 'None'
             self.enum_data.append((idx, enum_name))
@@ -708,12 +810,10 @@ def find_classes(nms_path: pathlib.Path):
             if found_addr != -1:
                 found_addr += rdata_offset
                 yield name, found_addr + virtual_offset
-            # else:
-            #     print(name)
         for name in EXTRA_CLASSES:
             # For the extra classes we'll be lazy and find them slightly
             # differently...
-            addr = data.find(name.encode())
+            addr = data.find(name.encode() + b"\x00")
             addr = addr + virtual_offset + STATIC_BASE
             # Now search the exe for this address.
             found_addr = subdata.find(struct.pack('<Q', addr))
@@ -722,6 +822,8 @@ def find_classes(nms_path: pathlib.Path):
             if found_addr != -1:
                 found_addr += rdata_offset
                 yield name, found_addr + virtual_offset
+            else:
+                print(f"Cannot find {name}")
 
 
 if __name__ == '__main__':

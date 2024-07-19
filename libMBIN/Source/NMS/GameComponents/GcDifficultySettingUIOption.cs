@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCF3DAA2A2B34A94F, NameHash = 0x44DB3EF040C4347F)]
+    [NMS(GUID = 0xBF64FBD683762A63, NameHash = 0x3AD0342F)]
     public class GcDifficultySettingUIOption : NMSTemplate
     {
         [NMS(Index = 1)]

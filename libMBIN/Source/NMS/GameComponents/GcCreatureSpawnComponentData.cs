@@ -3,27 +3,29 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x546EAB8B37844CA5, NameHash = 0xCC070D1A8B81739E)]
+    [NMS(GUID = 0x1DD31CEBBF7A43CB, NameHash = 0x7505BE5F)]
     public class GcCreatureSpawnComponentData : NMSTemplate
     {
         [NMS(Index = 13)]
-        /* 0x000 */ public GcResourceElement SpecificModel;
+        /* 0x00 */ public GcResourceElement SpecificModel;
         [NMS(Index = 2)]
-        /* 0x2A8 */ public NMSString0x10 Creature;
+        /* 0x48 */ public NMSString0x10 Creature;
+        [NMS(Index = 1)]
+        /* 0x58 */ public VariableSizeString Model;
         [NMS(Index = 5)]
-        /* 0x2B8 */ public GcSeed Seed;
+        /* 0x68 */ public GcSeed Seed;
         [NMS(Index = 14)]
-        /* 0x2C8 */ public List<GcSpawnComponentOption> SpawnOptionList;
+        /* 0x78 */ public List<GcSpawnComponentOption> SpawnOptionList;
         [NMS(Index = 0)]
-        /* 0x2D8 */ public NMSString0x10 TriggerID;
+        /* 0x88 */ public NMSString0x10 TriggerID;
         [NMS(Index = 3)]
-        /* 0x2E8 */ public GcCreatureTypes CreatureType;
+        /* 0x98 */ public GcCreatureTypes CreatureType;
         [NMS(Index = 6)]
-        /* 0x2EC */ public int FunctionKey;
+        /* 0x9C */ public int FunctionKey;
         [NMS(Index = 8)]
-        /* 0x2F0 */ public float Scale;
+        /* 0xA0 */ public float Scale;
         [NMS(Index = 4)]
-        /* 0x2F4 */ public GcAISpaceshipTypes ShipAIOverride;
+        /* 0xA4 */ public GcAISpaceshipTypes ShipAIOverride;
         // size: 0x4
         public enum SpawnerModeEnum : uint {
             Hidden,
@@ -32,16 +34,14 @@ namespace libMBIN.NMS.GameComponents
             HiddenTimer,
         }
         [NMS(Index = 12)]
-        /* 0x2F8 */ public SpawnerModeEnum SpawnerMode;
+        /* 0xA8 */ public SpawnerModeEnum SpawnerMode;
         [NMS(Index = 10)]
-        /* 0x2FC */ public float StartTimeMax;
+        /* 0xAC */ public float StartTimeMax;
         [NMS(Index = 9)]
-        /* 0x300 */ public float StartTimeMin;
+        /* 0xB0 */ public float StartTimeMin;
         [NMS(Index = 7)]
-        /* 0x304 */ public float TriggerDistance;
-        [NMS(Index = 1)]
-        /* 0x308 */ public NMSString0x80 Model;
+        /* 0xB4 */ public float TriggerDistance;
         [NMS(Index = 11)]
-        /* 0x388 */ public bool SpawnAlert;
+        /* 0xB8 */ public bool SpawnAlert;
     }
 }

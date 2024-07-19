@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEDC79F40DC21B1A3, NameHash = 0xE46A9A4173DECF1C)]
+    [NMS(GUID = 0xEDC79F40DC21B1A3, NameHash = 0x34C84B37)]
     public class GcSentinelQuadWeaponMode : NMSTemplate
     {
         // size: 0x4

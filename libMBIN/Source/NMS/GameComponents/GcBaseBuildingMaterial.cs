@@ -2,18 +2,18 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x30671D5DED3BA40, NameHash = 0x83E238320B2BEE42)]
+    [NMS(GUID = 0xE1254953A02A763, NameHash = 0xD3E3A50)]
     public class GcBaseBuildingMaterial : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x000 */ public NMSString0x20A Id;
+        /* 0x00 */ public NMSString0x20A Id;
         [NMS(Index = 2)]
-        /* 0x020 */ public NMSString0x20A LocName;
+        /* 0x20 */ public NMSString0x20A LocName;
         [NMS(Index = 0)]
-        /* 0x040 */ public TkTextureResource Icon;
+        /* 0x40 */ public TkTextureResource Icon;
         [NMS(Index = 1)]
-        /* 0x0C4 */ public TkTextureResource SwatchImage;
+        /* 0x58 */ public TkTextureResource SwatchImage;
         [NMS(Index = 4)]
-        /* 0x148 */ public int MaterialIndex;
+        /* 0x70 */ public int MaterialIndex;
     }
 }

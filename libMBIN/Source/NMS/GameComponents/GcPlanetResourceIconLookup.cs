@@ -2,14 +2,14 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x28D5265DC07D6231, NameHash = 0x1E3880E5B9724A9C)]
+    [NMS(GUID = 0x440A4F413428B817, NameHash = 0x70BD77E4)]
     public class GcPlanetResourceIconLookup : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
         [NMS(Index = 1)]
-        /* 0x10 */ public TkTextureResource Icon;
+        /* 0x00 */ public TkTextureResource Icon;
         [NMS(Index = 2)]
-        /* 0x94 */ public TkTextureResource IconBinocs;
+        /* 0x18 */ public TkTextureResource IconBinocs;
+        [NMS(Index = 0)]
+        /* 0x30 */ public NMSString0x10 ID;
     }
 }

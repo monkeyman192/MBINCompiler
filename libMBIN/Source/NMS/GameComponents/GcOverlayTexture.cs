@@ -1,15 +1,15 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA4D03B988E8C611A, NameHash = 0x5F253115B1050DE1)]
+    [NMS(GUID = 0xF04112F1E6E8705C, NameHash = 0x6AF2B1D8)]
     public class GcOverlayTexture : NMSTemplate
     {
-        [NMS(Index = 3)]
-        /* 0x000 */ public int OverlayMaskIdx;
         [NMS(Index = 0)]
-        /* 0x004 */ public NMSString0x80 OverlayDiffuse;
+        /* 0x00 */ public VariableSizeString OverlayDiffuse;
         [NMS(Index = 2)]
-        /* 0x084 */ public NMSString0x80 OverlayMasks;
+        /* 0x10 */ public VariableSizeString OverlayMasks;
         [NMS(Index = 1)]
-        /* 0x104 */ public NMSString0x80 OverlayNormal;
+        /* 0x20 */ public VariableSizeString OverlayNormal;
+        [NMS(Index = 3)]
+        /* 0x30 */ public int OverlayMaskIdx;
     }
 }

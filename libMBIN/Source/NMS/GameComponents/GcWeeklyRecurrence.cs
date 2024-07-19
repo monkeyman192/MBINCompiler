@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x905D688E4EAA26C7, NameHash = 0xB686CC9F04962DFA)]
+    [NMS(GUID = 0x7FAD28F0B9F120C1, NameHash = 0xD125D2C7)]
     public class GcWeeklyRecurrence : NMSTemplate
     {
         [NMS(Index = 2)]

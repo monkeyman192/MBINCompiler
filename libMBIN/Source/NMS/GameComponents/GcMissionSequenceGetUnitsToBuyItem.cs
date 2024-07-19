@@ -1,13 +1,13 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCDD71379B855AEC2, NameHash = 0x9DE374680DE23364)]
+    [NMS(GUID = 0xB1267714F205DD09, NameHash = 0xF9C8C667)]
     public class GcMissionSequenceGetUnitsToBuyItem : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 Item;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 1)]
+        /* 0x10 */ public NMSString0x10 Item;
         [NMS(Index = 0)]
-        /* 0x90 */ public NMSString0x80 Message;
+        /* 0x20 */ public VariableSizeString Message;
     }
 }

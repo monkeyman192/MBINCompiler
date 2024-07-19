@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x8AEBEF11092A0AA6, NameHash = 0xA4F2D5595864317D)]
+    [NMS(GUID = 0x8AEBEF11092A0AA6, NameHash = 0xEE0FA479)]
     public class TkVolumeTriggerType : NMSTemplate
     {
         // size: 0x12

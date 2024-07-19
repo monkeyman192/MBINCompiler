@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x98FCAC717CA6836E, NameHash = 0x1667364CB586EB42)]
+    [NMS(GUID = 0x98FCAC717CA6836E, NameHash = 0x7E1E61E6)]
     public class GcBootLogoData : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x4)]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x177FECA33C707400, NameHash = 0x9C498422BDBE21FE)]
+    [NMS(GUID = 0x918BC6BEF259B92B, NameHash = 0x2B45DEDD)]
     public class GcNGuiSpecialTextStyleData : NMSTemplate
     {
         [NMS(Index = 2)]

@@ -4,71 +4,71 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1886F4E854F02764, NameHash = 0x25EDFA0EC4C3AF0A)]
+    [NMS(GUID = 0x6AB1ADE204D08EC8, NameHash = 0x17A032B6)]
     public class GcPlanetData : NMSTemplate
     {
         [NMS(Index = 10)]
         /* 0x0000 */ public GcPlanetColourData Colours;
         [NMS(Index = 14)]
         /* 0x1B90 */ public GcPlanetWaterData Water;
-        [NMS(Index = 11, Size = 0x17)]
-        /* 0x1D10 */ public Colour[] TileColours;
         [NMS(Index = 12)]
-        /* 0x1E80 */ public GcPlanetWeatherData Weather;
+        /* 0x1D40 */ public GcPlanetWeatherData Weather;
+        [NMS(Index = 11, Size = 0x17)]
+        /* 0x1EC0 */ public Colour[] TileColours;
         [NMS(Index = 25)]
-        /* 0x1FD0 */ public GcPlanetRingData Rings;
+        /* 0x2030 */ public GcPlanetRingData Rings;
         [NMS(Index = 16)]
-        /* 0x2030 */ public TkVoxelGeneratorData Terrain;
+        /* 0x2090 */ public TkVoxelGeneratorData Terrain;
         [NMS(Index = 22)]
-        /* 0x3570 */ public GcPlanetGenerationIntermediateData GenerationData;
+        /* 0x31E0 */ public GcPlanetGenerationIntermediateData GenerationData;
         [NMS(Index = 19)]
-        /* 0x39D8 */ public GcEnvironmentSpawnData SpawnData;
+        /* 0x3338 */ public GcEnvironmentSpawnData SpawnData;
         [NMS(Index = 21)]
-        /* 0x3A38 */ public GcPlanetBuildingData BuildingData;
+        /* 0x3398 */ public GcPlanetBuildingData BuildingData;
         [NMS(Index = 13)]
-        /* 0x3A80 */ public GcPlanetCloudProperties Clouds;
+        /* 0x33E0 */ public GcPlanetCloudProperties Clouds;
         [NMS(Index = 6)]
-        /* 0x3AC0 */ public NMSString0x10 CommonSubstanceID;
+        /* 0x3428 */ public NMSString0x10 CommonSubstanceID;
         [NMS(Index = 9)]
-        /* 0x3AD0 */ public List<GcPlanetDataResourceHint> ExtraResourceHints;
+        /* 0x3438 */ public List<GcPlanetDataResourceHint> ExtraResourceHints;
         [NMS(Index = 8)]
-        /* 0x3AE0 */ public NMSString0x10 RareSubstanceID;
+        /* 0x3448 */ public NMSString0x10 RareSubstanceID;
+        [NMS(Index = 15)]
+        /* 0x3458 */ public VariableSizeString TerrainFile;
         [NMS(Index = 18)]
-        /* 0x3AF0 */ public List<int> TileTypeIndices;
+        /* 0x3468 */ public List<int> TileTypeIndices;
         [NMS(Index = 7)]
-        /* 0x3B00 */ public NMSString0x10 UncommonSubstanceID;
+        /* 0x3478 */ public NMSString0x10 UncommonSubstanceID;
         [NMS(Index = 23, Size = 0x4, EnumType = typeof(GcCombatTimerDifficultyOption.CombatTimerDifficultyOptionEnum))]
-        /* 0x3B10 */ public GcPlanetGroundCombatData[] GroundCombatDataPerDifficulty;
+        /* 0x3488 */ public GcPlanetGroundCombatData[] GroundCombatDataPerDifficulty;
         [NMS(Index = 3)]
-        /* 0x3B70 */ public GcPlanetHazardData Hazard;
+        /* 0x34E8 */ public GcPlanetHazardData Hazard;
         [NMS(Index = 5)]
-        /* 0x3BC0 */ public GcBuildingDensityLevels BuildingLevel;
+        /* 0x3538 */ public GcBuildingDensityLevels BuildingLevel;
         [NMS(Index = 2)]
-        /* 0x3BC4 */ public GcPlanetLife CreatureLife;
+        /* 0x353C */ public GcPlanetLife CreatureLife;
         [NMS(Index = 28)]
-        /* 0x3BC8 */ public float FuelMultiplier;
+        /* 0x3540 */ public float FuelMultiplier;
         [NMS(Index = 20)]
-        /* 0x3BCC */ public GcAlienRace InhabitingRace;
+        /* 0x3544 */ public GcAlienRace InhabitingRace;
         [NMS(Index = 1)]
-        /* 0x3BD0 */ public GcPlanetLife Life;
+        /* 0x3548 */ public GcPlanetLife Life;
         // size: 0x2
         public enum ResourceLevelEnum : uint {
             Low,
             High,
         }
         [NMS(Index = 4)]
-        /* 0x3BD4 */ public ResourceLevelEnum ResourceLevel;
+        /* 0x354C */ public ResourceLevelEnum ResourceLevel;
         [NMS(Index = 17)]
-        /* 0x3BD8 */ public int TileTypeSet;
+        /* 0x3550 */ public int TileTypeSet;
         [NMS(Index = 24)]
-        /* 0x3BDC */ public GcPlanetInfo PlanetInfo;
+        /* 0x3554 */ public GcPlanetInfo PlanetInfo;
         [NMS(Index = 0)]
-        /* 0x40E2 */ public NMSString0x80 Name;
-        [NMS(Index = 15)]
-        /* 0x4162 */ public NMSString0x80 TerrainFile;
+        /* 0x3A5A */ public NMSString0x80 Name;
         [NMS(Index = 27)]
-        /* 0x41E2 */ public bool InAbandonedSystem;
+        /* 0x3ADA */ public bool InAbandonedSystem;
         [NMS(Index = 26)]
-        /* 0x41E3 */ public bool InEmptySystem;
+        /* 0x3ADB */ public bool InEmptySystem;
     }
 }

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB7D218C4185C15B8, NameHash = 0x83F86B65AEFACBEC)]
+    [NMS(GUID = 0xB7D218C4185C15B8, NameHash = 0x2FFFC60C)]
     public class GcInputActionMapping : NMSTemplate
     {
         [NMS(Index = 0)]

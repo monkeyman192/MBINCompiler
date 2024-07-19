@@ -2,18 +2,18 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA8481F7C7DD8C697, NameHash = 0xB82C2871716786E2)]
+    [NMS(GUID = 0x443D162EBDC71FCE, NameHash = 0x2FCD6845)]
     public class GcUniqueNPCSpawnData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public GcResourceElement ResourceElement;
+        /* 0x00 */ public GcResourceElement ResourceElement;
         [NMS(Index = 0)]
-        /* 0x2A8 */ public NMSString0x10 Id;
+        /* 0x48 */ public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x2B8 */ public NMSString0x10 PresetId;
+        /* 0x58 */ public NMSString0x10 PresetId;
         [NMS(Index = 4)]
-        /* 0x2C8 */ public GcAlienRace Race;
+        /* 0x68 */ public GcAlienRace Race;
         [NMS(Index = 3)]
-        /* 0x2CC */ public float Scale;
+        /* 0x6C */ public float Scale;
     }
 }

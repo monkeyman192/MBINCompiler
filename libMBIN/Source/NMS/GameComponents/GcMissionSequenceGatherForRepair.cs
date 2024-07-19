@@ -2,16 +2,16 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB6EE5BAF4A60BCC8, NameHash = 0x535215E1DEB68BB2)]
+    [NMS(GUID = 0xEC75804E3531E7E6, NameHash = 0x4E83FFA1)]
     public class GcMissionSequenceGatherForRepair : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 GatherResource;
-        [NMS(Index = 1)]
-        /* 0x10 */ public GcStatsTypes TargetStat;
         [NMS(Index = 3)]
-        /* 0x14 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 2)]
+        /* 0x10 */ public NMSString0x10 GatherResource;
         [NMS(Index = 0)]
-        /* 0x94 */ public NMSString0x80 Message;
+        /* 0x20 */ public VariableSizeString Message;
+        [NMS(Index = 1)]
+        /* 0x30 */ public GcStatsTypes TargetStat;
     }
 }

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4AF3984B0C0C7E5F, NameHash = 0xD0E5A023C215AB4A)]
+    [NMS(GUID = 0x4AF3984B0C0C7E5F, NameHash = 0x56E2344A)]
     public class GcThereminComponentData : NMSTemplate
     {
         [NMS(Index = 11)]

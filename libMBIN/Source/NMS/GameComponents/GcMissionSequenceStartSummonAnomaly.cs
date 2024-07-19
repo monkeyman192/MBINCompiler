@@ -2,14 +2,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB0ECCFBDAC455333, NameHash = 0x6AFB1C1263D2F6F3)]
+    [NMS(GUID = 0x82BFDF61F34B6192, NameHash = 0x99FB3436)]
     public class GcMissionSequenceStartSummonAnomaly : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x0 */ public GcGalaxyStarAnomaly Anomaly;
-        [NMS(Index = 1)]
-        /* 0x4 */ public float SummonInFrontDistance;
         [NMS(Index = 2)]
-        /* 0x8 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 0)]
+        /* 0x10 */ public GcGalaxyStarAnomaly Anomaly;
+        [NMS(Index = 1)]
+        /* 0x14 */ public float SummonInFrontDistance;
     }
 }

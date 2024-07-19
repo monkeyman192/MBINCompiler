@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x20759153720D1D22, NameHash = 0x236F77EA3398AAC4)]
+    [NMS(GUID = 0x9BDB48699BA799AD, NameHash = 0x978A21D1)]
     public class GcCostDifficultyGroundCombat : NMSTemplate
     {
         [NMS(Index = 2)]

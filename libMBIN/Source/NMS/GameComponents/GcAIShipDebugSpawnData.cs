@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2AB741BC2592BFD6, NameHash = 0xDFA8A7A9DD3ACC08)]
+    [NMS(GUID = 0x3479C5490B000372, NameHash = 0xE69F2F79)]
     public class GcAIShipDebugSpawnData : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -13,21 +13,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x30 */ public Vector3f Up;
         [NMS(Index = 12)]
         /* 0x40 */ public GcSeed Seed;
-        [NMS(Index = 8)]
-        /* 0x50 */ public float HoverHeight;
-        [NMS(Index = 7)]
-        /* 0x54 */ public float HoverTime;
-        [NMS(Index = 5)]
-        /* 0x58 */ public float IgnitionDelay;
-        [NMS(Index = 4)]
-        /* 0x5C */ public float Speed;
-        [NMS(Index = 6)]
-        /* 0x60 */ public float TakeOffDelay;
-        [NMS(Index = 9)]
-        /* 0x64 */ public float WarpOutTime;
         [NMS(Index = 11)]
-        /* 0x68 */ public NMSString0x80 SpecificModel;
+        /* 0x50 */ public VariableSizeString SpecificModel;
+        [NMS(Index = 8)]
+        /* 0x60 */ public float HoverHeight;
+        [NMS(Index = 7)]
+        /* 0x64 */ public float HoverTime;
+        [NMS(Index = 5)]
+        /* 0x68 */ public float IgnitionDelay;
+        [NMS(Index = 4)]
+        /* 0x6C */ public float Speed;
+        [NMS(Index = 6)]
+        /* 0x70 */ public float TakeOffDelay;
+        [NMS(Index = 9)]
+        /* 0x74 */ public float WarpOutTime;
         [NMS(Index = 10)]
-        /* 0xE8 */ public bool Wingman;
+        /* 0x78 */ public bool Wingman;
     }
 }

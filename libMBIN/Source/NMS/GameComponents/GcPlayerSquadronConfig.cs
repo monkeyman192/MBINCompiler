@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4CBDD3896D05E59E, NameHash = 0xD3C0DCB43542B48)]
+    [NMS(GUID = 0x6EFF4368C7E418CD, NameHash = 0x559E88A3)]
     public class GcPlayerSquadronConfig : NMSTemplate
     {
         [NMS(Index = 44)]
@@ -17,7 +17,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 2, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
         /* 0x040 */ public NMSString0x10[] PilotRankAttackDefinitions;
         [NMS(Index = 90)]
-        /* 0x080 */ public List<NMSString0x80> RandomPilotNPCResources;
+        /* 0x080 */ public List<VariableSizeString> RandomPilotNPCResources;
         [NMS(Index = 89)]
         /* 0x090 */ public List<GcAISpaceshipModelData> RandomSpaceshipResources;
         [NMS(Index = 1, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]

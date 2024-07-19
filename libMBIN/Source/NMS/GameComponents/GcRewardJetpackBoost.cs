@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB4DDEE0E478DD505, NameHash = 0xA30515EE2A664ECF)]
+    [NMS(GUID = 0xB4DDEE0E478DD505, NameHash = 0xF4173254)]
     public class GcRewardJetpackBoost : NMSTemplate
     {
         [NMS(Index = 0)]

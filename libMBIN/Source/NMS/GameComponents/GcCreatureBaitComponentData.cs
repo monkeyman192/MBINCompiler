@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x22582597D4A81E79, NameHash = 0x398860441F320FF2)]
+    [NMS(GUID = 0x22582597D4A81E79, NameHash = 0xD3DE4B63)]
     public class GcCreatureBaitComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

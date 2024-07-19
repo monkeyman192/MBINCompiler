@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA02C9116F89F18EE, NameHash = 0xB4578AF4AEBD0B11)]
+    [NMS(GUID = 0xEAF4F5B4AEFB9644, NameHash = 0x8998F482)]
     public class GcNPCWordReactionTable : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]

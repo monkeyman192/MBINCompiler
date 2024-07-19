@@ -3,18 +3,18 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3C32ABBE99FF4FD8, NameHash = 0x633D54FB94B2C6A4)]
+    [NMS(GUID = 0xE6249CFD73DBDF10, NameHash = 0x1D0BA017)]
     public class GcNGuiPresetText : NMSTemplate
     {
         [NMS(Index = 3)]
         /* 0x000 */ public TkNGuiGraphicStyle GraphicStyle;
         [NMS(Index = 2)]
-        /* 0x1E0 */ public TkNGuiTextStyle Style;
+        /* 0x210 */ public TkNGuiTextStyle Style;
         [NMS(Index = 1)]
-        /* 0x300 */ public GcNGuiLayoutData Layout;
-        [NMS(Index = 0)]
-        /* 0x348 */ public NMSString0x10 PresetID;
+        /* 0x330 */ public GcNGuiLayoutData Layout;
         [NMS(Index = 4)]
-        /* 0x358 */ public NMSString0x80 Image;
+        /* 0x378 */ public VariableSizeString Image;
+        [NMS(Index = 0)]
+        /* 0x388 */ public NMSString0x10 PresetID;
     }
 }

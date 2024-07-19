@@ -256,7 +256,6 @@ paket-files/
 .cr/
 *.manifest
 
-/MBINCompilerTests/Config/*
 **/launchSettings.json
 /.nuget/
 

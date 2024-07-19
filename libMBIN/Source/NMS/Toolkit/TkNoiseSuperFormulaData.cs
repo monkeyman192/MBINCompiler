@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xBCB1AB50F898FC35, NameHash = 0xA6B67E169F13BBDE)]
+    [NMS(GUID = 0xBCB1AB50F898FC35, NameHash = 0xF5BA83C7)]
     public class TkNoiseSuperFormulaData : NMSTemplate
     {
         [NMS(Index = 0)]

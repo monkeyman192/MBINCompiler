@@ -2,24 +2,24 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x70E3E9A857530E3D, NameHash = 0x9562AF9028346F05)]
+    [NMS(GUID = 0x8252843446DD7B7E, NameHash = 0x87AA2A7F)]
     public class GcSeasonalMilestoneEncryption : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x000 */ public NMSString0x20A Description;
+        /* 0x00 */ public NMSString0x20A Description;
         [NMS(Index = 2)]
-        /* 0x020 */ public NMSString0x20A Subtitle;
+        /* 0x20 */ public NMSString0x20A Subtitle;
         [NMS(Index = 1)]
-        /* 0x040 */ public NMSString0x20A TitleUpper;
-        [NMS(Index = 6)]
-        /* 0x060 */ public NMSString0x10 DecryptMissionId;
+        /* 0x40 */ public NMSString0x20A TitleUpper;
         [NMS(Index = 5)]
-        /* 0x070 */ public TkTextureResource HoverPopupIcon;
+        /* 0x60 */ public TkTextureResource HoverPopupIcon;
         [NMS(Index = 4)]
-        /* 0x0F4 */ public TkTextureResource Patch;
+        /* 0x78 */ public TkTextureResource Patch;
+        [NMS(Index = 6)]
+        /* 0x90 */ public NMSString0x10 DecryptMissionId;
         [NMS(Index = 7)]
-        /* 0x178 */ public int DecryptMissionSeed;
+        /* 0xA0 */ public int DecryptMissionSeed;
         [NMS(Index = 0)]
-        /* 0x17C */ public bool IsEncrypted;
+        /* 0xA4 */ public bool IsEncrypted;
     }
 }

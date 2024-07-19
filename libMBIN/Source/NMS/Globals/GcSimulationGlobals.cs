@@ -3,74 +3,74 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x19B47FFB977A8CFE, NameHash = 0xD1D7201E3228DD7B)]
+    [NMS(GUID = 0xC3B79873C9707DFE, NameHash = 0xA8487890)]
     public class GcSimulationGlobals : NMSTemplate
     {
-        [NMS(Index = 10)]
-        /* 0x000 */ public List<NMSString0x80> AtlasStationAnomalies;
-        [NMS(Index = 9)]
-        /* 0x010 */ public List<NMSString0x80> BlackHoleAnomalies;
-        [NMS(Index = 1)]
-        /* 0x020 */ public List<GcMultitoolPoolData> MultitoolPool;
-        [NMS(Index = 25)]
-        /* 0x030 */ public List<NMSString0x80> PlanetTerrainMaterials;
-        [NMS(Index = 18)]
-        /* 0x040 */ public List<NMSString0x80> PrefetchMaterialResources;
-        [NMS(Index = 17)]
-        /* 0x050 */ public List<NMSString0x80> PrefetchScenegraphResources;
-        [NMS(Index = 26)]
-        /* 0x060 */ public List<NMSString0x80> PrefetchTextureResources;
-        [NMS(Index = 2)]
-        /* 0x070 */ public ulong ProceduralBuildingsGenerationSeed;
-        [NMS(Index = 27)]
-        /* 0x078 */ public float WarpTunnelScale;
         [NMS(Index = 7)]
-        /* 0x07C */ public NMSString0x80 AbandonedSpaceStationFile;
+        /* 0x000 */ public VariableSizeString AbandonedSpaceStationFile;
+        [NMS(Index = 10)]
+        /* 0x010 */ public List<VariableSizeString> AtlasStationAnomalies;
+        [NMS(Index = 9)]
+        /* 0x020 */ public List<VariableSizeString> BlackHoleAnomalies;
         [NMS(Index = 29)]
-        /* 0x0FC */ public NMSString0x80 BlackHoleTunnelFile;
+        /* 0x030 */ public VariableSizeString BlackHoleTunnelFile;
         [NMS(Index = 15)]
-        /* 0x17C */ public NMSString0x80 HeavyAirAbandonedFreighter;
+        /* 0x040 */ public VariableSizeString HeavyAirAbandonedFreighter;
         [NMS(Index = 13)]
-        /* 0x1FC */ public NMSString0x80 HeavyAirCave;
+        /* 0x050 */ public VariableSizeString HeavyAirCave;
         [NMS(Index = 16)]
-        /* 0x27C */ public NMSString0x80 HeavyAirSpaceStorm;
+        /* 0x060 */ public VariableSizeString HeavyAirSpaceStorm;
         [NMS(Index = 14)]
-        /* 0x2FC */ public NMSString0x80 HeavyAirUnderwater;
+        /* 0x070 */ public VariableSizeString HeavyAirUnderwater;
+        [NMS(Index = 1)]
+        /* 0x080 */ public List<GcMultitoolPoolData> MultitoolPool;
         [NMS(Index = 5)]
-        /* 0x37C */ public NMSString0x80 NexusExteriorFile;
+        /* 0x090 */ public VariableSizeString NexusExteriorFile;
         [NMS(Index = 4)]
-        /* 0x3FC */ public NMSString0x80 NexusFile;
+        /* 0x0A0 */ public VariableSizeString NexusFile;
         [NMS(Index = 11)]
-        /* 0x47C */ public NMSString0x80 None;
+        /* 0x0B0 */ public VariableSizeString None;
         [NMS(Index = 8)]
-        /* 0x4FC */ public NMSString0x80 PirateSystemSpaceStationFile;
+        /* 0x0C0 */ public VariableSizeString PirateSystemSpaceStationFile;
         [NMS(Index = 6)]
-        /* 0x57C */ public NMSString0x80 PlaceMarkerFile;
+        /* 0x0D0 */ public VariableSizeString PlaceMarkerFile;
         [NMS(Index = 12)]
-        /* 0x5FC */ public NMSString0x80 PlacementDroneFile;
+        /* 0x0E0 */ public VariableSizeString PlacementDroneFile;
         [NMS(Index = 19)]
-        /* 0x67C */ public NMSString0x80 PlanetAtmosphereFile;
+        /* 0x0F0 */ public VariableSizeString PlanetAtmosphereFile;
         [NMS(Index = 20)]
-        /* 0x6FC */ public NMSString0x80 PlanetAtmosphereMaterialFile;
+        /* 0x100 */ public VariableSizeString PlanetAtmosphereMaterialFile;
         [NMS(Index = 23)]
-        /* 0x77C */ public NMSString0x80 PlanetMaterialFile;
+        /* 0x110 */ public VariableSizeString PlanetMaterialFile;
         [NMS(Index = 21)]
-        /* 0x7FC */ public NMSString0x80 PlanetRingFile;
+        /* 0x120 */ public VariableSizeString PlanetRingFile;
         [NMS(Index = 22)]
-        /* 0x87C */ public NMSString0x80 PlanetRingMaterialFile;
+        /* 0x130 */ public VariableSizeString PlanetRingMaterialFile;
+        [NMS(Index = 25)]
+        /* 0x140 */ public List<VariableSizeString> PlanetTerrainMaterials;
         [NMS(Index = 24)]
-        /* 0x8FC */ public NMSString0x80 PlaterWaterMaterialFile;
+        /* 0x150 */ public VariableSizeString PlaterWaterMaterialFile;
         [NMS(Index = 32)]
-        /* 0x97C */ public NMSString0x80 PortalStoryTunnelFile;
+        /* 0x160 */ public VariableSizeString PortalStoryTunnelFile;
         [NMS(Index = 31)]
-        /* 0x9FC */ public NMSString0x80 PortalTunnelFile;
+        /* 0x170 */ public VariableSizeString PortalTunnelFile;
+        [NMS(Index = 18)]
+        /* 0x180 */ public List<VariableSizeString> PrefetchMaterialResources;
+        [NMS(Index = 17)]
+        /* 0x190 */ public List<VariableSizeString> PrefetchScenegraphResources;
+        [NMS(Index = 26)]
+        /* 0x1A0 */ public List<VariableSizeString> PrefetchTextureResources;
         [NMS(Index = 3)]
-        /* 0xA7C */ public NMSString0x80 SpaceStationFile;
+        /* 0x1B0 */ public VariableSizeString SpaceStationFile;
         [NMS(Index = 0)]
-        /* 0xAFC */ public NMSString0x80 StartingSceneFile;
+        /* 0x1C0 */ public VariableSizeString StartingSceneFile;
         [NMS(Index = 30)]
-        /* 0xB7C */ public NMSString0x80 TeleportTunnelFile;
+        /* 0x1D0 */ public VariableSizeString TeleportTunnelFile;
         [NMS(Index = 28)]
-        /* 0xBFC */ public NMSString0x80 WarpTunnelFile;
+        /* 0x1E0 */ public VariableSizeString WarpTunnelFile;
+        [NMS(Index = 2)]
+        /* 0x1F0 */ public ulong ProceduralBuildingsGenerationSeed;
+        [NMS(Index = 27)]
+        /* 0x1F8 */ public float WarpTunnelScale;
     }
 }

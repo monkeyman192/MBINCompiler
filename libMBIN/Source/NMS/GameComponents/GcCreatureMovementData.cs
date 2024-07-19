@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4DBA401ADDE0F33F, NameHash = 0x1F15CCCBBBCEC86A)]
+    [NMS(GUID = 0xDF7115C82E98A332, NameHash = 0x44F790BC)]
     public class GcCreatureMovementData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -22,5 +22,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x24 */ public float TurnRadiusScale;
         [NMS(Index = 7)]
         /* 0x28 */ public bool Herd;
+        [NMS(Index = 8)]
+        /* 0x29 */ public bool IgnoreRotationInPounce;
     }
 }

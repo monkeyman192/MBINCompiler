@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9CC039A0229D5F8E, NameHash = 0x434C17159AF37265)]
+    [NMS(GUID = 0x96AB536E8F2D3671, NameHash = 0x30F7EE46)]
     public class GcScanEventSave : NMSTemplate
     {
         [NMS(Index = 4)]

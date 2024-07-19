@@ -2,20 +2,20 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD220B225BBE5F8, NameHash = 0xB88BA2B1282BE1C1)]
+    [NMS(GUID = 0xB7FF997A933D001F, NameHash = 0xACE695BE)]
     public class GcNPCWorkerData : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x000 */ public Vector4f BaseOffset;
+        /* 0x00 */ public Vector4f BaseOffset;
         [NMS(Index = 0)]
-        /* 0x010 */ public GcResourceElement ResourceElement;
+        /* 0x10 */ public GcResourceElement ResourceElement;
         [NMS(Index = 1)]
-        /* 0x2B8 */ public GcSeed InteractionSeed;
+        /* 0x58 */ public GcSeed InteractionSeed;
         [NMS(Index = 4)]
-        /* 0x2C8 */ public ulong BaseUA;
+        /* 0x68 */ public ulong BaseUA;
         [NMS(Index = 3)]
-        /* 0x2D0 */ public bool FreighterBase;
+        /* 0x70 */ public bool FreighterBase;
         [NMS(Index = 2)]
-        /* 0x2D1 */ public bool HiredWorker;
+        /* 0x71 */ public bool HiredWorker;
     }
 }

@@ -1,21 +1,21 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5FCFDD282C322588, NameHash = 0x60741FB7E840229E)]
+    [NMS(GUID = 0x7020685B9AD15DAB, NameHash = 0x7264C46B)]
     public class GcMissionSequenceBroadcastMessage : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 MessageID;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 1)]
+        /* 0x10 */ public NMSString0x10 MessageID;
         [NMS(Index = 6)]
-        /* 0x90 */ public bool BroadcastToActiveMultiplayerMission;
+        /* 0x20 */ public bool BroadcastToActiveMultiplayerMission;
         [NMS(Index = 5)]
-        /* 0x91 */ public bool CanSendToInactive;
+        /* 0x21 */ public bool CanSendToInactive;
         [NMS(Index = 4)]
-        /* 0x92 */ public bool Multiplayer;
+        /* 0x22 */ public bool Multiplayer;
         [NMS(Index = 2)]
-        /* 0x93 */ public bool Seeded;
+        /* 0x23 */ public bool Seeded;
         [NMS(Index = 3)]
-        /* 0x94 */ public bool SendToAllMatchingSeeds;
+        /* 0x24 */ public bool SendToAllMatchingSeeds;
     }
 }

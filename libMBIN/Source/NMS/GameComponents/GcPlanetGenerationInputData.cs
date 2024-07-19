@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x320D1EACC6C152D7, NameHash = 0x2E161A5A69971115)]
+    [NMS(GUID = 0x523AD018339405B5, NameHash = 0x2F445358)]
     public class GcPlanetGenerationInputData : NMSTemplate
     {
         [NMS(Index = 3)]

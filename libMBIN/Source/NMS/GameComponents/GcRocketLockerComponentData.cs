@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCEBCD654214EE1DD, NameHash = 0x1824B1C4CA260A88)]
+    [NMS(GUID = 0xCEBCD654214EE1DD, NameHash = 0xFAEF1B42)]
     public class GcRocketLockerComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

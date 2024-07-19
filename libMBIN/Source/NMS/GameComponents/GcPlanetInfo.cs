@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA440BC946753A2E4, NameHash = 0x458D53EF402BA3C9)]
+    [NMS(GUID = 0xA440BC946753A2E4, NameHash = 0x42144093)]
     public class GcPlanetInfo : NMSTemplate
     {
         [NMS(Index = 6, Size = 0x4, EnumType = typeof(GcCombatTimerDifficultyOption.CombatTimerDifficultyOptionEnum))]

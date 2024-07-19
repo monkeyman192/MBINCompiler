@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x737AC88818742FE0, NameHash = 0xD522308022E072F4)]
+    [NMS(GUID = 0xBC2085C663025656, NameHash = 0x9E72B6D)]
     public class GcUAProtectedLocations : NMSTemplate
     {
         [NMS(Index = 1)]

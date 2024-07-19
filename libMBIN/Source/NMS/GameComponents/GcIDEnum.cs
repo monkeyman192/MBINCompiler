@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDD655B7B3952EB12, NameHash = 0xCD01B92FB1725D36)]
+    [NMS(GUID = 0xDD655B7B3952EB12, NameHash = 0x1EA81537)]
     public class GcIDEnum : NMSTemplate
     {
         [NMS(Index = 0)]

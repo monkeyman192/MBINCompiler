@@ -4,50 +4,50 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x74CCA4734352A5DE, NameHash = 0x2A28407EECDFA4CC)]
+    [NMS(GUID = 0x3048B42C6DAAFC9A, NameHash = 0xA547E834)]
     public class GcRealityIconTable : NMSTemplate
     {
-        [NMS(Index = 16)]
-        /* 0x0000 */ public List<GcRealityIcon> MissionDetailIcons;
-        [NMS(Index = 13)]
-        /* 0x0010 */ public List<GcPlanetResourceIconLookup> PlanetResourceIconLookups;
-        [NMS(Index = 14)]
-        /* 0x0020 */ public List<TkTextureResource> RepairTechIcons;
-        [NMS(Index = 12)]
-        /* 0x0030 */ public List<GcPlanetResourceIconLookup> TerrainIconLookups;
         [NMS(Index = 15, Size = 0x59, EnumType = typeof(GcRealityGameIcons.GameIconsEnum))]
-        /* 0x0040 */ public TkTextureResource[] GameIcons;
+        /* 0x0000 */ public TkTextureResource[] GameIcons;
         [NMS(Index = 5, Size = 0x11, EnumType = typeof(GcDiscoveryType.DiscoveryTypeEnum))]
-        /* 0x2E24 */ public TkTextureResource[] BinocularDiscoveryIcons;
+        /* 0x0858 */ public TkTextureResource[] BinocularDiscoveryIcons;
         [NMS(Index = 4, Size = 0xA, EnumType = typeof(GcMissionFaction.MissionFactionEnum))]
-        /* 0x36E8 */ public TkTextureResource[] MissionFactionIcons;
+        /* 0x09F0 */ public TkTextureResource[] MissionFactionIcons;
         [NMS(Index = 8, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]
-        /* 0x3C10 */ public TkTextureResource[] DiscoveryPageRaceIcons;
+        /* 0x0AE0 */ public TkTextureResource[] DiscoveryPageRaceIcons;
         [NMS(Index = 3, Size = 0x9, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
-        /* 0x40B4 */ public TkTextureResource[] ProductCategoryIcons;
+        /* 0x0BB8 */ public TkTextureResource[] ProductCategoryIcons;
         [NMS(Index = 2, Size = 0x9, EnumType = typeof(GcRealitySubstanceCategory.SubstanceCategoryEnum))]
-        /* 0x4558 */ public TkTextureResource[] SubstanceCategoryIcons;
+        /* 0x0C90 */ public TkTextureResource[] SubstanceCategoryIcons;
         [NMS(Index = 17, Size = 0x7, EnumType = typeof(GcDifficultyPresetType.DifficultyPresetTypeEnum))]
-        /* 0x49FC */ public TkTextureResource[] DifficultyPresetIcons;
+        /* 0x0D68 */ public TkTextureResource[] DifficultyPresetIcons;
         [NMS(Index = 6, Size = 0x7, EnumType = typeof(GcTradingClass.TradingClassEnum))]
-        /* 0x4D98 */ public TkTextureResource[] DiscoveryPageTradingIcons;
+        /* 0x0E10 */ public TkTextureResource[] DiscoveryPageTradingIcons;
         [NMS(Index = 0, Size = 0x6, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
-        /* 0x5134 */ public TkTextureResource[] HazardIcons;
+        /* 0x0EB8 */ public TkTextureResource[] HazardIcons;
         [NMS(Index = 1, Size = 0x6, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
-        /* 0x544C */ public TkTextureResource[] HazardIconsHUD;
+        /* 0x0F48 */ public TkTextureResource[] HazardIconsHUD;
         [NMS(Index = 20, Size = 0x5, EnumType = typeof(GcInventoryFilterOptions.InventoryFilterEnum))]
-        /* 0x5764 */ public TkTextureResource[] InventoryFilterIcons;
+        /* 0x0FD8 */ public TkTextureResource[] InventoryFilterIcons;
         [NMS(Index = 19, Size = 0x5, EnumType = typeof(GcOptionsUIHeaderIcons.OptionsUIHeaderIconTypeEnum))]
-        /* 0x59F8 */ public TkTextureResource[] OptionsUIHeaderIcons;
+        /* 0x1050 */ public TkTextureResource[] OptionsUIHeaderIcons;
         [NMS(Index = 18, Size = 0x4, EnumType = typeof(GcDifficultyOptionGroups.DifficultyOptionGroupEnum))]
-        /* 0x5C8C */ public TkTextureResource[] DifficultyUIOptionIcons;
+        /* 0x10C8 */ public TkTextureResource[] DifficultyUIOptionIcons;
         [NMS(Index = 7, Size = 0x4, EnumType = typeof(GcPlayerConflictData.ConflictLevelEnum))]
-        /* 0x5E9C */ public TkTextureResource[] DiscoveryPageConflictIcons;
+        /* 0x1128 */ public TkTextureResource[] DiscoveryPageConflictIcons;
+        [NMS(Index = 16)]
+        /* 0x1188 */ public HashMap<GcRealityIcon> MissionDetailIcons;
         [NMS(Index = 10)]
-        /* 0x60AC */ public TkTextureResource DiscoveryPageConflictUnknown;
+        /* 0x11B8 */ public TkTextureResource DiscoveryPageConflictUnknown;
         [NMS(Index = 11)]
-        /* 0x6130 */ public TkTextureResource DiscoveryPageRaceUnknown;
+        /* 0x11D0 */ public TkTextureResource DiscoveryPageRaceUnknown;
         [NMS(Index = 9)]
-        /* 0x61B4 */ public TkTextureResource DiscoveryPageTradingUnknown;
+        /* 0x11E8 */ public TkTextureResource DiscoveryPageTradingUnknown;
+        [NMS(Index = 13)]
+        /* 0x1200 */ public List<GcPlanetResourceIconLookup> PlanetResourceIconLookups;
+        [NMS(Index = 14)]
+        /* 0x1210 */ public List<TkTextureResource> RepairTechIcons;
+        [NMS(Index = 12)]
+        /* 0x1220 */ public List<GcPlanetResourceIconLookup> TerrainIconLookups;
     }
 }

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBEF45E7C90B2A83C, NameHash = 0x800386833E2445B5)]
+    [NMS(GUID = 0xBEF45E7C90B2A83C, NameHash = 0xEC8BD414)]
     public class GcSeasonSaveStateOnDeath : NMSTemplate
     {
         // size: 0x4

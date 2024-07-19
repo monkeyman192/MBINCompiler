@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x415F9F7A6A85B918, NameHash = 0x4ECB5D79E2F5CD94)]
+    [NMS(GUID = 0x2D1136770F659038, NameHash = 0x10AD2F18)]
     public class TkDynamicResScalingSettings : NMSTemplate
     {
         // size: 0x3
@@ -11,7 +11,9 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 1)]
         /* 0x0 */ public DynamicResScalingAggressivenessEnum DynamicResScalingAggressiveness;
+        [NMS(Index = 2)]
+        /* 0x4 */ public float FrametimeHeadroomProportion;
         [NMS(Index = 0)]
-        /* 0x4 */ public float LowestDynamicResScalingFactor;
+        /* 0x8 */ public float LowestDynamicResScalingFactor;
     }
 }

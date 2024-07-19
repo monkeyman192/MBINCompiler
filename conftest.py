@@ -85,15 +85,15 @@ def convert_files():
     platform = os.environ.get('platform')
     mbincompiler_path = os.environ.get('mbincompiler_path')
     if mbincompiler_path is not None:
-        cmd = [mbincompiler_path, '-q']
+        cmd = [mbincompiler_path, '-q', '-y']
     else:
         if platform == 'linux-x64':
             # need to run with mono on linux
             # Build path also includes platform on the CI
             cmd = ['sudo', 'mono',
-                op.join(BASE_PATH, platform, 'MBINCompiler.exe'), '-q']
+                op.join(BASE_PATH, platform, 'MBINCompiler.exe'), '-q', '-y']
         else:
-            cmd = [op.join(BASE_PATH, 'MBINCompiler.exe'), '-q']
+            cmd = [op.join(BASE_PATH, 'MBINCompiler.exe'), '-q', '-y']
     cmd.append('--force')
 
     datapath = os.environ.get('datapath', DATA_PATH)
@@ -105,10 +105,10 @@ def convert_files():
     with tempfile.TemporaryDirectory(prefix='exml_') as temp_exml_dir:
         with tempfile.TemporaryDirectory(prefix='mbin_') as temp_mbin_dir:
             print('Converting the original files to .EXML')
-            subprocess.run(cmd + [datapath, f'--output-dir={temp_exml_dir}'])
+            subprocess.run(cmd + [datapath, '-iMBIN', f'--output-dir={temp_exml_dir}'])
             print('Converting the converted .EXML files back to .MBIN')
             subprocess.run(
-                cmd + [temp_exml_dir, f'--output-dir={temp_mbin_dir}']
+                cmd + [temp_exml_dir, '-iEXML', f'--output-dir={temp_mbin_dir}']
             )
             yield temp_exml_dir, temp_mbin_dir
 

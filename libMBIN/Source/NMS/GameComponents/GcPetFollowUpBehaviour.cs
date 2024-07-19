@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA6DB5B1675593208, NameHash = 0xA03E661BB27C6E6A)]
+    [NMS(GUID = 0x866B5BACC0B9F4A6, NameHash = 0x8637D71F)]
     public class GcPetFollowUpBehaviour : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA3274F811007A1BD, NameHash = 0xE866662BD040EDFB)]
+    [NMS(GUID = 0xA3274F811007A1BD, NameHash = 0xA4C0BC95)]
     public class GcSentinelWaveGroup : NMSTemplate
     {
         [NMS(Index = 1)]

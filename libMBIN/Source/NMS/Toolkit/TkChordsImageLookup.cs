@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xC3F3D39C0F5B45DE, NameHash = 0xD2FF58C5F7940C1F)]
+    [NMS(GUID = 0x580BFB26A391880B, NameHash = 0x74D183C5)]
     public class TkChordsImageLookup : NMSTemplate
     {
         [NMS(Index = 0)]

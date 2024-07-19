@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC9ABDE4A6DFDA3C3, NameHash = 0x5F9BF82F9925D932)]
+    [NMS(GUID = 0x31533A1848DC95F8, NameHash = 0x9776BBFB)]
     public class GcPlayerDamageData : NMSTemplate
     {
         [NMS(Index = 7)]
@@ -15,26 +15,26 @@ namespace libMBIN.NMS.GameComponents
         /* 0x040 */ public NMSString0x20A HitChatMessage;
         [NMS(Index = 5)]
         /* 0x060 */ public NMSString0x20A HitMessage;
-        [NMS(Index = 13)]
-        /* 0x080 */ public NMSString0x10 CameraShakeNoShield;
-        [NMS(Index = 12)]
-        /* 0x090 */ public NMSString0x10 CameraShakeShield;
-        [NMS(Index = 18)]
-        /* 0x0A0 */ public List<GcBreakTechByStatData> DamageTechWithStat;
-        [NMS(Index = 2)]
-        /* 0x0B0 */ public NMSString0x10 DeathStat;
-        [NMS(Index = 0)]
-        /* 0x0C0 */ public NMSString0x10 Id;
         [NMS(Index = 3)]
-        /* 0x0D0 */ public TkTextureResource HitIcon;
+        /* 0x080 */ public TkTextureResource HitIcon;
+        [NMS(Index = 13)]
+        /* 0x098 */ public NMSString0x10 CameraShakeNoShield;
+        [NMS(Index = 12)]
+        /* 0x0A8 */ public NMSString0x10 CameraShakeShield;
+        [NMS(Index = 18)]
+        /* 0x0B8 */ public List<GcBreakTechByStatData> DamageTechWithStat;
+        [NMS(Index = 2)]
+        /* 0x0C8 */ public NMSString0x10 DeathStat;
+        [NMS(Index = 0)]
+        /* 0x0D8 */ public NMSString0x10 Id;
         [NMS(Index = 11)]
-        /* 0x154 */ public float CameraTurn;
+        /* 0x0E8 */ public float CameraTurn;
         [NMS(Index = 8)]
-        /* 0x158 */ public GcAudioWwiseEvents CriticalHitMessageAudio;
+        /* 0x0EC */ public GcAudioWwiseEvents CriticalHitMessageAudio;
         [NMS(Index = 9)]
-        /* 0x15C */ public float Damage;
+        /* 0x0F0 */ public float Damage;
         [NMS(Index = 6)]
-        /* 0x160 */ public GcAudioWwiseEvents HitMessageAudio;
+        /* 0x0F4 */ public GcAudioWwiseEvents HitMessageAudio;
         // size: 0x5
         public enum PlayerDamageTypeEnum : uint {
             Normal,
@@ -44,16 +44,16 @@ namespace libMBIN.NMS.GameComponents
             Scorch,
         }
         [NMS(Index = 17)]
-        /* 0x164 */ public PlayerDamageTypeEnum PlayerDamageType;
+        /* 0x0F8 */ public PlayerDamageTypeEnum PlayerDamageType;
         [NMS(Index = 10)]
-        /* 0x168 */ public float PushForce;
+        /* 0x0FC */ public float PushForce;
         [NMS(Index = 19)]
-        /* 0x16C */ public float TechDamageChance;
+        /* 0x100 */ public float TechDamageChance;
         [NMS(Index = 16)]
-        /* 0x170 */ public bool AllowDeathInInteraction;
+        /* 0x104 */ public bool AllowDeathInInteraction;
         [NMS(Index = 15)]
-        /* 0x171 */ public bool ForceDamageInInteraction;
+        /* 0x105 */ public bool ForceDamageInInteraction;
         [NMS(Index = 14)]
-        /* 0x172 */ public bool ShowTrackIcon;
+        /* 0x106 */ public bool ShowTrackIcon;
     }
 }

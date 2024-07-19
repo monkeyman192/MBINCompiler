@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD8F4384C9759EEEF, NameHash = 0xB0A39161047DD10D)]
+    [NMS(GUID = 0x387971598BAA48AC, NameHash = 0x83FCDC89)]
     public class GcHUDStartupTable : NMSTemplate
     {
         // size: 0xD

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8AB8AD20B775EC40, NameHash = 0x785665CB6C017B4C)]
+    [NMS(GUID = 0xA0F206164DD1AE9A, NameHash = 0x3FFAD7C8)]
     public class GcAISpaceshipManagerData : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x5, EnumType = typeof(GcRealityCommonFactions.AIFactionEnum))]

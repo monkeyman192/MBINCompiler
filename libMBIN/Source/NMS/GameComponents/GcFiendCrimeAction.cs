@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBCD8B180A3CFDAD4, NameHash = 0xDF042CD9CF0C561)]
+    [NMS(GUID = 0x9D4FC9BB2B22318A, NameHash = 0x1DAA352E)]
     public class GcFiendCrimeAction : NMSTemplate
     {
         [NMS(Index = 1)]

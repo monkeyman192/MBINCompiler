@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5E3AFAEDE336DCCD, NameHash = 0xE83E88B1C1909A3F)]
+    [NMS(GUID = 0x5E3AFAEDE336DCCD, NameHash = 0x4697B38A)]
     public class GcNPCProbabilityWordReactionData : NMSTemplate
     {
         [NMS(Index = 0)]

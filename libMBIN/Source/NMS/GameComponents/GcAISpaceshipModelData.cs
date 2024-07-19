@@ -2,16 +2,16 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA4C46703B2EA9106, NameHash = 0xA1AD260BA61A04EE)]
+    [NMS(GUID = 0xF62EDC295BDA0446, NameHash = 0x9D94FFAB)]
     public class GcAISpaceshipModelData : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x0 */ public GcAISpaceshipRoles AIRole;
-        [NMS(Index = 1)]
-        /* 0x4 */ public GcSpaceshipClasses Class;
-        [NMS(Index = 3)]
-        /* 0x8 */ public GcFrigateClass FrigateClass;
         [NMS(Index = 0)]
-        /* 0xC */ public NMSString0x80 Filename;
+        /* 0x00 */ public VariableSizeString Filename;
+        [NMS(Index = 2)]
+        /* 0x10 */ public GcAISpaceshipRoles AIRole;
+        [NMS(Index = 1)]
+        /* 0x14 */ public GcSpaceshipClasses Class;
+        [NMS(Index = 3)]
+        /* 0x18 */ public GcFrigateClass FrigateClass;
     }
 }

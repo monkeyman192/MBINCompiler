@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC0116FA38588CC26, NameHash = 0x1E27C6F2466B2426)]
+    [NMS(GUID = 0xC0116FA38588CC26, NameHash = 0xD3231FF8)]
     public class GcPlanetLife : NMSTemplate
     {
         // size: 0x4

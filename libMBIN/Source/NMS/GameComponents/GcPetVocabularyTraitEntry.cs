@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB58A5DEC3A5481D1, NameHash = 0xD1AA1B644B5DE736)]
+    [NMS(GUID = 0x5E97ABFDB2AF60FB, NameHash = 0xB0C44BBF)]
     public class GcPetVocabularyTraitEntry : NMSTemplate
     {
         [NMS(Index = 2)]

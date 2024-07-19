@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xC36377F46A98F6BC, NameHash = 0xA9237A301B5A6C2F)]
+    [NMS(GUID = 0x54F16995E20EF819, NameHash = 0x43297D06)]
     public class TkInputFrameArray : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x4E20)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3FE62C4ED5A28A72, NameHash = 0xF81E00514EB73ED9)]
+    [NMS(GUID = 0x3FE62C4ED5A28A72, NameHash = 0xEAA1BACF)]
     public class GcCreatureDiscoveryThumbnailOverride : NMSTemplate
     {
         [NMS(Index = 2)]

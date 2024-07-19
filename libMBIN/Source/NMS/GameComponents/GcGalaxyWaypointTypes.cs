@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x35632D9AFE0F476F, NameHash = 0xF808614547AF2B25)]
+    [NMS(GUID = 0x35632D9AFE0F476F, NameHash = 0xB35D5BC6)]
     public class GcGalaxyWaypointTypes : NMSTemplate
     {
         // size: 0x6

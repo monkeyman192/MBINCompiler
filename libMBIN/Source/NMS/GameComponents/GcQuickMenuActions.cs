@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD0B9100ACFDEC9E1, NameHash = 0x5EEC6F79915C67C2)]
+    [NMS(GUID = 0xD0B9100ACFDEC9E1, NameHash = 0xBADBD713)]
     public class GcQuickMenuActions : NMSTemplate
     {
         // size: 0x39

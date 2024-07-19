@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAEC2F6A050861E0, NameHash = 0xA6A94B5FC4AC3D18)]
+    [NMS(GUID = 0xF3751A93D522509C, NameHash = 0x6BF62723)]
     public class GcFrigateTraitTable : NMSTemplate
     {
         [NMS(Index = 0)]

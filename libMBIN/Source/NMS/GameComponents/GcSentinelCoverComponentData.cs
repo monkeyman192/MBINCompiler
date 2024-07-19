@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA8C9D6F6CC0F3428, NameHash = 0xE1F35851383555E2)]
+    [NMS(GUID = 0xA8C9D6F6CC0F3428, NameHash = 0x351CFA91)]
     public class GcSentinelCoverComponentData : NMSTemplate
     {
         [NMS(Index = 5, Size = 0x4, EnumType = typeof(GcSentinelCoverState.SentinelCoverStateEnum))]

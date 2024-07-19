@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA34E66EBA9C1DF34, NameHash = 0x2797515E3A43C26C)]
+    [NMS(GUID = 0xA34E66EBA9C1DF34, NameHash = 0x84906A25)]
     public class GcMissionConditionIsDepotDestroyed : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF0D33396996FBE1C, NameHash = 0x34EE54AA314E3EDF)]
+    [NMS(GUID = 0x807770A02530DE1E, NameHash = 0xB7FB7F0F)]
     public class GcPetEggTraitModifierOverrideTable : NMSTemplate
     {
         [NMS(Index = 0)]

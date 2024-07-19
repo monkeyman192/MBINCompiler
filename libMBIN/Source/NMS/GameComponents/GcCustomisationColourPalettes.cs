@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x287BD52A6CA7522E, NameHash = 0x8D353F7BD3E655C5)]
+    [NMS(GUID = 0x4C4DA3C5384B20FF, NameHash = 0x5B43B452)]
     public class GcCustomisationColourPalettes : NMSTemplate
     {
         [NMS(Index = 1, Size = 0x18, EnumType = typeof(GcCustomisationComponentData.CustomisationDataTypeEnum))]

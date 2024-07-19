@@ -1,6 +1,8 @@
+using libMBIN.NMS.Toolkit;
+
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x552535F91EFFB020, NameHash = 0x250B60FD6373D170)]
+    [NMS(GUID = 0x778F5AA5C6774EF3, NameHash = 0x93482A51)]
     public class TkNGuiGraphicStyleData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -13,32 +15,34 @@ namespace libMBIN.NMS.Toolkit
         /* 0x30 */ public Colour StrokeColour;
         [NMS(Index = 4)]
         /* 0x40 */ public Colour StrokeGradientColour;
+        [NMS(Index = 26)]
+        /* 0x50 */ public TkNGuiGraphicAnimatedImageData Animated;
         [NMS(Index = 11)]
-        /* 0x50 */ public float CornerRadius;
+        /* 0x64 */ public float CornerRadius;
         [NMS(Index = 15)]
-        /* 0x54 */ public float Desaturation;
-        [NMS(Index = 10)]
-        /* 0x58 */ public float GradientEndOffset;
-        [NMS(Index = 9)]
-        /* 0x5C */ public float GradientStartOffset;
+        /* 0x68 */ public float Desaturation;
         [NMS(Index = 14)]
-        /* 0x60 */ public int Icon;
+        /* 0x6C */ public TkNGuiEditorIcons EditorIcon;
+        [NMS(Index = 10)]
+        /* 0x70 */ public float GradientEndOffset;
+        [NMS(Index = 9)]
+        /* 0x74 */ public float GradientStartOffset;
         [NMS(Index = 13)]
-        /* 0x64 */ public int Image;
+        /* 0x78 */ public int Image;
         [NMS(Index = 7)]
-        /* 0x68 */ public float MarginX;
+        /* 0x7C */ public float MarginX;
         [NMS(Index = 8)]
-        /* 0x6C */ public float MarginY;
+        /* 0x80 */ public float MarginY;
         [NMS(Index = 5)]
-        /* 0x70 */ public float PaddingX;
+        /* 0x84 */ public float PaddingX;
         [NMS(Index = 6)]
-        /* 0x74 */ public float PaddingY;
+        /* 0x88 */ public float PaddingY;
         [NMS(Index = 17)]
-        /* 0x78 */ public float StrokeGradientFeather;
+        /* 0x8C */ public float StrokeGradientFeather;
         [NMS(Index = 16)]
-        /* 0x7C */ public float StrokeGradientOffset;
+        /* 0x90 */ public float StrokeGradientOffset;
         [NMS(Index = 12)]
-        /* 0x80 */ public float StrokeSize;
+        /* 0x94 */ public float StrokeSize;
         // size: 0x6
         public enum GradientEnum : byte {
             None,
@@ -49,15 +53,15 @@ namespace libMBIN.NMS.Toolkit
             Box,
         }
         [NMS(Index = 19)]
-        /* 0x84 */ public GradientEnum Gradient;
+        /* 0x98 */ public GradientEnum Gradient;
         [NMS(Index = 24)]
-        /* 0x85 */ public bool GradientOffsetPercent;
+        /* 0x99 */ public bool GradientOffsetPercent;
         [NMS(Index = 21)]
-        /* 0x86 */ public bool HasDropShadow;
+        /* 0x9A */ public bool HasDropShadow;
         [NMS(Index = 23)]
-        /* 0x87 */ public bool HasInnerGradient;
+        /* 0x9B */ public bool HasInnerGradient;
         [NMS(Index = 22)]
-        /* 0x88 */ public bool HasOuterGradient;
+        /* 0x9C */ public bool HasOuterGradient;
         // size: 0x8
         public enum ShapeEnum : byte {
             Rectangle,
@@ -70,10 +74,10 @@ namespace libMBIN.NMS.Toolkit
             BezierWideInverted,
         }
         [NMS(Index = 18)]
-        /* 0x89 */ public ShapeEnum Shape;
+        /* 0x9D */ public ShapeEnum Shape;
         [NMS(Index = 20)]
-        /* 0x8A */ public bool SolidColour;
+        /* 0x9E */ public bool SolidColour;
         [NMS(Index = 25)]
-        /* 0x8B */ public bool StrokeGradient;
+        /* 0x9F */ public bool StrokeGradient;
     }
 }

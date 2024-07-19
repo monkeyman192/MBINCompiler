@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x54B41083BEBB858D, NameHash = 0xF0A6F41B4CF7E771)]
+    [NMS(GUID = 0x38ADC7EDF85F359, NameHash = 0xFB442B6B)]
     public class GcCollisionCapsule : NMSTemplate
     {
         [NMS(Index = 4)]

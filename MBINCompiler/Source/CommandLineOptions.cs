@@ -26,7 +26,7 @@ namespace MBINCompiler
             public static FormatType optOutputFormat     = FormatType.Unknown;
             public static List<string> optIncludeFilters = null;
             public static List<string> optExcludeFilters = null;
-            public static HeaderFormat optFormatVersion  = HeaderFormat.V3;
+            public static HeaderFormat optFormatVersion  = HeaderFormat.V4;
             public static bool optUseThreads             = true;
         }
 

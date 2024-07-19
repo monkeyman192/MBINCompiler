@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x33DB223E0D5D9E41, NameHash = 0x7A3E98EFAB95FF53)]
+    [NMS(GUID = 0x33DB223E0D5D9E41, NameHash = 0x25A97B6C)]
     public class GcCreaturePetAccessorySlot : NMSTemplate
     {
         [NMS(Index = 1)]

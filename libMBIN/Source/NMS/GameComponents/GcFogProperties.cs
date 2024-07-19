@@ -2,42 +2,42 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1C552D51A31D25DF, NameHash = 0x32F1C073DAE21750)]
+    [NMS(GUID = 0xC1080B8C7BC848FD, NameHash = 0x4AC069D4)]
     public class GcFogProperties : NMSTemplate
     {
         [NMS(Index = 9)]
-        /* 0x00 */ public GcHeavyAirSetting HeavyAir;
+        /* 0x000 */ public GcHeavyAirSetting HeavyAir;
         [NMS(Index = 10)]
-        /* 0xA0 */ public float CloudRatio;
+        /* 0x190 */ public float CloudRatio;
         [NMS(Index = 12)]
-        /* 0xA4 */ public float DepthOfField;
+        /* 0x194 */ public float DepthOfField;
         [NMS(Index = 13)]
-        /* 0xA8 */ public float DepthOfFieldDistance;
+        /* 0x198 */ public float DepthOfFieldDistance;
         [NMS(Index = 14)]
-        /* 0xAC */ public float DepthOfFieldFade;
+        /* 0x19C */ public float DepthOfFieldFade;
         [NMS(Index = 3)]
-        /* 0xB0 */ public float FogColourMax;
+        /* 0x1A0 */ public float FogColourMax;
         [NMS(Index = 2)]
-        /* 0xB4 */ public float FogColourStrength;
+        /* 0x1A4 */ public float FogColourStrength;
         [NMS(Index = 8)]
-        /* 0xB8 */ public float FogHeight;
+        /* 0x1A8 */ public float FogHeight;
         [NMS(Index = 1)]
-        /* 0xBC */ public float FogMax;
+        /* 0x1AC */ public float FogMax;
         [NMS(Index = 0)]
-        /* 0xC0 */ public float FogStrength;
+        /* 0x1B0 */ public float FogStrength;
         [NMS(Index = 11)]
-        /* 0xC4 */ public float FullscreenEffect;
+        /* 0x1B4 */ public float FullscreenEffect;
         [NMS(Index = 5)]
-        /* 0xC8 */ public float HeightFogFadeOutStrength;
+        /* 0x1B8 */ public float HeightFogFadeOutStrength;
         [NMS(Index = 7)]
-        /* 0xCC */ public float HeightFogMax;
+        /* 0x1BC */ public float HeightFogMax;
         [NMS(Index = 6)]
-        /* 0xD0 */ public float HeightFogOffset;
+        /* 0x1C0 */ public float HeightFogOffset;
         [NMS(Index = 4)]
-        /* 0xD4 */ public float HeightFogStrength;
+        /* 0x1C4 */ public float HeightFogStrength;
         [NMS(Index = 16)]
-        /* 0xD8 */ public float RainWetness;
+        /* 0x1C8 */ public float RainWetness;
         [NMS(Index = 15)]
-        /* 0xDC */ public bool IsRaining;
+        /* 0x1CC */ public bool IsRaining;
     }
 }

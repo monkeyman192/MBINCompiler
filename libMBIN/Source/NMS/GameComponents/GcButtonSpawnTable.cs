@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3CDD6A5DC010E409, NameHash = 0xFECA26D94DE68300)]
+    [NMS(GUID = 0xCB117707A282E17C, NameHash = 0x421C6C55)]
     public class GcButtonSpawnTable : NMSTemplate
     {
         [NMS(Index = 0)]

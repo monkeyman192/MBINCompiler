@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x1BEB04AFCC15807A, NameHash = 0x8DE367576DE742FE)]
+    [NMS(GUID = 0x1BEB04AFCC15807A, NameHash = 0x3A82D860)]
     public class TkRawID : NMSTemplate
     {
         [NMS(Index = 0)]

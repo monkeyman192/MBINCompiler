@@ -32,6 +32,9 @@
 {%- elif field._is_list_field %}{# End of array chunk, start of list chunk #}
         [NMS(Index = {{ field.field_index }})]
         /* {{ field.field_offset }} */ public List<{{ field.field_type }}> {{ field.field_name }};
+{%- elif field._is_hash_map_field %}{# End of array chunk, start of HashMap chunk #}
+        [NMS(Index = {{ field.field_index }})]
+        /* {{ field.field_offset }} */ public HashMap<{{ field.field_type }}> {{ field.field_name }};
 {%- else %}{# End of array chunk, start of normal field chunk #}
         [NMS(Index = {{ field.field_index }})]
         /* {{ field.field_offset }} */ public {{ field.field_type }} {{ field.field_name }};

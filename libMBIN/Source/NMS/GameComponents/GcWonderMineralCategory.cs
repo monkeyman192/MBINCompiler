@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBB5B13115C4843E7, NameHash = 0x9B7B2957FC905892)]
+    [NMS(GUID = 0xBB5B13115C4843E7, NameHash = 0x34C07963)]
     public class GcWonderMineralCategory : NMSTemplate
     {
         // size: 0x8

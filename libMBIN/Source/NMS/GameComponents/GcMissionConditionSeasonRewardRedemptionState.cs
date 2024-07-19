@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC42AFEC01F54DF2B, NameHash = 0x33E6F9E7246B91A7)]
+    [NMS(GUID = 0xE6F00E77E8DBD77D, NameHash = 0x2D97A37D)]
     public class GcMissionConditionSeasonRewardRedemptionState : NMSTemplate
     {
         [NMS(Index = 0)]

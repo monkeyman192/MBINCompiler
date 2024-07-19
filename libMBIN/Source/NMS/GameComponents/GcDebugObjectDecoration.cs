@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2132C852BFC4CF81, NameHash = 0x4E8FCD335520B579)]
+    [NMS(GUID = 0xDCE416001ECF6380, NameHash = 0xBC09F4D6)]
     public class GcDebugObjectDecoration : NMSTemplate
     {
         [NMS(Index = 5)]
@@ -11,11 +11,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x20 */ public Vector3f Offset;
         [NMS(Index = 6)]
         /* 0x30 */ public Vector3f Up;
-        [NMS(Index = 1)]
-        /* 0x40 */ public GcSeed Seed;
-        [NMS(Index = 2)]
-        /* 0x50 */ public GcResource Resource;
         [NMS(Index = 0)]
-        /* 0x54 */ public NMSString0x80 Filename;
+        /* 0x40 */ public VariableSizeString Filename;
+        [NMS(Index = 1)]
+        /* 0x50 */ public GcSeed Seed;
+        [NMS(Index = 2)]
+        /* 0x60 */ public GcResource Resource;
     }
 }

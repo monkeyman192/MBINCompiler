@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC5A40C7D2FCE7543, NameHash = 0xC9E78F2D1358073D)]
+    [NMS(GUID = 0xC5A40C7D2FCE7543, NameHash = 0x7FF2B10)]
     public class GcSentinelPounceBalance : NMSTemplate
     {
         [NMS(Index = 0)]

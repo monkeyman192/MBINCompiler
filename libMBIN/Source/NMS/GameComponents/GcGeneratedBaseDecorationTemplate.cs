@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x35E6A38C17C57271, NameHash = 0x6370110DC5DC47D2)]
+    [NMS(GUID = 0x16B3E94B19E24792, NameHash = 0x6A92D05C)]
     public class GcGeneratedBaseDecorationTemplate : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
-        [NMS(Index = 5)]
-        /* 0x10 */ public List<int> InvalidRoomIndexes;
         [NMS(Index = 1)]
-        /* 0x20 */ public TkModelResource TemplateScene;
+        /* 0x00 */ public TkModelResource TemplateScene;
+        [NMS(Index = 0)]
+        /* 0x18 */ public NMSString0x10 Id;
+        [NMS(Index = 5)]
+        /* 0x28 */ public List<int> InvalidRoomIndexes;
         // size: 0x8
         public enum DecorationLayerEnum : uint {
             Stairs,
@@ -24,10 +24,10 @@ namespace libMBIN.NMS.GameComponents
             DecorationCorridor,
         }
         [NMS(Index = 4)]
-        /* 0xA4 */ public DecorationLayerEnum DecorationLayer;
+        /* 0x38 */ public DecorationLayerEnum DecorationLayer;
         [NMS(Index = 3)]
-        /* 0xA8 */ public int MaxPerRoom;
+        /* 0x3C */ public int MaxPerRoom;
         [NMS(Index = 2)]
-        /* 0xAC */ public float Probability;
+        /* 0x40 */ public float Probability;
     }
 }

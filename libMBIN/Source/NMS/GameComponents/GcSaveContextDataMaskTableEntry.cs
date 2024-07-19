@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xACE5FAB5DE9AFE5, NameHash = 0x7798386870FA1776)]
+    [NMS(GUID = 0x8810E1999E41810E, NameHash = 0xF7B5EADF)]
     public class GcSaveContextDataMaskTableEntry : NMSTemplate
     {
         [NMS(Index = 0)]

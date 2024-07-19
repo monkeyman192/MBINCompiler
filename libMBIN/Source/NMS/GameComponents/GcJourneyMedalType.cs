@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE4FDDBB5F69B5771, NameHash = 0x50569DD5AA245CF0)]
+    [NMS(GUID = 0xE4FDDBB5F69B5771, NameHash = 0x6936210F)]
     public class GcJourneyMedalType : NMSTemplate
     {
         // size: 0xA

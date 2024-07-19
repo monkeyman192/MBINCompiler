@@ -1,11 +1,11 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xED23B8C9CF7CCF62, NameHash = 0x122FE9C1D39C44F6)]
+    [NMS(GUID = 0xB20AA54605F1A524, NameHash = 0xA6F481EC)]
     public class TkIdSceneFilename : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x80 Filename;
+        /* 0x00 */ public VariableSizeString Filename;
+        [NMS(Index = 0)]
+        /* 0x10 */ public NMSString0x10 Id;
     }
 }

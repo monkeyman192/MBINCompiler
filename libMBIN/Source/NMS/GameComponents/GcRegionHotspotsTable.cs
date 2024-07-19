@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x79BE6F5174BC1BBF, NameHash = 0x7F0D775900CDB2FD)]
+    [NMS(GUID = 0x6E3E9735F424814B, NameHash = 0x6B3FBC2C)]
     public class GcRegionHotspotsTable : NMSTemplate
     {
         [NMS(Index = 6, Size = 0x10, EnumType = typeof(GcBiomeType.BiomeEnum))]

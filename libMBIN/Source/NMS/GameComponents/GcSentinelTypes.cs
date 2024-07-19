@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x37BC2185F97E0294, NameHash = 0x4C87DB0C59434DB3)]
+    [NMS(GUID = 0x37BC2185F97E0294, NameHash = 0xA50EBF75)]
     public class GcSentinelTypes : NMSTemplate
     {
         // size: 0xB

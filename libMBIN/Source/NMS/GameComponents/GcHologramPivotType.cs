@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x88CEAFEF0870DB9, NameHash = 0x16DFD504767E0BC9)]
+    [NMS(GUID = 0x88CEAFEF0870DB9, NameHash = 0xDFDA9771)]
     public class GcHologramPivotType : NMSTemplate
     {
         // size: 0x2

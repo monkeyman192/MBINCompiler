@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEC3FF810BBEE79F9, NameHash = 0xBCF143B353D06CD3)]
+    [NMS(GUID = 0xEC3FF810BBEE79F9, NameHash = 0xF995C127)]
     public class GcDeathQuote : NMSTemplate
     {
         [NMS(Index = 0)]

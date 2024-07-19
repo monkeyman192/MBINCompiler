@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x370D5A3B36E0E0F1, NameHash = 0xEA37791FF01A5AF4)]
+    [NMS(GUID = 0x370D5A3B36E0E0F1, NameHash = 0x3BC226A9)]
     public class TkLanguages : NMSTemplate
     {
         // size: 0x12

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x71F1721071E56F5F, NameHash = 0x76DA44862CDF100D)]
+    [NMS(GUID = 0x71F1721071E56F5F, NameHash = 0x6FB11939)]
     public class GcGalaxyCameraData : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF46B7BC9D31929D1, NameHash = 0xEDE680300A536215)]
+    [NMS(GUID = 0xD93B3EE5F54FCEDF, NameHash = 0xA1DFF0E5)]
     public class GcGalaxyStarAttributesData : NMSTemplate
     {
         [NMS(Index = 6, Size = 0x10)]

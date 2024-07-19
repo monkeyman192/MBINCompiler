@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x126D6B096F6949B7, NameHash = 0x93C5F18EADCD6C3C)]
+    [NMS(GUID = 0xFBC7C308C4BAA4A9, NameHash = 0xA8ED0FE1)]
     public class GcGroundWormComponentData : NMSTemplate
     {
         [NMS(Index = 16)]
@@ -11,79 +11,85 @@ namespace libMBIN.NMS.GameComponents
         /* 0x020 */ public NMSString0x10 EmergeShake;
         [NMS(Index = 5)]
         /* 0x030 */ public NMSString0x10 RoarShake;
+        [NMS(Index = 41)]
+        /* 0x040 */ public NMSString0x10 SpitProjectile;
         [NMS(Index = 3)]
-        /* 0x040 */ public NMSString0x10 SubmergeEffect;
+        /* 0x050 */ public NMSString0x10 SubmergeEffect;
         [NMS(Index = 18)]
-        /* 0x050 */ public float AttackAngle;
+        /* 0x060 */ public float AttackAngle;
         [NMS(Index = 21)]
-        /* 0x054 */ public float AttackCooldown;
+        /* 0x064 */ public float AttackCooldown;
         [NMS(Index = 17)]
-        /* 0x058 */ public float AttackDamageRadius;
+        /* 0x068 */ public float AttackDamageRadius;
         [NMS(Index = 20)]
-        /* 0x05C */ public float AttackDistMax;
+        /* 0x06C */ public float AttackDistMax;
         [NMS(Index = 19)]
-        /* 0x060 */ public float AttackDistMin;
+        /* 0x070 */ public float AttackDistMin;
         [NMS(Index = 6)]
-        /* 0x064 */ public float CollisionBodySize;
+        /* 0x074 */ public float CollisionBodySize;
         [NMS(Index = 9)]
-        /* 0x068 */ public float EmergeDist;
+        /* 0x078 */ public float EmergeDist;
         [NMS(Index = 8)]
-        /* 0x06C */ public float EmergeEffectTime;
+        /* 0x07C */ public float EmergeEffectTime;
         [NMS(Index = 37)]
-        /* 0x070 */ public float EmergeLookBlendEnd;
+        /* 0x080 */ public float EmergeLookBlendEnd;
         [NMS(Index = 36)]
-        /* 0x074 */ public float EmergeLookBlendStart;
+        /* 0x084 */ public float EmergeLookBlendStart;
         [NMS(Index = 38)]
-        /* 0x078 */ public float EmergeTime;
+        /* 0x088 */ public float EmergeTime;
         [NMS(Index = 14)]
-        /* 0x07C */ public float FlinchAngleMax;
+        /* 0x08C */ public float FlinchAngleMax;
         [NMS(Index = 13)]
-        /* 0x080 */ public float FlinchAngleMin;
+        /* 0x090 */ public float FlinchAngleMin;
         [NMS(Index = 15)]
-        /* 0x084 */ public float FlinchSmooth;
+        /* 0x094 */ public float FlinchSmooth;
         [NMS(Index = 12)]
-        /* 0x088 */ public float FlinchTime;
+        /* 0x098 */ public float FlinchTime;
         [NMS(Index = 25)]
-        /* 0x08C */ public float LungeAngleBase;
+        /* 0x09C */ public float LungeAngleBase;
         [NMS(Index = 24)]
-        /* 0x090 */ public float LungeAngleHead;
+        /* 0x0A0 */ public float LungeAngleHead;
         [NMS(Index = 26)]
-        /* 0x094 */ public float LungeBeginTime;
+        /* 0x0A4 */ public float LungeBeginTime;
         [NMS(Index = 28)]
-        /* 0x098 */ public float LungeBlendInSpeed;
+        /* 0x0A8 */ public float LungeBlendInSpeed;
         [NMS(Index = 29)]
-        /* 0x09C */ public float LungeBlendOutSpeed;
+        /* 0x0AC */ public float LungeBlendOutSpeed;
         [NMS(Index = 27)]
-        /* 0x0A0 */ public float LungeEndTime;
+        /* 0x0B0 */ public float LungeEndTime;
         [NMS(Index = 23)]
-        /* 0x0A4 */ public float LungeStrength;
+        /* 0x0B4 */ public float LungeStrength;
         [NMS(Index = 39)]
-        /* 0x0A8 */ public float RearUpBeginDist;
+        /* 0x0B8 */ public float RearUpBeginDist;
         [NMS(Index = 40)]
-        /* 0x0AC */ public float RearUpEndDist;
+        /* 0x0BC */ public float RearUpEndDist;
         [NMS(Index = 33)]
-        /* 0x0B0 */ public float RestTime;
+        /* 0x0C0 */ public float RestTime;
         [NMS(Index = 22)]
-        /* 0x0B4 */ public float RoarCooldown;
+        /* 0x0C4 */ public float RoarCooldown;
         [NMS(Index = 7)]
-        /* 0x0B8 */ public float RumbleTime;
+        /* 0x0C8 */ public float RumbleTime;
+        [NMS(Index = 42)]
+        /* 0x0CC */ public float SpitCooldown;
+        [NMS(Index = 43)]
+        /* 0x0D0 */ public int SpitCount;
         [NMS(Index = 11)]
-        /* 0x0BC */ public float SubmergeDepth;
+        /* 0x0D4 */ public float SubmergeDepth;
         [NMS(Index = 10)]
-        /* 0x0C0 */ public float SubmergeDist;
+        /* 0x0D8 */ public float SubmergeDist;
         [NMS(Index = 34)]
-        /* 0x0C4 */ public float TrackTime;
+        /* 0x0DC */ public float TrackTime;
         [NMS(Index = 35)]
-        /* 0x0C8 */ public float TurnSpeed;
+        /* 0x0E0 */ public float TurnSpeed;
         [NMS(Index = 32)]
-        /* 0x0CC */ public float WindUpAngleBase;
+        /* 0x0E4 */ public float WindUpAngleBase;
         [NMS(Index = 31)]
-        /* 0x0D0 */ public float WindUpAngleHead;
+        /* 0x0E8 */ public float WindUpAngleHead;
         [NMS(Index = 30)]
-        /* 0x0D4 */ public float WindUpStrength;
+        /* 0x0EC */ public float WindUpStrength;
         [NMS(Index = 1)]
-        /* 0x0D8 */ public NMSString0x100 GrabJoint;
+        /* 0x0F0 */ public NMSString0x100 GrabJoint;
         [NMS(Index = 0)]
-        /* 0x1D8 */ public NMSString0x100 LookJoint;
+        /* 0x1F0 */ public NMSString0x100 LookJoint;
     }
 }

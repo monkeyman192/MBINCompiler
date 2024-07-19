@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9A648A4D27CAED40, NameHash = 0x15DCF5F4B3591EDB)]
+    [NMS(GUID = 0x3A619147EC79D94F, NameHash = 0x6269F796)]
     public class GcInventoryLayoutGenerationDataEntry : NMSTemplate
     {
         [NMS(Index = 6)]

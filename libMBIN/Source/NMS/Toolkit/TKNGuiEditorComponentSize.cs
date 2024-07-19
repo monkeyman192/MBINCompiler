@@ -1,12 +1,14 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x15C71D80B19E4AE8, NameHash = 0xB649393FB6E397AE)]
+    [NMS(GUID = 0x6AB835C4597CD9BA, NameHash = 0x83C82B5)]
     public class TKNGuiEditorComponentSize : NMSTemplate
     {
-        // size: 0x30
+        // size: 0x3E
         public enum NGuiEditorComponentSizeEnum : uint {
             WindowResize,
             WindowButton,
+            MinimumWindowHeight,
+            MinimumWindowWidth,
             Indent,
             SeparatorHeight,
             SeparatorWidth,
@@ -27,15 +29,23 @@ namespace libMBIN.NMS.Toolkit
             SliderBarHeight,
             CategoryHeight,
             WindowTitle,
+            MinimumTabWidth,
             ScrollSpeed,
             ComboBox,
             Taskbar,
             IconListItem,
+            StartBarWindowButton,
+            StartBarWindowListItem,
+            StartBarWindowSeparatorWidth,
+            StartBarWindowChildOffset,
             Toolbar,
             ToolbarOptions,
-            StartBarWidth,
+            GlobalSearchBox,
+            SearchBox,
+            StartBarWindowWidth,
             StartBarHeight,
-            StartBarSearchWidth,
+            StartBarWindowSearchWidth,
+            GlobalsMenuWidth,
             TreeNodeSpacing,
             VectorSpacing,
             SliderMinSpacing,
@@ -53,6 +63,10 @@ namespace libMBIN.NMS.Toolkit
             ScrollIncrement,
             EditorPin,
             DynamicPanelTitle,
+            FavouriteValueStar,
+            ShortcutBar,
+            RevertButton,
+            ToolbarItemPadding,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public NGuiEditorComponentSizeEnum NGuiEditorComponentSize;

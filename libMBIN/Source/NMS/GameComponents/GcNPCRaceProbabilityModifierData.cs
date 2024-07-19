@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCCA0892DBA2E56FB, NameHash = 0x7C31C15F3BD6DD7E)]
+    [NMS(GUID = 0xF577491893D64FFC, NameHash = 0x74B595C4)]
     public class GcNPCRaceProbabilityModifierData : NMSTemplate
     {
         [NMS(Index = 1)]

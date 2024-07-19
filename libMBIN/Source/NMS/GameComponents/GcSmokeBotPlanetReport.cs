@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3991C31155BA5CB8, NameHash = 0x778378F86BB2392C)]
+    [NMS(GUID = 0xA7569865CD127790, NameHash = 0xCB5C0481)]
     public class GcSmokeBotPlanetReport : NMSTemplate
     {
         [NMS(Index = 1)]

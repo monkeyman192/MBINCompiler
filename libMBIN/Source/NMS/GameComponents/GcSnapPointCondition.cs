@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x232F7955BC721C51, NameHash = 0x396BC2038766C20F)]
+    [NMS(GUID = 0x37AADBDDEC55896D, NameHash = 0xEA25E33A)]
     public class GcSnapPointCondition : NMSTemplate
     {
         [NMS(Index = 2)]

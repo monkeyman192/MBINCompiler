@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x44CF43712D4A24F9, NameHash = 0x7FE7156AA587561F)]
+    [NMS(GUID = 0x44CF43712D4A24F9, NameHash = 0xE87B922B)]
     public class GcCreatureVocalSoundData : NMSTemplate
     {
         [NMS(Index = 0)]

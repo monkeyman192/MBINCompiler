@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x59AF3770D97F0019, NameHash = 0xEB5E59FB895AFF06)]
+    [NMS(GUID = 0x777813F43DCACD80, NameHash = 0x40C76ADF)]
     public class GcStatsGroup : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
-        [NMS(Index = 2)]
-        /* 0x10 */ public List<GcStatsEntry> StatIds;
         [NMS(Index = 1)]
-        /* 0x20 */ public TkTextureResource Icon;
+        /* 0x00 */ public TkTextureResource Icon;
+        [NMS(Index = 0)]
+        /* 0x18 */ public NMSString0x10 Id;
+        [NMS(Index = 2)]
+        /* 0x28 */ public List<GcStatsEntry> StatIds;
     }
 }

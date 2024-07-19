@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x357CF418881FF5B8, NameHash = 0xE50E9B26CC742B3D)]
+    [NMS(GUID = 0x357CF418881FF5B8, NameHash = 0x99BB0142)]
     public class GcScreenFilters : NMSTemplate
     {
         // size: 0x53

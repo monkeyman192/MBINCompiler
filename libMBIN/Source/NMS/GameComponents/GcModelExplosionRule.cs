@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9A4CAD7753DE703D, NameHash = 0xA63D153E45037707)]
+    [NMS(GUID = 0x9A4CAD7753DE703D, NameHash = 0x67E0D3FA)]
     public class GcModelExplosionRule : NMSTemplate
     {
         [NMS(Index = 4)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCD793073DF62EF55, NameHash = 0xC51C8A0A49F892DC)]
+    [NMS(GUID = 0xCD793073DF62EF55, NameHash = 0x25B5370E)]
     public class GcShipInventoryMaxUpgradeCapacity : NMSTemplate
     {
         [NMS(Index = 2, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]

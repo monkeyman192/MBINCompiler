@@ -110,8 +110,9 @@ namespace libMBIN
             using (var stringWriter = new EncodedStringWriter(Encoding.UTF8))
             using (var xmlTextWriter = XmlWriter.Create(stringWriter, xmlSettings))
             {
-                string ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-                if ( !hideVersionInfo ) xmlTextWriter.WriteComment(String.Format("File created using MBINCompiler version ({0})", ver.Substring(0, ver.Length - 2)));
+                var ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+                string str_ver = $"{ver.Major}.{ver.Minor:00}.{ver.Build}.{ver.Revision}";
+                if ( !hideVersionInfo ) xmlTextWriter.WriteComment($"File created using MBINCompiler version ({str_ver})");
                 var data = template.SerializeEXml(false);
                 Serializer.Serialize(xmlTextWriter, data, Namespaces);
                 xmlTextWriter.Flush();

@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4C40A115CD1948F7, NameHash = 0x91FBF976CBE15B5F)]
+    [NMS(GUID = 0x47354CBE1C9299D3, NameHash = 0x903BF7DD)]
     public class TkNGuiTextStyleData : NMSTemplate
     {
         [NMS(Index = 0)]

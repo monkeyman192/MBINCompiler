@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x67E7745DA24F94EF, NameHash = 0x9CEEDED8BE6E524C)]
+    [NMS(GUID = 0x67E7745DA24F94EF, NameHash = 0x7A5AE09C)]
     public class GcMultitoolPoolType : NMSTemplate
     {
         // size: 0x4

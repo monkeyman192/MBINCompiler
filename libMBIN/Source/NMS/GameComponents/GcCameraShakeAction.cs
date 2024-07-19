@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x80D8221F8063E175, NameHash = 0x8C20E93C658FEFB1)]
+    [NMS(GUID = 0x80D8221F8063E175, NameHash = 0x1AAA578F)]
     public class GcCameraShakeAction : NMSTemplate
     {
         [NMS(Index = 0)]
