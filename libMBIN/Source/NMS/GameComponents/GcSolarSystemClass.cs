@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBB8B17B3CC5FF674, NameHash = 0xC66C80C1B41A77FD)]
+    [NMS(GUID = 0xBB8B17B3CC5FF674, NameHash = 0xF76BE052)]
     public class GcSolarSystemClass : NMSTemplate
     {
         // size: 0x4

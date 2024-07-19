@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA60B91F466ECCEE4, NameHash = 0x4B1FC18F2123392C)]
+    [NMS(GUID = 0x59F9466AC518F21E, NameHash = 0x23AEDFAE)]
     public class GcSeasonalRingArray : NMSTemplate
     {
         [NMS(Index = 0)]

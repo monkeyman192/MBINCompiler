@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8200C5AD2036C676, NameHash = 0x1E85F3A419864E16)]
+    [NMS(GUID = 0x8200C5AD2036C676, NameHash = 0xC79D3B4C)]
     public class GcLootComponentData : NMSTemplate
     {
         [NMS(Index = 7)]

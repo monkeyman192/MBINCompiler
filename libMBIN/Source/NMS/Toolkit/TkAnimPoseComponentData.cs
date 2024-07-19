@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x79DE82B66974C173, NameHash = 0x6DF806B869216436)]
+    [NMS(GUID = 0x9C5A66FDFE4F997D, NameHash = 0xEDDE585A)]
     public class TkAnimPoseComponentData : NMSTemplate
     {
         [NMS(Index = 6)]
@@ -14,13 +14,15 @@ namespace libMBIN.NMS.Toolkit
         /* 0x20 */ public List<TkAnimPoseCorrelationData> Correlations;
         [NMS(Index = 3)]
         /* 0x30 */ public List<TkAnimPoseExampleData> Examples;
-        [NMS(Index = 0)]
-        /* 0x40 */ public List<TkAnimPoseData> PoseAnims;
-        [NMS(Index = 5)]
-        /* 0x50 */ public float AdultCorrelationValue;
         [NMS(Index = 1)]
-        /* 0x54 */ public NMSString0x80 Filename;
+        /* 0x40 */ public VariableSizeString Filename;
+        [NMS(Index = 0)]
+        /* 0x50 */ public List<TkAnimPoseData> PoseAnims;
+        [NMS(Index = 5)]
+        /* 0x60 */ public float AdultCorrelationValue;
         [NMS(Index = 7)]
-        /* 0xD4 */ public bool ShouldRandomise;
+        /* 0x64 */ public bool DisableForAnimOverrides;
+        [NMS(Index = 8)]
+        /* 0x65 */ public bool ShouldRandomise;
     }
 }

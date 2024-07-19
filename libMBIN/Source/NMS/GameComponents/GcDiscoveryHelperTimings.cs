@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x909F438E4B6E8D9F, NameHash = 0xD14651666CB8A6EB)]
+    [NMS(GUID = 0x909F438E4B6E8D9F, NameHash = 0x66897AC2)]
     public class GcDiscoveryHelperTimings : NMSTemplate
     {
         [NMS(Index = 2)]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x95DAABADB0E4A69F, NameHash = 0x5035CC19B55D3442)]
+    [NMS(GUID = 0xEEF433CCED95C3D8, NameHash = 0x1A45D4DF)]
     public class GcSelectableObjectList : NMSTemplate
     {
         [NMS(Index = 0)]

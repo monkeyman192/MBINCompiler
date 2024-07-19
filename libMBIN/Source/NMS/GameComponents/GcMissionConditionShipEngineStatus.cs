@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x874558482EBF8780, NameHash = 0x9A43A9B870251F8C)]
+    [NMS(GUID = 0x874558482EBF8780, NameHash = 0x559603D5)]
     public class GcMissionConditionShipEngineStatus : NMSTemplate
     {
         // size: 0xA

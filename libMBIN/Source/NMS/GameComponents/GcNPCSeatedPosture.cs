@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3A01B0DDBBB3040D, NameHash = 0xDE7AA917D5163592)]
+    [NMS(GUID = 0x3A01B0DDBBB3040D, NameHash = 0xEE05D99C)]
     public class GcNPCSeatedPosture : NMSTemplate
     {
         // size: 0x2

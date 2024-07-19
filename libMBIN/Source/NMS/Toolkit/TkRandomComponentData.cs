@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x277D09510E5C253, NameHash = 0x3F3E8EB071CC5CC0)]
+    [NMS(GUID = 0x277D09510E5C253, NameHash = 0x3C11907D)]
     public class TkRandomComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

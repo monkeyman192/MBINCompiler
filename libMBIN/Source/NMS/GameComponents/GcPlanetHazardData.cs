@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xADF304D0B4BA05B9, NameHash = 0x3DB976BCF84F474B)]
+    [NMS(GUID = 0xADF304D0B4BA05B9, NameHash = 0x34800A5C)]
     public class GcPlanetHazardData : NMSTemplate
     {
         [NMS(Index = 3, Size = 0x5, EnumType = typeof(GcHazardValueTypes.HazardValueEnum))]

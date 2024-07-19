@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBA4458954448454D, NameHash = 0x1683B0270AE180)]
+    [NMS(GUID = 0xBA4458954448454D, NameHash = 0x9AF3A177)]
     public class GcNGuiFileBrowserRecents : NMSTemplate
     {
         [NMS(Index = 0, Size = 0xA)]

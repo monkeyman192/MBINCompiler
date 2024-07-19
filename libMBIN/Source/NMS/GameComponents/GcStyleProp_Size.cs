@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2B6E237E02B7A67F, NameHash = 0xA0D338749677941A)]
+    [NMS(GUID = 0x2B6E237E02B7A67F, NameHash = 0x9FBDAA4)]
     public class GcStyleProp_Size : NMSTemplate
     {
         [NMS(Index = 0)]

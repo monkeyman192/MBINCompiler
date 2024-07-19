@@ -2,16 +2,16 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x925F14F898A88661, NameHash = 0xCEE815614F8FABAF)]
+    [NMS(GUID = 0xCA1A86C4A7484766, NameHash = 0x822864FA)]
     public class GcCustomisationBannerImageData : NMSTemplate
     {
         [NMS(Index = 3)]
         /* 0x00 */ public NMSString0x20A TipText;
-        [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 LinkedSpecialID;
         [NMS(Index = 0)]
-        /* 0x30 */ public TkTextureResource BannerImage;
+        /* 0x20 */ public TkTextureResource BannerImage;
+        [NMS(Index = 1)]
+        /* 0x38 */ public NMSString0x10 LinkedSpecialID;
         [NMS(Index = 2)]
-        /* 0xB4 */ public bool WideImage;
+        /* 0x48 */ public bool WideImage;
     }
 }

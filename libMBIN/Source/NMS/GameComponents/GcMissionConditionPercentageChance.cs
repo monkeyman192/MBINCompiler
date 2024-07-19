@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4BE77A73D961B88B, NameHash = 0xA420A86F131CF88)]
+    [NMS(GUID = 0x4BE77A73D961B88B, NameHash = 0xD1F5AE4D)]
     public class GcMissionConditionPercentageChance : NMSTemplate
     {
         [NMS(Index = 0)]

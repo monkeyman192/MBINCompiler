@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x25478EEF50C2B405, NameHash = 0x2B44FF66E5B6FEC1)]
+    [NMS(GUID = 0x25478EEF50C2B405, NameHash = 0xE409CBD1)]
     public class TkNGuiTreeViewTemplate : NMSTemplate
     {
         [NMS(Index = 13)]

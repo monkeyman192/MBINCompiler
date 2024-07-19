@@ -2,12 +2,12 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF15EC05F68C5B03B, NameHash = 0x5E598DA86B66C4A9)]
+    [NMS(GUID = 0xC0F3B21AAD68CB72, NameHash = 0x531F45F2)]
     public class GcGeneratedBaseStructuralTemplate : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public TkModelResource TemplateScene;
+        /* 0x00 */ public TkModelResource TemplateScene;
+        [NMS(Index = 0)]
+        /* 0x18 */ public NMSString0x10 Id;
     }
 }

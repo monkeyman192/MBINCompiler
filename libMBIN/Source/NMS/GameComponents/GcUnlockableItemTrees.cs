@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x99D215C27F597EBF, NameHash = 0x2B87D92751133C6D)]
+    [NMS(GUID = 0xB92BCC63A45E9D41, NameHash = 0x6D785C93)]
     public class GcUnlockableItemTrees : NMSTemplate
     {
         [NMS(Index = 0)]

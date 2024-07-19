@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD00027FD44908DFE, NameHash = 0x801DCAAD4B4FAC26)]
+    [NMS(GUID = 0xD00027FD44908DFE, NameHash = 0x90BB59B4)]
     public class GcBaseAutoPowerSetting : NMSTemplate
     {
         // size: 0x3

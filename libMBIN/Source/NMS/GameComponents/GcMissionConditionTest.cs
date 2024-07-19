@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x30816B6D0D302F6E, NameHash = 0xC1BECA54193DD3FB)]
+    [NMS(GUID = 0x30816B6D0D302F6E, NameHash = 0xBEB7D85C)]
     public class GcMissionConditionTest : NMSTemplate
     {
         // size: 0x4

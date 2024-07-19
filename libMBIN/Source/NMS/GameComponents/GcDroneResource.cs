@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x44ADB8C136B3D1D9, NameHash = 0xEC9C4EA6F2EEC19A)]
+    [NMS(GUID = 0x44ADB8C136B3D1D9, NameHash = 0x8981B9F)]
     public class GcDroneResource : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x80 Resource;
+        /* 0x0 */ public VariableSizeString Resource;
     }
 }

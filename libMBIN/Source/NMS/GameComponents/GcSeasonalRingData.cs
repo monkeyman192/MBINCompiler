@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4F90E216CB55A3B1, NameHash = 0x772BC47975467C69)]
+    [NMS(GUID = 0x4F90E216CB55A3B1, NameHash = 0x90F94257)]
     public class GcSeasonalRingData : NMSTemplate
     {
         [NMS(Index = 2)]

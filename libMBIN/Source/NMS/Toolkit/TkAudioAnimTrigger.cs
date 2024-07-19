@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x74C1EBF9298A760B, NameHash = 0x537216694166E761)]
+    [NMS(GUID = 0xC7A559572DD728F6, NameHash = 0xC2C9E5EF)]
     public class TkAudioAnimTrigger : NMSTemplate
     {
         [NMS(Index = 1)]

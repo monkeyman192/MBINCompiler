@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF39FA9E801BF0081, NameHash = 0xF02414A33F663A2)]
+    [NMS(GUID = 0xF39FA9E801BF0081, NameHash = 0x140F0D00)]
     public class TkEqualityEnum : NMSTemplate
     {
         // size: 0x5

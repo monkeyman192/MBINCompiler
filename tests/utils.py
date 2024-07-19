@@ -39,23 +39,25 @@ def compare_mbins(left_path, right_path):
     # Do a byte-wise comparison of the files.
     bad_loc = None
     bad_guid = False
+    # TODO: Should read into a struct and then it will be much easier to compare.
     with open(left_path, 'rb') as f_left:
         with open(right_path, 'rb') as f_right:
             left_bytes = f_left.read()
             right_bytes = f_right.read()
-            # Skip over the ignored bytes... (0x6 -> 0xF)
-            for i in range(0, 0x6):
+            # Skip over the ignored bytes... (0xA -> 0xF)
+            for i in range(0, 0xA):
                 if left_bytes[i] != right_bytes[i]:
                     bad_loc = i
                     break
-            for i in range(0x10, size):
+            for i in range(0x10, 0x18):
+                if left_bytes[i] != right_bytes[i]:
+                        bad_guid = True
+                        bad_loc = i
+            for i in range(0x20, size):
                 try:
                     if left_bytes[i] != right_bytes[i]:
-                        if i <= 0x18:
-                            bad_guid = True
-                        else:
-                            bad_loc = i
-                            break
+                        bad_loc = i
+                        break
                 except IndexError:
                     bad_loc = i
                     break
@@ -111,7 +113,7 @@ def fail_comparison(file, loc):
                 name = f.read(0x40).decode()
             err = f'GUID of {name} is incorrect'
         else:
-            err = f'Difference at 0x{(loc - 0x60):x}'
+            err = f'Difference at 0x{(loc - 0x20):x}'
     os.remove(file)
     print(f'{fname_fixed},{err}')
     return False

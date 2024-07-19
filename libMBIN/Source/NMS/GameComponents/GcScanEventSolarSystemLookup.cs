@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF9D24197A44C992B, NameHash = 0xE523CFAD6AFB4BB6)]
+    [NMS(GUID = 0xF0773BB420CCA13B, NameHash = 0x9CE4FFF3)]
     public class GcScanEventSolarSystemLookup : NMSTemplate
     {
         [NMS(Index = 33)]

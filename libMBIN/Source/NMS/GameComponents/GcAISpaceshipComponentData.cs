@@ -3,20 +3,20 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x162F095BB5A96B7B, NameHash = 0x4F5433BCFC028B49)]
+    [NMS(GUID = 0x47D4F370B8829E7B, NameHash = 0xC674FA39)]
     public class GcAISpaceshipComponentData : NMSTemplate
     {
-        [NMS(Index = 5)]
-        /* 0x00 */ public NMSString0x10 CombatDefinitionID;
         [NMS(Index = 3)]
-        /* 0x10 */ public TkModelResource Hangar;
+        /* 0x00 */ public TkModelResource Hangar;
+        [NMS(Index = 5)]
+        /* 0x18 */ public NMSString0x10 CombatDefinitionID;
         [NMS(Index = 2)]
-        /* 0x94 */ public GcPrimaryAxis Axis;
+        /* 0x28 */ public GcPrimaryAxis Axis;
         [NMS(Index = 1)]
-        /* 0x98 */ public GcSpaceshipClasses Class;
+        /* 0x2C */ public GcSpaceshipClasses Class;
         [NMS(Index = 0)]
-        /* 0x9C */ public GcAISpaceshipTypes Type;
+        /* 0x30 */ public GcAISpaceshipTypes Type;
         [NMS(Index = 4)]
-        /* 0xA0 */ public bool IsSpaceAnomaly;
+        /* 0x34 */ public bool IsSpaceAnomaly;
     }
 }

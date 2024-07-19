@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD3B86EA46A948C65, NameHash = 0x3FD1F99F13543A98)]
+    [NMS(GUID = 0x738FDA70AEF6C31, NameHash = 0x3784738)]
     public class GcPassiveFrigateIncome : NMSTemplate
     {
         [NMS(Index = 0)]

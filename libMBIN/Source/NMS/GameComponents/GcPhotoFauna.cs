@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5C65DFB899EDCEA1, NameHash = 0xA9CCD3801AE3DA64)]
+    [NMS(GUID = 0xF1BC63800C08EEA3, NameHash = 0x3B136664)]
     public class GcPhotoFauna : NMSTemplate
     {
         [NMS(Index = 1)]

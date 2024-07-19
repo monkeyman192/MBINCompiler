@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB5B5A9B426511FBB, NameHash = 0xA394D25E5A975DA5)]
+    [NMS(GUID = 0x5918873F9C4F2804, NameHash = 0x6274A962)]
     public class TkAnimBlendNode : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -22,6 +22,6 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Index = 7)]
         /* 0x68 */ public NMSTemplate BlendLeft;
         [NMS(Index = 8)]
-        /* 0xB8 */ public NMSTemplate BlendRight;
+        /* 0x78 */ public NMSTemplate BlendRight;
     }
 }

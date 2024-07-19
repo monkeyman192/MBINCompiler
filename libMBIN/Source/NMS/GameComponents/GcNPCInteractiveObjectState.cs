@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6D654525CA8E7368, NameHash = 0x8D18F9F6D2A592B3)]
+    [NMS(GUID = 0xCC4C8369D455F2C9, NameHash = 0x3B68DECB)]
     public class GcNPCInteractiveObjectState : NMSTemplate
     {
         [NMS(Index = 14)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3613A42A357A3D5B, NameHash = 0x217B9012F2F7FC1F)]
+    [NMS(GUID = 0xF7A2340526593A46, NameHash = 0x7B6C44AE)]
     public class GcExpeditionEventOccurrenceRate : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x5, EnumType = typeof(GcExpeditionCategory.ExpeditionCategoryEnum))]

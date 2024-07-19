@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x74C5AC5E4E45D2A3, NameHash = 0x67009714D686CB9F)]
+    [NMS(GUID = 0xCCDF82FDDC184AF3, NameHash = 0x3DCFEF03)]
     public class TkHeavyAirCollection : NMSTemplate
     {
         [NMS(Index = 0)]

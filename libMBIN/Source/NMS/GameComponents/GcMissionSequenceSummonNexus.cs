@@ -1,13 +1,13 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8A9D4116B2E777CD, NameHash = 0x96BA7F736F446E96)]
+    [NMS(GUID = 0x41F3848D85F5C590, NameHash = 0xC7374EF3)]
     public class GcMissionSequenceSummonNexus : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x080 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x100 */ public bool IgnorePlanetRadiusAndForceSpawn;
+        /* 0x20 */ public bool IgnorePlanetRadiusAndForceSpawn;
     }
 }

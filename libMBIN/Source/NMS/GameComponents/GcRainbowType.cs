@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBEA479D78D467F2B, NameHash = 0x71FCE9DED22FE107)]
+    [NMS(GUID = 0xBEA479D78D467F2B, NameHash = 0x9DDD3EFC)]
     public class GcRainbowType : NMSTemplate
     {
         // size: 0x4

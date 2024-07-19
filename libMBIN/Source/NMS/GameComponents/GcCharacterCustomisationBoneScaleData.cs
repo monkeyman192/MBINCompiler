@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x53DD30E98338ECB, NameHash = 0xFF61F85ED8456D83)]
+    [NMS(GUID = 0x53DD30E98338ECB, NameHash = 0x882EF682)]
     public class GcCharacterCustomisationBoneScaleData : NMSTemplate
     {
         [NMS(Index = 0)]

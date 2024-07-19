@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x97922E1B8B1F5E80, NameHash = 0x6316491205B3FC32)]
+    [NMS(GUID = 0x97922E1B8B1F5E80, NameHash = 0xD48D0888)]
     public class TkAnimJointLODData : NMSTemplate
     {
         [NMS(Index = 1)]

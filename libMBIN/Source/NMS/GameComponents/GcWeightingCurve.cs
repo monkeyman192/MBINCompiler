@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8A2194B184BA1590, NameHash = 0xB33B21B3131CD08D)]
+    [NMS(GUID = 0x8A2194B184BA1590, NameHash = 0xFA340B19)]
     public class GcWeightingCurve : NMSTemplate
     {
         // size: 0x7

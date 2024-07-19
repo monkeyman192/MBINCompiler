@@ -4,28 +4,30 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x69E13906B17B8A5D, NameHash = 0x4C5F02B93CB08B1A)]
+    [NMS(GUID = 0x5558F8445466BC5E, NameHash = 0xD5C1D227)]
     public class GcNGuiTextData : NMSTemplate
     {
         [NMS(Index = 2)]
         /* 0x000 */ public TkNGuiGraphicStyle GraphicStyle;
         [NMS(Index = 1)]
-        /* 0x1E0 */ public TkNGuiTextStyle Style;
+        /* 0x210 */ public TkNGuiTextStyle Style;
         [NMS(Index = 0)]
-        /* 0x300 */ public GcNGuiElementData ElementData;
+        /* 0x330 */ public GcNGuiElementData ElementData;
         [NMS(Index = 7)]
-        /* 0x370 */ public List<GcAccessibleOverride_Text> AccessibleOverrides;
-        [NMS(Index = 6)]
-        /* 0x380 */ public List<GcVROverride_Text> VROverrides;
-        [NMS(Index = 5)]
-        /* 0x390 */ public float ForcedOffset;
-        [NMS(Index = 3)]
-        /* 0x394 */ public NMSString0x200 Text;
+        /* 0x398 */ public List<GcAccessibleOverride_Text> AccessibleOverrides;
         [NMS(Index = 4)]
-        /* 0x594 */ public NMSString0x80 Image;
+        /* 0x3A8 */ public VariableSizeString Image;
+        [NMS(Index = 6)]
+        /* 0x3B8 */ public List<GcVROverride_Text> VROverrides;
+        [NMS(Index = 5)]
+        /* 0x3C8 */ public float ForcedOffset;
+        [NMS(Index = 3)]
+        /* 0x3CC */ public NMSString0x200 Text;
+        [NMS(Index = 10)]
+        /* 0x5CC */ public bool BlockSpecialStyles;
         [NMS(Index = 9)]
-        /* 0x614 */ public bool ForcedAllowScroll;
+        /* 0x5CD */ public bool ForcedAllowScroll;
         [NMS(Index = 8)]
-        /* 0x615 */ public bool Special;
+        /* 0x5CE */ public bool Special;
     }
 }

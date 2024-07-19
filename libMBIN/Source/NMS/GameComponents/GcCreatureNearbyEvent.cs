@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA938029B5AA739C6, NameHash = 0x42869E79D40A84C1)]
+    [NMS(GUID = 0xACDAA60ABB7D8E29, NameHash = 0x55C4631C)]
     public class GcCreatureNearbyEvent : NMSTemplate
     {
         [NMS(Index = 0)]

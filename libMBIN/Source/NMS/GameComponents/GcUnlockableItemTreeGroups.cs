@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x48765DB963EC9AB3, NameHash = 0x8F55B25E91A470A9)]
+    [NMS(GUID = 0x48765DB963EC9AB3, NameHash = 0xF2F4F1C8)]
     public class GcUnlockableItemTreeGroups : NMSTemplate
     {
         // size: 0xE

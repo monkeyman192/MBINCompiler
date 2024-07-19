@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x43897209901FEB79, NameHash = 0xA95CE4EF897F62B2)]
+    [NMS(GUID = 0x43897209901FEB79, NameHash = 0xEF830BEF)]
     public class GcExpeditionEventSaveData : NMSTemplate
     {
         [NMS(Index = 5)]

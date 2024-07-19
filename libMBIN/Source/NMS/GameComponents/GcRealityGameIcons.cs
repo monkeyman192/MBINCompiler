@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xADA14C6F04360B71, NameHash = 0x878911013D83AEE9)]
+    [NMS(GUID = 0xADA14C6F04360B71, NameHash = 0xC8C2FA1E)]
     public class GcRealityGameIcons : NMSTemplate
     {
         // size: 0x59

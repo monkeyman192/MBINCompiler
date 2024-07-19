@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA38DFDDC656C39DD, NameHash = 0xBBC2C9E7EE1270B0)]
+    [NMS(GUID = 0xA38DFDDC656C39DD, NameHash = 0x7938FDDB)]
     public class GcInteractionMissionState : NMSTemplate
     {
         // size: 0x4

@@ -1,23 +1,23 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB60BE1132B2E286E, NameHash = 0x5755416737105B76)]
+    [NMS(GUID = 0x1F900AB5852DB385, NameHash = 0xCC1A2EAE)]
     public class GcMissionSequenceFreighterEngage : NMSTemplate
     {
-        [NMS(Index = 5)]
-        /* 0x000 */ public NMSString0x10 TimeoutMessage;
-        [NMS(Index = 2)]
-        /* 0x010 */ public float EngageDistance;
-        [NMS(Index = 3)]
-        /* 0x014 */ public float EngageTime;
-        [NMS(Index = 4)]
-        /* 0x018 */ public float TimeAfterWarp;
         [NMS(Index = 7)]
-        /* 0x01C */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 1)]
-        /* 0x09C */ public NMSString0x80 MessageEngage;
+        /* 0x10 */ public VariableSizeString MessageEngage;
         [NMS(Index = 0)]
-        /* 0x11C */ public NMSString0x80 MessageGetToSpace;
+        /* 0x20 */ public VariableSizeString MessageGetToSpace;
+        [NMS(Index = 5)]
+        /* 0x30 */ public NMSString0x10 TimeoutMessage;
         [NMS(Index = 6)]
-        /* 0x19C */ public NMSString0x80 TimeoutOSDMessage;
+        /* 0x40 */ public VariableSizeString TimeoutOSDMessage;
+        [NMS(Index = 2)]
+        /* 0x50 */ public float EngageDistance;
+        [NMS(Index = 3)]
+        /* 0x54 */ public float EngageTime;
+        [NMS(Index = 4)]
+        /* 0x58 */ public float TimeAfterWarp;
     }
 }

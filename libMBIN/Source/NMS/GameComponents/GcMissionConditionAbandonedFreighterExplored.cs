@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3B56AE7CCDDB0A7, NameHash = 0x9B23ED61C1919899)]
+    [NMS(GUID = 0x3B56AE7CCDDB0A7, NameHash = 0x3CA584AB)]
     public class GcMissionConditionAbandonedFreighterExplored : NMSTemplate
     {
         [NMS(Index = 0)]

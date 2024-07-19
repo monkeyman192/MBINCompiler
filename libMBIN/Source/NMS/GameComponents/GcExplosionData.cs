@@ -4,52 +4,52 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x77935E3F28835B31, NameHash = 0x8318BC4815036659)]
+    [NMS(GUID = 0xF4547C7BFE5A938B, NameHash = 0xB1AE9C6)]
     public class GcExplosionData : NMSTemplate
     {
         [NMS(Index = 21)]
         /* 0x00 */ public Colour AddedLightColour;
-        [NMS(Index = 3)]
-        /* 0x10 */ public List<GcDebrisData> Debris;
-        [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 Id;
-        [NMS(Index = 11)]
-        /* 0x30 */ public NMSString0x10 ShakeId;
         [NMS(Index = 1)]
-        /* 0x40 */ public TkModelResource Model;
+        /* 0x10 */ public TkModelResource Model;
+        [NMS(Index = 3)]
+        /* 0x28 */ public List<GcDebrisData> Debris;
+        [NMS(Index = 0)]
+        /* 0x38 */ public NMSString0x10 Id;
+        [NMS(Index = 11)]
+        /* 0x48 */ public NMSString0x10 ShakeId;
         [NMS(Index = 20)]
-        /* 0xC4 */ public float AddedLightIntensity;
+        /* 0x58 */ public float AddedLightIntensity;
         [NMS(Index = 2)]
-        /* 0xC8 */ public GcAudioWwiseEvents AudioEvent;
+        /* 0x5C */ public GcAudioWwiseEvents AudioEvent;
         [NMS(Index = 16)]
-        /* 0xCC */ public float CamShakeCustomMaxDistance;
+        /* 0x60 */ public float CamShakeCustomMaxDistance;
         [NMS(Index = 6)]
-        /* 0xD0 */ public float DistanceScale;
+        /* 0x64 */ public float DistanceScale;
         [NMS(Index = 7)]
-        /* 0xD4 */ public float DistanceScaleMax;
+        /* 0x68 */ public float DistanceScaleMax;
         [NMS(Index = 4)]
-        /* 0xD8 */ public float Life;
+        /* 0x6C */ public float Life;
         [NMS(Index = 17)]
-        /* 0xDC */ public float LightFadeInTime;
+        /* 0x70 */ public float LightFadeInTime;
         [NMS(Index = 18)]
-        /* 0xE0 */ public float LightFadeOutTime;
+        /* 0x74 */ public float LightFadeOutTime;
         [NMS(Index = 15)]
-        /* 0xE4 */ public float MaxSpawnDistance;
+        /* 0x78 */ public float MaxSpawnDistance;
         [NMS(Index = 5)]
-        /* 0xE8 */ public float Scale;
+        /* 0x7C */ public float Scale;
         [NMS(Index = 10)]
-        /* 0xEC */ public float ShakeStrengthModifier;
+        /* 0x80 */ public float ShakeStrengthModifier;
         [NMS(Index = 19)]
-        /* 0xF0 */ public bool AddLight;
+        /* 0x84 */ public bool AddLight;
         [NMS(Index = 14)]
-        /* 0xF1 */ public bool AllowDestructableDebris;
+        /* 0x85 */ public bool AllowDestructableDebris;
         [NMS(Index = 13)]
-        /* 0xF2 */ public bool AllowShootableDebris;
+        /* 0x86 */ public bool AllowShootableDebris;
         [NMS(Index = 12)]
-        /* 0xF3 */ public bool AllowTriggerActionOnDebris;
+        /* 0x87 */ public bool AllowTriggerActionOnDebris;
         [NMS(Index = 8)]
-        /* 0xF4 */ public bool CamShake;
+        /* 0x88 */ public bool CamShake;
         [NMS(Index = 9)]
-        /* 0xF5 */ public bool CamShakeSpaceScale;
+        /* 0x89 */ public bool CamShakeSpaceScale;
     }
 }

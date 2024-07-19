@@ -3,18 +3,18 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE3D25A093EB016CA, NameHash = 0xEF1AB4FE11FCFA6D)]
+    [NMS(GUID = 0x8F1CCB8454CC0F0C, NameHash = 0x94CC6B42)]
     public class GcNPCSpawnTable : NMSTemplate
     {
-        [NMS(Index = 4)]
-        /* 0x000 */ public List<GcNPCPlacementInfo> PlacementInfos;
-        [NMS(Index = 3)]
-        /* 0x010 */ public List<GcUniqueNPCSpawnData> UniqueNPCs;
-        [NMS(Index = 2, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]
-        /* 0x020 */ public float[] NPCRaceScale;
         [NMS(Index = 0, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]
-        /* 0x044 */ public NMSString0x80[] NPCModelNames;
+        /* 0x00 */ public VariableSizeString[] NPCModelNames;
         [NMS(Index = 1)]
-        /* 0x4C4 */ public NMSString0x80 NPCMannequinModelName;
+        /* 0x90 */ public VariableSizeString NPCMannequinModelName;
+        [NMS(Index = 4)]
+        /* 0xA0 */ public List<GcNPCPlacementInfo> PlacementInfos;
+        [NMS(Index = 3)]
+        /* 0xB0 */ public List<GcUniqueNPCSpawnData> UniqueNPCs;
+        [NMS(Index = 2, Size = 0x9, EnumType = typeof(GcAlienRace.AlienRaceEnum))]
+        /* 0xC0 */ public float[] NPCRaceScale;
     }
 }

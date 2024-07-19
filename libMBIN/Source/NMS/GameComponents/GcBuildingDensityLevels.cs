@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x84AE876DD70E705A, NameHash = 0x43EB5D40DE6AD28E)]
+    [NMS(GUID = 0x84AE876DD70E705A, NameHash = 0x1ADEA025)]
     public class GcBuildingDensityLevels : NMSTemplate
     {
         // size: 0x6

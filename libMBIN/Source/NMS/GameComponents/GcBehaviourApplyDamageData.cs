@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x88091D255F939EBE, NameHash = 0x88EF02AAFC25BCE6)]
+    [NMS(GUID = 0x7E2FC991867A06EA, NameHash = 0x8BE0E99B)]
     public class GcBehaviourApplyDamageData : NMSTemplate
     {
         [NMS(Index = 2)]

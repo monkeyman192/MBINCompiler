@@ -2,22 +2,22 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xAA6C0373F50A6CB4, NameHash = 0x19C4AA7DA3B42958)]
+    [NMS(GUID = 0x31277648D39D0995, NameHash = 0xC90ECF36)]
     public class TkAxisPathMapping : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public NMSString0x20A Name;
-        [NMS(Index = 5)]
-        /* 0x020 */ public TkInputHandEnum Hand;
-        [NMS(Index = 0)]
-        /* 0x024 */ public TkInputAxisEnum Id;
+        /* 0x00 */ public NMSString0x20A Name;
         [NMS(Index = 3)]
-        /* 0x028 */ public NMSString0x80 OverlayIcon;
+        /* 0x20 */ public VariableSizeString OverlayIcon;
         [NMS(Index = 2)]
-        /* 0x0A8 */ public NMSString0x80 SolidIcon;
+        /* 0x30 */ public VariableSizeString SolidIcon;
         [NMS(Index = 4)]
-        /* 0x128 */ public NMSString0x80 SpecialIcon;
+        /* 0x40 */ public VariableSizeString SpecialIcon;
+        [NMS(Index = 5)]
+        /* 0x50 */ public TkInputHandEnum Hand;
+        [NMS(Index = 0)]
+        /* 0x54 */ public TkInputAxisEnum Id;
         [NMS(Index = 6)]
-        /* 0x1A8 */ public NMSString0x20 OpenVROriginNames;
+        /* 0x58 */ public NMSString0x20 OpenVROriginNames;
     }
 }

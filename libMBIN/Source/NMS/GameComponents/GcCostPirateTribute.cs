@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA9B5D975263B9BD4, NameHash = 0xBF43064D50EAEB7F)]
+    [NMS(GUID = 0xA9B5D975263B9BD4, NameHash = 0x3B174563)]
     public class GcCostPirateTribute : NMSTemplate
     {
         [NMS(Index = 0)]

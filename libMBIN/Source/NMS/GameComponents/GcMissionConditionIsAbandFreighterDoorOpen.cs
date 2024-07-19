@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2CE170CA39CB196F, NameHash = 0x337390D414A23798)]
+    [NMS(GUID = 0x2CE170CA39CB196F, NameHash = 0x455123FA)]
     public class GcMissionConditionIsAbandFreighterDoorOpen : NMSTemplate
     {
         // size: 0x4

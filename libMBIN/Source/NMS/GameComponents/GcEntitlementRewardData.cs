@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5A731F6595CAA0D0, NameHash = 0x748EDC86AFA4F5A3)]
+    [NMS(GUID = 0x5A731F6595CAA0D0, NameHash = 0x1A99F071)]
     public class GcEntitlementRewardData : NMSTemplate
     {
         [NMS(Index = 3)]

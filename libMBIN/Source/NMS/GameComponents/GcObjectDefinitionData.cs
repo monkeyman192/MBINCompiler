@@ -1,8 +1,10 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB7F5008849F61F31, NameHash = 0xF6BC04E88CDBB164)]
+    [NMS(GUID = 0x8355BEB49D2AC574, NameHash = 0x9EA41A38)]
     public class GcObjectDefinitionData : NMSTemplate
     {
+        [NMS(Index = 0)]
+        /* 0x00 */ public VariableSizeString Filename;
         // size: 0x4
         public enum LifeTypeEnum : uint {
             Rock,
@@ -11,7 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Artificial,
         }
         [NMS(Index = 6)]
-        /* 0x00 */ public LifeTypeEnum LifeType;
+        /* 0x10 */ public LifeTypeEnum LifeType;
         // size: 0x4
         public enum LocationTypeEnum : uint {
             AboveGround,
@@ -20,7 +22,7 @@ namespace libMBIN.NMS.GameComponents
             UnderWater,
         }
         [NMS(Index = 7)]
-        /* 0x04 */ public LocationTypeEnum LocationType;
+        /* 0x14 */ public LocationTypeEnum LocationType;
         // size: 0x6
         public enum ObjectAlignmentEnum : uint {
             Upright,
@@ -31,7 +33,7 @@ namespace libMBIN.NMS.GameComponents
             LargeOffsetFromNormal,
         }
         [NMS(Index = 8)]
-        /* 0x08 */ public ObjectAlignmentEnum ObjectAlignment;
+        /* 0x18 */ public ObjectAlignmentEnum ObjectAlignment;
         // size: 0x3
         public enum ObjectCoverageTypeEnum : uint {
             Blanket,
@@ -39,14 +41,14 @@ namespace libMBIN.NMS.GameComponents
             Solo,
         }
         [NMS(Index = 5)]
-        /* 0x0C */ public ObjectCoverageTypeEnum ObjectCoverageType;
+        /* 0x1C */ public ObjectCoverageTypeEnum ObjectCoverageType;
         // size: 0x2
         public enum ObjectRenderTypeEnum : uint {
             Instanced,
             Single,
         }
         [NMS(Index = 1)]
-        /* 0x10 */ public ObjectRenderTypeEnum ObjectRenderType;
+        /* 0x20 */ public ObjectRenderTypeEnum ObjectRenderType;
         // size: 0x5
         public enum SizeClassEnum : uint {
             Tiny,
@@ -56,12 +58,10 @@ namespace libMBIN.NMS.GameComponents
             Massive,
         }
         [NMS(Index = 4)]
-        /* 0x14 */ public SizeClassEnum SizeClass;
-        [NMS(Index = 0)]
-        /* 0x18 */ public NMSString0x80 Filename;
+        /* 0x24 */ public SizeClassEnum SizeClass;
         [NMS(Index = 2)]
-        /* 0x98 */ public bool AutoCollision;
+        /* 0x28 */ public bool AutoCollision;
         [NMS(Index = 3)]
-        /* 0x99 */ public bool MatchGroundColour;
+        /* 0x29 */ public bool MatchGroundColour;
     }
 }

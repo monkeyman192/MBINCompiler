@@ -2,18 +2,18 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x78B5BEB256E5FAED, NameHash = 0xE8C35E70B4AA8A05)]
+    [NMS(GUID = 0xDA2D9F26BD8E47DC, NameHash = 0x25FD6D1)]
     public class GcBlackboardIntCompareDecoratorData : NMSTemplate
     {
-        [NMS(Index = 4)]
-        /* 0x00 */ public NMSTemplate OnFalse;
-        [NMS(Index = 3)]
-        /* 0x50 */ public NMSTemplate OnTrue;
         [NMS(Index = 1)]
-        /* 0xA0 */ public TkBlackboardDefaultValueInteger CompareTo;
+        /* 0x00 */ public TkBlackboardDefaultValueInteger CompareTo;
         [NMS(Index = 0)]
-        /* 0xB8 */ public NMSString0x10 Key;
+        /* 0x18 */ public NMSString0x10 Key;
+        [NMS(Index = 4)]
+        /* 0x28 */ public NMSTemplate OnFalse;
+        [NMS(Index = 3)]
+        /* 0x38 */ public NMSTemplate OnTrue;
         [NMS(Index = 2)]
-        /* 0xC8 */ public TkBlackboardComparisonTypeEnum Comparison;
+        /* 0x48 */ public TkBlackboardComparisonTypeEnum Comparison;
     }
 }

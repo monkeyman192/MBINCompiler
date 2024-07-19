@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x187B5D6B66702576, NameHash = 0x2F5DCE9C70402E02)]
+    [NMS(GUID = 0x187B5D6B66702576, NameHash = 0x76EA6E6A)]
     public class GcIDLookupPath : NMSTemplate
     {
         [NMS(Index = 0)]

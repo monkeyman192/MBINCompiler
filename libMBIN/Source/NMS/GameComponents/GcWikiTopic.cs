@@ -4,28 +4,28 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6D55D41243D77A7A, NameHash = 0x55D566D2C6EFD1C1)]
+    [NMS(GUID = 0x6C2870F7199F86E5, NameHash = 0x5B8BB381)]
     public class GcWikiTopic : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x000 */ public NMSString0x20A MissionButtonText;
+        /* 0x00 */ public NMSString0x20A MissionButtonText;
         [NMS(Index = 1)]
-        /* 0x020 */ public NMSString0x20A ShortDescriptionID;
+        /* 0x20 */ public NMSString0x20A ShortDescriptionID;
         [NMS(Index = 0)]
-        /* 0x040 */ public NMSString0x20A TopicID;
-        [NMS(Index = 5)]
-        /* 0x060 */ public NMSString0x10 Mission;
-        [NMS(Index = 4)]
-        /* 0x070 */ public List<GcWikiPage> Pages;
+        /* 0x40 */ public NMSString0x20A TopicID;
         [NMS(Index = 2)]
-        /* 0x080 */ public TkTextureResource Icon;
+        /* 0x60 */ public TkTextureResource Icon;
         [NMS(Index = 3)]
-        /* 0x104 */ public TkTextureResource NotifyIcon;
+        /* 0x78 */ public TkTextureResource NotifyIcon;
+        [NMS(Index = 5)]
+        /* 0x90 */ public NMSString0x10 Mission;
+        [NMS(Index = 4)]
+        /* 0xA0 */ public List<GcWikiPage> Pages;
         [NMS(Index = 9)]
-        /* 0x188 */ public GcActionSetType ActionSet;
+        /* 0xB0 */ public GcActionSetType ActionSet;
         [NMS(Index = 7)]
-        /* 0x18C */ public bool Seen;
+        /* 0xB4 */ public bool Seen;
         [NMS(Index = 8)]
-        /* 0x18D */ public bool Unlocked;
+        /* 0xB5 */ public bool Unlocked;
     }
 }

@@ -5,7 +5,7 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x313D6434CA6AB5FC, NameHash = 0x3A50D683FD1CF4BF)]
+    [NMS(GUID = 0x840E7E95D9F4AD77, NameHash = 0x6C799781)]
     public class GcUserSettingsData : NMSTemplate
     {
         [NMS(Index = 28)]

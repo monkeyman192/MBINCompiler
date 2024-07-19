@@ -2,16 +2,16 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x24DE95B53FB37561, NameHash = 0x25696B35BE341F6C)]
+    [NMS(GUID = 0x5EF0CA949B2CD77E, NameHash = 0x6831C7D8)]
     public class GcMissionSequenceWaitForRefuel : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x00 */ public int Amount;
-        [NMS(Index = 1)]
-        /* 0x04 */ public GcStatsTypes TargetStat;
         [NMS(Index = 3)]
-        /* 0x08 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x88 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 2)]
+        /* 0x20 */ public int Amount;
+        [NMS(Index = 1)]
+        /* 0x24 */ public GcStatsTypes TargetStat;
     }
 }

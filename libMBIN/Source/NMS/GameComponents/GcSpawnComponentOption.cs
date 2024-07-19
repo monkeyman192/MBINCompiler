@@ -2,14 +2,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1C1176A042D3F0BE, NameHash = 0xA7EE5AECC28F3591)]
+    [NMS(GUID = 0xB5516B16658C426A, NameHash = 0x19C9B3E9)]
     public class GcSpawnComponentOption : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public GcResourceElement SpecificModel;
+        /* 0x00 */ public GcResourceElement SpecificModel;
         [NMS(Index = 0)]
-        /* 0x2A8 */ public NMSString0x10 Name;
+        /* 0x48 */ public NMSString0x10 Name;
         [NMS(Index = 1)]
-        /* 0x2B8 */ public GcSeed Seed;
+        /* 0x58 */ public GcSeed Seed;
     }
 }

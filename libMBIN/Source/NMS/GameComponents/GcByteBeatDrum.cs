@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA5F851480F8A132, NameHash = 0xAAB4AB6EC567BC2F)]
+    [NMS(GUID = 0x52D48301CBD7C1B4, NameHash = 0x806D4C2B)]
     public class GcByteBeatDrum : NMSTemplate
     {
         [NMS(Index = 4)]

@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA5C2BE05B53FD876, NameHash = 0x987EE8E8873AED6B)]
+    [NMS(GUID = 0xAB95AFE708F7072E, NameHash = 0x7D338136)]
     public class GcLeveledStatData : NMSTemplate
     {
         [NMS(Index = 8, Size = 0xB)]
@@ -14,10 +14,10 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5A0 */ public NMSString0x20A NotifyMessageSingular;
         [NMS(Index = 1)]
         /* 0x5C0 */ public NMSString0x20A StatTitle;
-        [NMS(Index = 0)]
-        /* 0x5E0 */ public NMSString0x10 StatId;
         [NMS(Index = 7)]
-        /* 0x5F0 */ public TkTextureResource Icon;
+        /* 0x5E0 */ public TkTextureResource Icon;
+        [NMS(Index = 0)]
+        /* 0x5F8 */ public NMSString0x10 StatId;
         // size: 0x3
         public enum StatMessageTypeEnum : uint {
             Full,
@@ -25,14 +25,14 @@ namespace libMBIN.NMS.GameComponents
             Silent,
         }
         [NMS(Index = 2)]
-        /* 0x674 */ public StatMessageTypeEnum StatMessageType;
+        /* 0x608 */ public StatMessageTypeEnum StatMessageType;
         [NMS(Index = 5)]
-        /* 0x678 */ public bool ShowInTerminal;
+        /* 0x60C */ public bool ShowInTerminal;
         [NMS(Index = 6)]
-        /* 0x679 */ public bool ShowStatLevel;
+        /* 0x60D */ public bool ShowStatLevel;
         [NMS(Index = 10)]
-        /* 0x67A */ public bool TelemetryUpload;
+        /* 0x60E */ public bool TelemetryUpload;
         [NMS(Index = 9)]
-        /* 0x67B */ public bool UseRankNotStats;
+        /* 0x60F */ public bool UseRankNotStats;
     }
 }

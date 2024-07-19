@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x799D31C35A4AB865, NameHash = 0xA889775D93694AA7)]
+    [NMS(GUID = 0x799D31C35A4AB865, NameHash = 0x629B830C)]
     public class GcCostStatCompare : NMSTemplate
     {
         [NMS(Index = 2)]

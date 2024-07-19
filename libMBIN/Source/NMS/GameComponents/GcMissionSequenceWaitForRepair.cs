@@ -2,14 +2,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE22B97F31004C8A9, NameHash = 0x79652C883CA60AE)]
+    [NMS(GUID = 0x4E5AFF2BD2405D25, NameHash = 0xE170E56E)]
     public class GcMissionSequenceWaitForRepair : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x00 */ public GcStatsTypes TargetStat;
         [NMS(Index = 2)]
-        /* 0x04 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x84 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 1)]
+        /* 0x20 */ public GcStatsTypes TargetStat;
     }
 }

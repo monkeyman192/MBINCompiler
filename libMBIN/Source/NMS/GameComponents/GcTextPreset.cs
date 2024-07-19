@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x36D1073B58311D08, NameHash = 0x4CF465C68C10EBB4)]
+    [NMS(GUID = 0xE0900BAF452F2A91, NameHash = 0xFD06FE17)]
     public class GcTextPreset : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -10,8 +10,8 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 1)]
         /* 0x10 */ public NMSTemplate Style;
         [NMS(Index = 0)]
-        /* 0x60 */ public GcFontTypesEnum Font;
+        /* 0x20 */ public GcFontTypesEnum Font;
         [NMS(Index = 2)]
-        /* 0x64 */ public float Height;
+        /* 0x24 */ public float Height;
     }
 }

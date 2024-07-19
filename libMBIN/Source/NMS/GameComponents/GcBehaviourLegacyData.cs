@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x81663F7AA75A4A81, NameHash = 0xE727C698F36AF1CA)]
+    [NMS(GUID = 0x81663F7AA75A4A81, NameHash = 0x1A397306)]
     public class GcBehaviourLegacyData : NMSTemplate
     {
         // size: 0x9

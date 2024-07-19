@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x845A4BCA3BA392FB, NameHash = 0xBC975A8E0D580FFA)]
+    [NMS(GUID = 0x3A7DD6911C6F4F01, NameHash = 0x7FB7545E)]
     public class TkNoiseFeatureData : NMSTemplate
     {
         // size: 0x2

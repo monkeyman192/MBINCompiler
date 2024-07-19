@@ -2,7 +2,7 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x33871F8C1A70C814, NameHash = 0x29A5D23AA5A4C794)]
+    [NMS(GUID = 0x33871F8C1A70C814, NameHash = 0x6A2D4F5A)]
     public class GcPhysicsCollisionGroups : NMSTemplate
     {
         // size: 0x10

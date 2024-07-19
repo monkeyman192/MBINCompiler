@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB2CC5E20D1D2FA20, NameHash = 0x81A38020A4FC78BE)]
+    [NMS(GUID = 0xB2CC5E20D1D2FA20, NameHash = 0x56E5415F)]
     public class GcSprintingCostDifficultyOption : NMSTemplate
     {
         // size: 0x3

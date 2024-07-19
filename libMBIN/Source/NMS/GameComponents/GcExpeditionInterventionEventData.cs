@@ -2,36 +2,36 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCD983BCBF3D8E985, NameHash = 0x1920DA0CB7B61986)]
+    [NMS(GUID = 0xC267BE8341FCF478, NameHash = 0x4AEDCD0D)]
     public class GcExpeditionInterventionEventData : NMSTemplate
     {
         [NMS(Index = 0)]
         /* 0x00 */ public NMSString0x20A ID;
-        [NMS(Index = 11)]
-        /* 0x20 */ public NMSString0x10 AvoidanceFailureReward;
-        [NMS(Index = 10)]
-        /* 0x30 */ public NMSString0x10 AvoidanceSuccessReward;
-        [NMS(Index = 12)]
-        /* 0x40 */ public NMSString0x10 FailureReward;
-        [NMS(Index = 9)]
-        /* 0x50 */ public NMSString0x10 SuccessReward;
         [NMS(Index = 4)]
-        /* 0x60 */ public GcNumberedTextList InteractionID;
+        /* 0x20 */ public GcNumberedTextList InteractionID;
+        [NMS(Index = 11)]
+        /* 0x38 */ public NMSString0x10 AvoidanceFailureReward;
+        [NMS(Index = 10)]
+        /* 0x48 */ public NMSString0x10 AvoidanceSuccessReward;
+        [NMS(Index = 12)]
+        /* 0x58 */ public NMSString0x10 FailureReward;
+        [NMS(Index = 9)]
+        /* 0x68 */ public NMSString0x10 SuccessReward;
         [NMS(Index = 3)]
-        /* 0x84 */ public GcExpeditionCategory ExpeditionCategory;
+        /* 0x78 */ public GcExpeditionCategory ExpeditionCategory;
         [NMS(Index = 13)]
-        /* 0x88 */ public int FailureDamageChance;
+        /* 0x7C */ public int FailureDamageChance;
         [NMS(Index = 1)]
-        /* 0x8C */ public GcMissionType MissionType;
+        /* 0x80 */ public GcMissionType MissionType;
         [NMS(Index = 2)]
-        /* 0x90 */ public int SelectionWeight;
+        /* 0x84 */ public int SelectionWeight;
         [NMS(Index = 7)]
-        /* 0x94 */ public NMSString0x20 AvoidanceFailureLogEntry;
+        /* 0x88 */ public NMSString0x20 AvoidanceFailureLogEntry;
         [NMS(Index = 6)]
-        /* 0xB4 */ public NMSString0x20 AvoidanceSuccessLogEntry;
+        /* 0xA8 */ public NMSString0x20 AvoidanceSuccessLogEntry;
         [NMS(Index = 8)]
-        /* 0xD4 */ public NMSString0x20 FailureLogEntry;
+        /* 0xC8 */ public NMSString0x20 FailureLogEntry;
         [NMS(Index = 5)]
-        /* 0xF4 */ public NMSString0x20 SuccessLogEntry;
+        /* 0xE8 */ public NMSString0x20 SuccessLogEntry;
     }
 }

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2C9FD1F1AC98A01D, NameHash = 0x4B56CD3D914485CF)]
+    [NMS(GUID = 0x2C9FD1F1AC98A01D, NameHash = 0x817BA03D)]
     public class GcSpringLink : NMSTemplate
     {
         [NMS(Index = 38)]

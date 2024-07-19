@@ -3,24 +3,24 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCA98F8257BF36CF8, NameHash = 0xEACA21EDB93AD84A)]
+    [NMS(GUID = 0xB1B47600BF300C2D, NameHash = 0x4793141D)]
     public class GcProductProceduralOnlyData : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x000 */ public GcNameGeneratorWord Description;
+        /* 0x00 */ public GcNameGeneratorWord Description;
         [NMS(Index = 7)]
-        /* 0x028 */ public TkTextureResource HeroIcon;
+        /* 0x28 */ public TkTextureResource HeroIcon;
         [NMS(Index = 6)]
-        /* 0x0AC */ public TkTextureResource Icon;
+        /* 0x40 */ public TkTextureResource Icon;
         [NMS(Index = 4)]
-        /* 0x130 */ public int AgeMax;
+        /* 0x58 */ public int AgeMax;
         [NMS(Index = 3)]
-        /* 0x134 */ public int AgeMin;
+        /* 0x5C */ public int AgeMin;
         [NMS(Index = 2)]
-        /* 0x138 */ public int BaseValueMax;
+        /* 0x60 */ public int BaseValueMax;
         [NMS(Index = 1)]
-        /* 0x13C */ public int BaseValueMin;
+        /* 0x64 */ public int BaseValueMin;
         [NMS(Index = 0)]
-        /* 0x140 */ public int DropWeight;
+        /* 0x68 */ public int DropWeight;
     }
 }

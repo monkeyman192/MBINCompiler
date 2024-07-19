@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x70D9ABBA253FB7A8, NameHash = 0x993C35581CBEF4D)]
+    [NMS(GUID = 0x70D9ABBA253FB7A8, NameHash = 0xB5982A49)]
     public class GcDoShipFlybyOverhead : NMSTemplate
     {
         [NMS(Index = 0)]

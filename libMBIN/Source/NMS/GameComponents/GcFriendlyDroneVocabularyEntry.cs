@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEBC33030C0F15DEB, NameHash = 0x994450FB174886C5)]
+    [NMS(GUID = 0xEBC33030C0F15DEB, NameHash = 0x15815510)]
     public class GcFriendlyDroneVocabularyEntry : NMSTemplate
     {
         [NMS(Index = 0)]

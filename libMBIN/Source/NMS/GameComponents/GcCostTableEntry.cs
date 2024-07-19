@@ -1,35 +1,35 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4E9D9BC986BFA4F6, NameHash = 0x5923C0EE4B9AD427)]
+    [NMS(GUID = 0x3C6C416D934CB2D, NameHash = 0x8E9AB1DD)]
     public class GcCostTableEntry : NMSTemplate
     {
-        [NMS(Index = 13)]
-        /* 0x00 */ public NMSTemplate Cost;
         [NMS(Index = 11)]
-        /* 0x50 */ public NMSString0x20A CannotAffordOSDMsg;
+        /* 0x00 */ public NMSString0x20A CannotAffordOSDMsg;
         [NMS(Index = 10)]
-        /* 0x70 */ public NMSString0x20A CommunityContributionCapLocID;
+        /* 0x20 */ public NMSString0x20A CommunityContributionCapLocID;
+        [NMS(Index = 13)]
+        /* 0x40 */ public NMSTemplate Cost;
         [NMS(Index = 0)]
-        /* 0x90 */ public NMSString0x10 Id;
+        /* 0x50 */ public NMSString0x10 Id;
         [NMS(Index = 12)]
-        /* 0xA0 */ public NMSString0x10 MissionMessageWhenCharged;
+        /* 0x60 */ public NMSString0x10 MissionMessageWhenCharged;
         [NMS(Index = 9)]
-        /* 0xB0 */ public int CommunityContributionValue;
+        /* 0x70 */ public int CommunityContributionValue;
         [NMS(Index = 1)]
-        /* 0xB4 */ public bool DisplayCost;
+        /* 0x74 */ public bool DisplayCost;
         [NMS(Index = 4)]
-        /* 0xB5 */ public bool DisplayOnlyCostIfCantAfford;
+        /* 0x75 */ public bool DisplayOnlyCostIfCantAfford;
         [NMS(Index = 2)]
-        /* 0xB6 */ public bool DontCharge;
+        /* 0x76 */ public bool DontCharge;
         [NMS(Index = 5)]
-        /* 0xB7 */ public bool HideCostStringIfCanAfford;
+        /* 0x77 */ public bool HideCostStringIfCanAfford;
         [NMS(Index = 3)]
-        /* 0xB8 */ public bool HideOptionAndDisplayCostOnly;
+        /* 0x78 */ public bool HideOptionAndDisplayCostOnly;
         [NMS(Index = 7)]
-        /* 0xB9 */ public bool InvertCanAffordOutcome;
+        /* 0x79 */ public bool InvertCanAffordOutcome;
         [NMS(Index = 8)]
-        /* 0xBA */ public bool MustAffordInCreative;
+        /* 0x7A */ public bool MustAffordInCreative;
         [NMS(Index = 6)]
-        /* 0xBB */ public bool RemoveOptionIfCantAfford;
+        /* 0x7B */ public bool RemoveOptionIfCantAfford;
     }
 }

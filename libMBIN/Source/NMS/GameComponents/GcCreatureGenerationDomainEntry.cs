@@ -2,12 +2,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6F71AA2B77D5938C, NameHash = 0x79E2609CF7F155CE)]
+    [NMS(GUID = 0x35CC251AD24160C7, NameHash = 0x964497D2)]
     public class GcCreatureGenerationDomainEntry : NMSTemplate
     {
-        [NMS(Index = 0)]
-        /* 0x0 */ public GcCreatureGenerationDensity DensityModifier;
         [NMS(Index = 1)]
-        /* 0x4 */ public NMSString0x80 File;
+        /* 0x00 */ public VariableSizeString File;
+        [NMS(Index = 0)]
+        /* 0x10 */ public GcCreatureGenerationDensity DensityModifier;
     }
 }

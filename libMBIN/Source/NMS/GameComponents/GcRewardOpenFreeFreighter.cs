@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA4721C7E6BE7A25E, NameHash = 0x4DD6C74BA4B6AD5A)]
+    [NMS(GUID = 0xA4721C7E6BE7A25E, NameHash = 0x8485DC51)]
     public class GcRewardOpenFreeFreighter : NMSTemplate
     {
         [NMS(Index = 1)]

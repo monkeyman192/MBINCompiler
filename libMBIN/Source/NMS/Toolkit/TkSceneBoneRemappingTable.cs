@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF4BF89FC3D6D6F02, NameHash = 0xAF2831AAF7DE1710)]
+    [NMS(GUID = 0xDDE5E354D3AE4600, NameHash = 0xDDAD118A)]
     public class TkSceneBoneRemappingTable : NMSTemplate
     {
         [NMS(Index = 0)]

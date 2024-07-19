@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x68F12D6DECB242DD, NameHash = 0x76E523097495B90)]
+    [NMS(GUID = 0xBEFAB9EB89565760, NameHash = 0xF5E1C8D2)]
     public class GcPlayerExperienceSpawnData : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -19,11 +19,12 @@ namespace libMBIN.NMS.GameComponents
         /* 0x60 */ public int[] MinNum;
         [NMS(Index = 9)]
         /* 0x70 */ public float ActiveTime;
-        // size: 0x3
+        // size: 0x4
         public enum FaceDirEnum : uint {
             Random,
             TowardsPlayer,
             SpawnerAt,
+            InFrontOfPlayer,
         }
         [NMS(Index = 4)]
         /* 0x74 */ public FaceDirEnum FaceDir;

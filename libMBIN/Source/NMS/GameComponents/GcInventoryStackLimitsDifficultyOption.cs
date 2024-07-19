@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5F13D862186143AB, NameHash = 0xBC2BBF55EEB95C06)]
+    [NMS(GUID = 0x5F13D862186143AB, NameHash = 0xB0ECA3FA)]
     public class GcInventoryStackLimitsDifficultyOption : NMSTemplate
     {
         // size: 0x3

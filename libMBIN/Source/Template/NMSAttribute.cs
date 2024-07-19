@@ -13,7 +13,7 @@ namespace libMBIN
         public byte Padding { get; set; }
         public int Alignment { get; set; }
         public ulong GUID { get; set; }
-        public ulong NameHash { get; set; }
+        public uint NameHash { get; set; }
         public bool Broken { get; set; }
         public bool IDField { get; set; } = false;
         public int Index { get; set; }

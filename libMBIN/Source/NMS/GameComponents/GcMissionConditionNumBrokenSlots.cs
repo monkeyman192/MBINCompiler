@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCB1F989A6B6027F, NameHash = 0x9D1165409EC6DFE7)]
+    [NMS(GUID = 0x77E0245571D5C391, NameHash = 0x7725C806)]
     public class GcMissionConditionNumBrokenSlots : NMSTemplate
     {
         // size: 0x3

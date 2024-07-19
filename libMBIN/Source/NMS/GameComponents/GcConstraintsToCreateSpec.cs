@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9EBA7F6F8067B10A, NameHash = 0x6C0B3270B9591BB1)]
+    [NMS(GUID = 0x9EBA7F6F8067B10A, NameHash = 0xD7396409)]
     public class GcConstraintsToCreateSpec : NMSTemplate
     {
         [NMS(Index = 5)]

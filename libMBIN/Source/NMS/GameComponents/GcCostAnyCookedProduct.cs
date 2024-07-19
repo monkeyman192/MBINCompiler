@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7DF5A648209B3630, NameHash = 0xF9892B1499AD055A)]
+    [NMS(GUID = 0x7DF5A648209B3630, NameHash = 0x47C80238)]
     public class GcCostAnyCookedProduct : NMSTemplate
     {
         [NMS(Index = 0)]

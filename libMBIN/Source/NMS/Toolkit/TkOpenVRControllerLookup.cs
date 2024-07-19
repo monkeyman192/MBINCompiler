@@ -1,13 +1,13 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xBA89BE602B31482E, NameHash = 0x5AFD5621E9999DDA)]
+    [NMS(GUID = 0x7188F81C050BDCBE, NameHash = 0x3DF21630)]
     public class TkOpenVRControllerLookup : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 ResetVRViewLayerName;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x80 DeviceSpec;
+        /* 0x00 */ public VariableSizeString DeviceSpec;
+        [NMS(Index = 2)]
+        /* 0x10 */ public NMSString0x10 ResetVRViewLayerName;
         [NMS(Index = 0)]
-        /* 0x90 */ public NMSString0x20 DeviceKeywords;
+        /* 0x20 */ public NMSString0x20 DeviceKeywords;
     }
 }

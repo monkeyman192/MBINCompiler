@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x16D35FBC45A45F80, NameHash = 0x67530B28A8F0F92)]
+    [NMS(GUID = 0x16D35FBC45A45F80, NameHash = 0xA2B6A3B9)]
     public class GcMessageSummonAndDismiss : NMSTemplate
     {
         // size: 0x2

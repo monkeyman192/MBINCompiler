@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE3C5249B0F356BD2, NameHash = 0xDE1F17CE7E01A8C2)]
+    [NMS(GUID = 0x42E0DF3FEB21047B, NameHash = 0x35D4E04)]
     public class GcAlienPuzzleEntry : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -40,7 +40,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0EC */ public int MinProgressionForSelection;
         [NMS(Index = 17)]
         /* 0x0F0 */ public GcAlienMood Mood;
-        [NMS(Index = 24)]
+        [NMS(Index = 25)]
         /* 0x0F4 */ public GcAudioWwiseEvents NextStageAudioEventOverride;
         // size: 0x3
         public enum PersistancyBufferOverrideEnum : uint {
@@ -58,15 +58,17 @@ namespace libMBIN.NMS.GameComponents
         /* 0x104 */ public GcAlienRace Race;
         [NMS(Index = 4)]
         /* 0x108 */ public GcInteractionType Type;
+        [NMS(Index = 24)]
+        /* 0x10C */ public bool AllowNoOptions;
         [NMS(Index = 12)]
-        /* 0x10C */ public bool ProgressiveDialogue;
+        /* 0x10D */ public bool ProgressiveDialogue;
         [NMS(Index = 22)]
-        /* 0x10D */ public bool RadialInteraction;
+        /* 0x10E */ public bool RadialInteraction;
         [NMS(Index = 10)]
-        /* 0x10E */ public bool TranslateAlienText;
+        /* 0x10F */ public bool TranslateAlienText;
         [NMS(Index = 11)]
-        /* 0x10F */ public bool TranslationBrackets;
+        /* 0x110 */ public bool TranslationBrackets;
         [NMS(Index = 23)]
-        /* 0x110 */ public bool UseTitleOverrideInLabel;
+        /* 0x111 */ public bool UseTitleOverrideInLabel;
     }
 }

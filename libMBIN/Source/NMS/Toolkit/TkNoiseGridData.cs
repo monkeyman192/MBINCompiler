@@ -2,33 +2,35 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x4D8313137B2EA4B7, NameHash = 0xA45052EB66E281C7)]
+    [NMS(GUID = 0xDEC7309B2993E3BC, NameHash = 0xEB39E5AC)]
     public class TkNoiseGridData : NMSTemplate
     {
+        [NMS(Index = 7)]
+        /* 0x000 */ public VariableSizeString Filename;
         [NMS(Index = 18)]
-        /* 0x000 */ public TkNoiseUberLayerData TurbulenceNoiseLayer;
+        /* 0x010 */ public TkNoiseUberLayerData TurbulenceNoiseLayer;
         [NMS(Index = 30)]
-        /* 0x084 */ public TkNoiseSuperPrimitiveData SuperPrimitive;
+        /* 0x094 */ public TkNoiseSuperPrimitiveData SuperPrimitive;
         [NMS(Index = 28)]
-        /* 0x0A0 */ public TkNoiseSuperFormulaData SuperFormula1;
+        /* 0x0B0 */ public TkNoiseSuperFormulaData SuperFormula1;
         [NMS(Index = 29)]
-        /* 0x0B0 */ public TkNoiseSuperFormulaData SuperFormula2;
+        /* 0x0C0 */ public TkNoiseSuperFormulaData SuperFormula2;
         [NMS(Index = 14)]
-        /* 0x0C0 */ public float HeightOffset;
+        /* 0x0D0 */ public float HeightOffset;
         [NMS(Index = 11)]
-        /* 0x0C4 */ public float MaxHeight;
+        /* 0x0D4 */ public float MaxHeight;
         [NMS(Index = 13)]
-        /* 0x0C8 */ public float MaxHeightOffset;
+        /* 0x0D8 */ public float MaxHeightOffset;
         [NMS(Index = 1)]
-        /* 0x0CC */ public int MaximumLOD;
+        /* 0x0DC */ public int MaximumLOD;
         [NMS(Index = 9)]
-        /* 0x0D0 */ public float MaxWidth;
+        /* 0x0E0 */ public float MaxWidth;
         [NMS(Index = 10)]
-        /* 0x0D4 */ public float MinHeight;
+        /* 0x0E4 */ public float MinHeight;
         [NMS(Index = 12)]
-        /* 0x0D8 */ public float MinHeightOffset;
+        /* 0x0E8 */ public float MinHeightOffset;
         [NMS(Index = 8)]
-        /* 0x0DC */ public float MinWidth;
+        /* 0x0EC */ public float MinWidth;
         // size: 0x16
         public enum NoiseGridTypeEnum : uint {
             Cube,
@@ -55,44 +57,42 @@ namespace libMBIN.NMS.Toolkit
             File,
         }
         [NMS(Index = 6)]
-        /* 0x0E0 */ public NoiseGridTypeEnum NoiseGridType;
+        /* 0x0F0 */ public NoiseGridTypeEnum NoiseGridType;
         [NMS(Index = 15)]
-        /* 0x0E4 */ public TkNoiseOffsetEnum Offset;
+        /* 0x0F4 */ public TkNoiseOffsetEnum Offset;
         [NMS(Index = 20)]
-        /* 0x0E8 */ public float Pitch;
+        /* 0x0F8 */ public float Pitch;
         [NMS(Index = 27)]
-        /* 0x0EC */ public float RandomPrimitive;
+        /* 0x0FC */ public float RandomPrimitive;
         [NMS(Index = 16)]
-        /* 0x0F0 */ public float RegionRatio;
+        /* 0x100 */ public float RegionRatio;
         [NMS(Index = 17)]
-        /* 0x0F4 */ public float RegionScale;
+        /* 0x104 */ public float RegionScale;
         [NMS(Index = 21)]
-        /* 0x0F8 */ public float Roll;
+        /* 0x108 */ public float Roll;
         [NMS(Index = 26)]
-        /* 0x0FC */ public int SeedOffset;
+        /* 0x10C */ public int SeedOffset;
         [NMS(Index = 25)]
-        /* 0x100 */ public float SmoothRadius;
+        /* 0x110 */ public float SmoothRadius;
         [NMS(Index = 31)]
-        /* 0x104 */ public float TileBlendMeters;
+        /* 0x114 */ public float TileBlendMeters;
         [NMS(Index = 23)]
-        /* 0x108 */ public float VaryPitch;
+        /* 0x118 */ public float VaryPitch;
         [NMS(Index = 24)]
-        /* 0x10C */ public float VaryRoll;
+        /* 0x11C */ public float VaryRoll;
         [NMS(Index = 22)]
-        /* 0x110 */ public float VaryYaw;
+        /* 0x120 */ public float VaryYaw;
         [NMS(Index = 5)]
-        /* 0x114 */ public TkNoiseVoxelTypeEnum VoxelType;
+        /* 0x124 */ public TkNoiseVoxelTypeEnum VoxelType;
         [NMS(Index = 19)]
-        /* 0x118 */ public float Yaw;
-        [NMS(Index = 7)]
-        /* 0x11C */ public NMSString0x80 Filename;
+        /* 0x128 */ public float Yaw;
         [NMS(Index = 0)]
-        /* 0x19C */ public bool Active;
+        /* 0x12C */ public bool Active;
         [NMS(Index = 4)]
-        /* 0x19D */ public bool Hemisphere;
+        /* 0x12D */ public bool Hemisphere;
         [NMS(Index = 2)]
-        /* 0x19E */ public bool Subtract;
+        /* 0x12E */ public bool Subtract;
         [NMS(Index = 3)]
-        /* 0x19F */ public bool SwapZY;
+        /* 0x12F */ public bool SwapZY;
     }
 }

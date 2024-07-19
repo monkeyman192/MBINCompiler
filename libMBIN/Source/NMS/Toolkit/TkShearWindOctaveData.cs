@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xCB1CF53634FF267E, NameHash = 0x23B0CB2EF86A7A9A)]
+    [NMS(GUID = 0xCB1CF53634FF267E, NameHash = 0xAF905FAD)]
     public class TkShearWindOctaveData : NMSTemplate
     {
         [NMS(Index = 1)]

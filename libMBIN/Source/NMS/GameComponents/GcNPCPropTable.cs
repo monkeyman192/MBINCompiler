@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBC0DB13DD020EEEF, NameHash = 0x22BD6A8E5AD4C4CB)]
+    [NMS(GUID = 0xD4F4D1E7D19DB999, NameHash = 0x9E0F95A6)]
     public class GcNPCPropTable : NMSTemplate
     {
         [NMS(Index = 0, Size = 0xF, EnumType = typeof(GcNPCPropType.NPCPropEnum))]

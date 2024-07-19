@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x19C25C9B8F6C3B60, NameHash = 0xCA155452FD6149EC)]
+    [NMS(GUID = 0x33691F8D2E7172E7, NameHash = 0xA73B9709)]
     public class GcHUDLayerData : NMSTemplate
     {
         [NMS(Index = 0)]

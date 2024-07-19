@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE4B5C37A3762BAC6, NameHash = 0x53D4BE4FC748998A)]
+    [NMS(GUID = 0xE4B5C37A3762BAC6, NameHash = 0x255D7BF6)]
     public class GcSaveContextQuery : NMSTemplate
     {
         // size: 0x5

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3C0990660797936C, NameHash = 0x22A3B9FA5D01C4DD)]
+    [NMS(GUID = 0x4ABBE63BADD3DE97, NameHash = 0x8C1F1A30)]
     public class GcSettlementBuildingCost : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x6, EnumType = typeof(GcSettlementConstructionLevel.SettlementConstructionLevelEnum))]

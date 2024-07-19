@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB3FE354115B89C21, NameHash = 0xB4862F5009F24854)]
+    [NMS(GUID = 0x37D97F79A81490CF, NameHash = 0x2CF3B42B)]
     public class GcSolarSystemEventWarpPlayer : NMSTemplate
     {
         [NMS(Index = 0)]

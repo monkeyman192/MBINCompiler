@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC229525A6A8F7B75, NameHash = 0xE14D5B0B53D91D7C)]
+    [NMS(GUID = 0x37C273AA477F1F0C, NameHash = 0x9CAD8AC4)]
     public class GcPetEggTraitModifierOverrideData : NMSTemplate
     {
         [NMS(Index = 0)]

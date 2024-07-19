@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5E1107E608728890, NameHash = 0x9C74A74AB0211EF6)]
+    [NMS(GUID = 0x5E1107E608728890, NameHash = 0xBFC05C7B)]
     public class GcDoShipFlybyClose : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xE65D5CBB36B34770, NameHash = 0x7446EB814E05B679)]
+    [NMS(GUID = 0xE65D5CBB36B34770, NameHash = 0xB85DD068)]
     public class TkPhysicsData : NMSTemplate
     {
         [NMS(Index = 3)]

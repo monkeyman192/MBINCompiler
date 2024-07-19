@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA2F2B3D5F3475DF, NameHash = 0xCE00C5120C432BB0)]
+    [NMS(GUID = 0xA2F2B3D5F3475DF, NameHash = 0xE0DB85FF)]
     public class GcDungeonQuestParams : NMSTemplate
     {
         [NMS(Index = 1)]

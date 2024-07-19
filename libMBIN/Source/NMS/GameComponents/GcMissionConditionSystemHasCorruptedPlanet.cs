@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8DB6B984B0F70C43, NameHash = 0x3B8CA92C7036925E)]
+    [NMS(GUID = 0x8DB6B984B0F70C43, NameHash = 0xFDF8A4BB)]
     public class GcMissionConditionSystemHasCorruptedPlanet : NMSTemplate
     {
         [NMS(Index = 0)]

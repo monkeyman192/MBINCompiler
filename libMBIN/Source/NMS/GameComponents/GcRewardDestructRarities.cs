@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x13704FCAD33389EA, NameHash = 0x72703AC399E3162F)]
+    [NMS(GUID = 0x76E227975EDB18FC, NameHash = 0x22E64538)]
     public class GcRewardDestructRarities : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]

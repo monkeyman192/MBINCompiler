@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF2E2C674D8D2E799, NameHash = 0x5D0FDAEE020A4D6C)]
+    [NMS(GUID = 0xF2E2C674D8D2E799, NameHash = 0xAEC62A33)]
     public class GcTradingSupplyData : NMSTemplate
     {
         [NMS(Index = 3)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC2993FCF8C2A56C5, NameHash = 0x89CF360B576FF51D)]
+    [NMS(GUID = 0x4E7BAD2A3814D5E3, NameHash = 0x5525EF02)]
     public class GcFrigateStatsByClass : NMSTemplate
     {
         [NMS(Index = 0, Size = 0xA, EnumType = typeof(GcFrigateClass.FrigateClassEnum))]

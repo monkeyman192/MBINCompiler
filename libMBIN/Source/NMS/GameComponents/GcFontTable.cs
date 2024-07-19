@@ -1,11 +1,15 @@
+using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
+using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA6374DF7111C29AC, NameHash = 0xD77829A90743F12E)]
+    [NMS(GUID = 0xE4ECCECC4F792113, NameHash = 0x961C864D)]
     public class GcFontTable : NMSTemplate
     {
-        [NMS(Index = 0, Size = 0x8, EnumType = typeof(GcFontTypesEnum.FontEnum))]
-        /* 0x0 */ public GcFontData[] Table;
+        [NMS(Index = 1)]
+        /* 0x00 */ public List<GcFontTableEntry> Fonts;
+        [NMS(Index = 0)]
+        /* 0x10 */ public TkLanguages Language;
     }
 }

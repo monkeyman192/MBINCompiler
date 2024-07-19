@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9807233585E1F685, NameHash = 0x87616D37E129954C)]
+    [NMS(GUID = 0x1047056D19E5575C, NameHash = 0xD585FDA4)]
     public class GcRewardSettlementProgress : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xBF3EED7CB7B23641, NameHash = 0xE0F2CCB358CDA3EE)]
+    [NMS(GUID = 0xBF3EED7CB7B23641, NameHash = 0x5F4C23C1)]
     public class TkTrailData : NMSTemplate
     {
         [NMS(Index = 3)]

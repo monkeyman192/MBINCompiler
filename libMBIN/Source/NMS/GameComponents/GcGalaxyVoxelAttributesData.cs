@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x790805BE2C0D0D00, NameHash = 0x967BB69D82846BE5)]
+    [NMS(GUID = 0x21A746D0F922B571, NameHash = 0xC64CB688)]
     public class GcGalaxyVoxelAttributesData : NMSTemplate
     {
         [NMS(Index = 10, Size = 0xC)]
@@ -17,13 +17,17 @@ namespace libMBIN.NMS.GameComponents
         /* 0x70 */ public int GuideStarMinimumCount;
         [NMS(Index = 6)]
         /* 0x74 */ public int GuideStarRenegadeCount;
+        [NMS(Index = 12)]
+        /* 0x78 */ public int PurpleSystemsCount;
+        [NMS(Index = 11)]
+        /* 0x7C */ public int PurpleSystemsStart;
         [NMS(Index = 2)]
-        /* 0x78 */ public float RegionColourValue;
+        /* 0x80 */ public float RegionColourValue;
         [NMS(Index = 4)]
-        /* 0x7C */ public float TransitPopulationPerpDistance;
+        /* 0x84 */ public float TransitPopulationPerpDistance;
         [NMS(Index = 1)]
-        /* 0x80 */ public float UnitDistanceFromGoalEdge;
+        /* 0x88 */ public float UnitDistanceFromGoalEdge;
         [NMS(Index = 0)]
-        /* 0x84 */ public bool InsideGoalGap;
+        /* 0x8C */ public bool InsideGoalGap;
     }
 }

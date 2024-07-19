@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x112E6E11E83935D1, NameHash = 0x71B8CFD20DB7A5E5)]
+    [NMS(GUID = 0x112E6E11E83935D1, NameHash = 0xFCCFB623)]
     public class GcInventoryTechProbability : NMSTemplate
     {
         [NMS(Index = 0)]

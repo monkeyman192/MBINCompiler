@@ -2,10 +2,10 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x99A0028545F8D9E1, NameHash = 0x56E0EB96EB3713F0)]
+    [NMS(GUID = 0x8E1BC1ABE633E3AE, NameHash = 0x2D59643E)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
-        [NMS(Index = 19)]
+        [NMS(Index = 22)]
         /* 0x00 */ public TkDynamicResScalingSettings DynamicResScalingSettings;
         // size: 0x7
         public enum AmbientOcclusionEnum : uint {
@@ -17,10 +17,10 @@ namespace libMBIN.NMS.Toolkit
             HBAO_Low,
             HBAO_High,
         }
-        [NMS(Index = 16)]
-        /* 0x08 */ public AmbientOcclusionEnum AmbientOcclusion;
+        [NMS(Index = 19)]
+        /* 0x0C */ public AmbientOcclusionEnum AmbientOcclusion;
         [NMS(Index = 1)]
-        /* 0x0C */ public TkGraphicsDetailTypes AnimationQuality;
+        /* 0x10 */ public TkGraphicsDetailTypes AnimationQuality;
         // size: 0x5
         public enum AnisotropyLevelEnum : uint {
             _1,
@@ -29,8 +29,8 @@ namespace libMBIN.NMS.Toolkit
             _8,
             _16,
         }
-        [NMS(Index = 17)]
-        /* 0x10 */ public AnisotropyLevelEnum AnisotropyLevel;
+        [NMS(Index = 20)]
+        /* 0x14 */ public AnisotropyLevelEnum AnisotropyLevel;
         // size: 0xC
         public enum AntiAliasingEnum : uint {
             None,
@@ -46,10 +46,17 @@ namespace libMBIN.NMS.Toolkit
             MetalFXSpatial,
             MetalFXTemporal,
         }
-        [NMS(Index = 18)]
-        /* 0x14 */ public AntiAliasingEnum AntiAliasing;
-        [NMS(Index = 8)]
-        /* 0x18 */ public TkGraphicsDetailTypes BaseQuality;
+        [NMS(Index = 21)]
+        /* 0x18 */ public AntiAliasingEnum AntiAliasing;
+        [NMS(Index = 9)]
+        /* 0x1C */ public TkGraphicsDetailTypes BaseQuality;
+        // size: 0x2
+        public enum DLSSFrameGenerationEnum : uint {
+            On,
+            Off,
+        }
+        [NMS(Index = 12)]
+        /* 0x20 */ public DLSSFrameGenerationEnum DLSSFrameGeneration;
         // size: 0x5
         public enum DLSSQualityEnum : uint {
             MaxPerformance,
@@ -58,17 +65,18 @@ namespace libMBIN.NMS.Toolkit
             UltraPerformance,
             UltraQuality,
         }
-        [NMS(Index = 10)]
-        /* 0x1C */ public DLSSQualityEnum DLSSQuality;
-        // size: 0x4
+        [NMS(Index = 11)]
+        /* 0x24 */ public DLSSQualityEnum DLSSQuality;
+        // size: 0x5
         public enum FFXSR2QualityEnum : uint {
             UltraPerformance,
             Performance,
             Balanced,
             Quality,
+            Native,
         }
-        [NMS(Index = 12)]
-        /* 0x20 */ public FFXSR2QualityEnum FFXSR2Quality;
+        [NMS(Index = 15)]
+        /* 0x28 */ public FFXSR2QualityEnum FFXSR2Quality;
         // size: 0x5
         public enum FFXSRQualityEnum : uint {
             Off,
@@ -77,16 +85,16 @@ namespace libMBIN.NMS.Toolkit
             Balanced,
             Performance,
         }
-        [NMS(Index = 11)]
-        /* 0x24 */ public FFXSRQualityEnum FFXSRQuality;
+        [NMS(Index = 14)]
+        /* 0x2C */ public FFXSRQualityEnum FFXSRQuality;
         // size: 0x3
         public enum MetalFXModeEnum : uint {
             Off,
             Spatial,
             Temporal,
         }
-        [NMS(Index = 14)]
-        /* 0x28 */ public MetalFXModeEnum MetalFXMode;
+        [NMS(Index = 17)]
+        /* 0x30 */ public MetalFXModeEnum MetalFXMode;
         // size: 0x4
         public enum MetalFXQualityEnum : uint {
             UltraQuality,
@@ -94,29 +102,38 @@ namespace libMBIN.NMS.Toolkit
             Balanced,
             Performance,
         }
-        [NMS(Index = 15)]
-        /* 0x2C */ public MetalFXQualityEnum MetalFXQuality;
+        [NMS(Index = 18)]
+        /* 0x34 */ public MetalFXQualityEnum MetalFXQuality;
+        // size: 0x2
+        public enum NVIDIAReflexLowLatencyEnum : uint {
+            On,
+            Off,
+        }
+        [NMS(Index = 13)]
+        /* 0x38 */ public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
         [NMS(Index = 7)]
-        /* 0x30 */ public TkGraphicsDetailTypes PlanetQuality;
+        /* 0x3C */ public TkGraphicsDetailTypes PlanetQuality;
         [NMS(Index = 3)]
-        /* 0x34 */ public TkGraphicsDetailTypes PostProcessingEffects;
+        /* 0x40 */ public TkGraphicsDetailTypes PostProcessingEffects;
         [NMS(Index = 4)]
-        /* 0x38 */ public TkGraphicsDetailTypes ReflectionsQuality;
+        /* 0x44 */ public TkGraphicsDetailTypes ReflectionsQuality;
         [NMS(Index = 2)]
-        /* 0x3C */ public TkGraphicsDetailTypes ShadowQuality;
+        /* 0x48 */ public TkGraphicsDetailTypes ShadowQuality;
         [NMS(Index = 6)]
-        /* 0x40 */ public TkGraphicsDetailTypes TerrainTessellation;
+        /* 0x4C */ public TkGraphicsDetailTypes TerrainTessellation;
         [NMS(Index = 0)]
-        /* 0x44 */ public TkGraphicsDetailTypes TextureQuality;
+        /* 0x50 */ public TkGraphicsDetailTypes TextureQuality;
         // size: 0x2
         public enum UIQualityEnum : uint {
             Normal,
             _4K,
         }
-        [NMS(Index = 9)]
-        /* 0x48 */ public UIQualityEnum UIQuality;
+        [NMS(Index = 10)]
+        /* 0x54 */ public UIQualityEnum UIQuality;
         [NMS(Index = 5)]
-        /* 0x4C */ public TkGraphicsDetailTypes VolumetricsQuality;
+        /* 0x58 */ public TkGraphicsDetailTypes VolumetricsQuality;
+        [NMS(Index = 8)]
+        /* 0x5C */ public TkGraphicsDetailTypes WaterQuality;
         // size: 0x5
         public enum XESSQualityEnum : uint {
             UltraPerformance,
@@ -125,7 +142,7 @@ namespace libMBIN.NMS.Toolkit
             MaxQuality,
             UltraQuality,
         }
-        [NMS(Index = 13)]
-        /* 0x50 */ public XESSQualityEnum XESSQuality;
+        [NMS(Index = 16)]
+        /* 0x60 */ public XESSQualityEnum XESSQuality;
     }
 }

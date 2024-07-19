@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xAFDEF5840730C649, NameHash = 0xC02F1D19584B44D)]
+    [NMS(GUID = 0xB79A19B137E61039, NameHash = 0x80B003EE)]
     public class TkEngineSettingsMapping : NMSTemplate
     {
         [NMS(Index = 5, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
@@ -17,7 +17,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x40 */ public float[] ReflectionProbesMultiplier;
         [NMS(Index = 0, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
         /* 0x50 */ public float[] ShadowMultiplier;
-        [NMS(Index = 6, Size = 0x33, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
+        [NMS(Index = 6, Size = 0x37, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
         /* 0x60 */ public bool[] NeedsGameRestart;
     }
 }

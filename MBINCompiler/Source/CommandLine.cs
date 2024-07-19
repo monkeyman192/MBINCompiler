@@ -103,7 +103,7 @@ namespace MBINCompiler {
         }
 
         public static string GetFileInfo( MBINFile mbin ) {
-            return $"MBIN\tversion:\t{mbin.Header.GetMBINVersion()}\tguid:\t{mbin.Header.TemplateGUID:X}\ttemplate:\t{mbin.Header.TemplateName}";
+            return $"MBIN\tversion:\t{mbin.Header.GetMBINVersion()}\tguid:\t{mbin.Header.TemplateGUID:X}\ttemplate:\t{mbin.Header.GetXMLTemplateName()}";
         }
 
         /// <summary>

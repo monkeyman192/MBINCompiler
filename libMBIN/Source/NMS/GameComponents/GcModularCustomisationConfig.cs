@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCF2FDE5A8AF44596, NameHash = 0x39F4E912A931EB8F)]
+    [NMS(GUID = 0xD0DD6CB1BAE9E3B1, NameHash = 0xF24F11E8)]
     public class GcModularCustomisationConfig : NMSTemplate
     {
         [NMS(Index = 8)]
@@ -14,26 +14,28 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 6)]
         /* 0x160 */ public GcExactResource BaseResource;
         [NMS(Index = 3)]
-        /* 0x1F0 */ public NMSString0x20A SubtitleApplyingLocId;
+        /* 0x180 */ public NMSString0x20A SubtitleApplyingLocId;
         [NMS(Index = 2)]
-        /* 0x210 */ public NMSString0x20A SubtitleLocId;
+        /* 0x1A0 */ public NMSString0x20A SubtitleLocId;
         [NMS(Index = 5)]
-        /* 0x230 */ public NMSString0x20A SubtitleSlotsBlockedLocId;
+        /* 0x1C0 */ public NMSString0x20A SubtitleSlotsBlockedLocId;
         [NMS(Index = 4)]
-        /* 0x250 */ public NMSString0x20A SubtitleSlotsFullLocId;
+        /* 0x1E0 */ public NMSString0x20A SubtitleSlotsFullLocId;
         [NMS(Index = 1)]
-        /* 0x270 */ public NMSString0x20A TitleLocId;
-        [NMS(Index = 13)]
-        /* 0x290 */ public List<GcModularCustomisationColourData> ColourDataPriorityList;
-        [NMS(Index = 11)]
-        /* 0x2A0 */ public List<GcModularCustomisationSlotConfig> Slots;
+        /* 0x200 */ public NMSString0x20A TitleLocId;
+        [NMS(Index = 14)]
+        /* 0x220 */ public List<GcModularCustomisationColourData> ColourDataPriorityList;
         [NMS(Index = 12)]
-        /* 0x2B0 */ public List<GcModularCustomisationTextureGroup> TextureData;
+        /* 0x230 */ public List<GcModularCustomisationSlotConfig> Slots;
+        [NMS(Index = 13)]
+        /* 0x240 */ public List<GcModularCustomisationTextureGroup> TextureData;
         [NMS(Index = 9)]
-        /* 0x2C0 */ public GcCustomisationCameraData CameraData;
+        /* 0x250 */ public GcCustomisationCameraData CameraData;
         [NMS(Index = 10)]
-        /* 0x2F4 */ public float HologramOffset;
+        /* 0x284 */ public float HologramOffset;
+        [NMS(Index = 11)]
+        /* 0x288 */ public float HologramScale;
         [NMS(Index = 0)]
-        /* 0x2F8 */ public bool IsEnabled;
+        /* 0x28C */ public bool IsEnabled;
     }
 }

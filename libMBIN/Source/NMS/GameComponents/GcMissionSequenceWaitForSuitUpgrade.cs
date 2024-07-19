@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x331E23435A771735, NameHash = 0xA306759012D6F1FB)]
+    [NMS(GUID = 0x3CE2E6F65E9AA65A, NameHash = 0xED38FF6)]
     public class GcMissionSequenceWaitForSuitUpgrade : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x80 DebugText;
+        /* 0x0 */ public VariableSizeString DebugText;
     }
 }

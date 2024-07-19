@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xCCC9709BD9C5B5D0, NameHash = 0x2DD2249029019040)]
+    [NMS(GUID = 0x7C5191AF1B1D43DA, NameHash = 0x893DE78A)]
     public class TkNGuiEditorGraphicType : NMSTemplate
     {
-        // size: 0x4D
+        // size: 0x5D
         public enum NGuiEditorGraphicEnum : uint {
             Panel,
             Button,
@@ -11,8 +11,12 @@ namespace libMBIN.NMS.Toolkit
             Graphic,
             WindowTitleBar,
             WindowTitleBarInactive,
-            WindowTab,
-            WindowTabInactive,
+            WindowTabActiveActive,
+            WindowTabInactiveActive,
+            WindowTabActiveInactive,
+            WindowTabInactiveInactive,
+            WindowTabsSeparator,
+            WindowBacking,
             Window,
             WindowPane,
             WindowResize,
@@ -44,7 +48,13 @@ namespace libMBIN.NMS.Toolkit
             Category,
             Taskbar,
             TaskbarItem,
+            TaskbarShortcutButton,
             StartBarWindow,
+            StartBarWindowButton,
+            StartBarWindowPane,
+            StartBarWindowListItem,
+            MenuSearchBox,
+            SearchBox,
             ComboBox,
             ComboBoxWindow,
             IconListItem,
@@ -70,6 +80,7 @@ namespace libMBIN.NMS.Toolkit
             WindowTitleBarDragTarget,
             IconButtonSelected,
             Line,
+            LightLine,
             TreeNodeBackground,
             TreeNodeCategoryBackground,
             SceneNodeBackground,
@@ -77,6 +88,11 @@ namespace libMBIN.NMS.Toolkit
             UnpinChildren,
             DynamicPanel,
             DynamicPanelTitle,
+            Favourite,
+            FavouriteSelected,
+            FavouriteValue,
+            FavouriteValueSelected,
+            RevertButton,
             TreeNodeCustomPanel,
             IconButtonBordered,
             IconButtonBorderedSelected,

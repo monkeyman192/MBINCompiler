@@ -1,13 +1,21 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9706E064FA84CFA, NameHash = 0xF2F929BD28DDCD6B)]
+    [NMS(GUID = 0xE197A563A0767A77, NameHash = 0x933013B5)]
     public class GcMissionSequenceKill : NMSTemplate
     {
+        [NMS(Index = 10)]
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 0)]
+        /* 0x10 */ public VariableSizeString Message;
         [NMS(Index = 3)]
-        /* 0x000 */ public int AmountMax;
+        /* 0x20 */ public int AmountMax;
+        [NMS(Index = 5)]
+        /* 0x24 */ public int AmountMaxNoMP;
         [NMS(Index = 2)]
-        /* 0x004 */ public int AmountMin;
-        // size: 0xE
+        /* 0x28 */ public int AmountMin;
+        [NMS(Index = 4)]
+        /* 0x2C */ public int AmountMinNoMP;
+        // size: 0x12
         public enum KillTargetEnum : uint {
             Robots,
             Drones,
@@ -18,21 +26,25 @@ namespace libMBIN.NMS.GameComponents
             Pirates,
             Traders,
             Fiends,
+            Queens,
             HazardousFlora,
             Worms,
             CorruptSentinels,
+            SpiderSentinels,
+            SmallSpiderSentinels,
+            HostilesWhileInMech,
             CorruptPillars,
             Mechs,
         }
         [NMS(Index = 1)]
-        /* 0x008 */ public KillTargetEnum KillTarget;
+        /* 0x30 */ public KillTargetEnum KillTarget;
+        [NMS(Index = 7)]
+        /* 0x34 */ public int OverrideMissionStageIDForMPProgress;
+        [NMS(Index = 9)]
+        /* 0x38 */ public bool AddToMissionBoardObjective;
+        [NMS(Index = 8)]
+        /* 0x39 */ public bool UseDefaultAmount;
         [NMS(Index = 6)]
-        /* 0x00C */ public NMSString0x80 DebugText;
-        [NMS(Index = 0)]
-        /* 0x08C */ public NMSString0x80 Message;
-        [NMS(Index = 5)]
-        /* 0x10C */ public bool AddToMissionBoardObjective;
-        [NMS(Index = 4)]
-        /* 0x10D */ public bool UseDefaultAmount;
+        /* 0x3A */ public bool WriteProgressToMissionStat;
     }
 }

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAF9974D3994342BA, NameHash = 0xBBBD45634207B79F)]
+    [NMS(GUID = 0xAF9974D3994342BA, NameHash = 0x16C75ED9)]
     public class GcBaseMiniPortalComponentData : NMSTemplate
     {
         [NMS(Index = 9)]

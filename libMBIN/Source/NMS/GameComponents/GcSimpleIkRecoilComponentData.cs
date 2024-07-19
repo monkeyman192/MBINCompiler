@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x15852B0533034E71, NameHash = 0xF516885AE98E72E8)]
+    [NMS(GUID = 0x15852B0533034E71, NameHash = 0xDD1730E4)]
     public class GcSimpleIkRecoilComponentData : NMSTemplate
     {
         [NMS(Index = 8)]

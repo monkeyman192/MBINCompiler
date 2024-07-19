@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x627986B89D2B833D, NameHash = 0xB88B7FCF1DD9F40B)]
+    [NMS(GUID = 0x627986B89D2B833D, NameHash = 0xAA9036F)]
     public class GcCustomisationTextureGroup : NMSTemplate
     {
         [NMS(Index = 1)]

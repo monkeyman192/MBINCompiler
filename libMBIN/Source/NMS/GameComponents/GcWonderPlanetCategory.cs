@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x974FA15CCF1DC507, NameHash = 0x1496B0F5A0E7C1DE)]
+    [NMS(GUID = 0x974FA15CCF1DC507, NameHash = 0x595F5E29)]
     public class GcWonderPlanetCategory : NMSTemplate
     {
         // size: 0xB

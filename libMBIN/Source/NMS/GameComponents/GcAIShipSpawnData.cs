@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x72BBA6E39CCA16C2, NameHash = 0x35C91009067A6431)]
+    [NMS(GUID = 0xAC1E79EB9FFB3722, NameHash = 0x466A95A0)]
     public class GcAIShipSpawnData : NMSTemplate
     {
         [NMS(Index = 14)]
@@ -12,35 +12,35 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 10)]
         /* 0x010 */ public GcAIShipSpawnMarkerData MarkerData;
         [NMS(Index = 1)]
-        /* 0x0C8 */ public NMSString0x20A CombatMessage;
+        /* 0x060 */ public NMSString0x20A CombatMessage;
         [NMS(Index = 0)]
-        /* 0x0E8 */ public NMSString0x20A Message;
+        /* 0x080 */ public NMSString0x20A Message;
         [NMS(Index = 2)]
-        /* 0x108 */ public NMSString0x20A OSDMessage;
+        /* 0x0A0 */ public NMSString0x20A OSDMessage;
         [NMS(Index = 9)]
-        /* 0x128 */ public NMSString0x20A RewardMessage;
+        /* 0x0C0 */ public NMSString0x20A RewardMessage;
         [NMS(Index = 12)]
-        /* 0x148 */ public NMSString0x10 AttackDefinition;
+        /* 0x0E0 */ public NMSString0x10 AttackDefinition;
         [NMS(Index = 19)]
-        /* 0x158 */ public List<GcAIShipSpawnData> ChildSpawns;
+        /* 0x0F0 */ public List<GcAIShipSpawnData> ChildSpawns;
         [NMS(Index = 18)]
-        /* 0x168 */ public GcShipAIPerformanceArray Performances;
+        /* 0x100 */ public GcShipAIPerformanceArray Performances;
         [NMS(Index = 8)]
-        /* 0x178 */ public NMSString0x10 Reward;
+        /* 0x110 */ public NMSString0x10 Reward;
         [NMS(Index = 15)]
-        /* 0x188 */ public Vector2f Count;
+        /* 0x120 */ public Vector2f Count;
         [NMS(Index = 7)]
-        /* 0x190 */ public Vector2f Scale;
+        /* 0x128 */ public Vector2f Scale;
         [NMS(Index = 13)]
-        /* 0x198 */ public Vector2f Spread;
+        /* 0x130 */ public Vector2f Spread;
         [NMS(Index = 16)]
-        /* 0x1A0 */ public Vector2f StartTime;
+        /* 0x138 */ public Vector2f StartTime;
         [NMS(Index = 6)]
-        /* 0x1A8 */ public float MinRange;
+        /* 0x140 */ public float MinRange;
         [NMS(Index = 5)]
-        /* 0x1AC */ public GcAISpaceshipRoles Role;
+        /* 0x144 */ public GcAISpaceshipRoles Role;
         [NMS(Index = 3)]
-        /* 0x1B0 */ public TkInputEnum Shortcut;
+        /* 0x148 */ public TkInputEnum Shortcut;
         // size: 0x3
         public enum SpawnShapeEnum : uint {
             Sphere,
@@ -48,10 +48,10 @@ namespace libMBIN.NMS.GameComponents
             OffsetSphere,
         }
         [NMS(Index = 17)]
-        /* 0x1B4 */ public SpawnShapeEnum SpawnShape;
+        /* 0x14C */ public SpawnShapeEnum SpawnShape;
         [NMS(Index = 11)]
-        /* 0x1B8 */ public bool AttackFreighter;
+        /* 0x150 */ public bool AttackFreighter;
         [NMS(Index = 4)]
-        /* 0x1B9 */ public bool WarpIn;
+        /* 0x151 */ public bool WarpIn;
     }
 }

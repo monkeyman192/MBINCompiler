@@ -3,24 +3,24 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB329804A9D9C7163, NameHash = 0xA29EE4D703004484)]
+    [NMS(GUID = 0x74085E9D16C4A24F, NameHash = 0x5F135E)]
     public class GcMissionSequenceDetailMessage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public NMSString0x20A Description;
+        /* 0x00 */ public NMSString0x20A Description;
         [NMS(Index = 2)]
-        /* 0x020 */ public NMSString0x20A Image;
+        /* 0x20 */ public NMSString0x20A Image;
         [NMS(Index = 0)]
-        /* 0x040 */ public NMSString0x20A Title;
-        [NMS(Index = 5)]
-        /* 0x060 */ public List<GcMissionSequenceDetailMessagePoint> Points;
-        [NMS(Index = 3)]
-        /* 0x070 */ public NMSString0x10 TakeImageFromItemIcon;
-        [NMS(Index = 4)]
-        /* 0x080 */ public GcAudioWwiseEvents AudioEvent;
+        /* 0x40 */ public NMSString0x20A Title;
         [NMS(Index = 7)]
-        /* 0x084 */ public NMSString0x80 DebugText;
+        /* 0x60 */ public VariableSizeString DebugText;
+        [NMS(Index = 5)]
+        /* 0x70 */ public List<GcMissionSequenceDetailMessagePoint> Points;
+        [NMS(Index = 3)]
+        /* 0x80 */ public NMSString0x10 TakeImageFromItemIcon;
+        [NMS(Index = 4)]
+        /* 0x90 */ public GcAudioWwiseEvents AudioEvent;
         [NMS(Index = 6)]
-        /* 0x104 */ public bool TakeDataFromSeason;
+        /* 0x94 */ public bool TakeDataFromSeason;
     }
 }

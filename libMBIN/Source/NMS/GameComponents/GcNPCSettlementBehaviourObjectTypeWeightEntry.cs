@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x414C922F72D16827, NameHash = 0xDDDC2F57D70378EB)]
+    [NMS(GUID = 0xDB3B1DF0747B4ED0, NameHash = 0xC70D273E)]
     public class GcNPCSettlementBehaviourObjectTypeWeightEntry : NMSTemplate
     {
         [NMS(Index = 0)]

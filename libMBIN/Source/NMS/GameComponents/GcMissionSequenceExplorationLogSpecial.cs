@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5F392FF67ACDC040, NameHash = 0xA0B42A638C92AB06)]
+    [NMS(GUID = 0x3C64751D74E6AA57, NameHash = 0x5F62735)]
     public class GcMissionSequenceExplorationLogSpecial : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x80 DebugText;
+        /* 0x0 */ public VariableSizeString DebugText;
     }
 }

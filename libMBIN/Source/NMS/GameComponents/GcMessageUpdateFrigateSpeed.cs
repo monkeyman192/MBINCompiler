@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEE3A7C989C10A3D6, NameHash = 0xE81087792E50B0E9)]
+    [NMS(GUID = 0xEE3A7C989C10A3D6, NameHash = 0x9A610511)]
     public class GcMessageUpdateFrigateSpeed : NMSTemplate
     {
         [NMS(Index = 0)]

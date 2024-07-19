@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3EE2C961C4F1E96, NameHash = 0x8C8D94961F3707E0)]
+    [NMS(GUID = 0x3EE2C961C4F1E96, NameHash = 0x3E434CE8)]
     public class GcWeightedColourId : NMSTemplate
     {
         [NMS(Index = 2)]

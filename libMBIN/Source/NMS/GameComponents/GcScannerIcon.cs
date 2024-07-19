@@ -3,14 +3,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA60B3FDF8DBAAB93, NameHash = 0x85905E340468CC13)]
+    [NMS(GUID = 0xCFAE228F94A85895, NameHash = 0xE9C038DD)]
     public class GcScannerIcon : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x000 */ public TkTextureResource Main;
+        /* 0x00 */ public TkTextureResource Main;
         [NMS(Index = 1)]
-        /* 0x084 */ public TkTextureResource Small;
+        /* 0x18 */ public TkTextureResource Small;
         [NMS(Index = 2)]
-        /* 0x108 */ public GcScannerIconHighlightTypes Highlight;
+        /* 0x30 */ public GcScannerIconHighlightTypes Highlight;
     }
 }

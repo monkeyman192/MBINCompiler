@@ -3,14 +3,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7A237BE9BB69EF74, NameHash = 0x92F24A976CBF224B)]
+    [NMS(GUID = 0xEB7C9FA949B4CE23, NameHash = 0x80402E)]
     public class GcBaseBuildingPartStyleModel : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public TkModelResource Inactive;
+        /* 0x00 */ public TkModelResource Inactive;
         [NMS(Index = 1)]
-        /* 0x084 */ public TkModelResource Model;
+        /* 0x18 */ public TkModelResource Model;
         [NMS(Index = 0)]
-        /* 0x108 */ public GcBaseBuildingPartStyle Style;
+        /* 0x30 */ public GcBaseBuildingPartStyle Style;
     }
 }

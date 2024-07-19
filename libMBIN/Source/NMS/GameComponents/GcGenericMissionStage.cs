@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8EC57A2EE43AF2DF, NameHash = 0xE8F2F4C4A2F01AD1)]
+    [NMS(GUID = 0x616B8FA52AC3D04D, NameHash = 0xF14D3F32)]
     public class GcGenericMissionStage : NMSTemplate
     {
         [NMS(Index = 1)]
         /* 0x00 */ public NMSTemplate Stage;
         [NMS(Index = 0)]
-        /* 0x50 */ public List<GcGenericMissionVersionProgress> Versions;
+        /* 0x10 */ public List<GcGenericMissionVersionProgress> Versions;
     }
 }

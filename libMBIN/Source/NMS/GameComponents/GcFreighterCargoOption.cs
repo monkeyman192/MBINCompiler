@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2CB6B6081F8B9F08, NameHash = 0xAEE2DF0976A04EB1)]
+    [NMS(GUID = 0x2CB6B6081F8B9F08, NameHash = 0xAC8B5DD9)]
     public class GcFreighterCargoOption : NMSTemplate
     {
         [NMS(Index = 0)]

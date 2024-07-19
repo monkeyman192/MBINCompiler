@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x36FA8C6B3EBEF3F9, NameHash = 0xA93B3968B18A5750)]
+    [NMS(GUID = 0x36FA8C6B3EBEF3F9, NameHash = 0xAF730E13)]
     public class GcSettlementJudgementPerkOption : NMSTemplate
     {
         [NMS(Index = 0)]

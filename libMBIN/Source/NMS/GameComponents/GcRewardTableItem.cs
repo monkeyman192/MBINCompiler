@@ -1,13 +1,13 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2743CC46E8602167, NameHash = 0x743B54DBF617C58D)]
+    [NMS(GUID = 0x19C082A7BAFCE501, NameHash = 0xCEEDBB60)]
     public class GcRewardTableItem : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x00 */ public NMSTemplate Reward;
-        [NMS(Index = 0)]
-        /* 0x50 */ public float PercentageChance;
         [NMS(Index = 1)]
-        /* 0x54 */ public NMSString0x40 LabelID;
+        /* 0x00 */ public VariableSizeString LabelID;
+        [NMS(Index = 2)]
+        /* 0x10 */ public NMSTemplate Reward;
+        [NMS(Index = 0)]
+        /* 0x20 */ public float PercentageChance;
     }
 }

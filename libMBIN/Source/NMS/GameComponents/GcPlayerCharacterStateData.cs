@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCD5CA3EE3276456D, NameHash = 0xCCEE5C02303ACEC6)]
+    [NMS(GUID = 0x3E8DA2199A23CF63, NameHash = 0xAED0F936)]
     public class GcPlayerCharacterStateData : NMSTemplate
     {
         [NMS(Index = 4)]

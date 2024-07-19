@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5DF71A27931F29D4, NameHash = 0x1611798444BC0C13)]
+    [NMS(GUID = 0xF8F1D1ADFF493912, NameHash = 0x6D4B45E2)]
     public class GcPlayerMissionProgress : NMSTemplate
     {
         [NMS(Index = 5, Size = 0xD, EnumType = typeof(GcPlayerMissionParticipantType.ParticipantTypeEnum))]

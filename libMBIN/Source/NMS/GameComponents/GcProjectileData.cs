@@ -4,31 +4,31 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8738CF6283E3A1C6, NameHash = 0x98B648B5C054B7F7)]
+    [NMS(GUID = 0x74CC20C6767D08AB, NameHash = 0x1119BAC1)]
     public class GcProjectileData : NMSTemplate
     {
         [NMS(Index = 34)]
         /* 0x000 */ public Colour Colour;
-        [NMS(Index = 42)]
+        [NMS(Index = 43)]
         /* 0x010 */ public Vector3f ImpactOffset;
         [NMS(Index = 36)]
         /* 0x020 */ public Colour LightColour;
         [NMS(Index = 1)]
         /* 0x030 */ public GcResourceElement Model;
-        [NMS(Index = 43)]
-        /* 0x2D8 */ public List<GcImpactCombatEffectData> CombatEffectsOnImpact;
+        [NMS(Index = 44)]
+        /* 0x078 */ public List<GcImpactCombatEffectData> CombatEffectsOnImpact;
         [NMS(Index = 40)]
-        /* 0x2E8 */ public NMSString0x10 CriticalImpact;
+        /* 0x088 */ public NMSString0x10 CriticalImpact;
         [NMS(Index = 39)]
-        /* 0x2F8 */ public NMSString0x10 DefaultImpact;
+        /* 0x098 */ public NMSString0x10 DefaultImpact;
         [NMS(Index = 0)]
-        /* 0x308 */ public NMSString0x10 Id;
-        [NMS(Index = 41)]
-        /* 0x318 */ public List<GcProjectileImpactData> Impacts;
+        /* 0x0A8 */ public NMSString0x10 Id;
+        [NMS(Index = 42)]
+        /* 0x0B8 */ public List<GcProjectileImpactData> Impacts;
         [NMS(Index = 25)]
-        /* 0x328 */ public NMSString0x10 PlayerDamage;
+        /* 0x0C8 */ public NMSString0x10 PlayerDamage;
         [NMS(Index = 29)]
-        /* 0x338 */ public GcProjectileLineData CustomBulletData;
+        /* 0x0D8 */ public GcProjectileLineData CustomBulletData;
         // size: 0x8
         [Flags]
         public enum BehaviourFlagsEnum : uint {
@@ -42,17 +42,17 @@ namespace libMBIN.NMS.GameComponents
             ExplosionForce = 0x40,
         }
         [NMS(Index = 37)]
-        /* 0x360 */ public BehaviourFlagsEnum BehaviourFlags;
+        /* 0x100 */ public BehaviourFlagsEnum BehaviourFlags;
         [NMS(Index = 22)]
-        /* 0x364 */ public float BounceDamping;
+        /* 0x104 */ public float BounceDamping;
         [NMS(Index = 23)]
-        /* 0x368 */ public float BounceFinalStopTime;
+        /* 0x108 */ public float BounceFinalStopTime;
         [NMS(Index = 21)]
-        /* 0x36C */ public float BounceMaxSpeed;
+        /* 0x10C */ public float BounceMaxSpeed;
         [NMS(Index = 9)]
-        /* 0x370 */ public float CapsuleHeight;
+        /* 0x110 */ public float CapsuleHeight;
         [NMS(Index = 3)]
-        /* 0x374 */ public GcAudioWwiseEvents ChargedFireAudioEvent;
+        /* 0x114 */ public GcAudioWwiseEvents ChargedFireAudioEvent;
         // size: 0x4
         public enum ClassEnum : uint {
             Player,
@@ -61,58 +61,60 @@ namespace libMBIN.NMS.GameComponents
             Robot,
         }
         [NMS(Index = 38)]
-        /* 0x378 */ public ClassEnum Class;
+        /* 0x118 */ public ClassEnum Class;
         [NMS(Index = 26)]
-        /* 0x37C */ public float CriticalHitModifier;
+        /* 0x11C */ public float CriticalHitModifier;
         [NMS(Index = 31)]
-        /* 0x380 */ public float DamageImpactMergeTime;
+        /* 0x120 */ public float DamageImpactMergeTime;
         [NMS(Index = 33)]
-        /* 0x384 */ public float DamageImpactMinDistance;
+        /* 0x124 */ public float DamageImpactMinDistance;
         [NMS(Index = 32)]
-        /* 0x388 */ public float DamageImpactTimeBetweenNumbers;
+        /* 0x128 */ public float DamageImpactTimeBetweenNumbers;
         [NMS(Index = 19)]
-        /* 0x38C */ public GcDamageType DamageType;
+        /* 0x12C */ public GcDamageType DamageType;
         [NMS(Index = 20)]
-        /* 0x390 */ public int DefaultBounces;
+        /* 0x130 */ public int DefaultBounces;
         [NMS(Index = 17)]
-        /* 0x394 */ public int DefaultDamage;
+        /* 0x134 */ public int DefaultDamage;
         [NMS(Index = 10)]
-        /* 0x398 */ public float DefaultSpeed;
+        /* 0x138 */ public float DefaultSpeed;
         [NMS(Index = 16)]
-        /* 0x39C */ public float DroneImpulse;
+        /* 0x13C */ public float DroneImpulse;
         [NMS(Index = 18)]
-        /* 0x3A0 */ public float ExtraPlayerDamage;
+        /* 0x140 */ public float ExtraPlayerDamage;
         [NMS(Index = 2)]
-        /* 0x3A4 */ public GcAudioWwiseEvents FireAudioEvent;
+        /* 0x144 */ public GcAudioWwiseEvents FireAudioEvent;
         [NMS(Index = 11)]
-        /* 0x3A8 */ public float Gravity;
+        /* 0x148 */ public float Gravity;
         [NMS(Index = 12)]
-        /* 0x3AC */ public float Life;
+        /* 0x14C */ public float Life;
         [NMS(Index = 13)]
-        /* 0x3B0 */ public float Offset;
+        /* 0x150 */ public float Offset;
         [NMS(Index = 4)]
-        /* 0x3B4 */ public GcAudioWwiseEvents OverheatAudioEvent;
+        /* 0x154 */ public GcAudioWwiseEvents OverheatAudioEvent;
         [NMS(Index = 15)]
-        /* 0x3B8 */ public float PhysicsPush;
+        /* 0x158 */ public float PhysicsPush;
         [NMS(Index = 27)]
-        /* 0x3BC */ public float PiercingDamagePercentage;
+        /* 0x15C */ public float PiercingDamagePercentage;
         [NMS(Index = 8)]
-        /* 0x3C0 */ public float Radius;
+        /* 0x160 */ public float Radius;
         [NMS(Index = 14)]
-        /* 0x3C4 */ public float RagdollPush;
+        /* 0x164 */ public float RagdollPush;
         [NMS(Index = 5)]
-        /* 0x3C8 */ public float Scale;
+        /* 0x168 */ public float Scale;
         [NMS(Index = 7)]
-        /* 0x3CC */ public bool ApplyCombatLevelMultipliers;
+        /* 0x16C */ public bool ApplyCombatLevelMultipliers;
         [NMS(Index = 24)]
-        /* 0x3CD */ public bool HitOnBounce;
+        /* 0x16D */ public bool HitOnBounce;
         [NMS(Index = 6)]
-        /* 0x3CE */ public bool IsAutonomous;
+        /* 0x16E */ public bool IsAutonomous;
         [NMS(Index = 35)]
-        /* 0x3CF */ public bool OverrideLightColour;
+        /* 0x16F */ public bool OverrideLightColour;
+        [NMS(Index = 41)]
+        /* 0x170 */ public bool ShootableCanOverrideImpact;
         [NMS(Index = 28)]
-        /* 0x3D0 */ public bool UseCustomBulletData;
+        /* 0x171 */ public bool UseCustomBulletData;
         [NMS(Index = 30)]
-        /* 0x3D1 */ public bool UseDamageNumberData;
+        /* 0x172 */ public bool UseDamageNumberData;
     }
 }

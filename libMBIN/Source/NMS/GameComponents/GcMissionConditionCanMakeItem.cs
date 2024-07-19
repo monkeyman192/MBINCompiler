@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x998B3898D487FCAB, NameHash = 0xEBB70B97E46B3143)]
+    [NMS(GUID = 0x998B3898D487FCAB, NameHash = 0x7859819E)]
     public class GcMissionConditionCanMakeItem : NMSTemplate
     {
         [NMS(Index = 0)]

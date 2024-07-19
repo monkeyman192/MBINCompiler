@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE1147F59FA53EB7A, NameHash = 0xF393EBFBA97D4EF8)]
+    [NMS(GUID = 0xE1147F59FA53EB7A, NameHash = 0x6C8FDCC3)]
     public class GcMissionConditionTradeSurge : NMSTemplate
     {
         [NMS(Index = 0)]

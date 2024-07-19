@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC2DD8AF8F537AC4A, NameHash = 0x902E6B8A4F1B75A6)]
+    [NMS(GUID = 0x22A8BC986FF384B8, NameHash = 0x3849DC69)]
     public class GcExperienceDebugTriggerActionTypes : NMSTemplate
     {
-        // size: 0x33
+        // size: 0x37
         public enum ExperienceDebugTriggerActionEnum : uint {
             None,
             Drones,
@@ -56,6 +56,10 @@ namespace libMBIN.NMS.GameComponents
             SpawnSpiderQuadMini,
             SpawnDockedShips,
             LaunchDockedShips,
+            StartStorm,
+            EndStorm,
+            SpawnBugQueen,
+            RemoveAllFiendsAndBugs,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public ExperienceDebugTriggerActionEnum ExperienceDebugTriggerAction;

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCA2ADD134575FCE6, NameHash = 0x36CE03A85A61CBFB)]
+    [NMS(GUID = 0x263F51C09116CD78, NameHash = 0x2AD9336C)]
     public class GcMissionConditionEventRequiresRGB : NMSTemplate
     {
         [NMS(Index = 0)]

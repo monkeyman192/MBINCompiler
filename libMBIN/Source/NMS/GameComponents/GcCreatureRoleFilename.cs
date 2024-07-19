@@ -2,12 +2,12 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDED6121EF7581E5, NameHash = 0x6474461C1BF89153)]
+    [NMS(GUID = 0xF6F70602F611DE61, NameHash = 0xDCEA4C2E)]
     public class GcCreatureRoleFilename : NMSTemplate
     {
-        [NMS(Index = 1, Size = 0x4, EnumType = typeof(GcPlanetLife.LifeSettingEnum))]
-        /* 0x00 */ public float[] BiomeProbability;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x80 File;
+        /* 0x00 */ public VariableSizeString File;
+        [NMS(Index = 1, Size = 0x4, EnumType = typeof(GcPlanetLife.LifeSettingEnum))]
+        /* 0x10 */ public float[] BiomeProbability;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xDAE953CE28EEDA67, NameHash = 0x6A1494CD3EC019B6)]
+    [NMS(GUID = 0x6BCEA155104F952F, NameHash = 0x330ED410)]
     public class TkAxisImageLookup : NMSTemplate
     {
         [NMS(Index = 0)]

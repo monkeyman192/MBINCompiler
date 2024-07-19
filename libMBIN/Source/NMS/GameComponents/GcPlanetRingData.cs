@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF16071680EFAC781, NameHash = 0x458BD6BED0D5C445)]
+    [NMS(GUID = 0xF16071680EFAC781, NameHash = 0xD0B1BEF2)]
     public class GcPlanetRingData : NMSTemplate
     {
         [NMS(Index = 2)]

@@ -1,15 +1,15 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAD00D81D1610C5F0, NameHash = 0x7E1936B219E215F)]
+    [NMS(GUID = 0xC928B2C44A22F306, NameHash = 0x2853A26D)]
     public class GcMissionSequenceKillEncounter : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public NMSString0x20A EncounterComponentScanEvent;
+        /* 0x00 */ public NMSString0x20A EncounterComponentScanEvent;
         [NMS(Index = 3)]
-        /* 0x020 */ public NMSString0x80 DebugText;
+        /* 0x20 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x0A0 */ public NMSString0x80 Message;
+        /* 0x30 */ public VariableSizeString Message;
         [NMS(Index = 2)]
-        /* 0x120 */ public bool AllowedToEscape;
+        /* 0x40 */ public bool AllowedToEscape;
     }
 }

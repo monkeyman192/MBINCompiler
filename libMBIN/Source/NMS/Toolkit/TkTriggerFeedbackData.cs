@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x21EB5390CAA7E5A5, NameHash = 0x5DE2B54C774CA122)]
+    [NMS(GUID = 0x21EB5390CAA7E5A5, NameHash = 0xE68DA537)]
     public class TkTriggerFeedbackData : NMSTemplate
     {
         // size: 0x4

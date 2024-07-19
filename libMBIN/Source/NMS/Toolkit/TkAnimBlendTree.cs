@@ -2,16 +2,16 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF5303C3FEA0AD736, NameHash = 0x1C442B06A4F945F4)]
+    [NMS(GUID = 0x8DD06E409D473368, NameHash = 0x99CC6BC3)]
     public class TkAnimBlendTree : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x00 */ public NMSTemplate Tree;
         [NMS(Index = 0)]
-        /* 0x50 */ public NMSString0x10 Id;
+        /* 0x00 */ public NMSString0x10 Id;
+        [NMS(Index = 1)]
+        /* 0x10 */ public NMSTemplate Tree;
         [NMS(Index = 3)]
-        /* 0x60 */ public TkAnimationGameData GameData;
+        /* 0x20 */ public TkAnimationGameData GameData;
         [NMS(Index = 2)]
-        /* 0x68 */ public int Priority;
+        /* 0x2C */ public int Priority;
     }
 }

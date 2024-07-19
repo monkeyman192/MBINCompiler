@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7D4B3788A2454427, NameHash = 0x69AE13F58EC1B23A)]
+    [NMS(GUID = 0xC0F17792BB32DDF8, NameHash = 0x4F15030A)]
     public class GcPlayerSpaceshipWarpData : NMSTemplate
     {
         [NMS(Index = 0)]

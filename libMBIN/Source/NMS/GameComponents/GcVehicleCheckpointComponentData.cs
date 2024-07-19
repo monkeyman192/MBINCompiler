@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x998ECAC2D8278FE3, NameHash = 0xF8F75E88F695BE94)]
+    [NMS(GUID = 0x998ECAC2D8278FE3, NameHash = 0xC1275665)]
     public class GcVehicleCheckpointComponentData : NMSTemplate
     {
         // size: 0x2

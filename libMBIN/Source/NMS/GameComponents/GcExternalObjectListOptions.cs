@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8DA173C5D1620674, NameHash = 0x51E8334202D1B952)]
+    [NMS(GUID = 0x8921B5E737EBBD8B, NameHash = 0x8CB0F581)]
     public class GcExternalObjectListOptions : NMSTemplate
     {
         [NMS(Index = 0)]
         /* 0x00 */ public NMSString0x10 Name;
         [NMS(Index = 8)]
-        /* 0x10 */ public List<NMSString0x80> Options;
+        /* 0x10 */ public List<VariableSizeString> Options;
         [NMS(Index = 1)]
         /* 0x20 */ public NMSString0x10 ResourceHint;
         [NMS(Index = 2)]

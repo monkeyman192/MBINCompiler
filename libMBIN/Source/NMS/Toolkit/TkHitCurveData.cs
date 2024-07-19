@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xD76C0D77B495988D, NameHash = 0xA954F03559C40EB5)]
+    [NMS(GUID = 0x98B02FBC9BCBA130, NameHash = 0x52090B8B)]
     public class TkHitCurveData : NMSTemplate
     {
         [NMS(Index = 1)]

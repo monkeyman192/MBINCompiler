@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x932C48023A84AC1B, NameHash = 0x4D8A5C89BC8B3F)]
+    [NMS(GUID = 0xA8770D441B0EE2B4, NameHash = 0x1A07394B)]
     public class TkProceduralInstance : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x10)]

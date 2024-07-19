@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5196601822D514A3, NameHash = 0xF3DE406AE480E3E0)]
+    [NMS(GUID = 0x4CB84BF30484F58A, NameHash = 0xF8A18AA2)]
     public class GcMissionConditionNumberOfShipsOwned : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -1,11 +1,11 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x87A842CB41034233, NameHash = 0xBE5E5CB33D0EB022)]
+    [NMS(GUID = 0xE51AD91853C53588, NameHash = 0x2232E698)]
     public class TkModelResource : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x0 */ public GcResource ResHandle;
         [NMS(Index = 0)]
-        /* 0x4 */ public NMSString0x80 Filename;
+        /* 0x00 */ public VariableSizeString Filename;
+        [NMS(Index = 1)]
+        /* 0x10 */ public GcResource ResHandle;
     }
 }

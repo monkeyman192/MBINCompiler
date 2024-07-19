@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x957E27918DADB9D0, NameHash = 0x6B3A62EF81161171)]
+    [NMS(GUID = 0xDEF9495489CBEE74, NameHash = 0xDC4801D)]
     public class GcUnlockableItemTree : NMSTemplate
     {
         [NMS(Index = 2)]

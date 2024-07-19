@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x14B6C3E7CF5FAF44, NameHash = 0x71610F70BA400437)]
+    [NMS(GUID = 0x1125A8E8B5C277F6, NameHash = 0x199FE2B)]
     public class TkMaterialFlags : NMSTemplate
     {
         // size: 0x40
@@ -21,7 +21,7 @@ namespace libMBIN.NMS.Toolkit
             _F14_UVSCROLL,
             _F15_WIND,
             _F16_DIFFUSE2MAP,
-            _F17_MULTIPLYDIFFUSE2MAP,
+            _F17_DOUBLESIDED_KEEP_NORMALS,
             _F18_UVTILES,
             _F19_BILLBOARD,
             _F20_PARALLAXMAP,
@@ -68,7 +68,7 @@ namespace libMBIN.NMS.Toolkit
             _F61_CLAMP_AMBIENT,
             _F62_DETAIL_ALPHACUTOUT,
             _F63_DISSOLVE,
-            _F64_,
+            _F64_RESERVED_FLAG_FOR_EARLY_Z_PATCHING_DO_NOT_USE,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public MaterialFlagEnum MaterialFlag;

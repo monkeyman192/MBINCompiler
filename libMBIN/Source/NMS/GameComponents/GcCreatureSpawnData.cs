@@ -2,56 +2,56 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2F7D1EA26B71BA5A, NameHash = 0x17AC2C984675F276)]
+    [NMS(GUID = 0x9196369F0C446A93, NameHash = 0x17785270)]
     public class GcCreatureSpawnData : NMSTemplate
     {
         [NMS(Index = 2)]
         /* 0x000 */ public GcResourceElement ExtraResource;
         [NMS(Index = 1)]
-        /* 0x2A8 */ public GcResourceElement FemaleResource;
+        /* 0x048 */ public GcResourceElement FemaleResource;
         [NMS(Index = 0)]
-        /* 0x550 */ public GcResourceElement Resource;
+        /* 0x090 */ public GcResourceElement Resource;
         [NMS(Index = 11)]
-        /* 0x7F8 */ public NMSString0x20A Filter;
+        /* 0x0D8 */ public NMSString0x20A Filter;
         [NMS(Index = 8)]
-        /* 0x818 */ public NMSString0x10 CreatureID;
+        /* 0x0F8 */ public NMSString0x10 CreatureID;
         [NMS(Index = 18)]
-        /* 0x828 */ public float CreatureActiveInDayChance;
+        /* 0x108 */ public float CreatureActiveInDayChance;
         [NMS(Index = 19)]
-        /* 0x82C */ public float CreatureActiveInNightChance;
+        /* 0x10C */ public float CreatureActiveInNightChance;
         [NMS(Index = 17)]
-        /* 0x830 */ public float CreatureDespawnDistance;
+        /* 0x110 */ public float CreatureDespawnDistance;
         [NMS(Index = 14)]
-        /* 0x834 */ public float CreatureGroupsPerSquareKm;
+        /* 0x114 */ public float CreatureGroupsPerSquareKm;
         [NMS(Index = 13)]
-        /* 0x838 */ public int CreatureMaxGroupSize;
+        /* 0x118 */ public int CreatureMaxGroupSize;
         [NMS(Index = 12)]
-        /* 0x83C */ public int CreatureMinGroupSize;
+        /* 0x11C */ public int CreatureMinGroupSize;
         [NMS(Index = 10)]
-        /* 0x840 */ public GcCreatureRoles CreatureRole;
+        /* 0x120 */ public GcCreatureRoles CreatureRole;
         [NMS(Index = 16)]
-        /* 0x844 */ public float CreatureSpawnDistance;
+        /* 0x124 */ public float CreatureSpawnDistance;
         [NMS(Index = 9)]
-        /* 0x848 */ public GcCreatureTypes CreatureType;
+        /* 0x128 */ public GcCreatureTypes CreatureType;
         [NMS(Index = 15)]
-        /* 0x84C */ public GcCreatureHemiSphere HemiSphere;
+        /* 0x12C */ public GcCreatureHemiSphere HemiSphere;
         [NMS(Index = 7)]
-        /* 0x850 */ public float MaxScale;
+        /* 0x130 */ public float MaxScale;
         [NMS(Index = 6)]
-        /* 0x854 */ public float MinScale;
+        /* 0x134 */ public float MinScale;
         [NMS(Index = 20)]
-        /* 0x858 */ public GcRarity Rarity;
+        /* 0x138 */ public GcRarity Rarity;
         [NMS(Index = 23)]
-        /* 0x85C */ public int RoleDataIndex;
+        /* 0x13C */ public int RoleDataIndex;
         [NMS(Index = 3)]
-        /* 0x860 */ public GcTerrainTileType TileType;
+        /* 0x140 */ public GcTerrainTileType TileType;
         [NMS(Index = 21)]
-        /* 0x864 */ public bool AllowFur;
+        /* 0x144 */ public bool AllowFur;
         [NMS(Index = 22)]
-        /* 0x865 */ public bool Herd;
+        /* 0x145 */ public bool Herd;
         [NMS(Index = 5)]
-        /* 0x866 */ public bool SwapPrimaryForRandomColour;
+        /* 0x146 */ public bool SwapPrimaryForRandomColour;
         [NMS(Index = 4)]
-        /* 0x867 */ public bool SwapPrimaryForSecondaryColour;
+        /* 0x147 */ public bool SwapPrimaryForSecondaryColour;
     }
 }

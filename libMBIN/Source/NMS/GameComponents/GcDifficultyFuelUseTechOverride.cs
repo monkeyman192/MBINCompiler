@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2EEAF1C185BF493D, NameHash = 0x5C80910526A4BAE9)]
+    [NMS(GUID = 0x2EEAF1C185BF493D, NameHash = 0x33AA0EBF)]
     public class GcDifficultyFuelUseTechOverride : NMSTemplate
     {
         [NMS(Index = 0)]

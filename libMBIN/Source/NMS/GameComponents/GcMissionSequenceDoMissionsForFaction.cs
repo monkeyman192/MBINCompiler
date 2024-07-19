@@ -2,18 +2,18 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA9D16CBF147DC0E5, NameHash = 0xBDA9289A7DF468BD)]
+    [NMS(GUID = 0x95533AA45ECAB1D9, NameHash = 0x7571A759)]
     public class GcMissionSequenceDoMissionsForFaction : NMSTemplate
     {
-        [NMS(Index = 1)]
-        /* 0x00 */ public GcFactionSelectOptions SelectFrom;
-        [NMS(Index = 3)]
-        /* 0x08 */ public int AmountMax;
-        [NMS(Index = 2)]
-        /* 0x0C */ public int AmountMin;
         [NMS(Index = 4)]
-        /* 0x10 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x90 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 1)]
+        /* 0x20 */ public GcFactionSelectOptions SelectFrom;
+        [NMS(Index = 3)]
+        /* 0x28 */ public int AmountMax;
+        [NMS(Index = 2)]
+        /* 0x2C */ public int AmountMin;
     }
 }

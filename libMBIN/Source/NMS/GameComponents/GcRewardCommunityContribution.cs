@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x832C50BE384E0BBC, NameHash = 0xCE090483FC7B2C67)]
+    [NMS(GUID = 0xD41F393835F21A5C, NameHash = 0x5EB151C3)]
     public class GcRewardCommunityContribution : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -19,5 +19,7 @@ namespace libMBIN.NMS.GameComponents
         }
         [NMS(Index = 1)]
         /* 0x28 */ public SubmitTypeEnum SubmitType;
+        [NMS(Index = 4)]
+        /* 0x2C */ public bool AutosaveOnHandIn;
     }
 }

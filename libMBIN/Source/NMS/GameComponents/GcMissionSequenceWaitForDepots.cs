@@ -1,15 +1,15 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x77FA5BE2289B6BCC, NameHash = 0x79D85DCF556B9E6B)]
+    [NMS(GUID = 0xDB2C9D080BB689A8, NameHash = 0xB6298D20)]
     public class GcMissionSequenceWaitForDepots : NMSTemplate
     {
-        [NMS(Index = 2)]
-        /* 0x00 */ public int AmountMax;
-        [NMS(Index = 1)]
-        /* 0x04 */ public int AmountMin;
         [NMS(Index = 3)]
-        /* 0x08 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x88 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 2)]
+        /* 0x20 */ public int AmountMax;
+        [NMS(Index = 1)]
+        /* 0x24 */ public int AmountMin;
     }
 }

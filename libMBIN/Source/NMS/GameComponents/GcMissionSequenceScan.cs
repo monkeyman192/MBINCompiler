@@ -2,22 +2,22 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9D52D32983ECCF2B, NameHash = 0x828E03CA6A18781E)]
+    [NMS(GUID = 0x763124E7E544BAC, NameHash = 0x92E61D4C)]
     public class GcMissionSequenceScan : NMSTemplate
     {
-        [NMS(Index = 4)]
-        /* 0x000 */ public NMSString0x10 ScanOverrideData;
-        [NMS(Index = 1)]
-        /* 0x010 */ public float WaitTime;
         [NMS(Index = 6)]
-        /* 0x014 */ public NMSString0x80 DebugText;
+        /* 0x00 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x094 */ public NMSString0x80 Message;
+        /* 0x10 */ public VariableSizeString Message;
+        [NMS(Index = 4)]
+        /* 0x20 */ public NMSString0x10 ScanOverrideData;
+        [NMS(Index = 1)]
+        /* 0x30 */ public float WaitTime;
         [NMS(Index = 3, Size = 0xB, EnumType = typeof(GcScanType.ScanTypeEnum))]
-        /* 0x114 */ public bool[] ScanTypesToOverride;
+        /* 0x34 */ public bool[] ScanTypesToOverride;
         [NMS(Index = 2)]
-        /* 0x11F */ public bool BlockTimedScans;
+        /* 0x3F */ public bool BlockTimedScans;
         [NMS(Index = 5)]
-        /* 0x120 */ public bool RequiresMissionActive;
+        /* 0x40 */ public bool RequiresMissionActive;
     }
 }

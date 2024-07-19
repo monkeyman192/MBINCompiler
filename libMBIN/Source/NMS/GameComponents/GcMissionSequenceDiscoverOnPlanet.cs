@@ -1,8 +1,12 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5E6C06F2C393C482, NameHash = 0x368D06565D9CC1)]
+    [NMS(GUID = 0x5FD2477653F6571A, NameHash = 0x1DF8AB15)]
     public class GcMissionSequenceDiscoverOnPlanet : NMSTemplate
     {
+        [NMS(Index = 3)]
+        /* 0x00 */ public VariableSizeString DebugText;
+        [NMS(Index = 1)]
+        /* 0x10 */ public VariableSizeString Message;
         // size: 0x3
         public enum DiscoverTargetOnThisPlanetEnum : uint {
             Animal,
@@ -10,12 +14,8 @@ namespace libMBIN.NMS.GameComponents
             Mineral,
         }
         [NMS(Index = 2)]
-        /* 0x00 */ public DiscoverTargetOnThisPlanetEnum DiscoverTargetOnThisPlanet;
+        /* 0x20 */ public DiscoverTargetOnThisPlanetEnum DiscoverTargetOnThisPlanet;
         [NMS(Index = 0)]
-        /* 0x04 */ public float PercentToDiscover;
-        [NMS(Index = 3)]
-        /* 0x08 */ public NMSString0x80 DebugText;
-        [NMS(Index = 1)]
-        /* 0x88 */ public NMSString0x80 Message;
+        /* 0x24 */ public float PercentToDiscover;
     }
 }

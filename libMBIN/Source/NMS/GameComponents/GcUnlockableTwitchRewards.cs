@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x35B9BD0B5627AA93, NameHash = 0xF128895FDB533FA8)]
+    [NMS(GUID = 0xC4E21A9ABA17459C, NameHash = 0x3911154D)]
     public class GcUnlockableTwitchRewards : NMSTemplate
     {
         [NMS(Index = 0)]

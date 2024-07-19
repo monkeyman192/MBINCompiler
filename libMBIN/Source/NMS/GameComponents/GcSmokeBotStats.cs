@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC0C36A9A23412A38, NameHash = 0xBF03A94511E0F7B0)]
+    [NMS(GUID = 0xC0C36A9A23412A38, NameHash = 0x2B1B33D2)]
     public class GcSmokeBotStats : NMSTemplate
     {
         [NMS(Index = 4)]

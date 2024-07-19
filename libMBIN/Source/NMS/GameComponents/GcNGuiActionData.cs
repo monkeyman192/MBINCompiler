@@ -1,10 +1,12 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8BA1C03786AFDF31, NameHash = 0x2D0ED597896EB5AF)]
+    [NMS(GUID = 0xEA288AF0F4C6E31B, NameHash = 0x199845)]
     public class GcNGuiActionData : NMSTemplate
     {
+        [NMS(Index = 1)]
+        /* 0x00 */ public VariableSizeString Data;
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 LayerID;
+        /* 0x10 */ public NMSString0x10 LayerID;
         // size: 0x4
         public enum ActionEnum : uint {
             Click,
@@ -13,8 +15,6 @@ namespace libMBIN.NMS.GameComponents
             ArrowRight,
         }
         [NMS(Index = 2)]
-        /* 0x10 */ public ActionEnum Action;
-        [NMS(Index = 1)]
-        /* 0x14 */ public NMSString0x80 Data;
+        /* 0x20 */ public ActionEnum Action;
     }
 }

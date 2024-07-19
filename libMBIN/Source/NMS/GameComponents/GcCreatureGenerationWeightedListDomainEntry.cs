@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5776455AF3486B31, NameHash = 0x823BF33F97DC4F32)]
+    [NMS(GUID = 0x5776455AF3486B31, NameHash = 0xE7174683)]
     public class GcCreatureGenerationWeightedListDomainEntry : NMSTemplate
     {
         [NMS(Index = 1)]

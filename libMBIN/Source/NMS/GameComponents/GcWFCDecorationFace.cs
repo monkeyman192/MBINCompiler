@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x716FA65505FAE342, NameHash = 0x7BCF7FA8AF0C694F)]
+    [NMS(GUID = 0x716FA65505FAE342, NameHash = 0x97F38AF7)]
     public class GcWFCDecorationFace : NMSTemplate
     {
         // size: 0x3

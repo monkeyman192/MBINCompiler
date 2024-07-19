@@ -1,15 +1,17 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB5FDEF27DF40761E, NameHash = 0xF50715D349F22A12)]
+    [NMS(GUID = 0xB6BCA3F1B468CD9F, NameHash = 0xEBF3EA11)]
     public class TkNGuiLayoutListData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public NMSString0x80 Default;
+        /* 0x00 */ public VariableSizeString Default;
         [NMS(Index = 1)]
-        /* 0x080 */ public NMSString0x80 Filename;
+        /* 0x10 */ public VariableSizeString Filename;
         [NMS(Index = 0)]
-        /* 0x100 */ public NMSString0x80 Name;
+        /* 0x20 */ public NMSString0x80 Name;
         [NMS(Index = 3)]
-        /* 0x180 */ public bool Autosave;
+        /* 0xA0 */ public bool Autosave;
+        [NMS(Index = 4)]
+        /* 0xA1 */ public bool CanBeDeleted;
     }
 }

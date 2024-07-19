@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFDB46411B06AA1C, NameHash = 0x2A6BB71EAF092577)]
+    [NMS(GUID = 0xFDB46411B06AA1C, NameHash = 0x81850E3C)]
     public class GcNPCHabitationType : NMSTemplate
     {
         // size: 0x5

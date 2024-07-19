@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xBBE32070152C844D, NameHash = 0x1BBDA54E462E00C3)]
+    [NMS(GUID = 0xC03185E876CED26E, NameHash = 0x8A331269)]
     public class GcScratchpadGlobals : NMSTemplate
     {
         [NMS(Index = 0)]

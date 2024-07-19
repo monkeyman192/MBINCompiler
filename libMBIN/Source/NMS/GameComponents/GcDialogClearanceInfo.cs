@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFD19A5851643EE2D, NameHash = 0x97DBB6FC681295D3)]
+    [NMS(GUID = 0xFD19A5851643EE2D, NameHash = 0xF9B3B3C6)]
     public class GcDialogClearanceInfo : NMSTemplate
     {
         [NMS(Index = 0)]

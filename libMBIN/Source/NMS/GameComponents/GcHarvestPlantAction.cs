@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x36FB3B383A1D703A, NameHash = 0x5234EE3175AF8A4A)]
+    [NMS(GUID = 0x36FB3B383A1D703A, NameHash = 0x9841664B)]
     public class GcHarvestPlantAction : NMSTemplate
     {
         [NMS(Index = 0)]

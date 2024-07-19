@@ -2,12 +2,12 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x40EF411E62BDB6FB, NameHash = 0x701157823082E732)]
+    [NMS(GUID = 0xEC9D095DC3122CBD, NameHash = 0x1890966F)]
     public class GcWeightedResource : NMSTemplate
     {
         [NMS(Index = 1)]
         /* 0x00 */ public TkModelResource Geometry;
         [NMS(Index = 0)]
-        /* 0x84 */ public float RelativeProbability;
+        /* 0x18 */ public float RelativeProbability;
     }
 }

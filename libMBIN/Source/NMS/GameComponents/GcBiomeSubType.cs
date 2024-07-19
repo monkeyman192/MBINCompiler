@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xAA4AA33B8FCAE03E, NameHash = 0xE8FE27493120750F)]
+    [NMS(GUID = 0xD6AD20DC73DE9F5B, NameHash = 0x59A37A62)]
     public class GcBiomeSubType : NMSTemplate
     {
-        // size: 0x1B
+        // size: 0x1C
         public enum BiomeSubTypeEnum : uint {
             None,
             Standard,
@@ -32,6 +32,7 @@ namespace libMBIN.NMS.GameComponents
             Infested,
             Swamp,
             Lava,
+            Worlds,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public BiomeSubTypeEnum BiomeSubType;

@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB06874149AD8811D, NameHash = 0xE692EE8E366F900)]
+    [NMS(GUID = 0xB06874149AD8811D, NameHash = 0x168C0B06)]
     public class GcNPCNavSubgraphNodeTypeConnectivity : NMSTemplate
     {
         [NMS(Index = 3)]

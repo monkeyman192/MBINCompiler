@@ -186,7 +186,8 @@ namespace MBINCompiler.Commands {
         /// <returns>fileOut</returns>
         private static string ConvertMBIN( string inputPath, FileStream fIn, MemoryStream msOut, string fileOut ) {
             var mbin = new MBINFile( fIn );
-            if ( !(mbin.Load() && mbin.Header.IsValid) ) throw new InvalidDataException( "Not a valid MBIN file!" );
+            if (!mbin.Load()) throw new InvalidDataException( "Cannot load MBIN file!" );
+            if ( !mbin.Header.IsValid ) throw new InvalidDataException( "Not a valid MBIN file!" );
 
             var type = NMSTemplate.GetTemplateType( mbin.Header.GetXMLTemplateName() );
             var nms = (NMSAttribute) (type.GetCustomAttributes( typeof( NMSAttribute ), false )?[0] ?? null);
@@ -259,6 +260,7 @@ namespace MBINCompiler.Commands {
                 mbin.SetData( data );
                 mbin.Save();
             } catch ( Exception e ) {
+                Console.WriteLine($"ERR INFO: {e.StackTrace}");
                 throw new ExmlException( e, fIn.Name, data );
             }
 

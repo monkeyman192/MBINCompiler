@@ -37,5 +37,3 @@ using System.Runtime.InteropServices;
 // To Update the version, see libMBIN.Version.VERSION.STRING.
 [assembly: AssemblyVersion( libMBIN.Version.VERSION_STRING )]
 [assembly: AssemblyFileVersion( libMBIN.Version.VERSION_STRING )]
-
-[assembly: InternalsVisibleTo("MBINCompilerTests")]

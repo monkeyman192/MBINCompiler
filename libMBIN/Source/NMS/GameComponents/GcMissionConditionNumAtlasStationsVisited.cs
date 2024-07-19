@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFC8A3D56E7A276E7, NameHash = 0x4861EEE7B04EAB00)]
+    [NMS(GUID = 0x6931347182C2BDC9, NameHash = 0x8DE7D82B)]
     public class GcMissionConditionNumAtlasStationsVisited : NMSTemplate
     {
         [NMS(Index = 0)]

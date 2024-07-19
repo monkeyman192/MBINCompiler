@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7CB27A10AF35501, NameHash = 0x6D7E63CBE4F67CF0)]
+    [NMS(GUID = 0x4DE240B8772AF08A, NameHash = 0xC020B794)]
     public class GcAnimFrameEvent : NMSTemplate
     {
         [NMS(Index = 0)]

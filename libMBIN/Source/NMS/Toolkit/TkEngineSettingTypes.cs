@@ -1,15 +1,16 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF8DC60B42FFEDC3E, NameHash = 0x943946549DEC2216)]
+    [NMS(GUID = 0x1B15E3D087AB4E84, NameHash = 0xA0749579)]
     public class TkEngineSettingTypes : NMSTemplate
     {
-        // size: 0x33
+        // size: 0x37
         public enum EngineSettingEnum : uint {
             FullScreen,
             Borderless,
             ResolutionWidth,
             ResolutionHeight,
             ResolutionScale,
+            RetinaScaleIOS,
             Monitor,
             FoVOnFoot,
             FoVInShip,
@@ -26,6 +27,7 @@ namespace libMBIN.NMS.Toolkit
             VolumetricsQuality,
             TerrainTessellation,
             PlanetQuality,
+            WaterQuality,
             BaseQuality,
             UIQuality,
             DLSSQuality,
@@ -56,6 +58,8 @@ namespace libMBIN.NMS.Toolkit
             UseHDR,
             MinGPUMode,
             MetalFXQuality,
+            DLSSFrameGeneration,
+            NVIDIAReflexLowLatency,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public EngineSettingEnum EngineSetting;

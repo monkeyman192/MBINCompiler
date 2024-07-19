@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBB675BAAA4335E43, NameHash = 0x928E5193D2096007)]
+    [NMS(GUID = 0xBB675BAAA4335E43, NameHash = 0x1FB40558)]
     public class GcMissionConditionWristMenuOpen : NMSTemplate
     {
         [NMS(Index = 2)]

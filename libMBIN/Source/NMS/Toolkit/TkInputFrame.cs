@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xFEBE52C18D488494, NameHash = 0xF3DC604B80A24AD)]
+    [NMS(GUID = 0xFEBE52C18D488494, NameHash = 0x4ABF284A)]
     public class TkInputFrame : NMSTemplate
     {
         [NMS(Index = 0)]

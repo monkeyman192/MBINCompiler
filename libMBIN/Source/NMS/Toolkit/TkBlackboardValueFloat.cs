@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x6A7317377189BD72, NameHash = 0xBCB0673179FC6C44)]
+    [NMS(GUID = 0x6A7317377189BD72, NameHash = 0xD546A03E)]
     public class TkBlackboardValueFloat : NMSTemplate
     {
         [NMS(Index = 0)]
