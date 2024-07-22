@@ -6,19 +6,19 @@ using System.Reflection;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xDF5154A393B47BBB, NameHash = 0xF671716161E708E3)]
+    [NMS(GUID = 0x70272DC777DDD6BD, NameHash = 0x18D05F06)]
     public class TkMeshData : NMSTemplate
     {
+        [NMS(Index = 0)]
+        /* 0x00 */ public VariableSizeString IdString;
         [NMS(Index = 4)]
-        /* 0x00 */ public byte[] MeshDataStream;
+        /* 0x10 */ public byte[] MeshDataStream;
         [NMS(Index = 1)]
-        /* 0x10 */ public ulong Hash;
+        /* 0x20 */ public ulong Hash;
         [NMS(Index = 3)]
-        /* 0x18 */ public int IndexDataSize;
+        /* 0x28 */ public int IndexDataSize;
         [NMS(Index = 2)]
-        /* 0x1C */ public int VertexDataSize;
-        [NMS(Index = 0, Size = 0x80, Padding = 0xFE)]
-        /* 0x20 */ public string IdString;
+        /* 0x2C */ public int VertexDataSize;
 
         public override object CustomDeserialize( BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo ) {
             var fieldName = fieldInfo.Name;

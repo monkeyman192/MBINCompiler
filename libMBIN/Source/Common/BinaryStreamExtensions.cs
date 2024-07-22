@@ -18,7 +18,7 @@ namespace libMBIN {
 
         public static void Align( this BinaryWriter writer, int alignBy, string name, byte paddingByte = 0 ) {
             long offset = writer.BaseStream.Position;
-
+            if (alignBy == 0) return;
             long mod = offset % alignBy;
             if ( mod != 0 ) {
                 if (paddingByte != 0) {

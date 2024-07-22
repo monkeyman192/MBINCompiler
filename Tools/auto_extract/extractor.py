@@ -157,10 +157,10 @@ EXTRA_ATTRIBUTES = {
 # TODO: If the GUID changes we need to raise an important message so that we may
 # fix it manually.
 DONT_OVERRIDE = [
-    # 'TkAnimNodeFrameData',
+    'TkAnimNodeFrameData',
     # 'TkAnimNodeFrameHalfData',
-    # 'TkGeometryData',
-    # 'TkMeshData',
+    'TkGeometryData',
+    'TkMeshData',
 ]
 
 SUMMARY_FILE = op.join(op.dirname(__file__), 'summary.txt')

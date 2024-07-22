@@ -23,7 +23,6 @@ using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using libMBIN.NMS;
 
 namespace libMBIN
@@ -242,6 +241,7 @@ namespace libMBIN
                     break;
 
                 case "VariableSizeString":
+                case "OptionalVariableSizeString":
                 case "List`1":
                 case "NMSTemplate":
                     size = 0x10;
@@ -430,6 +430,13 @@ namespace libMBIN
                         }
                     }
                     return null;
+                case "HashMap`1":
+                    reader.Align(8);
+                    Type subType = field.GetGenericArguments()[0];
+                    MethodInfo meth = typeof( NMSTemplate ).GetMethod( "DeserializeHashMap", BindingFlags.Static | BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic )
+                                                         .MakeGenericMethod( new Type[] { subType } );
+                    var result = meth.Invoke( null, new object[] { reader, fieldInfo, settings, templatePosition, parent } );
+                    return result;
                 case "NMSTemplate":
                     reader.Align( 8 );
                     long startPos = reader.BaseStream.Position;
@@ -496,29 +503,32 @@ namespace libMBIN
         public static NMSTemplate DeserializeBinaryTemplate(BinaryReader reader, NMSTemplate template) {
             if (template == null) return null;
 
-            string templateName = template.GetType().Name;
+            Type templateType = template.GetType();
+            string templateName = templateType.Name;
 
             long templatePosition = reader.BaseStream.Position;
             using ( var indentScope = new Logger.IndentScope() ) {
 
-                if ( templateName == "VariableSizeString" || templateName == "OptionalVariableSizeString" ) {
+                if (typeof(INMSVariableLengthString).IsAssignableFrom(templateType)) {
                     long stringPos = reader.ReadInt64();
                     int stringLength = reader.ReadInt32();
                     int magic = reader.ReadInt32();
-                    reader.BaseStream.Position = templatePosition + stringPos;
-                    if (templateName == "VariableSizeString") {
-                        ((VariableSizeString) template).Value = reader.ReadString( Encoding.UTF8, stringLength ).TrimEnd( '\x00' );
-                    } else {
-                        ((OptionalVariableSizeString) template).Value = reader.ReadString( Encoding.UTF8, stringLength ).TrimEnd( '\x00' );
+                    int templateSize = 0x10;
+                    if (templateName == "HashedString") {
+                        // Read some extra bytes
+                        uint hash = reader.ReadUInt32();
+                        int magic2 = reader.ReadInt32();
+                        templateSize = 0x18;
                     }
+                    reader.BaseStream.Position = templatePosition + stringPos;
+                    ((INMSVariableLengthString)template).String = reader.ReadString( Encoding.UTF8, stringLength ).TrimEnd( '\x00' );
                     
-                    reader.BaseStream.Position = templatePosition + 0x10;
+                    reader.BaseStream.Position = templatePosition + templateSize;
                     return template;
                 }
 
-                Type type = template.GetType();
                 // hack to get fields in order of declaration (todo: use something less hacky, this might break mono?)
-                var fields = type.GetFields().OrderBy( field => field.MetadataToken );
+                var fields = templateType.GetFields().OrderBy( field => field.MetadataToken );
                 long fieldStartPos = reader.BaseStream.Position;
                 foreach ( FieldInfo field in fields ) {
                     NMSAttribute settings = field.GetCustomAttribute<NMSAttribute>();
@@ -532,7 +542,7 @@ namespace libMBIN
                     }
                     if (is_primitive) DebugLogFieldName(templateName, fieldPos, fieldPos - fieldStartPos, field.Name, field.GetValue( template ));
                 }
-                reader.Align( AlignOf(type) ); // This is to remove the need for end padding
+                reader.Align( AlignOf(templateType) ); // This is to remove the need for end padding
                 
                 template.FinishDeserialize();
 
@@ -584,6 +594,34 @@ namespace libMBIN
             reader.Align( 0x8 );
 
             return list;
+        }
+
+        public static HashMap<T> DeserializeHashMap<T>( BinaryReader reader, FieldInfo field, NMSAttribute settings, long templateStartOffset, NMSTemplate parent ) {
+            long listPosition = reader.BaseStream.Position;
+
+            long listStartOffset = reader.ReadInt64();
+            int numEntries = reader.ReadInt32();
+            uint endPaddingLShift = reader.ReadUInt32();
+
+            // Skip the last 0x20 bytes
+            long listEndPosition = reader.BaseStream.Position + 0x20;
+
+            reader.BaseStream.Position = listPosition + listStartOffset;
+            HashMap<T> hashMap = new HashMap<T>();
+            for ( int i = 0; i < numEntries; i++ ) {
+                var template = DeserializeValue( reader, field.FieldType.GetGenericArguments()[0], settings, templateStartOffset, field, parent );
+                if ( template == null ) throw new DeserializeTypeException( typeof( T ) );
+
+                var type = template.GetType().BaseType;
+                if ( type == typeof( NMSTemplate ) ) ((NMSTemplate) template).FinishDeserialize();
+
+                hashMap.Elements.Add( (T) template );
+            }
+
+            reader.BaseStream.Position = listEndPosition;
+            reader.Align( 0x8 );
+
+            return hashMap;
         }
 
         public static List<T> DeserializeList<T>( BinaryReader reader, FieldInfo field, NMSAttribute settings, long templateStartOffset, NMSTemplate parent ) {
@@ -707,9 +745,36 @@ namespace libMBIN
                             additionalData.Insert( addtDataIndex, data );
                         }
                         addtDataIndex++;
-
                     }
+                    break;
+                case "HashMap`1":
+                    writer.Align( 8, field?.Name ?? fieldType.Name, paddingByte );
 
+                    var templ = (IHashMap)fieldData;
+
+                    // Add the contained list data to the addtionalData object then write the header.
+                    var hmData = new Tuple<long, object>( writer.BaseStream.Position, templ );
+
+                    writer.Write((ulong) 0);
+                    writer.Write((uint)templ.Count);
+                    writer.Write((uint)templ.EndPaddingLShift);
+                    writer.Write(new byte[0x20]);
+                    // Construct the correct number of bytes to store what I assume is the memory region the game uses when running to store the
+                    // actual hashes.
+                    IEnumerable<byte> start = Enumerable.Repeat((byte)0xD7, 4);
+                    IEnumerable<byte> end = Enumerable.Repeat((byte)0xEB, 4);
+                    byte[] hashPadding = start.Concat(new byte[(8 << (int)templ.EndPaddingLShift) - 8]).Concat(end).ToArray();
+                    // This is always added at the start.
+                    // Also set the offset as -1. We'll add a check for this to avoid writing an offset in this case.
+
+                    additionalData.Insert( addtDataIndex, new Tuple<long, object>( -1, hashPadding ) );
+                    addtDataIndex++;
+                    if ( addtDataIndex >= additionalData.Count ) {
+                        additionalData.Add( hmData );
+                    } else {
+                        additionalData.Insert( addtDataIndex, hmData );
+                    }
+                    addtDataIndex++;
                     break;
                 case "EmptyNode":
                     break;
@@ -739,27 +804,24 @@ namespace libMBIN
                     }
                     break;
                 default:
-                    if ( fieldType.Name == "VariableSizeString" ) {
+                    if (typeof(INMSVariableLengthString).IsAssignableFrom(fieldType)) {
                         writer.Align( 0x8, field?.Name ?? fieldType.Name, paddingByte );
                         // write empty DynamicString header
                         long fieldPos = writer.BaseStream.Position;
                         writer.Write( (Int64) 0 ); // listPosition
-                        writer.Write( (Int32) 0 ); // listCount
+                        writer.Write( (Int32) 0 ); // String length
                         writer.Write( listEnding );
-
-                        var fieldValue = (NMS.VariableSizeString) fieldData;
-                        additionalData.Insert( addtDataIndex++, new Tuple<long, object>( fieldPos, fieldValue ) );
-
-                    } else if ( fieldType.Name == "OptionalVariableSizeString" ) {
-                        writer.Align( 0x8, field?.Name ?? fieldType.Name, paddingByte );
-                        // write empty DynamicString header
-                        long fieldPos = writer.BaseStream.Position;
-                        writer.Write( (Int64) 0 ); // listPosition
-                        writer.Write( (Int32) 0 ); // listCount
-                        writer.Write( listEnding );
-
-                        NMS.OptionalVariableSizeString fieldValue = (NMS.OptionalVariableSizeString) fieldData;
-                        if (fieldValue.Value != "") {
+                        var fieldValue = (INMSVariableLengthString) fieldData;
+                        if (fieldType.Name == "OptionalVariableSizeString" && fieldValue.String == "") {
+                            // Do nothing since in this case we don't want to insert anything...
+                        } else if (fieldType.Name == "HashedString") {
+                            // Write some extra fields.
+                            HashedString _fieldValue = (HashedString)fieldValue;
+                            writer.Write(_fieldValue.Hash());
+                            writer.Write(0xAAAAAAAA);
+                            additionalData.Insert( addtDataIndex++, new Tuple<long, object>( fieldPos, fieldValue ) );
+                        }
+                        else {
                             additionalData.Insert( addtDataIndex++, new Tuple<long, object>( fieldPos, fieldValue ) );
                         }
                     } else if ( fieldType.IsArray ) {
@@ -807,9 +869,6 @@ namespace libMBIN
             var type = GetType();
             var fields = type.GetFields().OrderBy( field => field.MetadataToken ); // hack to get fields in order of declaration (todo: use something less hacky, this might break mono?)
 
-            //var entryOffsetNamePairs = new Dictionary<long, string>();
-            //List<KeyValuePair<long, String>> entryOffsetNamePairs = new List<KeyValuePair<long, String>>();
-
             if ( type.Name != "EmptyNode" ) {
                 foreach ( var field in fields ) {
                     var fieldAddr = writer.BaseStream.Position - templatePosition;      // location of the data within the struct
@@ -827,7 +886,7 @@ namespace libMBIN
         public void SerializeGenericList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object>> additionalData, int addtDataIndex, UInt32 listEnding, byte paddingByte = 0 )
         // This serialises a List of NMSTemplate objects
         {
-            writer.Align( 0x8, list.GetType().Name, paddingByte );       // Make sure that all c~ names are offset at 0x8.     // make rel to listHeaderPosition?
+            writer.Align( 0x8, list.GetType().Name, paddingByte );       // Make sure that all c~ names are offset at 0x8.
             long listPosition = writer.BaseStream.Position;
 
             DebugLogTemplate( $"SerializeList\tstart:\t{$"0x{listPosition - MBINHeader.HEADER_SIZE:X},",-10}\theader:\t{$"0x{listHeaderPosition - MBINHeader.HEADER_SIZE:X},",-10}\tcount:\t{list.Count}");
@@ -866,11 +925,11 @@ namespace libMBIN
                 for ( int i = 0; i < listObjects.Count; i++ ) {
                     var data = listObjects[i];
                     //writer.BaseStream.Position = additionalDataOffset; // addtDataOffset gets updated by child templates
-                    if ( data.Item2.GetType() == typeof( NMS.VariableSizeString ) ) {
-                        var str = (NMS.VariableSizeString) data.Item2;
+                    if (typeof(INMSVariableLengthString).IsAssignableFrom(data.Item2.GetType())) {
+                        var str = (INMSVariableLengthString) data.Item2;
 
                         long stringPos = writer.BaseStream.Position;
-                        writer.WriteString( str.Value, Encoding.UTF8, null, true, paddingByte );
+                        writer.WriteString( str.StringValue(), Encoding.UTF8, null, true, paddingByte );
                         long stringEndPos = writer.BaseStream.Position;
 
                         writer.BaseStream.Position = data.Item1;
@@ -920,14 +979,16 @@ namespace libMBIN
                     writer.Write(0xEEEEEE01);
                 } else {
                     // this is called when the header 0x10 bytes is empty because it is an empty node.
-                    writer.WriteString( "", Encoding.UTF8, 0x10, false, paddingByte );
+                    // This does however have the ending 4 bytes which indicate a list, even though it's empty...
+                    writer.WriteString("", Encoding.UTF8, 0xC, false, paddingByte);
+                    writer.Write(0xEEEEEE01);
                 }
             }
 
             writer.BaseStream.Position = dataEndOffset;
         }
 
-        public void SerializeList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object>> additionalData, int addtDataIndex, UInt32 listEnding = 0xAAAAAA01, byte paddingByte = 0 ) {
+        public void SerializeList( BinaryWriter writer, IList list, long listHeaderPosition, ref List<Tuple<long, object>> additionalData, int addtDataIndex, UInt32 listEnding = 0xAAAAAA01, byte paddingByte = 0, bool writingHashMap = false  ) {
             // first thing we want to do is align the writer with the location of the first element of the list
             if ( list.Count != 0 ) {
                 writer.Align( AlignOf(list[0].GetType()), list[0].GetType().Name, paddingByte );
@@ -945,7 +1006,7 @@ namespace libMBIN
                 writer.Write( (long) 0 ); // lists with 0 entries have offset set to 0
             }
             writer.Write( (Int32) list.Count );
-            writer.Write( listEnding );       // this is where the 4bytes at the end of a list are written
+            if (!writingHashMap) writer.Write( listEnding );
 
             writer.BaseStream.Position = listPosition;
 
@@ -982,8 +1043,9 @@ namespace libMBIN
                     listEnding = 0x00000001;
                     paddingByte = 0xFE;
                     if (GetType() == typeof( NMS.Toolkit.TkGeometryData )) {
+                        // TODO: Figure out new version...
                         listOrder = new List<long>{
-                            0x100, 0xF0, 0xD0, 0xC0, 0x60, 0x40, 0x50, 0x80, 0x110,  0xE0, 0xB0, 0xA0, 0x90, 0x20, 0x00, 0x70, 0x120
+                            0x100, 0xF0, 0xD0, 0xC0, 0x60, 0x40, 0x50, 0x80, 0x110, 0xE0, 0xB0, 0xA0, 0x90, 0x20, 0x00, 0x70, 0x120
                         };
                         reorderList = true;
                     }
@@ -1014,20 +1076,25 @@ namespace libMBIN
 
                     NMSAttribute attributes = data.Item2?.GetType().GetCustomAttribute<NMSAttribute>();
 
-                    if ( data.Item2.GetType() == typeof( NMS.VariableSizeString ) ) {
-                        var str = (NMS.VariableSizeString) data.Item2;
+                    if ( typeof(INMSVariableLengthString).IsAssignableFrom(data.Item2.GetType()) ) {
+                        var str = (INMSVariableLengthString) data.Item2;
 
                         long stringPos = writer.BaseStream.Position;
-                        writer.WriteString( str.Value, Encoding.UTF8, null, true, paddingByte );
+                        writer.WriteString(str.StringValue(), Encoding.UTF8, null, true, paddingByte);
                         long stringEndPos = writer.BaseStream.Position;
 
                         writer.BaseStream.Position = data.Item1;
-                        writer.Write( stringPos - data.Item1 );
-                        writer.Write( (Int32) (stringEndPos - stringPos) );
-                        writer.Write( listEnding );
+                        writer.Write(stringPos - data.Item1);
+                        writer.Write((Int32) (stringEndPos - stringPos));
+                        writer.Write(listEnding);
 
                         writer.BaseStream.Position = stringEndPos;
                     } else if ( data.Item2.GetType().BaseType == typeof( NMSTemplate ) ) {
+                        // HashMap's look like this. We'll serialize them like a list though...
+                        if (data.Item2.GetType().IsGenericType && data.Item2.GetType().GetGenericTypeDefinition() == typeof(HashMap<>)) {
+                            SerializeList( writer, (IList) ((IHashMap)data.Item2).GetElements(), data.Item1, ref additionalData, i + 1, listEnding, paddingByte, true );
+                            continue;
+                        }
                         writer.Align( AlignOf(data.Item2.GetType()), data.Item2.GetType().Name, paddingByte );
                         long pos = writer.BaseStream.Position;
                         var template = (NMSTemplate) data.Item2;
@@ -1047,16 +1114,18 @@ namespace libMBIN
                             // this is serialising a list of generic type
                             SerializeGenericList( writer, (IList) data.Item2, data.Item1, ref additionalData, i + 1, listEnding, paddingByte );
                         } else {
-                            // this is serialising a list if a particular type
+                            // This is serialising a list of a particular type
                             SerializeList( writer, (IList) data.Item2, data.Item1, ref additionalData, i + 1, listEnding, paddingByte );
                         }
 
                     } else if ( data.Item2.GetType() == typeof( byte[] ) ) {
                         // write the offset in the list header
                         long dataPosition = writer.BaseStream.Position;
-                        writer.BaseStream.Position = data.Item1;
-                        writer.Write( dataPosition - data.Item1 );
-                        writer.BaseStream.Position = dataPosition;
+                        if (data.Item1 != -1) {
+                            writer.BaseStream.Position = data.Item1;
+                            writer.Write( dataPosition - data.Item1 );
+                            writer.BaseStream.Position = dataPosition;
+                        }
                         SerializeValue( writer, data.Item2.GetType(), data.Item2, attributes, null, ref additionalData, ref i, paddingByte: paddingByte );     // passing i here *should* be fine as we will only be writing bytes which can't affect i
 
                     } else {
@@ -1147,11 +1216,27 @@ namespace libMBIN
                     }
                     return null;
                 default:
-                    if( typeof(NMS.INMSString).IsAssignableFrom(fieldType) && isField)
+                    if (typeof(INMSString).IsAssignableFrom(fieldType) && isField)
                     {
                         // We will shortcut the deserialization by simply assigning the value
-                        valueString = ((NMS.INMSString)value).StringValue();
+                        valueString = ((INMSString)value).StringValue();
                         break;
+                    }
+                    if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(HashMap<>)){
+                        var instance = Activator.CreateInstance(fieldType);
+                        Type hashMapType = field.FieldType.GetGenericArguments()[0];
+
+                        // We basically treat the hashmap as an enumerable (so like a List<T>).
+                        EXmlProperty listProp = new EXmlProperty { Name = field.Name };
+
+                        foreach ( var template in (IEnumerable)value ) {
+                            EXmlBase data = SerializeEXmlValue( hashMapType, field, settings, template, false );
+                            data.Name = null;
+
+                            listProp.Elements.Add( data );
+                        }
+                        return listProp;
+
                     }
                     if ( fieldType.BaseType.Name == "NMSTemplate" ) {
                         NMSTemplate template;
@@ -1351,6 +1436,7 @@ namespace libMBIN
                 case "Byte[]":
                     return xmlProperty.Value == null ? null : Convert.FromBase64String(xmlProperty.Value);
                 case "List`1":
+                case "HashMap`1":
                     Type elementType = fieldType.GetGenericArguments()[0];
                     Type listType = typeof(List<>).MakeGenericType(elementType);
                     IList list = (IList)Activator.CreateInstance(listType);
@@ -1360,7 +1446,7 @@ namespace libMBIN
 
                         var type = innerXmlData.GetType();
                         var data = innerXmlData as EXmlProperty;
-                        if (typeof(NMS.INMSString).IsAssignableFrom(elementType) && elementType.Name == "NMSString0x20A") {
+                        if (typeof(INMSString).IsAssignableFrom(elementType) && elementType.Name == "NMSString0x20A") {
                             // If the data is actually a NMSString0x20A, then make sure we try and serialize it as such.
                             data.Value = "NMSString0x20A.xml";
                         }
@@ -1380,9 +1466,9 @@ namespace libMBIN
                     }
                     return list;
                 default:
-                    if (typeof(NMS.INMSString).IsAssignableFrom(fieldType))
+                    if (typeof(INMSString).IsAssignableFrom(fieldType))
                     {
-                        object stringObj = (NMS.INMSString)Activator.CreateInstance(fieldType);
+                        object stringObj = (INMSString)Activator.CreateInstance(fieldType);
                         FieldInfo valueField = stringObj.GetType().GetField("Value");
                         valueField.SetValue(stringObj, xmlProperty.Value);
                         return stringObj;
@@ -1490,15 +1576,33 @@ namespace libMBIN
                             Console.WriteLine($"[ERROR] The field '{xmlProperty.Name}' no longer exists in the class '{templateType.Name}'");
                         }
                         object fieldValue = null;
-                        if ((field.FieldType == typeof( NMSTemplate ) || field.FieldType.BaseType == typeof( NMSTemplate ))
-                            && !typeof(NMS.INMSString).IsAssignableFrom(field.FieldType)) {
+                        Type fieldType = field.FieldType;
+                        if ((fieldType == typeof( NMSTemplate ) || fieldType.BaseType == typeof( NMSTemplate ))
+                            && !typeof(INMSString).IsAssignableFrom(fieldType) && !(fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(HashMap<>))) {
                             fieldValue = DeserializeEXml( xmlProperty );
                         } else {
-                            Type fieldType = field.FieldType;
                             NMSAttribute settings = field.GetCustomAttribute<NMSAttribute>();
                             fieldValue = DeserializeEXmlValue( template, fieldType, field, xmlProperty, templateType, settings );
                         }
-                        field.SetValue( template, fieldValue );
+                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(HashMap<>)) {
+                            // For the HashMap we need to do some funky stuff to get the actual object by constructing it and passing in the List<T>
+                            // of data.
+                            // This would be easier if we could cast, but not sure how to do that with generics...
+                            var constructors = fieldType.GetConstructors(BindingFlags.Static | BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                            ConstructorInfo ctor = null;
+                            foreach (ConstructorInfo constr in constructors) {
+                                // IMPORTANT: If the HashMap class gets any more constructors this may break...
+                                if (constr.GetParameters().Length == 1) {
+                                    ctor = constr;
+                                }
+                            }
+                            if (ctor != null) {
+                                var hashmap = ctor.Invoke(new object[] { fieldValue } );
+                                field.SetValue( template, hashmap );
+                            }
+                        } else {
+                            field.SetValue( template, fieldValue );
+                        }
                     } else if ( xmlElement.GetType() == typeof( EXmlData ) ) {
                         EXmlData innerXmlData = (EXmlData) xmlElement;
                         FieldInfo field = templateType.GetField( innerXmlData.Name );

@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xB2E78D75B9088DB6, NameHash = 0x270204EDCEE4DB62)]
+    [NMS(GUID = 0xB2E78D75B9088DB6, NameHash = 0xADF5F9C3)]
     public class TkAnimNodeFrameData : NMSTemplate
     {
         [NMS(Index = 0)]
