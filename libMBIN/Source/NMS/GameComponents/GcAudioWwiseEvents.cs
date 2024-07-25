@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x158011881511B0A, NameHash = 0x7A0D33C8)]
+    [NMS(GUID = 0x7BD9DFF5D9D78C54, NameHash = 0x7A0D33C8)]
     public class GcAudioWwiseEvents : NMSTemplate
     {
-        // size: 0xA41
+        // size: 0xA43
         public enum AkEventEnum : uint {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
@@ -1942,6 +1942,7 @@ namespace libMBIN.NMS.GameComponents
             RADIO_CHATTER_STOP = 0x66DF5E6B,
             RECIPE_RECEIVE = 0xDBD7DDFD,
             RESOURCE_GATHER = 0x86333C19,
+            RIVER = 0xD6EBF401,
             ROBOT_GUNMELEE_IMPACTS = 0x4436A6B4,
             ROBOT_LASER_IMPACTS = 0x49D29DA7,
             ROBOT_METAL_IMPACTS = 0xD7582BF,
@@ -2552,6 +2553,7 @@ namespace libMBIN.NMS.GameComponents
             WARRIORHAPPY02 = 0x3DEECF1B,
             WARRIORHAPPY03 = 0x3DEECF1A,
             WARRIORHONOUR = 0xDC70021E,
+            WATERFALL = 0x7BA60439,
             WEAPONTECHSTATION_IN = 0x9D11B593,
             WEAPONTECHSTATION_OUT = 0xCED353AE,
             WEATHER_OVER = 0xF6B6BE20,

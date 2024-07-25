@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x90DBDEC5837D230B, NameHash = 0xEADD2E75)]
+    [NMS(GUID = 0xA1CC8EFF32B2FA24, NameHash = 0xEADD2E75)]
     public class GcGraphicsGlobals : NMSTemplate
     {
         [NMS(Index = 52)]
@@ -59,9 +59,9 @@ namespace libMBIN.NMS.Globals
         /* 0x3A0 */ public List<int> CascadeRenderSequence;
         [NMS(Index = 303, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
         /* 0x3B0 */ public TkGraphicsDetailPreset[] GraphicsDetailPresetsPC;
-        [NMS(Index = 316)]
-        /* 0x540 */ public TkGraphicsDetailPreset GraphicsDetailPresetiOS;
         [NMS(Index = 315)]
+        /* 0x540 */ public TkGraphicsDetailPreset GraphicsDetailPresetiOS;
+        [NMS(Index = 314)]
         /* 0x5A4 */ public TkGraphicsDetailPreset GraphicsDetailPresetMacOS;
         [NMS(Index = 311)]
         /* 0x608 */ public TkGraphicsDetailPreset GraphicsDetailPresetNX64Handheld;
@@ -77,591 +77,589 @@ namespace libMBIN.NMS.Globals
         /* 0x7FC */ public TkGraphicsDetailPreset GraphicsDetailPresetPS4VR;
         [NMS(Index = 312)]
         /* 0x860 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS5;
-        [NMS(Index = 314)]
-        /* 0x8C4 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS5VR;
         [NMS(Index = 313)]
-        /* 0x928 */ public TkGraphicsDetailPreset GraphicsDetailPresetTrinity;
+        /* 0x8C4 */ public TkGraphicsDetailPreset GraphicsDetailPresetPS5VR;
         [NMS(Index = 308)]
-        /* 0x98C */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1;
+        /* 0x928 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1;
         [NMS(Index = 309)]
-        /* 0x9F0 */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
-        [NMS(Index = 318, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
-        /* 0xA54 */ public float[] VariableUpdatePeriodModifers;
+        /* 0x98C */ public TkGraphicsDetailPreset GraphicsDetailPresetXB1X;
+        [NMS(Index = 317, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        /* 0x9F0 */ public float[] VariableUpdatePeriodModifers;
         [NMS(Index = 203)]
-        /* 0xA64 */ public Vector2f WindDir1;
+        /* 0xA00 */ public Vector2f WindDir1;
         [NMS(Index = 204)]
-        /* 0xA6C */ public Vector2f WindDir2;
+        /* 0xA08 */ public Vector2f WindDir2;
         [NMS(Index = 230)]
-        /* 0xA74 */ public float AlphaCutoutMax;
+        /* 0xA10 */ public float AlphaCutoutMax;
         [NMS(Index = 229)]
-        /* 0xA78 */ public float AlphaCutoutMin;
+        /* 0xA14 */ public float AlphaCutoutMin;
         [NMS(Index = 205)]
-        /* 0xA7C */ public float AtmosphereSize;
+        /* 0xA18 */ public float AtmosphereSize;
         [NMS(Index = 12)]
-        /* 0xA80 */ public float Brightness;
+        /* 0xA1C */ public float Brightness;
         [NMS(Index = 13)]
-        /* 0xA84 */ public float Contrast;
+        /* 0xA20 */ public float Contrast;
         [NMS(Index = 70)]
-        /* 0xA88 */ public float DirectionLightFOV;
+        /* 0xA24 */ public float DirectionLightFOV;
         [NMS(Index = 69)]
-        /* 0xA8C */ public float DirectionLightRadius;
+        /* 0xA28 */ public float DirectionLightRadius;
         [NMS(Index = 71)]
-        /* 0xA90 */ public float DirectionLightShadowBias;
+        /* 0xA2C */ public float DirectionLightShadowBias;
         [NMS(Index = 113)]
-        /* 0xA94 */ public float DOFAmountManual;
+        /* 0xA30 */ public float DOFAmountManual;
         [NMS(Index = 117)]
-        /* 0xA98 */ public float DOFAmountManualFull;
+        /* 0xA34 */ public float DOFAmountManualFull;
         [NMS(Index = 115)]
-        /* 0xA9C */ public float DOFAmountManualFullIndoor;
+        /* 0xA38 */ public float DOFAmountManualFullIndoor;
         [NMS(Index = 116)]
-        /* 0xAA0 */ public float DOFAmountManualLight;
+        /* 0xA3C */ public float DOFAmountManualLight;
         [NMS(Index = 114)]
-        /* 0xAA4 */ public float DOFAmountManualLightIndoor;
+        /* 0xA40 */ public float DOFAmountManualLightIndoor;
         [NMS(Index = 131)]
-        /* 0xAA8 */ public float DOFAutoFarAmount;
+        /* 0xA44 */ public float DOFAutoFarAmount;
         [NMS(Index = 133)]
-        /* 0xAAC */ public float DOFAutoFarFarPlane;
+        /* 0xA48 */ public float DOFAutoFarFarPlane;
         [NMS(Index = 132)]
-        /* 0xAB0 */ public float DOFAutoFarFarPlaneFade;
+        /* 0xA4C */ public float DOFAutoFarFarPlaneFade;
         [NMS(Index = 134)]
-        /* 0xAB4 */ public float DOFAutoFarNearPlane;
+        /* 0xA50 */ public float DOFAutoFarNearPlane;
         [NMS(Index = 120)]
-        /* 0xAB8 */ public float DOFFarFadeDistance;
+        /* 0xA54 */ public float DOFFarFadeDistance;
         [NMS(Index = 122)]
-        /* 0xABC */ public float DOFFarFadeDistanceCave;
+        /* 0xA58 */ public float DOFFarFadeDistanceCave;
         [NMS(Index = 138)]
-        /* 0xAC0 */ public float DOFFarFadeDistanceInteraction;
+        /* 0xA5C */ public float DOFFarFadeDistanceInteraction;
         [NMS(Index = 130)]
-        /* 0xAC4 */ public float DOFFarFadeDistanceManual;
+        /* 0xA60 */ public float DOFFarFadeDistanceManual;
         [NMS(Index = 129)]
-        /* 0xAC8 */ public float DOFFarFadeDistanceManualIndoor;
+        /* 0xA64 */ public float DOFFarFadeDistanceManualIndoor;
         [NMS(Index = 124)]
-        /* 0xACC */ public float DOFFarFadeDistanceSpace;
+        /* 0xA68 */ public float DOFFarFadeDistanceSpace;
         [NMS(Index = 127)]
-        /* 0xAD0 */ public float DOFFarFadeDistanceWater;
+        /* 0xA6C */ public float DOFFarFadeDistanceWater;
         [NMS(Index = 112)]
-        /* 0xAD4 */ public float DOFFarPlane;
+        /* 0xA70 */ public float DOFFarPlane;
         [NMS(Index = 121)]
-        /* 0xAD8 */ public float DOFFarPlaneCave;
+        /* 0xA74 */ public float DOFFarPlaneCave;
         [NMS(Index = 137)]
-        /* 0xADC */ public float DOFFarPlaneInteraction;
+        /* 0xA78 */ public float DOFFarPlaneInteraction;
         [NMS(Index = 128)]
-        /* 0xAE0 */ public float DOFFarPlaneManual;
+        /* 0xA7C */ public float DOFFarPlaneManual;
         [NMS(Index = 123)]
-        /* 0xAE4 */ public float DOFFarPlaneSpace;
+        /* 0xA80 */ public float DOFFarPlaneSpace;
         [NMS(Index = 126)]
-        /* 0xAE8 */ public float DOFFarPlaneWater;
+        /* 0xA84 */ public float DOFFarPlaneWater;
         [NMS(Index = 125)]
-        /* 0xAEC */ public float DOFFarStrengthWater;
+        /* 0xA88 */ public float DOFFarStrengthWater;
         [NMS(Index = 136)]
-        /* 0xAF0 */ public float DOFNearAdjustInteraction;
+        /* 0xA8C */ public float DOFNearAdjustInteraction;
         [NMS(Index = 118)]
-        /* 0xAF4 */ public float DOFNearFadeDistance;
+        /* 0xA90 */ public float DOFNearFadeDistance;
         [NMS(Index = 119)]
-        /* 0xAF8 */ public float DOFNearFadeDistanceManual;
+        /* 0xA94 */ public float DOFNearFadeDistanceManual;
         [NMS(Index = 135)]
-        /* 0xAFC */ public float DOFNearMinInteraction;
+        /* 0xA98 */ public float DOFNearMinInteraction;
         [NMS(Index = 111)]
-        /* 0xB00 */ public float DOFNearPlane;
+        /* 0xA9C */ public float DOFNearPlane;
         [NMS(Index = 63)]
-        /* 0xB04 */ public float FarClipDistance;
+        /* 0xAA0 */ public float FarClipDistance;
         [NMS(Index = 213)]
-        /* 0xB08 */ public float FoliageSaturationMax;
+        /* 0xAA4 */ public float FoliageSaturationMax;
         [NMS(Index = 212)]
-        /* 0xB0C */ public float FoliageSaturationMin;
+        /* 0xAA8 */ public float FoliageSaturationMin;
         [NMS(Index = 215)]
-        /* 0xB10 */ public float FoliageValueMax;
+        /* 0xAAC */ public float FoliageValueMax;
         [NMS(Index = 214)]
-        /* 0xB14 */ public float FoliageValueMin;
+        /* 0xAB0 */ public float FoliageValueMin;
         [NMS(Index = 241)]
-        /* 0xB18 */ public float FrustumJitterAmount;
+        /* 0xAB4 */ public float FrustumJitterAmount;
         [NMS(Index = 242)]
-        /* 0xB1C */ public float FrustumJitterAmountDLSS;
+        /* 0xAB8 */ public float FrustumJitterAmountDLSS;
         [NMS(Index = 217)]
-        /* 0xB20 */ public float GrassSaturationMax;
+        /* 0xABC */ public float GrassSaturationMax;
         [NMS(Index = 216)]
-        /* 0xB24 */ public float GrassSaturationMin;
+        /* 0xAC0 */ public float GrassSaturationMin;
         [NMS(Index = 219)]
-        /* 0xB28 */ public float GrassValueMax;
+        /* 0xAC4 */ public float GrassValueMax;
         [NMS(Index = 218)]
-        /* 0xB2C */ public float GrassValueMin;
+        /* 0xAC8 */ public float GrassValueMin;
         [NMS(Index = 3)]
-        /* 0xB30 */ public float HBAOBias;
+        /* 0xACC */ public float HBAOBias;
         [NMS(Index = 5)]
-        /* 0xB34 */ public float HBAOIntensity;
+        /* 0xAD0 */ public float HBAOIntensity;
         [NMS(Index = 4)]
-        /* 0xB38 */ public float HBAORadius;
+        /* 0xAD4 */ public float HBAORadius;
         [NMS(Index = 92)]
-        /* 0xB3C */ public float HDRExposure;
+        /* 0xAD8 */ public float HDRExposure;
         [NMS(Index = 104)]
-        /* 0xB40 */ public float HDRExposureCave;
+        /* 0xADC */ public float HDRExposureCave;
         [NMS(Index = 93)]
-        /* 0xB44 */ public float HDRGamma;
+        /* 0xAE0 */ public float HDRGamma;
         [NMS(Index = 94)]
-        /* 0xB48 */ public float HDRLutExposure;
+        /* 0xAE4 */ public float HDRLutExposure;
         [NMS(Index = 95)]
-        /* 0xB4C */ public float HDRLutGamma;
+        /* 0xAE8 */ public float HDRLutGamma;
         [NMS(Index = 96)]
-        /* 0xB50 */ public float HDRLutToe;
+        /* 0xAEC */ public float HDRLutToe;
         [NMS(Index = 98)]
-        /* 0xB54 */ public float HDROffset;
+        /* 0xAF0 */ public float HDROffset;
         [NMS(Index = 106)]
-        /* 0xB58 */ public float HDROffsetCave;
+        /* 0xAF4 */ public float HDROffsetCave;
         [NMS(Index = 97)]
-        /* 0xB5C */ public float HDRThreshold;
+        /* 0xAF8 */ public float HDRThreshold;
         [NMS(Index = 105)]
-        /* 0xB60 */ public float HDRThresholdCave;
+        /* 0xAFC */ public float HDRThresholdCave;
         [NMS(Index = 61)]
-        /* 0xB64 */ public float HUDDistance;
+        /* 0xB00 */ public float HUDDistance;
         [NMS(Index = 60)]
-        /* 0xB68 */ public float HUDMotionPos;
+        /* 0xB04 */ public float HUDMotionPos;
         [NMS(Index = 57)]
-        /* 0xB6C */ public float HUDMotionPosSpring;
+        /* 0xB08 */ public float HUDMotionPosSpring;
         [NMS(Index = 58)]
-        /* 0xB70 */ public float HUDMotionX;
+        /* 0xB0C */ public float HUDMotionX;
         [NMS(Index = 55)]
-        /* 0xB74 */ public float HUDMotionXSpring;
+        /* 0xB10 */ public float HUDMotionXSpring;
         [NMS(Index = 59)]
-        /* 0xB78 */ public float HUDMotionY;
+        /* 0xB14 */ public float HUDMotionY;
         [NMS(Index = 56)]
-        /* 0xB7C */ public float HUDMotionYSpring;
+        /* 0xB18 */ public float HUDMotionYSpring;
         [NMS(Index = 209)]
-        /* 0xB80 */ public float HueVariance;
+        /* 0xB1C */ public float HueVariance;
         [NMS(Index = 102)]
-        /* 0xB84 */ public float LensDirt;
+        /* 0xB20 */ public float LensDirt;
         [NMS(Index = 110)]
-        /* 0xB88 */ public float LensDirtCave;
+        /* 0xB24 */ public float LensDirtCave;
         [NMS(Index = 100)]
-        /* 0xB8C */ public float LensOffset;
+        /* 0xB28 */ public float LensOffset;
         [NMS(Index = 108)]
-        /* 0xB90 */ public float LensOffsetCave;
+        /* 0xB2C */ public float LensOffsetCave;
         [NMS(Index = 101)]
-        /* 0xB94 */ public float LensScale;
+        /* 0xB30 */ public float LensScale;
         [NMS(Index = 109)]
-        /* 0xB98 */ public float LensScaleCave;
+        /* 0xB34 */ public float LensScaleCave;
         [NMS(Index = 99)]
-        /* 0xB9C */ public float LensThreshold;
+        /* 0xB38 */ public float LensThreshold;
         [NMS(Index = 107)]
-        /* 0xBA0 */ public float LensThresholdCave;
+        /* 0xB3C */ public float LensThresholdCave;
         [NMS(Index = 165)]
-        /* 0xBA4 */ public float LowHealthDesaturationIntensityMax;
+        /* 0xB40 */ public float LowHealthDesaturationIntensityMax;
         [NMS(Index = 164)]
-        /* 0xBA8 */ public float LowHealthDesaturationIntensityMin;
+        /* 0xB44 */ public float LowHealthDesaturationIntensityMin;
         [NMS(Index = 166)]
-        /* 0xBAC */ public float LowHealthDesaturationIntensityTimeSinceHit;
+        /* 0xB48 */ public float LowHealthDesaturationIntensityTimeSinceHit;
         [NMS(Index = 168)]
-        /* 0xBB0 */ public float LowHealthFadeInTime;
+        /* 0xB4C */ public float LowHealthFadeInTime;
         [NMS(Index = 169)]
-        /* 0xBB4 */ public float LowHealthFadeOutTime;
+        /* 0xB50 */ public float LowHealthFadeOutTime;
         [NMS(Index = 167)]
-        /* 0xBB8 */ public float LowHealthOverlayIntensity;
+        /* 0xB54 */ public float LowHealthOverlayIntensity;
         [NMS(Index = 171)]
-        /* 0xBBC */ public float LowHealthPulseRateFullShield;
+        /* 0xB58 */ public float LowHealthPulseRateFullShield;
         [NMS(Index = 170)]
-        /* 0xBC0 */ public float LowHealthPulseRateLowShield;
+        /* 0xB5C */ public float LowHealthPulseRateLowShield;
         [NMS(Index = 173)]
-        /* 0xBC4 */ public float LowHealthStrengthFullShield;
+        /* 0xB60 */ public float LowHealthStrengthFullShield;
         [NMS(Index = 172)]
-        /* 0xBC8 */ public float LowHealthStrengthLowShield;
+        /* 0xB64 */ public float LowHealthStrengthLowShield;
         [NMS(Index = 163)]
-        /* 0xBCC */ public float LowHealthVignetteEnd;
+        /* 0xB68 */ public float LowHealthVignetteEnd;
         [NMS(Index = 162)]
-        /* 0xBD0 */ public float LowHealthVignetteStart;
+        /* 0xB6C */ public float LowHealthVignetteStart;
         [NMS(Index = 0)]
-        /* 0xBD4 */ public float LUTDistanceFlightMultiplier;
+        /* 0xB70 */ public float LUTDistanceFlightMultiplier;
         [NMS(Index = 234)]
-        /* 0xBD8 */ public float MaxParticleRenderRange;
+        /* 0xB74 */ public float MaxParticleRenderRange;
         [NMS(Index = 235)]
-        /* 0xBDC */ public float MaxParticleRenderRangeSpace;
+        /* 0xB78 */ public float MaxParticleRenderRangeSpace;
         [NMS(Index = 227)]
-        /* 0xBE0 */ public float MaxSpaceFogStrength;
+        /* 0xB7C */ public float MaxSpaceFogStrength;
         [NMS(Index = 282)]
-        /* 0xBE4 */ public float MinPixelSizeOfObjectsInShadowsCockpitOnPlanet;
+        /* 0xB80 */ public float MinPixelSizeOfObjectsInShadowsCockpitOnPlanet;
         [NMS(Index = 281)]
-        /* 0xBE8 */ public float MinPixelSizeOfObjectsInShadowsPlanet;
+        /* 0xB84 */ public float MinPixelSizeOfObjectsInShadowsPlanet;
         [NMS(Index = 280)]
-        /* 0xBEC */ public float MinPixelSizeOfObjectsInShadowsSpace;
+        /* 0xB88 */ public float MinPixelSizeOfObjectsInShadowsSpace;
         [NMS(Index = 43)]
-        /* 0xBF0 */ public float ModelRendererLightIntensity;
+        /* 0xB8C */ public float ModelRendererLightIntensity;
         [NMS(Index = 237)]
-        /* 0xBF4 */ public float MotionBlurShutterAngle;
+        /* 0xB90 */ public float MotionBlurShutterAngle;
         [NMS(Index = 236)]
-        /* 0xBF8 */ public float MotionBlurShutterSpeed;
+        /* 0xB94 */ public float MotionBlurShutterSpeed;
         [NMS(Index = 293)]
-        /* 0xBFC */ public float MotionBlurThresholdDefault;
+        /* 0xB98 */ public float MotionBlurThresholdDefault;
         [NMS(Index = 291)]
-        /* 0xC00 */ public float MotionBlurThresholdInVehicle;
+        /* 0xB9C */ public float MotionBlurThresholdInVehicle;
         [NMS(Index = 290)]
-        /* 0xC04 */ public float MotionBlurThresholdOnFoot;
+        /* 0xBA0 */ public float MotionBlurThresholdOnFoot;
         [NMS(Index = 292)]
-        /* 0xC08 */ public float MotionBlurThresholdSpace;
+        /* 0xBA4 */ public float MotionBlurThresholdSpace;
         [NMS(Index = 62)]
-        /* 0xC0C */ public float NearClipDistance;
+        /* 0xBA8 */ public float NearClipDistance;
         [NMS(Index = 21)]
-        /* 0xC10 */ public float New_BounceLightIntensity;
+        /* 0xBAC */ public float New_BounceLightIntensity;
         [NMS(Index = 20)]
-        /* 0xC14 */ public float New_BounceLightPower;
+        /* 0xBB0 */ public float New_BounceLightPower;
         [NMS(Index = 19)]
-        /* 0xC18 */ public float New_BounceLightWarp;
+        /* 0xBB4 */ public float New_BounceLightWarp;
         [NMS(Index = 26)]
-        /* 0xC1C */ public float New_SideRimColourMixer;
+        /* 0xBB8 */ public float New_SideRimColourMixer;
         [NMS(Index = 25)]
-        /* 0xC20 */ public float New_SideRimWarp;
+        /* 0xBBC */ public float New_SideRimWarp;
         [NMS(Index = 24)]
-        /* 0xC24 */ public float New_SkyLightIntensity;
+        /* 0xBC0 */ public float New_SkyLightIntensity;
         [NMS(Index = 23)]
-        /* 0xC28 */ public float New_SkyLightPower;
+        /* 0xBC4 */ public float New_SkyLightPower;
         [NMS(Index = 22)]
-        /* 0xC2C */ public float New_SkyLightWarp;
+        /* 0xBC8 */ public float New_SkyLightWarp;
         [NMS(Index = 28)]
-        /* 0xC30 */ public float New_TopRimColourMixer;
+        /* 0xBCC */ public float New_TopRimColourMixer;
         [NMS(Index = 30)]
-        /* 0xC34 */ public float New_TopRimIntensity;
+        /* 0xBD0 */ public float New_TopRimIntensity;
         [NMS(Index = 29)]
-        /* 0xC38 */ public float New_TopRimPower;
+        /* 0xBD4 */ public float New_TopRimPower;
         [NMS(Index = 27)]
-        /* 0xC3C */ public float New_TopRimWarp;
+        /* 0xBD8 */ public float New_TopRimWarp;
         [NMS(Index = 296)]
-        /* 0xC40 */ public float NoFocusMaxFPS;
+        /* 0xBDC */ public float NoFocusMaxFPS;
         [NMS(Index = 33)]
-        /* 0xC44 */ public float Old_BounceLightIntensity;
+        /* 0xBE0 */ public float Old_BounceLightIntensity;
         [NMS(Index = 32)]
-        /* 0xC48 */ public float Old_BounceLightPower;
+        /* 0xBE4 */ public float Old_BounceLightPower;
         [NMS(Index = 31)]
-        /* 0xC4C */ public float Old_BounceLightWarp;
+        /* 0xBE8 */ public float Old_BounceLightWarp;
         [NMS(Index = 38)]
-        /* 0xC50 */ public float Old_SideRimColourMixer;
+        /* 0xBEC */ public float Old_SideRimColourMixer;
         [NMS(Index = 37)]
-        /* 0xC54 */ public float Old_SideRimWarp;
+        /* 0xBF0 */ public float Old_SideRimWarp;
         [NMS(Index = 36)]
-        /* 0xC58 */ public float Old_SkyLightIntensity;
+        /* 0xBF4 */ public float Old_SkyLightIntensity;
         [NMS(Index = 35)]
-        /* 0xC5C */ public float Old_SkyLightPower;
+        /* 0xBF8 */ public float Old_SkyLightPower;
         [NMS(Index = 34)]
-        /* 0xC60 */ public float Old_SkyLightWarp;
+        /* 0xBFC */ public float Old_SkyLightWarp;
         [NMS(Index = 40)]
-        /* 0xC64 */ public float Old_TopRimColourMixer;
+        /* 0xC00 */ public float Old_TopRimColourMixer;
         [NMS(Index = 42)]
-        /* 0xC68 */ public float Old_TopRimIntensity;
+        /* 0xC04 */ public float Old_TopRimIntensity;
         [NMS(Index = 41)]
-        /* 0xC6C */ public float Old_TopRimPower;
+        /* 0xC08 */ public float Old_TopRimPower;
         [NMS(Index = 39)]
-        /* 0xC70 */ public float Old_TopRimWarp;
+        /* 0xC0C */ public float Old_TopRimWarp;
         [NMS(Index = 44)]
-        /* 0xC74 */ public float PetModelRendererLightIntensity;
-        [NMS(Index = 325)]
-        /* 0xC78 */ public float PhotoModeBloomGainMax;
-        [NMS(Index = 323)]
-        /* 0xC7C */ public float PhotoModeBloomGainMedium;
-        [NMS(Index = 319)]
-        /* 0xC80 */ public float PhotoModeBloomGainMin;
-        [NMS(Index = 326)]
-        /* 0xC84 */ public float PhotoModeBloomThresholdMax;
+        /* 0xC10 */ public float PetModelRendererLightIntensity;
         [NMS(Index = 324)]
-        /* 0xC88 */ public float PhotoModeBloomThresholdMedium;
-        [NMS(Index = 320)]
-        /* 0xC8C */ public float PhotoModeBloomThresholdMin;
-        [NMS(Index = 321)]
-        /* 0xC90 */ public float PhotoModeDefaultBloomValue;
+        /* 0xC14 */ public float PhotoModeBloomGainMax;
         [NMS(Index = 322)]
-        /* 0xC94 */ public float PhotoModeMediumValue;
+        /* 0xC18 */ public float PhotoModeBloomGainMedium;
+        [NMS(Index = 318)]
+        /* 0xC1C */ public float PhotoModeBloomGainMin;
+        [NMS(Index = 325)]
+        /* 0xC20 */ public float PhotoModeBloomThresholdMax;
+        [NMS(Index = 323)]
+        /* 0xC24 */ public float PhotoModeBloomThresholdMedium;
+        [NMS(Index = 319)]
+        /* 0xC28 */ public float PhotoModeBloomThresholdMin;
+        [NMS(Index = 320)]
+        /* 0xC2C */ public float PhotoModeDefaultBloomValue;
+        [NMS(Index = 321)]
+        /* 0xC30 */ public float PhotoModeMediumValue;
         [NMS(Index = 87)]
-        /* 0xC98 */ public float QuantizeTime;
+        /* 0xC34 */ public float QuantizeTime;
         [NMS(Index = 90)]
-        /* 0xC9C */ public float QuantizeTimeCameraView;
+        /* 0xC38 */ public float QuantizeTimeCameraView;
         [NMS(Index = 88)]
-        /* 0xCA0 */ public float QuantizeTimeShip;
+        /* 0xC3C */ public float QuantizeTimeShip;
         [NMS(Index = 89)]
-        /* 0xCA4 */ public float QuantizeTimeSpace;
+        /* 0xC40 */ public float QuantizeTimeSpace;
         [NMS(Index = 18)]
-        /* 0xCA8 */ public float Redo_BounceIntensity;
+        /* 0xC44 */ public float Redo_BounceIntensity;
         [NMS(Index = 16)]
-        /* 0xCAC */ public float Redo_LightIntensity;
+        /* 0xC48 */ public float Redo_LightIntensity;
         [NMS(Index = 17)]
-        /* 0xCB0 */ public float Redo_SkyIntensity;
+        /* 0xC4C */ public float Redo_SkyIntensity;
         [NMS(Index = 228)]
-        /* 0xCB4 */ public float ReflectionStrength;
+        /* 0xC50 */ public float ReflectionStrength;
         [NMS(Index = 208)]
-        /* 0xCB8 */ public float RingAvoidanceSphereInterpTime;
+        /* 0xC54 */ public float RingAvoidanceSphereInterpTime;
         [NMS(Index = 207)]
-        /* 0xCBC */ public float RingRadius;
+        /* 0xC58 */ public float RingRadius;
         [NMS(Index = 206)]
-        /* 0xCC0 */ public float RingSize;
+        /* 0xC5C */ public float RingSize;
         [NMS(Index = 14)]
-        /* 0xCC4 */ public float Saturation;
+        /* 0xC60 */ public float Saturation;
         [NMS(Index = 210)]
-        /* 0xCC8 */ public float SaturationVariance;
+        /* 0xC64 */ public float SaturationVariance;
         [NMS(Index = 48)]
-        /* 0xCCC */ public float ScanAlpha;
+        /* 0xC68 */ public float ScanAlpha;
         [NMS(Index = 186)]
-        /* 0xCD0 */ public float ScanBandWidth;
+        /* 0xC6C */ public float ScanBandWidth;
         [NMS(Index = 47)]
-        /* 0xCD4 */ public float ScanClamp;
+        /* 0xC70 */ public float ScanClamp;
         [NMS(Index = 188)]
-        /* 0xCD8 */ public float ScanDistance;
+        /* 0xC74 */ public float ScanDistance;
         [NMS(Index = 184)]
-        /* 0xCDC */ public float ScanEffectSpeed;
+        /* 0xC78 */ public float ScanEffectSpeed;
         [NMS(Index = 182)]
-        /* 0xCE0 */ public float ScanFadeInTime;
+        /* 0xC7C */ public float ScanFadeInTime;
         [NMS(Index = 183)]
-        /* 0xCE4 */ public float ScanFadeOutTime;
+        /* 0xC80 */ public float ScanFadeOutTime;
         [NMS(Index = 46)]
-        /* 0xCE8 */ public float ScanFresnel;
+        /* 0xC84 */ public float ScanFresnel;
         [NMS(Index = 187)]
-        /* 0xCEC */ public float ScanHeightScale;
+        /* 0xC88 */ public float ScanHeightScale;
         [NMS(Index = 189)]
-        /* 0xCF0 */ public float ScanHorizontalScale;
+        /* 0xC8C */ public float ScanHorizontalScale;
         [NMS(Index = 185)]
-        /* 0xCF4 */ public float ScanObjectFade;
+        /* 0xC90 */ public float ScanObjectFade;
         [NMS(Index = 86)]
-        /* 0xCF8 */ public float ShadowBillboardOffset;
+        /* 0xC94 */ public float ShadowBillboardOffset;
         [NMS(Index = 72)]
-        /* 0xCFC */ public float ShadowLength;
+        /* 0xC98 */ public float ShadowLength;
         [NMS(Index = 78)]
-        /* 0xD00 */ public float ShadowLengthCameraView;
+        /* 0xC9C */ public float ShadowLengthCameraView;
         [NMS(Index = 76)]
-        /* 0xD04 */ public float ShadowLengthFreighter;
+        /* 0xCA0 */ public float ShadowLengthFreighter;
         [NMS(Index = 77)]
-        /* 0xD08 */ public float ShadowLengthFreighterAbandoned;
+        /* 0xCA4 */ public float ShadowLengthFreighterAbandoned;
         [NMS(Index = 73)]
-        /* 0xD0C */ public float ShadowLengthShip;
+        /* 0xCA8 */ public float ShadowLengthShip;
         [NMS(Index = 74)]
-        /* 0xD10 */ public float ShadowLengthSpace;
+        /* 0xCAC */ public float ShadowLengthSpace;
         [NMS(Index = 75)]
-        /* 0xD14 */ public float ShadowLengthStation;
+        /* 0xCB0 */ public float ShadowLengthStation;
         [NMS(Index = 68)]
-        /* 0xD18 */ public int ShadowMapSize;
+        /* 0xCB4 */ public int ShadowMapSize;
         [NMS(Index = 300)]
-        /* 0xD1C */ public float SharpenFilterAmount;
+        /* 0xCB8 */ public float SharpenFilterAmount;
         [NMS(Index = 302)]
-        /* 0xD20 */ public float SharpenFilterDepthFactorEnd;
+        /* 0xCBC */ public float SharpenFilterDepthFactorEnd;
         [NMS(Index = 301)]
-        /* 0xD24 */ public float SharpenFilterDepthFactorStart;
+        /* 0xCC0 */ public float SharpenFilterDepthFactorStart;
         [NMS(Index = 174)]
-        /* 0xD28 */ public float ShieldDownScanlineTime;
+        /* 0xCC4 */ public float ShieldDownScanlineTime;
         [NMS(Index = 192)]
-        /* 0xD2C */ public float Single1ScanBandWidth;
+        /* 0xCC8 */ public float Single1ScanBandWidth;
         [NMS(Index = 193)]
-        /* 0xD30 */ public float Single1ScanEffectSpeed;
+        /* 0xCCC */ public float Single1ScanEffectSpeed;
         [NMS(Index = 191)]
-        /* 0xD34 */ public float Single1ScanHeightScale;
+        /* 0xCD0 */ public float Single1ScanHeightScale;
         [NMS(Index = 195)]
-        /* 0xD38 */ public float Single1ScanHorizontalScale;
+        /* 0xCD4 */ public float Single1ScanHorizontalScale;
         [NMS(Index = 194)]
-        /* 0xD3C */ public float Single1ScanObjectFade;
+        /* 0xCD8 */ public float Single1ScanObjectFade;
         [NMS(Index = 190)]
-        /* 0xD40 */ public float Single1ScanTime;
+        /* 0xCDC */ public float Single1ScanTime;
         [NMS(Index = 198)]
-        /* 0xD44 */ public float Single2ScanBandWidth;
+        /* 0xCE0 */ public float Single2ScanBandWidth;
         [NMS(Index = 199)]
-        /* 0xD48 */ public float Single2ScanEffectSpeed;
+        /* 0xCE4 */ public float Single2ScanEffectSpeed;
         [NMS(Index = 197)]
-        /* 0xD4C */ public float Single2ScanHeightScale;
+        /* 0xCE8 */ public float Single2ScanHeightScale;
         [NMS(Index = 201)]
-        /* 0xD50 */ public float Single2ScanHorizontalScale;
+        /* 0xCEC */ public float Single2ScanHorizontalScale;
         [NMS(Index = 200)]
-        /* 0xD54 */ public float Single2ScanObjectFade;
+        /* 0xCF0 */ public float Single2ScanObjectFade;
         [NMS(Index = 196)]
-        /* 0xD58 */ public float Single2ScanTime;
+        /* 0xCF4 */ public float Single2ScanTime;
         [NMS(Index = 221)]
-        /* 0xD5C */ public float SkySaturationMax;
+        /* 0xCF8 */ public float SkySaturationMax;
         [NMS(Index = 220)]
-        /* 0xD60 */ public float SkySaturationMin;
+        /* 0xCFC */ public float SkySaturationMin;
         [NMS(Index = 223)]
-        /* 0xD64 */ public float SkyValueMax;
+        /* 0xD00 */ public float SkyValueMax;
         [NMS(Index = 222)]
-        /* 0xD68 */ public float SkyValueMin;
+        /* 0xD04 */ public float SkyValueMin;
         [NMS(Index = 295)]
-        /* 0xD6C */ public float SpaceIBLBlendDistance;
+        /* 0xD08 */ public float SpaceIBLBlendDistance;
         [NMS(Index = 294)]
-        /* 0xD70 */ public float SpaceIBLBlendStart;
+        /* 0xD0C */ public float SpaceIBLBlendStart;
         [NMS(Index = 225)]
-        /* 0xD74 */ public float SpaceMieFactor;
+        /* 0xD10 */ public float SpaceMieFactor;
         [NMS(Index = 224)]
-        /* 0xD78 */ public float SpaceScale;
+        /* 0xD14 */ public float SpaceScale;
         [NMS(Index = 226)]
-        /* 0xD7C */ public float SpaceSunFactor;
+        /* 0xD18 */ public float SpaceSunFactor;
         [NMS(Index = 2)]
-        /* 0xD80 */ public float SunLightBlendTime;
+        /* 0xD1C */ public float SunLightBlendTime;
         [NMS(Index = 1)]
-        /* 0xD84 */ public float SunLightIntensity;
+        /* 0xD20 */ public float SunLightIntensity;
         [NMS(Index = 9)]
-        /* 0xD88 */ public float SunRayDecay;
+        /* 0xD24 */ public float SunRayDecay;
         [NMS(Index = 8)]
-        /* 0xD8C */ public float SunRayDensity;
+        /* 0xD28 */ public float SunRayDensity;
         [NMS(Index = 10)]
-        /* 0xD90 */ public float SunRayExposure;
+        /* 0xD2C */ public float SunRayExposure;
         [NMS(Index = 11)]
-        /* 0xD94 */ public float SunRayWeight;
+        /* 0xD30 */ public float SunRayWeight;
         [NMS(Index = 285)]
-        /* 0xD98 */ public int SupersamplingLevel;
+        /* 0xD34 */ public int SupersamplingLevel;
         [NMS(Index = 240)]
-        /* 0xD9C */ public float TaaAccumDelay;
+        /* 0xD38 */ public float TaaAccumDelay;
         [NMS(Index = 239)]
-        /* 0xDA0 */ public float TaaHighFreqConstant;
+        /* 0xD3C */ public float TaaHighFreqConstant;
         [NMS(Index = 238)]
-        /* 0xDA4 */ public float TaaLowFreqConstant;
+        /* 0xD40 */ public float TaaLowFreqConstant;
         [NMS(Index = 289)]
-        /* 0xDA8 */ public int TargetTextureMemUsageMB;
+        /* 0xD44 */ public int TargetTextureMemUsageMB;
         [NMS(Index = 202)]
-        /* 0xDAC */ public float TeleportFlashTime;
+        /* 0xD48 */ public float TeleportFlashTime;
         [NMS(Index = 259)]
-        /* 0xDB0 */ public int TerrainAnisoHi;
+        /* 0xD4C */ public int TerrainAnisoHi;
         [NMS(Index = 257)]
-        /* 0xDB4 */ public int TerrainAnisoLow;
+        /* 0xD50 */ public int TerrainAnisoLow;
         [NMS(Index = 258)]
-        /* 0xDB8 */ public int TerrainAnisoMed;
+        /* 0xD54 */ public int TerrainAnisoMed;
         [NMS(Index = 260)]
-        /* 0xDBC */ public int TerrainAnisoUlt;
+        /* 0xD58 */ public int TerrainAnisoUlt;
         [NMS(Index = 267)]
-        /* 0xDC0 */ public int TerrainBlocksPerFrameHi;
+        /* 0xD5C */ public int TerrainBlocksPerFrameHi;
         [NMS(Index = 265)]
-        /* 0xDC4 */ public int TerrainBlocksPerFrameLow;
+        /* 0xD60 */ public int TerrainBlocksPerFrameLow;
         [NMS(Index = 266)]
-        /* 0xDC8 */ public int TerrainBlocksPerFrameMed;
+        /* 0xD64 */ public int TerrainBlocksPerFrameMed;
         [NMS(Index = 273)]
-        /* 0xDCC */ public int TerrainBlocksPerFrameOberon;
+        /* 0xD68 */ public int TerrainBlocksPerFrameOberon;
         [NMS(Index = 269)]
-        /* 0xDD0 */ public int TerrainBlocksPerFramePs430;
+        /* 0xD6C */ public int TerrainBlocksPerFramePs430;
         [NMS(Index = 270)]
-        /* 0xDD4 */ public int TerrainBlocksPerFramePs460;
+        /* 0xD70 */ public int TerrainBlocksPerFramePs460;
         [NMS(Index = 268)]
-        /* 0xDD8 */ public int TerrainBlocksPerFrameUlt;
+        /* 0xD74 */ public int TerrainBlocksPerFrameUlt;
         [NMS(Index = 271)]
-        /* 0xDDC */ public int TerrainBlocksPerFrameXb130;
+        /* 0xD78 */ public int TerrainBlocksPerFrameXb130;
         [NMS(Index = 272)]
-        /* 0xDE0 */ public int TerrainBlocksPerFrameXb160;
+        /* 0xD7C */ public int TerrainBlocksPerFrameXb160;
         [NMS(Index = 261)]
-        /* 0xDE4 */ public int TerrainDroppedMipsLow;
+        /* 0xD80 */ public int TerrainDroppedMipsLow;
         [NMS(Index = 262)]
-        /* 0xDE8 */ public int TerrainDroppedMipsMed;
+        /* 0xD84 */ public int TerrainDroppedMipsMed;
         [NMS(Index = 263)]
-        /* 0xDEC */ public float TerrainMipBiasLow;
+        /* 0xD88 */ public float TerrainMipBiasLow;
         [NMS(Index = 264)]
-        /* 0xDF0 */ public float TerrainMipBiasMed;
+        /* 0xD8C */ public float TerrainMipBiasMed;
         [NMS(Index = 91)]
-        /* 0xDF4 */ public float ToneMapExposure;
+        /* 0xD90 */ public float ToneMapExposure;
         [NMS(Index = 103)]
-        /* 0xDF8 */ public float ToneMapExposureCave;
+        /* 0xD94 */ public float ToneMapExposureCave;
         [NMS(Index = 211)]
-        /* 0xDFC */ public float ValueVariance;
+        /* 0xD98 */ public float ValueVariance;
         [NMS(Index = 143)]
-        /* 0xE00 */ public float VignetteEnd;
+        /* 0xD9C */ public float VignetteEnd;
         [NMS(Index = 147)]
-        /* 0xE04 */ public float VignetteEndMoveVR;
+        /* 0xDA0 */ public float VignetteEndMoveVR;
         [NMS(Index = 151)]
-        /* 0xE08 */ public float VignetteEndMoveVRShip;
+        /* 0xDA4 */ public float VignetteEndMoveVRShip;
         [NMS(Index = 160)]
-        /* 0xE0C */ public float VignetteEndRidingVR;
+        /* 0xDA8 */ public float VignetteEndRidingVR;
         [NMS(Index = 157)]
-        /* 0xE10 */ public float VignetteEndTurnRidingVR;
+        /* 0xDAC */ public float VignetteEndTurnRidingVR;
         [NMS(Index = 145)]
-        /* 0xE14 */ public float VignetteEndTurnVR;
+        /* 0xDB0 */ public float VignetteEndTurnVR;
         [NMS(Index = 154)]
-        /* 0xE18 */ public float VignetteEndTurnVRShip;
+        /* 0xDB4 */ public float VignetteEndTurnVRShip;
         [NMS(Index = 142)]
-        /* 0xE1C */ public float VignetteStart;
+        /* 0xDB8 */ public float VignetteStart;
         [NMS(Index = 146)]
-        /* 0xE20 */ public float VignetteStartMoveVR;
+        /* 0xDBC */ public float VignetteStartMoveVR;
         [NMS(Index = 150)]
-        /* 0xE24 */ public float VignetteStartMoveVRShip;
+        /* 0xDC0 */ public float VignetteStartMoveVRShip;
         [NMS(Index = 159)]
-        /* 0xE28 */ public float VignetteStartRidingVR;
+        /* 0xDC4 */ public float VignetteStartRidingVR;
         [NMS(Index = 156)]
-        /* 0xE2C */ public float VignetteStartTurnRidingVR;
+        /* 0xDC8 */ public float VignetteStartTurnRidingVR;
         [NMS(Index = 144)]
-        /* 0xE30 */ public float VignetteStartTurnVR;
+        /* 0xDCC */ public float VignetteStartTurnVR;
         [NMS(Index = 153)]
-        /* 0xE34 */ public float VignetteStartTurnVRShip;
+        /* 0xDD0 */ public float VignetteStartTurnVRShip;
         [NMS(Index = 149)]
-        /* 0xE38 */ public float VignetteVRMoveInterpTime;
+        /* 0xDD4 */ public float VignetteVRMoveInterpTime;
         [NMS(Index = 152)]
-        /* 0xE3C */ public float VignetteVRMoveInterpTimeShip;
+        /* 0xDD8 */ public float VignetteVRMoveInterpTimeShip;
         [NMS(Index = 161)]
-        /* 0xE40 */ public float VignetteVRRidingInterpTime;
+        /* 0xDDC */ public float VignetteVRRidingInterpTime;
         [NMS(Index = 148)]
-        /* 0xE44 */ public float VignetteVRTurnInterpTime;
+        /* 0xDE0 */ public float VignetteVRTurnInterpTime;
         [NMS(Index = 155)]
-        /* 0xE48 */ public float VignetteVRTurnInterpTimeShip;
+        /* 0xDE4 */ public float VignetteVRTurnInterpTimeShip;
         [NMS(Index = 158)]
-        /* 0xE4C */ public float VignetteVRTurnRidingInterpTime;
+        /* 0xDE8 */ public float VignetteVRTurnRidingInterpTime;
         [NMS(Index = 64)]
-        /* 0xE50 */ public float WarpK;
+        /* 0xDEC */ public float WarpK;
         [NMS(Index = 65)]
-        /* 0xE54 */ public float WarpKCube;
+        /* 0xDF0 */ public float WarpKCube;
         [NMS(Index = 67)]
-        /* 0xE58 */ public float WarpKDispersion;
+        /* 0xDF4 */ public float WarpKDispersion;
         [NMS(Index = 66)]
-        /* 0xE5C */ public float WarpScale;
+        /* 0xDF8 */ public float WarpScale;
         [NMS(Index = 231)]
-        /* 0xE60 */ public float WaterHueShift;
+        /* 0xDFC */ public float WaterHueShift;
         [NMS(Index = 232)]
-        /* 0xE64 */ public float WaterSaturation;
+        /* 0xE00 */ public float WaterSaturation;
         [NMS(Index = 233)]
-        /* 0xE68 */ public float WaterValue;
+        /* 0xE04 */ public float WaterValue;
         [NMS(Index = 45)]
-        /* 0xE6C */ public float WonderModelRendererLightIntensity;
+        /* 0xE08 */ public float WonderModelRendererLightIntensity;
         [NMS(Index = 283)]
-        /* 0xE70 */ public bool AllowPartialCascadeRender;
+        /* 0xE0C */ public bool AllowPartialCascadeRender;
         [NMS(Index = 244)]
-        /* 0xE71 */ public bool ApplyTaaTest;
+        /* 0xE0D */ public bool ApplyTaaTest;
         [NMS(Index = 51)]
-        /* 0xE72 */ public bool CenterRenderSpaceOffset;
+        /* 0xE0E */ public bool CenterRenderSpaceOffset;
         [NMS(Index = 50)]
-        /* 0xE73 */ public bool DebugLinesDepthTest;
+        /* 0xE0F */ public bool DebugLinesDepthTest;
         [NMS(Index = 139)]
-        /* 0xE74 */ public bool DOFEnableBokeh;
+        /* 0xE10 */ public bool DOFEnableBokeh;
         [NMS(Index = 140)]
-        /* 0xE75 */ public bool DOFEnableNewBokehShader;
+        /* 0xE11 */ public bool DOFEnableNewBokehShader;
         [NMS(Index = 141)]
-        /* 0xE76 */ public bool DOFEnablePhysCamera;
+        /* 0xE12 */ public bool DOFEnablePhysCamera;
         [NMS(Index = 297)]
-        /* 0xE77 */ public bool EnableCrossPipeSharing;
+        /* 0xE13 */ public bool EnableCrossPipeSharing;
         [NMS(Index = 298)]
-        /* 0xE78 */ public bool EnableSSR;
+        /* 0xE14 */ public bool EnableSSR;
         [NMS(Index = 274)]
-        /* 0xE79 */ public bool EnableTerrainCachePs4Base;
+        /* 0xE15 */ public bool EnableTerrainCachePs4Base;
         [NMS(Index = 275)]
-        /* 0xE7A */ public bool EnableTerrainCachePs4Pro;
+        /* 0xE16 */ public bool EnableTerrainCachePs4Pro;
         [NMS(Index = 276)]
-        /* 0xE7B */ public bool EnableTerrainCacheXb1Base;
+        /* 0xE17 */ public bool EnableTerrainCacheXb1Base;
         [NMS(Index = 277)]
-        /* 0xE7C */ public bool EnableTerrainCacheXb1X;
+        /* 0xE18 */ public bool EnableTerrainCacheXb1X;
         [NMS(Index = 286)]
-        /* 0xE7D */ public bool EnableTextureStreaming;
-        [NMS(Index = 317)]
-        /* 0xE7E */ public bool EnableVariableUpdate;
+        /* 0xE19 */ public bool EnableTextureStreaming;
+        [NMS(Index = 316)]
+        /* 0xE1A */ public bool EnableVariableUpdate;
         [NMS(Index = 278)]
-        /* 0xE7F */ public bool ForceCachedTerrain;
+        /* 0xE1B */ public bool ForceCachedTerrain;
         [NMS(Index = 288)]
-        /* 0xE80 */ public bool ForceEvictAllTextures;
+        /* 0xE1C */ public bool ForceEvictAllTextures;
         [NMS(Index = 287)]
-        /* 0xE81 */ public bool ForceStreamAllTextures;
+        /* 0xE1D */ public bool ForceStreamAllTextures;
         [NMS(Index = 279)]
-        /* 0xE82 */ public bool ForceUncachedTerrain;
+        /* 0xE1E */ public bool ForceUncachedTerrain;
         [NMS(Index = 175)]
-        /* 0xE83 */ public bool FullscreenScanEffect;
-        [NMS(Index = 327)]
-        /* 0xE84 */ public bool IBLReflections;
+        /* 0xE1F */ public bool FullscreenScanEffect;
+        [NMS(Index = 326)]
+        /* 0xE20 */ public bool IBLReflections;
         [NMS(Index = 15)]
-        /* 0xE85 */ public bool Redo_On;
+        /* 0xE21 */ public bool Redo_On;
         [NMS(Index = 85)]
-        /* 0xE86 */ public bool ShadowQuantized;
+        /* 0xE22 */ public bool ShadowQuantized;
         [NMS(Index = 299)]
-        /* 0xE87 */ public bool ShowReflectionProbes;
+        /* 0xE23 */ public bool ShowReflectionProbes;
         [NMS(Index = 245)]
-        /* 0xE88 */ public bool ShowTaaBuf;
+        /* 0xE24 */ public bool ShowTaaBuf;
         [NMS(Index = 249)]
-        /* 0xE89 */ public bool ShowTaaCVarianceBuf;
+        /* 0xE25 */ public bool ShowTaaCVarianceBuf;
         [NMS(Index = 248)]
-        /* 0xE8A */ public bool ShowTaaNVarianceBuf;
+        /* 0xE26 */ public bool ShowTaaNVarianceBuf;
         [NMS(Index = 247)]
-        /* 0xE8B */ public bool ShowTaaVarianceBuf;
+        /* 0xE27 */ public bool ShowTaaVarianceBuf;
         [NMS(Index = 246)]
-        /* 0xE8C */ public bool TonemapInLuminance;
+        /* 0xE28 */ public bool TonemapInLuminance;
         [NMS(Index = 176)]
-        /* 0xE8D */ public bool UseImposters;
+        /* 0xE29 */ public bool UseImposters;
         [NMS(Index = 243)]
-        /* 0xE8E */ public bool UseTaaResolve;
+        /* 0xE2A */ public bool UseTaaResolve;
     }
 }
