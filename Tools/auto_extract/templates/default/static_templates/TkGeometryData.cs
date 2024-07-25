@@ -6,12 +6,12 @@ using System.Reflection;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x7E2C6C00A113D11F, NameHash = 0xA74EA06001E7577E)]
+    [NMS(GUID = 0x32F6AE7B03222A1F, NameHash = 0x819C3220)]
     public class TkGeometryData : NMSTemplate
     {
-        [NMS(Index = 18)]
+        [NMS(Index = 20)]
         /* 0x000 */ public TkVertexLayout SmallVertexLayout;
-        [NMS(Index = 17)]
+        [NMS(Index = 19)]
         /* 0x020 */ public TkVertexLayout VertexLayout;
         [NMS(Index = 12)]
         /* 0x040 */ public List<int> BoundHullVertEd;
@@ -19,7 +19,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x050 */ public List<Vector4f> BoundHullVerts;
         [NMS(Index = 11)]
         /* 0x060 */ public List<int> BoundHullVertSt;
-        [NMS(Index = 19)]
+        [NMS(Index = 21)]
         /* 0x070 */ public List<int> IndexBuffer;
         [NMS(Index = 4)]
         /* 0x080 */ public List<TkJointBindingData> JointBindings;
@@ -39,18 +39,22 @@ namespace libMBIN.NMS.Toolkit
         /* 0x0F0 */ public List<int> MeshVertREnd;
         [NMS(Index = 9)]
         /* 0x100 */ public List<int> MeshVertRStart;
+        [NMS(Index = 18)]
+        /* 0x110 */ public List<VariableSizeString> ProcGenNodeNames;
+        [NMS(Index = 17)]
+        /* 0x120 */ public List<int> ProcGenParentId;
         [NMS(Index = 8)]
-        /* 0x110 */ public List<int> SkinMatrixLayout;
-        [NMS(Index = 20)]
-        /* 0x120 */ public List<TkMeshMetaData> StreamMetaDataArray;
+        /* 0x130 */ public List<int> SkinMatrixLayout;
+        [NMS(Index = 22)]
+        /* 0x140 */ public List<TkMeshMetaData> StreamMetaDataArray;
         [NMS(Index = 3)]
-        /* 0x130 */ public int CollisionIndexCount;
+        /* 0x150 */ public int CollisionIndexCount;
         [NMS(Index = 1)]
-        /* 0x134 */ public int IndexCount;
+        /* 0x154 */ public int IndexCount;
         [NMS(Index = 2)]
-        /* 0x138 */ public int Indices16Bit;
+        /* 0x158 */ public int Indices16Bit;
         [NMS(Index = 0)]
-        /* 0x13C */ public int VertexCount;
+        /* 0x15C */ public int VertexCount;
 
         // TODO: add the list ending to this??
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex) {

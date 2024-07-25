@@ -4,13 +4,18 @@ using libMBIN.NMS.GameComponents;
 namespace libMBIN.NMS
 {
     [NMS(Size = 0x10, Alignment = 0x1)]
-    public class VariableSizeString : NMSTemplate, INMSString
+    public class VariableSizeString : NMSTemplate, INMSVariableLengthString
     {
         public string Value;
 
         public string StringValue()
         {
             return this.Value;
+        }
+
+        public string String {
+            get => StringValue();
+            set => Value = value;
         }
 
         /// <summary>
