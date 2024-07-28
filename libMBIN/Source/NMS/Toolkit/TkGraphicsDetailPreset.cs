@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x8E1BC1ABE633E3AE, NameHash = 0x2D59643E)]
+    [NMS(GUID = 0x66C79C9D5D98EB24, NameHash = 0x2D59643E)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
         [NMS(Index = 22)]
@@ -104,10 +104,11 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 18)]
         /* 0x34 */ public MetalFXQualityEnum MetalFXQuality;
-        // size: 0x2
+        // size: 0x3
         public enum NVIDIAReflexLowLatencyEnum : uint {
             On,
             Off,
+            OnWithBoost,
         }
         [NMS(Index = 13)]
         /* 0x38 */ public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
