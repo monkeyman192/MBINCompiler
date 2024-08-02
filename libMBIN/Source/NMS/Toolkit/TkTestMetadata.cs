@@ -5,7 +5,7 @@ using System;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xFB74F8DC16DC037E, NameHash = 0x69A0FDE1)]
+    [NMS(GUID = 0xB96833493B978476, NameHash = 0x69A0FDE1)]
     public class TkTestMetadata : NMSTemplate
     {
         [NMS(Index = 45)]

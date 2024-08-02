@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7BD9DFF5D9D78C54, NameHash = 0x7A0D33C8)]
+    [NMS(GUID = 0xE12B1B51EDB81853, NameHash = 0x7A0D33C8)]
     public class GcAudioWwiseEvents : NMSTemplate
     {
-        // size: 0xA43
+        // size: 0xA44
         public enum AkEventEnum : uint {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
@@ -1337,6 +1337,7 @@ namespace libMBIN.NMS.GameComponents
             PL_FOLEY_CLOTHING_MULTITOOL_OVERHEAT = 0x1BD229F3,
             PL_FOLEY_CLOTHING_MULTITOOL_RELOAD = 0x5C1C938,
             PL_FOLEY_CLOTHING_RUN_TO_IDLE = 0x73450387,
+            PL_FOLEY_CLOTHING_SWIM_STOPALL = 0x7F90AA67,
             PL_FOLEY_EMOTE_DANCELOOP = 0xD832CAD2,
             PL_FOLEY_EMOTE_HELP = 0x3EAC0F72,
             PL_FOLEY_EMOTE_JOY = 0xB65D913,
