@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8DFF66F10B5CB9F8, NameHash = 0xD5492CC8)]
+    [NMS(GUID = 0x406106F49104520D, NameHash = 0xD5492CC8)]
     public class GcShipDialogue : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x7, EnumType = typeof(GcShipDialogueTreeEnum.DialogueTreeEnum))]
