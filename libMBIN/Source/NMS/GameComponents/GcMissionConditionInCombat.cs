@@ -1,11 +1,11 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF33DCFD8AA40401E, NameHash = 0x2A70A589)]
+    [NMS(GUID = 0x8A1D47261D6E618E, NameHash = 0x2A70A589)]
     public class GcMissionConditionInCombat : NMSTemplate
     {
         [NMS(Index = 1)]
         /* 0x00 */ public NMSString0x20A OverrideOSDMessage;
-        // size: 0x8
+        // size: 0x9
         public enum CombatTypeEnum : uint {
             GroundCombat,
             SpaceCombat,
@@ -15,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             GroundWormCombat,
             RewardEncounter,
             BugQueen,
+            JellyBoss,
         }
         [NMS(Index = 0)]
         /* 0x20 */ public CombatTypeEnum CombatType;

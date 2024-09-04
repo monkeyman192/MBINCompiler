@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x43F58B53025D9301, NameHash = 0x185DE011)]
+    [NMS(GUID = 0xE0929A2519345522, NameHash = 0x185DE011)]
     public class GcCustomisationComponentData : NMSTemplate
     {
-        // size: 0x18
+        // size: 0x19
         public enum CustomisationDataTypeEnum : uint {
             Player,
             Vehicle,
@@ -29,6 +29,7 @@ namespace libMBIN.NMS.GameComponents
             Ship_11,
             Ship_12,
             PirateFreighter,
+            Skiff,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public CustomisationDataTypeEnum CustomisationDataType;

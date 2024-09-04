@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x3D7082A5124E40C0, NameHash = 0xFA1C5236)]
+    [NMS(GUID = 0xFF492267D41A45E0, NameHash = 0xFA1C5236)]
     public class TkParticleData : NMSTemplate
     {
         [NMS(Index = 46)]
@@ -47,10 +47,12 @@ namespace libMBIN.NMS.Toolkit
         /* 0x350 */ public NMSString0x10 UserColour;
         [NMS(Index = 57)]
         /* 0x360 */ public TkEmitterWindDrift WindDrift;
+        [NMS(Index = 31)]
+        /* 0x37C */ public TkEmitterBillboardAlignment BillboardAlignment;
         [NMS(Index = 56)]
-        /* 0x37C */ public TkFloatRange CameraDistanceFade;
+        /* 0x384 */ public TkFloatRange CameraDistanceFade;
         [NMS(Index = 8)]
-        /* 0x384 */ public TkEmitFromParticleInfo EmitFromParticleInfo;
+        /* 0x38C */ public TkEmitFromParticleInfo EmitFromParticleInfo;
         // size: 0x3
         public enum AlignmentEnum : uint {
             Rotation,
@@ -58,26 +60,13 @@ namespace libMBIN.NMS.Toolkit
             VelocityScreenSpace,
         }
         [NMS(Index = 30)]
-        /* 0x38C */ public AlignmentEnum Alignment;
+        /* 0x394 */ public AlignmentEnum Alignment;
         [NMS(Index = 43)]
-        /* 0x390 */ public float AlphaVariance;
+        /* 0x398 */ public float AlphaVariance;
         [NMS(Index = 1)]
-        /* 0x394 */ public uint AudioEvent;
-        // size: 0x8
-        public enum BillboardAlignmentEnum : uint {
-            Screen,
-            XLocal,
-            YLocal,
-            ZLocal,
-            NegativeXLocal,
-            NegativeYLocal,
-            NegativeZLocal,
-            ScreenWorld,
-        }
-        [NMS(Index = 31)]
-        /* 0x398 */ public BillboardAlignmentEnum BillboardAlignment;
+        /* 0x39C */ public uint AudioEvent;
         [NMS(Index = 7)]
-        /* 0x39C */ public float Delay;
+        /* 0x3A0 */ public float Delay;
         // size: 0x3
         public enum DragTypeEnum : uint {
             IgnoreGravity,
@@ -85,9 +74,9 @@ namespace libMBIN.NMS.Toolkit
             ApplyWind,
         }
         [NMS(Index = 21)]
-        /* 0x3A0 */ public DragTypeEnum DragType;
+        /* 0x3A4 */ public DragTypeEnum DragType;
         [NMS(Index = 11)]
-        /* 0x3A4 */ public float EmitterMidLifeRatio;
+        /* 0x3A8 */ public float EmitterMidLifeRatio;
         // size: 0x3
         public enum EmitterQualityLevelEnum : uint {
             All,
@@ -95,11 +84,11 @@ namespace libMBIN.NMS.Toolkit
             High,
         }
         [NMS(Index = 0)]
-        /* 0x3A8 */ public EmitterQualityLevelEnum EmitterQualityLevel;
+        /* 0x3AC */ public EmitterQualityLevelEnum EmitterQualityLevel;
         [NMS(Index = 14)]
-        /* 0x3AC */ public float EmitterSpreadAngle;
+        /* 0x3B0 */ public float EmitterSpreadAngle;
         [NMS(Index = 15)]
-        /* 0x3B0 */ public float EmitterSpreadAngleMin;
+        /* 0x3B4 */ public float EmitterSpreadAngleMin;
         // size: 0x4
         public enum FlipbookPlaybackRateEnum : uint {
             Absolute,
@@ -108,32 +97,32 @@ namespace libMBIN.NMS.Toolkit
             Random,
         }
         [NMS(Index = 39)]
-        /* 0x3B4 */ public FlipbookPlaybackRateEnum FlipbookPlaybackRate;
+        /* 0x3B8 */ public FlipbookPlaybackRateEnum FlipbookPlaybackRate;
         [NMS(Index = 40)]
-        /* 0x3B8 */ public float HueVariance;
+        /* 0x3BC */ public float HueVariance;
         [NMS(Index = 42)]
-        /* 0x3BC */ public float LightnessVariance;
+        /* 0x3C0 */ public float LightnessVariance;
         [NMS(Index = 4)]
-        /* 0x3C0 */ public int MaxCount;
+        /* 0x3C4 */ public int MaxCount;
         [NMS(Index = 52)]
-        /* 0x3C4 */ public float MaxRenderCameraHeight;
+        /* 0x3C8 */ public float MaxRenderCameraHeight;
         [NMS(Index = 51)]
-        /* 0x3C8 */ public float MaxRenderDistance;
+        /* 0x3CC */ public float MaxRenderDistance;
         [NMS(Index = 53)]
-        /* 0x3CC */ public float MaxSpawnDistance;
+        /* 0x3D0 */ public float MaxSpawnDistance;
         // size: 0x2
         public enum OnRefractionsDisabledEnum : uint {
             Hide,
             AlphaBlend,
         }
         [NMS(Index = 48)]
-        /* 0x3D0 */ public OnRefractionsDisabledEnum OnRefractionsDisabled;
+        /* 0x3D4 */ public OnRefractionsDisabledEnum OnRefractionsDisabled;
         [NMS(Index = 37)]
-        /* 0x3D4 */ public float RotateAroundEmitter;
+        /* 0x3D8 */ public float RotateAroundEmitter;
         [NMS(Index = 41)]
-        /* 0x3D8 */ public float SaturationVariance;
+        /* 0x3DC */ public float SaturationVariance;
         [NMS(Index = 54)]
-        /* 0x3DC */ public float SoftFadeStrength;
+        /* 0x3E0 */ public float SoftFadeStrength;
         // size: 0x6
         public enum SpawnOffsetTypeEnum : uint {
             Sphere,
@@ -144,32 +133,32 @@ namespace libMBIN.NMS.Toolkit
             Point,
         }
         [NMS(Index = 24)]
-        /* 0x3E0 */ public SpawnOffsetTypeEnum SpawnOffsetType;
+        /* 0x3E4 */ public SpawnOffsetTypeEnum SpawnOffsetType;
         [NMS(Index = 23)]
-        /* 0x3E4 */ public float StartOffset;
+        /* 0x3E8 */ public float StartOffset;
         [NMS(Index = 28)]
-        /* 0x3E8 */ public float StartRotationVariation;
+        /* 0x3EC */ public float StartRotationVariation;
         [NMS(Index = 55)]
-        /* 0x3EC */ public float SurfaceDistanceFadeStrength;
+        /* 0x3F0 */ public float SurfaceDistanceFadeStrength;
         [NMS(Index = 36)]
-        /* 0x3F0 */ public float TrackEmitterPosition;
+        /* 0x3F4 */ public float TrackEmitterPosition;
         [NMS(Index = 33)]
-        /* 0x3F4 */ public TkCoordinateOrientation UCoordinate;
+        /* 0x3F8 */ public TkCoordinateOrientation UCoordinate;
         [NMS(Index = 34)]
-        /* 0x3F8 */ public TkCoordinateOrientation VCoordinate;
+        /* 0x3FC */ public TkCoordinateOrientation VCoordinate;
         [NMS(Index = 22)]
-        /* 0x3FC */ public float Variation;
+        /* 0x400 */ public float Variation;
         [NMS(Index = 35)]
-        /* 0x400 */ public float VelocityInheritance;
+        /* 0x404 */ public float VelocityInheritance;
         [NMS(Index = 12)]
-        /* 0x404 */ public TkCurveType EmitterLifeCurve1;
+        /* 0x408 */ public TkCurveType EmitterLifeCurve1;
         [NMS(Index = 13)]
-        /* 0x405 */ public TkCurveType EmitterLifeCurve2;
+        /* 0x409 */ public TkCurveType EmitterLifeCurve2;
         [NMS(Index = 49)]
-        /* 0x406 */ public bool FadeRefractionsAtScreenEdge;
+        /* 0x40A */ public bool FadeRefractionsAtScreenEdge;
         [NMS(Index = 3)]
-        /* 0x407 */ public bool Oneshot;
+        /* 0x40B */ public bool Oneshot;
         [NMS(Index = 2)]
-        /* 0x408 */ public bool StartEnabled;
+        /* 0x40C */ public bool StartEnabled;
     }
 }

@@ -134,6 +134,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcAudioWwiseRTPCs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBackgroundSpaceEncounterInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBackgroundSpaceEncounterSpawnConditions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBaitData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBaitTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBaseAutoPowerSetting.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBaseBuildingCameraMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBaseBuildingCostsTable.cs" />
@@ -244,6 +246,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBuildingSpawnData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBuildingSpawnSlot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBuildingSystemTypeEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcBuoyancyComponentData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcButtonSpawn.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcButtonSpawnOffset.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcButtonSpawnTable.cs" />
@@ -427,6 +430,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureIkData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureIkType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureJellyBossAttackData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureLegIKComponentData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureMoveAnimData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcCreatureMovementData.cs" />
@@ -637,6 +641,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFiendCrimeSpawnData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFiendCrimeSpawnTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFireSimpleInteractionAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishSize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishSizeProbability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishingDifficultyOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishingRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishingRodData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishingRodTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFishingTime.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFleetExpeditionSaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFleetFrigateSaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcFleetHologramComponentData.cs" />
@@ -702,6 +715,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGalaxyWaypoint.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGalaxyWaypointTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGameMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGaussianCurveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGeneratedBaseDecorationTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGeneratedBaseLockDoorPair.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcGeneratedBasePruningRule.cs" />
@@ -826,6 +840,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemFilterStageDataTechPack.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemNeedPurpose.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemPriceModifiers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemQuality.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemShopAvailabilityDifficultyOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcItemShopAvailabilityDifficultyOptionData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcJourney.cs" />
@@ -962,11 +977,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasActiveDetailMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasActiveStatsMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasAnySettlementBuildingInProgress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasBait.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasCommunicatorSignal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasCreatureEggItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasEndpointForEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasEntitlement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasExocraft.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasFish.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasFreighter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasFuel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionHasFuelForTakeoff.cs" />
@@ -1015,6 +1032,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsAnomalyLoaded.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsCurrentMission.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsDepotDestroyed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsFishing.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsFrigateFlybyActive.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsGrabbed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionConditionIsLookingAtAnomaly.cs" />
@@ -1180,6 +1198,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceExploreAbandonedFreighter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceFeed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceFinishSummonAnomaly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceFish.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceFreighterDefend.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceFreighterEngage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcMissionSequenceGatherForBuild.cs" />
@@ -1627,6 +1646,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardExchangeProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardFactionStanding.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardFillInventoryWithBrokenSlots.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardFishRelease.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardForceDiscoverSystem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardForgetSpecificProductRecipe.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcRewardForgetSpecificTechRecipe.cs" />
@@ -1881,6 +1901,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSimpleIkRecoilComponentData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSimpleInteractionComponentData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSizeIndicator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSkiffComponentData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSkiffSaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSkyProperties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSmokeBotPlanetReport.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\GameComponents\GcSmokeBotReport.cs" />
@@ -2129,6 +2151,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcDebugOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcEffectsGlobals.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcEnvironmentGlobals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcFishingGlobals.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcFleetGlobals.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcFreighterBaseGlobals.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Globals\GcGalaxyGlobals.cs" />
@@ -2257,6 +2280,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkDynamicResScalingSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkDynamicTreeWindFrequency.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkEmitFromParticleInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkEmitterBillboardAlignment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkEmitterData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkEmitterFloatProperty.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\NMS\Toolkit\TkEmitterWindDrift.cs" />

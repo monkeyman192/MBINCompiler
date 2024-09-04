@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFA93FE2A4CC8CA8A, NameHash = 0x7CEB3842)]
+    [NMS(GUID = 0xA22EE6E5E8EE5EF8, NameHash = 0x7CEB3842)]
     public class GcProceduralProductCategory : NMSTemplate
     {
-        // size: 0x1A
+        // size: 0x1B
         public enum ProceduralProductCategoryEnum : uint {
             Loot,
             Document,
@@ -31,6 +31,7 @@ namespace libMBIN.NMS.GameComponents
             DismantleBio,
             DismantleTech,
             DismantleData,
+            MessageInBottle,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public ProceduralProductCategoryEnum ProceduralProductCategory;

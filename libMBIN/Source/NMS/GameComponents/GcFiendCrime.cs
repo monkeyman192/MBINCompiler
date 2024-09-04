@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x863BFCBD4C4DF7A6, NameHash = 0xE2E86D22)]
+    [NMS(GUID = 0x956A43E509D504AB, NameHash = 0xE2E86D22)]
     public class GcFiendCrime : NMSTemplate
     {
-        // size: 0xC
+        // size: 0xD
         public enum FiendCrimeEnum : uint {
             None,
             EggDamaged,
@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Carnage,
             FishCarnage,
             Bugs,
+            JellyBoss,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public FiendCrimeEnum FiendCrime;
