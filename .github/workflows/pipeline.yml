@@ -97,7 +97,7 @@ jobs:
     needs: [build_test, save_mapping]
     steps:
       - name: Download files for release
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@4.1.8
       - name: Rename files for release
         run: |
           mv MBINCompiler-Windows-net6.0/MBINCompiler.exe MBINCompiler.exe
@@ -117,7 +117,7 @@ jobs:
         shell: bash
       - name: Upload resources if version matches
         if: env.VERSION == env.TAG
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: "${{ env.TAG }}"
           tag_name: ${{ env.TAG }}
