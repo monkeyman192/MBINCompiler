@@ -3,22 +3,22 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x21DA7F305A04510D, NameHash = 0x5C7DDD33)]
+    [NMS(GUID = 0xE1F64962E2936EA, NameHash = 0x5C7DDD33)]
     public class GcFishingGlobals : NMSTemplate
     {
         [NMS(Index = 32)]
         /* 0x000 */ public Vector3f CastLaunchOffset;
-        [NMS(Index = 77)]
-        /* 0x010 */ public Colour LineColourBite;
         [NMS(Index = 78)]
-        /* 0x020 */ public Colour LineColourChase;
-        [NMS(Index = 75)]
-        /* 0x030 */ public Colour LineColourDefault;
-        [NMS(Index = 80)]
-        /* 0x040 */ public Colour LineColourFail;
+        /* 0x010 */ public Colour LineColourBite;
         [NMS(Index = 79)]
-        /* 0x050 */ public Colour LineColourLand;
+        /* 0x020 */ public Colour LineColourChase;
         [NMS(Index = 76)]
+        /* 0x030 */ public Colour LineColourDefault;
+        [NMS(Index = 81)]
+        /* 0x040 */ public Colour LineColourFail;
+        [NMS(Index = 80)]
+        /* 0x050 */ public Colour LineColourLand;
+        [NMS(Index = 77)]
         /* 0x060 */ public Colour LineColourNibble;
         [NMS(Index = 27)]
         /* 0x070 */ public Vector3f RodFirstPersonOffset;
@@ -38,7 +38,7 @@ namespace libMBIN.NMS.Globals
         /* 0x120 */ public GcGaussianCurveData[] FishMass;
         [NMS(Index = 18, Size = 0x5, EnumType = typeof(GcItemQuality.ItemQualityEnum))]
         /* 0x140 */ public float[] BaitRarityBoostTotalScoreQualityScaling;
-        [NMS(Index = 82, Size = 0x5, EnumType = typeof(GcItemQuality.ItemQualityEnum))]
+        [NMS(Index = 83, Size = 0x5, EnumType = typeof(GcItemQuality.ItemQualityEnum))]
         /* 0x154 */ public int[] MaxSeaHarvesterCaughtFish;
         [NMS(Index = 62, Size = 0x5, EnumType = typeof(GcItemQuality.ItemQualityEnum))]
         /* 0x168 */ public int[] QualityWeights;
@@ -82,11 +82,11 @@ namespace libMBIN.NMS.Globals
         /* 0x1E8 */ public float CastLaunchDelayTime;
         [NMS(Index = 36)]
         /* 0x1EC */ public float CastVelocityBlendFactor;
-        [NMS(Index = 85)]
+        [NMS(Index = 86)]
         /* 0x1F0 */ public float DebugSceneCastDist;
-        [NMS(Index = 84)]
+        [NMS(Index = 85)]
         /* 0x1F4 */ public float DebugSceneFlicktimeMax;
-        [NMS(Index = 83)]
+        [NMS(Index = 84)]
         /* 0x1F8 */ public float DebugSceneFlicktimeMin;
         [NMS(Index = 0)]
         /* 0x1FC */ public float FirstPersonMaxTurnAngle;
@@ -122,61 +122,63 @@ namespace libMBIN.NMS.Globals
         /* 0x238 */ public float LandTimeEnd;
         [NMS(Index = 14)]
         /* 0x23C */ public float LeanCausesBobThreshold;
-        [NMS(Index = 70)]
-        /* 0x240 */ public float LineBiteSag;
         [NMS(Index = 71)]
-        /* 0x244 */ public float LineColourChangeRate;
-        [NMS(Index = 73)]
-        /* 0x248 */ public float LineColourChangeRateBite;
-        [NMS(Index = 72)]
-        /* 0x24C */ public float LineColourChangeRateNibble;
-        [NMS(Index = 69)]
-        /* 0x250 */ public float LineFlickSag;
-        [NMS(Index = 68)]
-        /* 0x254 */ public float LineNibbleSag;
-        [NMS(Index = 67)]
-        /* 0x258 */ public float LineWaitSag;
-        [NMS(Index = 66)]
-        /* 0x25C */ public float LineWidth;
-        [NMS(Index = 58)]
-        /* 0x260 */ public float MaxWaitTime;
-        [NMS(Index = 33)]
-        /* 0x264 */ public float MinVelocityToCast;
-        [NMS(Index = 57)]
-        /* 0x268 */ public float MinWaitTime;
-        [NMS(Index = 43)]
-        /* 0x26C */ public float ReelHoldTime;
-        [NMS(Index = 37)]
-        /* 0x270 */ public float RequiredBackCastAngleDegrees;
-        [NMS(Index = 38)]
-        /* 0x274 */ public float RequiredCastAngleDegrees;
-        [NMS(Index = 81)]
-        /* 0x278 */ public float SeaHarvesterAverageCatchTimeSeconds;
-        [NMS(Index = 64)]
-        /* 0x27C */ public float StormThreshold;
-        [NMS(Index = 16)]
-        /* 0x280 */ public float ThirdPersonLeanMaxAngle;
-        [NMS(Index = 17)]
-        /* 0x284 */ public float ThirdPersonLeanMidpointAngle;
-        [NMS(Index = 15)]
-        /* 0x288 */ public float ThirdPersonLeanTime;
-        [NMS(Index = 39)]
-        /* 0x28C */ public float VRCastStrength;
-        [NMS(Index = 8)]
-        /* 0x290 */ public bool EnableFirstPersonPitchSpeedScaling;
-        [NMS(Index = 4)]
-        /* 0x291 */ public bool EnableFirstPersonYawPullback;
-        [NMS(Index = 1)]
-        /* 0x292 */ public bool EnableFirstPersonYawTurnSpeedScaling;
-        [NMS(Index = 13)]
-        /* 0x293 */ public TkCurveType FirstPersonPitchSpeedCurve;
-        [NMS(Index = 7)]
-        /* 0x294 */ public TkCurveType FirstPersonPullBackSpeedCurve;
-        [NMS(Index = 3)]
-        /* 0x295 */ public TkCurveType FirstPersonTurnSpeedCurve;
-        [NMS(Index = 74)]
-        /* 0x296 */ public TkCurveType LineSagCurve;
+        /* 0x240 */ public float LineBiteSag;
         [NMS(Index = 65)]
-        /* 0x297 */ public bool LineUsesLineRenderer;
+        /* 0x244 */ public float LineBrightness;
+        [NMS(Index = 72)]
+        /* 0x248 */ public float LineColourChangeRate;
+        [NMS(Index = 74)]
+        /* 0x24C */ public float LineColourChangeRateBite;
+        [NMS(Index = 73)]
+        /* 0x250 */ public float LineColourChangeRateNibble;
+        [NMS(Index = 70)]
+        /* 0x254 */ public float LineFlickSag;
+        [NMS(Index = 69)]
+        /* 0x258 */ public float LineNibbleSag;
+        [NMS(Index = 68)]
+        /* 0x25C */ public float LineWaitSag;
+        [NMS(Index = 67)]
+        /* 0x260 */ public float LineWidth;
+        [NMS(Index = 58)]
+        /* 0x264 */ public float MaxWaitTime;
+        [NMS(Index = 33)]
+        /* 0x268 */ public float MinVelocityToCast;
+        [NMS(Index = 57)]
+        /* 0x26C */ public float MinWaitTime;
+        [NMS(Index = 43)]
+        /* 0x270 */ public float ReelHoldTime;
+        [NMS(Index = 37)]
+        /* 0x274 */ public float RequiredBackCastAngleDegrees;
+        [NMS(Index = 38)]
+        /* 0x278 */ public float RequiredCastAngleDegrees;
+        [NMS(Index = 82)]
+        /* 0x27C */ public float SeaHarvesterAverageCatchTimeSeconds;
+        [NMS(Index = 64)]
+        /* 0x280 */ public float StormThreshold;
+        [NMS(Index = 16)]
+        /* 0x284 */ public float ThirdPersonLeanMaxAngle;
+        [NMS(Index = 17)]
+        /* 0x288 */ public float ThirdPersonLeanMidpointAngle;
+        [NMS(Index = 15)]
+        /* 0x28C */ public float ThirdPersonLeanTime;
+        [NMS(Index = 39)]
+        /* 0x290 */ public float VRCastStrength;
+        [NMS(Index = 8)]
+        /* 0x294 */ public bool EnableFirstPersonPitchSpeedScaling;
+        [NMS(Index = 4)]
+        /* 0x295 */ public bool EnableFirstPersonYawPullback;
+        [NMS(Index = 1)]
+        /* 0x296 */ public bool EnableFirstPersonYawTurnSpeedScaling;
+        [NMS(Index = 13)]
+        /* 0x297 */ public TkCurveType FirstPersonPitchSpeedCurve;
+        [NMS(Index = 7)]
+        /* 0x298 */ public TkCurveType FirstPersonPullBackSpeedCurve;
+        [NMS(Index = 3)]
+        /* 0x299 */ public TkCurveType FirstPersonTurnSpeedCurve;
+        [NMS(Index = 75)]
+        /* 0x29A */ public TkCurveType LineSagCurve;
+        [NMS(Index = 66)]
+        /* 0x29B */ public bool LineUsesLineRenderer;
     }
 }
