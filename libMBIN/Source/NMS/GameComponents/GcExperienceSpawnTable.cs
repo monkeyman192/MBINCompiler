@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFF03FF172AFF2C2D, NameHash = 0xD4ED2AD7)]
+    [NMS(GUID = 0xBFA08CAFF95D227D, NameHash = 0xD4ED2AD7)]
     public class GcExperienceSpawnTable : NMSTemplate
     {
         [NMS(Index = 18)]

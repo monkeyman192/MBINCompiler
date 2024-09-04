@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB1D118D96D97F844, NameHash = 0xFC70ABE3)]
+    [NMS(GUID = 0xA28E0728D4AE9EBD, NameHash = 0xFC70ABE3)]
     public class GcDestructableComponentData : NMSTemplate
     {
         [NMS(Index = 29, Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]

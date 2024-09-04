@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB6DFAE594451D730, NameHash = 0xAD42CCD8)]
+    [NMS(GUID = 0x87E961E4BC835EDA, NameHash = 0xAD42CCD8)]
     public class GcFiendCrimeSpawnData : NMSTemplate
     {
         [NMS(Index = 4, Size = 0x4, EnumType = typeof(GcCombatTimerDifficultyOption.CombatTimerDifficultyOptionEnum))]

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x7AF3C5062EAC59CA, NameHash = 0xA7A8D1DB)]
+    [NMS(GUID = 0xB6E37BA3AE6A90A0, NameHash = 0xA7A8D1DB)]
     public class GcAudioWwiseRTPCs : NMSTemplate
     {
-        // size: 0x63
+        // size: 0x64
         public enum AkRTPCEnum : uint {
             INVALID_RTPC = 0x0,
             BASE_BATTERY_CHARGING = 0x7C13B3BA,
@@ -38,6 +38,7 @@ namespace libMBIN.NMS.GameComponents
             METEORITE_INCOMING = 0xCFBF792E,
             MOTION_DRIVER_A = 0x732F78BC,
             MOTION_DRIVER_B = 0x732F78BF,
+            MUS_FISHING = 0x6999BC45,
             NPC_SHIP_DISTANCE = 0x810FD033,
             NPC_SHIP_DOPPLER = 0xD8BAE8F6,
             NPC_SHIP_SPEED = 0x925EFD57,

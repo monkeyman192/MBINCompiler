@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE051ED374C706CE3, NameHash = 0xEC38CA46)]
+    [NMS(GUID = 0xBA93482B78A2C39D, NameHash = 0xEC38CA46)]
     public class GcStatsBonus : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2ED93F86D7D81CAB, NameHash = 0x107C2CC0)]
+    [NMS(GUID = 0xDB425BA370E05B8D, NameHash = 0x107C2CC0)]
     public class GcInventoryTable : NMSTemplate
     {
         [NMS(Index = 7, Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
@@ -19,16 +19,16 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 1)]
         /* 0x0560 */ public GcInventoryLayoutGenerationData GenerationData;
         [NMS(Index = 10, Size = 0xA, EnumType = typeof(GcSpaceshipClasses.ShipClassEnum))]
-        /* 0x1280 */ public GcShipInventoryMaxUpgradeCapacity[] ShipInventoryMaxUpgradeSize;
+        /* 0x12D4 */ public GcShipInventoryMaxUpgradeCapacity[] ShipInventoryMaxUpgradeSize;
         [NMS(Index = 2)]
-        /* 0x1460 */ public GcInventoryCostData ShipCostData;
+        /* 0x14B4 */ public GcInventoryCostData ShipCostData;
         [NMS(Index = 3, Size = 0xA, EnumType = typeof(GcWeaponClasses.WeaponStatClassEnum))]
-        /* 0x15F0 */ public GcInventoryCostDataEntry[] WeaponCostData;
+        /* 0x1644 */ public GcInventoryCostDataEntry[] WeaponCostData;
         [NMS(Index = 5, Size = 0x4, EnumType = typeof(GcWealthClass.WealthClassEnum))]
-        /* 0x1780 */ public GcInventoryClassProbabilities[] ClassProbabilityData;
+        /* 0x17D4 */ public GcInventoryClassProbabilities[] ClassProbabilityData;
         [NMS(Index = 4)]
-        /* 0x17C0 */ public GcInventoryCostDataEntry VehicleCostData;
+        /* 0x1814 */ public GcInventoryCostDataEntry VehicleCostData;
         [NMS(Index = 11)]
-        /* 0x17E8 */ public GcWeaponInventoryMaxUpgradeCapacity WeaponInventoryMaxUpgradeSize;
+        /* 0x183C */ public GcWeaponInventoryMaxUpgradeCapacity WeaponInventoryMaxUpgradeSize;
     }
 }

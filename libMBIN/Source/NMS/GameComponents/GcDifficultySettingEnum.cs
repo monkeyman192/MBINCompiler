@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3697C286B1CD1B33, NameHash = 0x815A3E0A)]
+    [NMS(GUID = 0xEAF6DF9323256F17, NameHash = 0x815A3E0A)]
     public class GcDifficultySettingEnum : NMSTemplate
     {
-        // size: 0x1C
+        // size: 0x1D
         public enum DifficultySettingEnum : uint {
             SettingsLocked,
             InventoriesAlwaysInRange,
@@ -33,6 +33,7 @@ namespace libMBIN.NMS.GameComponents
             ItemShopAvailablity,
             SprintingCost,
             BreakTechOnDamage,
+            Fishing,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public DifficultySettingEnum DifficultySetting;

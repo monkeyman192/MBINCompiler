@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x89F7B9EF1A67D94F, NameHash = 0x422A5EC3)]
+    [NMS(GUID = 0x3BD1356A494F80C6, NameHash = 0x422A5EC3)]
     public class GcWikiTopicType : NMSTemplate
     {
-        // size: 0x1D
+        // size: 0x1E
         public enum WikiTopicTypeEnum : uint {
             Substances,
             CustomSubstanceList,
@@ -17,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             TradeCommodities,
             Curiosities,
             Cooking,
+            Fish,
             StoneRunes,
             Words,
             RecipesAll,

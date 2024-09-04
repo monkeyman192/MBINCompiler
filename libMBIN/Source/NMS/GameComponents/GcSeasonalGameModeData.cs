@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3324DE3F5F68C131, NameHash = 0xC2909BE6)]
+    [NMS(GUID = 0x5C4DFAFB1BF892D4, NameHash = 0xC2909BE6)]
     public class GcSeasonalGameModeData : NMSTemplate
     {
         [NMS(Index = 71, Size = 0x12)]
@@ -114,124 +114,124 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 14)]
         /* 0x30C8 */ public GcDifficultySettingsData DifficultyMinimums;
         [NMS(Index = 96)]
-        /* 0x3120 */ public float AbandonedFreighterHazardProtectionMul;
+        /* 0x3124 */ public float AbandonedFreighterHazardProtectionMul;
         [NMS(Index = 80)]
-        /* 0x3124 */ public float BuildingRadiusShipOffsetMultiplier;
+        /* 0x3128 */ public float BuildingRadiusShipOffsetMultiplier;
         [NMS(Index = 13)]
-        /* 0x3128 */ public GcDifficultyPresetType DifficultySettingPreset;
+        /* 0x312C */ public GcDifficultyPresetType DifficultySettingPreset;
         [NMS(Index = 26)]
-        /* 0x312C */ public int DisplayNumber;
+        /* 0x3130 */ public int DisplayNumber;
         [NMS(Index = 79)]
-        /* 0x3130 */ public float DistanceFromShipAtStartOfGame;
+        /* 0x3134 */ public float DistanceFromShipAtStartOfGame;
         [NMS(Index = 99)]
-        /* 0x3134 */ public float EnergyDrainMultiplier;
+        /* 0x3138 */ public float EnergyDrainMultiplier;
         [NMS(Index = 97)]
-        /* 0x3138 */ public float FarmPlantsTimerMul;
+        /* 0x313C */ public float FarmPlantsTimerMul;
         [NMS(Index = 90)]
-        /* 0x313C */ public int FreighterBattleEarlyWarpsOverride;
+        /* 0x3140 */ public int FreighterBattleEarlyWarpsOverride;
         [NMS(Index = 51)]
-        /* 0x3140 */ public GcAlienRace FreighterRace;
+        /* 0x3144 */ public GcAlienRace FreighterRace;
         [NMS(Index = 12)]
-        /* 0x3144 */ public GcGameMode GameMode;
+        /* 0x3148 */ public GcGameMode GameMode;
         [NMS(Index = 98)]
-        /* 0x3148 */ public float HazardProtectionDrainMultiplier;
+        /* 0x314C */ public float HazardProtectionDrainMultiplier;
         [NMS(Index = 100)]
-        /* 0x314C */ public int QuestSubstanceReducer;
+        /* 0x3150 */ public int QuestSubstanceReducer;
         [NMS(Index = 25)]
-        /* 0x3150 */ public int RemixNumber;
+        /* 0x3154 */ public int RemixNumber;
         [NMS(Index = 76)]
-        /* 0x3154 */ public float SandwormGlobalOverrideSpawnChance;
+        /* 0x3158 */ public float SandwormGlobalOverrideSpawnChance;
         [NMS(Index = 75)]
-        /* 0x3158 */ public float SandwormGlobalOverrideTimer;
+        /* 0x315C */ public float SandwormGlobalOverrideTimer;
         [NMS(Index = 0)]
-        /* 0x315C */ public int SeasonId;
+        /* 0x3160 */ public int SeasonId;
         [NMS(Index = 24)]
-        /* 0x3160 */ public int SeasonNumber;
+        /* 0x3164 */ public int SeasonNumber;
         [NMS(Index = 10)]
-        /* 0x3164 */ public GcAudioWwiseEvents SeasonStartMusicOverride;
+        /* 0x3168 */ public GcAudioWwiseEvents SeasonStartMusicOverride;
         [NMS(Index = 47)]
-        /* 0x3168 */ public GcSpaceshipClasses ShipType;
+        /* 0x316C */ public GcSpaceshipClasses ShipType;
         [NMS(Index = 72)]
-        /* 0x316C */ public int StartingPetSlots;
+        /* 0x3170 */ public int StartingPetSlots;
         [NMS(Index = 44)]
-        /* 0x3170 */ public int StartingSuitCargoSlots;
+        /* 0x3174 */ public int StartingSuitCargoSlots;
         [NMS(Index = 42)]
-        /* 0x3174 */ public int StartingSuitSlots;
+        /* 0x3178 */ public int StartingSuitSlots;
         [NMS(Index = 43)]
-        /* 0x3178 */ public int StartingSuitTechSlots;
+        /* 0x317C */ public int StartingSuitTechSlots;
         [NMS(Index = 92)]
-        /* 0x317C */ public int TechCostMultiplier;
+        /* 0x3180 */ public int TechCostMultiplier;
         [NMS(Index = 22)]
-        /* 0x3180 */ public NMSString0x200 FinalRewardDescription;
+        /* 0x3184 */ public NMSString0x200 FinalRewardDescription;
         [NMS(Index = 6)]
-        /* 0x3380 */ public NMSString0x20 Description;
+        /* 0x3384 */ public NMSString0x20 Description;
         [NMS(Index = 17)]
-        /* 0x33A0 */ public NMSString0x20 SeasonalUAOverride;
+        /* 0x33A4 */ public NMSString0x20 SeasonalUAOverride;
         [NMS(Index = 5)]
-        /* 0x33C0 */ public NMSString0x20 Subtitle;
+        /* 0x33C4 */ public NMSString0x20 Subtitle;
         [NMS(Index = 7)]
-        /* 0x33E0 */ public NMSString0x20 Summary;
+        /* 0x33E4 */ public NMSString0x20 Summary;
         [NMS(Index = 4)]
-        /* 0x3400 */ public NMSString0x20 Title;
+        /* 0x3404 */ public NMSString0x20 Title;
         [NMS(Index = 86)]
-        /* 0x3420 */ public bool AllowMissionDetailMessages;
+        /* 0x3424 */ public bool AllowMissionDetailMessages;
         [NMS(Index = 83)]
-        /* 0x3421 */ public bool AlwaysStormy;
+        /* 0x3425 */ public bool AlwaysStormy;
         [NMS(Index = 112)]
-        /* 0x3422 */ public bool AlwaysUseSeasonalStationTradeData;
+        /* 0x3426 */ public bool AlwaysUseSeasonalStationTradeData;
         [NMS(Index = 84)]
-        /* 0x3423 */ public bool BlockAggressiveSentinelsInStartSystem;
+        /* 0x3427 */ public bool BlockAggressiveSentinelsInStartSystem;
         [NMS(Index = 85)]
-        /* 0x3424 */ public bool BlockExtremeWeatherInStartSystem;
+        /* 0x3428 */ public bool BlockExtremeWeatherInStartSystem;
         [NMS(Index = 11)]
-        /* 0x3425 */ public bool BlockFirstSpaceMusic;
+        /* 0x3429 */ public bool BlockFirstSpaceMusic;
         [NMS(Index = 82)]
-        /* 0x3426 */ public bool BlockStormsAtStart;
+        /* 0x342A */ public bool BlockStormsAtStart;
         [NMS(Index = 57)]
-        /* 0x3427 */ public bool CarnageMode;
+        /* 0x342B */ public bool CarnageMode;
         [NMS(Index = 105)]
-        /* 0x3428 */ public bool CompatibleWithState;
+        /* 0x342C */ public bool CompatibleWithState;
         [NMS(Index = 36)]
-        /* 0x3429 */ public bool DefaultToPvPOff;
+        /* 0x342D */ public bool DefaultToPvPOff;
         [NMS(Index = 31)]
-        /* 0x342A */ public bool DoCommunityMissionTextSubstitutions;
+        /* 0x342E */ public bool DoCommunityMissionTextSubstitutions;
         [NMS(Index = 55)]
-        /* 0x342B */ public bool ForceAllSystemsAbandoned;
+        /* 0x342F */ public bool ForceAllSystemsAbandoned;
         [NMS(Index = 91)]
-        /* 0x342C */ public bool ForceDeepSpaceAmbientFrigatesOnInfested;
+        /* 0x3430 */ public bool ForceDeepSpaceAmbientFrigatesOnInfested;
         [NMS(Index = 54)]
-        /* 0x342D */ public bool ForceStartSystemAbandoned;
+        /* 0x3431 */ public bool ForceStartSystemAbandoned;
         [NMS(Index = 53)]
-        /* 0x342E */ public bool ForceStartSystemTernary;
+        /* 0x3432 */ public bool ForceStartSystemTernary;
         [NMS(Index = 106)]
-        /* 0x342F */ public bool HasBeenConverted;
+        /* 0x3433 */ public bool HasBeenConverted;
         [NMS(Index = 95)]
-        /* 0x3430 */ public bool IncreaseXClassTechOddsWithCommTier;
+        /* 0x3434 */ public bool IncreaseXClassTechOddsWithCommTier;
         [NMS(Index = 37)]
-        /* 0x3431 */ public bool MustCraftInBases;
+        /* 0x3435 */ public bool MustCraftInBases;
         [NMS(Index = 103)]
-        /* 0x3432 */ public bool ResetSaveOnDeath;
+        /* 0x3436 */ public bool ResetSaveOnDeath;
         [NMS(Index = 74)]
-        /* 0x3433 */ public bool SandwormGlobalOverride;
+        /* 0x3437 */ public bool SandwormGlobalOverride;
         [NMS(Index = 78)]
-        /* 0x3434 */ public bool ShipIsAtDifferentBuildingToPlayer;
+        /* 0x3438 */ public bool ShipIsAtDifferentBuildingToPlayer;
         [NMS(Index = 81)]
-        /* 0x3435 */ public bool ShipStartsDamaged;
+        /* 0x3439 */ public bool ShipStartsDamaged;
         [NMS(Index = 52)]
-        /* 0x3436 */ public bool StartAboardFreighter;
+        /* 0x343A */ public bool StartAboardFreighter;
         [NMS(Index = 77)]
-        /* 0x3437 */ public bool StartNextToShip;
+        /* 0x343B */ public bool StartNextToShip;
         [NMS(Index = 49)]
-        /* 0x3438 */ public bool StartWithFreighter;
+        /* 0x343C */ public bool StartWithFreighter;
         [NMS(Index = 89)]
-        /* 0x3439 */ public bool TrashInventoryOnGalaxyTravel;
+        /* 0x343D */ public bool TrashInventoryOnGalaxyTravel;
         [NMS(Index = 62)]
-        /* 0x343A */ public bool UseDefaultAppearance;
+        /* 0x343E */ public bool UseDefaultAppearance;
         [NMS(Index = 69)]
-        /* 0x343B */ public bool UseRandomPet;
+        /* 0x343F */ public bool UseRandomPet;
         [NMS(Index = 111)]
-        /* 0x343C */ public bool UseSeasonalUAStationTradeData;
+        /* 0x3440 */ public bool UseSeasonalUAStationTradeData;
         [NMS(Index = 87)]
-        /* 0x343D */ public bool UseStartPlanetObjectListOverrides;
+        /* 0x3441 */ public bool UseStartPlanetObjectListOverrides;
     }
 }
