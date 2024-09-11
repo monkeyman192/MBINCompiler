@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xADA14C6F04360B71, NameHash = 0xC8C2FA1E)]
+    [NMS(GUID = 0x860F222D8C0C8546, NameHash = 0xC8C2FA1E)]
     public class GcRealityGameIcons : NMSTemplate
     {
-        // size: 0x59
+        // size: 0x5B
         public enum GameIconsEnum : uint {
             Stamina,
             NoStamina,
@@ -65,6 +65,8 @@ namespace libMBIN.NMS.GameComponents
             TransferMech,
             TransferFreighter,
             TransferBase,
+            TransferCooker,
+            TransferSkiff,
             HazardIndicatorHot,
             HazardIndicatorCold,
             HazardIndicatorRadiation,
