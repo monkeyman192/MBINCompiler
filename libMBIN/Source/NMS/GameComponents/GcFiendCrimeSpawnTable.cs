@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE1B700E141A6716E, NameHash = 0x46853662)]
+    [NMS(GUID = 0x3A558FBCD553141, NameHash = 0x46853662)]
     public class GcFiendCrimeSpawnTable : NMSTemplate
     {
         [NMS(Index = 2)]

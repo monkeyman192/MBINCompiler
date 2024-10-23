@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xBB40E07068B00A09, NameHash = 0xF90BB3)]
+    [NMS(GUID = 0x517BB7514301A5B9, NameHash = 0xF90BB3)]
     public class TkPhysicsComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

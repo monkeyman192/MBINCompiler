@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x974131788DBFBBB6, NameHash = 0x514AD10F)]
+    [NMS(GUID = 0x73001B302CEF29C0, NameHash = 0x514AD10F)]
     public class GcStatsTypes : NMSTemplate
     {
-        // size: 0xC5
+        // size: 0xC7
         public enum StatsTypeEnum : uint {
             Unspecified,
             Weapon_Laser,
@@ -90,6 +90,7 @@ namespace libMBIN.NMS.GameComponents
             Suit_Protection_Heat,
             Suit_Protection_Toxic,
             Suit_Protection_Radiation,
+            Suit_Protection_Spook,
             Suit_Underwater,
             Suit_UnderwaterLifeSupport,
             Suit_DamageReduce_Cold,
@@ -101,6 +102,7 @@ namespace libMBIN.NMS.GameComponents
             Suit_Protection_ToxDrain,
             Suit_Protection_RadDrain,
             Suit_Protection_WaterDrain,
+            Suit_Protection_SpookDrain,
             Suit_Stamina_Strength,
             Suit_Stamina_Speed,
             Suit_Stamina_Recovery,

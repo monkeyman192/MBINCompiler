@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6A5ECCC5132F1898, NameHash = 0xC7D918F3)]
+    [NMS(GUID = 0x4382BFEA7412C398, NameHash = 0xC7D918F3)]
     public class GcPlayerCommonStateData : NMSTemplate
     {
         [NMS(Index = 5)]
@@ -18,19 +18,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5050 */ public GcSeasonTransferInventoryData SeasonTransferInventoryData;
         [NMS(Index = 10)]
         /* 0x51C8 */ public List<NMSString0x10> EarnedSeasonSpecialRewards;
+        [NMS(Index = 13)]
+        /* 0x51D8 */ public List<GcDiscoveryOwner> UsedDiscoveryOwners;
         [NMS(Index = 12)]
-        /* 0x51D8 */ public List<NMSString0x20> UsedPlatforms;
+        /* 0x51E8 */ public List<NMSString0x20> UsedPlatforms;
         [NMS(Index = 11)]
-        /* 0x51E8 */ public ulong SaveUniversalId;
+        /* 0x51F8 */ public ulong SaveUniversalId;
         [NMS(Index = 1)]
-        /* 0x51F0 */ public ulong TotalPlayTime;
+        /* 0x5200 */ public ulong TotalPlayTime;
         [NMS(Index = 0)]
-        /* 0x51F8 */ public NMSString0x80 SaveName;
+        /* 0x5208 */ public NMSString0x80 SaveName;
         [NMS(Index = 2)]
-        /* 0x5278 */ public bool UsesThirdPersonCharacterCam;
+        /* 0x5288 */ public bool UsesThirdPersonCharacterCam;
         [NMS(Index = 4)]
-        /* 0x5279 */ public bool UsesThirdPersonShipCam;
+        /* 0x5289 */ public bool UsesThirdPersonShipCam;
         [NMS(Index = 3)]
-        /* 0x527A */ public bool UsesThirdPersonVehicleCam;
+        /* 0x528A */ public bool UsesThirdPersonVehicleCam;
     }
 }

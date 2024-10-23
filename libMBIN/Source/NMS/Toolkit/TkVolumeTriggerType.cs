@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x3A008F84F5A6F838, NameHash = 0xEE0FA479)]
+    [NMS(GUID = 0xF5927A371A919EEB, NameHash = 0xEE0FA479)]
     public class TkVolumeTriggerType : NMSTemplate
     {
-        // size: 0x13
+        // size: 0x14
         public enum VolumeTriggerTypeEnum : uint {
             Open,
             GenericInterior,
@@ -24,6 +24,7 @@ namespace libMBIN.NMS.Toolkit
             HazardProtectionCold,
             SpaceStorm,
             HazardProtectionNoRecharge,
+            HazardProtectionSpook,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public VolumeTriggerTypeEnum VolumeTriggerType;

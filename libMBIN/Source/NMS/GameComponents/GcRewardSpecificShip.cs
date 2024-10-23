@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2EFBB25470099FDD, NameHash = 0x8A37C4A2)]
+    [NMS(GUID = 0x42322DE55DF9A6AA, NameHash = 0x8A37C4A2)]
     public class GcRewardSpecificShip : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -19,17 +19,19 @@ namespace libMBIN.NMS.GameComponents
         /* 0x230 */ public int CostAmount;
         [NMS(Index = 5)]
         /* 0x234 */ public GcCurrency CostCurrency;
+        [NMS(Index = 13)]
+        /* 0x238 */ public GcModelViews ModelViewOverride;
         [NMS(Index = 8)]
-        /* 0x238 */ public GcInventoryLayoutSizeType OverrideSizeType;
+        /* 0x23C */ public GcInventoryLayoutSizeType OverrideSizeType;
         [NMS(Index = 6)]
-        /* 0x23C */ public GcSpaceshipClasses ShipType;
+        /* 0x240 */ public GcSpaceshipClasses ShipType;
         [NMS(Index = 12)]
-        /* 0x240 */ public bool FormatAsSeasonal;
+        /* 0x244 */ public bool FormatAsSeasonal;
         [NMS(Index = 10)]
-        /* 0x241 */ public bool IsGift;
+        /* 0x245 */ public bool IsGift;
         [NMS(Index = 11)]
-        /* 0x242 */ public bool IsRewardShip;
+        /* 0x246 */ public bool IsRewardShip;
         [NMS(Index = 7)]
-        /* 0x243 */ public bool UseOverrideSizeType;
+        /* 0x247 */ public bool UseOverrideSizeType;
     }
 }

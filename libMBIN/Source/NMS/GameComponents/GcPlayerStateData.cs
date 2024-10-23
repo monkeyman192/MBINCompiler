@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1DAA3903B709D29F, NameHash = 0x5E49C3E9)]
+    [NMS(GUID = 0x84F0F8D1CFF0377D, NameHash = 0x5E49C3E9)]
     public class GcPlayerStateData : NMSTemplate
     {
         [NMS(Index = 119)]
@@ -334,141 +334,141 @@ namespace libMBIN.NMS.GameComponents
         /* 0x6FF30 */ public GcUniverseAddressData[] AtlasStationAdressData;
         [NMS(Index = 4)]
         /* 0x70020 */ public GcDifficultyStateData DifficultyState;
+        [NMS(Index = 66, Size = 0x7, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
+        /* 0x70088 */ public float[] Hazard;
         [NMS(Index = 110)]
-        /* 0x70088 */ public GcUniverseAddressData FreighterUniverseAddress;
+        /* 0x700A4 */ public GcUniverseAddressData FreighterUniverseAddress;
         [NMS(Index = 96)]
-        /* 0x700A0 */ public GcUniverseAddressData GameStartAddress1;
+        /* 0x700BC */ public GcUniverseAddressData GameStartAddress1;
         [NMS(Index = 97)]
-        /* 0x700B8 */ public GcUniverseAddressData GameStartAddress2;
+        /* 0x700D4 */ public GcUniverseAddressData GameStartAddress2;
         [NMS(Index = 21)]
-        /* 0x700D0 */ public GcUniverseAddressData GraveUniverseAddress;
-        [NMS(Index = 66, Size = 0x6, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
-        /* 0x700E8 */ public float[] Hazard;
+        /* 0x700EC */ public GcUniverseAddressData GraveUniverseAddress;
         [NMS(Index = 189)]
-        /* 0x70100 */ public GcUniverseAddressData MultiplayerUA;
+        /* 0x70104 */ public GcUniverseAddressData MultiplayerUA;
         [NMS(Index = 199)]
-        /* 0x70118 */ public GcUniverseAddressData NexusUniverseAddress;
+        /* 0x7011C */ public GcUniverseAddressData NexusUniverseAddress;
         [NMS(Index = 1)]
-        /* 0x70130 */ public GcUniverseAddressData PreviousUniverseAddress;
+        /* 0x70134 */ public GcUniverseAddressData PreviousUniverseAddress;
         [NMS(Index = 0)]
-        /* 0x70148 */ public GcUniverseAddressData UniverseAddress;
+        /* 0x7014C */ public GcUniverseAddressData UniverseAddress;
         [NMS(Index = 13)]
-        /* 0x70160 */ public int ActiveMultioolIndex;
+        /* 0x70164 */ public int ActiveMultioolIndex;
         [NMS(Index = 91)]
-        /* 0x70164 */ public int ActiveSpaceBattleLevel;
+        /* 0x70168 */ public int ActiveSpaceBattleLevel;
         [NMS(Index = 205)]
-        /* 0x70168 */ public int BannerBackgroundColour;
+        /* 0x7016C */ public int BannerBackgroundColour;
         [NMS(Index = 203)]
-        /* 0x7016C */ public int BannerIcon;
+        /* 0x70170 */ public int BannerIcon;
         [NMS(Index = 204)]
-        /* 0x70170 */ public int BannerMainColour;
+        /* 0x70174 */ public int BannerMainColour;
         [NMS(Index = 67)]
-        /* 0x70174 */ public int BoltAmmo;
+        /* 0x70178 */ public int BoltAmmo;
         [NMS(Index = 50)]
-        /* 0x70178 */ public int Energy;
+        /* 0x7017C */ public int Energy;
         [NMS(Index = 46)]
-        /* 0x7017C */ public int Health;
+        /* 0x70180 */ public int Health;
         [NMS(Index = 2)]
-        /* 0x70180 */ public int HomeRealityIteration;
+        /* 0x70184 */ public int HomeRealityIteration;
         [NMS(Index = 170)]
-        /* 0x70184 */ public int KnownPortalRunes;
+        /* 0x70188 */ public int KnownPortalRunes;
         [NMS(Index = 70)]
-        /* 0x70188 */ public int LaserAmmo;
+        /* 0x7018C */ public int LaserAmmo;
         [NMS(Index = 41)]
-        /* 0x7018C */ public int MissionVersion;
+        /* 0x70190 */ public int MissionVersion;
         [NMS(Index = 52)]
-        /* 0x70190 */ public int Nanites;
+        /* 0x70194 */ public int Nanites;
         [NMS(Index = 58)]
-        /* 0x70194 */ public int NextSurveyedEventPositionIndex;
+        /* 0x70198 */ public int NextSurveyedEventPositionIndex;
         [NMS(Index = 36)]
-        /* 0x70198 */ public int PostMissionIndex;
+        /* 0x7019C */ public int PostMissionIndex;
         [NMS(Index = 87)]
-        /* 0x7019C */ public int PrimaryPlanet;
+        /* 0x701A0 */ public int PrimaryPlanet;
         [NMS(Index = 160)]
-        /* 0x701A0 */ public int PrimaryShip;
+        /* 0x701A4 */ public int PrimaryShip;
         [NMS(Index = 157)]
-        /* 0x701A4 */ public int PrimaryVehicle;
+        /* 0x701A8 */ public int PrimaryVehicle;
         [NMS(Index = 81)]
-        /* 0x701A8 */ public int ProcTechIndex;
+        /* 0x701AC */ public int ProcTechIndex;
         [NMS(Index = 80)]
-        /* 0x701AC */ public int ProgressionLevel;
+        /* 0x701B0 */ public int ProgressionLevel;
         [NMS(Index = 69)]
-        /* 0x701B0 */ public int PulseAmmo;
+        /* 0x701B4 */ public int PulseAmmo;
         [NMS(Index = 68)]
-        /* 0x701B4 */ public int ScatterAmmo;
+        /* 0x701B8 */ public int ScatterAmmo;
         [NMS(Index = 214)]
-        /* 0x701B8 */ public int SettlementStateRingBufferIndexV2;
+        /* 0x701BC */ public int SettlementStateRingBufferIndexV2;
         [NMS(Index = 48)]
-        /* 0x701BC */ public int Shield;
+        /* 0x701C0 */ public int Shield;
         [NMS(Index = 47)]
-        /* 0x701C0 */ public int ShipHealth;
+        /* 0x701C4 */ public int ShipHealth;
         [NMS(Index = 49)]
-        /* 0x701C4 */ public int ShipShield;
+        /* 0x701C8 */ public int ShipShield;
         [NMS(Index = 53)]
-        /* 0x701C8 */ public int Specials;
+        /* 0x701CC */ public int Specials;
         [NMS(Index = 175)]
-        /* 0x701CC */ public GcPlayerWeapons StartingPrimaryWeapon;
+        /* 0x701D0 */ public GcPlayerWeapons StartingPrimaryWeapon;
         [NMS(Index = 218)]
-        /* 0x701D0 */ public int StartingSeasonNumber;
+        /* 0x701D4 */ public int StartingSeasonNumber;
         [NMS(Index = 176)]
-        /* 0x701D4 */ public GcPlayerWeapons StartingSecondaryWeapon;
+        /* 0x701D8 */ public GcPlayerWeapons StartingSecondaryWeapon;
         [NMS(Index = 207)]
-        /* 0x701D8 */ public int TelemetryUploadVersion;
+        /* 0x701DC */ public int TelemetryUploadVersion;
         [NMS(Index = 166)]
-        /* 0x701DC */ public int TradingSupplyDataIndex;
+        /* 0x701E0 */ public int TradingSupplyDataIndex;
         [NMS(Index = 51)]
-        /* 0x701E0 */ public int Units;
+        /* 0x701E4 */ public int Units;
         [NMS(Index = 208)]
-        /* 0x701E4 */ public float VRCameraOffset;
+        /* 0x701E8 */ public float VRCameraOffset;
         [NMS(Index = 93)]
-        /* 0x701E8 */ public int WarpsLastMiniStation;
+        /* 0x701EC */ public int WarpsLastMiniStation;
         [NMS(Index = 89)]
-        /* 0x701EC */ public int WarpsLastSpaceBattle;
+        /* 0x701F0 */ public int WarpsLastSpaceBattle;
         [NMS(Index = 196)]
-        /* 0x701F0 */ public ushort ShopNumber;
+        /* 0x701F4 */ public ushort ShopNumber;
         [NMS(Index = 197)]
-        /* 0x701F2 */ public ushort ShopTier;
+        /* 0x701F6 */ public ushort ShopTier;
         [NMS(Index = 3)]
-        /* 0x701F4 */ public NMSString0x80 SaveSummary;
+        /* 0x701F8 */ public NMSString0x80 SaveSummary;
         [NMS(Index = 163)]
-        /* 0x70274 */ public NMSString0x20 PlayerFreighterName;
+        /* 0x70278 */ public NMSString0x20 PlayerFreighterName;
         [NMS(Index = 17, Size = 0x12)]
-        /* 0x70294 */ public bool[] UnlockedPetSlots;
+        /* 0x70298 */ public bool[] UnlockedPetSlots;
         [NMS(Index = 98, Size = 0x10)]
-        /* 0x702A6 */ public bool[] GalacticMapRequests;
+        /* 0x702AA */ public bool[] GalacticMapRequests;
         [NMS(Index = 178, Size = 0xC)]
-        /* 0x702B6 */ public bool[] ShipUsesLegacyColours;
+        /* 0x702BA */ public bool[] ShipUsesLegacyColours;
         [NMS(Index = 115, Size = 0x4)]
-        /* 0x702C2 */ public bool[] SquadronUnlockedPilotSlots;
+        /* 0x702C6 */ public bool[] SquadronUnlockedPilotSlots;
         [NMS(Index = 217)]
-        /* 0x702C6 */ public bool BuildersKnown;
+        /* 0x702CA */ public bool BuildersKnown;
         [NMS(Index = 78)]
-        /* 0x702C7 */ public bool FirstAtlasStationDiscovered;
+        /* 0x702CB */ public bool FirstAtlasStationDiscovered;
         [NMS(Index = 111)]
-        /* 0x702C8 */ public bool FreighterDismissed;
+        /* 0x702CC */ public bool FreighterDismissed;
         [NMS(Index = 198)]
-        /* 0x702C9 */ public bool HasAccessToNexus;
+        /* 0x702CD */ public bool HasAccessToNexus;
         [NMS(Index = 82)]
-        /* 0x702CA */ public bool IsNew;
+        /* 0x702CE */ public bool IsNew;
         [NMS(Index = 161)]
-        /* 0x702CB */ public bool MultiShipEnabled;
+        /* 0x702CF */ public bool MultiShipEnabled;
         [NMS(Index = 215)]
-        /* 0x702CC */ public bool NextLoadSpawnsWithFreshStart;
+        /* 0x702D0 */ public bool NextLoadSpawnsWithFreshStart;
         [NMS(Index = 171)]
-        /* 0x702CD */ public bool OnOtherSideOfPortal;
+        /* 0x702D1 */ public bool OnOtherSideOfPortal;
         [NMS(Index = 209)]
-        /* 0x702CE */ public bool RestartAllInactiveSeasonalMissions;
+        /* 0x702D2 */ public bool RestartAllInactiveSeasonalMissions;
         [NMS(Index = 101)]
-        /* 0x702CF */ public bool RevealBlackHoles;
+        /* 0x702D3 */ public bool RevealBlackHoles;
         [NMS(Index = 165)]
-        /* 0x702D0 */ public bool ShipNeedsTerrainPositioning;
+        /* 0x702D4 */ public bool ShipNeedsTerrainPositioning;
         [NMS(Index = 20)]
-        /* 0x702D1 */ public bool SpaceGrave;
+        /* 0x702D5 */ public bool SpaceGrave;
         [NMS(Index = 19)]
-        /* 0x702D2 */ public bool SpawnGrave;
+        /* 0x702D6 */ public bool SpawnGrave;
         [NMS(Index = 83)]
-        /* 0x702D3 */ public bool UseSmallerBlackholeJumps;
+        /* 0x702D7 */ public bool UseSmallerBlackholeJumps;
         [NMS(Index = 162)]
-        /* 0x702D4 */ public bool VehicleAIControlEnabled;
+        /* 0x702D8 */ public bool VehicleAIControlEnabled;
     }
 }

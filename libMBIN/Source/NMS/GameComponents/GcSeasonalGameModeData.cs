@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x5C4DFAFB1BF892D4, NameHash = 0xC2909BE6)]
+    [NMS(GUID = 0x688B32A485F7F50C, NameHash = 0xC2909BE6)]
     public class GcSeasonalGameModeData : NMSTemplate
     {
         [NMS(Index = 71, Size = 0x12)]
@@ -231,7 +231,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x343F */ public bool UseRandomPet;
         [NMS(Index = 111)]
         /* 0x3440 */ public bool UseSeasonalUAStationTradeData;
+        [NMS(Index = 113)]
+        /* 0x3441 */ public bool UseSpookHazardOnly;
         [NMS(Index = 87)]
-        /* 0x3441 */ public bool UseStartPlanetObjectListOverrides;
+        /* 0x3442 */ public bool UseStartPlanetObjectListOverrides;
     }
 }
