@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDCF278105BE359F5, NameHash = 0x7A0D33C8)]
+    [NMS(GUID = 0x8F7728790E346433, NameHash = 0x7A0D33C8)]
     public class GcAudioWwiseEvents : NMSTemplate
     {
-        // size: 0xA56
+        // size: 0xA67
         public enum AkEventEnum : uint {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
@@ -675,6 +675,9 @@ namespace libMBIN.NMS.GameComponents
             JELLYFISH_DIE = 0x8D0341AE,
             JELLYFISH_SPAWN = 0x4CF735B9,
             JELLYFISH_SWIM = 0x6DF627F0,
+            JELLYFISHBOSS_APPEAR = 0x4B30A1CE,
+            JELLYFISHBOSS_ORBATTACK = 0x252C9E10,
+            JELLYFISHBOSS_SWIM = 0xF1258E95,
             JETPACK_BOOST_PICKUP = 0x1662D4A8,
             JETPACK_BOOST_START = 0x59EEB4F8,
             JETPACK_BOOST_STOP = 0xE6CC9004,
@@ -689,6 +692,13 @@ namespace libMBIN.NMS.GameComponents
             LANDING_PLATFORM_OPEN = 0x78991C27,
             LANDINGBAY_ACTIVATE = 0x3816AA16,
             LANDINGBAY_DEACTIVATE = 0x853967B7,
+            LANDSQUID_APPEAR = 0x3C4D6560,
+            LANDSQUID_DISAPPEAR = 0x2B93DE02,
+            LANDSQUID_KAMIKAZE = 0xFEDCC316,
+            LANDSQUID_KAMIKAZE_STOP = 0x5EB75A45,
+            LANDSQUID_KILL = 0x327DB8CF,
+            LANDSQUID_SPIT = 0x65F318DD,
+            LANDSQUID_SWIM = 0x65E64CDB,
             LANTERNCLOSE = 0x808EAE35,
             LANTERNOPEN = 0x8AFD33DF,
             LAVA_VOLCANO_AMBIENT = 0x4D0F2CED,
@@ -1871,6 +1881,7 @@ namespace libMBIN.NMS.GameComponents
             POI_GYRO_BALL = 0x8FAB3C89,
             POI_HORROR = 0xF3D9CFF2,
             POI_JELLYFISH = 0x74BD0818,
+            POI_JELLYFISH_SPACE_SWIM = 0xABDB3F66,
             POI_LINE_GEO = 0x1F696682,
             POI_MEMORYLIFEBOAT_FLARE = 0x6C22D0CE,
             POI_MEMORYLIFEBOAT_IDLE = 0x55D58134,
@@ -2098,6 +2109,11 @@ namespace libMBIN.NMS.GameComponents
             SPIDERROAR = 0x711887FE,
             SPKORVAX_CHATTER = 0x27F01D43,
             SPKORVAX_CHATTER_STOP = 0xC02D15AE,
+            SPOOKHEATER_IDLE = 0xB909848F,
+            SPOOKHEATER_LP = 0x2EE47329,
+            SPOOKHEATER_START = 0x64601067,
+            SPOOKYTENTACLES = 0x6B387ED7,
+            SPOOKYTENTACLES_STOP = 0xF16E3972,
             SPORE = 0x11268644,
             SPOREBAG_IDLE = 0xF7CA9B97,
             SPOREBAG_WOBBLE = 0x5AA09996,
@@ -2443,6 +2459,7 @@ namespace libMBIN.NMS.GameComponents
             UI_SHOP_SWITCH_INVENTORY = 0xD1746824,
             UI_SLEEP = 0x71F138DB,
             UI_SPECIALS_INSUFFICIENT = 0xD05421AC,
+            UI_SPOOKYMESSAGE = 0x7A28995E,
             UI_STANDING_DECREASED = 0xC781ADCF,
             UI_STANDING_INCREASED = 0x4D5E4C1F,
             UI_STAT_CHANGE = 0xBE30492B,

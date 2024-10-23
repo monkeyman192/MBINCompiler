@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4FAFF83054374EFB, NameHash = 0xDD75E678)]
+    [NMS(GUID = 0x6B463B8DB3A2BD97, NameHash = 0xDD75E678)]
     public class GcMissionSequenceGatherForRefuel : NMSTemplate
     {
         [NMS(Index = 3)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x3334E18F19B1BB24, NameHash = 0xD1E565BF)]
+    [NMS(GUID = 0x781DF8176608896, NameHash = 0xD1E565BF)]
     public class GcCostProduct : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -11,7 +11,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public int Amount;
         [NMS(Index = 0)]
         /* 0x14 */ public GcDefaultMissionProductEnum Default;
+        [NMS(Index = 4)]
+        /* 0x18 */ public bool TakeIDFromSeasonData;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool UseDefaultAmount;
+        /* 0x19 */ public bool UseDefaultAmount;
     }
 }
