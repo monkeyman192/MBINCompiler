@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4382BFEA7412C398, NameHash = 0xC7D918F3)]
+    [NMS(GUID = 0x699ECD9A7F5DD149, NameHash = 0xC7D918F3)]
     public class GcPlayerCommonStateData : NMSTemplate
     {
         [NMS(Index = 5)]
@@ -19,7 +19,7 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 10)]
         /* 0x51C8 */ public List<NMSString0x10> EarnedSeasonSpecialRewards;
         [NMS(Index = 13)]
-        /* 0x51D8 */ public List<GcDiscoveryOwner> UsedDiscoveryOwners;
+        /* 0x51D8 */ public List<GcDiscoveryOwner> UsedDiscoveryOwnersV2;
         [NMS(Index = 12)]
         /* 0x51E8 */ public List<NMSString0x20> UsedPlatforms;
         [NMS(Index = 11)]
