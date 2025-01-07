@@ -729,28 +729,36 @@ def read_class(
     0x20: (uint32): Number of fields.
     """
     data = nms_mem.read_bytes(address, 0x24)
-    ptr_name, name_hash, guid, ptr_data, field_num = struct.unpack(
-        '<QQQQI', data)
+    ptr_name, name_hash, guid, ptr_data, field_num = struct.unpack('<QQQQI', data)
     name = nms_mem.read_string(ptr_name, byte=128)
+    
     if (name.startswith('cGc') and name.endswith('Globals')) or name[1:] in ACTUALLY_GLOBALS:
         dir_ = 'Globals'
     else:
         dir_ = PREFIX_MAPPING.get(name[:3].lower(), "GameComponents")
-    if (config['general'].getboolean('replace_existing_files', fallback=False)
-        and name[1:] not in DONT_OVERRIDE
-    ):
+    
+    # if (config['general'].getboolean('replace_existing_files', fallback=False)
+        # and name[1:] not in DONT_OVERRIDE
+    # ):
+    if (config['general'].getboolean('replace_existing_files', fallback=False)):
         out_dir = config['general'].get('output_dir', fallback='./output')
     else:
         out_dir = './output'
+    
     if out_dir != './output':
         out_dir = op.join(out_dir, 'Source', 'NMS')
+    
     # Add the folder to the output path directory
     out_dir = op.join(op.dirname(__file__), out_dir, dir_)
+    
     if not op.exists(out_dir):
         os.makedirs(out_dir, exist_ok=True)
+    
     fields, has_enum_arrays = extract(nms_mem, ptr_data, field_num)
+    
     # If the name needs to be fix do so here.
     name = NAME_MAPPING.get(name[1:], name[1:])
+    
     cls = NMSClass(name, name_hash, guid)
     cls.add_fields(fields)
     cls.output_fname = op.join(out_dir, name + '.cs')
@@ -825,6 +833,13 @@ def find_classes(nms_path: pathlib.Path):
             else:
                 print(f"Cannot find {name}")
 
+def same_as_current_guid(struct_name, guid):
+    in_dir = "../../libMBIN/Source/NMS/Toolkit"
+    in_fname = op.join(in_dir, struct_name + '.cs')
+    with open(in_fname, 'r') as f:
+        filedata = f.read()
+        return (filedata.find(guid) != -1)
+    return False
 
 if __name__ == '__main__':
     # First, handle the configuration loading.
@@ -856,12 +871,23 @@ if __name__ == '__main__':
         guids: list[int] = []
         for name, offset in find_classes(binary_path):
             cls_ = read_class(nms, nms_base + offset, filepaths, config)
-            if name[1:] in NAME_MAPPING:
-                name = 'c' + NAME_MAPPING[name[1:]]
-            names.append(f'{name}, {nms_base + offset:X}')
-            classes.append(cls_)
-            class_guid_mapping[cls_.guid] = cls_.name
-            guids.append(cls_._guid)
+
+            process_file = False
+            if name[1:] in DONT_OVERRIDE:
+                if not same_as_current_guid(name[1:], cls_.guid):
+                    # print("WARNING: %s is in DONT_OVERRIDE and GUID don't match" % (name[1:]))
+                    process_file = True
+            else:
+                process_file = True
+                    
+            if process_file:
+                if name[1:] in NAME_MAPPING:
+                    name = 'c' + NAME_MAPPING[name[1:]]
+                names.append(f'{name}, {nms_base + offset:X}')
+                classes.append(cls_)
+                class_guid_mapping[cls_.guid] = cls_.name
+                guids.append(cls_._guid)
+
         names.sort()
         with open(SUMMARY_FILE, 'w') as f:
             f.write('\n'.join(names))
