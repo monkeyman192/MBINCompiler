@@ -77,6 +77,13 @@ MBINCompiler provides pre-built binaries for linux. These do not require mono to
 To run the binary simply call it directly (eg. `MBINCompiler ./path/to/file.MBIN`) and this will convert the provided file.
 See above for any extra command line arguments.
 
+### Running on macOS
+
+MBINCompiler provides a pre-built binary for Apple Silicon (`osx-arm64`) macOS built against .NET 8. As with linux it does not require mono but does require the [.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) to be installed.
+
+To run the binary simply call it directly (eg. `MBINCompiler ./path/to/file.MBIN`) and this will convert the provided file.
+See above for any extra command line arguments.
+
 ## SUBMITTING BUG REPORTS
 
 If you run into errors, in most cases the errors are because:
@@ -110,7 +117,13 @@ The full command to build all the libraries under the .NET  framework looks like
 dotnet publish -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
 ```
 
-For convenience we have included two batch scripts which build either the entire project for the .NET 6 framework (`build-net6.bat`) or the .NET 8 framework (`build-net8.bat`)
+Change the `-r` runtime identifier to target a different platform, eg. `linux-x64` or `osx-arm64` (Apple Silicon macOS).
+
+For convenience we have included a number of scripts which build the entire project:
+
+- `build-net6.bat` / `build-net6.sh`: the .NET 6 framework (Windows / linux).
+- `build-net8.bat` / `build-net8.sh`: the .NET 8 framework (Windows / linux).
+- `build-net8-mac.sh`: the .NET 8 framework for Apple Silicon macOS (`osx-arm64`).
 
 ## Installing python dependencies
 
@@ -128,6 +141,8 @@ Before running the tests, you need to have built a `Release` version of MBINComp
 You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414` (change dotnet and framework version as required).
 See section above about building for more details.
 
+On macOS (Apple Silicon) build with `./build-net8-mac.sh` and then run the tests with the matching platform, eg. `uv run pytest --platform osx-arm64`. If the built binary lives somewhere other than the default `Build/Release/net8.0/<platform>/publish/` location you can point the tests at it directly with `--mbincompiler_path`.
+
 ### Running the tests
 
 Open a command line window in the root MBINCompiler directory and enter `uv run pytest`.
@@ -135,6 +150,11 @@ This will pull the latest test data into the directory `./tests/data`.
 
 #### Command line arguments:
 
+- `--platform`: The platform the tests are run on. Used to locate the default built binary.
+
+  **Choices**: `win-x64` (Default), `linux-x64`, `osx-arm64`.
+
+- `--mbincompiler_path`: The path to the MBINCompiler binary you want to test. Overrides the default location derived from `--platform`.
 - `--datapath`: "The relative or absolute path to a folder containing .MBIN files to be tested. If not provided, the test data will be downloaded from the MBINCompiler-test-data repository."
 - `--use_cache` (bool): "Whether or not to use cached data that was downloaded by running the tests with no additional arguments."
   Defaults to `False`.

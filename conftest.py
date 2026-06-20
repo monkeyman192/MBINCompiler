@@ -10,7 +10,7 @@ from tests.utils import download_data, format_err_results, generate_report
 
 TEST_ROOT_PATH = op.join(op.dirname(__file__), 'tests')
 DATA_PATH = op.join(TEST_ROOT_PATH, 'data')
-BASE_PATH = op.join("Build", "Release", "net8.0", "win-x64", "publish")
+BASE_PATH = op.join("Build", "Release", "net8.0")
 FAILED_FNAME = '_failed.txt'
 REPORT_FNAME = op.join(op.dirname(__file__), 'results.txt')
 JSON_REPORT_FNAME = op.join(op.dirname(__file__), 'report.json')
@@ -19,7 +19,7 @@ JSON_REPORT_FNAME = op.join(op.dirname(__file__), 'report.json')
 def pytest_addoption(parser):
     parser.addoption("--platform", action="store", default="win-x64",
                      help="The platform the tests are run on.",
-                     choices=['win-x64', 'linux-x64'])
+                     choices=['win-x64', 'linux-x64', 'osx-arm64'])
     parser.addoption("--datapath", action="store", default=None,
                      help="The relative or absolute path to a folder "
                           "containing .MBIN files to be tested. If not "
@@ -85,10 +85,10 @@ def convert_files():
     platform = os.environ.get('platform')
     mbincompiler_path = os.environ.get('mbincompiler_path')
     if mbincompiler_path is None:
-        if platform == 'linux-x64':
-            mbincompiler_path = op.join(BASE_PATH, platform, 'MBINCompiler.exe')
-        else:
-            mbincompiler_path = op.join(BASE_PATH, 'MBINCompiler.exe')
+        # The published executable is called `MBINCompiler.exe` on Windows but
+        # just `MBINCompiler` on linux and macOS.
+        exe_name = 'MBINCompiler.exe' if platform == 'win-x64' else 'MBINCompiler'
+        mbincompiler_path = op.join(BASE_PATH, platform, 'publish', exe_name)
 
     if not op.exists(mbincompiler_path):
         pytest.fail(f"MBINCompiler can't be found at the following path: {mbincompiler_path}", False)

@@ -21,7 +21,7 @@
     <PackageLicense>https://github.com/monkeyman192/MBINCompiler/blob/development/LICENSE.md</PackageLicense>
     <PackageTags>No Man's Sky</PackageTags>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU;x64;arm64</Platforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
