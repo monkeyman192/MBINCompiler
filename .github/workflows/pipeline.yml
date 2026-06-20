@@ -21,11 +21,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [{name: 'Ubuntu', runtime: 'linux-x64'}, {name: 'Windows', runtime: 'win-x64'}, {name: 'macOS', runtime: 'osx-arm64'}]
+        # `bin` is the name the built executable is published/uploaded under. On
+        # Windows/Ubuntu it keeps the historical `.exe` name; macOS ships a plain
+        # `MBINCompiler` (a `.exe` on a native macOS binary is misleading).
+        os:
+          - {name: 'Ubuntu',  runtime: 'linux-x64', bin: 'MBINCompiler.exe'}
+          - {name: 'Windows', runtime: 'win-x64',   bin: 'MBINCompiler.exe'}
+          - {name: 'macOS',   runtime: 'osx-arm64', bin: 'MBINCompiler'}
         dotnet: [{framework: 'net6.0', version: '6.0.0'}, {framework: 'net8.0', version: '8.0.0'}]
         # We only ship a .NET 8 build for macOS.
         exclude:
-          - os: {name: 'macOS', runtime: 'osx-arm64'}
+          - os: {name: 'macOS', runtime: 'osx-arm64', bin: 'MBINCompiler'}
             dotnet: {framework: 'net6.0', version: '6.0.0'}
     steps:
       - uses: actions/checkout@v4
@@ -44,18 +50,20 @@ jobs:
           dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
       - name: Move the exe so the tests can find it easier
         run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler.exe MBINCompiler.exe
+          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler.exe ${{ matrix.os.bin }}
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
         if: ${{matrix.os.name  == 'Windows' }}
       - name: Move the exe so the tests can find it easier
         run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler MBINCompiler.exe
+          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
         if: ${{matrix.os.name  == 'Ubuntu' }}
-      - name: Move the exe so the tests can find it easier
+      - name: Move the binary so the tests can find it, and stage the macOS readme/installer
         run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler MBINCompiler.exe
+          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
+          cp packaging/macos/install-cli.sh install.sh
+          chmod +x ${{ matrix.os.bin }} install.sh
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Set up Python 3.9
         uses: actions/setup-python@v5
@@ -66,7 +74,7 @@ jobs:
           python -m pip install --upgrade pip uv
           uv sync
       - name: Run tests
-        run: uv run python -m pytest --mbincompiler_path="./MBINCompiler.exe" --tb=no --report
+        run: uv run python -m pytest --mbincompiler_path="./${{ matrix.os.bin }}" --tb=no --report
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
@@ -89,9 +97,9 @@ jobs:
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
-            MBINCompiler.exe
-            MBINCompiler.dll
+            MBINCompiler
             libMBIN.dll
+            install.sh
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload report
         uses: actions/upload-artifact@v4
@@ -133,7 +141,7 @@ jobs:
           mv MBINCompiler-Ubuntu-net6.0/libMBIN.dll libMBIN-linux-dotnet6.so
           mv MBINCompiler-Ubuntu-net8.0/MBINCompiler.exe MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
-          mv MBINCompiler-macOS-net8.0/MBINCompiler.exe MBINCompiler-mac
+          mv MBINCompiler-macOS-net8.0/MBINCompiler MBINCompiler-mac
           mv MBINCompiler-macOS-net8.0/libMBIN.dll libMBIN-mac.dll
           mv savedata-mapping/mapping.json mapping.json
           mv MBINCompiler-report/report.json report.json
