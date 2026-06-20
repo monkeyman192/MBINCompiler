@@ -12,10 +12,10 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <RuntimeIdentifiers>linux-x64;win-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>linux-x64;win-x64;osx-arm64</RuntimeIdentifiers>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <Configurations>Debug;Release</Configurations>
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU;x64;arm64</Platforms>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
     <PublishReadyToRun>true</PublishReadyToRun>
@@ -27,7 +27,7 @@
     <Optimize>false</Optimize>
     <OutputPath>..\Build\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;ENABLE_THREADS</DefineConstants>
-    <RuntimeIdentifiers>linux-x64;win-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>linux-x64;win-x64;osx-arm64</RuntimeIdentifiers>
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -36,7 +36,7 @@
     <Optimize>false</Optimize>
     <OutputPath>..\Build\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;ENABLE_THREADS</DefineConstants>
-    <RuntimeIdentifiers>linux-x64;win-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>linux-x64;win-x64;osx-arm64</RuntimeIdentifiers>
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -44,16 +44,14 @@
     <Optimize>true</Optimize>
     <OutputPath>..\Build\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <RuntimeIdentifiers>linux-x64;win-x64</RuntimeIdentifiers>
-    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifiers>linux-x64;win-x64;osx-arm64</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\Build\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <RuntimeIdentifiers>linux-x64;win-x64</RuntimeIdentifiers>
-    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifiers>linux-x64;win-x64;osx-arm64</RuntimeIdentifiers>
   </PropertyGroup>
 
   <Import Project="..\libMBIN\libMBIN-Shared.projitems" Label="Shared" />
