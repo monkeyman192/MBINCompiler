@@ -104,12 +104,28 @@ make_icon() {
     rm -rf "$tmp"
 }
 
+# Stamp the bundle's version to match the embedded MBINCompiler build, so the app
+# version always tracks libMBIN's VERSION_STRING rather than drifting.
+stamp_version() {
+    local full short
+    full="$("$PUBLISH_DIR/MBINCompiler" version -q 2>/dev/null | tr -d ' \r\n')"   # e.g. 6.45.0.1
+    if [[ "$full" =~ ^[0-9]+(\.[0-9]+){1,3}$ ]]; then
+        short="$(echo "$full" | cut -d. -f1-3)"                                     # 6.45.0 (Apple wants ≤3 ints)
+        /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $short" "$STAGE/Contents/Info.plist" >/dev/null 2>&1
+        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $full" "$STAGE/Contents/Info.plist" >/dev/null 2>&1
+        say "App version stamped: $short (build $full)"
+    else
+        warn "couldn't read MBINCompiler version — leaving Info.plist version unchanged"
+    fi
+}
+
 bundle() {
     say "Assembling $APP_NAME.app…"
     rm -rf "$STAGE"
     mkdir -p "$STAGE/Contents/MacOS" "$STAGE/Contents/Resources/mbincompiler"
     cp "$SWIFT_DIR/packaging/Info.plist" "$STAGE/Contents/Info.plist"
     cp "$SWIFT_DIR/.build/release/$PRODUCT" "$STAGE/Contents/MacOS/$APP_NAME"
+    stamp_version
     cp -R "$PUBLISH_DIR/." "$STAGE/Contents/Resources/mbincompiler/"
     chmod +x "$STAGE/Contents/Resources/mbincompiler/MBINCompiler"
     make_icon

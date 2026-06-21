@@ -7,8 +7,10 @@
     <key>CFBundleName</key><string>MBINCompiler</string>
     <key>CFBundleDisplayName</key><string>MBINCompiler</string>
     <key>CFBundlePackageType</key><string>APPL</string>
-    <key>CFBundleShortVersionString</key><string>1.0.0</string>
-    <key>CFBundleVersion</key><string>1</string>
+    <!-- These are stamped to the embedded MBINCompiler version at build time by
+         install_mac_gui; the values here are just a fallback default. -->
+    <key>CFBundleShortVersionString</key><string>6.45.0</string>
+    <key>CFBundleVersion</key><string>6.45.0.1</string>
     <key>CFBundleIconFile</key><string>AppIcon</string>
     <key>NSHighResolutionCapable</key><true/>
     <key>LSMinimumSystemVersion</key><string>14.0</string>

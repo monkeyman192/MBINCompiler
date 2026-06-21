@@ -20,8 +20,20 @@ struct ContentView: View {
             dropZone
             optionsPanel
             outputConsole
+
+            HStack {
+                Spacer()
+                Text("MBINCompiler v\(appVersion)")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+            }
         }
         .padding(16)
+    }
+
+    /// Mirrors the embedded MBINCompiler version (stamped into the bundle at build time).
+    private var appVersion: String {
+        (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String) ?? "dev"
     }
 
     // MARK: Drop zone
