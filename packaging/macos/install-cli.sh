@@ -43,11 +43,26 @@ done
 if [ -n "$linked" ]; then
     say "Linked: $linked"
     case ":$PATH:" in
-        *":$(dirname "$linked"):"*) say "Done. Run:  mbincompiler help" ;;
+        *":$(dirname "$linked"):"*) say "Command-line tool ready. Run:  mbincompiler help" ;;
         *) warn "$(dirname "$linked") isn't on your PATH. Add it, then run:  mbincompiler help" ;;
     esac
 else
     warn "No writable bin directory found. Add this line to your ~/.zshrc instead:"
     warn "  export PATH=\"$SHARE:\$PATH\""
     say  "Then run:  mbincompiler help   (or $SHARE/MBINCompiler help)"
+fi
+
+# Install the Finder "Convert with MBINCompiler" Quick Action, if it shipped here.
+QA="MBINCompiler-QuickAction.workflow"
+if [ -d "$HERE/$QA" ]; then
+    mkdir -p "$HOME/Library/Services"
+    rm -rf "$HOME/Library/Services/$QA"
+    cp -R "$HERE/$QA" "$HOME/Library/Services/"
+    /System/Library/CoreServices/pbs -flush 2>/dev/null || true
+    say "Installed Quick Action → right-click a .MBIN/.MXML file in Finder ▸ Quick Actions ▸ Convert with MBINCompiler"
+fi
+
+# Point out the drag-and-drop droplet, if it shipped here.
+if [ -d "$HERE/MBINCompiler Droplet.app" ]; then
+    say "Drag-and-drop: drop .MBIN/.MXML files onto 'MBINCompiler Droplet.app' (move it to /Applications or your Dock to keep it handy)."
 fi

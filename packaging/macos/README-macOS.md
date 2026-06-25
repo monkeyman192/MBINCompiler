@@ -1,11 +1,14 @@
 # MBINCompiler for macOS (Apple Silicon)
 
 This archive contains the command-line **MBINCompiler** built for Apple Silicon
-(`osx-arm64`) on **.NET 8**.
+(`osx-arm64`) on **.NET 8**, plus two optional drag-and-drop helpers.
 
 ```
-MBINCompiler     the executable
-libMBIN.dll      the data library  ←  MUST stay in the same folder as MBINCompiler
+MBINCompiler                       the executable
+libMBIN.dll                        the data library  ←  MUST stay next to MBINCompiler
+install.sh                         puts MBINCompiler on your PATH + installs the extras
+MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
+MBINCompiler-QuickAction.workflow  Finder right-click "Convert with MBINCompiler"
 ```
 
 ## Requirements
@@ -15,9 +18,6 @@ libMBIN.dll      the data library  ←  MUST stay in the same folder as MBINComp
   needs the runtime installed). Get it from
   <https://dotnet.microsoft.com/download/dotnet/8.0/runtime> or install with
   Homebrew: `brew install --cask dotnet-sdk`.
-
-  Don't want to install .NET at all? Use the drag-and-drop **MBINCompiler app**
-  instead — it bundles everything. See "The app" at the bottom.
 
 ## Quick start
 
@@ -36,14 +36,16 @@ chmod +x MBINCompiler                      # make it runnable
 ## Putting it on your PATH
 
 The included script does it for you — it copies both files to
-`~/.local/share/mbincompiler` and symlinks the binary into a folder on your PATH:
+`~/.local/share/mbincompiler`, symlinks the binary as `mbincompiler` into a folder
+on your PATH, and installs the Quick Action:
 
 ```sh
 ./install.sh
 ```
 
 Then you can run `mbincompiler ...` from anywhere. (A symlink is fine: the binary
-still finds `libMBIN.dll` next to its real location.)
+still finds `libMBIN.dll` next to its real location.) If the chosen folder isn't on
+your PATH, the script tells you what to add to `~/.zshrc`.
 
 To do it by hand instead, keep the two files together in a folder and add that
 folder to your PATH, e.g. in `~/.zshrc`:
@@ -55,17 +57,17 @@ export PATH="$HOME/tools/mbincompiler:$PATH"
 Do **not** copy only `MBINCompiler` into `/usr/local/bin` on its own — it will
 fail to find `libMBIN.dll`.
 
-## The app (no .NET install required)
+## Drag-and-drop helpers
 
-If you'd rather drag-and-drop files onto a window with clickable options, build
-the **MBINCompiler.app** from the source repository:
+Both call the `mbincompiler` command, so run `./install.sh` first. They convert in
+place: drop/select an `.MBIN` → you get an `.MXML` beside it, and vice versa.
 
-```sh
-git clone https://github.com/monkeyman192/MBINCompiler
-cd MBINCompiler
-./install_mac_gui
-```
+- **Droplet** — drag `.MBIN`/`.MXML` files onto **`MBINCompiler Droplet.app`**. Move
+  it to `/Applications` or your Dock to keep it around.
+- **Finder Quick Action** — `install.sh` installs it; or double-click
+  **`MBINCompiler-QuickAction.workflow`** to install it yourself. Then right-click any
+  `.MBIN`/`.MXML` in Finder ▸ **Quick Actions ▸ Convert with MBINCompiler**.
 
-That produces a self-contained, code-signed app in `~/Applications` that needs no
-.NET runtime of its own (building it needs the .NET SDK + Xcode command-line
-tools). See the main README for details.
+> macOS launches these without your shell's PATH, so they look for `mbincompiler` in
+> the standard locations `install.sh` uses (`/opt/homebrew/bin`, `/usr/local/bin`,
+> `~/.local/bin`). If it isn't found you'll get a prompt telling you to run `install.sh`.

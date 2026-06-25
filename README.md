@@ -79,72 +79,63 @@ See above for any extra command line arguments.
 
 ### Running on macOS
 
-There are two ways to use MBINCompiler on Apple Silicon macOS:
+A pre-built archive for Apple Silicon (`osx-arm64`), **`MBINCompiler-macOS.zip`**, is
+published with each release (and as a CI build artifact). Like the linux build it does
+not require mono, but it **does require the
+[.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)** to be
+installed (`brew install --cask dotnet-sdk` works too).
 
-1. **The command-line tool.** A pre-built binary for Apple Silicon (`osx-arm64`)
-   built against .NET 8 is published with each release. Like the linux build it
-   does not require mono but does require the
-   [.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) to
-   be installed. The downloaded archive contains `MBINCompiler`, `libMBIN.dll`
-   (keep the two together!), a `README.md` and an `install.sh` that puts the tool
-   on your PATH — see that README, or [the macOS app section below](#mbincompilerapp--the-macos-app).
-   To run it directly: `./MBINCompiler ./path/to/file.MBIN`.
+Unzip it and you'll find:
 
-2. **The drag-and-drop app**, which bundles everything (no .NET install needed).
-   See [MBINCompiler.app](#mbincompilerapp--the-macos-app) below.
+```
+MBINCompiler                       the executable
+libMBIN.dll                        the data library  ←  keep it next to MBINCompiler
+install.sh                         puts MBINCompiler on your PATH + installs the extras below
+README.md                          macOS-specific notes
+MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
+MBINCompiler-QuickAction.workflow  adds a Finder right-click "Convert with MBINCompiler"
+```
+
+To run the tool directly: `./MBINCompiler ./path/to/file.MBIN`. As with the other
+platforms, it auto-detects MBIN↔MXML and writes the result next to the source file.
 
 > macOS quarantines downloaded files. The first time, clear the flag with
-> `xattr -dr com.apple.quarantine <folder-or-app>` (the included `install.sh`
-> and the app installer both do this for you).
+> `xattr -dr com.apple.quarantine <folder>` — running `install.sh` does this for you.
 
-## MBINCompiler.app — the macOS app
+#### Putting MBINCompiler on your PATH
 
-For a friendlier experience on Apple Silicon there is a small **SwiftUI app**: drag
-`.MBIN`/`.MXML` files onto its window, toggle the conversion options with
-checkboxes, and watch MBINCompiler's output stream into a scrolling console. MBIN→MXML
-and MXML→MBIN are detected automatically.
-
-The app is a thin front-end that shells out to a **self-contained** .NET 8 build of
-MBINCompiler embedded inside the bundle, so the installed app needs **no .NET runtime
-of its own** — everything it needs ships inside `MBINCompiler.app`.
-
-### One-command install
-
-From a checkout of this repository:
+The drag-and-drop helpers below call the `mbincompiler` command, so install it first.
+From the unzipped folder:
 
 ```sh
-./install_mac_gui
+./install.sh
 ```
 
-This builds both halves, assembles a code-signed `MBINCompiler.app` into
-`~/Applications`, and links a `mbincompiler` command onto your PATH. Afterwards:
+This clears quarantine, copies `MBINCompiler` + `libMBIN.dll` to
+`~/.local/share/mbincompiler`, and symlinks the executable as `mbincompiler` into the
+first writable of `/opt/homebrew/bin`, `/usr/local/bin`, or `~/.local/bin`. If none of
+those is on your PATH it tells you what to add to `~/.zshrc`. It also installs the
+Quick Action (below).
 
-```sh
-mbincompiler run       # launch the app
-mbincompiler update    # git pull + rebuild + reinstall
-mbincompiler cli       # build just the standalone command-line tool
-```
+To do it manually instead, keep `MBINCompiler` and `libMBIN.dll` together in a folder
+and add that folder to your PATH (e.g. `export PATH="$HOME/tools/mbincompiler:$PATH"`).
+Do **not** copy `MBINCompiler` somewhere on its own — it won't find `libMBIN.dll`.
 
-The source for the app lives in [`macos-app/`](macos-app/).
+### Drag-and-drop on macOS
 
-### What you need to BUILD it
+Once `mbincompiler` is on your PATH (above), use either of the bundled helpers. Both
+convert in place — drop/select an `.MBIN` and you get an `.MXML` next to it, and vice
+versa.
 
-Building the app (or the binaries) from source needs:
+- **The droplet** — `MBINCompiler Droplet.app`. Drag one or more `.MBIN`/`.MXML` files
+  onto its icon. Move it to `/Applications` or your Dock to keep it handy.
+- **The Finder Quick Action** — after `install.sh` (or by double-clicking
+  `MBINCompiler-QuickAction.workflow` to install it), right-click any `.MBIN`/`.MXML`
+  in Finder and choose **Quick Actions ▸ Convert with MBINCompiler**.
 
-| To build…                              | You need |
-| -------------------------------------- | -------- |
-| The `.app` (`./install_mac_gui`)  | **Xcode command-line tools** (`xcode-select --install`) **and** the **.NET 8 SDK** ([download](https://dotnet.microsoft.com/download/dotnet/8.0) or `brew install --cask dotnet-sdk`) |
-| Only the command-line tool (`.NET`)    | The **.NET 8 SDK** only |
-
-You do **not** need a full Xcode install or a paid Apple Developer account — the
-command-line tools are enough, and the app is signed with an ad-hoc local signature.
-
-### What you need to RUN it
-
-| To run…                                | You need |
-| -------------------------------------- | -------- |
-| The installed `MBINCompiler.app`       | Nothing extra — the .NET runtime is bundled inside |
-| The command-line tool (release build)  | The **.NET 8 runtime** ([download](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)) |
+> Both helpers are launched by macOS, which doesn't pass along your shell's PATH, so
+> they look for `mbincompiler` in the standard locations `install.sh` uses. If you put
+> it somewhere unusual, they'll show a "not on your PATH" prompt.
 
 ## SUBMITTING BUG REPORTS
 
@@ -186,9 +177,6 @@ For convenience we have included a number of scripts which build the entire proj
 - `build-net6.bat` / `build-net6.sh`: the .NET 6 framework (Windows / linux).
 - `build-net8.bat` / `build-net8.sh`: the .NET 8 framework (Windows / linux).
 - `build-net8-mac.sh`: the .NET 8 framework for Apple Silicon macOS (`osx-arm64`).
-
-To build the macOS drag-and-drop app instead of the command-line tool, use
-`./install_mac_gui` — see [MBINCompiler.app](#mbincompilerapp--the-macos-app).
 
 ## Installing python dependencies
 

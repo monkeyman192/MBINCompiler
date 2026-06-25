@@ -58,13 +58,11 @@ jobs:
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
         if: ${{matrix.os.name  == 'Ubuntu' }}
-      - name: Move the binary so the tests can find it, and stage the macOS readme/installer
+      - name: Move the binary so the tests can find it
         run: |
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
           cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-          cp packaging/macos/README-macOS.md README.md
-          cp packaging/macos/install-cli.sh install.sh
-          chmod +x ${{ matrix.os.bin }} install.sh
+          chmod +x ${{ matrix.os.bin }}
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Set up Python 3.9
         uses: actions/setup-python@v5
@@ -93,15 +91,28 @@ jobs:
             MBINCompiler.dll
             libMBIN.dll
         if: ${{matrix.os.name  == 'Ubuntu' }}
-      - name: Upload macOS binaries
+      - name: Package macOS archive (CLI + droplet + Quick Action)
+        # Assemble on macOS so `ditto` preserves the droplet .app bundle (its exec
+        # bits / signature would be lost if zipped by the Windows release job or by
+        # the loose-file artifact uploader).
+        run: |
+          PUB="Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish"
+          STAGE="MBINCompiler-macOS"
+          rm -rf "$STAGE"; mkdir -p "$STAGE"
+          cp "$PUB/MBINCompiler" "$STAGE/MBINCompiler"
+          cp "$PUB/libMBIN.dll" "$STAGE/libMBIN.dll"
+          cp packaging/macos/README-macOS.md "$STAGE/README.md"
+          cp packaging/macos/install-cli.sh "$STAGE/install.sh"
+          cp -R packaging/macos/MBINCompiler-QuickAction.workflow "$STAGE/"
+          osacompile -o "$STAGE/MBINCompiler Droplet.app" packaging/macos/droplet.applescript
+          chmod +x "$STAGE/MBINCompiler" "$STAGE/install.sh"
+          ditto -c -k --keepParent "$STAGE" MBINCompiler-macOS.zip
+        if: ${{matrix.os.name  == 'macOS' }}
+      - name: Upload macOS archive
         uses: actions/upload-artifact@v4
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
-          path: |
-            MBINCompiler
-            libMBIN.dll
-            README.md
-            install.sh
+          path: MBINCompiler-macOS.zip
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload report
         uses: actions/upload-artifact@v4
@@ -143,8 +154,7 @@ jobs:
           mv MBINCompiler-Ubuntu-net6.0/libMBIN.dll libMBIN-linux-dotnet6.so
           mv MBINCompiler-Ubuntu-net8.0/MBINCompiler.exe MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
-          mv MBINCompiler-macOS-net8.0/MBINCompiler MBINCompiler-mac
-          mv MBINCompiler-macOS-net8.0/libMBIN.dll libMBIN-mac.dll
+          mv MBINCompiler-macOS-net8.0/MBINCompiler-macOS.zip MBINCompiler-macOS.zip
           mv savedata-mapping/mapping.json mapping.json
           mv MBINCompiler-report/report.json report.json
       - name: Get MBINCompiler tag version
@@ -168,8 +178,7 @@ jobs:
             libMBIN-linux.so
             MBINCompiler-linux-dotnet6
             libMBIN-linux-dotnet6.so
-            MBINCompiler-mac
-            libMBIN-mac.dll
+            MBINCompiler-macOS.zip
             report.json
             mapping.json
         env:
