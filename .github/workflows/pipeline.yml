@@ -83,13 +83,14 @@ jobs:
       - name: Package macOS archive (CLI + droplet + Quick Action)
         # Assemble on macOS so `ditto` preserves the droplet .app bundle (its exec
         # bits / signature would be lost if zipped by the Windows release job or by
-        # the loose-file artifact uploader).
+        # the loose-file artifact uploader). libMBIN is embedded in the single-file
+        # binary, so it is NOT bundled in the zip — it ships separately (like the
+        # other platforms) for anyone who wants the library on its own.
         run: |
           PUB="Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish"
           STAGE="MBINCompiler-macOS"
           rm -rf "$STAGE"; mkdir -p "$STAGE"
           cp "$PUB/MBINCompiler" "$STAGE/MBINCompiler"
-          cp "$PUB/libMBIN.dll" "$STAGE/libMBIN.dll"
           cp packaging/macos/README-macOS.md "$STAGE/README.md"
           cp packaging/macos/install-cli.sh "$STAGE/install.sh"
           cp -R packaging/macos/MBINCompiler-QuickAction.workflow "$STAGE/"
@@ -101,7 +102,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
-          path: MBINCompiler-macOS.zip
+          path: |
+            MBINCompiler-macOS.zip
+            libMBIN.dll
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload report
         uses: actions/upload-artifact@v4
@@ -144,6 +147,7 @@ jobs:
           mv MBINCompiler-Ubuntu-net8.0/MBINCompiler MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
           mv MBINCompiler-macOS-net8.0/MBINCompiler-macOS.zip MBINCompiler-macOS.zip
+          mv MBINCompiler-macOS-net8.0/libMBIN.dll libMBIN-mac.dll
           mv savedata-mapping/mapping.json mapping.json
           mv MBINCompiler-report/report.json report.json
       - name: Get MBINCompiler tag version
@@ -168,6 +172,7 @@ jobs:
             MBINCompiler-linux-dotnet6
             libMBIN-linux-dotnet6.so
             MBINCompiler-macOS.zip
+            libMBIN-mac.dll
             report.json
             mapping.json
         env:

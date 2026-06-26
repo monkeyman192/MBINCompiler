@@ -4,12 +4,15 @@ This archive contains the command-line **MBINCompiler** built for Apple Silicon
 (`osx-arm64`) on **.NET 8**, plus two optional drag-and-drop helpers.
 
 ```
-MBINCompiler                       the executable
-libMBIN.dll                        the data library  ←  MUST stay next to MBINCompiler
+MBINCompiler                       the executable (self-contained — libMBIN is embedded)
 install.sh                         puts MBINCompiler on your PATH + installs the extras
 MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
 MBINCompiler-QuickAction.workflow  Finder right-click "Convert with MBINCompiler"
 ```
+
+`libMBIN.dll` is **not** included because it's embedded in the executable — you don't
+need it to run MBINCompiler. (It's published as a separate `libMBIN-mac.dll` release
+asset for anyone who wants the library on its own.)
 
 ## Requirements
 
@@ -31,31 +34,27 @@ chmod +x MBINCompiler                      # make it runnable
 ./MBINCompiler /path/to/file.MBIN          # convert a file (MBIN→MXML or MXML→MBIN)
 ```
 
-`MBINCompiler` and `libMBIN.dll` must always live **in the same directory**.
+The executable is self-contained, so you can move it anywhere you like.
 
 ## Putting it on your PATH
 
-The included script does it for you — it copies both files to
-`~/.local/share/mbincompiler`, symlinks the binary as `mbincompiler` into a folder
-on your PATH, and installs the Quick Action:
+The included script does it for you — it copies `MBINCompiler` to
+`~/.local/share/mbincompiler`, symlinks it as `mbincompiler` into a folder on your
+PATH, and installs the Quick Action:
 
 ```sh
 ./install.sh
 ```
 
-Then you can run `mbincompiler ...` from anywhere. (A symlink is fine: the binary
-still finds `libMBIN.dll` next to its real location.) If the chosen folder isn't on
-your PATH, the script tells you what to add to `~/.zshrc`.
+Then you can run `mbincompiler ...` from anywhere. If the chosen folder isn't on your
+PATH, the script tells you what to add to `~/.zshrc`.
 
-To do it by hand instead, keep the two files together in a folder and add that
-folder to your PATH, e.g. in `~/.zshrc`:
+To do it by hand instead, just drop `MBINCompiler` into any folder on your PATH (e.g.
+`/usr/local/bin`), or add its folder to your PATH in `~/.zshrc`:
 
 ```sh
 export PATH="$HOME/tools/mbincompiler:$PATH"
 ```
-
-Do **not** copy only `MBINCompiler` into `/usr/local/bin` on its own — it will
-fail to find `libMBIN.dll`.
 
 ## Drag-and-drop helpers
 

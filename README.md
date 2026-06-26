@@ -88,13 +88,15 @@ installed (`brew install --cask dotnet-sdk` works too).
 Unzip it and you'll find:
 
 ```
-MBINCompiler                       the executable
-libMBIN.dll                        the data library  ←  keep it next to MBINCompiler
+MBINCompiler                       the executable (self-contained — libMBIN is embedded)
 install.sh                         puts MBINCompiler on your PATH + installs the extras below
 README.md                          macOS-specific notes
 MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
 MBINCompiler-QuickAction.workflow  adds a Finder right-click "Convert with MBINCompiler"
 ```
+
+The executable is self-contained, so `libMBIN.dll` is not bundled — it ships as a
+separate `libMBIN-mac.dll` release asset for anyone who wants the library on its own.
 
 To run the tool directly: `./MBINCompiler ./path/to/file.MBIN`. As with the other
 platforms, it auto-detects MBIN↔MXML and writes the result next to the source file.
@@ -111,15 +113,14 @@ From the unzipped folder:
 ./install.sh
 ```
 
-This clears quarantine, copies `MBINCompiler` + `libMBIN.dll` to
-`~/.local/share/mbincompiler`, and symlinks the executable as `mbincompiler` into the
-first writable of `/opt/homebrew/bin`, `/usr/local/bin`, or `~/.local/bin`. If none of
-those is on your PATH it tells you what to add to `~/.zshrc`. It also installs the
-Quick Action (below).
+This clears quarantine, copies `MBINCompiler` to `~/.local/share/mbincompiler`, and
+symlinks it as `mbincompiler` into the first writable of `/opt/homebrew/bin`,
+`/usr/local/bin`, or `~/.local/bin`. If none of those is on your PATH it tells you what
+to add to `~/.zshrc`. It also installs the Quick Action (below).
 
-To do it manually instead, keep `MBINCompiler` and `libMBIN.dll` together in a folder
-and add that folder to your PATH (e.g. `export PATH="$HOME/tools/mbincompiler:$PATH"`).
-Do **not** copy `MBINCompiler` somewhere on its own — it won't find `libMBIN.dll`.
+To do it manually instead, just drop the self-contained `MBINCompiler` into any folder
+on your PATH (e.g. `/usr/local/bin`), or add its folder to your PATH (e.g.
+`export PATH="$HOME/tools/mbincompiler:$PATH"`).
 
 ### Drag-and-drop on macOS
 

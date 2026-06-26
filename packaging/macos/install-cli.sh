@@ -1,9 +1,9 @@
 #!/bin/bash
 # install-cli.sh — install the MBINCompiler command-line tool onto your PATH.
 #
-# Ships next to `MBINCompiler` and `libMBIN.dll` in the macOS release archive.
-# It keeps the two files together (the binary needs libMBIN.dll beside it) in
-# ~/.local/share/mbincompiler and symlinks the executable into a PATH directory.
+# Ships next to `MBINCompiler` in the macOS release archive. The single-file build
+# is self-contained (libMBIN is embedded), so this just copies the executable to
+# ~/.local/share/mbincompiler and symlinks it into a PATH directory.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -14,7 +14,6 @@ warn() { echo "${BOLD}${YELLOW}warning:${RESET} $*"; }
 die()  { echo "${BOLD}error:${RESET} $*" >&2; exit 1; }
 
 [ -f "$HERE/MBINCompiler" ] || die "MBINCompiler not found next to this script."
-[ -f "$HERE/libMBIN.dll" ] || die "libMBIN.dll not found next to this script — it must ship alongside MBINCompiler."
 
 # Clear the quarantine flag (downloaded-from-internet) and make it runnable.
 xattr -dr com.apple.quarantine "$HERE" 2>/dev/null || true
@@ -28,7 +27,7 @@ fi
 
 say "Installing to $SHARE …"
 mkdir -p "$SHARE"
-cp "$HERE/MBINCompiler" "$HERE/libMBIN.dll" "$SHARE/"
+cp "$HERE/MBINCompiler" "$SHARE/"
 chmod +x "$SHARE/MBINCompiler"
 
 linked=""
