@@ -1,17 +1,32 @@
 -- MBINCompiler droplet — drag .MBIN/.MXML files onto the app icon to convert them.
 -- MBIN → MXML and MXML → MBIN are auto-detected; output is written next to each
--- source file. Requires the `mbincompiler` command on your PATH (run install.sh).
+-- source file.
+--
+-- It uses, in order: an `MBINCompiler` sitting next to this droplet (the unzipped
+-- archive layout), then the `mbincompiler` command on your PATH (run install.sh).
+-- Looking beside the droplet first means you don't have to install anything, and a
+-- bundled copy always wins over an older MBINCompiler already on your PATH.
 --
 -- Compiled to an .app with:  osacompile -o "MBINCompiler Droplet.app" droplet.applescript
 
--- Find the `mbincompiler` command. GUI-launched apps don't inherit your shell PATH,
--- so we add the locations install.sh uses before resolving it.
+-- Resolve the MBINCompiler executable. GUI-launched apps don't inherit your shell
+-- PATH, so we look beside the droplet first, then the locations install.sh uses.
 on findTool()
-	set pathSetup to "for d in \"$HOME/.local/bin\" /opt/homebrew/bin /usr/local/bin; do [ -x \"$d/mbincompiler\" ] && export PATH=\"$d:$PATH\"; done; "
+	set appPath to POSIX path of (path to me)
+	set sh to "appdir=$(dirname " & quoted form of appPath & ")
+for cand in \"$appdir/MBINCompiler\" \"$(pwd)/MBINCompiler\"; do
+  [ -x \"$cand\" ] && { echo \"$cand\"; exit 0; }
+done
+for d in \"$HOME/.local/bin\" /opt/homebrew/bin /usr/local/bin; do
+  [ -x \"$d/mbincompiler\" ] && { echo \"$d/mbincompiler\"; exit 0; }
+done
+command -v mbincompiler 2>/dev/null"
 	try
-		return do shell script pathSetup & "command -v mbincompiler"
+		set toolPath to do shell script sh
+		if toolPath is "" then error "not found"
+		return toolPath
 	on error
-		display dialog "MBINCompiler isn't on your PATH yet." & return & return & "Run install.sh from the MBINCompiler download first — it puts the 'mbincompiler' command on your PATH — then try again." buttons {"OK"} default button "OK" with icon stop with title "MBINCompiler"
+		display dialog "MBINCompiler wasn't found." & return & return & "Keep this droplet in the same folder as the MBINCompiler executable, or run install.sh to add it to your PATH, then try again." buttons {"OK"} default button "OK" with icon stop with title "MBINCompiler"
 		error number -128 -- quietly abort
 	end try
 end findTool
