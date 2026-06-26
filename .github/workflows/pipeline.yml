@@ -25,7 +25,7 @@ jobs:
         # Windows/Ubuntu it keeps the historical `.exe` name; macOS ships a plain
         # `MBINCompiler` (a `.exe` on a native macOS binary is misleading).
         os:
-          - {name: 'Ubuntu',  runtime: 'linux-x64', bin: 'MBINCompiler.exe'}
+          - {name: 'Ubuntu',  runtime: 'linux-x64', bin: 'MBINCompiler'}
           - {name: 'Windows', runtime: 'win-x64',   bin: 'MBINCompiler.exe'}
           - {name: 'macOS',   runtime: 'osx-arm64', bin: 'MBINCompiler'}
         dotnet: [{framework: 'net6.0', version: '6.0.0'}, {framework: 'net8.0', version: '8.0.0'}]
