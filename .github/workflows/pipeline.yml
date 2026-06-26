@@ -48,22 +48,12 @@ jobs:
         run: |
           dotnet publish libMBIN-DLL --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
           dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
-      - name: Move the exe so the tests can find it easier
-        run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler.exe ${{ matrix.os.bin }}
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-        if: ${{matrix.os.name  == 'Windows' }}
-      - name: Move the exe so the tests can find it easier
-        run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-        if: ${{matrix.os.name  == 'Ubuntu' }}
       - name: Move the binary so the tests can find it
+        shell: bash
         run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler ${{ matrix.os.bin }}
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-          chmod +x ${{ matrix.os.bin }}
-        if: ${{matrix.os.name  == 'macOS' }}
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}" "${{ matrix.os.bin }}"
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll" libMBIN.dll
+          chmod +x "${{ matrix.os.bin }}"
       - name: Set up Python 3.9
         uses: actions/setup-python@v5
         with:
@@ -87,8 +77,7 @@ jobs:
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
-            MBINCompiler.exe
-            MBINCompiler.dll
+            MBINCompiler
             libMBIN.dll
         if: ${{matrix.os.name  == 'Ubuntu' }}
       - name: Package macOS archive (CLI + droplet + Quick Action)
@@ -150,9 +139,9 @@ jobs:
           mv MBINCompiler-Windows-net6.0/libMBIN.dll libMBIN-dotnet6.dll
           mv MBINCompiler-Windows-net8.0/MBINCompiler.exe MBINCompiler.exe
           mv MBINCompiler-Windows-net8.0/libMBIN.dll libMBIN.dll
-          mv MBINCompiler-Ubuntu-net6.0/MBINCompiler.exe MBINCompiler-linux-dotnet6
+          mv MBINCompiler-Ubuntu-net6.0/MBINCompiler MBINCompiler-linux-dotnet6
           mv MBINCompiler-Ubuntu-net6.0/libMBIN.dll libMBIN-linux-dotnet6.so
-          mv MBINCompiler-Ubuntu-net8.0/MBINCompiler.exe MBINCompiler-linux
+          mv MBINCompiler-Ubuntu-net8.0/MBINCompiler MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
           mv MBINCompiler-macOS-net8.0/MBINCompiler-macOS.zip MBINCompiler-macOS.zip
           mv savedata-mapping/mapping.json mapping.json
