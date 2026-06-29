@@ -79,64 +79,43 @@ See above for any extra command line arguments.
 
 ### Running on macOS
 
-A pre-built archive for Apple Silicon (`osx-arm64`), **`MBINCompiler-macOS.zip`**, is
-published with each release (and as a CI build artifact). Like the linux build it does
-not require mono, but it **does require the
-[.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)** to be
-installed (`brew install --cask dotnet-sdk` works too).
+A pre-built archive for Apple Silicon (`osx-arm64`), **`MBINCompiler-macOS.zip`**, is published with each release (and as a CI build artifact). Like the linux build it does not require mono, but it **does require the [.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)** to be installed (`brew install --cask dotnet-sdk` works too).
 
 Unzip it and you'll find:
 
 ```
 MBINCompiler                       the executable (self-contained — libMBIN is embedded)
 install.sh                         puts MBINCompiler on your PATH + installs the extras below
-README.md                          macOS-specific notes
 MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
 MBINCompiler-QuickAction.workflow  adds a Finder right-click "Convert with MBINCompiler"
 ```
 
-The executable is self-contained, so `libMBIN.dll` is not bundled — it ships as a
-separate `libMBIN-mac.dll` release asset for anyone who wants the library on its own.
+The executable is self-contained, so `libMBIN.dll` is not bundled — it ships as a separate `libMBIN-mac.dll` release asset for anyone who wants the library on its own.
 
-To run the tool directly: `./MBINCompiler ./path/to/file.MBIN`. As with the other
-platforms, it auto-detects MBIN↔MXML and writes the result next to the source file.
+To run the tool directly: `./MBINCompiler ./path/to/file.MBIN`. As with the other platforms, it auto-detects MBIN↔MXML and writes the result next to the source file.
 
-> macOS quarantines downloaded files. The first time, clear the flag with
-> `xattr -dr com.apple.quarantine <folder>` — running `install.sh` does this for you.
+> macOS quarantines downloaded files. The first time, clear the flag with `xattr -dr com.apple.quarantine <folder>` — running `install.sh` does this for you.
 
 #### Putting MBINCompiler on your PATH
 
-The drag-and-drop helpers below call the `mbincompiler` command, so install it first.
-From the unzipped folder:
+The drag-and-drop helpers below call the `mbincompiler` command, so install it first. From the unzipped folder:
 
 ```sh
 ./install.sh
 ```
 
-This clears quarantine, copies `MBINCompiler` to `~/.local/share/mbincompiler`, and
-symlinks it as `mbincompiler` into the first writable of `/opt/homebrew/bin`,
-`/usr/local/bin`, or `~/.local/bin`. If none of those is on your PATH it tells you what
-to add to `~/.zshrc`. It also installs the Quick Action (below).
+This clears quarantine, copies `MBINCompiler` to `~/.local/share/mbincompiler`, and symlinks it as `mbincompiler` into the first writable of `/opt/homebrew/bin`, `/usr/local/bin`, or `~/.local/bin`. If none of those is on your PATH it tells you what to add to `~/.zshrc`. It also installs the Quick Action (below).
 
-To do it manually instead, just drop the self-contained `MBINCompiler` into any folder
-on your PATH (e.g. `/usr/local/bin`), or add its folder to your PATH (e.g.
-`export PATH="$HOME/tools/mbincompiler:$PATH"`).
+To do it manually instead, just drop the self-contained `MBINCompiler` into any folder on your PATH (e.g. `/usr/local/bin`), or add its folder to your PATH (e.g. `export PATH="$HOME/tools/mbincompiler:$PATH"`).
 
-### Drag-and-drop on macOS
+#### Drag-and-drop on macOS
 
-Once `mbincompiler` is on your PATH (above), use either of the bundled helpers. Both
-convert in place — drop/select an `.MBIN` and you get an `.MXML` next to it, and vice
-versa.
+Once `mbincompiler` is on your PATH (above), use either of the bundled helpers. Both convert in place — drop/select an `.MBIN` and you get an `.MXML` next to it, and vice versa.
 
-- **The droplet** — `MBINCompiler Droplet.app`. Drag one or more `.MBIN`/`.MXML` files
-  onto its icon. Move it to `/Applications` or your Dock to keep it handy.
-- **The Finder Quick Action** — after `install.sh` (or by double-clicking
-  `MBINCompiler-QuickAction.workflow` to install it), right-click any `.MBIN`/`.MXML`
-  in Finder and choose **Quick Actions ▸ Convert with MBINCompiler**.
+- **The droplet** — `MBINCompiler Droplet.app`. Drag one or more `.MBIN`/`.MXML` files onto its icon. Move it to `/Applications` or your Dock to keep it handy.
+- **The Finder Quick Action** — after `install.sh` (or by double-clicking `MBINCompiler-QuickAction.workflow` to install it), right-click any `.MBIN`/`.MXML` in Finder and choose **Quick Actions ▸ Convert with MBINCompiler**.
 
-> Both helpers are launched by macOS, which doesn't pass along your shell's PATH, so
-> they look for `mbincompiler` in the standard locations `install.sh` uses. If you put
-> it somewhere unusual, they'll show a "not on your PATH" prompt.
+> Both helpers are launched by macOS, which doesn't pass along your shell's PATH, so they look for `mbincompiler` in the standard locations `install.sh` uses. If you put it somewhere unusual, they'll show a "not on your PATH" prompt.
 
 ## SUBMITTING BUG REPORTS
 

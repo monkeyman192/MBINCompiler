@@ -91,7 +91,6 @@ jobs:
           STAGE="MBINCompiler-macOS"
           rm -rf "$STAGE"; mkdir -p "$STAGE"
           cp "$PUB/MBINCompiler" "$STAGE/MBINCompiler"
-          cp packaging/macos/README-macOS.md "$STAGE/README.md"
           cp packaging/macos/install-cli.sh "$STAGE/install.sh"
           cp -R packaging/macos/MBINCompiler-QuickAction.workflow "$STAGE/"
           osacompile -o "$STAGE/MBINCompiler Droplet.app" packaging/macos/droplet.applescript

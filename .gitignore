@@ -282,8 +282,3 @@ Tools/auto_extract/*.projitems
 Tools/auto_extract/summary.txt
 Tools/auto_extract/extract.cfg
 Tools/auto_extract/guids_*.json
-
-# Swift / macOS app (macos-app/)
-.build/
-.swiftpm/
-*.icns

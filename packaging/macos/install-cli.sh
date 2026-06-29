@@ -19,10 +19,13 @@ die()  { echo "${BOLD}error:${RESET} $*" >&2; exit 1; }
 xattr -dr com.apple.quarantine "$HERE" 2>/dev/null || true
 chmod +x "$HERE/MBINCompiler"
 
-# .NET 8 runtime check (this is a framework-dependent build).
-if ! command -v dotnet >/dev/null 2>&1; then
-    warn "The .NET runtime wasn't found. Install .NET 8 to run MBINCompiler:"
-    warn "  https://dotnet.microsoft.com/download/dotnet/8.0/runtime   (or: brew install --cask dotnet-sdk)"
+# .NET runtime check. This is a framework-dependent net8 build, but .NET rolls
+# forward, so it also runs on newer runtimes (9, 10, …). Rather than pattern-match a
+# specific version (which would wrongly flag a machine that only has, say, .NET 10),
+# verify the real requirement by actually starting the binary.
+if ! "$HERE/MBINCompiler" version >/dev/null 2>&1; then
+    warn "MBINCompiler couldn't start — you most likely need the .NET 8 runtime (or newer)."
+    warn "  Get it from https://dotnet.microsoft.com/download/dotnet/8.0/runtime   (or: brew install --cask dotnet-sdk)"
 fi
 
 say "Installing to $SHARE …"
