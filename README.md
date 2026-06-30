@@ -77,6 +77,46 @@ MBINCompiler provides pre-built binaries for linux. These do not require mono to
 To run the binary simply call it directly (eg. `MBINCompiler ./path/to/file.MBIN`) and this will convert the provided file.
 See above for any extra command line arguments.
 
+### Running on macOS
+
+A pre-built archive for Apple Silicon (`osx-arm64`), **`MBINCompiler-macOS.zip`**, is published with each release (and as a CI build artifact). Like the linux build it does not require mono, but it **does require the [.NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)** to be installed (`brew install --cask dotnet-sdk` works too).
+
+Unzip it and you'll find:
+
+```
+MBINCompiler                       the executable (self-contained — libMBIN is embedded)
+install.sh                         puts MBINCompiler on your PATH + installs the extras below
+MBINCompiler Droplet.app           drag .MBIN/.MXML files onto it to convert
+MBINCompiler-QuickAction.workflow  adds a Finder right-click "Convert with MBINCompiler"
+```
+
+The executable is self-contained, so `libMBIN.dll` is not bundled — it ships as a separate `libMBIN-mac.dll` release asset for anyone who wants the library on its own.
+
+To run the tool directly: `./MBINCompiler ./path/to/file.MBIN`. As with the other platforms, it auto-detects MBIN↔MXML and writes the result next to the source file.
+
+> macOS quarantines downloaded files. The first time, clear the flag with `xattr -dr com.apple.quarantine <folder>` — running `install.sh` does this for you.
+
+#### Putting MBINCompiler on your PATH
+
+The drag-and-drop helpers below call the `mbincompiler` command, so install it first. From the unzipped folder:
+
+```sh
+./install.sh
+```
+
+This clears quarantine, copies `MBINCompiler` to `~/.local/share/mbincompiler`, and symlinks it as `mbincompiler` into the first writable of `/opt/homebrew/bin`, `/usr/local/bin`, or `~/.local/bin`. If none of those is on your PATH it tells you what to add to `~/.zshrc`. It also installs the Quick Action (below).
+
+To do it manually instead, just drop the self-contained `MBINCompiler` into any folder on your PATH (e.g. `/usr/local/bin`), or add its folder to your PATH (e.g. `export PATH="$HOME/tools/mbincompiler:$PATH"`).
+
+#### Drag-and-drop on macOS
+
+Once `mbincompiler` is on your PATH (above), use either of the bundled helpers. Both convert in place — drop/select an `.MBIN` and you get an `.MXML` next to it, and vice versa.
+
+- **The droplet** — `MBINCompiler Droplet.app`. Drag one or more `.MBIN`/`.MXML` files onto its icon. Move it to `/Applications` or your Dock to keep it handy.
+- **The Finder Quick Action** — after `install.sh` (or by double-clicking `MBINCompiler-QuickAction.workflow` to install it), right-click any `.MBIN`/`.MXML` in Finder and choose **Quick Actions ▸ Convert with MBINCompiler**.
+
+> Both helpers are launched by macOS, which doesn't pass along your shell's PATH, so they look for `mbincompiler` in the standard locations `install.sh` uses. If you put it somewhere unusual, they'll show a "not on your PATH" prompt.
+
 ## SUBMITTING BUG REPORTS
 
 If you run into errors, in most cases the errors are because:
@@ -110,7 +150,13 @@ The full command to build all the libraries under the .NET  framework looks like
 dotnet publish -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
 ```
 
-For convenience we have included two batch scripts which build either the entire project for the .NET 6 framework (`build-net6.bat`) or the .NET 8 framework (`build-net8.bat`)
+Change the `-r` runtime identifier to target a different platform, eg. `linux-x64` or `osx-arm64` (Apple Silicon macOS).
+
+For convenience we have included a number of scripts which build the entire project:
+
+- `build-net6.bat` / `build-net6.sh`: the .NET 6 framework (Windows / linux).
+- `build-net8.bat` / `build-net8.sh`: the .NET 8 framework (Windows / linux).
+- `build-net8-mac.sh`: the .NET 8 framework for Apple Silicon macOS (`osx-arm64`).
 
 ## Installing python dependencies
 
@@ -128,6 +174,8 @@ Before running the tests, you need to have built a `Release` version of MBINComp
 You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414` (change dotnet and framework version as required).
 See section above about building for more details.
 
+On macOS (Apple Silicon) build with `./build-net8-mac.sh` and then run the tests with the matching platform, eg. `uv run pytest --platform osx-arm64`. If the built binary lives somewhere other than the default `Build/Release/net8.0/<platform>/publish/` location you can point the tests at it directly with `--mbincompiler_path`.
+
 ### Running the tests
 
 Open a command line window in the root MBINCompiler directory and enter `uv run pytest`.
@@ -135,6 +183,11 @@ This will pull the latest test data into the directory `./tests/data`.
 
 #### Command line arguments:
 
+- `--platform`: The platform the tests are run on. Used to locate the default built binary.
+
+  **Choices**: `win-x64` (Default), `linux-x64`, `osx-arm64`.
+
+- `--mbincompiler_path`: The path to the MBINCompiler binary you want to test. Overrides the default location derived from `--platform`.
 - `--datapath`: "The relative or absolute path to a folder containing .MBIN files to be tested. If not provided, the test data will be downloaded from the MBINCompiler-test-data repository."
 - `--use_cache` (bool): "Whether or not to use cached data that was downloaded by running the tests with no additional arguments."
   Defaults to `False`.

@@ -21,8 +21,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [{name: 'Ubuntu', runtime: 'linux-x64'}, {name: 'Windows', runtime: 'win-x64'}]
+        # `bin` is the name the built executable is published/uploaded under. On
+        # Windows/Ubuntu it keeps the historical `.exe` name; macOS ships a plain
+        # `MBINCompiler` (a `.exe` on a native macOS binary is misleading).
+        os:
+          - {name: 'Ubuntu',  runtime: 'linux-x64', bin: 'MBINCompiler'}
+          - {name: 'Windows', runtime: 'win-x64',   bin: 'MBINCompiler.exe'}
+          - {name: 'macOS',   runtime: 'osx-arm64', bin: 'MBINCompiler'}
         dotnet: [{framework: 'net6.0', version: '6.0.0'}, {framework: 'net8.0', version: '8.0.0'}]
+        # We only ship a .NET 8 build for macOS.
+        exclude:
+          - os: {name: 'macOS', runtime: 'osx-arm64', bin: 'MBINCompiler'}
+            dotnet: {framework: 'net6.0', version: '6.0.0'}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v5
@@ -31,22 +41,19 @@ jobs:
           dotnet-version: |
             6.0.100
             8.0.100
-      - name: Build ${{ matrix.os.name }}-dotnet ${{ matrix.dotnet }} binaries
+      - name: Build ${{ matrix.os.name }}-dotnet ${{ matrix.dotnet.framework }} binaries
+        # Pin the runtime patch version via an MSBuild property rather than
+        # editing the csproj with `sed`. This avoids GNU-vs-BSD `sed -i`
+        # incompatibilities (the macOS runner ships BSD sed) and is equivalent.
         run: |
-          sed -i '\|<TargetFrameworks>net6.0;net8.0</TargetFrameworks>|a\    <RuntimeFrameworkVersion>${{ matrix.dotnet.version }}</RuntimeFrameworkVersion>' ./MBINCompiler/MBINCompiler.csproj
-          sed -i '\|<TargetFrameworks>net6.0;net8.0</TargetFrameworks>|a\    <RuntimeFrameworkVersion>${{ matrix.dotnet.version }}</RuntimeFrameworkVersion>' ./libMBIN-DLL/libMBIN-DLL.csproj
-          dotnet publish libMBIN-DLL --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
-          dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
-      - name: Move the exe so the tests can find it easier
+          dotnet publish libMBIN-DLL --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+          dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+      - name: Move the binary so the tests can find it
+        shell: bash
         run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler.exe MBINCompiler.exe
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-        if: ${{matrix.os.name  == 'Windows' }}
-      - name: Move the exe so the tests can find it easier
-        run: |
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/MBINCompiler MBINCompiler.exe
-          cp Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll libMBIN.dll
-        if: ${{matrix.os.name  == 'Ubuntu' }}
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}" "${{ matrix.os.bin }}"
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll" libMBIN.dll
+          chmod +x "${{ matrix.os.bin }}"
       - name: Set up Python 3.9
         uses: actions/setup-python@v5
         with:
@@ -56,7 +63,7 @@ jobs:
           python -m pip install --upgrade pip uv
           uv sync
       - name: Run tests
-        run: uv run python -m pytest --mbincompiler_path="./MBINCompiler.exe" --tb=no --report
+        run: uv run python -m pytest --mbincompiler_path="./${{ matrix.os.bin }}" --tb=no --report
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
@@ -70,10 +77,34 @@ jobs:
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
-            MBINCompiler.exe
-            MBINCompiler.dll
+            MBINCompiler
             libMBIN.dll
         if: ${{matrix.os.name  == 'Ubuntu' }}
+      - name: Package macOS archive (CLI + droplet + Quick Action)
+        # Assemble on macOS so `ditto` preserves the droplet .app bundle (its exec
+        # bits / signature would be lost if zipped by the Windows release job or by
+        # the loose-file artifact uploader). libMBIN is embedded in the single-file
+        # binary, so it is NOT bundled in the zip — it ships separately (like the
+        # other platforms) for anyone who wants the library on its own.
+        run: |
+          PUB="Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish"
+          STAGE="MBINCompiler-macOS"
+          rm -rf "$STAGE"; mkdir -p "$STAGE"
+          cp "$PUB/MBINCompiler" "$STAGE/MBINCompiler"
+          cp packaging/macos/install-cli.sh "$STAGE/install.sh"
+          cp -R packaging/macos/MBINCompiler-QuickAction.workflow "$STAGE/"
+          osacompile -o "$STAGE/MBINCompiler Droplet.app" packaging/macos/droplet.applescript
+          chmod +x "$STAGE/MBINCompiler" "$STAGE/install.sh"
+          ditto -c -k --keepParent "$STAGE" MBINCompiler-macOS.zip
+        if: ${{matrix.os.name  == 'macOS' }}
+      - name: Upload macOS archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
+          path: |
+            MBINCompiler-macOS.zip
+            libMBIN.dll
+        if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload report
         uses: actions/upload-artifact@v4
         with:
@@ -110,10 +141,12 @@ jobs:
           mv MBINCompiler-Windows-net6.0/libMBIN.dll libMBIN-dotnet6.dll
           mv MBINCompiler-Windows-net8.0/MBINCompiler.exe MBINCompiler.exe
           mv MBINCompiler-Windows-net8.0/libMBIN.dll libMBIN.dll
-          mv MBINCompiler-Ubuntu-net6.0/MBINCompiler.exe MBINCompiler-linux-dotnet6
+          mv MBINCompiler-Ubuntu-net6.0/MBINCompiler MBINCompiler-linux-dotnet6
           mv MBINCompiler-Ubuntu-net6.0/libMBIN.dll libMBIN-linux-dotnet6.so
-          mv MBINCompiler-Ubuntu-net8.0/MBINCompiler.exe MBINCompiler-linux
+          mv MBINCompiler-Ubuntu-net8.0/MBINCompiler MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
+          mv MBINCompiler-macOS-net8.0/MBINCompiler-macOS.zip MBINCompiler-macOS.zip
+          mv MBINCompiler-macOS-net8.0/libMBIN.dll libMBIN-mac.dll
           mv savedata-mapping/mapping.json mapping.json
           mv MBINCompiler-report/report.json report.json
       - name: Get MBINCompiler tag version
@@ -137,6 +170,8 @@ jobs:
             libMBIN-linux.so
             MBINCompiler-linux-dotnet6
             libMBIN-linux-dotnet6.so
+            MBINCompiler-macOS.zip
+            libMBIN-mac.dll
             report.json
             mapping.json
         env:
