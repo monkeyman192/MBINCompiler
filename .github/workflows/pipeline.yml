@@ -1,4 +1,6 @@
 name: MBINCompiler
+permissions:
+  contents: read
 
 on:
   # Run on all branches except for the gh-pages branch
@@ -34,7 +36,7 @@ jobs:
           - os: {name: 'macOS', runtime: 'osx-arm64', bin: 'MBINCompiler'}
             dotnet: {framework: 'net6.0', version: '6.0.0'}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-dotnet@v5
         with:
           # Install both sdk versions.
@@ -54,10 +56,10 @@ jobs:
           cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}" "${{ matrix.os.bin }}"
           cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll" libMBIN.dll
           chmod +x "${{ matrix.os.bin }}"
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v5
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.9"
+          python-version: "3.10"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip uv
@@ -65,7 +67,7 @@ jobs:
       - name: Run tests
         run: uv run python -m pytest --mbincompiler_path="./${{ matrix.os.bin }}" --tb=no --report
       - name: Upload Windows binaries
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
@@ -73,7 +75,7 @@ jobs:
             libMBIN.dll
         if: ${{matrix.os.name  == 'Windows' }}
       - name: Upload Linux binaries
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
@@ -98,7 +100,7 @@ jobs:
           ditto -c -k --keepParent "$STAGE" MBINCompiler-macOS.zip
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload macOS archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
@@ -106,7 +108,7 @@ jobs:
             libMBIN.dll
         if: ${{matrix.os.name  == 'macOS' }}
       - name: Upload report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-report
           path: report.json
@@ -115,14 +117,14 @@ jobs:
     name: Build save file mapping and generate mapping
     runs-on: Windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Build SaveFileMapping binary
         run: dotnet publish SaveFileMapping -c Release -f net8.0 -r win-x64 -o Build/Release/net8/ /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
       - name: Generate save data mapping
         run : Build/Release/net8/SaveFileMapping.exe
         shell: bash
       - name: Upload report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: savedata-mapping
           path: mapping.json
@@ -134,7 +136,7 @@ jobs:
     needs: [build_test, save_mapping]
     steps:
       - name: Download files for release
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
       - name: Rename files for release
         run: |
           mv MBINCompiler-Windows-net6.0/MBINCompiler.exe MBINCompiler-dotnet6.exe
