@@ -48,8 +48,8 @@ jobs:
         # editing the csproj with `sed`. This avoids GNU-vs-BSD `sed -i`
         # incompatibilities (the macOS runner ships BSD sed) and is equivalent.
         run: |
-          dotnet publish libMBIN-DLL --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
-          dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }} /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+          dotnet publish libMBIN-DLL --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }}
+          dotnet publish MBINCompiler --no-self-contained -c Release -f ${{ matrix.dotnet.framework }} -r ${{ matrix.os.runtime }} -p:RuntimeFrameworkVersion=${{ matrix.dotnet.version }}
       - name: Move the binary so the tests can find it
         shell: bash
         run: |
@@ -119,7 +119,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Build SaveFileMapping binary
-        run: dotnet publish SaveFileMapping -c Release -f net8.0 -r win-x64 -o Build/Release/net8/ /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+        run: dotnet publish SaveFileMapping -c Release -f net8.0 -r win-x64 -o Build/Release/net8/
       - name: Generate save data mapping
         run : Build/Release/net8/SaveFileMapping.exe
         shell: bash

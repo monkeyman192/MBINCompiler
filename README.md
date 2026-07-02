@@ -147,7 +147,7 @@ While this library targets multiple frameworks, building MBINCompiler and libMBI
 The full command to build all the libraries under the .NET  framework looks like:
 
 ```sh
-dotnet publish -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+dotnet publish -c Release -f net8.0 -r win-x64
 ```
 
 Change the `-r` runtime identifier to target a different platform, eg. `linux-x64` or `osx-arm64` (Apple Silicon macOS).
@@ -171,7 +171,7 @@ For anyone helping to develop MBINCompiler, if you are contributing new structs 
 ### Requirements
 
 Before running the tests, you need to have built a `Release` version of MBINCompiler locally.
-You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414` (change dotnet and framework version as required).
+You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64` (change dotnet and framework version as required).
 See section above about building for more details.
 
 On macOS (Apple Silicon) build with `./build-net8-mac.sh` and then run the tests with the matching platform, eg. `uv run pytest --platform osx-arm64`. If the built binary lives somewhere other than the default `Build/Release/net8.0/<platform>/publish/` location you can point the tests at it directly with `--mbincompiler_path`.
