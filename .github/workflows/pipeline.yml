@@ -53,9 +53,10 @@ jobs:
       - name: Move the binary so the tests can find it
         shell: bash
         run: |
-          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}" "${{ matrix.os.bin }}"
-          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll" libMBIN.dll
-          chmod +x "${{ matrix.os.bin }}"
+          mkdir -p binaries
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}" "binaries/${{ matrix.os.bin }}"
+          cp "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll" binaries/libMBIN.dll
+          chmod +x "binaries/${{ matrix.os.bin }}"
       - name: Set up Python 3.10
         uses: actions/setup-python@v6
         with:
@@ -65,23 +66,15 @@ jobs:
           python -m pip install --upgrade pip uv
           uv sync
       - name: Run tests
-        run: uv run python -m pytest --mbincompiler_path="./${{ matrix.os.bin }}" --tb=no --report
-      - name: Upload Windows binaries
+        run: uv run python -m pytest --mbincompiler_path="./binaries/${{ matrix.os.bin }}" --tb=no --report
+      - name: Upload Windows and Linux binaries
         uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
           path: |
-            MBINCompiler.exe
-            libMBIN.dll
-        if: ${{matrix.os.name  == 'Windows' }}
-      - name: Upload Linux binaries
-        uses: actions/upload-artifact@v7
-        with:
-          name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
-          path: |
-            MBINCompiler
-            libMBIN.dll
-        if: ${{matrix.os.name  == 'Ubuntu' }}
+            "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}"
+            "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll"
+        if: ${{matrix.os.name  == 'Windows' }} || ${{matrix.os.name  == 'Ubuntu' }}
       - name: Package macOS archive (CLI + droplet + Quick Action)
         # Assemble on macOS so `ditto` preserves the droplet .app bundle (its exec
         # bits / signature would be lost if zipped by the Windows release job or by
