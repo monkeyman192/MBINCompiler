@@ -171,6 +171,12 @@ def pytest_terminal_summary(terminalreporter):
 
 
 @pytest.hookimpl(trylast=True)
-def pytest_sessionfinish(session, exitstatus):
-    # Override the default behaviour and cause pytest to always pass
-    session.exitstatus = 0
+def pytest_sessionfinish(session: pytest.Session, exitstatus):
+    # Override the default behaviour and cause pytest to always pass unless every single test failed.
+    total_tests = session.testscollected
+    failed_tests = session.testsfailed
+
+    if total_tests > 0 and total_tests == failed_tests:
+        session.exitstatus = 1
+    else:
+        session.exitstatus = 0
