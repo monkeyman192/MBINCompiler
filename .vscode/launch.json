@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Build/Debug/net6.0/MBINCompiler.dll",
+            "program": "${workspaceFolder}/Build/Debug/net8.0/MBINCompiler.dll",
             "args": [],
             "cwd": "${workspaceFolder}/MBINCompiler",
             "console": "internalConsole",

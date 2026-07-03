@@ -1,1 +1,1 @@
-dotnet publish --no-self-contained -c Release -f net6.0 -r linux-x64
+dotnet publish --no-self-contained -c Release -f net10.0 -r linux-x64

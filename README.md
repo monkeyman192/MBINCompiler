@@ -9,7 +9,8 @@ _**For Developers:** You can download a precompiled DLL or get the libMBIN sourc
 [DOWNLOAD LATEST RELEASE](../../releases)  
 
 **PLEASE NOTE:** MBINCompiler requires .NET 8 to run. If you do not have this you can download is [here](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
-Select an appropriate download under the the "Run desktop apps" set of downloads
+Select an appropriate download under the the "Run desktop apps" set of downloads.
+We also provide .NET 10 binaries for Windows and Linux. To see what is the primary and what is the secondary supported .NET version, see [this](https://github.com/monkeyman192/MBINCompiler/issues/669) issue.
 
 **ALSO NOTE:** As of the Worlds part 2 update, MBINCompiler will no longer generate or handle EXML files, and will instead handle MXML files. This is to (finally) get MBINCompiler producing files in the same format as NMS expects. For modding puposes the MXML are not the actual files you need to place in a mod directory. To do this, you can rename the MXML file to EXML.
 
@@ -154,8 +155,8 @@ Change the `-r` runtime identifier to target a different platform, eg. `linux-x6
 
 For convenience we have included a number of scripts which build the entire project:
 
-- `build-net6.bat` / `build-net6.sh`: the .NET 6 framework (Windows / linux).
 - `build-net8.bat` / `build-net8.sh`: the .NET 8 framework (Windows / linux).
+- `build-net10.bat` / `build-net10.sh`: the .NET 10 framework (Windows / linux).
 - `build-net8-mac.sh`: the .NET 8 framework for Apple Silicon macOS (`osx-arm64`).
 
 ## Installing python dependencies
