@@ -11,7 +11,7 @@
     <RootNamespace>libMBIN</RootNamespace>
     <AssemblyName>libMBIN</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
     <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <Configurations>Release;Debug;Release-XML</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

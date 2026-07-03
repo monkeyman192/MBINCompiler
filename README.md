@@ -9,7 +9,8 @@ _**For Developers:** You can download a precompiled DLL or get the libMBIN sourc
 [DOWNLOAD LATEST RELEASE](../../releases)  
 
 **PLEASE NOTE:** MBINCompiler requires .NET 8 to run. If you do not have this you can download is [here](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
-Select an appropriate download under the the "Run desktop apps" set of downloads
+Select an appropriate download under the the "Run desktop apps" set of downloads.
+We also provide .NET 10 binaries for Windows and Linux. To see what is the primary and what is the secondary supported .NET version, see [this](https://github.com/monkeyman192/MBINCompiler/issues/669) issue.
 
 **ALSO NOTE:** As of the Worlds part 2 update, MBINCompiler will no longer generate or handle EXML files, and will instead handle MXML files. This is to (finally) get MBINCompiler producing files in the same format as NMS expects. For modding puposes the MXML are not the actual files you need to place in a mod directory. To do this, you can rename the MXML file to EXML.
 
@@ -147,15 +148,15 @@ While this library targets multiple frameworks, building MBINCompiler and libMBI
 The full command to build all the libraries under the .NET  framework looks like:
 
 ```sh
-dotnet publish -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414
+dotnet publish -c Release -f net8.0 -r win-x64
 ```
 
 Change the `-r` runtime identifier to target a different platform, eg. `linux-x64` or `osx-arm64` (Apple Silicon macOS).
 
 For convenience we have included a number of scripts which build the entire project:
 
-- `build-net6.bat` / `build-net6.sh`: the .NET 6 framework (Windows / linux).
 - `build-net8.bat` / `build-net8.sh`: the .NET 8 framework (Windows / linux).
+- `build-net10.bat` / `build-net10.sh`: the .NET 10 framework (Windows / linux).
 - `build-net8-mac.sh`: the .NET 8 framework for Apple Silicon macOS (`osx-arm64`).
 
 ## Installing python dependencies
@@ -171,7 +172,7 @@ For anyone helping to develop MBINCompiler, if you are contributing new structs 
 ### Requirements
 
 Before running the tests, you need to have built a `Release` version of MBINCompiler locally.
-You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64 /nowarn:cs0618 /nowarn:cs0169 /nowarn:cs0414` (change dotnet and framework version as required).
+You can do this by running `dotnet publish --no-self-contained -c Release -f net8.0 -r win-x64` (change dotnet and framework version as required).
 See section above about building for more details.
 
 On macOS (Apple Silicon) build with `./build-net8-mac.sh` and then run the tests with the matching platform, eg. `uv run pytest --platform osx-arm64`. If the built binary lives somewhere other than the default `Build/Release/net8.0/<platform>/publish/` location you can point the tests at it directly with `--mbincompiler_path`.
