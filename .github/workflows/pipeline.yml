@@ -67,14 +67,15 @@ jobs:
           uv sync
       - name: Run tests
         run: uv run python -m pytest --mbincompiler_path="./binaries/${{ matrix.os.bin }}" --tb=no --report
-      - name: Upload Windows and Linux binaries
+      - name: Upload ${{ matrix.os.name }} binaries
         uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
+          if-no-files-found: error
           path: |
-            "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}"
-            "Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll"
-        if: ${{matrix.os.name  == 'Windows' }} || ${{matrix.os.name  == 'Ubuntu' }}
+            Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/${{ matrix.os.bin }}
+            Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll
+        if: ${{ matrix.os.name  != 'macOS' }}
       - name: Package macOS archive (CLI + droplet + Quick Action)
         # Assemble on macOS so `ditto` preserves the droplet .app bundle (its exec
         # bits / signature would be lost if zipped by the Windows release job or by
@@ -96,14 +97,16 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-${{ matrix.os.name }}-${{ matrix.dotnet.framework }}
+          if-no-files-found: error
           path: |
             MBINCompiler-macOS.zip
-            libMBIN.dll
-        if: ${{matrix.os.name  == 'macOS' }}
+            Build/Release/${{ matrix.dotnet.framework }}/${{ matrix.os.runtime }}/publish/libMBIN.dll
+        if: ${{ matrix.os.name  == 'macOS' }}
       - name: Upload report
         uses: actions/upload-artifact@v7
         with:
           name: MBINCompiler-report
+          if-no-files-found: error
           path: report.json
         if: ${{matrix.os.name  == 'Windows' && matrix.dotnet.framework == 'net6.0'}}
   save_mapping:
@@ -120,6 +123,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: savedata-mapping
+          if-no-files-found: error
           path: mapping.json
   release:
     name: Release MBINCompiler binaries and other data
