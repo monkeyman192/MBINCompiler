@@ -145,7 +145,7 @@ jobs:
           mv MBINCompiler-Ubuntu-net8.0/MBINCompiler MBINCompiler-linux
           mv MBINCompiler-Ubuntu-net8.0/libMBIN.dll libMBIN-linux.so
           mv MBINCompiler-macOS-net8.0/MBINCompiler-macOS.zip MBINCompiler-macOS.zip
-          mv MBINCompiler-macOS-net8.0/libMBIN.dll libMBIN-mac.dll
+          mv MBINCompiler-macOS-net8.0/Build/Release/net8.0/osx-arm64/publish/libMBIN.dll libMBIN-mac.dll
           mv savedata-mapping/mapping.json mapping.json
           mv MBINCompiler-report/report.json report.json
       - name: Get MBINCompiler tag version
