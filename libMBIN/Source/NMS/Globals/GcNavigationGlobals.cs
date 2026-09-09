@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xC329ABDFA058B41F, NameHash = 0xDC4113AA)]
+    [NMS(GUID = 0xF5E8BBDC3178163E, NameHash = 0xDC4113AA)]
     public class GcNavigationGlobals : NMSTemplate
     {
         [NMS(Index = 2)]

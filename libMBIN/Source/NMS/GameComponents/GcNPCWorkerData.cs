@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2400A7FAE7A82ABE, NameHash = 0xACE695BE)]
+    [NMS(GUID = 0x704257755D1AC21, NameHash = 0xACE695BE)]
     public class GcNPCWorkerData : NMSTemplate
     {
         [NMS(Index = 5)]

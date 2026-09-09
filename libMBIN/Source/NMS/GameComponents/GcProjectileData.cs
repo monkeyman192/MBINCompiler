@@ -4,7 +4,7 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x959F50C23DC7F3EB, NameHash = 0x1119BAC1)]
+    [NMS(GUID = 0xECD4D422AC7D608D, NameHash = 0x1119BAC1)]
     public class GcProjectileData : NMSTemplate
     {
         [NMS(Index = 50)]

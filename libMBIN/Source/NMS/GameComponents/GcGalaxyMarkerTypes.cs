@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2117986431EE26, NameHash = 0x2AFFF85F)]
+    [NMS(GUID = 0x7728CCC1B0DDA869, NameHash = 0x2AFFF85F)]
     public class GcGalaxyMarkerTypes : NMSTemplate
     {
-        // size: 0x10
+        // size: 0x11
         public enum GalaxyMarkerTypeEnum : uint {
             StartingLocation,
             Home,
@@ -21,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             PathIcon,
             SeasonParty,
             Settlement,
+            AllianceHome,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public GalaxyMarkerTypeEnum GalaxyMarkerType;

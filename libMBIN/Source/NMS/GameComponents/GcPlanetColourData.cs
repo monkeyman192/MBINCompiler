@@ -2,10 +2,10 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB387EAD81C80D9FE, NameHash = 0x3FD35145)]
+    [NMS(GUID = 0xF37562A0B9202086, NameHash = 0x3FD35145)]
     public class GcPlanetColourData : NMSTemplate
     {
-        // size: 0x40
+        // size: 0x42
         public enum PalettesEnum {
             Grass,
             Plant,
@@ -71,8 +71,10 @@ namespace libMBIN.NMS.GameComponents
             SpaceStationAlt,
             SpaceStationLights,
             DeepWaterBioLum,
+            Slime,
+            Hulk,
         }
-        [NMS(Index = 0, Size = 0x40, EnumType = typeof(PalettesEnum))]
+        [NMS(Index = 0, Size = 0x42, EnumType = typeof(PalettesEnum))]
         /* 0x0 */ public GcColourPaletteData[] Palettes;
     }
 }

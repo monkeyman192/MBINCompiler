@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x266C42A13A715DB3, NameHash = 0xB359A426)]
+    [NMS(GUID = 0x29ACFD017E8FF7C0, NameHash = 0xB359A426)]
     public class GcStoryEntry : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -16,7 +16,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x60 */ public List<GcStoryEntryBranch> BranchedEntries;
         [NMS(Index = 5)]
         /* 0x70 */ public GcAlienRace AlienTextForceRace;
+        [NMS(Index = 7)]
+        /* 0x74 */ public GcAudioWwiseEvents NarrationAudio;
+        [NMS(Index = 8)]
+        /* 0x78 */ public GcAudioWwiseEvents NarrationAudioStop;
         [NMS(Index = 4)]
-        /* 0x74 */ public bool AutoPrefixWithAlienText;
+        /* 0x7C */ public bool AutoPrefixWithAlienText;
+        [NMS(Index = 6)]
+        /* 0x7D */ public bool CheckForPlatformSpecificText;
     }
 }

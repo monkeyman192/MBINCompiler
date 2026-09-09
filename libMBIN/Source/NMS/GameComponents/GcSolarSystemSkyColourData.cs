@@ -1,6 +1,8 @@
+using libMBIN.NMS.GameComponents;
+
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x59A3B13EF8F0A0F1, NameHash = 0x665C4305)]
+    [NMS(GUID = 0x5ECA2E8094F8DD51, NameHash = 0x665C4305)]
     public class GcSolarSystemSkyColourData : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -29,5 +31,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0xB0 */ public Colour TopColour;
         [NMS(Index = 3)]
         /* 0xC0 */ public Colour TopColourPlanet;
+        [NMS(Index = 13)]
+        /* 0xD0 */ public GcGalaxyStarTypes SolarMapBackgroundColour;
     }
 }

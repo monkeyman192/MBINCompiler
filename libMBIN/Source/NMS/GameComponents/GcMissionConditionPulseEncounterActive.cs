@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x16B95F38223E230A, NameHash = 0x9E849330)]
+    [NMS(GUID = 0x3F64ADF1F53718B9, NameHash = 0x9E849330)]
     public class GcMissionConditionPulseEncounterActive : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -19,5 +19,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public TestEncounterTypeEnum TestEncounterType;
         [NMS(Index = 2)]
         /* 0x14 */ public bool RequireFullySpawned;
+        [NMS(Index = 3)]
+        /* 0x15 */ public bool ReturnFalseIfPulseDriveEngaged;
     }
 }

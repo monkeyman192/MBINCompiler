@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x7DE89BF5AF8FE24E, NameHash = 0xCF97645F)]
+    [NMS(GUID = 0xBBAB977BB39D1A9D, NameHash = 0xCF97645F)]
     public class TkMaterialFxFlags : NMSTemplate
     {
         // size: 0x40
@@ -45,7 +45,7 @@ namespace libMBIN.NMS.Toolkit
             _X38,
             _X39,
             _X40_SUBSURFACE_MASK,
-            _X41,
+            _X41_THICKNESS_MASK,
             _X42,
             _X43,
             _X44,

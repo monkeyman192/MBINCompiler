@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x722A0519EAE206D7, NameHash = 0xDCBDDB64)]
+    [NMS(GUID = 0x9B522650EBAFE147, NameHash = 0xDCBDDB64)]
     public class TkNavMeshAreaType : NMSTemplate
     {
-        // size: 0x15
+        // size: 0x16
         public enum NavMeshAreaTypeEnum : byte {
             Null,
             Grass,
@@ -23,9 +23,10 @@ namespace libMBIN.NMS.Toolkit
             Resource,
             TerrainInstance,
             Structure,
+            ShallowWater,
             Water,
             Auto,
-            UseCollisionTileType,
+            UseTerrainMaterialId,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public NavMeshAreaTypeEnum NavMeshAreaType;

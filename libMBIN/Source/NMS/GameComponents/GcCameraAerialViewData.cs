@@ -2,15 +2,16 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA6D45B564336CE62, NameHash = 0x60B7C44B)]
+    [NMS(GUID = 0x3DFD92149EE0B807, NameHash = 0x60B7C44B)]
     public class GcCameraAerialViewData : NMSTemplate
     {
-        // size: 0x4
+        // size: 0x5
         public enum AerialViewModeEnum : uint {
             FaceDown,
             FaceOut,
             FaceDownThenOut,
             FaceDownThenFocus,
+            FaceStationAtThenOut,
         }
         [NMS(Index = 1)]
         /* 0x00 */ public AerialViewModeEnum AerialViewMode;

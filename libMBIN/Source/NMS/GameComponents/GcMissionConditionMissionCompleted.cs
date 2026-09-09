@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF0C08C7547EAE872, NameHash = 0xCAEF37A4)]
+    [NMS(GUID = 0xE76FBE3B577BFB0F, NameHash = 0xCAEF37A4)]
     public class GcMissionConditionMissionCompleted : NMSTemplate
     {
         [NMS(Index = 0)]

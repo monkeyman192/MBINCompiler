@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1C18EDAA7676CFE8, NameHash = 0xA7A8D1DB)]
+    [NMS(GUID = 0x3716FCBE50CF4147, NameHash = 0xA7A8D1DB)]
     public class GcAudioWwiseRTPCs : NMSTemplate
     {
-        // size: 0x6E
+        // size: 0x70
         public enum AkRTPCEnum : uint {
             INVALID_RTPC = 0x0,
             BASE_BATTERY_CHARGING = 0x7C13B3BA,
@@ -30,6 +30,7 @@ namespace libMBIN.NMS.GameComponents
             HG_VA_HEADBODYRATIO = 0xF6293C64,
             HG_VA_SEED = 0x232F7C0E,
             HG_VA_SIZE = 0x2E25003A,
+            HULK_MELTDOWN = 0x849060E8,
             INTERACT_TIMER = 0x1EE7B825,
             JETPACK_HEIGHT = 0x70B5E6C1,
             MAP_STAR_WOOSH = 0xBC7AB0AD,
@@ -99,6 +100,7 @@ namespace libMBIN.NMS.GameComponents
             SQUADRON_SHIPS = 0x199ACEC2,
             STORM = 0x648999E0,
             SUITVOICE_RMS = 0x8843E23,
+            SUN_DISTANCE = 0xC1F6DE01,
             SWARM_INTRO_TONE = 0x56938EE7,
             THEREMIN_PITCH = 0xD774D3B8,
             THEREMIN_VOLUME = 0x26294964,

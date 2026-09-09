@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x61FE888A6D8FBEA0, NameHash = 0xB827B7BC)]
+    [NMS(GUID = 0xA935FF00B8B72CFE, NameHash = 0xB827B7BC)]
     public class GcItemFilterStageDataProductCategory : NMSTemplate
     {
         [NMS(Index = 0)]

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x355530002ADB6729, NameHash = 0xBEC6F214)]
+    [NMS(GUID = 0x90CE34A66A49C24E, NameHash = 0xBEC6F214)]
     public class GcGalaxyAudioSetupData : NMSTemplate
     {
         [NMS(Index = 6, MxmlName = "Event AddWaypoint")]

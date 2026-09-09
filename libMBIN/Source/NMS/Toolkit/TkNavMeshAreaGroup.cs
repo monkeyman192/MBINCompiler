@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x87AAE8EE41744B01, NameHash = 0xE1E4B793)]
+    [NMS(GUID = 0x5919458DC143C31C, NameHash = 0xE1E4B793)]
     public class TkNavMeshAreaGroup : NMSTemplate
     {
         [NMS(Index = 1)]

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x12A10F6A42E73079, NameHash = 0x514AD10F)]
+    [NMS(GUID = 0xB23CF8AE44FB55A6, NameHash = 0x514AD10F)]
     public class GcStatsTypes : NMSTemplate
     {
-        // size: 0xD0
+        // size: 0xD1
         public enum StatsTypeEnum : uint {
             Unspecified,
             Weapon_Laser,
@@ -174,6 +174,7 @@ namespace libMBIN.NMS.GameComponents
             Ship_Teleport,
             Ship_CargoShield,
             Ship_WaterLandingJet,
+            Ship_TractorBeam,
             Freighter_Hyperdrive,
             Freighter_Hyperdrive_JumpDistance,
             Freighter_Hyperdrive_JumpsPerCell,

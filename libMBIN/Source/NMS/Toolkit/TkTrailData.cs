@@ -1,6 +1,6 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xE862799766C9E058, NameHash = 0x5F4C23C1)]
+    [NMS(GUID = 0xB209489FC55CFF46, NameHash = 0x5F4C23C1)]
     public class TkTrailData : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -15,7 +15,9 @@ namespace libMBIN.NMS.Toolkit
         /* 0x10 */ public float PointLife;
         [NMS(Index = 1)]
         /* 0x14 */ public int Points;
+        [NMS(Index = 7)]
+        /* 0x18 */ public float Tiling;
         [NMS(Index = 0)]
-        /* 0x18 */ public float Width;
+        /* 0x1C */ public float Width;
     }
 }

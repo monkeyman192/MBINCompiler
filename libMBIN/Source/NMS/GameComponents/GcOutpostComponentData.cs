@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xB9D249B9C0EF7117, NameHash = 0x6F7A12EA)]
+    [NMS(GUID = 0xAA4EE365989DA9AF, NameHash = 0x6F7A12EA)]
     public class GcOutpostComponentData : NMSTemplate
     {
         [NMS(Index = 9)]
         /* 0x00 */ public NMSString0x10 Door;
-        [NMS(Index = 34)]
+        [NMS(Index = 35)]
         /* 0x10 */ public List<GcOutpostLSystemPair> LSystems;
         [NMS(Index = 14)]
         /* 0x20 */ public float ApproachAngle;
@@ -16,43 +16,43 @@ namespace libMBIN.NMS.GameComponents
         /* 0x24 */ public float ApproachNodeTargetOffset;
         [NMS(Index = 13)]
         /* 0x28 */ public float ApproachRange;
-        [NMS(Index = 15)]
+        [NMS(Index = 16)]
         /* 0x2C */ public float ApproachSpeed;
         [NMS(Index = 11)]
         /* 0x30 */ public float CircleRadius;
-        [NMS(Index = 17)]
-        /* 0x34 */ public float CorvetteLandingIndicatorRange;
-        [NMS(Index = 19)]
-        /* 0x38 */ public float DockingAttractConeAngle;
-        [NMS(Index = 20)]
-        /* 0x3C */ public float DockingAttractFacingAngle;
         [NMS(Index = 18)]
-        /* 0x40 */ public float DockingAttractRange;
-        [NMS(Index = 22)]
-        /* 0x44 */ public float LandingHeight;
+        /* 0x34 */ public float CorvetteLandingIndicatorRange;
+        [NMS(Index = 20)]
+        /* 0x38 */ public float DockingAttractConeAngle;
         [NMS(Index = 21)]
+        /* 0x3C */ public float DockingAttractFacingAngle;
+        [NMS(Index = 19)]
+        /* 0x40 */ public float DockingAttractRange;
+        [NMS(Index = 23)]
+        /* 0x44 */ public float LandingHeight;
+        [NMS(Index = 22)]
         /* 0x48 */ public float LandingSpeed;
-        [NMS(Index = 16)]
+        [NMS(Index = 17)]
         /* 0x4C */ public float PlayerAutoLandRange;
-        [NMS(Index = 31)]
-        /* 0x50 */ public float PostTakeOffExtraPlayerHeight;
         [NMS(Index = 32)]
-        /* 0x54 */ public float PostTakeOffExtraPlayerSpeed;
-        [NMS(Index = 27)]
-        /* 0x58 */ public float TakeOffAlignTime;
-        [NMS(Index = 29)]
-        /* 0x5C */ public float TakeOffBoost;
-        [NMS(Index = 30)]
-        /* 0x60 */ public float TakeOffExtraAIHeight;
-        [NMS(Index = 25)]
-        /* 0x64 */ public float TakeOffFwdDist;
-        [NMS(Index = 24)]
-        /* 0x68 */ public float TakeOffHeight;
+        /* 0x50 */ public float PostTakeOffExtraPlayerHeight;
         [NMS(Index = 33)]
-        /* 0x6C */ public float TakeOffProgressForExtraHeight;
+        /* 0x54 */ public float PostTakeOffExtraPlayerSpeed;
         [NMS(Index = 28)]
-        /* 0x70 */ public float TakeOffSpeed;
+        /* 0x58 */ public float TakeOffAlignTime;
+        [NMS(Index = 30)]
+        /* 0x5C */ public float TakeOffBoost;
+        [NMS(Index = 31)]
+        /* 0x60 */ public float TakeOffExtraAIHeight;
         [NMS(Index = 26)]
+        /* 0x64 */ public float TakeOffFwdDist;
+        [NMS(Index = 25)]
+        /* 0x68 */ public float TakeOffHeight;
+        [NMS(Index = 34)]
+        /* 0x6C */ public float TakeOffProgressForExtraHeight;
+        [NMS(Index = 29)]
+        /* 0x70 */ public float TakeOffSpeed;
+        [NMS(Index = 27)]
         /* 0x74 */ public float TakeOffTime;
         [NMS(Index = 5)]
         /* 0x78 */ public bool AbandonedFreighter;
@@ -72,9 +72,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x7F */ public bool NexusExterior;
         [NMS(Index = 4)]
         /* 0x80 */ public bool NexusInterior;
-        [NMS(Index = 23)]
-        /* 0x81 */ public bool RotateToDock;
+        [NMS(Index = 15)]
+        /* 0x81 */ public bool RequireApproachFromAbove;
+        [NMS(Index = 24)]
+        /* 0x82 */ public bool RotateToDock;
         [NMS(Index = 2)]
-        /* 0x82 */ public bool SpaceStation;
+        /* 0x83 */ public bool SpaceStation;
+        [NMS(Index = 36)]
+        /* 0x84 */ public GcSpaceWalkDisallowedComponentData SpaceWalkDisallowedComponentData;
     }
 }

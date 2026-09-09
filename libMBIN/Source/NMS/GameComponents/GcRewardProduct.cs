@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFD26F2C5A024CF42, NameHash = 0xD143E4CA)]
+    [NMS(GUID = 0xE5F79EAB9757F7CD, NameHash = 0xD143E4CA)]
     public class GcRewardProduct : NMSTemplate
     {
         [NMS(Index = 5)]
@@ -15,7 +15,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0C */ public int ItemLevel;
         [NMS(Index = 1)]
         /* 0x10 */ public GcRarity ItemRarity;
-        [NMS(Index = 3, Size = 0xB, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
+        [NMS(Index = 3, Size = 0xC, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
         /* 0x14 */ public bool[] AllowedProductTypes;
     }
 }

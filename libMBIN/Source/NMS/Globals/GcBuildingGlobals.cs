@@ -22,13 +22,41 @@ namespace libMBIN.NMS.Globals
         /* 0x968 */ public TkTextureResource ScreenSpaceRotationIcon;
         [NMS(Index = 192)]
         /* 0x980 */ public GcFilename FreighterBaseSpawnOverride;
-        [NMS(Index = 11, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum ActiveLodDistancesEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 11, Size = 0x4, EnumType = typeof(ActiveLodDistancesEnum))]
         /* 0x990 */ public TkLODDistances[] ActiveLodDistances;
-        [NMS(Index = 12, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum InactiveLodDistancesEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 12, Size = 0x4, EnumType = typeof(InactiveLodDistancesEnum))]
         /* 0x9E0 */ public TkLODDistances[] InactiveLodDistances;
-        [NMS(Index = 180, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum TotalPlanetFrameTimeForComplexityEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 180, Size = 0x4, EnumType = typeof(TotalPlanetFrameTimeForComplexityEnum))]
         /* 0xA30 */ public float[] TotalPlanetFrameTimeForComplexity;
-        [NMS(Index = 181, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum TotalSpaceFrameTimeForComplexityEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 181, Size = 0x4, EnumType = typeof(TotalSpaceFrameTimeForComplexityEnum))]
         /* 0xA40 */ public float[] TotalSpaceFrameTimeForComplexity;
         [NMS(Index = 170)]
         /* 0xA50 */ public Vector2f BuildingPlacementScaleMinMax;

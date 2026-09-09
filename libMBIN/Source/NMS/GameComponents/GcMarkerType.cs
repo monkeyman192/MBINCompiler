@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x17A126A7CE2C5D9E, NameHash = 0xE51499F8)]
+    [NMS(GUID = 0x5519ADC13BC3D019, NameHash = 0xE51499F8)]
     public class GcMarkerType : NMSTemplate
     {
-        // size: 0x4B
+        // size: 0x50
         public enum MarkerTypeEnum : byte {
             Default,
             PlanetPoleNorth,
@@ -44,6 +44,9 @@ namespace libMBIN.NMS.GameComponents
             MessageBeacon,
             ExternalBase,
             PlanetBaseTerminal,
+            PlayerSpaceBase,
+            EditingSpaceBase,
+            ExternalSpaceBase,
             Vehicle,
             VehicleCheckpoint,
             VehicleGarage,
@@ -80,6 +83,8 @@ namespace libMBIN.NMS.GameComponents
             CorvetteDeployedTeleporter,
             CorvettePadLink,
             NetworkPlayerFireTeamCorvetteTeleporter,
+            SpacePoi,
+            SolarSystemMapMarker,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public MarkerTypeEnum MarkerType;

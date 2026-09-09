@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x910BE80193CF2235, NameHash = 0xB2405C75)]
+    [NMS(GUID = 0xA58CB5105D2C2A05, NameHash = 0xB2405C75)]
     public class TkStaticPhysicsComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -22,7 +22,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x2B */ public bool AddToWorldImmediately;
         [NMS(Index = 3)]
         /* 0x2C */ public bool AddToWorldOnPrepare;
-        [NMS(Index = 11)]
+        [NMS(Index = 12)]
         /* 0x2D */ public bool CameraInvisible;
         [NMS(Index = 7)]
         /* 0x2E */ public bool Climbable;
@@ -34,5 +34,7 @@ namespace libMBIN.NMS.Toolkit
         /* 0x31 */ public bool NoVehicleCollide;
         [NMS(Index = 6)]
         /* 0x32 */ public bool TriggerVolume;
+        [NMS(Index = 11)]
+        /* 0x33 */ public bool UseAsteroidCollision;
     }
 }

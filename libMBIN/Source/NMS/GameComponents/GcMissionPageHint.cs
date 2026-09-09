@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x289AA4247E44FE81, NameHash = 0x400FBCF9)]
+    [NMS(GUID = 0x6D027935D44AB63, NameHash = 0x400FBCF9)]
     public class GcMissionPageHint : NMSTemplate
     {
-        // size: 0xE
+        // size: 0xF
         public enum MissionPageHintEnum : uint {
             None,
             Suit,
@@ -19,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             Expedition,
             Options,
             Pets,
+            SolarSystemMap,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public MissionPageHintEnum MissionPageHint;

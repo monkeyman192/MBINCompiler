@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1AB67B3B3F99530A, NameHash = 0x60B1E1BA)]
+    [NMS(GUID = 0xB9243925ED382F62, NameHash = 0x60B1E1BA)]
     public class GcBlockListPersistence : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -13,9 +13,15 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0008 */ public int MessageNextSlot;
         [NMS(Index = 1)]
         /* 0x000C */ public int NextSlot;
+        [NMS(Index = 8)]
+        /* 0x0010 */ public int ReportedAllianceListSize;
+        [NMS(Index = 7)]
+        /* 0x0014 */ public int ReportedAllianceNextSlot;
+        [NMS(Index = 6, Size = 0x64)]
+        /* 0x0018 */ public GcReportedAlliance[] ReportedAllianceArray;
         [NMS(Index = 0, Size = 0x32)]
-        /* 0x0010 */ public GcBlockedUser[] BlockedUserArray;
+        /* 0x32E0 */ public GcBlockedUser[] BlockedUserArray;
         [NMS(Index = 3, Size = 0x32)]
-        /* 0x1F50 */ public GcBlockedMessage[] BlockedMessageArray;
+        /* 0x5220 */ public GcBlockedMessage[] BlockedMessageArray;
     }
 }
