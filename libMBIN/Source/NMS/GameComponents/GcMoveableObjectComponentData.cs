@@ -1,19 +1,19 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2243E97296DF3C45, NameHash = 0xC402725B)]
+    [NMS(GUID = 0x54D5EE5CA091C075, NameHash = 0xC402725B)]
     public class GcMoveableObjectComponentData : NMSTemplate
     {
         [NMS(Index = 10)]
         /* 0x000 */ public Vector3f GravGunGrabRotationTarget;
-        [NMS(Index = 34)]
-        /* 0x010 */ public NMSString0x20A TipLocIdGrab;
         [NMS(Index = 36)]
-        /* 0x030 */ public NMSString0x20A TipLocIdGrabNoTech;
-        [NMS(Index = 37)]
-        /* 0x050 */ public NMSString0x20A TipLocIdGrabShoot;
+        /* 0x010 */ public NMSString0x20A TipLocIdGrab;
         [NMS(Index = 38)]
+        /* 0x030 */ public NMSString0x20A TipLocIdGrabNoTech;
+        [NMS(Index = 39)]
+        /* 0x050 */ public NMSString0x20A TipLocIdGrabShoot;
+        [NMS(Index = 40)]
         /* 0x070 */ public NMSString0x20A TipLocIdGrabShootCycle;
-        [NMS(Index = 35)]
+        [NMS(Index = 37)]
         /* 0x090 */ public NMSString0x20A TipLocIdGrabUnequipped;
         [NMS(Index = 5)]
         /* 0x0B0 */ public NMSString0x10 DefaultCollisionEffect;
@@ -47,13 +47,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10C */ public float GravGunHoldOffsetSide;
         [NMS(Index = 19)]
         /* 0x110 */ public float GravGunHoldOffsetUp;
-        [NMS(Index = 30)]
+        [NMS(Index = 31)]
         /* 0x114 */ public float ImmediateMeltdownChance;
         [NMS(Index = 4)]
         /* 0x118 */ public float MaxImpactScale;
         [NMS(Index = 1)]
         /* 0x11C */ public float MaxImpactStrength;
-        [NMS(Index = 29)]
+        [NMS(Index = 30)]
         /* 0x120 */ public float MeltdownChance;
         [NMS(Index = 3)]
         /* 0x124 */ public float MinImpactScale;
@@ -69,17 +69,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x138 */ public float OnTruckMinRelativeVelocityModifier;
         [NMS(Index = 12)]
         /* 0x13C */ public float SecondsToDisableCollisionAfterGrabbing;
-        [NMS(Index = 31)]
-        /* 0x140 */ public float SpaceFloaterChanceOnDetatch;
         [NMS(Index = 32)]
+        /* 0x140 */ public float SpaceFloaterChanceOnDetatch;
+        [NMS(Index = 34)]
         /* 0x144 */ public bool CanGoInBiggs;
         [NMS(Index = 27)]
-        /* 0x145 */ public bool MakeMasterModel;
+        /* 0x145 */ public bool LocalOnlyDetach;
         [NMS(Index = 28)]
-        /* 0x146 */ public bool NotifyParentEncounterWhenGrabbed;
-        [NMS(Index = 9)]
-        /* 0x147 */ public bool UseGravGunGrabRotationTarget;
+        /* 0x146 */ public bool MakeMasterModel;
         [NMS(Index = 33)]
-        /* 0x148 */ public bool UseHighlightEffect;
+        /* 0x147 */ public bool MarkPoiAsCompleteOnDetach;
+        [NMS(Index = 29)]
+        /* 0x148 */ public bool NotifyParentEncounterWhenGrabbed;
+        [NMS(Index = 9)]
+        /* 0x149 */ public bool UseGravGunGrabRotationTarget;
+        [NMS(Index = 35)]
+        /* 0x14A */ public bool UseHighlightEffect;
     }
 }

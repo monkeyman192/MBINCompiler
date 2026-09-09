@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x406BB87E0B119B8, NameHash = 0x1DEE0DCE)]
+    [NMS(GUID = 0x810C73FDD27A7C2F, NameHash = 0x1DEE0DCE)]
     public class GcSpacePoiEncounterTraderData : NMSTemplate
     {
         [NMS(Index = 9)]

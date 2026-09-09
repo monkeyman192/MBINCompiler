@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x8F4D7E92AE3F40B1, NameHash = 0x9776BBFB)]
+    [NMS(GUID = 0xE8367DF6F4B4C4F7, NameHash = 0x9776BBFB)]
     public class GcPlayerDamageData : NMSTemplate
     {
         [NMS(Index = 7)]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA6E45FF164FD60FF, NameHash = 0x3B68FA54)]
+    [NMS(GUID = 0xE69EC5D52E97EB42, NameHash = 0x3B68FA54)]
     public class GcMechAudioEvent : NMSTemplate
     {
         [NMS(Index = 1)]

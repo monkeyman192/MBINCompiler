@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE6D29446227EE7B3, NameHash = 0xCD8447DC)]
+    [NMS(GUID = 0xC2F70E1C4426EE61, NameHash = 0xCD8447DC)]
     public class GcSpacePoiTable : NMSTemplate
     {
         [NMS(Index = 4)]

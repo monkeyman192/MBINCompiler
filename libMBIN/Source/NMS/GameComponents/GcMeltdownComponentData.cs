@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA73B54996B0EEEF9, NameHash = 0x993C48D6)]
+    [NMS(GUID = 0xA5887A75CC7DCCF1, NameHash = 0x993C48D6)]
     public class GcMeltdownComponentData : NMSTemplate
     {
         [NMS(Index = 11)]
