@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xCF4AA05C4BE1EDDF, NameHash = 0x8122CE73)]
+    [NMS(GUID = 0x76657DBD09918A71, NameHash = 0x8122CE73)]
     public class GcGameTableGlobals : NMSTemplate
     {
         [NMS(Index = 128, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]

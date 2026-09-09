@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBD36F866DDF311A6, NameHash = 0x1DA81BEB)]
+    [NMS(GUID = 0x5B41D35B57F51D31, NameHash = 0x1DA81BEB)]
     public class GcCreatureHarvesterComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

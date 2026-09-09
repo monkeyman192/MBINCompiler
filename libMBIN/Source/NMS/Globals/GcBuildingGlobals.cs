@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x31192943B023654D, NameHash = 0x1A517154)]
+    [NMS(GUID = 0xF1E6C777D9F8C433, NameHash = 0x1A517154)]
     public class GcBuildingGlobals : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -20,7 +20,7 @@ namespace libMBIN.NMS.Globals
         /* 0x950 */ public TkTextureResource ScreenSpaceRotationGlow;
         [NMS(Index = 13)]
         /* 0x968 */ public TkTextureResource ScreenSpaceRotationIcon;
-        [NMS(Index = 192)]
+        [NMS(Index = 193)]
         /* 0x980 */ public GcFilename FreighterBaseSpawnOverride;
         // size: 0x4
         public enum ActiveLodDistancesEnum {
@@ -47,7 +47,7 @@ namespace libMBIN.NMS.Globals
             High,
             Ultra,
         }
-        [NMS(Index = 180, Size = 0x4, EnumType = typeof(TotalPlanetFrameTimeForComplexityEnum))]
+        [NMS(Index = 181, Size = 0x4, EnumType = typeof(TotalPlanetFrameTimeForComplexityEnum))]
         /* 0xA30 */ public float[] TotalPlanetFrameTimeForComplexity;
         // size: 0x4
         public enum TotalSpaceFrameTimeForComplexityEnum {
@@ -56,25 +56,25 @@ namespace libMBIN.NMS.Globals
             High,
             Ultra,
         }
-        [NMS(Index = 181, Size = 0x4, EnumType = typeof(TotalSpaceFrameTimeForComplexityEnum))]
+        [NMS(Index = 182, Size = 0x4, EnumType = typeof(TotalSpaceFrameTimeForComplexityEnum))]
         /* 0xA40 */ public float[] TotalSpaceFrameTimeForComplexity;
-        [NMS(Index = 170)]
+        [NMS(Index = 171)]
         /* 0xA50 */ public Vector2f BuildingPlacementScaleMinMax;
         [NMS(Index = 70)]
         /* 0xA58 */ public float AddToRadius_DoNotPlaceClose;
         [NMS(Index = 111)]
         /* 0xA5C */ public float AmountToMoveMarkerRoundSphere;
-        [NMS(Index = 171)]
+        [NMS(Index = 172)]
         /* 0xA60 */ public GcBaseBuildingCameraMode BaseBuildingCamMode;
-        [NMS(Index = 194)]
-        /* 0xA64 */ public float BaseBuildingTerrainEditBaseYOffset;
-        [NMS(Index = 196)]
-        /* 0xA68 */ public float BaseBuildingTerrainEditBoundsScalar;
         [NMS(Index = 195)]
-        /* 0xA6C */ public float BaseBuildingTerrainEditTopYOffset;
+        /* 0xA64 */ public float BaseBuildingTerrainEditBaseYOffset;
         [NMS(Index = 197)]
-        /* 0xA70 */ public float BaseBuildingWiringSnappingScaleFactorEasy;
+        /* 0xA68 */ public float BaseBuildingTerrainEditBoundsScalar;
+        [NMS(Index = 196)]
+        /* 0xA6C */ public float BaseBuildingTerrainEditTopYOffset;
         [NMS(Index = 198)]
+        /* 0xA70 */ public float BaseBuildingWiringSnappingScaleFactorEasy;
+        [NMS(Index = 199)]
         /* 0xA74 */ public float BaseBuildingWiringSnappingScaleFactorHard;
         [NMS(Index = 125)]
         /* 0xA78 */ public float BaseRadiusExtension;
@@ -110,35 +110,35 @@ namespace libMBIN.NMS.Globals
         /* 0xAB4 */ public float BuildingPartPreviewRadius;
         [NMS(Index = 9)]
         /* 0xAB8 */ public float BuildingPartPreviewRotateSpeed;
-        [NMS(Index = 160)]
-        /* 0xABC */ public float BuildingPlacementConeEndDistance;
-        [NMS(Index = 163)]
-        /* 0xAC0 */ public float BuildingPlacementConeEndDistanceIndoors;
-        [NMS(Index = 159)]
-        /* 0xAC4 */ public float BuildingPlacementConeEndRadius;
-        [NMS(Index = 162)]
-        /* 0xAC8 */ public float BuildingPlacementConeEndRadiusIndoors;
-        [NMS(Index = 158)]
-        /* 0xACC */ public float BuildingPlacementConeStartRadius;
         [NMS(Index = 161)]
+        /* 0xABC */ public float BuildingPlacementConeEndDistance;
+        [NMS(Index = 164)]
+        /* 0xAC0 */ public float BuildingPlacementConeEndDistanceIndoors;
+        [NMS(Index = 160)]
+        /* 0xAC4 */ public float BuildingPlacementConeEndRadius;
+        [NMS(Index = 163)]
+        /* 0xAC8 */ public float BuildingPlacementConeEndRadiusIndoors;
+        [NMS(Index = 159)]
+        /* 0xACC */ public float BuildingPlacementConeStartRadius;
+        [NMS(Index = 162)]
         /* 0xAD0 */ public float BuildingPlacementConeStartRadiusIndoors;
-        [NMS(Index = 137)]
+        [NMS(Index = 138)]
         /* 0xAD4 */ public float BuildingPlacementCursorOffset;
-        [NMS(Index = 141)]
-        /* 0xAD8 */ public float BuildingPlacementDefaultMaxMinDistanceVR;
-        [NMS(Index = 139)]
-        /* 0xADC */ public float BuildingPlacementDefaultMinDistance;
         [NMS(Index = 142)]
+        /* 0xAD8 */ public float BuildingPlacementDefaultMaxMinDistanceVR;
+        [NMS(Index = 140)]
+        /* 0xADC */ public float BuildingPlacementDefaultMinDistance;
+        [NMS(Index = 143)]
         /* 0xAE0 */ public float BuildingPlacementDefaultMinMinDistanceVR;
-        [NMS(Index = 167)]
-        /* 0xAE4 */ public float BuildingPlacementEffectCrossFadeTime;
-        [NMS(Index = 165)]
-        /* 0xAE8 */ public float BuildingPlacementEffectDissolveSpeed;
-        [NMS(Index = 166)]
-        /* 0xAEC */ public float BuildingPlacementEffectFadeWaitTime;
-        [NMS(Index = 169)]
-        /* 0xAF0 */ public float BuildingPlacementEffectHidePlaceholderDistance;
         [NMS(Index = 168)]
+        /* 0xAE4 */ public float BuildingPlacementEffectCrossFadeTime;
+        [NMS(Index = 166)]
+        /* 0xAE8 */ public float BuildingPlacementEffectDissolveSpeed;
+        [NMS(Index = 167)]
+        /* 0xAEC */ public float BuildingPlacementEffectFadeWaitTime;
+        [NMS(Index = 170)]
+        /* 0xAF0 */ public float BuildingPlacementEffectHidePlaceholderDistance;
+        [NMS(Index = 169)]
         /* 0xAF4 */ public float BuildingPlacementEffectHidePlaceholderFadeTime;
         [NMS(Index = 1)]
         /* 0xAF8 */ public float BuildingPlacementEffectInterpRate;
@@ -152,65 +152,65 @@ namespace libMBIN.NMS.Globals
         /* 0xB08 */ public float BuildingPlacementEffectSpringFast;
         [NMS(Index = 5)]
         /* 0xB0C */ public float BuildingPlacementEffectSpringSlow;
-        [NMS(Index = 177)]
+        [NMS(Index = 178)]
         /* 0xB10 */ public float BuildingPlacementFocusModeAttachSnappingDistance;
-        [NMS(Index = 174)]
-        /* 0xB14 */ public float BuildingPlacementFocusModeMaxDistanceScaling;
-        [NMS(Index = 173)]
-        /* 0xB18 */ public float BuildingPlacementFocusModeMinDistance;
-        [NMS(Index = 176)]
-        /* 0xB1C */ public float BuildingPlacementFocusModeSurfaceSnappingDistance;
-        [NMS(Index = 149)]
-        /* 0xB20 */ public float BuildingPlacementGhostHearScaleDistanceMod;
-        [NMS(Index = 151)]
-        /* 0xB24 */ public float BuildingPlacementGhostHeartSizeScale;
-        [NMS(Index = 150)]
-        /* 0xB28 */ public float BuildingPlacementGhostHeartSizeScaleMin;
-        [NMS(Index = 152)]
-        /* 0xB2C */ public float BuildingPlacementGhostHeartSizeSelected;
-        [NMS(Index = 154)]
-        /* 0xB30 */ public float BuildingPlacementGhostHeartWiringSizeOtherSnapped;
-        [NMS(Index = 156)]
-        /* 0xB34 */ public float BuildingPlacementGhostHeartWiringSizeScale;
-        [NMS(Index = 155)]
-        /* 0xB38 */ public float BuildingPlacementGhostHeartWiringSizeScaleMin;
-        [NMS(Index = 144)]
-        /* 0xB3C */ public float BuildingPlacementGhostReductionMaxSize;
-        [NMS(Index = 129)]
-        /* 0xB40 */ public float BuildingPlacementMaxConnectionLength;
-        [NMS(Index = 130)]
-        /* 0xB44 */ public float BuildingPlacementMaxDistance;
-        [NMS(Index = 131)]
-        /* 0xB48 */ public float BuildingPlacementMaxDistanceNoHit;
-        [NMS(Index = 132)]
-        /* 0xB4C */ public float BuildingPlacementMaxDistanceNoHitExtra;
-        [NMS(Index = 135)]
-        /* 0xB50 */ public float BuildingPlacementMaxDistanceScaleExtra;
-        [NMS(Index = 134)]
-        /* 0xB54 */ public float BuildingPlacementMaxDistanceScaleExtraMaxSize;
-        [NMS(Index = 133)]
-        /* 0xB58 */ public float BuildingPlacementMaxDistanceScaleExtraMinSize;
-        [NMS(Index = 136)]
-        /* 0xB5C */ public float BuildingPlacementMaxShipBaseRadius;
-        [NMS(Index = 140)]
-        /* 0xB60 */ public float BuildingPlacementMinDistanceScaleIncrease;
-        [NMS(Index = 143)]
-        /* 0xB64 */ public float BuildingPlacementMinDistanceScaleIncreaseVR;
-        [NMS(Index = 138)]
-        /* 0xB68 */ public float BuildingPlacementMinDotProductRequiredToSnap;
-        [NMS(Index = 147)]
-        /* 0xB6C */ public float BuildingPlacementNumGhostsMinOffset;
-        [NMS(Index = 148)]
-        /* 0xB70 */ public float BuildingPlacementNumGhostsVolume;
-        [NMS(Index = 145)]
-        /* 0xB74 */ public float BuildingPlacementNumGhostsVRMultiplier;
-        [NMS(Index = 146)]
-        /* 0xB78 */ public float BuildingPlacementNumGhostsVRMultiplierEyeTracking;
         [NMS(Index = 175)]
-        /* 0xB7C */ public float BuildingPlacementOrbitModeMaxDistanceScaling;
+        /* 0xB14 */ public float BuildingPlacementFocusModeMaxDistanceScaling;
+        [NMS(Index = 174)]
+        /* 0xB18 */ public float BuildingPlacementFocusModeMinDistance;
+        [NMS(Index = 177)]
+        /* 0xB1C */ public float BuildingPlacementFocusModeSurfaceSnappingDistance;
+        [NMS(Index = 150)]
+        /* 0xB20 */ public float BuildingPlacementGhostHearScaleDistanceMod;
+        [NMS(Index = 152)]
+        /* 0xB24 */ public float BuildingPlacementGhostHeartSizeScale;
+        [NMS(Index = 151)]
+        /* 0xB28 */ public float BuildingPlacementGhostHeartSizeScaleMin;
+        [NMS(Index = 153)]
+        /* 0xB2C */ public float BuildingPlacementGhostHeartSizeSelected;
+        [NMS(Index = 155)]
+        /* 0xB30 */ public float BuildingPlacementGhostHeartWiringSizeOtherSnapped;
         [NMS(Index = 157)]
+        /* 0xB34 */ public float BuildingPlacementGhostHeartWiringSizeScale;
+        [NMS(Index = 156)]
+        /* 0xB38 */ public float BuildingPlacementGhostHeartWiringSizeScaleMin;
+        [NMS(Index = 145)]
+        /* 0xB3C */ public float BuildingPlacementGhostReductionMaxSize;
+        [NMS(Index = 130)]
+        /* 0xB40 */ public float BuildingPlacementMaxConnectionLength;
+        [NMS(Index = 131)]
+        /* 0xB44 */ public float BuildingPlacementMaxDistance;
+        [NMS(Index = 132)]
+        /* 0xB48 */ public float BuildingPlacementMaxDistanceNoHit;
+        [NMS(Index = 133)]
+        /* 0xB4C */ public float BuildingPlacementMaxDistanceNoHitExtra;
+        [NMS(Index = 136)]
+        /* 0xB50 */ public float BuildingPlacementMaxDistanceScaleExtra;
+        [NMS(Index = 135)]
+        /* 0xB54 */ public float BuildingPlacementMaxDistanceScaleExtraMaxSize;
+        [NMS(Index = 134)]
+        /* 0xB58 */ public float BuildingPlacementMaxDistanceScaleExtraMinSize;
+        [NMS(Index = 137)]
+        /* 0xB5C */ public float BuildingPlacementMaxShipBaseRadius;
+        [NMS(Index = 141)]
+        /* 0xB60 */ public float BuildingPlacementMinDistanceScaleIncrease;
+        [NMS(Index = 144)]
+        /* 0xB64 */ public float BuildingPlacementMinDistanceScaleIncreaseVR;
+        [NMS(Index = 139)]
+        /* 0xB68 */ public float BuildingPlacementMinDotProductRequiredToSnap;
+        [NMS(Index = 148)]
+        /* 0xB6C */ public float BuildingPlacementNumGhostsMinOffset;
+        [NMS(Index = 149)]
+        /* 0xB70 */ public float BuildingPlacementNumGhostsVolume;
+        [NMS(Index = 146)]
+        /* 0xB74 */ public float BuildingPlacementNumGhostsVRMultiplier;
+        [NMS(Index = 147)]
+        /* 0xB78 */ public float BuildingPlacementNumGhostsVRMultiplierEyeTracking;
+        [NMS(Index = 176)]
+        /* 0xB7C */ public float BuildingPlacementOrbitModeMaxDistanceScaling;
+        [NMS(Index = 158)]
         /* 0xB80 */ public float BuildingPlacementTwistScale;
-        [NMS(Index = 172)]
+        [NMS(Index = 173)]
         /* 0xB84 */ public float BuildingSelectionFocusModeCursorRadius;
         [NMS(Index = 86)]
         /* 0xB88 */ public float BuildingVisitDistance;
@@ -222,9 +222,9 @@ namespace libMBIN.NMS.Globals
         /* 0xB94 */ public float ChanceOfAddingShelter;
         [NMS(Index = 104)]
         /* 0xB98 */ public float CompassIconSize;
-        [NMS(Index = 187)]
+        [NMS(Index = 188)]
         /* 0xB9C */ public float ComplexityDensitySigmaSquared;
-        [NMS(Index = 186)]
+        [NMS(Index = 187)]
         /* 0xBA0 */ public float ComplexityDensityTestRange;
         [NMS(Index = 100)]
         /* 0xBA4 */ public float DistanceForTooltip;
@@ -292,7 +292,7 @@ namespace libMBIN.NMS.Globals
         /* 0xC20 */ public float HoverVisibilityTimeHmd;
         [NMS(Index = 32)]
         /* 0xC24 */ public float IconSpringTime;
-        [NMS(Index = 178)]
+        [NMS(Index = 179)]
         /* 0xC28 */ public float InactiveVisibleComplexityFactor;
         [NMS(Index = 63)]
         /* 0xC2C */ public float InteractMarkerYOffset;
@@ -312,11 +312,11 @@ namespace libMBIN.NMS.Globals
         /* 0xC48 */ public float MarkerTimeIncrease;
         [NMS(Index = 112)]
         /* 0xC4C */ public float MarkerTransitionDistance;
-        [NMS(Index = 199)]
+        [NMS(Index = 200)]
         /* 0xC50 */ public int MaxDownloadedBaseTerrainEditsToApply;
         [NMS(Index = 118)]
         /* 0xC54 */ public float MaxIconRange;
-        [NMS(Index = 185)]
+        [NMS(Index = 186)]
         /* 0xC58 */ public float MaximumComplexityDensity;
         [NMS(Index = 55)]
         /* 0xC5C */ public float MaxLineLength;
@@ -338,15 +338,15 @@ namespace libMBIN.NMS.Globals
         /* 0xC7C */ public float MinLineLength;
         [NMS(Index = 57)]
         /* 0xC80 */ public float MinLineLengthShip;
-        [NMS(Index = 183)]
+        [NMS(Index = 184)]
         /* 0xC84 */ public float MinLoadingPercentageNodesBufferFree;
-        [NMS(Index = 182)]
+        [NMS(Index = 183)]
         /* 0xC88 */ public float MinPercentageNodesBufferFree;
         [NMS(Index = 64)]
         /* 0xC8C */ public float MinRadius;
         [NMS(Index = 124)]
         /* 0xC90 */ public float MinRadiusForBases;
-        [NMS(Index = 128)]
+        [NMS(Index = 129)]
         /* 0xC94 */ public float MinRadiusFromFeaturedBases;
         [NMS(Index = 121)]
         /* 0xC98 */ public int MinShipScanBuildings;
@@ -364,7 +364,7 @@ namespace libMBIN.NMS.Globals
         /* 0xCB0 */ public float NearMinLineLength;
         [NMS(Index = 69)]
         /* 0xCB4 */ public float ObjectFadeRadius;
-        [NMS(Index = 184)]
+        [NMS(Index = 185)]
         /* 0xCB8 */ public float PercentagePhysicsComponentsForComplexity;
         [NMS(Index = 17)]
         /* 0xCBC */ public float PowerlineSnapDistance;
@@ -390,49 +390,51 @@ namespace libMBIN.NMS.Globals
         /* 0xCE4 */ public float SmallIconArrowOffset;
         [NMS(Index = 101)]
         /* 0xCE8 */ public float SmallIconSize;
+        [NMS(Index = 128)]
+        /* 0xCEC */ public float SpaceBaseStationSpawnDistance;
         [NMS(Index = 114)]
-        /* 0xCEC */ public float SpaceMarkerMaxHeight;
+        /* 0xCF0 */ public float SpaceMarkerMaxHeight;
         [NMS(Index = 113)]
-        /* 0xCF0 */ public float SpaceMarkerMinHeight;
+        /* 0xCF4 */ public float SpaceMarkerMinHeight;
         [NMS(Index = 106)]
-        /* 0xCF4 */ public float SpaceMarkerOffset;
+        /* 0xCF8 */ public float SpaceMarkerOffset;
         [NMS(Index = 107)]
-        /* 0xCF8 */ public float SpaceMarkerOffsetPlanet;
+        /* 0xCFC */ public float SpaceMarkerOffsetPlanet;
         [NMS(Index = 108)]
-        /* 0xCFC */ public float SpaceMarkerOffsetSamePlanet;
-        [NMS(Index = 189)]
-        /* 0xD00 */ public float StartCrashSiteMaxDistance;
-        [NMS(Index = 188)]
-        /* 0xD04 */ public float StartCrashSiteMinDistance;
-        [NMS(Index = 191)]
-        /* 0xD08 */ public float StartShelterMaxDistance;
+        /* 0xD00 */ public float SpaceMarkerOffsetSamePlanet;
         [NMS(Index = 190)]
-        /* 0xD0C */ public float StartShelterMinDistance;
+        /* 0xD04 */ public float StartCrashSiteMaxDistance;
+        [NMS(Index = 189)]
+        /* 0xD08 */ public float StartCrashSiteMinDistance;
+        [NMS(Index = 192)]
+        /* 0xD0C */ public float StartShelterMaxDistance;
+        [NMS(Index = 191)]
+        /* 0xD10 */ public float StartShelterMinDistance;
         [NMS(Index = 123)]
-        /* 0xD10 */ public float TestDistanceForSettlementBaseBufferAlignment;
+        /* 0xD14 */ public float TestDistanceForSettlementBaseBufferAlignment;
         [NMS(Index = 92)]
-        /* 0xD14 */ public float TextStringXOffset;
+        /* 0xD18 */ public float TextStringXOffset;
         [NMS(Index = 98)]
-        /* 0xD18 */ public float TextTagLength;
+        /* 0xD1C */ public float TextTagLength;
         [NMS(Index = 95)]
-        /* 0xD1C */ public float TextTagWidthOffset;
+        /* 0xD20 */ public float TextTagWidthOffset;
         [NMS(Index = 93)]
-        /* 0xD20 */ public float TextTagXOffset;
+        /* 0xD24 */ public float TextTagXOffset;
         [NMS(Index = 94)]
-        /* 0xD24 */ public float TextTagYOffset;
+        /* 0xD28 */ public float TextTagYOffset;
         [NMS(Index = 117)]
-        /* 0xD28 */ public float UnknownBuildingRange;
+        /* 0xD2C */ public float UnknownBuildingRange;
         [NMS(Index = 20)]
-        /* 0xD2C */ public bool AllowBuildingUsingIntermediates;
-        [NMS(Index = 193)]
-        /* 0xD2D */ public bool BaseBuildingTerrainEditBoundsOverride;
-        [NMS(Index = 164)]
-        /* 0xD2E */ public bool BuildingPlacementEffectEnabled;
-        [NMS(Index = 153)]
-        /* 0xD2F */ public TkCurveType BuildingPlacementGhostHeartSizeCurve;
-        [NMS(Index = 179)]
-        /* 0xD30 */ public bool DebugForceShowInactives;
+        /* 0xD30 */ public bool AllowBuildingUsingIntermediates;
+        [NMS(Index = 194)]
+        /* 0xD31 */ public bool BaseBuildingTerrainEditBoundsOverride;
+        [NMS(Index = 165)]
+        /* 0xD32 */ public bool BuildingPlacementEffectEnabled;
+        [NMS(Index = 154)]
+        /* 0xD33 */ public TkCurveType BuildingPlacementGhostHeartSizeCurve;
+        [NMS(Index = 180)]
+        /* 0xD34 */ public bool DebugForceShowInactives;
         [NMS(Index = 61)]
-        /* 0xD31 */ public TkCurveType LineCurve;
+        /* 0xD35 */ public TkCurveType LineCurve;
     }
 }

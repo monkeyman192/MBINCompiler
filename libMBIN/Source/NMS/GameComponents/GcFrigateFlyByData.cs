@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x13558A7DA3393C8A, NameHash = 0x2B457A50)]
+    [NMS(GUID = 0x2F285F3DEDB52FD1, NameHash = 0x2B457A50)]
     public class GcFrigateFlyByData : NMSTemplate
     {
         [NMS(Index = 3)]
