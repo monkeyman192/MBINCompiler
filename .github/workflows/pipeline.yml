@@ -155,7 +155,9 @@ jobs:
         shell: bash
       - name: Upload resources if version matches
         if: env.VERSION == env.TAG
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
+        permissions:
+          contents: write
         with:
           name: "${{ env.TAG }}"
           tag_name: ${{ env.TAG }}
