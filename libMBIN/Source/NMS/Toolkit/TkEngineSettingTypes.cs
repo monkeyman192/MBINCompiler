@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x79B8DA1FC10F4D2D, NameHash = 0xA0749579)]
+    [NMS(GUID = 0x29300C29398B56C3, NameHash = 0xA0749579)]
     public class TkEngineSettingTypes : NMSTemplate
     {
-        // size: 0x38
+        // size: 0x3A
         public enum EngineSettingEnum : uint {
             FullScreen,
             Borderless,
@@ -30,6 +30,8 @@ namespace libMBIN.NMS.Toolkit
             PlanetQuality,
             WaterQuality,
             BaseQuality,
+            CorvetteComplexityLimit,
+            SettlementsEnabled,
             UIQuality,
             DLSSQuality,
             FFXSRQuality,

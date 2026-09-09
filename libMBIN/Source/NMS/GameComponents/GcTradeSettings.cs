@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDAFA914F4EEBB3B4, NameHash = 0xBB646461)]
+    [NMS(GUID = 0x5CEBF801DA6307DB, NameHash = 0xBB646461)]
     public class GcTradeSettings : NMSTemplate
     {
         [NMS(Index = 24)]
@@ -45,19 +45,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x1050 */ public GcTradeData Shop;
         [NMS(Index = 19)]
         /* 0x1138 */ public GcTradeData SmugglerStation;
+        [NMS(Index = 27)]
+        /* 0x1220 */ public GcTradeData SpaceOutpost;
         [NMS(Index = 0)]
-        /* 0x1220 */ public GcTradeData SpaceStation;
+        /* 0x1308 */ public GcTradeData SpaceStation;
         [NMS(Index = 4)]
-        /* 0x1308 */ public GcTradeData SuitTechSpecialist;
+        /* 0x13F0 */ public GcTradeData SuitTechSpecialist;
         [NMS(Index = 2)]
-        /* 0x13F0 */ public GcTradeData TechShop;
+        /* 0x14D8 */ public GcTradeData TechShop;
         [NMS(Index = 10)]
-        /* 0x14D8 */ public GcTradeData TraShip;
+        /* 0x15C0 */ public GcTradeData TraShip;
         [NMS(Index = 6)]
-        /* 0x15C0 */ public GcTradeData VehicleTechSpecialist;
+        /* 0x16A8 */ public GcTradeData VehicleTechSpecialist;
         [NMS(Index = 11)]
-        /* 0x16A8 */ public GcTradeData WarShip;
+        /* 0x1790 */ public GcTradeData WarShip;
         [NMS(Index = 5)]
-        /* 0x1790 */ public GcTradeData WeapTechSpecialist;
+        /* 0x1878 */ public GcTradeData WeapTechSpecialist;
     }
 }

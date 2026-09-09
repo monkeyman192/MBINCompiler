@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD85A47CB1646EF0F, NameHash = 0x8598A836)]
+    [NMS(GUID = 0xB08AB2296AC03128, NameHash = 0x8598A836)]
     public class GcBaseBuildingSettingsAction : NMSTemplate
     {
         [NMS(Index = 1)]
@@ -14,6 +14,6 @@ namespace libMBIN.NMS.GameComponents
             DontCare,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public UseCorePartsOnlyEnum UseCorePartsOnly;
+        /* 0x8 */ public UseCorePartsOnlyEnum UseCorePartsOnly;
     }
 }

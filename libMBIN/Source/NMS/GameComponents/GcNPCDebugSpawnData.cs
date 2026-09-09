@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x545CFB502584D888, NameHash = 0xBEE8D99B)]
+    [NMS(GUID = 0xA47667DBE7F81CC1, NameHash = 0xBEE8D99B)]
     public class GcNPCDebugSpawnData : NMSTemplate
     {
         [NMS(Index = 1)]

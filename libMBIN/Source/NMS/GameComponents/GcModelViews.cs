@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6C786BBE78060B10, NameHash = 0x69104096)]
+    [NMS(GUID = 0x498B4F9B77192711, NameHash = 0x69104096)]
     public class GcModelViews : NMSTemplate
     {
-        // size: 0x34
+        // size: 0x35
         public enum ModelViewsEnum : uint {
             Suit,
             SplitSuit,
@@ -55,6 +55,7 @@ namespace libMBIN.NMS.GameComponents
             SquadronSpaceshipThumbnail,
             VehicleRefiner,
             FishingFloat,
+            SolarSystem,
             ModelViewer,
             None,
         }

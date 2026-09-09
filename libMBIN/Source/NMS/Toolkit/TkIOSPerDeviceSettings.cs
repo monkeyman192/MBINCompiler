@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xECF7AAA96B926D31, NameHash = 0xF78534FE)]
+    [NMS(GUID = 0x154C7BD77B190DE9, NameHash = 0xF78534FE)]
     public class TkIOSPerDeviceSettings : NMSTemplate
     {
         [NMS(Index = 0)]

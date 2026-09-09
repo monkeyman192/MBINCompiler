@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE1F51E02401442C5, NameHash = 0x60BCEB20)]
+    [NMS(GUID = 0xD6E019A0A687C183, NameHash = 0x60BCEB20)]
     public class GcSimpleInteractionComponentData : NMSTemplate
     {
         [NMS(Index = 20)]
@@ -28,7 +28,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x178 */ public List<GcInteractionBaseBuildingState> BaseBuildingTriggerActions;
         [NMS(Index = 4)]
         /* 0x188 */ public NMSString0x10 Id;
-        [NMS(Index = 43)]
+        [NMS(Index = 44)]
         /* 0x198 */ public List<int> OnlyActiveDuringSeasons;
         [NMS(Index = 37)]
         /* 0x1A8 */ public List<GcPersistencyMissionOverride> PersistencyBufferOverride;
@@ -60,7 +60,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x218 */ public GcRarity Rarity;
         [NMS(Index = 32)]
         /* 0x21C */ public GcDiscoveryType ScanIcon;
-        // size: 0x29
+        // size: 0x2A
         public enum SimpleInteractionTypeEnum : uint {
             Interact,
             Treasure,
@@ -101,8 +101,9 @@ namespace libMBIN.NMS.GameComponents
             RefundedCorvetteStorage,
             CorvetteMissionBoard,
             CorvetteRampSwitch,
-            RoverDumpSwitch,
             JoinTable,
+            RoverDumpSwitch,
+            TractorBeamEject,
         }
         [NMS(Index = 0)]
         /* 0x220 */ public SimpleInteractionTypeEnum SimpleInteractionType;
@@ -122,21 +123,23 @@ namespace libMBIN.NMS.GameComponents
         /* 0x230 */ public bool DisableAnimationUntilInteract;
         [NMS(Index = 13)]
         /* 0x231 */ public bool HideContents;
+        [NMS(Index = 43)]
+        /* 0x232 */ public bool HideInteractLabelUntilRelease;
         [NMS(Index = 14)]
-        /* 0x232 */ public bool InteractIsCrime;
+        /* 0x233 */ public bool InteractIsCrime;
         [NMS(Index = 23)]
-        /* 0x233 */ public bool MustBeVisibleToInteract;
+        /* 0x234 */ public bool MustBeVisibleToInteract;
         [NMS(Index = 24)]
-        /* 0x234 */ public bool NeedsStorm;
+        /* 0x235 */ public bool NeedsStorm;
         [NMS(Index = 19)]
-        /* 0x235 */ public bool NotifyEncounter;
+        /* 0x236 */ public bool NotifyEncounter;
         [NMS(Index = 39)]
-        /* 0x236 */ public bool ReseedOnRewardSuccess;
+        /* 0x237 */ public bool ReseedOnRewardSuccess;
         [NMS(Index = 22)]
-        /* 0x237 */ public bool StartsBuried;
+        /* 0x238 */ public bool StartsBuried;
         [NMS(Index = 2)]
-        /* 0x238 */ public bool Use2dInteractDistance;
+        /* 0x239 */ public bool Use2dInteractDistance;
         [NMS(Index = 38)]
-        /* 0x239 */ public bool UsePersonalPersistentBuffer;
+        /* 0x23A */ public bool UsePersonalPersistentBuffer;
     }
 }

@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xCBA0A0DD0669C0F4, NameHash = 0xEF59F646)]
+    [NMS(GUID = 0x2C78597608C69B7F, NameHash = 0xEF59F646)]
     public class GcPetCustomisationData : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x3)]

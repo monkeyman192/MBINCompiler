@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xDFEA509A0B947CE9, NameHash = 0xD5C1D227)]
+    [NMS(GUID = 0x62EBEC53DF4EFB1B, NameHash = 0xD5C1D227)]
     public class GcNGuiTextData : NMSTemplate
     {
         [NMS(Index = 0, MxmlName = "Element Data")]
@@ -22,12 +22,12 @@ namespace libMBIN.NMS.GameComponents
         [NMS(Index = 1)]
         /* 0x228 */ public TkNGuiTextStyle Style;
         [NMS(Index = 5)]
-        /* 0x2D0 */ public float ForcedOffset;
+        /* 0x2DC */ public float ForcedOffset;
         [NMS(Index = 10)]
-        /* 0x2D4 */ public bool BlockSpecialStyles;
+        /* 0x2E0 */ public bool BlockSpecialStyles;
         [NMS(Index = 9)]
-        /* 0x2D5 */ public bool ForcedAllowScroll;
+        /* 0x2E1 */ public bool ForcedAllowScroll;
         [NMS(Index = 8)]
-        /* 0x2D6 */ public bool Special;
+        /* 0x2E2 */ public bool Special;
     }
 }

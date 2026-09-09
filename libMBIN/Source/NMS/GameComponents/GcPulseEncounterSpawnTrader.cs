@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x38C1D0BFBD9CA5FE, NameHash = 0x8C01FB7E)]
+    [NMS(GUID = 0x3C62210FADEBC764, NameHash = 0x8C01FB7E)]
     public class GcPulseEncounterSpawnTrader : NMSTemplate
     {
         [NMS(Index = 6)]

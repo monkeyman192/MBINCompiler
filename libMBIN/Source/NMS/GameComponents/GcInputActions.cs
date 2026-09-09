@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x75B230E25EAA39FE, NameHash = 0x26A0D337)]
+    [NMS(GUID = 0xB00DE9941182D839, NameHash = 0x26A0D337)]
     public class GcInputActions : NMSTemplate
     {
-        // size: 0x12C
+        // size: 0x130
         public enum InputActionEnum : uint {
             Invalid,
             Player_Forward,
@@ -277,6 +277,10 @@ namespace libMBIN.NMS.GameComponents
             BaseBuilding_Paint,
             BaseBuilding_NextPart,
             Player_TagMarker,
+            SolarSystemMap_ToggleMap,
+            SolarSystemMap_Scan,
+            Player_RollLeft,
+            Player_RollRight,
             TogglePause,
             TogglePlanet,
             ToggleFreezeCulling,

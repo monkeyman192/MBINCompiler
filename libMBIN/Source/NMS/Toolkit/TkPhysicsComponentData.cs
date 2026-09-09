@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x85A69D69E54552D3, NameHash = 0xF90BB3)]
+    [NMS(GUID = 0xCC9917C6A1061A2D, NameHash = 0xF90BB3)]
     public class TkPhysicsComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -18,13 +18,13 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 5)]
         /* 0x24 */ public ModelOwnershipEnum ModelOwnership;
-        [NMS(Index = 34)]
+        [NMS(Index = 35)]
         /* 0x28 */ public float SimpleCharacterCollisionFwdOffset;
-        [NMS(Index = 32)]
-        /* 0x2C */ public float SimpleCharacterCollisionHeight;
         [NMS(Index = 33)]
+        /* 0x2C */ public float SimpleCharacterCollisionHeight;
+        [NMS(Index = 34)]
         /* 0x30 */ public float SimpleCharacterCollisionHeightOffset;
-        [NMS(Index = 31)]
+        [NMS(Index = 32)]
         /* 0x34 */ public float SimpleCharacterCollisionRadius;
         [NMS(Index = 22)]
         /* 0x38 */ public float SpinOnCreate;
@@ -55,37 +55,39 @@ namespace libMBIN.NMS.Toolkit
         /* 0x4B */ public bool DisableGravity;
         [NMS(Index = 26)]
         /* 0x4C */ public bool DisablePhysicsUntilGravGunned;
-        [NMS(Index = 8)]
-        /* 0x4D */ public bool Floor;
-        [NMS(Index = 15)]
-        /* 0x4E */ public bool IgnoreAllCollisions;
-        [NMS(Index = 9)]
-        /* 0x4F */ public bool IgnoreModelOwner;
-        [NMS(Index = 18)]
-        /* 0x50 */ public bool InvisibleForInteraction;
-        [NMS(Index = 28)]
-        /* 0x51 */ public bool IsTransporter;
-        [NMS(Index = 14)]
-        /* 0x52 */ public bool NoFallDamage;
-        [NMS(Index = 13)]
-        /* 0x53 */ public bool NoFireCollide;
-        [NMS(Index = 11)]
-        /* 0x54 */ public bool NoPlayerCollide;
-        [NMS(Index = 12)]
-        /* 0x55 */ public bool NoTerrainCollide;
-        [NMS(Index = 10)]
-        /* 0x56 */ public bool NoVehicleCollide;
-        [NMS(Index = 30)]
-        /* 0x57 */ public bool RotateSimpleCharacterCollisionCapsule;
-        [NMS(Index = 23)]
-        /* 0x58 */ public bool ScaleAffectsMass;
-        [NMS(Index = 2)]
-        /* 0x59 */ public bool TriggerVolume;
         [NMS(Index = 27)]
-        /* 0x5A */ public bool UseBasePartOptimisation;
+        /* 0x4D */ public bool EnableSingleSidedMeshCollision;
+        [NMS(Index = 8)]
+        /* 0x4E */ public bool Floor;
+        [NMS(Index = 15)]
+        /* 0x4F */ public bool IgnoreAllCollisions;
+        [NMS(Index = 9)]
+        /* 0x50 */ public bool IgnoreModelOwner;
+        [NMS(Index = 18)]
+        /* 0x51 */ public bool InvisibleForInteraction;
         [NMS(Index = 29)]
-        /* 0x5B */ public bool UseSimpleCharacterCollision;
+        /* 0x52 */ public bool IsTransporter;
+        [NMS(Index = 14)]
+        /* 0x53 */ public bool NoFallDamage;
+        [NMS(Index = 13)]
+        /* 0x54 */ public bool NoFireCollide;
+        [NMS(Index = 11)]
+        /* 0x55 */ public bool NoPlayerCollide;
+        [NMS(Index = 12)]
+        /* 0x56 */ public bool NoTerrainCollide;
+        [NMS(Index = 10)]
+        /* 0x57 */ public bool NoVehicleCollide;
+        [NMS(Index = 31)]
+        /* 0x58 */ public bool RotateSimpleCharacterCollisionCapsule;
+        [NMS(Index = 23)]
+        /* 0x59 */ public bool ScaleAffectsMass;
+        [NMS(Index = 2)]
+        /* 0x5A */ public bool TriggerVolume;
+        [NMS(Index = 28)]
+        /* 0x5B */ public bool UseBasePartOptimisation;
+        [NMS(Index = 30)]
+        /* 0x5C */ public bool UseSimpleCharacterCollision;
         [NMS(Index = 7)]
-        /* 0x5C */ public bool Walkable;
+        /* 0x5D */ public bool Walkable;
     }
 }

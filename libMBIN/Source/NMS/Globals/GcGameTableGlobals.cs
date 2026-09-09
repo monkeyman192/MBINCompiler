@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xE8833276ECAF7FE0, NameHash = 0x8122CE73)]
+    [NMS(GUID = 0xCF4AA05C4BE1EDDF, NameHash = 0x8122CE73)]
     public class GcGameTableGlobals : NMSTemplate
     {
         [NMS(Index = 128, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]
@@ -83,201 +83,201 @@ namespace libMBIN.NMS.Globals
         /* 0x1EB8 */ public GcPetBattleCameraPose PetBattleDefaultCameraPose;
         [NMS(Index = 36)]
         /* 0x1ED0 */ public GcPetBattleCameraPose PetBattleDefaultCameraPoseVR;
-        [NMS(Index = 103, Size = 0x5, EnumType = typeof(GcPetBattlerPayloadStrength.PetPayloadStrengthEnum))]
-        /* 0x1EE8 */ public int[] PetBattlerStrengthWeighting;
-        [NMS(Index = 43, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
-        /* 0x1EFC */ public float[] ClassXPMultipliers;
-        [NMS(Index = 121, Size = 0x3, EnumType = typeof(GcPetBattlerAffinityEffectiveness.PetBattlerAffinityEffectivenessEnum))]
-        /* 0x1F0C */ public float[] AffinityDamageEffectiveness;
-        [NMS(Index = 58, Size = 0x3, EnumType = typeof(GcPetBattlerCoreStat.PetBattlerCoreStatEnum))]
-        /* 0x1F18 */ public float[] BinocsUnknownPetStatsVariationOffsets;
         [NMS(Index = 126)]
-        /* 0x1F24 */ public TkCameraWanderData PetBattleCamerWanderOrientation;
+        /* 0x1EE8 */ public TkCameraWanderData PetBattleCamerWanderOrientation;
         [NMS(Index = 125)]
-        /* 0x1F30 */ public TkCameraWanderData PetBattleCamerWanderPos;
+        /* 0x1EFC */ public TkCameraWanderData PetBattleCamerWanderPos;
+        [NMS(Index = 103, Size = 0x5, EnumType = typeof(GcPetBattlerPayloadStrength.PetPayloadStrengthEnum))]
+        /* 0x1F10 */ public int[] PetBattlerStrengthWeighting;
+        [NMS(Index = 43, Size = 0x4, EnumType = typeof(GcInventoryClass.InventoryClassEnum))]
+        /* 0x1F24 */ public float[] ClassXPMultipliers;
+        [NMS(Index = 121, Size = 0x3, EnumType = typeof(GcPetBattlerAffinityEffectiveness.PetBattlerAffinityEffectivenessEnum))]
+        /* 0x1F34 */ public float[] AffinityDamageEffectiveness;
+        [NMS(Index = 58, Size = 0x3, EnumType = typeof(GcPetBattlerCoreStat.PetBattlerCoreStatEnum))]
+        /* 0x1F40 */ public float[] BinocsUnknownPetStatsVariationOffsets;
         [NMS(Index = 55)]
-        /* 0x1F3C */ public Vector2f PetAgilityScaleRange;
+        /* 0x1F4C */ public Vector2f PetAgilityScaleRange;
         [NMS(Index = 76)]
-        /* 0x1F44 */ public Vector2f PetBattlerSizeRange;
+        /* 0x1F54 */ public Vector2f PetBattlerSizeRange;
         [NMS(Index = 54)]
-        /* 0x1F4C */ public Vector2f PetMissAgilityRange;
+        /* 0x1F5C */ public Vector2f PetMissAgilityRange;
         [NMS(Index = 75)]
-        /* 0x1F54 */ public Vector2f PetSizeRange;
+        /* 0x1F64 */ public Vector2f PetSizeRange;
         [NMS(Index = 94)]
-        /* 0x1F5C */ public float AbsorbPercent;
+        /* 0x1F6C */ public float AbsorbPercent;
         [NMS(Index = 47)]
-        /* 0x1F60 */ public float AffinityStrengthBonus;
+        /* 0x1F70 */ public float AffinityStrengthBonus;
         [NMS(Index = 48)]
-        /* 0x1F64 */ public float AffinityWeakReducer;
+        /* 0x1F74 */ public float AffinityWeakReducer;
         [NMS(Index = 25)]
-        /* 0x1F68 */ public float AIWaitTimeMax;
+        /* 0x1F78 */ public float AIWaitTimeMax;
         [NMS(Index = 24)]
-        /* 0x1F6C */ public float AIWaitTimeMin;
+        /* 0x1F7C */ public float AIWaitTimeMin;
         [NMS(Index = 56)]
-        /* 0x1F70 */ public float BinocsUnknownPetStatsVariationRange;
+        /* 0x1F80 */ public float BinocsUnknownPetStatsVariationRange;
         [NMS(Index = 57)]
-        /* 0x1F74 */ public float BinocsUnknownPetStatsVariationTime;
+        /* 0x1F84 */ public float BinocsUnknownPetStatsVariationTime;
         [NMS(Index = 102)]
-        /* 0x1F78 */ public float BonusMoveChance;
+        /* 0x1F88 */ public float BonusMoveChance;
         [NMS(Index = 39)]
-        /* 0x1F7C */ public float CameraActionInSpring;
+        /* 0x1F8C */ public float CameraActionInSpring;
         [NMS(Index = 40)]
-        /* 0x1F80 */ public float CameraActionOutSpring;
+        /* 0x1F90 */ public float CameraActionOutSpring;
         [NMS(Index = 37)]
-        /* 0x1F84 */ public float CameraFOV;
+        /* 0x1F94 */ public float CameraFOV;
         [NMS(Index = 38)]
-        /* 0x1F88 */ public float CameraFOVActionExtra;
+        /* 0x1F98 */ public float CameraFOVActionExtra;
         [NMS(Index = 89)]
-        /* 0x1F8C */ public float CombatBudgetModerator;
+        /* 0x1F9C */ public float CombatBudgetModerator;
         [NMS(Index = 88)]
-        /* 0x1F90 */ public float CooldownScoreBoostMax;
+        /* 0x1FA0 */ public float CooldownScoreBoostMax;
         [NMS(Index = 87)]
-        /* 0x1F94 */ public float CooldownScoreBoostMin;
+        /* 0x1FA4 */ public float CooldownScoreBoostMin;
         [NMS(Index = 82)]
-        /* 0x1F98 */ public float CoreStatScaleVarianceMul;
+        /* 0x1FA8 */ public float CoreStatScaleVarianceMul;
         [NMS(Index = 65)]
-        /* 0x1F9C */ public float DamageNumberDuration;
+        /* 0x1FAC */ public float DamageNumberDuration;
         [NMS(Index = 62)]
-        /* 0x1FA0 */ public float DamageNumberFontSizeLarge;
+        /* 0x1FB0 */ public float DamageNumberFontSizeLarge;
         [NMS(Index = 61)]
-        /* 0x1FA4 */ public float DamageNumberFontSizeNormal;
+        /* 0x1FB4 */ public float DamageNumberFontSizeNormal;
         [NMS(Index = 60)]
-        /* 0x1FA8 */ public float DamageNumberMinTimeSeparation;
+        /* 0x1FB8 */ public float DamageNumberMinTimeSeparation;
         [NMS(Index = 66)]
-        /* 0x1FAC */ public float DamageNumberOffset;
+        /* 0x1FBC */ public float DamageNumberOffset;
         [NMS(Index = 67)]
-        /* 0x1FB0 */ public float DamageNumberOffsetHeal;
+        /* 0x1FC0 */ public float DamageNumberOffsetHeal;
         [NMS(Index = 68)]
-        /* 0x1FB4 */ public float DamageNumberOffsetMiss;
+        /* 0x1FC4 */ public float DamageNumberOffsetMiss;
         [NMS(Index = 63)]
-        /* 0x1FB8 */ public float DamageNumberOutlineSize;
+        /* 0x1FC8 */ public float DamageNumberOutlineSize;
         [NMS(Index = 64)]
-        /* 0x1FBC */ public float DamageNumberShadowSize;
+        /* 0x1FCC */ public float DamageNumberShadowSize;
         [NMS(Index = 6)]
-        /* 0x1FC0 */ public int DiceGameWinningScore;
+        /* 0x1FD0 */ public int DiceGameWinningScore;
         [NMS(Index = 9)]
-        /* 0x1FC4 */ public float DiceMinSpeedForRandomForce;
+        /* 0x1FD4 */ public float DiceMinSpeedForRandomForce;
         [NMS(Index = 12)]
-        /* 0x1FC8 */ public float DiceRandomForceDirectionVariationRate;
+        /* 0x1FD8 */ public float DiceRandomForceDirectionVariationRate;
         [NMS(Index = 11)]
-        /* 0x1FCC */ public float DiceRandomForceOffset;
+        /* 0x1FDC */ public float DiceRandomForceOffset;
         [NMS(Index = 10)]
-        /* 0x1FD0 */ public float DiceRandomForceStrength;
+        /* 0x1FE0 */ public float DiceRandomForceStrength;
         [NMS(Index = 7)]
-        /* 0x1FD4 */ public float DiceShakerScale;
+        /* 0x1FE4 */ public float DiceShakerScale;
         [NMS(Index = 109)]
-        /* 0x1FD8 */ public float EffectMissScale;
+        /* 0x1FE8 */ public float EffectMissScale;
         [NMS(Index = 19)]
-        /* 0x1FDC */ public float FlyerBobSpeed;
+        /* 0x1FEC */ public float FlyerBobSpeed;
         [NMS(Index = 20)]
-        /* 0x1FE0 */ public float FlyerBobStrength;
+        /* 0x1FF0 */ public float FlyerBobStrength;
         [NMS(Index = 77)]
-        /* 0x1FE4 */ public float FlyingPetOffset;
+        /* 0x1FF4 */ public float FlyingPetOffset;
         [NMS(Index = 95)]
-        /* 0x1FE8 */ public float HealModerator;
+        /* 0x1FF8 */ public float HealModerator;
         [NMS(Index = 21)]
-        /* 0x1FEC */ public float ImpactShrink;
+        /* 0x1FFC */ public float ImpactShrink;
         [NMS(Index = 86)]
-        /* 0x1FF0 */ public int MaxCooldownBoost;
+        /* 0x2000 */ public int MaxCooldownBoost;
         [NMS(Index = 96)]
-        /* 0x1FF4 */ public float MaxMoveVariance;
+        /* 0x2004 */ public float MaxMoveVariance;
         [NMS(Index = 92)]
-        /* 0x1FF8 */ public float MissChanceBoost;
+        /* 0x2008 */ public float MissChanceBoost;
         [NMS(Index = 26)]
-        /* 0x1FFC */ public float MoveIntroTime;
+        /* 0x200C */ public float MoveIntroTime;
         [NMS(Index = 27)]
-        /* 0x2000 */ public float MoveIntroTimeVR;
+        /* 0x2010 */ public float MoveIntroTimeVR;
         [NMS(Index = 29)]
-        /* 0x2004 */ public float MoveOutroTime;
+        /* 0x2014 */ public float MoveOutroTime;
         [NMS(Index = 30)]
-        /* 0x2008 */ public float MoveOutroTimeVR;
+        /* 0x2018 */ public float MoveOutroTimeVR;
         [NMS(Index = 28)]
-        /* 0x200C */ public float MultiMovePause;
+        /* 0x201C */ public float MultiMovePause;
         [NMS(Index = 91)]
-        /* 0x2010 */ public float MultiPhaseMoveBoost;
+        /* 0x2020 */ public float MultiPhaseMoveBoost;
         [NMS(Index = 129)]
-        /* 0x2014 */ public float NearestTableAudioFadeTime;
+        /* 0x2024 */ public float NearestTableAudioFadeTime;
         [NMS(Index = 93)]
-        /* 0x2018 */ public float NegativeEffectBoost;
+        /* 0x2028 */ public float NegativeEffectBoost;
         [NMS(Index = 22)]
-        /* 0x201C */ public float NonAnimPetAttackSwell;
+        /* 0x202C */ public float NonAnimPetAttackSwell;
         [NMS(Index = 23)]
-        /* 0x2020 */ public float NonAnimPetAttackSwellSpring;
+        /* 0x2030 */ public float NonAnimPetAttackSwellSpring;
         [NMS(Index = 0)]
-        /* 0x2024 */ public float OutroTimer;
+        /* 0x2034 */ public float OutroTimer;
         [NMS(Index = 90)]
-        /* 0x2028 */ public float PercentageMovesBooster;
+        /* 0x2038 */ public float PercentageMovesBooster;
         [NMS(Index = 42)]
-        /* 0x202C */ public float PerPetXPAnimDelay;
+        /* 0x203C */ public float PerPetXPAnimDelay;
         [NMS(Index = 49)]
-        /* 0x2030 */ public float PetBaseCritChance;
+        /* 0x2040 */ public float PetBaseCritChance;
         [NMS(Index = 50)]
-        /* 0x2034 */ public float PetBaseCritDamageMul;
+        /* 0x2044 */ public float PetBaseCritDamageMul;
         [NMS(Index = 52)]
-        /* 0x2038 */ public float PetBaseDodgeChance;
+        /* 0x2048 */ public float PetBaseDodgeChance;
         [NMS(Index = 51)]
-        /* 0x203C */ public float PetBaseMissChance;
+        /* 0x204C */ public float PetBaseMissChance;
         [NMS(Index = 132)]
-        /* 0x2040 */ public int PetBattlerImpactScreenHeight;
+        /* 0x2050 */ public int PetBattlerImpactScreenHeight;
         [NMS(Index = 130)]
-        /* 0x2044 */ public float PetBattlerImpactScreenScale;
+        /* 0x2054 */ public float PetBattlerImpactScreenScale;
         [NMS(Index = 131)]
-        /* 0x2048 */ public int PetBattlerImpactScreenWidth;
+        /* 0x2058 */ public int PetBattlerImpactScreenWidth;
         [NMS(Index = 104)]
-        /* 0x204C */ public float PetDamageShakeAmplitude;
+        /* 0x205C */ public float PetDamageShakeAmplitude;
         [NMS(Index = 105)]
-        /* 0x2050 */ public float PetDamageShakeDampingStrength;
+        /* 0x2060 */ public float PetDamageShakeDampingStrength;
         [NMS(Index = 106)]
-        /* 0x2054 */ public float PetDamageShakePhaseHz;
+        /* 0x2064 */ public float PetDamageShakePhaseHz;
         [NMS(Index = 107)]
-        /* 0x2058 */ public float PetEffectCooldownTime;
+        /* 0x2068 */ public float PetEffectCooldownTime;
         [NMS(Index = 127)]
-        /* 0x205C */ public float PetHealthBarAnimSpeed;
+        /* 0x206C */ public float PetHealthBarAnimSpeed;
         [NMS(Index = 32)]
-        /* 0x2060 */ public float PetKOSwapDelayTime;
+        /* 0x2070 */ public float PetKOSwapDelayTime;
         [NMS(Index = 81)]
-        /* 0x2064 */ public int PetMaxLevel;
+        /* 0x2074 */ public int PetMaxLevel;
         [NMS(Index = 53)]
-        /* 0x2068 */ public float PetMissAgiltyBasedExtra;
+        /* 0x2078 */ public float PetMissAgiltyBasedExtra;
         [NMS(Index = 31)]
-        /* 0x206C */ public float PostMovePauseTime;
+        /* 0x207C */ public float PostMovePauseTime;
         [NMS(Index = 80)]
-        /* 0x2070 */ public float TeamStrengthMaxLevelsBelowHighestLevelMember;
+        /* 0x2080 */ public float TeamStrengthMaxLevelsBelowHighestLevelMember;
         [NMS(Index = 79)]
-        /* 0x2074 */ public float TeamStrengthShiftTowardsHighestLevelMemberFactor;
+        /* 0x2084 */ public float TeamStrengthShiftTowardsHighestLevelMemberFactor;
         [NMS(Index = 5)]
-        /* 0x2078 */ public float TriggerTeleportEffectForRemotePlayersOnTableInteractDistance;
+        /* 0x2088 */ public float TriggerTeleportEffectForRemotePlayersOnTableInteractDistance;
         [NMS(Index = 15)]
-        /* 0x207C */ public int TurnTimerFailureDecrement;
+        /* 0x208C */ public int TurnTimerFailureDecrement;
         [NMS(Index = 17)]
-        /* 0x2080 */ public int TurnTimerMaxValue;
+        /* 0x2090 */ public int TurnTimerMaxValue;
         [NMS(Index = 16)]
-        /* 0x2084 */ public int TurnTimerMinValue;
+        /* 0x2094 */ public int TurnTimerMinValue;
         [NMS(Index = 18)]
-        /* 0x2088 */ public int TurnTimerShowThreshold;
+        /* 0x2098 */ public int TurnTimerShowThreshold;
         [NMS(Index = 13)]
-        /* 0x208C */ public int TurnTimerStartingValue;
+        /* 0x209C */ public int TurnTimerStartingValue;
         [NMS(Index = 14)]
-        /* 0x2090 */ public int TurnTimerSuccessIncrement;
+        /* 0x20A0 */ public int TurnTimerSuccessIncrement;
         [NMS(Index = 45)]
-        /* 0x2094 */ public float XPBasicAward;
+        /* 0x20A4 */ public float XPBasicAward;
         [NMS(Index = 44)]
-        /* 0x2098 */ public float XPValueBaseMul;
+        /* 0x20A8 */ public float XPValueBaseMul;
         [NMS(Index = 118, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]
-        /* 0x209C */ public NMSString0x20[] PetAffinityInTextIconName;
+        /* 0x20AC */ public NMSString0x20[] PetAffinityInTextIconName;
         [NMS(Index = 116, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]
-        /* 0x21BC */ public NMSString0x20[] PetAffinityLocStub;
+        /* 0x21CC */ public NMSString0x20[] PetAffinityLocStub;
         [NMS(Index = 117, Size = 0x9, EnumType = typeof(GcPetBattlerTarget.PetBattlerTargetEnum))]
-        /* 0x22DC */ public NMSString0x20[] PetTargetLoc;
+        /* 0x22EC */ public NMSString0x20[] PetTargetLoc;
         [NMS(Index = 112, Size = 0x11, EnumType = typeof(GcBiomeType.BiomeEnum))]
-        /* 0x23FC */ public GcPetBattlerAffinity[] PetBiomeAffinities;
+        /* 0x240C */ public GcPetBattlerAffinity[] PetBiomeAffinities;
         [NMS(Index = 85, Size = 0xF, EnumType = typeof(GcPetBattlerStat.PetBattlerStatEnum))]
-        /* 0x240D */ public bool[] IsOffensiveStat;
+        /* 0x241D */ public bool[] IsOffensiveStat;
         [NMS(Index = 119, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]
-        /* 0x241C */ public GcPetBattlerAffinity[] PetAffinityStrongVersus;
+        /* 0x242C */ public GcPetBattlerAffinity[] PetAffinityStrongVersus;
         [NMS(Index = 120, Size = 0x9, EnumType = typeof(GcPetBattlerAffinity.PetBattlerAffinityEnum))]
-        /* 0x2425 */ public GcPetBattlerAffinity[] PetAffinityWeakVersus;
+        /* 0x2435 */ public GcPetBattlerAffinity[] PetAffinityWeakVersus;
         [NMS(Index = 3)]
-        /* 0x242E */ public bool ShowDebugStatus;
+        /* 0x243E */ public bool ShowDebugStatus;
     }
 }

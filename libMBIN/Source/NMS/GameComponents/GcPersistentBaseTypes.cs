@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC0C6BE0C9B6DDA83, NameHash = 0xF6DBD6AA)]
+    [NMS(GUID = 0xB59774097D7805A6, NameHash = 0xF6DBD6AA)]
     public class GcPersistentBaseTypes : NMSTemplate
     {
-        // size: 0xD
+        // size: 0x14
         public enum PersistentBaseTypesEnum : uint {
             HomePlanetBase,
             FreighterBase,
@@ -11,13 +11,20 @@ namespace libMBIN.NMS.GameComponents
             CivilianFreighterBase,
             FriendsPlanetBase,
             FriendsFreighterBase,
-            SpaceBase,
+            PlayerSpaceBase,
+            FriendsSpaceBase,
+            ExternalSpaceBase,
+            CivilianSpaceBase,
             GeneratedPlanetBase,
             GeneratedPlanetBaseEdits,
             PlayerShipBase,
             FriendsShipBase,
             UITempShipBase,
             ShipBaseScratch,
+            PlayerSpaceStationBase,
+            FriendsSpaceStationBase,
+            ExternalSpaceStationBase,
+            CivilianSpaceStationBase,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public PersistentBaseTypesEnum PersistentBaseTypes;

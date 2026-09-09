@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x56714E36E8C36983, NameHash = 0xD14E108F)]
+    [NMS(GUID = 0xE13DB2A0375F5567, NameHash = 0xD14E108F)]
     public class GcTileTypeSet : NMSTemplate
     {
         [NMS(Index = 1, Size = 0xC)]

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2B2A1C72F5E5EA30, NameHash = 0x16A83E22)]
+    [NMS(GUID = 0xF6809013A4D4360A, NameHash = 0x16A83E22)]
     public class TkMaterialClass : NMSTemplate
     {
-        // size: 0x48
+        // size: 0x49
         public enum MaterialClassEnum : byte {
             Any,
             Unknown,
@@ -22,6 +22,7 @@ namespace libMBIN.NMS.Toolkit
             DepthMaskUI,
             DoubleSided,
             DoublesidedAdditive,
+            FogVolume,
             Glow,
             GlowTranslucent,
             GreenOcclusionHighlight,

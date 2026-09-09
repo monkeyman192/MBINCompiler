@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD84DAB9706265BBA, NameHash = 0xD1A01C75)]
+    [NMS(GUID = 0xA27E08F5899F9476, NameHash = 0xD1A01C75)]
     public class GcMissionConditionPlanetStatLevel : NMSTemplate
     {
         [NMS(Index = 0)]

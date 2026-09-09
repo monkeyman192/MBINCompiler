@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA40E81AEDABE882E, NameHash = 0x5CD4231F)]
+    [NMS(GUID = 0x6BD4ACA62EBC2818, NameHash = 0x5CD4231F)]
     public class GcCutSceneData : NMSTemplate
     {
         [NMS(Index = 12)]

@@ -4,88 +4,88 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x6EFC34257862F134, NameHash = 0x557E3282)]
+    [NMS(GUID = 0xD1C8C9AF5945E2DB, NameHash = 0x557E3282)]
     public class GcSolarGenerationGlobals : NMSTemplate
     {
-        [NMS(Index = 68)]
-        /* 0x000 */ public GcPlanetRingData PlanetRingsMax;
         [NMS(Index = 67)]
+        /* 0x000 */ public GcPlanetRingData PlanetRingsMax;
+        [NMS(Index = 66)]
         /* 0x060 */ public GcPlanetRingData PlanetRingsMin;
         [NMS(Index = 3, MxmlName = "Solar System Size")]
         /* 0x0C0 */ public Vector3f SolarSystemSize;
-        [NMS(Index = 22)]
+        [NMS(Index = 21)]
         /* 0x0D0 */ public List<GcAsteroidSystemGenerationData> AsteroidSettings;
-        [NMS(Index = 42, MxmlName = "Common Asteroid Resource Fuel")]
+        [NMS(Index = 41, MxmlName = "Common Asteroid Resource Fuel")]
         /* 0x0E0 */ public NMSString0x10 CommonAsteroidResourceFuel;
-        [NMS(Index = 45, MxmlName = "Common Asteroid Resource Main")]
+        [NMS(Index = 44, MxmlName = "Common Asteroid Resource Main")]
         /* 0x0F0 */ public NMSString0x10 CommonAsteroidResourceMain;
-        [NMS(Index = 44, MxmlName = "Common Asteroid Resource Product")]
+        [NMS(Index = 43, MxmlName = "Common Asteroid Resource Product")]
         /* 0x100 */ public NMSString0x10 CommonAsteroidResourceProduct;
-        [NMS(Index = 46, MxmlName = "Common Asteroid Resource Secondary")]
+        [NMS(Index = 45, MxmlName = "Common Asteroid Resource Secondary")]
         /* 0x110 */ public NMSString0x10 CommonAsteroidResourceSecondary;
-        [NMS(Index = 47, MxmlName = "Rare Asteroid Data Product")]
+        [NMS(Index = 46, MxmlName = "Rare Asteroid Data Product")]
         /* 0x120 */ public NMSString0x10 RareAsteroidDataProduct;
-        [NMS(Index = 37, MxmlName = "Rare Asteroid Resource")]
+        [NMS(Index = 36, MxmlName = "Rare Asteroid Resource")]
         /* 0x130 */ public NMSString0x10 RareAsteroidResource;
-        [NMS(Index = 43, MxmlName = "Rare Asteroid Resource Fuel")]
+        [NMS(Index = 42, MxmlName = "Rare Asteroid Resource Fuel")]
         /* 0x140 */ public NMSString0x10 RareAsteroidResourceFuel;
-        [NMS(Index = 62)]
+        [NMS(Index = 61)]
         /* 0x150 */ public List<float> SpaceshipSpawnFreqMultipliers;
-        [NMS(Index = 63)]
+        [NMS(Index = 62)]
         /* 0x160 */ public List<GcAISpaceshipWeightingData> SpaceshipWeightings;
-        [NMS(Index = 58, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
+        [NMS(Index = 57, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x170 */ public float[] AbandonedSystemProbability;
-        [NMS(Index = 59, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
+        [NMS(Index = 58, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x184 */ public float[] EmptySystemProbability;
         [NMS(Index = 12, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x198 */ public float[] ExtremePlanetChance;
-        [NMS(Index = 60, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
+        [NMS(Index = 59, Size = 0x5, EnumType = typeof(GcGalaxyStarTypes.GalaxyStarTypeEnum))]
         /* 0x1AC */ public float[] PirateSystemProbability;
         [NMS(Index = 9, MxmlName = "Per Planet Generation Angle Change Degrees Range")]
         /* 0x1C0 */ public Vector2f PerPlanetGenerationAngleChangeDegreesRange;
         [NMS(Index = 10, MxmlName = "Per Planet Generation Elevation Change Degrees Range")]
         /* 0x1C8 */ public Vector2f PerPlanetGenerationElevationChangeDegreesRange;
-        [NMS(Index = 24, MxmlName = "Rare Asteroid Noise Range Lots Of Rares")]
+        [NMS(Index = 23, MxmlName = "Rare Asteroid Noise Range Lots Of Rares")]
         /* 0x1D0 */ public Vector2f RareAsteroidNoiseRangeLotsOfRares;
-        [NMS(Index = 23, MxmlName = "Rare Asteroid Noise Range Some Rares")]
+        [NMS(Index = 22, MxmlName = "Rare Asteroid Noise Range Some Rares")]
         /* 0x1D8 */ public Vector2f RareAsteroidNoiseRangeSomeRares;
         [NMS(Index = 11, MxmlName = "Spawn Point Station To Planet Interp Range")]
         /* 0x1E0 */ public Vector2f SpawnPointStationToPlanetInterpRange;
-        [NMS(Index = 55, MxmlName = "Asteroid Anomaly Avoid Radius")]
+        [NMS(Index = 54, MxmlName = "Asteroid Anomaly Avoid Radius")]
         /* 0x1E8 */ public float AsteroidAnomalyAvoidRadius;
-        [NMS(Index = 34, MxmlName = "Asteroid Lots Of Rares Odds")]
+        [NMS(Index = 33, MxmlName = "Asteroid Lots Of Rares Odds")]
         /* 0x1EC */ public float AsteroidLotsOfRaresOdds;
-        [NMS(Index = 31, MxmlName = "Asteroid Noise Octaves")]
+        [NMS(Index = 30, MxmlName = "Asteroid Noise Octaves")]
         /* 0x1F0 */ public int AsteroidNoiseOctaves;
-        [NMS(Index = 33, MxmlName = "Asteroid Some Rares Odds")]
+        [NMS(Index = 32, MxmlName = "Asteroid Some Rares Odds")]
         /* 0x1F4 */ public float AsteroidSomeRaresOdds;
-        [NMS(Index = 54, MxmlName = "Asteroid Space Station Avoid Radius")]
+        [NMS(Index = 53, MxmlName = "Asteroid Space Station Avoid Radius")]
         /* 0x1F8 */ public float AsteroidSpaceStationAvoidRadius;
-        [NMS(Index = 56, MxmlName = "Asteroid Warp In Area Avoid Radius")]
+        [NMS(Index = 55, MxmlName = "Asteroid Warp In Area Avoid Radius")]
         /* 0x1FC */ public float AsteroidWarpInAreaAvoidRadius;
-        [NMS(Index = 57)]
+        [NMS(Index = 56)]
         /* 0x200 */ public float AsteroidCreatureRichSystemProbability;
-        [NMS(Index = 61)]
+        [NMS(Index = 60)]
         /* 0x204 */ public int CivilianTraderSpaceshipsCacheCount;
-        [NMS(Index = 39, MxmlName = "Common Asteroid Max Resources")]
+        [NMS(Index = 38, MxmlName = "Common Asteroid Max Resources")]
         /* 0x208 */ public int CommonAsteroidMaxResources;
-        [NMS(Index = 38, MxmlName = "Common Asteroid Min Resources")]
+        [NMS(Index = 37, MxmlName = "Common Asteroid Min Resources")]
         /* 0x20C */ public int CommonAsteroidMinResources;
-        [NMS(Index = 41, MxmlName = "Common Asteroid Resource Fuel Multiplier")]
+        [NMS(Index = 40, MxmlName = "Common Asteroid Resource Fuel Multiplier")]
         /* 0x210 */ public int CommonAsteroidResourceFuelMultiplier;
-        [NMS(Index = 48, MxmlName = "Common Asteroid Resource Fuel Odds")]
+        [NMS(Index = 47, MxmlName = "Common Asteroid Resource Fuel Odds")]
         /* 0x214 */ public float CommonAsteroidResourceFuelOdds;
-        [NMS(Index = 50, MxmlName = "Common Asteroid Resource Product Odds")]
+        [NMS(Index = 49, MxmlName = "Common Asteroid Resource Product Odds")]
         /* 0x218 */ public float CommonAsteroidResourceProductOdds;
-        [NMS(Index = 52, MxmlName = "Common Asteroid Resource Secondary Odds")]
+        [NMS(Index = 51, MxmlName = "Common Asteroid Resource Secondary Odds")]
         /* 0x21C */ public float CommonAsteroidResourceSecondaryOdds;
         [NMS(Index = 0)]
         /* 0x220 */ public GcCombatTimerDifficultyOption CorruptSentinelBuildingCheckDifficulty;
-        [NMS(Index = 40, MxmlName = "Fuel Asteroid Multiplier")]
+        [NMS(Index = 39, MxmlName = "Fuel Asteroid Multiplier")]
         /* 0x224 */ public int FuelAsteroidMultiplier;
         [NMS(Index = 7, MxmlName = "Generate Forced Number Planets")]
         /* 0x228 */ public int GenerateForcedNumberPlanets;
-        [NMS(Index = 53, MxmlName = "Large Asteroid Fade Time")]
+        [NMS(Index = 52, MxmlName = "Large Asteroid Fade Time")]
         /* 0x22C */ public float LargeAsteroidFadeTime;
         [NMS(Index = 17, MxmlName = "Locator Scatter Chance Of Capital Ships")]
         /* 0x230 */ public int LocatorScatterChanceOfCapitalShips;
@@ -97,55 +97,53 @@ namespace libMBIN.NMS.Globals
         /* 0x23C */ public float LocatorScatterMaxDistanceFromPlanet;
         [NMS(Index = 14, MxmlName = "Locator Scatter Min Count")]
         /* 0x240 */ public int LocatorScatterMinCount;
-        [NMS(Index = 69)]
+        [NMS(Index = 68)]
         /* 0x244 */ public int PercentChanceExtraPrime;
-        [NMS(Index = 64)]
+        [NMS(Index = 63)]
         /* 0x248 */ public float PirateClassShipOverrideProbability;
-        [NMS(Index = 65)]
+        [NMS(Index = 64)]
         /* 0x24C */ public float PirateClassShipOverrideProbabilityPirateSystem;
         [NMS(Index = 19, MxmlName = "Planet Invalid Asteroid Zone")]
         /* 0x250 */ public float PlanetInvalidAsteroidZone;
-        [NMS(Index = 66)]
+        [NMS(Index = 65)]
         /* 0x254 */ public float PlanetRingProbability;
-        [NMS(Index = 51, MxmlName = "Rare Asteroid Data Product Odds")]
+        [NMS(Index = 50, MxmlName = "Rare Asteroid Data Product Odds")]
         /* 0x258 */ public float RareAsteroidDataProductOdds;
-        [NMS(Index = 36, MxmlName = "Rare Asteroid Max Resources")]
+        [NMS(Index = 35, MxmlName = "Rare Asteroid Max Resources")]
         /* 0x25C */ public int RareAsteroidMaxResources;
-        [NMS(Index = 35, MxmlName = "Rare Asteroid Min Resources")]
+        [NMS(Index = 34, MxmlName = "Rare Asteroid Min Resources")]
         /* 0x260 */ public int RareAsteroidMinResources;
-        [NMS(Index = 49, MxmlName = "Rare Asteroid Resource Fuel Odds")]
+        [NMS(Index = 48, MxmlName = "Rare Asteroid Resource Fuel Odds")]
         /* 0x264 */ public float RareAsteroidResourceFuelOdds;
-        [NMS(Index = 27, MxmlName = "Rare Asteroid System Odds Blue")]
+        [NMS(Index = 26, MxmlName = "Rare Asteroid System Odds Blue")]
         /* 0x268 */ public float RareAsteroidSystemOddsBlue;
-        [NMS(Index = 26, MxmlName = "Rare Asteroid System Odds Green")]
+        [NMS(Index = 25, MxmlName = "Rare Asteroid System Odds Green")]
         /* 0x26C */ public float RareAsteroidSystemOddsGreen;
-        [NMS(Index = 29, MxmlName = "Rare Asteroid System Odds Purple")]
+        [NMS(Index = 28, MxmlName = "Rare Asteroid System Odds Purple")]
         /* 0x270 */ public float RareAsteroidSystemOddsPurple;
-        [NMS(Index = 28, MxmlName = "Rare Asteroid System Odds Red")]
+        [NMS(Index = 27, MxmlName = "Rare Asteroid System Odds Red")]
         /* 0x274 */ public float RareAsteroidSystemOddsRed;
-        [NMS(Index = 25, MxmlName = "Rare Asteroid System Odds Yellow")]
+        [NMS(Index = 24, MxmlName = "Rare Asteroid System Odds Yellow")]
         /* 0x278 */ public float RareAsteroidSystemOddsYellow;
         [NMS(Index = 4, MxmlName = "Solar System Maximum Radius")]
         /* 0x27C */ public float SolarSystemMaximumRadius;
         [NMS(Index = 5, MxmlName = "Solar System Maximum Radius Massive")]
         /* 0x280 */ public float SolarSystemMaximumRadiusMassive;
-        [NMS(Index = 21, MxmlName = "Sparse Asteroid Spread")]
-        /* 0x284 */ public float SparseAsteroidSpread;
         [NMS(Index = 13, MxmlName = "Station Spawn Avoid Radius")]
-        /* 0x288 */ public float StationSpawnAvoidRadius;
-        [NMS(Index = 32, MxmlName = "Asteroid Scale Variance Curve")]
-        /* 0x28C */ public TkCurveType AsteroidScaleVarianceCurve;
-        [NMS(Index = 30, MxmlName = "Asteroids Check Noise")]
-        /* 0x28D */ public bool AsteroidsCheckNoise;
+        /* 0x284 */ public float StationSpawnAvoidRadius;
+        [NMS(Index = 31, MxmlName = "Asteroid Scale Variance Curve")]
+        /* 0x288 */ public TkCurveType AsteroidScaleVarianceCurve;
+        [NMS(Index = 29, MxmlName = "Asteroids Check Noise")]
+        /* 0x289 */ public bool AsteroidsCheckNoise;
         [NMS(Index = 20, MxmlName = "Asteroids Enabled")]
-        /* 0x28E */ public bool AsteroidsEnabled;
+        /* 0x28A */ public bool AsteroidsEnabled;
         [NMS(Index = 6, MxmlName = "Generate Maximum Solar System")]
-        /* 0x28F */ public bool GenerateMaximumSolarSystem;
+        /* 0x28B */ public bool GenerateMaximumSolarSystem;
         [NMS(Index = 2, MxmlName = "Massive Solar Systems")]
-        /* 0x290 */ public bool MassiveSolarSystems;
+        /* 0x28C */ public bool MassiveSolarSystems;
         [NMS(Index = 8, MxmlName = "Use Single Race Per System")]
-        /* 0x291 */ public bool UseSingleRacePerSystem;
+        /* 0x28D */ public bool UseSingleRacePerSystem;
         [NMS(Index = 1)]
-        /* 0x292 */ public bool UseCorruptSentinelLUT;
+        /* 0x28E */ public bool UseCorruptSentinelLUT;
     }
 }

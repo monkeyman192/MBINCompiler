@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2E35074F8808F5B4, NameHash = 0xAFEEEF4C)]
+    [NMS(GUID = 0x4A4B9CC956E9CAF2, NameHash = 0xAFEEEF4C)]
     public class GcCustomisationPreset : NMSTemplate
     {
         [NMS(Index = 2)]

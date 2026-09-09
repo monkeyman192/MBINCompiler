@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x368BED3876954F80, NameHash = 0x6F652B7C)]
+    [NMS(GUID = 0x21646089C8A19E50, NameHash = 0x6F652B7C)]
     public class GcRewardFactionStanding : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -13,5 +13,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x8 */ public GcMissionFaction Faction;
         [NMS(Index = 3)]
         /* 0xC */ public bool SetToMinBeforeAdd;
+        [NMS(Index = 4)]
+        /* 0xD */ public bool TryToUseMissionBoardOriginUA;
     }
 }

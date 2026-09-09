@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD830A202FB69E2A4, NameHash = 0xBADBD713)]
+    [NMS(GUID = 0xD0E9F0C76C08CEDA, NameHash = 0xBADBD713)]
     public class GcQuickMenuActions : NMSTemplate
     {
-        // size: 0x42
+        // size: 0x44
         public enum QuickMenuActionsEnum : uint {
             None,
             CallFreighter,
@@ -70,6 +70,8 @@ namespace libMBIN.NMS.GameComponents
             CorvetteEject,
             CorvetteAutoPilotMenu,
             CorvetteAutoPilot,
+            ShipEject,
+            SolarSystemMap,
             Invalid,
         }
         [NMS(Index = 0)]

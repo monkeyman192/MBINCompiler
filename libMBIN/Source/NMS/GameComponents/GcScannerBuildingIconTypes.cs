@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9BB4B5FF72A31CE4, NameHash = 0xF270419E)]
+    [NMS(GUID = 0xFBFFBA540F90E7BD, NameHash = 0xF270419E)]
     public class GcScannerBuildingIconTypes : NMSTemplate
     {
-        // size: 0x25
+        // size: 0x26
         public enum ScanBuildingIconTypeEnum : uint {
             None,
             Generic,
@@ -21,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceAnomaly,
             SpaceAtlas,
             ExternalBase,
+            ExternalSpaceBase,
             PlanetBaseTerminal,
             Nexus,
             AbandonedFreighter,

@@ -2,14 +2,14 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x442C9723F6E934A8, NameHash = 0xA5939A4D)]
+    [NMS(GUID = 0x264A3A50B482C105, NameHash = 0xA5939A4D)]
     public class GcPlayerCommunicatorMessage : NMSTemplate
     {
         [NMS(Index = 0)]
         /* 0x00 */ public NMSString0x20A Dialog;
         [NMS(Index = 4)]
         /* 0x20 */ public NMSString0x20A ShipHUDOverride;
-        // size: 0xE
+        // size: 0xF
         public enum CommunicatorTypeEnum : uint {
             HoloExplorer,
             HoloSceptic,
@@ -25,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             FleetExpeditionCaptain,
             LivingFrigate,
             SwarmHiveShip,
+            DeveloperComms,
         }
         [NMS(Index = 2)]
         /* 0x40 */ public CommunicatorTypeEnum CommunicatorType;

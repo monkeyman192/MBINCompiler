@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2420D614C64AB698, NameHash = 0x4737D48A)]
+    [NMS(GUID = 0x2CEDCCFC38E5F1A9, NameHash = 0x4737D48A)]
     public class TkMaterialData : NMSTemplate
     {
         [NMS(Index = 11)]

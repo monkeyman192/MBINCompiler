@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1A499BC355035FB8, NameHash = 0x78571124)]
+    [NMS(GUID = 0x554E3F0302161B2, NameHash = 0x78571124)]
     public class GcStoryPage : NMSTemplate
     {
         [NMS(Index = 4)]
@@ -17,11 +17,13 @@ namespace libMBIN.NMS.GameComponents
         /* 0x48 */ public NMSString0x10 Stat;
         [NMS(Index = 0)]
         /* 0x58 */ public GcInteractionType InteractionType;
-        [NMS(Index = 7)]
+        [NMS(Index = 8)]
         /* 0x5C */ public GcWikiTopicType WikiGridType;
         [NMS(Index = 2)]
         /* 0x60 */ public bool StatIsBitmask;
         [NMS(Index = 6)]
-        /* 0x61 */ public bool UseGridType;
+        /* 0x61 */ public bool UseEntryPaging;
+        [NMS(Index = 7)]
+        /* 0x62 */ public bool UseGridType;
     }
 }

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xFA38C9974430449, NameHash = 0xD39E0796)]
+    [NMS(GUID = 0x6B0DFEECC7D83E9F, NameHash = 0xD39E0796)]
     public class TkEmitterBillboardAlignment : NMSTemplate
     {
-        // size: 0x8
+        // size: 0xA
         public enum BillboardAlignmentEnum : uint {
             Screen,
             XLocal,
@@ -13,10 +13,18 @@ namespace libMBIN.NMS.Toolkit
             NegativeYLocal,
             NegativeZLocal,
             ScreenWorld,
+            Wind,
+            NegativeWind,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public BillboardAlignmentEnum BillboardAlignment;
+        // size: 0x3
+        public enum FacingEnum : uint {
+            Nothing,
+            Camera,
+            Wind,
+        }
         [NMS(Index = 1)]
-        /* 0x4 */ public bool CameraFacing;
+        /* 0x4 */ public FacingEnum Facing;
     }
 }

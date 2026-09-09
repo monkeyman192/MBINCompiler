@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x312A44BF71690DDF, NameHash = 0x9D01DDF7)]
+    [NMS(GUID = 0x97E1A6331853CAFC, NameHash = 0x9D01DDF7)]
     public class GcMissionConditionCombinedStatLevel : NMSTemplate
     {
         [NMS(Index = 0)]

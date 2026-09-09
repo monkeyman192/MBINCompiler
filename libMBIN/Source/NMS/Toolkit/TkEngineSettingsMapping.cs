@@ -2,20 +2,55 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xF01D6097CA50684, NameHash = 0x80B003EE)]
+    [NMS(GUID = 0x812F75C888BE75A6, NameHash = 0x80B003EE)]
     public class TkEngineSettingsMapping : NMSTemplate
     {
-        [NMS(Index = 4, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum CloudsMaxIterationsEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 4, Size = 0x4, EnumType = typeof(CloudsMaxIterationsEnum))]
         /* 0x00 */ public int[] CloudsMaxIterations;
-        [NMS(Index = 3, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum CloudsResolutionScaleEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 3, Size = 0x4, EnumType = typeof(CloudsResolutionScaleEnum))]
         /* 0x10 */ public float[] CloudsResolutionScale;
-        [NMS(Index = 2, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum IKFullBodyIterationsEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 2, Size = 0x4, EnumType = typeof(IKFullBodyIterationsEnum))]
         /* 0x20 */ public float[] IKFullBodyIterations;
-        [NMS(Index = 1, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum ReflectionProbesMultiplierEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 1, Size = 0x4, EnumType = typeof(ReflectionProbesMultiplierEnum))]
         /* 0x30 */ public float[] ReflectionProbesMultiplier;
-        [NMS(Index = 0, Size = 0x4, EnumType = typeof(TkGraphicsDetailTypes.GraphicDetailEnum))]
+        // size: 0x4
+        public enum ShadowMultiplierEnum {
+            Low,
+            Medium,
+            High,
+            Ultra,
+        }
+        [NMS(Index = 0, Size = 0x4, EnumType = typeof(ShadowMultiplierEnum))]
         /* 0x40 */ public float[] ShadowMultiplier;
-        [NMS(Index = 5, Size = 0x38, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
+        [NMS(Index = 5, Size = 0x3A, EnumType = typeof(TkEngineSettingTypes.EngineSettingEnum))]
         /* 0x50 */ public bool[] NeedsGameRestart;
     }
 }

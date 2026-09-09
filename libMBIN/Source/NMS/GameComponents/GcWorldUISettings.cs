@@ -1,29 +1,29 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x605867213E01AA73, NameHash = 0x6061AFB)]
+    [NMS(GUID = 0x9B475E1ECAB3946E, NameHash = 0x6061AFB)]
     public class GcWorldUISettings : NMSTemplate
     {
-        [NMS(Index = 18)]
-        /* 0x00 */ public float GameModeSelectorQuadOffset;
         [NMS(Index = 19)]
+        /* 0x00 */ public float GameModeSelectorQuadOffset;
+        [NMS(Index = 20)]
         /* 0x04 */ public float GameModeSelectorQuadOffsetV2;
-        [NMS(Index = 9)]
-        /* 0x08 */ public float HUDDefWorldQuadOffset;
         [NMS(Index = 10)]
-        /* 0x0C */ public float HUDDefWorldQuadOffsetV2;
+        /* 0x08 */ public float HUDDefWorldQuadOffset;
         [NMS(Index = 11)]
-        /* 0x10 */ public float HUDDefWorldQuadShipAddOffset;
+        /* 0x0C */ public float HUDDefWorldQuadOffsetV2;
         [NMS(Index = 12)]
-        /* 0x14 */ public float HUDDefWorldQuadShipAddOffsetV2;
-        [NMS(Index = 15)]
-        /* 0x18 */ public float HUDInterpSpeed;
-        [NMS(Index = 17)]
-        /* 0x1C */ public float HUDThresholdHorz;
-        [NMS(Index = 16)]
-        /* 0x20 */ public float HUDThresholdVert;
+        /* 0x10 */ public float HUDDefWorldQuadShipAddOffset;
         [NMS(Index = 13)]
-        /* 0x24 */ public float HUDWorldQuadScale;
+        /* 0x14 */ public float HUDDefWorldQuadShipAddOffsetV2;
+        [NMS(Index = 16)]
+        /* 0x18 */ public float HUDInterpSpeed;
+        [NMS(Index = 18)]
+        /* 0x1C */ public float HUDThresholdHorz;
+        [NMS(Index = 17)]
+        /* 0x20 */ public float HUDThresholdVert;
         [NMS(Index = 14)]
+        /* 0x24 */ public float HUDWorldQuadScale;
+        [NMS(Index = 15)]
         /* 0x28 */ public float HUDWorldQuadShipScale;
         [NMS(Index = 0)]
         /* 0x2C */ public float UIWorldQuadOffset;
@@ -43,5 +43,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x48 */ public float UIWorldQuadShipScale;
         [NMS(Index = 4)]
         /* 0x4C */ public float UIWorldQuadSideOffset;
+        [NMS(Index = 9)]
+        /* 0x50 */ public float UIWorldQuadVehicleScale;
     }
 }
