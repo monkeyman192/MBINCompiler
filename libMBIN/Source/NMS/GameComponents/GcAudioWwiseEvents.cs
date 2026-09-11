@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x22D98097929218FD, NameHash = 0x7A0D33C8)]
+    [NMS(GUID = 0xBCC085C5D5BE85C6, NameHash = 0x7A0D33C8)]
     public class GcAudioWwiseEvents : NMSTemplate
     {
-        // size: 0xBB9
+        // size: 0xBC0
         public enum AkEventEnum : uint {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
@@ -2090,6 +2090,15 @@ namespace libMBIN.NMS.GameComponents
             POD_BURST = 0x9731DC65,
             POD_SHAKE = 0xD1F704ED,
             POI_ASTEROID_BEACON = 0x5E085E18,
+            POI_ASTEROID_VARIANT_03 = 0xBC359C49,
+            POI_ASTEROID_VARIANT_04 = 0xBC359C4E,
+            POI_ASTEROID_VARIANT_07 = 0xBC359C4D,
+            POI_ASTEROID_VARIANT_09 = 0xBC359C43,
+            POI_ASTEROID_VARIANT_10 = 0xBD359E3D,
+            POI_ASTEROIDICE_VARIANT_03 = 0x5BAFA3F8,
+            POI_ASTEROIDICE_VARIANT_04 = 0x5BAFA3FF,
+            POI_ASTEROIDICE_VARIANT_08 = 0x5BAFA3F3,
+            POI_ASTEROIDICE_VARIANT_09 = 0x5BAFA3F2,
             POI_ASTEROIDS = 0x60D1A2D0,
             POI_ASTEROIDS_ICE = 0x1424B228,
             POI_ATLAS_BEACON_01 = 0x20E5FCAC,
@@ -2843,9 +2852,7 @@ namespace libMBIN.NMS.GameComponents
             VO_EXPEDITION_DIARY_23 = 0x94B46E84,
             VO_EXPEDITION_DIARY_24 = 0x94B46E83,
             VO_EXPEDITION_DIARY_25 = 0x94B46E82,
-            VO_EXPEDITION_DIARY_25_NX = 0x6BBA55F7,
             VO_EXPEDITION_DIARY_26 = 0x94B46E81,
-            VO_EXPEDITION_DIARY_26_PS = 0xE6941FCF,
             VO_EXPEDITION_DIARY_27 = 0x94B46E80,
             VO_EXPEDITION_DIARY_28 = 0x94B46E8F,
             VO_EXPEDITION_DIARY_29 = 0x94B46E8E,

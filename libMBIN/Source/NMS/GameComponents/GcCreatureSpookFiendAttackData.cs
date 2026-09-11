@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x19687E1F72E8E27C, NameHash = 0x64F53EE9)]
+    [NMS(GUID = 0x403F5109E42574FD, NameHash = 0x64F53EE9)]
     public class GcCreatureSpookFiendAttackData : NMSTemplate
     {
         [NMS(Index = 12)]

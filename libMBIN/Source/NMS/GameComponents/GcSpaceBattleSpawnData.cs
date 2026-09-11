@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x61283EA7B9AAF02C, NameHash = 0xC2E69AF7)]
+    [NMS(GUID = 0xC6453B25BBE332DD, NameHash = 0xC2E69AF7)]
     public class GcSpaceBattleSpawnData : NMSTemplate
     {
         [NMS(Index = 1)]
