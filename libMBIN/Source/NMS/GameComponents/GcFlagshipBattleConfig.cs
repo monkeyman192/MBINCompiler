@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x81D1804587B1E8F3, NameHash = 0xC8EEAC6B)]
+    [NMS(GUID = 0xCD30E91030EAD76B, NameHash = 0xC8EEAC6B)]
     public class GcFlagshipBattleConfig : NMSTemplate
     {
         [NMS(Index = 59)]
