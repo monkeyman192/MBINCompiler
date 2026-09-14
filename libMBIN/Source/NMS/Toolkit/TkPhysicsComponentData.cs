@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xCC9917C6A1061A2D, NameHash = 0xF90BB3)]
+    [NMS(GUID = 0xB12FB5C592B4DFB2, NameHash = 0xF90BB3)]
     public class TkPhysicsComponentData : NMSTemplate
     {
         [NMS(Index = 0)]

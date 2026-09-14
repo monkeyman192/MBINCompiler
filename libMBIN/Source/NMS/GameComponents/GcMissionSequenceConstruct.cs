@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xBD2D51525CDD5694, NameHash = 0xF0EFDF2B)]
+    [NMS(GUID = 0xCD96700E2E8CA6FC, NameHash = 0xF0EFDF2B)]
     public class GcMissionSequenceConstruct : NMSTemplate
     {
         [NMS(Index = 5)]
@@ -12,7 +12,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x20 */ public NMSString0x20A NoBaseInSystemScanEvent;
         [NMS(Index = 12)]
         /* 0x40 */ public GcBuildingPartSearchType Type;
-        [NMS(Index = 15)]
+        [NMS(Index = 16)]
         /* 0x58 */ public VariableSizeString DebugText;
         [NMS(Index = 0)]
         /* 0x68 */ public VariableSizeString Message;
@@ -36,7 +36,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0xDD */ public bool HideOtherPartsWhenBuyingBlueprints;
         [NMS(Index = 13)]
         /* 0xDE */ public bool OnlyPickFromKnown;
+        [NMS(Index = 15)]
+        /* 0xDF */ public bool PickRandomlyWithinPartGroups;
         [NMS(Index = 14)]
-        /* 0xDF */ public bool ShuffleParts;
+        /* 0xE0 */ public bool ShuffleParts;
     }
 }
