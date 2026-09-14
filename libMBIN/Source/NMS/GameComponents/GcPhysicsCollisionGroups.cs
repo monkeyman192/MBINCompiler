@@ -2,10 +2,10 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x58B2BD6A0EE3F91C, NameHash = 0x6A2D4F5A)]
+    [NMS(GUID = 0x935DD87C50B68110, NameHash = 0x6A2D4F5A)]
     public class GcPhysicsCollisionGroups : NMSTemplate
     {
-        // size: 0x54
+        // size: 0x55
         [Flags]
         public enum CollisionGroupEnum : uint {
             Normal,
@@ -76,6 +76,7 @@ namespace libMBIN.NMS.GameComponents
             Raycast_NavigationLink,
             Raycast_AiShipAtack,
             Raycast_AiShipTravel,
+            Raycast_AiShipMining,
             Raycast_ObstructionQuery,
             Raycast_GeometryProbe,
             Raycast_AirNavigationProbe,

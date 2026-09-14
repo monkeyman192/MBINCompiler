@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x815FC5B95C9D375E, NameHash = 0x7B0AA69F)]
+    [NMS(GUID = 0x4879CAC78E3684A2, NameHash = 0x7B0AA69F)]
     public class TkRepositionComponentData : NMSTemplate
     {
         [NMS(Index = 11)]
