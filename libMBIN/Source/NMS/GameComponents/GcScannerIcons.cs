@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xFC9851B70975C4F6, NameHash = 0xF873D7AD)]
+    [NMS(GUID = 0x44782764DBC434E5, NameHash = 0xF873D7AD)]
     public class GcScannerIcons : NMSTemplate
     {
         [NMS(Index = 44, Size = 0x57, EnumType = typeof(GcScannerIconTypes.ScanIconTypeEnum))]
@@ -136,63 +136,65 @@ namespace libMBIN.NMS.GameComponents
         /* 0x5848 */ public GcScannerIcon MissionEnterStation;
         [NMS(Index = 60)]
         /* 0x5880 */ public GcScannerIcon MonumentMarker;
+        [NMS(Index = 94)]
+        /* 0x58B8 */ public GcScannerIcon NeighbouringSystem;
         [NMS(Index = 61)]
-        /* 0x58B8 */ public GcScannerIcon NetworkPlayerMarker;
+        /* 0x58F0 */ public GcScannerIcon NetworkPlayerMarker;
         [NMS(Index = 62)]
-        /* 0x58F0 */ public GcScannerIcon NetworkPlayerMarkerShip;
+        /* 0x5928 */ public GcScannerIcon NetworkPlayerMarkerShip;
         [NMS(Index = 63)]
-        /* 0x5928 */ public GcScannerIcon NetworkPlayerMarkerVehicle;
+        /* 0x5960 */ public GcScannerIcon NetworkPlayerMarkerVehicle;
         [NMS(Index = 29)]
-        /* 0x5960 */ public GcScannerIcon NPC;
+        /* 0x5998 */ public GcScannerIcon NPC;
         [NMS(Index = 89)]
-        /* 0x5998 */ public GcScannerIcon OtherPlayerSettlement;
+        /* 0x59D0 */ public GcScannerIcon OtherPlayerSettlement;
         [NMS(Index = 85)]
-        /* 0x59D0 */ public GcScannerIcon Pet;
+        /* 0x5A08 */ public GcScannerIcon Pet;
         [NMS(Index = 87)]
-        /* 0x5A08 */ public GcScannerIcon PetActivity;
+        /* 0x5A40 */ public GcScannerIcon PetActivity;
         [NMS(Index = 84)]
-        /* 0x5A40 */ public GcScannerIcon PetInteraction;
+        /* 0x5A78 */ public GcScannerIcon PetInteraction;
         [NMS(Index = 86)]
-        /* 0x5A78 */ public GcScannerIcon PetSad;
+        /* 0x5AB0 */ public GcScannerIcon PetSad;
         [NMS(Index = 91)]
-        /* 0x5AB0 */ public GcScannerIcon PirateRaid;
+        /* 0x5AE8 */ public GcScannerIcon PirateRaid;
         [NMS(Index = 58)]
-        /* 0x5AE8 */ public GcScannerIcon PlanetPoleEast;
+        /* 0x5B20 */ public GcScannerIcon PlanetPoleEast;
         [NMS(Index = 56)]
-        /* 0x5B20 */ public GcScannerIcon PlanetPoleNorth;
+        /* 0x5B58 */ public GcScannerIcon PlanetPoleNorth;
         [NMS(Index = 57)]
-        /* 0x5B58 */ public GcScannerIcon PlanetPoleSouth;
+        /* 0x5B90 */ public GcScannerIcon PlanetPoleSouth;
         [NMS(Index = 59)]
-        /* 0x5B90 */ public GcScannerIcon PlanetPoleWest;
+        /* 0x5BC8 */ public GcScannerIcon PlanetPoleWest;
         [NMS(Index = 12)]
-        /* 0x5BC8 */ public GcScannerIcon PlayerBase;
+        /* 0x5C00 */ public GcScannerIcon PlayerBase;
         [NMS(Index = 8)]
-        /* 0x5C00 */ public GcScannerIcon PlayerFreighter;
+        /* 0x5C38 */ public GcScannerIcon PlayerFreighter;
         [NMS(Index = 88)]
-        /* 0x5C38 */ public GcScannerIcon PlayerSettlement;
+        /* 0x5C70 */ public GcScannerIcon PlayerSettlement;
         [NMS(Index = 14)]
-        /* 0x5C70 */ public GcScannerIcon PlayerSpaceBase;
+        /* 0x5CA8 */ public GcScannerIcon PlayerSpaceBase;
         [NMS(Index = 69)]
-        /* 0x5CA8 */ public GcScannerIcon PortalMarker;
+        /* 0x5CE0 */ public GcScannerIcon PortalMarker;
         [NMS(Index = 10)]
-        /* 0x5CE0 */ public GcScannerIcon PurchasableFrigate;
+        /* 0x5D18 */ public GcScannerIcon PurchasableFrigate;
         [NMS(Index = 30)]
-        /* 0x5D18 */ public GcScannerIcon SettlementNPC;
+        /* 0x5D50 */ public GcScannerIcon SettlementNPC;
         [NMS(Index = 2)]
-        /* 0x5D50 */ public GcScannerIcon Ship;
+        /* 0x5D88 */ public GcScannerIcon Ship;
         [NMS(Index = 22)]
-        /* 0x5D88 */ public GcScannerIcon ShipSmall;
+        /* 0x5DC0 */ public GcScannerIcon ShipSmall;
         [NMS(Index = 21)]
-        /* 0x5DC0 */ public GcScannerIcon SwarmHiveBattle;
+        /* 0x5DF8 */ public GcScannerIcon SwarmHiveBattle;
         [NMS(Index = 0)]
-        /* 0x5DF8 */ public GcScannerIcon TaggedBuilding;
+        /* 0x5E30 */ public GcScannerIcon TaggedBuilding;
         [NMS(Index = 1)]
-        /* 0x5E30 */ public GcScannerIcon TaggedPlanet;
+        /* 0x5E68 */ public GcScannerIcon TaggedPlanet;
         [NMS(Index = 26)]
-        /* 0x5E68 */ public GcScannerIcon TimedEvent;
+        /* 0x5EA0 */ public GcScannerIcon TimedEvent;
         [NMS(Index = 92)]
-        /* 0x5EA0 */ public GcScannerIcon UndiscoveredSpacePoi;
+        /* 0x5ED8 */ public GcScannerIcon UndiscoveredSpacePoi;
         [NMS(Index = 4)]
-        /* 0x5ED8 */ public GcScannerIcon VehicleGeneric;
+        /* 0x5F10 */ public GcScannerIcon VehicleGeneric;
     }
 }
