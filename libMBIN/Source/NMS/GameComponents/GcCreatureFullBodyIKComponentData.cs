@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6814616335D981C2, NameHash = 0x518EE963)]
+    [NMS(GUID = 0xBC9844B559A0A27D, NameHash = 0x518EE963)]
     public class GcCreatureFullBodyIKComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -12,28 +12,28 @@ namespace libMBIN.NMS.GameComponents
         /* 0x10 */ public List<GcIkPistonData> PistonData;
         [NMS(Index = 6)]
         /* 0x20 */ public float BodyMassWeight;
-        [NMS(Index = 22)]
-        /* 0x24 */ public float BodyPlannerMaxHeight;
-        [NMS(Index = 23)]
-        /* 0x28 */ public float BodyPlannerMaxPitch;
-        [NMS(Index = 21)]
-        /* 0x2C */ public float BodyPlannerMaxReach;
-        [NMS(Index = 24)]
-        /* 0x30 */ public float BodyPlannerMaxRoll;
         [NMS(Index = 26)]
-        /* 0x34 */ public float BodyPlannerMeanHeightWeight;
-        [NMS(Index = 27)]
-        /* 0x38 */ public float BodyPlannerPivotBlend;
-        [NMS(Index = 25)]
-        /* 0x3C */ public float BodyPlannerResponseTime;
+        /* 0x24 */ public float BodyPlannerGroundHeightFollow;
         [NMS(Index = 20)]
-        /* 0x40 */ public float BodyPlannerTargetReach;
+        /* 0x28 */ public float BodyPlannerLegExtensionTarget;
+        [NMS(Index = 27)]
+        /* 0x2C */ public float BodyPlannerLookAheadWeight;
+        [NMS(Index = 22)]
+        /* 0x30 */ public float BodyPlannerMaxBodyOffset;
+        [NMS(Index = 23)]
+        /* 0x34 */ public float BodyPlannerMaxPitch;
+        [NMS(Index = 24)]
+        /* 0x38 */ public float BodyPlannerMaxRoll;
+        [NMS(Index = 21)]
+        /* 0x3C */ public float BodyPlannerOverreachThreshold;
+        [NMS(Index = 25)]
+        /* 0x40 */ public float BodyPlannerResponseTime;
         [NMS(Index = 16)]
         /* 0x44 */ public float FootAngleSpeed;
         [NMS(Index = 12)]
         /* 0x48 */ public float FootPlantSpringTime;
         [NMS(Index = 18)]
-        /* 0x4C */ public float FootTargetMaxReach;
+        /* 0x4C */ public float FootTargetReachLimit;
         [NMS(Index = 13)]
         /* 0x50 */ public float FootTerrainHeightSmoothTime;
         [NMS(Index = 17)]

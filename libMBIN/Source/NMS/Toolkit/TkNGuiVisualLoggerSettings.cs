@@ -2,17 +2,17 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x2DAA7F9A9C76181B, NameHash = 0x81F2F867)]
+    [NMS(GUID = 0x28220BDCEC2CA516, NameHash = 0x81F2F867)]
     public class TkNGuiVisualLoggerSettings : NMSTemplate
     {
-        [NMS(Index = 12)]
-        /* 0x00 */ public List<NMSString0x80> FilterCategories;
-        [NMS(Index = 11)]
-        /* 0x10 */ public List<NMSString0x80> FilterComponents;
         [NMS(Index = 14)]
-        /* 0x20 */ public List<NMSString0x80> FilterJoints;
+        /* 0x00 */ public List<NMSString0x80> FilterJoints;
+        [NMS(Index = 12)]
+        /* 0x10 */ public List<NMSString0x80> HiddenCategories;
+        [NMS(Index = 11)]
+        /* 0x20 */ public List<NMSString0x80> HiddenComponents;
         [NMS(Index = 13)]
-        /* 0x30 */ public List<NMSString0x80> FilterTracks;
+        /* 0x30 */ public List<NMSString0x80> HiddenTracks;
         [NMS(Index = 10)]
         /* 0x40 */ public float AxisSize;
         [NMS(Index = 9)]
