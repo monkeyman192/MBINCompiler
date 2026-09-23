@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x6EFB9CE8F381D999, NameHash = 0x6F13BCF9)]
+    [NMS(GUID = 0x8C24548B489A52D6, NameHash = 0x6F13BCF9)]
     public class GcAlienPuzzleCategory : NMSTemplate
     {
-        // size: 0x3C
+        // size: 0x3D
         public enum AlienPuzzleCategoryEnum : uint {
             Default,
             GuildTraderNone,
@@ -49,6 +49,7 @@ namespace libMBIN.NMS.GameComponents
             MoodVeryNegative,
             Proc,
             FirstAbandonedFreighter,
+            CompletedAbandonedFreighter,
             StandardAbandonedFreighter,
             BiomeSwamp,
             BiomeLava,

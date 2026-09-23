@@ -2,10 +2,10 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x935DD87C50B68110, NameHash = 0x6A2D4F5A)]
+    [NMS(GUID = 0x5EC82AAA9D1660DB, NameHash = 0x6A2D4F5A)]
     public class GcPhysicsCollisionGroups : NMSTemplate
     {
-        // size: 0x55
+        // size: 0x57
         [Flags]
         public enum CollisionGroupEnum : uint {
             Normal,
@@ -18,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Asteroid,
             Player,
             NetworkPlayer,
+            NetworkPlayerNoCargoPermission,
             NPC,
             Ragdoll,
             Vehicle,
@@ -34,6 +35,7 @@ namespace libMBIN.NMS.GameComponents
             Shield,
             Loot,
             PlayerMovableObject,
+            NetworkedObjectNoPermission,
             SolarSystemMapObject,
             CollidesWithNothing,
             CollidesWithEverything,
