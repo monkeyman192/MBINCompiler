@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xF977893C581A9F6A, NameHash = 0xD9D7367B)]
+    [NMS(GUID = 0x8B6D9252B25E5EA7, NameHash = 0xD9D7367B)]
     public class GcMissionConditionHasSettlementBuilding : NMSTemplate
     {
         [NMS(Index = 2)]
@@ -11,7 +11,9 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4 */ public bool AnyBuildingClass;
         [NMS(Index = 0)]
         /* 0x5 */ public GcBuildingClassification BuildingClass;
+        [NMS(Index = 4)]
+        /* 0x6 */ public bool CheckAllSettlements;
         [NMS(Index = 3)]
-        /* 0x6 */ public bool RequireComplete;
+        /* 0x7 */ public bool RequireComplete;
     }
 }
