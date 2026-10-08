@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x106EFD10459DFB7A, NameHash = 0xD1FA1B1C)]
+    [NMS(GUID = 0xA6C82A04580847F2, NameHash = 0xD1FA1B1C)]
     public class GcUIGlobals : NMSTemplate
     {
         [NMS(Index = 1109)]
@@ -567,2399 +567,2399 @@ namespace libMBIN.NMS.Globals
         /* 0x8058 */ public List<GcFilename> StatIcons;
         [NMS(Index = 481)]
         /* 0x8068 */ public List<TkModelRendererData> VehicleTypeRepairCamera;
-        [NMS(Index = 727, Size = 0x15, EnumType = typeof(GcPlayerWeapons.WeaponModeEnum))]
-        /* 0x8078 */ public float[] CrosshairTargetLockSizeSpecific;
         [NMS(Index = 981)]
-        /* 0x80CC */ public GcWorldUISettings WorldUISettings;
+        /* 0x8078 */ public GcWorldUISettings WorldUISettings;
+        [NMS(Index = 727, Size = 0x15, EnumType = typeof(GcPlayerWeapons.WeaponModeEnum))]
+        /* 0x80D8 */ public float[] CrosshairTargetLockSizeSpecific;
         [NMS(Index = 69, Size = 0xF, EnumType = typeof(GcWonderCreatureCategory.WonderCreatureCategoryEnum))]
-        /* 0x8120 */ public float[] WonderValueModifiersCreature;
+        /* 0x812C */ public float[] WonderValueModifiersCreature;
         [NMS(Index = 68, Size = 0xB, EnumType = typeof(GcWonderPlanetCategory.WonderPlanetCategoryEnum))]
-        /* 0x815C */ public float[] WonderValueModifiersPlanet;
+        /* 0x8168 */ public float[] WonderValueModifiersPlanet;
         [NMS(Index = 70, Size = 0x8, EnumType = typeof(GcWonderFloraCategory.WonderFloraCategoryEnum))]
-        /* 0x8188 */ public float[] WonderValueModifiersFlora;
+        /* 0x8194 */ public float[] WonderValueModifiersFlora;
         [NMS(Index = 71, Size = 0x8, EnumType = typeof(GcWonderMineralCategory.WonderMineralCategoryEnum))]
-        /* 0x81A8 */ public float[] WonderValueModifiersMineral;
+        /* 0x81B4 */ public float[] WonderValueModifiersMineral;
         [NMS(Index = 1417)]
-        /* 0x81C8 */ public GcInventorySlotActionData BuildProductSlotAction;
+        /* 0x81D4 */ public GcInventorySlotActionData BuildProductSlotAction;
         [NMS(Index = 1418)]
-        /* 0x81E4 */ public GcInventorySlotActionData ChargeSlotAction;
+        /* 0x81F0 */ public GcInventorySlotActionData ChargeSlotAction;
         [NMS(Index = 1416)]
-        /* 0x8200 */ public GcInventorySlotActionData InstallTechSlotAction;
+        /* 0x820C */ public GcInventorySlotActionData InstallTechSlotAction;
         [NMS(Index = 1422)]
-        /* 0x821C */ public GcInventorySlotActionData InventoryHintAction;
+        /* 0x8228 */ public GcInventorySlotActionData InventoryHintAction;
         [NMS(Index = 1423)]
-        /* 0x8238 */ public GcInventorySlotActionData InventoryHintActionNoGlow;
+        /* 0x8244 */ public GcInventorySlotActionData InventoryHintActionNoGlow;
         [NMS(Index = 1421)]
-        /* 0x8254 */ public GcInventorySlotActionData NewSlotPulseAction;
+        /* 0x8260 */ public GcInventorySlotActionData NewSlotPulseAction;
         [NMS(Index = 1420)]
-        /* 0x8270 */ public GcInventorySlotActionData NewSlotRevealAction;
+        /* 0x827C */ public GcInventorySlotActionData NewSlotRevealAction;
         [NMS(Index = 1419)]
-        /* 0x828C */ public GcInventorySlotActionData RepairSlotAction;
+        /* 0x8298 */ public GcInventorySlotActionData RepairSlotAction;
         [NMS(Index = 1)]
-        /* 0x82A8 */ public GcInteractionDof InteractionDOFDisabled;
+        /* 0x82B4 */ public GcInteractionDof InteractionDOFDisabled;
         [NMS(Index = 820)]
-        /* 0x82BC */ public TkNGuiRectanglePulseEffect PulseBarData;
+        /* 0x82C8 */ public TkNGuiRectanglePulseEffect PulseBarData;
         [NMS(Index = 821)]
-        /* 0x82CC */ public TkNGuiRectanglePulseEffect PulseIconData;
+        /* 0x82D8 */ public TkNGuiRectanglePulseEffect PulseIconData;
         [NMS(Index = 731)]
-        /* 0x82DC */ public TkHitCurveData CrosshairLeadHitCurve;
+        /* 0x82E8 */ public TkHitCurveData CrosshairLeadHitCurve;
         [NMS(Index = 1412)]
-        /* 0x82E8 */ public GcDiscoveryHelperTimings DiscoveryHelperTimings;
+        /* 0x82F4 */ public GcDiscoveryHelperTimings DiscoveryHelperTimings;
         [NMS(Index = 732)]
-        /* 0x82F4 */ public TkHitCurveData ShootableHitCurve;
+        /* 0x8300 */ public TkHitCurveData ShootableHitCurve;
         [NMS(Index = 174)]
-        /* 0x8300 */ public Vector2f BinocularEdgeFade;
+        /* 0x830C */ public Vector2f BinocularEdgeFade;
         [NMS(Index = 482)]
-        /* 0x8308 */ public Vector2f BinocularsDiscoveryPos;
+        /* 0x8314 */ public Vector2f BinocularsDiscoveryPos;
         [NMS(Index = 385)]
-        /* 0x8310 */ public Vector2f CompassCentre;
+        /* 0x831C */ public Vector2f CompassCentre;
         [NMS(Index = 102)]
-        /* 0x8318 */ public Vector2f ControlsPageParallax;
+        /* 0x8324 */ public Vector2f ControlsPageParallax;
         [NMS(Index = 547)]
-        /* 0x8320 */ public Vector2f CursorlessDialogPageCursorOffset;
+        /* 0x832C */ public Vector2f CursorlessDialogPageCursorOffset;
         [NMS(Index = 634)]
-        /* 0x8328 */ public Vector2f DamageNumberSideSpeed;
+        /* 0x8334 */ public Vector2f DamageNumberSideSpeed;
         [NMS(Index = 545)]
-        /* 0x8330 */ public Vector2f DialogPageCursorOffset;
+        /* 0x833C */ public Vector2f DialogPageCursorOffset;
         [NMS(Index = 1318)]
-        /* 0x8338 */ public Vector2f HUDMarkerCompassPrimaryIndicatorOffset;
+        /* 0x8344 */ public Vector2f HUDMarkerCompassPrimaryIndicatorOffset;
         [NMS(Index = 1317)]
-        /* 0x8340 */ public Vector2f HUDMarkerPrimaryIndicatorOffset;
+        /* 0x834C */ public Vector2f HUDMarkerPrimaryIndicatorOffset;
         [NMS(Index = 497)]
-        /* 0x8348 */ public Vector2f HUDPlayerSentinelPulseFreq;
+        /* 0x8354 */ public Vector2f HUDPlayerSentinelPulseFreq;
         [NMS(Index = 498)]
-        /* 0x8350 */ public Vector2f HUDPlayerSentinelPulseSize;
+        /* 0x835C */ public Vector2f HUDPlayerSentinelPulseSize;
         [NMS(Index = 856)]
-        /* 0x8358 */ public Vector2f HUDPlayerTrackArrowDamageGlowSize;
+        /* 0x8364 */ public Vector2f HUDPlayerTrackArrowDamageGlowSize;
         [NMS(Index = 858)]
-        /* 0x8360 */ public Vector2f HUDPlayerTrackArrowEnergyShieldGlowSize;
+        /* 0x836C */ public Vector2f HUDPlayerTrackArrowEnergyShieldGlowSize;
         [NMS(Index = 845)]
-        /* 0x8368 */ public Vector2f HUDPlayerTrackArrowEnergyShieldSize;
+        /* 0x8374 */ public Vector2f HUDPlayerTrackArrowEnergyShieldSize;
         [NMS(Index = 840)]
-        /* 0x8370 */ public Vector2f HUDPlayerTrackArrowHealthSize;
+        /* 0x837C */ public Vector2f HUDPlayerTrackArrowHealthSize;
         [NMS(Index = 793)]
-        /* 0x8378 */ public Vector2f HUDPlayerTrackArrowIconPulseSize;
+        /* 0x8384 */ public Vector2f HUDPlayerTrackArrowIconPulseSize;
         [NMS(Index = 805)]
-        /* 0x8380 */ public Vector2f HUDPlayerTrackIconOffset;
+        /* 0x838C */ public Vector2f HUDPlayerTrackIconOffset;
         [NMS(Index = 1304)]
-        /* 0x8388 */ public Vector2f HUDTargetHealthIconOffset;
+        /* 0x8394 */ public Vector2f HUDTargetHealthIconOffset;
         [NMS(Index = 1302)]
-        /* 0x8390 */ public Vector2f HUDTargetHealthOffset;
+        /* 0x839C */ public Vector2f HUDTargetHealthOffset;
         [NMS(Index = 1303)]
-        /* 0x8398 */ public Vector2f HUDTargetHealthSize;
+        /* 0x83A4 */ public Vector2f HUDTargetHealthSize;
         [NMS(Index = 1085)]
-        /* 0x83A0 */ public Vector2f InteractionLabelOffset;
+        /* 0x83AC */ public Vector2f InteractionLabelOffset;
         [NMS(Index = 1086)]
-        /* 0x83A8 */ public Vector2f InteractionLabelOffset_1;
+        /* 0x83B4 */ public Vector2f InteractionLabelOffset_1;
         [NMS(Index = 1089)]
-        /* 0x83B0 */ public Vector2f InteractionLabelScreenMax;
+        /* 0x83BC */ public Vector2f InteractionLabelScreenMax;
         [NMS(Index = 1088)]
-        /* 0x83B8 */ public Vector2f InteractionLabelScreenMin;
+        /* 0x83C4 */ public Vector2f InteractionLabelScreenMin;
         [NMS(Index = 1090)]
-        /* 0x83C0 */ public Vector2f InteractionLabelSize;
+        /* 0x83CC */ public Vector2f InteractionLabelSize;
         [NMS(Index = 1092)]
-        /* 0x83C8 */ public Vector2f InteractionLabelTouchAreaMax;
+        /* 0x83D4 */ public Vector2f InteractionLabelTouchAreaMax;
         [NMS(Index = 1091)]
-        /* 0x83D0 */ public Vector2f InteractionLabelTouchAreaMin;
+        /* 0x83DC */ public Vector2f InteractionLabelTouchAreaMin;
         [NMS(Index = 1406)]
-        /* 0x83D8 */ public Vector2f InteractionWorldParallax;
+        /* 0x83E4 */ public Vector2f InteractionWorldParallax;
         [NMS(Index = 546)]
-        /* 0x83E0 */ public Vector2f IntermediateInteractionPageCursorOffset;
+        /* 0x83EC */ public Vector2f IntermediateInteractionPageCursorOffset;
         [NMS(Index = 215)]
-        /* 0x83E8 */ public Vector2f InWorldGameGuiAlignment;
+        /* 0x83F4 */ public Vector2f InWorldGameGuiAlignment;
         [NMS(Index = 150)]
-        /* 0x83F0 */ public Vector2f InWorldInteractLabelAlignment;
+        /* 0x83FC */ public Vector2f InWorldInteractLabelAlignment;
         [NMS(Index = 214)]
-        /* 0x83F8 */ public Vector2f InWorldNGuiParallax;
+        /* 0x8404 */ public Vector2f InWorldNGuiParallax;
         [NMS(Index = 530)]
-        /* 0x8400 */ public Vector2f MainMenuSaveIconPosition;
+        /* 0x840C */ public Vector2f MainMenuSaveIconPosition;
         [NMS(Index = 205)]
-        /* 0x8408 */ public Vector2f MarkerDistanceVRAlignment;
+        /* 0x8414 */ public Vector2f MarkerDistanceVRAlignment;
         [NMS(Index = 496)]
-        /* 0x8410 */ public Vector2f ModelViewWorldParallax;
+        /* 0x841C */ public Vector2f ModelViewWorldParallax;
         [NMS(Index = 1403)]
-        /* 0x8418 */ public Vector2f NGuiMax2DParallax;
+        /* 0x8424 */ public Vector2f NGuiMax2DParallax;
         [NMS(Index = 1402)]
-        /* 0x8420 */ public Vector2f NGuiMin2DParallax;
+        /* 0x842C */ public Vector2f NGuiMin2DParallax;
         [NMS(Index = 1404)]
-        /* 0x8428 */ public Vector2f NGuiModelParallax;
+        /* 0x8434 */ public Vector2f NGuiModelParallax;
         [NMS(Index = 1405)]
-        /* 0x8430 */ public Vector2f NGuiShipInteractParallax;
+        /* 0x843C */ public Vector2f NGuiShipInteractParallax;
         [NMS(Index = 1220)]
-        /* 0x8438 */ public Vector2f NGuiTouchPadSensitivity;
+        /* 0x8444 */ public Vector2f NGuiTouchPadSensitivity;
         [NMS(Index = 947)]
-        /* 0x8440 */ public Vector2f NotificationMissionHintPauseTime;
+        /* 0x844C */ public Vector2f NotificationMissionHintPauseTime;
         [NMS(Index = 948)]
-        /* 0x8448 */ public Vector2f NotificationMissionHintPauseTimeCritical;
+        /* 0x8454 */ public Vector2f NotificationMissionHintPauseTimeCritical;
         [NMS(Index = 949)]
-        /* 0x8450 */ public Vector2f NotificationMissionHintPauseTimeSecondary;
+        /* 0x845C */ public Vector2f NotificationMissionHintPauseTimeSecondary;
         [NMS(Index = 486)]
-        /* 0x8458 */ public Vector2f PersonalRefinerInputPos;
+        /* 0x8464 */ public Vector2f PersonalRefinerInputPos;
         [NMS(Index = 487)]
-        /* 0x8460 */ public Vector2f PersonalRefinerOutputPos;
+        /* 0x846C */ public Vector2f PersonalRefinerOutputPos;
         [NMS(Index = 101)]
-        /* 0x8468 */ public Vector2f PickingCursorOffset;
+        /* 0x8474 */ public Vector2f PickingCursorOffset;
         [NMS(Index = 983)]
-        /* 0x8470 */ public Vector2f PlanetLabelOffset;
+        /* 0x847C */ public Vector2f PlanetLabelOffset;
         [NMS(Index = 987)]
-        /* 0x8478 */ public Vector2f PlanetLineOffset;
+        /* 0x8484 */ public Vector2f PlanetLineOffset;
         [NMS(Index = 984)]
-        /* 0x8480 */ public Vector2f PlanetMeasureOffset;
+        /* 0x848C */ public Vector2f PlanetMeasureOffset;
         [NMS(Index = 985)]
-        /* 0x8488 */ public Vector2f PlanetMeasureOffsetBigText;
+        /* 0x8494 */ public Vector2f PlanetMeasureOffsetBigText;
         [NMS(Index = 986)]
-        /* 0x8490 */ public Vector2f PlanetMeasureOffsetMoonExtra;
+        /* 0x849C */ public Vector2f PlanetMeasureOffsetMoonExtra;
         [NMS(Index = 495)]
-        /* 0x8498 */ public Vector2f RefinerParallax;
+        /* 0x84A4 */ public Vector2f RefinerParallax;
         [NMS(Index = 529)]
-        /* 0x84A0 */ public Vector2f SaveIconPosition;
+        /* 0x84AC */ public Vector2f SaveIconPosition;
         [NMS(Index = 1084)]
-        /* 0x84A8 */ public Vector2f ScanLabelOffset;
+        /* 0x84B4 */ public Vector2f ScanLabelOffset;
         [NMS(Index = 1030)]
-        /* 0x84B0 */ public Vector2f TargetScreenCamOffset;
+        /* 0x84BC */ public Vector2f TargetScreenCamOffset;
         [NMS(Index = 783)]
-        /* 0x84B8 */ public Vector2f TrackCriticalHitOffset;
+        /* 0x84C4 */ public Vector2f TrackCriticalHitOffset;
         [NMS(Index = 747)]
-        /* 0x84C0 */ public Vector2f TrackTypeIconOffset;
+        /* 0x84CC */ public Vector2f TrackTypeIconOffset;
         [NMS(Index = 1437)]
-        /* 0x84C8 */ public int AbandonedFreighterAirlockRoomNumber;
+        /* 0x84D4 */ public int AbandonedFreighterAirlockRoomNumber;
         [NMS(Index = 1455)]
-        /* 0x84CC */ public float AccessibleUIHUDPopupScale;
+        /* 0x84D8 */ public float AccessibleUIHUDPopupScale;
         [NMS(Index = 1453)]
-        /* 0x84D0 */ public float AccessibleUIPopupScale;
+        /* 0x84DC */ public float AccessibleUIPopupScale;
         [NMS(Index = 188)]
-        /* 0x84D4 */ public float AlignmentRequiredToDisableFrostedGlass;
+        /* 0x84E0 */ public float AlignmentRequiredToDisableFrostedGlass;
         [NMS(Index = 1365)]
-        /* 0x84D8 */ public float AltimeterLineSpacing;
+        /* 0x84E4 */ public float AltimeterLineSpacing;
         [NMS(Index = 1368)]
-        /* 0x84DC */ public float AltimeterMax;
+        /* 0x84E8 */ public float AltimeterMax;
         [NMS(Index = 1367)]
-        /* 0x84E0 */ public float AltimeterMin;
+        /* 0x84EC */ public float AltimeterMin;
         [NMS(Index = 1370)]
-        /* 0x84E4 */ public float AltimeterMinValue;
+        /* 0x84F0 */ public float AltimeterMinValue;
         [NMS(Index = 1364)]
-        /* 0x84E8 */ public float AltimeterResolution;
+        /* 0x84F4 */ public float AltimeterResolution;
         [NMS(Index = 1369)]
-        /* 0x84EC */ public float AltimeterTextSize;
+        /* 0x84F8 */ public float AltimeterTextSize;
         [NMS(Index = 1366)]
-        /* 0x84F0 */ public float AltimeterWidth;
+        /* 0x84FC */ public float AltimeterWidth;
         [NMS(Index = 1059)]
-        /* 0x84F4 */ public float AlwaysOnHazardMultiplierCold;
+        /* 0x8500 */ public float AlwaysOnHazardMultiplierCold;
         [NMS(Index = 1057)]
-        /* 0x84F8 */ public float AlwaysOnHazardMultiplierHeat;
+        /* 0x8504 */ public float AlwaysOnHazardMultiplierHeat;
         [NMS(Index = 1058)]
-        /* 0x84FC */ public float AlwaysOnHazardMultiplierRad;
+        /* 0x8508 */ public float AlwaysOnHazardMultiplierRad;
         [NMS(Index = 1064)]
-        /* 0x8500 */ public float AlwaysOnHazardMultiplierSpook;
+        /* 0x850C */ public float AlwaysOnHazardMultiplierSpook;
         [NMS(Index = 1056)]
-        /* 0x8504 */ public float AlwaysOnHazardMultiplierTox;
+        /* 0x8510 */ public float AlwaysOnHazardMultiplierTox;
         [NMS(Index = 1054)]
-        /* 0x8508 */ public float AlwaysOnHazardStrengthCold;
+        /* 0x8514 */ public float AlwaysOnHazardStrengthCold;
         [NMS(Index = 1052)]
-        /* 0x850C */ public float AlwaysOnHazardStrengthHeat;
+        /* 0x8518 */ public float AlwaysOnHazardStrengthHeat;
         [NMS(Index = 1053)]
-        /* 0x8510 */ public float AlwaysOnHazardStrengthRad;
+        /* 0x851C */ public float AlwaysOnHazardStrengthRad;
         [NMS(Index = 1055)]
-        /* 0x8514 */ public float AlwaysOnHazardStrengthSpook;
+        /* 0x8520 */ public float AlwaysOnHazardStrengthSpook;
         [NMS(Index = 1051)]
-        /* 0x8518 */ public float AlwaysOnHazardStrengthTox;
+        /* 0x8524 */ public float AlwaysOnHazardStrengthTox;
         [NMS(Index = 1050)]
-        /* 0x851C */ public float AlwaysOnHazardThreshold;
+        /* 0x8528 */ public float AlwaysOnHazardThreshold;
         [NMS(Index = 689)]
-        /* 0x8520 */ public float AlwaysShowIconFadeDistance;
+        /* 0x852C */ public float AlwaysShowIconFadeDistance;
         [NMS(Index = 691)]
-        /* 0x8524 */ public float AlwaysShowIconFadeDistanceSpacePOI;
+        /* 0x8530 */ public float AlwaysShowIconFadeDistanceSpacePOI;
         [NMS(Index = 690)]
-        /* 0x8528 */ public float AlwaysShowIconFadeRange;
+        /* 0x8534 */ public float AlwaysShowIconFadeRange;
         [NMS(Index = 692)]
-        /* 0x852C */ public float AlwaysShowIconFadeRangeSpacePOI;
+        /* 0x8538 */ public float AlwaysShowIconFadeRangeSpacePOI;
         [NMS(Index = 1428)]
-        /* 0x8530 */ public float AmbientModeFadeTime;
+        /* 0x853C */ public float AmbientModeFadeTime;
         [NMS(Index = 684)]
-        /* 0x8534 */ public float ArrowBounceLeftRate1;
+        /* 0x8540 */ public float ArrowBounceLeftRate1;
         [NMS(Index = 685)]
-        /* 0x8538 */ public float ArrowBounceLeftRate2;
+        /* 0x8544 */ public float ArrowBounceLeftRate2;
         [NMS(Index = 686)]
-        /* 0x853C */ public float ArrowBounceLeftRate3;
+        /* 0x8548 */ public float ArrowBounceLeftRate3;
         [NMS(Index = 679)]
-        /* 0x8540 */ public float ArrowBounceLength;
+        /* 0x854C */ public float ArrowBounceLength;
         [NMS(Index = 680)]
-        /* 0x8544 */ public float ArrowBounceRate;
+        /* 0x8550 */ public float ArrowBounceRate;
         [NMS(Index = 681)]
-        /* 0x8548 */ public float ArrowBounceRightRate1;
+        /* 0x8554 */ public float ArrowBounceRightRate1;
         [NMS(Index = 682)]
-        /* 0x854C */ public float ArrowBounceRightRate2;
+        /* 0x8558 */ public float ArrowBounceRightRate2;
         [NMS(Index = 1379)]
-        /* 0x8550 */ public float AsteroidMarkerMinDisplayAngleDegrees;
+        /* 0x855C */ public float AsteroidMarkerMinDisplayAngleDegrees;
         [NMS(Index = 1378)]
-        /* 0x8554 */ public float AsteroidMarkerMinDisplayDistance;
+        /* 0x8560 */ public float AsteroidMarkerMinDisplayDistance;
         [NMS(Index = 437)]
-        /* 0x8558 */ public float BaseBuildingFreeRotateDelayBeforeAudioStops;
+        /* 0x8564 */ public float BaseBuildingFreeRotateDelayBeforeAudioStops;
         [NMS(Index = 436)]
-        /* 0x855C */ public float BaseBuildingFreeRotateDelayBeforeReset;
+        /* 0x8568 */ public float BaseBuildingFreeRotateDelayBeforeReset;
         [NMS(Index = 435)]
-        /* 0x8560 */ public float BaseBuildingFreeRotateSpeedPadMultiplier;
+        /* 0x856C */ public float BaseBuildingFreeRotateSpeedPadMultiplier;
         [NMS(Index = 429)]
-        /* 0x8564 */ public float BaseBuildingInputHighlightAlpha;
+        /* 0x8570 */ public float BaseBuildingInputHighlightAlpha;
         [NMS(Index = 428)]
-        /* 0x8568 */ public float BaseBuildingInputHighlightDuration;
+        /* 0x8574 */ public float BaseBuildingInputHighlightDuration;
         [NMS(Index = 432)]
-        /* 0x856C */ public float BaseBuildingMaxFreeRotateSpeed;
+        /* 0x8578 */ public float BaseBuildingMaxFreeRotateSpeed;
         [NMS(Index = 431)]
-        /* 0x8570 */ public float BaseBuildingMinFreeRotateSpeed;
+        /* 0x857C */ public float BaseBuildingMinFreeRotateSpeed;
         [NMS(Index = 448)]
-        /* 0x8574 */ public float BaseBuildingPartsGridBreadcrumbFlashDuration;
+        /* 0x8580 */ public float BaseBuildingPartsGridBreadcrumbFlashDuration;
         [NMS(Index = 447)]
-        /* 0x8578 */ public float BaseBuildingPartsGridMaxCursorRestorationTime;
+        /* 0x8584 */ public float BaseBuildingPartsGridMaxCursorRestorationTime;
         [NMS(Index = 449)]
-        /* 0x857C */ public float BaseBuildingPartsGridMinVisibilityForActive;
+        /* 0x8588 */ public float BaseBuildingPartsGridMinVisibilityForActive;
         [NMS(Index = 452)]
-        /* 0x8580 */ public float BaseBuildingPartsGridPopupDelay;
+        /* 0x858C */ public float BaseBuildingPartsGridPopupDelay;
         [NMS(Index = 450)]
-        /* 0x8584 */ public float BaseBuildingPartsGridScrollSpeed;
+        /* 0x8590 */ public float BaseBuildingPartsGridScrollSpeed;
         [NMS(Index = 451)]
-        /* 0x8588 */ public float BaseBuildingPartsGridScrollSpeedPad;
+        /* 0x8594 */ public float BaseBuildingPartsGridScrollSpeedPad;
         [NMS(Index = 427)]
-        /* 0x858C */ public float BaseBuildingPinHighlightDuration;
+        /* 0x8598 */ public float BaseBuildingPinHighlightDuration;
         [NMS(Index = 434)]
-        /* 0x8590 */ public float BaseBuildingRotationResetRate;
+        /* 0x859C */ public float BaseBuildingRotationResetRate;
         [NMS(Index = 430)]
-        /* 0x8594 */ public float BaseBuildingScaleSpeed;
+        /* 0x85A0 */ public float BaseBuildingScaleSpeed;
         [NMS(Index = 433)]
-        /* 0x8598 */ public float BaseBuildingTimeToMaxRotationSpeed;
+        /* 0x85A4 */ public float BaseBuildingTimeToMaxRotationSpeed;
         [NMS(Index = 446)]
-        /* 0x859C */ public float BaseBuildingUIAdjustTime;
+        /* 0x85A8 */ public float BaseBuildingUIAdjustTime;
         [NMS(Index = 445)]
-        /* 0x85A0 */ public float BaseBuildingUIErrorFadeTime;
+        /* 0x85AC */ public float BaseBuildingUIErrorFadeTime;
         [NMS(Index = 439)]
-        /* 0x85A4 */ public float BaseBuildingUIHorizontalSafeArea;
+        /* 0x85B0 */ public float BaseBuildingUIHorizontalSafeArea;
         [NMS(Index = 442)]
-        /* 0x85A8 */ public float BaseBuildingUIVerticalOffset;
+        /* 0x85B4 */ public float BaseBuildingUIVerticalOffset;
         [NMS(Index = 443)]
-        /* 0x85AC */ public float BaseBuildingUIVerticalOffsetEdit;
+        /* 0x85B8 */ public float BaseBuildingUIVerticalOffsetEdit;
         [NMS(Index = 444)]
-        /* 0x85B0 */ public float BaseBuildingUIVerticalOffsetFromBB;
+        /* 0x85BC */ public float BaseBuildingUIVerticalOffsetFromBB;
         [NMS(Index = 441)]
-        /* 0x85B4 */ public float BaseBuildingUIVerticalPosWiring;
+        /* 0x85C0 */ public float BaseBuildingUIVerticalPosWiring;
         [NMS(Index = 440)]
-        /* 0x85B8 */ public float BaseBuildingUIVerticalSafeArea;
+        /* 0x85C4 */ public float BaseBuildingUIVerticalSafeArea;
         [NMS(Index = 401)]
-        /* 0x85BC */ public float BaseComplexityDangerFactor;
+        /* 0x85C8 */ public float BaseComplexityDangerFactor;
         [NMS(Index = 402)]
-        /* 0x85C0 */ public float BaseComplexityWarningFactor;
+        /* 0x85CC */ public float BaseComplexityWarningFactor;
         [NMS(Index = 14)]
-        /* 0x85C4 */ public float BattleHUDBarInterpTime;
+        /* 0x85D0 */ public float BattleHUDBarInterpTime;
         [NMS(Index = 173)]
-        /* 0x85C8 */ public float BeaconHUDMarkerOffset;
+        /* 0x85D4 */ public float BeaconHUDMarkerOffset;
         [NMS(Index = 177)]
-        /* 0x85CC */ public float BinocularMarkerSideAngle;
+        /* 0x85D8 */ public float BinocularMarkerSideAngle;
         [NMS(Index = 178)]
-        /* 0x85D0 */ public float BinocularMarkerUpAngle;
+        /* 0x85DC */ public float BinocularMarkerUpAngle;
         [NMS(Index = 187)]
-        /* 0x85D4 */ public float BinocularsAltUIRescaleFactor;
+        /* 0x85E0 */ public float BinocularsAltUIRescaleFactor;
         [NMS(Index = 175)]
-        /* 0x85D8 */ public float BinocularScreenOffset;
+        /* 0x85E4 */ public float BinocularScreenOffset;
         [NMS(Index = 176)]
-        /* 0x85DC */ public float BinocularScreenScale;
+        /* 0x85E8 */ public float BinocularScreenScale;
         [NMS(Index = 185)]
-        /* 0x85E0 */ public float BinocularsFarIconDist;
+        /* 0x85EC */ public float BinocularsFarIconDist;
         [NMS(Index = 186)]
-        /* 0x85E4 */ public float BinocularsFarIconFadeDist;
+        /* 0x85F0 */ public float BinocularsFarIconFadeDist;
         [NMS(Index = 184)]
-        /* 0x85E8 */ public float BinocularsFarIconOpacity;
+        /* 0x85F4 */ public float BinocularsFarIconOpacity;
         [NMS(Index = 183)]
-        /* 0x85EC */ public float BinocularsMidIconOpacity;
+        /* 0x85F8 */ public float BinocularsMidIconOpacity;
         [NMS(Index = 181)]
-        /* 0x85F0 */ public float BinocularsNearIconDist;
+        /* 0x85FC */ public float BinocularsNearIconDist;
         [NMS(Index = 182)]
-        /* 0x85F4 */ public float BinocularsNearIconFadeDist;
+        /* 0x8600 */ public float BinocularsNearIconFadeDist;
         [NMS(Index = 180)]
-        /* 0x85F8 */ public float BinocularsNearIconOpacity;
+        /* 0x8604 */ public float BinocularsNearIconOpacity;
         [NMS(Index = 513)]
-        /* 0x85FC */ public float BountyMarkerOffset;
+        /* 0x8608 */ public float BountyMarkerOffset;
         [NMS(Index = 1433)]
-        /* 0x8600 */ public int BuildingShopMaxItems;
+        /* 0x860C */ public int BuildingShopMaxItems;
         [NMS(Index = 406)]
-        /* 0x8604 */ public float BuildMenuActionMessageDuration;
+        /* 0x8610 */ public float BuildMenuActionMessageDuration;
         [NMS(Index = 270)]
-        /* 0x8608 */ public float BuildMenuItemNavAnimTime;
+        /* 0x8614 */ public float BuildMenuItemNavAnimTime;
         [NMS(Index = 271)]
-        /* 0x860C */ public float BuildMenuItemNextNavAnimTime;
+        /* 0x8618 */ public float BuildMenuItemNextNavAnimTime;
         [NMS(Index = 272)]
-        /* 0x8610 */ public float BuildMenuItemNextNavAnimWait;
+        /* 0x861C */ public float BuildMenuItemNextNavAnimWait;
         [NMS(Index = 1154)]
-        /* 0x8614 */ public float ByteBeatArpLineWidth;
+        /* 0x8620 */ public float ByteBeatArpLineWidth;
         [NMS(Index = 1156)]
-        /* 0x8618 */ public float ByteBeatArpPad;
+        /* 0x8624 */ public float ByteBeatArpPad;
         [NMS(Index = 1155)]
-        /* 0x861C */ public float ByteBeatArpRadius;
+        /* 0x8628 */ public float ByteBeatArpRadius;
         [NMS(Index = 1152)]
-        /* 0x8620 */ public float ByteBeatIconLineWidth;
+        /* 0x862C */ public float ByteBeatIconLineWidth;
         [NMS(Index = 1153)]
-        /* 0x8624 */ public float ByteBeatIconPad;
+        /* 0x8630 */ public float ByteBeatIconPad;
         [NMS(Index = 1163)]
-        /* 0x8628 */ public float ByteBeatPartSequencerPad;
+        /* 0x8634 */ public float ByteBeatPartSequencerPad;
         [NMS(Index = 1165)]
-        /* 0x862C */ public float ByteBeatRhythmBeatPad;
+        /* 0x8638 */ public float ByteBeatRhythmBeatPad;
         [NMS(Index = 1169)]
-        /* 0x8630 */ public float ByteBeatRhythmSequencerActiveSaturation;
+        /* 0x863C */ public float ByteBeatRhythmSequencerActiveSaturation;
         [NMS(Index = 1168)]
-        /* 0x8634 */ public float ByteBeatRhythmSequencerInactiveSaturation;
+        /* 0x8640 */ public float ByteBeatRhythmSequencerInactiveSaturation;
         [NMS(Index = 1167)]
-        /* 0x8638 */ public float ByteBeatSequencerActiveSaturation;
+        /* 0x8644 */ public float ByteBeatSequencerActiveSaturation;
         [NMS(Index = 1164)]
-        /* 0x863C */ public float ByteBeatSequencerCornerRadius;
+        /* 0x8648 */ public float ByteBeatSequencerCornerRadius;
         [NMS(Index = 1183)]
-        /* 0x8640 */ public float ByteBeatSequencerHighlightLineWidth;
+        /* 0x864C */ public float ByteBeatSequencerHighlightLineWidth;
         [NMS(Index = 1166)]
-        /* 0x8644 */ public float ByteBeatSequencerInactiveSaturation;
+        /* 0x8650 */ public float ByteBeatSequencerInactiveSaturation;
         [NMS(Index = 1161)]
-        /* 0x8648 */ public float ByteBeatSequencerLineWidth;
+        /* 0x8654 */ public float ByteBeatSequencerLineWidth;
         [NMS(Index = 1162)]
-        /* 0x864C */ public float ByteBeatSequencerPad;
+        /* 0x8658 */ public float ByteBeatSequencerPad;
         [NMS(Index = 1170)]
-        /* 0x8650 */ public float ByteBeatSequencerUnpoweredTintStrength;
+        /* 0x865C */ public float ByteBeatSequencerUnpoweredTintStrength;
         [NMS(Index = 1186)]
-        /* 0x8654 */ public float ByteBeatSliderCornerRadius;
+        /* 0x8660 */ public float ByteBeatSliderCornerRadius;
         [NMS(Index = 1184)]
-        /* 0x8658 */ public float ByteBeatSliderLineWidth;
+        /* 0x8664 */ public float ByteBeatSliderLineWidth;
         [NMS(Index = 1185)]
-        /* 0x865C */ public float ByteBeatSliderPad;
+        /* 0x8668 */ public float ByteBeatSliderPad;
         [NMS(Index = 1190)]
-        /* 0x8660 */ public float ByteBeatSwitchPanelAlpha;
+        /* 0x866C */ public float ByteBeatSwitchPanelAlpha;
         [NMS(Index = 1191)]
-        /* 0x8664 */ public float ByteBeatSwitchPanelSplit;
+        /* 0x8670 */ public float ByteBeatSwitchPanelSplit;
         [NMS(Index = 1147)]
-        /* 0x8668 */ public float ByteBeatTreeLineWidth;
+        /* 0x8674 */ public float ByteBeatTreeLineWidth;
         [NMS(Index = 1149)]
-        /* 0x866C */ public float ByteBeatVisLineWidth;
+        /* 0x8678 */ public float ByteBeatVisLineWidth;
         [NMS(Index = 133)]
-        /* 0x8670 */ public float ClosestDoorMarkerBuffer;
+        /* 0x867C */ public float ClosestDoorMarkerBuffer;
         [NMS(Index = 200)]
-        /* 0x8674 */ public float CockpitGlassDefrostTime;
+        /* 0x8680 */ public float CockpitGlassDefrostTime;
         [NMS(Index = 199)]
-        /* 0x8678 */ public float CockpitGlassFrostTime;
+        /* 0x8684 */ public float CockpitGlassFrostTime;
         [NMS(Index = 573)]
-        /* 0x867C */ public float CommunicatorMessageTime;
+        /* 0x8688 */ public float CommunicatorMessageTime;
         [NMS(Index = 397)]
-        /* 0x8680 */ public float CompassAngleClamp;
+        /* 0x868C */ public float CompassAngleClamp;
         [NMS(Index = 400)]
-        /* 0x8684 */ public float CompassAngleClampSpace;
+        /* 0x8690 */ public float CompassAngleClampSpace;
         [NMS(Index = 398)]
-        /* 0x8688 */ public float CompassAngleFade;
+        /* 0x8694 */ public float CompassAngleFade;
         [NMS(Index = 394)]
-        /* 0x868C */ public float CompassDistanceMarkerMinScale;
+        /* 0x8698 */ public float CompassDistanceMarkerMinScale;
         [NMS(Index = 395)]
-        /* 0x8690 */ public float CompassDistanceMaxAngle;
+        /* 0x869C */ public float CompassDistanceMaxAngle;
         [NMS(Index = 392)]
-        /* 0x8694 */ public float CompassDistanceScale;
+        /* 0x86A0 */ public float CompassDistanceScale;
         [NMS(Index = 388)]
-        /* 0x8698 */ public float CompassDistanceScaleMin;
+        /* 0x86A4 */ public float CompassDistanceScaleMin;
         [NMS(Index = 389)]
-        /* 0x869C */ public float CompassDistanceScaleRange;
+        /* 0x86A8 */ public float CompassDistanceScaleRange;
         [NMS(Index = 393)]
-        /* 0x86A0 */ public float CompassDistanceShipMinScale;
+        /* 0x86AC */ public float CompassDistanceShipMinScale;
         [NMS(Index = 390)]
-        /* 0x86A4 */ public float CompassDistanceSpaceScaleMin;
+        /* 0x86B0 */ public float CompassDistanceSpaceScaleMin;
         [NMS(Index = 391)]
-        /* 0x86A8 */ public float CompassDistanceSpaceScaleRange;
+        /* 0x86B4 */ public float CompassDistanceSpaceScaleRange;
         [NMS(Index = 396)]
-        /* 0x86AC */ public float CompassDistanceYOffset;
+        /* 0x86B8 */ public float CompassDistanceYOffset;
         [NMS(Index = 386)]
-        /* 0x86B0 */ public float CompassHeight;
+        /* 0x86BC */ public float CompassHeight;
         [NMS(Index = 206)]
-        /* 0x86B4 */ public float CompassIconOffsetVR;
+        /* 0x86C0 */ public float CompassIconOffsetVR;
         [NMS(Index = 227)]
-        /* 0x86B8 */ public float CompassLineContractionEndAngle;
+        /* 0x86C4 */ public float CompassLineContractionEndAngle;
         [NMS(Index = 226)]
-        /* 0x86BC */ public float CompassLineContractionStartAngle;
+        /* 0x86C8 */ public float CompassLineContractionStartAngle;
         [NMS(Index = 228)]
-        /* 0x86C0 */ public float CompassLineContractionTargetAngle;
+        /* 0x86CC */ public float CompassLineContractionTargetAngle;
         [NMS(Index = 232)]
-        /* 0x86C4 */ public float CompassLineNotchAngleRange;
+        /* 0x86D0 */ public float CompassLineNotchAngleRange;
         [NMS(Index = 234)]
-        /* 0x86C8 */ public float CompassLineNotchLength;
+        /* 0x86D4 */ public float CompassLineNotchLength;
         [NMS(Index = 233)]
-        /* 0x86CC */ public float CompassLineNotchThickness;
+        /* 0x86D8 */ public float CompassLineNotchThickness;
         [NMS(Index = 229)]
-        /* 0x86D0 */ public int CompassLineNumNotches;
+        /* 0x86DC */ public int CompassLineNumNotches;
         [NMS(Index = 231)]
-        /* 0x86D4 */ public float CompassLineOffset;
+        /* 0x86E0 */ public float CompassLineOffset;
         [NMS(Index = 230)]
-        /* 0x86D8 */ public float CompassLineThickness;
+        /* 0x86E4 */ public float CompassLineThickness;
         [NMS(Index = 225)]
-        /* 0x86DC */ public int CompassScreenHeight;
+        /* 0x86E8 */ public int CompassScreenHeight;
         [NMS(Index = 224)]
-        /* 0x86E0 */ public int CompassScreenWidth;
+        /* 0x86EC */ public int CompassScreenWidth;
         [NMS(Index = 387)]
-        /* 0x86E4 */ public float CompassWidth;
+        /* 0x86F0 */ public float CompassWidth;
         [NMS(Index = 603)]
-        /* 0x86E8 */ public float ConsoleTextSpeed;
+        /* 0x86F4 */ public float ConsoleTextSpeed;
         [NMS(Index = 605)]
-        /* 0x86EC */ public float ConsoleTextTimeMax;
+        /* 0x86F8 */ public float ConsoleTextTimeMax;
         [NMS(Index = 604)]
-        /* 0x86F0 */ public float ConsoleTextTimeMin;
+        /* 0x86FC */ public float ConsoleTextTimeMin;
         [NMS(Index = 734)]
-        /* 0x86F4 */ public float ControlScrollDistance;
+        /* 0x8700 */ public float ControlScrollDistance;
         [NMS(Index = 733)]
-        /* 0x86F8 */ public int ControlScrollSteps;
+        /* 0x8704 */ public int ControlScrollSteps;
         [NMS(Index = 616)]
-        /* 0x86FC */ public float CreatureDistanceAlpha;
+        /* 0x8708 */ public float CreatureDistanceAlpha;
         [NMS(Index = 614)]
-        /* 0x8700 */ public float CreatureDistanceDisplayAngle;
+        /* 0x870C */ public float CreatureDistanceDisplayAngle;
         [NMS(Index = 615)]
-        /* 0x8704 */ public float CreatureDistanceFadeTime;
+        /* 0x8710 */ public float CreatureDistanceFadeTime;
         [NMS(Index = 612)]
-        /* 0x8708 */ public float CreatureDistanceOffsetY;
+        /* 0x8714 */ public float CreatureDistanceOffsetY;
         [NMS(Index = 613)]
-        /* 0x870C */ public float CreatureDistanceShadowOffset;
+        /* 0x8718 */ public float CreatureDistanceShadowOffset;
         [NMS(Index = 611)]
-        /* 0x8710 */ public float CreatureDistanceSize;
+        /* 0x871C */ public float CreatureDistanceSize;
         [NMS(Index = 378)]
-        /* 0x8714 */ public float CreatureIconMergeAngle;
+        /* 0x8720 */ public float CreatureIconMergeAngle;
         [NMS(Index = 648)]
-        /* 0x8718 */ public float CreatureIconOffset;
+        /* 0x8724 */ public float CreatureIconOffset;
         [NMS(Index = 649)]
-        /* 0x871C */ public float CreatureIconOffsetPhysics;
+        /* 0x8728 */ public float CreatureIconOffsetPhysics;
         [NMS(Index = 773)]
-        /* 0x8720 */ public float CreatureInteractLabelOffsetY;
+        /* 0x872C */ public float CreatureInteractLabelOffsetY;
         [NMS(Index = 769)]
-        /* 0x8724 */ public float CreatureReticuleScale;
+        /* 0x8730 */ public float CreatureReticuleScale;
         [NMS(Index = 739)]
-        /* 0x8728 */ public float CreatureRoutineMarkerTime;
+        /* 0x8734 */ public float CreatureRoutineMarkerTime;
         [NMS(Index = 740)]
-        /* 0x872C */ public int CreatureRoutineRegionsPerFrame;
+        /* 0x8738 */ public int CreatureRoutineRegionsPerFrame;
         [NMS(Index = 825)]
-        /* 0x8730 */ public float CriticalMessageTime;
+        /* 0x873C */ public float CriticalMessageTime;
         [NMS(Index = 701)]
-        /* 0x8734 */ public float CrosshairAimOffTime;
+        /* 0x8740 */ public float CrosshairAimOffTime;
         [NMS(Index = 700)]
-        /* 0x8738 */ public float CrosshairAimTime;
+        /* 0x8744 */ public float CrosshairAimTime;
         [NMS(Index = 702)]
-        /* 0x873C */ public float CrosshairInnerMinFade;
+        /* 0x8748 */ public float CrosshairInnerMinFade;
         [NMS(Index = 703)]
-        /* 0x8740 */ public float CrosshairInnerMinFadeRange;
+        /* 0x874C */ public float CrosshairInnerMinFadeRange;
         [NMS(Index = 724)]
-        /* 0x8744 */ public float CrosshairInterceptAlpha;
+        /* 0x8750 */ public float CrosshairInterceptAlpha;
         [NMS(Index = 721)]
-        /* 0x8748 */ public float CrosshairInterceptBaseSize;
+        /* 0x8754 */ public float CrosshairInterceptBaseSize;
         [NMS(Index = 722)]
-        /* 0x874C */ public float CrosshairInterceptCentreBaseSize;
+        /* 0x8758 */ public float CrosshairInterceptCentreBaseSize;
         [NMS(Index = 725)]
-        /* 0x8750 */ public float CrosshairInterceptLockRange;
+        /* 0x875C */ public float CrosshairInterceptLockRange;
         [NMS(Index = 720)]
-        /* 0x8754 */ public float CrosshairInterceptSize;
+        /* 0x8760 */ public float CrosshairInterceptSize;
         [NMS(Index = 723)]
-        /* 0x8758 */ public float CrosshairInterceptSpringTime;
+        /* 0x8764 */ public float CrosshairInterceptSpringTime;
         [NMS(Index = 707)]
-        /* 0x875C */ public float CrosshairLeadCornerOffset;
+        /* 0x8768 */ public float CrosshairLeadCornerOffset;
         [NMS(Index = 716)]
-        /* 0x8760 */ public float CrosshairLeadFadeRange;
+        /* 0x876C */ public float CrosshairLeadFadeRange;
         [NMS(Index = 717)]
-        /* 0x8764 */ public float CrosshairLeadFadeSize;
+        /* 0x8770 */ public float CrosshairLeadFadeSize;
         [NMS(Index = 705)]
-        /* 0x8768 */ public float CrosshairLeadInDelay;
+        /* 0x8774 */ public float CrosshairLeadInDelay;
         [NMS(Index = 706)]
-        /* 0x876C */ public float CrosshairLeadInTime;
+        /* 0x8778 */ public float CrosshairLeadInTime;
         [NMS(Index = 710)]
-        /* 0x8770 */ public float CrosshairLeadPulseSize;
+        /* 0x877C */ public float CrosshairLeadPulseSize;
         [NMS(Index = 704)]
-        /* 0x8774 */ public float CrosshairLeadScaleIn;
+        /* 0x8780 */ public float CrosshairLeadScaleIn;
         [NMS(Index = 714)]
-        /* 0x8778 */ public float CrosshairLeadSpring;
+        /* 0x8784 */ public float CrosshairLeadSpring;
         [NMS(Index = 715)]
-        /* 0x877C */ public float CrosshairLeadSpringOff;
+        /* 0x8788 */ public float CrosshairLeadSpringOff;
         [NMS(Index = 709)]
-        /* 0x8780 */ public float CrosshairLeadTopLock;
+        /* 0x878C */ public float CrosshairLeadTopLock;
         [NMS(Index = 708)]
-        /* 0x8784 */ public float CrosshairLeadTopOffset;
+        /* 0x8790 */ public float CrosshairLeadTopOffset;
         [NMS(Index = 310)]
-        /* 0x8788 */ public float CrosshairOffsetHmd;
+        /* 0x8794 */ public float CrosshairOffsetHmd;
         [NMS(Index = 311)]
-        /* 0x878C */ public float CrosshairOffsetHmdUp;
+        /* 0x8798 */ public float CrosshairOffsetHmdUp;
         [NMS(Index = 309)]
-        /* 0x8790 */ public float CrosshairScaleHmd;
+        /* 0x879C */ public float CrosshairScaleHmd;
         [NMS(Index = 313)]
-        /* 0x8794 */ public int CrosshairScreenHeight;
+        /* 0x87A0 */ public int CrosshairScreenHeight;
         [NMS(Index = 312)]
-        /* 0x8798 */ public int CrosshairScreenWidth;
+        /* 0x87A4 */ public int CrosshairScreenWidth;
         [NMS(Index = 713)]
-        /* 0x879C */ public float CrosshairSpringAimTime;
+        /* 0x87A8 */ public float CrosshairSpringAimTime;
         [NMS(Index = 712)]
-        /* 0x87A0 */ public float CrosshairSpringTime;
+        /* 0x87AC */ public float CrosshairSpringTime;
         [NMS(Index = 726)]
-        /* 0x87A4 */ public float CrosshairTargetLockSize;
+        /* 0x87B0 */ public float CrosshairTargetLockSize;
         [NMS(Index = 1116)]
-        /* 0x87A8 */ public float CursorHoverSlowFactor;
+        /* 0x87B4 */ public float CursorHoverSlowFactor;
         [NMS(Index = 1117)]
-        /* 0x87AC */ public float CursorHoverSlowFactorMin;
+        /* 0x87B8 */ public float CursorHoverSlowFactorMin;
         [NMS(Index = 1114)]
-        /* 0x87B0 */ public float CursorHoverSlowFixedValue;
+        /* 0x87BC */ public float CursorHoverSlowFixedValue;
         [NMS(Index = 544)]
-        /* 0x87B4 */ public float DamageDirectionIndicatorOnScreenRadiusMultiplier;
+        /* 0x87C0 */ public float DamageDirectionIndicatorOnScreenRadiusMultiplier;
         [NMS(Index = 618)]
-        /* 0x87B8 */ public float DamageImpactMergeTime;
+        /* 0x87C4 */ public float DamageImpactMergeTime;
         [NMS(Index = 620)]
-        /* 0x87BC */ public float DamageImpactMinDistance;
+        /* 0x87C8 */ public float DamageImpactMinDistance;
         [NMS(Index = 619)]
-        /* 0x87C0 */ public float DamageImpactTimeBetweenNumbers;
+        /* 0x87CC */ public float DamageImpactTimeBetweenNumbers;
         [NMS(Index = 629)]
-        /* 0x87C4 */ public float DamageNumberBlackAlpha;
+        /* 0x87D0 */ public float DamageNumberBlackAlpha;
         [NMS(Index = 635)]
-        /* 0x87C8 */ public float DamageNumberFadeIn;
+        /* 0x87D4 */ public float DamageNumberFadeIn;
         [NMS(Index = 636)]
-        /* 0x87CC */ public float DamageNumberFadeOut;
+        /* 0x87D8 */ public float DamageNumberFadeOut;
         [NMS(Index = 628)]
-        /* 0x87D0 */ public float DamageNumberLaserMaxDamage;
+        /* 0x87DC */ public float DamageNumberLaserMaxDamage;
         [NMS(Index = 627)]
-        /* 0x87D4 */ public float DamageNumberLaserMinDamage;
+        /* 0x87E0 */ public float DamageNumberLaserMinDamage;
         [NMS(Index = 632)]
-        /* 0x87D8 */ public float DamageNumberOffsetX;
+        /* 0x87E4 */ public float DamageNumberOffsetX;
         [NMS(Index = 633)]
-        /* 0x87DC */ public float DamageNumberOffsetY;
+        /* 0x87E8 */ public float DamageNumberOffsetY;
         [NMS(Index = 630)]
-        /* 0x87E0 */ public float DamageNumberOutline;
+        /* 0x87EC */ public float DamageNumberOutline;
         [NMS(Index = 631)]
-        /* 0x87E4 */ public float DamageNumberOutline2;
+        /* 0x87F0 */ public float DamageNumberOutline2;
         [NMS(Index = 624)]
-        /* 0x87E8 */ public float DamageNumberSize;
+        /* 0x87F4 */ public float DamageNumberSize;
         [NMS(Index = 625)]
-        /* 0x87EC */ public float DamageNumberSizeCritMultiplier;
+        /* 0x87F8 */ public float DamageNumberSizeCritMultiplier;
         [NMS(Index = 623)]
-        /* 0x87F0 */ public float DamageNumberSizeInShip;
+        /* 0x87FC */ public float DamageNumberSizeInShip;
         [NMS(Index = 626)]
-        /* 0x87F4 */ public float DamageNumberSizeLaserMultiplier;
+        /* 0x8800 */ public float DamageNumberSizeLaserMultiplier;
         [NMS(Index = 622)]
-        /* 0x87F8 */ public float DamageNumberTime;
+        /* 0x8804 */ public float DamageNumberTime;
         [NMS(Index = 637)]
-        /* 0x87FC */ public float DamageNumberUpOffset;
+        /* 0x8808 */ public float DamageNumberUpOffset;
         [NMS(Index = 621)]
-        /* 0x8800 */ public float DamagePerSecondSampleTime;
+        /* 0x880C */ public float DamagePerSecondSampleTime;
         [NMS(Index = 466)]
-        /* 0x8804 */ public float DamageScannableHighlightTime;
+        /* 0x8810 */ public float DamageScannableHighlightTime;
         [NMS(Index = 467)]
-        /* 0x8808 */ public float DamageTrackArrowTime;
+        /* 0x8814 */ public float DamageTrackArrowTime;
         [NMS(Index = 956)]
-        /* 0x880C */ public float DeathMessageSwitchTime;
+        /* 0x8818 */ public float DeathMessageSwitchTime;
         [NMS(Index = 957)]
-        /* 0x8810 */ public float DeathMessageTotalTime;
+        /* 0x881C */ public float DeathMessageTotalTime;
         [NMS(Index = 66)]
-        /* 0x8814 */ public int DebugMedalRank;
+        /* 0x8820 */ public int DebugMedalRank;
         [NMS(Index = 1063)]
-        /* 0x8818 */ public float DeepSeaHazardMultiplierCold;
+        /* 0x8824 */ public float DeepSeaHazardMultiplierCold;
         [NMS(Index = 1061)]
-        /* 0x881C */ public float DeepSeaHazardMultiplierHeat;
+        /* 0x8828 */ public float DeepSeaHazardMultiplierHeat;
         [NMS(Index = 1062)]
-        /* 0x8820 */ public float DeepSeaHazardMultiplierRad;
+        /* 0x882C */ public float DeepSeaHazardMultiplierRad;
         [NMS(Index = 1060)]
-        /* 0x8824 */ public float DeepSeaHazardMultiplierTox;
+        /* 0x8830 */ public float DeepSeaHazardMultiplierTox;
         [NMS(Index = 650)]
-        /* 0x8828 */ public float DelayBeforeHidingHangarAfterGalaxyMap;
+        /* 0x8834 */ public float DelayBeforeHidingHangarAfterGalaxyMap;
         [NMS(Index = 651)]
-        /* 0x882C */ public float DelayBeforeShowingHangarIntoGalaxyMap;
+        /* 0x8838 */ public float DelayBeforeShowingHangarIntoGalaxyMap;
         [NMS(Index = 598)]
-        /* 0x8830 */ public float DescriptionTextDelay;
+        /* 0x883C */ public float DescriptionTextDelay;
         [NMS(Index = 599)]
-        /* 0x8834 */ public float DescriptionTextSpeed;
+        /* 0x8840 */ public float DescriptionTextSpeed;
         [NMS(Index = 600)]
-        /* 0x8838 */ public float DescriptionTextSpeedProgressive;
+        /* 0x8844 */ public float DescriptionTextSpeedProgressive;
         [NMS(Index = 602)]
-        /* 0x883C */ public float DescriptionTextTimeMax;
+        /* 0x8848 */ public float DescriptionTextTimeMax;
         [NMS(Index = 601)]
-        /* 0x8840 */ public float DescriptionTextTimeMin;
+        /* 0x884C */ public float DescriptionTextTimeMin;
         [NMS(Index = 1456)]
-        /* 0x8844 */ public float DetailMessageDismissTime;
+        /* 0x8850 */ public float DetailMessageDismissTime;
         [NMS(Index = 360)]
-        /* 0x8848 */ public float DroneIndicatorCentreRadiusMax;
+        /* 0x8854 */ public float DroneIndicatorCentreRadiusMax;
         [NMS(Index = 361)]
-        /* 0x884C */ public float DroneIndicatorCentreRadiusMin;
+        /* 0x8858 */ public float DroneIndicatorCentreRadiusMin;
         [NMS(Index = 362)]
-        /* 0x8850 */ public float DroneIndicatorFadeRange;
+        /* 0x885C */ public float DroneIndicatorFadeRange;
         [NMS(Index = 359)]
-        /* 0x8854 */ public float DroneIndicatorRadius;
+        /* 0x8860 */ public float DroneIndicatorRadius;
         [NMS(Index = 114)]
-        /* 0x8858 */ public float EggModifiyAnimLoopTime;
+        /* 0x8864 */ public float EggModifiyAnimLoopTime;
         [NMS(Index = 113)]
-        /* 0x885C */ public float EggModifiyAnimMaxSize;
+        /* 0x8868 */ public float EggModifiyAnimMaxSize;
         [NMS(Index = 123)]
-        /* 0x8860 */ public float EndOfSeasonAlertDelay;
+        /* 0x886C */ public float EndOfSeasonAlertDelay;
         [NMS(Index = 162)]
-        /* 0x8864 */ public float ExocraftHUDMarkerHideDistance;
+        /* 0x8870 */ public float ExocraftHUDMarkerHideDistance;
         [NMS(Index = 163)]
-        /* 0x8868 */ public float ExocraftHUDMarkerOffset;
+        /* 0x8874 */ public float ExocraftHUDMarkerOffset;
         [NMS(Index = 120)]
-        /* 0x886C */ public float ExpeditionStageChangeTime;
+        /* 0x8878 */ public float ExpeditionStageChangeTime;
         [NMS(Index = 60)]
-        /* 0x8870 */ public float EyeTrackingCursorBlendRate;
+        /* 0x887C */ public float EyeTrackingCursorBlendRate;
         [NMS(Index = 59)]
-        /* 0x8874 */ public float EyeTrackingCursorBlendRateGameModeSelect;
+        /* 0x8880 */ public float EyeTrackingCursorBlendRateGameModeSelect;
         [NMS(Index = 58)]
-        /* 0x8878 */ public float EyeTrackingPopupLookAwayTime;
+        /* 0x8884 */ public float EyeTrackingPopupLookAwayTime;
         [NMS(Index = 61)]
-        /* 0x887C */ public float EyeTrackingStickyHoverTime;
+        /* 0x8888 */ public float EyeTrackingStickyHoverTime;
         [NMS(Index = 57)]
-        /* 0x8880 */ public float EyeTrackingTimeBeforePopupsActivate;
+        /* 0x888C */ public float EyeTrackingTimeBeforePopupsActivate;
         [NMS(Index = 1464)]
-        /* 0x8884 */ public float FeedFrigateAnimAlphaChange;
+        /* 0x8890 */ public float FeedFrigateAnimAlphaChange;
         [NMS(Index = 1462)]
-        /* 0x8888 */ public int FeedFrigateAnimNumPeriods;
+        /* 0x8894 */ public int FeedFrigateAnimNumPeriods;
         [NMS(Index = 1461)]
-        /* 0x888C */ public float FeedFrigateAnimPeriod;
+        /* 0x8898 */ public float FeedFrigateAnimPeriod;
         [NMS(Index = 1463)]
-        /* 0x8890 */ public float FeedFrigateAnimScaleChange;
+        /* 0x889C */ public float FeedFrigateAnimScaleChange;
         [NMS(Index = 128)]
-        /* 0x8894 */ public int ForceOpenHazardProtInventoryThreshold;
+        /* 0x88A0 */ public int ForceOpenHazardProtInventoryThreshold;
         [NMS(Index = 663)]
-        /* 0x8898 */ public float FreighterCommanderMarkerMinDistance;
+        /* 0x88A4 */ public float FreighterCommanderMarkerMinDistance;
         [NMS(Index = 697)]
-        /* 0x889C */ public float FreighterEntranceOffset;
+        /* 0x88A8 */ public float FreighterEntranceOffset;
         [NMS(Index = 669)]
-        /* 0x88A0 */ public float FreighterHighlightRange;
+        /* 0x88AC */ public float FreighterHighlightRange;
         [NMS(Index = 696)]
-        /* 0x88A4 */ public float FreighterLeaderIconDistance;
+        /* 0x88B0 */ public float FreighterLeaderIconDistance;
         [NMS(Index = 103)]
-        /* 0x88A8 */ public float FreighterMegaWarpTransitionTime;
+        /* 0x88B4 */ public float FreighterMegaWarpTransitionTime;
         [NMS(Index = 659)]
-        /* 0x88AC */ public float FreighterSummonDelay;
+        /* 0x88B8 */ public float FreighterSummonDelay;
         [NMS(Index = 662)]
-        /* 0x88B0 */ public float FreighterSummonGridSize;
+        /* 0x88BC */ public float FreighterSummonGridSize;
         [NMS(Index = 668)]
-        /* 0x88B4 */ public float FreighterSummonLookTime;
+        /* 0x88C0 */ public float FreighterSummonLookTime;
         [NMS(Index = 654)]
-        /* 0x88B8 */ public float FreighterSummonOffset;
+        /* 0x88C4 */ public float FreighterSummonOffset;
         [NMS(Index = 655)]
-        /* 0x88BC */ public float FreighterSummonOffsetPulse;
+        /* 0x88C8 */ public float FreighterSummonOffsetPulse;
         [NMS(Index = 653)]
-        /* 0x88C0 */ public float FreighterSummonPitch;
+        /* 0x88CC */ public float FreighterSummonPitch;
         [NMS(Index = 667)]
-        /* 0x88C4 */ public float FreighterSummonPlanetOffset;
+        /* 0x88D0 */ public float FreighterSummonPlanetOffset;
         [NMS(Index = 666)]
-        /* 0x88C8 */ public float FreighterSummonPulseFadeAmount;
+        /* 0x88D4 */ public float FreighterSummonPulseFadeAmount;
         [NMS(Index = 665)]
-        /* 0x88CC */ public float FreighterSummonPulseRate;
+        /* 0x88D8 */ public float FreighterSummonPulseRate;
         [NMS(Index = 652)]
-        /* 0x88D0 */ public float FreighterSummonTurn;
+        /* 0x88DC */ public float FreighterSummonTurn;
         [NMS(Index = 661)]
-        /* 0x88D4 */ public float FreighterSummonTurnAngleIncrement;
+        /* 0x88E0 */ public float FreighterSummonTurnAngleIncrement;
         [NMS(Index = 660)]
-        /* 0x88D8 */ public int FreighterSummonTurnNumTries;
+        /* 0x88E4 */ public int FreighterSummonTurnNumTries;
         [NMS(Index = 664)]
-        /* 0x88DC */ public float FreighterSurfaceMinAngle;
+        /* 0x88E8 */ public float FreighterSurfaceMinAngle;
         [NMS(Index = 695)]
-        /* 0x88E0 */ public float FrigateDamageIconVisibilityDistance;
+        /* 0x88EC */ public float FrigateDamageIconVisibilityDistance;
         [NMS(Index = 647)]
-        /* 0x88E4 */ public float FrigateIconOffset;
+        /* 0x88F0 */ public float FrigateIconOffset;
         [NMS(Index = 694)]
-        /* 0x88E8 */ public float FrigatePurchaseNotificationResetDistanceMultiplier;
+        /* 0x88F4 */ public float FrigatePurchaseNotificationResetDistanceMultiplier;
         [NMS(Index = 1136)]
-        /* 0x88EC */ public float FrontendActivateSplit;
+        /* 0x88F8 */ public float FrontendActivateSplit;
         [NMS(Index = 1135)]
-        /* 0x88F0 */ public float FrontendActivateTime;
+        /* 0x88FC */ public float FrontendActivateTime;
         [NMS(Index = 1120)]
-        /* 0x88F4 */ public float FrontendBGAlpha;
+        /* 0x8900 */ public float FrontendBGAlpha;
         [NMS(Index = 1140)]
-        /* 0x88F8 */ public float FrontendBootBarTime;
+        /* 0x8904 */ public float FrontendBootBarTime;
         [NMS(Index = 1139)]
-        /* 0x88FC */ public float FrontendBootTime;
+        /* 0x8908 */ public float FrontendBootTime;
         [NMS(Index = 1124)]
-        /* 0x8900 */ public float FrontendConfirmTime;
+        /* 0x890C */ public float FrontendConfirmTime;
         [NMS(Index = 1122)]
-        /* 0x8904 */ public float FrontendConfirmTimeFast;
+        /* 0x8910 */ public float FrontendConfirmTimeFast;
         [NMS(Index = 1121)]
-        /* 0x8908 */ public float FrontendConfirmTimeMouseMultiplier;
+        /* 0x8914 */ public float FrontendConfirmTimeMouseMultiplier;
         [NMS(Index = 1125)]
-        /* 0x890C */ public float FrontendConfirmTimeSlow;
+        /* 0x8918 */ public float FrontendConfirmTimeSlow;
         [NMS(Index = 1128)]
-        /* 0x8910 */ public float FrontendCursorOffset;
+        /* 0x891C */ public float FrontendCursorOffset;
         [NMS(Index = 1127)]
-        /* 0x8914 */ public float FrontendCursorSize;
+        /* 0x8920 */ public float FrontendCursorSize;
         [NMS(Index = 1132)]
-        /* 0x8918 */ public float FrontendCursorWidth;
+        /* 0x8924 */ public float FrontendCursorWidth;
         [NMS(Index = 1134)]
-        /* 0x891C */ public float FrontendDeactivateSplit;
+        /* 0x8928 */ public float FrontendDeactivateSplit;
         [NMS(Index = 1133)]
-        /* 0x8920 */ public float FrontendDeactivateTime;
+        /* 0x892C */ public float FrontendDeactivateTime;
         [NMS(Index = 1212)]
-        /* 0x8924 */ public float FrontendDoFBlurMultiplier;
+        /* 0x8930 */ public float FrontendDoFBlurMultiplier;
         [NMS(Index = 1210)]
-        /* 0x8928 */ public float FrontendDoFFarPlane;
+        /* 0x8934 */ public float FrontendDoFFarPlane;
         [NMS(Index = 1211)]
-        /* 0x892C */ public float FrontendDoFFarPlaneFade;
+        /* 0x8938 */ public float FrontendDoFFarPlaneFade;
         [NMS(Index = 1209)]
-        /* 0x8930 */ public float FrontendDoFNearPlane;
+        /* 0x893C */ public float FrontendDoFNearPlane;
         [NMS(Index = 191)]
-        /* 0x8934 */ public float FrontendOffsetVR;
+        /* 0x8940 */ public float FrontendOffsetVR;
         [NMS(Index = 1214)]
-        /* 0x8938 */ public float FrontendShineSpeed;
+        /* 0x8944 */ public float FrontendShineSpeed;
         [NMS(Index = 1137)]
-        /* 0x893C */ public float FrontendStatCircleWidth;
+        /* 0x8948 */ public float FrontendStatCircleWidth;
         [NMS(Index = 1138)]
-        /* 0x8940 */ public float FrontendStatCircleWidthExtra;
+        /* 0x894C */ public float FrontendStatCircleWidthExtra;
         [NMS(Index = 1217)]
-        /* 0x8944 */ public float FrontendTitleFontSpacing;
+        /* 0x8950 */ public float FrontendTitleFontSpacing;
         [NMS(Index = 1215)]
-        /* 0x8948 */ public float FrontendToolbarTextHeight;
+        /* 0x8954 */ public float FrontendToolbarTextHeight;
         [NMS(Index = 1216)]
-        /* 0x894C */ public float FrontendToolbarTextHeightSelected;
+        /* 0x8958 */ public float FrontendToolbarTextHeightSelected;
         [NMS(Index = 1123)]
-        /* 0x8950 */ public float FrontendTouchConfirmTimeFastMultiplier;
+        /* 0x895C */ public float FrontendTouchConfirmTimeFastMultiplier;
         [NMS(Index = 593)]
-        /* 0x8954 */ public float FrontendWaitFadeProgressiveDialogOut;
+        /* 0x8960 */ public float FrontendWaitFadeProgressiveDialogOut;
         [NMS(Index = 592)]
-        /* 0x8958 */ public float FrontendWaitFadeTextFrameOut;
+        /* 0x8964 */ public float FrontendWaitFadeTextFrameOut;
         [NMS(Index = 591)]
-        /* 0x895C */ public float FrontendWaitFadeTextOut;
+        /* 0x8968 */ public float FrontendWaitFadeTextOut;
         [NMS(Index = 589)]
-        /* 0x8960 */ public float FrontendWaitInitial;
+        /* 0x896C */ public float FrontendWaitInitial;
         [NMS(Index = 590)]
-        /* 0x8964 */ public float FrontendWaitInitialTerminal;
+        /* 0x8970 */ public float FrontendWaitInitialTerminal;
         [NMS(Index = 588)]
-        /* 0x8968 */ public float FrontendWaitResponse;
+        /* 0x8974 */ public float FrontendWaitResponse;
         [NMS(Index = 594)]
-        /* 0x896C */ public float FrontendWaitResponseOffset;
+        /* 0x8978 */ public float FrontendWaitResponseOffset;
         [NMS(Index = 890)]
-        /* 0x8970 */ public float GalaxyMapRadialBorder;
+        /* 0x897C */ public float GalaxyMapRadialBorder;
         [NMS(Index = 891)]
-        /* 0x8974 */ public float GalaxyMapRadialTargetDist;
+        /* 0x8980 */ public float GalaxyMapRadialTargetDist;
         [NMS(Index = 190)]
-        /* 0x8978 */ public float GalmapDiscoveryOffsetVR;
+        /* 0x8984 */ public float GalmapDiscoveryOffsetVR;
         [NMS(Index = 112)]
-        /* 0x897C */ public float GameModeSelectColourFadeTime;
+        /* 0x8988 */ public float GameModeSelectColourFadeTime;
         [NMS(Index = 1470)]
-        /* 0x8980 */ public float GDKHandheldMinFontHeight;
+        /* 0x898C */ public float GDKHandheldMinFontHeight;
         [NMS(Index = 93)]
-        /* 0x8984 */ public float GridDecayRateSwitchValue;
+        /* 0x8990 */ public float GridDecayRateSwitchValue;
         [NMS(Index = 577)]
-        /* 0x8988 */ public float GridFlickerAmp;
+        /* 0x8994 */ public float GridFlickerAmp;
         [NMS(Index = 575)]
-        /* 0x898C */ public float GridFlickerBaseAlpha;
+        /* 0x8998 */ public float GridFlickerBaseAlpha;
         [NMS(Index = 576)]
-        /* 0x8990 */ public float GridFlickerFreq;
+        /* 0x899C */ public float GridFlickerFreq;
         [NMS(Index = 253)]
-        /* 0x8994 */ public float HandButtonClickTime;
+        /* 0x89A0 */ public float HandButtonClickTime;
         [NMS(Index = 249)]
-        /* 0x8998 */ public float HandButtonCursorScale;
+        /* 0x89A4 */ public float HandButtonCursorScale;
         [NMS(Index = 257)]
-        /* 0x899C */ public float HandButtonDotRadius;
+        /* 0x89A8 */ public float HandButtonDotRadius;
         [NMS(Index = 255)]
-        /* 0x89A0 */ public float HandButtonFrontendCursorScale;
+        /* 0x89AC */ public float HandButtonFrontendCursorScale;
         [NMS(Index = 251)]
-        /* 0x89A4 */ public float HandButtonNearDistance;
+        /* 0x89B0 */ public float HandButtonNearDistance;
         [NMS(Index = 246)]
-        /* 0x89A8 */ public float HandButtonPostClickTime;
+        /* 0x89B4 */ public float HandButtonPostClickTime;
         [NMS(Index = 258)]
-        /* 0x89AC */ public float HandButtonPulseRadius;
+        /* 0x89B8 */ public float HandButtonPulseRadius;
         [NMS(Index = 259)]
-        /* 0x89B0 */ public float HandButtonPulseThickness;
+        /* 0x89BC */ public float HandButtonPulseThickness;
         [NMS(Index = 250)]
-        /* 0x89B4 */ public float HandButtonPushDistance;
+        /* 0x89C0 */ public float HandButtonPushDistance;
         [NMS(Index = 242)]
-        /* 0x89B8 */ public float HandButtonRadius;
+        /* 0x89C4 */ public float HandButtonRadius;
         [NMS(Index = 252)]
-        /* 0x89BC */ public float HandButtonRadiusClick;
+        /* 0x89C8 */ public float HandButtonRadiusClick;
         [NMS(Index = 243)]
-        /* 0x89C0 */ public float HandButtonRadiusTouch;
+        /* 0x89CC */ public float HandButtonRadiusTouch;
         [NMS(Index = 244)]
-        /* 0x89C4 */ public float HandButtonRadiusTouchNear;
+        /* 0x89D0 */ public float HandButtonRadiusTouchNear;
         [NMS(Index = 245)]
-        /* 0x89C8 */ public float HandButtonRadiusTouchNearActive;
+        /* 0x89D4 */ public float HandButtonRadiusTouchNearActive;
         [NMS(Index = 247)]
-        /* 0x89CC */ public float HandButtonReleaseThreshold;
+        /* 0x89D8 */ public float HandButtonReleaseThreshold;
         [NMS(Index = 248)]
-        /* 0x89D0 */ public float HandButtonReleaseThresholdInit;
+        /* 0x89DC */ public float HandButtonReleaseThresholdInit;
         [NMS(Index = 256)]
-        /* 0x89D4 */ public float HandButtonThickness;
+        /* 0x89E0 */ public float HandButtonThickness;
         [NMS(Index = 254)]
-        /* 0x89D8 */ public float HandButtonTouchReturnTime;
+        /* 0x89E4 */ public float HandButtonTouchReturnTime;
         [NMS(Index = 279)]
-        /* 0x89DC */ public float HandControlButtonSize;
+        /* 0x89E8 */ public float HandControlButtonSize;
         [NMS(Index = 286)]
-        /* 0x89E0 */ public float HandControlMenuAngle;
+        /* 0x89EC */ public float HandControlMenuAngle;
         [NMS(Index = 236)]
-        /* 0x89E4 */ public float HandControlMenuCursorScale;
+        /* 0x89F0 */ public float HandControlMenuCursorScale;
         [NMS(Index = 292)]
-        /* 0x89E8 */ public float HandControlMenuDepth;
+        /* 0x89F4 */ public float HandControlMenuDepth;
         [NMS(Index = 285)]
-        /* 0x89EC */ public float HandControlMenuMoveActionDistance;
+        /* 0x89F8 */ public float HandControlMenuMoveActionDistance;
         [NMS(Index = 282)]
-        /* 0x89F0 */ public float HandControlMenuMoveDistance;
+        /* 0x89FC */ public float HandControlMenuMoveDistance;
         [NMS(Index = 283)]
-        /* 0x89F4 */ public float HandControlMenuMoveDistanceScroll;
+        /* 0x8A00 */ public float HandControlMenuMoveDistanceScroll;
         [NMS(Index = 284)]
-        /* 0x89F8 */ public float HandControlMenuMoveDistanceVertical;
+        /* 0x8A04 */ public float HandControlMenuMoveDistanceVertical;
         [NMS(Index = 288)]
-        /* 0x89FC */ public float HandControlMenuSelectRadius;
+        /* 0x8A08 */ public float HandControlMenuSelectRadius;
         [NMS(Index = 289)]
-        /* 0x8A00 */ public float HandControlMenuSelectRadius1;
+        /* 0x8A0C */ public float HandControlMenuSelectRadius1;
         [NMS(Index = 290)]
-        /* 0x8A04 */ public float HandControlMenuSelectRadius2;
+        /* 0x8A10 */ public float HandControlMenuSelectRadius2;
         [NMS(Index = 287)]
-        /* 0x8A08 */ public float HandControlMenuSurfaceOffset;
+        /* 0x8A14 */ public float HandControlMenuSurfaceOffset;
         [NMS(Index = 281)]
-        /* 0x8A0C */ public float HandControlPointActiveMargin;
+        /* 0x8A18 */ public float HandControlPointActiveMargin;
         [NMS(Index = 280)]
-        /* 0x8A10 */ public float HandControlPointMargin;
+        /* 0x8A1C */ public float HandControlPointMargin;
         [NMS(Index = 291)]
-        /* 0x8A14 */ public float HandControlTopMenuSelectRadius;
+        /* 0x8A20 */ public float HandControlTopMenuSelectRadius;
         [NMS(Index = 136)]
-        /* 0x8A18 */ public float HandheldHUDZoomFactor;
+        /* 0x8A24 */ public float HandheldHUDZoomFactor;
         [NMS(Index = 240)]
-        /* 0x8A1C */ public float HandScreenGraphicsHeight;
+        /* 0x8A28 */ public float HandScreenGraphicsHeight;
         [NMS(Index = 239)]
-        /* 0x8A20 */ public float HandScreenGraphicsWidth;
+        /* 0x8A2C */ public float HandScreenGraphicsWidth;
         [NMS(Index = 296)]
-        /* 0x8A24 */ public int HandScreenHeight;
+        /* 0x8A30 */ public int HandScreenHeight;
         [NMS(Index = 241)]
-        /* 0x8A28 */ public float HandScreenNearActivateDistance;
+        /* 0x8A34 */ public float HandScreenNearActivateDistance;
         [NMS(Index = 294)]
-        /* 0x8A2C */ public int HandScreenWeaponHeight;
+        /* 0x8A38 */ public int HandScreenWeaponHeight;
         [NMS(Index = 293)]
-        /* 0x8A30 */ public int HandScreenWeaponWidth;
+        /* 0x8A3C */ public int HandScreenWeaponWidth;
         [NMS(Index = 295)]
-        /* 0x8A34 */ public int HandScreenWidth;
+        /* 0x8A40 */ public int HandScreenWidth;
         [NMS(Index = 1207)]
-        /* 0x8A38 */ public float HatchAlphaBase;
+        /* 0x8A44 */ public float HatchAlphaBase;
         [NMS(Index = 1208)]
-        /* 0x8A3C */ public float HatchAlphaCursor;
+        /* 0x8A48 */ public float HatchAlphaCursor;
         [NMS(Index = 1206)]
-        /* 0x8A40 */ public float HatchAlphaMain;
+        /* 0x8A4C */ public float HatchAlphaMain;
         [NMS(Index = 1204)]
-        /* 0x8A44 */ public int HatchCount;
+        /* 0x8A50 */ public int HatchCount;
         [NMS(Index = 1205)]
-        /* 0x8A48 */ public float HatchCursorRadius;
+        /* 0x8A54 */ public float HatchCursorRadius;
         [NMS(Index = 1203)]
-        /* 0x8A4C */ public float HatchPulsePauseTime;
+        /* 0x8A58 */ public float HatchPulsePauseTime;
         [NMS(Index = 1201)]
-        /* 0x8A50 */ public float HatchPulseSpeed;
+        /* 0x8A5C */ public float HatchPulseSpeed;
         [NMS(Index = 1202)]
-        /* 0x8A54 */ public float HatchPulseWidth;
+        /* 0x8A60 */ public float HatchPulseWidth;
         [NMS(Index = 677)]
-        /* 0x8A58 */ public float HazardArrowsLevel2Threshold;
+        /* 0x8A64 */ public float HazardArrowsLevel2Threshold;
         [NMS(Index = 678)]
-        /* 0x8A5C */ public float HazardArrowsLevel3Threshold;
+        /* 0x8A68 */ public float HazardArrowsLevel3Threshold;
         [NMS(Index = 1039)]
-        /* 0x8A60 */ public float HazardBarPulseTime;
+        /* 0x8A6C */ public float HazardBarPulseTime;
         [NMS(Index = 1044)]
-        /* 0x8A64 */ public float HazardPainPulseStrength;
+        /* 0x8A70 */ public float HazardPainPulseStrength;
         [NMS(Index = 1065)]
-        /* 0x8A68 */ public float HazardPulseRate;
+        /* 0x8A74 */ public float HazardPulseRate;
         [NMS(Index = 1036)]
-        /* 0x8A6C */ public float HazardScreenEffectPulseRate;
+        /* 0x8A78 */ public float HazardScreenEffectPulseRate;
         [NMS(Index = 1040)]
-        /* 0x8A70 */ public float HazardScreenEffectPulseTime;
+        /* 0x8A7C */ public float HazardScreenEffectPulseTime;
         [NMS(Index = 1041)]
-        /* 0x8A74 */ public float HazardScreenEffectStrength;
+        /* 0x8A80 */ public float HazardScreenEffectStrength;
         [NMS(Index = 1043)]
-        /* 0x8A78 */ public float HazardWarningPulseStrength;
+        /* 0x8A84 */ public float HazardWarningPulseStrength;
         [NMS(Index = 1042)]
-        /* 0x8A7C */ public float HazardWarningPulseTime;
+        /* 0x8A88 */ public float HazardWarningPulseTime;
         [NMS(Index = 1227)]
-        /* 0x8A80 */ public float HitMarkerPulseSize;
+        /* 0x8A8C */ public float HitMarkerPulseSize;
         [NMS(Index = 1228)]
-        /* 0x8A84 */ public float HitMarkerPulseSizeStatic;
+        /* 0x8A90 */ public float HitMarkerPulseSizeStatic;
         [NMS(Index = 1229)]
-        /* 0x8A88 */ public float HitMarkerPulseTime;
+        /* 0x8A94 */ public float HitMarkerPulseTime;
         [NMS(Index = 307)]
-        /* 0x8A8C */ public float HmdFramerateScreenPitch;
+        /* 0x8A98 */ public float HmdFramerateScreenPitch;
         [NMS(Index = 1032)]
-        /* 0x8A90 */ public float HoldTimerResetTime;
+        /* 0x8A9C */ public float HoldTimerResetTime;
         [NMS(Index = 606)]
-        /* 0x8A94 */ public float HoverOffscreenBorder;
+        /* 0x8AA0 */ public float HoverOffscreenBorder;
         [NMS(Index = 607)]
-        /* 0x8A98 */ public float HoverOffscreenBorderXVR;
+        /* 0x8AA4 */ public float HoverOffscreenBorderXVR;
         [NMS(Index = 608)]
-        /* 0x8A9C */ public float HoverOffscreenBorderYAltUI;
+        /* 0x8AA8 */ public float HoverOffscreenBorderYAltUI;
         [NMS(Index = 53)]
-        /* 0x8AA0 */ public float HoverPopAnimDuration;
+        /* 0x8AAC */ public float HoverPopAnimDuration;
         [NMS(Index = 52)]
-        /* 0x8AA4 */ public float HoverPopScaleModification;
+        /* 0x8AB0 */ public float HoverPopScaleModification;
         [NMS(Index = 830)]
-        /* 0x8AA8 */ public float HUDDisplayTime;
+        /* 0x8AB4 */ public float HUDDisplayTime;
         [NMS(Index = 776)]
-        /* 0x8AAC */ public float HUDDroneCombatPulse;
+        /* 0x8AB8 */ public float HUDDroneCombatPulse;
         [NMS(Index = 774)]
-        /* 0x8AB0 */ public float HUDDroneHealingPulse;
+        /* 0x8ABC */ public float HUDDroneHealingPulse;
         [NMS(Index = 775)]
-        /* 0x8AB4 */ public float HUDDroneSummoningPulse;
+        /* 0x8AC0 */ public float HUDDroneSummoningPulse;
         [NMS(Index = 968)]
-        /* 0x8AB8 */ public float HUDElementsOffsetHMDBottom;
+        /* 0x8AC4 */ public float HUDElementsOffsetHMDBottom;
         [NMS(Index = 966)]
-        /* 0x8ABC */ public float HUDElementsOffsetHMDSide;
+        /* 0x8AC8 */ public float HUDElementsOffsetHMDSide;
         [NMS(Index = 967)]
-        /* 0x8AC0 */ public float HUDElementsOffsetHMDTop;
+        /* 0x8ACC */ public float HUDElementsOffsetHMDTop;
         [NMS(Index = 969)]
-        /* 0x8AC4 */ public float HUDElementsOffsetX_0;
+        /* 0x8AD0 */ public float HUDElementsOffsetX_0;
         [NMS(Index = 971)]
-        /* 0x8AC8 */ public float HUDElementsOffsetX_1;
+        /* 0x8AD4 */ public float HUDElementsOffsetX_1;
         [NMS(Index = 973)]
-        /* 0x8ACC */ public float HUDElementsOffsetX_2;
+        /* 0x8AD8 */ public float HUDElementsOffsetX_2;
         [NMS(Index = 975)]
-        /* 0x8AD0 */ public float HUDElementsOffsetX_3;
+        /* 0x8ADC */ public float HUDElementsOffsetX_3;
         [NMS(Index = 977)]
-        /* 0x8AD4 */ public float HUDElementsOffsetX_4;
+        /* 0x8AE0 */ public float HUDElementsOffsetX_4;
         [NMS(Index = 979)]
-        /* 0x8AD8 */ public float HUDElementsOffsetX_5;
+        /* 0x8AE4 */ public float HUDElementsOffsetX_5;
         [NMS(Index = 970)]
-        /* 0x8ADC */ public float HUDElementsOffsetY_0;
+        /* 0x8AE8 */ public float HUDElementsOffsetY_0;
         [NMS(Index = 972)]
-        /* 0x8AE0 */ public float HUDElementsOffsetY_1;
+        /* 0x8AEC */ public float HUDElementsOffsetY_1;
         [NMS(Index = 974)]
-        /* 0x8AE4 */ public float HUDElementsOffsetY_2;
+        /* 0x8AF0 */ public float HUDElementsOffsetY_2;
         [NMS(Index = 976)]
-        /* 0x8AE8 */ public float HUDElementsOffsetY_3;
+        /* 0x8AF4 */ public float HUDElementsOffsetY_3;
         [NMS(Index = 978)]
-        /* 0x8AEC */ public float HUDElementsOffsetY_4;
+        /* 0x8AF8 */ public float HUDElementsOffsetY_4;
         [NMS(Index = 980)]
-        /* 0x8AF0 */ public float HUDElementsOffsetY_5;
+        /* 0x8AFC */ public float HUDElementsOffsetY_5;
         [NMS(Index = 1361)]
-        /* 0x8AF4 */ public float HUDMarkerActiveTime;
+        /* 0x8B00 */ public float HUDMarkerActiveTime;
         [NMS(Index = 1356)]
-        /* 0x8AF8 */ public float HUDMarkerAlpha;
+        /* 0x8B04 */ public float HUDMarkerAlpha;
         [NMS(Index = 1331)]
-        /* 0x8AFC */ public float HUDMarkerAnimLoopTime;
+        /* 0x8B08 */ public float HUDMarkerAnimLoopTime;
         [NMS(Index = 1330)]
-        /* 0x8B00 */ public float HUDMarkerAnimOffset;
+        /* 0x8B0C */ public float HUDMarkerAnimOffset;
         [NMS(Index = 1329)]
-        /* 0x8B04 */ public float HUDMarkerAnimScale;
+        /* 0x8B10 */ public float HUDMarkerAnimScale;
         [NMS(Index = 1328)]
-        /* 0x8B08 */ public float HUDMarkerAnimSpeed;
+        /* 0x8B14 */ public float HUDMarkerAnimSpeed;
         [NMS(Index = 470)]
-        /* 0x8B0C */ public float HUDMarkerDistanceOrTimeDistance;
+        /* 0x8B18 */ public float HUDMarkerDistanceOrTimeDistance;
         [NMS(Index = 1349)]
-        /* 0x8B10 */ public float HUDMarkerFarDistance;
+        /* 0x8B1C */ public float HUDMarkerFarDistance;
         [NMS(Index = 1350)]
-        /* 0x8B14 */ public float HUDMarkerFarFadeRange;
+        /* 0x8B20 */ public float HUDMarkerFarFadeRange;
         [NMS(Index = 1355)]
-        /* 0x8B18 */ public float HUDMarkerHorizonBlendRange;
+        /* 0x8B24 */ public float HUDMarkerHorizonBlendRange;
         [NMS(Index = 1337)]
-        /* 0x8B1C */ public float HUDMarkerHoverAngleTestGround;
+        /* 0x8B28 */ public float HUDMarkerHoverAngleTestGround;
         [NMS(Index = 314)]
-        /* 0x8B20 */ public float HUDMarkerHoverAngleTestGroundHmd;
+        /* 0x8B2C */ public float HUDMarkerHoverAngleTestGroundHmd;
         [NMS(Index = 1341)]
-        /* 0x8B24 */ public float HUDMarkerHoverAngleTestShip;
+        /* 0x8B30 */ public float HUDMarkerHoverAngleTestShip;
         [NMS(Index = 1342)]
-        /* 0x8B28 */ public float HUDMarkerHoverShowLargeAngleTest;
+        /* 0x8B34 */ public float HUDMarkerHoverShowLargeAngleTest;
         [NMS(Index = 1363)]
-        /* 0x8B2C */ public float HUDMarkerIconHoverMinScale;
+        /* 0x8B38 */ public float HUDMarkerIconHoverMinScale;
         [NMS(Index = 580)]
-        /* 0x8B30 */ public float HUDMarkerLabelArriveDistance;
+        /* 0x8B3C */ public float HUDMarkerLabelArriveDistance;
         [NMS(Index = 579)]
-        /* 0x8B34 */ public float HUDMarkerLabelBaseWidth;
+        /* 0x8B40 */ public float HUDMarkerLabelBaseWidth;
         [NMS(Index = 581)]
-        /* 0x8B38 */ public float HUDMarkerLabelDisplayDistance;
+        /* 0x8B44 */ public float HUDMarkerLabelDisplayDistance;
         [NMS(Index = 578)]
-        /* 0x8B3C */ public float HUDMarkerLabelWidthMultiplier;
+        /* 0x8B48 */ public float HUDMarkerLabelWidthMultiplier;
         [NMS(Index = 1358)]
-        /* 0x8B40 */ public float HUDMarkerModelFadeMinHeight;
+        /* 0x8B4C */ public float HUDMarkerModelFadeMinHeight;
         [NMS(Index = 1357)]
-        /* 0x8B44 */ public float HUDMarkerModelFadeRange;
+        /* 0x8B50 */ public float HUDMarkerModelFadeRange;
         [NMS(Index = 1347)]
-        /* 0x8B48 */ public float HUDMarkerNearFadeDistance;
+        /* 0x8B54 */ public float HUDMarkerNearFadeDistance;
         [NMS(Index = 1348)]
-        /* 0x8B4C */ public float HUDMarkerNearFadeRange;
+        /* 0x8B58 */ public float HUDMarkerNearFadeRange;
         [NMS(Index = 582)]
-        /* 0x8B50 */ public float HUDMarkerNonActiveMissionAlpha;
+        /* 0x8B5C */ public float HUDMarkerNonActiveMissionAlpha;
         [NMS(Index = 469)]
-        /* 0x8B54 */ public float HUDMarkerObjectMinScreenDistance;
+        /* 0x8B60 */ public float HUDMarkerObjectMinScreenDistance;
         [NMS(Index = 1311)]
-        /* 0x8B58 */ public float HUDMarkerOffset;
+        /* 0x8B64 */ public float HUDMarkerOffset;
         [NMS(Index = 1334)]
-        /* 0x8B5C */ public float HUDMarkerPrimaryIndicatorSize;
+        /* 0x8B68 */ public float HUDMarkerPrimaryIndicatorSize;
         [NMS(Index = 1351)]
-        /* 0x8B60 */ public float HUDMarkerScalerMin;
+        /* 0x8B6C */ public float HUDMarkerScalerMin;
         [NMS(Index = 1352)]
-        /* 0x8B64 */ public float HUDMarkerScalerRange;
+        /* 0x8B70 */ public float HUDMarkerScalerRange;
         [NMS(Index = 1354)]
-        /* 0x8B68 */ public float HUDMarkerScalerSizeMax;
+        /* 0x8B74 */ public float HUDMarkerScalerSizeMax;
         [NMS(Index = 1353)]
-        /* 0x8B6C */ public float HUDMarkerScalerSizeMin;
+        /* 0x8B78 */ public float HUDMarkerScalerSizeMin;
         [NMS(Index = 1345)]
-        /* 0x8B70 */ public float HUDMarkerShipOffsetMaxDist;
+        /* 0x8B7C */ public float HUDMarkerShipOffsetMaxDist;
         [NMS(Index = 1346)]
-        /* 0x8B74 */ public float HUDMarkerShipOffsetMinDist;
+        /* 0x8B80 */ public float HUDMarkerShipOffsetMinDist;
         [NMS(Index = 1359)]
-        /* 0x8B78 */ public float HUDMarkerShowActualIconDistance;
+        /* 0x8B84 */ public float HUDMarkerShowActualIconDistance;
         [NMS(Index = 1360)]
-        /* 0x8B7C */ public float HUDMarkerShowActualSpaceIconDistance;
+        /* 0x8B88 */ public float HUDMarkerShowActualSpaceIconDistance;
         [NMS(Index = 1340)]
-        /* 0x8B80 */ public float HUDMarkerWideHoverAngleTest;
+        /* 0x8B8C */ public float HUDMarkerWideHoverAngleTest;
         [NMS(Index = 315)]
-        /* 0x8B84 */ public float HUDMarkerWideHoverAngleTestHmd;
+        /* 0x8B90 */ public float HUDMarkerWideHoverAngleTestHmd;
         [NMS(Index = 1339)]
-        /* 0x8B88 */ public float HUDNetworkMarkerHoverAngleTestGround;
+        /* 0x8B94 */ public float HUDNetworkMarkerHoverAngleTestGround;
         [NMS(Index = 1344)]
-        /* 0x8B8C */ public float HUDNetworkMarkerHoverAngleVRMul;
+        /* 0x8B98 */ public float HUDNetworkMarkerHoverAngleVRMul;
         [NMS(Index = 1343)]
-        /* 0x8B90 */ public float HUDNetworkMarkerHoverShowLargeAngleTest;
+        /* 0x8B9C */ public float HUDNetworkMarkerHoverShowLargeAngleTest;
         [NMS(Index = 1338)]
-        /* 0x8B94 */ public float HUDPetCentreScreenAngle;
+        /* 0x8BA0 */ public float HUDPetCentreScreenAngle;
         [NMS(Index = 1335)]
-        /* 0x8B98 */ public float HUDPetMarkerAngleTest;
+        /* 0x8BA4 */ public float HUDPetMarkerAngleTest;
         [NMS(Index = 1336)]
-        /* 0x8B9C */ public float HUDPetMarkerAngleVRMul;
+        /* 0x8BA8 */ public float HUDPetMarkerAngleVRMul;
         [NMS(Index = 502)]
-        /* 0x8BA0 */ public float HUDPlayerPhonePulseScanFreq;
+        /* 0x8BAC */ public float HUDPlayerPhonePulseScanFreq;
         [NMS(Index = 501)]
-        /* 0x8BA4 */ public float HUDPlayerSentinelPulseScanFreq;
+        /* 0x8BB0 */ public float HUDPlayerSentinelPulseScanFreq;
         [NMS(Index = 499)]
-        /* 0x8BA8 */ public float HUDPlayerSentinelPulseWidth;
+        /* 0x8BB4 */ public float HUDPlayerSentinelPulseWidth;
         [NMS(Index = 500)]
-        /* 0x8BAC */ public float HUDPlayerSentinelRangeFactor;
+        /* 0x8BB8 */ public float HUDPlayerSentinelRangeFactor;
         [NMS(Index = 878)]
-        /* 0x8BB0 */ public float HUDPlayerTrackArrowArrowSize;
+        /* 0x8BBC */ public float HUDPlayerTrackArrowArrowSize;
         [NMS(Index = 847)]
-        /* 0x8BB4 */ public float HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacityScale;
+        /* 0x8BC0 */ public float HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacityScale;
         [NMS(Index = 848)]
-        /* 0x8BB8 */ public float HUDPlayerTrackArrowDamageGlowHullHitOpacityScale;
+        /* 0x8BC4 */ public float HUDPlayerTrackArrowDamageGlowHullHitOpacityScale;
         [NMS(Index = 855)]
-        /* 0x8BBC */ public float HUDPlayerTrackArrowDamageGlowOffset;
+        /* 0x8BC8 */ public float HUDPlayerTrackArrowDamageGlowOffset;
         [NMS(Index = 851)]
-        /* 0x8BC0 */ public float HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpacityScale;
+        /* 0x8BCC */ public float HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpacityScale;
         [NMS(Index = 852)]
-        /* 0x8BC4 */ public float HUDPlayerTrackArrowDamageGlowShieldHitOpacityScale;
+        /* 0x8BD0 */ public float HUDPlayerTrackArrowDamageGlowShieldHitOpacityScale;
         [NMS(Index = 879)]
-        /* 0x8BC8 */ public float HUDPlayerTrackArrowDotSize;
+        /* 0x8BD4 */ public float HUDPlayerTrackArrowDotSize;
         [NMS(Index = 859)]
-        /* 0x8BCC */ public float HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacityScale;
+        /* 0x8BD8 */ public float HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacityScale;
         [NMS(Index = 860)]
-        /* 0x8BD0 */ public float HUDPlayerTrackArrowEnergyShieldDepletedTime;
+        /* 0x8BDC */ public float HUDPlayerTrackArrowEnergyShieldDepletedTime;
         [NMS(Index = 857)]
-        /* 0x8BD4 */ public float HUDPlayerTrackArrowEnergyShieldGlowOffset;
+        /* 0x8BE0 */ public float HUDPlayerTrackArrowEnergyShieldGlowOffset;
         [NMS(Index = 843)]
-        /* 0x8BD8 */ public float HUDPlayerTrackArrowEnergyShieldLowThreshold;
+        /* 0x8BE4 */ public float HUDPlayerTrackArrowEnergyShieldLowThreshold;
         [NMS(Index = 844)]
-        /* 0x8BDC */ public float HUDPlayerTrackArrowEnergyShieldOffset;
+        /* 0x8BE8 */ public float HUDPlayerTrackArrowEnergyShieldOffset;
         [NMS(Index = 864)]
-        /* 0x8BE0 */ public float HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpacityScale;
+        /* 0x8BEC */ public float HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpacityScale;
         [NMS(Index = 865)]
-        /* 0x8BE4 */ public float HUDPlayerTrackArrowEnergyShieldStartChargeTime;
+        /* 0x8BF0 */ public float HUDPlayerTrackArrowEnergyShieldStartChargeTime;
         [NMS(Index = 887)]
-        /* 0x8BE8 */ public float HUDPlayerTrackArrowFadeRange;
+        /* 0x8BF4 */ public float HUDPlayerTrackArrowFadeRange;
         [NMS(Index = 846)]
-        /* 0x8BEC */ public float HUDPlayerTrackArrowGlowBaseOpacity;
+        /* 0x8BF8 */ public float HUDPlayerTrackArrowGlowBaseOpacity;
         [NMS(Index = 839)]
-        /* 0x8BF0 */ public float HUDPlayerTrackArrowHealthOffset;
+        /* 0x8BFC */ public float HUDPlayerTrackArrowHealthOffset;
         [NMS(Index = 802)]
-        /* 0x8BF4 */ public float HUDPlayerTrackArrowIconBorderReducerShip;
+        /* 0x8C00 */ public float HUDPlayerTrackArrowIconBorderReducerShip;
         [NMS(Index = 799)]
-        /* 0x8BF8 */ public float HUDPlayerTrackArrowIconFadeDist;
+        /* 0x8C04 */ public float HUDPlayerTrackArrowIconFadeDist;
         [NMS(Index = 798)]
-        /* 0x8BFC */ public float HUDPlayerTrackArrowIconFadeDistDrone;
+        /* 0x8C08 */ public float HUDPlayerTrackArrowIconFadeDistDrone;
         [NMS(Index = 797)]
-        /* 0x8C00 */ public float HUDPlayerTrackArrowIconFadeDistShip;
+        /* 0x8C0C */ public float HUDPlayerTrackArrowIconFadeDistShip;
         [NMS(Index = 800)]
-        /* 0x8C04 */ public float HUDPlayerTrackArrowIconFadeRange;
+        /* 0x8C10 */ public float HUDPlayerTrackArrowIconFadeRange;
         [NMS(Index = 801)]
-        /* 0x8C08 */ public float HUDPlayerTrackArrowIconFadeRangeShip;
+        /* 0x8C14 */ public float HUDPlayerTrackArrowIconFadeRangeShip;
         [NMS(Index = 792)]
-        /* 0x8C0C */ public float HUDPlayerTrackArrowIconFadeTime;
+        /* 0x8C18 */ public float HUDPlayerTrackArrowIconFadeTime;
         [NMS(Index = 796)]
-        /* 0x8C10 */ public float HUDPlayerTrackArrowIconPulse2Alpha;
+        /* 0x8C1C */ public float HUDPlayerTrackArrowIconPulse2Alpha;
         [NMS(Index = 790)]
-        /* 0x8C14 */ public float HUDPlayerTrackArrowIconPulseTime;
+        /* 0x8C20 */ public float HUDPlayerTrackArrowIconPulseTime;
         [NMS(Index = 794)]
-        /* 0x8C18 */ public float HUDPlayerTrackArrowIconPulseWidth1;
+        /* 0x8C24 */ public float HUDPlayerTrackArrowIconPulseWidth1;
         [NMS(Index = 795)]
-        /* 0x8C1C */ public float HUDPlayerTrackArrowIconPulseWidth2;
+        /* 0x8C28 */ public float HUDPlayerTrackArrowIconPulseWidth2;
         [NMS(Index = 791)]
-        /* 0x8C20 */ public float HUDPlayerTrackArrowIconShowTime;
+        /* 0x8C2C */ public float HUDPlayerTrackArrowIconShowTime;
         [NMS(Index = 876)]
-        /* 0x8C24 */ public float HUDPlayerTrackArrowIconSize;
+        /* 0x8C30 */ public float HUDPlayerTrackArrowIconSize;
         [NMS(Index = 886)]
-        /* 0x8C28 */ public float HUDPlayerTrackArrowMinFadeDist;
+        /* 0x8C34 */ public float HUDPlayerTrackArrowMinFadeDist;
         [NMS(Index = 871)]
-        /* 0x8C2C */ public float HUDPlayerTrackArrowOffset;
+        /* 0x8C38 */ public float HUDPlayerTrackArrowOffset;
         [NMS(Index = 803)]
-        /* 0x8C30 */ public float HUDPlayerTrackArrowPulseOffset;
+        /* 0x8C3C */ public float HUDPlayerTrackArrowPulseOffset;
         [NMS(Index = 804)]
-        /* 0x8C34 */ public float HUDPlayerTrackArrowPulseRate;
+        /* 0x8C40 */ public float HUDPlayerTrackArrowPulseRate;
         [NMS(Index = 872)]
-        /* 0x8C38 */ public float HUDPlayerTrackArrowScreenBorder;
+        /* 0x8C44 */ public float HUDPlayerTrackArrowScreenBorder;
         [NMS(Index = 789)]
-        /* 0x8C3C */ public float HUDPlayerTrackArrowShipLabelOffset;
+        /* 0x8C48 */ public float HUDPlayerTrackArrowShipLabelOffset;
         [NMS(Index = 873)]
-        /* 0x8C40 */ public float HUDPlayerTrackArrowSize;
+        /* 0x8C4C */ public float HUDPlayerTrackArrowSize;
         [NMS(Index = 875)]
-        /* 0x8C44 */ public float HUDPlayerTrackArrowSizeMax;
+        /* 0x8C50 */ public float HUDPlayerTrackArrowSizeMax;
         [NMS(Index = 874)]
-        /* 0x8C48 */ public float HUDPlayerTrackArrowSizeMin;
+        /* 0x8C54 */ public float HUDPlayerTrackArrowSizeMin;
         [NMS(Index = 877)]
-        /* 0x8C4C */ public float HUDPlayerTrackArrowSmallIconSize;
+        /* 0x8C58 */ public float HUDPlayerTrackArrowSmallIconSize;
         [NMS(Index = 870)]
-        /* 0x8C50 */ public float HUDPlayerTrackArrowTargetDist;
+        /* 0x8C5C */ public float HUDPlayerTrackArrowTargetDist;
         [NMS(Index = 869)]
-        /* 0x8C54 */ public float HUDPlayerTrackArrowTargetDistShip;
+        /* 0x8C60 */ public float HUDPlayerTrackArrowTargetDistShip;
         [NMS(Index = 835)]
-        /* 0x8C58 */ public float HUDPlayerTrackArrowTextExtraHeight;
+        /* 0x8C64 */ public float HUDPlayerTrackArrowTextExtraHeight;
         [NMS(Index = 836)]
-        /* 0x8C5C */ public float HUDPlayerTrackArrowTextExtraOffsetX;
+        /* 0x8C68 */ public float HUDPlayerTrackArrowTextExtraOffsetX;
         [NMS(Index = 837)]
-        /* 0x8C60 */ public float HUDPlayerTrackArrowTextExtraOffsetY;
+        /* 0x8C6C */ public float HUDPlayerTrackArrowTextExtraOffsetY;
         [NMS(Index = 833)]
-        /* 0x8C64 */ public float HUDPlayerTrackArrowTextHeight;
+        /* 0x8C70 */ public float HUDPlayerTrackArrowTextHeight;
         [NMS(Index = 832)]
-        /* 0x8C68 */ public float HUDPlayerTrackArrowTextOffset;
+        /* 0x8C74 */ public float HUDPlayerTrackArrowTextOffset;
         [NMS(Index = 831)]
-        /* 0x8C6C */ public float HUDPlayerTrackDangerPulse;
+        /* 0x8C78 */ public float HUDPlayerTrackDangerPulse;
         [NMS(Index = 777)]
-        /* 0x8C70 */ public float HUDPlayerTrackNoSightPulse;
+        /* 0x8C7C */ public float HUDPlayerTrackNoSightPulse;
         [NMS(Index = 780)]
-        /* 0x8C74 */ public float HUDPlayerTrackTimerEnd;
+        /* 0x8C80 */ public float HUDPlayerTrackTimerEnd;
         [NMS(Index = 781)]
-        /* 0x8C78 */ public float HUDPlayerTrackTimerPulseRate;
+        /* 0x8C84 */ public float HUDPlayerTrackTimerPulseRate;
         [NMS(Index = 778)]
-        /* 0x8C7C */ public float HUDPlayerTrackTimerStart;
+        /* 0x8C88 */ public float HUDPlayerTrackTimerStart;
         [NMS(Index = 779)]
-        /* 0x8C80 */ public float HUDPlayerTrackTimerStartFade;
+        /* 0x8C8C */ public float HUDPlayerTrackTimerStartFade;
         [NMS(Index = 1306)]
-        /* 0x8C84 */ public float HUDTargetHealthDangerTime;
+        /* 0x8C90 */ public float HUDTargetHealthDangerTime;
         [NMS(Index = 1305)]
-        /* 0x8C88 */ public float HUDTargetHealthIconSize;
+        /* 0x8C94 */ public float HUDTargetHealthIconSize;
         [NMS(Index = 1309)]
-        /* 0x8C8C */ public float HUDTargetIconOffset;
+        /* 0x8C98 */ public float HUDTargetIconOffset;
         [NMS(Index = 1310)]
-        /* 0x8C90 */ public float HUDTargetIconSize;
+        /* 0x8C9C */ public float HUDTargetIconSize;
         [NMS(Index = 1307)]
-        /* 0x8C94 */ public float HUDTargetMarkerOffset;
+        /* 0x8CA0 */ public float HUDTargetMarkerOffset;
         [NMS(Index = 1308)]
-        /* 0x8C98 */ public float HUDTargetMarkerSize;
+        /* 0x8CA4 */ public float HUDTargetMarkerSize;
         [NMS(Index = 892)]
-        /* 0x8C9C */ public float IconBackgroundAlpha;
+        /* 0x8CA8 */ public float IconBackgroundAlpha;
         [NMS(Index = 420)]
-        /* 0x8CA0 */ public float IconGlowStrengthActive;
+        /* 0x8CAC */ public float IconGlowStrengthActive;
         [NMS(Index = 419)]
-        /* 0x8CA4 */ public float IconGlowStrengthError;
+        /* 0x8CB0 */ public float IconGlowStrengthError;
         [NMS(Index = 422)]
-        /* 0x8CA8 */ public float IconGlowStrengthHighlight;
+        /* 0x8CB4 */ public float IconGlowStrengthHighlight;
         [NMS(Index = 421)]
-        /* 0x8CAC */ public float IconGlowStrengthNeutral;
+        /* 0x8CB8 */ public float IconGlowStrengthNeutral;
         [NMS(Index = 1075)]
-        /* 0x8CB0 */ public float IconPulseRate;
+        /* 0x8CBC */ public float IconPulseRate;
         [NMS(Index = 1459)]
-        /* 0x8CB4 */ public float InfoPortalGuideCycleTime;
+        /* 0x8CC0 */ public float InfoPortalGuideCycleTime;
         [NMS(Index = 1460)]
-        /* 0x8CB8 */ public float InfoPortalMilestonesCycleTime;
+        /* 0x8CC4 */ public float InfoPortalMilestonesCycleTime;
         [NMS(Index = 1096)]
-        /* 0x8CBC */ public float InteractionIconInnerRadius;
+        /* 0x8CC8 */ public float InteractionIconInnerRadius;
         [NMS(Index = 1097)]
-        /* 0x8CC0 */ public float InteractionIconOuterRadius;
+        /* 0x8CCC */ public float InteractionIconOuterRadius;
         [NMS(Index = 318)]
-        /* 0x8CC4 */ public float InteractionInWorldMinScreenDistance;
+        /* 0x8CD0 */ public float InteractionInWorldMinScreenDistance;
         [NMS(Index = 319)]
-        /* 0x8CC8 */ public float InteractionInWorldMinScreenDistanceV2;
+        /* 0x8CD4 */ public float InteractionInWorldMinScreenDistanceV2;
         [NMS(Index = 317)]
-        /* 0x8CCC */ public float InteractionInWorldPitchDistance;
+        /* 0x8CD8 */ public float InteractionInWorldPitchDistance;
         [NMS(Index = 320)]
-        /* 0x8CD0 */ public float InteractionInWorldSeatedNPCHeightAdjust;
+        /* 0x8CDC */ public float InteractionInWorldSeatedNPCHeightAdjust;
         [NMS(Index = 321)]
-        /* 0x8CD4 */ public float InteractionInWorldSeatedNPCHeightAdjustV2;
+        /* 0x8CE0 */ public float InteractionInWorldSeatedNPCHeightAdjustV2;
         [NMS(Index = 1094)]
-        /* 0x8CD8 */ public float InteractionLabelHeight;
+        /* 0x8CE4 */ public float InteractionLabelHeight;
         [NMS(Index = 1087)]
-        /* 0x8CDC */ public float InteractionLabelHorizontalLineLength;
+        /* 0x8CE8 */ public float InteractionLabelHorizontalLineLength;
         [NMS(Index = 1095)]
-        /* 0x8CE0 */ public float InteractionLabelLineAlpha;
+        /* 0x8CEC */ public float InteractionLabelLineAlpha;
         [NMS(Index = 1099)]
-        /* 0x8CE4 */ public float InteractionLabelPixelHeightMax;
+        /* 0x8CF0 */ public float InteractionLabelPixelHeightMax;
         [NMS(Index = 1098)]
-        /* 0x8CE8 */ public float InteractionLabelPixelHeightMin;
+        /* 0x8CF4 */ public float InteractionLabelPixelHeightMin;
         [NMS(Index = 1093)]
-        /* 0x8CEC */ public float InteractionLabelRadiusScaler;
+        /* 0x8CF8 */ public float InteractionLabelRadiusScaler;
         [NMS(Index = 1101)]
-        /* 0x8CF0 */ public float InteractionLabelSpeedClose;
+        /* 0x8CFC */ public float InteractionLabelSpeedClose;
         [NMS(Index = 1100)]
-        /* 0x8CF4 */ public float InteractionLabelSpeedOpen;
+        /* 0x8D00 */ public float InteractionLabelSpeedOpen;
         [NMS(Index = 1002)]
-        /* 0x8CF8 */ public float InteractionScanDisplayTime;
+        /* 0x8D04 */ public float InteractionScanDisplayTime;
         [NMS(Index = 1001)]
-        /* 0x8CFC */ public float InteractionScanMinTime;
+        /* 0x8D08 */ public float InteractionScanMinTime;
         [NMS(Index = 1000)]
-        /* 0x8D00 */ public float InteractionScanScanTime;
+        /* 0x8D0C */ public float InteractionScanScanTime;
         [NMS(Index = 1005)]
-        /* 0x8D04 */ public float InteractionScanSlapOverallTime;
+        /* 0x8D10 */ public float InteractionScanSlapOverallTime;
         [NMS(Index = 1004)]
-        /* 0x8D08 */ public float InteractionScanSlapScale;
+        /* 0x8D14 */ public float InteractionScanSlapScale;
         [NMS(Index = 1003)]
-        /* 0x8D0C */ public float InteractionScanSlapTime;
+        /* 0x8D18 */ public float InteractionScanSlapTime;
         [NMS(Index = 1031)]
-        /* 0x8D10 */ public float InventoryFullMessageRepeatTime;
+        /* 0x8D1C */ public float InventoryFullMessageRepeatTime;
         [NMS(Index = 952)]
-        /* 0x8D14 */ public float InventoryIconTime;
+        /* 0x8D20 */ public float InventoryIconTime;
         [NMS(Index = 83)]
-        /* 0x8D18 */ public float InvSlotGradientFactor;
+        /* 0x8D24 */ public float InvSlotGradientFactor;
         [NMS(Index = 82)]
-        /* 0x8D1C */ public float InvSlotGradientFactorMin;
+        /* 0x8D28 */ public float InvSlotGradientFactorMin;
         [NMS(Index = 84)]
-        /* 0x8D20 */ public float InvSlotGradientTime;
+        /* 0x8D2C */ public float InvSlotGradientTime;
         [NMS(Index = 264)]
-        /* 0x8D24 */ public float InWorldInteractionScreenScale;
+        /* 0x8D30 */ public float InWorldInteractionScreenScale;
         [NMS(Index = 158)]
-        /* 0x8D28 */ public float InWorldInteractLabelFarDistance;
+        /* 0x8D34 */ public float InWorldInteractLabelFarDistance;
         [NMS(Index = 159)]
-        /* 0x8D2C */ public float InWorldInteractLabelFarRange;
+        /* 0x8D38 */ public float InWorldInteractLabelFarRange;
         [NMS(Index = 217)]
-        /* 0x8D30 */ public int InWorldInteractLabelHeight;
+        /* 0x8D3C */ public int InWorldInteractLabelHeight;
         [NMS(Index = 155)]
-        /* 0x8D34 */ public float InWorldInteractLabelMinHeadOffset;
+        /* 0x8D40 */ public float InWorldInteractLabelMinHeadOffset;
         [NMS(Index = 156)]
-        /* 0x8D38 */ public float InWorldInteractLabelNearDistance;
+        /* 0x8D44 */ public float InWorldInteractLabelNearDistance;
         [NMS(Index = 157)]
-        /* 0x8D3C */ public float InWorldInteractLabelNearRange;
+        /* 0x8D48 */ public float InWorldInteractLabelNearRange;
         [NMS(Index = 147)]
-        /* 0x8D40 */ public float InWorldInteractLabelScale;
+        /* 0x8D4C */ public float InWorldInteractLabelScale;
         [NMS(Index = 148)]
-        /* 0x8D44 */ public float InWorldInteractLabelScaleV2;
+        /* 0x8D50 */ public float InWorldInteractLabelScaleV2;
         [NMS(Index = 216)]
-        /* 0x8D48 */ public int InWorldInteractLabelWidth;
+        /* 0x8D54 */ public int InWorldInteractLabelWidth;
         [NMS(Index = 212)]
-        /* 0x8D4C */ public float InWorldNGuiScreenScale;
+        /* 0x8D58 */ public float InWorldNGuiScreenScale;
         [NMS(Index = 265)]
-        /* 0x8D50 */ public float InWorldNPCInteractionScreenScale;
+        /* 0x8D5C */ public float InWorldNPCInteractionScreenScale;
         [NMS(Index = 211)]
-        /* 0x8D54 */ public float InWorldScreenForwardOffset;
+        /* 0x8D60 */ public float InWorldScreenForwardOffset;
         [NMS(Index = 210)]
-        /* 0x8D58 */ public float InWorldScreenMinScreenDistance;
+        /* 0x8D64 */ public float InWorldScreenMinScreenDistance;
         [NMS(Index = 149)]
-        /* 0x8D5C */ public float InWorldScreenScaleDistance;
+        /* 0x8D68 */ public float InWorldScreenScaleDistance;
         [NMS(Index = 56)]
-        /* 0x8D60 */ public float InWorldUIInteractionDistanceWithEyeTrackingEnabled;
+        /* 0x8D6C */ public float InWorldUIInteractionDistanceWithEyeTrackingEnabled;
         [NMS(Index = 955)]
-        /* 0x8D64 */ public float ItemReceivedMessageTimeToAdd;
+        /* 0x8D70 */ public float ItemReceivedMessageTimeToAdd;
         [NMS(Index = 995)]
-        /* 0x8D68 */ public float ItemSlotColourTechChargeRate;
+        /* 0x8D74 */ public float ItemSlotColourTechChargeRate;
         [NMS(Index = 1037)]
-        /* 0x8D6C */ public float KeepHazardBarActiveTime;
+        /* 0x8D78 */ public float KeepHazardBarActiveTime;
         [NMS(Index = 1038)]
-        /* 0x8D70 */ public float KeepSecondHazardBarActiveTime;
+        /* 0x8D7C */ public float KeepSecondHazardBarActiveTime;
         [NMS(Index = 930)]
-        /* 0x8D74 */ public float LandNotifyHeightThreshold;
+        /* 0x8D80 */ public float LandNotifyHeightThreshold;
         [NMS(Index = 929)]
-        /* 0x8D78 */ public float LandNotifySpeedThreshold;
+        /* 0x8D84 */ public float LandNotifySpeedThreshold;
         [NMS(Index = 931)]
-        /* 0x8D7C */ public float LandNotifyTimeThreshold;
+        /* 0x8D88 */ public float LandNotifyTimeThreshold;
         [NMS(Index = 743)]
-        /* 0x8D80 */ public float LargeSpaceIconSize;
+        /* 0x8D8C */ public float LargeSpaceIconSize;
         [NMS(Index = 358)]
-        /* 0x8D84 */ public float LoadFadeInDefaultTime;
+        /* 0x8D90 */ public float LoadFadeInDefaultTime;
         [NMS(Index = 142)]
-        /* 0x8D88 */ public float LoadingScreenTime;
+        /* 0x8D94 */ public float LoadingScreenTime;
         [NMS(Index = 141)]
-        /* 0x8D8C */ public float LoadingScreenTravelSpeed;
+        /* 0x8D98 */ public float LoadingScreenTravelSpeed;
         [NMS(Index = 140)]
-        /* 0x8D90 */ public float LoadingTravelDistance;
+        /* 0x8D9C */ public float LoadingTravelDistance;
         [NMS(Index = 1375)]
-        /* 0x8D94 */ public float LockOnMarkerSize;
+        /* 0x8DA0 */ public float LockOnMarkerSize;
         [NMS(Index = 1376)]
-        /* 0x8D98 */ public float LockOnMarkerSizeLock;
+        /* 0x8DA4 */ public float LockOnMarkerSizeLock;
         [NMS(Index = 208)]
-        /* 0x8D9C */ public float LowerHelmetScreenPitch;
+        /* 0x8DA8 */ public float LowerHelmetScreenPitch;
         [NMS(Index = 207)]
-        /* 0x8DA0 */ public float LowerHelmetScreenScale;
+        /* 0x8DAC */ public float LowerHelmetScreenScale;
         [NMS(Index = 520)]
-        /* 0x8DA4 */ public float LowHealthShieldFactor;
+        /* 0x8DB0 */ public float LowHealthShieldFactor;
         [NMS(Index = 519)]
-        /* 0x8DA8 */ public float LowHealthShieldMin;
+        /* 0x8DB4 */ public float LowHealthShieldMin;
         [NMS(Index = 473)]
-        /* 0x8DAC */ public float MaintenanceIconFadeStart;
+        /* 0x8DB8 */ public float MaintenanceIconFadeStart;
         [NMS(Index = 474)]
-        /* 0x8DB0 */ public float MaintenanceIconFadeTime;
+        /* 0x8DBC */ public float MaintenanceIconFadeTime;
         [NMS(Index = 950)]
-        /* 0x8DB4 */ public float ManualNotificationPauseTime;
+        /* 0x8DC0 */ public float ManualNotificationPauseTime;
         [NMS(Index = 1458)]
-        /* 0x8DB8 */ public float ManualScrollChangePerInputMax;
+        /* 0x8DC4 */ public float ManualScrollChangePerInputMax;
         [NMS(Index = 1457)]
-        /* 0x8DBC */ public float ManualScrollChangePerInputMin;
+        /* 0x8DC8 */ public float ManualScrollChangePerInputMin;
         [NMS(Index = 471)]
-        /* 0x8DC0 */ public float MarkerComponentOffset;
+        /* 0x8DCC */ public float MarkerComponentOffset;
         [NMS(Index = 368)]
-        /* 0x8DC4 */ public float MarkerHorizonApproachAngle;
+        /* 0x8DD0 */ public float MarkerHorizonApproachAngle;
         [NMS(Index = 367)]
-        /* 0x8DC8 */ public float MarkerHorizonMinOffset;
+        /* 0x8DD4 */ public float MarkerHorizonMinOffset;
         [NMS(Index = 374)]
-        /* 0x8DCC */ public float MarkerHorizonOffPlanetLightBeamAngle;
+        /* 0x8DD8 */ public float MarkerHorizonOffPlanetLightBeamAngle;
         [NMS(Index = 366)]
-        /* 0x8DD0 */ public float MarkerHorizonOffsetAngle;
+        /* 0x8DDC */ public float MarkerHorizonOffsetAngle;
         [NMS(Index = 375)]
-        /* 0x8DD4 */ public float MarkerHorizonShipApproachOffset;
+        /* 0x8DE0 */ public float MarkerHorizonShipApproachOffset;
         [NMS(Index = 369)]
-        /* 0x8DD8 */ public float MarkerOffsetTypeAngle;
+        /* 0x8DE4 */ public float MarkerOffsetTypeAngle;
         [NMS(Index = 373)]
-        /* 0x8DDC */ public float MarkerOffsetTypeAngleAsteroid;
+        /* 0x8DE8 */ public float MarkerOffsetTypeAngleAsteroid;
         [NMS(Index = 370)]
-        /* 0x8DE0 */ public float MarkerOffsetTypeAngleBattle;
+        /* 0x8DEC */ public float MarkerOffsetTypeAngleBattle;
         [NMS(Index = 371)]
-        /* 0x8DE4 */ public float MarkerOffsetTypeAngleBounty;
+        /* 0x8DF0 */ public float MarkerOffsetTypeAngleBounty;
         [NMS(Index = 372)]
-        /* 0x8DE8 */ public float MarkerOffsetTypeAnglePlayerShip;
+        /* 0x8DF4 */ public float MarkerOffsetTypeAnglePlayerShip;
         [NMS(Index = 456)]
-        /* 0x8DEC */ public float MarkerRingInnerRadius;
+        /* 0x8DF8 */ public float MarkerRingInnerRadius;
         [NMS(Index = 457)]
-        /* 0x8DF0 */ public float MarkerRingOuterRadius;
+        /* 0x8DFC */ public float MarkerRingOuterRadius;
         [NMS(Index = 384)]
-        /* 0x8DF4 */ public float MarkerTagAppearDelay;
+        /* 0x8E00 */ public float MarkerTagAppearDelay;
         [NMS(Index = 523)]
-        /* 0x8DF8 */ public int MaxDialogCharSizeIdeographic;
+        /* 0x8E04 */ public int MaxDialogCharSizeIdeographic;
         [NMS(Index = 521)]
-        /* 0x8DFC */ public int MaxDialogCharSizeRoman;
+        /* 0x8E08 */ public int MaxDialogCharSizeRoman;
         [NMS(Index = 379)]
-        /* 0x8E00 */ public int MaxNumMessageBeaconIcons;
+        /* 0x8E0C */ public int MaxNumMessageBeaconIcons;
         [NMS(Index = 193)]
-        /* 0x8E04 */ public float MaxProjectorDistanceFromDefault;
+        /* 0x8E10 */ public float MaxProjectorDistanceFromDefault;
         [NMS(Index = 196)]
-        /* 0x8E08 */ public float MaxProjectorGrabDistance;
+        /* 0x8E14 */ public float MaxProjectorGrabDistance;
         [NMS(Index = 2)]
-        /* 0x8E0C */ public int MaxScannedAsteroidArrows;
+        /* 0x8E18 */ public int MaxScannedAsteroidArrows;
         [NMS(Index = 97)]
-        /* 0x8E10 */ public int MaxSubstanceMaxAmountForAmountFraction;
+        /* 0x8E1C */ public int MaxSubstanceMaxAmountForAmountFraction;
         [NMS(Index = 1476)]
-        /* 0x8E14 */ public float MeltdownStartedOSDDuration;
+        /* 0x8E20 */ public float MeltdownStartedOSDDuration;
         [NMS(Index = 1475)]
-        /* 0x8E18 */ public float MeltdownWarningOSDDuration;
+        /* 0x8E24 */ public float MeltdownWarningOSDDuration;
         [NMS(Index = 953)]
-        /* 0x8E1C */ public float MessageNotificationTime;
+        /* 0x8E28 */ public float MessageNotificationTime;
         [NMS(Index = 954)]
-        /* 0x8E20 */ public float MessageTimeQuick;
+        /* 0x8E2C */ public float MessageTimeQuick;
         [NMS(Index = 121)]
-        /* 0x8E24 */ public float MilestoneStingDisplayTime;
+        /* 0x8E30 */ public float MilestoneStingDisplayTime;
         [NMS(Index = 1451)]
-        /* 0x8E28 */ public float MinimumHoldFill;
+        /* 0x8E34 */ public float MinimumHoldFill;
         [NMS(Index = 119)]
-        /* 0x8E2C */ public float MinSeasonPlayTimeInDays;
+        /* 0x8E38 */ public float MinSeasonPlayTimeInDays;
         [NMS(Index = 756)]
-        /* 0x8E30 */ public float MissileCentreOffset;
+        /* 0x8E3C */ public float MissileCentreOffset;
         [NMS(Index = 1381)]
-        /* 0x8E34 */ public float MissileIconAttackPulseAmount;
+        /* 0x8E40 */ public float MissileIconAttackPulseAmount;
         [NMS(Index = 1380)]
-        /* 0x8E38 */ public float MissileIconAttackPulseTime;
+        /* 0x8E44 */ public float MissileIconAttackPulseTime;
         [NMS(Index = 737)]
-        /* 0x8E3C */ public float MissionCompassIconScaler;
+        /* 0x8E48 */ public float MissionCompassIconScaler;
         [NMS(Index = 383)]
-        /* 0x8E40 */ public float MissionDetailsPageBaseHeight;
+        /* 0x8E4C */ public float MissionDetailsPageBaseHeight;
         [NMS(Index = 549)]
-        /* 0x8E44 */ public int MissionLoopCount;
+        /* 0x8E50 */ public int MissionLoopCount;
         [NMS(Index = 550)]
-        /* 0x8E48 */ public int MissionLoopCountPirate;
+        /* 0x8E54 */ public int MissionLoopCountPirate;
         [NMS(Index = 738)]
-        /* 0x8E4C */ public float MissionMarkerSize;
+        /* 0x8E58 */ public float MissionMarkerSize;
         [NMS(Index = 380)]
-        /* 0x8E50 */ public float MissionObjectiveBaseHeight;
+        /* 0x8E5C */ public float MissionObjectiveBaseHeight;
         [NMS(Index = 381)]
-        /* 0x8E54 */ public float MissionObjectiveDoneHeight;
+        /* 0x8E60 */ public float MissionObjectiveDoneHeight;
         [NMS(Index = 382)]
-        /* 0x8E58 */ public float MissionObjectiveScrollingExtra;
+        /* 0x8E64 */ public float MissionObjectiveScrollingExtra;
         [NMS(Index = 551)]
-        /* 0x8E5C */ public int MissionSeedOffset;
+        /* 0x8E68 */ public int MissionSeedOffset;
         [NMS(Index = 548)]
-        /* 0x8E60 */ public int MissionSpecificMissionPercent;
+        /* 0x8E6C */ public int MissionSpecificMissionPercent;
         [NMS(Index = 532)]
-        /* 0x8E64 */ public float MissionStartEndOSDTime;
+        /* 0x8E70 */ public float MissionStartEndOSDTime;
         [NMS(Index = 533)]
-        /* 0x8E68 */ public float MissionStartEndOSDTimeProcedural;
+        /* 0x8E74 */ public float MissionStartEndOSDTimeProcedural;
         [NMS(Index = 531)]
-        /* 0x8E6C */ public float MissionStartEndTime;
+        /* 0x8E78 */ public float MissionStartEndTime;
         [NMS(Index = 51)]
-        /* 0x8E70 */ public float ModularCustomisationApplyTime;
+        /* 0x8E7C */ public float ModularCustomisationApplyTime;
         [NMS(Index = 1466)]
-        /* 0x8E74 */ public float MouseRotateCameraSensitivity;
+        /* 0x8E80 */ public float MouseRotateCameraSensitivity;
         [NMS(Index = 1436)]
-        /* 0x8E78 */ public float MultiplayerTeleportEffectAppearTime;
+        /* 0x8E84 */ public float MultiplayerTeleportEffectAppearTime;
         [NMS(Index = 1435)]
-        /* 0x8E7C */ public float MultiplayerTeleportEffectDisappearTime;
+        /* 0x8E88 */ public float MultiplayerTeleportEffectDisappearTime;
         [NMS(Index = 1401)]
-        /* 0x8E80 */ public float NGuiActiveAreaOffsetTime;
+        /* 0x8E8C */ public float NGuiActiveAreaOffsetTime;
         [NMS(Index = 1392)]
-        /* 0x8E84 */ public float NGuiAltPlacementDistanceScrollSpeed;
+        /* 0x8E90 */ public float NGuiAltPlacementDistanceScrollSpeed;
         [NMS(Index = 1400)]
-        /* 0x8E88 */ public float NGuiCursorOffsetMultiplier;
+        /* 0x8E94 */ public float NGuiCursorOffsetMultiplier;
         [NMS(Index = 306)]
-        /* 0x8E8C */ public float NGuiHmdOffset;
+        /* 0x8E98 */ public float NGuiHmdOffset;
         [NMS(Index = 1382)]
-        /* 0x8E90 */ public float NGuiModelRotationDegreesX;
+        /* 0x8E9C */ public float NGuiModelRotationDegreesX;
         [NMS(Index = 1383)]
-        /* 0x8E94 */ public float NGuiModelRotationDegreesY;
+        /* 0x8EA0 */ public float NGuiModelRotationDegreesY;
         [NMS(Index = 1384)]
-        /* 0x8E98 */ public float NGuiModelRotationDegreesZ;
+        /* 0x8EA4 */ public float NGuiModelRotationDegreesZ;
         [NMS(Index = 1391)]
-        /* 0x8E9C */ public float NGuiModelViewCdSmoothTime;
+        /* 0x8EA8 */ public float NGuiModelViewCdSmoothTime;
         [NMS(Index = 1389)]
-        /* 0x8EA0 */ public float NGuiModelViewDistanceDiscoveryPage;
+        /* 0x8EAC */ public float NGuiModelViewDistanceDiscoveryPage;
         [NMS(Index = 1385)]
-        /* 0x8EA4 */ public float NGuiModelViewDistanceGlobal;
+        /* 0x8EB0 */ public float NGuiModelViewDistanceGlobal;
         [NMS(Index = 1388)]
-        /* 0x8EA8 */ public float NGuiModelViewDistanceShipPage;
+        /* 0x8EB4 */ public float NGuiModelViewDistanceShipPage;
         [NMS(Index = 1386)]
-        /* 0x8EAC */ public float NGuiModelViewDistanceSuitPage;
+        /* 0x8EB8 */ public float NGuiModelViewDistanceSuitPage;
         [NMS(Index = 1387)]
-        /* 0x8EB0 */ public float NGuiModelViewDistanceWeaponPage;
+        /* 0x8EBC */ public float NGuiModelViewDistanceWeaponPage;
         [NMS(Index = 1409)]
-        /* 0x8EB4 */ public float NGuiModelViewFadeInAfterRenderTime;
+        /* 0x8EC0 */ public float NGuiModelViewFadeInAfterRenderTime;
         [NMS(Index = 1390)]
-        /* 0x8EB8 */ public float NGuiModelViewFov;
+        /* 0x8EC4 */ public float NGuiModelViewFov;
         [NMS(Index = 1394)]
-        /* 0x8EBC */ public float NGuiModelViewFractionOfBBHeightAboveReflectivePlane;
+        /* 0x8EC8 */ public float NGuiModelViewFractionOfBBHeightAboveReflectivePlane;
         [NMS(Index = 1219)]
-        /* 0x8EC0 */ public float NGuiMouseSensitivity;
+        /* 0x8ECC */ public float NGuiMouseSensitivity;
         [NMS(Index = 1218)]
-        /* 0x8EC4 */ public float NGuiPadSensitivity;
+        /* 0x8ED0 */ public float NGuiPadSensitivity;
         [NMS(Index = 1393)]
-        /* 0x8EC8 */ public float NGuiPlacementAngleScrollSpeed;
+        /* 0x8ED4 */ public float NGuiPlacementAngleScrollSpeed;
         [NMS(Index = 1398)]
-        /* 0x8ECC */ public float NGuiThumbnailModelRotationDegreesY;
+        /* 0x8ED8 */ public float NGuiThumbnailModelRotationDegreesY;
         [NMS(Index = 1399)]
-        /* 0x8ED0 */ public float NGuiThumbnailModelViewDistance;
+        /* 0x8EDC */ public float NGuiThumbnailModelViewDistance;
         [NMS(Index = 905)]
-        /* 0x8ED4 */ public float NotificationBackgroundGradientAlphaInShip;
+        /* 0x8EE0 */ public float NotificationBackgroundGradientAlphaInShip;
         [NMS(Index = 904)]
-        /* 0x8ED8 */ public float NotificationBackgroundGradientEndOffsetPercentInShip;
+        /* 0x8EE4 */ public float NotificationBackgroundGradientEndOffsetPercentInShip;
         [NMS(Index = 938)]
-        /* 0x8EDC */ public float NotificationBridgeReachDistance;
+        /* 0x8EE8 */ public float NotificationBridgeReachDistance;
         [NMS(Index = 912)]
-        /* 0x8EE0 */ public float NotificationBuildHintStartTime;
+        /* 0x8EEC */ public float NotificationBuildHintStartTime;
         [NMS(Index = 917)]
-        /* 0x8EE4 */ public float NotificationCantFireTime;
+        /* 0x8EF0 */ public float NotificationCantFireTime;
         [NMS(Index = 918)]
-        /* 0x8EE8 */ public float NotificationDangerTime;
+        /* 0x8EF4 */ public float NotificationDangerTime;
         [NMS(Index = 943)]
-        /* 0x8EEC */ public float NotificationDeviceIdleTime;
+        /* 0x8EF8 */ public float NotificationDeviceIdleTime;
         [NMS(Index = 939)]
-        /* 0x8EF0 */ public float NotificationDiscoveryIdleTime;
+        /* 0x8EFC */ public float NotificationDiscoveryIdleTime;
         [NMS(Index = 936)]
-        /* 0x8EF4 */ public float NotificationFinalMissionWait;
+        /* 0x8F00 */ public float NotificationFinalMissionWait;
         [NMS(Index = 934)]
-        /* 0x8EF8 */ public float NotificationGoToSpaceStationWait;
+        /* 0x8F04 */ public float NotificationGoToSpaceStationWait;
         [NMS(Index = 357)]
-        /* 0x8EFC */ public float NotificationHazardMinTimeAfterRecharge;
+        /* 0x8F08 */ public float NotificationHazardMinTimeAfterRecharge;
         [NMS(Index = 909)]
-        /* 0x8F00 */ public float NotificationHazardSafeThreshold;
+        /* 0x8F0C */ public float NotificationHazardSafeThreshold;
         [NMS(Index = 910)]
-        /* 0x8F04 */ public float NotificationHazardTimer;
+        /* 0x8F10 */ public float NotificationHazardTimer;
         [NMS(Index = 940)]
-        /* 0x8F08 */ public float NotificationInfoIdleTime;
+        /* 0x8F14 */ public float NotificationInfoIdleTime;
         [NMS(Index = 911)]
-        /* 0x8F0C */ public float NotificationInteractHintStartTime;
+        /* 0x8F18 */ public float NotificationInteractHintStartTime;
         [NMS(Index = 913)]
-        /* 0x8F10 */ public float NotificationJetpackTime;
+        /* 0x8F1C */ public float NotificationJetpackTime;
         [NMS(Index = 922)]
-        /* 0x8F14 */ public float NotificationMaxPageHintTime;
+        /* 0x8F20 */ public float NotificationMaxPageHintTime;
         [NMS(Index = 921)]
-        /* 0x8F18 */ public float NotificationMessageCycleTime;
+        /* 0x8F24 */ public float NotificationMessageCycleTime;
         [NMS(Index = 908)]
-        /* 0x8F1C */ public float NotificationMinVisibleTime;
+        /* 0x8F28 */ public float NotificationMinVisibleTime;
         [NMS(Index = 944)]
-        /* 0x8F20 */ public float NotificationMissionHintTime;
+        /* 0x8F2C */ public float NotificationMissionHintTime;
         [NMS(Index = 945)]
-        /* 0x8F24 */ public float NotificationMissionHintTimeCritical;
+        /* 0x8F30 */ public float NotificationMissionHintTimeCritical;
         [NMS(Index = 946)]
-        /* 0x8F28 */ public float NotificationMissionHintTimeSecondary;
+        /* 0x8F34 */ public float NotificationMissionHintTimeSecondary;
         [NMS(Index = 935)]
-        /* 0x8F2C */ public float NotificationMonolithMissionWait;
+        /* 0x8F38 */ public float NotificationMonolithMissionWait;
         [NMS(Index = 941)]
-        /* 0x8F30 */ public float NotificationNewTechIdleTime;
+        /* 0x8F3C */ public float NotificationNewTechIdleTime;
         [NMS(Index = 942)]
-        /* 0x8F34 */ public float NotificationScanEventMissionIdleTime;
+        /* 0x8F40 */ public float NotificationScanEventMissionIdleTime;
         [NMS(Index = 919)]
-        /* 0x8F38 */ public float NotificationScanTime;
+        /* 0x8F44 */ public float NotificationScanTime;
         [NMS(Index = 920)]
-        /* 0x8F3C */ public float NotificationScanTimeCutoff;
+        /* 0x8F48 */ public float NotificationScanTimeCutoff;
         [NMS(Index = 914)]
-        /* 0x8F40 */ public float NotificationShieldTime;
+        /* 0x8F4C */ public float NotificationShieldTime;
         [NMS(Index = 926)]
-        /* 0x8F44 */ public float NotificationShipBoostMinTime;
+        /* 0x8F50 */ public float NotificationShipBoostMinTime;
         [NMS(Index = 927)]
-        /* 0x8F48 */ public float NotificationShipBoostReminderTime;
+        /* 0x8F54 */ public float NotificationShipBoostReminderTime;
         [NMS(Index = 928)]
-        /* 0x8F4C */ public float NotificationShipBoostReminderTimeTutorial;
+        /* 0x8F58 */ public float NotificationShipBoostReminderTimeTutorial;
         [NMS(Index = 915)]
-        /* 0x8F50 */ public float NotificationShipBoostTime;
+        /* 0x8F5C */ public float NotificationShipBoostTime;
         [NMS(Index = 916)]
-        /* 0x8F54 */ public float NotificationShipBoostTimeVR;
+        /* 0x8F60 */ public float NotificationShipBoostTimeVR;
         [NMS(Index = 923)]
-        /* 0x8F58 */ public float NotificationShipJumpMinTime;
+        /* 0x8F64 */ public float NotificationShipJumpMinTime;
         [NMS(Index = 924)]
-        /* 0x8F5C */ public float NotificationShipJumpReminderTime;
+        /* 0x8F68 */ public float NotificationShipJumpReminderTime;
         [NMS(Index = 925)]
-        /* 0x8F60 */ public float NotificationShipJumpReminderTutorial;
+        /* 0x8F6C */ public float NotificationShipJumpReminderTutorial;
         [NMS(Index = 906)]
-        /* 0x8F64 */ public int NotificationsResourceExtractHintCount;
+        /* 0x8F70 */ public int NotificationsResourceExtractHintCount;
         [NMS(Index = 907)]
-        /* 0x8F68 */ public float NotificationStaminaHintDistanceWalked;
+        /* 0x8F74 */ public float NotificationStaminaHintDistanceWalked;
         [NMS(Index = 932)]
-        /* 0x8F6C */ public float NotificationTimeBeforeHeridiumMarker;
+        /* 0x8F78 */ public float NotificationTimeBeforeHeridiumMarker;
         [NMS(Index = 933)]
-        /* 0x8F70 */ public float NotificationUrgentMessageTime;
+        /* 0x8F7C */ public float NotificationUrgentMessageTime;
         [NMS(Index = 937)]
-        /* 0x8F74 */ public float NotificationWaypointReachDistance;
+        /* 0x8F80 */ public float NotificationWaypointReachDistance;
         [NMS(Index = 826)]
-        /* 0x8F78 */ public int NumDeathQuotes;
+        /* 0x8F84 */ public int NumDeathQuotes;
         [NMS(Index = 543)]
-        /* 0x8F7C */ public float OnFootDamageDirectionIndicatorFadeRange;
+        /* 0x8F88 */ public float OnFootDamageDirectionIndicatorFadeRange;
         [NMS(Index = 542)]
-        /* 0x8F80 */ public float OnFootDamageDirectionIndicatorRadius;
+        /* 0x8F8C */ public float OnFootDamageDirectionIndicatorRadius;
         [NMS(Index = 143)]
-        /* 0x8F84 */ public float OSDMessagePauseOffscreenAngle;
+        /* 0x8F90 */ public float OSDMessagePauseOffscreenAngle;
         [NMS(Index = 346)]
-        /* 0x8F88 */ public int OSDMessageQueueMax;
+        /* 0x8F94 */ public int OSDMessageQueueMax;
         [NMS(Index = 345)]
-        /* 0x8F8C */ public int OSDMessageQueueMin;
+        /* 0x8F98 */ public int OSDMessageQueueMin;
         [NMS(Index = 344)]
-        /* 0x8F90 */ public float OSDMessageQueueSpeedMultiplier;
+        /* 0x8F9C */ public float OSDMessageQueueSpeedMultiplier;
         [NMS(Index = 11)]
-        /* 0x8F94 */ public float OutpostPortalMarkerDistance;
+        /* 0x8FA0 */ public float OutpostPortalMarkerDistance;
         [NMS(Index = 1118)]
-        /* 0x8F98 */ public float PadCursorAcceleration;
+        /* 0x8FA4 */ public float PadCursorAcceleration;
         [NMS(Index = 1119)]
-        /* 0x8F9C */ public float PadCursorMaxSpeedModifier;
+        /* 0x8FA8 */ public float PadCursorMaxSpeedModifier;
         [NMS(Index = 94)]
-        /* 0x8FA0 */ public float PadCursorUICurveStrength;
+        /* 0x8FAC */ public float PadCursorUICurveStrength;
         [NMS(Index = 1465)]
-        /* 0x8FA4 */ public float PadRotateCameraSensitivity;
+        /* 0x8FB0 */ public float PadRotateCameraSensitivity;
         [NMS(Index = 516)]
-        /* 0x8FA8 */ public float PageTurnTime;
+        /* 0x8FB4 */ public float PageTurnTime;
         [NMS(Index = 110)]
-        /* 0x8FAC */ public float ParagraphAutoScrollSpeed;
+        /* 0x8FB8 */ public float ParagraphAutoScrollSpeed;
         [NMS(Index = 982)]
-        /* 0x8FB0 */ public float PauseMenuHoldTime;
+        /* 0x8FBC */ public float PauseMenuHoldTime;
         [NMS(Index = 165)]
-        /* 0x8FB4 */ public float PetBattleStatUnlockBounceTime;
+        /* 0x8FC0 */ public float PetBattleStatUnlockBounceTime;
         [NMS(Index = 167)]
-        /* 0x8FB8 */ public float PetBattleStatUnlockMessageTime;
+        /* 0x8FC4 */ public float PetBattleStatUnlockMessageTime;
         [NMS(Index = 166)]
-        /* 0x8FBC */ public float PetBattleStatUrgentBounceTime;
+        /* 0x8FC8 */ public float PetBattleStatUrgentBounceTime;
         [NMS(Index = 7)]
-        /* 0x8FC0 */ public float PetGeneIconGlowTimeNormal;
+        /* 0x8FCC */ public float PetGeneIconGlowTimeNormal;
         [NMS(Index = 8)]
-        /* 0x8FC4 */ public float PetGeneIconGlowTimeUrgent;
+        /* 0x8FD0 */ public float PetGeneIconGlowTimeUrgent;
         [NMS(Index = 745)]
-        /* 0x8FC8 */ public float PetHoverIconSize;
+        /* 0x8FD4 */ public float PetHoverIconSize;
         [NMS(Index = 168)]
-        /* 0x8FCC */ public float PetHUDMarkerExtraFollowInfoDistance;
+        /* 0x8FD8 */ public float PetHUDMarkerExtraFollowInfoDistance;
         [NMS(Index = 169)]
-        /* 0x8FD0 */ public float PetHUDMarkerHideDistance;
+        /* 0x8FDC */ public float PetHUDMarkerHideDistance;
         [NMS(Index = 170)]
-        /* 0x8FD4 */ public float PetHUDMarkerHideDistanceShort;
+        /* 0x8FE0 */ public float PetHUDMarkerHideDistanceShort;
         [NMS(Index = 171)]
-        /* 0x8FD8 */ public float PetHUDMarkerOffset;
+        /* 0x8FE4 */ public float PetHUDMarkerOffset;
         [NMS(Index = 746)]
-        /* 0x8FDC */ public float PetIconSize;
+        /* 0x8FE8 */ public float PetIconSize;
         [NMS(Index = 172)]
-        /* 0x8FE0 */ public float PetMoodMarkerOffset;
+        /* 0x8FEC */ public float PetMoodMarkerOffset;
         [NMS(Index = 164)]
-        /* 0x8FE4 */ public float PetSlotUnlockBounceTime;
+        /* 0x8FF0 */ public float PetSlotUnlockBounceTime;
         [NMS(Index = 646)]
-        /* 0x8FE8 */ public float PhotoModeTimeofDayChange;
+        /* 0x8FF4 */ public float PhotoModeTimeofDayChange;
         [NMS(Index = 645)]
-        /* 0x8FEC */ public float PhotoModeValueAlpha;
+        /* 0x8FF8 */ public float PhotoModeValueAlpha;
         [NMS(Index = 675)]
-        /* 0x8FF0 */ public float PirateAttackIndicatorRadius;
+        /* 0x8FFC */ public float PirateAttackIndicatorRadius;
         [NMS(Index = 674)]
-        /* 0x8FF4 */ public float PirateAttackIndicatorWidth;
+        /* 0x9000 */ public float PirateAttackIndicatorWidth;
         [NMS(Index = 676)]
-        /* 0x8FF8 */ public float PirateAttackProbeDisplayFinishFactor;
+        /* 0x9004 */ public float PirateAttackProbeDisplayFinishFactor;
         [NMS(Index = 673)]
-        /* 0x8FFC */ public float PirateCountdownTime;
+        /* 0x9008 */ public float PirateCountdownTime;
         [NMS(Index = 658)]
-        /* 0x9000 */ public float PirateFreighterSummonAtOffset;
+        /* 0x900C */ public float PirateFreighterSummonAtOffset;
         [NMS(Index = 656)]
-        /* 0x9004 */ public float PirateFreighterSummonOffset;
+        /* 0x9010 */ public float PirateFreighterSummonOffset;
         [NMS(Index = 657)]
-        /* 0x9008 */ public float PirateFreighterSummonOffsetPulse;
+        /* 0x9014 */ public float PirateFreighterSummonOffsetPulse;
         [NMS(Index = 139)]
-        /* 0x900C */ public float PlacedMarkerFadeTime;
+        /* 0x9018 */ public float PlacedMarkerFadeTime;
         [NMS(Index = 129)]
-        /* 0x9010 */ public float PlanetDataExtraRadius;
+        /* 0x901C */ public float PlanetDataExtraRadius;
         [NMS(Index = 989)]
-        /* 0x9014 */ public float PlanetLabelAngle;
+        /* 0x9020 */ public float PlanetLabelAngle;
         [NMS(Index = 988)]
-        /* 0x9018 */ public float PlanetLabelTime;
+        /* 0x9024 */ public float PlanetLabelTime;
         [NMS(Index = 1233)]
-        /* 0x901C */ public float PlanetPoleEastWestDistanceFromPlayer;
+        /* 0x9028 */ public float PlanetPoleEastWestDistanceFromPlayer;
         [NMS(Index = 1232)]
-        /* 0x9020 */ public float PlanetPoleMaxDotProduct;
+        /* 0x902C */ public float PlanetPoleMaxDotProduct;
         [NMS(Index = 514)]
-        /* 0x9024 */ public float PlanetRaidMarkerOffset;
+        /* 0x9030 */ public float PlanetRaidMarkerOffset;
         [NMS(Index = 688)]
-        /* 0x9028 */ public float PlanetScanDelayTime;
+        /* 0x9034 */ public float PlanetScanDelayTime;
         [NMS(Index = 1143)]
-        /* 0x902C */ public float PopupActivateTime;
+        /* 0x9038 */ public float PopupActivateTime;
         [NMS(Index = 1144)]
-        /* 0x9030 */ public float PopupDeactivateTime;
+        /* 0x903C */ public float PopupDeactivateTime;
         [NMS(Index = 1142)]
-        /* 0x9034 */ public float PopupDebounceTime;
+        /* 0x9040 */ public float PopupDebounceTime;
         [NMS(Index = 1131)]
-        /* 0x9038 */ public float PopupSlotWidthOffset;
+        /* 0x9044 */ public float PopupSlotWidthOffset;
         [NMS(Index = 85)]
-        /* 0x903C */ public float PopupTitleGradientFactor;
+        /* 0x9048 */ public float PopupTitleGradientFactor;
         [NMS(Index = 347)]
-        /* 0x9040 */ public float PopupValueSectionBaseHeight;
+        /* 0x904C */ public float PopupValueSectionBaseHeight;
         [NMS(Index = 348)]
-        /* 0x9044 */ public float PopupValueSectionHeight;
+        /* 0x9050 */ public float PopupValueSectionHeight;
         [NMS(Index = 1129)]
-        /* 0x9048 */ public float PopupXClampOffset;
+        /* 0x9054 */ public float PopupXClampOffset;
         [NMS(Index = 1130)]
-        /* 0x904C */ public float PopupXClampOffsetRightAligned;
+        /* 0x9058 */ public float PopupXClampOffsetRightAligned;
         [NMS(Index = 198)]
-        /* 0x9050 */ public float ProjectorGrabBorderPercent;
+        /* 0x905C */ public float ProjectorGrabBorderPercent;
         [NMS(Index = 197)]
-        /* 0x9054 */ public float ProjectorGrabDistanceBias;
+        /* 0x9060 */ public float ProjectorGrabDistanceBias;
         [NMS(Index = 194)]
-        /* 0x9058 */ public float ProjectorGrabResetTime;
+        /* 0x9064 */ public float ProjectorGrabResetTime;
         [NMS(Index = 192)]
-        /* 0x905C */ public float ProjectorScale;
+        /* 0x9068 */ public float ProjectorScale;
         [NMS(Index = 238)]
-        /* 0x9060 */ public float QuickMenuAlpha;
+        /* 0x906C */ public float QuickMenuAlpha;
         [NMS(Index = 144)]
-        /* 0x9064 */ public float QuickMenuCentrePos;
+        /* 0x9070 */ public float QuickMenuCentrePos;
         [NMS(Index = 146)]
-        /* 0x9068 */ public float QuickMenuCentreSideOffset;
+        /* 0x9074 */ public float QuickMenuCentreSideOffset;
         [NMS(Index = 586)]
-        /* 0x906C */ public float QuickMenuCloseTime;
+        /* 0x9078 */ public float QuickMenuCloseTime;
         [NMS(Index = 237)]
-        /* 0x9070 */ public float QuickMenuCursorScale;
+        /* 0x907C */ public float QuickMenuCursorScale;
         [NMS(Index = 587)]
-        /* 0x9074 */ public float QuickMenuErrorTime;
+        /* 0x9080 */ public float QuickMenuErrorTime;
         [NMS(Index = 277)]
-        /* 0x9078 */ public float QuickMenuHighlightRate;
+        /* 0x9084 */ public float QuickMenuHighlightRate;
         [NMS(Index = 278)]
-        /* 0x907C */ public float QuickMenuHoldNavTime;
+        /* 0x9088 */ public float QuickMenuHoldNavTime;
         [NMS(Index = 273)]
-        /* 0x9080 */ public float QuickMenuInteractAdjustX;
+        /* 0x908C */ public float QuickMenuInteractAdjustX;
         [NMS(Index = 274)]
-        /* 0x9084 */ public float QuickMenuInteractAdjustY;
+        /* 0x9090 */ public float QuickMenuInteractAdjustY;
         [NMS(Index = 276)]
-        /* 0x9088 */ public int QuickMenuScreenHeight;
+        /* 0x9094 */ public int QuickMenuScreenHeight;
         [NMS(Index = 275)]
-        /* 0x908C */ public int QuickMenuScreenWidth;
+        /* 0x9098 */ public int QuickMenuScreenWidth;
         [NMS(Index = 145)]
-        /* 0x9090 */ public float QuickMenuSideOffset;
+        /* 0x909C */ public float QuickMenuSideOffset;
         [NMS(Index = 269)]
-        /* 0x9094 */ public float QuickMenuSwipeHeightMax;
+        /* 0x90A0 */ public float QuickMenuSwipeHeightMax;
         [NMS(Index = 268)]
-        /* 0x9098 */ public float QuickMenuSwipeHeightMin;
+        /* 0x90A4 */ public float QuickMenuSwipeHeightMin;
         [NMS(Index = 1198)]
-        /* 0x909C */ public float RadialMenuInnerRadius;
+        /* 0x90A8 */ public float RadialMenuInnerRadius;
         [NMS(Index = 1199)]
-        /* 0x90A0 */ public float RadialMenuInnerRadiusCursor;
+        /* 0x90AC */ public float RadialMenuInnerRadiusCursor;
         [NMS(Index = 1200)]
-        /* 0x90A4 */ public float RadialMenuWedgeOffset;
+        /* 0x90B0 */ public float RadialMenuWedgeOffset;
         [NMS(Index = 503)]
-        /* 0x90A8 */ public float RefinerAutoCloseTime;
+        /* 0x90B4 */ public float RefinerAutoCloseTime;
         [NMS(Index = 491)]
-        /* 0x90AC */ public float RefinerBeginDialInnerRadius;
+        /* 0x90B8 */ public float RefinerBeginDialInnerRadius;
         [NMS(Index = 490)]
-        /* 0x90B0 */ public float RefinerPadStartDecayTime;
+        /* 0x90BC */ public float RefinerPadStartDecayTime;
         [NMS(Index = 489)]
-        /* 0x90B4 */ public float RefinerPadStartTime;
+        /* 0x90C0 */ public float RefinerPadStartTime;
         [NMS(Index = 492)]
-        /* 0x90B8 */ public float RefinerProgressDialInnerRadius;
+        /* 0x90C4 */ public float RefinerProgressDialInnerRadius;
         [NMS(Index = 472)]
-        /* 0x90BC */ public float RepairTechLabelOffset;
+        /* 0x90C8 */ public float RepairTechLabelOffset;
         [NMS(Index = 461)]
-        /* 0x90C0 */ public float RepairTechRepairedMessageTime;
+        /* 0x90CC */ public float RepairTechRepairedMessageTime;
         [NMS(Index = 459)]
-        /* 0x90C4 */ public float RepairTechRepairedWaitTime1;
+        /* 0x90D0 */ public float RepairTechRepairedWaitTime1;
         [NMS(Index = 460)]
-        /* 0x90C8 */ public float RepairTechRepairedWaitTime2;
+        /* 0x90D4 */ public float RepairTechRepairedWaitTime2;
         [NMS(Index = 1426)]
-        /* 0x90CC */ public float ReportBaseFlashDelay;
+        /* 0x90D8 */ public float ReportBaseFlashDelay;
         [NMS(Index = 1425)]
-        /* 0x90D0 */ public float ReportBaseFlashIntensity;
+        /* 0x90DC */ public float ReportBaseFlashIntensity;
         [NMS(Index = 1424)]
-        /* 0x90D4 */ public float ReportBaseFlashTime;
+        /* 0x90E0 */ public float ReportBaseFlashTime;
         [NMS(Index = 1427)]
-        /* 0x90D8 */ public float ReportCameraSpeed;
+        /* 0x90E4 */ public float ReportCameraSpeed;
         [NMS(Index = 138)]
-        /* 0x90DC */ public float ROGAllyFrontendZoomFactor;
+        /* 0x90E8 */ public float ROGAllyFrontendZoomFactor;
         [NMS(Index = 814)]
-        /* 0x90E0 */ public float ScanEventArrowOffsetMultiplier;
+        /* 0x90EC */ public float ScanEventArrowOffsetMultiplier;
         [NMS(Index = 816)]
-        /* 0x90E4 */ public float ScanEventArrowOffsetMultiplierFresh;
+        /* 0x90F0 */ public float ScanEventArrowOffsetMultiplierFresh;
         [NMS(Index = 817)]
-        /* 0x90E8 */ public float ScanEventArrowOffsetMultiplierLerpTime;
+        /* 0x90F4 */ public float ScanEventArrowOffsetMultiplierLerpTime;
         [NMS(Index = 815)]
-        /* 0x90EC */ public float ScanEventArrowOffsetMultiplierOneEvent;
+        /* 0x90F8 */ public float ScanEventArrowOffsetMultiplierOneEvent;
         [NMS(Index = 813)]
-        /* 0x90F0 */ public float ScanEventArrowPlayerFadeDistance;
+        /* 0x90FC */ public float ScanEventArrowPlayerFadeDistance;
         [NMS(Index = 812)]
-        /* 0x90F4 */ public float ScanEventArrowPlayerFadeRange;
+        /* 0x9100 */ public float ScanEventArrowPlayerFadeRange;
         [NMS(Index = 818)]
-        /* 0x90F8 */ public float ScanEventArrowSecondaryAlpha;
+        /* 0x9104 */ public float ScanEventArrowSecondaryAlpha;
         [NMS(Index = 811)]
-        /* 0x90FC */ public float ScanEventArrowShipFadeDistance;
+        /* 0x9108 */ public float ScanEventArrowShipFadeDistance;
         [NMS(Index = 810)]
-        /* 0x9100 */ public float ScanEventArrowShipFadeRange;
+        /* 0x910C */ public float ScanEventArrowShipFadeRange;
         [NMS(Index = 819)]
-        /* 0x9104 */ public GcAudioWwiseEvents ScanEventIconAudio;
+        /* 0x9110 */ public GcAudioWwiseEvents ScanEventIconAudio;
         [NMS(Index = 377)]
-        /* 0x9108 */ public float ScannableIconMergeAngle;
+        /* 0x9114 */ public float ScannableIconMergeAngle;
         [NMS(Index = 1102)]
-        /* 0x910C */ public float ScanTime;
+        /* 0x9118 */ public float ScanTime;
         [NMS(Index = 118)]
-        /* 0x9110 */ public float SeasonalRingChangeTime;
+        /* 0x911C */ public float SeasonalRingChangeTime;
         [NMS(Index = 116)]
-        /* 0x9114 */ public float SeasonalRingMultiplier;
+        /* 0x9120 */ public float SeasonalRingMultiplier;
         [NMS(Index = 117)]
-        /* 0x9118 */ public float SeasonalRingPulseTime;
+        /* 0x9124 */ public float SeasonalRingPulseTime;
         [NMS(Index = 49)]
-        /* 0x911C */ public float SeasonEndAutoHighlightDuration;
+        /* 0x9128 */ public float SeasonEndAutoHighlightDuration;
         [NMS(Index = 50)]
-        /* 0x9120 */ public float SeasonEndAutoHighlightDurationMilestone;
+        /* 0x912C */ public float SeasonEndAutoHighlightDurationMilestone;
         [NMS(Index = 48)]
-        /* 0x9124 */ public GcAudioWwiseEvents SeasonEndAutoHighlightSFX;
+        /* 0x9130 */ public GcAudioWwiseEvents SeasonEndAutoHighlightSFX;
         [NMS(Index = 47)]
-        /* 0x9128 */ public float SeasonEndRewardsMaxScrollRate;
+        /* 0x9134 */ public float SeasonEndRewardsMaxScrollRate;
         [NMS(Index = 46)]
-        /* 0x912C */ public float SeasonEndRewardsPageOpenDelayTime;
+        /* 0x9138 */ public float SeasonEndRewardsPageOpenDelayTime;
         [NMS(Index = 902)]
-        /* 0x9130 */ public float SeasonMessageDelayTime;
+        /* 0x913C */ public float SeasonMessageDelayTime;
         [NMS(Index = 108)]
-        /* 0x9134 */ public float SentinelsDisabledHUDMessageTime;
+        /* 0x9140 */ public float SentinelsDisabledHUDMessageTime;
         [NMS(Index = 1441)]
-        /* 0x9138 */ public float SettlementStatFlashSpeed;
+        /* 0x9144 */ public float SettlementStatFlashSpeed;
         [NMS(Index = 1442)]
-        /* 0x913C */ public float SettlementStatInnerRadius;
+        /* 0x9148 */ public float SettlementStatInnerRadius;
         [NMS(Index = 1443)]
-        /* 0x9140 */ public float SettlementStatOuterRadius;
+        /* 0x914C */ public float SettlementStatOuterRadius;
         [NMS(Index = 1047)]
-        /* 0x9144 */ public float ShieldHazardPulseRate;
+        /* 0x9150 */ public float ShieldHazardPulseRate;
         [NMS(Index = 1049)]
-        /* 0x9148 */ public float ShieldHazardPulseThreshold;
+        /* 0x9154 */ public float ShieldHazardPulseThreshold;
         [NMS(Index = 1046)]
-        /* 0x914C */ public float ShieldPulseTime;
+        /* 0x9158 */ public float ShieldPulseTime;
         [NMS(Index = 1045)]
-        /* 0x9150 */ public float ShieldSpringTime;
+        /* 0x915C */ public float ShieldSpringTime;
         [NMS(Index = 15)]
-        /* 0x9154 */ public float ShipBuilderBarTime;
+        /* 0x9160 */ public float ShipBuilderBarTime;
         [NMS(Index = 22)]
-        /* 0x9158 */ public float ShipBuilderEndCircleRadius;
+        /* 0x9164 */ public float ShipBuilderEndCircleRadius;
         [NMS(Index = 26)]
-        /* 0x915C */ public float ShipBuilderLineLengthFadeMax;
+        /* 0x9168 */ public float ShipBuilderLineLengthFadeMax;
         [NMS(Index = 25)]
-        /* 0x9160 */ public float ShipBuilderLineLengthFadeMin;
+        /* 0x916C */ public float ShipBuilderLineLengthFadeMin;
         [NMS(Index = 24)]
-        /* 0x9164 */ public float ShipBuilderLineMinFade;
+        /* 0x9170 */ public float ShipBuilderLineMinFade;
         [NMS(Index = 23)]
-        /* 0x9168 */ public float ShipBuilderLineWidth;
+        /* 0x9174 */ public float ShipBuilderLineWidth;
         [NMS(Index = 20)]
-        /* 0x916C */ public float ShipBuilderSlotDropLength;
+        /* 0x9178 */ public float ShipBuilderSlotDropLength;
         [NMS(Index = 16)]
-        /* 0x9170 */ public float ShipBuilderSlotLineDefaultWidthFactor;
+        /* 0x917C */ public float ShipBuilderSlotLineDefaultWidthFactor;
         [NMS(Index = 18)]
-        /* 0x9174 */ public float ShipBuilderSlotLineMaxFactor;
+        /* 0x9180 */ public float ShipBuilderSlotLineMaxFactor;
         [NMS(Index = 17)]
-        /* 0x9178 */ public float ShipBuilderSlotLineMinFactor;
+        /* 0x9184 */ public float ShipBuilderSlotLineMinFactor;
         [NMS(Index = 19)]
-        /* 0x917C */ public float ShipBuilderSlotStartOffset;
+        /* 0x9188 */ public float ShipBuilderSlotStartOffset;
         [NMS(Index = 21)]
-        /* 0x9180 */ public float ShipBuilderStartCircleRadius;
+        /* 0x918C */ public float ShipBuilderStartCircleRadius;
         [NMS(Index = 541)]
-        /* 0x9184 */ public float ShipDamageDirectionIndicatorFadeRange;
+        /* 0x9190 */ public float ShipDamageDirectionIndicatorFadeRange;
         [NMS(Index = 540)]
-        /* 0x9188 */ public float ShipDamageDirectionIndicatorRadius;
+        /* 0x9194 */ public float ShipDamageDirectionIndicatorRadius;
         [NMS(Index = 808)]
-        /* 0x918C */ public float ShipDesatDamper;
+        /* 0x9198 */ public float ShipDesatDamper;
         [NMS(Index = 807)]
-        /* 0x9190 */ public float ShipFullscreenDamper;
+        /* 0x919C */ public float ShipFullscreenDamper;
         [NMS(Index = 806)]
-        /* 0x9194 */ public float ShipFullscreenDamperMin;
+        /* 0x91A0 */ public float ShipFullscreenDamperMin;
         [NMS(Index = 698)]
-        /* 0x9198 */ public float ShipHeadsUpDisplayDistance;
+        /* 0x91A4 */ public float ShipHeadsUpDisplayDistance;
         [NMS(Index = 699)]
-        /* 0x919C */ public float ShipHeadsUpLineFadeTime;
+        /* 0x91A8 */ public float ShipHeadsUpLineFadeTime;
         [NMS(Index = 322)]
-        /* 0x91A0 */ public float ShipHologramInWorldUIHeightAdjust;
+        /* 0x91AC */ public float ShipHologramInWorldUIHeightAdjust;
         [NMS(Index = 323)]
-        /* 0x91A4 */ public float ShipHologramInWorldUIHeightAdjustV2;
+        /* 0x91B0 */ public float ShipHologramInWorldUIHeightAdjustV2;
         [NMS(Index = 1027)]
-        /* 0x91A8 */ public float ShipHUDHitPointSize;
+        /* 0x91B4 */ public float ShipHUDHitPointSize;
         [NMS(Index = 1026)]
-        /* 0x91AC */ public float ShipHUDHitPointTime;
+        /* 0x91B8 */ public float ShipHUDHitPointTime;
         [NMS(Index = 160)]
-        /* 0x91B0 */ public float ShipHUDMarkerHideDistance;
+        /* 0x91BC */ public float ShipHUDMarkerHideDistance;
         [NMS(Index = 161)]
-        /* 0x91B4 */ public float ShipHUDMarkerOffset;
+        /* 0x91C0 */ public float ShipHUDMarkerOffset;
         [NMS(Index = 1011)]
-        /* 0x91B8 */ public float ShipHUDMaxOffscreenTargetDist;
+        /* 0x91C4 */ public float ShipHUDMaxOffscreenTargetDist;
         [NMS(Index = 1008)]
-        /* 0x91BC */ public float ShipHUDMissileLockSizeMax;
+        /* 0x91C8 */ public float ShipHUDMissileLockSizeMax;
         [NMS(Index = 1007)]
-        /* 0x91C0 */ public float ShipHUDMissileLockSizeMin;
+        /* 0x91CC */ public float ShipHUDMissileLockSizeMin;
         [NMS(Index = 1010)]
-        /* 0x91C4 */ public float ShipHUDMissileLockSpringFast;
+        /* 0x91D0 */ public float ShipHUDMissileLockSpringFast;
         [NMS(Index = 1009)]
-        /* 0x91C8 */ public float ShipHUDMissileLockSpringSlow;
+        /* 0x91D4 */ public float ShipHUDMissileLockSpringSlow;
         [NMS(Index = 1014)]
-        /* 0x91CC */ public float ShipHUDTargetAlpha;
+        /* 0x91D8 */ public float ShipHUDTargetAlpha;
         [NMS(Index = 1015)]
-        /* 0x91D0 */ public float ShipHUDTargetArrowLength;
+        /* 0x91DC */ public float ShipHUDTargetArrowLength;
         [NMS(Index = 1019)]
-        /* 0x91D4 */ public float ShipHUDTargetArrowsRotationRate;
+        /* 0x91E0 */ public float ShipHUDTargetArrowsRotationRate;
         [NMS(Index = 1016)]
-        /* 0x91D8 */ public float ShipHUDTargetMinDist;
+        /* 0x91E4 */ public float ShipHUDTargetMinDist;
         [NMS(Index = 1012)]
-        /* 0x91DC */ public float ShipHUDTargetRadius;
+        /* 0x91E8 */ public float ShipHUDTargetRadius;
         [NMS(Index = 1017)]
-        /* 0x91E0 */ public float ShipHUDTargetRange;
+        /* 0x91EC */ public float ShipHUDTargetRange;
         [NMS(Index = 1018)]
-        /* 0x91E4 */ public float ShipHUDTargetScale;
+        /* 0x91F0 */ public float ShipHUDTargetScale;
         [NMS(Index = 1013)]
-        /* 0x91E8 */ public float ShipHUDTargetTriangleRadius;
+        /* 0x91F4 */ public float ShipHUDTargetTriangleRadius;
         [NMS(Index = 526)]
-        /* 0x91EC */ public float ShipOverheatSwitchMessageTime;
+        /* 0x91F8 */ public float ShipOverheatSwitchMessageTime;
         [NMS(Index = 525)]
-        /* 0x91F0 */ public float ShipOverheatSwitchMessageWait;
+        /* 0x91FC */ public float ShipOverheatSwitchMessageWait;
         [NMS(Index = 1434)]
-        /* 0x91F4 */ public float ShipScreenTexScale;
+        /* 0x9200 */ public float ShipScreenTexScale;
         [NMS(Index = 260)]
-        /* 0x91F8 */ public float ShipSideScreenHeight;
+        /* 0x9204 */ public float ShipSideScreenHeight;
         [NMS(Index = 10)]
-        /* 0x91FC */ public float ShipTeleportPadMarkerDistance;
+        /* 0x9208 */ public float ShipTeleportPadMarkerDistance;
         [NMS(Index = 9)]
-        /* 0x9200 */ public float ShipTeleportPadMinDistance;
+        /* 0x920C */ public float ShipTeleportPadMinDistance;
         [NMS(Index = 324)]
-        /* 0x9204 */ public float ShopInteractionInWorldForcedOffset;
+        /* 0x9210 */ public float ShopInteractionInWorldForcedOffset;
         [NMS(Index = 325)]
-        /* 0x9208 */ public float ShopInteractionInWorldForcedOffsetV2;
+        /* 0x9214 */ public float ShopInteractionInWorldForcedOffsetV2;
         [NMS(Index = 125)]
-        /* 0x920C */ public int ShowDaysIfLessThan;
+        /* 0x9218 */ public int ShowDaysIfLessThan;
         [NMS(Index = 124)]
-        /* 0x9210 */ public int ShowHoursIfLessThan;
+        /* 0x921C */ public int ShowHoursIfLessThan;
         [NMS(Index = 126)]
-        /* 0x9214 */ public int ShowWeeksIfLessThan;
+        /* 0x9220 */ public int ShowWeeksIfLessThan;
         [NMS(Index = 744)]
-        /* 0x9218 */ public float SmallSpaceIconSize;
+        /* 0x9224 */ public float SmallSpaceIconSize;
         [NMS(Index = 262)]
-        /* 0x921C */ public float SolidPointerLengthScale;
+        /* 0x9228 */ public float SolidPointerLengthScale;
         [NMS(Index = 263)]
-        /* 0x9220 */ public float SolidPointerMaxLength;
+        /* 0x922C */ public float SolidPointerMaxLength;
         [NMS(Index = 261)]
-        /* 0x9224 */ public float SolidPointerScale;
+        /* 0x9230 */ public float SolidPointerScale;
         [NMS(Index = 1267)]
-        /* 0x9228 */ public float SpaceMapActionScale;
+        /* 0x9234 */ public float SpaceMapActionScale;
         [NMS(Index = 1263)]
-        /* 0x922C */ public float SpaceMapAnomalyScale;
+        /* 0x9238 */ public float SpaceMapAnomalyScale;
         [NMS(Index = 1253)]
-        /* 0x9230 */ public float SpaceMapAspectRatio;
+        /* 0x923C */ public float SpaceMapAspectRatio;
         [NMS(Index = 1279)]
-        /* 0x9234 */ public float SpaceMapCamAngle;
+        /* 0x9240 */ public float SpaceMapCamAngle;
         [NMS(Index = 1280)]
-        /* 0x9238 */ public float SpaceMapCamDistance;
+        /* 0x9244 */ public float SpaceMapCamDistance;
         [NMS(Index = 1278)]
-        /* 0x923C */ public float SpaceMapCamHeight;
+        /* 0x9248 */ public float SpaceMapCamHeight;
         [NMS(Index = 564)]
-        /* 0x9240 */ public float SpaceMapCockpitAngle;
+        /* 0x924C */ public float SpaceMapCockpitAngle;
         [NMS(Index = 553)]
-        /* 0x9244 */ public float SpaceMapCockpitScale;
+        /* 0x9250 */ public float SpaceMapCockpitScale;
         [NMS(Index = 560)]
-        /* 0x9248 */ public float SpaceMapCockpitScaleAdjustAlien;
+        /* 0x9254 */ public float SpaceMapCockpitScaleAdjustAlien;
         [NMS(Index = 562)]
-        /* 0x924C */ public float SpaceMapCockpitScaleAdjustCorvette;
+        /* 0x9258 */ public float SpaceMapCockpitScaleAdjustCorvette;
         [NMS(Index = 554)]
-        /* 0x9250 */ public float SpaceMapCockpitScaleAdjustDropShip;
+        /* 0x925C */ public float SpaceMapCockpitScaleAdjustDropShip;
         [NMS(Index = 555)]
-        /* 0x9254 */ public float SpaceMapCockpitScaleAdjustFighter;
+        /* 0x9260 */ public float SpaceMapCockpitScaleAdjustFighter;
         [NMS(Index = 561)]
-        /* 0x9258 */ public float SpaceMapCockpitScaleAdjustRobot;
+        /* 0x9264 */ public float SpaceMapCockpitScaleAdjustRobot;
         [NMS(Index = 558)]
-        /* 0x925C */ public float SpaceMapCockpitScaleAdjustRoyal;
+        /* 0x9268 */ public float SpaceMapCockpitScaleAdjustRoyal;
         [NMS(Index = 559)]
-        /* 0x9260 */ public float SpaceMapCockpitScaleAdjustSail;
+        /* 0x926C */ public float SpaceMapCockpitScaleAdjustSail;
         [NMS(Index = 556)]
-        /* 0x9264 */ public float SpaceMapCockpitScaleAdjustScientific;
+        /* 0x9270 */ public float SpaceMapCockpitScaleAdjustScientific;
         [NMS(Index = 557)]
-        /* 0x9268 */ public float SpaceMapCockpitScaleAdjustShuttle;
+        /* 0x9274 */ public float SpaceMapCockpitScaleAdjustShuttle;
         [NMS(Index = 563)]
-        /* 0x926C */ public float SpaceMapCockpitScaleAdjustSwarmDrone;
+        /* 0x9278 */ public float SpaceMapCockpitScaleAdjustSwarmDrone;
         [NMS(Index = 1272)]
-        /* 0x9270 */ public float SpaceMapDistance;
+        /* 0x927C */ public float SpaceMapDistance;
         [NMS(Index = 1255)]
-        /* 0x9274 */ public float SpaceMapDistanceLogScaler;
+        /* 0x9280 */ public float SpaceMapDistanceLogScaler;
         [NMS(Index = 1274)]
-        /* 0x9278 */ public float SpaceMapDistanceMultiplier;
+        /* 0x9284 */ public float SpaceMapDistanceMultiplier;
         [NMS(Index = 1254)]
-        /* 0x927C */ public float SpaceMapDistanceScale;
+        /* 0x9288 */ public float SpaceMapDistanceScale;
         [NMS(Index = 1277)]
-        /* 0x9280 */ public float SpaceMapFadeAngleMax;
+        /* 0x928C */ public float SpaceMapFadeAngleMax;
         [NMS(Index = 1276)]
-        /* 0x9284 */ public float SpaceMapFadeAngleMin;
+        /* 0x9290 */ public float SpaceMapFadeAngleMin;
         [NMS(Index = 1252)]
-        /* 0x9288 */ public float SpaceMapFoV;
+        /* 0x9294 */ public float SpaceMapFoV;
         [NMS(Index = 1261)]
-        /* 0x928C */ public float SpaceMapFreighterScale;
+        /* 0x9298 */ public float SpaceMapFreighterScale;
         [NMS(Index = 1275)]
-        /* 0x9290 */ public float SpaceMapHorizonThickness;
+        /* 0x929C */ public float SpaceMapHorizonThickness;
         [NMS(Index = 1282)]
-        /* 0x9294 */ public float SpaceMapLightPitch;
+        /* 0x92A0 */ public float SpaceMapLightPitch;
         [NMS(Index = 1283)]
-        /* 0x9298 */ public float SpaceMapLightYaw;
+        /* 0x92A4 */ public float SpaceMapLightYaw;
         [NMS(Index = 1236)]
-        /* 0x929C */ public float SpaceMapLineBaseFade;
+        /* 0x92A8 */ public float SpaceMapLineBaseFade;
         [NMS(Index = 1235)]
-        /* 0x92A0 */ public float SpaceMapLineBaseScale;
+        /* 0x92AC */ public float SpaceMapLineBaseScale;
         [NMS(Index = 1234)]
-        /* 0x92A4 */ public float SpaceMapLineWidth;
+        /* 0x92B0 */ public float SpaceMapLineWidth;
         [NMS(Index = 1271)]
-        /* 0x92A8 */ public float SpaceMapMarkerScale;
+        /* 0x92B4 */ public float SpaceMapMarkerScale;
         [NMS(Index = 1273)]
-        /* 0x92AC */ public float SpaceMapMaxTraderDistance;
+        /* 0x92B8 */ public float SpaceMapMaxTraderDistance;
         [NMS(Index = 1266)]
-        /* 0x92B0 */ public float SpaceMapMoonScale;
+        /* 0x92BC */ public float SpaceMapMoonScale;
         [NMS(Index = 1260)]
-        /* 0x92B4 */ public float SpaceMapObjectScale;
+        /* 0x92C0 */ public float SpaceMapObjectScale;
         [NMS(Index = 1270)]
-        /* 0x92B8 */ public float SpaceMapPirateFreighterScale;
+        /* 0x92C4 */ public float SpaceMapPirateFreighterScale;
         [NMS(Index = 1269)]
-        /* 0x92BC */ public float SpaceMapPirateFrigateScale;
+        /* 0x92C8 */ public float SpaceMapPirateFrigateScale;
         [NMS(Index = 1265)]
-        /* 0x92C0 */ public float SpaceMapPlanetLineOffset;
+        /* 0x92CC */ public float SpaceMapPlanetLineOffset;
         [NMS(Index = 1264)]
-        /* 0x92C4 */ public float SpaceMapPlanetScale;
+        /* 0x92D0 */ public float SpaceMapPlanetScale;
         [NMS(Index = 1257)]
-        /* 0x92C8 */ public float SpaceMapScaleMin;
+        /* 0x92D4 */ public float SpaceMapScaleMin;
         [NMS(Index = 1259)]
-        /* 0x92CC */ public float SpaceMapScaleRangeMax;
+        /* 0x92D8 */ public float SpaceMapScaleRangeMax;
         [NMS(Index = 1258)]
-        /* 0x92D0 */ public float SpaceMapScaleRangeMin;
+        /* 0x92DC */ public float SpaceMapScaleRangeMin;
         [NMS(Index = 1237)]
-        /* 0x92D4 */ public float SpaceMapShipCombineDistance;
+        /* 0x92E0 */ public float SpaceMapShipCombineDistance;
         [NMS(Index = 1268)]
-        /* 0x92D8 */ public float SpaceMapShipScale;
+        /* 0x92E4 */ public float SpaceMapShipScale;
         [NMS(Index = 1281)]
-        /* 0x92DC */ public float SpaceMapShipScaleMin;
+        /* 0x92E8 */ public float SpaceMapShipScaleMin;
         [NMS(Index = 1262)]
-        /* 0x92E0 */ public float SpaceMapStationScale;
+        /* 0x92EC */ public float SpaceMapStationScale;
         [NMS(Index = 742)]
-        /* 0x92E4 */ public float SpaceMarkersBattleOffset;
+        /* 0x92F0 */ public float SpaceMarkersBattleOffset;
         [NMS(Index = 741)]
-        /* 0x92E8 */ public float SpaceMarkersOffset;
+        /* 0x92F4 */ public float SpaceMarkersOffset;
         [NMS(Index = 132)]
-        /* 0x92EC */ public float StackSizeChangeMaxRate;
+        /* 0x92F8 */ public float StackSizeChangeMaxRate;
         [NMS(Index = 131)]
-        /* 0x92F0 */ public float StackSizeChangeMinRate;
+        /* 0x92FC */ public float StackSizeChangeMinRate;
         [NMS(Index = 130)]
-        /* 0x92F4 */ public float StackSizeRateChangeRate;
+        /* 0x9300 */ public float StackSizeRateChangeRate;
         [NMS(Index = 122)]
-        /* 0x92F8 */ public float StageStingDisplayTime;
+        /* 0x9304 */ public float StageStingDisplayTime;
         [NMS(Index = 534)]
-        /* 0x92FC */ public float StandingRewardOSDTime;
+        /* 0x9308 */ public float StandingRewardOSDTime;
         [NMS(Index = 901)]
-        /* 0x9300 */ public float StatsMessageDelayTime;
+        /* 0x930C */ public float StatsMessageDelayTime;
         [NMS(Index = 137)]
-        /* 0x9304 */ public float SteamDeckFrontendZoomFactor;
+        /* 0x9310 */ public float SteamDeckFrontendZoomFactor;
         [NMS(Index = 1469)]
-        /* 0x9308 */ public float SteamDeckMinFontHeight;
+        /* 0x9314 */ public float SteamDeckMinFontHeight;
         [NMS(Index = 36)]
-        /* 0x930C */ public float StoreDialDecayTime;
+        /* 0x9318 */ public float StoreDialDecayTime;
         [NMS(Index = 35)]
-        /* 0x9310 */ public float StoreDialHoldTime;
+        /* 0x931C */ public float StoreDialHoldTime;
         [NMS(Index = 37)]
-        /* 0x9314 */ public float StoreDialInnerRadius;
+        /* 0x9320 */ public float StoreDialInnerRadius;
         [NMS(Index = 38)]
-        /* 0x9318 */ public float StoreDialOuterRadius;
+        /* 0x9324 */ public float StoreDialOuterRadius;
         [NMS(Index = 91)]
-        /* 0x931C */ public float SuperchargeGradientFactor;
+        /* 0x9328 */ public float SuperchargeGradientFactor;
         [NMS(Index = 90)]
-        /* 0x9320 */ public float SuperchargeGradientFactorMin;
+        /* 0x932C */ public float SuperchargeGradientFactorMin;
         [NMS(Index = 92)]
-        /* 0x9324 */ public float SuperchargeGradientTime;
+        /* 0x9330 */ public float SuperchargeGradientTime;
         [NMS(Index = 809)]
-        /* 0x9328 */ public float SurveyObjectArrowOffsetMultiplier;
+        /* 0x9334 */ public float SurveyObjectArrowOffsetMultiplier;
         [NMS(Index = 365)]
-        /* 0x932C */ public float TakeoffFuelMessageTime;
+        /* 0x9338 */ public float TakeoffFuelMessageTime;
         [NMS(Index = 595)]
-        /* 0x9330 */ public float TalkBoxAlienTextSpeed;
+        /* 0x933C */ public float TalkBoxAlienTextSpeed;
         [NMS(Index = 597)]
-        /* 0x9334 */ public float TalkBoxAlienTextTimeMax;
+        /* 0x9340 */ public float TalkBoxAlienTextTimeMax;
         [NMS(Index = 596)]
-        /* 0x9338 */ public float TalkBoxAlienTextTimeMin;
+        /* 0x9344 */ public float TalkBoxAlienTextTimeMin;
         [NMS(Index = 570)]
-        /* 0x933C */ public float TargetDisplayDamageFlashTime;
+        /* 0x9348 */ public float TargetDisplayDamageFlashTime;
         [NMS(Index = 565)]
-        /* 0x9340 */ public float TargetDisplayScale;
+        /* 0x934C */ public float TargetDisplayScale;
         [NMS(Index = 567)]
-        /* 0x9344 */ public float TargetDisplayShipScale;
+        /* 0x9350 */ public float TargetDisplayShipScale;
         [NMS(Index = 566)]
-        /* 0x9348 */ public float TargetDisplayTorpedoScale;
+        /* 0x9354 */ public float TargetDisplayTorpedoScale;
         [NMS(Index = 1225)]
-        /* 0x934C */ public float TargetMarkerFadeAngleMin;
+        /* 0x9358 */ public float TargetMarkerFadeAngleMin;
         [NMS(Index = 1226)]
-        /* 0x9350 */ public float TargetMarkerFadeAngleRange;
+        /* 0x935C */ public float TargetMarkerFadeAngleRange;
         [NMS(Index = 1224)]
-        /* 0x9354 */ public float TargetMarkerScaleEnd;
+        /* 0x9360 */ public float TargetMarkerScaleEnd;
         [NMS(Index = 1223)]
-        /* 0x9358 */ public float TargetMarkerScaleStart;
+        /* 0x9364 */ public float TargetMarkerScaleStart;
         [NMS(Index = 1408)]
-        /* 0x935C */ public float TargetParallaxMaintenancePageMultiplier;
+        /* 0x9368 */ public float TargetParallaxMaintenancePageMultiplier;
         [NMS(Index = 1407)]
-        /* 0x9360 */ public float TargetParallaxMouseMultiplier;
+        /* 0x936C */ public float TargetParallaxMouseMultiplier;
         [NMS(Index = 1029)]
-        /* 0x9364 */ public float TargetScreenDistance;
+        /* 0x9370 */ public float TargetScreenDistance;
         [NMS(Index = 1028)]
-        /* 0x9368 */ public float TargetScreenFoV;
+        /* 0x9374 */ public float TargetScreenFoV;
         [NMS(Index = 824)]
-        /* 0x936C */ public float TechDisplayDelayTime;
+        /* 0x9378 */ public float TechDisplayDelayTime;
         [NMS(Index = 464)]
-        /* 0x9370 */ public float TechPopupBuildLayerHeight;
+        /* 0x937C */ public float TechPopupBuildLayerHeight;
         [NMS(Index = 462)]
-        /* 0x9374 */ public float TechPopupInstallLayerHeight;
+        /* 0x9380 */ public float TechPopupInstallLayerHeight;
         [NMS(Index = 463)]
-        /* 0x9378 */ public float TechPopupRepairLayerHeight;
+        /* 0x9384 */ public float TechPopupRepairLayerHeight;
         [NMS(Index = 465)]
-        /* 0x937C */ public float TechPopupRequirementHeight;
+        /* 0x9388 */ public float TechPopupRequirementHeight;
         [NMS(Index = 1431)]
-        /* 0x9380 */ public float TextChatMaxDisplayTime;
+        /* 0x938C */ public float TextChatMaxDisplayTime;
         [NMS(Index = 1432)]
-        /* 0x9384 */ public float TextChatStayBigAfterTextInput;
+        /* 0x9390 */ public float TextChatStayBigAfterTextInput;
         [NMS(Index = 201)]
-        /* 0x9388 */ public float TextPrintoutMultiplier;
+        /* 0x9394 */ public float TextPrintoutMultiplier;
         [NMS(Index = 202)]
-        /* 0x938C */ public float TextPrintoutMultiplierAlien;
+        /* 0x9398 */ public float TextPrintoutMultiplierAlien;
         [NMS(Index = 31)]
-        /* 0x9390 */ public float TextTouchScrollCap;
+        /* 0x939C */ public float TextTouchScrollCap;
         [NMS(Index = 787)]
-        /* 0x9394 */ public float ThirdPersonCrosshairCircle1Distance;
+        /* 0x93A0 */ public float ThirdPersonCrosshairCircle1Distance;
         [NMS(Index = 788)]
-        /* 0x9398 */ public float ThirdPersonCrosshairCircle2Distance;
+        /* 0x93A4 */ public float ThirdPersonCrosshairCircle2Distance;
         [NMS(Index = 786)]
-        /* 0x939C */ public float ThirdPersonCrosshairDistance;
+        /* 0x93A8 */ public float ThirdPersonCrosshairDistance;
         [NMS(Index = 610)]
-        /* 0x93A0 */ public float TimedEventLookTime;
+        /* 0x93AC */ public float TimedEventLookTime;
         [NMS(Index = 951)]
-        /* 0x93A4 */ public float TooltipTime;
+        /* 0x93B0 */ public float TooltipTime;
         [NMS(Index = 32)]
-        /* 0x93A8 */ public float TouchScrollChangePageThreshold;
+        /* 0x93B4 */ public float TouchScrollChangePageThreshold;
         [NMS(Index = 29)]
-        /* 0x93AC */ public float TouchScrollMaxDelta;
+        /* 0x93B8 */ public float TouchScrollMaxDelta;
         [NMS(Index = 30)]
-        /* 0x93B0 */ public float TouchScrollSpeedMul;
+        /* 0x93BC */ public float TouchScrollSpeedMul;
         [NMS(Index = 693)]
-        /* 0x93B4 */ public float TrackArrowDistanceSpacePOI;
+        /* 0x93C0 */ public float TrackArrowDistanceSpacePOI;
         [NMS(Index = 784)]
-        /* 0x93B8 */ public float TrackCriticalHitSize;
+        /* 0x93C4 */ public float TrackCriticalHitSize;
         [NMS(Index = 785)]
-        /* 0x93BC */ public float TrackCriticalPulseTime;
+        /* 0x93C8 */ public float TrackCriticalPulseTime;
         [NMS(Index = 760)]
-        /* 0x93C0 */ public float TrackLeadTargetInScale;
+        /* 0x93CC */ public float TrackLeadTargetInScale;
         [NMS(Index = 757)]
-        /* 0x93C4 */ public float TrackMissileTargetPulseRate;
+        /* 0x93D0 */ public float TrackMissileTargetPulseRate;
         [NMS(Index = 750)]
-        /* 0x93C8 */ public float TrackPoliceFreighterCentreOffset;
+        /* 0x93D4 */ public float TrackPoliceFreighterCentreOffset;
         [NMS(Index = 749)]
-        /* 0x93CC */ public float TrackPrimaryCentreOffset;
+        /* 0x93D8 */ public float TrackPrimaryCentreOffset;
         [NMS(Index = 762)]
-        /* 0x93D0 */ public float TrackReticuleAngle;
+        /* 0x93DC */ public float TrackReticuleAngle;
         [NMS(Index = 764)]
-        /* 0x93D4 */ public float TrackReticuleInactiveTime;
+        /* 0x93E0 */ public float TrackReticuleInactiveTime;
         [NMS(Index = 763)]
-        /* 0x93D8 */ public float TrackReticuleInTime;
+        /* 0x93E4 */ public float TrackReticuleInTime;
         [NMS(Index = 766)]
-        /* 0x93DC */ public float TrackReticuleRandomDelay;
+        /* 0x93E8 */ public float TrackReticuleRandomDelay;
         [NMS(Index = 765)]
-        /* 0x93E0 */ public float TrackReticuleRandomTime;
+        /* 0x93EC */ public float TrackReticuleRandomTime;
         [NMS(Index = 761)]
-        /* 0x93E4 */ public float TrackReticuleScale;
+        /* 0x93F0 */ public float TrackReticuleScale;
         [NMS(Index = 758)]
-        /* 0x93E8 */ public float TrackScaleCritical;
+        /* 0x93F4 */ public float TrackScaleCritical;
         [NMS(Index = 759)]
-        /* 0x93EC */ public float TrackScaleHit;
+        /* 0x93F8 */ public float TrackScaleHit;
         [NMS(Index = 751)]
-        /* 0x93F0 */ public float TrackTimerAlpha;
+        /* 0x93FC */ public float TrackTimerAlpha;
         [NMS(Index = 755)]
-        /* 0x93F4 */ public float TrackTimerIconExclaimRadius;
+        /* 0x9400 */ public float TrackTimerIconExclaimRadius;
         [NMS(Index = 754)]
-        /* 0x93F8 */ public float TrackTimerIconInnerRadius;
+        /* 0x9404 */ public float TrackTimerIconInnerRadius;
         [NMS(Index = 753)]
-        /* 0x93FC */ public float TrackTimerIconOuterRadius;
+        /* 0x9408 */ public float TrackTimerIconOuterRadius;
         [NMS(Index = 752)]
-        /* 0x9400 */ public float TrackTimerRadarPulseSize;
+        /* 0x940C */ public float TrackTimerRadarPulseSize;
         [NMS(Index = 748)]
-        /* 0x9404 */ public float TrackTypeIconSize;
+        /* 0x9410 */ public float TrackTypeIconSize;
         [NMS(Index = 34)]
-        /* 0x9408 */ public float TradePageNotifyOffset;
+        /* 0x9414 */ public float TradePageNotifyOffset;
         [NMS(Index = 376)]
-        /* 0x940C */ public float TransferPopupCursorOffsetFactor;
+        /* 0x9418 */ public float TransferPopupCursorOffsetFactor;
         [NMS(Index = 609)]
-        /* 0x9410 */ public float TransferSendOffscreenBorder;
+        /* 0x941C */ public float TransferSendOffscreenBorder;
         [NMS(Index = 515)]
-        /* 0x9414 */ public float TransitionOffset;
+        /* 0x9420 */ public float TransitionOffset;
         [NMS(Index = 327)]
-        /* 0x9418 */ public float TravelLineThickness;
+        /* 0x9424 */ public float TravelLineThickness;
         [NMS(Index = 326)]
-        /* 0x941C */ public float TravelTargetRadius;
+        /* 0x9428 */ public float TravelTargetRadius;
         [NMS(Index = 41)]
-        /* 0x9420 */ public float TrialUpsellDeclineDecayTimeQuick;
+        /* 0x942C */ public float TrialUpsellDeclineDecayTimeQuick;
         [NMS(Index = 43)]
-        /* 0x9424 */ public float TrialUpsellDeclineDecayTimeSlow;
+        /* 0x9430 */ public float TrialUpsellDeclineDecayTimeSlow;
         [NMS(Index = 44)]
-        /* 0x9428 */ public float TrialUpsellDeclineDialInnerRadius;
+        /* 0x9434 */ public float TrialUpsellDeclineDialInnerRadius;
         [NMS(Index = 45)]
-        /* 0x942C */ public float TrialUpsellDeclineDialOuterRadius;
+        /* 0x9438 */ public float TrialUpsellDeclineDialOuterRadius;
         [NMS(Index = 40)]
-        /* 0x9430 */ public float TrialUpsellDeclineHoldTimeQuick;
+        /* 0x943C */ public float TrialUpsellDeclineHoldTimeQuick;
         [NMS(Index = 42)]
-        /* 0x9434 */ public float TrialUpsellDeclineHoldTimeSlow;
+        /* 0x9440 */ public float TrialUpsellDeclineHoldTimeSlow;
         [NMS(Index = 106)]
-        /* 0x9438 */ public int UnknownWordsToShowInCatalogue;
+        /* 0x9444 */ public int UnknownWordsToShowInCatalogue;
         [NMS(Index = 1471)]
-        /* 0x943C */ public float UnlockableTreeDefaultGroupGap;
+        /* 0x9448 */ public float UnlockableTreeDefaultGroupGap;
         [NMS(Index = 1473)]
-        /* 0x9440 */ public float UnlockableTreeDefaultRowGap;
+        /* 0x944C */ public float UnlockableTreeDefaultRowGap;
         [NMS(Index = 1472)]
-        /* 0x9444 */ public float UnlockableTreeNarrowGroupGap;
+        /* 0x9450 */ public float UnlockableTreeNarrowGroupGap;
         [NMS(Index = 1474)]
-        /* 0x9448 */ public float UnlockableTreeNarrowRowGap;
+        /* 0x9454 */ public float UnlockableTreeNarrowRowGap;
         [NMS(Index = 109)]
-        /* 0x944C */ public float UseZoomedOutBuildCamRadius;
+        /* 0x9458 */ public float UseZoomedOutBuildCamRadius;
         [NMS(Index = 222)]
-        /* 0x9450 */ public int VRFaceLockedScreenHeight;
+        /* 0x945C */ public int VRFaceLockedScreenHeight;
         [NMS(Index = 221)]
-        /* 0x9454 */ public int VRFaceLockedScreenWidth;
+        /* 0x9460 */ public int VRFaceLockedScreenWidth;
         [NMS(Index = 363)]
-        /* 0x9458 */ public float WantedDetectMessageTime;
+        /* 0x9464 */ public float WantedDetectMessageTime;
         [NMS(Index = 364)]
-        /* 0x945C */ public float WantedDetectMinTimeout;
+        /* 0x9468 */ public float WantedDetectMinTimeout;
         [NMS(Index = 897)]
-        /* 0x9460 */ public float WantedLevelScanAlpha;
+        /* 0x946C */ public float WantedLevelScanAlpha;
         [NMS(Index = 898)]
-        /* 0x9464 */ public float WantedLevelScannedRate;
+        /* 0x9470 */ public float WantedLevelScannedRate;
         [NMS(Index = 895)]
-        /* 0x9468 */ public float WantedLevelTimeoutPulseRate;
+        /* 0x9474 */ public float WantedLevelTimeoutPulseRate;
         [NMS(Index = 896)]
-        /* 0x946C */ public float WantedLevelWitnessAlpha;
+        /* 0x9478 */ public float WantedLevelWitnessAlpha;
         [NMS(Index = 894)]
-        /* 0x9470 */ public float WantedLevelWitnessOffset;
+        /* 0x947C */ public float WantedLevelWitnessOffset;
         [NMS(Index = 893)]
-        /* 0x9474 */ public float WantedLevelWitnessPulseRate;
+        /* 0x9480 */ public float WantedLevelWitnessPulseRate;
         [NMS(Index = 1454)]
-        /* 0x9478 */ public float WinGDKHandheldPopupScale;
+        /* 0x9484 */ public float WinGDKHandheldPopupScale;
         [NMS(Index = 135)]
-        /* 0x947C */ public float ZoomFactorOverride;
+        /* 0x9488 */ public float ZoomFactorOverride;
         [NMS(Index = 963)]
-        /* 0x9480 */ public float ZoomHUDElementsOffsetX;
+        /* 0x948C */ public float ZoomHUDElementsOffsetX;
         [NMS(Index = 964)]
-        /* 0x9484 */ public float ZoomHUDElementsOffsetY;
+        /* 0x9490 */ public float ZoomHUDElementsOffsetY;
         [NMS(Index = 965)]
-        /* 0x9488 */ public float ZoomHUDElementTime;
+        /* 0x9494 */ public float ZoomHUDElementTime;
         [NMS(Index = 1327)]
-        /* 0x948C */ public NMSString0x100 HUDCircleAnimIcon;
+        /* 0x9498 */ public NMSString0x100 HUDCircleAnimIcon;
         [NMS(Index = 1325)]
-        /* 0x958C */ public NMSString0x100 HUDDeathPointIcon;
+        /* 0x9598 */ public NMSString0x100 HUDDeathPointIcon;
         [NMS(Index = 1326)]
-        /* 0x968C */ public NMSString0x100 HUDHexAnimIcon;
+        /* 0x9698 */ public NMSString0x100 HUDHexAnimIcon;
         [NMS(Index = 1321)]
-        /* 0x978C */ public NMSString0x100 HUDMarkerColourIcon;
+        /* 0x9798 */ public NMSString0x100 HUDMarkerColourIcon;
         [NMS(Index = 1319)]
-        /* 0x988C */ public NMSString0x100 HUDMarkerIcon;
+        /* 0x9898 */ public NMSString0x100 HUDMarkerIcon;
         [NMS(Index = 1320)]
-        /* 0x998C */ public NMSString0x100 HUDMarkerPrimaryIndicatorIcon;
+        /* 0x9998 */ public NMSString0x100 HUDMarkerPrimaryIndicatorIcon;
         [NMS(Index = 1322)]
-        /* 0x9A8C */ public NMSString0x100 HUDPointIcon;
+        /* 0x9A98 */ public NMSString0x100 HUDPointIcon;
         [NMS(Index = 1324)]
-        /* 0x9B8C */ public NMSString0x100 HUDSaveIcon;
+        /* 0x9B98 */ public NMSString0x100 HUDSaveIcon;
         [NMS(Index = 1323)]
-        /* 0x9C8C */ public NMSString0x100 HUDSpaceshipIcon;
+        /* 0x9C98 */ public NMSString0x100 HUDSpaceshipIcon;
         [NMS(Index = 961)]
-        /* 0x9D8C */ public NMSString0x20 DistanceUnitKM;
+        /* 0x9D98 */ public NMSString0x20 DistanceUnitKM;
         [NMS(Index = 960)]
-        /* 0x9DAC */ public NMSString0x20 DistanceUnitM;
+        /* 0x9DB8 */ public NMSString0x20 DistanceUnitM;
         [NMS(Index = 962)]
-        /* 0x9DCC */ public NMSString0x20 DistanceUnitMpS;
+        /* 0x9DD8 */ public NMSString0x20 DistanceUnitMpS;
         [NMS(Index = 524)]
-        /* 0x9DEC */ public NMSString0x20 MaxDialogCharSizeIdeographicString;
+        /* 0x9DF8 */ public NMSString0x20 MaxDialogCharSizeIdeographicString;
         [NMS(Index = 522)]
-        /* 0x9E0C */ public NMSString0x20 MaxDialogCharSizeRomanString;
+        /* 0x9E18 */ public NMSString0x20 MaxDialogCharSizeRomanString;
         [NMS(Index = 218)]
-        /* 0x9E2C */ public NMSString0x20 VRDistanceWarningUIFile;
+        /* 0x9E38 */ public NMSString0x20 VRDistanceWarningUIFile;
         [NMS(Index = 410, Size = 0x15, EnumType = typeof(GcBuildMenuOption.BuildMenuOptionEnum))]
-        /* 0x9E4C */ public bool[] BuildMenuUseSmallIconOnPad;
+        /* 0x9E58 */ public bool[] BuildMenuUseSmallIconOnPad;
         [NMS(Index = 1467)]
-        /* 0x9E61 */ public bool AllowInventorySorting;
+        /* 0x9E6D */ public bool AllowInventorySorting;
         [NMS(Index = 204)]
-        /* 0x9E62 */ public bool AllowInWorldDebugBorders;
+        /* 0x9E6E */ public bool AllowInWorldDebugBorders;
         [NMS(Index = 195)]
-        /* 0x9E63 */ public bool AllowProjectorRepositioning;
+        /* 0x9E6F */ public bool AllowProjectorRepositioning;
         [NMS(Index = 334)]
-        /* 0x9E64 */ public bool AlwaysCloseQuickMenu;
+        /* 0x9E70 */ public bool AlwaysCloseQuickMenu;
         [NMS(Index = 687)]
-        /* 0x9E65 */ public TkCurveType ArrowBounceLeftCurve;
+        /* 0x9E71 */ public TkCurveType ArrowBounceLeftCurve;
         [NMS(Index = 683)]
-        /* 0x9E66 */ public TkCurveType ArrowBounceRightCurve;
+        /* 0x9E72 */ public TkCurveType ArrowBounceRightCurve;
         [NMS(Index = 111)]
-        /* 0x9E67 */ public bool AutoScrollParagraphs;
+        /* 0x9E73 */ public bool AutoScrollParagraphs;
         [NMS(Index = 438)]
-        /* 0x9E68 */ public bool BaseBuildingSmoothMenuWhileSnapped;
+        /* 0x9E74 */ public bool BaseBuildingSmoothMenuWhileSnapped;
         [NMS(Index = 99)]
-        /* 0x9E69 */ public bool BigPicking;
+        /* 0x9E75 */ public bool BigPicking;
         [NMS(Index = 100)]
-        /* 0x9E6A */ public bool BigPickingUsesNumbers;
+        /* 0x9E76 */ public bool BigPickingUsesNumbers;
         [NMS(Index = 179)]
-        /* 0x9E6B */ public bool BinocularScanScreen;
+        /* 0x9E77 */ public bool BinocularScanScreen;
         [NMS(Index = 399)]
-        /* 0x9E6C */ public TkCurveType CompassCurve;
+        /* 0x9E78 */ public TkCurveType CompassCurve;
         [NMS(Index = 772)]
-        /* 0x9E6D */ public bool CreatureInteractLabelUseBB;
+        /* 0x9E79 */ public bool CreatureInteractLabelUseBB;
         [NMS(Index = 771)]
-        /* 0x9E6E */ public TkCurveType CreatureReticuleAlphaCurve;
+        /* 0x9E7A */ public TkCurveType CreatureReticuleAlphaCurve;
         [NMS(Index = 770)]
-        /* 0x9E6F */ public TkCurveType CreatureReticuleScaleCurve;
+        /* 0x9E7B */ public TkCurveType CreatureReticuleScaleCurve;
         [NMS(Index = 711)]
-        /* 0x9E70 */ public TkCurveType CrosshairLeadScaleCurve;
+        /* 0x9E7C */ public TkCurveType CrosshairLeadScaleCurve;
         [NMS(Index = 729)]
-        /* 0x9E71 */ public TkCurveType CrosshairTargetLockAlphaCurve;
+        /* 0x9E7D */ public TkCurveType CrosshairTargetLockAlphaCurve;
         [NMS(Index = 728)]
-        /* 0x9E72 */ public TkCurveType CrosshairTargetLockCurve;
+        /* 0x9E7E */ public TkCurveType CrosshairTargetLockCurve;
         [NMS(Index = 638)]
-        /* 0x9E73 */ public TkCurveType DamageNumberUpCurve;
+        /* 0x9E7F */ public TkCurveType DamageNumberUpCurve;
         [NMS(Index = 340)]
-        /* 0x9E74 */ public bool DebugInventoryIndices;
+        /* 0x9E80 */ public bool DebugInventoryIndices;
         [NMS(Index = 583)]
-        /* 0x9E75 */ public bool DebugMarkerLabels;
+        /* 0x9E81 */ public bool DebugMarkerLabels;
         [NMS(Index = 337)]
-        /* 0x9E76 */ public bool DebugMissionLogText;
+        /* 0x9E82 */ public bool DebugMissionLogText;
         [NMS(Index = 339)]
-        /* 0x9E77 */ public bool DebugPopupSizes;
+        /* 0x9E83 */ public bool DebugPopupSizes;
         [NMS(Index = 338)]
-        /* 0x9E78 */ public bool DebugShowMaintenanceScreenCentre;
+        /* 0x9E84 */ public bool DebugShowMaintenanceScreenCentre;
         [NMS(Index = 1452)]
-        /* 0x9E79 */ public bool EnableAccessibleUIOnSwitch;
+        /* 0x9E85 */ public bool EnableAccessibleUIOnSwitch;
         [NMS(Index = 468)]
-        /* 0x9E7A */ public bool EnableBlackouts;
+        /* 0x9E86 */ public bool EnableBlackouts;
         [NMS(Index = 828)]
-        /* 0x9E7B */ public bool EnableBuilderRobotGreekConversion;
+        /* 0x9E87 */ public bool EnableBuilderRobotGreekConversion;
         [NMS(Index = 266)]
-        /* 0x9E7C */ public bool EnableCraftingTree;
+        /* 0x9E88 */ public bool EnableCraftingTree;
         [NMS(Index = 203)]
-        /* 0x9E7D */ public bool EnableHandMenuButtons;
+        /* 0x9E89 */ public bool EnableHandMenuButtons;
         [NMS(Index = 235)]
-        /* 0x9E7E */ public bool EnableHandMenuDebug;
+        /* 0x9E8A */ public bool EnableHandMenuDebug;
         [NMS(Index = 829)]
-        /* 0x9E7F */ public bool EnableKanaConversion;
+        /* 0x9E8B */ public bool EnableKanaConversion;
         [NMS(Index = 104)]
-        /* 0x9E80 */ public bool EnablePopupUses;
+        /* 0x9E8C */ public bool EnablePopupUses;
         [NMS(Index = 341)]
-        /* 0x9E81 */ public bool FixedInventoryIconPositions;
+        /* 0x9E8D */ public bool FixedInventoryIconPositions;
         [NMS(Index = 1141)]
-        /* 0x9E82 */ public TkCurveType FrontendBootBarCurve;
+        /* 0x9E8E */ public TkCurveType FrontendBootBarCurve;
         [NMS(Index = 1126)]
-        /* 0x9E83 */ public TkCurveType FrontendConfirmCurve;
+        /* 0x9E8F */ public TkCurveType FrontendConfirmCurve;
         [NMS(Index = 1213)]
-        /* 0x9E84 */ public TkCurveType FrontendDoFCurve;
+        /* 0x9E90 */ public TkCurveType FrontendDoFCurve;
         [NMS(Index = 903)]
-        /* 0x9E85 */ public bool HideExtremePlanetNotifications;
+        /* 0x9E91 */ public bool HideExtremePlanetNotifications;
         [NMS(Index = 1429)]
-        /* 0x9E86 */ public bool HideQuickMenuControls;
+        /* 0x9E92 */ public bool HideQuickMenuControls;
         [NMS(Index = 1362)]
-        /* 0x9E87 */ public TkCurveType HUDMarkerActiveCurve;
+        /* 0x9E93 */ public TkCurveType HUDMarkerActiveCurve;
         [NMS(Index = 1332)]
-        /* 0x9E88 */ public TkCurveType HUDMarkerAnimAlphaCurve;
+        /* 0x9E94 */ public TkCurveType HUDMarkerAnimAlphaCurve;
         [NMS(Index = 1333)]
-        /* 0x9E89 */ public TkCurveType HUDMarkerAnimCurve;
+        /* 0x9E95 */ public TkCurveType HUDMarkerAnimCurve;
         [NMS(Index = 861)]
-        /* 0x9E8A */ public TkCurveType HUDPlayerTrackArrowEnergyShieldDepletedCurve;
+        /* 0x9E96 */ public TkCurveType HUDPlayerTrackArrowEnergyShieldDepletedCurve;
         [NMS(Index = 866)]
-        /* 0x9E8B */ public TkCurveType HUDPlayerTrackArrowEnergyShieldStartChargeCurve;
+        /* 0x9E97 */ public TkCurveType HUDPlayerTrackArrowEnergyShieldStartChargeCurve;
         [NMS(Index = 316)]
-        /* 0x9E8C */ public bool InteractionInWorldPlayerCamAlways;
+        /* 0x9E98 */ public bool InteractionInWorldPlayerCamAlways;
         [NMS(Index = 1006)]
-        /* 0x9E8D */ public TkCurveType InteractionScanSlapCurve;
+        /* 0x9E99 */ public TkCurveType InteractionScanSlapCurve;
         [NMS(Index = 527)]
-        /* 0x9E8E */ public bool LeadTargetEnabled;
+        /* 0x9E9A */ public bool LeadTargetEnabled;
         [NMS(Index = 1033)]
-        /* 0x9E8F */ public bool ModelRendererBGPass;
+        /* 0x9E9B */ public bool ModelRendererBGPass;
         [NMS(Index = 1034)]
-        /* 0x9E90 */ public bool ModelRendererPass1;
+        /* 0x9E9C */ public bool ModelRendererPass1;
         [NMS(Index = 1035)]
-        /* 0x9E91 */ public bool ModelRendererPass2;
+        /* 0x9E9D */ public bool ModelRendererPass2;
         [NMS(Index = 1410)]
-        /* 0x9E92 */ public TkCurveType NGuiModelViewFadeInAfterRenderCurve;
+        /* 0x9E9E */ public TkCurveType NGuiModelViewFadeInAfterRenderCurve;
         [NMS(Index = 1411)]
-        /* 0x9E93 */ public bool NGuiUseSeparateLayersForModelAndReflection;
+        /* 0x9E9F */ public bool NGuiUseSeparateLayersForModelAndReflection;
         [NMS(Index = 223)]
-        /* 0x9E94 */ public bool OnlyShowEjectHandlesInVR;
+        /* 0x9EA0 */ public bool OnlyShowEjectHandlesInVR;
         [NMS(Index = 79)]
-        /* 0x9E95 */ public TkCurveType PadCursorUICurve;
+        /* 0x9EA1 */ public TkCurveType PadCursorUICurve;
         [NMS(Index = 517)]
-        /* 0x9E96 */ public TkCurveType PageTurnCurve;
+        /* 0x9EA2 */ public TkCurveType PageTurnCurve;
         [NMS(Index = 518)]
-        /* 0x9E97 */ public TkCurveType PageTurnFadeCurve;
+        /* 0x9EA3 */ public TkCurveType PageTurnFadeCurve;
         [NMS(Index = 1145)]
-        /* 0x9E98 */ public TkCurveType PopupActivateCurve1;
+        /* 0x9EA4 */ public TkCurveType PopupActivateCurve1;
         [NMS(Index = 1146)]
-        /* 0x9E99 */ public TkCurveType PopupActivateCurve2;
+        /* 0x9EA5 */ public TkCurveType PopupActivateCurve2;
         [NMS(Index = 572)]
-        /* 0x9E9A */ public bool ProgressiveDialogStyle;
+        /* 0x9EA6 */ public bool ProgressiveDialogStyle;
         [NMS(Index = 1430)]
-        /* 0x9E9B */ public bool QuickMenuAllowCycle;
+        /* 0x9EA7 */ public bool QuickMenuAllowCycle;
         [NMS(Index = 267)]
-        /* 0x9E9C */ public bool QuickMenuEnableSwipe;
+        /* 0x9EA8 */ public bool QuickMenuEnableSwipe;
         [NMS(Index = 336)]
-        /* 0x9E9D */ public bool RepairTechUseTechIcon;
+        /* 0x9EA9 */ public bool RepairTechUseTechIcon;
         [NMS(Index = 95)]
-        /* 0x9E9E */ public bool ReplaceItemBarWithNumbers;
+        /* 0x9EAA */ public bool ReplaceItemBarWithNumbers;
         [NMS(Index = 1048)]
-        /* 0x9E9F */ public bool ShieldHUDAlwaysOn;
+        /* 0x9EAB */ public bool ShieldHUDAlwaysOn;
         [NMS(Index = 585)]
-        /* 0x9EA0 */ public bool ShowDamageNumbers;
+        /* 0x9EAC */ public bool ShowDamageNumbers;
         [NMS(Index = 64)]
-        /* 0x9EA1 */ public bool ShowDifficultyForBases;
+        /* 0x9EAD */ public bool ShowDifficultyForBases;
         [NMS(Index = 900)]
-        /* 0x9EA2 */ public bool ShowJetpackNotificationForNonTerrain;
+        /* 0x9EAE */ public bool ShowJetpackNotificationForNonTerrain;
         [NMS(Index = 617)]
-        /* 0x9EA3 */ public bool ShowOnscreenPredatorMarkers;
+        /* 0x9EAF */ public bool ShowOnscreenPredatorMarkers;
         [NMS(Index = 65)]
-        /* 0x9EA4 */ public bool ShowPadlockForLockedSettings;
+        /* 0x9EB0 */ public bool ShowPadlockForLockedSettings;
         [NMS(Index = 219)]
-        /* 0x9EA5 */ public bool ShowVRDistanceWarning;
+        /* 0x9EB1 */ public bool ShowVRDistanceWarning;
         [NMS(Index = 134)]
-        /* 0x9EA6 */ public bool SkipShopIntro;
+        /* 0x9EB2 */ public bool SkipShopIntro;
         [NMS(Index = 1256)]
-        /* 0x9EA7 */ public TkCurveType SpaceMapDistanceCurve;
+        /* 0x9EB3 */ public TkCurveType SpaceMapDistanceCurve;
         [NMS(Index = 1242)]
-        /* 0x9EA8 */ public bool SpaceMapShowAnomaly;
+        /* 0x9EB4 */ public bool SpaceMapShowAnomaly;
         [NMS(Index = 1243)]
-        /* 0x9EA9 */ public bool SpaceMapShowAnomalyLines;
+        /* 0x9EB5 */ public bool SpaceMapShowAnomalyLines;
         [NMS(Index = 1249)]
-        /* 0x9EAA */ public bool SpaceMapShowFrieghterLines;
+        /* 0x9EB6 */ public bool SpaceMapShowFrieghterLines;
         [NMS(Index = 1248)]
-        /* 0x9EAB */ public bool SpaceMapShowFrieghters;
+        /* 0x9EB7 */ public bool SpaceMapShowFrieghters;
         [NMS(Index = 1244)]
-        /* 0x9EAC */ public bool SpaceMapShowNexus;
+        /* 0x9EB8 */ public bool SpaceMapShowNexus;
         [NMS(Index = 1245)]
-        /* 0x9EAD */ public bool SpaceMapShowNexusLines;
+        /* 0x9EB9 */ public bool SpaceMapShowNexusLines;
         [NMS(Index = 1239)]
-        /* 0x9EAE */ public bool SpaceMapShowPlanetLines;
+        /* 0x9EBA */ public bool SpaceMapShowPlanetLines;
         [NMS(Index = 1238)]
-        /* 0x9EAF */ public bool SpaceMapShowPlanets;
+        /* 0x9EBB */ public bool SpaceMapShowPlanets;
         [NMS(Index = 1251)]
-        /* 0x9EB0 */ public bool SpaceMapShowPulseEncounterLines;
+        /* 0x9EBC */ public bool SpaceMapShowPulseEncounterLines;
         [NMS(Index = 1250)]
-        /* 0x9EB1 */ public bool SpaceMapShowPulseEncounters;
+        /* 0x9EBD */ public bool SpaceMapShowPulseEncounters;
         [NMS(Index = 1247)]
-        /* 0x9EB2 */ public bool SpaceMapShowShipLines;
+        /* 0x9EBE */ public bool SpaceMapShowShipLines;
         [NMS(Index = 1246)]
-        /* 0x9EB3 */ public bool SpaceMapShowShips;
+        /* 0x9EBF */ public bool SpaceMapShowShips;
         [NMS(Index = 1240)]
-        /* 0x9EB4 */ public bool SpaceMapShowStation;
+        /* 0x9EC0 */ public bool SpaceMapShowStation;
         [NMS(Index = 1241)]
-        /* 0x9EB5 */ public bool SpaceMapShowStationLines;
+        /* 0x9EC1 */ public bool SpaceMapShowStationLines;
         [NMS(Index = 528)]
-        /* 0x9EB6 */ public bool SpaceOnlyLeadTargetEnabled;
+        /* 0x9EC2 */ public bool SpaceOnlyLeadTargetEnabled;
         [NMS(Index = 105)]
-        /* 0x9EB7 */ public bool TechBoxesCanStack;
+        /* 0x9EC3 */ public bool TechBoxesCanStack;
         [NMS(Index = 782)]
-        /* 0x9EB8 */ public TkCurveType TrackCritCurve;
+        /* 0x9EC4 */ public TkCurveType TrackCritCurve;
         [NMS(Index = 768)]
-        /* 0x9EB9 */ public TkCurveType TrackReticuleInAngleCurve;
+        /* 0x9EC5 */ public TkCurveType TrackReticuleInAngleCurve;
         [NMS(Index = 767)]
-        /* 0x9EBA */ public TkCurveType TrackReticuleInCurve;
+        /* 0x9EC6 */ public TkCurveType TrackReticuleInCurve;
         [NMS(Index = 1115)]
-        /* 0x9EBB */ public bool UseCursorHoverSlowFixedValue;
+        /* 0x9EC7 */ public bool UseCursorHoverSlowFixedValue;
         [NMS(Index = 107)]
-        /* 0x9EBC */ public bool UseIntermediateMissionGiverOptions;
+        /* 0x9EC8 */ public bool UseIntermediateMissionGiverOptions;
         [NMS(Index = 834)]
-        /* 0x9EBD */ public bool UseNamesOnShipHUD;
+        /* 0x9EC9 */ public bool UseNamesOnShipHUD;
         [NMS(Index = 98)]
-        /* 0x9EBE */ public bool UseSquareSlots;
+        /* 0x9ECA */ public bool UseSquareSlots;
         [NMS(Index = 335)]
-        /* 0x9EBF */ public bool UseWorldNodesForRepair;
+        /* 0x9ECB */ public bool UseWorldNodesForRepair;
     }
 }

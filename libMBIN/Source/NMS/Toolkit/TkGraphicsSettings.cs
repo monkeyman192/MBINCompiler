@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x1FC9185DDFD5EBC0, NameHash = 0xCCF3675E)]
+    [NMS(GUID = 0xE203CBEEFD9B329F, NameHash = 0xCCF3675E)]
     public class TkGraphicsSettings : NMSTemplate
     {
         [NMS(Index = 4)]
@@ -89,5 +89,9 @@ namespace libMBIN.NMS.Toolkit
         /* 0x1FD */ public bool UseTerrainTextureCache;
         [NMS(Index = 12)]
         /* 0x1FE */ public bool VignetteAndScanlines;
+        [NMS(Index = 32)]
+        /* 0x1FF */ public bool VREyeTracking;
+        [NMS(Index = 31)]
+        /* 0x200 */ public bool VRFoveatedRendering;
     }
 }
