@@ -2,7 +2,7 @@ using System;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x7478E9B7BD83627A, NameHash = 0xD42BEC5C)]
+    [NMS(GUID = 0xA0D9FFCC94735A6E, NameHash = 0xD42BEC5C)]
     public class TkGlobals : NMSTemplate
     {
         // size: 0x4
@@ -49,11 +49,11 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 32)]
         /* 0x00C */ public ForceGPUPresetToEnum ForceGPUPresetTo;
-        [NMS(Index = 101)]
-        /* 0x010 */ public int FrameFlipRateDefault;
-        [NMS(Index = 103)]
-        /* 0x014 */ public int FrameFlipRateGame;
         [NMS(Index = 102)]
+        /* 0x010 */ public int FrameFlipRateDefault;
+        [NMS(Index = 104)]
+        /* 0x014 */ public int FrameFlipRateGame;
+        [NMS(Index = 103)]
         /* 0x018 */ public int FrameFlipRateLoad;
         // size: 0x5
         public enum GameWindowModeEnum : uint {
@@ -69,60 +69,62 @@ namespace libMBIN.NMS.Toolkit
         /* 0x020 */ public int HavokVDBClientIndex;
         [NMS(Index = 29)]
         /* 0x024 */ public int HighlightPlacementIndex;
-        [NMS(Index = 97)]
-        /* 0x028 */ public int HmdEyeBufferHeight;
-        [NMS(Index = 96)]
-        /* 0x02C */ public int HmdEyeBufferWidth;
         [NMS(Index = 98)]
-        /* 0x030 */ public float HmdEyeScalePos;
+        /* 0x028 */ public int HmdEyeBufferHeight;
+        [NMS(Index = 97)]
+        /* 0x02C */ public int HmdEyeBufferWidth;
         [NMS(Index = 99)]
-        /* 0x034 */ public float HmdHeadScalePos;
+        /* 0x030 */ public float HmdEyeScalePos;
         [NMS(Index = 100)]
+        /* 0x034 */ public float HmdHeadScalePos;
+        [NMS(Index = 101)]
         /* 0x038 */ public float HmdImmersionFactor;
-        [NMS(Index = 95)]
+        [NMS(Index = 96)]
         /* 0x03C */ public int HmdMonitor;
-        [NMS(Index = 91)]
+        [NMS(Index = 92)]
         /* 0x040 */ public int HmdPreviewScale;
+        [NMS(Index = 91)]
+        /* 0x044 */ public int HmdVRSRateOverride;
         [NMS(Index = 76)]
-        /* 0x044 */ public float ImposterTextureDensity;
+        /* 0x048 */ public float ImposterTextureDensity;
         [NMS(Index = 9)]
-        /* 0x048 */ public int LoadBalanceTimeoutMS;
+        /* 0x04C */ public int LoadBalanceTimeoutMS;
         [NMS(Index = 26)]
-        /* 0x04C */ public int LODOverride;
-        [NMS(Index = 104)]
-        /* 0x050 */ public float MaxFrameRate;
+        /* 0x050 */ public int LODOverride;
+        [NMS(Index = 105)]
+        /* 0x054 */ public float MaxFrameRate;
         [NMS(Index = 57)]
-        /* 0x054 */ public int Monitor;
+        /* 0x058 */ public int Monitor;
         [NMS(Index = 74)]
-        /* 0x058 */ public int OctahedralImpostersViewCount;
+        /* 0x05C */ public int OctahedralImpostersViewCount;
         [NMS(Index = 11)]
-        /* 0x05C */ public int PSVR2LoadBalanceTimeoutMS;
-        [NMS(Index = 111)]
-        /* 0x060 */ public float ScratchpadInstanceScale;
-        [NMS(Index = 113)]
-        /* 0x064 */ public int ScratchpadInstancesCap;
-        [NMS(Index = 110)]
-        /* 0x068 */ public float ScratchpadInstanceSpacing;
+        /* 0x060 */ public int PSVR2LoadBalanceTimeoutMS;
         [NMS(Index = 112)]
-        /* 0x06C */ public int ScratchpadInstancesPerSide;
+        /* 0x064 */ public float ScratchpadInstanceScale;
         [NMS(Index = 114)]
-        /* 0x070 */ public float ScratchpadInstancesRandomness;
-        [NMS(Index = 107)]
-        /* 0x074 */ public int ScratchpadModelSeed;
+        /* 0x068 */ public int ScratchpadInstancesCap;
+        [NMS(Index = 111)]
+        /* 0x06C */ public float ScratchpadInstanceSpacing;
+        [NMS(Index = 113)]
+        /* 0x070 */ public int ScratchpadInstancesPerSide;
+        [NMS(Index = 115)]
+        /* 0x074 */ public float ScratchpadInstancesRandomness;
+        [NMS(Index = 108)]
+        /* 0x078 */ public int ScratchpadModelSeed;
         [NMS(Index = 54)]
-        /* 0x078 */ public int ScreenHeight;
+        /* 0x07C */ public int ScreenHeight;
         [NMS(Index = 53)]
-        /* 0x07C */ public int ScreenWidth;
+        /* 0x080 */ public int ScreenWidth;
         [NMS(Index = 59)]
-        /* 0x080 */ public int TiledWindowsIndex;
+        /* 0x084 */ public int TiledWindowsIndex;
         [NMS(Index = 58)]
-        /* 0x084 */ public int TiledWindowsSplitCount;
+        /* 0x088 */ public int TiledWindowsSplitCount;
         [NMS(Index = 13)]
-        /* 0x088 */ public float TitlebarMenuOffset;
+        /* 0x08C */ public float TitlebarMenuOffset;
         [NMS(Index = 21)]
-        /* 0x08C */ public float TouchScreenSwipeTime;
+        /* 0x090 */ public float TouchScreenSwipeTime;
         [NMS(Index = 20)]
-        /* 0x090 */ public float TouchScreenSwipeTravelThreshold;
+        /* 0x094 */ public float TouchScreenSwipeTravelThreshold;
         // size: 0x3
         public enum TrialStatusEnum : uint {
             SystemDefault,
@@ -130,160 +132,160 @@ namespace libMBIN.NMS.Toolkit
             ForceFullGame,
         }
         [NMS(Index = 88)]
-        /* 0x094 */ public TrialStatusEnum TrialStatus;
+        /* 0x098 */ public TrialStatusEnum TrialStatus;
         [NMS(Index = 82)]
-        /* 0x098 */ public float UpdatePeriod;
+        /* 0x09C */ public float UpdatePeriod;
         [NMS(Index = 83)]
-        /* 0x09C */ public float UpdatePeriodSteam;
+        /* 0x0A0 */ public float UpdatePeriodSteam;
         [NMS(Index = 84)]
-        /* 0x0A0 */ public float VoiceUpdatePeriod;
+        /* 0x0A4 */ public float VoiceUpdatePeriod;
         [NMS(Index = 85)]
-        /* 0x0A4 */ public float VoiceUpdatePeriodSteam;
+        /* 0x0A8 */ public float VoiceUpdatePeriodSteam;
         [NMS(Index = 10)]
-        /* 0x0A8 */ public int VRLoadBalanceTimeoutMS;
+        /* 0x0AC */ public int VRLoadBalanceTimeoutMS;
         [NMS(Index = 50)]
-        /* 0x0AC */ public int WindowPositionX;
+        /* 0x0B0 */ public int WindowPositionX;
         [NMS(Index = 51)]
-        /* 0x0B0 */ public int WindowPositionY;
+        /* 0x0B4 */ public int WindowPositionY;
         [NMS(Index = 44)]
-        /* 0x0B4 */ public float WwiseVibrationMultiplierPrimary;
+        /* 0x0B8 */ public float WwiseVibrationMultiplierPrimary;
         [NMS(Index = 45)]
-        /* 0x0B8 */ public float WwiseVibrationMultiplierSecondary;
+        /* 0x0BC */ public float WwiseVibrationMultiplierSecondary;
         [NMS(Index = 65)]
-        /* 0x0BC */ public NMSString0x100 EditorLayout;
+        /* 0x0C0 */ public NMSString0x100 EditorLayout;
         [NMS(Index = 6)]
-        /* 0x1BC */ public NMSString0x100 ExcludeLogFilter;
+        /* 0x1C0 */ public NMSString0x100 ExcludeLogFilter;
         [NMS(Index = 5)]
-        /* 0x2BC */ public NMSString0x100 IncludeLogFilter;
-        [NMS(Index = 106)]
-        /* 0x3BC */ public NMSString0x100 ScratchpadModel;
+        /* 0x2C0 */ public NMSString0x100 IncludeLogFilter;
+        [NMS(Index = 107)]
+        /* 0x3C0 */ public NMSString0x100 ScratchpadModel;
         [NMS(Index = 86)]
-        /* 0x4BC */ public NMSString0x20 OverrideUsernameForDev;
+        /* 0x4C0 */ public NMSString0x20 OverrideUsernameForDev;
         [NMS(Index = 78)]
-        /* 0x4DC */ public bool AllowBindlessDraws;
+        /* 0x4E0 */ public bool AllowBindlessDraws;
         [NMS(Index = 40)]
-        /* 0x4DD */ public bool AllowDynamicRenderingOnVulkan;
+        /* 0x4E1 */ public bool AllowDynamicRenderingOnVulkan;
         [NMS(Index = 25)]
-        /* 0x4DE */ public bool AllowDynamicResScaling;
+        /* 0x4E2 */ public bool AllowDynamicResScaling;
         [NMS(Index = 12)]
-        /* 0x4DF */ public bool AllowInPlaceNGuiElementRenaming;
+        /* 0x4E3 */ public bool AllowInPlaceNGuiElementRenaming;
         [NMS(Index = 39)]
-        /* 0x4E0 */ public bool AllowMultiThreadedRenderingOnVulkan;
+        /* 0x4E4 */ public bool AllowMultiThreadedRenderingOnVulkan;
         [NMS(Index = 1)]
-        /* 0x4E1 */ public bool AssertsPopupAlwaysOnTop;
+        /* 0x4E5 */ public bool AssertsPopupAlwaysOnTop;
         [NMS(Index = 15)]
-        /* 0x4E2 */ public bool AutoTabNewlyOpenedWindows;
+        /* 0x4E6 */ public bool AutoTabNewlyOpenedWindows;
         [NMS(Index = 27)]
-        /* 0x4E3 */ public bool ColourLODs;
+        /* 0x4E7 */ public bool ColourLODs;
         [NMS(Index = 28)]
-        /* 0x4E4 */ public bool ColourVertexDensity;
+        /* 0x4E8 */ public bool ColourVertexDensity;
         [NMS(Index = 75)]
-        /* 0x4E5 */ public bool CompressImposterTextures;
+        /* 0x4E9 */ public bool CompressImposterTextures;
         [NMS(Index = 41)]
-        /* 0x4E6 */ public bool CrashOnFailedCriticalAssertion;
+        /* 0x4EA */ public bool CrashOnFailedCriticalAssertion;
         [NMS(Index = 2)]
-        /* 0x4E7 */ public bool DefaultSelectIgnoreAsserts;
+        /* 0x4EB */ public bool DefaultSelectIgnoreAsserts;
         [NMS(Index = 3)]
-        /* 0x4E8 */ public bool DisableAssertUpload;
+        /* 0x4EC */ public bool DisableAssertUpload;
         [NMS(Index = 35)]
-        /* 0x4E9 */ public bool DisableImposters;
+        /* 0x4ED */ public bool DisableImposters;
         [NMS(Index = 48)]
-        /* 0x4EA */ public bool DisableMultiplayer;
+        /* 0x4EE */ public bool DisableMultiplayer;
         [NMS(Index = 24)]
-        /* 0x4EB */ public bool DisableResScaling;
+        /* 0x4EF */ public bool DisableResScaling;
         [NMS(Index = 22)]
-        /* 0x4EC */ public bool DisableSwitchingAwayFromPad;
+        /* 0x4F0 */ public bool DisableSwitchingAwayFromPad;
         [NMS(Index = 77)]
-        /* 0x4ED */ public bool DisableUndergrowthInstanceRendering;
+        /* 0x4F1 */ public bool DisableUndergrowthInstanceRendering;
         [NMS(Index = 55)]
-        /* 0x4EE */ public bool DisableVSync;
+        /* 0x4F2 */ public bool DisableVSync;
         [NMS(Index = 71)]
-        /* 0x4EF */ public bool EnableGpuBreadcrumbs;
+        /* 0x4F3 */ public bool EnableGpuBreadcrumbs;
         [NMS(Index = 70)]
-        /* 0x4F0 */ public bool EnableNvidiaAftermath;
+        /* 0x4F4 */ public bool EnableNvidiaAftermath;
         [NMS(Index = 68)]
-        /* 0x4F1 */ public bool EnablePix;
+        /* 0x4F5 */ public bool EnablePix;
         [NMS(Index = 72)]
-        /* 0x4F2 */ public bool EnableRayTracing;
+        /* 0x4F6 */ public bool EnableRayTracing;
         [NMS(Index = 67)]
-        /* 0x4F3 */ public bool EnableRenderdoc;
+        /* 0x4F7 */ public bool EnableRenderdoc;
         [NMS(Index = 23)]
-        /* 0x4F4 */ public bool EnableShaderReload;
+        /* 0x4F8 */ public bool EnableShaderReload;
         [NMS(Index = 38)]
-        /* 0x4F5 */ public bool EnableSSS;
+        /* 0x4F9 */ public bool EnableSSS;
         [NMS(Index = 19)]
-        /* 0x4F6 */ public bool EnableVirtualTouchScreen;
+        /* 0x4FA */ public bool EnableVirtualTouchScreen;
         [NMS(Index = 7)]
-        /* 0x4F7 */ public bool EnableZstdSaves;
+        /* 0x4FB */ public bool EnableZstdSaves;
         [NMS(Index = 16)]
-        /* 0x4F8 */ public bool FavouritesAndUndoEnabledByDefault;
+        /* 0x4FC */ public bool FavouritesAndUndoEnabledByDefault;
         [NMS(Index = 14)]
-        /* 0x4F9 */ public bool FilterTranslatedTextWhenSearching;
+        /* 0x4FD */ public bool FilterTranslatedTextWhenSearching;
         [NMS(Index = 31)]
-        /* 0x4FA */ public bool ForceGPUPreset;
+        /* 0x4FE */ public bool ForceGPUPreset;
         [NMS(Index = 62)]
-        /* 0x4FB */ public bool ForceRunAllHavokWorldsMultiThreaded;
+        /* 0x4FF */ public bool ForceRunAllHavokWorldsMultiThreaded;
         [NMS(Index = 42)]
-        /* 0x4FC */ public bool ForceSteamDeck;
+        /* 0x500 */ public bool ForceSteamDeck;
         [NMS(Index = 43)]
-        /* 0x4FD */ public bool ForceWinGdkHandheld;
-        [NMS(Index = 105)]
-        /* 0x4FE */ public bool FrameRateSpikeTestEnabled;
+        /* 0x501 */ public bool ForceWinGdkHandheld;
+        [NMS(Index = 106)]
+        /* 0x502 */ public bool FrameRateSpikeTestEnabled;
         [NMS(Index = 34)]
-        /* 0x4FF */ public bool FreezeCulling;
+        /* 0x503 */ public bool FreezeCulling;
         [NMS(Index = 69)]
-        /* 0x500 */ public bool HideRenderdocOverlay;
-        [NMS(Index = 94)]
-        /* 0x501 */ public bool HmdDistortionPassthru;
+        /* 0x504 */ public bool HideRenderdocOverlay;
+        [NMS(Index = 95)]
+        /* 0x505 */ public bool HmdDistortionPassthru;
         [NMS(Index = 89)]
-        /* 0x502 */ public bool HmdEnable;
+        /* 0x506 */ public bool HmdEnable;
         [NMS(Index = 90)]
-        /* 0x503 */ public bool HmdFoveated;
+        /* 0x507 */ public bool HmdFoveated;
+        [NMS(Index = 94)]
+        /* 0x508 */ public bool HmdStereoRender;
         [NMS(Index = 93)]
-        /* 0x504 */ public bool HmdStereoRender;
-        [NMS(Index = 92)]
-        /* 0x505 */ public bool HmdTracking;
+        /* 0x509 */ public bool HmdTracking;
         [NMS(Index = 37)]
-        /* 0x506 */ public bool JitterRenderOffsetEveryFrame;
+        /* 0x50A */ public bool JitterRenderOffsetEveryFrame;
         [NMS(Index = 66)]
-        /* 0x507 */ public bool LoadRelativeEditorLayouts;
+        /* 0x50B */ public bool LoadRelativeEditorLayouts;
         [NMS(Index = 18)]
-        /* 0x508 */ public bool LogInputChanges;
+        /* 0x50C */ public bool LogInputChanges;
         [NMS(Index = 17)]
-        /* 0x509 */ public bool LogInputSetup;
+        /* 0x50D */ public bool LogInputSetup;
         [NMS(Index = 33)]
-        /* 0x50A */ public bool MakeUnusedUniformsNaN;
+        /* 0x50E */ public bool MakeUnusedUniformsNaN;
         [NMS(Index = 30)]
-        /* 0x50B */ public bool MinGPUMode;
+        /* 0x50F */ public bool MinGPUMode;
         [NMS(Index = 73)]
-        /* 0x50C */ public bool OctahedralImpostersViewFromSpace;
+        /* 0x510 */ public bool OctahedralImpostersViewFromSpace;
         [NMS(Index = 60)]
-        /* 0x50D */ public bool RunAllHavokWorldsSingleThreaded;
+        /* 0x511 */ public bool RunAllHavokWorldsSingleThreaded;
         [NMS(Index = 61)]
-        /* 0x50E */ public bool RunOnlyHavokSubworldsSingleThreaded;
+        /* 0x512 */ public bool RunOnlyHavokSubworldsSingleThreaded;
         [NMS(Index = 63)]
-        /* 0x50F */ public bool SampleCollisionWithCamera;
-        [NMS(Index = 108)]
-        /* 0x510 */ public bool ScratchpadInstanced;
+        /* 0x513 */ public bool SampleCollisionWithCamera;
         [NMS(Index = 109)]
-        /* 0x511 */ public bool ScratchpadWind;
+        /* 0x514 */ public bool ScratchpadInstanced;
+        [NMS(Index = 110)]
+        /* 0x515 */ public bool ScratchpadWind;
         [NMS(Index = 64)]
-        /* 0x512 */ public bool ShowPlayerCollisions;
+        /* 0x516 */ public bool ShowPlayerCollisions;
         [NMS(Index = 47)]
-        /* 0x513 */ public bool SimulateDisabledParticleRefractions;
+        /* 0x517 */ public bool SimulateDisabledParticleRefractions;
         [NMS(Index = 49)]
-        /* 0x514 */ public bool SmokeTestSmokeBotAutoStart;
+        /* 0x518 */ public bool SmokeTestSmokeBotAutoStart;
         [NMS(Index = 52)]
-        /* 0x515 */ public bool UseDebugScreenSettings;
+        /* 0x519 */ public bool UseDebugScreenSettings;
         [NMS(Index = 46)]
-        /* 0x516 */ public bool UseHeavyAir;
+        /* 0x51A */ public bool UseHeavyAir;
         [NMS(Index = 87)]
-        /* 0x517 */ public bool UseOverrideUsernameForSavePath;
+        /* 0x51B */ public bool UseOverrideUsernameForSavePath;
         [NMS(Index = 79)]
-        /* 0x518 */ public bool VulkanValidationEnabled;
+        /* 0x51C */ public bool VulkanValidationEnabled;
         [NMS(Index = 80)]
-        /* 0x519 */ public bool VulkanValidationPrintMessages;
+        /* 0x51D */ public bool VulkanValidationPrintMessages;
         [NMS(Index = 81)]
-        /* 0x51A */ public bool VulkanValidationPrintUniqueOnly;
+        /* 0x51E */ public bool VulkanValidationPrintUniqueOnly;
     }
 }
