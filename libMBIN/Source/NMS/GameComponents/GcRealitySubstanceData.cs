@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE82FE1E0B8C2C3FB, NameHash = 0x77C00C01)]
+    [NMS(GUID = 0xEF05B7794BA87212, NameHash = 0x77C00C01)]
     public class GcRealitySubstanceData : NMSTemplate
     {
         [NMS(Index = 8)]
@@ -56,19 +56,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x154 */ public NMSString0x20 NameLower;
         [NMS(Index = 3)]
         /* 0x174 */ public NMSString0x20 Symbol;
-        [NMS(Index = 28)]
-        /* 0x194 */ public bool CookingIngredient;
-        [NMS(Index = 30)]
-        /* 0x195 */ public bool EasyToRefine;
-        [NMS(Index = 31)]
-        /* 0x196 */ public bool EggModifierIngredient;
         [NMS(Index = 29)]
+        /* 0x194 */ public bool CookingIngredient;
+        [NMS(Index = 31)]
+        /* 0x195 */ public bool EasyToRefine;
+        [NMS(Index = 32)]
+        /* 0x196 */ public bool EggModifierIngredient;
+        [NMS(Index = 30)]
         /* 0x197 */ public bool GoodForSelling;
+        [NMS(Index = 28)]
+        /* 0x198 */ public bool OnlyFoundAtSpacePOIs;
         [NMS(Index = 27)]
-        /* 0x198 */ public bool OnlyFoundInPurpleSytems;
+        /* 0x199 */ public bool OnlyFoundInPurpleSytems;
         [NMS(Index = 25)]
-        /* 0x199 */ public GcScannerIconTypes PinObjectiveScannableType;
+        /* 0x19A */ public GcScannerIconTypes PinObjectiveScannableType;
         [NMS(Index = 20)]
-        /* 0x19A */ public bool WikiEnabled;
+        /* 0x19B */ public bool WikiEnabled;
     }
 }

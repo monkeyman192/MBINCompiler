@@ -1,11 +1,11 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x923FBB3DC356B08D, NameHash = 0x6A258504)]
+    [NMS(GUID = 0xD3E144F7F60F0EAA, NameHash = 0x6A258504)]
     public class GcMissionConditionHasWeapons : NMSTemplate
     {
         [NMS(Index = 1)]
         /* 0x0 */ public int CountForInstalledTests;
-        // size: 0x6
+        // size: 0x7
         public enum WeaponTestEnum : uint {
             CombatPrimaryEquipped,
             CombatSecondaryEquipped,
@@ -13,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             CombatSecondaryInstalled,
             ExocraftCombatInstalled,
             ExocraftCombatActive,
+            MultitoolPrimaryModeInstalled,
         }
         [NMS(Index = 0)]
         /* 0x4 */ public WeaponTestEnum WeaponTest;

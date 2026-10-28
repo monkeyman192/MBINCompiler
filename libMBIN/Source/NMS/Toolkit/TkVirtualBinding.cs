@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x52733FF4F8B26DBB, NameHash = 0x16AA0D1F)]
+    [NMS(GUID = 0x85D9C58CF88713A2, NameHash = 0x16AA0D1F)]
     public class TkVirtualBinding : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -25,11 +25,13 @@ namespace libMBIN.NMS.Toolkit
         /* 0x5C */ public GcInputActions TopAction;
         [NMS(Index = 0)]
         /* 0x60 */ public bool Active;
+        [NMS(Index = 12)]
+        /* 0x61 */ public bool AllowExternalStart;
         [NMS(Index = 1)]
-        /* 0x61 */ public bool DefaultActive;
+        /* 0x62 */ public bool DefaultActive;
         [NMS(Index = 7)]
-        /* 0x62 */ public bool DirectionalActions;
+        /* 0x63 */ public bool DirectionalActions;
         [NMS(Index = 6)]
-        /* 0x63 */ public bool SupportsJoystick;
+        /* 0x64 */ public bool SupportsJoystick;
     }
 }

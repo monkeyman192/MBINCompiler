@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x573D3D7668DC9265, NameHash = 0x1AD5DE55)]
+    [NMS(GUID = 0xCC754B7C741E8DAD, NameHash = 0x1AD5DE55)]
     public class GcRewardOpenPage : NMSTemplate
     {
-        // size: 0x1C
+        // size: 0x1D
         public enum PageToOpenEnum : uint {
             FreighterShipTransfer,
             DisplayPortalUa,
@@ -33,6 +33,7 @@ namespace libMBIN.NMS.GameComponents
             ManageBase,
             AlliancesWindow,
             StationOwnership,
+            SpookShop,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public PageToOpenEnum PageToOpen;

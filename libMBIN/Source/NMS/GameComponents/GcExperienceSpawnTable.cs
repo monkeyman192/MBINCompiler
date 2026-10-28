@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x97D91948695B44BC, NameHash = 0xD4ED2AD7)]
+    [NMS(GUID = 0xF39C013B59F8F5CE, NameHash = 0xD4ED2AD7)]
     public class GcExperienceSpawnTable : NMSTemplate
     {
         [NMS(Index = 12, Size = 0x7, EnumType = typeof(GcSpaceBattleType.SpaceBattleTypeEnum))]

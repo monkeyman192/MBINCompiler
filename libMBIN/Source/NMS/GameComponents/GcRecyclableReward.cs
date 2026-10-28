@@ -1,9 +1,11 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x40F88120D4A3E7FA, NameHash = 0x2CBEB443)]
+    [NMS(GUID = 0x2C29E00ACCF0B2BB, NameHash = 0x2CBEB443)]
     public class GcRecyclableReward : NMSTemplate
     {
+        [NMS(Index = 1)]
+        /* 0x00 */ public NMSString0x10 RecycleEffectOverride;
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 RewardID;
+        /* 0x10 */ public NMSString0x10 RewardID;
     }
 }

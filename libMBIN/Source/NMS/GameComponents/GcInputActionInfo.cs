@@ -3,21 +3,23 @@ using System;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xA8F2F0E3A4A4CD6E, NameHash = 0xDEEFD6E4)]
+    [NMS(GUID = 0x1A00BB5CA3258CC6, NameHash = 0xDEEFD6E4)]
     public class GcInputActionInfo : NMSTemplate
     {
         [NMS(Index = 4)]
         /* 0x000 */ public NMSString0x20A ConsoleLocTag;
-        [NMS(Index = 3)]
-        /* 0x020 */ public NMSString0x20A LocTag;
         [NMS(Index = 6)]
-        /* 0x040 */ public GcFilename OverlayIcon;
-        [NMS(Index = 5)]
-        /* 0x050 */ public GcFilename SolidIcon;
-        [NMS(Index = 7)]
-        /* 0x060 */ public GcFilename SpecialIcon;
+        /* 0x020 */ public NMSString0x20A LabelFallbackLocTag;
+        [NMS(Index = 3)]
+        /* 0x040 */ public NMSString0x20A LocTag;
         [NMS(Index = 8)]
-        /* 0x070 */ public GcFilename VirtualButtonIcon;
+        /* 0x060 */ public GcFilename OverlayIcon;
+        [NMS(Index = 7)]
+        /* 0x070 */ public GcFilename SolidIcon;
+        [NMS(Index = 9)]
+        /* 0x080 */ public GcFilename SpecialIcon;
+        [NMS(Index = 10)]
+        /* 0x090 */ public GcFilename VirtualButtonIcon;
         // size: 0x8
         [Flags]
         public enum InputActionInfoFlagsEnum : uint {
@@ -30,19 +32,21 @@ namespace libMBIN.NMS.GameComponents
             OnlyNonVR = 0x20,
             IgnoreInSteam = 0x40,
         }
-        [NMS(Index = 12)]
-        /* 0x080 */ public InputActionInfoFlagsEnum InputActionInfoFlags;
+        [NMS(Index = 14)]
+        /* 0x0A0 */ public InputActionInfoFlagsEnum InputActionInfoFlags;
+        [NMS(Index = 5)]
+        /* 0x0A4 */ public GcInputActions LabelDependsOnAction;
         [NMS(Index = 1)]
-        /* 0x084 */ public GcInputActions Pairing;
+        /* 0x0A8 */ public GcInputActions Pairing;
         [NMS(Index = 2)]
-        /* 0x088 */ public NMSString0x80 TextTag;
+        /* 0x0AC */ public NMSString0x80 TextTag;
+        [NMS(Index = 13)]
+        /* 0x12C */ public NMSString0x20 ExternalDigitalAliasId;
         [NMS(Index = 11)]
-        /* 0x108 */ public NMSString0x20 ExternalDigitalAliasId;
-        [NMS(Index = 9)]
-        /* 0x128 */ public NMSString0x20 ExternalId;
-        [NMS(Index = 10)]
-        /* 0x148 */ public NMSString0x20 ExternalLoc;
+        /* 0x14C */ public NMSString0x20 ExternalId;
+        [NMS(Index = 12)]
+        /* 0x16C */ public NMSString0x20 ExternalLoc;
         [NMS(Index = 0)]
-        /* 0x168 */ public bool Analogue;
+        /* 0x18C */ public bool Analogue;
     }
 }

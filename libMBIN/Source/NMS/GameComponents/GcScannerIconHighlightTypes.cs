@@ -1,15 +1,16 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x4266A620F518DDB7, NameHash = 0xCD6DAAA6)]
+    [NMS(GUID = 0x1215A79B78CD644A, NameHash = 0xCD6DAAA6)]
     public class GcScannerIconHighlightTypes : NMSTemplate
     {
-        // size: 0x5
+        // size: 0x6
         public enum ScannerIconHighlightTypeEnum : uint {
             Diamond,
             Hexagon,
             Tag,
             Octagon,
             Circle,
+            Star,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public ScannerIconHighlightTypeEnum ScannerIconHighlightType;

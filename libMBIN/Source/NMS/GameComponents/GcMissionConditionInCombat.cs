@@ -1,12 +1,13 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x1DB9FB81B63A71ED, NameHash = 0x2A70A589)]
+    [NMS(GUID = 0x5694A569378D8EBC, NameHash = 0x2A70A589)]
     public class GcMissionConditionInCombat : NMSTemplate
     {
         [NMS(Index = 1)]
         /* 0x00 */ public NMSString0x20A OverrideOSDMessage;
-        // size: 0xA
+        // size: 0xB
         public enum CombatTypeEnum : uint {
+            Any,
             GroundCombat,
             SpaceCombat,
             FiendCombat,
