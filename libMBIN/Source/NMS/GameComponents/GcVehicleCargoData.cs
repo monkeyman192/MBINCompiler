@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xEA7D6786BC1707F5, NameHash = 0xBBF73DB3)]
+    [NMS(GUID = 0x8F9691F4B2D4C5C2, NameHash = 0xBBF73DB3)]
     public class GcVehicleCargoData : NMSTemplate
     {
         [NMS(Index = 4)]
@@ -15,5 +15,11 @@ namespace libMBIN.NMS.GameComponents
         /* 0x30 */ public Vector4f Position;
         [NMS(Index = 0)]
         /* 0x40 */ public GcResourceElement Resource;
+        [NMS(Index = 5)]
+        /* 0x88 */ public NMSString0x10 MissionID;
+        [NMS(Index = 7)]
+        /* 0x98 */ public ulong DestinationUA;
+        [NMS(Index = 6)]
+        /* 0xA0 */ public ulong MissionSeed;
     }
 }

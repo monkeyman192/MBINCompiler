@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD806ACEF9E8A023A, NameHash = 0x3780BAA2)]
+    [NMS(GUID = 0xC542CF86E9E07FFF, NameHash = 0x3780BAA2)]
     public class GcInteractionType : NMSTemplate
     {
-        // size: 0xA2
+        // size: 0xA4
         public enum InteractionTypeEnum : uint {
             None,
             Shop,
@@ -167,6 +167,8 @@ namespace libMBIN.NMS.GameComponents
             NPC_SpaceOutpost,
             PackageDropoff,
             SpaceOutpostMissions,
+            SpookShop,
+            SummonAIShip,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public InteractionTypeEnum InteractionType;

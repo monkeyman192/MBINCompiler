@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x53F152879414717B, NameHash = 0x37EE71BB)]
+    [NMS(GUID = 0x536C9DDB91C94886, NameHash = 0x37EE71BB)]
     public class GcScanEventData : NMSTemplate
     {
-        [NMS(Index = 48)]
-        /* 0x000 */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
         [NMS(Index = 49)]
+        /* 0x000 */ public GcScanEventSolarSystemLookup SolarSystemAttributes;
+        [NMS(Index = 50)]
         /* 0x0C0 */ public GcScanEventSolarSystemLookup SolarSystemAttributesFallback;
-        [NMS(Index = 72)]
+        [NMS(Index = 73)]
         /* 0x180 */ public GcResourceElement ResourceOverride;
         [NMS(Index = 1)]
         /* 0x1C8 */ public NMSString0x20A ForceInteraction;
@@ -21,51 +21,51 @@ namespace libMBIN.NMS.GameComponents
         /* 0x208 */ public NMSString0x20A MustMatchStoryUtilityTag;
         [NMS(Index = 0)]
         /* 0x228 */ public NMSString0x20A Name;
-        [NMS(Index = 53)]
+        [NMS(Index = 54)]
         /* 0x248 */ public NMSString0x20A NextOption;
-        [NMS(Index = 74)]
+        [NMS(Index = 75)]
         /* 0x268 */ public NMSString0x20A OverrideGameTableConfig;
-        [NMS(Index = 76)]
-        /* 0x288 */ public NMSString0x20A OverrideGameTableGameConfig;
         [NMS(Index = 77)]
+        /* 0x288 */ public NMSString0x20A OverrideGameTableGameConfig;
+        [NMS(Index = 78)]
         /* 0x2A8 */ public NMSString0x20A OverrideGameTableGameConfigOnCompletion;
         [NMS(Index = 24)]
         /* 0x2C8 */ public NMSString0x20A PlanetLabelText;
-        [NMS(Index = 73)]
+        [NMS(Index = 74)]
         /* 0x2E8 */ public NMSString0x20A RequireDefaultGameTableConfig;
         [NMS(Index = 26)]
         /* 0x308 */ public NMSString0x20A SurveyDiscoveryOSDMessage;
         [NMS(Index = 27)]
         /* 0x328 */ public NMSString0x20A SurveyHUDName;
-        [NMS(Index = 60)]
+        [NMS(Index = 61)]
         /* 0x348 */ public TkTextureResource MarkerIcon;
-        [NMS(Index = 54)]
+        [NMS(Index = 55)]
         /* 0x360 */ public GcScanEventTriggers TriggerActions;
-        [NMS(Index = 80)]
+        [NMS(Index = 81)]
         /* 0x378 */ public List<GcSpacePoiType> AllowedSpacePoiTypes;
         [NMS(Index = 14)]
         /* 0x388 */ public NMSString0x10 ForceOverrideEncounter;
-        [NMS(Index = 52)]
+        [NMS(Index = 53)]
         /* 0x398 */ public NMSString0x10 HasReward;
-        [NMS(Index = 58)]
-        /* 0x3A8 */ public VariableSizeString InterstellarOSDMessage;
         [NMS(Index = 59)]
+        /* 0x3A8 */ public VariableSizeString InterstellarOSDMessage;
+        [NMS(Index = 60)]
         /* 0x3B8 */ public VariableSizeString MarkerLabel;
-        [NMS(Index = 71)]
+        [NMS(Index = 72)]
         /* 0x3C8 */ public NMSString0x10 MissionMessageOnInteract;
-        [NMS(Index = 57)]
+        [NMS(Index = 58)]
         /* 0x3D8 */ public VariableSizeString OSDMessage;
-        [NMS(Index = 87)]
+        [NMS(Index = 88)]
         /* 0x3E8 */ public NMSString0x10 OverrideSpacePoiEncounter;
         [NMS(Index = 11)]
         /* 0x3F8 */ public NMSString0x10 ReplacementMaintData;
-        [NMS(Index = 84)]
+        [NMS(Index = 85)]
         /* 0x408 */ public NMSString0x10 SpecificSpacePoiId;
-        [NMS(Index = 70)]
+        [NMS(Index = 71)]
         /* 0x418 */ public VariableSizeString TooltipMessage;
-        [NMS(Index = 55)]
+        [NMS(Index = 56)]
         /* 0x428 */ public List<VariableSizeString> UAsList;
-        [NMS(Index = 45)]
+        [NMS(Index = 46)]
         /* 0x438 */ public VariableSizeString UseUDAAsSearchPoint;
         // size: 0x8
         public enum BuildingLocationEnum : uint {
@@ -112,23 +112,23 @@ namespace libMBIN.NMS.GameComponents
         /* 0x458 */ public EventStartTypeEnum EventStartType;
         [NMS(Index = 3)]
         /* 0x45C */ public GcInteractionType ForceInteractionType;
-        [NMS(Index = 66)]
+        [NMS(Index = 67)]
         /* 0x460 */ public float IconTime;
-        [NMS(Index = 65)]
+        [NMS(Index = 66)]
         /* 0x464 */ public GcAudioWwiseEvents MessageAudio;
-        [NMS(Index = 64)]
+        [NMS(Index = 65)]
         /* 0x468 */ public float MessageDisplayTime;
-        [NMS(Index = 63)]
+        [NMS(Index = 64)]
         /* 0x46C */ public float MessageTime;
-        [NMS(Index = 61)]
+        [NMS(Index = 62)]
         /* 0x470 */ public GcScannerIconHighlightTypes MissionMarkerHighlightStyleOverride;
         [NMS(Index = 6)]
         /* 0x474 */ public GcAlienRace OverrideInteractionRace;
         [NMS(Index = 28)]
         /* 0x478 */ public GcStaticTag PlaceMarkerAtTaggedNode;
-        [NMS(Index = 82)]
+        [NMS(Index = 83)]
         /* 0x47C */ public GcSpacePoiDiscoveryLevel RequiredSpacePoiDiscoveryLevel;
-        [NMS(Index = 79)]
+        [NMS(Index = 80)]
         /* 0x480 */ public GcSpacePoiType RequiredSpacePoiType;
         [NMS(Index = 5)]
         /* 0x484 */ public GcAlienRace RequireInteractionRace;
@@ -178,28 +178,28 @@ namespace libMBIN.NMS.GameComponents
             FirstPurpleSystemUA,
             NearSpecificPartyIndex,
         }
-        [NMS(Index = 46)]
+        [NMS(Index = 47)]
         /* 0x48C */ public SolarSystemLocationEnum SolarSystemLocation;
         // size: 0x2
         public enum SpacePoiLocationEnum : uint {
             Nearest,
             Random,
         }
-        [NMS(Index = 85)]
+        [NMS(Index = 86)]
         /* 0x490 */ public SpacePoiLocationEnum SpacePoiLocation;
-        [NMS(Index = 47)]
+        [NMS(Index = 48)]
         /* 0x494 */ public int SpecificPartyIndexToSearchFrom;
-        [NMS(Index = 62)]
+        [NMS(Index = 63)]
         /* 0x498 */ public float StartTime;
         [NMS(Index = 25)]
         /* 0x49C */ public float SurveyDistance;
-        [NMS(Index = 56)]
+        [NMS(Index = 57)]
         /* 0x4A0 */ public GcTechnologyCategory TechShopType;
-        [NMS(Index = 67)]
+        [NMS(Index = 68)]
         /* 0x4A4 */ public float TooltipTime;
         [NMS(Index = 39)]
         /* 0x4A8 */ public bool AllowFriendsBases;
-        [NMS(Index = 42)]
+        [NMS(Index = 43)]
         /* 0x4A9 */ public bool AllowOverriddenBuildings;
         [NMS(Index = 21)]
         /* 0x4AA */ public bool AlwaysShow;
@@ -211,7 +211,7 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4AD */ public bool CanEndFromOutsideMission;
         [NMS(Index = 17)]
         /* 0x4AE */ public bool ClearForcedInteractionOnCompletion;
-        [NMS(Index = 75)]
+        [NMS(Index = 76)]
         /* 0x4AF */ public bool ClearGameTableConfigOverrideOnCompletion;
         [NMS(Index = 33)]
         /* 0x4B0 */ public bool DisableMultiplayerSync;
@@ -223,17 +223,17 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4B3 */ public bool ForceOverridesAll;
         [NMS(Index = 12)]
         /* 0x4B4 */ public bool ForceReplaceStoryPortalSeed;
-        [NMS(Index = 51)]
+        [NMS(Index = 52)]
         /* 0x4B5 */ public bool ForceResetPortal;
-        [NMS(Index = 50)]
+        [NMS(Index = 51)]
         /* 0x4B6 */ public bool ForceRestartInteraction;
         [NMS(Index = 40)]
         /* 0x4B7 */ public bool ForceWideRandom;
-        [NMS(Index = 83)]
+        [NMS(Index = 84)]
         /* 0x4B8 */ public bool IgnoreCompletedSpacePoi;
         [NMS(Index = 15)]
         /* 0x4B9 */ public bool IsCommunityPortalOverride;
-        [NMS(Index = 41)]
+        [NMS(Index = 42)]
         /* 0x4BA */ public bool MustFindSystem;
         [NMS(Index = 22)]
         /* 0x4BB */ public bool NeverShow;
@@ -241,31 +241,33 @@ namespace libMBIN.NMS.GameComponents
         /* 0x4BC */ public bool NPCReactsToPlayer;
         [NMS(Index = 16)]
         /* 0x4BD */ public bool ObliterateLingeringCommunityPortalData;
+        [NMS(Index = 41)]
+        /* 0x4BE */ public bool RandomisePlanetChoiceFromSeed;
         [NMS(Index = 35)]
-        /* 0x4BE */ public bool ReplaceEventIfAlreadyActive;
-        [NMS(Index = 81)]
-        /* 0x4BF */ public bool RequiresSpacePoiDiscoveryLevel;
-        [NMS(Index = 78)]
-        /* 0x4C0 */ public bool RequiresSpacePoiType;
-        [NMS(Index = 69)]
-        /* 0x4C1 */ public bool ShowEndTooltip;
+        /* 0x4BF */ public bool ReplaceEventIfAlreadyActive;
+        [NMS(Index = 82)]
+        /* 0x4C0 */ public bool RequiresSpacePoiDiscoveryLevel;
+        [NMS(Index = 79)]
+        /* 0x4C1 */ public bool RequiresSpacePoiType;
+        [NMS(Index = 70)]
+        /* 0x4C2 */ public bool ShowEndTooltip;
         [NMS(Index = 23)]
-        /* 0x4C2 */ public bool ShowOnlyIfSequenceTarget;
-        [NMS(Index = 86)]
-        /* 0x4C3 */ public bool SpacePoiSetToUndiscovered;
+        /* 0x4C3 */ public bool ShowOnlyIfSequenceTarget;
+        [NMS(Index = 87)]
+        /* 0x4C4 */ public bool SpacePoiSetToUndiscovered;
         [NMS(Index = 38)]
-        /* 0x4C4 */ public GcBuildingClassification SpecificBuildingClass;
-        [NMS(Index = 88)]
-        /* 0x4C5 */ public bool SuppressSpacePoiActivity;
-        [NMS(Index = 43)]
-        /* 0x4C6 */ public bool TargetMustMatchMissionSeed;
-        [NMS(Index = 68)]
-        /* 0x4C7 */ public bool TooltipRepeats;
+        /* 0x4C5 */ public GcBuildingClassification SpecificBuildingClass;
+        [NMS(Index = 89)]
+        /* 0x4C6 */ public bool SuppressSpacePoiActivity;
         [NMS(Index = 44)]
-        /* 0x4C8 */ public bool UseBuildingFromRendezvousStage;
+        /* 0x4C7 */ public bool TargetMustMatchMissionSeed;
+        [NMS(Index = 69)]
+        /* 0x4C8 */ public bool TooltipRepeats;
+        [NMS(Index = 45)]
+        /* 0x4C9 */ public bool UseBuildingFromRendezvousStage;
         [NMS(Index = 20)]
-        /* 0x4C9 */ public bool UseMissionTradingDataOverride;
+        /* 0x4CA */ public bool UseMissionTradingDataOverride;
         [NMS(Index = 2)]
-        /* 0x4CA */ public bool UseSeasonDataAsInteraction;
+        /* 0x4CB */ public bool UseSeasonDataAsInteraction;
     }
 }

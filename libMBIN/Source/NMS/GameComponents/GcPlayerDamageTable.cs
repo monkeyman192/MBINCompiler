@@ -2,7 +2,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE62C445C8DC342A4, NameHash = 0xE2349289)]
+    [NMS(GUID = 0xF2BC7A2A7C4F7620, NameHash = 0xE2349289)]
     public class GcPlayerDamageTable : NMSTemplate
     {
         [NMS(Index = 0, KeyField = "Id")]

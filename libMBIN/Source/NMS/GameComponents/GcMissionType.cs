@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x62CE040D4B1ED4C3, NameHash = 0x42E551BD)]
+    [NMS(GUID = 0x92F022E42F8715AF, NameHash = 0x42E551BD)]
     public class GcMissionType : NMSTemplate
     {
-        // size: 0x24
+        // size: 0x25
         public enum MissionTypeEnum : uint {
             SpaceCombat,
             GroundCombat,
@@ -41,6 +41,7 @@ namespace libMBIN.NMS.GameComponents
             SwarmCombat,
             SwarmClean,
             SwarmIntel,
+            Postie,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public MissionTypeEnum MissionType;

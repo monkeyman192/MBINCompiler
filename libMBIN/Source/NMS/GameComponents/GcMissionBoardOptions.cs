@@ -3,21 +3,23 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x97AEF0310BDAF14F, NameHash = 0x90E0452F)]
+    [NMS(GUID = 0x488C70AF08924F61, NameHash = 0x90E0452F)]
     public class GcMissionBoardOptions : NMSTemplate
     {
-        [NMS(Index = 11)]
-        /* 0x00 */ public NMSString0x20A MultiplayerMissionInitialWarpScanEvent;
-        [NMS(Index = 14)]
-        /* 0x20 */ public List<NMSString0x10> BasePartBlueprints;
         [NMS(Index = 12)]
-        /* 0x30 */ public List<NMSString0x20A> DefaultItemInitialWarpScanEvents;
-        [NMS(Index = 8)]
-        /* 0x40 */ public List<GcMissionFaction> Faction;
+        /* 0x00 */ public NMSString0x20A LocalMissionLocationScanEvent;
+        [NMS(Index = 11)]
+        /* 0x20 */ public NMSString0x20A MultiplayerMissionInitialWarpScanEvent;
         [NMS(Index = 15)]
-        /* 0x50 */ public List<NMSString0x10> MandatorySalvageEquipment;
+        /* 0x40 */ public List<NMSString0x10> BasePartBlueprints;
+        [NMS(Index = 13)]
+        /* 0x50 */ public List<NMSString0x20A> DefaultItemInitialWarpScanEvents;
+        [NMS(Index = 8)]
+        /* 0x60 */ public List<GcMissionFaction> Faction;
+        [NMS(Index = 16)]
+        /* 0x70 */ public List<NMSString0x10> MandatorySalvageEquipment;
         [NMS(Index = 7)]
-        /* 0x60 */ public NMSString0x10 RewardPenaltyOnAbandon;
+        /* 0x80 */ public NMSString0x10 RewardPenaltyOnAbandon;
         // size: 0x5
         public enum DefaultItemTypeForInitialWarpEnum : uint {
             None,
@@ -26,29 +28,29 @@ namespace libMBIN.NMS.GameComponents
             SecondaryProduct,
             SecondarySubstance,
         }
-        [NMS(Index = 13)]
-        /* 0x70 */ public DefaultItemTypeForInitialWarpEnum DefaultItemTypeForInitialWarp;
+        [NMS(Index = 14)]
+        /* 0x90 */ public DefaultItemTypeForInitialWarpEnum DefaultItemTypeForInitialWarp;
         [NMS(Index = 1)]
-        /* 0x74 */ public GcMissionDifficulty Difficulty;
+        /* 0x94 */ public GcMissionDifficulty Difficulty;
         [NMS(Index = 2)]
-        /* 0x78 */ public int MinRank;
-        [NMS(Index = 17)]
-        /* 0x7C */ public GcSpacePoiType RequireUncompletedPOIOfType;
+        /* 0x98 */ public int MinRank;
+        [NMS(Index = 18)]
+        /* 0x9C */ public GcSpacePoiType RequireUncompletedPOIOfType;
         [NMS(Index = 0)]
-        /* 0x80 */ public GcMissionType Type;
+        /* 0xA0 */ public GcMissionType Type;
         [NMS(Index = 9)]
-        /* 0x84 */ public int Weighting;
+        /* 0xA4 */ public int Weighting;
         [NMS(Index = 3)]
-        /* 0x88 */ public bool CloseMissionGiver;
+        /* 0xA8 */ public bool CloseMissionGiver;
         [NMS(Index = 10)]
-        /* 0x89 */ public bool IgnoreCalculatedObjective;
+        /* 0xA9 */ public bool IgnoreCalculatedObjective;
         [NMS(Index = 4)]
-        /* 0x8A */ public bool IsGuildShopMission;
+        /* 0xAA */ public bool IsGuildShopMission;
         [NMS(Index = 6)]
-        /* 0x8B */ public bool IsMultiplayerEventMission;
+        /* 0xAB */ public bool IsMultiplayerEventMission;
         [NMS(Index = 5)]
-        /* 0x8C */ public bool IsPlanetProcMission;
-        [NMS(Index = 16)]
-        /* 0x8D */ public bool RequireUncompletedPOI;
+        /* 0xAC */ public bool IsPlanetProcMission;
+        [NMS(Index = 17)]
+        /* 0xAD */ public bool RequireUncompletedPOI;
     }
 }

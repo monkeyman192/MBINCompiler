@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xC6F703550A62C201, NameHash = 0xEDA97B90)]
+    [NMS(GUID = 0x563435482D64E02C, NameHash = 0xEDA97B90)]
     public class GcRealityManagerData : NMSTemplate
     {
         [NMS(Index = 69, Size = 0x9, EnumType = typeof(GcRealitySubstanceCategory.SubstanceCategoryEnum))]
@@ -13,44 +13,44 @@ namespace libMBIN.NMS.GameComponents
         /* 0x0090 */ public Colour[] HazardColours;
         [NMS(Index = 68, Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
         /* 0x0100 */ public Colour[] RarityColours;
-        [NMS(Index = 66)]
-        /* 0x0130 */ public GcRealityIconTable Icons;
         [NMS(Index = 78)]
-        /* 0x1E10 */ public GcTradeSettings TradeSettings;
+        /* 0x0130 */ public GcTradeSettings TradeSettings;
+        [NMS(Index = 66)]
+        /* 0x65C8 */ public GcRealityIconTable Icons;
         [NMS(Index = 71, Size = 0xD1, EnumType = typeof(GcStatsTypes.StatsTypeEnum))]
-        /* 0x3770 */ public TkTextureResource[] StatCategoryIcons;
+        /* 0x82C0 */ public TkTextureResource[] StatCategoryIcons;
         [NMS(Index = 72, Size = 0xD1, EnumType = typeof(GcStatsTypes.StatsTypeEnum))]
-        /* 0x4B08 */ public TkTextureResource[] StatTechPackageIcons;
-        [NMS(Index = 61, Size = 0x24, EnumType = typeof(GcMissionType.MissionTypeEnum))]
-        /* 0x5EA0 */ public GcNumberedTextList[] MissionNameAdjectives;
-        [NMS(Index = 60, Size = 0x24, EnumType = typeof(GcMissionType.MissionTypeEnum))]
-        /* 0x6200 */ public GcNumberedTextList[] MissionNameFormats;
-        [NMS(Index = 62, Size = 0x24, EnumType = typeof(GcMissionType.MissionTypeEnum))]
-        /* 0x6560 */ public GcNumberedTextList[] MissionNameNouns;
+        /* 0x9658 */ public TkTextureResource[] StatTechPackageIcons;
+        [NMS(Index = 61, Size = 0x25, EnumType = typeof(GcMissionType.MissionTypeEnum))]
+        /* 0xA9F0 */ public GcNumberedTextList[] MissionNameAdjectives;
+        [NMS(Index = 60, Size = 0x25, EnumType = typeof(GcMissionType.MissionTypeEnum))]
+        /* 0xAD68 */ public GcNumberedTextList[] MissionNameFormats;
+        [NMS(Index = 62, Size = 0x25, EnumType = typeof(GcMissionType.MissionTypeEnum))]
+        /* 0xB0E0 */ public GcNumberedTextList[] MissionNameNouns;
         [NMS(Index = 5)]
-        /* 0x68C0 */ public GcSubstanceSecondaryBiome SubstanceSecondaryBiome;
+        /* 0xB458 */ public GcSubstanceSecondaryBiome SubstanceSecondaryBiome;
         [NMS(Index = 54, Size = 0x7, EnumType = typeof(GcShipWeapons.ShipWeaponEnum))]
-        /* 0x6AE0 */ public GcShipWeaponData[] ShipWeapons;
+        /* 0xB678 */ public GcShipWeaponData[] ShipWeapons;
         [NMS(Index = 55, Size = 0x15, EnumType = typeof(GcPlayerWeapons.WeaponModeEnum))]
-        /* 0x6CA0 */ public GcPlayerWeaponData[] PlayerWeapons;
+        /* 0xB838 */ public GcPlayerWeaponData[] PlayerWeapons;
         [NMS(Index = 58, Size = 0xA, EnumType = typeof(GcMissionFaction.MissionFactionEnum))]
-        /* 0x6DF0 */ public NMSString0x20A[] FactionNames;
+        /* 0xB988 */ public NMSString0x20A[] FactionNames;
         [NMS(Index = 77, Size = 0xA, EnumType = typeof(GcMissionFaction.MissionFactionEnum))]
-        /* 0x6F30 */ public GcRepShopData[] RepShops;
+        /* 0xBAC8 */ public GcRepShopData[] RepShops;
         [NMS(Index = 76, Size = 0x11, EnumType = typeof(GcBiomeType.BiomeEnum))]
-        /* 0x7070 */ public GcTechList[] PlanetTechShops;
+        /* 0xBC08 */ public GcTechList[] PlanetTechShops;
         [NMS(Index = 59, Size = 0xA, EnumType = typeof(GcMissionFaction.MissionFactionEnum))]
-        /* 0x7180 */ public GcNumberedTextList[] FactionClients;
+        /* 0xBD18 */ public GcNumberedTextList[] FactionClients;
         [NMS(Index = 70, Size = 0x9, EnumType = typeof(GcRealitySubstanceCategory.SubstanceCategoryEnum))]
-        /* 0x7270 */ public TkTextureResource[] SubstanceChargeIcons;
+        /* 0xBE08 */ public TkTextureResource[] SubstanceChargeIcons;
         [NMS(Index = 63, Size = 0xB)]
-        /* 0x7348 */ public TkIdArray[] MissionBoardRewardOptions;
+        /* 0xBEE0 */ public TkIdArray[] MissionBoardRewardOptions;
         [NMS(Index = 57, Size = 0xA, EnumType = typeof(GcMissionFaction.MissionFactionEnum))]
-        /* 0x73F8 */ public NMSString0x10[] FactionStandingIDs;
+        /* 0xBF90 */ public NMSString0x10[] FactionStandingIDs;
         [NMS(Index = 56, Size = 0x7, EnumType = typeof(GcVehicleType.VehicleTypeEnum))]
-        /* 0x7498 */ public TkIdArray[] DefaultVehicleLoadout;
+        /* 0xC030 */ public TkIdArray[] DefaultVehicleLoadout;
         [NMS(Index = 94, Size = 0x5, EnumType = typeof(GcCatalogueGroups.CatalogueGroupEnum))]
-        /* 0x7508 */ public GcFilename[] Catalogues;
+        /* 0xC0A0 */ public GcFilename[] Catalogues;
         // size: 0x5
         public enum StatsEnum {
             Suit,
@@ -60,150 +60,150 @@ namespace libMBIN.NMS.GameComponents
             Vehicle,
         }
         [NMS(Index = 74, Size = 0x5, EnumType = typeof(StatsEnum))]
-        /* 0x7558 */ public GcStats[] Stats;
+        /* 0xC0F0 */ public GcStats[] Stats;
         [NMS(Index = 8, Size = 0x3, EnumType = typeof(GcProductTableType.ProductTableTypeEnum))]
-        /* 0x75A8 */ public GcFilename[] ProductTables;
+        /* 0xC140 */ public GcFilename[] ProductTables;
         [NMS(Index = 85)]
-        /* 0x75D8 */ public GcInventoryLayout ShipCargoOnlyStartingLayout;
+        /* 0xC170 */ public GcInventoryLayout ShipCargoOnlyStartingLayout;
         [NMS(Index = 83)]
-        /* 0x75F0 */ public GcInventoryLayout ShipStartingLayout;
+        /* 0xC188 */ public GcInventoryLayout ShipStartingLayout;
         [NMS(Index = 84)]
-        /* 0x7608 */ public GcInventoryLayout ShipTechOnlyStartingLayout;
+        /* 0xC1A0 */ public GcInventoryLayout ShipTechOnlyStartingLayout;
         [NMS(Index = 82)]
-        /* 0x7620 */ public GcInventoryLayout SuitCargoStartingSlotLayout;
+        /* 0xC1B8 */ public GcInventoryLayout SuitCargoStartingSlotLayout;
         [NMS(Index = 80)]
-        /* 0x7638 */ public GcInventoryLayout SuitStartingSlotLayout;
+        /* 0xC1D0 */ public GcInventoryLayout SuitStartingSlotLayout;
         [NMS(Index = 81)]
-        /* 0x7650 */ public GcInventoryLayout SuitTechOnlyStartingSlotLayout;
+        /* 0xC1E8 */ public GcInventoryLayout SuitTechOnlyStartingSlotLayout;
         [NMS(Index = 28)]
-        /* 0x7668 */ public List<GcFilename> AlienPuzzleTables;
+        /* 0xC200 */ public List<GcFilename> AlienPuzzleTables;
         [NMS(Index = 27)]
-        /* 0x7678 */ public GcFilename AlienWordsTable;
+        /* 0xC210 */ public GcFilename AlienWordsTable;
         [NMS(Index = 20)]
-        /* 0x7688 */ public GcFilename BaitDataTable;
+        /* 0xC220 */ public GcFilename BaitDataTable;
         [NMS(Index = 64)]
-        /* 0x7698 */ public List<GcRewardMissionOverride> BuilderMissionRewardOverrides;
+        /* 0xC230 */ public List<GcRewardMissionOverride> BuilderMissionRewardOverrides;
         [NMS(Index = 51)]
-        /* 0x76A8 */ public GcFilename CombatEffectsTable;
+        /* 0xC240 */ public GcFilename CombatEffectsTable;
         [NMS(Index = 13)]
-        /* 0x76B8 */ public GcFilename ConsumableItemTable;
+        /* 0xC250 */ public GcFilename ConsumableItemTable;
         [NMS(Index = 44)]
-        /* 0x76C8 */ public GcFilename CostTable;
+        /* 0xC260 */ public GcFilename CostTable;
         [NMS(Index = 32)]
-        /* 0x76D8 */ public List<GcDamageMultiplierLookup> DamageMultiplierTable;
+        /* 0xC270 */ public List<GcDamageMultiplierLookup> DamageMultiplierTable;
         [NMS(Index = 38)]
-        /* 0x76E8 */ public GcFilename DamageTable;
+        /* 0xC280 */ public GcFilename DamageTable;
         [NMS(Index = 16)]
-        /* 0x76F8 */ public GcFilename DialogClearanceTable;
+        /* 0xC290 */ public GcFilename DialogClearanceTable;
         [NMS(Index = 35)]
-        /* 0x7708 */ public GcFilename DiscoveryRewardTable;
+        /* 0xC2A0 */ public GcFilename DiscoveryRewardTable;
         [NMS(Index = 92)]
-        /* 0x7718 */ public List<GcFiendCrimeSpawnTable> FiendCrimeSpawnTable;
+        /* 0xC2B0 */ public List<GcFiendCrimeSpawnTable> FiendCrimeSpawnTable;
         [NMS(Index = 19)]
-        /* 0x7728 */ public GcFilename FishDataTable;
+        /* 0xC2C0 */ public GcFilename FishDataTable;
         [NMS(Index = 93)]
-        /* 0x7738 */ public List<GcIDPair> FreighterBaseItemPairs;
+        /* 0xC2D0 */ public List<GcIDPair> FreighterBaseItemPairs;
         [NMS(Index = 53)]
-        /* 0x7748 */ public List<GcFreighterCargoOption> FreighterCargoOptions;
+        /* 0xC2E0 */ public List<GcFreighterCargoOption> FreighterCargoOptions;
         [NMS(Index = 21)]
-        /* 0x7758 */ public GcFilename GameTableDiceDataTable;
+        /* 0xC2F0 */ public GcFilename GameTableDiceDataTable;
         [NMS(Index = 33)]
-        /* 0x7768 */ public GcFilename HistoricalSeasonDataTable;
+        /* 0xC300 */ public GcFilename HistoricalSeasonDataTable;
         [NMS(Index = 37)]
-        /* 0x7778 */ public GcFilename InventoryTable;
+        /* 0xC310 */ public GcFilename InventoryTable;
         [NMS(Index = 17)]
-        /* 0x7788 */ public GcFilename ItemDescriptionOverrideTable;
+        /* 0xC320 */ public GcFilename ItemDescriptionOverrideTable;
         [NMS(Index = 11)]
-        /* 0x7798 */ public GcFilename LegacyItemConversionTable;
+        /* 0xC330 */ public GcFilename LegacyItemConversionTable;
         [NMS(Index = 12)]
-        /* 0x77A8 */ public List<TkRawID> LegacyRepairTable;
+        /* 0xC340 */ public List<TkRawID> LegacyRepairTable;
         [NMS(Index = 47)]
-        /* 0x77B8 */ public GcFilename MaintenanceGroupsTable;
+        /* 0xC350 */ public GcFilename MaintenanceGroupsTable;
         [NMS(Index = 18)]
-        /* 0x77C8 */ public GcFilename MaintenanceOverrideTable;
+        /* 0xC360 */ public GcFilename MaintenanceOverrideTable;
         [NMS(Index = 90)]
-        /* 0x77D8 */ public List<NMSString0x10> NeverOfferedForSale;
+        /* 0xC370 */ public List<NMSString0x10> NeverOfferedForSale;
         [NMS(Index = 89)]
-        /* 0x77E8 */ public List<NMSString0x10> NeverSellableItems;
+        /* 0xC380 */ public List<NMSString0x10> NeverSellableItems;
         [NMS(Index = 23)]
-        /* 0x77F8 */ public GcFilename PetBattlerMoveSetsTable;
+        /* 0xC390 */ public GcFilename PetBattlerMoveSetsTable;
         [NMS(Index = 22)]
-        /* 0x7808 */ public GcFilename PetBattlerMovesTable;
+        /* 0xC3A0 */ public GcFilename PetBattlerMovesTable;
         [NMS(Index = 24)]
-        /* 0x7818 */ public GcFilename PetShopItemTable;
+        /* 0xC3B0 */ public GcFilename PetShopItemTable;
         [NMS(Index = 79)]
-        /* 0x7828 */ public List<NMSString0x10> PirateStationExtraProds;
+        /* 0xC3C0 */ public List<NMSString0x10> PirateStationExtraProds;
         [NMS(Index = 50)]
-        /* 0x7838 */ public GcFilename PlayerWeaponPropertiesTable;
+        /* 0xC3D0 */ public GcFilename PlayerWeaponPropertiesTable;
         [NMS(Index = 9)]
-        /* 0x7848 */ public GcFilename ProceduralProductTable;
+        /* 0xC3E0 */ public GcFilename ProceduralProductTable;
         [NMS(Index = 10)]
-        /* 0x7858 */ public GcFilename ProceduralTechnologyTable;
+        /* 0xC3F0 */ public GcFilename ProceduralTechnologyTable;
         [NMS(Index = 39)]
-        /* 0x7868 */ public GcFilename PurchaseableBuildingBlueprintsTable;
+        /* 0xC400 */ public GcFilename PurchaseableBuildingBlueprintsTable;
         [NMS(Index = 40)]
-        /* 0x7878 */ public GcFilename PurchaseableSpecialsTable;
+        /* 0xC410 */ public GcFilename PurchaseableSpecialsTable;
         [NMS(Index = 14)]
-        /* 0x7888 */ public GcFilename RecipeTable;
+        /* 0xC420 */ public GcFilename RecipeTable;
         [NMS(Index = 34)]
-        /* 0x7898 */ public GcFilename RewardTable;
+        /* 0xC430 */ public GcFilename RewardTable;
         [NMS(Index = 49)]
-        /* 0x78A8 */ public GcFilename SettlementPerksTable;
+        /* 0xC440 */ public GcFilename SettlementPerksTable;
         [NMS(Index = 26)]
-        /* 0x78B8 */ public GcFilename SpacePoiTable;
+        /* 0xC450 */ public GcFilename SpacePoiTable;
         [NMS(Index = 75)]
-        /* 0x78C8 */ public GcTechList StationTechShops;
+        /* 0xC460 */ public GcTechList StationTechShops;
         [NMS(Index = 36)]
-        /* 0x78D8 */ public GcFilename StatRewardsTable;
+        /* 0xC470 */ public GcFilename StatRewardsTable;
         [NMS(Index = 15)]
-        /* 0x78E8 */ public GcFilename StoriesTable;
+        /* 0xC480 */ public GcFilename StoriesTable;
         [NMS(Index = 4)]
-        /* 0x78F8 */ public List<GcSubstanceSecondaryLookup> SubstanceSecondaryLookups;
+        /* 0xC490 */ public List<GcSubstanceSecondaryLookup> SubstanceSecondaryLookups;
         [NMS(Index = 7)]
-        /* 0x7908 */ public GcFilename SubstanceTable;
+        /* 0xC4A0 */ public GcFilename SubstanceTable;
         [NMS(Index = 88)]
-        /* 0x7918 */ public List<int> SuitCargoUpgradePrices;
+        /* 0xC4B0 */ public List<int> SuitCargoUpgradePrices;
         [NMS(Index = 87)]
-        /* 0x7928 */ public List<int> SuitTechOnlyUpgradePrices;
+        /* 0xC4C0 */ public List<int> SuitTechOnlyUpgradePrices;
         [NMS(Index = 86)]
-        /* 0x7938 */ public List<int> SuitUpgradePrices;
+        /* 0xC4D0 */ public List<int> SuitUpgradePrices;
         [NMS(Index = 25)]
-        /* 0x7948 */ public GcFilename SwarmDataTable;
+        /* 0xC4E0 */ public GcFilename SwarmDataTable;
         [NMS(Index = 52)]
-        /* 0x7958 */ public GcFilename TechBoxTable;
+        /* 0xC4F0 */ public GcFilename TechBoxTable;
         [NMS(Index = 6)]
-        /* 0x7968 */ public GcFilename TechnologyTable;
+        /* 0xC500 */ public GcFilename TechnologyTable;
         [NMS(Index = 46)]
-        /* 0x7978 */ public GcFilename TradingClassDataTable;
+        /* 0xC510 */ public GcFilename TradingClassDataTable;
         [NMS(Index = 45)]
-        /* 0x7988 */ public GcFilename TradingCostTable;
+        /* 0xC520 */ public GcFilename TradingCostTable;
         [NMS(Index = 48)]
-        /* 0x7998 */ public GcFilename UnlockableItemTrees;
+        /* 0xC530 */ public GcFilename UnlockableItemTrees;
         [NMS(Index = 43)]
-        /* 0x79A8 */ public GcFilename UnlockablePlatformRewardsTable;
+        /* 0xC540 */ public GcFilename UnlockablePlatformRewardsTable;
         [NMS(Index = 41)]
-        /* 0x79B8 */ public GcFilename UnlockableSeasonRewardsTable;
+        /* 0xC550 */ public GcFilename UnlockableSeasonRewardsTable;
         [NMS(Index = 42)]
-        /* 0x79C8 */ public GcFilename UnlockableTwitchRewardsTable;
+        /* 0xC560 */ public GcFilename UnlockableTwitchRewardsTable;
         [NMS(Index = 73, Size = 0xD1, EnumType = typeof(GcStatsTypes.StatsTypeEnum))]
-        /* 0x79D8 */ public GcMinMaxFloat[] FoodStatValues;
-        [NMS(Index = 30, Size = 0xA2, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
-        /* 0x8060 */ public GcAlienPuzzleTableIndex[] InteractionPuzzlesIndexTypes;
+        /* 0xC570 */ public GcMinMaxFloat[] FoodStatValues;
+        [NMS(Index = 30, Size = 0xA4, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
+        /* 0xCBF8 */ public GcAlienPuzzleTableIndex[] InteractionPuzzlesIndexTypes;
         [NMS(Index = 2, Size = 0x13, EnumType = typeof(GcDiscoveryType.DiscoveryTypeEnum))]
-        /* 0x82E8 */ public GcDiscoveryWorth[] DiscoveryWorth;
+        /* 0xCE88 */ public GcDiscoveryWorth[] DiscoveryWorth;
         [NMS(Index = 91, Size = 0x5)]
-        /* 0x84FC */ public float[] NormalisedPriceLimits;
+        /* 0xD09C */ public float[] NormalisedPriceLimits;
         [NMS(Index = 3, Size = 0x4, EnumType = typeof(GcCreatureSizeClasses.CreatureSizeClassEnum))]
-        /* 0x8510 */ public float[] CreatureDiscoverySizeMultiplier;
+        /* 0xD0B0 */ public float[] CreatureDiscoverySizeMultiplier;
         [NMS(Index = 65, Size = 0x3, EnumType = typeof(GcRarity.RarityEnum))]
-        /* 0x8520 */ public float[] WeightedTextWeights;
+        /* 0xD0C0 */ public float[] WeightedTextWeights;
         [NMS(Index = 0)]
-        /* 0x852C */ public ushort HomeRealityIteration;
+        /* 0xD0CC */ public ushort HomeRealityIteration;
         [NMS(Index = 1)]
-        /* 0x852E */ public ushort RealityIteration;
-        [NMS(Index = 29, Size = 0xA2, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
-        /* 0x8530 */ public bool[] LoopInteractionPuzzles;
+        /* 0xD0CE */ public ushort RealityIteration;
+        [NMS(Index = 29, Size = 0xA4, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
+        /* 0xD0D0 */ public bool[] LoopInteractionPuzzles;
         [NMS(Index = 31, Size = 0x7, EnumType = typeof(GcWeightingCurve.WeightingCurveEnum))]
-        /* 0x85D2 */ public TkCurveType[] WeightingCurves;
+        /* 0xD174 */ public TkCurveType[] WeightingCurves;
     }
 }

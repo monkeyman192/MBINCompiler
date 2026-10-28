@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x166CB9B157BFC0B1, NameHash = 0x5E49C3E9)]
+    [NMS(GUID = 0x47010CEB6C1E7BCC, NameHash = 0x5E49C3E9)]
     public class GcPlayerStateData : NMSTemplate
     {
         [NMS(Index = 125)]
@@ -358,179 +358,179 @@ namespace libMBIN.NMS.GameComponents
         /* 0x83F98 */ public ulong TimeLastSpaceBattle;
         [NMS(Index = 5)]
         /* 0x83FA0 */ public ulong TimeStamp;
-        [NMS(Index = 74, Size = 0xA2, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
+        [NMS(Index = 74, Size = 0xA4, EnumType = typeof(GcInteractionType.InteractionTypeEnum))]
         /* 0x83FA8 */ public GcSavedInteractionRaceData[] SavedInteractionIndicies;
         [NMS(Index = 244, Size = 0xC, EnumType = typeof(GcWonderCustomCategory.WonderCustomCategoryEnum))]
-        /* 0x85E08 */ public GcWonderRecordCustomData[] WonderCustomRecordsExtraData;
+        /* 0x85E68 */ public GcWonderRecordCustomData[] WonderCustomRecordsExtraData;
         [NMS(Index = 81, Size = 0xB)]
-        /* 0x86138 */ public GcUniverseAddressData[] CompletedAtlasAddresses;
+        /* 0x86198 */ public GcUniverseAddressData[] CompletedAtlasAddresses;
         [NMS(Index = 78, Size = 0xB)]
-        /* 0x86240 */ public GcUniverseAddressData[] NewAtlasStationAdressData;
+        /* 0x862A0 */ public GcUniverseAddressData[] NewAtlasStationAdressData;
         [NMS(Index = 77, Size = 0xA)]
-        /* 0x86348 */ public GcUniverseAddressData[] AtlasStationAdressData;
+        /* 0x863A8 */ public GcUniverseAddressData[] AtlasStationAdressData;
         [NMS(Index = 82, Size = 0xA)]
-        /* 0x86438 */ public GcUniverseAddressData[] DestroyedAtlasAddresses;
+        /* 0x86498 */ public GcUniverseAddressData[] DestroyedAtlasAddresses;
         [NMS(Index = 4)]
-        /* 0x86528 */ public GcDifficultyStateData DifficultyState;
+        /* 0x86588 */ public GcDifficultyStateData DifficultyState;
         [NMS(Index = 68, Size = 0x7, EnumType = typeof(GcPlayerHazardType.HazardEnum))]
-        /* 0x86594 */ public float[] Hazard;
+        /* 0x865F4 */ public float[] Hazard;
         [NMS(Index = 115)]
-        /* 0x865B0 */ public GcUniverseAddressData FreighterUniverseAddress;
+        /* 0x86610 */ public GcUniverseAddressData FreighterUniverseAddress;
         [NMS(Index = 101)]
-        /* 0x865C8 */ public GcUniverseAddressData GameStartAddress1;
+        /* 0x86628 */ public GcUniverseAddressData GameStartAddress1;
         [NMS(Index = 102)]
-        /* 0x865E0 */ public GcUniverseAddressData GameStartAddress2;
+        /* 0x86640 */ public GcUniverseAddressData GameStartAddress2;
         [NMS(Index = 23)]
-        /* 0x865F8 */ public GcUniverseAddressData GraveUniverseAddress;
+        /* 0x86658 */ public GcUniverseAddressData GraveUniverseAddress;
         [NMS(Index = 206)]
-        /* 0x86610 */ public GcUniverseAddressData MultiplayerUA;
+        /* 0x86670 */ public GcUniverseAddressData MultiplayerUA;
         [NMS(Index = 216)]
-        /* 0x86628 */ public GcUniverseAddressData NexusUniverseAddress;
+        /* 0x86688 */ public GcUniverseAddressData NexusUniverseAddress;
         [NMS(Index = 1)]
-        /* 0x86640 */ public GcUniverseAddressData PreviousUniverseAddress;
+        /* 0x866A0 */ public GcUniverseAddressData PreviousUniverseAddress;
         [NMS(Index = 0)]
-        /* 0x86658 */ public GcUniverseAddressData UniverseAddress;
+        /* 0x866B8 */ public GcUniverseAddressData UniverseAddress;
         [NMS(Index = 19)]
-        /* 0x86670 */ public GcPetBattleTeamData PetBattleTeam;
+        /* 0x866D0 */ public GcPetBattleTeamData PetBattleTeam;
         [NMS(Index = 13)]
-        /* 0x8667C */ public int ActiveMultioolIndex;
+        /* 0x866DC */ public int ActiveMultioolIndex;
         [NMS(Index = 96)]
-        /* 0x86680 */ public GcSpaceBattleType ActiveSpaceBattleType;
+        /* 0x866E0 */ public GcSpaceBattleType ActiveSpaceBattleType;
         [NMS(Index = 222)]
-        /* 0x86684 */ public int BannerBackgroundColour;
+        /* 0x866E4 */ public int BannerBackgroundColour;
         [NMS(Index = 220)]
-        /* 0x86688 */ public int BannerIcon;
+        /* 0x866E8 */ public int BannerIcon;
         [NMS(Index = 221)]
-        /* 0x8668C */ public int BannerMainColour;
+        /* 0x866EC */ public int BannerMainColour;
         [NMS(Index = 69)]
-        /* 0x86690 */ public int BoltAmmo;
+        /* 0x866F0 */ public int BoltAmmo;
         [NMS(Index = 257)]
-        /* 0x86694 */ public int CorvetteEditAssociatedShipIndex;
+        /* 0x866F4 */ public int CorvetteEditAssociatedShipIndex;
         [NMS(Index = 52)]
-        /* 0x86698 */ public int Energy;
+        /* 0x866F8 */ public int Energy;
         [NMS(Index = 203)]
-        /* 0x8669C */ public float FoodUnitAccumulator;
+        /* 0x866FC */ public float FoodUnitAccumulator;
         [NMS(Index = 48)]
-        /* 0x866A0 */ public int Health;
+        /* 0x86700 */ public int Health;
         [NMS(Index = 2)]
-        /* 0x866A4 */ public int HomeRealityIteration;
+        /* 0x86704 */ public int HomeRealityIteration;
         [NMS(Index = 182)]
-        /* 0x866A8 */ public int KnownPortalRunes;
+        /* 0x86708 */ public int KnownPortalRunes;
         [NMS(Index = 72)]
-        /* 0x866AC */ public int LaserAmmo;
+        /* 0x8670C */ public int LaserAmmo;
         [NMS(Index = 43)]
-        /* 0x866B0 */ public int MissionVersion;
+        /* 0x86710 */ public int MissionVersion;
         [NMS(Index = 83)]
-        /* 0x866B4 */ public int MostRecentDestroyedAtlasIndex;
+        /* 0x86714 */ public int MostRecentDestroyedAtlasIndex;
         [NMS(Index = 54)]
-        /* 0x866B8 */ public int Nanites;
+        /* 0x86718 */ public int Nanites;
         [NMS(Index = 60)]
-        /* 0x866BC */ public int NextSurveyedEventPositionIndex;
+        /* 0x8671C */ public int NextSurveyedEventPositionIndex;
         [NMS(Index = 38)]
-        /* 0x866C0 */ public int PostMissionIndex;
+        /* 0x86720 */ public int PostMissionIndex;
         [NMS(Index = 92)]
-        /* 0x866C4 */ public int PrimaryPlanet;
+        /* 0x86724 */ public int PrimaryPlanet;
         [NMS(Index = 171)]
-        /* 0x866C8 */ public int PrimaryShip;
+        /* 0x86728 */ public int PrimaryShip;
         [NMS(Index = 167)]
-        /* 0x866CC */ public int PrimaryVehicle;
+        /* 0x8672C */ public int PrimaryVehicle;
         [NMS(Index = 85)]
-        /* 0x866D0 */ public int ProcTechIndex;
+        /* 0x86730 */ public int ProcTechIndex;
         [NMS(Index = 84)]
-        /* 0x866D4 */ public int ProgressionLevel;
+        /* 0x86734 */ public int ProgressionLevel;
         [NMS(Index = 71)]
-        /* 0x866D8 */ public int PulseAmmo;
+        /* 0x86738 */ public int PulseAmmo;
         [NMS(Index = 70)]
-        /* 0x866DC */ public int ScatterAmmo;
+        /* 0x8673C */ public int ScatterAmmo;
         [NMS(Index = 231)]
-        /* 0x866E0 */ public int SettlementStateRingBufferIndexV2;
+        /* 0x86740 */ public int SettlementStateRingBufferIndexV2;
         [NMS(Index = 50)]
-        /* 0x866E4 */ public int Shield;
+        /* 0x86744 */ public int Shield;
         [NMS(Index = 49)]
-        /* 0x866E8 */ public int ShipHealth;
+        /* 0x86748 */ public int ShipHealth;
         [NMS(Index = 51)]
-        /* 0x866EC */ public int ShipShield;
+        /* 0x8674C */ public int ShipShield;
         [NMS(Index = 262)]
-        /* 0x866F0 */ public int SpacePoiDiscoveryNextIndex;
+        /* 0x86750 */ public int SpacePoiDiscoveryNextIndex;
         [NMS(Index = 55)]
-        /* 0x866F4 */ public int Specials;
+        /* 0x86754 */ public int Specials;
         [NMS(Index = 187)]
-        /* 0x866F8 */ public GcPlayerWeapons StartingPrimaryWeapon;
+        /* 0x86758 */ public GcPlayerWeapons StartingPrimaryWeapon;
         [NMS(Index = 236)]
-        /* 0x866FC */ public int StartingSeasonNumber;
+        /* 0x8675C */ public int StartingSeasonNumber;
         [NMS(Index = 188)]
-        /* 0x86700 */ public GcPlayerWeapons StartingSecondaryWeapon;
+        /* 0x86760 */ public GcPlayerWeapons StartingSecondaryWeapon;
         [NMS(Index = 224)]
-        /* 0x86704 */ public int TelemetryUploadVersion;
+        /* 0x86764 */ public int TelemetryUploadVersion;
         [NMS(Index = 178)]
-        /* 0x86708 */ public int TradingSupplyDataIndex;
+        /* 0x86768 */ public int TradingSupplyDataIndex;
         [NMS(Index = 53)]
-        /* 0x8670C */ public int Units;
+        /* 0x8676C */ public int Units;
         [NMS(Index = 225)]
-        /* 0x86710 */ public float VRCameraOffset;
+        /* 0x86770 */ public float VRCameraOffset;
         [NMS(Index = 98)]
-        /* 0x86714 */ public int WarpsLastMiniStation;
+        /* 0x86774 */ public int WarpsLastMiniStation;
         [NMS(Index = 94)]
-        /* 0x86718 */ public int WarpsLastSpaceBattle;
+        /* 0x86778 */ public int WarpsLastSpaceBattle;
         [NMS(Index = 213)]
-        /* 0x8671C */ public ushort ShopNumber;
+        /* 0x8677C */ public ushort ShopNumber;
         [NMS(Index = 214)]
-        /* 0x8671E */ public ushort ShopTier;
+        /* 0x8677E */ public ushort ShopTier;
         [NMS(Index = 194, Size = 0x6)]
-        /* 0x86720 */ public NMSString0x20[] CustomTruckPresetNames;
+        /* 0x86780 */ public NMSString0x20[] CustomTruckPresetNames;
         [NMS(Index = 192, Size = 0x6)]
-        /* 0x867E0 */ public NMSString0x20[] OutfitNames;
+        /* 0x86840 */ public NMSString0x20[] OutfitNames;
         [NMS(Index = 258)]
-        /* 0x868A0 */ public NMSString0x80 CorvetteEditShipName;
+        /* 0x86900 */ public NMSString0x80 CorvetteEditShipName;
         [NMS(Index = 3)]
-        /* 0x86920 */ public NMSString0x80 SaveSummary;
+        /* 0x86980 */ public NMSString0x80 SaveSummary;
         [NMS(Index = 175)]
-        /* 0x869A0 */ public NMSString0x20 PlayerFreighterName;
+        /* 0x86A00 */ public NMSString0x20 PlayerFreighterName;
         [NMS(Index = 18, Size = 0x1E)]
-        /* 0x869C0 */ public bool[] UnlockedPetSlots;
+        /* 0x86A20 */ public bool[] UnlockedPetSlots;
         [NMS(Index = 103, Size = 0x10)]
-        /* 0x869DE */ public bool[] GalacticMapRequests;
+        /* 0x86A3E */ public bool[] GalacticMapRequests;
         [NMS(Index = 190, Size = 0xC)]
-        /* 0x869EE */ public bool[] ShipUsesLegacyColours;
+        /* 0x86A4E */ public bool[] ShipUsesLegacyColours;
         [NMS(Index = 121, Size = 0x4)]
-        /* 0x869FA */ public bool[] SquadronUnlockedPilotSlots;
+        /* 0x86A5A */ public bool[] SquadronUnlockedPilotSlots;
         [NMS(Index = 235)]
-        /* 0x869FE */ public bool BuildersKnown;
+        /* 0x86A5E */ public bool BuildersKnown;
         [NMS(Index = 80)]
-        /* 0x869FF */ public bool FirstAtlasStationDiscovered;
+        /* 0x86A5F */ public bool FirstAtlasStationDiscovered;
         [NMS(Index = 116)]
-        /* 0x86A00 */ public bool FreighterDismissed;
+        /* 0x86A60 */ public bool FreighterDismissed;
         [NMS(Index = 215)]
-        /* 0x86A01 */ public bool HasAccessToNexus;
+        /* 0x86A61 */ public bool HasAccessToNexus;
         [NMS(Index = 250)]
-        /* 0x86A02 */ public bool HasDiscoveredPurpleSystems;
+        /* 0x86A62 */ public bool HasDiscoveredPurpleSystems;
         [NMS(Index = 252)]
-        /* 0x86A03 */ public bool HasGalacticMapRequestAllPurples;
+        /* 0x86A63 */ public bool HasGalacticMapRequestAllPurples;
         [NMS(Index = 253)]
-        /* 0x86A04 */ public bool HasGalacticMapRequestFirstPurple;
+        /* 0x86A64 */ public bool HasGalacticMapRequestFirstPurple;
         [NMS(Index = 86)]
-        /* 0x86A05 */ public bool IsNew;
+        /* 0x86A65 */ public bool IsNew;
         [NMS(Index = 173)]
-        /* 0x86A06 */ public bool MultiShipEnabled;
+        /* 0x86A66 */ public bool MultiShipEnabled;
         [NMS(Index = 233)]
-        /* 0x86A07 */ public bool NextLoadSpawnsWithFreshStart;
+        /* 0x86A67 */ public bool NextLoadSpawnsWithFreshStart;
         [NMS(Index = 183)]
-        /* 0x86A08 */ public bool OnOtherSideOfPortal;
+        /* 0x86A68 */ public bool OnOtherSideOfPortal;
         [NMS(Index = 88)]
-        /* 0x86A09 */ public bool OrbPlayer;
+        /* 0x86A69 */ public bool OrbPlayer;
         [NMS(Index = 226)]
-        /* 0x86A0A */ public bool RestartAllInactiveSeasonalMissions;
+        /* 0x86A6A */ public bool RestartAllInactiveSeasonalMissions;
         [NMS(Index = 106)]
-        /* 0x86A0B */ public bool RevealBlackHoles;
+        /* 0x86A6B */ public bool RevealBlackHoles;
         [NMS(Index = 177)]
-        /* 0x86A0C */ public bool ShipNeedsTerrainPositioning;
+        /* 0x86A6C */ public bool ShipNeedsTerrainPositioning;
         [NMS(Index = 22)]
-        /* 0x86A0D */ public bool SpaceGrave;
+        /* 0x86A6D */ public bool SpaceGrave;
         [NMS(Index = 21)]
-        /* 0x86A0E */ public bool SpawnGrave;
+        /* 0x86A6E */ public bool SpawnGrave;
         [NMS(Index = 87)]
-        /* 0x86A0F */ public bool UseSmallerBlackholeJumps;
+        /* 0x86A6F */ public bool UseSmallerBlackholeJumps;
         [NMS(Index = 174)]
-        /* 0x86A10 */ public bool VehicleAIControlEnabled;
+        /* 0x86A70 */ public bool VehicleAIControlEnabled;
     }
 }

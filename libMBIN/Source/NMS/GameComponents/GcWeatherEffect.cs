@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xE63D7226FC20CF01, NameHash = 0xBCBC706D)]
+    [NMS(GUID = 0x32D0D216EA47D8C8, NameHash = 0xBCBC706D)]
     public class GcWeatherEffect : NMSTemplate
     {
         [NMS(Index = 1)]

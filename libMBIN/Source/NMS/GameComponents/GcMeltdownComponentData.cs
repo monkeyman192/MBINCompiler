@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x537B5C780C05F15D, NameHash = 0x993C48D6)]
+    [NMS(GUID = 0xFF4A47F6F1A67F83, NameHash = 0x993C48D6)]
     public class GcMeltdownComponentData : NMSTemplate
     {
         [NMS(Index = 12)]

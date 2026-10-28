@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0xD319F2C0F8D75E5D, NameHash = 0x711C0659)]
+    [NMS(GUID = 0x88453A1969BBA98E, NameHash = 0x711C0659)]
     public class GcMissionConditionNumPhysicsObjectsInPhysicsWorld : NMSTemplate
     {
         [NMS(Index = 3)]
@@ -14,15 +14,21 @@ namespace libMBIN.NMS.GameComponents
         /* 0x20 */ public VariableSizeString TextTagForCurrent;
         [NMS(Index = 7)]
         /* 0x30 */ public VariableSizeString TextTagForTarget;
+        [NMS(Index = 10)]
+        /* 0x40 */ public GcDeliverableType DeliverableType;
         [NMS(Index = 8)]
-        /* 0x40 */ public GcStaticTag ObjectTypeOverride;
+        /* 0x44 */ public GcStaticTag ObjectTypeOverride;
         [NMS(Index = 0)]
-        /* 0x44 */ public int RequiredNumObjects;
+        /* 0x48 */ public int RequiredNumObjects;
         [NMS(Index = 5)]
-        /* 0x48 */ public TkEqualityEnum Test;
+        /* 0x4C */ public TkEqualityEnum Test;
         [NMS(Index = 2)]
-        /* 0x4C */ public bool TakeAmountFromDefaultNumber;
+        /* 0x50 */ public bool TakeAmountFromDefaultNumber;
         [NMS(Index = 1)]
-        /* 0x4D */ public bool TakeNumFromSeasonData;
+        /* 0x51 */ public bool TakeNumFromSeasonData;
+        [NMS(Index = 11)]
+        /* 0x52 */ public bool TestForMissionSeed;
+        [NMS(Index = 9)]
+        /* 0x53 */ public bool UseDeliverableType;
     }
 }

@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x2F59011E9B5AC03B, NameHash = 0x1BEA2B30)]
+    [NMS(GUID = 0x77AD5B7B14D40986, NameHash = 0x1BEA2B30)]
     public class GcScannerIconTypes : NMSTemplate
     {
-        // size: 0x57
+        // size: 0x5A
         public enum ScanIconTypeEnum : byte {
             None,
             Health,
@@ -92,6 +92,9 @@ namespace libMBIN.NMS.GameComponents
             Slime_Uncommon,
             Slime_Rare,
             Slime_Destructible,
+            PostiePackage,
+            SpookPackageGrab,
+            SpookPackageGround,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public ScanIconTypeEnum ScanIconType;
