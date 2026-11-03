@@ -3,7 +3,7 @@ using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0x90C93059DADEB69C, NameHash = 0x1A517154)]
+    [NMS(GUID = 0x5A81B3E16A36B7CB, NameHash = 0x1A517154)]
     public class GcBuildingGlobals : NMSTemplate
     {
         [NMS(Index = 0)]
@@ -20,7 +20,7 @@ namespace libMBIN.NMS.Globals
         /* 0x950 */ public TkTextureResource ScreenSpaceRotationGlow;
         [NMS(Index = 13)]
         /* 0x968 */ public TkTextureResource ScreenSpaceRotationIcon;
-        [NMS(Index = 195)]
+        [NMS(Index = 196)]
         /* 0x980 */ public GcFilename FreighterBaseSpawnOverride;
         // size: 0x4
         public enum ActiveLodDistancesEnum {
@@ -66,15 +66,15 @@ namespace libMBIN.NMS.Globals
         /* 0xA5C */ public float AmountToMoveMarkerRoundSphere;
         [NMS(Index = 174)]
         /* 0xA60 */ public GcBaseBuildingCameraMode BaseBuildingCamMode;
-        [NMS(Index = 197)]
-        /* 0xA64 */ public float BaseBuildingTerrainEditBaseYOffset;
-        [NMS(Index = 199)]
-        /* 0xA68 */ public float BaseBuildingTerrainEditBoundsScalar;
         [NMS(Index = 198)]
-        /* 0xA6C */ public float BaseBuildingTerrainEditTopYOffset;
+        /* 0xA64 */ public float BaseBuildingTerrainEditBaseYOffset;
         [NMS(Index = 200)]
-        /* 0xA70 */ public float BaseBuildingWiringSnappingScaleFactorEasy;
+        /* 0xA68 */ public float BaseBuildingTerrainEditBoundsScalar;
+        [NMS(Index = 199)]
+        /* 0xA6C */ public float BaseBuildingTerrainEditTopYOffset;
         [NMS(Index = 201)]
+        /* 0xA70 */ public float BaseBuildingWiringSnappingScaleFactorEasy;
+        [NMS(Index = 202)]
         /* 0xA74 */ public float BaseBuildingWiringSnappingScaleFactorHard;
         [NMS(Index = 125)]
         /* 0xA78 */ public float BaseRadiusExtension;
@@ -222,9 +222,9 @@ namespace libMBIN.NMS.Globals
         /* 0xB94 */ public float ChanceOfAddingShelter;
         [NMS(Index = 104)]
         /* 0xB98 */ public float CompassIconSize;
-        [NMS(Index = 190)]
+        [NMS(Index = 191)]
         /* 0xB9C */ public float ComplexityDensitySigmaSquared;
-        [NMS(Index = 189)]
+        [NMS(Index = 190)]
         /* 0xBA0 */ public float ComplexityDensityTestRange;
         [NMS(Index = 100)]
         /* 0xBA4 */ public float DistanceForTooltip;
@@ -312,11 +312,11 @@ namespace libMBIN.NMS.Globals
         /* 0xC48 */ public float MarkerTimeIncrease;
         [NMS(Index = 112)]
         /* 0xC4C */ public float MarkerTransitionDistance;
-        [NMS(Index = 202)]
+        [NMS(Index = 203)]
         /* 0xC50 */ public int MaxDownloadedBaseTerrainEditsToApply;
         [NMS(Index = 118)]
         /* 0xC54 */ public float MaxIconRange;
-        [NMS(Index = 188)]
+        [NMS(Index = 189)]
         /* 0xC58 */ public float MaximumComplexityDensity;
         [NMS(Index = 55)]
         /* 0xC5C */ public float MaxLineLength;
@@ -340,105 +340,107 @@ namespace libMBIN.NMS.Globals
         /* 0xC80 */ public float MinLineLengthShip;
         [NMS(Index = 186)]
         /* 0xC84 */ public float MinLoadingPercentageNodesBufferFree;
-        [NMS(Index = 185)]
-        /* 0xC88 */ public float MinPercentageNodesBufferFree;
-        [NMS(Index = 64)]
-        /* 0xC8C */ public float MinRadius;
-        [NMS(Index = 124)]
-        /* 0xC90 */ public float MinRadiusForBases;
-        [NMS(Index = 131)]
-        /* 0xC94 */ public float MinRadiusFromFeaturedBases;
-        [NMS(Index = 121)]
-        /* 0xC98 */ public int MinShipScanBuildings;
-        [NMS(Index = 77)]
-        /* 0xC9C */ public float MinTimeBetweenBuildingEntryMessage;
-        [NMS(Index = 78)]
-        /* 0xCA0 */ public float MinTimeBetweenBuildingEntryMessageBase;
-        [NMS(Index = 89)]
-        /* 0xCA4 */ public float NearLineScaleFactor;
-        [NMS(Index = 87)]
-        /* 0xCA8 */ public float NearMaxLineLength;
-        [NMS(Index = 81)]
-        /* 0xCAC */ public float NearMinAlpha;
-        [NMS(Index = 88)]
-        /* 0xCB0 */ public float NearMinLineLength;
-        [NMS(Index = 69)]
-        /* 0xCB4 */ public float ObjectFadeRadius;
         [NMS(Index = 187)]
-        /* 0xCB8 */ public float PercentagePhysicsComponentsForComplexity;
+        /* 0xC88 */ public int MinNodesBufferFree;
+        [NMS(Index = 185)]
+        /* 0xC8C */ public float MinPercentageNodesBufferFree;
+        [NMS(Index = 64)]
+        /* 0xC90 */ public float MinRadius;
+        [NMS(Index = 124)]
+        /* 0xC94 */ public float MinRadiusForBases;
+        [NMS(Index = 131)]
+        /* 0xC98 */ public float MinRadiusFromFeaturedBases;
+        [NMS(Index = 121)]
+        /* 0xC9C */ public int MinShipScanBuildings;
+        [NMS(Index = 77)]
+        /* 0xCA0 */ public float MinTimeBetweenBuildingEntryMessage;
+        [NMS(Index = 78)]
+        /* 0xCA4 */ public float MinTimeBetweenBuildingEntryMessageBase;
+        [NMS(Index = 89)]
+        /* 0xCA8 */ public float NearLineScaleFactor;
+        [NMS(Index = 87)]
+        /* 0xCAC */ public float NearMaxLineLength;
+        [NMS(Index = 81)]
+        /* 0xCB0 */ public float NearMinAlpha;
+        [NMS(Index = 88)]
+        /* 0xCB4 */ public float NearMinLineLength;
+        [NMS(Index = 69)]
+        /* 0xCB8 */ public float ObjectFadeRadius;
+        [NMS(Index = 188)]
+        /* 0xCBC */ public float PercentagePhysicsComponentsForComplexity;
         [NMS(Index = 17)]
-        /* 0xCBC */ public float PowerlineSnapDistance;
+        /* 0xCC0 */ public float PowerlineSnapDistance;
         [NMS(Index = 65)]
-        /* 0xCC0 */ public float RadiusMultiplier_DoNotPlace;
+        /* 0xCC4 */ public float RadiusMultiplier_DoNotPlace;
         [NMS(Index = 67)]
-        /* 0xCC4 */ public float RadiusMultiplier_DoNotPlaceAnywhereNear;
+        /* 0xCC8 */ public float RadiusMultiplier_DoNotPlaceAnywhereNear;
         [NMS(Index = 66)]
-        /* 0xCC8 */ public float RadiusMultiplier_DoNotPlaceClose;
+        /* 0xCCC */ public float RadiusMultiplier_DoNotPlaceClose;
         [NMS(Index = 68)]
-        /* 0xCCC */ public float RadiusMultiplier_OnlyPlaceAround;
+        /* 0xCD0 */ public float RadiusMultiplier_OnlyPlaceAround;
         [NMS(Index = 71)]
-        /* 0xCD0 */ public float Radius_DoNotPlaceAnywhereNear;
+        /* 0xCD4 */ public float Radius_DoNotPlaceAnywhereNear;
         [NMS(Index = 75)]
-        /* 0xCD4 */ public float SectorMessageCenterDistance;
+        /* 0xCD8 */ public float SectorMessageCenterDistance;
         [NMS(Index = 76)]
-        /* 0xCD8 */ public float SectorMessageMinTime;
+        /* 0xCDC */ public float SectorMessageMinTime;
         [NMS(Index = 74)]
-        /* 0xCDC */ public float SectorMessageReshowDistance;
+        /* 0xCE0 */ public float SectorMessageReshowDistance;
         [NMS(Index = 116)]
-        /* 0xCE0 */ public float ShowTimeNotDistance;
+        /* 0xCE4 */ public float ShowTimeNotDistance;
         [NMS(Index = 105)]
-        /* 0xCE4 */ public float SmallIconArrowOffset;
+        /* 0xCE8 */ public float SmallIconArrowOffset;
         [NMS(Index = 101)]
-        /* 0xCE8 */ public float SmallIconSize;
+        /* 0xCEC */ public float SmallIconSize;
         [NMS(Index = 130)]
-        /* 0xCEC */ public float SpaceBaseNexusExteriorSpawnDistance;
+        /* 0xCF0 */ public float SpaceBaseNexusExteriorSpawnDistance;
         [NMS(Index = 129)]
-        /* 0xCF0 */ public float SpaceBaseNexusInteriorSpawnDistance;
+        /* 0xCF4 */ public float SpaceBaseNexusInteriorSpawnDistance;
         [NMS(Index = 128)]
-        /* 0xCF4 */ public float SpaceBaseStationSpawnDistance;
+        /* 0xCF8 */ public float SpaceBaseStationSpawnDistance;
         [NMS(Index = 114)]
-        /* 0xCF8 */ public float SpaceMarkerMaxHeight;
+        /* 0xCFC */ public float SpaceMarkerMaxHeight;
         [NMS(Index = 113)]
-        /* 0xCFC */ public float SpaceMarkerMinHeight;
+        /* 0xD00 */ public float SpaceMarkerMinHeight;
         [NMS(Index = 106)]
-        /* 0xD00 */ public float SpaceMarkerOffset;
+        /* 0xD04 */ public float SpaceMarkerOffset;
         [NMS(Index = 107)]
-        /* 0xD04 */ public float SpaceMarkerOffsetPlanet;
+        /* 0xD08 */ public float SpaceMarkerOffsetPlanet;
         [NMS(Index = 108)]
-        /* 0xD08 */ public float SpaceMarkerOffsetSamePlanet;
-        [NMS(Index = 192)]
-        /* 0xD0C */ public float StartCrashSiteMaxDistance;
-        [NMS(Index = 191)]
-        /* 0xD10 */ public float StartCrashSiteMinDistance;
-        [NMS(Index = 194)]
-        /* 0xD14 */ public float StartShelterMaxDistance;
+        /* 0xD0C */ public float SpaceMarkerOffsetSamePlanet;
         [NMS(Index = 193)]
-        /* 0xD18 */ public float StartShelterMinDistance;
+        /* 0xD10 */ public float StartCrashSiteMaxDistance;
+        [NMS(Index = 192)]
+        /* 0xD14 */ public float StartCrashSiteMinDistance;
+        [NMS(Index = 195)]
+        /* 0xD18 */ public float StartShelterMaxDistance;
+        [NMS(Index = 194)]
+        /* 0xD1C */ public float StartShelterMinDistance;
         [NMS(Index = 123)]
-        /* 0xD1C */ public float TestDistanceForSettlementBaseBufferAlignment;
+        /* 0xD20 */ public float TestDistanceForSettlementBaseBufferAlignment;
         [NMS(Index = 92)]
-        /* 0xD20 */ public float TextStringXOffset;
+        /* 0xD24 */ public float TextStringXOffset;
         [NMS(Index = 98)]
-        /* 0xD24 */ public float TextTagLength;
+        /* 0xD28 */ public float TextTagLength;
         [NMS(Index = 95)]
-        /* 0xD28 */ public float TextTagWidthOffset;
+        /* 0xD2C */ public float TextTagWidthOffset;
         [NMS(Index = 93)]
-        /* 0xD2C */ public float TextTagXOffset;
+        /* 0xD30 */ public float TextTagXOffset;
         [NMS(Index = 94)]
-        /* 0xD30 */ public float TextTagYOffset;
+        /* 0xD34 */ public float TextTagYOffset;
         [NMS(Index = 117)]
-        /* 0xD34 */ public float UnknownBuildingRange;
+        /* 0xD38 */ public float UnknownBuildingRange;
         [NMS(Index = 20)]
-        /* 0xD38 */ public bool AllowBuildingUsingIntermediates;
-        [NMS(Index = 196)]
-        /* 0xD39 */ public bool BaseBuildingTerrainEditBoundsOverride;
+        /* 0xD3C */ public bool AllowBuildingUsingIntermediates;
+        [NMS(Index = 197)]
+        /* 0xD3D */ public bool BaseBuildingTerrainEditBoundsOverride;
         [NMS(Index = 167)]
-        /* 0xD3A */ public bool BuildingPlacementEffectEnabled;
+        /* 0xD3E */ public bool BuildingPlacementEffectEnabled;
         [NMS(Index = 156)]
-        /* 0xD3B */ public TkCurveType BuildingPlacementGhostHeartSizeCurve;
+        /* 0xD3F */ public TkCurveType BuildingPlacementGhostHeartSizeCurve;
         [NMS(Index = 182)]
-        /* 0xD3C */ public bool DebugForceShowInactives;
+        /* 0xD40 */ public bool DebugForceShowInactives;
         [NMS(Index = 61)]
-        /* 0xD3D */ public TkCurveType LineCurve;
+        /* 0xD41 */ public TkCurveType LineCurve;
     }
 }
