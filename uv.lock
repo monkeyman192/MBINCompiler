@@ -374,7 +374,7 @@ version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "jinja2" },
-    { name = "pymem" },
+    { name = "pymemoryeditor" },
     { name = "pytest" },
     { name = "requests" },
 ]
@@ -382,7 +382,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "jinja2" },
-    { name = "pymem" },
+    { name = "pymemoryeditor" },
     { name = "pytest" },
     { name = "requests" },
 ]
@@ -415,12 +415,12 @@ wheels = [
 ]
 
 [[package]]
-name = "pymem"
-version = "1.14.0"
+name = "pymemoryeditor"
+version = "3.4.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1f/fd/1906f383fd9697c0da599580c58f5cd5af48edb55429f6ef994c447fb94e/pymem-1.14.0.tar.gz", hash = "sha256:29f6c32bcad0032888afabadf97d1e4c7757f88873de4d79f7f4c1df9b9e7ef1", size = 24890, upload-time = "2024-10-27T18:59:50.369Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/a6/81a7802b918a5e8b9b0e1f8a6b052e0a228e842a7e5b21f084caabfc956a/pymemoryeditor-3.4.3.tar.gz", hash = "sha256:16ebd95de4ca8cce6e9f5bc34474427b38e0955804ff15a16ea0afd066d3cf00", size = 1878185, upload-time = "2026-11-13T03:06:33.848Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/a5/23907a4b55d67cd4c0e4b9a37e32f5f1ffaf7e286dcf172a2a1bb9e12444/pymem-1.14.0-py3-none-any.whl", hash = "sha256:2b9cc64b49d0685f73d616ab1f638611f87e8d649869e7a556f050f677c42a7e", size = 29833, upload-time = "2024-10-27T18:59:48.911Z" },
+    { url = "https://files.pythonhosted.org/packages/31/78/5c682d588e71c4991c23d64baf40fd27f07e7afd82697f5a713babd2db08/pymemoryeditor-3.4.3-py3-none-any.whl", hash = "sha256:49d2cce2fbda28caa76c9cc233f7e195c4f252f762129845d082e54c39f1ce33", size = 357140, upload-time = "2026-11-13T03:06:32.362Z" },
 ]
 
 [[package]]

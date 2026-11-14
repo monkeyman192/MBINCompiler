@@ -8,5 +8,5 @@ dependencies = [
     "pytest",
     "requests",
     "jinja2",
-    "pymem"
+    "PyMemoryEditor"
 ]
