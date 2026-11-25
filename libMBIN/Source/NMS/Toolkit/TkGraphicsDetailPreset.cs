@@ -2,10 +2,10 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0xA5131EFFA407375, NameHash = 0x2D59643E)]
+    [NMS(GUID = 0x814E0B8571A08751, NameHash = 0x2D59643E)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
-        [NMS(Index = 25)]
+        [NMS(Index = 26)]
         /* 0x00 */ public TkDynamicResScalingSettings DynamicResScalingSettings;
         [NMS(Index = 1)]
         /* 0x0C */ public TkGraphicsDetailTypes AnimationQuality;
@@ -37,7 +37,7 @@ namespace libMBIN.NMS.Toolkit
             HBAO_Low,
             HBAO_High,
         }
-        [NMS(Index = 21)]
+        [NMS(Index = 22)]
         /* 0x5C */ public AmbientOcclusionEnum AmbientOcclusion;
         // size: 0x5
         public enum AnisotropyLevelEnum : uint {
@@ -47,9 +47,9 @@ namespace libMBIN.NMS.Toolkit
             _8,
             _16,
         }
-        [NMS(Index = 22)]
+        [NMS(Index = 23)]
         /* 0x60 */ public AnisotropyLevelEnum AnisotropyLevel;
-        // size: 0xB
+        // size: 0xC
         public enum AntiAliasingEnum : uint {
             None,
             TAA_LOW,
@@ -62,8 +62,9 @@ namespace libMBIN.NMS.Toolkit
             MetalFXSpatial,
             MetalFXTemporal,
             PSSR,
+            FFXSR4,
         }
-        [NMS(Index = 23)]
+        [NMS(Index = 24)]
         /* 0x64 */ public AntiAliasingEnum AntiAliasing;
         [NMS(Index = 10)]
         /* 0x68 */ public int CorvetteComplexityLimit;
@@ -99,6 +100,16 @@ namespace libMBIN.NMS.Toolkit
         [NMS(Index = 17)]
         /* 0x74 */ public FFXSR2QualityEnum FFXSR2Quality;
         // size: 0x5
+        public enum FFXSR4QualityEnum : uint {
+            NativeAA,
+            Quality,
+            Balanced,
+            Performance,
+            UltraPerformance,
+        }
+        [NMS(Index = 19)]
+        /* 0x78 */ public FFXSR4QualityEnum FFXSR4Quality;
+        // size: 0x5
         public enum FFXSRQualityEnum : uint {
             Off,
             UltraQuality,
@@ -107,15 +118,15 @@ namespace libMBIN.NMS.Toolkit
             Performance,
         }
         [NMS(Index = 16)]
-        /* 0x78 */ public FFXSRQualityEnum FFXSRQuality;
+        /* 0x7C */ public FFXSRQualityEnum FFXSRQuality;
         // size: 0x3
         public enum MetalFXModeEnum : uint {
             Off,
             Spatial,
             Temporal,
         }
-        [NMS(Index = 19)]
-        /* 0x7C */ public MetalFXModeEnum MetalFXMode;
+        [NMS(Index = 20)]
+        /* 0x80 */ public MetalFXModeEnum MetalFXMode;
         // size: 0x4
         public enum MetalFXQualityEnum : uint {
             UltraQuality,
@@ -123,8 +134,8 @@ namespace libMBIN.NMS.Toolkit
             Balanced,
             Performance,
         }
-        [NMS(Index = 20)]
-        /* 0x80 */ public MetalFXQualityEnum MetalFXQuality;
+        [NMS(Index = 21)]
+        /* 0x84 */ public MetalFXQualityEnum MetalFXQuality;
         // size: 0x3
         public enum NVIDIAReflexLowLatencyEnum : uint {
             On,
@@ -132,14 +143,14 @@ namespace libMBIN.NMS.Toolkit
             OnWithBoost,
         }
         [NMS(Index = 15)]
-        /* 0x84 */ public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
+        /* 0x88 */ public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
         // size: 0x2
         public enum UIQualityEnum : uint {
             Normal,
             _4K,
         }
         [NMS(Index = 12)]
-        /* 0x88 */ public UIQualityEnum UIQuality;
+        /* 0x8C */ public UIQualityEnum UIQuality;
         // size: 0x7
         public enum XESSQualityEnum : uint {
             UltraPerformance,
@@ -151,10 +162,10 @@ namespace libMBIN.NMS.Toolkit
             Native,
         }
         [NMS(Index = 18)]
-        /* 0x8C */ public XESSQualityEnum XESSQuality;
-        [NMS(Index = 24)]
-        /* 0x90 */ public bool LegacyTAA;
+        /* 0x90 */ public XESSQualityEnum XESSQuality;
+        [NMS(Index = 25)]
+        /* 0x94 */ public bool LegacyTAA;
         [NMS(Index = 11)]
-        /* 0x91 */ public bool SettlementsEnabled;
+        /* 0x95 */ public bool SettlementsEnabled;
     }
 }

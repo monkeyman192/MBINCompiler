@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.GameComponents
 {
-    [NMS(GUID = 0x9CC0A0511994DFA, NameHash = 0xB2FCF6E3)]
+    [NMS(GUID = 0x1DCC5D1829D9B8ED, NameHash = 0xB2FCF6E3)]
     public class GcBaseBuildingPartStyle : NMSTemplate
     {
-        // size: 0x4E
+        // size: 0x50
         public enum StyleEnum : uint {
             None,
             Wood,
@@ -83,6 +83,8 @@ namespace libMBIN.NMS.GameComponents
             FRE_B,
             BIGGS_Window3,
             BIGGS_Cant0,
+            BIGGS_Wall0,
+            BIGGS_Door0,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public StyleEnum Style;

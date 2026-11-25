@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace libMBIN.NMS.Globals
 {
-    [NMS(GUID = 0xAE1546FE573F1602, NameHash = 0xAA861200)]
+    [NMS(GUID = 0xF5CD61FB939646C, NameHash = 0xAA861200)]
     public class GcDebugOptions : NMSTemplate
     {
         [NMS(Index = 467)]
