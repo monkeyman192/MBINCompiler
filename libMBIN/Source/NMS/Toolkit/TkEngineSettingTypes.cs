@@ -1,9 +1,9 @@
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x29300C29398B56C3, NameHash = 0xA0749579)]
+    [NMS(GUID = 0x181E86587B00541A, NameHash = 0xA0749579)]
     public class TkEngineSettingTypes : NMSTemplate
     {
-        // size: 0x3A
+        // size: 0x3B
         public enum EngineSettingEnum : uint {
             FullScreen,
             Borderless,
@@ -63,6 +63,7 @@ namespace libMBIN.NMS.Toolkit
             MetalFXQuality,
             DLSSFrameGeneration,
             NVIDIAReflexLowLatency,
+            FFXSR4Quality,
         }
         [NMS(Index = 0)]
         /* 0x0 */ public EngineSettingEnum EngineSetting;
