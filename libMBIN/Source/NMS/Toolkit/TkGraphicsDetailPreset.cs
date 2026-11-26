@@ -2,7 +2,7 @@ using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Toolkit
 {
-    [NMS(GUID = 0x814E0B8571A08751, NameHash = 0x2D59643E)]
+    [NMS(GUID = 0x3F3C65F322BD76D2, NameHash = 0x2D59643E)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
         [NMS(Index = 26)]
@@ -49,7 +49,7 @@ namespace libMBIN.NMS.Toolkit
         }
         [NMS(Index = 23)]
         /* 0x60 */ public AnisotropyLevelEnum AnisotropyLevel;
-        // size: 0xC
+        // size: 0xD
         public enum AntiAliasingEnum : uint {
             None,
             TAA_LOW,
@@ -62,6 +62,7 @@ namespace libMBIN.NMS.Toolkit
             MetalFXSpatial,
             MetalFXTemporal,
             PSSR,
+            QSSR,
             FFXSR4,
         }
         [NMS(Index = 24)]
