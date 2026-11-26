@@ -15,7 +15,7 @@ import time
 from typing import Optional
 
 from jinja2 import Template
-import pymem
+from PyMemoryEditor import OpenProcess
 
 
 CWD = op.dirname(__file__)
@@ -315,7 +315,7 @@ class Field(ABC):
 
         # Get the name of the field.
         self._field_name: str = nms_mem.read_string(
-            struct.unpack_from('<Q', data, offset=0x0)[0], byte=128
+            struct.unpack_from('<Q', data, offset=0x0)[0], 128
         )
         # Some field names are annoyingly duplicated in the exe. c# doesn't
         # allow this, so we need to add something to the name to make it unique.
@@ -367,7 +367,7 @@ class Field(ABC):
         return fmt_hex(self._array_size)
 
     @classmethod
-    def instantiate(cls, data: bytes, nms_mem: pymem.Pymem):
+    def instantiate(cls, data: bytes, nms_mem: OpenProcess):
         """ Return an instance of a subclass which is of the appropriate type
         based on the raw type specified in the data.
         This allows us to simplify the logic regarding deserialising the field
@@ -393,13 +393,13 @@ class Field(ABC):
 
 
 class NormalField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem, raw_field_type):
+    def __init__(self, data: bytes, nms_mem: OpenProcess, raw_field_type):
         super().__init__(data, nms_mem)
         self.raw_field_type = raw_field_type
 
 
 class CustomField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+    def __init__(self, data: bytes, nms_mem: OpenProcess):
         super().__init__(data, nms_mem)
         self.raw_field_type = TYPE_MAPPING_REV['CUSTOM']
 
@@ -408,7 +408,7 @@ class CustomField(Field):
             struct.unpack_from('<Q', data, offset=0x20)[0]
         )
         # Now get the actual name.
-        self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
+        self._field_type = nms_mem.read_string(ptr_custom_type, 128)[1:]
 
         if self.field_type[:2].lower() in ('cg', 'gc', 'tk'):
             self.required_using.add(
@@ -424,7 +424,7 @@ class CustomField(Field):
 
 
 class HashMapField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+    def __init__(self, data: bytes, nms_mem: OpenProcess):
         super().__init__(data, nms_mem)
         self.raw_field_type = TYPE_MAPPING_REV['HashMap']
         # Multiply the field size by the array size to get the correct size
@@ -441,7 +441,7 @@ class HashMapField(Field):
             ptr_custom_type = nms_mem.read_ulonglong(
                 struct.unpack_from('<Q', data, offset=0x20)[0]
             )
-            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
+            self._field_type = nms_mem.read_string(ptr_custom_type, 128)[1:]
             self.required_using.add(
                 constants.USING_MAPPING.get(self._field_type[:2].lower(),
                                             constants.USING_MAPPING['gc'])
@@ -454,7 +454,7 @@ class HashMapField(Field):
         idField_ptr = struct.unpack_from("<Q", data, offset=0x28)[0]
         if idField_ptr != 0:
             # This is a cTkMetaDataMember*. We only need to read the first char* in it to get the field name.
-            self.id_field = nms_mem.read_string(nms_mem.read_ulonglong(idField_ptr), byte=128)
+            self.id_field = nms_mem.read_string(nms_mem.read_ulonglong(idField_ptr), 128)
         else:
             self.id_field = ""
 
@@ -464,7 +464,7 @@ class HashMapField(Field):
 
 
 class ArrayField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+    def __init__(self, data: bytes, nms_mem: OpenProcess):
         super().__init__(data, nms_mem)
         self.raw_field_type = TYPE_MAPPING_REV['ARRAY']
         # Multiply the field size by the array size to get the correct size
@@ -481,7 +481,7 @@ class ArrayField(Field):
             ptr_custom_type = nms_mem.read_ulonglong(
                 struct.unpack_from('<Q', data, offset=0x20)[0]
             )
-            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
+            self._field_type = nms_mem.read_string(ptr_custom_type, 128)[1:]
             self.required_using.add(
                 constants.USING_MAPPING.get(self._field_type[:2].lower(),
                                             constants.USING_MAPPING['gc'])
@@ -503,7 +503,7 @@ class ArrayField(Field):
         self.array_enum = []
         for i in range(self._array_size):
             ptr_enum_name = nms_mem.read_ulonglong(self.ptr_enum + i * 0x10 + 0x8)
-            name: str = nms_mem.read_string(ptr_enum_name, byte=128)
+            name: str = nms_mem.read_string(ptr_enum_name, 128)
             # Capitalize restricted words in c#
             if name in RESTRICTED_NAMES:
                 name = name.capitalize()
@@ -515,7 +515,7 @@ class ArrayField(Field):
 
 
 class ListField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+    def __init__(self, data: bytes, nms_mem: OpenProcess):
         super().__init__(data, nms_mem)
         self.raw_field_type = TYPE_MAPPING_REV['LIST']
         self.field_size = 0x10
@@ -531,7 +531,7 @@ class ListField(Field):
             except:
                 print(self.field_name)
                 raise
-            self._field_type = nms_mem.read_string(ptr_custom_type, byte=128)[1:]
+            self._field_type = nms_mem.read_string(ptr_custom_type, 128)[1:]
             self.required_using.add(
                 constants.USING_MAPPING.get(self._field_type[:2].lower(),
                                   constants.USING_MAPPING['gc'])
@@ -547,7 +547,7 @@ class ListField(Field):
 
 
 class EnumField(Field):
-    def __init__(self, data: bytes, nms_mem: pymem.Pymem):
+    def __init__(self, data: bytes, nms_mem: OpenProcess):
         super().__init__(data, nms_mem)
         self._is_flag: bool = False
         self.raw_field_type = TYPE_MAPPING_REV['ENUM']
@@ -561,7 +561,7 @@ class EnumField(Field):
         for i in range(enum_count):
             idx = nms_mem.read_uint(self.ptr_enum + i * 0x10)
             ptr_enum_name = nms_mem.read_ulonglong(self.ptr_enum + i * 0x10 + 0x8)
-            enum_name: str = nms_mem.read_string(ptr_enum_name, byte=128)
+            enum_name: str = nms_mem.read_string(ptr_enum_name, 128)
             # If the string starts with a number we need to prefix with an
             # underscore so that the name is not illegal.
             if enum_name:
@@ -731,7 +731,7 @@ class NMSClass():
 
 
 def read_class(
-    nms_mem: pymem.Pymem,
+    nms_mem: OpenProcess,
     address: int,
     filepaths: list[str],
     config: configparser.ConfigParser
@@ -747,7 +747,7 @@ def read_class(
     data = nms_mem.read_bytes(address, 0x24)
     ptr_name, name_hash, guid, ptr_data, field_num = struct.unpack(
         '<QQQQI', data)
-    name = nms_mem.read_string(ptr_name, byte=128)
+    name = nms_mem.read_string(ptr_name, 128)
     if (name.startswith('cGc') and name.endswith('Globals')) or name[1:] in ACTUALLY_GLOBALS:
         dir_ = 'Globals'
     else:
@@ -777,7 +777,7 @@ def read_class(
     return cls
 
 
-def extract(nms_mem: pymem.Pymem, address: int, field_count: int) -> tuple[list[Field], bool]:
+def extract(nms_mem: OpenProcess, address: int, field_count: int) -> tuple[list[Field], bool]:
     # Take the 0x58 bytes and process them.
     fields = []
     has_enum_arrays = False
@@ -862,11 +862,14 @@ if __name__ == '__main__':
     try:
         # Wait some time for the data to be written to memory.
         time.sleep(config['general'].getint('wait_time', fallback=10))
-        # Now find the process with pymem.
+        # Now find the process with PyMemoryEditor.
         # If there is for some reason multiple instances of NMS running this
-        # will probably have issues...
-        nms = pymem.Pymem('NMS.exe')
-        nms_base = nms.base_address
+        # will raise an error since we can't tell which one to use.
+        nms = OpenProcess(name='NMS.exe')
+        nms_base = next(
+            m.base_address for m in nms.get_modules()
+            if m.name.lower() == 'nms.exe'
+        )
         t1 = time.time()
         names: list[str] = []
         classes: list[NMSClass] = []
@@ -915,6 +918,6 @@ if __name__ == '__main__':
         # Kill the NMS process.
         if config['general'].getboolean('close_NMS_process', fallback=True):
             nms_proc.terminate()
-            nms_pid = nms.process_id
+            nms_pid = nms.pid
             if nms_pid != nms_proc.pid:
                 os.kill(nms_pid, SIGTERM)
